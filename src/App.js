@@ -1124,7 +1124,13 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       <ProgressScreen
         quizHistory={quizHistory}
         questionData={questionData}
+        mastery={mastery}
+        streaksAndPP={streaksAndPP}
         onHome={handleHome}
+        onStartTopic={(subject, topicKey) => {
+          setSelectedSubject(subject);
+          handleTopicSelect(topicKey);
+        }}
       />
     );
   }
