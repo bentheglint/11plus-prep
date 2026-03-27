@@ -2803,6 +2803,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'lambton-worm',
+    title: 'The Legend of the Lambton Worm',
+    genre: 'legend-narrative-non-fiction',
+    passage: `(1) Of all the legends that have emerged from the hills and rivers of northern England, few are as strange, as enduring, or as delightfully gruesome as the tale of the Lambton Worm. This story, which has been told around firesides in County Durham for at least four hundred years, concerns a young nobleman, a monstrous serpent, and a curse that would haunt an entire family for nine generations. Whether there is any grain of truth behind the tale is impossible to say — but the people of the North East have never let a small matter like historical accuracy get in the way of a good story.
+
+(2) The legend begins, as many legends do, with a young man behaving badly. John Lambton, heir to the Lambton estate near the River Wear, was a wild and reckless youth who had little time for church or responsibility. One Sunday morning, instead of attending the service at the local chapel, he took his fishing rod down to the river. An old man passing by warned him that no good would come of fishing on the Sabbath, but John laughed the warning off and cast his line.
+
+(3) What he caught was not a fish. Hooked on the end of his line was a small, black creature — slimy, eyeless, and about the length of a man's thumb. It looked, according to various retellings, like a cross between an eel and a lizard, with nine holes along each side of its head where gills might have been. Repulsed, John pulled the creature from the hook and threw it into a nearby well. He thought no more about it.
+
+(4) Years passed. John Lambton, filled with remorse for his wayward youth, joined the Crusades and travelled to the Holy Land to fight. In his absence, the creature in the well grew. It grew to an extraordinary size — some versions of the story claim it became large enough to wrap itself three times around a local hill known as Worm Hill. The word 'worm' in this context is the old English word for serpent or dragon, and by the time the creature emerged from the well, it was a dragon in all but name: enormous, vicious, and possessed of an insatiable appetite.
+
+(5) The Worm terrorised the surrounding countryside. It devoured sheep, cattle, and any unwary traveller who ventured too close. Farmers found their livestock missing each morning, and the pastures nearest the river were stripped bare. Worse still, whenever anyone attempted to fight the creature, it simply reassembled itself. Knights and soldiers would hack it to pieces, only to watch in horror as the severed sections crawled back together and the Worm reformed, apparently unharmed. No weapon, no strategy, and no amount of courage could destroy it.
+
+(6) When John Lambton finally returned from the Crusades — older, wiser, and carrying the weight of years of battle — he discovered the devastation his careless act had caused. The worm he had thrown into the well as a boy had become a monster that was destroying his family's land and terrifying its people. The responsibility was his, and he resolved to put it right.
+
+(7) John sought advice from a wise woman — a witch, in some versions of the tale — who lived in the hills above the estate. She told him how to defeat the Worm: he must cover his armour with razor-sharp spearheads, so that when the creature wrapped itself around him to crush him, it would cut itself to ribbons on the blades. But the wise woman attached a terrible condition. After killing the Worm, John must immediately kill the first living thing he saw, or a curse would fall upon the Lambton family — for nine generations, no Lord of Lambton would die peacefully in his bed.
+
+(8) John prepared carefully. He arranged a signal with his father: after the battle, John would blow his hunting horn three times, and his father would release the family's favourite greyhound. The dog would run to John, and John would kill it — satisfying the wise woman's condition without taking a human life. It was a clever plan, and John took his position on a rock in the middle of the River Wear, where the Worm came to drink each evening, and waited.
+
+(9) The battle was ferocious. The Worm coiled itself around John with crushing force, but the spearheads embedded in his armour sliced through its flesh. Each severed piece fell into the river and was swept away by the current before it could rejoin the body. Gradually, piece by piece, the Worm was destroyed. John stood bloodied and exhausted on his rock as the last fragments of the creature disappeared downstream.
+
+(10) He blew his horn three times. But his father, overcome with relief and joy at seeing his son alive, forgot the plan. Instead of releasing the dog, the old man ran out of the castle himself, arms outstretched, tears streaming down his face. John saw his father before he saw the greyhound. He could not bring himself to kill his own father. The greyhound arrived moments later and John killed it immediately — but the damage was done. The first living thing he had seen was his father, and the condition had been broken.
+
+(11) The curse fell upon the Lambton family. According to local tradition, for the next nine generations, no Lord of Lambton died peacefully. Henry Lambton was drowned crossing a bridge. Another Lambton was killed in battle. A third died in a riding accident. The records of the Lambton family during these generations are patchy and incomplete, but enough unfortunate deaths occurred to keep the legend firmly alive in local memory. The ninth Lord Lambton, Henry Lambton, died in his carriage in 1761 — and with him, the curse was said to have been finally fulfilled.
+
+(12) The Lambton Worm remains one of the most popular legends in the North East of England. It has been adapted into a famous dialect song, a pantomime performed annually in the region, and numerous children's books. The ruins of the original Lambton estate still stand beside the River Wear, and Worm Hill — if it ever existed — has been claimed by at least three different locations in County Durham, each insisting it is the genuine site. The story endures because it contains everything a good legend needs: a reckless youth, a terrible mistake, a heroic quest, an impossible condition, and a curse that echoes down the centuries. As the old song goes: "Whisht, lads, haad yer gobs — Aa'll tell ye aall an aaful story."`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where is the Lambton estate located?",
+        options: ["Near the River Thames", "Near the River Wear in County Durham", "Near the River Severn in Wales", "Near the River Tyne in Newcastle", "Near the River Avon in Bath"],
+        correct: 1,
+        explanation: "Paragraph 2 states 'John Lambton, heir to the Lambton estate near the River Wear' and paragraph 1 places the story in County Durham. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What was John Lambton doing when he caught the creature?",
+        options: ["Hunting in the forest", "Swimming in the river", "Fishing instead of going to church", "Walking his dog", "Exploring a cave"],
+        correct: 2,
+        explanation: "Paragraph 2 states 'instead of attending the service at the local chapel, he took his fishing rod down to the river'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What did John do with the creature after catching it?",
+        options: ["He took it home as a pet", "He threw it back in the river", "He threw it into a nearby well", "He gave it to the old man", "He killed it immediately"],
+        correct: 2,
+        explanation: "Paragraph 3 states 'John pulled the creature from the hook and threw it into a nearby well'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What was the wise woman's condition for lifting the curse?",
+        options: [
+          "John must never fish again",
+          "John must kill the first living thing he saw after the battle",
+          "John must leave the country forever",
+          "John must rebuild the chapel",
+          "John must throw the Worm back into the well"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 states 'After killing the Worm, John must immediately kill the first living thing he saw'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why did the Worm survive when people tried to fight it?",
+        options: [
+          "Its skin was too thick for weapons to penetrate",
+          "It could fly away from danger",
+          "Its severed pieces crawled back together and it reformed",
+          "It was protected by a magic spell",
+          "It hid underwater during attacks"
+        ],
+        correct: 2,
+        explanation: "Paragraph 5 describes how 'the severed sections crawled back together and the Worm reformed, apparently unharmed'. This regeneration ability made it seem impossible to destroy. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A scientific account of an ancient creature",
+          "A retelling of a regional folk legend with historical commentary",
+          "A fictional story written by the author",
+          "A factual history of County Durham",
+          "A newspaper report about a recent discovery"
+        ],
+        correct: 1,
+        explanation: "The passage retells the traditional legend while commenting on its origins, variations, and cultural significance. It is a narrative non-fiction account of a folk legend. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why was it important that the severed pieces fell into the river?",
+        options: [
+          "The river water was poisonous to the Worm",
+          "The current swept the pieces away before they could rejoin the body",
+          "John needed the river to wash his armour clean",
+          "The wise woman told him to fight near water",
+          "The Worm was afraid of water"
+        ],
+        correct: 1,
+        explanation: "Paragraph 9 states 'Each severed piece fell into the river and was swept away by the current before it could rejoin the body'. The flowing water prevented the Worm's regeneration ability from working. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why did John's plan to kill the greyhound fail?",
+        options: [
+          "The greyhound escaped from the castle",
+          "John's father forgot the plan and ran out before the dog was released",
+          "John could not find his sword after the battle",
+          "The horn signal was too quiet for his father to hear",
+          "The greyhound was faster than John's father"
+        ],
+        correct: 1,
+        explanation: "Paragraph 10 explains: 'his father, overcome with relief and joy at seeing his son alive, forgot the plan. Instead of releasing the dog, the old man ran out of the castle himself'. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the old English word 'worm' mean in this context?",
+        options: ["An earthworm", "A caterpillar", "A serpent or dragon", "A type of fish", "A mythical bird"],
+        correct: 2,
+        explanation: "Paragraph 4 explicitly states: 'The word 'worm' in this context is the old English word for serpent or dragon'. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How had John Lambton changed by the time he returned from the Crusades?",
+        options: [
+          "He had become even more reckless and irresponsible",
+          "He was physically weaker and unable to fight",
+          "He had matured and was willing to take responsibility for his past mistake",
+          "He was angry with his father for not dealing with the Worm",
+          "He had forgotten about the creature entirely"
+        ],
+        correct: 2,
+        explanation: "Paragraph 6 describes him as 'older, wiser' and states 'The responsibility was his, and he resolved to put it right'. He had grown from a 'wild and reckless youth' into a responsible adult. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "Why could John not bring himself to kill his father?",
+        options: [
+          "He was too exhausted from the battle",
+          "His father was wearing armour",
+          "Natural love and morality prevented him from killing his own parent",
+          "The wise woman had forbidden it",
+          "He did not have a weapon nearby"
+        ],
+        correct: 2,
+        explanation: "The passage implies that killing one's own father is an act so morally unthinkable that John 'could not bring himself' to do it, despite knowing the consequences of failing to fulfil the condition. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author say the curse was 'finally fulfilled' when the ninth Lord Lambton died?",
+        options: [
+          "Because the ninth lord was the first to die peacefully",
+          "Because the wise woman had specified nine generations, and this was the ninth",
+          "Because the ninth lord broke the curse with a magic spell",
+          "Because the Worm returned and killed him",
+          "Because the family ran out of heirs"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 states the curse would last 'for nine generations'. Paragraph 11 counts through to 'The ninth Lord Lambton' whose death completed the nine-generation span predicted by the wise woman. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'character-inference',
+        question: "What does the author's tone in the first paragraph suggest about how they view the legend?",
+        options: [
+          "They believe every detail is historically accurate",
+          "They think the legend is boring and not worth retelling",
+          "They are affectionately amused by it while acknowledging it is probably not factual",
+          "They are frightened by the story",
+          "They think it should be forgotten"
+        ],
+        correct: 2,
+        explanation: "Phrases like 'delightfully gruesome' and 'never let a small matter like historical accuracy get in the way of a good story' show warm amusement and affection for the tale, combined with honest acknowledgment that it is legend, not history. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following is NOT mentioned as a way the Worm terrorised the countryside?",
+        options: [
+          "Devouring sheep and cattle",
+          "Attacking unwary travellers",
+          "Stripping pastures bare",
+          "Setting fire to farmhouses",
+          "Reforming after being cut to pieces"
+        ],
+        correct: 3,
+        explanation: "Paragraph 5 mentions the Worm devouring livestock, attacking travellers, stripping pastures, and regenerating after attacks. Setting fire to farmhouses is not mentioned — this Worm is a serpent, not a fire-breathing dragon. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "According to the passage, which of these is NOT a form in which the legend has been adapted?",
+        options: [
+          "A dialect song",
+          "A pantomime",
+          "Children's books",
+          "A Hollywood film",
+          "Local cultural tradition"
+        ],
+        correct: 3,
+        explanation: "Paragraph 12 mentions a dialect song, pantomime, and children's books. A Hollywood film is not mentioned. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author mention that 'at least three different locations' claim to be Worm Hill?",
+        options: [
+          "To prove that the legend is completely fictional",
+          "To show that the story is still important to local communities and they compete to own it",
+          "To explain that the hill has been destroyed",
+          "To criticise the people of County Durham for lying",
+          "To help the reader find the real location"
+        ],
+        correct: 1,
+        explanation: "Multiple communities claiming the site shows the legend is still culturally significant and valued — each location wants to be connected to this famous story. It demonstrates the tale's enduring hold on local identity. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author list the elements of a 'good legend' in the final paragraph?",
+        options: [
+          "To teach the reader how to write their own legends",
+          "To explain why this particular story has survived for four hundred years",
+          "To compare this legend to other, better-known stories",
+          "To argue that all legends follow the same pattern",
+          "To summarise the plot for readers who skipped ahead"
+        ],
+        correct: 1,
+        explanation: "By identifying the universal story elements — 'a reckless youth, a terrible mistake, a heroic quest, an impossible condition, and a curse' — the author explains why the story resonates and endures. These are timeless narrative ingredients. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the detail of the father running out 'arms outstretched, tears streaming down his face' create?",
+        options: [
+          "It makes the reader angry at the father for being foolish",
+          "It creates sympathy because his reaction is completely natural — a father relieved his son is alive",
+          "It creates humour because the father's behaviour is comical",
+          "It makes the reader want the curse to be even worse",
+          "It shows that the father never loved John"
+        ],
+        correct: 1,
+        explanation: "The image of an emotional father running to embrace his son is deeply human and relatable. The tragedy is that this natural, loving reaction is precisely what triggers the curse — making the reader feel sympathy for both father and son, trapped between love and fate. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 2, what does 'reckless' mean?",
+        options: ["Brave and strong", "Acting without thinking about consequences", "Lazy and uninterested", "Clever but dishonest", "Quiet and thoughtful"],
+        correct: 1,
+        explanation: "'Reckless' means acting without thinking about the potential dangers or consequences. Young John was 'wild and reckless' — he fished on the Sabbath despite warnings, not caring about potential results. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 5, what does 'insatiable' mean?",
+        options: ["Very small", "Impossible to satisfy", "Extremely frightening", "Completely silent", "Surprisingly gentle"],
+        correct: 1,
+        explanation: "'Insatiable' means impossible to satisfy — no matter how much the Worm ate, it was never enough. The word emphasises the creature's endless, destructive hunger. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 6, what does 'resolved' mean in 'he resolved to put it right'?",
+        options: ["He wished he could fix the problem", "He firmly decided to take action", "He discussed the problem with others", "He tried but failed", "He reluctantly agreed to help"],
+        correct: 1,
+        explanation: "'Resolved' means made a firm, determined decision. It is stronger than simply wanting or hoping — John committed himself to action. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 1, what does 'enduring' mean in 'as enduring' as the tale?",
+        options: ["Painful and difficult", "Boring and repetitive", "Lasting for a very long time", "Extremely popular right now", "Recently discovered"],
+        correct: 2,
+        explanation: "'Enduring' means lasting over a long period of time. The tale has been told for 'at least four hundred years' — it has endured across centuries. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 3, what type of word is 'repulsed'?",
+        options: ["Noun", "Verb (past tense)", "Adjective", "Adverb", "Preposition"],
+        correct: 2,
+        explanation: "'Repulsed' here functions as an adjective — it describes John's emotional state (feeling disgusted). Although it derives from the verb 'to repulse', in this sentence it modifies the subject rather than describing an action. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'enormous', 'vicious', and 'insatiable' in paragraph 4?",
+        options: ["Nouns", "Verbs", "Adjectives", "Adverbs", "Conjunctions"],
+        correct: 2,
+        explanation: "All three are adjectives describing the Worm: 'enormous' (size), 'vicious' (temperament), and 'insatiable' (appetite). They build a picture of the creature's terrifying nature. ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 10, 'But his father, overcome with relief and joy at seeing his son alive, forgot the plan.' What type of clause is 'overcome with relief and joy at seeing his son alive'?",
+        options: [
+          "A main clause",
+          "A subordinate (embedded) clause giving extra information about the father",
+          "A question",
+          "A command",
+          "An independent sentence"
+        ],
+        correct: 1,
+        explanation: "This is a subordinate clause (specifically a participial phrase) embedded between commas. It gives additional information about the father's emotional state but is not essential to the main clause ('his father forgot the plan'). Removing it would leave a complete sentence. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
