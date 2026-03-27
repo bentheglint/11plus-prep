@@ -12,6 +12,9 @@ import {
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
+import HomeScreen from './screens/HomeScreen';
+import LearningModeScreen from './screens/LearningModeScreen';
+import TopicsScreen from './screens/TopicsScreen';
 import mathsData from './questionData/mathsData';
 import englishData from './questionData/englishData';
 import vrData from './questionData/vrData';
@@ -747,191 +750,36 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   }
 
   if (currentView === 'home') {
-    const nameColors = { Ben: '#0984E3', Lauren: '#00B894', Daisy: '#E84393', Evie: '#FDCB6E' };
     return (
-      <div className="app-bg p-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-6 mt-8 animate-fade-in-up">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6C5CE7] to-[#A29BFE] flex items-center justify-center shadow-lg">
-                <GraduationCap className="w-7 h-7 text-white" />
-              </div>
-              <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-[#2D3436]">
-                11+ Test Prep
-              </h1>
-            </div>
-            <p className="text-sm text-[#636E72] mb-1">Built by Ben</p>
-            <p className="text-lg text-[#636E72] font-medium">Choose a subject to start practising!</p>
-          </div>
-
-          {/* Name picker */}
-          <div className="mb-6 text-center animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-            <p className="text-sm font-medium text-[#636E72] mb-3">Who's practising?</p>
-            <div className="flex justify-center gap-3">
-              {['Ben', 'Lauren', 'Daisy', 'Evie'].map(name => (
-                <button
-                  key={name}
-                  onClick={() => handleSetCurrentUser(name)}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-sm transition-all ${
-                    currentUser === name
-                      ? 'text-white shadow-lg ring-2 ring-offset-2'
-                      : 'bg-white/80 text-[#2D3436] border-2 border-white/60 hover:border-[#A29BFE] hover:shadow-md'
-                  }`}
-                  style={currentUser === name ? {
-                    background: nameColors[name],
-                    ringColor: nameColors[name],
-                    '--tw-ring-color': nameColors[name]
-                  } : {}}
-                >
-                  <span
-                    className="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
-                    style={{ background: nameColors[name] }}
-                  >
-                    {name[0]}
-                  </span>
-                  {name}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-8 flex justify-center gap-3 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-            <button
-              onClick={() => setCurrentView('progress')}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
-            >
-              <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
-              <span className="font-heading">View My Progress</span>
-            </button>
-            {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy') && (
-              <button
-                onClick={() => setCurrentView('speedReview')}
-                className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-amber-300 hover:bg-amber-50 transition-colors"
-              >
-                <Wrench className="w-5 h-5 text-amber-500" />
-                <span className="font-heading">Speed Review</span>
-              </button>
-            )}
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 stagger-children">
-            <SubjectCard
-              title="Maths"
-              icon={Calculator}
-              gradient="from-[#0984E3] to-[#0652DD]"
-              onClick={() => handleSubjectSelect('maths')}
-            />
-            <SubjectCard
-              title="English"
-              icon={BookOpen}
-              gradient="from-[#00B894] to-[#00876A]"
-              onClick={() => handleSubjectSelect('english')}
-            />
-            <SubjectCard
-              title="Verbal Reasoning"
-              icon={Brain}
-              gradient="from-[#6C5CE7] to-[#5A4BD1]"
-              onClick={() => handleSubjectSelect('verbalreasoning')}
-            />
-          </div>
-        </div>
-      </div>
+      <HomeScreen
+        currentUser={currentUser}
+        onSetCurrentUser={handleSetCurrentUser}
+        onSubjectSelect={handleSubjectSelect}
+        onViewProgress={() => setCurrentView('progress')}
+        onSpeedReview={() => setCurrentView('speedReview')}
+      />
     );
   }
 
   if (currentView === 'learningMode') {
     return (
-      <div className="app-bg p-4">
-        <div className="max-w-3xl mx-auto">
-          <button
-            onClick={handleHome}
-            className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Back to Home
-          </button>
-
-          <div className="text-center mb-8 animate-fade-in-up">
-            <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">
-              {questionData[selectedSubject]?.name || 'Subject'}
-            </h2>
-            <p className="text-[#636E72]">Choose how you'd like to practise</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 stagger-children">
-            <button
-              onClick={handleStartDaily}
-              className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#0984E3]/30 animate-scale-in"
-            >
-              <div className="flex items-center justify-center w-16 h-16 bg-[#0984E3]/10 rounded-2xl mb-4">
-                <Calendar className="w-8 h-8 text-[#0984E3]" />
-              </div>
-              <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Daily Learning</h3>
-              <p className="text-[#636E72]">10 questions from across all topics. A great way to keep your skills sharp!</p>
-            </button>
-
-            <button
-              onClick={() => setCurrentView('topics')}
-              className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#6C5CE7]/30 animate-scale-in"
-            >
-              <div className="flex items-center justify-center w-16 h-16 bg-[#6C5CE7]/10 rounded-2xl mb-4">
-                <Target className="w-8 h-8 text-[#6C5CE7]" />
-              </div>
-              <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Focused Learning</h3>
-              <p className="text-[#636E72]">Pick a topic and practise 10 questions to build your confidence.</p>
-            </button>
-          </div>
-        </div>
-      </div>
+      <LearningModeScreen
+        subjectName={questionData[selectedSubject]?.name}
+        onStartDaily={handleStartDaily}
+        onFocusedLearning={() => setCurrentView('topics')}
+        onBack={handleHome}
+      />
     );
   }
 
   if (currentView === 'topics') {
-    const subject = questionData[selectedSubject];
-    const topicEntries = Object.entries(subject.topics);
-    const sortedTopics = [...topicEntries].sort((a, b) => {
-      const perfA = topicPerformance[a[0]];
-      const perfB = topicPerformance[b[0]];
-      // 0 = no data, 1 = not enough data (<5), 2 = has score
-      const tierOf = (p) => !p ? 0 : p.total < 5 ? 1 : 2;
-      const tierA = tierOf(perfA);
-      const tierB = tierOf(perfB);
-      // No data first, then not enough data, then scored topics
-      if (tierA !== tierB) return tierA - tierB;
-      // Within scored topics, weakest (lowest %) first
-      if (tierA === 2) return (perfA.correct / perfA.total) - (perfB.correct / perfB.total);
-      return 0;
-    });
     return (
-      <div className="app-bg p-4">
-        <div className="max-w-3xl mx-auto">
-          <button
-            onClick={() => setCurrentView('learningMode')}
-            className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Back to Learning Modes
-          </button>
-
-          <div className="text-center mb-8 animate-fade-in-up">
-            <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">
-              {subject.name} Topics
-            </h2>
-            <p className="text-[#636E72]">Pick a topic to practise</p>
-          </div>
-
-          <div className="space-y-4 stagger-children">
-            {sortedTopics.map(([key, topic]) => (
-              <TopicCard
-                key={key}
-                title={topic.name}
-                performance={topicPerformance[key]}
-                onClick={() => handleTopicSelect(key)}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      <TopicsScreen
+        subject={questionData[selectedSubject]}
+        topicPerformance={topicPerformance}
+        onTopicSelect={handleTopicSelect}
+        onBack={() => setCurrentView('learningMode')}
+      />
     );
   }
 
