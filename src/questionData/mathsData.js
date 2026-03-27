@@ -19712,6 +19712,7 @@ anglesshapes: {
     {
       id: 7,
       difficulty: 1,
+      visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 90, angle3: 45 } },
       question: "Two angles in a triangle are 45° and 90°. What type of triangle is this?",
       image: "angles-shapes/right-triangle-q7.svg",
       options: ["Equilateral", "Isosceles", "Right-angled", "Obtuse", "Scalene"],
@@ -19918,6 +19919,7 @@ anglesshapes: {
     {
       id: 28,
       difficulty: 1,
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 115, label: "p°", color: "#dc2626"}] } },
       question: "Three angles meet around a point: 115°, 130°, and p°. What is p?",
       image: "angles-shapes/point-q28.svg",
       options: ["105°", "110°", "115°", "120°", "125°"],
