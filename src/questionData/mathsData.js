@@ -16578,7 +16578,7 @@ areaperimeter: {
     {
       id: 8,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 8, width: 4, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: 8, width: "?", dimUnit: "cm", label: "Perimeter = 24 cm" } },
       question: "A rectangle has a perimeter of 24 cm. Its length is 8 cm. What is its width?",
       image: "area-perimeter/rectangle-q8.svg",
       options: ["3 cm", "4 cm", "6 cm", "8 cm", "16 cm"],
@@ -16597,7 +16597,7 @@ areaperimeter: {
     {
       id: 10,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 8, width: 6, dimUnit: "m", areaLabel: "48 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: 6, dimUnit: "m", label: "Area = 48 m²" } },
       question: "Emma's rectangular garden has an area of 48 square metres and a width of 6 metres. What is the length?",
       image: "area-perimeter/rectangle-q10.svg",
       options: ["6 metres", "8 metres", "12 metres", "42 metres", "54 metres"],
@@ -16645,7 +16645,7 @@ areaperimeter: {
     {
       id: 15,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 8, width: 4, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "2 × width", width: 4, dimUnit: "m" } },
       question: "Max's rectangular bedroom is twice as long as it is wide. If the width is 4 metres, what is the area?",
       image: "area-perimeter/rectangle-q15.svg",
       options: ["8 square metres", "16 square metres", "24 square metres", "32 square metres", "12 square metres"],
@@ -16702,7 +16702,7 @@ areaperimeter: {
     {
       id: 21,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 12, width: 7, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "(w + 5)", width: "w", dimUnit: "cm", label: "w = 7" } },
       question: "A rectangle has width w cm and length (w + 5) cm. If w = 7, what is the perimeter?",
       options: ["19 cm", "26 cm", "38 cm", "84 cm", "12 cm"],
       correct: 2,
@@ -16748,7 +16748,7 @@ areaperimeter: {
     {
       id: 26,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 12, width: 8, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "2x", width: "3x", dimUnit: "cm", label: "x = 4" } },
       question: "A rectangle has dimensions 2x cm by 3x cm. If x = 4, what is the area?",
       image: "area-perimeter/rectangle-q26.svg",
       options: ["24 square cm", "40 square cm", "48 square cm", "96 square cm", "5x square cm"],
@@ -16767,7 +16767,7 @@ areaperimeter: {
     {
       id: 28,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 13, width: 5, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "(2y + 3)", width: "y", dimUnit: "m", label: "y = 5" } },
       question: "A rectangular swimming pool has a length of (2y + 3) metres and a width of y metres. If y = 5, what is the perimeter?",
       options: ["13 metres", "26 metres", "36 metres", "40 metres", "65 metres"],
       correct: 2,
@@ -16785,7 +16785,7 @@ areaperimeter: {
     {
       id: 30,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 18, width: 6, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "3 × width", width: "?", dimUnit: "cm", label: "Perimeter = 48 cm" } },
       question: "A rectangle has a perimeter of 48 cm. Its length is three times its width. What is the area?",
       options: ["16 square cm", "36 square cm", "54 square cm", "81 square cm", "108 square cm"],
       correct: 4,
@@ -16824,7 +16824,7 @@ areaperimeter: {
     {
       id: 34,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 15, width: 15, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Perimeter = 60 m" } },
       question: "A square field has a perimeter of 60 metres. What is the length of each side?",
       image: "area-perimeter/square-q34.svg",
       options: ["10 metres", "12 metres", "14 metres", "15 metres", "20 metres"],
@@ -16940,7 +16940,7 @@ areaperimeter: {
     {
       id: 46,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 12, width: 6, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "2 × width", width: 6, dimUnit: "cm" } },
       question: "A rectangle is twice as long as it is wide. If the width is 6 cm, what is the perimeter?",
       image: "area-perimeter/rectangle-q46.svg",
       options: ["18 cm", "24 cm", "36 cm", "48 cm", "72 cm"],
@@ -16987,7 +16987,7 @@ areaperimeter: {
     {
       id: 51,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 12, width: 12, dimUnit: "m", areaLabel: "144 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Area = 144 m²" } },
       question: "A square courtyard has an area of 144 square metres. What is the length of each side?",
       image: "area-perimeter/square-q51.svg",
       options: ["10 metres", "11 metres", "12 metres", "13 metres", "14 metres"],
@@ -17016,7 +17016,7 @@ areaperimeter: {
     {
       id: 54,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 15, width: 5, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "3 × width", width: 5, dimUnit: "m" } },
       question: "A rectangle is three times as long as it is wide. If the width is 5 metres, what is the area?",
       image: "area-perimeter/rectangle-q54.svg",
       options: ["15 square metres", "25 square metres", "40 square metres", "75 square metres", "225 square metres"],
@@ -17063,7 +17063,7 @@ areaperimeter: {
     {
       id: 59,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 9, width: 8, dimUnit: "cm", areaLabel: "72 cm²" } },
+      visual: { component: "RectangleDiagram", props: { length: 9, width: "?", dimUnit: "cm", label: "Area = 72 cm²" } },
       question: "A rectangle has an area of 72 square cm and a length of 9 cm. What is its width?",
       image: "area-perimeter/rectangle-q59.svg",
       options: ["6 cm", "7 cm", "8 cm", "9 cm", "12 cm"],
@@ -17130,7 +17130,7 @@ areaperimeter: {
     {
       id: 66,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 15, width: 12, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "4x", width: "5x", dimUnit: "cm", label: "x = 3" } },
       question: "A rectangle has dimensions 4x cm by 5x cm. If x = 3, what is the area?",
       image: "area-perimeter/rectangle-q66.svg",
       options: ["60 square cm", "120 square cm", "180 square cm", "240 square cm", "20x square cm"],
@@ -17195,7 +17195,7 @@ areaperimeter: {
     {
       id: 73,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 24, width: 6, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "4 × width", width: 6, dimUnit: "m" } },
       question: "A rectangle is four times as long as it is wide. If the width is 6 metres, what is the perimeter?",
       image: "area-perimeter/rectangle-q73.svg",
       options: ["30 metres", "48 metres", "60 metres", "120 metres", "144 metres"],
@@ -17307,7 +17307,7 @@ areaperimeter: {
     {
       id: 85,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 14, width: 6, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "3y", width: "7y", dimUnit: "m", label: "y = 2" } },
       question: "A rectangle has dimensions 3y metres by 7y metres. If y = 2, what is the area?",
       image: "area-perimeter/rectangle-q85.svg",
       options: ["42 square metres", "84 square metres", "126 square metres", "168 square metres", "21y square metres"],
@@ -17317,7 +17317,7 @@ areaperimeter: {
     {
       id: 86,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 14, width: 14, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 196 cm²" } },
       question: "A square has an area of 196 square cm. What is the length of each side?",
       image: "area-perimeter/square-q86.svg",
       options: ["12 cm", "13 cm", "14 cm", "15 cm", "16 cm"],
@@ -17336,7 +17336,7 @@ areaperimeter: {
     {
       id: 88,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 20, width: 12, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: 20, width: "?", dimUnit: "cm", label: "Perimeter = 64 cm" } },
       question: "A rectangle has a perimeter of 64 cm. Its length is 20 cm. What is its width?",
       image: "area-perimeter/rectangle-q88.svg",
       options: ["8 cm", "10 cm", "12 cm", "14 cm", "16 cm"],
@@ -17346,7 +17346,7 @@ areaperimeter: {
     {
       id: 89,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 12, width: 7, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: 12, width: "?", dimUnit: "m", label: "Area = 84 m²" } },
       question: "Sophie's rectangular garden has an area of 84 square metres and a length of 12 metres. What is its width?",
       image: "area-perimeter/rectangle-q89.svg",
       options: ["6 metres", "7 metres", "8 metres", "9 metres", "10 metres"],
@@ -17499,7 +17499,7 @@ areaperimeter: {
     {
       id: 105,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 20, width: 4, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "5 × width", width: 4, dimUnit: "m" } },
       question: "A rectangle is five times as long as it is wide. If the width is 4 metres, what is the area?",
       image: "area-perimeter/rectangle-q105.svg",
       options: ["20 square metres", "40 square metres", "60 square metres", "80 square metres", "100 square metres"],
@@ -17603,7 +17603,7 @@ areaperimeter: {
     {
       id: 116,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 16, width: 12, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "6w", width: "8w", dimUnit: "m", label: "w = 2" } },
       question: "A rectangle has dimensions 6w metres by 8w metres. If w = 2, what is the perimeter?",
       image: "area-perimeter/rectangle-q116.svg",
       options: ["28 metres", "40 metres", "56 metres", "84 metres", "192 square metres"],
@@ -17642,7 +17642,7 @@ areaperimeter: {
     {
       id: 120,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 40, width: 10, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "4 × width", width: "?", dimUnit: "m", label: "Perimeter = 100 m" } },
       question: "A rectangle has a perimeter of 100 metres. Its length is four times its width. What is the area?",
       options: ["100 square metres", "200 square metres", "300 square metres", "400 square metres", "500 square metres"],
       correct: 3,
@@ -17651,7 +17651,7 @@ areaperimeter: {
     {
       id: 121,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 18, width: 18, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 324 cm²" } },
       question: "A square has an area of 324 square cm. What is the length of each side?",
       image: "area-perimeter/square-q121.svg",
       options: ["16 cm", "17 cm", "18 cm", "19 cm", "20 cm"],
@@ -17699,7 +17699,7 @@ areaperimeter: {
     {
       id: 126,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 30, width: 5, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "6 × width", width: 5, dimUnit: "m" } },
       question: "A rectangle is six times as long as it is wide. If the width is 5 metres, what is the perimeter?",
       image: "area-perimeter/rectangle-q126.svg",
       options: ["35 metres", "55 metres", "70 metres", "105 metres", "150 square metres"],
