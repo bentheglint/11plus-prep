@@ -2454,6 +2454,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'boudicca',
+    title: 'Boudicca: Warrior Queen of the Iceni',
+    genre: 'legend-narrative-non-fiction',
+    passage: `(1) In the year 60 AD, the most powerful empire the world had ever known was shaken to its foundations — not by a rival army or a foreign invasion, but by a woman from a small tribal kingdom in what is now Norfolk. Her name was Boudicca, queen of the Iceni, and her rebellion against Roman rule remains one of the most dramatic and violent episodes in the history of Britain.
+
+(2) The Iceni were a Celtic tribe who had occupied the flat, marshy lands of East Anglia for generations before the Romans arrived. When the Emperor Claudius invaded Britain in 43 AD, the Iceni king, Prasutagus, made a pragmatic decision: rather than fight, he would cooperate with Rome. He signed a treaty that allowed the Iceni to keep their lands and customs in exchange for accepting Roman authority. For nearly two decades, this uneasy arrangement held. Prasutagus even named the Roman emperor as co-heir to his kingdom in his will, alongside his two daughters — a gesture of loyalty that he hoped would protect his family after his death.
+
+(3) It did not. When Prasutagus died around 60 AD, the Romans ignored the will entirely. Imperial officials seized the Iceni kingdom as if it were conquered territory, confiscating the property of tribal nobles and treating the people as slaves. When Boudicca protested, the Roman soldiers had her publicly flogged and assaulted her daughters. It was an act of breathtaking cruelty and arrogance, and it ignited a fury that the Romans had gravely underestimated.
+
+(4) Boudicca gathered an army. The Iceni rallied to her immediately, joined by the Trinovantes — a neighbouring tribe that had its own grievances against Rome — and warriors from several other Celtic groups. Ancient sources disagree on the size of Boudicca's force, but most suggest it numbered well over a hundred thousand. This was not a disciplined professional army like Rome's legions; it was a vast, furious tide of men, women, and even children, united by rage and a desire for vengeance.
+
+(5) The first target was Camulodunum — modern Colchester — which the Romans had established as a colony for retired soldiers. The town had no defensive walls. Its inhabitants had grown complacent, believing that Roman military superiority made them untouchable. They were wrong. Boudicca's forces swept through Camulodunum with devastating ferocity, burning buildings, destroying the temple dedicated to the former Emperor Claudius, and killing everyone they could find. The small Roman garrison was overwhelmed within hours. Archaeological excavations in Colchester have revealed a thick layer of burnt debris from this period — a red-black scar in the soil that archaeologists call the 'destruction layer'.
+
+(6) The Ninth Legion, a Roman military unit stationed nearby, marched south to intercept Boudicca. It was ambushed and virtually annihilated. The legion's infantry was destroyed almost to a man, and only the cavalry escaped by fleeing at full gallop. News of the disaster sent shockwaves through the Roman administration. The procurator — the empire's chief financial officer in Britain — abandoned his post and fled across the Channel to Gaul.
+
+(7) Boudicca turned next towards Londinium — London — which was rapidly growing into an important trading settlement. The Roman governor, Gaius Suetonius Paulinus, had been campaigning in Wales when the rebellion erupted and rushed back with his available forces. Arriving in London, he made a cold but calculated decision: the city could not be defended. He ordered a retreat, advising any Romans who could travel to leave with his army. Those who stayed — the elderly, the sick, traders who refused to abandon their goods — were left to face Boudicca's army alone.
+
+(8) Londinium was burned to the ground. So was Verulamium — modern St Albans — which fell next. The Roman historian Tacitus recorded that approximately seventy thousand people were killed across the three towns. Boudicca's forces, he wrote, "had no interest in taking prisoners or selling slaves, or in any other commerce of war. They would only slaughter, hang, burn, and crucify." Whether this is entirely accurate or partly Roman propaganda — written by the losing side's own historians trying to justify their eventual brutal response — remains a matter of scholarly debate.
+
+(9) The rebellion's climax came at a location that historians have never definitively identified, somewhere in the Midlands along the Roman road known as Watling Street. Suetonius Paulinus had finally assembled a force of roughly ten thousand legionaries and chose his ground carefully — a narrow valley with thick forest behind and open ground in front. This was critical: Boudicca's enormous numerical advantage was useless in a confined space where only a few warriors could engage at a time.
+
+(10) The resulting battle was a catastrophe for the Britons. The Roman legionaries, heavily armoured and fighting in disciplined formation, advanced in a wedge shape through the charging mass of Celtic warriors. Behind Boudicca's army, their own supply wagons blocked the escape route. Tens of thousands were killed. Tacitus claims the Romans lost just four hundred men, though this figure may be exaggerated to glorify the victory. What is certain is that the rebellion was crushed utterly.
+
+(11) Boudicca herself disappeared from the historical record after the battle. Tacitus states she took poison. Another Roman historian, Cassius Dio, says she fell ill and died. No grave has ever been found. The popular legend that she is buried beneath Platform 9 at King's Cross station is entirely fictional — though it is a story that refuses to die, perhaps because it captures something essential about Boudicca's enduring presence in the national imagination.
+
+(12) Today, a bronze statue of Boudicca stands on the Victoria Embankment in London, beside Westminster Bridge and the Houses of Parliament. She is depicted riding a chariot with scythed wheels, her arm raised defiantly, her two daughters beside her. The statue was erected in 1902, and its placement beside the seat of government is deeply symbolic. Boudicca, who burned London to ashes, now watches over it as a symbol of British resistance and courage. History, as so often, has transformed a defeated rebel into an icon of defiance — a woman who, for a few extraordinary months, brought the mightiest empire on Earth to the brink of losing an entire province.`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where did the Iceni tribe live?",
+        options: ["Wales", "Cornwall", "East Anglia (Norfolk)", "Scotland", "Kent"],
+        correct: 2,
+        explanation: "Paragraph 1 says 'a small tribal kingdom in what is now Norfolk' and paragraph 2 confirms they 'occupied the flat, marshy lands of East Anglia'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What happened to Boudicca when she protested against the Romans?",
+        options: ["She was imprisoned in Rome", "She was exiled from Britain", "She was publicly flogged", "She was forced to sign a treaty", "She was fined and released"],
+        correct: 2,
+        explanation: "Paragraph 3 states 'When Boudicca protested, the Roman soldiers had her publicly flogged and assaulted her daughters'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Which three towns were destroyed by Boudicca's forces?",
+        options: [
+          "London, York, and Bath",
+          "Colchester, London, and St Albans",
+          "Canterbury, London, and Winchester",
+          "Colchester, Oxford, and London",
+          "Bath, Colchester, and St Albans"
+        ],
+        correct: 1,
+        explanation: "The passage describes the destruction of Camulodunum/Colchester (paragraph 5), Londinium/London (paragraph 8), and Verulamium/St Albans (paragraph 8). ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where does Boudicca's statue stand today?",
+        options: ["Trafalgar Square", "Outside the British Museum", "Victoria Embankment, near Westminster Bridge", "Buckingham Palace", "Tower of London"],
+        correct: 2,
+        explanation: "Paragraph 12 states 'a bronze statue of Boudicca stands on the Victoria Embankment in London, beside Westminster Bridge and the Houses of Parliament'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why did King Prasutagus name the Roman emperor as co-heir in his will?",
+        options: [
+          "Because the emperor was his personal friend",
+          "Because Roman law required it",
+          "Because he hoped it would protect his family from Roman aggression after his death",
+          "Because he wanted the Romans to have all his wealth",
+          "Because his daughters were too young to rule"
+        ],
+        correct: 2,
+        explanation: "Paragraph 2 describes this as 'a gesture of loyalty that he hoped would protect his family after his death'. He was trying to maintain the cooperative relationship with Rome. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A legend with no basis in historical fact",
+          "A historical account told in a narrative style",
+          "A fictional story inspired by real events",
+          "A persuasive argument about Roman cruelty",
+          "A textbook entry listing dates and facts"
+        ],
+        correct: 1,
+        explanation: "The passage presents real historical events (with named sources like Tacitus and Dio) but tells them in a dramatic, narrative style with vivid descriptions. It is historical non-fiction written as narrative. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why did Suetonius Paulinus choose a narrow valley for the final battle?",
+        options: [
+          "It was close to his supply base",
+          "It was near London and easy to reach",
+          "The confined space would neutralise Boudicca's huge numerical advantage",
+          "The valley had water supplies for his soldiers",
+          "He wanted to trap Boudicca's army from behind"
+        ],
+        correct: 2,
+        explanation: "Paragraph 9 explains that 'Boudicca's enormous numerical advantage was useless in a confined space where only a few warriors could engage at a time'. The narrow valley was chosen deliberately to negate the Britons' superior numbers. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the 'destruction layer' found in Colchester prove?",
+        options: [
+          "That Colchester was built by the Romans",
+          "That a catastrophic fire occurred at this location during Boudicca's rebellion",
+          "That the Romans rebuilt the town after the rebellion",
+          "That Boudicca's army used advanced weapons",
+          "That the archaeology is unreliable"
+        ],
+        correct: 1,
+        explanation: "Paragraph 5 describes 'a thick layer of burnt debris' — 'a red-black scar in the soil' — which is physical archaeological evidence confirming the historical accounts of Boudicca burning Colchester. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author question Tacitus's account of Boudicca's army killing civilians?",
+        options: [
+          "Because Tacitus was not in Britain at the time",
+          "Because the account may include Roman propaganda to justify their violent response",
+          "Because Tacitus supported Boudicca",
+          "Because no civilians lived in the three towns",
+          "Because the passage disagrees with all Roman historians"
+        ],
+        correct: 1,
+        explanation: "Paragraph 8 asks 'Whether this is entirely accurate or partly Roman propaganda — written by the losing side's own historians trying to justify their eventual brutal response'. The author notes that Roman writers had a motive to exaggerate the rebels' cruelty. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What does Suetonius Paulinus's decision to abandon London suggest about him?",
+        options: [
+          "He was a coward who ran from danger",
+          "He was a pragmatic military commander who prioritised winning the war over saving one city",
+          "He did not care about the people of London",
+          "He was tricked by Boudicca into leaving",
+          "He had already decided to surrender to Boudicca"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 describes his choice as 'cold but calculated' — he could not defend London with his available forces, so he retreated to fight on better terms later. This is pragmatic military decision-making, not cowardice. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What motivated Boudicca's rebellion?",
+        options: [
+          "A desire for personal wealth and power",
+          "Fury at the cruel treatment of herself and her daughters, and the theft of her kingdom",
+          "A long-standing plan to unite all Celtic tribes",
+          "Religious differences with the Romans",
+          "Encouragement from other foreign enemies of Rome"
+        ],
+        correct: 1,
+        explanation: "Paragraph 3 describes the seizure of her kingdom, her flogging, and the assault on her daughters. The passage says this 'ignited a fury that the Romans had gravely underestimated'. Her rebellion was driven by personal outrage and injustice. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why might Tacitus's claim that the Romans lost 'just four hundred men' be unreliable?",
+        options: [
+          "Because Tacitus was not a real person",
+          "Because the Romans would want to minimise their own losses and glorify the victory",
+          "Because the Romans did not count their dead",
+          "Because Tacitus supported Boudicca",
+          "Because the battle did not actually happen"
+        ],
+        correct: 1,
+        explanation: "Paragraph 10 notes 'this figure may be exaggerated to glorify the victory'. Roman historians had an incentive to make Roman victories sound more impressive by understating their own casualties. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'character-inference',
+        question: "What does the passage suggest about how Boudicca is remembered differently today compared to how the Romans viewed her?",
+        options: [
+          "She is remembered exactly as the Romans described her",
+          "The Romans honoured her as a great leader",
+          "She has been transformed from a defeated rebel into a symbol of British courage and defiance",
+          "Modern historians believe she was entirely fictional",
+          "She is remembered primarily for her cruelty"
+        ],
+        correct: 2,
+        explanation: "Paragraph 12 explicitly states 'History has transformed a defeated rebel into an icon of defiance'. Her statue beside Parliament symbolises courage, not the violent defeat the Romans would have celebrated. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following is NOT stated about Boudicca's army?",
+        options: [
+          "It included men, women, and children",
+          "It numbered over a hundred thousand",
+          "It included warriors from several Celtic tribes",
+          "It was highly trained and disciplined like the Roman legions",
+          "It was driven by rage and a desire for vengeance"
+        ],
+        correct: 3,
+        explanation: "Paragraph 4 explicitly says 'This was not a disciplined professional army like Rome's legions'. All other details are stated in the passage. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of these statements about Boudicca's death is supported by the passage?",
+        options: [
+          "She was captured and executed by the Romans",
+          "She died in battle at Watling Street",
+          "She escaped to Ireland and lived in exile",
+          "Ancient sources give different accounts — poison or illness",
+          "She is buried under Platform 9 at King's Cross"
+        ],
+        correct: 3,
+        explanation: "Paragraph 11 states 'Tacitus states she took poison. Another Roman historian, Cassius Dio, says she fell ill and died.' The King's Cross burial is described as 'entirely fictional'. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author describe the placement of Boudicca's statue beside Parliament as 'deeply symbolic'?",
+        options: [
+          "Because Parliament is the most visited building in London",
+          "Because it is ironic that a woman who destroyed London now watches over its seat of government",
+          "Because the statue is the largest in London",
+          "Because Boudicca was the first woman to sit in Parliament",
+          "Because the statue was built by the same people who built Parliament"
+        ],
+        correct: 1,
+        explanation: "The symbolism lies in the contradiction: Boudicca burned London to ashes, yet her statue now stands guard beside the centre of British government. The rebel has become a protector — a dramatic reversal that the author highlights. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "What is the author's main purpose in this passage?",
+        options: [
+          "To argue that the Romans should never have invaded Britain",
+          "To present a vivid, balanced account of a pivotal event in British history",
+          "To prove that Boudicca was a better leader than the Roman generals",
+          "To explain why Roman civilisation was superior to Celtic culture",
+          "To describe archaeological methods used at Colchester"
+        ],
+        correct: 1,
+        explanation: "The passage presents both sides — Boudicca's justified fury and the Roman tactical brilliance — using vivid narrative while noting where sources may be unreliable. This is balanced historical storytelling. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the opening sentence create?",
+        options: [
+          "It bores the reader with a date",
+          "It immediately grabs attention by showing how one woman challenged the world's greatest empire",
+          "It confuses the reader about when the story is set",
+          "It makes the reader sympathise with the Roman Empire",
+          "It creates a peaceful, calm atmosphere"
+        ],
+        correct: 1,
+        explanation: "Opening with 'the most powerful empire the world had ever known was shaken to its foundations' by 'a woman from a small tribal kingdom' creates an immediate David-vs-Goliath tension that hooks the reader. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 2, what does 'pragmatic' mean?",
+        options: ["Cowardly", "Foolish", "Dealing with things in a practical, realistic way", "Extremely brave", "Deeply religious"],
+        correct: 2,
+        explanation: "'Pragmatic' means practical and focused on what is achievable rather than idealistic. Prasutagus chose cooperation because fighting Rome was unrealistic — a practical decision. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 5, what does 'complacent' mean?",
+        options: ["Frightened", "Satisfied to the point of not recognising danger", "Extremely well-prepared", "Friendly and welcoming", "Suspicious and careful"],
+        correct: 1,
+        explanation: "'Complacent' means feeling so satisfied with the current situation that you fail to recognise potential problems. The Colchester Romans felt so safe that they did not build defensive walls. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 6, what does 'annihilated' mean?",
+        options: ["Defeated narrowly", "Surrendered peacefully", "Completely destroyed", "Temporarily delayed", "Surrounded but not harmed"],
+        correct: 2,
+        explanation: "'Annihilated' means completely destroyed. The Ninth Legion's infantry was 'destroyed almost to a man' — virtually the entire unit was killed. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 12, what does 'defiance' mean?",
+        options: ["Agreement with authority", "Fear of power", "Bold resistance and refusal to obey", "Quiet acceptance", "Physical strength"],
+        correct: 2,
+        explanation: "'Defiance' means bold resistance to authority or opposition. Boudicca's raised arm in the statue symbolises her refusal to accept Roman domination. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 3, what type of word is 'gravely'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
+        correct: 3,
+        explanation: "'Gravely' is an adverb modifying the verb 'underestimated'. It tells us the degree to which the Romans underestimated Boudicca — seriously and severely. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'rebellion', 'vengeance', and 'cruelty' as used in the passage?",
+        options: ["Verbs", "Adjectives", "Abstract nouns", "Adverbs", "Proper nouns"],
+        correct: 2,
+        explanation: "All three are abstract nouns — they name ideas or states of being rather than physical objects. Rebellion, vengeance, and cruelty are concepts you cannot touch or see directly. ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 4, 'Boudicca gathered an army.' What type of sentence is this?",
+        options: ["A compound sentence", "A complex sentence", "A simple sentence", "A question", "An exclamatory sentence"],
+        correct: 2,
+        explanation: "This is a simple sentence — it has one subject (Boudicca), one verb (gathered), and one object (an army). It contains a single independent clause with no subordinate clauses or conjunctions. Its brevity gives it power and emphasis. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
