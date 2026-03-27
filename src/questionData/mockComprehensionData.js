@@ -1407,6 +1407,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'new-neighbourhood',
+    title: 'The New Neighbourhood',
+    genre: 'contemporary-realistic-fiction',
+    passage: `(1) The removal van pulled away with a belch of grey exhaust, leaving Aisha standing on the unfamiliar pavement with a cardboard box of books and a growing sense of dread. Number fourteen Linden Close looked exactly like every other house on the street — red brick, white-framed windows, a square of lawn barely larger than a bath towel. It was nothing like their old flat above the launderette on Keighley Road, where the rumble of washing machines had been the soundtrack to her entire life. That flat had been cramped, noisy, and perpetually warm from the dryers below. She missed it already.
+
+(2) "It's going to be brilliant, love," her mum said, appearing in the doorway with a mug of tea balanced on a stack of plates. She had been saying this for weeks, with the relentless cheerfulness of someone trying to convince herself as much as anyone else. Aisha's dad had started a new job at the hospital in town, which was the reason for the move, but knowing the reason did not make the reality any easier. Aisha was twelve years old, and every person she had ever known — every friend, every teacher, every shopkeeper who knew her name — was now forty-three miles away.
+
+(3) School started on Monday. Aisha spent the weekend unpacking boxes and arranging her bedroom, placing her books in alphabetical order on the new shelves her dad had put up, slightly crooked, on Saturday afternoon. She laid out her new uniform on the chair: a maroon blazer that smelled of plastic packaging, a striped tie she had not yet learned to knot properly, and shoes so stiff they squeaked when she walked. Everything about it felt wrong — as though she was putting on a costume for a part she had not auditioned for.
+
+(4) Westfield Academy was a sprawling modern building surrounded by playing fields that seemed to stretch to the horizon. The corridors hummed with the noise of six hundred students who all appeared to know exactly where they were going. Aisha did not. She clutched her timetable like a life raft and navigated from room to room with the cautious alertness of someone crossing a minefield. By lunchtime, she had been to the wrong classroom twice, dropped her pencil case in front of the entire maths group, and been asked by three separate people whether she was lost.
+
+(5) She ate her lunch alone on a bench near the science block, unwrapping the cheese sandwich her mum had packed with a note tucked inside: "You're braver than you think. Love, Mum x." Aisha folded the note carefully and slipped it into her blazer pocket. She was not feeling particularly brave. She was feeling invisible — or worse, visible in all the wrong ways. The new girl. The one who did not know anyone. The one eating alone.
+
+(6) It was during afternoon registration that everything shifted. A girl with a mass of curly red hair and paint-stained fingers dropped into the seat beside Aisha and said, without any preamble whatsoever: "You're new. I'm Meg. Do you like art?" Before Aisha could formulate a proper answer, Meg had already launched into a breathless description of the mural she was painting for the school's reception area — a rainforest scene featuring a jaguar that, according to Meg, currently looked more like a startled cat.
+
+(7) "I need someone to do the leaves," Meg continued, as though they had known each other for years. "There are about four hundred leaves and I cannot face painting them all myself. Do you paint?" Aisha did not paint. She had never painted anything more ambitious than a birthday card. But something about Meg's completely unselfconscious enthusiasm was impossible to resist, and before she knew what was happening, Aisha had agreed to spend Tuesday lunchtime in the art room with a palette of greens and absolutely no idea what she was doing.
+
+(8) Tuesday arrived, and Aisha found herself cross-legged on a dust sheet in front of an enormous canvas, dabbing tentative spots of emerald and lime onto branches that Meg had sketched in charcoal. The art room smelled of turpentine and damp clay and something indefinably creative. Meg painted beside her, chattering constantly — about her three cats, her disastrous attempt to learn the violin, the geography teacher who apparently looked exactly like a parrot, and a hundred other things that tumbled out of her without pause or filter.
+
+(9) Aisha listened, smiled, and gradually found herself talking too. She told Meg about the flat above the launderette, about how the vibration of the spin cycle had been strangely soothing at night, about her dad's new job and her mum's relentless optimism. Meg listened with genuine interest, asked questions that showed she was actually paying attention, and did not once say anything as meaningless as "You'll settle in soon." Instead, she said: "My family moved here when I was nine. The first month was absolutely rubbish. Then I found the art room, and it sort of became my place. Maybe it can be yours too."
+
+(10) Over the following weeks, the art room became exactly that. Aisha discovered that painting leaves was surprisingly meditative — the repetitive motion of brush on canvas quietened the anxious chatter in her head. She also discovered that Meg came with a wider circle of friends: Omar, who was obsessed with chess and terrible jokes; Priya, who wrote poetry and carried a different book every day; and Lucas, who could solve a Rubik's cube in under a minute and claimed to have once eaten fourteen custard creams in a single sitting.
+
+(11) They were not the loudest group in the year, nor the most popular by whatever mysterious criteria determined such things. But they were warm, funny, and entirely unbothered by the fact that Aisha was new. She started to look forward to lunchtimes rather than dreading them. She learned to knot her tie properly. She stopped getting lost in the corridors. The maroon blazer began to feel less like a costume and more like something that actually belonged to her.
+
+(12) One evening in late October, Aisha was sitting at her desk doing homework when her mum appeared in the doorway. "Everything alright, love?" she asked, with the careful tone she had been using since the move — as though Aisha were made of something breakable. Aisha looked up from her history textbook and realised, with a small jolt of surprise, that the answer was genuinely yes. She thought of the art room, of Meg's laugh, of the mural that now featured a jaguar that looked convincingly like a jaguar. She thought of the note still folded in her blazer pocket. "Yeah, Mum," she said. "It actually is."`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where did Aisha live before moving to Linden Close?",
+        options: ["A house in the countryside", "A flat above a launderette", "A cottage near the school", "A flat above a hospital", "A house on Linden Road"],
+        correct: 1,
+        explanation: "Paragraph 1 states it was 'nothing like their old flat above the launderette on Keighley Road'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Why did Aisha's family move?",
+        options: ["To be closer to relatives", "Because their old flat was too small", "Because her dad started a new job at the hospital", "Because Aisha wanted to change schools", "Because the launderette closed down"],
+        correct: 2,
+        explanation: "Paragraph 2 states 'Aisha's dad had started a new job at the hospital in town, which was the reason for the move'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What was Meg painting for the school?",
+        options: ["A portrait of the headteacher", "A picture of the school building", "A rainforest mural with a jaguar", "A seascape for the hall", "A pattern of leaves and flowers"],
+        correct: 2,
+        explanation: "Paragraph 6 describes 'the mural she was painting for the school's reception area — a rainforest scene featuring a jaguar'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How many students attended Westfield Academy?",
+        options: ["Two hundred", "Four hundred", "Six hundred", "Eight hundred", "One thousand"],
+        correct: 2,
+        explanation: "Paragraph 4 mentions 'six hundred students who all appeared to know exactly where they were going'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why did Aisha arrange her books in alphabetical order?",
+        options: [
+          "Her mum told her to",
+          "It was a way of creating something familiar and controlled in an unfamiliar place",
+          "She needed to find a specific book quickly",
+          "The shelves were too small for any other arrangement",
+          "Her teacher had asked her to organise them for homework"
+        ],
+        correct: 1,
+        explanation: "Alphabetical ordering is a methodical, controlling action. In the context of a stressful move, it suggests Aisha was trying to create order and familiarity in her new, unsettling environment. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is an example of:",
+        options: [
+          "A non-fiction article about moving house",
+          "A fantasy story set in an imaginary school",
+          "Contemporary realistic fiction about a relatable experience",
+          "A diary entry written by a real person",
+          "An autobiography by the author"
+        ],
+        correct: 2,
+        explanation: "The story features realistic characters in a modern, everyday setting (moving house, starting a new school). It is fiction but set in the real world with relatable experiences — this is contemporary realistic fiction. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the simile 'clutched her timetable like a life raft' suggest about Aisha?",
+        options: [
+          "She was worried about drowning",
+          "The timetable was made of waterproof material",
+          "The timetable was the only thing keeping her from feeling completely lost",
+          "She was planning to go swimming after school",
+          "She held onto everything tightly because she was clumsy"
+        ],
+        correct: 2,
+        explanation: "A life raft saves someone from drowning in open water. By comparing the timetable to a life raft, the author suggests Aisha felt overwhelmed and lost, and the timetable was her only source of security and direction. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author describe Aisha's mum's cheerfulness as 'relentless'?",
+        options: [
+          "Because her mum was genuinely very happy about the move",
+          "Because her mum would not stop being cheerful, even though it felt forced",
+          "Because her mum was trying to annoy Aisha",
+          "Because her mum was always a cheerful person",
+          "Because relentless means gentle and kind"
+        ],
+        correct: 1,
+        explanation: "'Relentless' means never stopping. Combined with the detail that she was 'trying to convince herself as much as anyone else', it suggests the cheerfulness was forced and constant — her mum kept it up because she was anxious too, not because the situation genuinely felt brilliant. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What kind of person is Meg?",
+        options: [
+          "Quiet, thoughtful, and shy",
+          "Confident, creative, and friendly without being calculating",
+          "Popular, sporty, and competitive",
+          "Nervous, careful, and easily upset",
+          "Bossy, demanding, and difficult to please"
+        ],
+        correct: 1,
+        explanation: "Meg approaches Aisha 'without any preamble', talks with 'breathless' enthusiasm, has 'completely unselfconscious enthusiasm', and chatters 'without pause or filter'. She is genuinely friendly and creative, not performing friendliness for social advantage. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "Why was Meg's comment — 'The first month was absolutely rubbish' — more helpful than saying 'You'll settle in soon'?",
+        options: [
+          "Because Aisha preferred people who complained",
+          "Because it was honest and showed Meg understood how Aisha felt from experience",
+          "Because Meg was trying to make Aisha feel worse",
+          "Because 'you'll settle in soon' is grammatically incorrect",
+          "Because Meg did not believe Aisha would settle in"
+        ],
+        correct: 1,
+        explanation: "Meg's honesty about her own difficult experience ('absolutely rubbish') showed genuine empathy based on personal understanding. Empty reassurances like 'you'll settle in soon' can feel dismissive because they do not acknowledge the difficulty of the present moment. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the phrase 'as though she were made of something breakable' reveal about Aisha's mum?",
+        options: [
+          "She thought Aisha was physically unwell",
+          "She was worried that Aisha was struggling emotionally with the move",
+          "She did not want Aisha to break anything in the new house",
+          "She thought Aisha was too young to cope with change",
+          "She was angry with Aisha for not being more cheerful"
+        ],
+        correct: 1,
+        explanation: "The metaphor of being 'breakable' suggests fragility. Aisha's mum was using a 'careful tone' because she was worried the move had been emotionally hard on her daughter and she did not want to make things worse. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the description of Meg's friends tell us about the group?",
+        options: [
+          "They are the most popular students in the year",
+          "They are all very similar to each other",
+          "They are individuals with different interests who accept each other",
+          "They all love art and painting",
+          "They are all new to the school like Aisha"
+        ],
+        correct: 2,
+        explanation: "Omar likes chess, Priya writes poetry, Lucas solves Rubik's cubes — they have varied interests but are unified by being 'warm, funny, and entirely unbothered'. They accept people as they are, including Aisha being new. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'character-inference',
+        question: "How does Aisha's attitude towards the school uniform change throughout the passage, and what does this represent?",
+        options: [
+          "She hates it at first and continues to hate it — showing she never settles in",
+          "She loves it from the start — showing she is excited about the new school",
+          "It changes from feeling like a costume to feeling like it belongs to her — representing her growing sense of belonging",
+          "She stops noticing it — showing she becomes distracted by friends",
+          "She customises it to express her individuality — showing her confidence grows"
+        ],
+        correct: 2,
+        explanation: "In paragraph 3, the uniform feels like 'a costume for a part she had not auditioned for'. By paragraph 11, the blazer 'began to feel less like a costume and more like something that actually belonged to her'. This mirrors her journey from outsider to belonging. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following is NOT mentioned as something Aisha experienced on her first day at school?",
+        options: [
+          "Going to the wrong classroom",
+          "Dropping her pencil case",
+          "Being asked if she was lost",
+          "Being teased about her old school",
+          "Eating lunch alone"
+        ],
+        correct: 3,
+        explanation: "The passage mentions wrong classrooms, a dropped pencil case, being asked if she was lost (paragraph 4), and eating alone (paragraph 5). Being teased is not mentioned — the other students were not unkind, Aisha simply felt isolated. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of these statements about Meg is NOT supported by the passage?",
+        options: [
+          "She has curly red hair",
+          "She moved to the area when she was nine",
+          "She owns three cats",
+          "She is the most popular girl in the school",
+          "She had paint on her fingers when she first met Aisha"
+        ],
+        correct: 3,
+        explanation: "Paragraph 10 explicitly states the group was 'not the most popular by whatever mysterious criteria determined such things'. All other details about Meg are stated in the passage. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author include the detail about Aisha's mum's note in the sandwich?",
+        options: [
+          "To show that Aisha's mum packed unhealthy lunches",
+          "To demonstrate that Aisha could not make her own lunch",
+          "To show the quiet, everyday ways her mum was trying to support her",
+          "To explain why Aisha ate a cheese sandwich",
+          "To prove that Aisha's mum was a good cook"
+        ],
+        correct: 2,
+        explanation: "The note — 'You're braver than you think' — is a small gesture of love and encouragement. Aisha folds it carefully and keeps it, showing it means something to her. It illustrates her mum's support through action rather than words. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "What is the main theme of this passage?",
+        options: [
+          "The importance of being good at art",
+          "Why moving house is always a mistake",
+          "How new friendships can help someone find belonging in an unfamiliar place",
+          "The difficulties of being a parent",
+          "Why large schools are better than small ones"
+        ],
+        correct: 2,
+        explanation: "The passage traces Aisha's journey from isolation and dread to genuine belonging, driven primarily by Meg's friendship and the art room community. The central theme is finding connection and belonging through friendship. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'prediction',
+        question: "What is most likely to happen next in Aisha's story?",
+        options: [
+          "She will ask to move back to her old flat",
+          "She will continue to grow more confident and settled at Westfield Academy",
+          "She will fall out with Meg over the mural",
+          "She will decide to stop painting and focus on sport instead",
+          "Her family will move again to another town"
+        ],
+        correct: 1,
+        explanation: "The final paragraph shows Aisha realising she is genuinely alright. The trajectory of the story — from dread to belonging — suggests she will continue to grow in confidence and settle further into her new life. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 1, what does 'dread' mean?",
+        options: ["Excitement", "Curiosity", "Great fear or anxiety about something", "Tiredness", "Confusion"],
+        correct: 2,
+        explanation: "'Dread' means a strong feeling of fear or anxiety about something that is going to happen. Aisha was deeply worried about living in this unfamiliar place. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 6, what does 'preamble' mean in 'without any preamble whatsoever'?",
+        options: ["Permission", "Introduction or lead-up", "Nervousness", "Invitation", "Argument"],
+        correct: 1,
+        explanation: "'Preamble' means an introduction or preliminary statement. 'Without any preamble' means Meg launched straight into conversation without the usual polite introductions — showing her natural, direct friendliness. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 8, what does 'tentative' mean?",
+        options: ["Bold and confident", "Messy and careless", "Hesitant and uncertain", "Quick and skilful", "Thick and heavy"],
+        correct: 2,
+        explanation: "'Tentative' means uncertain, hesitant, or not fully committed. Aisha's 'tentative spots' of paint reflect her lack of confidence — she is trying something new and is unsure of herself. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 10, what does 'meditative' suggest about painting leaves?",
+        options: [
+          "It was boring and repetitive",
+          "It was calming and helped quiet her mind",
+          "It required deep concentration and hard thinking",
+          "It made her sleepy",
+          "It reminded her of meditation classes she had taken"
+        ],
+        correct: 1,
+        explanation: "'Meditative' means calming and contemplative, like meditation. The repetitive brushwork 'quietened the anxious chatter in her head' — painting became a soothing, peaceful activity for Aisha. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 1, what type of word is 'perpetually'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
+        correct: 3,
+        explanation: "'Perpetually' is an adverb — it modifies the adjective 'warm', telling us the flat was always warm (because of the dryers below). ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'scrambled', 'navigated', and 'unwrapping' as used in the passage?",
+        options: ["Nouns", "Verbs", "Adjectives", "Adverbs", "Prepositions"],
+        correct: 1,
+        explanation: "All three are verbs — they describe actions: 'scrambled' (paragraph not here but let's check — actually 'navigated' paragraph 4, 'unwrapping' paragraph 5). They tell us what characters did. ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 4, 'She clutched her timetable like a life raft and navigated from room to room with the cautious alertness of someone crossing a minefield.' What literary device is used twice in this sentence?",
+        options: ["Alliteration", "Personification", "Simile", "Onomatopoeia", "Rhetorical question"],
+        correct: 2,
+        explanation: "Two similes are used: 'like a life raft' (comparing the timetable to something that saves you from drowning) and 'of someone crossing a minefield' (comparing navigating school to walking through danger). Both use comparison to emphasise Aisha's anxiety. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
