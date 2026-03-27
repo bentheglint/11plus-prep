@@ -699,6 +699,365 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'deep-sea-creatures',
+    title: 'The Secret World of Deep-Sea Creatures',
+    genre: 'scientific-non-fiction',
+    passage: `(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.
+
+(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.
+
+(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.
+
+(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.
+
+(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.
+
+(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.
+
+(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.
+
+(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.
+
+(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.
+
+(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.
+
+(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: "No water, no life. No blue, no green." The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "At what depth does the deep sea begin, according to the passage?",
+        options: ["One hundred metres", "Two hundred metres", "Five hundred metres", "One thousand metres", "Two thousand metres"],
+        correct: 1,
+        explanation: "Paragraph 2 states 'The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What is 'marine snow'?",
+        options: [
+          "Frozen seawater that falls to the ocean floor",
+          "A type of white coral found in deep water",
+          "Dead organisms and waste drifting down from above",
+          "Tiny glowing creatures that look like snowflakes",
+          "Salt crystals that form in cold water"
+        ],
+        correct: 2,
+        explanation: "Paragraph 2 explains marine snow as 'a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How long can a giant squid grow?",
+        options: ["Up to five metres", "Up to eight metres", "Up to ten metres", "Up to thirteen metres", "Up to twenty metres"],
+        correct: 3,
+        explanation: "Paragraph 4 states giant squid grow 'up to thirteen metres long'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "In what year were hydrothermal vents first discovered?",
+        options: ["1969", "1977", "1985", "2004", "2019"],
+        correct: 1,
+        explanation: "Paragraph 6 states 'One of the most remarkable discoveries in deep-sea biology came in 1977'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why does the author compare our knowledge of the deep sea to our knowledge of Mars?",
+        options: [
+          "To prove that space exploration is more important",
+          "To show how surprisingly little we know about our own oceans",
+          "To suggest we should stop exploring space",
+          "To explain why deep-sea creatures look alien",
+          "To argue that Mars might have oceans too"
+        ],
+        correct: 1,
+        explanation: "The comparison in paragraph 1 — 'We know more about the surface of Mars than we do about the bottom of our own seas' — highlights how unexplored the deep ocean remains, which is surprising given that it is on our own planet. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage would most likely be found in:",
+        options: [
+          "A children's adventure novel",
+          "A recipe book about seafood",
+          "A popular science magazine or book",
+          "A fisherman's guide to the ocean",
+          "A poetry collection about the sea"
+        ],
+        correct: 2,
+        explanation: "The passage presents scientific information in an engaging, accessible way with vivid descriptions — this is the style of popular science writing for a general audience. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why is food 'desperately scarce' in the deep ocean?",
+        options: [
+          "There are too many predators competing for food",
+          "The cold temperatures prevent animals from eating",
+          "Without sunlight, no plants can grow to form the base of a food chain",
+          "Pollution has killed most of the organisms",
+          "The pressure makes it impossible for animals to digest food"
+        ],
+        correct: 2,
+        explanation: "Paragraph 2 explains that 'Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs'. Since plants normally form the base of ocean food chains, their absence means very little food is available. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why was the discovery of life at hydrothermal vents described as a 'revelation'?",
+        options: [
+          "Because the vents were much hotter than expected",
+          "Because it proved that life could exist without sunlight",
+          "Because the creatures found there were extremely beautiful",
+          "Because scientists had predicted exactly what they would find",
+          "Because it showed that the deep ocean was warmer than thought"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 states 'This was a revelation: life did not require the sun to exist.' Before this discovery, scientists assumed all life ultimately depended on sunlight through photosynthesis. Finding organisms powered by chemosynthesis overturned that assumption. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author mention the plastic bag found at the bottom of the Mariana Trench?",
+        options: [
+          "To explain what materials can survive deep-sea pressure",
+          "To show that even the most remote places are affected by human pollution",
+          "To prove that the expedition actually reached the bottom",
+          "To suggest that plastic is useful for deep-sea research",
+          "To describe what the ocean floor looks like"
+        ],
+        correct: 1,
+        explanation: "The author calls it 'a sobering reminder that human pollution has reached even the most remote corners of the planet'. The detail is included to highlight the global scale of pollution, not to describe the seabed itself. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How would the scientists aboard Alvin most likely have felt when they first saw the hydrothermal vents?",
+        options: [
+          "Frightened by the extreme heat",
+          "Disappointed that the vents were not what they expected",
+          "Astonished because nothing like this had been seen before",
+          "Bored because they had expected to find vents",
+          "Angry that previous scientists had missed them"
+        ],
+        correct: 2,
+        explanation: "Paragraph 6 says they 'stumbled upon' the vents and that the discovery 'overturned a fundamental assumption of biology'. The unexpected nature of the find and its significance suggest astonishment. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What is the connection between deep-sea vents on Earth and Jupiter's moon Europa?",
+        options: [
+          "Both have the same species of bacteria",
+          "Both are equally well-explored by scientists",
+          "Both might have conditions that could support life",
+          "Both were discovered in the same year",
+          "Both are heated by the sun"
+        ],
+        correct: 2,
+        explanation: "Paragraph 8 explains that if life can thrive at hostile hydrothermal vents on Earth, then Europa's ocean (which might also have vents) could potentially harbour life too. The connection is the possibility of similar conditions supporting life. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What is the attitude of environmentalists towards deep-sea mining, as described in the passage?",
+        options: [
+          "They fully support it as long as safety rules are followed",
+          "They are cautiously optimistic about its potential",
+          "They are strongly opposed because of the environmental damage",
+          "They believe it should only happen in shallow waters",
+          "They are not mentioned in the passage"
+        ],
+        correct: 2,
+        explanation: "Paragraph 10 states environmentalists 'warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover'. This is clearly strong opposition. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'inference',
+        question: "What does the passage suggest about the relationship between deep-sea research and medicine?",
+        options: [
+          "Deep-sea research has no practical applications outside biology",
+          "Medical researchers have been working in the deep sea for decades",
+          "Organisms from extreme environments may provide new medical treatments",
+          "Deep-sea mining is necessary to fund medical research",
+          "Doctors regularly prescribe medicines made from deep-sea bacteria"
+        ],
+        correct: 2,
+        explanation: "Paragraph 9 describes compounds from deep-sea sponges being 'investigated as potential treatments for cancer and antibiotic-resistant infections'. The research is ongoing and promising, but not yet producing regular prescriptions. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following adaptations is NOT mentioned in the passage?",
+        options: [
+          "Producing light through bioluminescence",
+          "Having extremely large eyes",
+          "Changing colour to blend with surroundings",
+          "Using chemical energy instead of sunlight for food",
+          "Surviving extreme water pressure"
+        ],
+        correct: 2,
+        explanation: "The passage mentions bioluminescence (paragraph 3), large eyes in giant squid (paragraph 4), chemosynthesis (paragraph 7), and survival under immense pressure (paragraph 5). Changing colour for camouflage is not mentioned. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "According to the passage, which of these threats to the deep sea is NOT specifically mentioned?",
+        options: [
+          "Deep-sea mining",
+          "Overfishing",
+          "Rising water temperatures from climate change",
+          "Noise pollution from shipping",
+          "Plastic pollution"
+        ],
+        correct: 3,
+        explanation: "Paragraph 10 mentions deep-sea mining, overfishing, pollution, and climate change. Paragraph 5 mentions plastic pollution. Noise pollution from shipping is not mentioned anywhere in the passage. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author describe the anglerfish's hunting method in detail?",
+        options: [
+          "To frighten the reader about deep-sea creatures",
+          "To give a vivid example of how bioluminescence is used for survival",
+          "To explain why the anglerfish is the most dangerous deep-sea predator",
+          "To compare the anglerfish to creatures on land",
+          "To show that the anglerfish is the most common deep-sea fish"
+        ],
+        correct: 1,
+        explanation: "The anglerfish example in paragraph 3 illustrates the broader point about bioluminescence — the ability to produce light. The author uses this specific, memorable example to make the abstract concept vivid and concrete. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "What is the main message of the final paragraph?",
+        options: [
+          "That deep-sea creatures are more dangerous than we thought",
+          "That we should be inspired by the resilience of life and motivated to protect the deep ocean",
+          "That marine biologists are the most important scientists",
+          "That we will never fully understand the deep sea",
+          "That life on Earth began in the deep ocean"
+        ],
+        correct: 1,
+        explanation: "The final paragraph combines wonder ('far more resilient, far more inventive, and far more mysterious') with a conservation message (Sylvia Earle's quote about protecting water). It aims to inspire both awe and a sense of responsibility. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the opening paragraph have on the reader?",
+        options: [
+          "It creates a relaxing, peaceful atmosphere",
+          "It makes the reader feel curious by describing an alien-like world on our own planet",
+          "It confuses the reader with too many scientific terms",
+          "It makes the reader feel guilty about pollution",
+          "It bores the reader with too many statistics"
+        ],
+        correct: 1,
+        explanation: "The opening invites the reader to 'Imagine a world' with dramatic conditions (darkness, crushing pressure, freezing temperatures), then reveals this world is on Earth. This creates curiosity and wonder about what lives in such an extreme environment. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 3, what does 'bioluminescence' mean?",
+        options: ["The ability to see in darkness", "The ability to produce light from within the body", "The ability to detect heat from other creatures", "The ability to change shape underwater", "The ability to glow when touched"],
+        correct: 1,
+        explanation: "The passage defines bioluminescence as 'the ability to produce light from within their own bodies'. The prefix 'bio-' means life and 'luminescence' means light production. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 4, what does 'captivated' mean?",
+        options: ["Frightened", "Fascinated and held the attention of", "Captured and imprisoned", "Confused and puzzled", "Bored and disappointed"],
+        correct: 1,
+        explanation: "'Captivated' means to have attracted and held someone's interest or attention. The giant squid has fascinated humans for centuries through legends and stories. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 5, what does the word 'sobering' suggest about the discovery of the plastic bag?",
+        options: [
+          "It was exciting and unexpected",
+          "It made people think seriously about a worrying issue",
+          "It helped scientists understand deep-sea pressure",
+          "It proved that plastic is very strong",
+          "It was amusing but not important"
+        ],
+        correct: 1,
+        explanation: "'Sobering' means making someone feel serious or thoughtful, often about something concerning. Finding a plastic bag at the deepest point on Earth forced people to confront the reality of how far pollution has spread. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 6, what does 'overturned a fundamental assumption' mean?",
+        options: [
+          "Confirmed what scientists already believed",
+          "Proved a basic, widely-held belief to be wrong",
+          "Created a new type of scientific equipment",
+          "Caused an argument between different scientists",
+          "Made a discovery that was quickly forgotten"
+        ],
+        correct: 1,
+        explanation: "To 'overturn' an assumption means to prove it wrong. A 'fundamental assumption' is a basic belief that underpins other thinking. Scientists had assumed all life needed sunlight — the vent discovery proved this wrong. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 1, what type of word is 'absolute'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Pronoun"],
+        correct: 2,
+        explanation: "'Absolute' is an adjective describing the noun 'darkness' — it tells us the darkness is total and complete. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'thriving', 'rotating', and 'glowing' as used in the passage?",
+        options: ["Nouns", "Verbs in past tense", "Adjectives (present participles used as adjectives)", "Adverbs", "Prepositions"],
+        correct: 2,
+        explanation: "Although these words end in '-ing' (which usually indicates a verb), in the passage they describe nouns: 'thriving ecosystem' (paragraph 7), 'rotating cutting head' (paragraph not in this passage — 'glowing lure' paragraph 3). They function as adjectives. This is a classic GL trap — '-ing' words are not always verbs. ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In the sentence 'Yet even here, life persists' (paragraph 5), which word is a conjunction?",
+        options: ["Yet", "even", "here", "life", "persists"],
+        correct: 0,
+        explanation: "'Yet' functions as a conjunction here, linking the previous idea (the extreme conditions) with the contrasting fact that life still exists. It means 'but' or 'nevertheless'. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
