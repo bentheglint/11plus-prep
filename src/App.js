@@ -19,6 +19,9 @@ import TopicsScreen from './screens/TopicsScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import useMockTest from './hooks/useMockTest';
+import useUserData from './hooks/useUserData';
+import useMastery from './hooks/useMastery';
+import useStreaksAndPP from './hooks/useStreaksAndPP';
 import mathsData from './questionData/mathsData';
 import englishData from './questionData/englishData';
 import vrData from './questionData/vrData';
@@ -48,6 +51,23 @@ const questionData = {
 };
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(() => {
+    return localStorage.getItem('current-user') || '';
+  });
+
+  // Per-user data isolation — all progress data keyed by user name
+  const userData = useUserData(currentUser);
+  const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
+
+  // Mastery scoring engine (computed from question results)
+  const mastery = useMastery(questionResults, practiceLog, userData.mockTestHistory);
+
+  // Streaks and Prep Points
+  const streaksAndPP = useStreaksAndPP(
+    userData.streakData, userData.prepPointsData,
+    userData.saveStreakData, userData.savePrepPoints
+  );
+
   const mockTest = useMockTest();
   const [currentView, setCurrentView] = useState('home');
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -63,28 +83,23 @@ function App() {
   const [isAiThinking, setIsAiThinking] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = React.useRef(null);
-  const [quizHistory, setQuizHistory] = useState([]);
+  const questionStartTime = React.useRef(Date.now());
+  const quizSessionId = React.useRef(Date.now());
   const [quizMode, setQuizMode] = useState(null);
   const [returnToSpeedReview, setReturnToSpeedReview] = useState(false);
   const [speedReviewTab, setSpeedReviewTab] = useState('lessons');
   const [speedReviewMapTopic, setSpeedReviewMapTopic] = useState('');
   const [speedReviewScrollY, setSpeedReviewScrollY] = useState(0);
   const [quizQuestions, setQuizQuestions] = useState([]);
-  const [seenQuestions, setSeenQuestions] = useState({});
-  const [topicPerformance, setTopicPerformance] = useState({});
   const [questionFeedback, setQuestionFeedback] = useState([]);
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [feedbackText, setFeedbackText] = useState('');
-  const [lessonHistory, setLessonHistory] = useState({});
   const [forcedLessonResult, setForcedLessonResult] = useState(null);
-  const [lessonFromQuiz, setLessonFromQuiz] = useState(null); // tracks quiz state to return to after "Find Me a Lesson"
-  const [showDidItHelp, setShowDidItHelp] = useState(false); // "Did that help?" screen after lesson
-  const [questionMappings, setQuestionMappings] = useState({}); // loaded mapping files
+  const [lessonFromQuiz, setLessonFromQuiz] = useState(null);
+  const [showDidItHelp, setShowDidItHelp] = useState(false);
+  const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem('tested-subconcepts')) || {}; } catch { return {}; }
-  });
-  const [currentUser, setCurrentUser] = useState(() => {
-    return localStorage.getItem('current-user') || '';
   });
 
   // Keep Dev Review panel context updated
@@ -119,26 +134,11 @@ function App() {
     }
   };
 
+  // Question feedback (not per-user — shared dev data)
   useEffect(() => {
-    const saved = localStorage.getItem('quiz-history');
-    if (saved) {
-      setQuizHistory(JSON.parse(saved));
-    }
-    const savedSeen = localStorage.getItem('seen-questions');
-    if (savedSeen) {
-      setSeenQuestions(JSON.parse(savedSeen));
-    }
-    const savedPerf = localStorage.getItem('topic-performance');
-    if (savedPerf) {
-      setTopicPerformance(JSON.parse(savedPerf));
-    }
     const savedFeedback = localStorage.getItem('question-feedback');
     if (savedFeedback) {
       setQuestionFeedback(JSON.parse(savedFeedback));
-    }
-    const savedLessonHistory = localStorage.getItem('lesson-history');
-    if (savedLessonHistory) {
-      setLessonHistory(JSON.parse(savedLessonHistory));
     }
     // Load question-to-lesson mapping files for "Find Me a Lesson" feature
     Promise.all([
@@ -160,10 +160,7 @@ function App() {
       total,
       percentage: Math.round((score / total) * 100)
     };
-
-    const updatedHistory = [...quizHistory, newResult];
-    setQuizHistory(updatedHistory);
-    localStorage.setItem('quiz-history', JSON.stringify(updatedHistory));
+    userData.saveQuizResult(newResult);
   };
 
   const handleSubjectSelect = (subject) => {
@@ -177,6 +174,8 @@ function App() {
     setQuizMode('daily');
     setCurrentQuestionIndex(0);
     setAnswers([]);
+    questionStartTime.current = Date.now();
+    quizSessionId.current = Date.now();
     setSelectedAnswer(null);
     setSelectedPair([]);
     setShowFeedback(false);
@@ -192,6 +191,8 @@ function App() {
     setQuizMode('focused');
     setCurrentQuestionIndex(0);
     setAnswers([]);
+    questionStartTime.current = Date.now();
+    quizSessionId.current = Date.now();
     setSelectedAnswer(null);
     setSelectedPair([]);
     setShowFeedback(false);
@@ -260,13 +261,17 @@ function App() {
       isCorrect = selectedAnswer === currentQuestion.correct;
     }
 
+    const timeSpentMs = Date.now() - questionStartTime.current;
     setAnswers([...answers, {
       questionId: currentQuestion.id,
-      correct: isCorrect
+      correct: isCorrect,
+      timeSpentMs,
     }]);
   };
 
   const handleNextQuestion = () => {
+    // Reset timer for next question
+    questionStartTime.current = Date.now();
     if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
@@ -287,6 +292,7 @@ function App() {
       const correctCount = answers.filter(a => a.correct).length;
       markQuestionsAsSeen(quizQuestions);
       updateTopicPerformance(quizQuestions, answers);
+      recordQuizResults(quizQuestions, answers);
       const topicLabel = quizMode === 'daily' ? 'Daily Learning' : quizQuestions[0].topicName;
       saveQuizResult(selectedSubject, topicLabel, correctCount, quizQuestions.length);
       setCurrentView('results');
@@ -664,8 +670,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         updatedSeen[topicKey].push(question.id);
       }
     });
-    setSeenQuestions(updatedSeen);
-    localStorage.setItem('seen-questions', JSON.stringify(updatedSeen));
+    userData.saveSeenQuestions(updatedSeen);
   };
 
   const updateTopicPerformance = (sessionQuestions, sessionAnswers) => {
@@ -676,8 +681,53 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       updated[key].total += 1;
       if (sessionAnswers[i]?.correct) updated[key].correct += 1;
     });
-    setTopicPerformance(updated);
-    localStorage.setItem('topic-performance', JSON.stringify(updated));
+    userData.saveTopicPerformance(updated);
+  };
+
+  // Save per-question results and update streaks/PP after quiz completion
+  const recordQuizResults = (sessionQuestions, sessionAnswers) => {
+    const sessionId = quizSessionId.current;
+    let correctCount = 0;
+
+    // Save individual question results
+    sessionQuestions.forEach((q, i) => {
+      const isCorrect = sessionAnswers[i]?.correct || false;
+      if (isCorrect) correctCount++;
+      userData.saveQuestionResult({
+        id: Date.now() + i,
+        date: new Date().toISOString(),
+        questionId: q.question.id,
+        topicKey: q.topicKey,
+        subject: selectedSubject,
+        difficulty: q.question.difficulty || 2,
+        correct: isCorrect,
+        timeSpentMs: sessionAnswers[i]?.timeSpentMs || 0,
+        mode: quizMode || 'focused',
+        sessionId,
+      });
+    });
+
+    // Save practice session log
+    userData.savePracticeSession({
+      id: sessionId,
+      date: new Date().toISOString().split('T')[0],
+      mode: quizMode || 'focused',
+      subject: selectedSubject,
+      topicKey: quizMode === 'daily' ? null : selectedTopic,
+      questionsAttempted: sessionQuestions.length,
+      questionsCorrect: correctCount,
+    });
+
+    // Update streak (1 completed quiz counts)
+    streaksAndPP.recordQuizCompletion();
+
+    // Award Prep Points
+    const percentage = Math.round((correctCount / sessionQuestions.length) * 100);
+    const isFirstTime = selectedTopic && !topicPerformance[selectedTopic];
+    const ppCalc = streaksAndPP.calculateQuizPP(
+      sessionQuestions.length, correctCount, percentage, isFirstTime
+    );
+    streaksAndPP.awardPP(ppCalc.total, 'Quiz completed');
   };
 
   // ── Question Preview Mode ──
@@ -932,8 +982,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
             updated[selectedTopic].shown.push(lessonRecord);
             updated[selectedTopic].lastSubConcept = lessonRecord.subConcept;
             updated[selectedTopic].lastTemplateType = lessonRecord.templateType;
-            setLessonHistory(updated);
-            localStorage.setItem('lesson-history', JSON.stringify(updated));
+            userData.saveLessonHistory(updated);
           }
           setForcedLessonResult(null);
           // If launched from quiz "Find Me a Lesson", show "Did that help?" screen
