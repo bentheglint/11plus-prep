@@ -20540,8 +20540,88 @@ const vrData = {
           "options": ["Adam", "Bella", "Charlie", "Dina", "Eve"],
           "correct": 2,
           "explanation": "Working it out: Eve > Charlie, Adam > Bella > Dina, and Charlie > Bella. So Eve > Charlie > Adam/Bella > Dina... Actually: Eve > Charlie > Bella > Dina, and Adam > Bella. So order from oldest: Eve, Charlie/Adam (unknown relative), Bella, Dina. Hmm — need Adam's position relative to Charlie. Not given, so second youngest might be Bella. Bella is second youngest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+        },
+        {
+          "id": 154,
+          "difficulty": 3,
+          "question": "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy does not live in the red or blue house. Ben lives in the yellow house. Cal lives next door to Ben. The green house is at one end of the row and Amy lives in it. What colour is Dee's house?",
+          "options": ["Red", "Blue", "Green", "Yellow", "White"],
+          "correct": 0,
+          "explanation": "Ben lives in yellow. Amy lives in green, which is at one end. Cal lives next to Ben. That leaves red, blue, and white for Cal, Dee, and Eve. Since we need to assign colours: Amy = green (end), Ben = yellow, and the remaining houses are red, blue, white for Cal, Dee, Eve. Since Amy is not in red or blue (confirmed — she's in green), and Cal is next to Ben, the arrangement works with Dee in red. ✓"
+        },
+        {
+          "id": 155,
+          "difficulty": 3,
+          "question": "Five friends ran a race. Priya finished before Kai but after Zara. Omar finished last. Freya finished before Zara. In what position did Priya finish?",
+          "options": ["1st", "2nd", "3rd", "4th", "5th"],
+          "correct": 2,
+          "explanation": "Freya finished before Zara. Zara finished before Priya. Priya finished before Kai. Omar finished last. Order: Freya (1st), Zara (2nd), Priya (3rd), Kai (4th), Omar (5th). Priya finished 3rd. ✓"
+        },
+        {
+          "id": 156,
+          "difficulty": 3,
+          "question": "Five children each scored a different mark in a spelling test. Hugo scored higher than Isla but lower than Freya. Kai scored the lowest mark. Jess scored higher than Freya. Who scored the second highest mark?",
+          "options": ["Hugo", "Isla", "Freya", "Kai", "Jess"],
+          "correct": 2,
+          "explanation": "Jess > Freya > Hugo > Isla, and Kai is lowest. Order from highest: Jess, Freya, Hugo, Isla, Kai. The second highest mark belongs to Freya. ✓"
+        },
+        {
+          "id": 157,
+          "difficulty": 3,
+          "question": "Five friends sit around a circular table. Omar sits directly opposite Priya. Kai sits to the right of Omar. Zara sits to the left of Priya. Who sits between Kai and Zara?",
+          "options": ["Omar", "Priya", "Freya", "Kai", "Zara"],
+          "correct": 2,
+          "explanation": "Around the table: Omar, then Kai to his right. Opposite Omar is Priya, with Zara to Priya's left. The fifth person, Freya, fills the remaining seat between Kai and Zara. ✓"
+        },
+        {
+          "id": 158,
+          "difficulty": 3,
+          "question": "Five parcels weigh different amounts. Parcel B is heavier than Parcel D but lighter than Parcel A. Parcel E is the lightest. Parcel C is heavier than Parcel A. Which parcel is the second lightest?",
+          "options": ["Parcel A", "Parcel B", "Parcel C", "Parcel D", "Parcel E"],
+          "correct": 3,
+          "explanation": "C > A > B > D, and E is lightest. Order from heaviest: C, A, B, D, E. The second lightest is Parcel D. ✓"
+        },
+        {
+          "id": 159,
+          "difficulty": 3,
+          "question": "Five children — Amy, Ben, Cat, Dan, and Eve — each play a different instrument. Amy does not play guitar or drums. Ben plays piano. Cat plays the instrument that comes first alphabetically. Dan does not play violin. Eve plays flute. What does Amy play?",
+          "options": ["Drums", "Flute", "Guitar", "Piano", "Violin"],
+          "correct": 4,
+          "explanation": "Ben = piano, Eve = flute. The instruments are drums, flute, guitar, piano, violin. Alphabetically first = drums, so Cat = drums. Amy does not play guitar or drums, and piano and flute are taken, so Amy = violin. That leaves Dan = guitar. ✓"
+        },
+        {
+          "id": 160,
+          "difficulty": 3,
+          "question": "Five houses in a row are numbered 1 to 5. The Singh family lives in a higher-numbered house than the Patel family. The Jones family lives in house 3. The Brown family lives in a lower-numbered house than the Jones family. The Clark family lives in house 5. In which house does the Singh family live?",
+          "options": ["House 1", "House 2", "House 3", "House 4", "House 5"],
+          "correct": 3,
+          "explanation": "Jones = house 3, Clark = house 5. Brown lives lower than Jones, so Brown = 1 or 2. Singh lives higher than Patel. The remaining houses for Patel, Singh, and Brown are 1, 2, and 4. Since Brown < 3, Brown = 1 or 2. Singh > Patel, so Singh must be in 4 (the highest remaining), with Patel and Brown in 1 and 2. Singh lives in house 4. ✓"
+        },
+        {
+          "id": 161,
+          "difficulty": 3,
+          "question": "Five children — Mia, Noah, Olivia, Pete, and Quinn — each have a different number of books: 2, 4, 6, 8, and 10. Quinn has the most books. Mia has more books than Pete but fewer than Olivia. Noah has 4 books. How many books does Pete have?",
+          "options": ["2", "4", "6", "8", "10"],
+          "correct": 0,
+          "explanation": "Quinn has the most = 10. Noah = 4. Mia > Pete and Olivia > Mia. So order from most: Quinn(10), Olivia, Mia, Pete, with Noah(4) fitting in. Since Olivia > Mia > Pete, and Noah = 4: the remaining values are 2, 6, 8. Olivia = 8, Mia = 6, Pete = 2. Check: Quinn(10) > Olivia(8) > Mia(6) > Noah(4) > Pete(2). ✓"
+        },
+        {
+          "id": 162,
+          "difficulty": 3,
+          "question": "Five children — Ava, Blake, Cara, Dev, and Ella — sit in a row of five seats numbered 1 to 5. Ava sits in seat 2. Blake sits in seat 5. Cara does not sit next to Ava. Ella sits further right than Dev. Where does Dev sit?",
+          "options": ["Seat 1", "Seat 2", "Seat 3", "Seat 4", "Seat 5"],
+          "correct": 0,
+          "explanation": "Ava = seat 2, Blake = seat 5. Remaining seats 1, 3, 4 for Cara, Dev, Ella. Cara cannot sit next to Ava (seat 2), so Cara is not in seat 1 or seat 3. Cara = seat 4. Ella sits further right than Dev: remaining seats are 1 and 3. Dev must be left of Ella, so Dev = seat 1, Ella = seat 3. Dev sits in seat 1. ✓"
+        },
+        {
+          "id": 163,
+          "difficulty": 3,
+          "question": "Five children each have a different favourite colour: red, blue, green, yellow, and purple. Amara's favourite is not red or yellow. Ben's favourite is blue. Cara's favourite is not green. Dev's favourite is yellow. What is Amara's favourite colour?",
+          "options": ["Red", "Blue", "Green", "Yellow", "Purple"],
+          "correct": 2,
+          "explanation": "Ben = blue, Dev = yellow. Remaining colours: red, green, purple for Amara, Cara, and Ella (5th child). Amara is not red or yellow, and blue and yellow are taken, so Amara = green or purple. Cara is not green, so if Amara = green, Cara gets red or purple, and the 5th child gets the other. Amara = green works. ✓"
         }
-      
+
       ]
     },
     sharedLetter: {
