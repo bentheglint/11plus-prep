@@ -350,6 +350,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'channel-tunnel',
+    title: 'The Building of the Channel Tunnel',
+    genre: 'historical-non-fiction',
+    passage: `(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.
+
+(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.
+
+(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.
+
+(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.
+
+(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.
+
+(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.
+
+(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.
+
+(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was "the most emotional moment of my life."
+
+(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.
+
+(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.
+
+(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.
+
+(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: "We have not just connected two countries. We have connected two ways of life."`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How wide is the English Channel at its narrowest point?",
+        options: ["Twenty-four kilometres", "Thirty kilometres", "Thirty-four kilometres", "Thirty-seven kilometres", "Fifty kilometres"],
+        correct: 2,
+        explanation: "Paragraph 1 states the Channel is 'Just thirty-four kilometres wide at its narrowest point'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What type of rock was the tunnel bored through?",
+        options: ["Granite", "Sandstone", "Limestone", "Chalk marl", "Clay"],
+        correct: 3,
+        explanation: "Paragraph 1 describes 'a layer of chalk marl — a soft, waterproof rock' beneath the seabed. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How many parallel tunnels were built?",
+        options: ["One", "Two", "Three", "Four", "Five"],
+        correct: 2,
+        explanation: "Paragraph 4 states 'Workers would need to bore three parallel tunnels through the chalk marl'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Who shook hands through the breakthrough hole?",
+        options: [
+          "The British and French Prime Ministers",
+          "Albert Mathieu and Napoleon Bonaparte",
+          "Graham Fagg and Philippe Cozette",
+          "The chief engineers from both countries",
+          "The directors of Eurotunnel"
+        ],
+        correct: 2,
+        explanation: "Paragraph 8 states 'Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why was the British government not enthusiastic about Napoleon's tunnel idea?",
+        options: [
+          "The technology did not exist in 1802",
+          "They feared it could be used for a French invasion",
+          "The cost was too high for the British economy",
+          "The rock beneath the Channel was too hard",
+          "Britain and France were close allies at the time"
+        ],
+        correct: 1,
+        explanation: "Paragraph 2 mentions that Napoleon imagined 'his soldiers marching beneath the sea to invade England' — the British would naturally oppose a tunnel that could serve as an invasion route. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A persuasive argument for building more tunnels",
+          "A fictional story set during the tunnel construction",
+          "An informative account of a major engineering project",
+          "A scientific explanation of how tunnels are built",
+          "A news report from the day the tunnel opened"
+        ],
+        correct: 2,
+        explanation: "The passage gives a factual, chronological account of the Channel Tunnel project — its history, construction, problems, and legacy. This is informative non-fiction. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author mention that the project was 'privately funded'?",
+        options: [
+          "To show that the government did not care about the project",
+          "To explain why the tunnel was built so cheaply",
+          "To highlight that the financial risk was carried by companies, not taxpayers",
+          "To criticise the government for not contributing",
+          "To prove that private companies are better than governments at building things"
+        ],
+        correct: 2,
+        explanation: "Paragraph 3 states it would be 'privately funded — no taxpayer money'. The author draws attention to this because it meant the financial risk (and later the massive cost overruns) fell on private investors, not the public. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What made the breakthrough on 1st December 1990 so remarkable?",
+        options: [
+          "It happened ahead of schedule",
+          "The two tunnels met with only centimetres of error after boring over 40 kilometres in total",
+          "It was the first tunnel ever bored beneath a sea",
+          "The workers had to dig through unexpectedly hard rock",
+          "The breakthrough happened at exactly midnight"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 emphasises the 'astonishing precision' — the gap was 'just a few centimetres' despite each team boring 'over twenty kilometres through pitch darkness'. The accuracy over such a vast distance is what made it remarkable. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the passage suggest about working conditions inside the tunnel during construction?",
+        options: [
+          "They were comfortable and well-ventilated",
+          "They were unpleasant and physically demanding",
+          "They were dangerous but well-paid",
+          "They were similar to working in an office",
+          "They were only difficult on the French side"
+        ],
+        correct: 1,
+        explanation: "Paragraph 6 describes temperatures of thirty degrees, air 'thick with chalk dust', 'relentless' noise, and workers needing ear defenders and filtered masks. These conditions were clearly unpleasant and demanding. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How did Graham Fagg feel about the breakthrough moment?",
+        options: [
+          "He was relieved that the difficult work was over",
+          "He was deeply moved by the experience",
+          "He was mainly proud of the engineering achievement",
+          "He was disappointed that it took so long",
+          "He was surprised that the tunnels actually met"
+        ],
+        correct: 1,
+        explanation: "Paragraph 8 quotes Fagg saying it was 'the most emotional moment of my life'. The word 'emotional' suggests he was deeply moved, not just relieved or proud. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the phrase 'white elephant' mean in paragraph 9?",
+        options: [
+          "A rare and valuable treasure",
+          "An expensive project that turns out to be useless or wasteful",
+          "A construction project that takes too long",
+          "A symbol of friendship between nations",
+          "A very large building or structure"
+        ],
+        correct: 1,
+        explanation: "A 'white elephant' is an idiom meaning something expensive to maintain but of little practical use. Critics used this term because they believed the tunnel would cost too much and not be worthwhile. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How would the critics mentioned in paragraph 9 have felt when the cost doubled?",
+        options: [
+          "Embarrassed that they had been wrong",
+          "Confused about why costs had risen",
+          "Satisfied that their warnings had been justified",
+          "Indifferent because it did not affect them",
+          "Sympathetic towards the construction workers"
+        ],
+        correct: 2,
+        explanation: "The passage says critics 'felt vindicated' — meaning they felt their earlier warnings had been proven correct by the cost overruns and problems. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'inference',
+        question: "Why does the author describe the TBMs as 'mechanical moles'?",
+        options: [
+          "Because they were small and furry",
+          "Because they burrowed through the ground like the animal does",
+          "Because they were designed by a scientist called Mole",
+          "Because they were used to search for underground creatures",
+          "Because they worked best in darkness"
+        ],
+        correct: 1,
+        explanation: "The comparison to moles is a metaphor — just as moles dig through earth underground, the TBMs bored through chalk beneath the seabed. The author uses this image to help the reader visualise what the machines did. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following problems is NOT mentioned as affecting the project?",
+        options: [
+          "Flooding",
+          "Equipment breakdowns",
+          "A fire that closed one tunnel",
+          "Workers going on strike over safety concerns",
+          "Labour disputes"
+        ],
+        correct: 3,
+        explanation: "Paragraph 9 mentions flooding, equipment breakdowns, labour disputes, and a fire. Workers striking specifically over safety concerns is not mentioned — 'labour disputes' is a broader term that could cover many issues. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "According to the passage, which of the following statements is NOT true?",
+        options: [
+          "The tunnel was originally estimated to cost £4.65 billion",
+          "Over fifteen thousand workers were employed at peak construction",
+          "The Eurostar can now travel from London to Paris in under two hours",
+          "The Channel Tunnel is currently the longest undersea tunnel in the world",
+          "Around a quarter of UK-EU trade passes through the tunnel"
+        ],
+        correct: 3,
+        explanation: "Paragraph 11 states that it was the longest undersea tunnel 'until Japan's Seikan Tunnel reclaimed that record' — so it is no longer the longest. All other statements are supported by the passage. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author begin the passage by describing the Channel as defeating armies and wrecking ships?",
+        options: [
+          "To explain why the Channel is dangerous for boats",
+          "To give a history of naval warfare in the Channel",
+          "To establish how formidable the barrier was, making the tunnel achievement more impressive",
+          "To argue that a bridge would have been a better solution",
+          "To show that the tunnel was unnecessary because boats already crossed it"
+        ],
+        correct: 2,
+        explanation: "By emphasising how the Channel had 'defeated armies' and 'frustrated engineers' for centuries, the author makes the eventual success of the tunnel project seem all the more impressive. It sets up the scale of the achievement. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "The author presents a balanced view of the Channel Tunnel project by:",
+        options: [
+          "Only describing the positive aspects of the tunnel",
+          "Interviewing workers from both the British and French sides",
+          "Acknowledging both the remarkable achievement and the serious problems",
+          "Comparing the tunnel to other engineering projects around the world",
+          "Letting the reader decide whether the tunnel was a good idea"
+        ],
+        correct: 2,
+        explanation: "The passage celebrates the engineering feat and international cooperation while also honestly describing the cost overruns, delays, and near-bankruptcy. This balanced approach is evident across paragraphs 9-12. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'prediction',
+        question: "Based on the information in the passage, which statement is most likely to be true in the future?",
+        options: [
+          "The Channel Tunnel will be replaced by a bridge",
+          "The tunnel will continue to be an important transport and trade link",
+          "Eurotunnel will build a fourth tunnel beneath the Channel",
+          "Passenger numbers will decline as people prefer to fly",
+          "The tunnel will be closed permanently due to rising sea levels"
+        ],
+        correct: 1,
+        explanation: "The passage describes over twenty million annual passengers, growing freight volumes, and the tunnel carrying a quarter of all UK-EU trade. These facts suggest it will remain an important link. There is no evidence in the passage for any of the other options. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 2, what does the word 'consortium' mean?",
+        options: ["A government department", "A group of companies working together", "A type of construction machine", "A financial penalty", "A legal agreement"],
+        correct: 1,
+        explanation: "A 'consortium' is a group of organisations that join together for a shared purpose. Here, Eurotunnel was a consortium of 'construction companies and banks' working together to build the tunnel. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 7, what does 'nerve-wracking' mean?",
+        options: ["Physically exhausting", "Extremely boring", "Causing great anxiety or tension", "Surprisingly easy", "Dangerously cold"],
+        correct: 2,
+        explanation: "'Nerve-wracking' means causing great stress or anxiety. The breakthrough moment was tense because tiny errors in alignment over such a vast distance could have meant the tunnels missed each other. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 9, what does 'vindicated' mean?",
+        options: ["Punished for their views", "Proved right after being doubted", "Made to feel guilty", "Given an official apology", "Forced to change their opinion"],
+        correct: 1,
+        explanation: "'Vindicated' means shown to have been right all along. The critics who had warned the project would be too expensive felt vindicated when costs more than doubled. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 12, what does 'ingenuity' mean?",
+        options: ["Physical strength", "Cleverness and inventiveness", "Patience and endurance", "Courage and bravery", "Wealth and resources"],
+        correct: 1,
+        explanation: "'Ingenuity' means the quality of being clever, original, and inventive. The author uses it to describe the creative problem-solving required to build the tunnel. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 5, what type of word is 'gnawed'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
+        correct: 1,
+        explanation: "'Gnawed' is a verb — it describes the action of the cutting head eating through the chalk. The author uses this word (usually associated with animals chewing) to bring the machine to life. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'staggering', 'relentless', and 'astonishing' as used in the passage?",
+        options: ["Nouns", "Verbs", "Adjectives", "Adverbs", "Conjunctions"],
+        correct: 2,
+        explanation: "All three are adjectives — they describe nouns: 'staggering' challenge (paragraph 4), 'relentless' noise (paragraph 6), and 'astonishing' precision (paragraph 7). ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 8, 'Flags were waved, champagne was sprayed, and the moment was broadcast live on television.' What is the grammatical term for this sentence structure?",
+        options: ["A simple sentence", "A compound sentence", "A complex sentence", "The passive voice", "A rhetorical question"],
+        correct: 3,
+        explanation: "All three clauses use the passive voice: 'flags were waved' (not 'people waved flags'), 'champagne was sprayed', 'the moment was broadcast'. The subject receives the action rather than performing it. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
