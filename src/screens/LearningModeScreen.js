@@ -1,7 +1,15 @@
 import React from 'react';
-import { Calendar, Target, ArrowLeft } from 'lucide-react';
+import { Calendar, Target, ArrowLeft, Clock } from 'lucide-react';
 
-function LearningModeScreen({ subjectName, onStartDaily, onFocusedLearning, onBack }) {
+const mockTestInfo = {
+  maths: { questions: 50, time: 50 },
+  english: { questions: 49, time: 50 },
+  verbalreasoning: { questions: 85, time: 50 },
+};
+
+function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLearning, onMockTest, onBack }) {
+  const testInfo = mockTestInfo[subjectKey] || { questions: 50, time: 50 };
+
   return (
     <div className="app-bg p-4">
       <div className="max-w-3xl mx-auto">
@@ -20,7 +28,7 @@ function LearningModeScreen({ subjectName, onStartDaily, onFocusedLearning, onBa
           <p className="text-[#636E72]">Choose how you'd like to practise</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 stagger-children">
+        <div className="grid md:grid-cols-3 gap-6 stagger-children">
           <button
             onClick={onStartDaily}
             className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#0984E3]/30 animate-scale-in"
@@ -41,6 +49,19 @@ function LearningModeScreen({ subjectName, onStartDaily, onFocusedLearning, onBa
             </div>
             <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Focused Learning</h3>
             <p className="text-[#636E72]">Pick a topic and practise 10 questions to build your confidence.</p>
+          </button>
+
+          <button
+            onClick={onMockTest}
+            className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#FF6B6B]/30 animate-scale-in"
+          >
+            <div className="flex items-center justify-center w-16 h-16 bg-[#FF6B6B]/10 rounded-2xl mb-4">
+              <Clock className="w-8 h-8 text-[#FF6B6B]" />
+            </div>
+            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Mock Test</h3>
+            <p className="text-[#636E72]">
+              Full practice paper — {testInfo.questions} questions in {testInfo.time} minutes. Timed, just like the real exam!
+            </p>
           </button>
         </div>
       </div>

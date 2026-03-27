@@ -16,6 +16,9 @@ import HomeScreen from './screens/HomeScreen';
 import QuizScreen from './screens/QuizScreen';
 import LearningModeScreen from './screens/LearningModeScreen';
 import TopicsScreen from './screens/TopicsScreen';
+import MockTestScreen from './screens/MockTestScreen';
+import MockTestResultsScreen from './screens/MockTestResultsScreen';
+import useMockTest from './hooks/useMockTest';
 import mathsData from './questionData/mathsData';
 import englishData from './questionData/englishData';
 import vrData from './questionData/vrData';
@@ -45,6 +48,7 @@ const questionData = {
 };
 
 function App() {
+  const mockTest = useMockTest();
   const [currentView, setCurrentView] = useState('home');
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -766,8 +770,13 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     return (
       <LearningModeScreen
         subjectName={questionData[selectedSubject]?.name}
+        subjectKey={selectedSubject}
         onStartDaily={handleStartDaily}
         onFocusedLearning={() => setCurrentView('topics')}
+        onMockTest={() => {
+          mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
+          setCurrentView('mockTest');
+        }}
         onBack={handleHome}
       />
     );
@@ -780,6 +789,43 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         topicPerformance={topicPerformance}
         onTopicSelect={handleTopicSelect}
         onBack={() => setCurrentView('learningMode')}
+      />
+    );
+  }
+
+  if (currentView === 'mockTest' && !mockTest.mockTestComplete) {
+    return (
+      <MockTestScreen
+        subject={mockTest.mockTestSubject}
+        questions={mockTest.mockTestQuestions}
+        answers={mockTest.mockTestAnswers}
+        currentIndex={mockTest.mockTestCurrentIndex}
+        sectionBreaks={mockTest.mockTestSectionBreaks}
+        passage={mockTest.mockTestPassage}
+        timeLimit={mockTest.mockTestTimeLimit}
+        quizVisualComponents={quizVisualComponents}
+        onAnswer={mockTest.answerQuestion}
+        onGoTo={mockTest.goToQuestion}
+        onSubmit={mockTest.submitTest}
+        onBack={() => {
+          mockTest.endMockTest();
+          setCurrentView('learningMode');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'mockTest' && mockTest.mockTestComplete) {
+    return (
+      <MockTestResultsScreen
+        results={mockTest.getResults()}
+        onTryAgain={() => {
+          mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
+        }}
+        onHome={() => {
+          mockTest.endMockTest();
+          handleHome();
+        }}
       />
     );
   }
