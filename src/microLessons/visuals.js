@@ -1088,6 +1088,9 @@ export function AngleDiagram({
   const centroid = { x: (A.x + B.x + C.x) / 3, y: (A.y + B.y + C.y) / 3 };
   const adjMap = [[B, C], [A, C], [A, B]];
 
+  // Check if triangle is "flat" (has any angle < 30°) — labels need more room
+  const hasExtremeAngle = entries.some(e => e.value < 30);
+
   const labelPos = (vertIdx) => {
     const vertex = [A, B, C][vertIdx];
     const [adj1, adj2] = adjMap[vertIdx];
@@ -1103,11 +1106,14 @@ export function AngleDiagram({
     let dir = { x: bis.x / bisLen, y: bis.y / bisLen };
 
     // For acute angles (< 30°): place label OUTSIDE the triangle
-    // Reverse the bisector direction so label sits away from the vertex
+    // with a leader line pointing back to the vertex
     if (angleDeg < 30) {
       dir = { x: -dir.x, y: -dir.y };
-      const d = 22;
-      return { x: vertex.x + dir.x * d, y: vertex.y + dir.y * d };
+      const d = 28;
+      return {
+        x: vertex.x + dir.x * d, y: vertex.y + dir.y * d,
+        outside: true, vx: vertex.x, vy: vertex.y, dir
+      };
     }
 
     // Distance: text clearance vs centroid-proportional, whichever is larger
@@ -1115,9 +1121,11 @@ export function AngleDiagram({
     const textClear = Math.min(14 / Math.max(Math.sin(halfRad), 0.13), 65);
     const dx = centroid.x - vertex.x, dy = centroid.y - vertex.y;
     const distC = Math.sqrt(dx * dx + dy * dy) || 1;
-    const d = Math.min(Math.max(textClear, 0.35 * distC, 30), distC * 0.55);
+    // In flat triangles, increase minimum distance to prevent overlap with edges
+    const minDist = hasExtremeAngle ? 40 : 30;
+    const d = Math.min(Math.max(textClear, 0.38 * distC, minDist), distC * 0.6);
 
-    return { x: vertex.x + dir.x * d, y: vertex.y + dir.y * d };
+    return { x: vertex.x + dir.x * d, y: vertex.y + dir.y * d, outside: false };
   };
 
   let posA = labelPos(0);
@@ -1188,6 +1196,16 @@ export function AngleDiagram({
         {ticks.map((t, i) => (
           <line key={i} x1={t.x1} y1={t.y1} x2={t.x2} y2={t.y2}
             stroke="#6366f1" strokeWidth="2" />
+        ))}
+
+        {/* Leader lines for outside labels */}
+        {[posA, posB, posC].map((pos, i) => pos.outside && (
+          <line key={`leader-${i}`}
+            x1={pos.vx + pos.dir.x * 8} y1={pos.vy + pos.dir.y * 8}
+            x2={pos.x - pos.dir.x * 6} y2={pos.y - pos.dir.y * 6 + 3}
+            stroke={[eA, eB, eC][i].color} strokeWidth="1.5"
+            strokeDasharray="3,2" opacity="0.6"
+          />
         ))}
 
         {/* Angle labels (skip right-angle vertex — shown as square) */}
