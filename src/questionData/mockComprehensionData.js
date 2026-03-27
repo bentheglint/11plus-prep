@@ -3152,6 +3152,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'red-kite',
+    title: 'The Return of the Red Kite',
+    genre: 'nature-environment',
+    passage: `(1) There is a bird flying over the Chiltern Hills today that, thirty years ago, you would have been more likely to see in a museum than in the sky. With its russet body, forked tail, and wingspan of nearly two metres, the red kite is one of Britain's most magnificent raptors. Yet by the late 1980s, this elegant predator had been driven to the very edge of extinction in England, Wales, and Scotland. Its remarkable recovery since then is one of the greatest conservation success stories in European history — and a powerful lesson in what can be achieved when science, determination, and community effort work together.
+
+(2) Red kites were once among the most common birds in Britain. In medieval London, they were so numerous that foreign visitors remarked upon them. The birds served a vital function as scavengers, swooping down to clean the streets of waste, scraps, and carrion. Laws were passed making it illegal to kill a kite, and the penalty was reportedly severe — though historians disagree on whether the punishment was really execution, as some accounts claim. What is certain is that kites were valued, protected, and very much part of everyday life.
+
+(3) The decline began in the sixteenth century and accelerated brutally over the following three hundred years. As farming methods changed and estates began to be managed for game shooting, the red kite came to be seen as vermin — a threat to pheasant chicks and lambs. Gamekeepers shot, trapped, and poisoned kites in enormous numbers. Egg collectors, drawn by the bird's increasing rarity, raided the few remaining nests. By the early twentieth century, the red kite had been completely wiped out across England and Scotland. Only a handful survived — fewer than twenty individuals — clinging to existence in the remote oak valleys of central Wales.
+
+(4) For decades, those Welsh kites were the subject of one of the longest-running protection programmes in conservation history. Volunteers guarded nesting sites around the clock during breeding season, and farmers were paid to tolerate the birds on their land. The population grew slowly — agonisingly slowly — because the Welsh kites were so inbred that fertility rates were low and many eggs failed to hatch. By 1989, there were still only around fifty breeding pairs in the whole of Britain, all in Wales. The species was surviving, but only barely, and the prospect of kites returning to England or Scotland under their own power seemed impossibly remote.
+
+(5) The breakthrough came from an ambitious plan called the Red Kite Reintroduction Programme. Beginning in 1989, conservationists from the RSPB and Natural England, working with the Swedish and Spanish governments, imported young red kites from healthy populations in Sweden and Spain. These birds were released at carefully chosen sites in the Chiltern Hills in southern England and in the Black Isle in northern Scotland. Over the following five years, ninety-three kites were released in the Chilterns and over a hundred in Scotland.
+
+(6) The programme was not without controversy. Some local residents objected to what they saw as an artificial interference with nature. Farmers worried that the kites would attack their poultry. Gamekeepers on nearby shooting estates were suspected of illegally poisoning some of the released birds — suspicions that, in several cases, proved to be well-founded. Despite these setbacks, the released kites began to breed successfully. The Chilterns population grew from the initial ninety-three birds to over three hundred breeding pairs within fifteen years.
+
+(7) What made the Chilterns site so successful was not just the landscape — rolling chalk hills with mixed woodland and open farmland — but the extraordinary response of the local community. Farmers left areas of rough ground uncut, providing habitat for the small mammals and invertebrates that kites feed on. Homeowners put out scraps in their gardens, and 'kite feeding stations' became a popular tourist attraction. Schools adopted the kite as their emblem. The bird became a source of local pride, transforming from a creature most people had never heard of into a symbol of the Chiltern Hills themselves.
+
+(8) The success in the Chilterns inspired further reintroductions across the country. Kites were released in Northamptonshire, Yorkshire, the north-east of England, County Down in Northern Ireland, and the central belt of Scotland. Each new population was carefully monitored, with some birds fitted with wing-tags or satellite transmitters that allowed scientists to track their movements across the country. The data revealed fascinating insights into kite behaviour: they could travel remarkable distances, with some birds moving over three hundred kilometres from their release sites.
+
+(9) The numbers are remarkable. In 1989, there were roughly fifty breeding pairs of red kites in Britain — all in Wales. By 2023, the population had grown to an estimated four thousand eight hundred breeding pairs spread across England, Scotland, Wales, and Northern Ireland. The species has been officially reclassified from 'endangered' to 'near threatened' — still not completely safe, but a transformation from the brink of extinction to a thriving, expanding population.
+
+(10) Driving through the Chilterns today, it is common to see half a dozen kites circling on a single stretch of motorway. Their distinctive silhouette — long wings angled slightly forward, deeply forked tail constantly adjusting for balance — has become as much a part of the English landscape as church spires and hedgerows. Children growing up in the area have never known a time without kites. For them, the bird is simply part of the scenery, which is perhaps the greatest measure of the reintroduction's success.
+
+(11) The recovery has not been without ongoing challenges. Illegal poisoning continues to be a problem, particularly in areas managed for game shooting. Collisions with vehicles account for a significant number of deaths, and the growing kite population increasingly competes for food with buzzards, another raptor that has expanded dramatically in recent decades. Scientists debate whether the current population can continue to grow or has reached the carrying capacity of the available habitat.
+
+(12) Yet the red kite's return offers something beyond pure ecology. It demonstrates that conservation works — that it is possible to reverse decades of decline if the commitment is sustained and the approach is scientific. It shows that communities can embrace wildlife as an asset rather than a threat, and that a single species can change the identity of a landscape. The red kite flying over the Chilterns is not just a bird. It is proof that the natural world, given half a chance, is capable of an extraordinary comeback.`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How many breeding pairs of red kites were in Britain in 1989?",
+        options: ["About twenty", "About fifty", "About one hundred", "About two hundred", "About five hundred"],
+        correct: 1,
+        explanation: "Paragraph 4 states 'By 1989, there were still only around fifty breeding pairs in the whole of Britain'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where did the last British red kites survive before the reintroduction?",
+        options: ["The Chiltern Hills", "The Scottish Highlands", "Central Wales", "The Lake District", "Norfolk"],
+        correct: 2,
+        explanation: "Paragraph 3 states they survived 'in the remote oak valleys of central Wales' and paragraph 4 confirms 'all in Wales'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Where were the imported kites brought from?",
+        options: ["France and Germany", "Sweden and Spain", "Norway and Italy", "Denmark and Portugal", "Ireland and Iceland"],
+        correct: 1,
+        explanation: "Paragraph 5 states they were imported 'from healthy populations in Sweden and Spain'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How many breeding pairs were estimated in Britain by 2023?",
+        options: ["One thousand", "Two thousand five hundred", "Three thousand", "Four thousand eight hundred", "Ten thousand"],
+        correct: 3,
+        explanation: "Paragraph 9 states 'the population had grown to an estimated four thousand eight hundred breeding pairs'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why were red kites protected by law in medieval London?",
+        options: [
+          "Because they were beautiful and people enjoyed watching them",
+          "Because they performed a useful role cleaning the streets of waste",
+          "Because the king kept them as pets",
+          "Because they were already very rare",
+          "Because they ate the rats that spread disease"
+        ],
+        correct: 1,
+        explanation: "Paragraph 2 explains kites 'served a vital function as scavengers, swooping down to clean the streets of waste, scraps, and carrion'. They were protected because they were useful. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A fictional story about a bird rescue",
+          "A persuasive letter arguing against game shooting",
+          "An informative account of a wildlife conservation programme",
+          "A scientific paper about bird genetics",
+          "A travel guide to the Chiltern Hills"
+        ],
+        correct: 2,
+        explanation: "The passage gives a factual, chronological account of the red kite's decline and recovery through conservation. It is informative non-fiction about a real wildlife programme. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why were the Welsh kites slow to recover on their own?",
+        options: [
+          "There were too many predators in Wales",
+          "The climate in Wales was unsuitable for kites",
+          "The remaining population was so inbred that fertility was low and many eggs failed",
+          "Welsh farmers refused to protect them",
+          "There was not enough food in Wales"
+        ],
+        correct: 2,
+        explanation: "Paragraph 4 explains 'the Welsh kites were so inbred that fertility rates were low and many eggs failed to hatch'. The tiny population meant all the birds were closely related, reducing breeding success. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why did conservationists import kites from Sweden and Spain rather than using Welsh kites?",
+        options: [
+          "Welsh kites were a different species",
+          "The Welsh kites were too wild to capture",
+          "Foreign kites were cheaper to obtain",
+          "The Welsh population was too small and inbred to provide healthy birds for new sites",
+          "Swedish and Spanish kites were larger and more impressive"
+        ],
+        correct: 3,
+        explanation: "Given the Welsh kites' inbreeding problems (paragraph 4), taking birds from them would have weakened the fragile Welsh population further. Importing from large, healthy foreign populations provided genetically diverse birds without risking the existing Welsh kites. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What role did the local community play in the Chilterns success?",
+        options: [
+          "They donated money to the RSPB",
+          "They actively supported the kites by providing habitat, food, and cultural embrace",
+          "They moved away from the area to give the kites space",
+          "They captured and bred kites in their homes",
+          "They had no involvement — it was entirely a scientific project"
+        ],
+        correct: 1,
+        explanation: "Paragraph 7 describes farmers leaving rough ground, homeowners putting out scraps, feeding stations becoming tourist attractions, and schools adopting the kite as their emblem. The community actively embraced the birds. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How did some gamekeepers respond to the reintroduction programme?",
+        options: [
+          "They enthusiastically supported it",
+          "They were indifferent",
+          "Some illegally poisoned the released birds",
+          "They captured and relocated the kites",
+          "They protested peacefully"
+        ],
+        correct: 2,
+        explanation: "Paragraph 6 states 'Gamekeepers on nearby shooting estates were suspected of illegally poisoning some of the released birds — suspicions that, in several cases, proved to be well-founded'. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does the author say that children not knowing a time without kites is 'the greatest measure of the reintroduction's success'?",
+        options: [
+          "Because children are more observant than adults",
+          "Because it means the kites have become a permanent, normal part of the landscape",
+          "Because children care more about wildlife",
+          "Because it proves the programme was expensive",
+          "Because children helped feed the kites"
+        ],
+        correct: 1,
+        explanation: "When something becomes so normal that the youngest generation takes it for granted, it has truly been integrated into everyday life. The kite is no longer a rare curiosity but a natural part of the scenery. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What do the satellite tracking data reveal about kite behaviour?",
+        options: [
+          "That kites never leave their release sites",
+          "That kites migrate to Africa in winter",
+          "That individual birds can travel over three hundred kilometres from their release sites",
+          "That kites always return to the exact spot where they were born",
+          "That kites avoid urban areas completely"
+        ],
+        correct: 2,
+        explanation: "Paragraph 8 states the data 'revealed fascinating insights into kite behaviour: they could travel remarkable distances, with some birds moving over three hundred kilometres from their release sites'. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'inference',
+        question: "What does the phrase 'carrying capacity of the available habitat' mean in paragraph 11?",
+        options: [
+          "The maximum weight the land can support",
+          "The maximum number of kites the environment can sustainably feed and house",
+          "The distance kites can carry food",
+          "The amount of pollution the habitat can absorb",
+          "The number of species that can live together"
+        ],
+        correct: 1,
+        explanation: "'Carrying capacity' is an ecological term for the maximum population an environment can sustain indefinitely — determined by food availability, nesting sites, and other resources. Scientists wonder if the habitat can support continued growth. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following is NOT mentioned as a threat to red kites?",
+        options: [
+          "Illegal poisoning",
+          "Vehicle collisions",
+          "Competition with buzzards",
+          "Loss of habitat to housing development",
+          "Egg collecting in earlier centuries"
+        ],
+        correct: 3,
+        explanation: "Paragraphs 3 and 11 mention poisoning, vehicle collisions, competition with buzzards, and egg collecting. Loss of habitat to housing development is not mentioned as a threat. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of these statements about the reintroduction programme is NOT supported by the passage?",
+        options: [
+          "Ninety-three kites were released in the Chilterns",
+          "The programme began in 1989",
+          "Every released bird survived to breed",
+          "The RSPB was involved in the programme",
+          "Birds were released in Scotland as well as England"
+        ],
+        correct: 2,
+        explanation: "The passage mentions some birds were illegally poisoned (paragraph 6) and describes ongoing deaths from vehicles (paragraph 11). It never claims every released bird survived. All other statements are directly supported. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author open the passage by saying you would have been 'more likely to see [the kite] in a museum than in the sky'?",
+        options: [
+          "Because kites are commonly displayed in museums",
+          "To dramatically highlight how close the species came to extinction in Britain",
+          "Because the author works in a museum",
+          "To suggest that museums are the best place to learn about wildlife",
+          "Because red kites prefer to live near museums"
+        ],
+        correct: 1,
+        explanation: "The museum comparison suggests the bird was so rare it belonged more to history than to living nature. This dramatic opening establishes the scale of the decline, making the subsequent recovery all the more impressive. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "What is the author's overall message in this passage?",
+        options: [
+          "That humans always destroy wildlife",
+          "That conservation is too expensive to be worthwhile",
+          "That determined, science-based conservation can reverse even severe wildlife decline",
+          "That red kites are more important than other British birds",
+          "That game shooting should be banned throughout Britain"
+        ],
+        correct: 2,
+        explanation: "The final paragraph explicitly states the message: 'conservation works — that it is possible to reverse decades of decline if the commitment is sustained and the approach is scientific'. The passage celebrates the combination of science, community, and persistence. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the comparison of the kite's silhouette to 'church spires and hedgerows' create?",
+        options: [
+          "It suggests the kite is as boring as a church spire",
+          "It positions the kite as a natural, permanent part of the quintessentially English landscape",
+          "It implies the kite is a religious symbol",
+          "It shows that kites only live near churches",
+          "It suggests the kite is man-made like a building"
+        ],
+        correct: 1,
+        explanation: "Church spires and hedgerows are iconic features of the English countryside. By placing the kite alongside them, the author suggests it has become an equally natural and established part of the landscape — exactly what the reintroduction programme hoped to achieve. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 1, what does 'raptor' mean?",
+        options: ["A type of dinosaur", "A bird of prey", "A scavenging insect", "A very fast animal", "A migratory bird"],
+        correct: 1,
+        explanation: "A 'raptor' is a bird of prey — a bird that hunts and feeds on other animals. Eagles, hawks, owls, and kites are all raptors. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 3, what does 'accelerated' mean?",
+        options: ["Slowed down", "Stopped completely", "Got faster or more intense", "Stayed the same", "Changed direction"],
+        correct: 2,
+        explanation: "'Accelerated' means increased in speed or intensity. The decline in kite numbers got worse and faster over three hundred years, driven by shooting, trapping, and egg collecting. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 6, what does 'controversy' mean?",
+        options: ["Excitement", "Prolonged public disagreement", "Scientific research", "Financial support", "Legal protection"],
+        correct: 1,
+        explanation: "'Controversy' means prolonged public disagreement or argument. The programme caused debate — some supported it while others objected to 'artificial interference with nature' or worried about their poultry. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 4, what does the phrase 'agonisingly slowly' suggest?",
+        options: [
+          "The process was painful to the birds",
+          "The growth was so slow it was frustrating and distressing for those trying to save the species",
+          "The scientists were working too slowly",
+          "The birds were moving slowly because they were ill",
+          "The volunteers were impatient"
+        ],
+        correct: 1,
+        explanation: "'Agonisingly' means to an extent that causes great mental distress. The population grew so slowly — despite enormous effort — that it was deeply frustrating for conservationists who feared the species might still be lost. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 1, what type of word is 'magnificent'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
+        correct: 2,
+        explanation: "'Magnificent' is an adjective describing the noun 'raptors' — it tells us the red kite is extremely beautiful and impressive. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'determination', 'recovery', and 'extinction' as used in the passage?",
+        options: ["Verbs", "Adjectives", "Abstract nouns", "Adverbs", "Proper nouns"],
+        correct: 2,
+        explanation: "All three are abstract nouns — they name ideas or processes that cannot be physically touched. They derive from verbs (determine, recover, extinct) with noun-forming suffixes (-ation, -y, -ion). ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 10, 'Their distinctive silhouette — long wings angled slightly forward, deeply forked tail constantly adjusting for balance — has become as much a part of the English landscape as church spires and hedgerows.' Which word is an adverb?",
+        options: ["distinctive", "slightly", "deeply", "constantly", "All three: slightly, deeply, constantly"],
+        correct: 4,
+        explanation: "'Slightly' (modifies 'forward'), 'deeply' (modifies 'forked'), and 'constantly' (modifies 'adjusting') are all adverbs — they modify adjectives or verbs to tell us how something is done. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
