@@ -1093,14 +1093,22 @@ export function AngleDiagram({
     const [adj1, adj2] = adjMap[vertIdx];
     const angleDeg = vertexEntries[vertIdx].value;
 
-    // Bisector direction
+    // Bisector direction (points inward toward triangle interior)
     const d1 = { x: adj1.x - vertex.x, y: adj1.y - vertex.y };
     const d2 = { x: adj2.x - vertex.x, y: adj2.y - vertex.y };
     const len1 = Math.sqrt(d1.x ** 2 + d1.y ** 2) || 1;
     const len2 = Math.sqrt(d2.x ** 2 + d2.y ** 2) || 1;
     const bis = { x: d1.x / len1 + d2.x / len2, y: d1.y / len1 + d2.y / len2 };
     const bisLen = Math.sqrt(bis.x ** 2 + bis.y ** 2) || 1;
-    const dir = { x: bis.x / bisLen, y: bis.y / bisLen };
+    let dir = { x: bis.x / bisLen, y: bis.y / bisLen };
+
+    // For acute angles (< 30°): place label OUTSIDE the triangle
+    // Reverse the bisector direction so label sits away from the vertex
+    if (angleDeg < 30) {
+      dir = { x: -dir.x, y: -dir.y };
+      const d = 22;
+      return { x: vertex.x + dir.x * d, y: vertex.y + dir.y * d };
+    }
 
     // Distance: text clearance vs centroid-proportional, whichever is larger
     const halfRad = (angleDeg / 2) * DEG;
