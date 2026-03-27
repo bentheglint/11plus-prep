@@ -5880,6 +5880,19 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "lighthouse-cat",
           "passageTitle": "The Lighthouse Keeper's Cat",
+          "passage": `Every evening, as the sun dipped below the horizon and the sea turned from blue to inky black, Old Tom climbed the one hundred and forty-seven steps to the top of Hartland Lighthouse. His knees ached and his back protested, but he never missed a night. The ships depended on him.
+
+His only companion was a marmalade cat called Barnacle, who had appeared on the doorstep one stormy November night, soaking wet and mewing pitifully. That had been three winters ago. Now Barnacle followed Tom everywhere — up the spiral staircase, along the narrow walkway, and into the lamp room where the great light revolved slowly, sending its beam far out across the dark water.
+
+"You're a better assistant than any human I've known," Tom would say, scratching Barnacle behind the ears. The cat would purr in response, his amber eyes reflecting the rotating light.
+
+One February evening, a terrible fog rolled in from the Atlantic. Tom could barely see his own hand in front of his face. He checked the lamp three times, making sure it burned at full brightness. Then he heard something that made his blood run cold — the blast of a ship's horn, far too close to the rocks below.
+
+Tom grabbed the fog horn lever and pulled with all his strength. The deep, booming sound echoed across the water. He pulled again and again. Barnacle pressed against his legs, fur standing on end.
+
+Minutes passed. Then, slowly, the horn sound grew fainter. The ship was turning away, finding safer waters. Tom slumped into his chair, exhausted but relieved. Barnacle jumped onto his lap and purred.
+
+"Another one saved, old friend," Tom whispered. "Another one saved."`,
           "question": "In the sentence 'The wind howled fiercely around the tower,' what type of word is 'fiercely'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adjective (describing word)","An adverb (tells us how something is done)","A preposition (position word)"],
           "correct": 3,
@@ -5892,6 +5905,23 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "peculiar-museum",
           "passageTitle": "The Peculiar Museum",
+          "passage": `Priya had walked past the little museum on Coppice Lane a thousand times without ever going inside. It sat between the chip shop and the post office, with a faded green door and a hand-painted sign that read: "Coppice Lane Museum of Curious Objects — Open Tuesdays and Saturdays, 10am–4pm."
+
+It was a rainy Saturday in March, and Priya had nothing else to do. She pushed open the door. A bell tinkled overhead.
+
+Inside, the museum was far larger than it looked from the street. Glass cabinets lined every wall, crammed with objects that seemed to glow under the warm yellow lights. A stuffed owl perched on a branch in the corner, its glass eyes following Priya as she moved. Or at least, that's what it felt like.
+
+"Welcome!" A tiny woman with silver hair and round spectacles appeared from behind a curtain. "I'm Mrs Greenwood. I don't get many young visitors. Most children prefer the internet these days."
+
+"What is all this stuff?" Priya asked, peering into a cabinet containing a collection of Victorian pennies, a compass that spun wildly in circles, and what appeared to be a genuine dinosaur tooth.
+
+"Every object has a story," Mrs Greenwood said, her eyes twinkling. "That compass, for instance, belonged to an explorer who claimed it always pointed towards adventure rather than north. And that tooth? Found right here in Dorset, on the Jurassic Coast, one hundred and forty million years old."
+
+Priya stared at the tooth. It was dark brown and heavy-looking, about the size of her thumb. She felt a shiver of wonder. Something that old, sitting in a tiny museum, on an ordinary street, in her ordinary town.
+
+"Can I come back next Tuesday?" she asked.
+
+Mrs Greenwood smiled. "I was hoping you'd say that."`,
           "question": "In the sentence 'The ancient display cases were covered in dust,' what type of word is 'ancient'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
           "correct": 2,
@@ -5904,6 +5934,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "saving-hedgehogs",
           "passageTitle": "Saving the Hedgehogs",
+          "passage": `Every autumn, wildlife charities across Britain launch campaigns to help one of our most beloved creatures: the hedgehog. Once a common sight in gardens and hedgerows, hedgehog numbers have fallen dramatically over the past twenty years. Scientists estimate that the British hedgehog population has declined from around thirty million in the 1950s to fewer than one million today.
+
+Hedgehogs sleep through the cold winter months, curling into tight balls inside nests of dry leaves hidden beneath sheds, log piles, and thick hedgerows. This deep sleep, called hibernation, allows them to survive when their food — slugs, beetles, caterpillars, and earthworms — is scarce. Before hibernating, a hedgehog must weigh at least 600 grams, or it may not have enough energy to last until spring.
+
+The biggest threat to hedgehogs is not cold weather but the loss of the rough, wild patches of ground where they find food and shelter. Modern gardens with close-boarded fences, tidy lawns, and concrete patios offer little for a hungry hedgehog. Conservation groups encourage people to cut small holes in their garden fences — 'hedgehog highways' — so the animals can roam freely between gardens at night. Leaving a shallow dish of water and a pile of leaves in a quiet corner can make a real difference.
+
+Volunteers across the country also rescue underweight hedgehogs found wandering in daylight, nursing them through the winter in heated shelters before releasing them in spring. It is painstaking, gentle work, but for those involved, the sight of a healthy hedgehog shuffling back into the undergrowth makes every effort worthwhile.`,
           "question": "In the sentence 'Hedgehogs sleep through the cold winter months,' what type of word is 'through'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -5916,6 +5953,17 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "roman-baths-sulis",
           "passageTitle": "The Roman Baths of Aquae Sulis",
+          "passage": `The city of Bath, in the south-west of England, is famous for its natural hot springs. Nearly two thousand years ago, the Romans discovered these bubbling, steaming waters and built one of the most impressive bathing complexes in all of Britain. They named the settlement Aquae Sulis, meaning "the waters of Sulis," after a local goddess.
+
+The Great Bath, as it is known today, was the centrepiece of the complex. It measured about twelve metres long and was lined with sheets of lead to keep the water from leaking away. The water, which rises from deep underground at a temperature of around forty-six degrees Celsius, would have felt wonderfully warm to the Romans, especially during the cold British winters they were not accustomed to.
+
+Bathing was not simply about getting clean. For the Romans, a visit to the baths was a social occasion. Wealthy citizens would spend hours there, moving between rooms of different temperatures. They would begin in the tepidarium, a gently warm room, before progressing to the caldarium, which was intensely hot and filled with steam. Afterwards, they might plunge into the frigidarium, a bracingly cold pool designed to close the pores and invigorate the body.
+
+Between baths, visitors would exercise, have their skin scraped clean with a curved metal tool called a strigil, or simply sit and gossip with friends. Merchants discussed business deals, politicians debated laws, and children splashed in the shallow pools while their parents relaxed nearby.
+
+The Romans also built a grand temple next to the baths, dedicated to the goddess Sulis Minerva. Visitors would throw coins and small offerings into the sacred spring, asking the goddess for good health or protection. Archaeologists have found thousands of these offerings, along with carved stone heads and written curses scratched onto thin pieces of lead.
+
+When the Romans left Britain around 410 AD, the baths gradually fell into ruin. Over the centuries, the buildings crumbled and were buried beneath newer streets and houses. It was not until the eighteenth century that the baths were rediscovered, and today they are one of Britain's most visited historical sites.`,
           "question": "In the sentence 'Visitors can still see the steaming green water today,' what type of word is 'steaming'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 2,
@@ -5928,6 +5976,29 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "storm-warning",
           "passageTitle": "Storm Warning",
+          "passage": `The morning had started perfectly. Blue sky, gentle breeze, the sea as flat as a mirror. Kai, Isla, and their instructor, Dave, had set out from Poole Harbour at nine o'clock in the little sailing dinghy, and by ten they were tacking smoothly across Studland Bay with the white cliffs of Old Harry Rocks gleaming in the distance.
+
+"You're natural sailors, both of you," Dave said, adjusting his sunglasses. "We'll head over towards the Purbeck coast and have lunch at Chapman's Pool."
+
+Kai grinned at his sister. This was so much better than another day stuck at home during the summer holidays. The water was clear enough to see the sandy bottom, and a pod of dolphins had surfaced nearby, their curved backs glistening.
+
+But by midday, everything had changed. The breeze stiffened. The sky in the west turned the colour of a bruise — dark purple with edges of sickly yellow. Dave's expression shifted from relaxed to alert in an instant.
+
+"Right," he said, his voice calm but firm. "Change of plan. We're heading straight back to the harbour. Kai, I need you on the jib sheet. Isla, take the tiller and keep us pointing north-east. Do exactly as I say, when I say it."
+
+The first gust hit them like a slap. The dinghy heeled sharply, and cold spray exploded over the side. Isla gripped the tiller with white knuckles, her heart hammering against her ribs. Kai hauled on the rope until his palms burned, fighting to keep the jib under control.
+
+"Ease out! Ease out!" Dave shouted over the rising wind. "Don't fight it — work with it!"
+
+Waves that had been gentle ripples were now steep grey walls, each one lifting the dinghy's bow before dropping it with a stomach-lurching crash. Rain arrived in horizontal sheets, stinging their faces and making it almost impossible to see. Thunder grumbled somewhere behind them, getting closer.
+
+For forty minutes they battled. Kai's arms screamed with exhaustion. Isla's teeth chattered from the cold, but she never let go of the tiller, adjusting their course with tiny, precise movements exactly as Dave directed. They worked as a team, each trusting the others completely.
+
+Then, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I can see it!"
+
+Dave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.
+
+"Same time tomorrow?" she said.`,
           "question": "In the sentence 'The dark clouds gathered quickly above the village,' what type of word is 'gathered'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 1,
@@ -5940,6 +6011,32 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "spiders-web",
           "passageTitle": "The Spider's Web",
+          "passage": `The Spider's Web
+
+Between the gateposts, strung with care,
+A palace hangs in morning air —
+Each thread a wire of silver spun,
+Caught glinting in the early sun.
+
+The spider sits, a patient queen,
+Upon her throne of silken sheen,
+And waits for visitors to call
+At her glistening banquet hall.
+
+The dewdrops hang like chandeliers,
+A thousand tiny crystal spheres
+That tremble when the breeze breathes low
+And set the web's whole world aglow.
+
+But careless boots come stamping past,
+A sleeve brushes — the spell is cast
+Away. The palace, grand and frail,
+Lies ruined on the garden rail.
+
+Yet even as the damage dries,
+The queen returns. She never cries.
+She simply starts her work once more
+And builds a palace as before.`,
           "question": "In the sentence 'She carefully placed the jar over the spider,' what type of word is 'carefully'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
           "correct": 3,
@@ -5952,6 +6049,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "secret-hedgehogs",
           "passageTitle": "The Secret Life of Hedgehogs",
+          "passage": `Most people have never watched a hedgehog at work, and for good reason: hedgehogs are almost entirely nocturnal. They emerge after dark, snuffling through gardens, parks, and woodland edges in search of food. They build warm nests from dry leaves and grass, tucking themselves into sheltered spots during the day where they sleep soundly, invisible to the world above.
+
+A hedgehog's night begins at dusk. Using its remarkably sharp sense of smell — far more powerful than a human's — it follows invisible trails left by slugs, beetles, and earthworms. A single hedgehog can travel up to two kilometres in one night, covering a home range that might include a dozen gardens. It moves with surprising purpose, following the same routes night after night, squeezing through gaps in fences and under gates with practised ease.
+
+The hedgehog's most famous feature is, of course, its spines — around seven thousand of them, each one a modified hair made of keratin, the same material as human fingernails. When threatened, a hedgehog rolls into a tight ball, presenting a prickly fortress that deters most predators. Badgers, however, are strong enough to uncurl a hedgehog, which is one reason why hedgehog numbers tend to be lower in areas with large badger populations.
+
+As dawn approaches, the hedgehog returns to its nest, curls up, and sleeps. The garden looks perfectly ordinary in the morning light, giving no sign of the busy little creature that spent the whole night patrolling it. This is why the author calls hedgehogs' lives 'secret' — their entire world unfolds while we are asleep.`,
           "question": "In the sentence 'They build warm nests from dry leaves and grass,' what type of word is 'warm'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 2,
@@ -5964,6 +6068,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "rock-pools",
           "passageTitle": "The Rock Pools of Cornwall",
+          "passage": `Every summer, thousands of families flock to the rugged coastline of Cornwall to explore one of nature's most fascinating habitats: the rock pool. These miniature worlds, carved into the granite by centuries of crashing waves, are teeming with life. At low tide, the retreating sea leaves behind pools of crystal-clear water that become temporary homes for an astonishing variety of creatures.
+
+The best time to visit rock pools is during a spring tide, when the sea pulls back further than usual, revealing pools that are normally hidden beneath the waves. Armed with a bucket, a small net and a magnifying glass, young explorers can discover creatures they might never otherwise see. The key rule of rock pooling, however, is simple: look, enjoy, and always put everything back exactly where you found it.
+
+The most common inhabitants of Cornish rock pools are limpets and periwinkles, which cling stubbornly to the rocks with a muscular foot so powerful that trying to prise them off would damage both the animal and the rock. Bright green sea lettuce grows in frilly clusters, providing shelter for tiny shrimps that dart away at the slightest shadow. Hermit crabs are a particular favourite with children — these comical creatures live inside borrowed shells, upgrading to larger ones as they grow. If you watch patiently, you might even spot one swapping its shell for a bigger model.
+
+More adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.
+
+Rock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.`,
           "question": "In the sentence 'Tiny crabs scuttle between the rocks,' what type of word is 'between'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -5976,6 +6089,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "bee-honey",
           "passageTitle": "How Bees Make Honey",
+          "passage": `Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.
+
+In the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.
+
+Forager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.
+
+Back at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.
+
+Beyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.`,
           "question": "In the sentence 'The busy workers collect nectar from hundreds of flowers,' what type of word is 'collect'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 1,
@@ -5988,6 +6110,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "great-oak",
           "passageTitle": "The Great Oak",
+          "passage": `I have stood on this hilltop for four hundred years. My roots reach deep into the chalky soil of the Chiltern Hills, spreading outwards like underground rivers, anchoring me against the fiercest storms that sweep across the valley below. I am the Great Oak of Ashworth, and I have seen more than any human being who has ever lived.
+
+I remember when the village was nothing more than a handful of thatched cottages clustered around a muddy track. In those early days, a blacksmith worked beneath my branches, the ring of his hammer echoing across the fields as he shaped horseshoes on his anvil. Children climbed my lower limbs, shrieking with laughter, while their mothers gathered my acorns to feed the pigs. I was young then, barely a sapling by oak standards, and my trunk was slender enough for a child to wrap their arms around.
+
+Centuries passed, and I grew. My trunk thickened until it took five adults standing in a ring with outstretched arms to encircle it. My canopy spread wide, casting a pool of shade that covered half the village green. Families picnicked beneath me on summer afternoons. Lovers carved their initials into my bark — those letters are still there, stretched and distorted now, swallowed slowly into my expanding flesh like secrets I have promised to keep.
+
+I have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.
+
+Now, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: "The Ashworth Oak — estimated age 400 years. Protected." Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.`,
           "question": "In the sentence 'Its enormous branches stretched across the entire meadow,' what type of word is 'enormous'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 2,
@@ -6000,6 +6131,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "storm-chasers",
           "passageTitle": "Storm Chasers",
+          "passage": `On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.
+
+Today, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.
+
+Perhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.
+
+Britain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.
+
+Despite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.`,
           "question": "In the sentence 'The team drove rapidly towards the approaching storm,' what type of word is 'rapidly'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
           "correct": 3,
@@ -6012,6 +6152,21 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "viking-ship",
           "passageTitle": "The Viking Ship",
+          "passage": `Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.
+
+"It's a replica," said Amir's grandmother, reading the information panel beside him. "Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets."
+
+Amir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.
+
+"How did they know where they were going?" he asked.
+
+"They navigated by the stars and the sun," his grandmother replied. "They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days."
+
+Amir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.
+
+At the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the "steerboard" side, and that our modern word "starboard" comes directly from this Viking term.
+
+"Can we stay a bit longer?" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.`,
           "question": "In the sentence 'The warriors sailed across the freezing sea,' what type of word is 'across'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -6024,6 +6179,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "florence-nightingale",
           "passageTitle": "Florence Nightingale's Lamp",
+          "passage": `In the winter of 1854, a young English nurse named Florence Nightingale arrived at the British military hospital in Scutari, Turkey. What she found horrified her. Wounded soldiers from the Crimean War lay on filthy floors, without clean bandages, proper food, or basic medicines. Infection spread rapidly through the overcrowded wards, and more men were dying from disease than from their battlefield injuries.
+
+Florence immediately set about transforming the hospital. She tended the wounded soldiers with great care, organising teams of nurses to scrub the wards clean, wash bed linen, and prepare nutritious meals. She insisted on proper ventilation, clean water, and fresh supplies — measures that seem obvious today but were revolutionary at the time. Within months, the death rate at Scutari had fallen dramatically.
+
+What made Florence famous, however, was not just her medical skill but her extraordinary dedication. She worked from dawn until long after midnight, and each night she walked the hospital corridors carrying a Turkish lamp, checking on patients who could not sleep. The soldiers called her 'The Lady with the Lamp,' and the image became one of the most recognised symbols of nursing in history.
+
+Florence Nightingale returned to England as a national heroine. She spent the rest of her long life campaigning to improve hospital conditions, training nurses at the school she founded at St Thomas' Hospital in London, and writing influential books on public health. She proved that careful observation, cleanliness, and compassion could save thousands of lives — and she changed the practice of medicine forever.`,
           "question": "In the sentence 'She tended the wounded soldiers with great care,' what type of word is 'wounded'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 2,
@@ -6036,6 +6198,17 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "silk-road",
           "passageTitle": "The Silk Road",
+          "passage": `Imagine a network of dusty tracks stretching more than six thousand miles across mountains, deserts, and grasslands, connecting the great civilisations of China and Rome. This was the Silk Road, one of the most important trade routes in human history, and for over fifteen hundred years it carried not just goods but ideas, religions, and inventions between East and West.
+
+The route earned its name from the most prized cargo that travelled along it: Chinese silk. This shimmering, lightweight fabric was produced by silkworms and was one of ancient China's most closely guarded secrets. For centuries, the Chinese kept the method of silk production hidden, and anyone caught smuggling silkworms or their eggs out of the country faced severe punishment. In Rome, silk was worth its weight in gold, and wealthy Romans would pay enormous sums for even a small piece.
+
+But silk was far from the only treasure that moved along these ancient paths. From China came porcelain, tea, paper, and gunpowder. Travelling in the opposite direction, merchants brought glassware, wool, gold, and silver from the Mediterranean. From India came spices such as pepper and cinnamon, along with precious gemstones. Central Asian traders contributed horses, furs, and honey.
+
+The journey along the Silk Road was extraordinarily dangerous. Merchants had to cross the scorching Taklamakan Desert, where temperatures could reach fifty degrees Celsius and sandstorms could bury entire caravans. They climbed through the towering Pamir Mountains, where the air was thin and the passes were blocked by snow for months at a time. Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo.
+
+Few merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.
+
+Perhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.`,
           "question": "In the sentence 'Merchants traded silk, spices and precious stones,' what type of word is 'traded'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 1,
@@ -6048,6 +6221,17 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "tudor-day",
           "passageTitle": "A Day in Tudor England",
+          "passage": `Thomas rubbed his eyes and swung his legs out of the narrow wooden bed. The bell in the chapel tower had just struck five, and already he could hear the other pages stirring in the dormitory around him. At ten years old, Thomas was the youngest page in Sir Edward Ashworth's household, and he had learned quickly that being last out of bed meant the coldest water for washing and the hardest crust of bread at breakfast.
+
+He dressed hurriedly in his woollen hose and linen shirt, pulling his dark green tunic over the top. Every page in the household wore the same green, embroidered with Sir Edward's coat of arms — a silver stag on a blue shield. Thomas was proud of his tunic, even though it itched terribly in warm weather. Being chosen as a page was a great honour for his family. His father, a merchant from Exeter, hoped that Thomas would learn the manners and skills of a gentleman and eventually become a squire.
+
+After a breakfast of bread, cheese, and small beer in the great hall, Thomas reported to Master Hewitt, the household steward, for his morning duties. Today he was assigned to serve at the high table during dinner, which in Tudor times was eaten at eleven o'clock in the morning. Thomas carefully laid out the silver salt cellar, the pewter plates, and the linen napkins, making sure everything was positioned exactly as Master Hewitt demanded. A single mistake could earn him a sharp rap across the knuckles.
+
+The afternoon brought lessons. Thomas practised his handwriting, copying passages from a book of prayers in his neatest script. Then came an hour of sword practice in the courtyard, where an older squire showed the pages how to hold a wooden practice sword and move their feet correctly. Thomas's arms ached afterwards, but he did not dare complain. A page who grumbled was a page who would never advance.
+
+As evening fell, Thomas sat on a bench near the enormous fireplace in the great hall, listening to a travelling musician play the lute and sing ballads about King Henry and his six wives. The firelight flickered across the tapestries that hung on the stone walls, making the woven figures seem to dance.
+
+"Not a bad life," whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.`,
           "question": "In the sentence 'Rich families ate lavishly while poor people often went hungry,' what type of word is 'while'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 4,
@@ -6060,6 +6244,19 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "midnight-library",
           "passageTitle": "The Midnight Library",
+          "passage": `Elara had always thought the old building at the end of Mulberry Lane was nothing more than a crumbling ruin. Its windows were boarded up, the front door was padlocked shut, and a thick curtain of ivy smothered the walls like a green blanket. Nobody in the village paid it any attention — except on the night Elara's cat, Biscuit, slipped through a gap in the fence and vanished inside.
+
+It was three minutes past midnight when Elara squeezed through the same gap, torch in hand. She expected dust, cobwebs and darkness. Instead, she found herself standing in a vast, glittering library. Thousands of books lined shelves that stretched up so high they disappeared into shadow. Candles floated in mid-air, casting a warm amber glow over everything. The air smelled of old paper, cinnamon and something she couldn't quite name — perhaps magic.
+
+"Biscuit?" she whispered, her voice swallowed by the enormous space.
+
+A book on the nearest shelf trembled, then launched itself into the air. It fluttered open like a bird spreading its wings, and from its pages tumbled a shower of tiny golden words that rearranged themselves into a sentence hovering before her eyes: WELCOME, ELARA. WE HAVE BEEN WAITING.
+
+Elara's heart hammered, but curiosity held her feet in place. She reached for another book — a slim green volume titled "The Ocean's Memory" — and the moment her fingers touched the spine, the library floor dissolved beneath her. Suddenly she was standing on the deck of a wooden sailing ship, salt spray on her lips and seagulls wheeling overhead. The story had pulled her in.
+
+She spent what felt like hours exploring three different books, each one a doorway into another world. A jungle adventure. A moonlit castle. A city built entirely of glass. When she finally stumbled back through the gap in the fence, Biscuit tucked under her arm, the village clock was striking quarter past twelve. Only twelve minutes had passed.
+
+Elara glanced back at the ruin. The ivy had closed over the gap already, as though the building were drawing its curtains. She smiled. She knew she would return tomorrow night — and every night after that.`,
           "question": "In the sentence 'She crept silently between the towering shelves,' what type of word is 'silently'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 3,
@@ -6072,6 +6269,21 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "attic-map",
           "passageTitle": "The Map in the Attic",
+          "passage": `It was the first day of the summer holidays, and Mia and her younger brother Sam had been sent to stay with their grandparents in the small Dorset village of Brindleton. Grandpa Joe had told them to keep out of trouble, which naturally meant they went straight up to the attic to look for some.
+
+The attic was a treasure trove of forgotten things: a dressmaker's dummy wearing a top hat, boxes of cracked china, and a rocking horse with only one eye. But it was Sam who made the real find. Wedged behind an old painting of a ship, he pulled out a roll of yellowed paper tied with a faded red ribbon.
+
+"It's a map!" he gasped, spreading it across the dusty floorboards.
+
+Mia knelt beside him. The map showed Brindleton as it must have looked a hundred years ago. Pencilled paths wound between landmarks they recognised — the church, the duck pond, the old oak on the village green — and at the centre was a bold red X beside the words: "Beneath the Whispering Stone."
+
+"We have to find it," Mia said, already halfway down the attic ladder.
+
+They spent the morning following the map's clues. The first led them to a moss-covered sundial in the churchyard, where faint letters carved into the base read: "Face the rising sun and count thirty paces." The second clue brought them to a crumbling stone wall behind the baker's shop, where a loose brick hid a small brass key. The third and final clue pointed them towards the ancient oak tree on the green.
+
+At the foot of the oak, half-buried in tangled roots, sat a flat grey stone. When Mia pressed her ear to it, she could hear a faint hum — almost like whispering. Sam used the brass key to prise up the stone, revealing a tin box no bigger than a shoebox. Inside lay a collection of hand-painted postcards from places around the world, a tiny compass, and a note in elegant handwriting: "To whoever finds this — never stop exploring. Your loving adventurer, Great-Aunt Hattie, 1923."
+
+Mia and Sam looked at each other and grinned. The summer holidays had only just begun.`,
           "question": "In the sentence 'Mia carefully unfolded the yellowed parchment,' what type of word is 'yellowed'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
           "correct": 2,
@@ -6084,6 +6296,25 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "last-dragon",
           "passageTitle": "The Last Dragon of Wales",
+          "passage": `Cadi had always loved the mountains. While other children in the village of Llanberis spent their weekends glued to screens, Cadi spent hers climbing the lower slopes of Snowdon with her border collie, Fflur, trotting at her heels. She knew every path, every stream, every hidden hollow. Or so she thought.
+
+One misty October morning, Cadi followed a sheep track she had never noticed before. It wound between two enormous boulders and dipped sharply into a narrow ravine carpeted with ferns. At the far end, half-hidden by a curtain of moss, was the mouth of a cave. Warm air drifted out, carrying a strange scent — like a bonfire mixed with freshly baked bread.
+
+Fflur whined and pressed against Cadi's leg, but Cadi crept forward. Inside the cave, the walls glowed a soft orange, as though lit from within. And there, curled on a bed of smooth river stones, lay a dragon.
+
+It was smaller than she had imagined — about the size of a large horse — with scales the colour of dark emeralds and wings folded tight against its body like a sleeping bat. One amber eye opened and regarded her calmly.
+
+"You can see me," the dragon said. Its voice was low and gravelly, like stones tumbling in a riverbed. "That has not happened in over three hundred years."
+
+Cadi's mouth opened and closed several times before words came out. "Are you... the last one?"
+
+The dragon lifted its great head. "I am Draig, and yes, I am the last. The others flew north centuries ago, beyond the reach of humans. I stayed because these mountains are my home." A thin ribbon of smoke curled from one nostril. "I stayed because someone needed to remember."
+
+Over the weeks that followed, Cadi visited Draig every Saturday. She brought him books from the village library, and in return he told her stories of ancient Wales — of princes, battles, and a time when dragons filled the skies like starlings at dusk. She learned that he survived by sleeping for decades at a time, waking only when the mountain called him.
+
+"Will you ever leave?" she asked one afternoon, scratching the rough scales beneath his chin.
+
+Draig closed his eyes contentedly. "Not while there is still someone who believes," he rumbled. "And now there is you."`,
           "question": "In the sentence 'The creature roared with terrifying power,' what type of word is 'terrifying'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 2,
@@ -6096,6 +6327,29 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "shipwrecked",
           "passageTitle": "Shipwrecked!",
+          "passage": `The sailing trip had been Mr Kapoor's idea. "A weekend on the water will do you all good," their teacher had announced, beaming at the class. And for the first few hours, it had been brilliant. The yacht, a sleek white vessel called the Silver Gull, cut through the waves off the Cornish coast while Zara, Finn, Priya and Marcus took turns at the helm under the watchful eye of their skipper, Captain Trevelyan.
+
+Then the storm arrived.
+
+It came from nowhere — a wall of charcoal cloud that swallowed the horizon in minutes. Rain lashed the deck. Waves the size of houses slammed against the hull. Captain Trevelyan barked orders, his voice barely audible above the howling wind. Then came a sickening crunch, and the Silver Gull lurched to one side. They had struck rocks.
+
+What happened next was a blur of shouting, life jackets and freezing seawater. When Zara opened her eyes, she was lying face down on a strip of wet sand, coughing up salt water. The storm had passed as quickly as it had arrived, leaving behind a sky washed clean and pale. She could see Finn and Priya huddled further up the beach, and Marcus was wading out of the shallows dragging a waterproof bag.
+
+Captain Trevelyan was nowhere to be seen.
+
+The island was tiny — no more than a few hundred metres across — with a cluster of wind-bent trees at its centre and rocky outcrops at either end. There was no sign of houses, roads, or people.
+
+"Right," said Priya, wringing water from her hair. "We need a plan."
+
+They divided the tasks. Finn gathered driftwood for a fire and used the waterproof matches from the emergency bag to light it. Priya and Marcus explored the island, discovering a freshwater stream trickling down from the rocks and a sheltered hollow out of the wind. Zara, the calmest of the four, took charge of rationing the small supply of food bars from the bag — three each, to last until help arrived.
+
+As the sun began to dip, painting the sea in shades of copper and rose, Zara spotted something on the horizon: a flashing light. A coastguard vessel.
+
+"Over here!" she screamed, waving her arms. Finn threw damp seaweed onto the fire, sending a thick column of white smoke spiralling into the sky.
+
+The light turned towards them. By nightfall, all four were wrapped in foil blankets aboard the rescue boat, sipping hot chocolate and trying to stop their hands from shaking. Captain Trevelyan, they learned, had been picked up an hour earlier, clinging to a piece of the Silver Gull's mast.
+
+"Best school trip ever," Marcus whispered, and despite everything, they all laughed.`,
           "question": "In the sentence 'The cold waves crashed against the rocks,' what type of word is 'crashed'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adjective (describing word)","An adverb (how word)","A preposition (position word)"],
           "correct": 1,
@@ -6108,6 +6362,23 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "clockmaker-apprentice",
           "passageTitle": "The Clockmaker's Apprentice",
+          "passage": `Nobody in the town of Ashworth paid much attention to the narrow shop squeezed between the chemist and the post office. Its sign — "Barnaby Thorne, Horologist" — was so faded that most people walked past without a second glance. But eleven-year-old Nell noticed it on the very first day her family moved to town, and something about the gentle tick-tick-tick drifting through the open door pulled her inside.
+
+The shop was a wonderland of timepieces. Grandfather clocks stood like tall soldiers along the back wall. Pocket watches lay in velvet-lined cases. Cuckoo clocks, carriage clocks, and clocks shaped like ships and castles filled every shelf and surface. And in the middle of it all sat Mr Thorne himself: a wiry old man with half-moon spectacles balanced on the tip of his nose and fingers as nimble as a pianist's.
+
+"Don't touch anything," he said, without looking up from the tiny mechanism he was adjusting with a pair of silver tweezers.
+
+"I wasn't going to," Nell replied, though her fingers were already itching.
+
+Mr Thorne peered at her over his spectacles. "You're the new family on Birch Lane. I suppose you'll be wanting something to do over the summer."
+
+And so began Nell's apprenticeship. Every morning at eight o'clock sharp, she would arrive at the shop, and Mr Thorne would teach her something new. She learned how to clean a clock face without scratching the enamel. She learned the difference between a mainspring and a hairspring, and why a pendulum swings at a steady rhythm. She learned to hold her breath while placing a gear no bigger than a ladybird into exactly the right position.
+
+The work demanded extraordinary patience. One afternoon, Nell spent three hours straightening a single bent tooth on a brass cog. When she finally succeeded, Mr Thorne gave her the rarest of his compliments: a brief nod.
+
+"Clockmaking," he told her one rainy Thursday, polishing a crystal face until it gleamed, "is not about telling the time. Any phone can do that. It is about respecting time — understanding that every second matters, that nothing worth making can be rushed." He held up the clock he had been restoring for six months: a beautiful Victorian mantel piece with a midnight-blue dial and golden hands. "This clock will outlive us both, and it will still keep perfect time. That is craftsmanship."
+
+Nell looked at the clock, then at her own clumsy, oil-stained hands. She was beginning to understand.`,
           "question": "In the sentence 'The delicate mechanism ticked softly inside the wooden case,' what type of word is 'softly'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 3,
@@ -6120,6 +6391,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "school-garden",
           "passageTitle": "The School Garden Project",
+          "passage": `When the children of Oakfield Primary School arrived one Monday morning in September, they found a surprise waiting for them in the far corner of the playing field. Over the summer holidays, a group of parent volunteers had cleared the overgrown patch of brambles and nettles, dug over the soil, and built four large raised beds from recycled wooden pallets. A hand-painted sign read: "Oakfield Allotment — Growing Together."
+
+Mrs Kapoor, the Year Five teacher who had organised the project, gathered the whole school in the hall to explain. "Every class will be responsible for one raised bed," she announced, her eyes shining with excitement. "You'll choose what to grow, plant the seeds, care for the plants, and — if all goes well — harvest your own vegetables to use in the school kitchen."
+
+The children threw themselves into the project with enormous enthusiasm. Year Three planted carrots, radishes, and spring onions. Year Four chose potatoes and broad beans. Year Five decided on courgettes, tomatoes, and lettuce, whilst Year Six opted for pumpkins, sweetcorn, and runner beans. Each class visited their bed twice a week, weeding carefully, watering the soil, and checking for slugs.
+
+One of the most important parts of the project was the compost bin, which stood at the edge of the allotment like a large wooden crate. The school dinner ladies began saving vegetable peelings and fruit scraps from the kitchen, and the children took turns adding them to the bin along with fallen leaves and grass cuttings from the school grounds. Mrs Kapoor explained that the mixture would slowly break down into rich, dark compost that could be spread on the beds to feed the soil.
+
+By the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special "Allotment Lunch" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.`,
           "question": "In the sentence 'The children planted seeds in neat rows,' what type of word is 'in'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -6132,6 +6412,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "post-delivery",
           "passageTitle": "How the Post Gets Delivered",
+          "passage": `Have you ever wondered what happens to a letter after you drop it into the bright red postbox on the corner of your street? Its journey is far more complicated — and far more impressive — than most people realise.
+
+First, a Royal Mail postal worker arrives in a van to collect the letters. This happens at least once a day, usually in the late afternoon. The time of the next collection is printed on a small label inside the postbox door, so you can check when your letter will be picked up. The worker unlocks the box with a special key, scoops out all the letters, and loads them into grey canvas sacks.
+
+The sacks are driven to the nearest sorting office, which is usually a large warehouse on an industrial estate. Here, the real work begins. Letters are tipped onto conveyor belts and fed through machines that can read postcodes at astonishing speed — up to 40,000 letters per hour. The machine scans the address, prints a pattern of orange dots on the envelope, and directs the letter into the correct tray for its destination. Letters that the machine cannot read — perhaps because of messy handwriting — are sorted by hand.
+
+Once sorted, the letters are bundled together by area and loaded onto lorries. If a letter is travelling a long distance, it might go to one of Royal Mail's main distribution centres before being sent on to the local sorting office nearest to the delivery address. Some letters travel hundreds of miles overnight, arriving at the local office in the early hours of the morning.
+
+Finally, the postal worker — or "postie," as many people call them — sets out on their round. Walking or cycling through the streets, they push letters through letterboxes, starting their round as early as half past six in the morning. By the time most people sit down to breakfast, their post has already completed a remarkable journey.`,
           "question": "In the sentence 'The postman delivers letters every morning,' what type of word is 'delivers'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adjective (describing word)","An adverb (how word)","A preposition (position word)"],
           "correct": 1,
@@ -6144,6 +6433,19 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "new-girl",
           "passageTitle": "The New Girl",
+          "passage": `Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.
+
+Her family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.
+
+"You must be Amira!" A woman with short silver hair and a warm smile appeared beside her. "I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things."
+
+The classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.
+
+At break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. "I'm Rosie," she said. "Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet." Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.
+
+By lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded "properly exciting." Amira found herself laughing for the first time all day.
+
+Walking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.`,
           "question": "In the sentence 'She felt nervous and uncertain about her first day,' what type of word is 'uncertain'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 2,
@@ -6156,6 +6458,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "cycling-school",
           "passageTitle": "Cycling to School",
+          "passage": `Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?
+
+The benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.
+
+Safety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.
+
+Instructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the "M-check," running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.
+
+Schools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.`,
           "question": "In the sentence 'He pedalled steadily up the steep hill,' what type of word is 'steadily'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 3,
@@ -6168,6 +6479,19 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "bake-off",
           "passageTitle": "The Bake Off",
+          "passage": `"Right then," said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. "The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win."
+
+Oliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.
+
+For the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.
+
+Then disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. "There's no cocoa!" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. "I forgot to put it on the middle shelf!" she wailed.
+
+Priya looked at the chaos around her, set down her piping bag, and took charge. "Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know."
+
+An hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.
+
+Dad tasted each one slowly, making exaggerated "mmm" noises. Finally, he announced: "I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers."`,
           "question": "In the sentence 'The delicious aroma drifted through the kitchen,' what type of word is 'through'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -6180,6 +6504,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "secret-bees",
           "passageTitle": "The Secret World of Bees",
+          "passage": `Most people think of bees as the small, buzzy creatures that hover around flowers in summer, but there is far more to these remarkable insects than meets the eye. In Britain alone, there are over 250 different species of bee, and only one of them — the honeybee — actually makes honey.
+
+Bees live in carefully organised colonies. A single honeybee hive can contain up to sixty thousand bees, all working together with incredible precision. At the centre of every hive is the queen, whose only job is to lay eggs — sometimes as many as two thousand in a single day. The worker bees, all female, do everything else: building the honeycomb, feeding the young, guarding the entrance, and flying out to collect nectar and pollen from flowers.
+
+The way bees communicate is one of nature's greatest marvels. When a worker bee discovers a good source of nectar, she returns to the hive and performs a special movement known as the waggle dance. By wiggling her body in a particular pattern, she tells the other bees exactly how far away the flowers are and in which direction to fly. Scientists have studied this dance for decades and still find new details about how it works.
+
+Bees are also essential to the British countryside. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next plant. This process, called pollination, is vital for growing fruits, vegetables, and wildflowers. Without bees, we would lose about a third of the food we eat, including apples, strawberries, and runner beans.
+
+Sadly, bee numbers in the United Kingdom have fallen sharply in recent years. Habitat loss, pesticides, and disease have all taken their toll. Conservation groups are now working hard to protect these tiny but mighty creatures, encouraging people to plant wildflowers and avoid harmful chemicals in their gardens.`,
           "question": "In the sentence 'Bees are incredibly important for our environment,' what type of word is 'important'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adjective (describing word)","An adverb (how word)","A preposition (position word)"],
           "correct": 2,
@@ -6192,6 +6525,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "ocean-depths",
           "passageTitle": "Into the Ocean Depths",
+          "passage": `The ocean covers more than seventy per cent of our planet's surface, yet we have explored less of it than we have of the Moon. Beneath the waves lies a world of extraordinary creatures, crushing pressures, and total darkness — a place more alien than anything science fiction could imagine.
+
+The ocean is divided into layers, rather like a cake. The top layer, called the sunlight zone, stretches down to about two hundred metres. This is where most sea life lives, because sunlight can still reach here, allowing tiny plants called phytoplankton to grow. These microscopic organisms produce over half of all the oxygen we breathe — more than all the world's rainforests combined.
+
+Below the sunlight zone lies the twilight zone, from two hundred to one thousand metres deep. Here, the light fades to a dim blue glow, and the water grows bitterly cold. Many creatures in this zone have developed the ability to make their own light, a trick called bioluminescence. Lanternfish, for example, have rows of tiny light organs along their bellies that flash and shimmer in the darkness.
+
+Deeper still is the midnight zone, where no sunlight penetrates at all. The pressure here is immense — imagine having fifty jumbo jets stacked on top of you. Yet even here, life finds a way. Giant squid with eyes the size of dinner plates hunt in the blackness, while strange worms cluster around volcanic vents on the ocean floor, feeding on chemicals that would be poisonous to most living things.
+
+The very deepest part of any ocean is the Mariana Trench in the Pacific, which plunges to nearly eleven thousand metres. In 2019, the British explorer Victor Vescovo became one of the few people ever to reach the bottom. Astonishingly, even there, in the most extreme environment on Earth, he found living creatures — and plastic rubbish.`,
           "question": "In the sentence 'Strange creatures lurk in the darkness below,' what type of word is 'below'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 3,
@@ -6204,6 +6546,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "lightning",
           "passageTitle": "When Lightning Strikes",
+          "passage": `On a hot summer afternoon, when the air feels thick and heavy, dark clouds begin to pile up along the horizon. Inside those towering clouds, an extraordinary process is taking place. Tiny ice crystals and water droplets collide with tremendous force, building up enormous electrical charges — positive at the top of the cloud, negative at the bottom. When the difference becomes too great, nature releases it in one of its most spectacular displays: a crack of white fire splitting the sky.
+
+Lightning strikes are both dangerous and fascinating. A single bolt can reach temperatures of 30,000 degrees Celsius — roughly five times hotter than the surface of the sun. It travels at speeds of up to 270,000 miles per hour and can carry 300 million volts of electricity. The thunder we hear is the sound of air expanding explosively as the lightning superheats it, creating a shockwave that rumbles across the landscape.
+
+Britain experiences around 300,000 lightning strikes each year, mostly during summer months when warm, moist air rises rapidly to form cumulonimbus clouds. The safest place during a thunderstorm is inside a building or a car, whose metal frame conducts the electricity safely around the occupants. Standing under a tree is extremely dangerous, as trees are often the tallest objects in a landscape and attract lightning strikes.
+
+Despite its dangers, lightning plays a vital role in nature. It helps produce nitrogen compounds that fertilise the soil, and the fires it starts in wild landscapes can clear old growth and allow new plants to flourish. Scientists continue to study lightning using high-speed cameras and rocket-triggered experiments, but much about this dazzling phenomenon remains mysterious.`,
           "question": "In the sentence 'Lightning strikes are both dangerous and fascinating,' what type of word is 'and'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 4,
@@ -6216,6 +6565,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "fire-mountains",
           "passageTitle": "Fire Mountains",
+          "passage": `Deep beneath the Earth's surface, temperatures are hot enough to melt rock. This molten rock, called magma, churns and swirls in a thick, glowing layer known as the mantle. Sometimes, the pressure becomes so great that the magma forces its way upwards through cracks in the Earth's crust and bursts out onto the surface. When this happens, we call it a volcanic eruption, and the mountain it creates is a volcano.
+
+There are around 1,500 active volcanoes on Earth, and about twenty of them are erupting at any given moment. Most volcanoes are found along the edges of tectonic plates — the enormous slabs of rock that make up the Earth's outer shell. The Pacific Ring of Fire, a horseshoe-shaped belt stretching around the Pacific Ocean, contains about seventy-five per cent of all active volcanoes.
+
+Not all volcanic eruptions are the same. Some volcanoes, like Kilauea in Hawaii, ooze rivers of lava slowly across the landscape. Others, like Mount Vesuvius in Italy, erupt with terrifying violence, hurling ash, rocks, and poisonous gas high into the sky. The eruption of Vesuvius in AD 79 buried the entire Roman city of Pompeii under six metres of volcanic ash, preserving it almost perfectly for nearly two thousand years.
+
+Britain does not have any active volcanoes today, but it was not always so peaceful. Edinburgh Castle sits on top of an ancient volcanic plug — the solidified core of a volcano that erupted over three hundred million years ago. Arthur's Seat, the famous hill in Edinburgh, is another remnant of this fiery past.
+
+Volcanoes are not entirely destructive. Volcanic soil is extremely fertile, which is why many farmers choose to live on the slopes of volcanoes despite the danger. Volcanic eruptions also release gases that helped form the Earth's atmosphere billions of years ago, and hot springs heated by underground volcanic activity provide warmth and energy in countries like Iceland and New Zealand.`,
           "question": "In the sentence 'Molten lava flows slowly down the mountainside,' what type of word is 'slowly'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 3,
@@ -6228,6 +6586,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "ancient-woodlands",
           "passageTitle": "Britain's Ancient Woodlands",
+          "passage": `Scattered across Britain are patches of forest that have stood, unbroken, since at least the year 1600 — and many are far older than that. These remarkable forests have survived for thousands of years, predating the Norman Conquest, the Roman invasion, and in some cases even the arrival of farming in these islands. They are called ancient woodlands, and they are among the most precious and irreplaceable habitats in the country.
+
+Ancient woodlands are home to an extraordinary variety of life. Their soils, undisturbed for centuries, contain complex networks of fungi that connect tree roots underground, allowing trees to share nutrients and even warn each other of pest attacks. Bluebells, wood anemones, and wild garlic carpet the floor each spring — plants that spread so slowly they are reliable indicators of truly ancient ground. If you see a bluebell wood, the chances are that woodland has been there for at least four hundred years.
+
+The trees themselves tell remarkable stories. Many ancient woodlands were traditionally managed by coppicing — cutting trees near the base and allowing them to regrow multiple stems. Some coppiced trees have root systems that are over a thousand years old, even though the visible stems are much younger. These living monuments connect us directly to the medieval craftsmen who harvested their wood for fuel, fencing, and building.
+
+Despite legal protections, ancient woodlands remain under threat from development, road building, and the spread of invasive species. Conservation groups argue that once destroyed, an ancient woodland cannot be recreated — the intricate web of life it supports took centuries to develop and cannot be replanted.`,
           "question": "In the sentence 'These remarkable forests have survived for thousands of years,' what type of word is 'remarkable'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
           "correct": 2,
@@ -6240,6 +6605,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "night-sky",
           "passageTitle": "A Guide to the Night Sky",
+          "passage": `On a clear night, far from the glow of street lights and towns, the sky transforms into a vast, glittering display. The stars twinkled brightly above the quiet countryside, and for thousands of years, humans have gazed upward in wonder, telling stories about the patterns they saw among the stars.
+
+The easiest pattern to recognise in the British night sky is the Plough — seven bright stars forming the shape of a saucepan, which is part of a larger constellation called Ursa Major, the Great Bear. By following the two stars at the end of the Plough's 'blade' upward, you can find Polaris, the North Star, which sits almost directly above the North Pole and has guided travellers and sailors for centuries.
+
+The best time to observe the night sky is during a new moon, when the moon's light does not wash out fainter stars. Winter nights, though cold, offer some of the clearest viewing conditions and the most spectacular constellations, including Orion the Hunter with his distinctive belt of three bright stars. In summer, the Milky Way — our own galaxy seen from the inside — stretches across the sky like a pale, luminous river.
+
+Light pollution is the biggest enemy of stargazing. In towns and cities, fewer than a hundred stars may be visible, compared to several thousand in a truly dark location. Dark sky reserves, such as Northumberland International Dark Sky Park, protect areas where artificial light is minimised, allowing visitors to experience the night sky as our ancestors once saw it.`,
           "question": "In the sentence 'The stars twinkled brightly above the quiet countryside,' what type of word is 'above'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -6252,6 +6624,15 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "hedgehog-highways",
           "passageTitle": "Hedgehog Highways",
+          "passage": `The hedgehog is one of Britain's best-loved animals, but it is in serious trouble. Since the year 2000, hedgehog numbers in the United Kingdom have fallen by roughly half, from an estimated 1.5 million to fewer than 750,000. If this decline continues, some scientists believe hedgehogs could disappear from the British countryside within a generation.
+
+Hedgehogs are nocturnal creatures, meaning they are active at night. After sunset, they emerge from their nests — usually piles of leaves tucked under hedges or garden sheds — and set off in search of food. A single hedgehog can travel up to two kilometres in one night, snuffling through gardens, fields, and hedgerows looking for slugs, beetles, caterpillars, and earthworms. They eat a remarkable amount: one hedgehog can munch through around eighty slugs in a single night.
+
+The biggest threat to hedgehogs is not predators like badgers or foxes, but the way humans have changed the landscape. Modern gardens are often surrounded by solid fences and walls with no gaps at the bottom. For a hedgehog trying to travel between gardens, this is like hitting a brick wall — quite literally. Without being able to roam freely, hedgehogs cannot find enough food, mates, or safe nesting sites.
+
+This is where hedgehog highways come in. A hedgehog highway is simply a small hole, about thirteen centimetres square, cut into the bottom of a garden fence. This tiny gap allows hedgehogs to pass through freely while being too small for most pets to squeeze through. The idea has caught on across Britain, with thousands of homeowners cutting holes in their fences and marking them with special 'Hedgehog Highway' signs.
+
+Other ways to help hedgehogs include leaving a shallow dish of water in the garden, avoiding slug pellets (which poison the slugs that hedgehogs eat), and creating log piles where hedgehogs can hibernate during winter. Hedgehogs curl into a tight ball from November to March, slowing their heartbeat from around 190 beats per minute to just twenty, surviving on the fat reserves they built up during autumn.`,
           "question": "In the sentence 'Volunteers worked tirelessly to create safe routes,' what type of word is 'tirelessly'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 3,
@@ -6264,6 +6645,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "raindrop-journey",
           "passageTitle": "The Journey of a Raindrop",
+          "passage": `High above the fields of southern England, a small grey cloud drifts on the autumn wind. Inside it, millions of tiny water droplets cling to specks of dust, each one too light to fall. But as the cloud rises and cools, the droplets merge and grow heavier. The tiny raindrop fell from the grey cloud, tumbling through the air, bouncing off a leaf, and landing with a soft splash in a puddle on the footpath below.
+
+This is just the beginning of the raindrop's remarkable journey. From the puddle, it trickles into a drainage ditch, then into a small stream that winds through a farmer's field. The stream joins a river, which flows through villages and towns, under stone bridges and past old mills, gathering water from hundreds of other streams along the way. By the time it reaches the coast, the river is wide and slow, carrying our raindrop out into the salty waters of the English Channel.
+
+But the journey does not end at the sea. Warmed by the sun, water molecules at the ocean's surface gain enough energy to escape into the air as invisible water vapour — a process called evaporation. Rising on warm currents of air, the vapour cools and condenses around tiny particles of dust or salt, forming new cloud droplets. The cycle begins again.
+
+This endless loop — evaporation, condensation, precipitation, and collection — is called the water cycle, and it has been running without interruption for billions of years. Every glass of water you drink contains molecules that have been rain, river, ocean, and cloud countless times before.`,
           "question": "In the sentence 'The tiny raindrop fell from the grey cloud,' what type of word is 'fell'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adjective (describing word)","An adverb (how word)","A preposition (position word)"],
           "correct": 1,
@@ -6276,6 +6664,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "fastest-animal",
           "passageTitle": "The Fastest Animal on Earth",
+          "passage": `When people think of fast animals, they usually picture a cheetah sprinting across the African savannah. The cheetah is indeed the fastest animal on land, capable of reaching 70 miles per hour in short bursts. But the true speed champion of the animal kingdom is a bird — and it lives right here in Britain.
+
+The peregrine falcon dives at extraordinary speed, tucking its wings tight against its body and plunging toward its prey in a hunting manoeuvre called a stoop. During a stoop, a peregrine can exceed 240 miles per hour, making it the fastest animal ever recorded. To put that in perspective, it is faster than a Formula One car and nearly as fast as a skydiver in freefall.
+
+How does the peregrine survive such extreme speeds? Its body is superbly adapted for the task. A bony ridge above each eye acts as a sun visor, reducing glare. Special baffles in its nostrils slow the airflow so it can breathe during the dive. Its feathers are stiff and streamlined, reducing drag, and its powerful chest muscles allow it to pull out of the dive and strike its target — usually a pigeon or other bird — with devastating precision.
+
+Peregrine falcons nearly disappeared from Britain in the 1960s due to pesticide poisoning, but a long-running conservation programme has brought them back. Today, peregrines nest not only on sea cliffs and mountain crags but also on the ledges of city buildings, cathedrals, and tower blocks, where they hunt the plentiful pigeons below. In many cities, webcams allow the public to watch peregrine families raise their chicks each spring.`,
           "question": "In the sentence 'The peregrine falcon dives at extraordinary speed,' what type of word is 'extraordinary'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 2,
@@ -6288,6 +6683,13 @@ const englishData = {
           "questionSubType": "word-class",
           "passageId": "pharaohs",
           "passageTitle": "Secrets of the Pharaohs",
+          "passage": `For over three thousand years, the pharaohs of ancient Egypt ruled one of the most powerful civilisations the world has ever known. They built enormous pyramids, carved temples into mountainsides, and filled their tombs with treasures of breathtaking beauty. Then, as Egypt's power faded, the desert sands slowly buried their monuments, and the secrets of the pharaohs were lost to the world for centuries.
+
+Archaeologists discovered the tomb beneath the sand in a series of extraordinary excavations that began in the early nineteenth century. The most famous discovery came in 1922, when the British archaeologist Howard Carter found the tomb of Tutankhamun in the Valley of the Kings. Unlike most royal tombs, which had been emptied by grave robbers centuries earlier, Tutankhamun's burial chamber was almost completely intact. Inside lay a solid gold coffin, a magnificent death mask, jewellery, weapons, furniture, and even preserved food — over five thousand objects in total.
+
+The discovery caused a worldwide sensation. Newspapers ran breathless headlines, and 'Tut-mania' swept across Europe and America. The treasures revealed the astonishing skill of ancient Egyptian craftsmen and provided invaluable information about royal life, religious beliefs, and burial customs. Scientists have since used X-rays, CT scans, and DNA analysis to learn more about Tutankhamun himself — a young king who died at just nineteen, probably from a combination of malaria and a broken leg.
+
+Today, the treasures of Tutankhamun are displayed at the Grand Egyptian Museum in Cairo, where they continue to fascinate visitors from around the world. The pharaohs may have been gone for two thousand years, but their legacy endures in stone, gold, and the endless curiosity of those who seek to understand them.`,
           "question": "In the sentence 'Archaeologists discovered the tomb beneath the sand,' what type of word is 'beneath'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
@@ -6300,6 +6702,19 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "lighthouse-cat",
           "passageTitle": "The Lighthouse Keeper's Cat",
+          "passage": `Every evening, as the sun dipped below the horizon and the sea turned from blue to inky black, Old Tom climbed the one hundred and forty-seven steps to the top of Hartland Lighthouse. His knees ached and his back protested, but he never missed a night. The ships depended on him.
+
+His only companion was a marmalade cat called Barnacle, who had appeared on the doorstep one stormy November night, soaking wet and mewing pitifully. That had been three winters ago. Now Barnacle followed Tom everywhere — up the spiral staircase, along the narrow walkway, and into the lamp room where the great light revolved slowly, sending its beam far out across the dark water.
+
+"You're a better assistant than any human I've known," Tom would say, scratching Barnacle behind the ears. The cat would purr in response, his amber eyes reflecting the rotating light.
+
+One February evening, a terrible fog rolled in from the Atlantic. Tom could barely see his own hand in front of his face. He checked the lamp three times, making sure it burned at full brightness. Then he heard something that made his blood run cold — the blast of a ship's horn, far too close to the rocks below.
+
+Tom grabbed the fog horn lever and pulled with all his strength. The deep, booming sound echoed across the water. He pulled again and again. Barnacle pressed against his legs, fur standing on end.
+
+Minutes passed. Then, slowly, the horn sound grew fainter. The ship was turning away, finding safer waters. Tom slumped into his chair, exhausted but relieved. Barnacle jumped onto his lap and purred.
+
+"Another one saved, old friend," Tom whispered. "Another one saved."`,
           "question": "Why does Tom climb the lighthouse steps 'two at a time'?",
           "options": ["He wants to exercise","He is racing against Barnacle","He is in a hurry because he is worried about something","He always climbs stairs quickly","He wants to reach the light before dark"],
           "correct": 2,
@@ -6312,6 +6727,29 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "storm-warning",
           "passageTitle": "Storm Warning",
+          "passage": `The morning had started perfectly. Blue sky, gentle breeze, the sea as flat as a mirror. Kai, Isla, and their instructor, Dave, had set out from Poole Harbour at nine o'clock in the little sailing dinghy, and by ten they were tacking smoothly across Studland Bay with the white cliffs of Old Harry Rocks gleaming in the distance.
+
+"You're natural sailors, both of you," Dave said, adjusting his sunglasses. "We'll head over towards the Purbeck coast and have lunch at Chapman's Pool."
+
+Kai grinned at his sister. This was so much better than another day stuck at home during the summer holidays. The water was clear enough to see the sandy bottom, and a pod of dolphins had surfaced nearby, their curved backs glistening.
+
+But by midday, everything had changed. The breeze stiffened. The sky in the west turned the colour of a bruise — dark purple with edges of sickly yellow. Dave's expression shifted from relaxed to alert in an instant.
+
+"Right," he said, his voice calm but firm. "Change of plan. We're heading straight back to the harbour. Kai, I need you on the jib sheet. Isla, take the tiller and keep us pointing north-east. Do exactly as I say, when I say it."
+
+The first gust hit them like a slap. The dinghy heeled sharply, and cold spray exploded over the side. Isla gripped the tiller with white knuckles, her heart hammering against her ribs. Kai hauled on the rope until his palms burned, fighting to keep the jib under control.
+
+"Ease out! Ease out!" Dave shouted over the rising wind. "Don't fight it — work with it!"
+
+Waves that had been gentle ripples were now steep grey walls, each one lifting the dinghy's bow before dropping it with a stomach-lurching crash. Rain arrived in horizontal sheets, stinging their faces and making it almost impossible to see. Thunder grumbled somewhere behind them, getting closer.
+
+For forty minutes they battled. Kai's arms screamed with exhaustion. Isla's teeth chattered from the cold, but she never let go of the tiller, adjusting their course with tiny, precise movements exactly as Dave directed. They worked as a team, each trusting the others completely.
+
+Then, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I can see it!"
+
+Dave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.
+
+"Same time tomorrow?" she said.`,
           "question": "What does the description of the sky as 'bruised and heavy' tell the reader?",
           "options": ["The sky has been damaged","The weather is about to turn very bad","It is night time","The clouds are purple","Someone has been hurt"],
           "correct": 1,
@@ -6324,6 +6762,23 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "peculiar-museum",
           "passageTitle": "The Peculiar Museum",
+          "passage": `Priya had walked past the little museum on Coppice Lane a thousand times without ever going inside. It sat between the chip shop and the post office, with a faded green door and a hand-painted sign that read: "Coppice Lane Museum of Curious Objects — Open Tuesdays and Saturdays, 10am–4pm."
+
+It was a rainy Saturday in March, and Priya had nothing else to do. She pushed open the door. A bell tinkled overhead.
+
+Inside, the museum was far larger than it looked from the street. Glass cabinets lined every wall, crammed with objects that seemed to glow under the warm yellow lights. A stuffed owl perched on a branch in the corner, its glass eyes following Priya as she moved. Or at least, that's what it felt like.
+
+"Welcome!" A tiny woman with silver hair and round spectacles appeared from behind a curtain. "I'm Mrs Greenwood. I don't get many young visitors. Most children prefer the internet these days."
+
+"What is all this stuff?" Priya asked, peering into a cabinet containing a collection of Victorian pennies, a compass that spun wildly in circles, and what appeared to be a genuine dinosaur tooth.
+
+"Every object has a story," Mrs Greenwood said, her eyes twinkling. "That compass, for instance, belonged to an explorer who claimed it always pointed towards adventure rather than north. And that tooth? Found right here in Dorset, on the Jurassic Coast, one hundred and forty million years old."
+
+Priya stared at the tooth. It was dark brown and heavy-looking, about the size of her thumb. She felt a shiver of wonder. Something that old, sitting in a tiny museum, on an ordinary street, in her ordinary town.
+
+"Can I come back next Tuesday?" she asked.
+
+Mrs Greenwood smiled. "I was hoping you'd say that."`,
           "question": "Why does the author describe the museum as 'peculiar' rather than just 'old' or 'interesting'?",
           "options": ["Because it is very large","Because there is something strange and unexpected about it","Because it is in a peculiar location","Because the exhibits are boring","Because it is very expensive"],
           "correct": 1,
@@ -6336,6 +6791,13 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "secret-hedgehogs",
           "passageTitle": "The Secret Life of Hedgehogs",
+          "passage": `Most people have never watched a hedgehog at work, and for good reason: hedgehogs are almost entirely nocturnal. They emerge after dark, snuffling through gardens, parks, and woodland edges in search of food. They build warm nests from dry leaves and grass, tucking themselves into sheltered spots during the day where they sleep soundly, invisible to the world above.
+
+A hedgehog's night begins at dusk. Using its remarkably sharp sense of smell — far more powerful than a human's — it follows invisible trails left by slugs, beetles, and earthworms. A single hedgehog can travel up to two kilometres in one night, covering a home range that might include a dozen gardens. It moves with surprising purpose, following the same routes night after night, squeezing through gaps in fences and under gates with practised ease.
+
+The hedgehog's most famous feature is, of course, its spines — around seven thousand of them, each one a modified hair made of keratin, the same material as human fingernails. When threatened, a hedgehog rolls into a tight ball, presenting a prickly fortress that deters most predators. Badgers, however, are strong enough to uncurl a hedgehog, which is one reason why hedgehog numbers tend to be lower in areas with large badger populations.
+
+As dawn approaches, the hedgehog returns to its nest, curls up, and sleeps. The garden looks perfectly ordinary in the morning light, giving no sign of the busy little creature that spent the whole night patrolling it. This is why the author calls hedgehogs' lives 'secret' — their entire world unfolds while we are asleep.`,
           "question": "Why does the author call hedgehogs' lives 'secret'?",
           "options": ["Because hedgehogs can talk","Because most people don't know what hedgehogs do at night","Because hedgehogs hide from other animals","Because scientists don't study hedgehogs","Because hedgehogs are invisible"],
           "correct": 1,
@@ -6348,6 +6810,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "great-oak",
           "passageTitle": "The Great Oak",
+          "passage": `I have stood on this hilltop for four hundred years. My roots reach deep into the chalky soil of the Chiltern Hills, spreading outwards like underground rivers, anchoring me against the fiercest storms that sweep across the valley below. I am the Great Oak of Ashworth, and I have seen more than any human being who has ever lived.
+
+I remember when the village was nothing more than a handful of thatched cottages clustered around a muddy track. In those early days, a blacksmith worked beneath my branches, the ring of his hammer echoing across the fields as he shaped horseshoes on his anvil. Children climbed my lower limbs, shrieking with laughter, while their mothers gathered my acorns to feed the pigs. I was young then, barely a sapling by oak standards, and my trunk was slender enough for a child to wrap their arms around.
+
+Centuries passed, and I grew. My trunk thickened until it took five adults standing in a ring with outstretched arms to encircle it. My canopy spread wide, casting a pool of shade that covered half the village green. Families picnicked beneath me on summer afternoons. Lovers carved their initials into my bark — those letters are still there, stretched and distorted now, swallowed slowly into my expanding flesh like secrets I have promised to keep.
+
+I have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.
+
+Now, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: "The Ashworth Oak — estimated age 400 years. Protected." Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.`,
           "question": "What does the phrase 'the oak had witnessed centuries of change' suggest about the tree?",
           "options": ["The tree can see","The tree is very old and has been standing through many generations","The tree has been moved many times","The tree was planted recently","The tree is magical"],
           "correct": 1,
@@ -6360,6 +6831,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "rock-pools",
           "passageTitle": "The Rock Pools of Cornwall",
+          "passage": `Every summer, thousands of families flock to the rugged coastline of Cornwall to explore one of nature's most fascinating habitats: the rock pool. These miniature worlds, carved into the granite by centuries of crashing waves, are teeming with life. At low tide, the retreating sea leaves behind pools of crystal-clear water that become temporary homes for an astonishing variety of creatures.
+
+The best time to visit rock pools is during a spring tide, when the sea pulls back further than usual, revealing pools that are normally hidden beneath the waves. Armed with a bucket, a small net and a magnifying glass, young explorers can discover creatures they might never otherwise see. The key rule of rock pooling, however, is simple: look, enjoy, and always put everything back exactly where you found it.
+
+The most common inhabitants of Cornish rock pools are limpets and periwinkles, which cling stubbornly to the rocks with a muscular foot so powerful that trying to prise them off would damage both the animal and the rock. Bright green sea lettuce grows in frilly clusters, providing shelter for tiny shrimps that dart away at the slightest shadow. Hermit crabs are a particular favourite with children — these comical creatures live inside borrowed shells, upgrading to larger ones as they grow. If you watch patiently, you might even spot one swapping its shell for a bigger model.
+
+More adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.
+
+Rock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.`,
           "question": "Why does the author describe the rock pool as 'a miniature world'?",
           "options": ["Because it is very small","Because it contains a complete ecosystem with many different creatures, like a tiny version of the ocean","Because children like small things","Because it is shaped like the world","Because it has a map in it"],
           "correct": 1,
@@ -6372,6 +6852,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "bee-honey",
           "passageTitle": "How Bees Make Honey",
+          "passage": `Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.
+
+In the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.
+
+Forager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.
+
+Back at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.
+
+Beyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.`,
           "question": "Why does the author compare a beehive to 'a perfectly organised factory'?",
           "options": ["Because bees are machines","Because every bee has a specific job and they work together efficiently","Because beehives are made of metal","Because bees produce pollution","Because factories make honey"],
           "correct": 1,
@@ -6384,6 +6873,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "storm-chasers",
           "passageTitle": "Storm Chasers",
+          "passage": `On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.
+
+Today, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.
+
+Perhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.
+
+Britain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.
+
+Despite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.`,
           "question": "What do the storm chasers' actions tell us about their character?",
           "options": ["They are lazy","They are brave and passionate about understanding weather","They are afraid of storms","They don't enjoy their job","They are lost"],
           "correct": 1,
@@ -6396,6 +6894,21 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "viking-ship",
           "passageTitle": "The Viking Ship",
+          "passage": `Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.
+
+"It's a replica," said Amir's grandmother, reading the information panel beside him. "Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets."
+
+Amir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.
+
+"How did they know where they were going?" he asked.
+
+"They navigated by the stars and the sun," his grandmother replied. "They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days."
+
+Amir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.
+
+At the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the "steerboard" side, and that our modern word "starboard" comes directly from this Viking term.
+
+"Can we stay a bit longer?" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.`,
           "question": "Why might the author have chosen to describe the Vikings' journey from the perspective of someone on the ship?",
           "options": ["Because the author was a Viking","To make the reader feel like they are there, experiencing the journey","Because it was easier to write","Because Vikings only told stories on ships","Because the ship is the most important character"],
           "correct": 1,
@@ -6408,6 +6921,13 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "florence-nightingale",
           "passageTitle": "Florence Nightingale's Lamp",
+          "passage": `In the winter of 1854, a young English nurse named Florence Nightingale arrived at the British military hospital in Scutari, Turkey. What she found horrified her. Wounded soldiers from the Crimean War lay on filthy floors, without clean bandages, proper food, or basic medicines. Infection spread rapidly through the overcrowded wards, and more men were dying from disease than from their battlefield injuries.
+
+Florence immediately set about transforming the hospital. She tended the wounded soldiers with great care, organising teams of nurses to scrub the wards clean, wash bed linen, and prepare nutritious meals. She insisted on proper ventilation, clean water, and fresh supplies — measures that seem obvious today but were revolutionary at the time. Within months, the death rate at Scutari had fallen dramatically.
+
+What made Florence famous, however, was not just her medical skill but her extraordinary dedication. She worked from dawn until long after midnight, and each night she walked the hospital corridors carrying a Turkish lamp, checking on patients who could not sleep. The soldiers called her 'The Lady with the Lamp,' and the image became one of the most recognised symbols of nursing in history.
+
+Florence Nightingale returned to England as a national heroine. She spent the rest of her long life campaigning to improve hospital conditions, training nurses at the school she founded at St Thomas' Hospital in London, and writing influential books on public health. She proved that careful observation, cleanliness, and compassion could save thousands of lives — and she changed the practice of medicine forever.`,
           "question": "What does the detail about Florence carrying a lamp at night suggest about her?",
           "options": ["She was afraid of the dark","She was dedicated to her patients and worked even through the night","She collected lamps","The hospital had no electricity","She was looking for something she lost"],
           "correct": 1,
@@ -6420,6 +6940,17 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "silk-road",
           "passageTitle": "The Silk Road",
+          "passage": `Imagine a network of dusty tracks stretching more than six thousand miles across mountains, deserts, and grasslands, connecting the great civilisations of China and Rome. This was the Silk Road, one of the most important trade routes in human history, and for over fifteen hundred years it carried not just goods but ideas, religions, and inventions between East and West.
+
+The route earned its name from the most prized cargo that travelled along it: Chinese silk. This shimmering, lightweight fabric was produced by silkworms and was one of ancient China's most closely guarded secrets. For centuries, the Chinese kept the method of silk production hidden, and anyone caught smuggling silkworms or their eggs out of the country faced severe punishment. In Rome, silk was worth its weight in gold, and wealthy Romans would pay enormous sums for even a small piece.
+
+But silk was far from the only treasure that moved along these ancient paths. From China came porcelain, tea, paper, and gunpowder. Travelling in the opposite direction, merchants brought glassware, wool, gold, and silver from the Mediterranean. From India came spices such as pepper and cinnamon, along with precious gemstones. Central Asian traders contributed horses, furs, and honey.
+
+The journey along the Silk Road was extraordinarily dangerous. Merchants had to cross the scorching Taklamakan Desert, where temperatures could reach fifty degrees Celsius and sandstorms could bury entire caravans. They climbed through the towering Pamir Mountains, where the air was thin and the passes were blocked by snow for months at a time. Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo.
+
+Few merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.
+
+Perhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.`,
           "question": "Why does the author emphasise how long and dangerous the journey along the Silk Road was?",
           "options": ["To scare the reader","To make the reader appreciate how valuable the traded goods must have been","To show that people were foolish","To explain why nobody travels any more","To describe the weather"],
           "correct": 1,
@@ -6432,6 +6963,17 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "tudor-day",
           "passageTitle": "A Day in Tudor England",
+          "passage": `Thomas rubbed his eyes and swung his legs out of the narrow wooden bed. The bell in the chapel tower had just struck five, and already he could hear the other pages stirring in the dormitory around him. At ten years old, Thomas was the youngest page in Sir Edward Ashworth's household, and he had learned quickly that being last out of bed meant the coldest water for washing and the hardest crust of bread at breakfast.
+
+He dressed hurriedly in his woollen hose and linen shirt, pulling his dark green tunic over the top. Every page in the household wore the same green, embroidered with Sir Edward's coat of arms — a silver stag on a blue shield. Thomas was proud of his tunic, even though it itched terribly in warm weather. Being chosen as a page was a great honour for his family. His father, a merchant from Exeter, hoped that Thomas would learn the manners and skills of a gentleman and eventually become a squire.
+
+After a breakfast of bread, cheese, and small beer in the great hall, Thomas reported to Master Hewitt, the household steward, for his morning duties. Today he was assigned to serve at the high table during dinner, which in Tudor times was eaten at eleven o'clock in the morning. Thomas carefully laid out the silver salt cellar, the pewter plates, and the linen napkins, making sure everything was positioned exactly as Master Hewitt demanded. A single mistake could earn him a sharp rap across the knuckles.
+
+The afternoon brought lessons. Thomas practised his handwriting, copying passages from a book of prayers in his neatest script. Then came an hour of sword practice in the courtyard, where an older squire showed the pages how to hold a wooden practice sword and move their feet correctly. Thomas's arms ached afterwards, but he did not dare complain. A page who grumbled was a page who would never advance.
+
+As evening fell, Thomas sat on a bench near the enormous fireplace in the great hall, listening to a travelling musician play the lute and sing ballads about King Henry and his six wives. The firelight flickered across the tapestries that hung on the stone walls, making the woven figures seem to dance.
+
+"Not a bad life," whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.`,
           "question": "What can we infer about life in Tudor times from the contrast between rich and poor families?",
           "options": ["Everyone was happy","There was a huge gap between the lives of wealthy and ordinary people","Rich people were always kind","Poor people didn't exist","Everyone ate the same food"],
           "correct": 1,
@@ -6444,6 +6986,19 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "midnight-library",
           "passageTitle": "The Midnight Library",
+          "passage": `Elara had always thought the old building at the end of Mulberry Lane was nothing more than a crumbling ruin. Its windows were boarded up, the front door was padlocked shut, and a thick curtain of ivy smothered the walls like a green blanket. Nobody in the village paid it any attention — except on the night Elara's cat, Biscuit, slipped through a gap in the fence and vanished inside.
+
+It was three minutes past midnight when Elara squeezed through the same gap, torch in hand. She expected dust, cobwebs and darkness. Instead, she found herself standing in a vast, glittering library. Thousands of books lined shelves that stretched up so high they disappeared into shadow. Candles floated in mid-air, casting a warm amber glow over everything. The air smelled of old paper, cinnamon and something she couldn't quite name — perhaps magic.
+
+"Biscuit?" she whispered, her voice swallowed by the enormous space.
+
+A book on the nearest shelf trembled, then launched itself into the air. It fluttered open like a bird spreading its wings, and from its pages tumbled a shower of tiny golden words that rearranged themselves into a sentence hovering before her eyes: WELCOME, ELARA. WE HAVE BEEN WAITING.
+
+Elara's heart hammered, but curiosity held her feet in place. She reached for another book — a slim green volume titled "The Ocean's Memory" — and the moment her fingers touched the spine, the library floor dissolved beneath her. Suddenly she was standing on the deck of a wooden sailing ship, salt spray on her lips and seagulls wheeling overhead. The story had pulled her in.
+
+She spent what felt like hours exploring three different books, each one a doorway into another world. A jungle adventure. A moonlit castle. A city built entirely of glass. When she finally stumbled back through the gap in the fence, Biscuit tucked under her arm, the village clock was striking quarter past twelve. Only twelve minutes had passed.
+
+Elara glanced back at the ruin. The ivy had closed over the gap already, as though the building were drawing its curtains. She smiled. She knew she would return tomorrow night — and every night after that.`,
           "question": "Why does the author set the story in a library at midnight?",
           "options": ["Because libraries are boring during the day","To create a mysterious, magical atmosphere where anything could happen","Because the character works night shifts","Because books can only be read at night","Because the library is closed"],
           "correct": 1,
@@ -6456,6 +7011,23 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "clockmaker-apprentice",
           "passageTitle": "The Clockmaker's Apprentice",
+          "passage": `Nobody in the town of Ashworth paid much attention to the narrow shop squeezed between the chemist and the post office. Its sign — "Barnaby Thorne, Horologist" — was so faded that most people walked past without a second glance. But eleven-year-old Nell noticed it on the very first day her family moved to town, and something about the gentle tick-tick-tick drifting through the open door pulled her inside.
+
+The shop was a wonderland of timepieces. Grandfather clocks stood like tall soldiers along the back wall. Pocket watches lay in velvet-lined cases. Cuckoo clocks, carriage clocks, and clocks shaped like ships and castles filled every shelf and surface. And in the middle of it all sat Mr Thorne himself: a wiry old man with half-moon spectacles balanced on the tip of his nose and fingers as nimble as a pianist's.
+
+"Don't touch anything," he said, without looking up from the tiny mechanism he was adjusting with a pair of silver tweezers.
+
+"I wasn't going to," Nell replied, though her fingers were already itching.
+
+Mr Thorne peered at her over his spectacles. "You're the new family on Birch Lane. I suppose you'll be wanting something to do over the summer."
+
+And so began Nell's apprenticeship. Every morning at eight o'clock sharp, she would arrive at the shop, and Mr Thorne would teach her something new. She learned how to clean a clock face without scratching the enamel. She learned the difference between a mainspring and a hairspring, and why a pendulum swings at a steady rhythm. She learned to hold her breath while placing a gear no bigger than a ladybird into exactly the right position.
+
+The work demanded extraordinary patience. One afternoon, Nell spent three hours straightening a single bent tooth on a brass cog. When she finally succeeded, Mr Thorne gave her the rarest of his compliments: a brief nod.
+
+"Clockmaking," he told her one rainy Thursday, polishing a crystal face until it gleamed, "is not about telling the time. Any phone can do that. It is about respecting time — understanding that every second matters, that nothing worth making can be rushed." He held up the clock he had been restoring for six months: a beautiful Victorian mantel piece with a midnight-blue dial and golden hands. "This clock will outlive us both, and it will still keep perfect time. That is craftsmanship."
+
+Nell looked at the clock, then at her own clumsy, oil-stained hands. She was beginning to understand.`,
           "question": "What does the apprentice's careful handling of the clockwork suggest about his feelings towards his work?",
           "options": ["He is bored","He respects and values the craft, and wants to do his best","He is afraid of the clockmaker","He doesn't understand how clocks work","He wants to break the clock"],
           "correct": 1,
@@ -6468,6 +7040,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "school-garden",
           "passageTitle": "The School Garden Project",
+          "passage": `When the children of Oakfield Primary School arrived one Monday morning in September, they found a surprise waiting for them in the far corner of the playing field. Over the summer holidays, a group of parent volunteers had cleared the overgrown patch of brambles and nettles, dug over the soil, and built four large raised beds from recycled wooden pallets. A hand-painted sign read: "Oakfield Allotment — Growing Together."
+
+Mrs Kapoor, the Year Five teacher who had organised the project, gathered the whole school in the hall to explain. "Every class will be responsible for one raised bed," she announced, her eyes shining with excitement. "You'll choose what to grow, plant the seeds, care for the plants, and — if all goes well — harvest your own vegetables to use in the school kitchen."
+
+The children threw themselves into the project with enormous enthusiasm. Year Three planted carrots, radishes, and spring onions. Year Four chose potatoes and broad beans. Year Five decided on courgettes, tomatoes, and lettuce, whilst Year Six opted for pumpkins, sweetcorn, and runner beans. Each class visited their bed twice a week, weeding carefully, watering the soil, and checking for slugs.
+
+One of the most important parts of the project was the compost bin, which stood at the edge of the allotment like a large wooden crate. The school dinner ladies began saving vegetable peelings and fruit scraps from the kitchen, and the children took turns adding them to the bin along with fallen leaves and grass cuttings from the school grounds. Mrs Kapoor explained that the mixture would slowly break down into rich, dark compost that could be spread on the beds to feed the soil.
+
+By the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special "Allotment Lunch" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.`,
           "question": "Why does the author include the detail that 'even the children who didn't like vegetables were excited'?",
           "options": ["To show that the vegetables were different","To show how engaging and fun the project was — it won over even the reluctant ones","To criticise children who don't eat vegetables","To sell vegetables","To show the teacher was strict"],
           "correct": 1,
@@ -6480,6 +7061,19 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "new-girl",
           "passageTitle": "The New Girl",
+          "passage": `Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.
+
+Her family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.
+
+"You must be Amira!" A woman with short silver hair and a warm smile appeared beside her. "I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things."
+
+The classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.
+
+At break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. "I'm Rosie," she said. "Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet." Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.
+
+By lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded "properly exciting." Amira found herself laughing for the first time all day.
+
+Walking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.`,
           "question": "What does Amira noticing 'the sunlight dancing on the harbour' at the end of the passage suggest?",
           "options": ["The weather improved","She is finally beginning to feel happy and hopeful in her new home","She is interested in science","She wants to go swimming","She is looking for her old home"],
           "correct": 1,
@@ -6492,6 +7086,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "cycling-school",
           "passageTitle": "Cycling to School",
+          "passage": `Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?
+
+The benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.
+
+Safety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.
+
+Instructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the "M-check," running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.
+
+Schools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.`,
           "question": "Why does the author mention the character's legs 'burning' as he cycles uphill?",
           "options": ["His legs are on fire","To show the physical effort and determination required","Because cycling is dangerous","He has a medical condition","To warn children not to cycle"],
           "correct": 1,
@@ -6504,6 +7107,19 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "bake-off",
           "passageTitle": "The Bake Off",
+          "passage": `"Right then," said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. "The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win."
+
+Oliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.
+
+For the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.
+
+Then disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. "There's no cocoa!" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. "I forgot to put it on the middle shelf!" she wailed.
+
+Priya looked at the chaos around her, set down her piping bag, and took charge. "Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know."
+
+An hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.
+
+Dad tasted each one slowly, making exaggerated "mmm" noises. Finally, he announced: "I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers."`,
           "question": "What does the phrase 'her hands trembled as she piped the icing' tell us about how the character feels?",
           "options": ["She is cold","She is nervous and under pressure","She doesn't know how to bake","She is angry","She is tired"],
           "correct": 1,
@@ -6516,6 +7132,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "secret-bees",
           "passageTitle": "The Secret World of Bees",
+          "passage": `Most people think of bees as the small, buzzy creatures that hover around flowers in summer, but there is far more to these remarkable insects than meets the eye. In Britain alone, there are over 250 different species of bee, and only one of them — the honeybee — actually makes honey.
+
+Bees live in carefully organised colonies. A single honeybee hive can contain up to sixty thousand bees, all working together with incredible precision. At the centre of every hive is the queen, whose only job is to lay eggs — sometimes as many as two thousand in a single day. The worker bees, all female, do everything else: building the honeycomb, feeding the young, guarding the entrance, and flying out to collect nectar and pollen from flowers.
+
+The way bees communicate is one of nature's greatest marvels. When a worker bee discovers a good source of nectar, she returns to the hive and performs a special movement known as the waggle dance. By wiggling her body in a particular pattern, she tells the other bees exactly how far away the flowers are and in which direction to fly. Scientists have studied this dance for decades and still find new details about how it works.
+
+Bees are also essential to the British countryside. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next plant. This process, called pollination, is vital for growing fruits, vegetables, and wildflowers. Without bees, we would lose about a third of the food we eat, including apples, strawberries, and runner beans.
+
+Sadly, bee numbers in the United Kingdom have fallen sharply in recent years. Habitat loss, pesticides, and disease have all taken their toll. Conservation groups are now working hard to protect these tiny but mighty creatures, encouraging people to plant wildflowers and avoid harmful chemicals in their gardens.`,
           "question": "Why does the author use the word 'secret' in the title?",
           "options": ["Because bees keep secrets","To make us curious about what bees do that most people don't know about","Because the information is classified","Because bees are invisible","Because the author doesn't want us to read it"],
           "correct": 1,
@@ -6528,6 +7153,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "ocean-depths",
           "passageTitle": "Into the Ocean Depths",
+          "passage": `The ocean covers more than seventy per cent of our planet's surface, yet we have explored less of it than we have of the Moon. Beneath the waves lies a world of extraordinary creatures, crushing pressures, and total darkness — a place more alien than anything science fiction could imagine.
+
+The ocean is divided into layers, rather like a cake. The top layer, called the sunlight zone, stretches down to about two hundred metres. This is where most sea life lives, because sunlight can still reach here, allowing tiny plants called phytoplankton to grow. These microscopic organisms produce over half of all the oxygen we breathe — more than all the world's rainforests combined.
+
+Below the sunlight zone lies the twilight zone, from two hundred to one thousand metres deep. Here, the light fades to a dim blue glow, and the water grows bitterly cold. Many creatures in this zone have developed the ability to make their own light, a trick called bioluminescence. Lanternfish, for example, have rows of tiny light organs along their bellies that flash and shimmer in the darkness.
+
+Deeper still is the midnight zone, where no sunlight penetrates at all. The pressure here is immense — imagine having fifty jumbo jets stacked on top of you. Yet even here, life finds a way. Giant squid with eyes the size of dinner plates hunt in the blackness, while strange worms cluster around volcanic vents on the ocean floor, feeding on chemicals that would be poisonous to most living things.
+
+The very deepest part of any ocean is the Mariana Trench in the Pacific, which plunges to nearly eleven thousand metres. In 2019, the British explorer Victor Vescovo became one of the few people ever to reach the bottom. Astonishingly, even there, in the most extreme environment on Earth, he found living creatures — and plastic rubbish.`,
           "question": "What effect does the word 'lurk' have when describing deep-sea creatures?",
           "options": ["It makes them sound friendly","It makes them sound hidden and slightly threatening","It makes them sound fast","It makes them sound small","It makes them sound colourful"],
           "correct": 1,
@@ -6540,6 +7174,13 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "lightning",
           "passageTitle": "When Lightning Strikes",
+          "passage": `On a hot summer afternoon, when the air feels thick and heavy, dark clouds begin to pile up along the horizon. Inside those towering clouds, an extraordinary process is taking place. Tiny ice crystals and water droplets collide with tremendous force, building up enormous electrical charges — positive at the top of the cloud, negative at the bottom. When the difference becomes too great, nature releases it in one of its most spectacular displays: a crack of white fire splitting the sky.
+
+Lightning strikes are both dangerous and fascinating. A single bolt can reach temperatures of 30,000 degrees Celsius — roughly five times hotter than the surface of the sun. It travels at speeds of up to 270,000 miles per hour and can carry 300 million volts of electricity. The thunder we hear is the sound of air expanding explosively as the lightning superheats it, creating a shockwave that rumbles across the landscape.
+
+Britain experiences around 300,000 lightning strikes each year, mostly during summer months when warm, moist air rises rapidly to form cumulonimbus clouds. The safest place during a thunderstorm is inside a building or a car, whose metal frame conducts the electricity safely around the occupants. Standing under a tree is extremely dangerous, as trees are often the tallest objects in a landscape and attract lightning strikes.
+
+Despite its dangers, lightning plays a vital role in nature. It helps produce nitrogen compounds that fertilise the soil, and the fires it starts in wild landscapes can clear old growth and allow new plants to flourish. Scientists continue to study lightning using high-speed cameras and rocket-triggered experiments, but much about this dazzling phenomenon remains mysterious.`,
           "question": "Why does the author describe lightning as 'a crack of white fire splitting the sky'?",
           "options": ["Because the sky actually breaks","To help us see and feel the power and speed of lightning through vivid description","Because lightning is made of fire","To explain the science","Because white is a common colour"],
           "correct": 1,
@@ -6552,6 +7193,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "fire-mountains",
           "passageTitle": "Fire Mountains",
+          "passage": `Deep beneath the Earth's surface, temperatures are hot enough to melt rock. This molten rock, called magma, churns and swirls in a thick, glowing layer known as the mantle. Sometimes, the pressure becomes so great that the magma forces its way upwards through cracks in the Earth's crust and bursts out onto the surface. When this happens, we call it a volcanic eruption, and the mountain it creates is a volcano.
+
+There are around 1,500 active volcanoes on Earth, and about twenty of them are erupting at any given moment. Most volcanoes are found along the edges of tectonic plates — the enormous slabs of rock that make up the Earth's outer shell. The Pacific Ring of Fire, a horseshoe-shaped belt stretching around the Pacific Ocean, contains about seventy-five per cent of all active volcanoes.
+
+Not all volcanic eruptions are the same. Some volcanoes, like Kilauea in Hawaii, ooze rivers of lava slowly across the landscape. Others, like Mount Vesuvius in Italy, erupt with terrifying violence, hurling ash, rocks, and poisonous gas high into the sky. The eruption of Vesuvius in AD 79 buried the entire Roman city of Pompeii under six metres of volcanic ash, preserving it almost perfectly for nearly two thousand years.
+
+Britain does not have any active volcanoes today, but it was not always so peaceful. Edinburgh Castle sits on top of an ancient volcanic plug — the solidified core of a volcano that erupted over three hundred million years ago. Arthur's Seat, the famous hill in Edinburgh, is another remnant of this fiery past.
+
+Volcanoes are not entirely destructive. Volcanic soil is extremely fertile, which is why many farmers choose to live on the slopes of volcanoes despite the danger. Volcanic eruptions also release gases that helped form the Earth's atmosphere billions of years ago, and hot springs heated by underground volcanic activity provide warmth and energy in countries like Iceland and New Zealand.`,
           "question": "Why does the author call volcanoes 'fire mountains' in the title?",
           "options": ["Because the mountains are always on fire","To use simple, dramatic language that makes volcanoes sound exciting and powerful","Because that's the scientific name","Because the mountains are red","Because they're in a hot country"],
           "correct": 1,
@@ -6564,6 +7214,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "roman-wall",
           "passageTitle": "The Roman Wall",
+          "passage": `If you travel to the north of England, close to the border with Scotland, you can still walk along the remains of one of the most extraordinary buildings from the ancient world. Hadrian's Wall stretches for seventy-three miles across the country, from Wallsend on the east coast to Bowness-on-Solway in the west. It was built on the orders of Emperor Hadrian, who visited Britain in AD 122.
+
+The wall took around six years to complete. Thousands of Roman soldiers did the back-breaking work, cutting and carrying enormous stones, mixing mortar, and laying each block by hand. At its tallest, the wall stood about five metres high and was three metres thick — wide enough for soldiers to patrol along the top.
+
+Every Roman mile along the wall, there was a small fort called a milecastle, where soldiers could shelter and keep watch. Between each milecastle stood two turrets, used as lookout towers. Larger forts were built at important points, housing up to one thousand soldiers each. One of the best-preserved forts is Housesteads, where you can still see the remains of barracks, a hospital, and even the soldiers' toilets.
+
+Life on the wall was not easy. Northern England was bitterly cold in winter, and many of the soldiers had come from warmer parts of the Roman Empire, such as Spain, North Africa, and Syria. Archaeologists have found letters written by these soldiers, complaining about the weather and asking their families to send warm socks and underwear.
+
+Hadrian's Wall was not just a military barrier. It also controlled trade and movement, with gateways where merchants could pass through after paying taxes. For nearly three hundred years, the wall marked the northern edge of the Roman Empire — one of the largest empires the world has ever known.`,
           "question": "What does the size of Hadrian's Wall tell us about the Romans?",
           "options": ["They were very tall","They were incredibly organised, powerful, and determined to defend their territory","They liked building walls","They had nothing else to do","They were afraid of everything"],
           "correct": 1,
@@ -6576,6 +7235,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "tudor-feast",
           "passageTitle": "A Tudor Feast",
+          "passage": `If you had been invited to a grand feast at the court of Henry VIII, you would have needed a strong appetite. Tudor banquets could last for hours, with dozens of dishes served one after another. The rich ate like kings — quite literally — while the poor survived on bread, pottage, and whatever vegetables they could grow.
+
+At a royal feast, the food was a way of showing off wealth and power. Whole roasted swans, peacocks with their feathers carefully reattached, and enormous pies filled with live birds were all designed to make guests gasp in amazement. Sugar was incredibly expensive in Tudor times, so the wealthiest hosts would display huge sugar sculptures called subtleties, shaped like castles, ships, or animals.
+
+Table manners were surprisingly important. Guests were expected to wash their hands before and after the meal, share dishes politely with their neighbours, and never pick their teeth at the table. Each person brought their own knife, as forks had not yet arrived in England. Food was eaten with a knife and fingers, or scooped up with pieces of bread called trenchers.
+
+Not everything on the Tudor menu would appeal to modern tastes. Dishes included roasted hedgehog, boiled calf's head, and a jelly made from deer antlers. Spices such as cinnamon, ginger, and saffron were used generously — partly for flavour, but also to disguise meat that was past its best, since there were no refrigerators to keep food fresh.
+
+Drinking water was often unsafe in Tudor England, so even children drank weak beer called small beer. Wine was reserved for the wealthy, imported from France and Spain at great cost. A Tudor feast was not just a meal — it was a spectacular performance, designed to impress, entertain, and remind everyone exactly who held the power.`,
           "question": "What can we infer about Tudor society from the description of the feast?",
           "options": ["Everyone was vegetarian","Wealth and status were extremely important — food was used to show off power and position","Nobody enjoyed the food","The food was all healthy","Everyone ate the same amount"],
           "correct": 1,
@@ -6588,6 +7256,15 @@ const englishData = {
           "questionSubType": "inference",
           "passageId": "blitz-spirit",
           "passageTitle": "The Blitz Spirit",
+          "passage": `Between September 1940 and May 1941, German aircraft bombed British cities almost every night in a campaign known as the Blitz. The word comes from the German 'Blitzkrieg', meaning lightning war. London was hit the hardest, bombed for fifty-seven nights in a row, but cities across the country suffered too — including Coventry, Liverpool, Bristol, Southampton, and Plymouth.
+
+When the air-raid sirens wailed, families had just minutes to reach safety. Many hurried to Anderson shelters — small corrugated metal huts buried in their back gardens and covered with earth. Others headed underground, sheltering in London's Tube stations, where they would sleep on the platforms, bundled in blankets, while trains continued to run through the night.
+
+Children were among those most affected. Over a million children had already been evacuated from cities to the countryside at the start of the war, sent to live with strangers to keep them safe from the bombs. Many found kind foster families, but others were desperately homesick. Some evacuees had never seen a cow or a field before, having grown up entirely in the city.
+
+Despite the fear and destruction, people showed remarkable courage. Volunteer fire wardens patrolled the streets during raids, and rescue teams worked through the night to pull survivors from collapsed buildings. Neighbours helped one another without being asked. Shops that had been blown open would display signs reading "More open than usual" — a dark joke that showed people's determination not to be defeated.
+
+The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely in the face of terrible danger. Whether it was a shopkeeper sweeping glass from his doorstep at dawn, or a mother singing to her children in a shelter, ordinary people showed extraordinary courage during Britain's darkest hours.`,
           "question": "Why does the author include the detail that 'neighbours shared their last tin of biscuits'?",
           "options": ["To show that biscuits were popular","To illustrate how people came together and supported each other during the most difficult times","To show food was expensive","To explain rationing rules","To advertise biscuits"],
           "correct": 1,
