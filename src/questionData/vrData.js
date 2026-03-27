@@ -3073,22 +3073,22 @@ const vrData = {
                       id: 14,
                       difficulty: 1,
                       questionType: "pick-from-sets",
-                      question: "___ is to cut as hammer is to ___",
+                      question: "___ is to pen as canvas is to ___",
                       setA: [
-                              "knife",
-                              "scissors",
-                              "saw"
+                              "paper",
+                              "pencil",
+                              "book"
                       ],
                       setB: [
-                              "nail",
-                              "hit",
-                              "build"
+                              "brush",
+                              "frame",
+                              "easel"
                       ],
                       correctPair: [
-                              1,
-                              1
+                              0,
+                              0
                       ],
-                      explanation: "Scissors are used to cut, just as a hammer is used to hit. Both are tools paired with their action. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+                      explanation: "You write on paper with a pen, just as you paint on canvas with a brush. Both pairs link a surface to the tool used on it. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
               },
               {
                       id: 15,
@@ -10173,7 +10173,7 @@ const vrData = {
           "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
           "options": ["A", "T", "L", "E", "B"],
           "correct": 2,
-          "explanation": "Move L from BLEACH: BLEACH becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
+          "explanation": "Move L from BLEACH: BLEACH becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: harder questions often use longer words and the less obvious direction. ✓"
         },
         {
           "id": 76,

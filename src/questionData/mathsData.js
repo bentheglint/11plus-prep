@@ -16607,7 +16607,7 @@ areaperimeter: {
     {
       id: 11,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 10, width: 10, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", hideValues: true, label: "Perimeter = 40 m" } },
       question: "A square playground has a perimeter of 40 metres. What is the length of each side?",
       image: "area-perimeter/square-q11.svg",
       options: ["4 metres", "8 metres", "10 metres", "20 metres", "160 metres"],
@@ -16863,7 +16863,7 @@ areaperimeter: {
     {
       id: 38,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 15, width: 10, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: 15, width: "?", dimUnit: "cm", label: "Perimeter = 50 cm" } },
       question: "A rectangle has a perimeter of 50 cm and a length of 15 cm. What is its width?",
       image: "area-perimeter/rectangle-q38.svg",
       options: ["5 cm", "8 cm", "10 cm", "12 cm", "20 cm"],
@@ -17366,7 +17366,7 @@ areaperimeter: {
     {
       id: 91,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 14, width: 4, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "(3z + 2)", width: "z", dimUnit: "m", label: "z = 4" } },
       question: "A rectangular swimming pool has a length of (3z + 2) metres and a width of z metres. If z = 4, what is the area?",
       image: "area-perimeter/pool-q91.svg",
       options: ["28 square metres", "42 square metres", "56 square metres", "70 square metres", "84 square metres"],
@@ -19912,7 +19912,6 @@ anglesshapes: {
       question: "Tom draws an isosceles triangle with two equal angles of 72° each. What is the third angle?",
       image: "angles-shapes/isosceles-q27.svg",
       options: ["26°", "31°", "36°", "41°", "46°"],
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       correct: 2,
       explanation: "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 72° + 72° + third angle = 180°. The third angle = 180 - 144 = 36°. ✓"
     },
