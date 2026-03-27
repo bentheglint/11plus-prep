@@ -11,6 +11,6 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Deploying to Cloudflare Pages..."
-wrangler pages deploy build/ --project-name 11plus-prep
+wrangler pages deploy build/ --project-name 11plus-prep --branch main
 
 echo "Done! Live at https://11plus-prep.pages.dev/"
