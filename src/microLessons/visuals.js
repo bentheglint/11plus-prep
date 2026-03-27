@@ -998,11 +998,12 @@ export function AngleDiagram({
   const isIso = !hasRight &&
     (angle1 === angle2 || angle1 === angle3 || angle2 === angle3);
 
-  // ViewBox dimensions and padding
-  const padX = 38, padTop = 30, padBot = 35;
+  // ViewBox dimensions and padding — extra top/bottom for outside labels
+  const padX = 38, padTop = 50, padBot = 50;
+  const vbH = 310;
   const maxW = 400 - 2 * padX;         // 324
-  const maxH = 270 - padTop - padBot;   // 205
-  const baseY = 270 - padBot;           // 235
+  const maxH = vbH - padTop - padBot;  // 210
+  const baseY = vbH - padBot;          // 260
 
   let A, B, C;
   let vertexEntries; // [entryAtA, entryAtB, entryAtC]
@@ -1088,8 +1089,18 @@ export function AngleDiagram({
   const centroid = { x: (A.x + B.x + C.x) / 3, y: (A.y + B.y + C.y) / 3 };
   const adjMap = [[B, C], [A, C], [A, B]];
 
-  // Check if triangle is "flat" (has any angle < 30°) — labels need more room
-  const hasExtremeAngle = entries.some(e => e.value < 30);
+  // Helper: shortest distance from point to line segment
+  const pointToSegDist = (px, py, x1, y1, x2, y2) => {
+    const dx = x2 - x1, dy = y2 - y1;
+    const lenSq = dx * dx + dy * dy;
+    if (lenSq === 0) return Math.sqrt((px - x1) ** 2 + (py - y1) ** 2);
+    let t = ((px - x1) * dx + (py - y1) * dy) / lenSq;
+    t = Math.max(0, Math.min(1, t));
+    return Math.sqrt((px - (x1 + t * dx)) ** 2 + (py - (y1 + t * dy)) ** 2);
+  };
+
+  // Triangle edges for overlap checking
+  const edges = [[A, B], [B, C], [A, C]];
 
   const labelPos = (vertIdx) => {
     const vertex = [A, B, C][vertIdx];
@@ -1105,33 +1116,74 @@ export function AngleDiagram({
     const bisLen = Math.sqrt(bis.x ** 2 + bis.y ** 2) || 1;
     let dir = { x: bis.x / bisLen, y: bis.y / bisLen };
 
-    // For acute angles (< 30°): place label OUTSIDE the triangle
-    // with a leader line pointing back to the vertex
-    if (angleDeg < 30) {
-      dir = { x: -dir.x, y: -dir.y };
-      const d = 28;
-      return {
-        x: vertex.x + dir.x * d, y: vertex.y + dir.y * d,
-        outside: true, vx: vertex.x, vy: vertex.y, dir
-      };
-    }
-
-    // Distance: text clearance vs centroid-proportional, whichever is larger
+    // Try placing inside first
     const halfRad = (angleDeg / 2) * DEG;
     const textClear = Math.min(14 / Math.max(Math.sin(halfRad), 0.13), 65);
     const dx = centroid.x - vertex.x, dy = centroid.y - vertex.y;
     const distC = Math.sqrt(dx * dx + dy * dy) || 1;
-    // In flat triangles, increase minimum distance to prevent overlap with edges
-    const minDist = hasExtremeAngle ? 40 : 30;
-    const d = Math.min(Math.max(textClear, 0.38 * distC, minDist), distC * 0.6);
+    const d = Math.min(Math.max(textClear, 0.35 * distC, 30), distC * 0.55);
 
-    return { x: vertex.x + dir.x * d, y: vertex.y + dir.y * d, outside: false };
+    const insideX = vertex.x + dir.x * d;
+    const insideY = vertex.y + dir.y * d;
+
+    // Check if inside position is too close to any edge (< 15px)
+    const tooClose = angleDeg < 30 || edges.some(([p1, p2]) => {
+      // Skip edges that share this vertex
+      if ((p1 === vertex) || (p2 === vertex)) return false;
+      return pointToSegDist(insideX, insideY, p1.x, p1.y, p2.x, p2.y) < 15;
+    });
+
+    // Also check: for angles in extreme triangles, check distance to own edges
+    const nearOwnEdge = edges.some(([p1, p2]) => {
+      if (p1 !== vertex && p2 !== vertex) return false; // only check edges from this vertex
+      return pointToSegDist(insideX, insideY, p1.x, p1.y, p2.x, p2.y) < 12;
+    });
+
+    if (tooClose || nearOwnEdge) {
+      // Place outside with leader line
+      const outDir = { x: -dir.x, y: -dir.y };
+      const outD = 28;
+      return {
+        x: vertex.x + outDir.x * outD, y: vertex.y + outDir.y * outD,
+        outside: true, vx: vertex.x, vy: vertex.y, dir: outDir
+      };
+    }
+
+    return { x: insideX, y: insideY, outside: false };
   };
 
   let posA = labelPos(0);
   let posB = labelPos(1);
   let posC = labelPos(2);
   const eA = vertexEntries[0], eB = vertexEntries[1], eC = vertexEntries[2];
+
+  // Post-check: if any two inside labels are too close, push both outside
+  const allPos = [posA, posB, posC];
+  const allVerts = [A, B, C];
+  const allEntries = [eA, eB, eC];
+  for (let i = 0; i < 3; i++) {
+    for (let j = i + 1; j < 3; j++) {
+      if (allEntries[i].value === 90 || allEntries[j].value === 90) continue;
+      const dx = allPos[j].x - allPos[i].x, dy = allPos[j].y - allPos[i].y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 40 && (!allPos[i].outside || !allPos[j].outside)) {
+        // Push both outside
+        for (const idx of [i, j]) {
+          if (!allPos[idx].outside) {
+            const v = allVerts[idx];
+            const cdx = centroid.x - v.x, cdy = centroid.y - v.y;
+            const cl = Math.sqrt(cdx * cdx + cdy * cdy) || 1;
+            const outDir = { x: -cdx / cl, y: -cdy / cl };
+            allPos[idx] = {
+              x: v.x + outDir.x * 28, y: v.y + outDir.y * 28,
+              outside: true, vx: v.x, vy: v.y, dir: outDir
+            };
+          }
+        }
+      }
+    }
+  }
+  posA = allPos[0]; posB = allPos[1]; posC = allPos[2];
 
   // Resolve overlapping labels (for extreme triangles like 80/90/10)
   const labelPairs = [[posA, posB, A, B], [posA, posC, A, C], [posB, posC, B, C]];
@@ -1180,7 +1232,7 @@ export function AngleDiagram({
 
   return (
     <div className="flex flex-col items-center space-y-2">
-      <svg viewBox="0 0 400 270" width="100%" style={{ maxWidth: 360 }}>
+      <svg viewBox={`0 0 400 ${vbH}`} width="100%" style={{ maxWidth: 360 }}>
         {/* Triangle */}
         <polygon
           points={`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`}
@@ -1198,8 +1250,8 @@ export function AngleDiagram({
             stroke="#6366f1" strokeWidth="2" />
         ))}
 
-        {/* Leader lines for outside labels */}
-        {[posA, posB, posC].map((pos, i) => pos.outside && (
+        {/* Leader lines for outside labels (skip 90° — shown as square) */}
+        {[posA, posB, posC].map((pos, i) => pos.outside && [eA, eB, eC][i].value !== 90 && (
           <line key={`leader-${i}`}
             x1={pos.vx + pos.dir.x * 8} y1={pos.vy + pos.dir.y * 8}
             x2={pos.x - pos.dir.x * 6} y2={pos.y - pos.dir.y * 6 + 3}

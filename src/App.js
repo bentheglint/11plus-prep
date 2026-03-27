@@ -678,6 +678,89 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     localStorage.setItem('topic-performance', JSON.stringify(updated));
   };
 
+  // ── Question Preview Mode ──
+  // Usage: ?preview=anglesshapes&q=65 or ?preview=synonyms&q=10&subject=vr
+  const urlParams = new URLSearchParams(window.location.search);
+  const previewTopic = urlParams.get('preview');
+  const previewQId = parseInt(urlParams.get('q'), 10);
+  if (previewTopic && previewQId) {
+    // Find the question across all subjects
+    let found = null;
+    let subjectName = urlParams.get('subject') || 'auto';
+    const allSources = [
+      { data: questionData.maths?.topics, label: 'Maths' },
+      { data: englishData.topics, label: 'English' },
+      { data: vrData.topics, label: 'VR' },
+    ];
+    for (const src of allSources) {
+      if (src.data?.[previewTopic]) {
+        const q = src.data[previewTopic].questions.find(q => q.id === previewQId);
+        if (q) { found = q; subjectName = src.label; break; }
+      }
+    }
+    if (found) {
+      const Comp = found.visual ? quizVisualComponents[found.visual.component] : null;
+      return (
+        <div className="app-bg p-6 min-h-screen">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-xs text-[#636E72] mb-2">{subjectName} › {previewTopic} › Q{previewQId} (D{found.difficulty})</div>
+            <div className="card-elevated p-6">
+              {/* Visual component */}
+              {Comp && (
+                <div className="mb-6 p-4 rounded-xl bg-white border border-gray-200">
+                  <Comp {...found.visual.props} />
+                </div>
+              )}
+              {/* SVG image fallback */}
+              {found.image && !found.visual && (
+                <div className="mb-6 flex justify-center">
+                  <img src={`/images/questions/${found.image}`} alt="diagram" className="max-w-full rounded-lg border-2 border-gray-200" style={{ maxHeight: 400 }} />
+                </div>
+              )}
+              {/* Error-spotting segments */}
+              {found.questionType === 'error-spotting' && found.segments && (
+                <div className="mb-6 grid grid-cols-2 gap-3">
+                  {found.segments.map((seg, i) => (
+                    <div key={i} className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center">
+                      <span className="block text-xs font-bold text-[#6C5CE7] mb-1">Section {String.fromCharCode(65+i)}</span>
+                      <span className="text-gray-900 text-sm font-medium">{seg}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {/* Question text */}
+              <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-4 whitespace-pre-line">{found.question}</h3>
+              {/* Options */}
+              {found.options && (
+                <div className="space-y-2">
+                  {found.options.map((opt, i) => (
+                    <div key={i} className={`p-3 rounded-lg border-2 flex items-center gap-3 ${i === found.correct ? 'border-green-500 bg-green-50' : 'border-gray-200'}`}>
+                      <span className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${i === found.correct ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-500'}`}>{String.fromCharCode(65+i)}</span>
+                      {opt}
+                    </div>
+                  ))}
+                </div>
+              )}
+              {/* Pick-from-sets */}
+              {found.setA && (
+                <div className="space-y-3">
+                  <div><span className="text-sm font-bold text-[#6C5CE7]">Group A:</span> {found.setA.map((w,i) => <span key={i} className={`inline-block mx-1 px-2 py-1 rounded ${i===found.correctPair?.[0] ? 'bg-green-100 font-bold' : 'bg-gray-100'}`}>{w}</span>)}</div>
+                  <div><span className="text-sm font-bold text-indigo-700">Group B:</span> {found.setB.map((w,i) => <span key={i} className={`inline-block mx-1 px-2 py-1 rounded ${i===found.correctPair?.[1] ? 'bg-green-100 font-bold' : 'bg-gray-100'}`}>{w}</span>)}</div>
+                </div>
+              )}
+              {/* Explanation */}
+              {found.explanation && (
+                <div className="mt-4 p-3 bg-blue-50 rounded-lg text-sm text-gray-700 border border-blue-200">{found.explanation}</div>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return <div className="app-bg p-6 min-h-screen"><div className="max-w-2xl mx-auto card-elevated p-6 text-center"><h2 className="text-xl font-bold text-red-500">Question not found</h2><p className="text-gray-600 mt-2">preview={previewTopic} q={previewQId}</p></div></div>;
+    }
+  }
+
   if (currentView === 'speedReview') {
     return <SpeedReviewPanel
       onBack={() => setCurrentView('home')}
