@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { vrPaperVariants, vrTypeInstructions, mathsPaperConfig, englishPaperConfig } from '../questionData/mockVRConfig';
 import mockComprehensionPassages from '../questionData/mockComprehensionData';
 
@@ -233,6 +233,9 @@ export default function useMockTest() {
   const [mockTestTimeLimit, setMockTestTimeLimit] = useState(0);
   const [mockTestComplete, setMockTestComplete] = useState(false);
   const [mockTestStartTime, setMockTestStartTime] = useState(null);
+  const [mockTestHistory, setMockTestHistory] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('mock-test-history')) || []; } catch { return []; }
+  });
 
   const startMockTest = useCallback((subject, questionData, englishData, vrData) => {
     let questions = [];
@@ -335,7 +338,7 @@ export default function useMockTest() {
       });
     });
 
-    return {
+    const result = {
       subject: mockTestSubject,
       totalQuestions: mockTestQuestions.length,
       totalCorrect,
@@ -344,7 +347,46 @@ export default function useMockTest() {
       timeLimit: mockTestTimeLimit,
       sectionResults,
     };
+
+    return result;
   }, [mockTestComplete, mockTestQuestions, mockTestAnswers, mockTestSubject, mockTestTimeLimit, mockTestStartTime]);
+
+  // Save result to history when test completes
+  const saveResultToHistory = useCallback((result) => {
+    if (!result) return;
+    const historyEntry = {
+      id: Date.now(),
+      date: new Date().toISOString(),
+      subject: result.subject,
+      totalQuestions: result.totalQuestions,
+      totalCorrect: result.totalCorrect,
+      percentage: result.percentage,
+      timeTaken: result.timeTaken,
+      timeLimit: result.timeLimit,
+      sections: Object.entries(result.sectionResults).map(([name, data]) => ({
+        name,
+        correct: data.correct,
+        total: data.total,
+        percentage: Math.round((data.correct / data.total) * 100),
+      })),
+    };
+    const updated = [...mockTestHistory, historyEntry];
+    setMockTestHistory(updated);
+    localStorage.setItem('mock-test-history', JSON.stringify(updated));
+  }, [mockTestHistory]);
+
+  // Auto-save result when test completes
+  const hasSaved = useRef(false);
+  useEffect(() => {
+    if (mockTestComplete && !hasSaved.current) {
+      hasSaved.current = true;
+      const result = getResults();
+      if (result) saveResultToHistory(result);
+    }
+    if (!mockTestComplete) {
+      hasSaved.current = false;
+    }
+  }, [mockTestComplete]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     // State
@@ -358,6 +400,7 @@ export default function useMockTest() {
     mockTestTimeLimit,
     mockTestComplete,
     mockTestStartTime,
+    mockTestHistory,
     // Actions
     startMockTest,
     answerQuestion,
@@ -365,5 +408,6 @@ export default function useMockTest() {
     submitTest,
     endMockTest,
     getResults,
+    saveResultToHistory,
   };
 }
