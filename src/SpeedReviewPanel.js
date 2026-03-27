@@ -587,6 +587,16 @@ export default function SpeedReviewPanel({
   const [flagNotes, setFlagNotes] = useState({});
   const [collapsedLessons, setCollapsedLessons] = useState(new Set());
 
+  // Keep DevReviewPanel context updated with what we're viewing
+  useEffect(() => {
+    window.__devReviewContext = {
+      view: 'speedReview',
+      subject: selectedTopic ? getSubject(selectedTopic) : undefined,
+      topic: selectedTopic || undefined,
+      tab: activeTab,
+    };
+  }, [selectedTopic, activeTab]);
+
   // Restore scroll position when returning from question/lesson view
   useEffect(() => {
     if (initialScrollY) {
