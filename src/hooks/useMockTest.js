@@ -58,8 +58,8 @@ function generateMathsPaper(questionData) {
           question: q,
           topicKey: key,
           topicName: topics[key].name,
-          section: 'maths',
-          sectionName: 'Maths',
+          section: key,
+          sectionName: topics[key].name,
         });
         usedIds[key + '-' + q.id] = true;
         picked++;
@@ -78,8 +78,8 @@ function generateMathsPaper(questionData) {
           question: q,
           topicKey: key,
           topicName: topics[key].name,
-          section: 'maths',
-          sectionName: 'Maths',
+          section: key,
+          sectionName: topics[key].name,
         });
         usedIds[key + '-' + q.id] = true;
         picked++;

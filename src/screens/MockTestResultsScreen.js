@@ -26,8 +26,8 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
     ...data,
     pct: Math.round((data.correct / data.total) * 100),
   }));
-  const strengths = sectionEntries.filter(s => s.pct >= 70 && s.total >= 2);
-  const weaknesses = sectionEntries.filter(s => s.pct < 50 && s.total >= 2);
+  const strengths = sectionEntries.filter(s => s.pct >= 70 && s.total >= 3).sort((a, b) => b.pct - a.pct).slice(0, 5);
+  const weaknesses = sectionEntries.filter(s => s.pct < 50 && s.total >= 3).sort((a, b) => a.pct - b.pct).slice(0, 5);
 
   return (
     <div className="app-bg p-4 min-h-screen">
