@@ -1058,6 +1058,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'pompeii',
+    title: 'The Lost City of Pompeii',
+    genre: 'historical-non-fiction',
+    passage: `(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.
+
+(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.
+
+(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.
+
+(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.
+
+(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.
+
+(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.
+
+(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.
+
+(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.
+
+(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.
+
+(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: "I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear."
+
+(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.
+
+(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: "Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment."`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Approximately how many people lived in Pompeii?",
+        options: ["Five thousand", "Ten thousand", "Fifteen thousand", "Twenty thousand", "Fifty thousand"],
+        correct: 3,
+        explanation: "Paragraph 1 states Pompeii was 'a prosperous Roman city of roughly twenty thousand people'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "Who wrote the most detailed eyewitness account of the eruption?",
+        options: ["Tacitus", "Pliny the Elder", "Pliny the Younger", "Giuseppe Fiorelli", "Emperor Titus"],
+        correct: 2,
+        explanation: "Paragraph 2 states 'The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples' wrote the account. He described it in 'two letters to the historian Tacitus'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What did people tie over their heads to protect themselves from the pumice?",
+        options: ["Metal helmets", "Wooden shields", "Cushions", "Blankets", "Animal skins"],
+        correct: 2,
+        explanation: "Paragraph 3 states 'People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "When was Pompeii rediscovered?",
+        options: ["1648", "1700", "1748", "1802", "1860"],
+        correct: 2,
+        explanation: "Paragraph 8 states 'The city was rediscovered by accident in 1748'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why did most Pompeians not realise Vesuvius was a volcano?",
+        options: [
+          "They had never heard of volcanoes",
+          "The mountain had not erupted in living memory",
+          "The mountain was too small to be a volcano",
+          "They thought volcanoes only existed in other countries",
+          "Scientists had told them it was safe"
+        ],
+        correct: 1,
+        explanation: "Paragraph 1 says Vesuvius 'had been silent for so long' that people did not recognise it as a volcano. It had not erupted within anyone's memory, so its danger was forgotten. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A diary entry written by a Pompeii resident",
+          "A factual account of a historical event and its rediscovery",
+          "A persuasive text arguing for the preservation of Pompeii",
+          "A fictional story set during the eruption of Vesuvius",
+          "A scientific explanation of how volcanoes work"
+        ],
+        correct: 1,
+        explanation: "The passage presents factual, chronological information about the eruption, burial, and excavation of Pompeii. It is informative historical non-fiction. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why were wooden objects better preserved in Herculaneum than in Pompeii?",
+        options: [
+          "Herculaneum had stronger buildings",
+          "The volcanic material was different — intense heat carbonised wood rather than burning it",
+          "The residents of Herculaneum had protected their belongings",
+          "Herculaneum was excavated more carefully",
+          "The wood in Herculaneum was of better quality"
+        ],
+        correct: 1,
+        explanation: "Paragraph 6 explains that 'The intense heat carbonised wooden objects rather than burning them to ash'. Carbonisation (turning to charcoal) preserves shape and structure, unlike burning which destroys them. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why was Alcubierre's excavation method criticised?",
+        options: [
+          "He worked too slowly",
+          "He was not Italian",
+          "He focused on finding treasures rather than preserving the archaeological site properly",
+          "He refused to share his findings with other scientists",
+          "He caused further damage to the volcano"
+        ],
+        correct: 2,
+        explanation: "Paragraph 8 says Alcubierre's methods 'were crude by modern standards' and that 'he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context'. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the graffiti found on Pompeii's walls tell us?",
+        options: [
+          "That Roman children were poorly behaved",
+          "That Romans had no system of writing",
+          "That ordinary Romans had the same kinds of everyday thoughts and feelings as people today",
+          "That all Romans could read and write fluently",
+          "That the walls were used instead of paper because paper was expensive"
+        ],
+        correct: 2,
+        explanation: "Paragraph 10 describes graffiti including 'jokes, complaints, love declarations, and advertisements' — everyday human thoughts that feel remarkably familiar. This shows ordinary Romans were not so different from us. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How did Emperor Titus respond to the disaster?",
+        options: [
+          "He ignored it and focused on other matters",
+          "He blamed the people of Pompeii for living near a volcano",
+          "He took practical action by sending help and providing funds",
+          "He ordered the construction of a new city on the same site",
+          "He declared that Vesuvius must be destroyed"
+        ],
+        correct: 2,
+        explanation: "Paragraph 7 states 'The Roman emperor Titus sent rescue parties and allocated funds for survivors', showing a practical and compassionate response. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What does Fiorelli's insistence on preserving objects in their original location suggest about him?",
+        options: [
+          "He was lazy and did not want to move heavy objects",
+          "He believed context was as important as the objects themselves",
+          "He did not trust museums to look after the artefacts",
+          "He wanted to keep everything in Italy",
+          "He could not afford to transport the objects"
+        ],
+        correct: 1,
+        explanation: "Paragraph 9 says Fiorelli 'insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment'. He understood that the location of objects within the city was as important as the objects themselves. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why do archaeologists deliberately leave parts of Pompeii unexcavated?",
+        options: [
+          "They have run out of funding",
+          "The remaining sections are not interesting",
+          "They want future generations with better technology to excavate them",
+          "The Italian government has forbidden further digging",
+          "They are afraid of disturbing the volcano"
+        ],
+        correct: 2,
+        explanation: "Paragraph 11 states archaeologists 'deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy'. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'character-inference',
+        question: "What emotions would a visitor to Pompeii most likely feel when seeing the plaster body casts?",
+        options: [
+          "Amusement at how different Romans looked",
+          "Boredom because they are just plaster shapes",
+          "Sadness and empathy for the people who died",
+          "Anger at the archaeologists who made them",
+          "Confusion about what the casts represent"
+        ],
+        correct: 2,
+        explanation: "The passage describes the casts as 'haunting' and 'the most powerful and emotional evidence of the disaster' (paragraph 5). Seeing people frozen in their final moments — shielding their faces, clutching children — would naturally evoke sadness and empathy. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following was NOT found preserved at Pompeii or Herculaneum?",
+        options: [
+          "A loaf of bread with a baker's stamp",
+          "Election slogans painted on walls",
+          "A complete Roman chariot with horses",
+          "Mosaic floors in wealthy houses",
+          "Graffiti scratched into plaster"
+        ],
+        correct: 2,
+        explanation: "The passage mentions bread (paragraph 6), election slogans (paragraph 10), mosaic floors (paragraph 10), and graffiti (paragraph 10). A complete chariot with horses is not mentioned anywhere. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of these statements about the eruption is NOT supported by the passage?",
+        options: [
+          "The eruption column rose over thirty kilometres high",
+          "Pumice stones fell on the city for several hours",
+          "Most deaths were caused by buildings collapsing under the weight of ash",
+          "A pyroclastic flow reached speeds over one hundred kilometres per hour",
+          "The eruption continued through the night"
+        ],
+        correct: 2,
+        explanation: "The passage states that the pyroclastic flow on 25th August killed 'anyone still in the city' instantly with 'intense heat' (paragraph 5). While roofs did collapse (paragraph 3), the passage does not say most deaths were caused by building collapse — the pyroclastic flow was the main killer. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author begin the passage by describing ordinary daily activities in Pompeii?",
+        options: [
+          "To show that Roman daily life was boring",
+          "To prove that the eruption happened without warning",
+          "To create a contrast between normal life and the disaster that followed",
+          "To explain what a typical Roman city looked like",
+          "To demonstrate that Romans were similar to modern people"
+        ],
+        correct: 2,
+        explanation: "Opening with bakers, merchants, and playing children creates a vivid picture of ordinary life — which makes the destruction that follows far more dramatic and poignant. The contrast between normality and catastrophe is a deliberate technique. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author use the word 'paradoxically' in the final paragraph?",
+        options: [
+          "Because the eruption was unexpected",
+          "Because something that caused destruction also caused preservation — two opposite outcomes",
+          "Because Pompeii is both old and modern at the same time",
+          "Because tourists both help and harm the site",
+          "Because the author disagrees with Robert Harris"
+        ],
+        correct: 1,
+        explanation: "A paradox is a seemingly contradictory statement that is actually true. The disaster destroyed Pompeii as a living city but simultaneously preserved it for future generations — destruction and preservation are opposite outcomes from the same event. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the description of the dog 'curled at the end of its chain' create?",
+        options: [
+          "It adds humour to an otherwise serious passage",
+          "It provides scientific evidence about Roman pets",
+          "It creates a powerful emotional response by showing the helplessness of the victims",
+          "It explains how animals behave during volcanic eruptions",
+          "It proves that Romans were cruel to their animals"
+        ],
+        correct: 2,
+        explanation: "The image of a chained dog unable to escape is deeply affecting. The animal's helplessness makes the disaster feel more personal and tragic, creating an emotional response in the reader beyond what statistics alone could achieve. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 1, what does 'prosperous' mean?",
+        options: ["Dangerous", "Ancient", "Wealthy and successful", "Large and crowded", "Famous throughout the world"],
+        correct: 2,
+        explanation: "'Prosperous' means wealthy and successful. The word describes Pompeii as a thriving, well-off city before the eruption. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 4, what does 'devastating' mean?",
+        options: ["Slow-moving", "Causing great destruction", "Brightly coloured", "Extremely cold", "Completely unexpected"],
+        correct: 1,
+        explanation: "'Devastating' means causing severe damage or destruction. The pyroclastic flow destroyed everything in its path, killing anyone still in the city. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 5, what does 'haunting' mean when describing the plaster casts?",
+        options: [
+          "Frightening like a ghost",
+          "Beautiful and delicate",
+          "Deeply moving and impossible to forget",
+          "Old and crumbling",
+          "Scientifically valuable"
+        ],
+        correct: 2,
+        explanation: "'Haunting' means staying in the mind because of being emotionally powerful. The body casts are not frightening in a ghost-story sense, but they are so moving and thought-provoking that they stay with you long after you have seen them. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 10, what does 'intricate' mean?",
+        options: ["Very old", "Extremely large", "Containing very fine, detailed patterns", "Made from expensive materials", "Hidden beneath the floor"],
+        correct: 2,
+        explanation: "'Intricate' means very detailed and complex, with many small parts. The mosaic floors were made up of thousands of tiny pieces arranged in detailed patterns. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 2, what type of word is 'tremendous'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Conjunction"],
+        correct: 2,
+        explanation: "'Tremendous' is an adjective describing the noun 'explosion' — it tells us the explosion was extremely powerful. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'curiosity', 'discovery', and 'preservation' as used in the passage?",
+        options: ["Verbs", "Adjectives", "Abstract nouns", "Adverbs", "Proper nouns"],
+        correct: 2,
+        explanation: "All three are abstract nouns — they name ideas or concepts rather than physical objects. They are formed from the verbs 'to be curious', 'to discover', and 'to preserve' by adding suffixes (-ity, -y, -ation). ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In the sentence from paragraph 3, 'Many fled towards the harbour, hoping to escape by sea,' which word is a preposition?",
+        options: ["Many", "fled", "towards", "hoping", "escape"],
+        correct: 2,
+        explanation: "'Towards' is a preposition — it shows the direction of movement in relation to the harbour. Prepositions indicate position, direction, or time relationships between words. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
