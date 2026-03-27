@@ -1756,6 +1756,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'cave-waterfall',
+    title: 'The Cave Beyond the Waterfall',
+    genre: 'adventure-fiction',
+    passage: `(1) The waterfall roared like a living thing. It tumbled over the lip of the cliff in a great white curtain, crashing into the pool below with a force that sent plumes of spray drifting across the rocks. Sam could feel the vibration through the soles of his boots, a deep, constant tremor that seemed to come from the earth itself. He tightened his grip on the mossy ledge and tried not to look down.
+
+(2) "Just three more metres," called his sister Jess, who was already perched on a narrow shelf of rock behind the falls. She had scrambled across the ledge as casually as if she were walking along a garden path. Jess was like that — she approached everything with the unshakeable confidence of someone who had never once considered that things might go wrong. Sam, two years younger at eleven, approached everything with a detailed mental catalogue of exactly how wrong things could go.
+
+(3) The ledge that ran behind the waterfall was barely thirty centimetres wide, slick with spray, and bordered on one side by a wall of wet rock and on the other by a thundering column of water. If he slipped, he would fall four metres into the pool below — which was deep enough to cushion the impact, probably, but that single word 'probably' occupied a very large and uncomfortable space in Sam's imagination. He pressed his back against the rock wall, edged sideways, and tried to focus on Jess's outstretched hand rather than the roaring void beside him.
+
+(4) "Got you," Jess said, pulling him onto the wider ledge behind the falls. Sam exhaled a breath he had not realised he was holding. The noise here was extraordinary — not louder, exactly, but different. The water formed a translucent curtain barely a metre from where they stood, and the sound was all around them, above and below and behind, as though they were standing inside the throat of some enormous creature. Light filtered through the falling water in rippling, greenish patterns that danced across the rock walls like something from a dream.
+
+(5) And there, exactly where their grandfather's map had said it would be, was the cave. It was little more than a crack in the rock at first — a dark fissure about a metre wide and two metres tall, just large enough for a person to squeeze through sideways. But beyond the entrance, the crack widened rapidly, and Sam could see the passage opening out into what appeared to be a much larger space beyond.
+
+(6) Their grandfather, Arthur Hargreaves, had been a geologist who had spent his career mapping the cave systems of the Yorkshire Dales. He had died the previous winter, leaving behind a house full of books, a shed full of rock samples, and — tucked inside a battered leather journal — a hand-drawn map of a cave he claimed to have discovered in 1967 but had never told anyone about. "Behind the falls at Thorndale Beck" was written in his careful, sloping handwriting, followed by: "Remarkable formations. Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored."
+
+(7) Jess had found the journal while helping to sort Grandpa Arthur's belongings. She had shown it to Sam with shining eyes and the unmistakeable expression of someone who had already decided what they were going to do. Sam had pointed out, reasonably, that exploring an unmapped cave behind a waterfall was exactly the sort of thing their parents would forbid. Jess had pointed out, less reasonably but more persuasively, that it was exactly the sort of thing Grandpa Arthur would have wanted them to do.
+
+(8) They squeezed through the entrance one at a time, Jess first with the torch, Sam following with the map sealed in a plastic wallet. The passage was cool and dry — a sharp contrast to the drenching spray outside. The rock beneath their feet was smooth, worn by water that must have flowed here thousands of years ago but had long since found a different route. After about ten metres, the passage opened into a chamber that made both of them stop and stare.
+
+(9) The cave was roughly circular, perhaps fifteen metres across, with a ceiling that arched overhead like the inside of a cathedral dome. But it was the formations that took their breath away. Stalactites hung from the ceiling in dense clusters, some as thin as drinking straws, others as thick as Sam's arm, their surfaces glistening with moisture in the torchlight. Stalagmites rose from the floor to meet them, creating pillars where the two had joined over millennia. The colours were astonishing — bands of cream, amber, and russet, with veins of pale blue where mineral deposits had seeped through the limestone.
+
+(10) "It's like a palace," Jess whispered. Her voice echoed softly off the walls, returning to them as a gentle murmur. She moved the torch beam slowly across the chamber, and the light caught a frozen waterfall of calcite flowing down one wall — a cascade of stone that had taken tens of thousands of years to form, each layer deposited grain by grain by water carrying dissolved limestone from the surface above.
+
+(11) Sam unfolded the map and held it up to the torchlight. His grandfather's careful annotations marked the positions of key formations: "organ pipes" (a row of thin, hollow stalactites that rang with a musical note when tapped gently), "the curtain" (a sheet of translucent calcite hanging from a ledge), and — at the far end of the chamber — "passage continues here." An arrow pointed into the darkness beyond the main chamber, into the section Grandpa Arthur had never explored.
+
+(12) Sam looked at Jess. Jess looked at Sam. The sensible thing — the thing Sam usually argued for — would be to turn back, tell someone qualified about the cave, and let professionals investigate the unexplored passage. But standing in this extraordinary place that their grandfather had kept secret for over fifty years, with the sound of the waterfall a distant rumble and the ancient rock glittering all around them, the sensible thing felt remarkably unpersuasive. Sam folded the map, tucked it back into its wallet, and nodded towards the darkness. "Shall we?" he said. Jess grinned. "Thought you'd never ask."`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How old is Sam?",
+        options: ["Nine", "Ten", "Eleven", "Twelve", "Thirteen"],
+        correct: 2,
+        explanation: "Paragraph 2 states 'Sam, two years younger at eleven'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What was their grandfather's profession?",
+        options: ["A teacher", "A geologist", "A miner", "An archaeologist", "A park ranger"],
+        correct: 1,
+        explanation: "Paragraph 6 states 'Their grandfather, Arthur Hargreaves, had been a geologist'. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "When did Grandpa Arthur claim to have discovered the cave?",
+        options: ["1957", "1962", "1967", "1972", "1985"],
+        correct: 2,
+        explanation: "Paragraph 6 says he 'claimed to have discovered in 1967'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How wide was the ledge behind the waterfall?",
+        options: ["Twenty centimetres", "Thirty centimetres", "Fifty centimetres", "One metre", "Two metres"],
+        correct: 1,
+        explanation: "Paragraph 3 states 'The ledge that ran behind the waterfall was barely thirty centimetres wide'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why does Sam focus on Jess's outstretched hand rather than looking at the waterfall?",
+        options: [
+          "Because the spray was hurting his eyes",
+          "Because looking at the drop would increase his fear",
+          "Because Jess told him not to look",
+          "Because it was too dark to see anything else",
+          "Because the waterfall was not interesting"
+        ],
+        correct: 1,
+        explanation: "Paragraph 3 shows Sam is already afraid ('uncomfortable space in Sam's imagination'). Looking at the 'roaring void' beside him would make his fear worse, so he focuses on Jess's hand as a safer focal point. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage is best described as:",
+        options: [
+          "A non-fiction article about cave exploration",
+          "An adventure story with elements of family history",
+          "A horror story set in a dangerous cave",
+          "A science textbook about how caves form",
+          "A biography of a famous geologist"
+        ],
+        correct: 1,
+        explanation: "The passage follows two siblings on an adventure to find their grandfather's secret cave. It combines adventure (physical challenge, exploration) with family history (the grandfather's map and legacy). ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What is the main difference between Sam and Jess's personalities?",
+        options: [
+          "Sam is older and more experienced; Jess is younger and inexperienced",
+          "Sam is cautious and thinks about risks; Jess is confident and acts without hesitation",
+          "Sam is brave and adventurous; Jess is timid and fearful",
+          "Sam loves the outdoors; Jess prefers staying at home",
+          "Sam is practical; Jess is lazy"
+        ],
+        correct: 1,
+        explanation: "Paragraph 2 explicitly contrasts them: Jess had 'unshakeable confidence' while Sam had 'a detailed mental catalogue of exactly how wrong things could go'. This contrast runs throughout the passage. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why had Grandpa Arthur never told anyone about the cave?",
+        options: [
+          "The passage explains this in detail",
+          "He was planning to return with proper equipment but never did",
+          "He was afraid of the cave",
+          "He wanted to sell it to the government",
+          "He had forgotten about it"
+        ],
+        correct: 1,
+        explanation: "Paragraph 6 shows his note: 'Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored.' He intended to come back but apparently never did, and the secret remained in his journal until he died. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the description of the cave floor as 'smooth, worn by water that must have flowed here thousands of years ago' tell us?",
+        options: [
+          "The cave was recently formed",
+          "Water still flows through the cave regularly",
+          "The cave is very ancient and water shaped it over a long period before finding a new path",
+          "The cave is artificial and was carved by humans",
+          "The floor is dangerous because it is slippery"
+        ],
+        correct: 2,
+        explanation: "The smooth rock worn by water that 'had long since found a different route' tells us the cave is extremely old and was shaped by flowing water over thousands of years, but the water no longer flows through this passage. ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does Jess whisper 'It's like a palace' rather than speaking normally?",
+        options: [
+          "She was afraid someone might hear them",
+          "The cave was so beautiful it inspired a sense of awe and reverence",
+          "She had a sore throat from the cold air",
+          "Sam had asked her to be quiet",
+          "The echo would have been painfully loud"
+        ],
+        correct: 1,
+        explanation: "Whispering in a beautiful, awe-inspiring place is a natural response — similar to how people lower their voices in cathedrals. The cave's beauty creates a hushed, reverent atmosphere. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How did Jess convince Sam to explore the cave?",
+        options: [
+          "By threatening to go without him",
+          "By bribing him with sweets",
+          "By appealing to their grandfather's memory and what he would have wanted",
+          "By promising it would be completely safe",
+          "By saying their parents had given permission"
+        ],
+        correct: 2,
+        explanation: "Paragraph 7 says Jess argued 'it was exactly the sort of thing Grandpa Arthur would have wanted them to do'. She used an emotional appeal based on their grandfather's legacy, which Sam found persuasive. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "How are stalactites and stalagmites different, based on the passage?",
+        options: [
+          "Stalactites are larger than stalagmites",
+          "Stalactites hang from the ceiling; stalagmites rise from the floor",
+          "Stalactites are made of limestone; stalagmites are made of calcite",
+          "Stalactites are colourful; stalagmites are white",
+          "Stalactites form quickly; stalagmites take thousands of years"
+        ],
+        correct: 1,
+        explanation: "Paragraph 9 states 'Stalactites hung from the ceiling' and 'Stalagmites rose from the floor to meet them', clearly distinguishing their positions. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'character-inference',
+        question: "What does Sam's decision at the end of the passage reveal about his character development?",
+        options: [
+          "He has become reckless and no longer cares about danger",
+          "He is still cautious but the experience has made him willing to push beyond his comfort zone",
+          "He is only going further because Jess is pressuring him",
+          "He has completely overcome his fears",
+          "He feels obligated to finish what his grandfather started"
+        ],
+        correct: 1,
+        explanation: "Sam acknowledges 'the sensible thing' would be to turn back — showing he is still aware of risks. But he chooses to continue anyway, suggesting the cave experience has expanded his courage. He is growing, not transformed — the 'shall we?' is quiet and deliberate, not reckless. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following is NOT described as being in the cave?",
+        options: [
+          "Stalactites and stalagmites",
+          "A frozen waterfall of calcite",
+          "Underground pool of clear water",
+          "Organ pipes that make musical sounds",
+          "Bands of cream, amber, and russet colour"
+        ],
+        correct: 2,
+        explanation: "The passage describes stalactites/stalagmites (paragraph 9), calcite waterfall (paragraph 10), organ pipes (paragraph 11), and coloured bands (paragraph 9). An underground pool of clear water inside the cave is not mentioned — the pool is outside, at the base of the waterfall. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of these details about Grandpa Arthur is NOT stated in the passage?",
+        options: [
+          "He mapped cave systems in the Yorkshire Dales",
+          "He died the previous winter",
+          "He kept a leather journal with a hand-drawn map",
+          "He once published a scientific paper about this cave",
+          "He left behind rock samples in his shed"
+        ],
+        correct: 3,
+        explanation: "The passage says he 'never told anyone about' the cave (paragraph 6), so he could not have published a paper about it. All other details are stated in paragraph 6. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author use the simile 'as though they were standing inside the throat of some enormous creature' in paragraph 4?",
+        options: [
+          "To suggest the cave is dangerous and might swallow them",
+          "To convey the overwhelming, all-surrounding nature of the sound behind the waterfall",
+          "To compare the waterfall to a monster",
+          "To make the reader feel frightened",
+          "To explain how the cave was formed"
+        ],
+        correct: 1,
+        explanation: "The simile captures the physical sensation of being completely surrounded by sound — it comes from 'above and below and behind'. Being inside a creature's throat is an image of total immersion in sound and vibration, not danger. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author end the passage at the moment Sam and Jess decide to explore further, rather than showing what they find?",
+        options: [
+          "Because the author ran out of ideas",
+          "Because what they find is not important",
+          "To create suspense and leave the reader wanting to know what happens next",
+          "To show that the journey matters more than the destination",
+          "Because they decide not to go any further"
+        ],
+        correct: 2,
+        explanation: "Ending at a moment of decision — with the unexplored darkness ahead — creates a cliffhanger. The reader is left curious about what lies beyond the main chamber, which creates suspense and engagement. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the author create by describing the cave formations in such vivid detail in paragraphs 9 and 10?",
+        options: [
+          "It makes the reader feel bored by too much description",
+          "It creates a sense of wonder and helps the reader visualise the extraordinary beauty of the cave",
+          "It proves that the author has visited many caves",
+          "It makes the cave sound dangerous and unstable",
+          "It slows the story down so the reader loses interest"
+        ],
+        correct: 1,
+        explanation: "The rich, detailed description — colours, textures, shapes, the cathedral comparison, the frozen waterfall — immerses the reader in the beauty of the cave. It creates the same sense of awe that Sam and Jess experience. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 3, what does the word 'slick' mean?",
+        options: ["Smooth and slippery", "Dark and dirty", "Narrow and dangerous", "Cold and hard", "Rough and uneven"],
+        correct: 0,
+        explanation: "'Slick' means smooth and slippery, usually because of being wet. The ledge was 'slick with spray' from the waterfall, making it treacherous to walk on. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 4, what does 'translucent' mean?",
+        options: ["Completely see-through", "Allowing some light through but not fully transparent", "Reflecting light like a mirror", "Completely solid and dark", "Sparkling with colour"],
+        correct: 1,
+        explanation: "'Translucent' means allowing light to pass through but not completely clear — you can see light and colour but not sharp details. The waterfall lets greenish light filter through without being fully transparent. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 5, what does 'fissure' mean?",
+        options: ["A deep pool", "A narrow opening or crack in rock", "A type of cave animal", "A natural shelf", "A loose boulder"],
+        correct: 1,
+        explanation: "A 'fissure' is a long, narrow crack or opening in rock or earth. The cave entrance was 'a dark fissure about a metre wide and two metres tall'. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 12, what does 'unpersuasive' mean in the phrase 'the sensible thing felt remarkably unpersuasive'?",
+        options: [
+          "Very convincing",
+          "Difficult to understand",
+          "Not convincing or compelling",
+          "Dangerous and risky",
+          "Impossible to do"
+        ],
+        correct: 2,
+        explanation: "'Unpersuasive' means not convincing — failing to make someone want to agree. Even though turning back was 'sensible', the beauty and excitement of the cave made that option feel unconvincing compared to exploring further. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 1, what type of word is 'constant'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
+        correct: 2,
+        explanation: "'Constant' is an adjective describing the noun 'tremor' — it tells us the tremor was continuous and unceasing. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 2, 'Jess was like that — she approached everything with the unshakeable confidence of someone who had never once considered that things might go wrong.' What type of word is 'unshakeable'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Pronoun"],
+        correct: 2,
+        explanation: "'Unshakeable' is an adjective modifying the noun 'confidence'. It means the confidence cannot be shaken or disturbed. ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 9, 'Stalactites hung from the ceiling in dense clusters.' Which word is a preposition?",
+        options: ["Stalactites", "hung", "from", "dense", "clusters"],
+        correct: 2,
+        explanation: "'From' is a preposition — it shows the relationship between the stalactites and the ceiling, indicating where they hung. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
