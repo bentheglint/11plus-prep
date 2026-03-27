@@ -558,17 +558,19 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   };
 
   const pickQuestionAtDifficulty = (questions, seenIds, targetDifficulty) => {
+    // Filter out broken questions (e.g. passage questions missing passage text)
+    const valid = questions.filter(q => !(q.questionType === 'passage' && !q.passage));
     // Try to find an unseen question at the target difficulty
-    let pool = questions.filter(q => q.difficulty === targetDifficulty && !seenIds.includes(q.id));
+    let pool = valid.filter(q => q.difficulty === targetDifficulty && !seenIds.includes(q.id));
     if (pool.length > 0) return pool[Math.floor(Math.random() * pool.length)];
     // Fallback: any unseen question
-    pool = questions.filter(q => !seenIds.includes(q.id));
+    pool = valid.filter(q => !seenIds.includes(q.id));
     if (pool.length > 0) return pool[Math.floor(Math.random() * pool.length)];
     // All seen: pick any at target difficulty
-    pool = questions.filter(q => q.difficulty === targetDifficulty);
+    pool = valid.filter(q => q.difficulty === targetDifficulty);
     if (pool.length > 0) return pool[Math.floor(Math.random() * pool.length)];
-    // Last resort: any question
-    return questions[Math.floor(Math.random() * questions.length)];
+    // Last resort: any valid question
+    return valid.length > 0 ? valid[Math.floor(Math.random() * valid.length)] : questions[0];
   };
 
   const selectDailyQuestions = () => {
