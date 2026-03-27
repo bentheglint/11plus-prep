@@ -1,0 +1,297 @@
+{
+  "topics": [
+    {
+      "topic": "anglesshapes",
+      "components": {
+        "AngleDisplay": 40,
+        "QuadShape": 8,
+        "AngleDiagram": 16,
+        "ExteriorAngle": 8,
+        "ParallelLines": 14,
+        "RegularPolygon": 17
+      },
+      "total": 103
+    },
+    {
+      "topic": "fractions",
+      "components": {
+        "BarModel": 86,
+        "NumberLine": 6
+      },
+      "total": 92
+    },
+    {
+      "topic": "percentages",
+      "components": {
+        "BarModel": 71,
+        "NumberLine": 2
+      },
+      "total": 73
+    },
+    {
+      "topic": "areaperimeter",
+      "components": {
+        "RectangleDiagram": 50,
+        "BarModel": 12,
+        "LShapeDiagram": 8
+      },
+      "total": 70
+    },
+    {
+      "topic": "volume",
+      "components": {
+        "CuboidDiagram": 70
+      },
+      "total": 70
+    },
+    {
+      "topic": "decimals",
+      "components": {
+        "PlaceValueChart": 29,
+        "NumberLine": 21,
+        "BarModel": 6
+      },
+      "total": 56
+    },
+    {
+      "topic": "punctuation",
+      "components": {
+        "SentenceDisplay": 56
+      },
+      "total": 56
+    },
+    {
+      "topic": "spelling",
+      "components": {
+        "SentenceDisplay": 56
+      },
+      "total": 56
+    },
+    {
+      "topic": "grammar",
+      "components": {
+        "SentenceDisplay": 52
+      },
+      "total": 52
+    },
+    {
+      "topic": "negativenumbers",
+      "components": {
+        "NumberLine": 46
+      },
+      "total": 46
+    },
+    {
+      "topic": "speeddistancetime",
+      "components": {
+        "NumberLine": 8,
+        "SDTTriangle": 32,
+        "BarModel": 1
+      },
+      "total": 41
+    },
+    {
+      "topic": "placevalue",
+      "components": {
+        "PlaceValueChart": 35,
+        "NumberLine": 5
+      },
+      "total": 40
+    },
+    {
+      "topic": "comprehension",
+      "components": {
+        "SentenceDisplay": 36
+      },
+      "total": 36
+    },
+    {
+      "topic": "vocabulary",
+      "components": {
+        "SentenceDisplay": 36
+      },
+      "total": 36
+    },
+    {
+      "topic": "longdivision",
+      "components": {
+        "BarModel": 9,
+        "BusStopDiagram": 23,
+        "NumberLine": 3
+      },
+      "total": 35
+    },
+    {
+      "topic": "ratio",
+      "components": {
+        "BarModel": 33
+      },
+      "total": 33
+    },
+    {
+      "topic": "wordclass",
+      "components": {
+        "SentenceDisplay": 32
+      },
+      "total": 32
+    },
+    {
+      "topic": "sequences",
+      "components": {
+        "SequenceChain": 27
+      },
+      "total": 27
+    },
+    {
+      "topic": "compoundwords",
+      "components": {
+        "LetterTiles": 26
+      },
+      "total": 26
+    },
+    {
+      "topic": "lettercodes",
+      "components": {
+        "AlphabetLine": 24
+      },
+      "total": 24
+    },
+    {
+      "topic": "lettersums",
+      "components": {
+        "AlphabetLine": 24
+      },
+      "total": 24
+    },
+    {
+      "topic": "wordcodeanalogies",
+      "components": {
+        "CodeTable": 24
+      },
+      "total": 24
+    },
+    {
+      "topic": "lettermove",
+      "components": {
+        "LetterTiles": 22
+      },
+      "total": 22
+    },
+    {
+      "topic": "letterpairseries",
+      "components": {
+        "SequenceChain": 11,
+        "AlphabetLine": 11
+      },
+      "total": 22
+    },
+    {
+      "topic": "missingletterswords",
+      "components": {
+        "LetterTiles": 22
+      },
+      "total": 22
+    },
+    {
+      "topic": "numberseries",
+      "components": {
+        "SequenceChain": 22
+      },
+      "total": 22
+    },
+    {
+      "topic": "hiddenwords",
+      "components": {
+        "LetterTiles": 20
+      },
+      "total": 20
+    },
+    {
+      "topic": "numberwordcodes",
+      "components": {
+        "CodeTable": 20
+      },
+      "total": 20
+    },
+    {
+      "topic": "sharedletter",
+      "components": {
+        "LetterTiles": 20
+      },
+      "total": 20
+    },
+    {
+      "topic": "synonyms",
+      "components": {
+        "SentenceDisplay": 18
+      },
+      "total": 18
+    },
+    {
+      "topic": "datahandling",
+      "components": {
+        "NumberLine": 7,
+        "BarModel": 10
+      },
+      "total": 17
+    },
+    {
+      "topic": "antonyms",
+      "components": {
+        "AnalogyDisplay": 16
+      },
+      "total": 16
+    },
+    {
+      "topic": "oddtwoout",
+      "components": {
+        "WordChipsDisplay": 16
+      },
+      "total": 16
+    },
+    {
+      "topic": "verbalanalogies",
+      "components": {
+        "AnalogyDisplay": 16
+      },
+      "total": 16
+    },
+    {
+      "topic": "algebra",
+      "components": {
+        "BarModel": 2
+      },
+      "total": 2
+    },
+    {
+      "topic": "primenumbersfactors",
+      "components": {
+        "NumberLine": 1
+      },
+      "total": 1
+    }
+  ],
+  "components": {
+    "AngleDisplay": 40,
+    "QuadShape": 8,
+    "AngleDiagram": 16,
+    "ExteriorAngle": 8,
+    "ParallelLines": 14,
+    "RegularPolygon": 17,
+    "BarModel": 230,
+    "NumberLine": 99,
+    "RectangleDiagram": 50,
+    "LShapeDiagram": 8,
+    "CuboidDiagram": 70,
+    "PlaceValueChart": 64,
+    "SentenceDisplay": 286,
+    "SDTTriangle": 32,
+    "BusStopDiagram": 23,
+    "SequenceChain": 60,
+    "LetterTiles": 110,
+    "AlphabetLine": 59,
+    "CodeTable": 44,
+    "AnalogyDisplay": 32,
+    "WordChipsDisplay": 16
+  }
+}

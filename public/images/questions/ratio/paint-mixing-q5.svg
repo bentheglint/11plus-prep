@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Paint Mixing Ratio 2 : 3</text>
+
+  <!-- Red paint container (left) -->
+  <rect x="40" y="60" width="90" height="120" rx="5" ry="5" fill="#FF6B6B" stroke="#333" stroke-width="2"/>
+  <rect x="55" y="50" width="60" height="15" rx="3" ry="3" fill="#CC5555" stroke="#333" stroke-width="1.5"/>
+  <text x="85" y="110" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">RED</text>
+  <text x="85" y="130" font-family="Arial" font-size="13" text-anchor="middle" fill="#fff">2 parts</text>
+  <text x="85" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">(6 litres)</text>
+
+  <!-- Blue paint container (right) -->
+  <rect x="270" y="60" width="90" height="120" rx="5" ry="5" fill="#6B9BFF" stroke="#333" stroke-width="2"/>
+  <rect x="285" y="50" width="60" height="15" rx="3" ry="3" fill="#5580CC" stroke="#333" stroke-width="1.5"/>
+  <text x="315" y="110" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">BLUE</text>
+  <text x="315" y="130" font-family="Arial" font-size="13" text-anchor="middle" fill="#fff">3 parts</text>
+  <text x="315" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">(? litres)</text>
+
+  <!-- Arrows pointing down to mixed container -->
+  <!-- Left arrow -->
+  <line x1="85" y1="185" x2="160" y2="220" stroke="#FF6B6B" stroke-width="2.5"/>
+  <polygon points="160,220 150,215 153,224" fill="#FF6B6B"/>
+
+  <!-- Right arrow -->
+  <line x1="315" y1="185" x2="240" y2="220" stroke="#6B9BFF" stroke-width="2.5"/>
+  <polygon points="240,220 247,215 250,224" fill="#6B9BFF"/>
+
+  <!-- Mixed container (center, bottom) -->
+  <rect x="145" y="225" width="110" height="55" rx="5" ry="5" fill="#9B6BCC" stroke="#333" stroke-width="2"/>
+  <rect x="160" y="217" width="80" height="12" rx="3" ry="3" fill="#7B55AA" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="250" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">PURPLE</text>
+  <text x="200" y="268" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">5 parts total</text>
+
+  <!-- Ratio explanation -->
+  <text x="200" y="295" font-family="Arial" font-size="13" text-anchor="middle" fill="#555">If 2 parts = 6 litres, then 1 part = 3 litres</text>
+</svg>

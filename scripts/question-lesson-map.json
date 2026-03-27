@@ -1,0 +1,2471 @@
+{
+  "topic": "speeddistancetime",
+  "totalQuestions": 115,
+  "totalSubConcepts": 10,
+  "summary": {
+    "high": 4,
+    "medium": 28,
+    "low": 83,
+    "none": 0
+  },
+  "subConcepts": [
+    {
+      "id": "master-speed-formula",
+      "name": "Using Speed = Distance ÷ Time"
+    },
+    {
+      "id": "calculate-distance",
+      "name": "Distance = Speed × Time"
+    },
+    {
+      "id": "calculate-time",
+      "name": "Time = Distance ÷ Speed"
+    },
+    {
+      "id": "sdt-triangle",
+      "name": "The SDT Triangle"
+    },
+    {
+      "id": "minutes-to-hours",
+      "name": "Converting Minutes to Hours for SDT"
+    },
+    {
+      "id": "metres-to-km",
+      "name": "Converting Metres to Kilometres for SDT"
+    },
+    {
+      "id": "kmh-to-ms",
+      "name": "Converting km/h to m/s"
+    },
+    {
+      "id": "time-in-minutes",
+      "name": "Converting Decimal Hours to Minutes"
+    },
+    {
+      "id": "average-speed",
+      "name": "Average Speed for Two-Part Journeys"
+    },
+    {
+      "id": "word-problems",
+      "name": "Multi-Step SDT Word Problems"
+    }
+  ],
+  "mappings": [
+    {
+      "questionId": 1,
+      "question": "Emma drives 150 km in 3 hours. What is her average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "60 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "50 km/h",
+      "explanation": "Speed = Distance ÷ Time. Speed = 150 ÷ 3 = 50 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "average-speed",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 2,
+      "question": "Tom cycles at 20 km/h for 2.5 hours. How far does he travel?",
+      "options": [
+        "50 km",
+        "45 km",
+        "40 km",
+        "55 km",
+        "60 km"
+      ],
+      "correctAnswer": "50 km",
+      "explanation": "Distance = Speed × Time. Distance = 20 × 2.5 = 50 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 3,
+      "question": "Sophie travels 240 km at a speed of 80 km/h. How long does the journey take?",
+      "options": [
+        "2 hours",
+        "2.5 hours",
+        "3 hours",
+        "3.5 hours",
+        "4 hours"
+      ],
+      "correctAnswer": "3 hours",
+      "explanation": "Time = Distance ÷ Speed. Time = 240 ÷ 80 = 3 hours. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-time",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 4,
+      "question": "Jake cycles 12 km in 20 minutes. What is his speed in km/h?",
+      "options": [
+        "30 km/h",
+        "32 km/h",
+        "34 km/h",
+        "36 km/h",
+        "38 km/h"
+      ],
+      "correctAnswer": "36 km/h",
+      "explanation": "First convert 20 minutes to hours: 20 ÷ 60 = 1/3 hour. Speed = 12 ÷ 1/3 = 12 × 3 = 36 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 5,
+      "question": "Lucy runs at 8 m/s for 45 seconds. How far does she run?",
+      "options": [
+        "320 m",
+        "340 m",
+        "360 m",
+        "380 m",
+        "400 m"
+      ],
+      "correctAnswer": "360 m",
+      "explanation": "Distance = Speed × Time. Distance = 8 × 45 = 360 m. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 6,
+      "question": "Ben drives 80 km in 2 hours, then 60 km in 1.5 hours. What is his average speed for the whole journey?",
+      "options": [
+        "35 km/h",
+        "40 km/h",
+        "45 km/h",
+        "50 km/h",
+        "55 km/h"
+      ],
+      "correctAnswer": "40 km/h",
+      "explanation": "Total distance = 80 + 60 = 140 km. Total time = 2 + 1.5 = 3.5 hours. Average speed = 140 ÷ 3.5 = 40 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "score": 6,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 5
+      }
+    },
+    {
+      "questionId": 7,
+      "question": "Mia's car travels at 72 km/h. What is this speed in metres per second?",
+      "options": [
+        "18 m/s",
+        "20 m/s",
+        "22 m/s",
+        "24 m/s",
+        "26 m/s"
+      ],
+      "correctAnswer": "20 m/s",
+      "explanation": "To convert km/h to m/s, multiply by 1000 and divide by 3600. 72 × 1000 ÷ 3600 = 72000 ÷ 3600 = 20 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "score": 6,
+      "secondChoice": {
+        "id": "word-problems",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 8,
+      "question": "Oliver travels 15 km at 60 km/h. How many minutes does this take?",
+      "options": [
+        "15 minutes",
+        "20 minutes",
+        "25 minutes",
+        "30 minutes",
+        "35 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = Distance ÷ Speed = 15 ÷ 60 = 0.25 hours. Convert to minutes: 0.25 × 60 = 15 minutes. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "time-in-minutes",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 9,
+      "question": "Sarah drives at 50 km/h for 1 hour 30 minutes. How far does she travel?",
+      "options": [
+        "65 km",
+        "70 km",
+        "72 km",
+        "75 km",
+        "80 km"
+      ],
+      "correctAnswer": "75 km",
+      "explanation": "1 hour 30 minutes = 1.5 hours. Distance = Speed × Time = 50 × 1.5 = 75 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 10,
+      "question": "Charlie drives 20 km in 30 minutes. What is his speed in km/h?",
+      "options": [
+        "35 km/h",
+        "38 km/h",
+        "40 km/h",
+        "42 km/h",
+        "45 km/h"
+      ],
+      "correctAnswer": "40 km/h",
+      "explanation": "Convert 30 minutes to hours: 30 ÷ 60 = 0.5 hours. Speed = Distance ÷ Time = 20 ÷ 0.5 = 40 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "minutes-to-hours",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 11,
+      "question": "Hannah drives 200 km at 80 km/h. How many minutes does the journey take?",
+      "options": [
+        "120 minutes",
+        "130 minutes",
+        "140 minutes",
+        "145 minutes",
+        "150 minutes"
+      ],
+      "correctAnswer": "150 minutes",
+      "explanation": "Time = Distance ÷ Speed = 200 ÷ 80 = 2.5 hours. Convert to minutes: 2.5 × 60 = 150 minutes. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "time-in-minutes",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 12,
+      "question": "Ava travels at 45 km/h for 4 hours. How far does she travel?",
+      "options": [
+        "160 km",
+        "180 km",
+        "200 km",
+        "220 km",
+        "240 km"
+      ],
+      "correctAnswer": "180 km",
+      "explanation": "Distance = Speed × Time. Distance = 45 × 4 = 180 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 13,
+      "question": "Noah jogs 1500 metres in 5 minutes. What is his speed in km/h?",
+      "options": [
+        "15 km/h",
+        "16 km/h",
+        "18 km/h",
+        "20 km/h",
+        "22 km/h"
+      ],
+      "correctAnswer": "18 km/h",
+      "explanation": "Convert to km and hours: 1500 m = 1.5 km, 5 minutes = 5 ÷ 60 = 1/12 hour. Speed = 1.5 ÷ 1/12 = 1.5 × 12 = 18 km/h. ✓",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 14,
+      "question": "Ella drives 90 km in 2 hours, then 60 km in 1 hour. What is her average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h",
+        "60 km/h"
+      ],
+      "correctAnswer": "50 km/h",
+      "explanation": "Total distance = 90 + 60 = 150 km. Total time = 2 + 1 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "average-speed",
+        "score": 4
+      }
+    },
+    {
+      "questionId": 15,
+      "question": "Max is driving 300 km. He has already driven 180 km in 3 hours. What speed must he average for the remaining journey to complete it in 2 more hours?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Remaining distance = 300 - 180 = 120 km. Time remaining = 2 hours. Speed needed = 120 ÷ 2 = 60 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "word-problems",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 16,
+      "question": "A family drives 180 km to the seaside in 4 hours. What is their average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "60 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "45 km/h",
+      "explanation": "Speed = Distance ÷ Time = 180 ÷ 4 = 45 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "average-speed",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 17,
+      "question": "A car travels at 55 km/h for 3 hours. How far does it travel?",
+      "options": [
+        "145 km",
+        "155 km",
+        "165 km",
+        "175 km",
+        "185 km"
+      ],
+      "correctAnswer": "165 km",
+      "explanation": "Distance = Speed × Time = 55 × 3 = 165 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 18,
+      "question": "A delivery van travels 300 km at 75 km/h. How long does the journey take?",
+      "options": [
+        "3 hours",
+        "3.5 hours",
+        "3.75 hours",
+        "4 hours",
+        "4.5 hours"
+      ],
+      "correctAnswer": "4 hours",
+      "explanation": "Time = Distance ÷ Speed = 300 ÷ 75 = 4 hours. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-time",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 19,
+      "question": "A cyclist covers 18 km in 30 minutes. What is the speed in km/h?",
+      "options": [
+        "32 km/h",
+        "36 km/h",
+        "40 km/h",
+        "44 km/h",
+        "48 km/h"
+      ],
+      "correctAnswer": "36 km/h",
+      "explanation": "30 minutes = 0.5 hours. Speed = 18 ÷ 0.5 = 36 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 20,
+      "question": "A runner runs at 10 m/s for 50 seconds. How far does she run?",
+      "options": [
+        "400 m",
+        "450 m",
+        "475 m",
+        "490 m",
+        "500 m"
+      ],
+      "correctAnswer": "500 m",
+      "explanation": "Distance = Speed × Time = 10 × 50 = 500 m. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 21,
+      "question": "A peregrine falcon dives at 90 km/h. What is this speed in metres per second?",
+      "options": [
+        "20 m/s",
+        "22 m/s",
+        "23 m/s",
+        "24 m/s",
+        "25 m/s"
+      ],
+      "correctAnswer": "25 m/s",
+      "explanation": "90 × 1000 ÷ 3600 = 90000 ÷ 3600 = 25 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 22,
+      "question": "An ambulance races 25 km to the hospital at 100 km/h. How many minutes does the journey take?",
+      "options": [
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "22 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 25 ÷ 100 = 0.25 hours = 0.25 × 60 = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 23,
+      "question": "A driver travels 100 km in 2 hours, then 80 km in 2 hours. What is the average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correctAnswer": "45 km/h",
+      "explanation": "Total distance = 180 km. Total time = 4 hours. Average = 180 ÷ 4 = 45 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "average-speed",
+        "score": 4
+      }
+    },
+    {
+      "questionId": 24,
+      "question": "A postman cycles 2000 metres delivering letters in 10 minutes. What is his speed in km/h?",
+      "options": [
+        "10 km/h",
+        "12 km/h",
+        "14 km/h",
+        "16 km/h",
+        "18 km/h"
+      ],
+      "correctAnswer": "12 km/h",
+      "explanation": "2000 m = 2 km. 10 min = 1/6 hour. Speed = 2 ÷ 1/6 = 12 km/h. ✓",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 25,
+      "question": "A train travels at 55 km/h for 2 hours 30 minutes. How far does it travel?",
+      "options": [
+        "120 km",
+        "130 km",
+        "135 km",
+        "137.5 km",
+        "140 km"
+      ],
+      "correctAnswer": "137.5 km",
+      "explanation": "2h 30min = 2.5 hours. Distance = 55 × 2.5 = 137.5 km. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "minutes-to-hours",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 26,
+      "question": "A delivery van covers 210 km in 3 hours. What is its speed?",
+      "options": [
+        "65 km/h",
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "75 km/h"
+      ],
+      "correctAnswer": "70 km/h",
+      "explanation": "Speed = 210 ÷ 3 = 70 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 27,
+      "question": "A bus travels at 48 km/h for 2.5 hours. What distance is covered?",
+      "options": [
+        "100 km",
+        "110 km",
+        "120 km",
+        "130 km",
+        "140 km"
+      ],
+      "correctAnswer": "120 km",
+      "explanation": "Distance = 48 × 2.5 = 120 km. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 28,
+      "question": "A train travels 360 km from London to the Lake District at 90 km/h. How long does the journey take?",
+      "options": [
+        "3 hours",
+        "3.5 hours",
+        "4 hours",
+        "4.5 hours",
+        "5 hours"
+      ],
+      "correctAnswer": "4 hours",
+      "explanation": "Time = 360 ÷ 90 = 4 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 29,
+      "question": "A cyclist covers 24 km in 40 minutes. What is the speed in km/h?",
+      "options": [
+        "32 km/h",
+        "34 km/h",
+        "36 km/h",
+        "38 km/h",
+        "40 km/h"
+      ],
+      "correctAnswer": "36 km/h",
+      "explanation": "40 min = 40/60 = 2/3 hour. Speed = 24 ÷ 2/3 = 24 × 3/2 = 36 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 30,
+      "question": "A model rocket flies at 12 m/s for 35 seconds. How far does it travel?",
+      "options": [
+        "380 m",
+        "400 m",
+        "420 m",
+        "440 m",
+        "460 m"
+      ],
+      "correctAnswer": "420 m",
+      "explanation": "Distance = 12 × 35 = 420 m. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "kmh-to-ms",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 31,
+      "question": "A racing car zooms around a track at 108 km/h. What is this speed in metres per second?",
+      "options": [
+        "25 m/s",
+        "28 m/s",
+        "30 m/s",
+        "32 m/s",
+        "35 m/s"
+      ],
+      "correctAnswer": "30 m/s",
+      "explanation": "108 × 1000 ÷ 3600 = 30 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 32,
+      "question": "How many minutes to travel 30 km at 120 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 30 ÷ 120 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 33,
+      "question": "A car drives 120 km in 2 hours, then 90 km in 1.5 hours. What is the average speed?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 210 km in 3.5 hours. Average = 210 ÷ 3.5 = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 34,
+      "question": "Someone jogs 2500 metres in 15 minutes. What is the speed in km/h?",
+      "options": [
+        "8 km/h",
+        "10 km/h",
+        "12 km/h",
+        "14 km/h",
+        "16 km/h"
+      ],
+      "correctAnswer": "10 km/h",
+      "explanation": "2.5 km in 0.25 hours. Speed = 2.5 ÷ 0.25 = 10 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "metres-to-km",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 35,
+      "question": "A plane flies at 650 km/h for 1 hour 30 minutes. How far does it fly?",
+      "options": [
+        "900 km",
+        "925 km",
+        "950 km",
+        "975 km",
+        "1000 km"
+      ],
+      "correctAnswer": "975 km",
+      "explanation": "1.5 hours. Distance = 650 × 1.5 = 975 km. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "minutes-to-hours",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 36,
+      "question": "A coach must cover 270 km in 4.5 hours to arrive on time. What speed does it need to average?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Speed = 270 ÷ 4.5 = 60 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 3,
+      "secondChoice": {
+        "id": "word-problems",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 37,
+      "question": "A bike travels at 35 km/h for 4 hours. What distance is covered?",
+      "options": [
+        "120 km",
+        "130 km",
+        "140 km",
+        "150 km",
+        "160 km"
+      ],
+      "correctAnswer": "140 km",
+      "explanation": "Distance = 35 × 4 = 140 km. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 38,
+      "question": "A lorry drives from London to Leeds, a distance of 420 km, at 70 km/h. How long does the journey take?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 420 ÷ 70 = 6 hours. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 3,
+      "secondChoice": {
+        "id": "calculate-time",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 39,
+      "question": "A car covers 30 km in 25 minutes. What is the speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "25 min = 25/60 hours. Speed = 30 ÷ (25/60) = 30 × 60/25 = 72 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 40,
+      "question": "An athlete runs at 8 m/s for 60 seconds. How far?",
+      "options": [
+        "420 m",
+        "440 m",
+        "460 m",
+        "480 m",
+        "500 m"
+      ],
+      "correctAnswer": "480 m",
+      "explanation": "Distance = 8 × 60 = 480 m. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "kmh-to-ms",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 41,
+      "question": "A cheetah sprints at 126 km/h. What is this speed in m/s?",
+      "options": [
+        "32 m/s",
+        "34 m/s",
+        "35 m/s",
+        "36 m/s",
+        "38 m/s"
+      ],
+      "correctAnswer": "35 m/s",
+      "explanation": "126 × 1000 ÷ 3600 = 35 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 42,
+      "question": "A car travels at 160 km/h. How many minutes does it take to travel 40 km?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 40 ÷ 160 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 43,
+      "question": "A lorry travels 150 km in 3 hours, then 100 km in 2 hours. Average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correctAnswer": "50 km/h",
+      "explanation": "Total = 250 km in 5 hours. Average = 250 ÷ 5 = 50 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 44,
+      "question": "Someone cycles 3000 metres in 12 minutes. Speed in km/h?",
+      "options": [
+        "12 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h",
+        "18 km/h"
+      ],
+      "correctAnswer": "15 km/h",
+      "explanation": "3 km in 0.2 hours. Speed = 3 ÷ 0.2 = 15 km/h. ✓",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 45,
+      "question": "A helicopter flies at 180 km/h for 2 hours 15 minutes. Distance?",
+      "options": [
+        "385 km",
+        "395 km",
+        "405 km",
+        "415 km",
+        "425 km"
+      ],
+      "correctAnswer": "405 km",
+      "explanation": "2.25 hours. Distance = 180 × 2.25 = 405 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 46,
+      "question": "What speed to cover 336 km in 5.25 hours?",
+      "options": [
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h",
+        "68 km/h"
+      ],
+      "correctAnswer": "64 km/h",
+      "explanation": "Speed = 336 ÷ 5.25 = 64 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 47,
+      "question": "A scooter travels at 42 km/h for 3.5 hours. Distance?",
+      "options": [
+        "137 km",
+        "142 km",
+        "147 km",
+        "152 km",
+        "157 km"
+      ],
+      "correctAnswer": "147 km",
+      "explanation": "Distance = 42 × 3.5 = 147 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 48,
+      "question": "How long to travel 480 km at 96 km/h?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 480 ÷ 96 = 5 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 49,
+      "question": "A motorbike covers 36 km in 20 minutes. Speed in km/h?",
+      "options": [
+        "100 km/h",
+        "104 km/h",
+        "108 km/h",
+        "112 km/h",
+        "116 km/h"
+      ],
+      "correctAnswer": "108 km/h",
+      "explanation": "20 min = 1/3 hour. Speed = 36 ÷ 1/3 = 108 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 50,
+      "question": "A sprinter runs at 9 m/s for 40 seconds. Distance?",
+      "options": [
+        "340 m",
+        "350 m",
+        "360 m",
+        "370 m",
+        "380 m"
+      ],
+      "correctAnswer": "360 m",
+      "explanation": "Distance = 9 × 40 = 360 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 51,
+      "question": "Convert 144 kilometres per hour (km/h) to metres per second (m/s).",
+      "options": [
+        "36 m/s",
+        "38 m/s",
+        "40 m/s",
+        "42 m/s",
+        "44 m/s"
+      ],
+      "correctAnswer": "40 m/s",
+      "explanation": "To convert km/h to m/s: multiply by 1,000 (kilometres to metres), then divide by 3,600 (hours to seconds). 144 × 1,000 = 144,000 metres per hour. 144,000 ÷ 3,600 = 40 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "score": 6,
+      "secondChoice": {
+        "id": "word-problems",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 52,
+      "question": "How many minutes to travel 45 km at 180 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 45 ÷ 180 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 53,
+      "question": "A taxi drives 180 km in 3 hours, then 120 km in 2 hours. Average speed?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 300 km in 5 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 54,
+      "question": "Someone jogs 3500 metres in 20 minutes. Speed in km/h?",
+      "options": [
+        "9 km/h",
+        "10.5 km/h",
+        "12 km/h",
+        "13.5 km/h",
+        "15 km/h"
+      ],
+      "correctAnswer": "10.5 km/h",
+      "explanation": "3.5 km in 1/3 hour. Speed = 3.5 ÷ (1/3) = 10.5 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 55,
+      "question": "A ferry travels at 25 km/h for 3 hours 12 minutes. Distance?",
+      "options": [
+        "75 km",
+        "78 km",
+        "80 km",
+        "82 km",
+        "85 km"
+      ],
+      "correctAnswer": "80 km",
+      "explanation": "3.2 hours. Distance = 25 × 3.2 = 80 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 56,
+      "question": "What speed to cover 396 km in 5.5 hours?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "Speed = 396 ÷ 5.5 = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 57,
+      "question": "A van travels at 58 km/h for 2.5 hours. Distance?",
+      "options": [
+        "135 km",
+        "140 km",
+        "145 km",
+        "150 km",
+        "155 km"
+      ],
+      "correctAnswer": "145 km",
+      "explanation": "Distance = 58 × 2.5 = 145 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 58,
+      "question": "How long to travel 540 km at 108 km/h?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 540 ÷ 108 = 5 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 59,
+      "question": "A truck covers 42 km in 35 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "35 min = 7/12 hour. Speed = 42 ÷ (7/12) = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 60,
+      "question": "A remote-control car races at 11 m/s for 30 seconds. How far does it travel?",
+      "options": [
+        "310 m",
+        "320 m",
+        "330 m",
+        "340 m",
+        "350 m"
+      ],
+      "correctAnswer": "330 m",
+      "explanation": "Distance = 11 × 30 = 330 m. ✓",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "kmh-to-ms",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 61,
+      "question": "Convert 162 km/h to m/s.",
+      "options": [
+        "42 m/s",
+        "44 m/s",
+        "45 m/s",
+        "46 m/s",
+        "48 m/s"
+      ],
+      "correctAnswer": "45 m/s",
+      "explanation": "162 × 1000 ÷ 3600 = 45 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 62,
+      "question": "How many minutes to travel 50 km at 200 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 50 ÷ 200 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 63,
+      "question": "A cyclist rides 200 km in 4 hours, then 150 km in 3 hours. Average speed?",
+      "options": [
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "54 km/h",
+        "56 km/h"
+      ],
+      "correctAnswer": "50 km/h",
+      "explanation": "Total = 350 km in 7 hours. Average = 50 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 64,
+      "question": "Someone runs 4000 metres in 16 minutes. Speed in km/h?",
+      "options": [
+        "12 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h",
+        "18 km/h"
+      ],
+      "correctAnswer": "15 km/h",
+      "explanation": "4 km in 16/60 hours. Speed = 4 ÷ (4/15) = 15 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 65,
+      "question": "A boat travels at 32 km/h for 1 hour 45 minutes. Distance?",
+      "options": [
+        "52 km",
+        "54 km",
+        "56 km",
+        "58 km",
+        "60 km"
+      ],
+      "correctAnswer": "56 km",
+      "explanation": "1.75 hours. Distance = 32 × 1.75 = 56 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 66,
+      "question": "What speed to cover 456 km in 6 hours?",
+      "options": [
+        "72 km/h",
+        "74 km/h",
+        "76 km/h",
+        "78 km/h",
+        "80 km/h"
+      ],
+      "correctAnswer": "76 km/h",
+      "explanation": "Speed = 456 ÷ 6 = 76 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 67,
+      "question": "A moped travels at 38 km/h for 4.5 hours. Distance?",
+      "options": [
+        "161 km",
+        "166 km",
+        "171 km",
+        "176 km",
+        "181 km"
+      ],
+      "correctAnswer": "171 km",
+      "explanation": "Distance = 38 × 4.5 = 171 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 68,
+      "question": "How long to travel 600 km at 120 km/h?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 600 ÷ 120 = 5 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 69,
+      "question": "A car covers 48 km in 40 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "40 min = 2/3 hour. Speed = 48 ÷ (2/3) = 72 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 70,
+      "question": "An athlete runs at 7 m/s for 90 seconds. Distance?",
+      "options": [
+        "600 m",
+        "610 m",
+        "620 m",
+        "630 m",
+        "640 m"
+      ],
+      "correctAnswer": "630 m",
+      "explanation": "Distance = 7 × 90 = 630 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 71,
+      "question": "Convert 180 km/h to m/s.",
+      "options": [
+        "45 m/s",
+        "48 m/s",
+        "50 m/s",
+        "52 m/s",
+        "55 m/s"
+      ],
+      "correctAnswer": "50 m/s",
+      "explanation": "180 × 1000 ÷ 3600 = 50 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 72,
+      "question": "How many minutes to travel 55 km at 220 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 55 ÷ 220 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 73,
+      "question": "A train travels 240 km in 4 hours, then 180 km in 3 hours. Average speed?",
+      "options": [
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 420 km in 7 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 74,
+      "question": "Someone jogs 4500 metres in 18 minutes. Speed in km/h?",
+      "options": [
+        "12 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h",
+        "18 km/h"
+      ],
+      "correctAnswer": "15 km/h",
+      "explanation": "4.5 km in 0.3 hours. Speed = 4.5 ÷ 0.3 = 15 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 75,
+      "question": "A ship travels at 28 km/h for 2 hours 30 minutes. Distance?",
+      "options": [
+        "65 km",
+        "68 km",
+        "70 km",
+        "72 km",
+        "75 km"
+      ],
+      "correctAnswer": "70 km",
+      "explanation": "2.5 hours. Distance = 28 × 2.5 = 70 km. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 76,
+      "question": "What speed to cover 516 km in 6.45 hours?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 516 ÷ 6.45 = 80 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 77,
+      "question": "A bicycle travels at 22 km/h for 3.5 hours. Distance?",
+      "options": [
+        "71 km",
+        "73 km",
+        "75 km",
+        "77 km",
+        "79 km"
+      ],
+      "correctAnswer": "77 km",
+      "explanation": "Distance = 22 × 3.5 = 77 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 78,
+      "question": "How long to travel 660 km at 110 km/h?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 660 ÷ 110 = 6 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 79,
+      "question": "A bus covers 54 km in 45 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "45 min = 0.75 hours. Speed = 54 ÷ 0.75 = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 80,
+      "question": "A runner runs at 6 m/s for 120 seconds. Distance?",
+      "options": [
+        "680 m",
+        "700 m",
+        "720 m",
+        "740 m",
+        "760 m"
+      ],
+      "correctAnswer": "720 m",
+      "explanation": "Distance = 6 × 120 = 720 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 81,
+      "question": "Convert 198 kilometres per hour (km/h) to metres per second (m/s).",
+      "options": [
+        "50 m/s",
+        "52 m/s",
+        "54 m/s",
+        "55 m/s",
+        "58 m/s"
+      ],
+      "correctAnswer": "55 m/s",
+      "explanation": "To convert km/h to m/s: multiply by 1,000, then divide by 3,600. 198 × 1,000 = 198,000. 198,000 ÷ 3,600 = 55 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "score": 6,
+      "secondChoice": {
+        "id": "word-problems",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 82,
+      "question": "How many minutes to travel 60 km at 240 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 60 ÷ 240 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 83,
+      "question": "A car drives 270 km in 4.5 hours, then 210 km in 3.5 hours. Average speed?",
+      "options": [
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 480 km in 8 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 84,
+      "question": "Someone cycles 5000 metres in 25 minutes. Speed in km/h?",
+      "options": [
+        "10 km/h",
+        "11 km/h",
+        "12 km/h",
+        "13 km/h",
+        "14 km/h"
+      ],
+      "correctAnswer": "12 km/h",
+      "explanation": "5 km in 25/60 hours. Speed = 5 ÷ (5/12) = 12 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 85,
+      "question": "A kayak travels at 8 km/h for 3 hours 45 minutes. Distance?",
+      "options": [
+        "28 km",
+        "29 km",
+        "30 km",
+        "31 km",
+        "32 km"
+      ],
+      "correctAnswer": "30 km",
+      "explanation": "3.75 hours. Distance = 8 × 3.75 = 30 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 86,
+      "question": "What speed to cover 576 km in 7.2 hours?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 576 ÷ 7.2 = 80 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 87,
+      "question": "A skateboard travels at 15 km/h for 2.4 hours. Distance?",
+      "options": [
+        "34 km",
+        "35 km",
+        "36 km",
+        "37 km",
+        "38 km"
+      ],
+      "correctAnswer": "36 km",
+      "explanation": "Distance = 15 × 2.4 = 36 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 88,
+      "question": "How long to travel 720 km at 144 km/h?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 720 ÷ 144 = 5 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 89,
+      "question": "A lorry covers 60 km in 50 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "50 min = 5/6 hour. Speed = 60 ÷ (5/6) = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 90,
+      "question": "An object moves at 5 m/s for 180 seconds. Distance?",
+      "options": [
+        "850 m",
+        "875 m",
+        "900 m",
+        "925 m",
+        "950 m"
+      ],
+      "correctAnswer": "900 m",
+      "explanation": "Distance = 5 × 180 = 900 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 91,
+      "question": "Convert 216 km/h to m/s.",
+      "options": [
+        "55 m/s",
+        "58 m/s",
+        "60 m/s",
+        "62 m/s",
+        "65 m/s"
+      ],
+      "correctAnswer": "60 m/s",
+      "explanation": "216 × 1000 ÷ 3600 = 60 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 92,
+      "question": "How many minutes to travel 65 km at 260 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 65 ÷ 260 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 93,
+      "question": "A van travels 300 km in 5 hours, then 240 km in 4 hours. Average speed?",
+      "options": [
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 540 km in 9 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 94,
+      "question": "Someone walks 5500 metres in 50 minutes. Speed in km/h?",
+      "options": [
+        "5.5 km/h",
+        "6 km/h",
+        "6.6 km/h",
+        "7 km/h",
+        "7.5 km/h"
+      ],
+      "correctAnswer": "6.6 km/h",
+      "explanation": "5.5 km in 50/60 hours. Speed = 5.5 ÷ (5/6) = 6.6 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 95,
+      "question": "A raft travels at 4 km/h for 4 hours 30 minutes. Distance?",
+      "options": [
+        "16 km",
+        "17 km",
+        "18 km",
+        "19 km",
+        "20 km"
+      ],
+      "correctAnswer": "18 km",
+      "explanation": "4.5 hours. Distance = 4 × 4.5 = 18 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 96,
+      "question": "What speed to cover 636 km in 7.95 hours?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 636 ÷ 7.95 = 80 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 97,
+      "question": "A tram travels at 44 km/h for 1.75 hours. How far does it travel?",
+      "options": [
+        "73 km",
+        "75 km",
+        "77 km",
+        "79 km",
+        "81 km"
+      ],
+      "correctAnswer": "77 km",
+      "explanation": "Distance = speed × time = 44 × 1.75 = 77 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "medium",
+      "score": 5,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 2
+      }
+    },
+    {
+      "questionId": 98,
+      "question": "How long to travel 780 km at 130 km/h?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 780 ÷ 130 = 6 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 99,
+      "question": "A delivery van covers 66 km in 55 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "55 min = 11/12 hour. Speed = 66 ÷ (11/12) = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 100,
+      "question": "A cyclist rides at 4 m/s for 150 seconds. Distance?",
+      "options": [
+        "550 m",
+        "575 m",
+        "600 m",
+        "625 m",
+        "650 m"
+      ],
+      "correctAnswer": "600 m",
+      "explanation": "Distance = 4 × 150 = 600 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 101,
+      "question": "Convert 234 km/h to m/s.",
+      "options": [
+        "60 m/s",
+        "62 m/s",
+        "65 m/s",
+        "68 m/s",
+        "70 m/s"
+      ],
+      "correctAnswer": "65 m/s",
+      "explanation": "234 × 1000 ÷ 3600 = 65 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 102,
+      "question": "How many minutes to travel 70 km at 280 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 70 ÷ 280 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 103,
+      "question": "A coach travels 330 km in 5.5 hours, then 270 km in 4.5 hours. Average speed?",
+      "options": [
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 600 km in 10 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 104,
+      "question": "Someone jogs 6000 metres in 30 minutes. Speed in km/h?",
+      "options": [
+        "10 km/h",
+        "11 km/h",
+        "12 km/h",
+        "13 km/h",
+        "14 km/h"
+      ],
+      "correctAnswer": "12 km/h",
+      "explanation": "6 km in 0.5 hours. Speed = 6 ÷ 0.5 = 12 km/h. ✓",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 105,
+      "question": "A submarine travels at 16 km/h for 3 hours 15 minutes. Distance?",
+      "options": [
+        "48 km",
+        "50 km",
+        "52 km",
+        "54 km",
+        "56 km"
+      ],
+      "correctAnswer": "52 km",
+      "explanation": "3.25 hours. Distance = 16 × 3.25 = 52 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 106,
+      "question": "What speed to cover 696 km in 8.7 hours?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 696 ÷ 8.7 = 80 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 107,
+      "question": "A rickshaw travels at 18 km/h for 3.25 hours. Distance?",
+      "options": [
+        "56 km",
+        "57.5 km",
+        "58.5 km",
+        "60 km",
+        "61.5 km"
+      ],
+      "correctAnswer": "58.5 km",
+      "explanation": "Distance = 18 × 3.25 = 58.5 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 108,
+      "question": "How long to travel 840 km at 105 km/h?",
+      "options": [
+        "6 hours",
+        "7 hours",
+        "8 hours",
+        "9 hours",
+        "10 hours"
+      ],
+      "correctAnswer": "8 hours",
+      "explanation": "Time = 840 ÷ 105 = 8 hours. ✓",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 109,
+      "question": "A taxi covers 72 km in 60 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correctAnswer": "72 km/h",
+      "explanation": "60 min = 1 hour. Speed = 72 ÷ 1 = 72 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 110,
+      "question": "A wheelchair user moves at 3 m/s for 200 seconds. Distance?",
+      "options": [
+        "550 m",
+        "575 m",
+        "600 m",
+        "625 m",
+        "650 m"
+      ],
+      "correctAnswer": "600 m",
+      "explanation": "Distance = 3 × 200 = 600 m. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 111,
+      "question": "Convert 252 km/h to m/s.",
+      "options": [
+        "65 m/s",
+        "68 m/s",
+        "70 m/s",
+        "72 m/s",
+        "75 m/s"
+      ],
+      "correctAnswer": "70 m/s",
+      "explanation": "252 × 1000 ÷ 3600 = 70 m/s. ✓",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "medium",
+      "score": 4,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 112,
+      "question": "How many minutes to travel 75 km at 300 km/h?",
+      "options": [
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 75 ÷ 300 = 0.25 hours = 15 minutes. ✓",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 113,
+      "question": "A truck travels 360 km in 6 hours, then 300 km in 5 hours. Average speed?",
+      "options": [
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 660 km in 11 hours. Average = 60 km/h. ✓",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "low",
+      "score": 2,
+      "secondChoice": {
+        "id": "master-speed-formula",
+        "score": 1
+      }
+    },
+    {
+      "questionId": 114,
+      "question": "Someone runs 6500 metres in 26 minutes. Speed in km/h?",
+      "options": [
+        "13 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h",
+        "17 km/h"
+      ],
+      "correctAnswer": "15 km/h",
+      "explanation": "6.5 km in 26/60 hours. Speed = 6.5 ÷ (13/30) = 15 km/h. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    },
+    {
+      "questionId": 115,
+      "question": "A hot air balloon travels at 12 km/h for 4 hours 30 minutes. Distance?",
+      "options": [
+        "52 km",
+        "53 km",
+        "54 km",
+        "55 km",
+        "56 km"
+      ],
+      "correctAnswer": "54 km",
+      "explanation": "4.5 hours. Distance = 12 × 4.5 = 54 km. ✓",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "Using Speed = Distance ÷ Time",
+      "confidence": "low",
+      "score": 1,
+      "secondChoice": {
+        "id": "calculate-distance",
+        "score": 0
+      }
+    }
+  ],
+  "gaps": []
+}

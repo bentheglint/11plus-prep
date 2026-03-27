@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="100" y="80" width="200" height="120" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="220" x2="300" y2="220" stroke="gray" stroke-width="1"/>
+  <line x1="100" y1="215" x2="100" y2="225" stroke="gray" stroke-width="1"/>
+  <line x1="300" y1="215" x2="300" y2="225" stroke="gray" stroke-width="1"/>
+  <text x="200" y="240" font-size="16" fill="dimgray" text-anchor="middle">15 m</text>
+  <line x1="80" y1="80" x2="80" y2="200" stroke="gray" stroke-width="1"/>
+  <line x1="75" y1="80" x2="85" y2="80" stroke="gray" stroke-width="1"/>
+  <line x1="75" y1="200" x2="85" y2="200" stroke="gray" stroke-width="1"/>
+  <text x="60" y="145" font-size="16" fill="dimgray" text-anchor="middle">8 m</text>
+</svg>

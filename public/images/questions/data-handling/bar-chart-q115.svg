@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Weekly Attendance</text>
+
+  <!-- Y-axis -->
+  <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="1"/>
+  <!-- X-axis -->
+  <line x1="50" y1="250" x2="400" y2="250" stroke="black" stroke-width="1"/>
+
+  <!-- Horizontal gridlines -->
+  <line x1="50" y1="221" x2="400" y2="221" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="193" x2="400" y2="193" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="164" x2="400" y2="164" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="136" x2="400" y2="136" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="107" x2="400" y2="107" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="79" x2="400" y2="79" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="50" x2="400" y2="50" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="30" y="254" text-anchor="end" font-family="Arial" font-size="12">0</text>
+  <text x="30" y="225" text-anchor="end" font-family="Arial" font-size="12">10</text>
+  <text x="30" y="197" text-anchor="end" font-family="Arial" font-size="12">20</text>
+  <text x="30" y="168" text-anchor="end" font-family="Arial" font-size="12">30</text>
+  <text x="30" y="140" text-anchor="end" font-family="Arial" font-size="12">40</text>
+  <text x="30" y="111" text-anchor="end" font-family="Arial" font-size="12">50</text>
+  <text x="30" y="83" text-anchor="end" font-family="Arial" font-size="12">60</text>
+  <text x="30" y="54" text-anchor="end" font-family="Arial" font-size="12">70</text>
+
+  <!-- Y-axis ticks -->
+  <line x1="47" y1="250" x2="50" y2="250" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="221" x2="50" y2="221" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="193" x2="50" y2="193" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="164" x2="50" y2="164" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="136" x2="50" y2="136" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="107" x2="50" y2="107" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="79" x2="50" y2="79" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="50" x2="50" y2="50" stroke="black" stroke-width="1"/>
+
+  <!-- Bars -->
+  <rect x="80" y="93" width="60" height="157" fill="lightskyblue" stroke="black" stroke-width="1"/>
+  <rect x="160" y="79" width="60" height="171" fill="lightcoral" stroke="black" stroke-width="1"/>
+  <rect x="240" y="64" width="60" height="186" fill="lightgreen" stroke="black" stroke-width="1"/>
+  <rect x="320" y="79" width="60" height="171" fill="lightyellow" stroke="black" stroke-width="1"/>
+
+  <!-- Value labels on bars -->
+  <text x="110" y="86" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">55</text>
+  <text x="190" y="72" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">60</text>
+  <text x="270" y="57" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">65</text>
+  <text x="350" y="72" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">60</text>
+
+  <!-- Bar labels -->
+  <text x="110" y="270" text-anchor="middle" font-family="Arial" font-size="12">Week 1</text>
+  <text x="190" y="270" text-anchor="middle" font-family="Arial" font-size="12">Week 2</text>
+  <text x="270" y="270" text-anchor="middle" font-family="Arial" font-size="12">Week 3</text>
+  <text x="350" y="270" text-anchor="middle" font-family="Arial" font-size="12">Week 4</text>
+</svg>

@@ -1,0 +1,1917 @@
+{
+  "summary": {
+    "same": 87,
+    "different": 483,
+    "noInteract": 8,
+    "total": 578,
+    "sameByDirect": 0,
+    "sameByAlias": 87
+  },
+  "byFile": {
+    "algebra-subconcepts.js": {
+      "same": 0,
+      "different": 15,
+      "noInteract": 1,
+      "lessons": 16
+    },
+    "anglesshapes-subconcepts.js": {
+      "same": 0,
+      "different": 20,
+      "noInteract": 2,
+      "lessons": 22
+    },
+    "antonyms-subconcepts.js": {
+      "same": 1,
+      "different": 9,
+      "noInteract": 0,
+      "lessons": 10
+    },
+    "areaperimeter-subconcepts.js": {
+      "same": 2,
+      "different": 16,
+      "noInteract": 0,
+      "lessons": 18
+    },
+    "compoundwords-subconcepts.js": {
+      "same": 2,
+      "different": 11,
+      "noInteract": 0,
+      "lessons": 13
+    },
+    "comprehension-subconcepts.js": {
+      "same": 1,
+      "different": 17,
+      "noInteract": 0,
+      "lessons": 18
+    },
+    "datahandling-subconcepts.js": {
+      "same": 5,
+      "different": 15,
+      "noInteract": 0,
+      "lessons": 20
+    },
+    "decimals-subconcepts.js": {
+      "same": 1,
+      "different": 27,
+      "noInteract": 0,
+      "lessons": 28
+    },
+    "fractions-subconcepts.js": {
+      "same": 10,
+      "different": 16,
+      "noInteract": 0,
+      "lessons": 26
+    },
+    "grammar-subconcepts.js": {
+      "same": 2,
+      "different": 22,
+      "noInteract": 2,
+      "lessons": 26
+    },
+    "hiddenwords-subconcepts.js": {
+      "same": 6,
+      "different": 4,
+      "noInteract": 0,
+      "lessons": 10
+    },
+    "lettercodes-subconcepts.js": {
+      "same": 2,
+      "different": 9,
+      "noInteract": 0,
+      "lessons": 11
+    },
+    "lettermove-subconcepts.js": {
+      "same": 1,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 9
+    },
+    "letterpairseries-subconcepts.js": {
+      "same": 3,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 11
+    },
+    "lettersums-subconcepts.js": {
+      "same": 4,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 12
+    },
+    "logicandlanguage-subconcepts.js": {
+      "same": 3,
+      "different": 10,
+      "noInteract": 0,
+      "lessons": 13
+    },
+    "longdivision-subconcepts.js": {
+      "same": 5,
+      "different": 6,
+      "noInteract": 0,
+      "lessons": 11
+    },
+    "missingletterswords-subconcepts.js": {
+      "same": 2,
+      "different": 9,
+      "noInteract": 0,
+      "lessons": 11
+    },
+    "negativenumbers-subconcepts.js": {
+      "same": 4,
+      "different": 8,
+      "noInteract": 1,
+      "lessons": 13
+    },
+    "numberseries-subconcepts.js": {
+      "same": 3,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 11
+    },
+    "numberwordcodes-subconcepts.js": {
+      "same": 4,
+      "different": 5,
+      "noInteract": 0,
+      "lessons": 9
+    },
+    "oddtwoout-subconcepts.js": {
+      "same": 0,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 8
+    },
+    "percentages-subconcepts.js": {
+      "same": 1,
+      "different": 25,
+      "noInteract": 0,
+      "lessons": 26
+    },
+    "placevalue-subconcepts.js": {
+      "same": 2,
+      "different": 14,
+      "noInteract": 0,
+      "lessons": 16
+    },
+    "primenumbersfactors-subconcepts.js": {
+      "same": 2,
+      "different": 12,
+      "noInteract": 2,
+      "lessons": 16
+    },
+    "punctuation-subconcepts.js": {
+      "same": 0,
+      "different": 28,
+      "noInteract": 0,
+      "lessons": 28
+    },
+    "ratio-subconcepts.js": {
+      "same": 5,
+      "different": 9,
+      "noInteract": 0,
+      "lessons": 14
+    },
+    "sequences-subconcepts.js": {
+      "same": 0,
+      "different": 16,
+      "noInteract": 0,
+      "lessons": 16
+    },
+    "sharedletter-subconcepts.js": {
+      "same": 6,
+      "different": 4,
+      "noInteract": 0,
+      "lessons": 10
+    },
+    "speeddistancetime-subconcepts.js": {
+      "same": 1,
+      "different": 17,
+      "noInteract": 0,
+      "lessons": 18
+    },
+    "spelling-subconcepts.js": {
+      "same": 2,
+      "different": 26,
+      "noInteract": 0,
+      "lessons": 28
+    },
+    "synonyms-subconcepts.js": {
+      "same": 2,
+      "different": 8,
+      "noInteract": 0,
+      "lessons": 10
+    },
+    "verbalanalogies-subconcepts.js": {
+      "same": 1,
+      "different": 7,
+      "noInteract": 0,
+      "lessons": 8
+    },
+    "vocabulary-subconcepts.js": {
+      "same": 3,
+      "different": 15,
+      "noInteract": 0,
+      "lessons": 18
+    },
+    "volume-subconcepts.js": {
+      "same": 0,
+      "different": 16,
+      "noInteract": 0,
+      "lessons": 16
+    },
+    "wordclass-subconcepts.js": {
+      "same": 0,
+      "different": 16,
+      "noInteract": 0,
+      "lessons": 16
+    },
+    "wordcodeanalogies-subconcepts.js": {
+      "same": 1,
+      "different": 11,
+      "noInteract": 0,
+      "lessons": 12
+    }
+  },
+  "sameDetails": [
+    {
+      "file": "antonyms-subconcepts.js",
+      "subConcept": "graded-vs-complementary",
+      "lessonId": "graded-complementary-steps",
+      "teachAnswer": "type",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "type"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.type (both = \"graded\")"
+      ],
+      "reason": "Value alias: teach shows type which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "areaperimeter-subconcepts.js",
+      "subConcept": "missing-side-area",
+      "lessonId": "missing-side-area-steps",
+      "teachAnswer": "knownSide",
+      "interactAnswer": "v.intMissingSide",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intMissingSide"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "knownSide"
+      ],
+      "aliasDetail": [
+        "v.intMissingSide = v.knownSide (both = \"8\")"
+      ],
+      "reason": "Value alias: teach shows knownSide which = same value as interact's intMissingSide"
+    },
+    {
+      "file": "areaperimeter-subconcepts.js",
+      "subConcept": "missing-side-area",
+      "lessonId": "missing-side-area-curiosity",
+      "teachAnswer": "knownSide",
+      "interactAnswer": "v.intMissingSide",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intMissingSide"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "knownSide"
+      ],
+      "aliasDetail": [
+        "v.intMissingSide = v.knownSide (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows knownSide which = same value as interact's intMissingSide"
+    },
+    {
+      "file": "compoundwords-subconcepts.js",
+      "subConcept": "three-way-links",
+      "lessonId": "three-way-links-steps",
+      "teachAnswer": "linkWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "linkWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.linkWord (both = \"sun\")"
+      ],
+      "reason": "Value alias: teach uses linkWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "compoundwords-subconcepts.js",
+      "subConcept": "direction-compounds",
+      "lessonId": "direction-compounds-steps",
+      "teachAnswer": "directionWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "directionWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.directionWord (both = \"over\")"
+      ],
+      "reason": "Value alias: teach uses directionWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "comprehension-subconcepts.js",
+      "subConcept": "tone-mood",
+      "lessonId": "tone-mood-contrast",
+      "teachAnswer": "mood",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "mood"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.mood (both = \"Exciting and energetic\")"
+      ],
+      "reason": "Value alias: teach shows mood which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "datahandling-subconcepts.js",
+      "subConcept": "reading-pie-charts",
+      "lessonId": "reading-pie-charts-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"20\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "datahandling-subconcepts.js",
+      "subConcept": "missing-from-mean",
+      "lessonId": "missing-from-mean-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "datahandling-subconcepts.js",
+      "subConcept": "even-median",
+      "lessonId": "even-median-steps",
+      "teachAnswer": "middle2",
+      "interactAnswer": "v.interactMedian",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactMedian"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "middle2"
+      ],
+      "aliasDetail": [
+        "v.interactMedian = v.middle2 (both = \"7\")"
+      ],
+      "reason": "Value alias: teach shows middle2 which = same value as interact's interactMedian"
+    },
+    {
+      "file": "datahandling-subconcepts.js",
+      "subConcept": "even-median",
+      "lessonId": "even-median-mistake",
+      "teachAnswer": "middle2",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "middle2"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.middle2 (both = \"9\")"
+      ],
+      "reason": "Value alias: teach shows middle2 which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "datahandling-subconcepts.js",
+      "subConcept": "combined-averages",
+      "lessonId": "combined-averages-curiosity",
+      "teachAnswer": "rangeB",
+      "interactAnswer": "v.interactRange",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactRange"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "rangeB"
+      ],
+      "aliasDetail": [
+        "v.interactRange = v.rangeB (both = \"7\")"
+      ],
+      "reason": "Value alias: teach shows rangeB which = same value as interact's interactRange"
+    },
+    {
+      "file": "decimals-subconcepts.js",
+      "subConcept": "dividing-decimal-by-decimal",
+      "lessonId": "dividing-decimal-by-decimal-steps",
+      "teachAnswer": "newDivisor",
+      "interactAnswer": "v.interactAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "newDivisor"
+      ],
+      "aliasDetail": [
+        "v.interactAnswer = v.newDivisor (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows newDivisor which = same value as interact's interactAnswer"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "simplifying-fractions",
+      "lessonId": "simplifying-fractions-steps",
+      "teachAnswer": "hcf, simplifiedNum",
+      "interactAnswer": "`${v.intSimNum}/${v.intSimDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intSimNum",
+        "intSimDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hcf",
+        "simplifiedNum"
+      ],
+      "aliasDetail": [
+        "v.intSimNum = v.hcf (both = \"2\")",
+        "v.intSimDen = v.simplifiedNum (both = \"3\")"
+      ],
+      "reason": "Value alias: teach shows hcf, simplifiedNum which = same value as interact's intSimNum, intSimDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "simplifying-fractions",
+      "lessonId": "simplifying-fractions-mistake",
+      "teachAnswer": "correctSimNum, correctSimDen",
+      "interactAnswer": "`${v.intSimNum}/${v.intSimDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intSimNum",
+        "intSimDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctSimNum",
+        "correctSimDen"
+      ],
+      "aliasDetail": [
+        "v.intSimNum = v.correctSimNum (both = \"2\")",
+        "v.intSimDen = v.correctSimDen (both = \"3\")"
+      ],
+      "reason": "Value alias: teach shows correctSimNum, correctSimDen which = same value as interact's intSimNum, intSimDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "adding-same-denom",
+      "lessonId": "adding-same-denom-steps",
+      "teachAnswer": "answerNum",
+      "interactAnswer": "`${v.intAnswerNum}/${v.intDenom}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intAnswerNum",
+        "intDenom"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answerNum"
+      ],
+      "aliasDetail": [
+        "v.intAnswerNum = v.answerNum (both = \"5\")"
+      ],
+      "reason": "Value alias: teach shows answerNum which = same value as interact's intAnswerNum, intDenom"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "subtracting-same-denom",
+      "lessonId": "subtracting-same-denom-steps",
+      "teachAnswer": "fracANum",
+      "interactAnswer": "`${v.intAnswerNum}/${v.intDenom}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intAnswerNum",
+        "intDenom"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "fracANum"
+      ],
+      "aliasDetail": [
+        "v.intAnswerNum = v.fracANum (both = \"5\")"
+      ],
+      "reason": "Value alias: teach shows fracANum which = same value as interact's intAnswerNum, intDenom"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "adding-diff-denom",
+      "lessonId": "adding-diff-denom-steps",
+      "teachAnswer": "canSimplify",
+      "interactAnswer": "v.intCanSimplify ? `${v.intSimNum}/${v.intSimDen}` : `${v.intAnswerNum}/${v.intAnswerDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intCanSimplify",
+        "intSimNum",
+        "intSimDen",
+        "intAnswerNum",
+        "intAnswerDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "canSimplify"
+      ],
+      "aliasDetail": [
+        "v.intCanSimplify = v.canSimplify (both = \"false\")"
+      ],
+      "reason": "Value alias: teach uses canSimplify which = same value as interact's intCanSimplify, intSimNum, intSimDen, intAnswerNum, intAnswerDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "fraction-of-amount",
+      "lessonId": "fraction-of-amount-curiosity",
+      "teachAnswer": "onePartValue",
+      "interactAnswer": "v.intAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "onePartValue"
+      ],
+      "aliasDetail": [
+        "v.intAnswer = v.onePartValue (both = \"12\")"
+      ],
+      "reason": "Value alias: teach shows onePartValue which = same value as interact's intAnswer"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "decimal-to-fraction",
+      "lessonId": "decimal-to-fraction-steps",
+      "teachAnswer": "hcf, simDen",
+      "interactAnswer": "`${v.intSimNum}/${v.intSimDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intSimNum",
+        "intSimDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hcf",
+        "simDen"
+      ],
+      "aliasDetail": [
+        "v.intSimNum = v.hcf (both = \"2\")",
+        "v.intSimDen = v.simDen (both = \"5\")"
+      ],
+      "reason": "Value alias: teach shows hcf, simDen which = same value as interact's intSimNum, intSimDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "decimal-to-fraction",
+      "lessonId": "decimal-to-fraction-discovery",
+      "teachAnswer": "simDen",
+      "interactAnswer": "`${v.intSimNum}/${v.intSimDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intSimNum",
+        "intSimDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "simDen"
+      ],
+      "aliasDetail": [
+        "v.intSimDen = v.simDen (both = \"5\")"
+      ],
+      "reason": "Value alias: teach shows simDen which = same value as interact's intSimNum, intSimDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "mixed-improper",
+      "lessonId": "mixed-improper-mistake",
+      "teachAnswer": "correctWhole",
+      "interactAnswer": "`${v.intCorrectWhole} ${v.intCorrectFracNum}/${v.intCorrectFracDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intCorrectWhole",
+        "intCorrectFracNum",
+        "intCorrectFracDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctWhole"
+      ],
+      "aliasDetail": [
+        "v.intCorrectFracNum = v.correctWhole (both = \"2\")"
+      ],
+      "reason": "Value alias: teach shows correctWhole which = same value as interact's intCorrectWhole, intCorrectFracNum, intCorrectFracDen"
+    },
+    {
+      "file": "fractions-subconcepts.js",
+      "subConcept": "multiplying-fractions",
+      "lessonId": "multiplying-fractions-steps",
+      "teachAnswer": "answerNum",
+      "interactAnswer": "`${v.intAnswerNum}/${v.intAnswerDen}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "intAnswerNum",
+        "intAnswerDen"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answerNum"
+      ],
+      "aliasDetail": [
+        "v.intAnswerNum = v.answerNum (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows answerNum which = same value as interact's intAnswerNum, intAnswerDen"
+    },
+    {
+      "file": "grammar-subconcepts.js",
+      "subConcept": "comparative-superlative",
+      "lessonId": "comparative-superlative-steps",
+      "teachAnswer": "longSuperlative",
+      "interactAnswer": "`This is the ${v.interactLongSuperlative} of all three ${v.interactContext}.`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactLongSuperlative",
+        "interactContext"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "longSuperlative"
+      ],
+      "aliasDetail": [
+        "v.interactLongSuperlative = v.longSuperlative (both = \"most beautiful\")"
+      ],
+      "reason": "Value alias: teach shows longSuperlative which = same value as interact's interactLongSuperlative, interactContext"
+    },
+    {
+      "file": "grammar-subconcepts.js",
+      "subConcept": "conjunctions",
+      "lessonId": "conjunctions-steps",
+      "teachAnswer": "coordConj",
+      "interactAnswer": "v.interactCoordConj",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCoordConj"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "coordConj"
+      ],
+      "aliasDetail": [
+        "v.interactCoordConj = v.coordConj (both = \"but\")"
+      ],
+      "reason": "Value alias: teach shows coordConj which = same value as interact's interactCoordConj"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "within-word",
+      "lessonId": "within-word-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"LANE\")"
+      ],
+      "reason": "Value alias: teach shows hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "clue-first",
+      "lessonId": "clue-first-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"HERO\")"
+      ],
+      "reason": "Value alias: teach shows hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "three-letter-hidden",
+      "lessonId": "three-letter-hidden-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"OWL\")"
+      ],
+      "reason": "Value alias: teach shows hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "five-letter-hidden",
+      "lessonId": "five-letter-hidden-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"CHAIR\")"
+      ],
+      "reason": "Value alias: teach shows hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "backwards-hidden",
+      "lessonId": "backwards-hidden-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"PART\")"
+      ],
+      "reason": "Value alias: teach shows hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "hiddenwords-subconcepts.js",
+      "subConcept": "double-meaning",
+      "lessonId": "double-meaning-steps",
+      "teachAnswer": "hiddenWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "hiddenWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.hiddenWord (both = \"RAIN\")"
+      ],
+      "reason": "Value alias: teach uses hiddenWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettercodes-subconcepts.js",
+      "subConcept": "spotting-the-pattern",
+      "lessonId": "spotting-pattern-steps",
+      "teachAnswer": "newCoded",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "newCoded"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.newCoded (both = \"NPPO\")"
+      ],
+      "reason": "Value alias: teach uses newCoded which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettercodes-subconcepts.js",
+      "subConcept": "spotting-the-pattern",
+      "lessonId": "spotting-pattern-hook",
+      "teachAnswer": "newCoded",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "newCoded"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.newCoded (both = \"ODPS\")"
+      ],
+      "reason": "Value alias: teach uses newCoded which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettermove-subconcepts.js",
+      "subConcept": "remove-last-letter",
+      "lessonId": "remove-last-letter-steps",
+      "teachAnswer": "movedLetter",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "movedLetter"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.movedLetter (both = \"T\")"
+      ],
+      "reason": "Value alias: teach uses movedLetter which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "letterpairseries-subconcepts.js",
+      "subConcept": "alternating-pattern",
+      "lessonId": "alternating-pattern-steps",
+      "teachAnswer": "nextPair",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextPair"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextPair (both = \"EN\")"
+      ],
+      "reason": "Value alias: teach shows nextPair which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "letterpairseries-subconcepts.js",
+      "subConcept": "reverse-alphabet",
+      "lessonId": "reverse-alphabet-steps",
+      "teachAnswer": "nextPair",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextPair"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextPair (both = \"ER\")"
+      ],
+      "reason": "Value alias: teach shows nextPair which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "letterpairseries-subconcepts.js",
+      "subConcept": "double-jump",
+      "lessonId": "double-jump-steps",
+      "teachAnswer": "nextPair",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextPair"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextPair (both = \"MP\")"
+      ],
+      "reason": "Value alias: teach shows nextPair which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettersums-subconcepts.js",
+      "subConcept": "convert-back",
+      "lessonId": "convert-back-steps",
+      "teachAnswer": "answerAsLetter",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answerAsLetter"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.answerAsLetter (both = \"J\")"
+      ],
+      "reason": "Value alias: teach shows answerAsLetter which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettersums-subconcepts.js",
+      "subConcept": "ejoty-shortcuts",
+      "lessonId": "ejoty-shortcuts-steps",
+      "teachAnswer": "answer",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answer"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.answer (both = \"12\")"
+      ],
+      "reason": "Value alias: teach shows answer which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettersums-subconcepts.js",
+      "subConcept": "ejoty-shortcuts",
+      "lessonId": "ejoty-shortcuts-practice",
+      "teachAnswer": "answer",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answer"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.answer (both = \"15\")"
+      ],
+      "reason": "Value alias: teach shows answer which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "lettersums-subconcepts.js",
+      "subConcept": "larger-numbers",
+      "lessonId": "larger-numbers-steps",
+      "teachAnswer": "answer",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answer"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.answer (both = \"47\")"
+      ],
+      "reason": "Value alias: teach shows answer which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "logicandlanguage-subconcepts.js",
+      "subConcept": "true-false-statements",
+      "lessonId": "true-false-steps",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"Yes, definitely\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "logicandlanguage-subconcepts.js",
+      "subConcept": "true-false-statements",
+      "lessonId": "true-false-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"No, not necessarily\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "logicandlanguage-subconcepts.js",
+      "subConcept": "syllogisms",
+      "lessonId": "syllogisms-steps",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"Yes, definitely\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "longdivision-subconcepts.js",
+      "subConcept": "sharing-equally",
+      "lessonId": "sharing-equally-curiosity",
+      "teachAnswer": "groups",
+      "interactAnswer": "v.interactEach",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactEach"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "groups"
+      ],
+      "aliasDetail": [
+        "v.interactEach = v.groups (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows groups which = same value as interact's interactEach"
+    },
+    {
+      "file": "longdivision-subconcepts.js",
+      "subConcept": "sharing-equally",
+      "lessonId": "sharing-equally-mistake",
+      "teachAnswer": "each",
+      "interactAnswer": "v.interactEach",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactEach"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "each"
+      ],
+      "aliasDetail": [
+        "v.interactEach = v.each (both = \"4\")"
+      ],
+      "reason": "Value alias: teach shows each which = same value as interact's interactEach"
+    },
+    {
+      "file": "longdivision-subconcepts.js",
+      "subConcept": "short-division-remainders",
+      "lessonId": "short-division-remainders-steps",
+      "teachAnswer": "step2_result, step2_remainder",
+      "interactAnswer": "`${v.interactQuotient} remainder ${v.interactRemainder}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactQuotient",
+        "interactRemainder"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "step2_result",
+        "step2_remainder"
+      ],
+      "aliasDetail": [
+        "v.interactRemainder = v.step2_result,step2_remainder (both = \"3\")"
+      ],
+      "reason": "Value alias: teach shows step2_result, step2_remainder which = same value as interact's interactQuotient, interactRemainder"
+    },
+    {
+      "file": "longdivision-subconcepts.js",
+      "subConcept": "short-division-remainders",
+      "lessonId": "short-division-remainders-mistake",
+      "teachAnswer": "remainder",
+      "interactAnswer": "`${v.interactQuotient} remainder ${v.interactRemainder}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactQuotient",
+        "interactRemainder"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "remainder"
+      ],
+      "aliasDetail": [
+        "v.interactRemainder = v.remainder (both = \"5\")"
+      ],
+      "reason": "Value alias: teach shows remainder which = same value as interact's interactQuotient, interactRemainder"
+    },
+    {
+      "file": "longdivision-subconcepts.js",
+      "subConcept": "interpreting-remainders",
+      "lessonId": "interpreting-remainders-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "missingletterswords-subconcepts.js",
+      "subConcept": "middle-gaps",
+      "lessonId": "middle-gaps-steps",
+      "teachAnswer": "missingLetters",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "missingLetters"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.missingLetters (both = \"EE\")"
+      ],
+      "reason": "Value alias: teach shows missingLetters which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "missingletterswords-subconcepts.js",
+      "subConcept": "common-patterns",
+      "lessonId": "common-patterns-steps",
+      "teachAnswer": "missingLetters",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "missingLetters"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.missingLetters (both = \"CH\")"
+      ],
+      "reason": "Value alias: teach shows missingLetters which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "negativenumbers-subconcepts.js",
+      "subConcept": "counting-through-zero",
+      "lessonId": "counting-zero-step",
+      "teachAnswer": "end, lineMax",
+      "interactAnswer": "v.interactEnd",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactEnd"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "end",
+        "lineMax"
+      ],
+      "aliasDetail": [
+        "v.interactEnd = v.end (both = \"4\")"
+      ],
+      "reason": "Value alias: teach uses end, lineMax which = same value as interact's interactEnd"
+    },
+    {
+      "file": "negativenumbers-subconcepts.js",
+      "subConcept": "counting-through-zero",
+      "lessonId": "counting-zero-mistake",
+      "teachAnswer": "steps, lineMax",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "steps",
+        "lineMax"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.lineMax (both = \"5\")"
+      ],
+      "reason": "Value alias: teach uses steps, lineMax which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "negativenumbers-subconcepts.js",
+      "subConcept": "adding-to-negatives",
+      "lessonId": "adding-neg-step",
+      "teachAnswer": "lineMax",
+      "interactAnswer": "v.interactAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "lineMax"
+      ],
+      "aliasDetail": [],
+      "reason": "Value alias: teach uses lineMax which = same value as interact's interactAnswer"
+    },
+    {
+      "file": "negativenumbers-subconcepts.js",
+      "subConcept": "adding-to-negatives",
+      "lessonId": "adding-neg-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactAnswer = v.correctAnswer (both = \"11\")"
+      ],
+      "reason": "Value alias: teach uses correctAnswer which = same value as interact's interactAnswer"
+    },
+    {
+      "file": "numberseries-subconcepts.js",
+      "subConcept": "square-numbers",
+      "lessonId": "square-numbers-steps",
+      "teachAnswer": "nextNumber",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextNumber"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextNumber (both = \"36\")"
+      ],
+      "reason": "Value alias: teach shows nextNumber which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberseries-subconcepts.js",
+      "subConcept": "alternating-pattern",
+      "lessonId": "alternating-pattern-steps",
+      "teachAnswer": "nextNumber",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextNumber"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextNumber (both = \"10\")"
+      ],
+      "reason": "Value alias: teach shows nextNumber which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberseries-subconcepts.js",
+      "subConcept": "fibonacci-like",
+      "lessonId": "fibonacci-like-steps",
+      "teachAnswer": "nextNumber",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "nextNumber"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.nextNumber (both = \"13\")"
+      ],
+      "reason": "Value alias: teach shows nextNumber which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberwordcodes-subconcepts.js",
+      "subConcept": "shared-letters",
+      "lessonId": "shared-letters-steps",
+      "teachAnswer": "testCode",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "testCode"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.testCode (both = \"5234\")"
+      ],
+      "reason": "Value alias: teach shows testCode which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberwordcodes-subconcepts.js",
+      "subConcept": "four-letter-codes",
+      "lessonId": "four-letter-codes-steps",
+      "teachAnswer": "testCode",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "testCode"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.testCode (both = \"4258\")"
+      ],
+      "reason": "Value alias: teach shows testCode which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberwordcodes-subconcepts.js",
+      "subConcept": "five-letter-codes",
+      "lessonId": "five-letter-codes-steps",
+      "teachAnswer": "testCode",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "testCode"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.testCode (both = \"59268\")"
+      ],
+      "reason": "Value alias: teach shows testCode which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "numberwordcodes-subconcepts.js",
+      "subConcept": "anagram-codes",
+      "lessonId": "anagram-codes-steps",
+      "teachAnswer": "testCode",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "testCode"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.testCode (both = \"6248\")"
+      ],
+      "reason": "Value alias: teach shows testCode which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "percentages-subconcepts.js",
+      "subConcept": "percentage-word-problems",
+      "lessonId": "percentage-word-problems-curiosity",
+      "teachAnswer": "totalOriginal",
+      "interactAnswer": "v.interactAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "totalOriginal"
+      ],
+      "aliasDetail": [
+        "v.interactAnswer = v.totalOriginal (both = \"80\")"
+      ],
+      "reason": "Value alias: teach shows totalOriginal which = same value as interact's interactAnswer"
+    },
+    {
+      "file": "placevalue-subconcepts.js",
+      "subConcept": "digit-value",
+      "lessonId": "digit-value-visual",
+      "teachAnswer": "ratio",
+      "interactAnswer": "v.interactRatio",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactRatio"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "ratio"
+      ],
+      "aliasDetail": [
+        "v.interactRatio = v.ratio (both = \"10\")"
+      ],
+      "reason": "Value alias: teach shows ratio which = same value as interact's interactRatio"
+    },
+    {
+      "file": "placevalue-subconcepts.js",
+      "subConcept": "comparing-ordering",
+      "lessonId": "comparing-steps",
+      "teachAnswer": "result",
+      "interactAnswer": "v.interactResult",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactResult"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "result"
+      ],
+      "aliasDetail": [
+        "v.interactResult = v.result (both = \"<\")"
+      ],
+      "reason": "Value alias: teach shows result which = same value as interact's interactResult"
+    },
+    {
+      "file": "primenumbersfactors-subconcepts.js",
+      "subConcept": "divisibility-rules",
+      "lessonId": "divisibility-keyfact",
+      "teachAnswer": "divBy2, divBy6",
+      "interactAnswer": "v.interactDivBy3 ? \"Yes\" : \"No\"",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactDivBy3"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "divBy2",
+        "divBy6"
+      ],
+      "aliasDetail": [
+        "v.interactDivBy3 = v.divBy2,divBy6 (both = \"true\")"
+      ],
+      "reason": "Value alias: teach shows divBy2, divBy6 which = same value as interact's interactDivBy3"
+    },
+    {
+      "file": "primenumbersfactors-subconcepts.js",
+      "subConcept": "counting-factors",
+      "lessonId": "counting-factors-visual",
+      "teachAnswer": "countA",
+      "interactAnswer": "v.interactCount",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCount"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "countA"
+      ],
+      "aliasDetail": [
+        "v.interactCount = v.countA (both = \"6\")"
+      ],
+      "reason": "Value alias: teach shows countA which = same value as interact's interactCount"
+    },
+    {
+      "file": "ratio-subconcepts.js",
+      "subConcept": "simplifying-ratios",
+      "lessonId": "simplifying-ratios-step",
+      "teachAnswer": "simpA, simpB",
+      "interactAnswer": "`${v.interactSimpA}:${v.interactSimpB}`",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactSimpA",
+        "interactSimpB"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "simpA",
+        "simpB"
+      ],
+      "aliasDetail": [
+        "v.interactSimpA = v.simpA (both = \"3\")",
+        "v.interactSimpB = v.simpB (both = \"2\")"
+      ],
+      "reason": "Value alias: teach shows simpA, simpB which = same value as interact's interactSimpA, interactSimpB"
+    },
+    {
+      "file": "ratio-subconcepts.js",
+      "subConcept": "finding-missing-values",
+      "lessonId": "finding-missing-step",
+      "teachAnswer": "knownValue",
+      "interactAnswer": "v.interactMissingValue",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactMissingValue"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "knownValue"
+      ],
+      "aliasDetail": [
+        "v.interactMissingValue = v.knownValue (both = \"15\")"
+      ],
+      "reason": "Value alias: teach shows knownValue which = same value as interact's interactMissingValue"
+    },
+    {
+      "file": "ratio-subconcepts.js",
+      "subConcept": "finding-missing-values",
+      "lessonId": "finding-missing-mistake",
+      "teachAnswer": "correctAnswer",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctAnswer"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.correctAnswer (both = \"15\")"
+      ],
+      "reason": "Value alias: teach shows correctAnswer which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "ratio-subconcepts.js",
+      "subConcept": "unitary-method",
+      "lessonId": "unitary-method-step",
+      "teachAnswer": "targetCost",
+      "interactAnswer": "v.interactTargetCost",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactTargetCost"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "targetCost"
+      ],
+      "aliasDetail": [
+        "v.interactTargetCost = v.targetCost (both = \"24\")"
+      ],
+      "reason": "Value alias: teach shows targetCost which = same value as interact's interactTargetCost"
+    },
+    {
+      "file": "ratio-subconcepts.js",
+      "subConcept": "unitary-method",
+      "lessonId": "unitary-method-visual",
+      "teachAnswer": "groupCost",
+      "interactAnswer": "v.interactTargetCost",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactTargetCost"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "groupCost"
+      ],
+      "aliasDetail": [
+        "v.interactTargetCost = v.groupCost (both = \"18\")"
+      ],
+      "reason": "Value alias: teach shows groupCost which = same value as interact's interactTargetCost"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "vowel-shared",
+      "lessonId": "vowel-shared-steps",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.sharedLetter (both = \"A\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "consonant-shared",
+      "lessonId": "consonant-shared-steps",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.sharedLetter (both = \"T\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "two-word-pairs",
+      "lessonId": "two-word-pairs-practice",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.interactCorrectAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactCorrectAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.interactCorrectAnswer = v.sharedLetter (both = \"P\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's interactCorrectAnswer"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "process-of-elimination",
+      "lessonId": "elimination-steps",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.sharedLetter (both = \"D\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "tricky-pairs",
+      "lessonId": "tricky-pairs-steps",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.sharedLetter (both = \"D\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "sharedletter-subconcepts.js",
+      "subConcept": "tricky-pairs",
+      "lessonId": "tricky-pairs-mistake",
+      "teachAnswer": "sharedLetter",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "sharedLetter"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.sharedLetter (both = \"M\")"
+      ],
+      "reason": "Value alias: teach shows sharedLetter which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "speeddistancetime-subconcepts.js",
+      "subConcept": "average-speed",
+      "lessonId": "average-speed-steps",
+      "teachAnswer": "part2Distance, part2Speed",
+      "interactAnswer": "v.interactAverageSpeedRounded",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "interactAverageSpeedRounded"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "part2Distance",
+        "part2Speed"
+      ],
+      "aliasDetail": [
+        "v.interactAverageSpeedRounded = v.part2Distance,part2Speed (both = \"40\")"
+      ],
+      "reason": "Value alias: teach shows part2Distance, part2Speed which = same value as interact's interactAverageSpeedRounded"
+    },
+    {
+      "file": "spelling-subconcepts.js",
+      "subConcept": "spelling-demons",
+      "lessonId": "spelling-demons-steps",
+      "teachAnswer": "word",
+      "interactAnswer": "v.testCorrect",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "testCorrect"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "word"
+      ],
+      "aliasDetail": [
+        "v.testCorrect = v.word (both = \"because\")"
+      ],
+      "reason": "Value alias: teach uses word which = same value as interact's testCorrect"
+    },
+    {
+      "file": "spelling-subconcepts.js",
+      "subConcept": "noun-verb-confusables",
+      "lessonId": "noun-verb-confusables-steps",
+      "teachAnswer": "verbForm",
+      "interactAnswer": "v.testAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "testAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "verbForm"
+      ],
+      "aliasDetail": [
+        "v.testAnswer = v.verbForm (both = \"practise\")"
+      ],
+      "reason": "Value alias: teach uses verbForm which = same value as interact's testAnswer"
+    },
+    {
+      "file": "synonyms-subconcepts.js",
+      "subConcept": "hard-vocabulary",
+      "lessonId": "hard-vocabulary-steps",
+      "teachAnswer": "synonym",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "synonym"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.synonym (both = \"industrious\")"
+      ],
+      "reason": "Value alias: teach uses synonym which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "synonyms-subconcepts.js",
+      "subConcept": "adjective-synonyms",
+      "lessonId": "adjective-synonyms-steps",
+      "teachAnswer": "synonym",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "synonym"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.synonym (both = \"huge\")"
+      ],
+      "reason": "Value alias: teach uses synonym which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "verbalanalogies-subconcepts.js",
+      "subConcept": "creator-creation",
+      "lessonId": "creator-creation-steps",
+      "teachAnswer": "answer",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "answer"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.answer (both = \"symphony\")"
+      ],
+      "reason": "Value alias: teach uses answer which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "vocabulary-subconcepts.js",
+      "subConcept": "homonyms",
+      "lessonId": "homonyms-steps",
+      "teachAnswer": "meaningA",
+      "interactAnswer": "v.iCorrectMeaning",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "iCorrectMeaning"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "meaningA"
+      ],
+      "aliasDetail": [
+        "v.iCorrectMeaning = v.meaningA (both = \"a place where you keep money\")"
+      ],
+      "reason": "Value alias: teach uses meaningA which = same value as interact's iCorrectMeaning"
+    },
+    {
+      "file": "vocabulary-subconcepts.js",
+      "subConcept": "homonyms",
+      "lessonId": "homonyms-matching",
+      "teachAnswer": "wrongMeaning",
+      "interactAnswer": "v.iMeaningB",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "iMeaningB"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "wrongMeaning"
+      ],
+      "aliasDetail": [
+        "v.iMeaningB = v.wrongMeaning (both = \"a sports game\")"
+      ],
+      "reason": "Value alias: teach uses wrongMeaning which = same value as interact's iMeaningB"
+    },
+    {
+      "file": "vocabulary-subconcepts.js",
+      "subConcept": "formal-informal-vocab",
+      "lessonId": "formal-informal-steps",
+      "teachAnswer": "formalWord",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "formalWord"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.formalWord (both = \"child\")"
+      ],
+      "reason": "Value alias: teach uses formalWord which = same value as interact's correctAnswer"
+    },
+    {
+      "file": "wordcodeanalogies-subconcepts.js",
+      "subConcept": "letter-swap",
+      "lessonId": "letter-swap-mistake",
+      "teachAnswer": "correctOutput",
+      "interactAnswer": "v.correctAnswer",
+      "interactType": "multiple-choice",
+      "overlapVars": [
+        "correctAnswer"
+      ],
+      "method": "alias",
+      "aliasedVars": [
+        "correctOutput"
+      ],
+      "aliasDetail": [
+        "v.correctAnswer = v.correctOutput (both = \"mrit\")"
+      ],
+      "reason": "Value alias: teach uses correctOutput which = same value as interact's correctAnswer"
+    }
+  ]
+}

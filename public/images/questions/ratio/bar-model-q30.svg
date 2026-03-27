@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Sarah and Tom share stickers 7 : 5</text>
+
+  <!-- Total label -->
+  <text x="200" y="55" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">144 stickers</text>
+
+  <!-- Bar model: 12 equal parts, each 28.33px wide -->
+  <!-- Sarah: 7 parts (lightskyblue) -->
+  <rect x="30" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="58.33" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="86.66" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="114.99" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="143.32" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="171.65" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="199.98" y="80" width="28.33" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Tom: 5 parts (lightcoral) -->
+  <rect x="228.31" y="80" width="28.33" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="256.64" y="80" width="28.33" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="284.97" y="80" width="28.33" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="313.3" y="80" width="28.33" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="341.63" y="80" width="28.33" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Sarah bracket and label -->
+  <line x1="30" y1="175" x2="30" y2="190" stroke="#333" stroke-width="1.5"/>
+  <line x1="30" y1="190" x2="228.31" y2="190" stroke="#333" stroke-width="1.5"/>
+  <line x1="228.31" y1="175" x2="228.31" y2="190" stroke="#333" stroke-width="1.5"/>
+  <text x="129.16" y="212" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#4A90D9">Sarah (7 parts)</text>
+
+  <!-- Tom bracket and label -->
+  <line x1="228.31" y1="175" x2="228.31" y2="190" stroke="#333" stroke-width="1.5"/>
+  <line x1="228.31" y1="190" x2="369.96" y2="190" stroke="#333" stroke-width="1.5"/>
+  <line x1="369.96" y1="175" x2="369.96" y2="190" stroke="#333" stroke-width="1.5"/>
+  <text x="299.14" y="212" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#D94A4A">Tom (5 parts)</text>
+
+  <!-- Total bracket at bottom -->
+  <line x1="30" y1="235" x2="30" y2="250" stroke="#333" stroke-width="1.5"/>
+  <line x1="30" y1="250" x2="369.96" y2="250" stroke="#333" stroke-width="1.5"/>
+  <line x1="369.96" y1="235" x2="369.96" y2="250" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="275" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Total = 144 stickers</text>
+</svg>

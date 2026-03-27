@@ -1,0 +1,11 @@
+<svg width="400" height="320" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="160" r="3" fill="black"/>
+  <line x1="200" y1="160" x2="200" y2="20" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="160" x2="333" y2="117" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="160" x2="224" y2="298" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="160" x2="61" y2="148" stroke="black" stroke-width="2"/>
+  <text x="238" y="107" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">72°</text>
+  <text x="256" y="193" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">98°</text>
+  <text x="156" y="204" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">105°</text>
+  <text x="156" y="116" font-family="Arial" font-size="16" fill="red" text-anchor="middle">q°</text>
+</svg>

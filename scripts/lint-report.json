@@ -1,0 +1,329 @@
+{
+  "timestamp": "2026-03-11T20:42:54.101Z",
+  "summary": {
+    "filesScanned": 37,
+    "subConcepts": 339,
+    "lessons": 586,
+    "screens": 2344,
+    "totalIssues": 21,
+    "bySeverity": {
+      "P0": 7,
+      "P1": 14
+    },
+    "byCheck": {
+      "CHECK-01": 5,
+      "CHECK-02": 14,
+      "CHECK-03": 2
+    },
+    "byFile": {
+      "areaperimeter-subconcepts.js": 5,
+      "decimals-subconcepts.js": 7,
+      "fractions-subconcepts.js": 1,
+      "negativenumbers-subconcepts.js": 1,
+      "percentages-subconcepts.js": 3,
+      "placevalue-subconcepts.js": 1,
+      "ratio-subconcepts.js": 3
+    },
+    "autoFixable": 5
+  },
+  "issues": [
+    {
+      "id": "CHECK-01",
+      "severity": "P0",
+      "file": "areaperimeter-subconcepts.js",
+      "topicKey": "areaperimeter",
+      "subConcept": "area-triangles",
+      "lesson": "area-triangles-discovery",
+      "screen": "hook",
+      "line": 1035,
+      "message": "Bare term 'diagonal' used without bracket definition (suggest: 'diagonal (a line from one corner to the opposite corner)')",
+      "autoFixable": true,
+      "fixData": {
+        "term": "diagonal",
+        "definition": "a line from one corner to the opposite corner",
+        "subConcept": "area-triangles",
+        "lesson": "area-triangles-discovery"
+      }
+    },
+    {
+      "id": "CHECK-01",
+      "severity": "P0",
+      "file": "areaperimeter-subconcepts.js",
+      "topicKey": "areaperimeter",
+      "subConcept": "area-triangles",
+      "lesson": "area-triangles-discovery",
+      "screen": "teach",
+      "line": 1052,
+      "message": "Bare term 'perpendicular' used without bracket definition (suggest: 'perpendicular (lines that meet at a right angle)')",
+      "autoFixable": true,
+      "fixData": {
+        "term": "perpendicular",
+        "definition": "lines that meet at a right angle",
+        "subConcept": "area-triangles",
+        "lesson": "area-triangles-discovery"
+      }
+    },
+    {
+      "id": "CHECK-01",
+      "severity": "P0",
+      "file": "areaperimeter-subconcepts.js",
+      "topicKey": "areaperimeter",
+      "subConcept": "area-triangles",
+      "lesson": "area-triangles-discovery",
+      "screen": "teach",
+      "line": 1052,
+      "message": "Bare term 'right angle' used without bracket definition (suggest: 'right angle (an angle of exactly 90 degrees)')",
+      "autoFixable": true,
+      "fixData": {
+        "term": "right angle",
+        "definition": "an angle of exactly 90 degrees",
+        "subConcept": "area-triangles",
+        "lesson": "area-triangles-discovery"
+      }
+    },
+    {
+      "id": "CHECK-01",
+      "severity": "P0",
+      "file": "areaperimeter-subconcepts.js",
+      "topicKey": "areaperimeter",
+      "subConcept": "area-parallelograms",
+      "lesson": "area-parallelograms-discovery",
+      "screen": "teach",
+      "line": 1351,
+      "message": "Bare term 'right angle' used without bracket definition (suggest: 'right angle (an angle of exactly 90 degrees)')",
+      "autoFixable": true,
+      "fixData": {
+        "term": "right angle",
+        "definition": "an angle of exactly 90 degrees",
+        "subConcept": "area-parallelograms",
+        "lesson": "area-parallelograms-discovery"
+      }
+    },
+    {
+      "id": "CHECK-01",
+      "severity": "P0",
+      "file": "areaperimeter-subconcepts.js",
+      "topicKey": "areaperimeter",
+      "subConcept": "area-parallelograms",
+      "lesson": "area-parallelograms-steps",
+      "screen": "hook",
+      "line": 1485,
+      "message": "Bare term 'perpendicular' used without bracket definition (suggest: 'perpendicular (lines that meet at a right angle)')",
+      "autoFixable": true,
+      "fixData": {
+        "term": "perpendicular",
+        "definition": "lines that meet at a right angle",
+        "subConcept": "area-parallelograms",
+        "lesson": "area-parallelograms-steps"
+      }
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "subtracting-decimals",
+      "lesson": "subtracting-decimals-steps",
+      "screen": "teach",
+      "line": 813,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "multiplying-decimals-whole",
+      "lesson": "multiplying-decimals-whole-steps",
+      "screen": "teach",
+      "line": 1729,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "dividing-to-decimal",
+      "lesson": "dividing-to-decimal-steps",
+      "screen": "teach",
+      "line": 1997,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "decimal-to-fraction",
+      "lesson": "decimal-to-fraction-steps",
+      "screen": "teach",
+      "line": 2606,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "decimal-to-fraction",
+      "lesson": "decimal-to-fraction-keyfact",
+      "screen": "teach",
+      "line": 2729,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "multiplying-decimal-by-decimal",
+      "lesson": "multiplying-decimal-by-decimal-steps",
+      "screen": "teach",
+      "line": 3409,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-03",
+      "severity": "P0",
+      "file": "decimals-subconcepts.js",
+      "topicKey": "decimals",
+      "subConcept": "dividing-to-decimal",
+      "lesson": "dividing-to-decimal-steps",
+      "screen": "teach",
+      "line": 1997,
+      "message": "Step \"Add a decimal point and put a 0 next to the remainder...\" jumps to result \"_________ \\u2713\" without showing working",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "fractions-subconcepts.js",
+      "topicKey": "fractions",
+      "subConcept": "fraction-word-problems",
+      "lesson": "fraction-word-problems-hook",
+      "screen": "teach",
+      "line": 3867,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "negativenumbers-subconcepts.js",
+      "topicKey": "negativenumbers",
+      "subConcept": "temperature-problems",
+      "lesson": "temperature-curiosity",
+      "screen": "teach",
+      "line": 1722,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "percentages-subconcepts.js",
+      "topicKey": "percentages",
+      "subConcept": "express-as-percentage",
+      "lesson": "express-as-percentage-step",
+      "screen": "teach",
+      "line": 1316,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "percentages-subconcepts.js",
+      "topicKey": "percentages",
+      "subConcept": "percentage-word-problems",
+      "lesson": "percentage-word-problems-curiosity",
+      "screen": "teach",
+      "line": 3765,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-03",
+      "severity": "P0",
+      "file": "percentages-subconcepts.js",
+      "topicKey": "percentages",
+      "subConcept": "express-as-percentage",
+      "lesson": "express-as-percentage-mistake",
+      "screen": "teach",
+      "line": 1462,
+      "message": "Step \"Multiply by 100...\" jumps to result \"___ \\u00d7 100 = ___%\" without showing working",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "placevalue-subconcepts.js",
+      "topicKey": "placevalue",
+      "subConcept": "partitioning",
+      "lesson": "partitioning-keyfact",
+      "screen": "teach",
+      "line": 2176,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "ratio-subconcepts.js",
+      "topicKey": "ratio",
+      "subConcept": "finding-missing-values",
+      "lesson": "finding-missing-step",
+      "screen": "teach",
+      "line": 738,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "ratio-subconcepts.js",
+      "topicKey": "ratio",
+      "subConcept": "unitary-method",
+      "lesson": "unitary-method-step",
+      "screen": "teach",
+      "line": 1407,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    },
+    {
+      "id": "CHECK-02",
+      "severity": "P1",
+      "file": "ratio-subconcepts.js",
+      "topicKey": "ratio",
+      "subConcept": "ratio-word-problems",
+      "lesson": "ratio-word-curiosity",
+      "screen": "teach",
+      "line": 2067,
+      "message": "Teach body has no ${v.} variable references but hook does — teach may not personalise with scenario",
+      "autoFixable": false,
+      "fixData": null
+    }
+  ]
+}

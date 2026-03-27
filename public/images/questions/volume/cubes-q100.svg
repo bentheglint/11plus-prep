@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- SMALL CUBE (left) - 5cm edges -->
+  <path d="M 30 220 L 90 220 L 90 160 L 30 160 Z" fill="lightskyblue" fill-opacity="0.8" stroke="black" stroke-width="2"/>
+  <path d="M 30 160 L 90 160 L 112 138 L 52 138 Z" fill="lightcyan" fill-opacity="0.9" stroke="black" stroke-width="2"/>
+  <path d="M 90 220 L 112 198 L 112 138 L 90 160 Z" fill="skyblue" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+  <text x="60" y="238" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle">5 cm</text>
+  <!-- LARGE CUBE (right) - 20cm edges (4x larger) -->
+  <path d="M 180 240 L 300 240 L 300 120 L 180 120 Z" fill="lightcoral" fill-opacity="0.3" stroke="black" stroke-width="2"/>
+  <path d="M 180 120 L 300 120 L 345 75 L 225 75 Z" fill="lightcoral" fill-opacity="0.2" stroke="black" stroke-width="2"/>
+  <path d="M 300 240 L 345 195 L 345 75 L 300 120 Z" fill="lightcoral" fill-opacity="0.25" stroke="black" stroke-width="2"/>
+  <text x="240" y="258" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle">20 cm</text>
+  <text x="168" y="185" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-90 168 185)">20 cm</text>
+  <!-- Labels -->
+  <text x="60" y="130" font-family="Arial" font-size="13" fill="dimgray" text-anchor="middle" font-weight="bold">Small</text>
+  <text x="260" y="60" font-family="Arial" font-size="13" fill="dimgray" text-anchor="middle" font-weight="bold">Large (4x)</text>
+</svg>

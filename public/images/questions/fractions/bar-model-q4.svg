@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+  <!-- Comparing fractions: 2/5, 3/10, 1/2, 3/5, 4/10 -->
+  <!-- 5 horizontal bars of equal length (300px), each divided and shaded -->
+
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Which fraction is the largest?</text>
+
+  <!-- Bar 1: 2/5 — divided into 5 parts (each 60px), 2 shaded -->
+  <text x="42" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="black">2/5</text>
+  <rect x="70" y="40" width="60" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="130" y="40" width="60" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="190" y="40" width="60" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="250" y="40" width="60" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="310" y="40" width="60" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Bar 2: 3/10 — divided into 10 parts (each 30px), 3 shaded -->
+  <text x="42" y="113" text-anchor="middle" font-family="Arial" font-size="14" fill="black">3/10</text>
+  <rect x="70" y="95" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="100" y="95" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="130" y="95" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="160" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="190" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="220" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="250" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="280" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="310" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="340" y="95" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Bar 3: 1/2 — divided into 2 parts (each 150px), 1 shaded -->
+  <text x="42" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="black">1/2</text>
+  <rect x="70" y="150" width="150" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="220" y="150" width="150" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Bar 4: 3/5 — divided into 5 parts (each 60px), 3 shaded -->
+  <text x="42" y="223" text-anchor="middle" font-family="Arial" font-size="14" fill="black">3/5</text>
+  <rect x="70" y="205" width="60" height="35" fill="#5BB5E8" stroke="black" stroke-width="1.5"/>
+  <rect x="130" y="205" width="60" height="35" fill="#5BB5E8" stroke="black" stroke-width="1.5"/>
+  <rect x="190" y="205" width="60" height="35" fill="#5BB5E8" stroke="black" stroke-width="1.5"/>
+  <rect x="250" y="205" width="60" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="310" y="205" width="60" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <!-- Star marker for largest -->
+  <text x="382" y="228" text-anchor="middle" font-family="Arial" font-size="16" fill="red" font-weight="bold">*</text>
+
+  <!-- Bar 5: 4/10 — divided into 10 parts (each 30px), 4 shaded -->
+  <text x="42" y="278" text-anchor="middle" font-family="Arial" font-size="14" fill="black">4/10</text>
+  <rect x="70" y="260" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="100" y="260" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="130" y="260" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="160" y="260" width="30" height="35" fill="lightskyblue" stroke="black" stroke-width="1.5"/>
+  <rect x="190" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="220" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="250" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="280" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="310" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="340" y="260" width="30" height="35" fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Vertical guide line at the end of each shaded region to help visual comparison -->
+  <line x1="190" y1="38" x2="190" y2="297" stroke="#CCC" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

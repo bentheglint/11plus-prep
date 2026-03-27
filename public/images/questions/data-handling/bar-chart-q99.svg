@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+  <!-- Title -->
+  <text x="225" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Daily Sales</text>
+
+  <!-- Y-axis -->
+  <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="1"/>
+  <!-- X-axis -->
+  <line x1="50" y1="250" x2="440" y2="250" stroke="black" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="30" y="254" text-anchor="end" font-family="Arial" font-size="12">0</text>
+  <text x="30" y="214" text-anchor="end" font-family="Arial" font-size="12">10</text>
+  <text x="30" y="174" text-anchor="end" font-family="Arial" font-size="12">20</text>
+  <text x="30" y="134" text-anchor="end" font-family="Arial" font-size="12">30</text>
+  <text x="30" y="94" text-anchor="end" font-family="Arial" font-size="12">40</text>
+  <text x="30" y="54" text-anchor="end" font-family="Arial" font-size="12">50</text>
+
+  <!-- Y-axis ticks -->
+  <line x1="47" y1="250" x2="50" y2="250" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="210" x2="50" y2="210" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="170" x2="50" y2="170" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="130" x2="50" y2="130" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="90" x2="50" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="50" x2="50" y2="50" stroke="black" stroke-width="1"/>
+
+  <!-- Bars -->
+  <rect x="75" y="130" width="55" height="120" fill="lightskyblue" stroke="black" stroke-width="1"/>
+  <rect x="150" y="110" width="55" height="140" fill="lightcoral" stroke="black" stroke-width="1"/>
+  <rect x="225" y="150" width="55" height="100" fill="lightgreen" stroke="black" stroke-width="1"/>
+  <rect x="300" y="70" width="55" height="180" fill="lightyellow" stroke="black" stroke-width="1"/>
+  <rect x="375" y="90" width="55" height="160" fill="plum" fill-opacity="0.7" stroke="black" stroke-width="1"/>
+
+  <!-- Bar labels -->
+  <text x="102" y="270" text-anchor="middle" font-family="Arial" font-size="12">Monday</text>
+  <text x="177" y="270" text-anchor="middle" font-family="Arial" font-size="12">Tuesday</text>
+  <text x="252" y="270" text-anchor="middle" font-family="Arial" font-size="12">Wednesday</text>
+  <text x="327" y="270" text-anchor="middle" font-family="Arial" font-size="12">Thursday</text>
+  <text x="402" y="270" text-anchor="middle" font-family="Arial" font-size="12">Friday</text>
+</svg>

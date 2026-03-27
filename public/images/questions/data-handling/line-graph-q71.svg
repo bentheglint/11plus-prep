@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+  <!-- Title -->
+  <text x="225" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Monthly Sales</text>
+
+  <!-- Y-axis -->
+  <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
+  <!-- X-axis -->
+  <line x1="50" y1="250" x2="430" y2="250" stroke="black" stroke-width="2"/>
+
+  <!-- Y-axis labels -->
+  <text x="30" y="254" text-anchor="end" font-family="Arial" font-size="12">0</text>
+  <text x="30" y="214" text-anchor="end" font-family="Arial" font-size="12">20</text>
+  <text x="30" y="174" text-anchor="end" font-family="Arial" font-size="12">40</text>
+  <text x="30" y="134" text-anchor="end" font-family="Arial" font-size="12">60</text>
+  <text x="30" y="94" text-anchor="end" font-family="Arial" font-size="12">80</text>
+  <text x="30" y="54" text-anchor="end" font-family="Arial" font-size="12">100</text>
+
+  <!-- Y-axis gridlines -->
+  <line x1="50" y1="210" x2="430" y2="210" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="170" x2="430" y2="170" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="130" x2="430" y2="130" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="90" x2="430" y2="90" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="50" x2="430" y2="50" stroke="#ddd" stroke-width="1"/>
+
+  <!-- X-axis labels -->
+  <text x="90" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 1</text>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 2</text>
+  <text x="210" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 3</text>
+  <text x="270" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 4</text>
+  <text x="330" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 5</text>
+  <text x="390" y="270" text-anchor="middle" font-family="Arial" font-size="12">Month 6</text>
+
+  <!-- Data line -->
+  <polyline points="90,140 150,130 210,110 270,120 330,100 390,90" fill="none" stroke="blue" stroke-width="2"/>
+
+  <!-- Data points -->
+  <circle cx="90" cy="140" r="4" fill="blue"/>
+  <circle cx="150" cy="130" r="4" fill="blue"/>
+  <circle cx="210" cy="110" r="4" fill="blue"/>
+  <circle cx="270" cy="120" r="4" fill="blue"/>
+  <circle cx="330" cy="100" r="4" fill="blue"/>
+  <circle cx="390" cy="90" r="4" fill="blue"/>
+</svg>

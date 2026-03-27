@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Cake cut into 12 equal pieces, 5 eaten (shown in gray) -->
+  <defs>
+    <!-- 12 slices, each 30 degrees. Slice i goes from angle (i*30 - 90) to ((i+1)*30 - 90) -->
+    <!-- Angles in degrees from top (12 o'clock): 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330 -->
+    <!-- Using pre-calculated coordinates for r=100 from centre (200,140) -->
+    <clipPath id="cs0"><path d="M200,140 L200,40 A100,100 0 0,1 250,53.4 Z"/></clipPath>
+    <clipPath id="cs1"><path d="M200,140 L250,53.4 A100,100 0 0,1 286.6,90 Z"/></clipPath>
+    <clipPath id="cs2"><path d="M200,140 L286.6,90 A100,100 0 0,1 300,140 Z"/></clipPath>
+    <clipPath id="cs3"><path d="M200,140 L300,140 A100,100 0 0,1 286.6,190 Z"/></clipPath>
+    <clipPath id="cs4"><path d="M200,140 L286.6,190 A100,100 0 0,1 250,226.6 Z"/></clipPath>
+    <clipPath id="cs5"><path d="M200,140 L250,226.6 A100,100 0 0,1 200,240 Z"/></clipPath>
+    <clipPath id="cs6"><path d="M200,140 L200,240 A100,100 0 0,1 150,226.6 Z"/></clipPath>
+    <clipPath id="cs7"><path d="M200,140 L150,226.6 A100,100 0 0,1 113.4,190 Z"/></clipPath>
+    <clipPath id="cs8"><path d="M200,140 L113.4,190 A100,100 0 0,1 100,140 Z"/></clipPath>
+    <clipPath id="cs9"><path d="M200,140 L100,140 A100,100 0 0,1 113.4,90 Z"/></clipPath>
+    <clipPath id="cs10"><path d="M200,140 L113.4,90 A100,100 0 0,1 150,53.4 Z"/></clipPath>
+    <clipPath id="cs11"><path d="M200,140 L150,53.4 A100,100 0 0,1 200,40 Z"/></clipPath>
+  </defs>
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Cake - 12 Equal Pieces</text>
+
+  <!-- Full circle background -->
+  <circle cx="200" cy="140" r="100" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Remaining slices (alternating lightskyblue / light pink) -->
+  <rect x="90" y="30" width="220" height="220" fill="lightskyblue" clip-path="url(#cs0)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#FFD1DC" clip-path="url(#cs1)"/>
+  <rect x="90" y="30" width="220" height="220" fill="lightskyblue" clip-path="url(#cs2)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#FFD1DC" clip-path="url(#cs3)"/>
+  <rect x="90" y="30" width="220" height="220" fill="lightskyblue" clip-path="url(#cs4)"/>
+  <!-- Slices 5-9 are eaten (5 pieces) -->
+  <rect x="90" y="30" width="220" height="220" fill="#D3D3D3" clip-path="url(#cs5)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#D3D3D3" clip-path="url(#cs6)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#D3D3D3" clip-path="url(#cs7)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#D3D3D3" clip-path="url(#cs8)"/>
+  <rect x="90" y="30" width="220" height="220" fill="#D3D3D3" clip-path="url(#cs9)"/>
+  <!-- Remaining slices -->
+  <rect x="90" y="30" width="220" height="220" fill="#FFD1DC" clip-path="url(#cs10)"/>
+  <rect x="90" y="30" width="220" height="220" fill="lightskyblue" clip-path="url(#cs11)"/>
+
+  <!-- Circle outline -->
+  <circle cx="200" cy="140" r="100" fill="none" stroke="black" stroke-width="2"/>
+
+  <!-- Division lines (12 slices = lines every 30 degrees) -->
+  <line x1="200" y1="140" x2="200" y2="40" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="250" y2="53.4" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="286.6" y2="90" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="300" y2="140" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="286.6" y2="190" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="250" y2="226.6" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="200" y2="240" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="150" y2="226.6" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="113.4" y2="190" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="100" y2="140" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="113.4" y2="90" stroke="black" stroke-width="1.2"/>
+  <line x1="200" y1="140" x2="150" y2="53.4" stroke="black" stroke-width="1.2"/>
+
+  <!-- Legend -->
+  <rect x="75" y="264" width="14" height="14" fill="lightskyblue" stroke="black" stroke-width="1"/>
+  <text x="93" y="276" font-family="Arial" font-size="12" fill="black">Remaining (7 pieces)</text>
+  <rect x="230" y="264" width="14" height="14" fill="#D3D3D3" stroke="black" stroke-width="1"/>
+  <text x="248" y="276" font-family="Arial" font-size="12" fill="black">Eaten (5 pieces)</text>
+</svg>

@@ -1,0 +1,2377 @@
+[
+  {
+    "id": 1,
+    "d": 1,
+    "sA": [
+      "begin",
+      "arrive",
+      "allow"
+    ],
+    "sB": [
+      "choose",
+      "start",
+      "carry"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "begin/start"
+  },
+  {
+    "id": 2,
+    "d": 2,
+    "sA": [
+      "normal",
+      "peculiar",
+      "polite"
+    ],
+    "sB": [
+      "familiar",
+      "gentle",
+      "strange"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "peculiar/strange"
+  },
+  {
+    "id": 3,
+    "d": 2,
+    "sA": [
+      "reveal",
+      "discover",
+      "conceal"
+    ],
+    "sB": [
+      "hide",
+      "approach",
+      "announce"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "conceal/hide"
+  },
+  {
+    "id": 4,
+    "d": 3,
+    "sA": [
+      "lazy",
+      "clumsy",
+      "diligent"
+    ],
+    "sB": [
+      "graceful",
+      "hardworking",
+      "careless"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "diligent/hardworking"
+  },
+  {
+    "id": 5,
+    "d": 3,
+    "sA": [
+      "noisy",
+      "tranquil",
+      "rapid"
+    ],
+    "sB": [
+      "peaceful",
+      "violent",
+      "hectic"
+    ],
+    "cp": [
+      1,
+      0
+    ],
+    "answer": "tranquil/peaceful"
+  },
+  {
+    "id": 6,
+    "d": 1,
+    "sA": [
+      "wealthy",
+      "famous",
+      "polite"
+    ],
+    "sB": [
+      "honest",
+      "rich",
+      "strict"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "wealthy/rich"
+  },
+  {
+    "id": 7,
+    "d": 1,
+    "sA": [
+      "bold",
+      "timid",
+      "rude"
+    ],
+    "sB": [
+      "loud",
+      "angry",
+      "shy"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "timid/shy"
+  },
+  {
+    "id": 8,
+    "d": 1,
+    "sA": [
+      "joyful",
+      "brave",
+      "polite"
+    ],
+    "sB": [
+      "honest",
+      "happy",
+      "proud"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "joyful/happy"
+  },
+  {
+    "id": 9,
+    "d": 2,
+    "sA": [
+      "thunder",
+      "thrifty",
+      "anchor"
+    ],
+    "sB": [
+      "mustard",
+      "careful with money",
+      "umbrella"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "thrifty/careful with money"
+  },
+  {
+    "id": 10,
+    "d": 2,
+    "sA": [
+      "flexible",
+      "obstinate",
+      "gentle"
+    ],
+    "sB": [
+      "stubborn",
+      "soft",
+      "willing"
+    ],
+    "cp": [
+      1,
+      0
+    ],
+    "answer": "obstinate/stubborn"
+  },
+  {
+    "id": 11,
+    "d": 2,
+    "sA": [
+      "crowded",
+      "distant",
+      "vacant"
+    ],
+    "sB": [
+      "empty",
+      "faraway",
+      "packed"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "vacant/empty"
+  },
+  {
+    "id": 12,
+    "d": 2,
+    "sA": [
+      "wither",
+      "flourish",
+      "stumble"
+    ],
+    "sB": [
+      "thrive",
+      "pause",
+      "wander"
+    ],
+    "cp": [
+      1,
+      0
+    ],
+    "answer": "flourish/thrive"
+  },
+  {
+    "id": 13,
+    "d": 3,
+    "sA": [
+      "laborious",
+      "coral",
+      "crimson"
+    ],
+    "sB": [
+      "carpet",
+      "requiring hard work",
+      "ginger"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "laborious/requiring hard work"
+  },
+  {
+    "id": 14,
+    "d": 3,
+    "sA": [
+      "elated",
+      "anxious",
+      "indifferent"
+    ],
+    "sB": [
+      "astonished",
+      "overjoyed",
+      "sceptical"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "elated/overjoyed"
+  },
+  {
+    "id": 15,
+    "d": 3,
+    "sA": [
+      "meticulous",
+      "spontaneous",
+      "ambitious"
+    ],
+    "sB": [
+      "versatile",
+      "very thorough",
+      "prominent"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "meticulous/very thorough"
+  },
+  {
+    "id": 16,
+    "d": 1,
+    "sA": [
+      "bright",
+      "gloomy",
+      "warm"
+    ],
+    "sB": [
+      "cosy",
+      "dark and sad",
+      "cheerful"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "gloomy/dark and sad"
+  },
+  {
+    "id": 17,
+    "d": 2,
+    "sA": [
+      "daily",
+      "annual",
+      "weekly"
+    ],
+    "sB": [
+      "fortnightly",
+      "monthly",
+      "yearly"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "annual/yearly"
+  },
+  {
+    "id": 18,
+    "d": 3,
+    "sA": [
+      "expert",
+      "novice",
+      "champion"
+    ],
+    "sB": [
+      "winner",
+      "beginner",
+      "professional"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "novice/beginner"
+  },
+  {
+    "id": 19,
+    "d": 1,
+    "sA": [
+      "terrified",
+      "jealous",
+      "bored"
+    ],
+    "sB": [
+      "lonely",
+      "very frightened",
+      "proud"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "terrified/very frightened"
+  },
+  {
+    "id": 20,
+    "d": 2,
+    "sA": [
+      "demonstrate",
+      "whisper",
+      "argue"
+    ],
+    "sB": [
+      "show",
+      "debate",
+      "listen"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "demonstrate/show"
+  },
+  {
+    "id": 21,
+    "d": 1,
+    "sA": [
+      "hot",
+      "solar",
+      "fountain"
+    ],
+    "sB": [
+      "wooden",
+      "emerald",
+      "zigzag"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "hot/wooden"
+  },
+  {
+    "id": 22,
+    "d": 1,
+    "sA": [
+      "hungry",
+      "angry",
+      "calm"
+    ],
+    "sB": [
+      "gentle",
+      "starving",
+      "cross"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "angry/cross"
+  },
+  {
+    "id": 23,
+    "d": 1,
+    "sA": [
+      "blue",
+      "read",
+      "fast"
+    ],
+    "sB": [
+      "run",
+      "slow",
+      "climb"
+    ],
+    "cp": [
+      2,
+      2
+    ],
+    "answer": "fast/climb"
+  },
+  {
+    "id": 24,
+    "d": 1,
+    "sA": [
+      "big",
+      "short",
+      "heavy"
+    ],
+    "sB": [
+      "deep",
+      "large",
+      "round"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "big/large"
+  },
+  {
+    "id": 25,
+    "d": 1,
+    "sA": [
+      "heavy",
+      "slow",
+      "small"
+    ],
+    "sB": [
+      "little",
+      "light",
+      "weak"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "small/little"
+  },
+  {
+    "id": 26,
+    "d": 1,
+    "sA": [
+      "quick",
+      "careful",
+      "steep"
+    ],
+    "sB": [
+      "flat",
+      "fast",
+      "straight"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "quick/fast"
+  },
+  {
+    "id": 27,
+    "d": 1,
+    "sA": [
+      "sad",
+      "hungry",
+      "nervous"
+    ],
+    "sB": [
+      "excited",
+      "unhappy",
+      "curious"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "sad/unhappy"
+  },
+  {
+    "id": 28,
+    "d": 1,
+    "sA": [
+      "pretty",
+      "tall",
+      "clean"
+    ],
+    "sB": [
+      "smooth",
+      "beautiful",
+      "young"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "pretty/beautiful"
+  },
+  {
+    "id": 29,
+    "d": 1,
+    "sA": [
+      "clever",
+      "generous",
+      "patient"
+    ],
+    "sB": [
+      "curious",
+      "smart",
+      "honest"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "clever/smart"
+  },
+  {
+    "id": 30,
+    "d": 1,
+    "sA": [
+      "compass",
+      "loud",
+      "woollen"
+    ],
+    "sB": [
+      "platinum",
+      "noisy",
+      "tropical"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "loud/noisy"
+  },
+  {
+    "id": 31,
+    "d": 1,
+    "sA": [
+      "silent",
+      "smooth",
+      "fresh"
+    ],
+    "sB": [
+      "clean",
+      "quiet",
+      "new"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "silent/quiet"
+  },
+  {
+    "id": 32,
+    "d": 1,
+    "sA": [
+      "kind",
+      "honest",
+      "patient"
+    ],
+    "sB": [
+      "careful",
+      "generous",
+      "popular"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "kind/generous"
+  },
+  {
+    "id": 33,
+    "d": 1,
+    "sA": [
+      "rude",
+      "noisy",
+      "selfish"
+    ],
+    "sB": [
+      "greedy",
+      "impolite",
+      "clumsy"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "rude/impolite"
+  },
+  {
+    "id": 34,
+    "d": 1,
+    "sA": [
+      "lucky",
+      "careful",
+      "early"
+    ],
+    "sB": [
+      "fortunate",
+      "friendly",
+      "cheerful"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "lucky/friendly"
+  },
+  {
+    "id": 35,
+    "d": 1,
+    "sA": [
+      "olive",
+      "shut",
+      "circular"
+    ],
+    "sB": [
+      "crystal",
+      "frequent",
+      "close"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "shut/close"
+  },
+  {
+    "id": 36,
+    "d": 1,
+    "sA": [
+      "ask",
+      "reply",
+      "forget"
+    ],
+    "sB": [
+      "remember",
+      "answer",
+      "ignore"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "reply/answer"
+  },
+  {
+    "id": 37,
+    "d": 1,
+    "sA": [
+      "choose",
+      "explain",
+      "whisper"
+    ],
+    "sB": [
+      "promise",
+      "select",
+      "deliver"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "choose/select"
+  },
+  {
+    "id": 38,
+    "d": 1,
+    "sA": [
+      "destroy",
+      "polish",
+      "decorate"
+    ],
+    "sB": [
+      "arrange",
+      "demolish",
+      "measure"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "destroy/demolish"
+  },
+  {
+    "id": 39,
+    "d": 1,
+    "sA": [
+      "laugh",
+      "sneeze",
+      "yawn"
+    ],
+    "sB": [
+      "cough",
+      "giggle",
+      "hiccup"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "laugh/giggle"
+  },
+  {
+    "id": 40,
+    "d": 1,
+    "sA": [
+      "mend",
+      "bend",
+      "wrap"
+    ],
+    "sB": [
+      "fold",
+      "repair",
+      "pour"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "mend/repair"
+  },
+  {
+    "id": 41,
+    "d": 1,
+    "sA": [
+      "shout",
+      "clap",
+      "wave"
+    ],
+    "sB": [
+      "point",
+      "yell",
+      "nod"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "shout/yell"
+  },
+  {
+    "id": 42,
+    "d": 1,
+    "sA": [
+      "grab",
+      "throw",
+      "pour"
+    ],
+    "sB": [
+      "stack",
+      "seize",
+      "sweep"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "grab/seize"
+  },
+  {
+    "id": 43,
+    "d": 1,
+    "sA": [
+      "scatter",
+      "squeeze",
+      "twist"
+    ],
+    "sB": [
+      "stretch",
+      "spread",
+      "spin"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "scatter/spread"
+  },
+  {
+    "id": 44,
+    "d": 1,
+    "sA": [
+      "ancient",
+      "heavy",
+      "rough"
+    ],
+    "sB": [
+      "narrow",
+      "old",
+      "hollow"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "ancient/old"
+  },
+  {
+    "id": 45,
+    "d": 2,
+    "sA": [
+      "cautious",
+      "reckless",
+      "curious"
+    ],
+    "sB": [
+      "careful",
+      "stubborn",
+      "cheerful"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "cautious/careful"
+  },
+  {
+    "id": 46,
+    "d": 2,
+    "sA": [
+      "generous",
+      "selfish",
+      "strict"
+    ],
+    "sB": [
+      "charitable",
+      "ambitious",
+      "popular"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "generous/charitable"
+  },
+  {
+    "id": 47,
+    "d": 2,
+    "sA": [
+      "headstrong",
+      "cautious",
+      "anxious"
+    ],
+    "sB": [
+      "nervous",
+      "resolute",
+      "modest"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "headstrong/resolute"
+  },
+  {
+    "id": 48,
+    "d": 2,
+    "sA": [
+      "deserted",
+      "crowded",
+      "distant"
+    ],
+    "sB": [
+      "remote",
+      "abandoned",
+      "popular"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "deserted/abandoned"
+  },
+  {
+    "id": 49,
+    "d": 2,
+    "sA": [
+      "bashful",
+      "confident",
+      "cheerful"
+    ],
+    "sB": [
+      "bossy",
+      "reserved",
+      "lively"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "bashful/reserved"
+  },
+  {
+    "id": 50,
+    "d": 2,
+    "sA": [
+      "purchase",
+      "sell",
+      "borrow"
+    ],
+    "sB": [
+      "lend",
+      "buy",
+      "steal"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "purchase/buy"
+  },
+  {
+    "id": 51,
+    "d": 2,
+    "sA": [
+      "genuine",
+      "fake",
+      "popular"
+    ],
+    "sB": [
+      "valuable",
+      "authentic",
+      "rare"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "genuine/authentic"
+  },
+  {
+    "id": 52,
+    "d": 2,
+    "sA": [
+      "abundant",
+      "scarce",
+      "heavy"
+    ],
+    "sB": [
+      "expensive",
+      "plentiful",
+      "enormous"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "abundant/plentiful"
+  },
+  {
+    "id": 53,
+    "d": 2,
+    "sA": [
+      "hostile",
+      "welcoming",
+      "nervous"
+    ],
+    "sB": [
+      "unfriendly",
+      "formal",
+      "jealous"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "hostile/unfriendly"
+  },
+  {
+    "id": 54,
+    "d": 2,
+    "sA": [
+      "reluctant",
+      "eager",
+      "grateful"
+    ],
+    "sB": [
+      "curious",
+      "unwilling",
+      "hopeful"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "reluctant/unwilling"
+  },
+  {
+    "id": 55,
+    "d": 2,
+    "sA": [
+      "praise",
+      "criticise",
+      "question"
+    ],
+    "sB": [
+      "challenge",
+      "commend",
+      "demand"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "praise/commend"
+  },
+  {
+    "id": 56,
+    "d": 2,
+    "sA": [
+      "decrease",
+      "increase",
+      "maintain"
+    ],
+    "sB": [
+      "measure",
+      "reduce",
+      "balance"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "decrease/reduce"
+  },
+  {
+    "id": 57,
+    "d": 2,
+    "sA": [
+      "arrive",
+      "depart",
+      "wander"
+    ],
+    "sB": [
+      "explore",
+      "reach",
+      "escape"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "arrive/reach"
+  },
+  {
+    "id": 58,
+    "d": 2,
+    "sA": [
+      "defend",
+      "attack",
+      "inspect"
+    ],
+    "sB": [
+      "threaten",
+      "protect",
+      "warn"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "defend/protect"
+  },
+  {
+    "id": 59,
+    "d": 2,
+    "sA": [
+      "accept",
+      "refuse",
+      "suggest"
+    ],
+    "sB": [
+      "request",
+      "agree",
+      "inform"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "accept/agree"
+  },
+  {
+    "id": 60,
+    "d": 2,
+    "sA": [
+      "unite",
+      "separate",
+      "arrange"
+    ],
+    "sB": [
+      "organise",
+      "combine",
+      "compete"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "unite/combine"
+  },
+  {
+    "id": 61,
+    "d": 2,
+    "sA": [
+      "solemn",
+      "cheerful",
+      "clumsy"
+    ],
+    "sB": [
+      "jealous",
+      "serious",
+      "generous"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "solemn/serious"
+  },
+  {
+    "id": 62,
+    "d": 2,
+    "sA": [
+      "vast",
+      "pencil",
+      "diagonal"
+    ],
+    "sB": [
+      "immense",
+      "vinegar",
+      "turquoise"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "vast/immense"
+  },
+  {
+    "id": 63,
+    "d": 2,
+    "sA": [
+      "vivid",
+      "faded",
+      "rough"
+    ],
+    "sB": [
+      "smooth",
+      "bright",
+      "gentle"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "vivid/bright"
+  },
+  {
+    "id": 64,
+    "d": 2,
+    "sA": [
+      "ancient",
+      "polite",
+      "cheerful"
+    ],
+    "sB": [
+      "gloomy",
+      "rude",
+      "new"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "polite/new"
+  },
+  {
+    "id": 65,
+    "d": 2,
+    "sA": [
+      "sturdy",
+      "flexible",
+      "narrow"
+    ],
+    "sB": [
+      "steep",
+      "robust",
+      "smooth"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "sturdy/robust"
+  },
+  {
+    "id": 66,
+    "d": 2,
+    "sA": [
+      "arrogant",
+      "humble",
+      "anxious"
+    ],
+    "sB": [
+      "curious",
+      "conceited",
+      "generous"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "arrogant/conceited"
+  },
+  {
+    "id": 67,
+    "d": 2,
+    "sA": [
+      "trumpet",
+      "vanish",
+      "bronze"
+    ],
+    "sB": [
+      "ribbon",
+      "folded",
+      "disappear"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "vanish/disappear"
+  },
+  {
+    "id": 68,
+    "d": 2,
+    "sA": [
+      "eager",
+      "reluctant",
+      "patient"
+    ],
+    "sB": [
+      "grateful",
+      "keen",
+      "strict"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "eager/keen"
+  },
+  {
+    "id": 69,
+    "d": 2,
+    "sA": [
+      "polite",
+      "rude",
+      "clever"
+    ],
+    "sB": [
+      "popular",
+      "courteous",
+      "wealthy"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "polite/courteous"
+  },
+  {
+    "id": 70,
+    "d": 2,
+    "sA": [
+      "honest",
+      "deceitful",
+      "confident"
+    ],
+    "sB": [
+      "popular",
+      "truthful",
+      "ambitious"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "honest/truthful"
+  },
+  {
+    "id": 71,
+    "d": 2,
+    "sA": [
+      "dull",
+      "exciting",
+      "nervous"
+    ],
+    "sB": [
+      "curious",
+      "boring",
+      "proud"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "dull/boring"
+  },
+  {
+    "id": 72,
+    "d": 2,
+    "sA": [
+      "vague",
+      "precise",
+      "frequent"
+    ],
+    "sB": [
+      "sudden",
+      "unclear",
+      "permanent"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "vague/unclear"
+  },
+  {
+    "id": 73,
+    "d": 2,
+    "sA": [
+      "toffee",
+      "glimpse",
+      "cedar"
+    ],
+    "sB": [
+      "vanilla",
+      "arctic",
+      "glance"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "glimpse/glance"
+  },
+  {
+    "id": 74,
+    "d": 2,
+    "sA": [
+      "chimney",
+      "ceramic",
+      "grasp"
+    ],
+    "sB": [
+      "grip",
+      "saddle",
+      "mirror"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "grasp/grip"
+  },
+  {
+    "id": 75,
+    "d": 2,
+    "sA": [
+      "temporary",
+      "permanent",
+      "frequent"
+    ],
+    "sB": [
+      "sudden",
+      "brief",
+      "gradual"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "temporary/brief"
+  },
+  {
+    "id": 76,
+    "d": 2,
+    "sA": [
+      "triumph",
+      "effort",
+      "attempt"
+    ],
+    "sB": [
+      "struggle",
+      "victory",
+      "challenge"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "triumph/victory"
+  },
+  {
+    "id": 77,
+    "d": 3,
+    "sA": [
+      "serene",
+      "turbulent",
+      "hostile"
+    ],
+    "sB": [
+      "suspicious",
+      "calm",
+      "ambitious"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "serene/calm"
+  },
+  {
+    "id": 78,
+    "d": 3,
+    "sA": [
+      "persistent",
+      "hesitant",
+      "indifferent"
+    ],
+    "sB": [
+      "rebellious",
+      "determined",
+      "impulsive"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "persistent/determined"
+  },
+  {
+    "id": 79,
+    "d": 3,
+    "sA": [
+      "irritate",
+      "soothe",
+      "impress"
+    ],
+    "sB": [
+      "astonish",
+      "annoy",
+      "persuade"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "irritate/annoy"
+  },
+  {
+    "id": 80,
+    "d": 3,
+    "sA": [
+      "bewildered",
+      "determined",
+      "cautious"
+    ],
+    "sB": [
+      "suspicious",
+      "confused",
+      "reluctant"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "bewildered/confused"
+  },
+  {
+    "id": 81,
+    "d": 3,
+    "sA": [
+      "nimble",
+      "rigid",
+      "fragile"
+    ],
+    "sB": [
+      "sturdy",
+      "agile",
+      "clumsy"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "nimble/agile"
+  },
+  {
+    "id": 82,
+    "d": 3,
+    "sA": [
+      "prosperous",
+      "impoverished",
+      "prominent"
+    ],
+    "sB": [
+      "notorious",
+      "wealthy",
+      "ambitious"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "prosperous/wealthy"
+  },
+  {
+    "id": 83,
+    "d": 3,
+    "sA": [
+      "malevolent",
+      "innocent",
+      "cautious"
+    ],
+    "sB": [
+      "suspicious",
+      "wicked",
+      "humble"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "malevolent/wicked"
+  },
+  {
+    "id": 84,
+    "d": 3,
+    "sA": [
+      "gregarious",
+      "solitary",
+      "reserved"
+    ],
+    "sB": [
+      "sociable",
+      "withdrawn",
+      "isolated"
+    ],
+    "cp": [
+      0,
+      0
+    ],
+    "answer": "gregarious/sociable"
+  },
+  {
+    "id": 85,
+    "d": 3,
+    "sA": [
+      "shrewd",
+      "naive",
+      "reserved"
+    ],
+    "sB": [
+      "impulsive",
+      "astute",
+      "modest"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "shrewd/astute"
+  },
+  {
+    "id": 86,
+    "d": 3,
+    "sA": [
+      "unlikely",
+      "possible",
+      "inevitable"
+    ],
+    "sB": [
+      "unavoidable",
+      "probable",
+      "optional"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "inevitable/unavoidable"
+  },
+  {
+    "id": 87,
+    "d": 3,
+    "sA": [
+      "sloppy",
+      "hasty",
+      "meticulous"
+    ],
+    "sB": [
+      "thorough",
+      "rushed",
+      "untidy"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "meticulous/thorough"
+  },
+  {
+    "id": 88,
+    "d": 3,
+    "sA": [
+      "attentive",
+      "loyal",
+      "negligent"
+    ],
+    "sB": [
+      "faithful",
+      "careless",
+      "observant"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "negligent/careless"
+  },
+  {
+    "id": 89,
+    "d": 3,
+    "sA": [
+      "checkered",
+      "lavender",
+      "obscure"
+    ],
+    "sB": [
+      "vague",
+      "basket",
+      "spiral"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "obscure/vague"
+  },
+  {
+    "id": 90,
+    "d": 3,
+    "sA": [
+      "resilient",
+      "fragile",
+      "rigid"
+    ],
+    "sB": [
+      "stiff",
+      "breakable",
+      "tough"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "resilient/tough"
+  },
+  {
+    "id": 91,
+    "d": 3,
+    "sA": [
+      "overlook",
+      "scrutinise",
+      "dismiss"
+    ],
+    "sB": [
+      "examine",
+      "reject",
+      "discard"
+    ],
+    "cp": [
+      1,
+      0
+    ],
+    "answer": "scrutinise/examine"
+  },
+  {
+    "id": 92,
+    "d": 3,
+    "sA": [
+      "yielding",
+      "tenacious",
+      "indifferent"
+    ],
+    "sB": [
+      "apathetic",
+      "submissive",
+      "persistent"
+    ],
+    "cp": [
+      1,
+      2
+    ],
+    "answer": "tenacious/persistent"
+  },
+  {
+    "id": 93,
+    "d": 3,
+    "sA": [
+      "public",
+      "official",
+      "clandestine"
+    ],
+    "sB": [
+      "formal",
+      "open",
+      "secret"
+    ],
+    "cp": [
+      2,
+      2
+    ],
+    "answer": "clandestine/secret"
+  },
+  {
+    "id": 94,
+    "d": 3,
+    "sA": [
+      "dreadful",
+      "ordinary",
+      "sublime"
+    ],
+    "sB": [
+      "average",
+      "magnificent",
+      "terrible"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "sublime/magnificent"
+  },
+  {
+    "id": 95,
+    "d": 3,
+    "sA": [
+      "valiant",
+      "cotton",
+      "specific"
+    ],
+    "sB": [
+      "wooden",
+      "scarlet",
+      "heroic"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "valiant/heroic"
+  },
+  {
+    "id": 96,
+    "d": 3,
+    "sA": [
+      "olive",
+      "circular",
+      "scarce"
+    ],
+    "sB": [
+      "crystal",
+      "sparse",
+      "frequent"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "scarce/sparse"
+  },
+  {
+    "id": 97,
+    "d": 3,
+    "sA": [
+      "pencil",
+      "diagonal",
+      "absolve"
+    ],
+    "sB": [
+      "forgive",
+      "vinegar",
+      "turquoise"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "absolve/forgive"
+  },
+  {
+    "id": 98,
+    "d": 3,
+    "sA": [
+      "hinder",
+      "assist",
+      "compel"
+    ],
+    "sB": [
+      "force",
+      "help",
+      "obstruct"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "compel/force"
+  },
+  {
+    "id": 99,
+    "d": 3,
+    "sA": [
+      "deteriorate",
+      "leather",
+      "pillow"
+    ],
+    "sB": [
+      "candle",
+      "rubber",
+      "decline"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "deteriorate/decline"
+  },
+  {
+    "id": 100,
+    "d": 3,
+    "sA": [
+      "pepper",
+      "provoke",
+      "opposite"
+    ],
+    "sB": [
+      "cinnamon",
+      "irritate",
+      "random"
+    ],
+    "cp": [
+      1,
+      1
+    ],
+    "answer": "provoke/irritate"
+  },
+  {
+    "id": 101,
+    "d": 1,
+    "sA": [
+      "bravery",
+      "ivory",
+      "lantern"
+    ],
+    "sB": [
+      "granite",
+      "courage",
+      "copper"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "bravery/courage"
+  },
+  {
+    "id": 102,
+    "d": 1,
+    "sA": [
+      "afraid",
+      "angry",
+      "amused"
+    ],
+    "sB": [
+      "funny",
+      "scared",
+      "upset"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "afraid/scared"
+  },
+  {
+    "id": 103,
+    "d": 1,
+    "sA": [
+      "trumpet",
+      "bronze",
+      "tidy"
+    ],
+    "sB": [
+      "ribbon",
+      "neat",
+      "folded"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "tidy/neat"
+  },
+  {
+    "id": 104,
+    "d": 1,
+    "sA": [
+      "gift",
+      "volcano",
+      "ivory"
+    ],
+    "sB": [
+      "glacier",
+      "present",
+      "custard"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "gift/present"
+  },
+  {
+    "id": 105,
+    "d": 1,
+    "sA": [
+      "glad",
+      "cross",
+      "bored"
+    ],
+    "sB": [
+      "tired",
+      "happy",
+      "grumpy"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "glad/happy"
+  },
+  {
+    "id": 106,
+    "d": 1,
+    "sA": [
+      "ill",
+      "thunder",
+      "anchor"
+    ],
+    "sB": [
+      "mustard",
+      "sick",
+      "umbrella"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "ill/sick"
+  },
+  {
+    "id": 107,
+    "d": 1,
+    "sA": [
+      "centre",
+      "edge",
+      "corner"
+    ],
+    "sB": [
+      "border",
+      "middle",
+      "side"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "centre/middle"
+  },
+  {
+    "id": 108,
+    "d": 1,
+    "sA": [
+      "error",
+      "velvet",
+      "marble"
+    ],
+    "sB": [
+      "tangerine",
+      "mistake",
+      "magenta"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "error/mistake"
+  },
+  {
+    "id": 109,
+    "d": 2,
+    "sA": [
+      "odour",
+      "coral",
+      "crimson"
+    ],
+    "sB": [
+      "carpet",
+      "smell",
+      "ginger"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "odour/smell"
+  },
+  {
+    "id": 110,
+    "d": 2,
+    "sA": [
+      "voyage",
+      "neutral",
+      "coastal"
+    ],
+    "sB": [
+      "stripy",
+      "journey",
+      "digital"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "voyage/journey"
+  },
+  {
+    "id": 111,
+    "d": 2,
+    "sA": [
+      "soggy",
+      "toffee",
+      "cedar"
+    ],
+    "sB": [
+      "vanilla",
+      "damp",
+      "arctic"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "soggy/damp"
+  },
+  {
+    "id": 112,
+    "d": 2,
+    "sA": [
+      "assist",
+      "prevent",
+      "demand"
+    ],
+    "sB": [
+      "require",
+      "block",
+      "help"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "assist/help"
+  },
+  {
+    "id": 113,
+    "d": 2,
+    "sA": [
+      "stumble",
+      "crumble",
+      "tremble"
+    ],
+    "sB": [
+      "trip",
+      "shake",
+      "break"
+    ],
+    "cp": [
+      2,
+      1
+    ],
+    "answer": "tremble/shake"
+  },
+  {
+    "id": 114,
+    "d": 2,
+    "sA": [
+      "weary",
+      "chimney",
+      "ceramic"
+    ],
+    "sB": [
+      "saddle",
+      "exhausted",
+      "mirror"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "weary/exhausted"
+  },
+  {
+    "id": 115,
+    "d": 2,
+    "sA": [
+      "scarce",
+      "frequent",
+      "precious"
+    ],
+    "sB": [
+      "valuable",
+      "common",
+      "rare"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "scarce/rare"
+  },
+  {
+    "id": 116,
+    "d": 2,
+    "sA": [
+      "restore",
+      "demolish",
+      "inspect"
+    ],
+    "sB": [
+      "survey",
+      "renovate",
+      "neglect"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "restore/renovate"
+  },
+  {
+    "id": 117,
+    "d": 2,
+    "sA": [
+      "cunning",
+      "rural",
+      "barrel"
+    ],
+    "sB": [
+      "canyon",
+      "sly",
+      "towel"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "cunning/sly"
+  },
+  {
+    "id": 118,
+    "d": 2,
+    "sA": [
+      "permit",
+      "refuse",
+      "suggest"
+    ],
+    "sB": [
+      "propose",
+      "forbid",
+      "allow"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "permit/allow"
+  },
+  {
+    "id": 119,
+    "d": 3,
+    "sA": [
+      "cautious",
+      "solar",
+      "fountain"
+    ],
+    "sB": [
+      "emerald",
+      "wary",
+      "zigzag"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "cautious/wary"
+  },
+  {
+    "id": 120,
+    "d": 3,
+    "sA": [
+      "conquest",
+      "surrender",
+      "endeavour"
+    ],
+    "sB": [
+      "attempt",
+      "achievement",
+      "obstacle"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "conquest/achievement"
+  },
+  {
+    "id": 121,
+    "d": 3,
+    "sA": [
+      "diminish",
+      "enhance",
+      "sustain"
+    ],
+    "sB": [
+      "maintain",
+      "improve",
+      "decrease"
+    ],
+    "cp": [
+      0,
+      2
+    ],
+    "answer": "diminish/decrease"
+  },
+  {
+    "id": 122,
+    "d": 3,
+    "sA": [
+      "absurd",
+      "sensible",
+      "peculiar"
+    ],
+    "sB": [
+      "mysterious",
+      "ridiculous",
+      "conventional"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "absurd/ridiculous"
+  },
+  {
+    "id": 123,
+    "d": 3,
+    "sA": [
+      "absorb",
+      "thermal",
+      "pebble"
+    ],
+    "sB": [
+      "volcanic",
+      "soak up",
+      "orchard"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "absorb/soak up"
+  },
+  {
+    "id": 124,
+    "d": 3,
+    "sA": [
+      "lithe",
+      "rigid",
+      "muscular"
+    ],
+    "sB": [
+      "sturdy",
+      "supple",
+      "sluggish"
+    ],
+    "cp": [
+      0,
+      1
+    ],
+    "answer": "lithe/supple"
+  },
+  {
+    "id": 125,
+    "d": 3,
+    "sA": [
+      "sapphire",
+      "gradual",
+      "obsolete"
+    ],
+    "sB": [
+      "outdated",
+      "marble",
+      "amber"
+    ],
+    "cp": [
+      2,
+      0
+    ],
+    "answer": "obsolete/outdated"
+  }
+]

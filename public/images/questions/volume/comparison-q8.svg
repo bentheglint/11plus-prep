@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- CUBE (left) - 8cm edges -->
+  <path d="M 20 200 L 100 200 L 100 120 L 20 120 Z" fill="lightskyblue" fill-opacity="0.8" stroke="black" stroke-width="2"/>
+  <path d="M 20 120 L 100 120 L 130 90 L 50 90 Z" fill="lightcyan" fill-opacity="0.9" stroke="black" stroke-width="2"/>
+  <path d="M 100 200 L 130 170 L 130 90 L 100 120 Z" fill="skyblue" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+  <text x="60" y="215" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle">8 cm</text>
+  <text x="10" y="165" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-90 10 165)">8 cm</text>
+  <text x="140" y="195" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-45 140 195)">8 cm</text>
+
+  <!-- CUBOID (right) - 16 x 4 x 8 -->
+  <path d="M 200 200 L 340 200 L 340 120 L 200 120 Z" fill="lightcoral" fill-opacity="0.3" stroke="black" stroke-width="2"/>
+  <path d="M 200 120 L 340 120 L 365 95 L 225 95 Z" fill="lightcoral" fill-opacity="0.2" stroke="black" stroke-width="2"/>
+  <path d="M 340 200 L 365 175 L 365 95 L 340 120 Z" fill="lightcoral" fill-opacity="0.25" stroke="black" stroke-width="2"/>
+  <text x="270" y="215" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle">16 cm</text>
+  <text x="188" y="165" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-90 188 165)">8 cm</text>
+  <text x="375" y="200" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-45 375 200)">4 cm</text>
+
+  <!-- Labels -->
+  <text x="60" y="80" font-family="Arial" font-size="13" fill="dimgray" text-anchor="middle" font-weight="bold">Cube</text>
+  <text x="270" y="80" font-family="Arial" font-size="13" fill="dimgray" text-anchor="middle" font-weight="bold">Cuboid</text>
+</svg>

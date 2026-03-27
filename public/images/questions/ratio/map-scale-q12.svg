@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Map Scale 1 cm : 5 km</text>
+
+  <!-- Map background -->
+  <rect x="30" y="40" width="340" height="180" rx="8" ry="8" fill="#FFFDE7" stroke="#333" stroke-width="2"/>
+
+  <!-- Grid lines (faint, for map feel) -->
+  <line x1="30" y1="76" x2="370" y2="76" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="30" y1="112" x2="370" y2="112" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="30" y1="148" x2="370" y2="148" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="30" y1="184" x2="370" y2="184" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="98" y1="40" x2="98" y2="220" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="166" y1="40" x2="166" y2="220" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="234" y1="40" x2="234" y2="220" stroke="#E0D8B0" stroke-width="0.5"/>
+  <line x1="302" y1="40" x2="302" y2="220" stroke="#E0D8B0" stroke-width="0.5"/>
+
+  <!-- Road/path (wavy line) -->
+  <path d="M60,160 Q100,100 150,130 Q200,160 250,100 Q300,60 340,110" fill="none" stroke="#B0B0B0" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Town A marker -->
+  <circle cx="80" cy="140" r="8" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <text x="80" y="144" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#fff">A</text>
+  <text x="80" y="168" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Town A</text>
+
+  <!-- Town B marker -->
+  <circle cx="320" cy="100" r="8" fill="#6B9BFF" stroke="#333" stroke-width="1.5"/>
+  <text x="320" y="104" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#fff">B</text>
+  <text x="320" y="128" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Town B</text>
+
+  <!-- Distance measurement line (straight) -->
+  <line x1="80" y1="82" x2="320" y2="82" stroke="#D94A4A" stroke-width="2"/>
+  <line x1="80" y1="75" x2="80" y2="89" stroke="#D94A4A" stroke-width="2"/>
+  <line x1="320" y1="75" x2="320" y2="89" stroke="#D94A4A" stroke-width="2"/>
+  <text x="200" y="75" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#D94A4A">8 cm on map</text>
+
+  <!-- Scale bar at bottom of map -->
+  <rect x="50" y="195" width="120" height="12" fill="#fff" stroke="#333" stroke-width="1"/>
+  <!-- Scale segments -->
+  <rect x="50" y="195" width="30" height="12" fill="#333" stroke="#333" stroke-width="1"/>
+  <rect x="80" y="195" width="30" height="12" fill="#fff" stroke="#333" stroke-width="1"/>
+  <rect x="110" y="195" width="30" height="12" fill="#333" stroke="#333" stroke-width="1"/>
+  <rect x="140" y="195" width="30" height="12" fill="#fff" stroke="#333" stroke-width="1"/>
+  <text x="50" y="213" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">0</text>
+  <text x="80" y="213" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">1cm</text>
+  <text x="110" y="213" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">2cm</text>
+  <text x="140" y="213" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">3cm</text>
+  <text x="170" y="213" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">4cm</text>
+
+  <!-- Scale explanation below map -->
+  <text x="200" y="248" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Scale: 1 cm = 5 km</text>
+  <text x="200" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#D94A4A">8 cm on map = 8 x 5 = ? km</text>
+
+  <!-- Compass -->
+  <circle cx="340" cy="195" r="12" fill="#fff" stroke="#333" stroke-width="1"/>
+  <text x="340" y="189" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#333">N</text>
+  <line x1="340" y1="191" x2="340" y2="200" stroke="#333" stroke-width="1.5"/>
+  <polygon points="340,183 337,191 343,191" fill="#D94A4A"/>
+</svg>

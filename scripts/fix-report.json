@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-03-11T18:29:10.904Z",
+  "filesModified": [
+    "percentages-subconcepts.js"
+  ],
+  "totalFixes": 2,
+  "byCheck": {
+    "CHECK-07": 2
+  },
+  "fixes": [
+    {
+      "check": "CHECK-07",
+      "original": "2192 3/4",
+      "replacement": "2192 and 3/4"
+    },
+    {
+      "check": "CHECK-07",
+      "original": "2192 2/5",
+      "replacement": "2192 and 2/5"
+    }
+  ],
+  "backupDir": "C:\\Users\\Ben Jackson\\Projects\\11plus-prep\\scripts\\backups"
+}

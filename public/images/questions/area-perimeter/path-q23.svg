@@ -1,0 +1,8 @@
+<svg width="380" height="280" xmlns="http://www.w3.org/2000/svg">
+  <rect x="40" y="40" width="300" height="200" fill="sandybrown" fill-opacity="0.4" stroke="black" stroke-width="2"/>
+  <text x="190" y="30" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">30m</text>
+  <text x="20" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">20m</text>
+  <rect x="80" y="80" width="220" height="120" fill="lightgreen" fill-opacity="0.6" stroke="black" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="190" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="dimgray">Grass</text>
+  <text x="60" y="100" text-anchor="middle" font-family="Arial" font-size="10" fill="dimgray">2m path</text>
+</svg>

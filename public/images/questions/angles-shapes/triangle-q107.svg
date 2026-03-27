@@ -1,0 +1,6 @@
+<svg width="380" height="280" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="136.2,124.4 35.0,245.0 345.0,245.0" fill="lightskyblue" fill-opacity="0.15" stroke="black" stroke-width="2"/>
+  <text x="141.5" y="159.8" font-family="Arial" font-size="16" fill="red" text-anchor="middle">10t°</text>
+  <text x="80.3" y="228.9" font-family="Arial" font-size="16" fill="red" text-anchor="middle">5t°</text>
+  <text x="285.0" y="233.9" font-family="Arial" font-size="16" fill="red" text-anchor="middle">3t°</text>
+</svg>

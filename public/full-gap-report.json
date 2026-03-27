@@ -1,0 +1,1742 @@
+{
+  "generated": "2026-03-23T14:17:15.043Z",
+  "allResults": [
+    {
+      "topic": "percentages",
+      "totalQuestions": 135,
+      "totalSubConcepts": 14,
+      "distribution": [
+        {
+          "id": "finding-10-percent",
+          "name": "Finding 10% by Dividing by 10",
+          "count": 49
+        },
+        {
+          "id": "percentage-increase",
+          "name": "Percentage Increase",
+          "count": 32
+        },
+        {
+          "id": "percentage-decrease",
+          "name": "Percentage Decrease and Discounts",
+          "count": 24
+        },
+        {
+          "id": "percent-means-per-hundred",
+          "name": "Percent Means Per Hundred",
+          "count": 15
+        },
+        {
+          "id": "common-percentages",
+          "name": "Key Percentage Equivalences",
+          "count": 7
+        },
+        {
+          "id": "express-as-percentage",
+          "name": "Expressing One Number as a Percentage of Another",
+          "count": 2
+        },
+        {
+          "id": "master-building-block-percentages",
+          "name": "Finding Any Percentage — The Building-Block Method",
+          "count": 2
+        },
+        {
+          "id": "comparing-fdp",
+          "name": "Comparing Fractions, Decimals and Percentages",
+          "count": 2
+        },
+        {
+          "id": "building-percentages",
+          "name": "Building Percentages from 10% and 1%",
+          "count": 1
+        },
+        {
+          "id": "percent-to-decimal",
+          "name": "Converting Between Percentages and Decimals",
+          "count": 1
+        },
+        {
+          "id": "percent-to-fraction",
+          "name": "Converting Percentages to Fractions",
+          "count": 0
+        },
+        {
+          "id": "reverse-percentage",
+          "name": "Reverse Percentages",
+          "count": 0
+        },
+        {
+          "id": "successive-percentages",
+          "name": "Successive Percentage Changes",
+          "count": 0
+        },
+        {
+          "id": "percentage-word-problems",
+          "name": "Percentage Word Problems",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "express-as-percentage",
+          "name": "Expressing One Number as a Percentage of Another",
+          "count": 2
+        },
+        {
+          "id": "comparing-fdp",
+          "name": "Comparing Fractions, Decimals and Percentages",
+          "count": 2
+        },
+        {
+          "id": "building-percentages",
+          "name": "Building Percentages from 10% and 1%",
+          "count": 1
+        },
+        {
+          "id": "percent-to-decimal",
+          "name": "Converting Between Percentages and Decimals",
+          "count": 1
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "percent-to-fraction",
+          "name": "Converting Percentages to Fractions"
+        },
+        {
+          "id": "reverse-percentage",
+          "name": "Reverse Percentages"
+        },
+        {
+          "id": "successive-percentages",
+          "name": "Successive Percentage Changes"
+        },
+        {
+          "id": "percentage-word-problems",
+          "name": "Percentage Word Problems"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "finding-10-percent",
+          "name": "Finding 10% by Dividing by 10",
+          "count": 49
+        },
+        {
+          "id": "percentage-increase",
+          "name": "Percentage Increase",
+          "count": 32
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "decimals",
+      "totalQuestions": 158,
+      "totalSubConcepts": 15,
+      "distribution": [
+        {
+          "id": "multiplying-decimal-by-decimal",
+          "name": "Multiplying Decimal by Decimal",
+          "count": 45
+        },
+        {
+          "id": "dividing-to-decimal",
+          "name": "Dividing to Get a Decimal Answer",
+          "count": 32
+        },
+        {
+          "id": "multiply-by-10-100-1000",
+          "name": "Multiplying by 10, 100 and 1000",
+          "count": 23
+        },
+        {
+          "id": "decimal-place-value",
+          "name": "Decimal Place Value",
+          "count": 10
+        },
+        {
+          "id": "multiplying-decimals-whole",
+          "name": "Multiplying a Decimal by a Whole Number",
+          "count": 9
+        },
+        {
+          "id": "fraction-to-decimal",
+          "name": "Fraction to Decimal",
+          "count": 8
+        },
+        {
+          "id": "decimal-word-problems",
+          "name": "Decimal Word Problems",
+          "count": 6
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 5
+        },
+        {
+          "id": "decimal-to-fraction",
+          "name": "Decimal to Fraction",
+          "count": 4
+        },
+        {
+          "id": "subtracting-decimals",
+          "name": "Subtracting Decimals",
+          "count": 3
+        },
+        {
+          "id": "dividing-decimal-by-decimal",
+          "name": "Dividing by a Decimal",
+          "count": 3
+        },
+        {
+          "id": "divide-by-10-100-1000",
+          "name": "Dividing by 10, 100 and 1000",
+          "count": 3
+        },
+        {
+          "id": "rounding-decimals",
+          "name": "Rounding Decimals",
+          "count": 3
+        },
+        {
+          "id": "comparing-decimals",
+          "name": "Comparing and Ordering Decimals",
+          "count": 2
+        },
+        {
+          "id": "decimal-to-percentage",
+          "name": "Decimal to Percentage",
+          "count": 2
+        },
+        {
+          "id": "master-column-addition-decimals",
+          "name": "Column Addition of Decimals",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "subtracting-decimals",
+          "name": "Subtracting Decimals",
+          "count": 3
+        },
+        {
+          "id": "dividing-decimal-by-decimal",
+          "name": "Dividing by a Decimal",
+          "count": 3
+        },
+        {
+          "id": "divide-by-10-100-1000",
+          "name": "Dividing by 10, 100 and 1000",
+          "count": 3
+        },
+        {
+          "id": "rounding-decimals",
+          "name": "Rounding Decimals",
+          "count": 3
+        },
+        {
+          "id": "comparing-decimals",
+          "name": "Comparing and Ordering Decimals",
+          "count": 2
+        },
+        {
+          "id": "decimal-to-percentage",
+          "name": "Decimal to Percentage",
+          "count": 2
+        }
+      ],
+      "noQuestions": [],
+      "heavy": [
+        {
+          "id": "multiplying-decimal-by-decimal",
+          "name": "Multiplying Decimal by Decimal",
+          "count": 45
+        },
+        {
+          "id": "dividing-to-decimal",
+          "name": "Dividing to Get a Decimal Answer",
+          "count": 32
+        }
+      ],
+      "unmapped": 5
+    },
+    {
+      "topic": "longdivision",
+      "totalQuestions": 150,
+      "totalSubConcepts": 7,
+      "distribution": [
+        {
+          "id": "short-division-remainders",
+          "name": "Short Division with Remainders",
+          "count": 70
+        },
+        {
+          "id": "sharing-equally",
+          "name": "Division as Sharing Equally",
+          "count": 50
+        },
+        {
+          "id": "long-division-method",
+          "name": "Dividing by a 2-digit Number",
+          "count": 22
+        },
+        {
+          "id": "estimation-checking",
+          "name": "Estimating Before Dividing, Checking with Multiplication",
+          "count": 8
+        },
+        {
+          "id": "master-bus-stop",
+          "name": "The Bus Stop Method — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "interpreting-remainders",
+          "name": "What To Do With Remainders",
+          "count": 0
+        },
+        {
+          "id": "dividing-word-problems",
+          "name": "Division Word Problems",
+          "count": 0
+        }
+      ],
+      "needsMore": [],
+      "noQuestions": [
+        {
+          "id": "interpreting-remainders",
+          "name": "What To Do With Remainders"
+        },
+        {
+          "id": "dividing-word-problems",
+          "name": "Division Word Problems"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "short-division-remainders",
+          "name": "Short Division with Remainders",
+          "count": 70
+        },
+        {
+          "id": "sharing-equally",
+          "name": "Division as Sharing Equally",
+          "count": 50
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "ratio",
+      "totalQuestions": 165,
+      "totalSubConcepts": 8,
+      "distribution": [
+        {
+          "id": "ratio-notation",
+          "name": "Understanding Ratio Notation",
+          "count": 58
+        },
+        {
+          "id": "ratio-word-problems",
+          "name": "Ratio Word Problems",
+          "count": 43
+        },
+        {
+          "id": "scaling-recipes",
+          "name": "Scaling Recipes Up and Down",
+          "count": 25
+        },
+        {
+          "id": "scale-factors-maps",
+          "name": "Scale Factors for Maps and Models",
+          "count": 17
+        },
+        {
+          "id": "simplifying-ratios",
+          "name": "Simplifying Ratios",
+          "count": 11
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 11
+        },
+        {
+          "id": "master-sharing-ratio",
+          "name": "Sharing in a Ratio — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "finding-missing-values",
+          "name": "Finding Missing Values in Ratios",
+          "count": 0
+        },
+        {
+          "id": "unitary-method",
+          "name": "The Unitary Method",
+          "count": 0
+        }
+      ],
+      "needsMore": [],
+      "noQuestions": [
+        {
+          "id": "finding-missing-values",
+          "name": "Finding Missing Values in Ratios"
+        },
+        {
+          "id": "unitary-method",
+          "name": "The Unitary Method"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "ratio-notation",
+          "name": "Understanding Ratio Notation",
+          "count": 58
+        },
+        {
+          "id": "ratio-word-problems",
+          "name": "Ratio Word Problems",
+          "count": 43
+        }
+      ],
+      "unmapped": 11
+    },
+    {
+      "topic": "fractions",
+      "totalQuestions": 150,
+      "totalSubConcepts": 14,
+      "distribution": [
+        {
+          "id": "simplifying-fractions",
+          "name": "Simplifying Fractions",
+          "count": 56
+        },
+        {
+          "id": "fraction-of-amount",
+          "name": "Fraction of an Amount",
+          "count": 41
+        },
+        {
+          "id": "adding-same-denom",
+          "name": "Adding Fractions (Same Denominator)",
+          "count": 14
+        },
+        {
+          "id": "comparing-fractions",
+          "name": "Comparing Fractions",
+          "count": 10
+        },
+        {
+          "id": "decimal-to-fraction",
+          "name": "Decimal to Fraction",
+          "count": 10
+        },
+        {
+          "id": "subtracting-same-denom",
+          "name": "Subtracting Fractions (Same Denominator)",
+          "count": 8
+        },
+        {
+          "id": "multiplying-fractions",
+          "name": "Multiplying Fractions by Whole Numbers",
+          "count": 3
+        },
+        {
+          "id": "mixed-improper",
+          "name": "Mixed and Improper Fractions",
+          "count": 3
+        },
+        {
+          "id": "adding-diff-denom",
+          "name": "Adding Fractions (Different Denominators)",
+          "count": 2
+        },
+        {
+          "id": "subtracting-diff-denom",
+          "name": "Subtracting Fractions (Different Denominators)",
+          "count": 2
+        },
+        {
+          "id": "fraction-to-decimal",
+          "name": "Fraction to Decimal",
+          "count": 1
+        },
+        {
+          "id": "master-adding-fractions",
+          "name": "Adding Fractions with Different Denominators",
+          "count": 0
+        },
+        {
+          "id": "fraction-to-percentage",
+          "name": "Fraction to Percentage",
+          "count": 0
+        },
+        {
+          "id": "fraction-word-problems",
+          "name": "Fraction Word Problems",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "multiplying-fractions",
+          "name": "Multiplying Fractions by Whole Numbers",
+          "count": 3
+        },
+        {
+          "id": "mixed-improper",
+          "name": "Mixed and Improper Fractions",
+          "count": 3
+        },
+        {
+          "id": "adding-diff-denom",
+          "name": "Adding Fractions (Different Denominators)",
+          "count": 2
+        },
+        {
+          "id": "subtracting-diff-denom",
+          "name": "Subtracting Fractions (Different Denominators)",
+          "count": 2
+        },
+        {
+          "id": "fraction-to-decimal",
+          "name": "Fraction to Decimal",
+          "count": 1
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "fraction-to-percentage",
+          "name": "Fraction to Percentage"
+        },
+        {
+          "id": "fraction-word-problems",
+          "name": "Fraction Word Problems"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "simplifying-fractions",
+          "name": "Simplifying Fractions",
+          "count": 56
+        },
+        {
+          "id": "fraction-of-amount",
+          "name": "Fraction of an Amount",
+          "count": 41
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "longmultiplication",
+      "error": "Command failed: node scripts/map-questions-to-lessons.js longmultiplication\nNo staging file or lessonData entry for topic \"longmultiplication\"\nC:\\Users\\Ben Jackson\\Projects\\11plus-prep\\scripts\\map-questions-to-lessons.js:319\r\n    if (bestMatch.score === 0) {\r\n                  ^\r\n\r\nTypeError: Cannot read properties of undefined (reading 'score')\r\n    at mapQuestions (C:\\Users\\Ben Jackson\\Projects\\11plus-prep\\scripts\\map-questions-to-lessons.js:319:19)\r\n    at Object.<anonymous> (C:\\Users\\Ben Jackson\\Projects\\11plus-prep\\scripts\\map-questions-to-lessons.js:402:1)\r\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1481:32)\r\n    at Module._load (node:internal/modules/cjs/loader:1300:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47\r\n\r\nNode.js v24.11.1\r\n"
+    },
+    {
+      "topic": "algebra",
+      "totalQuestions": 135,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "substitution",
+          "name": "Substituting Values",
+          "count": 45
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 26
+        },
+        {
+          "id": "simple-formulae",
+          "name": "Using Simple Formulae",
+          "count": 26
+        },
+        {
+          "id": "two-step-equations",
+          "name": "Two-Step Equations",
+          "count": 21
+        },
+        {
+          "id": "inverse-operations",
+          "name": "Inverse Operations",
+          "count": 5
+        },
+        {
+          "id": "bidmas-brackets",
+          "name": "BIDMAS and Brackets",
+          "count": 5
+        },
+        {
+          "id": "writing-expressions",
+          "name": "Writing Expressions from Words",
+          "count": 5
+        },
+        {
+          "id": "using-letters",
+          "name": "Using Letters for Unknowns",
+          "count": 2
+        },
+        {
+          "id": "master-two-step-equations",
+          "name": "Solving Two-Step Equations — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "function-machines",
+          "name": "Function Machines",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "using-letters",
+          "name": "Using Letters for Unknowns",
+          "count": 2
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "function-machines",
+          "name": "Function Machines"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "substitution",
+          "name": "Substituting Values",
+          "count": 45
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 26
+        },
+        {
+          "id": "simple-formulae",
+          "name": "Using Simple Formulae",
+          "count": 26
+        }
+      ],
+      "unmapped": 26
+    },
+    {
+      "topic": "placevalue",
+      "totalQuestions": 145,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "rounding-nearest-1000-plus",
+          "name": "Rounding to Nearest 1000, 10000, 100000",
+          "count": 64
+        },
+        {
+          "id": "digit-value",
+          "name": "Understanding the Value of Each Digit",
+          "count": 29
+        },
+        {
+          "id": "making-numbers",
+          "name": "Making Largest/Smallest Number from Digits",
+          "count": 25
+        },
+        {
+          "id": "comparing-ordering",
+          "name": "Comparing & Ordering Multi-Digit Numbers",
+          "count": 9
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 8
+        },
+        {
+          "id": "reading-writing-numbers",
+          "name": "Reading & Writing Numbers in Words and Digits",
+          "count": 6
+        },
+        {
+          "id": "partitioning",
+          "name": "Partitioning Numbers",
+          "count": 4
+        },
+        {
+          "id": "master-rounding",
+          "name": "Rounding — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "rounding-decimals",
+          "name": "Rounding Decimals",
+          "count": 0
+        },
+        {
+          "id": "adding-subtracting-powers-10",
+          "name": "Adding/Subtracting 10, 100, 1000 Mentally",
+          "count": 0
+        }
+      ],
+      "needsMore": [],
+      "noQuestions": [
+        {
+          "id": "rounding-decimals",
+          "name": "Rounding Decimals"
+        },
+        {
+          "id": "adding-subtracting-powers-10",
+          "name": "Adding/Subtracting 10, 100, 1000 Mentally"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "rounding-nearest-1000-plus",
+          "name": "Rounding to Nearest 1000, 10000, 100000",
+          "count": 64
+        },
+        {
+          "id": "digit-value",
+          "name": "Understanding the Value of Each Digit",
+          "count": 29
+        }
+      ],
+      "unmapped": 8
+    },
+    {
+      "topic": "negativenumbers",
+      "totalQuestions": 135,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "subtracting-into-negatives",
+          "name": "Subtracting Below Zero",
+          "count": 43
+        },
+        {
+          "id": "temperature-problems",
+          "name": "Temperature Rise and Fall",
+          "count": 31
+        },
+        {
+          "id": "counting-through-zero",
+          "name": "Counting Through Zero",
+          "count": 18
+        },
+        {
+          "id": "understanding-negatives",
+          "name": "What Negative Numbers Mean",
+          "count": 12
+        },
+        {
+          "id": "difference-across-zero",
+          "name": "Finding the Difference Across Zero",
+          "count": 11
+        },
+        {
+          "id": "negative-subtract-negative",
+          "name": "Subtracting from a Negative",
+          "count": 10
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 7
+        },
+        {
+          "id": "adding-to-negatives",
+          "name": "Adding to Negative Numbers",
+          "count": 3
+        },
+        {
+          "id": "master-crossing-zero",
+          "name": "Adding Across Zero — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "real-world-contexts",
+          "name": "Negatives in Real Life",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "adding-to-negatives",
+          "name": "Adding to Negative Numbers",
+          "count": 3
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "real-world-contexts",
+          "name": "Negatives in Real Life"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "subtracting-into-negatives",
+          "name": "Subtracting Below Zero",
+          "count": 43
+        },
+        {
+          "id": "temperature-problems",
+          "name": "Temperature Rise and Fall",
+          "count": 31
+        }
+      ],
+      "unmapped": 7
+    },
+    {
+      "topic": "primenumbers",
+      "totalQuestions": 120,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "common-factors-hcf",
+          "name": "Common Factors and HCF",
+          "count": 32
+        },
+        {
+          "id": "prime-factorisation",
+          "name": "Breaking a Number into Prime Factors",
+          "count": 29
+        },
+        {
+          "id": "counting-factors",
+          "name": "How Many Factors Does a Number Have?",
+          "count": 25
+        },
+        {
+          "id": "common-multiples-lcm",
+          "name": "Common Multiples and LCM",
+          "count": 19
+        },
+        {
+          "id": "identifying-primes",
+          "name": "Recognising Whether a Number is Prime",
+          "count": 15
+        },
+        {
+          "id": "master-finding-factors",
+          "name": "Finding All Factors — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "factor-pairs",
+          "name": "Finding Factor Pairs",
+          "count": 0
+        },
+        {
+          "id": "divisibility-rules",
+          "name": "Quick Tests for Divisibility",
+          "count": 0
+        },
+        {
+          "id": "hcf-lcm-word-problems",
+          "name": "HCF and LCM in Context",
+          "count": 0
+        }
+      ],
+      "needsMore": [],
+      "noQuestions": [
+        {
+          "id": "factor-pairs",
+          "name": "Finding Factor Pairs"
+        },
+        {
+          "id": "divisibility-rules",
+          "name": "Quick Tests for Divisibility"
+        },
+        {
+          "id": "hcf-lcm-word-problems",
+          "name": "HCF and LCM in Context"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "common-factors-hcf",
+          "name": "Common Factors and HCF",
+          "count": 32
+        },
+        {
+          "id": "prime-factorisation",
+          "name": "Breaking a Number into Prime Factors",
+          "count": 29
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "areaperimeter",
+      "totalQuestions": 130,
+      "totalSubConcepts": 10,
+      "distribution": [
+        {
+          "id": "missing-side-area",
+          "name": "Finding Missing Side from Known Area",
+          "count": 35
+        },
+        {
+          "id": "perimeter-rectangles",
+          "name": "Perimeter of Rectangles and Squares",
+          "count": 27
+        },
+        {
+          "id": "missing-side-perimeter",
+          "name": "Finding Missing Side from Known Perimeter",
+          "count": 26
+        },
+        {
+          "id": "area-vs-perimeter",
+          "name": "Same Area Does Not Mean Same Perimeter",
+          "count": 22
+        },
+        {
+          "id": "paths-and-borders",
+          "name": "Area of Path/Border (outer minus inner)",
+          "count": 13
+        },
+        {
+          "id": "compound-shapes",
+          "name": "Splitting L-shapes into Rectangles",
+          "count": 4
+        },
+        {
+          "id": "area-triangles",
+          "name": "Area of Triangles (half base times height)",
+          "count": 2
+        },
+        {
+          "id": "unit-conversion",
+          "name": "Converting cm² and m²",
+          "count": 1
+        },
+        {
+          "id": "master-area-rectangles",
+          "name": "Area of Rectangles & Compound Shapes — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "area-parallelograms",
+          "name": "Area of Parallelograms (base times height)",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "area-triangles",
+          "name": "Area of Triangles (half base times height)",
+          "count": 2
+        },
+        {
+          "id": "unit-conversion",
+          "name": "Converting cm² and m²",
+          "count": 1
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "area-parallelograms",
+          "name": "Area of Parallelograms (base times height)"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "missing-side-area",
+          "name": "Finding Missing Side from Known Area",
+          "count": 35
+        },
+        {
+          "id": "perimeter-rectangles",
+          "name": "Perimeter of Rectangles and Squares",
+          "count": 27
+        },
+        {
+          "id": "missing-side-perimeter",
+          "name": "Finding Missing Side from Known Perimeter",
+          "count": 26
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "volume",
+      "totalQuestions": 128,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "volume-cubes",
+          "name": "Volume of Cubes (edge x edge x edge)",
+          "count": 71
+        },
+        {
+          "id": "cube-root",
+          "name": "Finding Edge Length from Cube Volume",
+          "count": 24
+        },
+        {
+          "id": "volume-to-capacity (how much a container can hold)",
+          "name": "Converting cm³, ml, and litres",
+          "count": 16
+        },
+        {
+          "id": "missing-dimension",
+          "name": "Finding Missing Dimension from Volume",
+          "count": 12
+        },
+        {
+          "id": "fraction-of-volume",
+          "name": "Finding a Fraction of Total Volume",
+          "count": 4
+        },
+        {
+          "id": "comparing-volumes",
+          "name": "Same Volume, Different Shapes",
+          "count": 1
+        },
+        {
+          "id": "master-volume-cuboids",
+          "name": "Volume of Cuboids — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "scaling-volumes",
+          "name": "Doubling Edge Length Multiplies Volume by 8",
+          "count": 0
+        },
+        {
+          "id": "volume-word-problems",
+          "name": "Real-world Volume Problems",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "comparing-volumes",
+          "name": "Same Volume, Different Shapes",
+          "count": 1
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "scaling-volumes",
+          "name": "Doubling Edge Length Multiplies Volume by 8"
+        },
+        {
+          "id": "volume-word-problems",
+          "name": "Real-world Volume Problems"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "volume-cubes",
+          "name": "Volume of Cubes (edge x edge x edge)",
+          "count": 71
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "anglesshapes",
+      "totalQuestions": 122,
+      "totalSubConcepts": 12,
+      "distribution": [
+        {
+          "id": "straight-line",
+          "name": "Angles on a Straight Line = 180°",
+          "count": 37
+        },
+        {
+          "id": "isosceles-triangle",
+          "name": "Isosceles Triangle — Two Equal Angles",
+          "count": 19
+        },
+        {
+          "id": "around-a-point",
+          "name": "Angles Around a Point = 360°",
+          "count": 13
+        },
+        {
+          "id": "quadrilateral-angles",
+          "name": "Angles in a Quadrilateral = 360°",
+          "count": 13
+        },
+        {
+          "id": "right-angled-triangle",
+          "name": "Missing Angle in a Right-Angled Triangle",
+          "count": 11
+        },
+        {
+          "id": "parallel-lines",
+          "name": "Angles with Parallel Lines",
+          "count": 10
+        },
+        {
+          "id": "polygon-angles",
+          "name": "Interior Angles of Regular Polygons",
+          "count": 9
+        },
+        {
+          "id": "exterior-angles",
+          "name": "Exterior Angle of a Triangle",
+          "count": 8
+        },
+        {
+          "id": "angle-types",
+          "name": "Recognising Angle Types",
+          "count": 2
+        },
+        {
+          "id": "master-missing-angle-triangle",
+          "name": "Finding a Missing Angle in a Triangle",
+          "count": 0
+        },
+        {
+          "id": "algebraic-angles",
+          "name": "Using Algebra to Find Angles",
+          "count": 0
+        },
+        {
+          "id": "irregular-polygon-angle",
+          "name": "Finding a Missing Angle in an Irregular Polygon",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "angle-types",
+          "name": "Recognising Angle Types",
+          "count": 2
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "algebraic-angles",
+          "name": "Using Algebra to Find Angles"
+        },
+        {
+          "id": "irregular-polygon-angle",
+          "name": "Finding a Missing Angle in an Irregular Polygon"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "straight-line",
+          "name": "Angles on a Straight Line = 180°",
+          "count": 37
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "sequences",
+      "totalQuestions": 133,
+      "totalSubConcepts": 9,
+      "distribution": [
+        {
+          "id": "continue-sequence",
+          "name": "Continuing a Sequence Using the Rule",
+          "count": 65
+        },
+        {
+          "id": "find-nth-term",
+          "name": "Finding the nth Term",
+          "count": 39
+        },
+        {
+          "id": "constant-difference",
+          "name": "Finding the Constant Difference",
+          "count": 6
+        },
+        {
+          "id": "special-sequences",
+          "name": "Square, Triangular & Cube Numbers",
+          "count": 6
+        },
+        {
+          "id": "two-step-rules",
+          "name": "Sequences with Two-Step Rules",
+          "count": 6
+        },
+        {
+          "id": "fibonacci-style",
+          "name": "Fibonacci-Style Sequences",
+          "count": 4
+        },
+        {
+          "id": "geometric-sequences",
+          "name": "Sequences That Multiply or Divide",
+          "count": 4
+        },
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 3
+        },
+        {
+          "id": "master-arithmetic-sequences",
+          "name": "Arithmetic Sequences — Step by Step",
+          "count": 0
+        },
+        {
+          "id": "decreasing-sequences",
+          "name": "Sequences That Decrease",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "UNMAPPED",
+          "name": "Unmapped",
+          "count": 3
+        }
+      ],
+      "noQuestions": [
+        {
+          "id": "decreasing-sequences",
+          "name": "Sequences That Decrease"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "continue-sequence",
+          "name": "Continuing a Sequence Using the Rule",
+          "count": 65
+        },
+        {
+          "id": "find-nth-term",
+          "name": "Finding the nth Term",
+          "count": 39
+        }
+      ],
+      "unmapped": 3
+    },
+    {
+      "topic": "datahandling",
+      "totalQuestions": 145,
+      "totalSubConcepts": 11,
+      "distribution": [
+        {
+          "id": "missing-from-mean",
+          "name": "Finding a Missing Number When the Mean is Given",
+          "count": 37
+        },
+        {
+          "id": "even-median",
+          "name": "Median with an Even Number of Values",
+          "count": 27
+        },
+        {
+          "id": "finding-mode",
+          "name": "Finding the Mode",
+          "count": 21
+        },
+        {
+          "id": "calculating-range",
+          "name": "Calculating the Range",
+          "count": 20
+        },
+        {
+          "id": "reading-bar-charts",
+          "name": "Reading Bar Charts",
+          "count": 12
+        },
+        {
+          "id": "reading-pie-charts",
+          "name": "Reading Pie Charts",
+          "count": 10
+        },
+        {
+          "id": "reading-line-graphs",
+          "name": "Reading Line Graphs",
+          "count": 7
+        },
+        {
+          "id": "combined-averages",
+          "name": "Questions Using Mode AND Range Together",
+          "count": 5
+        },
+        {
+          "id": "reading-tables",
+          "name": "Reading Two-Way Tables",
+          "count": 5
+        },
+        {
+          "id": "finding-median",
+          "name": "Finding the Median",
+          "count": 1
+        },
+        {
+          "id": "master-mean-average",
+          "name": "Calculating the Mean Average",
+          "count": 0
+        }
+      ],
+      "needsMore": [
+        {
+          "id": "finding-median",
+          "name": "Finding the Median",
+          "count": 1
+        }
+      ],
+      "noQuestions": [],
+      "heavy": [
+        {
+          "id": "missing-from-mean",
+          "name": "Finding a Missing Number When the Mean is Given",
+          "count": 37
+        },
+        {
+          "id": "even-median",
+          "name": "Median with an Even Number of Values",
+          "count": 27
+        }
+      ],
+      "unmapped": 0
+    },
+    {
+      "topic": "speeddistancetime",
+      "totalQuestions": 115,
+      "totalSubConcepts": 10,
+      "distribution": [
+        {
+          "id": "calculate-distance",
+          "name": "Distance = Speed × Time",
+          "count": 42
+        },
+        {
+          "id": "minutes-to-hours",
+          "name": "Converting Minutes to Hours for SDT",
+          "count": 40
+        },
+        {
+          "id": "average-speed",
+          "name": "Average Speed for Two-Part Journeys",
+          "count": 12
+        },
+        {
+          "id": "kmh-to-ms",
+          "name": "Converting km/h to m/s",
+          "count": 11
+        },
+        {
+          "id": "time-in-minutes",
+          "name": "Converting Decimal Hours to Minutes",
+          "count": 10
+        },
+        {
+          "id": "master-speed-formula",
+          "name": "Using Speed = Distance ÷ Time",
+          "count": 0
+        },
+        {
+          "id": "calculate-time",
+          "name": "Time = Distance ÷ Speed",
+          "count": 0
+        },
+        {
+          "id": "sdt-triangle",
+          "name": "The SDT Triangle",
+          "count": 0
+        },
+        {
+          "id": "metres-to-km",
+          "name": "Converting Metres to Kilometres for SDT",
+          "count": 0
+        },
+        {
+          "id": "word-problems",
+          "name": "Multi-Step SDT Word Problems",
+          "count": 0
+        }
+      ],
+      "needsMore": [],
+      "noQuestions": [
+        {
+          "id": "calculate-time",
+          "name": "Time = Distance ÷ Speed"
+        },
+        {
+          "id": "sdt-triangle",
+          "name": "The SDT Triangle"
+        },
+        {
+          "id": "metres-to-km",
+          "name": "Converting Metres to Kilometres for SDT"
+        },
+        {
+          "id": "word-problems",
+          "name": "Multi-Step SDT Word Problems"
+        }
+      ],
+      "heavy": [
+        {
+          "id": "calculate-distance",
+          "name": "Distance = Speed × Time",
+          "count": 42
+        },
+        {
+          "id": "minutes-to-hours",
+          "name": "Converting Minutes to Hours for SDT",
+          "count": 40
+        }
+      ],
+      "unmapped": 0
+    }
+  ],
+  "allGaps": [
+    {
+      "topic": "percentages",
+      "subConcept": "express-as-percentage",
+      "name": "Expressing One Number as a Percentage of Another",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "comparing-fdp",
+      "name": "Comparing Fractions, Decimals and Percentages",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "building-percentages",
+      "name": "Building Percentages from 10% and 1%",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "percent-to-decimal",
+      "name": "Converting Between Percentages and Decimals",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "percent-to-fraction",
+      "name": "Converting Percentages to Fractions",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "reverse-percentage",
+      "name": "Reverse Percentages",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "successive-percentages",
+      "name": "Successive Percentage Changes",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "percentages",
+      "subConcept": "percentage-word-problems",
+      "name": "Percentage Word Problems",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "subtracting-decimals",
+      "name": "Subtracting Decimals",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "dividing-decimal-by-decimal",
+      "name": "Dividing by a Decimal",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "divide-by-10-100-1000",
+      "name": "Dividing by 10, 100 and 1000",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "rounding-decimals",
+      "name": "Rounding Decimals",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "comparing-decimals",
+      "name": "Comparing and Ordering Decimals",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "decimals",
+      "subConcept": "decimal-to-percentage",
+      "name": "Decimal to Percentage",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "longdivision",
+      "subConcept": "interpreting-remainders",
+      "name": "What To Do With Remainders",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "longdivision",
+      "subConcept": "dividing-word-problems",
+      "name": "Division Word Problems",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "ratio",
+      "subConcept": "finding-missing-values",
+      "name": "Finding Missing Values in Ratios",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "ratio",
+      "subConcept": "unitary-method",
+      "name": "The Unitary Method",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "multiplying-fractions",
+      "name": "Multiplying Fractions by Whole Numbers",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "mixed-improper",
+      "name": "Mixed and Improper Fractions",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "adding-diff-denom",
+      "name": "Adding Fractions (Different Denominators)",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "subtracting-diff-denom",
+      "name": "Subtracting Fractions (Different Denominators)",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "fraction-to-decimal",
+      "name": "Fraction to Decimal",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "fraction-to-percentage",
+      "name": "Fraction to Percentage",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "fractions",
+      "subConcept": "fraction-word-problems",
+      "name": "Fraction Word Problems",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "algebra",
+      "subConcept": "using-letters",
+      "name": "Using Letters for Unknowns",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "algebra",
+      "subConcept": "function-machines",
+      "name": "Function Machines",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "placevalue",
+      "subConcept": "rounding-decimals",
+      "name": "Rounding Decimals",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "placevalue",
+      "subConcept": "adding-subtracting-powers-10",
+      "name": "Adding/Subtracting 10, 100, 1000 Mentally",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "negativenumbers",
+      "subConcept": "adding-to-negatives",
+      "name": "Adding to Negative Numbers",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "negativenumbers",
+      "subConcept": "real-world-contexts",
+      "name": "Negatives in Real Life",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "primenumbers",
+      "subConcept": "factor-pairs",
+      "name": "Finding Factor Pairs",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "primenumbers",
+      "subConcept": "divisibility-rules",
+      "name": "Quick Tests for Divisibility",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "primenumbers",
+      "subConcept": "hcf-lcm-word-problems",
+      "name": "HCF and LCM in Context",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "areaperimeter",
+      "subConcept": "area-triangles",
+      "name": "Area of Triangles (half base times height)",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "areaperimeter",
+      "subConcept": "unit-conversion",
+      "name": "Converting cm² and m²",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "areaperimeter",
+      "subConcept": "area-parallelograms",
+      "name": "Area of Parallelograms (base times height)",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "volume",
+      "subConcept": "comparing-volumes",
+      "name": "Same Volume, Different Shapes",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "volume",
+      "subConcept": "scaling-volumes",
+      "name": "Doubling Edge Length Multiplies Volume by 8",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "volume",
+      "subConcept": "volume-word-problems",
+      "name": "Real-world Volume Problems",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "anglesshapes",
+      "subConcept": "angle-types",
+      "name": "Recognising Angle Types",
+      "count": 2,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "anglesshapes",
+      "subConcept": "algebraic-angles",
+      "name": "Using Algebra to Find Angles",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "anglesshapes",
+      "subConcept": "irregular-polygon-angle",
+      "name": "Finding a Missing Angle in an Irregular Polygon",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "sequences",
+      "subConcept": "UNMAPPED",
+      "name": "Unmapped",
+      "count": 3,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "sequences",
+      "subConcept": "decreasing-sequences",
+      "name": "Sequences That Decrease",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "datahandling",
+      "subConcept": "finding-median",
+      "name": "Finding the Median",
+      "count": 1,
+      "status": "NEEDS MORE"
+    },
+    {
+      "topic": "speeddistancetime",
+      "subConcept": "calculate-time",
+      "name": "Time = Distance ÷ Speed",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "speeddistancetime",
+      "subConcept": "sdt-triangle",
+      "name": "The SDT Triangle",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "speeddistancetime",
+      "subConcept": "metres-to-km",
+      "name": "Converting Metres to Kilometres for SDT",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    },
+    {
+      "topic": "speeddistancetime",
+      "subConcept": "word-problems",
+      "name": "Multi-Step SDT Word Problems",
+      "count": 0,
+      "status": "NO QUESTIONS"
+    }
+  ]
+}

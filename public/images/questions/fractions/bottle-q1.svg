@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Bottle with 4 equal level marks, top 2 portions empty (drunk) -->
+  <!-- Aisha drinks 1/4 before lunch + 1/4 after lunch = 2/4 = 1/2 -->
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Water Bottle</text>
+
+  <!-- Bottle shape -->
+  <defs>
+    <clipPath id="bottleClip">
+      <!-- Bottle body -->
+      <path d="M140,55 L140,45 Q140,35 155,35 L175,35 Q180,35 180,40 L180,55 Q180,60 190,65 L195,70 L195,260 Q195,270 185,270 L135,270 Q125,270 125,260 L125,70 L130,65 Q140,60 140,55 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Bottle outline -->
+  <path d="M140,55 L140,45 Q140,35 155,35 L175,35 Q180,35 180,40 L180,55 Q180,60 190,65 L195,70 L195,260 Q195,270 185,270 L135,270 Q125,270 125,260 L125,70 L130,65 Q140,60 140,55 Z" fill="white" stroke="gray" stroke-width="2.5"/>
+
+  <!-- Water fill: bottom half (2/4) filled with light blue -->
+  <!-- Body area from y=70 to y=270 = 200px. Each quarter = 50px -->
+  <!-- Bottom 2 quarters: y=170 to y=270 -->
+  <rect x="125" y="170" width="70" height="100" fill="#87CEEB" clip-path="url(#bottleClip)"/>
+
+  <!-- Level marks (4 equal levels across the body) -->
+  <!-- Body from y=70 to y=270, each quarter at: 70, 120, 170, 220, 270 -->
+  <line x1="122" y1="120" x2="132" y2="120" stroke="gray" stroke-width="1.5"/>
+  <line x1="188" y1="120" x2="198" y2="120" stroke="gray" stroke-width="1.5"/>
+  <line x1="122" y1="170" x2="132" y2="170" stroke="gray" stroke-width="1.5"/>
+  <line x1="188" y1="170" x2="198" y2="170" stroke="gray" stroke-width="1.5"/>
+  <line x1="122" y1="220" x2="132" y2="220" stroke="gray" stroke-width="1.5"/>
+  <line x1="188" y1="220" x2="198" y2="220" stroke="gray" stroke-width="1.5"/>
+
+  <!-- Level labels on the right side -->
+  <text x="207" y="98" font-family="Arial" font-size="12" fill="black">4/4 (full)</text>
+  <text x="207" y="123" font-family="Arial" font-size="12" fill="black">3/4</text>
+  <text x="207" y="173" font-family="Arial" font-size="12" fill="black">2/4 = 1/2</text>
+  <text x="207" y="223" font-family="Arial" font-size="12" fill="black">1/4</text>
+
+  <!-- Annotations showing what was drunk -->
+  <!-- Before lunch: top quarter (70-120) -->
+  <line x1="120" y1="95" x2="80" y2="95" stroke="#CC4444" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="78" y="92" text-anchor="end" font-family="Arial" font-size="12" fill="#CC4444">1/4 before</text>
+  <text x="78" y="105" text-anchor="end" font-family="Arial" font-size="12" fill="#CC4444">lunch</text>
+
+  <!-- After lunch: second quarter (120-170) -->
+  <line x1="120" y1="145" x2="80" y2="145" stroke="#CC4444" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="78" y="142" text-anchor="end" font-family="Arial" font-size="12" fill="#CC4444">1/4 after</text>
+  <text x="78" y="155" text-anchor="end" font-family="Arial" font-size="12" fill="#CC4444">lunch</text>
+
+  <!-- Curly brace area for "drunk" portion -->
+  <text x="55" y="220" text-anchor="end" font-family="Arial" font-size="13" fill="black">1/2 left</text>
+
+  <!-- Bottom annotation -->
+  <text x="200" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="black">Total drunk: 1/4 + 1/4 = 2/4 = 1/2</text>
+</svg>

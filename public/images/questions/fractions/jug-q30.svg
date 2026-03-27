@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Jug 7/8 full, Dad pours out 3/8 -->
+  <!-- Shows: starts at 7/8, pours out 3/8, leaves 4/8 = 1/2 -->
+
+  <!-- Title -->
+  <text x="200" y="22" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Jug of Orange Juice</text>
+
+  <!-- Jug shape -->
+  <defs>
+    <clipPath id="jugClip">
+      <path d="M120,50 L230,50 L240,255 L110,255 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Jug outline -->
+  <path d="M120,50 L230,50 L240,255 Q240,265 230,265 L120,265 Q110,265 110,255 Z" fill="white" stroke="gray" stroke-width="2.5"/>
+  <!-- Jug handle -->
+  <path d="M230,75 Q270,75 270,125 Q270,175 230,175" fill="none" stroke="gray" stroke-width="2.5"/>
+  <!-- Jug spout -->
+  <path d="M120,50 Q108,45 105,50" fill="none" stroke="gray" stroke-width="2.5"/>
+
+  <!-- Orange juice fill: 7/8 full -->
+  <!-- Body height: 50 to 255 = 205px. Each eighth = 25.625px -->
+  <!-- 7/8 full: top of juice = 255 - 179.4 = 75.6 -->
+  <rect x="110" y="76" width="132" height="180" fill="#FFA500" fill-opacity="0.5" clip-path="url(#jugClip)"/>
+
+  <!-- Dashed line showing the "poured out" portion: 3/8 from top of juice -->
+  <!-- 3/8 of jug = 76.9px. Poured region: y=76 to y=153 -->
+  <rect x="110" y="76" width="132" height="77" fill="#FFA500" fill-opacity="0.2" clip-path="url(#jugClip)"/>
+  <line x1="110" y1="153" x2="240" y2="153" stroke="red" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Level marks (8 equal levels) -->
+  <!-- Marks at: 50 + 25.6*1=76, *2=101, *3=127, *4=153, *5=178, *6=204, *7=230 -->
+  <line x1="107" y1="76" x2="120" y2="76" stroke="gray" stroke-width="1.5"/>
+  <line x1="228" y1="76" x2="241" y2="76" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="101" x2="120" y2="101" stroke="gray" stroke-width="1.5"/>
+  <line x1="229" y1="101" x2="242" y2="101" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="127" x2="120" y2="127" stroke="gray" stroke-width="1.5"/>
+  <line x1="230" y1="127" x2="243" y2="127" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="153" x2="120" y2="153" stroke="gray" stroke-width="1.5"/>
+  <line x1="231" y1="153" x2="244" y2="153" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="178" x2="120" y2="178" stroke="gray" stroke-width="1.5"/>
+  <line x1="232" y1="178" x2="245" y2="178" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="204" x2="120" y2="204" stroke="gray" stroke-width="1.5"/>
+  <line x1="233" y1="204" x2="246" y2="204" stroke="gray" stroke-width="1.5"/>
+  <line x1="107" y1="230" x2="120" y2="230" stroke="gray" stroke-width="1.5"/>
+  <line x1="234" y1="230" x2="247" y2="230" stroke="gray" stroke-width="1.5"/>
+
+  <!-- Right side level labels -->
+  <text x="252" y="55" font-family="Arial" font-size="11" fill="black">8/8</text>
+  <text x="252" y="80" font-family="Arial" font-size="11" fill="black">7/8</text>
+  <text x="252" y="106" font-family="Arial" font-size="11" fill="black">6/8</text>
+  <text x="252" y="131" font-family="Arial" font-size="11" fill="black">5/8</text>
+  <text x="252" y="157" font-family="Arial" font-size="11" fill="red" font-weight="bold">4/8</text>
+  <text x="252" y="182" font-family="Arial" font-size="11" fill="black">3/8</text>
+  <text x="252" y="208" font-family="Arial" font-size="11" fill="black">2/8</text>
+  <text x="252" y="234" font-family="Arial" font-size="11" fill="black">1/8</text>
+
+  <!-- Left side annotations -->
+  <!-- Poured out portion bracket -->
+  <line x1="95" y1="76" x2="95" y2="153" stroke="#CC4444" stroke-width="2"/>
+  <line x1="90" y1="76" x2="100" y2="76" stroke="#CC4444" stroke-width="2"/>
+  <line x1="90" y1="153" x2="100" y2="153" stroke="#CC4444" stroke-width="2"/>
+  <text x="85" y="112" text-anchor="end" font-family="Arial" font-size="12" fill="#CC4444">3/8</text>
+  <text x="85" y="126" text-anchor="end" font-family="Arial" font-size="11" fill="#CC4444">poured</text>
+  <text x="85" y="139" text-anchor="end" font-family="Arial" font-size="11" fill="#CC4444">out</text>
+
+  <!-- Remaining portion bracket -->
+  <line x1="95" y1="153" x2="95" y2="255" stroke="#2E8B57" stroke-width="2"/>
+  <line x1="90" y1="153" x2="100" y2="153" stroke="#2E8B57" stroke-width="2"/>
+  <line x1="90" y1="255" x2="100" y2="255" stroke="#2E8B57" stroke-width="2"/>
+  <text x="85" y="200" text-anchor="end" font-family="Arial" font-size="12" fill="#2E8B57">4/8</text>
+  <text x="85" y="214" text-anchor="end" font-family="Arial" font-size="11" fill="#2E8B57">left</text>
+
+  <!-- Bottom annotation -->
+  <text x="200" y="290" text-anchor="middle" font-family="Arial" font-size="14" fill="black">7/8 - 3/8 = 4/8 = 1/2 left</text>
+</svg>

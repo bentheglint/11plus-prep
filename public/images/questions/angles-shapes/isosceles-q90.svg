@@ -1,0 +1,8 @@
+<svg width="380" height="300" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="190.0,30.0 135.7,265.0 244.3,265.0" fill="lightskyblue" fill-opacity="0.15" stroke="black" stroke-width="2"/>
+  <line x1="172.6" y1="149.7" x2="153.1" y2="145.3" stroke="black" stroke-width="2"/>
+  <line x1="226.9" y1="145.3" x2="207.4" y2="149.7" stroke="black" stroke-width="2"/>
+  <text x="190.0" y="97.2" font-family="Arial" font-size="16" fill="red" text-anchor="middle">?</text>
+  <text x="161.8" y="249.2" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">77°</text>
+  <text x="218.2" y="249.2" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">77°</text>
+</svg>

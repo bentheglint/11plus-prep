@@ -1,0 +1,1857 @@
+// ============================================================
+// Supplementary sub-concepts for Letter Codes (Verbal Reasoning)
+// To merge: add these to lessonBank.letterCodes.subConcepts array in lessonData.js
+// ============================================================
+
+export const letterCodesSubConcepts = [
+
+  // ==========================================
+  // SUB-CONCEPT 1: Forward Shift
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "forward-shift",
+    name: "Forward Shift",
+    category: "core",
+    lessons: [
+      {
+        id: "forward-shift-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to apply forward shifts in the alphabet",
+          "How to apply +1, +2, +3 shifts confidently"
+        ],
+        variableSets: [
+          // CAT +2: C(3)→E(5), A(1)→C(3), T(20)→V(22) = ECV
+          {
+            name: "Daisy",
+            scenario: "practising forward shifts",
+            originalWord: "CAT",
+            codedWord: "ECV",
+            shiftAmount: 2,
+            shiftDirection: "forward",
+            letterBreakdown: ["C(3) + 2 = E(5)", "A(1) + 2 = C(3)", "T(20) + 2 = V(22)"],
+            options: ["ECV", "DBU", "FDW", "ECW", "DCV"],
+            correctAnswer: "ECV",
+            explanation: "Each letter shifts forward 2: C→E, A→C, T→V. CAT becomes ECV. ✓"
+          },
+          // PEN +3: P(16)→S(19), E(5)→H(8), N(14)→Q(17) = SHQ
+          {
+            name: "Oliver",
+            scenario: "encoding words with forward shifts",
+            originalWord: "PEN",
+            codedWord: "SHQ",
+            shiftAmount: 3,
+            shiftDirection: "forward",
+            letterBreakdown: ["P(16) + 3 = S(19)", "E(5) + 3 = H(8)", "N(14) + 3 = Q(17)"],
+            options: ["SHQ", "RGP", "TIR", "SGQ", "SHP"],
+            correctAnswer: "SHQ",
+            explanation: "Each letter shifts forward 3: P→S, E→H, N→Q. PEN becomes SHQ. ✓"
+          },
+          // DOG +1: D(4)→E(5), O(15)→P(16), G(7)→H(8) = EPH
+          {
+            name: "Priya",
+            scenario: "working through a +1 shift",
+            originalWord: "DOG",
+            codedWord: "EPH",
+            shiftAmount: 1,
+            shiftDirection: "forward",
+            letterBreakdown: ["D(4) + 1 = E(5)", "O(15) + 1 = P(16)", "G(7) + 1 = H(8)"],
+            options: ["EPH", "COF", "FQI", "EPG", "FOH"],
+            correctAnswer: "EPH",
+            explanation: "Each letter shifts forward 1: D→E, O→P, G→H. DOG becomes EPH. ✓"
+          },
+          // FISH +2: F(6)→H(8), I(9)→K(11), S(19)→U(21), H(8)→J(10) = HKUJ
+          {
+            name: "Finn",
+            scenario: "coding a four-letter word forward",
+            originalWord: "FISH",
+            codedWord: "HKUJ",
+            shiftAmount: 2,
+            shiftDirection: "forward",
+            letterBreakdown: ["F(6) + 2 = H(8)", "I(9) + 2 = K(11)", "S(19) + 2 = U(21)", "H(8) + 2 = J(10)"],
+            options: ["HKUJ", "GJTI", "ILVK", "HKTJ", "HKUK"],
+            correctAnswer: "HKUJ",
+            explanation: "Each letter shifts forward 2: F→H, I→K, S→U, H→J. FISH becomes HKUJ. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What is ${v.originalWord} coded as?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nA **forward shift** means every letter jumps FORWARD in the alphabet. A shift of +${v.shiftAmount} means each letter moves ${v.shiftAmount} place${v.shiftAmount > 1 ? 's' : ''} forward.\n\nCan you work out what **${v.originalWord}** becomes with a +${v.shiftAmount} shift?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Count Forward",
+            body: (v) => `Let's work through **${v.originalWord}** with a shift of +${v.shiftAmount}. Take each letter and count ${v.shiftAmount} place${v.shiftAmount > 1 ? 's' : ''} forward in the alphabet.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === 0 ? "Count forward from each letter" : i === v.letterBreakdown.length - 1 ? `${v.originalWord} → ${v.codedWord} ✓` : "Same shift applies to every letter"
+                })),
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Note the shift amount: +${v.shiftAmount}`,
+                `Take each letter and count ${v.shiftAmount} place${v.shiftAmount > 1 ? 's' : ''} forward`,
+                `Write down the new letter to build the code`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Note the shift, count forward, write the result. ✓`,
+                incorrect: (v) => `Not quite — start by noting the shift amount first!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Each letter shifts **forward ${v.shiftAmount}**. What does **${v.originalWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Forward shift recipe",
+            body: () => `For any forward shift:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Note the shift amount (+1, +2, +3...)", why: "How many places forward?" },
+                  { text: "2. Take each letter and count forward", why: "Use EJOTY (a memory trick — every 5th letter: E=5, J=10, O=15, T=20, Y=25) to stay on track" },
+                  { text: "3. Write down the new letter each time", why: "CAT +2 = ECV, DOG +1 = EPH ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+      {
+        id: "forward-shift-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid common mistakes when counting forward shifts",
+          "Why off-by-one errors happen and how to avoid them"
+        ],
+        variableSets: [
+          // BED +2: B(2)→D(4), E(5)→G(7), D(4)→F(6) = DGF (friend says DEF — counted from wrong letter)
+          {
+            name: "Evie",
+            scenario: "checking her brother's code homework",
+            originalWord: "BED",
+            codedWord: "DGF",
+            shiftAmount: 2,
+            shiftDirection: "forward",
+            letterBreakdown: ["B(2) + 2 = D(4)", "E(5) + 2 = G(7)", "D(4) + 2 = F(6)"],
+            friendWrong: "DEF",
+            friendReason: "counted the starting letter as step 1 instead of step 0",
+            whyWrong: "Counting B as 1 gives C at 2 — but the shift should START after B. B +2 means go 2 MORE: B→C→D",
+            options: ["DGF", "DEF", "CFE", "DGE", "CGF"],
+            correctAnswer: "DGF",
+            explanation: "B +2 = D (not C), E +2 = G (not F), D +2 = F (not E). BED becomes DGF, not DEF. ✓"
+          },
+          // RUN +3: R(18)→U(21), U(21)→X(24), N(14)→Q(17) = UXQ (friend says TWP — counted +2 instead of +3)
+          {
+            name: "Marcus",
+            scenario: "reviewing his practice test answers",
+            originalWord: "RUN",
+            codedWord: "UXQ",
+            shiftAmount: 3,
+            shiftDirection: "forward",
+            letterBreakdown: ["R(18) + 3 = U(21)", "U(21) + 3 = X(24)", "N(14) + 3 = Q(17)"],
+            friendWrong: "TWP",
+            friendReason: "accidentally shifted by +2 instead of +3",
+            whyWrong: "TWP is RUN +2, not +3. Always double-check you're counting the right number of hops!",
+            options: ["UXQ", "TWP", "SVP", "UXP", "VYR"],
+            correctAnswer: "UXQ",
+            explanation: "R +3 = U, U +3 = X, N +3 = Q. RUN +3 = UXQ, not TWP (which is +2). ✓"
+          },
+          // HAT +1: H(8)→I(9), A(1)→B(2), T(20)→U(21) = IBU (friend says HBU — forgot to shift H)
+          {
+            name: "Aisha",
+            scenario: "spotting errors in a friend's work",
+            originalWord: "HAT",
+            codedWord: "IBU",
+            shiftAmount: 1,
+            shiftDirection: "forward",
+            letterBreakdown: ["H(8) + 1 = I(9)", "A(1) + 1 = B(2)", "T(20) + 1 = U(21)"],
+            friendWrong: "HBU",
+            friendReason: "forgot to shift the first letter",
+            whyWrong: "Every letter must shift — including the first one! H +1 = I, not H",
+            options: ["IBU", "HBU", "ICU", "IBT", "JAV"],
+            correctAnswer: "IBU",
+            explanation: "H +1 = I (not H!), A +1 = B, T +1 = U. HAT +1 = IBU. Don't forget to shift every letter. ✓"
+          },
+          // GATE +2: G(7)→I(9), A(1)→C(3), T(20)→V(22), E(5)→G(7) = ICVG (friend says ICVE — last letter wrong)
+          {
+            name: "Charlie",
+            scenario: "going over his mock test",
+            originalWord: "GATE",
+            codedWord: "ICVG",
+            shiftAmount: 2,
+            shiftDirection: "forward",
+            letterBreakdown: ["G(7) + 2 = I(9)", "A(1) + 2 = C(3)", "T(20) + 2 = V(22)", "E(5) + 2 = G(7)"],
+            friendWrong: "ICVE",
+            friendReason: "left the last letter unchanged by mistake",
+            whyWrong: "E +2 = G, not E! Every letter must shift, including the last one",
+            options: ["ICVG", "ICVE", "ICUF", "JDWG", "ICVH"],
+            correctAnswer: "ICVG",
+            explanation: "G→I, A→C, T→V, E→G. All four letters shift +2. GATE becomes ICVG, not ICVE. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Is "${v.friendWrong}" the right code for ${v.originalWord}?`,
+            body: (v) => `${v.name} is ${v.scenario}. The answer given was **"${v.friendWrong}"** as the +${v.shiftAmount} code for **${v.originalWord}**.\n\nBut that's wrong! Can you spot the mistake?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Spot the counting error!",
+            body: (v) => `The mistake: ${v.friendReason}.\n\n${v.whyWrong}`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: "${v.friendWrong}"`, why: v.friendReason },
+                  ...v.letterBreakdown.map((step, i) => ({ text: step, why: i === 0 ? "Count forward from the starting letter — don't count the letter itself" : "Same shift for every letter" })),
+                  { text: `Correct: "${v.codedWord}" ✓`, why: "Every letter must shift by the same amount" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "What's the CORRECT code?",
+            body: (v) => `Shift **${v.originalWord}** forward by ${v.shiftAmount}. What's the right answer?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Well done! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Avoid counting mistakes!",
+            body: () => `Common forward-shift errors:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Don't count the starting letter as step 1", why: "B +2 means B→C→D, not B→C" },
+                  { text: "Shift EVERY letter — including first and last", why: "Don't leave any letter unchanged" },
+                  { text: "Double-check the shift number", why: "+3 means three hops, not two! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 2: Backward Shift
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "backward-shift",
+    name: "Backward Shift",
+    category: "core",
+    lessons: [
+      {
+        id: "backward-shift-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to apply backward shifts in the alphabet",
+          "How to apply -1, -2, -3 shifts without getting muddled"
+        ],
+        variableSets: [
+          // SUN -1: S(19)→R(18), U(21)→T(20), N(14)→M(13) = RTM
+          {
+            name: "Daisy",
+            scenario: "practising backward shifts",
+            originalWord: "SUN",
+            codedWord: "RTM",
+            shiftAmount: -1,
+            shiftDirection: "backward",
+            letterBreakdown: ["S(19) - 1 = R(18)", "U(21) - 1 = T(20)", "N(14) - 1 = M(13)"],
+            options: ["RTM", "TVO", "QSL", "RTN", "RUM"],
+            correctAnswer: "RTM",
+            explanation: "Each letter shifts back 1: S→R, U→T, N→M. SUN becomes RTM. ✓"
+          },
+          // HELP -2: H(8)→F(6), E(5)→C(3), L(12)→J(10), P(16)→N(14) = FCJN
+          {
+            name: "Oliver",
+            scenario: "applying a -2 shift to a word",
+            originalWord: "HELP",
+            codedWord: "FCJN",
+            shiftAmount: -2,
+            shiftDirection: "backward",
+            letterBreakdown: ["H(8) - 2 = F(6)", "E(5) - 2 = C(3)", "L(12) - 2 = J(10)", "P(16) - 2 = N(14)"],
+            options: ["FCJN", "GDKO", "EBIN", "FCKN", "FCJO"],
+            correctAnswer: "FCJN",
+            explanation: "Each letter shifts back 2: H→F, E→C, L→J, P→N. HELP becomes FCJN. ✓"
+          },
+          // TOP -1: T(20)→S(19), O(15)→N(14), P(16)→O(15) = SNO
+          {
+            name: "Priya",
+            scenario: "working through a -1 shift",
+            originalWord: "TOP",
+            codedWord: "SNO",
+            shiftAmount: -1,
+            shiftDirection: "backward",
+            letterBreakdown: ["T(20) - 1 = S(19)", "O(15) - 1 = N(14)", "P(16) - 1 = O(15)"],
+            options: ["SNO", "UPQ", "RMN", "SMP", "SNP"],
+            correctAnswer: "SNO",
+            explanation: "Each letter shifts back 1: T→S, O→N, P→O. TOP becomes SNO. ✓"
+          },
+          // NEST -3: N(14)→K(11), E(5)→B(2), S(19)→P(16), T(20)→Q(17) = KBPQ
+          {
+            name: "Finn",
+            scenario: "decoding with a bigger backward shift",
+            originalWord: "NEST",
+            codedWord: "KBPQ",
+            shiftAmount: -3,
+            shiftDirection: "backward",
+            letterBreakdown: ["N(14) - 3 = K(11)", "E(5) - 3 = B(2)", "S(19) - 3 = P(16)", "T(20) - 3 = Q(17)"],
+            options: ["KBPQ", "LCQR", "JAOQ", "KBPR", "KCPQ"],
+            correctAnswer: "KBPQ",
+            explanation: "Each letter shifts back 3: N→K, E→B, S→P, T→Q. NEST becomes KBPQ. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What is ${v.originalWord} coded as?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nA **backward shift** means every letter moves BACK in the alphabet. A shift of ${v.shiftAmount} means each letter moves ${Math.abs(v.shiftAmount)} place${Math.abs(v.shiftAmount) > 1 ? 's' : ''} backward.\n\nCan you work out what **${v.originalWord}** becomes?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Count Backward",
+            body: (v) => `Let's work through **${v.originalWord}** with a shift of ${v.shiftAmount}. Take each letter and count ${Math.abs(v.shiftAmount)} place${Math.abs(v.shiftAmount) > 1 ? 's' : ''} back in the alphabet.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === 0 ? "Count backward from each letter" : i === v.letterBreakdown.length - 1 ? `${v.originalWord} → ${v.codedWord} ✓` : "Same shift applies to every letter"
+                })),
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Each letter shifts **backward ${Math.abs(v.shiftAmount)}**. What does **${v.originalWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Backward shift recipe",
+            body: () => `For any backward shift:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Note the shift amount (-1, -2, -3...)", why: "How many places backward?" },
+                  { text: "2. Take each letter and count backward", why: "Use EJOTY landmarks (E=5, J=10, O=15, T=20, Y=25) in reverse" },
+                  { text: "3. Write the new letter each time", why: "SUN -1 = RTM, HELP -2 = FCJN ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+      {
+        id: "backward-shift-practice",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to apply backward shifts at different levels",
+          "How to build speed and confidence counting backward"
+        ],
+        variableSets: [
+          // PIG -1: P(16)→O(15), I(9)→H(8), G(7)→F(6) = OHF
+          {
+            name: "Evie",
+            scenario: "building speed with backward codes",
+            originalWord: "PIG",
+            codedWord: "OHF",
+            shiftAmount: -1,
+            shiftDirection: "backward",
+            letterBreakdown: ["P(16) - 1 = O(15)", "I(9) - 1 = H(8)", "G(7) - 1 = F(6)"],
+            options: ["OHF", "QJH", "NGE", "OIF", "OHG"],
+            correctAnswer: "OHF",
+            explanation: "Each letter shifts back 1: P→O, I→H, G→F. PIG becomes OHF. ✓"
+          },
+          // LAMP -2: L(12)→J(10), A(1)→Y(25... wait, that wraps. Let me use GOLD instead)
+          // GOLD -2: G(7)→E(5), O(15)→M(13), L(12)→J(10), D(4)→B(2) = EMJB
+          {
+            name: "Marcus",
+            scenario: "tackling -2 shifts with confidence",
+            originalWord: "GOLD",
+            codedWord: "EMJB",
+            shiftAmount: -2,
+            shiftDirection: "backward",
+            letterBreakdown: ["G(7) - 2 = E(5)", "O(15) - 2 = M(13)", "L(12) - 2 = J(10)", "D(4) - 2 = B(2)"],
+            options: ["EMJB", "FNIC", "DLIA", "EMJC", "ENKB"],
+            correctAnswer: "EMJB",
+            explanation: "Each letter shifts back 2: G→E, O→M, L→J, D→B. GOLD becomes EMJB. ✓"
+          },
+          // MINT -3: M(13)→J(10), I(9)→F(6), N(14)→K(11), T(20)→Q(17) = JFKQ
+          {
+            name: "Aisha",
+            scenario: "practising bigger backward shifts",
+            originalWord: "MINT",
+            codedWord: "JFKQ",
+            shiftAmount: -3,
+            shiftDirection: "backward",
+            letterBreakdown: ["M(13) - 3 = J(10)", "I(9) - 3 = F(6)", "N(14) - 3 = K(11)", "T(20) - 3 = Q(17)"],
+            options: ["JFKQ", "KGLR", "IEJP", "JFKR", "JFLQ"],
+            correctAnswer: "JFKQ",
+            explanation: "Each letter shifts back 3: M→J, I→F, N→K, T→Q. MINT becomes JFKQ. ✓"
+          },
+          // RING -1: R(18)→Q(17), I(9)→H(8), N(14)→M(13), G(7)→F(6) = QHMF
+          {
+            name: "Charlie",
+            scenario: "racing through -1 shifts",
+            originalWord: "RING",
+            codedWord: "QHMF",
+            shiftAmount: -1,
+            shiftDirection: "backward",
+            letterBreakdown: ["R(18) - 1 = Q(17)", "I(9) - 1 = H(8)", "N(14) - 1 = M(13)", "G(7) - 1 = F(6)"],
+            options: ["QHMF", "SJOH", "QHME", "QHNF", "PGLF"],
+            correctAnswer: "QHMF",
+            explanation: "Each letter shifts back 1: R→Q, I→H, N→M, G→F. RING becomes QHMF. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you shift ${v.originalWord} backward?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nBackward shifts can feel trickier than forward ones — but the method is exactly the same, just in the other direction!\n\n**${v.originalWord}** with a shift of **${v.shiftAmount}** becomes...?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Step through it",
+            body: (v) => `Let's shift **${v.originalWord}** by ${v.shiftAmount}. Take each letter one at a time and count ${Math.abs(v.shiftAmount)} back:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === v.letterBreakdown.length - 1 ? `Answer: ${v.codedWord} ✓` : ""
+                })),
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Each letter shifts **${v.shiftAmount}**. What does **${v.originalWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Backward shifts — remember!",
+            body: () => `Backward shifts work the same as forward — just the other way:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Same method, opposite direction", why: "Count back instead of forward" },
+                  { text: "Use EJOTY landmarks in reverse", why: "E=5, so D=4, C=3..." },
+                  { text: "Take your time with each letter", why: "Rushing causes miscounts ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 3: Consistent Shift
+  // Category: core
+  // Lesson A: step-by-step
+  // ==========================================
+  {
+    id: "consistent-shift",
+    name: "Consistent Shift",
+    category: "core",
+    lessons: [
+      {
+        id: "consistent-shift-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to verify that every letter shifts by the SAME amount",
+          "Why checking consistency is the key step in cracking a code"
+        ],
+        variableSets: [
+          // GAME → HBNF: G(7)→H(8)+1, A(1)→B(2)+1, M(13)→N(14)+1, E(5)→F(6)+1 = all +1 ✓
+          {
+            name: "Zara",
+            scenario: "verifying a code she's been given",
+            originalWord: "GAME",
+            codedWord: "HBNF",
+            shiftAmount: 1,
+            shiftDirection: "forward",
+            letterBreakdown: ["G→H: 8 - 7 = +1", "A→B: 2 - 1 = +1", "M→N: 14 - 13 = +1", "E→F: 6 - 5 = +1"],
+            consistencyCheck: "All letters shift +1 — consistent!",
+            options: ["+1 (forward)", "+2 (forward)", "-1 (backward)", "+3 (forward)", "-2 (backward)"],
+            correctAnswer: "+1 (forward)",
+            explanation: "G→H (+1), A→B (+1), M→N (+1), E→F (+1). Every letter shifts +1 — the rule is consistent. ✓"
+          },
+          // COLD → FROG: C(3)→F(6)+3, O(15)→R(18)+3, L(12)→O(15)+3, D(4)→G(7)+3 = all +3 ✓
+          {
+            name: "Ben",
+            scenario: "figuring out the rule from a coded pair",
+            originalWord: "COLD",
+            codedWord: "FROG",
+            shiftAmount: 3,
+            shiftDirection: "forward",
+            letterBreakdown: ["C→F: 6 - 3 = +3", "O→R: 18 - 15 = +3", "L→O: 15 - 12 = +3", "D→G: 7 - 4 = +3"],
+            consistencyCheck: "All letters shift +3 — consistent!",
+            options: ["+3 (forward)", "+2 (forward)", "-3 (backward)", "+1 (forward)", "+4 (forward)"],
+            correctAnswer: "+3 (forward)",
+            explanation: "C→F (+3), O→R (+3), L→O (+3), D→G (+3). Every letter shifts +3 — the rule is consistent. ✓"
+          },
+          // HELP → GDKO: H(8)→G(7)-1, E(5)→D(4)-1, L(12)→K(11)-1, P(16)→O(15)-1 = all -1 ✓
+          {
+            name: "Priya",
+            scenario: "checking a backward-shift code",
+            originalWord: "HELP",
+            codedWord: "GDKO",
+            shiftAmount: -1,
+            shiftDirection: "backward",
+            letterBreakdown: ["H→G: 7 - 8 = -1", "E→D: 4 - 5 = -1", "L→K: 11 - 12 = -1", "P→O: 15 - 16 = -1"],
+            consistencyCheck: "All letters shift -1 — consistent!",
+            options: ["-1 (backward)", "+1 (forward)", "-2 (backward)", "+2 (forward)", "-3 (backward)"],
+            correctAnswer: "-1 (backward)",
+            explanation: "H→G (-1), E→D (-1), L→K (-1), P→O (-1). Every letter shifts -1 — the rule is consistent. ✓"
+          },
+          // WOLF → UMJD: W(23)→U(21)-2, O(15)→M(13)-2, L(12)→J(10)-2, F(6)→D(4)-2 = all -2 ✓
+          {
+            name: "Finn",
+            scenario: "cracking a trickier code",
+            originalWord: "WOLF",
+            codedWord: "UMJD",
+            shiftAmount: -2,
+            shiftDirection: "backward",
+            letterBreakdown: ["W→U: 21 - 23 = -2", "O→M: 13 - 15 = -2", "L→J: 10 - 12 = -2", "F→D: 4 - 6 = -2"],
+            consistencyCheck: "All letters shift -2 — consistent!",
+            options: ["-2 (backward)", "-1 (backward)", "+2 (forward)", "-3 (backward)", "+1 (forward)"],
+            correctAnswer: "-2 (backward)",
+            explanation: "W→U (-2), O→M (-2), L→J (-2), F→D (-2). Every letter shifts -2 — the rule is consistent. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What's the rule for ${v.originalWord} → ${v.codedWord}?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nIn the 11+, you're often given a coded pair and asked: **what rule was used?**\n\nThe key is to check that EVERY letter shifts by the **same amount**. If they do, you've found the rule!`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Check every letter",
+            body: (v) => `Let's check **${v.originalWord} → ${v.codedWord}**. Line up each original letter with its coded version and count the hops. They should ALL be the same number.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  ...v.letterBreakdown.map((step, i) => ({ text: step, why: i === 0 ? "Count the hops between original and coded letter" : "Check this pair matches too" })),
+                  { text: v.consistencyCheck, why: "Same number every time — that's the rule! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "true-false",
+              statements: (v) => [
+                { text: `In a consistent shift code, every letter shifts by the same amount`, answer: true, explanation: `Correct! A consistent shift means the same hop for every letter. ✓` },
+                { text: `You only need to check the first letter pair to know the rule`, answer: false, explanation: `Not safe! Always check at least two pairs to confirm the shift is consistent.` }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the shift rule?",
+            body: (v) => `**${v.originalWord}** is coded as **${v.codedWord}**. What shift has been used?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Consistency check recipe",
+            body: () => `To identify the shift rule:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Line up original and coded letters", why: "Write them side by side" },
+                  { text: "2. Count the hops for EACH pair", why: "Forward = positive, backward = negative" },
+                  { text: "3. They should all be the SAME number", why: "If they match, that's the rule! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 4: Variable Shift
+  // Category: supporting
+  // Lesson A: step-by-step
+  // ==========================================
+  {
+    id: "variable-shift",
+    name: "Variable Shift",
+    category: "supporting",
+    lessons: [
+      {
+        id: "variable-shift-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to handle codes where each position shifts by a different amount",
+          "How to spot patterns (rules that repeat) like +1, +2, +3 in position-based shifts"
+        ],
+        variableSets: [
+          // CAT with shifts +1, +2, +3: C(3)+1=D(4), A(1)+2=C(3), T(20)+3=W(23) = DCW
+          {
+            name: "Daisy",
+            scenario: "tackling a tricky variable-shift code",
+            originalWord: "CAT",
+            codedWord: "DCW",
+            shiftAmount: "+1, +2, +3",
+            shiftDirection: "variable forward",
+            letterBreakdown: ["C(3) + 1 = D(4)", "A(1) + 2 = C(3)", "T(20) + 3 = W(23)"],
+            shiftPattern: "Position 1 shifts +1, position 2 shifts +2, position 3 shifts +3",
+            options: ["DCW", "DBU", "ECV", "DCX", "DDW"],
+            correctAnswer: "DCW",
+            explanation: "Each position shifts differently: C+1=D, A+2=C, T+3=W. The pattern is +1, +2, +3. CAT becomes DCW. ✓"
+          },
+          // DOG with shifts +1, +2, +3: D(4)+1=E(5), O(15)+2=Q(17), G(7)+3=J(10) = EQJ
+          {
+            name: "Oliver",
+            scenario: "spotting a position-based pattern",
+            originalWord: "DOG",
+            codedWord: "EQJ",
+            shiftAmount: "+1, +2, +3",
+            shiftDirection: "variable forward",
+            letterBreakdown: ["D(4) + 1 = E(5)", "O(15) + 2 = Q(17)", "G(7) + 3 = J(10)"],
+            shiftPattern: "Position 1 shifts +1, position 2 shifts +2, position 3 shifts +3",
+            options: ["EQJ", "EPH", "FRI", "EQK", "ERJ"],
+            correctAnswer: "EQJ",
+            explanation: "Position 1: D+1=E, Position 2: O+2=Q, Position 3: G+3=J. The rule is +1, +2, +3. DOG becomes EQJ. ✓"
+          },
+          // PEN with shifts +2, +2, +2 (trick — actually consistent! But framed as checking)
+          // Let's use +1, +3, +5: P(16)+1=Q(17), E(5)+3=H(8), N(14)+5=S(19) = QHS
+          {
+            name: "Priya",
+            scenario: "working out an odd-numbers pattern",
+            originalWord: "PEN",
+            codedWord: "QHS",
+            shiftAmount: "+1, +3, +5",
+            shiftDirection: "variable forward",
+            letterBreakdown: ["P(16) + 1 = Q(17)", "E(5) + 3 = H(8)", "N(14) + 5 = S(19)"],
+            shiftPattern: "Position 1 shifts +1, position 2 shifts +3, position 3 shifts +5 (odd numbers!)",
+            options: ["QHS", "SHQ", "QGR", "QHT", "RIS"],
+            correctAnswer: "QHS",
+            explanation: "The shifts are +1, +3, +5 (odd numbers). P+1=Q, E+3=H, N+5=S. PEN becomes QHS. ✓"
+          },
+          // BIRD with shifts +1, +2, +3, +4: B(2)+1=C(3), I(9)+2=K(11), R(18)+3=U(21), D(4)+4=H(8) = CKUH
+          {
+            name: "Finn",
+            scenario: "solving a four-letter variable shift",
+            originalWord: "BIRD",
+            codedWord: "CKUH",
+            shiftAmount: "+1, +2, +3, +4",
+            shiftDirection: "variable forward",
+            letterBreakdown: ["B(2) + 1 = C(3)", "I(9) + 2 = K(11)", "R(18) + 3 = U(21)", "D(4) + 4 = H(8)"],
+            shiftPattern: "Position 1 shifts +1, position 2 shifts +2, position 3 shifts +3, position 4 shifts +4",
+            options: ["CKUH", "DKTF", "CKUI", "CLVH", "BJTG"],
+            correctAnswer: "CKUH",
+            explanation: "The shifts increase: +1, +2, +3, +4. B+1=C, I+2=K, R+3=U, D+4=H. BIRD becomes CKUH. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `This code doesn't use a consistent shift!`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nSometimes the shift is **different for each position** in the word. The first letter might shift +1, the second +2, the third +3...\n\n**${v.originalWord}** → **${v.codedWord}**\n\nCan you spot the pattern?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Check each position separately",
+            body: (v) => `Let's check **${v.originalWord} → ${v.codedWord}**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  ...v.letterBreakdown.map((step, i) => ({ text: step, why: i === 0 ? "Count the hops for each letter separately" : "Different shift amount — the shifts vary!" })),
+                  { text: v.shiftPattern, why: "The shifts follow their own pattern! ✓" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `The shifts are **${v.shiftAmount}**. What does **${v.originalWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Variable shifts — watch for patterns!",
+            body: () => `When each position shifts differently:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Count the hops for each letter separately", why: "Don't assume they're all the same!" },
+                  { text: "2. Look for a pattern in the shifts", why: "+1, +2, +3 or +1, +3, +5 etc." },
+                  { text: "3. Apply the pattern to the new word", why: "Each position gets its own shift amount ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 5: EJOTY Technique
+  // Category: supporting
+  // Lesson A: step-by-step
+  // ==========================================
+  {
+    id: "ejoty-technique",
+    name: "EJOTY — Quick Alphabet Positioning",
+    category: "supporting",
+    lessons: [
+      {
+        id: "ejoty-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to use EJOTY landmarks (E=5, J=10, O=15, T=20, Y=25) to find letter positions fast",
+          "How to count from the nearest landmark instead of from A every time"
+        ],
+        variableSets: [
+          // Find position of R: nearest EJOTY is T=20, R is 2 before T → R=18
+          {
+            name: "Daisy",
+            scenario: "learning the EJOTY speed trick",
+            targetLetter: "R",
+            position: 18,
+            nearestLandmark: "T",
+            landmarkPosition: 20,
+            countDirection: "2 before T",
+            hoppingExample: "To shift R by +3: R(18) + 3 = U(21)",
+            resultLetter: "U",
+            shiftAmount: 3,
+            options: ["18", "17", "19", "16", "20"],
+            correctAnswer: "18",
+            explanation: "R is 2 before T(20), so R = 20 - 2 = 18. Using EJOTY is much faster than counting from A! ✓"
+          },
+          // Find position of L: nearest EJOTY is J=10, L is 2 after J → L=12
+          {
+            name: "Oliver",
+            scenario: "using landmarks to find letter positions",
+            targetLetter: "L",
+            position: 12,
+            nearestLandmark: "J",
+            landmarkPosition: 10,
+            countDirection: "2 after J",
+            hoppingExample: "To shift L by -3: L(12) - 3 = I(9)",
+            resultLetter: "I",
+            shiftAmount: -3,
+            options: ["12", "11", "13", "14", "10"],
+            correctAnswer: "12",
+            explanation: "L is 2 after J(10), so L = 10 + 2 = 12. Much quicker than counting A, B, C, D... ✓"
+          },
+          // Find position of G: nearest EJOTY is E=5, G is 2 after E → G=7
+          {
+            name: "Priya",
+            scenario: "practising EJOTY for speed",
+            targetLetter: "G",
+            position: 7,
+            nearestLandmark: "E",
+            landmarkPosition: 5,
+            countDirection: "2 after E",
+            hoppingExample: "To shift G by +2: G(7) + 2 = I(9)",
+            resultLetter: "I",
+            shiftAmount: 2,
+            options: ["7", "6", "8", "5", "9"],
+            correctAnswer: "7",
+            explanation: "G is 2 after E(5), so G = 5 + 2 = 7. EJOTY gives you a head start! ✓"
+          },
+          // Find position of W: nearest EJOTY is Y=25, W is 2 before Y → W=23
+          {
+            name: "Finn",
+            scenario: "using EJOTY for letters near the end",
+            targetLetter: "W",
+            position: 23,
+            nearestLandmark: "Y",
+            landmarkPosition: 25,
+            countDirection: "2 before Y",
+            hoppingExample: "To shift W by +3: W(23) + 3 = Z(26)",
+            resultLetter: "Z",
+            shiftAmount: 3,
+            options: ["23", "22", "24", "21", "25"],
+            correctAnswer: "23",
+            explanation: "W is 2 before Y(25), so W = 25 - 2 = 23. EJOTY landmarks save time on every letter! ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "EJOTY — your secret weapon!",
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**EJOTY** gives you 5 anchor points in the alphabet:\n\n**E** = 5, **J** = 10, **O** = 15, **T** = 20, **Y** = 25\n\nInstead of counting from A every time, jump to the nearest landmark and count from there!`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: [
+                  { letter: v.targetLetter, color: "#6C5CE7" },
+                  { letter: v.nearestLandmark, color: "#dc2626" }
+                ],
+                hops: [{ from: v.nearestLandmark, to: v.targetLetter, label: v.countDirection }]
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: (v) => `Finding ${v.targetLetter} with EJOTY`,
+            body: (v) => `The nearest EJOTY landmark to **${v.targetLetter}** is **${v.nearestLandmark}** = ${v.landmarkPosition}.\n\n**${v.targetLetter}** is ${v.countDirection}, so ${v.targetLetter} = **${v.position}**.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Nearest landmark: ${v.nearestLandmark} = ${v.landmarkPosition}`, why: "Jump to the closest EJOTY letter" },
+                  { text: `${v.targetLetter} is ${v.countDirection} → ${v.targetLetter} = ${v.position}`, why: "Count a small number from the landmark" },
+                  { text: v.hoppingExample, why: "Now you can shift quickly! ✓" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "match-pairs",
+              pairs: (v) => [
+                { left: "E", right: "5" },
+                { left: "J", right: "10" },
+                { left: "O", right: "15" },
+                { left: "T", right: "20" },
+                { left: "Y", right: "25" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What position is this letter?",
+            body: (v) => `Using EJOTY, what is the position of **${v.targetLetter}** in the alphabet?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: [{ letter: v.targetLetter, color: "#6C5CE7" }]
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "EJOTY — memorise it!",
+            body: () => `Your 5 alphabet landmarks:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "E = 5, J = 10, O = 15, T = 20, Y = 25", why: "Memorise these — they never change" },
+                  { text: "Find the nearest landmark to your letter", why: "Never more than 2 away from a landmark!" },
+                  { text: "Count a small number from there", why: "R? That's T(20) - 2 = 18. Done! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 6: Reverse Decoding
+  // Category: supporting
+  // Lesson A: step-by-step | Lesson B: curiosity-hook
+  // ==========================================
+  {
+    id: "reverse-decoding",
+    name: "Reverse Decoding — Find the Original",
+    category: "supporting",
+    lessons: [
+      {
+        id: "reverse-decoding-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to work backward from a coded word to find the original",
+          "Why decoding (turning a code back into the real word) means applying the OPPOSITE shift"
+        ],
+        variableSets: [
+          // Code EPH was made with +1. Decode: E(5)-1=D(4), P(16)-1=O(15), H(8)-1=G(7) = DOG
+          {
+            name: "Daisy",
+            scenario: "working backward to find the original word",
+            codedWord: "EPH",
+            originalWord: "DOG",
+            shiftUsed: "+1",
+            reverseShift: "-1",
+            letterBreakdown: ["E(5) - 1 = D(4)", "P(16) - 1 = O(15)", "H(8) - 1 = G(7)"],
+            options: ["DOG", "FQI", "COE", "DPH", "EOG"],
+            correctAnswer: "DOG",
+            explanation: "The code used +1, so to decode, shift -1: E→D, P→O, H→G. The original word is DOG. ✓"
+          },
+          // Code FROG was made with +3. Decode: F(6)-3=C(3), R(18)-3=O(15), O(15)-3=L(12), G(7)-3=D(4) = COLD
+          {
+            name: "Oliver",
+            scenario: "decoding back to the original word",
+            codedWord: "FROG",
+            originalWord: "COLD",
+            shiftUsed: "+3",
+            reverseShift: "-3",
+            letterBreakdown: ["F(6) - 3 = C(3)", "R(18) - 3 = O(15)", "O(15) - 3 = L(12)", "G(7) - 3 = D(4)"],
+            options: ["COLD", "IURJ", "COAL", "BOLD", "COOL"],
+            correctAnswer: "COLD",
+            explanation: "The code used +3, so to decode, shift -3: F→C, R→O, O→L, G→D. The original word is COLD. ✓"
+          },
+          // Code RTM was made with -1. Decode: R(18)+1=S(19), T(20)+1=U(21), M(13)+1=N(14) = SUN
+          {
+            name: "Priya",
+            scenario: "reversing a backward shift",
+            codedWord: "RTM",
+            originalWord: "SUN",
+            shiftUsed: "-1",
+            reverseShift: "+1",
+            letterBreakdown: ["R(18) + 1 = S(19)", "T(20) + 1 = U(21)", "M(13) + 1 = N(14)"],
+            options: ["SUN", "QSL", "TVO", "RUN", "SUM"],
+            correctAnswer: "SUN",
+            explanation: "The code used -1, so to decode, shift +1: R→S, T→U, M→N. The original word is SUN. ✓"
+          },
+          // Code FCJN was made with -2. Decode: F(6)+2=H(8), C(3)+2=E(5), J(10)+2=L(12), N(14)+2=P(16) = HELP
+          {
+            name: "Finn",
+            scenario: "cracking a decoded puzzle",
+            codedWord: "FCJN",
+            originalWord: "HELP",
+            shiftUsed: "-2",
+            reverseShift: "+2",
+            letterBreakdown: ["F(6) + 2 = H(8)", "C(3) + 2 = E(5)", "J(10) + 2 = L(12)", "N(14) + 2 = P(16)"],
+            options: ["HELP", "DAHL", "HELD", "HEAP", "HELM"],
+            correctAnswer: "HELP",
+            explanation: "The code used -2, so to decode, shift +2: F→H, C→E, J→L, N→P. The original word is HELP. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What word was coded as "${v.codedWord}"?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nSometimes the 11+ gives you the **coded word** and asks: "What was the ORIGINAL word?"\n\nThis is called **decoding** (turning the code back into a real word). The trick: if the code used **${v.shiftUsed}**, you decode by doing the **opposite**: **${v.reverseShift}**.`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Reverse the shift!",
+            body: (v) => `The code used a shift of **${v.shiftUsed}**. To decode, apply the opposite shift: **${v.reverseShift}**.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === v.letterBreakdown.length - 1 ? `The original word is ${v.originalWord}! ✓` : ""
+                })),
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Note the shift that was used: ${v.shiftUsed}`,
+                `Apply the OPPOSITE shift: ${v.reverseShift}`,
+                `Check: does the result spell a real word?`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Find the shift, reverse it, then check the result. ✓`,
+                incorrect: (v) => `Not quite — start by noting the original shift, then reverse it!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Decode it!",
+            body: (v) => `The code **"${v.codedWord}"** was made with a shift of **${v.shiftUsed}**. What was the original word?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Reverse decoding recipe",
+            body: () => `To find the original word from a code:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Note the shift that was used", why: "Was it +1, +2, +3, -1, -2...?" },
+                  { text: "2. Apply the OPPOSITE shift", why: "+3 becomes -3, -1 becomes +1" },
+                  { text: "3. The result should spell a real word!", why: "If it doesn't make a word, recheck your working ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+      {
+        id: "reverse-decoding-practice",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to decode coded words back to their originals",
+          "How to reverse both forward and backward shifts confidently"
+        ],
+        variableSets: [
+          // Code VQRZ was made with +3. Decode: V(22)-3=S(19), Q(17)-3=N(14), R(18)-3=O(15), Z(26)-3=W(23) = SNOW
+          {
+            name: "Evie",
+            scenario: "decoding a weather word",
+            codedWord: "VQRZ",
+            originalWord: "SNOW",
+            shiftUsed: "+3",
+            reverseShift: "-3",
+            letterBreakdown: ["V(22) - 3 = S(19)", "Q(17) - 3 = N(14)", "R(18) - 3 = O(15)", "Z(26) - 3 = W(23)"],
+            options: ["SNOW", "YTSB", "SLOW", "SNOB", "SHOW"],
+            correctAnswer: "SNOW",
+            explanation: "Decode with -3: V→S, Q→N, R→O, Z→W. The word is SNOW. ✓"
+          },
+          // Code ORYH was made with +3. Decode: O(15)-3=L(12), R(18)-3=O(15), Y(25)-3=V(22), H(8)-3=E(5) = LOVE
+          {
+            name: "Marcus",
+            scenario: "cracking a code with +3",
+            codedWord: "ORYH",
+            originalWord: "LOVE",
+            shiftUsed: "+3",
+            reverseShift: "-3",
+            letterBreakdown: ["O(15) - 3 = L(12)", "R(18) - 3 = O(15)", "Y(25) - 3 = V(22)", "H(8) - 3 = E(5)"],
+            options: ["LOVE", "RUNE", "LIVE", "LORE", "MOVE"],
+            correctAnswer: "LOVE",
+            explanation: "Decode with -3: O→L, R→O, Y→V, H→E. The word is LOVE. ✓"
+          },
+          // Code GDKO was made with -1. Decode: G(7)+1=H(8), D(4)+1=E(5), K(11)+1=L(12), O(15)+1=P(16) = HELP
+          {
+            name: "Aisha",
+            scenario: "reversing a -1 shift",
+            codedWord: "GDKO",
+            originalWord: "HELP",
+            shiftUsed: "-1",
+            reverseShift: "+1",
+            letterBreakdown: ["G(7) + 1 = H(8)", "D(4) + 1 = E(5)", "K(11) + 1 = L(12)", "O(15) + 1 = P(16)"],
+            options: ["HELP", "FCJN", "HELD", "HEAP", "HELM"],
+            correctAnswer: "HELP",
+            explanation: "Decode with +1: G→H, D→E, K→L, O→P. The word is HELP. ✓"
+          },
+          // Code EMJB was made with -2. Decode: E(5)+2=G(7), M(13)+2=O(15), J(10)+2=L(12), B(2)+2=D(4) = GOLD
+          {
+            name: "Charlie",
+            scenario: "reversing a -2 shift",
+            codedWord: "EMJB",
+            originalWord: "GOLD",
+            shiftUsed: "-2",
+            reverseShift: "+2",
+            letterBreakdown: ["E(5) + 2 = G(7)", "M(13) + 2 = O(15)", "J(10) + 2 = L(12)", "B(2) + 2 = D(4)"],
+            options: ["GOLD", "CKHA", "GOLF", "GONE", "GOAL"],
+            correctAnswer: "GOLD",
+            explanation: "Decode with +2: E→G, M→O, J→L, B→D. The word is GOLD. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What word is hiding in "${v.codedWord}"?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nThe coded word is **"${v.codedWord}"** and the shift used was **${v.shiftUsed}**.\n\nRemember: to decode, do the **opposite** — shift each letter by **${v.reverseShift}**.`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Apply the opposite shift",
+            body: (v) => `Shift each letter of **${v.codedWord}** by **${v.reverseShift}**:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === v.letterBreakdown.length - 1 ? `The word is ${v.originalWord}! ✓` : ""
+                })),
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Decode it!",
+            body: (v) => `The code is **"${v.codedWord}"** (shift: ${v.shiftUsed}). What is the original word?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Decoding — just reverse it!",
+            body: () => `Remember the golden rule:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Code used +N? Decode with -N", why: "+3 → decode with -3" },
+                  { text: "Code used -N? Decode with +N", why: "-2 → decode with +2" },
+                  { text: "Check: does your answer spell a real word?", why: "If not, recheck each letter ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 7: Wrap-Around
+  // Category: other
+  // Lesson A: step-by-step
+  // ==========================================
+  {
+    id: "wrap-around",
+    name: "Wrap-Around — Past Z or Before A",
+    category: "other",
+    lessons: [
+      {
+        id: "wrap-around-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to handle when a shift goes past Z (wraps to A) or before A (wraps to Z)",
+          "How to handle wrap-around by counting through the 'join'"
+        ],
+        variableSets: [
+          // YES +3: Y(25)+3=B(2), E(5)+3=H(8), S(19)+3=V(22) = BHV
+          // Y(25)+3: 25+3=28, 28-26=2 → B
+          {
+            name: "Daisy",
+            scenario: "handling a shift that goes past Z",
+            originalWord: "YES",
+            codedWord: "BHV",
+            shiftAmount: 3,
+            shiftDirection: "forward",
+            letterBreakdown: ["Y(25) + 3: past Z! Y→Z→A→B = B(2)", "E(5) + 3 = H(8)", "S(19) + 3 = V(22)"],
+            wrapExplanation: "Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+            options: ["BHV", "AHV", "BIV", "BGV", "BHW"],
+            correctAnswer: "BHV",
+            explanation: "Y+3 wraps past Z to B, E+3=H, S+3=V. YES becomes BHV. When you pass Z, keep counting from A! ✓"
+          },
+          // ZAP +2: Z(26)+2=B(2), A(1)+2=C(3), P(16)+2=R(18) = BCR
+          // Z(26)+2: 26+2=28, 28-26=2 → B
+          {
+            name: "Oliver",
+            scenario: "shifting a word starting with Z",
+            originalWord: "ZAP",
+            codedWord: "BCR",
+            shiftAmount: 2,
+            shiftDirection: "forward",
+            letterBreakdown: ["Z(26) + 2: past Z! Z→A→B = B(2)", "A(1) + 2 = C(3)", "P(16) + 2 = R(18)"],
+            wrapExplanation: "Z is the last letter. Adding 2 wraps around: Z→A(1 hop)→B(2 hops)",
+            options: ["BCR", "ACR", "BDR", "BCS", "CCR"],
+            correctAnswer: "BCR",
+            explanation: "Z+2 wraps to B, A+2=C, P+2=R. ZAP becomes BCR. After Z comes A — the alphabet loops! ✓"
+          },
+          // BAD -3: B(2)-3=Y(25), A(1)-3=X(24), D(4)-3=A(1) = YXA
+          // B(2)-3: 2-3=-1, -1+26=25 → Y
+          // A(1)-3: 1-3=-2, -2+26=24 → X
+          {
+            name: "Priya",
+            scenario: "handling a backward shift past A",
+            originalWord: "BAD",
+            codedWord: "YXA",
+            shiftAmount: -3,
+            shiftDirection: "backward",
+            letterBreakdown: ["B(2) - 3: past A! B→A→Z→Y = Y(25)", "A(1) - 3: past A! A→Z→Y→X = X(24)", "D(4) - 3 = A(1)"],
+            wrapExplanation: "B is position 2. Going back 3 passes A, so it wraps: B→A(1 hop)→Z(2 hops)→Y(3 hops)",
+            options: ["YXA", "ZYA", "YXB", "YWA", "YXZ"],
+            correctAnswer: "YXA",
+            explanation: "B-3 wraps past A to Y, A-3 wraps to X, D-3=A. BAD becomes YXA. Before A comes Z — the alphabet loops! ✓"
+          },
+          // WAX +5: W(23)+5=B(2), A(1)+5=F(6), X(24)+5=C(3) = BFC
+          // W(23)+5: 23+5=28, 28-26=2 → B
+          // X(24)+5: 24+5=29, 29-26=3 → C
+          {
+            name: "Finn",
+            scenario: "dealing with a bigger wrap-around",
+            originalWord: "WAX",
+            codedWord: "BFC",
+            shiftAmount: 5,
+            shiftDirection: "forward",
+            letterBreakdown: ["W(23) + 5: past Z! W→X→Y→Z→A→B = B(2)", "A(1) + 5 = F(6)", "X(24) + 5: past Z! X→Y→Z→A→B→C = C(3)"],
+            wrapExplanation: "Both W and X wrap past Z with a +5 shift. Count through Z→A and keep going!",
+            options: ["BFC", "BGC", "BFD", "BEC", "AFC"],
+            correctAnswer: "BFC",
+            explanation: "W+5 wraps to B, A+5=F, X+5 wraps to C. WAX becomes BFC. Just keep counting through Z→A! ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "What happens AFTER Z?",
+            body: (v) => `${v.name} is ${v.scenario}.\n\nSometimes a shift takes you **past Z** or **before A**. When this happens, the alphabet **wraps around**:\n\n• After Z comes A (Z → A → B → C...)\n• Before A comes Z (A → Z → Y → X...)\n\nIt's like the alphabet is a circle!`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Count through the wrap",
+            body: (v) => `Just keep counting as if the alphabet loops around. ${v.wrapExplanation}`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === v.letterBreakdown.length - 1 ? `${v.originalWord} → ${v.codedWord} ✓` : ""
+                })),
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `When a shift goes past Z, the alphabet ____ back to A and keeps counting`,
+              options: (v) => ["wraps", "stops", "reverses", "resets"],
+              correctIndex: (v) => 0,
+              feedback: {
+                correct: (v) => `Yes! The alphabet wraps around — after Z comes A, and before A comes Z. ✓`,
+                incorrect: (v) => `Not quite — the alphabet wraps around, like a circle!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Shift **${v.originalWord}** by **${v.shiftAmount > 0 ? '+' : ''}${v.shiftAmount}**. Watch out for wrap-arounds!`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Wrap-around — the alphabet is a loop!",
+            body: () => `When shifts go past Z or before A:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "After Z comes A, then B, then C...", why: "The alphabet loops back to the start" },
+                  { text: "Before A comes Z, then Y, then X...", why: "The alphabet loops back to the end" },
+                  { text: "Just keep counting — don't stop at Z or A!", why: "Y + 3 = B, B - 3 = Y ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 8: Spotting the Pattern
+  // Category: other
+  // Lesson A: step-by-step | Lesson B: curiosity-hook
+  // ==========================================
+  {
+    id: "spotting-the-pattern",
+    name: "Spotting the Pattern",
+    category: "other",
+    lessons: [
+      {
+        id: "spotting-pattern-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to identify the shift rule from a given example pair",
+          "How to apply the discovered rule to encode (convert into code) a new word"
+        ],
+        variableSets: [
+          // STAR → TUBS (+1). Apply to MOON: M(13)+1=N(14), O(15)+1=P(16), O(15)+1=P(16), N(14)+1=O(15) = NPPO
+          {
+            name: "Daisy",
+            scenario: "finding the rule then applying it",
+            exampleOriginal: "STAR",
+            exampleCoded: "TUBS",
+            ruleFound: "+1 (each letter forward 1)",
+            letterCheck: ["S→T (+1)", "T→U (+1)", "A→B (+1)", "R→S (+1)"],
+            newWord: "MOON",
+            newCoded: "NPPO",
+            newBreakdown: ["M(13) + 1 = N(14)", "O(15) + 1 = P(16)", "O(15) + 1 = P(16)", "N(14) + 1 = O(15)"],
+            options: ["NPPO", "LNNM", "NQQO", "NPPP", "OPPO"],
+            correctAnswer: "NPPO",
+            explanation: "STAR→TUBS is +1. Apply +1 to MOON: M→N, O→P, O→P, N→O = NPPO. ✓"
+          },
+          // BOAT → ERDW (+3). Apply to HILL: H(8)+3=K(11), I(9)+3=L(12), L(12)+3=O(15), L(12)+3=O(15) = KLOO
+          {
+            name: "Oliver",
+            scenario: "cracking a code and applying it",
+            exampleOriginal: "BOAT",
+            exampleCoded: "ERDW",
+            ruleFound: "+3 (each letter forward 3)",
+            letterCheck: ["B→E (+3)", "O→R (+3)", "A→D (+3)", "T→W (+3)"],
+            newWord: "HILL",
+            newCoded: "KLOO",
+            newBreakdown: ["H(8) + 3 = K(11)", "I(9) + 3 = L(12)", "L(12) + 3 = O(15)", "L(12) + 3 = O(15)"],
+            options: ["KLOO", "JKNN", "KLOP", "KMOO", "HLOO"],
+            correctAnswer: "KLOO",
+            explanation: "BOAT→ERDW is +3. Apply +3 to HILL: H→K, I→L, L→O, L→O = KLOO. ✓"
+          },
+          // PLUM → NJSK (-2). Apply to ROPE: R(18)-2=P(16), O(15)-2=M(13), P(16)-2=N(14), E(5)-2=C(3) = PMNC
+          {
+            name: "Priya",
+            scenario: "identifying a backward shift rule",
+            exampleOriginal: "PLUM",
+            exampleCoded: "NJSK",
+            ruleFound: "-2 (each letter back 2)",
+            letterCheck: ["P→N (-2)", "L→J (-2)", "U→S (-2)", "M→K (-2)"],
+            newWord: "ROPE",
+            newCoded: "PMNC",
+            newBreakdown: ["R(18) - 2 = P(16)", "O(15) - 2 = M(13)", "P(16) - 2 = N(14)", "E(5) - 2 = C(3)"],
+            options: ["PMNC", "TQRG", "PMND", "PLNC", "QMNC"],
+            correctAnswer: "PMNC",
+            explanation: "PLUM→NJSK is -2. Apply -2 to ROPE: R→P, O→M, P→N, E→C = PMNC. ✓"
+          },
+          // JUMP → KVNQ (+1). Apply to FISH: F(6)+1=G(7), I(9)+1=J(10), S(19)+1=T(20), H(8)+1=I(9) = GJTI
+          {
+            name: "Finn",
+            scenario: "spotting the rule and encoding",
+            exampleOriginal: "JUMP",
+            exampleCoded: "KVNQ",
+            ruleFound: "+1 (each letter forward 1)",
+            letterCheck: ["J→K (+1)", "U→V (+1)", "M→N (+1)", "P→Q (+1)"],
+            newWord: "FISH",
+            newCoded: "GJTI",
+            newBreakdown: ["F(6) + 1 = G(7)", "I(9) + 1 = J(10)", "S(19) + 1 = T(20)", "H(8) + 1 = I(9)"],
+            options: ["GJTI", "HKUJ", "GJTJ", "FITI", "GKTI"],
+            correctAnswer: "GJTI",
+            explanation: "JUMP→KVNQ is +1. Apply +1 to FISH: F→G, I→J, S→T, H→I = GJTI. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.exampleOriginal} → ${v.exampleCoded} — what's the rule?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nYou're given **${v.exampleOriginal} → ${v.exampleCoded}** and asked to apply the SAME rule to **${v.newWord}**.\n\nStep 1: figure out the rule. Step 2: apply it!`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.exampleCoded.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: v.ruleFound.split(' ')[0] }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find the rule, then apply it",
+            body: (v) => `Let's crack **${v.exampleOriginal} → ${v.exampleCoded}**. Check each letter to find the shift, then apply it to **${v.newWord}**:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Check: ${v.letterCheck.join(', ')}`, why: `Rule: ${v.ruleFound}` },
+                  ...v.newBreakdown.map((step, i) => ({
+                    text: step,
+                    why: i === v.newBreakdown.length - 1 ? `${v.newWord} → ${v.newCoded} ✓` : ""
+                  }))
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Check the first letter pair to guess the shift`,
+                `Verify with another letter pair to confirm`,
+                `Apply the same shift to each letter of the new word`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Guess, verify, then apply. ✓`,
+                incorrect: (v) => `Not quite — always guess the rule first, then verify before applying!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Apply the rule!",
+            body: (v) => `If **${v.exampleOriginal}** is coded as **${v.exampleCoded}**, what is **${v.newWord}** coded as?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.newWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Spot it, check it, apply it!",
+            body: () => `The complete strategy for coded-pair questions:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Check the first letter pair to guess the shift", why: "Is it +1, +2, +3, -1, -2...?" },
+                  { text: "2. Verify with ALL other letters", why: "Make sure EVERY letter shifts the same" },
+                  { text: "3. Apply that exact shift to the new word", why: "Letter by letter, carefully! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+      {
+        id: "spotting-pattern-hook",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to identify shift rules from trickier example pairs",
+          "How to build speed at pattern recognition"
+        ],
+        variableSets: [
+          // DESK → GHVN (+3). Apply to LAMP: L(12)+3=O(15), A(1)+3=D(4), M(13)+3=P(16), P(16)+3=S(19) = ODPS
+          {
+            name: "Evie",
+            scenario: "racing to spot the pattern",
+            exampleOriginal: "DESK",
+            exampleCoded: "GHVN",
+            ruleFound: "+3",
+            letterCheck: ["D→G (+3)", "E→H (+3)", "S→V (+3)", "K→N (+3)"],
+            newWord: "LAMP",
+            newCoded: "ODPS",
+            newBreakdown: ["L(12) + 3 = O(15)", "A(1) + 3 = D(4)", "M(13) + 3 = P(16)", "P(16) + 3 = S(19)"],
+            options: ["ODPS", "NCOS", "ODPT", "OEQS", "LCNP"],
+            correctAnswer: "ODPS",
+            explanation: "DESK→GHVN is +3. Apply +3 to LAMP: L→O, A→D, M→P, P→S = ODPS. ✓"
+          },
+          // MINT → KGLR (-2). Apply to BONE: B(2)-2=Z(26... wait, that wraps. Let me reconsider.)
+          // Actually: MINT → KGLR: M(13)-2=K(11), I(9)-2=G(7), N(14)-2=L(12), T(20)-2=R(18) = -2 ✓
+          // Apply to NEST: N(14)-2=L(12), E(5)-2=C(3), S(19)-2=Q(17), T(20)-2=R(18) = LCQR
+          {
+            name: "Marcus",
+            scenario: "identifying a backward shift fast",
+            exampleOriginal: "MINT",
+            exampleCoded: "KGLR",
+            ruleFound: "-2",
+            letterCheck: ["M→K (-2)", "I→G (-2)", "N→L (-2)", "T→R (-2)"],
+            newWord: "NEST",
+            newCoded: "LCQR",
+            newBreakdown: ["N(14) - 2 = L(12)", "E(5) - 2 = C(3)", "S(19) - 2 = Q(17)", "T(20) - 2 = R(18)"],
+            options: ["LCQR", "PGUV", "LCQS", "LDQR", "MCQR"],
+            correctAnswer: "LCQR",
+            explanation: "MINT→KGLR is -2. Apply -2 to NEST: N→L, E→C, S→Q, T→R = LCQR. ✓"
+          },
+          // COLD → DPME (+1). Apply to KING: K(11)+1=L(12), I(9)+1=J(10), N(14)+1=O(15), G(7)+1=H(8) = LJOH
+          {
+            name: "Aisha",
+            scenario: "quickly spotting the +1 rule",
+            exampleOriginal: "COLD",
+            exampleCoded: "DPME",
+            ruleFound: "+1",
+            letterCheck: ["C→D (+1)", "O→P (+1)", "L→M (+1)", "D→E (+1)"],
+            newWord: "KING",
+            newCoded: "LJOH",
+            newBreakdown: ["K(11) + 1 = L(12)", "I(9) + 1 = J(10)", "N(14) + 1 = O(15)", "G(7) + 1 = H(8)"],
+            options: ["LJOH", "JHMF", "LJOI", "LKOH", "MJOH"],
+            correctAnswer: "LJOH",
+            explanation: "COLD→DPME is +1. Apply +1 to KING: K→L, I→J, N→O, G→H = LJOH. ✓"
+          },
+          // RAIN → UDLQ (+3). Apply to WIND: W(23)+3=Z(26), I(9)+3=L(12), N(14)+3=Q(17), D(4)+3=G(7) = ZLQG
+          {
+            name: "Charlie",
+            scenario: "applying a +3 shift to a new word",
+            exampleOriginal: "RAIN",
+            exampleCoded: "UDLQ",
+            ruleFound: "+3",
+            letterCheck: ["R→U (+3)", "A→D (+3)", "I→L (+3)", "N→Q (+3)"],
+            newWord: "WIND",
+            newCoded: "ZLQG",
+            newBreakdown: ["W(23) + 3 = Z(26)", "I(9) + 3 = L(12)", "N(14) + 3 = Q(17)", "D(4) + 3 = G(7)"],
+            options: ["ZLQG", "CMPJ", "ZLQH", "ZKQG", "ZMRG"],
+            correctAnswer: "ZLQG",
+            explanation: "RAIN→UDLQ is +3. Apply +3 to WIND: W→Z, I→L, N→Q, D→G = ZLQG. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you crack ${v.exampleOriginal} → ${v.exampleCoded}?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nLook at the example pair and work out the rule as FAST as you can. Then apply it!\n\n**${v.exampleOriginal}** → **${v.exampleCoded}**\n\nWhat's the rule? And what does **${v.newWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.exampleCoded.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: v.ruleFound.split(' ')[0] }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: (v) => `The rule is ${v.ruleFound}`,
+            body: (v) => `Let's confirm the rule for **${v.exampleOriginal} → ${v.exampleCoded}**, then apply it to **${v.newWord}**:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Verify: ${v.letterCheck.join(', ')}`, why: `Confirmed: ${v.ruleFound}` },
+                  ...v.newBreakdown.map((step, i) => ({
+                    text: step,
+                    why: i === v.newBreakdown.length - 1 ? `${v.newWord} → ${v.newCoded} ✓` : ""
+                  }))
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `To spot the rule quickly, check the ____ letter pair first, then verify with the last pair`,
+              options: (v) => ["first", "middle", "longest", "shortest"],
+              correctIndex: (v) => 0,
+              feedback: {
+                correct: (v) => `Yes! Start with the first letter pair — one pair is enough to guess the rule. ✓`,
+                incorrect: (v) => `Not quite — always start with the first letter pair to guess the rule!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Apply the rule!",
+            body: (v) => `**${v.exampleOriginal}** → **${v.exampleCoded}**. Using the same rule, what is **${v.newWord}** coded as?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.newWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Speed tips for pattern spotting",
+            body: () => `To spot the rule quickly:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Start with the FIRST letter pair", why: "One pair is enough to guess the rule" },
+                  { text: "Quick-check the LAST letter pair", why: "Confirms your guess in one step" },
+                  { text: "Apply confidently — you've verified!", why: "Two checks is usually enough ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  }
+
+];

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <path d="M 100 80 L 240 80 L 240 140 L 300 140 L 300 220 L 100 220 Z" fill="lightskyblue" fill-opacity="0.3" stroke="black" stroke-width="2"/>
+  <line x1="240" y1="80" x2="240" y2="140" stroke="black" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="240" y1="140" x2="300" y2="140" stroke="black" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="240" y="80" width="60" height="60" fill="white" stroke="black" stroke-width="2"/>
+  <!-- Bottom dimension: 10 cm -->
+  <line x1="100" y1="238" x2="300" y2="238" stroke="gray" stroke-width="1"/>
+  <line x1="100" y1="233" x2="100" y2="243" stroke="gray" stroke-width="1"/>
+  <line x1="300" y1="233" x2="300" y2="243" stroke="gray" stroke-width="1"/>
+  <text x="200" y="258" font-family="Arial" font-size="14" fill="dimgray" text-anchor="middle">10 cm</text>
+  <!-- Left dimension: 6 cm -->
+  <line x1="82" y1="80" x2="82" y2="220" stroke="gray" stroke-width="1"/>
+  <line x1="77" y1="80" x2="87" y2="80" stroke="gray" stroke-width="1"/>
+  <line x1="77" y1="220" x2="87" y2="220" stroke="gray" stroke-width="1"/>
+  <text x="62" y="155" font-family="Arial" font-size="14" fill="dimgray" text-anchor="middle">6 cm</text>
+  <!-- Cutout labels: 3 cm -->
+  <text x="270" y="73" font-family="Arial" font-size="12" fill="red" text-anchor="middle">3 cm</text>
+  <text x="315" y="115" font-family="Arial" font-size="12" fill="red" text-anchor="middle">3 cm</text>
+</svg>

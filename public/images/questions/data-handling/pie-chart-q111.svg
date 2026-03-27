@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="450" viewBox="0 0 500 450">
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="black">Favourite Subjects</text>
+
+  <!-- Slice 1: Maths 110° (0° to 110°) -->
+  <path d="M 250 225 L 250 125 A 100 100 0 0 1 344 259.2 Z" fill="lightskyblue" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 2: English 90° (110° to 200°) -->
+  <path d="M 250 225 L 344 259.2 A 100 100 0 0 1 215.8 319 Z" fill="lightcoral" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 3: Science 80° (200° to 280°) -->
+  <path d="M 250 225 L 215.8 319 A 100 100 0 0 1 151.5 207.6 Z" fill="lightgreen" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 4: Art 80° (280° to 360°) -->
+  <path d="M 250 225 L 151.5 207.6 A 100 100 0 0 1 250 125 Z" fill="lightyellow" fill-opacity="0.9" stroke="black" stroke-width="2"/>
+
+  <!-- Label line 1: Maths (mid 55°) -->
+  <line x1="331.9" y1="167.6" x2="356.5" y2="150.4" stroke="gray" stroke-width="1"/>
+  <text x="356.5" y="145.4" text-anchor="start" font-family="Arial" font-size="14" fill="black">Maths</text>
+  <text x="356.5" y="163.4" text-anchor="start" font-family="Arial" font-size="14" fill="dimgray">110°</text>
+
+  <!-- Label line 2: English (mid 155°) -->
+  <line x1="292.3" y1="315.6" x2="304.9" y2="342.8" stroke="gray" stroke-width="1"/>
+  <text x="304.9" y="337.8" text-anchor="start" font-family="Arial" font-size="14" fill="black">English</text>
+  <text x="304.9" y="355.8" text-anchor="start" font-family="Arial" font-size="14" fill="dimgray">90°</text>
+
+  <!-- Label line 3: Science (mid 240°) -->
+  <line x1="163.4" y1="275" x2="137.4" y2="290" stroke="gray" stroke-width="1"/>
+  <text x="137.4" y="285" text-anchor="end" font-family="Arial" font-size="14" fill="black">Science</text>
+  <text x="137.4" y="303" text-anchor="end" font-family="Arial" font-size="14" fill="dimgray">80°</text>
+
+  <!-- Label line 4: Art (mid 320°) -->
+  <line x1="185.7" y1="148.4" x2="166.4" y2="125.4" stroke="gray" stroke-width="1"/>
+  <text x="166.4" y="120.4" text-anchor="end" font-family="Arial" font-size="14" fill="black">Art</text>
+  <text x="166.4" y="138.4" text-anchor="end" font-family="Arial" font-size="14" fill="dimgray">80°</text>
+
+  <!-- Center point -->
+  <circle cx="250" cy="225" r="3" fill="black"/>
+</svg>

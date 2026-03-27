@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="100" y="80" width="200" height="140" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
+  <rect x="240" y="80" width="60" height="60" fill="white" stroke="black" stroke-width="2"/>
+  <text x="200" y="240" font-size="14" fill="dimgray" text-anchor="middle">12 cm</text>
+  <text x="85" y="155" font-size="14" fill="dimgray" text-anchor="middle">8 cm</text>
+  <text x="270" y="115" font-size="12" fill="red" text-anchor="middle">4 cm</text>
+  <text x="315" y="115" font-size="12" fill="red" text-anchor="middle">4 cm</text>
+</svg>

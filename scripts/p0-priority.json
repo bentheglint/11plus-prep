@@ -1,0 +1,416 @@
+[
+  {
+    "topic": "anglesshapes",
+    "scId": "straight-line",
+    "scName": "Angles on a Straight Line = 180°",
+    "lesson": "straight-line-steps",
+    "screen": "hook",
+    "component": "AngleDisplay",
+    "props": {
+      "value": 115,
+      "label": "?°",
+      "angles": [
+        {
+          "value": 65,
+          "label": "65°",
+          "color": "#818cf8"
+        },
+        {
+          "value": 115,
+          "label": "?°",
+          "color": "#d1d5db"
+        }
+      ]
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=AngleDisplay&json=%7B%22value%22%3A115%2C%22label%22%3A%22%3F%C2%B0%22%2C%22angles%22%3A%5B%7B%22value%22%3A65%2C%22label%22%3A%2265%C2%B0%22%2C%22color%22%3A%22%23818cf8%22%7D%2C%7B%22value%22%3A115%2C%22label%22%3A%22%3F%C2%B0%22%2C%22color%22%3A%22%23d1d5db%22%7D%5D%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "straight-line",
+    "scName": "Angles on a Straight Line = 180°",
+    "lesson": "straight-line-steps",
+    "screen": "interact",
+    "component": "AngleDisplay",
+    "props": {
+      "value": 108,
+      "label": "?°",
+      "angles": [
+        {
+          "value": 72,
+          "label": "72°",
+          "color": "#818cf8"
+        },
+        {
+          "value": 108,
+          "label": "?°",
+          "color": "#d1d5db"
+        }
+      ]
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=AngleDisplay&json=%7B%22value%22%3A108%2C%22label%22%3A%22%3F%C2%B0%22%2C%22angles%22%3A%5B%7B%22value%22%3A72%2C%22label%22%3A%2272%C2%B0%22%2C%22color%22%3A%22%23818cf8%22%7D%2C%7B%22value%22%3A108%2C%22label%22%3A%22%3F%C2%B0%22%2C%22color%22%3A%22%23d1d5db%22%7D%5D%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "straight-line",
+    "scName": "Angles on a Straight Line = 180°",
+    "lesson": "straight-line-mistake",
+    "screen": "teach",
+    "component": "AngleDisplay",
+    "props": {
+      "value": 105,
+      "angles": [
+        {
+          "value": 75,
+          "label": "75°",
+          "color": "#818cf8"
+        },
+        {
+          "value": 105,
+          "label": "105°",
+          "color": "#34d399"
+        }
+      ]
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=AngleDisplay&json=%7B%22value%22%3A105%2C%22angles%22%3A%5B%7B%22value%22%3A75%2C%22label%22%3A%2275%C2%B0%22%2C%22color%22%3A%22%23818cf8%22%7D%2C%7B%22value%22%3A105%2C%22label%22%3A%22105%C2%B0%22%2C%22color%22%3A%22%2334d399%22%7D%5D%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "straight-line",
+    "scName": "Angles on a Straight Line = 180°",
+    "lesson": "straight-line-mistake",
+    "screen": "interact",
+    "component": "AngleDisplay",
+    "props": {
+      "value": 97,
+      "label": "?°",
+      "angles": [
+        {
+          "value": 83,
+          "label": "83°",
+          "color": "#818cf8"
+        },
+        {
+          "value": 97,
+          "label": "?°",
+          "color": "#d1d5db"
+        }
+      ]
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=AngleDisplay&json=%7B%22value%22%3A97%2C%22label%22%3A%22%3F%C2%B0%22%2C%22angles%22%3A%5B%7B%22value%22%3A83%2C%22label%22%3A%2283%C2%B0%22%2C%22color%22%3A%22%23818cf8%22%7D%2C%7B%22value%22%3A97%2C%22label%22%3A%22%3F%C2%B0%22%2C%22color%22%3A%22%23d1d5db%22%7D%5D%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "quadrilateral-angles",
+    "scName": "Angles in a Quadrilateral = 360°",
+    "lesson": "quadrilateral-angles-steps",
+    "screen": "hook",
+    "component": "QuadShape",
+    "props": {},
+    "url": "http://localhost:3000/?diagram-viewer&component=QuadShape&json=%7B%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "exterior-angles",
+    "scName": "Exterior Angle of a Triangle",
+    "lesson": "exterior-angles-curiosity",
+    "screen": "hook",
+    "component": "ExteriorAngle",
+    "props": {
+      "angle1": 50,
+      "angle2": 70,
+      "angle3": 60,
+      "showExterior": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ExteriorAngle&json=%7B%22angle1%22%3A50%2C%22angle2%22%3A70%2C%22angle3%22%3A60%2C%22showExterior%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "exterior-angles",
+    "scName": "Exterior Angle of a Triangle",
+    "lesson": "exterior-angles-curiosity",
+    "screen": "interact",
+    "component": "ExteriorAngle",
+    "props": {
+      "angle1": 55,
+      "angle2": 75,
+      "angle3": 50,
+      "showExterior": true,
+      "exteriorLabel": "?"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ExteriorAngle&json=%7B%22angle1%22%3A55%2C%22angle2%22%3A75%2C%22angle3%22%3A50%2C%22showExterior%22%3Atrue%2C%22exteriorLabel%22%3A%22%3F%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "exterior-angles",
+    "scName": "Exterior Angle of a Triangle",
+    "lesson": "exterior-angles-curiosity",
+    "screen": "consolidate",
+    "component": "ExteriorAngle",
+    "props": {},
+    "url": "http://localhost:3000/?diagram-viewer&component=ExteriorAngle&json=%7B%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "exterior-angles",
+    "scName": "Exterior Angle of a Triangle",
+    "lesson": "exterior-angles-keyfact",
+    "screen": "hook",
+    "component": "ExteriorAngle",
+    "props": {
+      "angle1": 40,
+      "angle2": 75,
+      "angle3": "180 - v.interiorA - v.interiorB",
+      "showExterior": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ExteriorAngle&json=%7B%22angle1%22%3A40%2C%22angle2%22%3A75%2C%22angle3%22%3A%22180%20-%20v.interiorA%20-%20v.interiorB%22%2C%22showExterior%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "exterior-angles",
+    "scName": "Exterior Angle of a Triangle",
+    "lesson": "exterior-angles-keyfact",
+    "screen": "interact",
+    "component": "ExteriorAngle",
+    "props": {
+      "angle1": 45,
+      "angle2": 60,
+      "angle3": "180 - v.interactInteriorA - v.interactInteriorB",
+      "showExterior": true,
+      "exteriorLabel": "?"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ExteriorAngle&json=%7B%22angle1%22%3A45%2C%22angle2%22%3A60%2C%22angle3%22%3A%22180%20-%20v.interactInteriorA%20-%20v.interactInteriorB%22%2C%22showExterior%22%3Atrue%2C%22exteriorLabel%22%3A%22%3F%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "hook",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 65,
+      "highlight": "null"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A65%2C%22highlight%22%3A%22null%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "teach",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 65,
+      "highlight": "corresponding"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A65%2C%22highlight%22%3A%22corresponding%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "teach",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 65,
+      "highlight": "alternate"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A65%2C%22highlight%22%3A%22alternate%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "teach",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 65,
+      "highlight": "co-interior"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A65%2C%22highlight%22%3A%22co-interior%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "interact",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 58,
+      "highlight": "co-interior"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A58%2C%22highlight%22%3A%22co-interior%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-discovery",
+    "screen": "consolidate",
+    "component": "ParallelLines",
+    "props": {},
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-keyfact",
+    "screen": "hook",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 48,
+      "highlight": "alternate"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A48%2C%22highlight%22%3A%22alternate%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "parallel-lines",
+    "scName": "Angles with Parallel Lines",
+    "lesson": "parallel-lines-keyfact",
+    "screen": "interact",
+    "component": "ParallelLines",
+    "props": {
+      "givenAngle": 62,
+      "highlight": "alternate"
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=ParallelLines&json=%7B%22givenAngle%22%3A62%2C%22highlight%22%3A%22alternate%22%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-steps",
+    "screen": "hook",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 5,
+      "eachAngle": 108,
+      "angleLabel": "?",
+      "showDiagonals": false,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A5%2C%22eachAngle%22%3A108%2C%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Afalse%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-steps",
+    "screen": "teach",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 5,
+      "eachAngle": 108,
+      "showDiagonals": true,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A5%2C%22eachAngle%22%3A108%2C%22showDiagonals%22%3Atrue%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-steps",
+    "screen": "interact",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 6,
+      "eachAngle": 120,
+      "angleLabel": "?",
+      "showDiagonals": true,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A6%2C%22eachAngle%22%3A120%2C%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Atrue%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-steps",
+    "screen": "consolidate",
+    "component": "RegularPolygon",
+    "props": {},
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-visual",
+    "screen": "hook",
+    "component": "RegularPolygon",
+    "props": {
+      "showDiagonals": true,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22showDiagonals%22%3Atrue%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "polygon-angles",
+    "scName": "Interior Angles of Regular Polygons",
+    "lesson": "polygon-angles-visual",
+    "screen": "interact",
+    "component": "RegularPolygon",
+    "props": {
+      "angleLabel": "?",
+      "showDiagonals": true,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Atrue%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "irregular-polygon-angle",
+    "scName": "Finding a Missing Angle in an Irregular Polygon",
+    "lesson": "irregular-polygon-angle-steps",
+    "screen": "hook",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 5,
+      "eachAngle": 120,
+      "angleLabel": "?",
+      "showDiagonals": false,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A5%2C%22eachAngle%22%3A120%2C%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Afalse%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "irregular-polygon-angle",
+    "scName": "Finding a Missing Angle in an Irregular Polygon",
+    "lesson": "irregular-polygon-angle-steps",
+    "screen": "teach",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 5,
+      "eachAngle": "v.angleSum / v.sides",
+      "angleLabel": "?",
+      "showDiagonals": true,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A5%2C%22eachAngle%22%3A%22v.angleSum%20%2F%20v.sides%22%2C%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Atrue%2C%22highlightAngle%22%3Atrue%7D"
+  },
+  {
+    "topic": "anglesshapes",
+    "scId": "irregular-polygon-angle",
+    "scName": "Finding a Missing Angle in an Irregular Polygon",
+    "lesson": "irregular-polygon-angle-steps",
+    "screen": "interact",
+    "component": "RegularPolygon",
+    "props": {
+      "sides": 5,
+      "eachAngle": "v.angleSum / v.sides",
+      "angleLabel": "?",
+      "showDiagonals": false,
+      "highlightAngle": true
+    },
+    "url": "http://localhost:3000/?diagram-viewer&component=RegularPolygon&json=%7B%22sides%22%3A5%2C%22eachAngle%22%3A%22v.angleSum%20%2F%20v.sides%22%2C%22angleLabel%22%3A%22%3F%22%2C%22showDiagonals%22%3Afalse%2C%22highlightAngle%22%3Atrue%7D"
+  }
+]

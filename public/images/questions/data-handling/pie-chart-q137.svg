@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="black">Favourite Sports</text>
+
+  <!-- Slice 1: Football 90° (0° to 90°) -->
+  <path d="M 200 210 L 200 80 A 130 130 0 0 1 330 210 Z" fill="lightskyblue" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 2: Cricket 60° (90° to 150°) -->
+  <path d="M 200 210 L 330 210 A 130 130 0 0 1 265 322.6 Z" fill="lightcoral" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 3: Tennis 120° (150° to 270°) -->
+  <path d="M 200 210 L 265 322.6 A 130 130 0 0 1 70 210 Z" fill="lightgreen" fill-opacity="0.7" stroke="black" stroke-width="2"/>
+
+  <!-- Slice 4: Swimming 90° (270° to 360°) -->
+  <path d="M 200 210 L 70 210 A 130 130 0 0 1 200 80 Z" fill="lightyellow" fill-opacity="0.9" stroke="black" stroke-width="2"/>
+
+  <!-- Label line 1: Football (mid 45°) -->
+  <line x1="294" y1="116" x2="313.1" y2="96.9" stroke="gray" stroke-width="1"/>
+  <text x="316" y="92" text-anchor="start" font-family="Arial" font-size="14" fill="black">Football</text>
+  <text x="316" y="110" text-anchor="start" font-family="Arial" font-size="14" fill="dimgray">90°</text>
+
+  <!-- Label line 2: Cricket (mid 120°) -->
+  <line x1="315.2" y1="276.5" x2="338.6" y2="290" stroke="gray" stroke-width="1"/>
+  <text x="341" y="285" text-anchor="start" font-family="Arial" font-size="14" fill="black">Cricket</text>
+  <text x="341" y="303" text-anchor="start" font-family="Arial" font-size="14" fill="dimgray">60°</text>
+
+  <!-- Label line 3: Tennis (mid 210°) -->
+  <line x1="133.5" y1="325.2" x2="120" y2="348.6" stroke="gray" stroke-width="1"/>
+  <text x="117" y="344" text-anchor="end" font-family="Arial" font-size="14" fill="black">Tennis</text>
+  <text x="117" y="362" text-anchor="end" font-family="Arial" font-size="14" fill="dimgray">120°</text>
+
+  <!-- Label line 4: Swimming (mid 315°) -->
+  <line x1="106" y1="116" x2="86.9" y2="96.9" stroke="gray" stroke-width="1"/>
+  <text x="84" y="92" text-anchor="end" font-family="Arial" font-size="14" fill="black">Swimming</text>
+  <text x="84" y="110" text-anchor="end" font-family="Arial" font-size="14" fill="dimgray">90°</text>
+
+  <!-- Center point -->
+  <circle cx="200" cy="210" r="3" fill="black"/>
+</svg>

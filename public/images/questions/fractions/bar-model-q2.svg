@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Equivalent fractions: 3/6 = 1/2 -->
+  <!-- Top bar: divided into 6 parts, 3 shaded -->
+  <!-- Bottom bar: divided into 2 parts, 1 shaded -->
+
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Equivalent Fractions</text>
+
+  <!-- Top bar label -->
+  <text x="45" y="88" text-anchor="middle" font-family="Arial" font-size="15" fill="black">3/6</text>
+
+  <!-- Top bar: 6 equal parts, width 300, each part 50px wide -->
+  <rect x="75" y="70" width="50" height="50" fill="lightskyblue" stroke="black" stroke-width="2"/>
+  <rect x="125" y="70" width="50" height="50" fill="lightskyblue" stroke="black" stroke-width="2"/>
+  <rect x="175" y="70" width="50" height="50" fill="lightskyblue" stroke="black" stroke-width="2"/>
+  <rect x="225" y="70" width="50" height="50" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="275" y="70" width="50" height="50" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="325" y="70" width="50" height="50" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Fraction labels in each part of top bar -->
+  <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+  <text x="150" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+  <text x="200" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+  <text x="250" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+  <text x="300" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+  <text x="350" y="100" text-anchor="middle" font-family="Arial" font-size="13" fill="black">1/6</text>
+
+  <!-- Equals sign between bars -->
+  <text x="40" y="155" text-anchor="middle" font-family="Arial" font-size="24" fill="black">=</text>
+
+  <!-- Bottom bar label -->
+  <text x="45" y="208" text-anchor="middle" font-family="Arial" font-size="15" fill="black">1/2</text>
+
+  <!-- Bottom bar: 2 equal parts, width 300, each part 150px wide -->
+  <rect x="75" y="185" width="150" height="50" fill="lightskyblue" stroke="black" stroke-width="2"/>
+  <rect x="225" y="185" width="150" height="50" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Fraction labels in each part of bottom bar -->
+  <text x="150" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="black">1/2</text>
+  <text x="300" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="black">1/2</text>
+
+  <!-- Dashed alignment lines showing equivalence -->
+  <line x1="225" y1="120" x2="225" y2="185" stroke="red" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Annotation -->
+  <text x="200" y="265" text-anchor="middle" font-family="Arial" font-size="14" fill="black">The shaded parts are equal: 3/6 = 1/2</text>
+</svg>

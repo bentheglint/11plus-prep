@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Three friends share in ratio 2 : 3 : 4</text>
+
+  <!-- Total label -->
+  <text x="200" y="55" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">£180</text>
+
+  <!-- Bar model: 9 equal parts, each 37.78px wide -->
+  <!-- Friend 1: 2 parts (lightskyblue) -->
+  <rect x="30" y="80" width="37.78" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+  <rect x="67.78" y="80" width="37.78" height="80" fill="#87CEEB" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Friend 2: 3 parts (lightcoral) -->
+  <rect x="105.56" y="80" width="37.78" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="143.34" y="80" width="37.78" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+  <rect x="181.12" y="80" width="37.78" height="80" fill="#F08080" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Friend 3: 4 parts (lightgreen) -->
+  <rect x="218.9" y="80" width="37.78" height="80" fill="#90EE90" stroke="#333" stroke-width="1.5"/>
+  <rect x="256.68" y="80" width="37.78" height="80" fill="#90EE90" stroke="#333" stroke-width="1.5"/>
+  <rect x="294.46" y="80" width="37.78" height="80" fill="#90EE90" stroke="#333" stroke-width="1.5"/>
+  <rect x="332.24" y="80" width="37.78" height="80" fill="#90EE90" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Question marks inside each section -->
+  <text x="48.89" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="86.67" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="124.45" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="162.23" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="200.01" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="237.79" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="275.57" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="313.35" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+  <text x="351.13" y="128" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">?</text>
+
+  <!-- Friend 1 bracket and label -->
+  <line x1="30" y1="175" x2="30" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="30" y1="188" x2="105.56" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="105.56" y1="175" x2="105.56" y2="188" stroke="#333" stroke-width="1.5"/>
+  <text x="67.78" y="208" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#4A90D9">Friend 1 (2 parts)</text>
+
+  <!-- Friend 2 bracket and label -->
+  <line x1="105.56" y1="175" x2="105.56" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="105.56" y1="188" x2="218.9" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="218.9" y1="175" x2="218.9" y2="188" stroke="#333" stroke-width="1.5"/>
+  <text x="162.23" y="208" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#D94A4A">Friend 2 (3 parts)</text>
+
+  <!-- Friend 3 bracket and label -->
+  <line x1="218.9" y1="175" x2="218.9" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="218.9" y1="188" x2="370.02" y2="188" stroke="#333" stroke-width="1.5"/>
+  <line x1="370.02" y1="175" x2="370.02" y2="188" stroke="#333" stroke-width="1.5"/>
+  <text x="294.46" y="208" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#2E8B2E">Friend 3 (4 parts)</text>
+
+  <!-- Total bracket at bottom -->
+  <line x1="30" y1="230" x2="30" y2="245" stroke="#333" stroke-width="1.5"/>
+  <line x1="30" y1="245" x2="370.02" y2="245" stroke="#333" stroke-width="1.5"/>
+  <line x1="370.02" y1="230" x2="370.02" y2="245" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Total = £180</text>
+</svg>

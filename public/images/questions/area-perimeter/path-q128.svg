@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+  <rect x="50" y="50" width="380" height="250" fill="lightskyblue" fill-opacity="0.3" stroke="black" stroke-width="2"/>
+  <rect x="75" y="75" width="330" height="200" fill="lightgreen" fill-opacity="0.4" stroke="black" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="240" y="315" font-size="14" fill="dimgray" text-anchor="middle">50 m</text>
+  <text x="35" y="180" font-size="14" fill="dimgray" text-anchor="middle">36 m</text>
+  <text x="62" y="65" font-size="11" fill="red" text-anchor="middle">Path 2 m</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect x="50" y="80" width="140" height="100" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
+  <text x="120" y="200" font-size="14" fill="dimgray" text-anchor="middle">9 m</text>
+  <text x="35" y="135" font-size="14" fill="dimgray" text-anchor="middle">6 m</text>
+  <text x="120" y="60" font-size="13" fill="black" text-anchor="middle" font-weight="bold">Flowerbed 1</text>
+  <rect x="220" y="75" width="130" height="110" fill="lightcoral" fill-opacity="0.4" stroke="black" stroke-width="2"/>
+  <text x="285" y="200" font-size="14" fill="dimgray" text-anchor="middle">8 m</text>
+  <text x="205" y="135" font-size="14" fill="dimgray" text-anchor="middle">7 m</text>
+  <text x="285" y="60" font-size="13" fill="black" text-anchor="middle" font-weight="bold">Flowerbed 2</text>
+</svg>

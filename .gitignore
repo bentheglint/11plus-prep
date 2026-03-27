@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Claude Code config (user-specific, not project source)
+/.claude
+
+# Cloudflare
+/.wrangler
+
+# Visual QA screenshots (large, regenerable)
+/visual-qa-screenshots
+/visual-qa-audit
+
+# API keys and secrets
+/Master Brief Document and Working Instructions/Claude API Key
+
+# Scanned reference materials (large binary files)
+/Examples for English and VR
+/research/kingsbury
+/research/maths-reference
+/research/past-papers
+/Micro-Lesson Research
+/Lesson Plan Examples
+/difficulty-scores

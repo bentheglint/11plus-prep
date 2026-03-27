@@ -1,0 +1,3400 @@
+// ============================================================
+// Supplementary sub-concepts for Percentages
+// To merge: add these to lessonBank.percentages.subConcepts array in lessonData.js
+// ============================================================
+import { generateDistractors } from '../lessonData.js';
+
+export const percentagesSubConcepts = [
+
+  // ==========================================
+  // SUB-CONCEPT 1: percent-means-per-hundred
+  // Understanding % = out of 100
+  // Category: core
+  // Lesson A: visual-discovery | Lesson B: key-fact
+  // ==========================================
+  {
+    id: "percent-means-per-hundred",
+    name: "Percent Means Per Hundred",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Visual Discovery ----
+      {
+        id: "percent-per-hundred-discovery",
+        templateType: "visual-discovery",
+        learningGoal: [
+          "How to understand what the % symbol means",
+          "Why 50% is the same as half"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "counting coloured squares on a 100-square grid",
+            shaded: 50, total: 100,
+            fraction: "50/100", simplified: "1/2",
+            word: "half",
+            colour: "#c084fc"
+          },
+          {
+            name: "Ben",
+            scenario: "filling a jar that holds exactly 100 marbles",
+            shaded: 25, total: 100,
+            fraction: "25/100", simplified: "1/4",
+            word: "a quarter",
+            colour: "#38bdf8"
+          },
+          {
+            name: "Chloe",
+            scenario: "colouring squares on a hundred chart in class",
+            shaded: 75, total: 100,
+            fraction: "75/100", simplified: "3/4",
+            word: "three quarters",
+            colour: "#34d399"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What does ${v.shaded}% actually mean?`,
+            body: (v) => `${v.name} is ${v.scenario}. Out of **${v.total}** squares, **${v.shaded}** are coloured in.\n\nThat's **${v.shaded}%** — but where does the word "percent" come from?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.shaded, label: `${v.shaded} coloured`, color: v.colour },
+                  { value: v.total - v.shaded, label: `${v.total - v.shaded} empty`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.total} squares total`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Per cent = per hundred!",
+            body: (v) => `The word **percent** comes from Latin: **per centum**, meaning **"out of one hundred"**. Tap each step to see how a percentage becomes a fraction!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.shaded}% means "${v.shaded} out of 100"`, why: "Per cent = per hundred" },
+                  { text: `As a fraction: ${v.fraction}`, why: "The percentage goes over 100" },
+                  { text: `Simplified: ${v.simplified} = ${v.word}`, result: `${v.shaded}% = ${v.word} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `"Per cent" comes from Latin meaning "out of ____"`,
+              options: (v) => ["ten", "hundred", "thousand", "fifty"],
+              correctIndex: (v) => 1,
+              feedback: {
+                correct: (v) => `Yes! "Cent" means hundred — like century or centimetre. ✓`,
+                incorrect: (v) => `Not quite — "cent" means hundred, like century!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `If ${v.shaded} squares out of 100 are coloured, what percentage is that?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.shaded, label: "?%", color: v.colour },
+                  { value: v.total - v.shaded, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.total} squares total`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.shaded} out of 100 = what percentage?`,
+              getOptions: (v) => generateDistractors(v.shaded),
+              correctAnswer: (v) => v.shaded,
+              feedback: {
+                correct: (v) => `Yes! ${v.shaded} out of 100 = **${v.shaded}%**. "Per cent" literally means "out of 100"! ✓`,
+                incorrect: (v) => `Not quite! The number out of 100 IS the percentage. ${v.shaded} out of 100 = **${v.shaded}%**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Percent = out of 100",
+            body: () => `Whenever you see the **%** symbol, just remember: it means **out of 100**.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Per cent means 'per hundred' (out of 100)", why: "From Latin: per centum" },
+                  { text: "The % number tells you how many out of 100", why: "37% = 37 out of 100, 82% = 82 out of 100" },
+                  { text: "100% means ALL of it (100 out of 100)", why: "And 0% means none of it ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Key Fact ----
+      {
+        id: "percent-per-hundred-keyfact",
+        templateType: "key-fact",
+        learningGoal: [
+          "How to apply the 'out of 100' idea to real-life situations",
+          "When to watch out for confusing a percentage with a fraction"
+        ],
+        variableSets: [
+          {
+            name: "Oliver",
+            scenario: "scoring on a test with 100 questions",
+            shaded: 80, total: 100,
+            fraction: "80/100", simplified: "4/5",
+            simplifyBy: 20,
+            word: "four fifths",
+            colour: "#818cf8"
+          },
+          {
+            name: "Mia",
+            scenario: "eating chocolates from a box of 100",
+            shaded: 10, total: 100,
+            fraction: "10/100", simplified: "1/10",
+            simplifyBy: 10,
+            word: "one tenth",
+            colour: "#f87171"
+          },
+          {
+            name: "Hassan",
+            scenario: "planting seeds in a tray with 100 cells",
+            shaded: 60, total: 100,
+            fraction: "60/100", simplified: "3/5",
+            simplifyBy: 20,
+            word: "three fifths",
+            colour: "#34d399"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What does ${v.shaded}% really mean?`,
+            body: (v) => `${v.name} is ${v.scenario}. **${v.shaded}** out of **${v.total}** — that's **${v.shaded}%**.\n\nBut why do we use 100? Let's find out!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.shaded, label: `${v.shaded}%`, color: v.colour },
+                  { value: v.total - v.shaded, label: `${v.total - v.shaded}%`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: "100% = the whole thing",
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Key fact: % always means out of 100",
+            body: (v) => `Using 100 as a common base makes comparing amounts easy. Is 3/7 bigger than 5/12? Hard to tell! But 43% vs 42%? Easy! Tap to see how this works.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.shaded}% = ${v.shaded} out of 100`, why: "The % symbol means 'per hundred'" },
+                  { text: `As a fraction: ${v.fraction}`, why: `Divide top and bottom by ${v.simplifyBy}: ${v.shaded} \u00f7 ${v.simplifyBy} = ${v.simplified.split('/')[0]}, 100 \u00f7 ${v.simplifyBy} = ${v.simplified.split('/')[1]}`, result: `${v.simplified} (${v.word})` },
+                  { text: "100 is a handy base for comparing", why: "Everything over the same denominator (bottom number) ✓" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Quick check!",
+            body: (v) => `What fraction is the same as **${v.shaded}%**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.shaded, label: `${v.shaded}%`, color: v.colour },
+                  { value: v.total - v.shaded, label: "", color: "#e5e7eb", empty: true }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.shaded}% is the same as which fraction?`,
+              getOptions: (v) => [v.simplified, `${v.shaded}/10`, `1/${v.shaded}`, `${v.total}/${v.shaded}`, `${v.shaded}/1000`],
+              correctAnswer: (v) => v.simplified,
+              feedback: {
+                correct: (v) => `Spot on! ${v.shaded}% = ${v.fraction} = **${v.simplified}** (${v.word}). ✓`,
+                incorrect: (v) => `Not quite! ${v.shaded}% means ${v.shaded} out of 100 = ${v.fraction} = **${v.simplified}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Remember: per cent = per hundred",
+            body: () => `The **%** symbol is your friend. It always means the same thing: **how many out of 100**.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "% means 'out of 100'", why: "Per centum = per hundred (Latin)" },
+                  { text: "To write a % as a fraction, put it over 100", why: "45% = 45/100, then simplify if you can" },
+                  { text: "100% = the whole thing, 0% = nothing", why: "50% = exactly half ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 2: common-percentages
+  // Key equivalences: 50%=1/2, 25%=1/4, etc.
+  // Category: core
+  // Lesson A: key-fact | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "common-percentages",
+    name: "Key Percentage Equivalences",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Key Fact ----
+      {
+        id: "common-percentages-keyfact",
+        templateType: "key-fact",
+        learningGoal: [
+          "How to recall which fractions match the most useful percentages",
+          "How to quickly recall 50%, 25%, 10%, 75%, 20%"
+        ],
+        variableSets: [
+          {
+            name: "Lauren",
+            scenario: "learning quick tricks for her 11+ exam",
+            percent: 50, fraction: "1/2", decimal: 0.5,
+            word: "half", divideBy: 2,
+            amount: 80, answer: 40,
+            colour: "#c084fc"
+          },
+          {
+            name: "Daisy",
+            scenario: "working out sale prices quickly in her head",
+            percent: 25, fraction: "1/4", decimal: 0.25,
+            word: "a quarter", divideBy: 4,
+            amount: 60, answer: 15,
+            colour: "#38bdf8"
+          },
+          {
+            name: "Evie",
+            scenario: "checking how much tip to leave at a restaurant",
+            percent: 10, fraction: "1/10", decimal: 0.1,
+            word: "a tenth", divideBy: 10,
+            amount: 90, answer: 9,
+            colour: "#34d399"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `The ${v.percent}% shortcut!`,
+            body: (v) => `${v.name} is ${v.scenario}. She needs **${v.percent}%** of **${v.amount}**.\n\nGood news: **${v.percent}%** = **${v.fraction}** = ${v.word}. So just **divide by ${v.divideBy}**!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}% = ${v.fraction}`, color: v.colour },
+                  { value: 100 - v.percent, label: `${100 - v.percent}%`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.percent}% of ${v.amount} = ?`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The five percentages to memorise",
+            body: (v) => `You saw that **${v.percent}%** of **${v.amount}** = ${v.amount} ÷ ${v.divideBy} = **${v.answer}**. That works because ${v.percent}% = ${v.fraction}. There are **five** key percentages like this — memorise them and you'll be much faster! Tap to reveal each one.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "50% = 1/2", why: "Divide by 2 (halve it)", result: "50% of 80 = 40" },
+                  { text: "25% = 1/4", why: "Divide by 4 (quarter it)", result: "25% of 80 = 20" },
+                  { text: "75% = 3/4", why: "Find 25% then multiply by 3", result: "75% of 80 = 60" },
+                  { text: "10% = 1/10", why: "Divide by 10", result: "10% of 80 = 8" },
+                  { text: "20% = 1/5", why: "Divide by 5 (or double 10%)", result: "20% of 80 = 16" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "match-pairs",
+              pairs: (v) => [
+                { left: "50%", right: "1/2" },
+                { left: "25%", right: "1/4" },
+                { left: "10%", right: "1/10" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Use the shortcut!",
+            body: (v) => `**${v.percent}%** of **${v.amount}** = **${v.fraction}** of ${v.amount}.\n\nThat means: ${v.amount} ÷ ${v.divideBy} = ?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: v.colour },
+                  { value: 100 - v.percent, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.amount} total`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is ${v.percent}% of ${v.amount}?`,
+              getOptions: (v) => generateDistractors(v.answer),
+              correctAnswer: (v) => v.answer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.percent}% = ${v.fraction}, so ${v.amount} ÷ ${v.divideBy} = **${v.answer}**! ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.fraction}, so divide by ${v.divideBy}: ${v.amount} ÷ ${v.divideBy} = **${v.answer}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Five percentages to know by heart!",
+            body: () => `Memorise these and you'll solve percentage questions much faster:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "50% = 1/2 → divide by 2", why: "The most common percentage" },
+                  { text: "25% = 1/4 → divide by 4", why: "Half of a half" },
+                  { text: "75% = 3/4 → find 25%, then ×3", why: "Three quarters" },
+                  { text: "10% = 1/10 → divide by 10", why: "Your main building block" },
+                  { text: "20% = 1/5 → divide by 5 (or double 10%)", why: "One fifth ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "common-percentages-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid mixing up common percentage-fraction pairs",
+          "When to watch out for confusing 25% with 20% or 75% with 50%"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            percent: 25, amount: 80,
+            wrongAnswer: 8, correctAnswer: 20,
+            wrongMethod: "divided 80 by 10 instead of 4",
+            mistake: "confused 25% with 10% — he divided by 10 instead of by 4",
+            correctFraction: "1/4"
+          },
+          {
+            name: "Rosie",
+            percent: 75, amount: 60,
+            wrongAnswer: 15, correctAnswer: 45,
+            wrongMethod: "found 25% (which is 15) but forgot to multiply by 3",
+            mistake: "found a quarter but didn't multiply by 3 to get three quarters",
+            correctFraction: "3/4"
+          },
+          {
+            name: "Alfie",
+            percent: 20, amount: 50,
+            wrongAnswer: 25, correctAnswer: 10,
+            wrongMethod: "found 50% instead of 20%",
+            mistake: "mixed up 20% and 50% — he halved instead of dividing by 5",
+            correctFraction: "1/5"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Did ${v.name} get ${v.percent}% of ${v.amount} right?`,
+            body: (v) => `${v.name} says **${v.percent}% of ${v.amount} = ${v.wrongAnswer}**.\n\nDoes that look right to you?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s answer: ${v.percent}% of ${v.amount} = ${v.wrongAnswer}`, why: "Is this correct?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Here's the mistake!",
+            body: (v) => `${v.name} ${v.mistake}. The most common error is confusing which fraction goes with which percentage. Tap to see where it went wrong!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: ${v.name} ${v.wrongMethod}`, why: `Got ${v.wrongAnswer} — incorrect!` },
+                  { text: `${v.percent}% = ${v.correctFraction}`, why: "This is the correct equivalence" },
+                  { text: `${v.correctFraction} of ${v.amount} = ${v.correctAnswer}`, result: `The correct answer is ${v.correctAnswer} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct answer?",
+            body: (v) => `Now you know the mistake, what is **${v.percent}%** of **${v.amount}** really?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: "#c084fc" },
+                  { value: 100 - v.percent, label: `${100 - v.percent}%`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `Total: ${v.amount}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is ${v.percent}% of ${v.amount}?`,
+              getOptions: (v) => generateDistractors(v.correctAnswer),
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Yes! ${v.percent}% = ${v.correctFraction}, so ${v.correctFraction} of ${v.amount} = **${v.correctAnswer}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.correctFraction}. ${v.correctFraction} of ${v.amount} = **${v.correctAnswer}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Don't mix up your percentages!",
+            body: () => `The most common mistake is confusing which percentage goes with which fraction.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "10% = 1/10 (divide by 10)", why: "Don't confuse with 25%!" },
+                  { text: "25% = 1/4 (divide by 4)", why: "A quarter, not a tenth" },
+                  { text: "75% = 3/4 (find 25% then × 3)", why: "Don't stop at just 25%!" },
+                  { text: "20% = 1/5 (divide by 5)", why: "Don't confuse with 50% ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 3: finding-10-percent
+  // Finding 10% by dividing by 10
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: curiosity-hook
+  // ==========================================
+  {
+    id: "finding-10-percent",
+    name: "Finding 10% by Dividing by 10",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "finding-10-percent-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to find 10% of any number by dividing by 10",
+          "Why 10% is the building block for all other percentages"
+        ],
+        variableSets: [
+          {
+            name: "Mrs Patel",
+            scenario: "works out the 10% service charge on a restaurant bill of",
+            amount: 60, tenPercent: 6,
+            unit: "\u00a3", unitAfter: ""
+          },
+          {
+            name: "Tom",
+            scenario: "wants to save 10% of his birthday money. He got",
+            amount: 150, tenPercent: 15,
+            unit: "\u00a3", unitAfter: ""
+          },
+          {
+            name: "Priya",
+            scenario: "reads that 10% of the pupils in her school are left-handed. There are",
+            amount: 240, tenPercent: 24,
+            unit: "", unitAfter: " pupils"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What is 10% of ${v.unit}${v.amount}?`,
+            body: (v) => `${v.name} ${v.scenario} **${v.unit}${v.amount}${v.unitAfter}**.\n\nFinding **10%** is one of the most useful skills in maths. And it's surprisingly easy!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: Array.from({ length: 10 }, (_, i) => ({
+                  value: 1,
+                  label: i === 0 ? "10%" : "",
+                  color: i === 0 ? "#c084fc" : "#e5e7eb",
+                  empty: i > 0
+                })),
+                totalLabel: `${v.unit}${v.amount}${v.unitAfter} split into 10 equal parts`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Just divide by 10!",
+            body: (v) => `Finding 10% is the single most useful percentage trick — and it is surprisingly simple. Tap each step to learn the method!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: "10% means 10 out of 100", why: "Which simplifies to 1/10" },
+                  { text: `To find 1/10, divide by 10`, why: "Move every digit one place to the right" },
+                  { text: `${v.unit}${v.amount} ÷ 10 = ${v.unit}${v.tenPercent}`, result: `10% of ${v.unit}${v.amount} = ${v.unit}${v.tenPercent} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `To find 10% of any number, divide by ____`,
+              options: (v) => ["2", "5", "10", "100"],
+              correctIndex: (v) => 2,
+              feedback: {
+                correct: (v) => `Yes! 10% = 1/10, so just divide by 10. ✓`,
+                incorrect: (v) => `Not quite — 10% is the same as 1/10, so you divide by 10.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **10%** of **${v.unit}${v.amount}${v.unitAfter}**?\n\nRemember: just divide by 10!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 10, label: "10%", color: "#c084fc" },
+                  { value: 90, label: "90%", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.unit}${v.amount}${v.unitAfter}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is 10% of ${v.unit}${v.amount}?`,
+              getOptions: (v) => generateDistractors(v.tenPercent),
+              correctAnswer: (v) => v.tenPercent,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.unit}${v.amount} ÷ 10 = **${v.unit}${v.tenPercent}**. Easy when you know the trick! ✓`,
+                incorrect: (v) => `Not quite! To find 10%, divide by 10: ${v.unit}${v.amount} ÷ 10 = **${v.unit}${v.tenPercent}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Finding 10% — the recipe",
+            body: () => `This is the most important percentage trick to learn. You'll use it for almost every percentage question!`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "10% = 1/10 = divide by 10", why: "Move every digit one place to the right" },
+                  { text: "Works for any number!", why: "10% of 350 = 35, 10% of 42 = 4.2" },
+                  { text: "10% is your building block", why: "Once you know 10%, you can find 20%, 30%, 5% and more ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Curiosity Hook ----
+      {
+        id: "finding-10-percent-curiosity",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to apply the divide-by-10 shortcut to real-life percentage problems",
+          "When to watch out for dividing by the wrong number to find 10%"
+        ],
+        variableSets: [
+          {
+            name: "A pizza restaurant",
+            scenario: "adds a 10% tip to every bill automatically",
+            amount: 80, tenPercent: 8,
+            unit: "\u00a3", unitAfter: ""
+          },
+          {
+            name: "A sports shop",
+            scenario: "takes 10% off everything for their summer sale",
+            amount: 120, tenPercent: 12,
+            unit: "\u00a3", unitAfter: ""
+          },
+          {
+            name: "A school",
+            scenario: "discovers that 10% of its pupils walk to school. There are",
+            amount: 350, tenPercent: 35,
+            unit: "", unitAfter: " pupils"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "The one trick that unlocks ALL percentages!",
+            body: (v) => `${v.name} ${v.scenario}: **${v.unit}${v.amount}${v.unitAfter}**.\n\nWhat if we told you there's **one simple trick** that lets you find lots of different percentages? It all starts with 10%...`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: Array.from({ length: 10 }, (_, i) => ({
+                  value: 1,
+                  label: i === 0 ? "?" : "",
+                  color: i === 0 ? "#fbbf24" : "#e5e7eb",
+                  empty: i > 0
+                })),
+                totalLabel: `${v.unit}${v.amount}${v.unitAfter} — what is one piece worth?`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Divide by 10 — that's it!",
+            body: (v) => `**10%** equals one tenth — and finding a tenth is the easiest division there is. Once you know this trick, you can build up to almost any percentage. Tap to see it in action!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `10% of ${v.unit}${v.amount}`, why: `${v.unit}${v.amount} ÷ 10` , result: `= ${v.unit}${v.tenPercent}` },
+                  { text: `20% = two lots of 10%`, why: `${v.unit}${v.tenPercent} × 2`, result: `= ${v.unit}${v.tenPercent * 2}` },
+                  { text: `5% = half of 10%`, why: `${v.unit}${v.tenPercent} ÷ 2`, result: `= ${v.unit}${v.tenPercent / 2}` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Try it yourself!",
+            body: (v) => `What is **10%** of **${v.unit}${v.amount}${v.unitAfter}**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 10, label: "10%?", color: "#fbbf24" },
+                  { value: 90, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.unit}${v.amount}${v.unitAfter}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `10% of ${v.unit}${v.amount} = ?`,
+              getOptions: (v) => generateDistractors(v.tenPercent),
+              correctAnswer: (v) => v.tenPercent,
+              feedback: {
+                correct: (v) => `Yes! ${v.unit}${v.amount} ÷ 10 = **${v.unit}${v.tenPercent}**. You've unlocked the master building block! ✓`,
+                incorrect: (v) => `Not quite! Divide by 10: ${v.unit}${v.amount} ÷ 10 = **${v.unit}${v.tenPercent}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "10% is the master building block!",
+            body: () => `Once you can find 10%, the rest is just adding and halving:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "10% = divide by 10", why: "This is the one trick you MUST know" },
+                  { text: "From 10% you can get 20% (×2), 30% (×3), etc.", why: "Just multiply your 10% answer" },
+                  { text: "From 10% you can get 5% (halve it)", why: "And even 1% by dividing 10% by 10 ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 4: building-percentages
+  // Building other %s from 10% and 1%
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "building-percentages",
+    name: "Building Percentages from 10% and 1%",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "building-percentages-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to build lots of different percentages from 10% and 1% blocks",
+          "How to find 5% (half of 10%) and 1% (divide by 100)"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "works out a 35% discount on a coat costing",
+            amount: 200, targetPercent: 35,
+            tenPercent: 20, fivePercent: 10, onePercent: 2,
+            buildDesc: "3 lots of 10% + one 5%",
+            buildCalc: "3 \u00d7 20 + 10",
+            answer: 70,
+            unit: "\u00a3", unitAfter: ""
+          },
+          {
+            name: "Ben",
+            scenario: "calculates that 22% of his class brought packed lunch. There are",
+            amount: 150, targetPercent: 22,
+            tenPercent: 15, fivePercent: 7.5, onePercent: 1.5,
+            buildDesc: "2 lots of 10% + 2 lots of 1%",
+            buildCalc: "2 \u00d7 15 + 2 \u00d7 1.5",
+            answer: 33,
+            unit: "", unitAfter: " pupils"
+          },
+          {
+            name: "Chloe",
+            scenario: "needs to score at least 45% on her practice test out of",
+            amount: 80, targetPercent: 45,
+            tenPercent: 8, fivePercent: 4, onePercent: 0.8,
+            buildDesc: "4 lots of 10% + one 5%",
+            buildCalc: "4 \u00d7 8 + 4",
+            answer: 36,
+            unit: "", unitAfter: " marks"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `How do you find ${v.targetPercent}%?`,
+            body: (v) => `${v.name} ${v.scenario} **${v.unit}${v.amount}${v.unitAfter}**.\n\nYou might not know ${v.targetPercent}% straight away, but you DO know how to find 10%. Let's build up from there!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.targetPercent, label: `${v.targetPercent}%`, color: "#c084fc" },
+                  { value: 100 - v.targetPercent, label: `${100 - v.targetPercent}%`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.unit}${v.amount}${v.unitAfter}`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: (v) => `Build ${v.targetPercent}% from blocks`,
+            body: (v) => `Any percentage can be built from just three building blocks: **10%**, **5%**, and **1%**. Tap to see how they combine to make ${v.targetPercent}%.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `10% of ${v.unit}${v.amount} = ${v.unit}${v.tenPercent}`, why: `${v.unit}${v.amount} \u00f7 10` },
+                  { text: `5% = ${v.unit}${v.fivePercent}`, why: `Half of ${v.unit}${v.tenPercent}` },
+                  { text: `1% = ${v.unit}${v.onePercent}`, why: `${v.unit}${v.amount} \u00f7 100` },
+                  { text: `${v.targetPercent}% = ${v.buildDesc}`, why: v.buildCalc, result: `= ${v.unit}${v.answer} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.targetPercent}%** of **${v.unit}${v.amount}${v.unitAfter}**?\n\n10% = ${v.unit}${v.tenPercent}, 5% = ${v.unit}${v.fivePercent}, 1% = ${v.unit}${v.onePercent}. Build it up!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: Array.from({ length: 10 }, (_, i) => ({
+                  value: 1,
+                  label: i === 0 ? `${v.unit}${v.tenPercent}` : "",
+                  color: i < Math.floor(v.targetPercent / 10) ? "#c084fc" : "#e5e7eb",
+                  empty: i >= Math.floor(v.targetPercent / 10)
+                })),
+                totalLabel: `Build up to ${v.targetPercent}%`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is ${v.targetPercent}% of ${v.unit}${v.amount}?`,
+              getOptions: (v) => generateDistractors(v.answer),
+              correctAnswer: (v) => v.answer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.targetPercent}% = ${v.buildDesc} = ${v.buildCalc} = **${v.unit}${v.answer}${v.unitAfter}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.targetPercent}% = ${v.buildDesc}. That's ${v.buildCalc} = **${v.unit}${v.answer}${v.unitAfter}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Building lots of different percentages — the recipe",
+            body: () => `Once you know 10%, 5% and 1%, you can find lots of different percentages:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Find 10% (divide by 10)", why: "Your main building block" },
+                  { text: "Step 2: Find 5% (halve your 10%)", why: "Useful for percentages ending in 5" },
+                  { text: "Step 3: Find 1% (divide by 100)", why: "For odd percentages like 3% or 17%" },
+                  { text: "Step 4: Combine blocks to reach the target", why: "e.g. 35% = 3\u00d710% + 5%, 17% = 10% + 5% + 2\u00d71% ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "building-percentages-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid errors when combining 10% and 1% blocks",
+          "When to watch out for using the wrong building blocks for a percentage"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            amount: 300, targetPercent: 30,
+            wrongAnswer: 9, correctAnswer: 90,
+            tenPercent: 30,
+            mistake: "found 1% instead of 10% — he divided by 100 instead of by 10, then multiplied by 3",
+            wrongMethod: "300 \u00f7 100 = 3, then 3 \u00d7 3 = 9"
+          },
+          {
+            name: "Rosie",
+            amount: 160, targetPercent: 15,
+            wrongAnswer: 21, correctAnswer: 24,
+            tenPercent: 16,
+            mistake: "found 10% correctly (16) but then added 5 instead of finding 5% (which is half of 16 = 8)",
+            wrongMethod: "10% = 16, then 16 + 5 = 21 instead of 16 + 8 = 24"
+          },
+          {
+            name: "Alfie",
+            amount: 400, targetPercent: 35,
+            wrongAnswer: 200, correctAnswer: 140,
+            tenPercent: 40,
+            mistake: "built 35% as 3\u00d710% + 5%, but found 5% by dividing 400 by 5 instead of halving 10%",
+            wrongMethod: "3 \u00d7 40 = 120, then 400 \u00f7 5 = 80, total = 200"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you spot ${v.name}'s error?`,
+            body: (v) => `${v.name} tried to find **${v.targetPercent}% of ${v.amount}** but got it wrong.\n\n${v.name}'s working: ${v.wrongMethod}\n\nWhat went wrong?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s working: ${v.wrongMethod}`, why: "Can you see the mistake?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Here's what went wrong!",
+            body: (v) => `${v.name} ${v.mistake}. The building blocks must be found correctly first — one wrong block throws off the entire calculation. Tap to see the right way.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `10% of ${v.amount} = ${v.tenPercent}`, why: `${v.amount} ÷ 10` },
+                  { text: `5% = ${v.tenPercent / 2}`, why: `Half of ${v.tenPercent}` },
+                  { text: `1% = ${v.amount / 100}`, why: `${v.amount} ÷ 100` },
+                  { text: `Correct answer: ${v.correctAnswer}`, result: `${v.targetPercent}% of ${v.amount} = ${v.correctAnswer} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Find 10%: ${v.amount} ÷ 10 = ${v.tenPercent}`,
+                `Find 5%: half of ${v.tenPercent} = ${v.tenPercent / 2}`,
+                `Find 1%: ${v.amount} ÷ 100 = ${v.amount / 100}`,
+                `Build ${v.targetPercent}%: ${v.correctAnswer}`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Find the building blocks first, then combine. ✓`,
+                incorrect: (v) => `Not quite — always start with 10%, then build 5% and 1% from it.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct answer?",
+            body: (v) => `What is **${v.targetPercent}%** of **${v.amount}**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.targetPercent, label: `${v.targetPercent}%`, color: "#c084fc" },
+                  { value: 100 - v.targetPercent, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `Total: ${v.amount}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.targetPercent}% of ${v.amount} = ?`,
+              getOptions: (v) => generateDistractors(v.correctAnswer),
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Spot on! ${v.targetPercent}% of ${v.amount} = **${v.correctAnswer}**. Build from 10%, not from shortcuts that don't work! ✓`,
+                incorrect: (v) => `Not quite! 10% = ${v.tenPercent}. Build up: **${v.correctAnswer}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Common building-block mistakes",
+            body: () => `Watch out for these traps when building percentages:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "10% = divide by 10, NOT by 100", why: "Dividing by 100 gives you 1%, not 10%!" },
+                  { text: "5% = HALF of 10%, not the amount \u00f7 5", why: "\u00f7 5 gives you 20%, not 5%" },
+                  { text: "Always find 10% first, then build from there", why: "10% is the safe starting point for everything ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 5: express-as-percentage
+  // Expressing one number as % of another
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "express-as-percentage",
+    name: "Expressing One Number as a Percentage of Another",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "express-as-percentage-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to express one number as a percentage of another",
+          "Why you divide and then multiply by 100"
+        ],
+        variableSets: [
+          {
+            name: "Priya",
+            scenario: "scored 18 out of 25 on her spelling test",
+            part: 18, whole: 25,
+            division: 0.72, answer: 72,
+            unit: "marks"
+          },
+          {
+            name: "Tom",
+            scenario: "saved \u00a336 out of his \u00a3120 birthday money",
+            part: 36, whole: 120,
+            division: 0.3, answer: 30,
+            unit: "pounds"
+          },
+          {
+            name: "Mia",
+            scenario: "ate 6 out of the 20 biscuits in the tin",
+            part: 6, whole: 20,
+            division: 0.3, answer: 30,
+            unit: "biscuits"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.part} out of ${v.whole} — what percentage?`,
+            body: (v) => `${v.name} ${v.scenario}. That's **${v.part}** out of **${v.whole}**.\n\nBut what percentage is that? There's a simple rule to find out!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.part, label: `${v.part}`, color: "#c084fc" },
+                  { value: v.whole - v.part, label: `${v.whole - v.part}`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.part} out of ${v.whole} = ?%`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Divide, then multiply by 100",
+            body: (v) => `There is a simple two-step method for converting (changing) any "X out of Y" into a percentage. Tap to learn it!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: "Write the fraction: part ÷ whole", why: `${v.part} ÷ ${v.whole}`, result: `= ${v.division}` },
+                  { text: "Multiply by 100", why: `${v.division} × 100`, result: `= ${v.answer}%` },
+                  { text: `${v.part} out of ${v.whole} = ${v.answer}%`, result: "Done! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Divide: ${v.part} ÷ ${v.whole} = ${v.division}`,
+                `Multiply by 100: ${v.division} × 100 = ${v.answer}`,
+                `Add the % sign: ${v.answer}%`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Divide part by whole, then multiply by 100. ✓`,
+                incorrect: (v) => `Not quite — first divide the part by the whole, then multiply by 100.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.part}** out of **${v.whole}** as a percentage?\n\nDivide ${v.part} by ${v.whole}, then multiply by 100.`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.part, label: `${v.part}`, color: "#c084fc" },
+                  { value: v.whole - v.part, label: `${v.whole - v.part}`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.whole} total`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.part} out of ${v.whole} = ?%`,
+              getOptions: (v) => generateDistractors(v.answer),
+              correctAnswer: (v) => v.answer,
+              feedback: {
+                correct: (v) => `Brilliant! (${v.part} \u00f7 ${v.whole}) \u00d7 100 = **${v.answer}%**. ✓`,
+                incorrect: (v) => `Not quite! (${v.part} \u00f7 ${v.whole}) \u00d7 100 = ${v.division} \u00d7 100 = **${v.answer}%**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Expressing as a percentage — the recipe",
+            body: () => `Any time you need to convert "X out of Y" into a percentage:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Write as a fraction: part \u00f7 whole", why: "The part goes on top, the total goes on the bottom" },
+                  { text: "Divide to get a decimal", why: "Use short division or a calculator" },
+                  { text: "Multiply by 100 to get the %", why: "This converts the decimal into a percentage ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "express-as-percentage-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid dividing the numbers the wrong way round",
+          "When to watch out for forgetting to multiply by 100 at the end"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            part: 15, whole: 60,
+            wrongAnswer: 25, correctAnswer: 25,
+            actualWrong: 400,
+            mistake: "divided the wrong way round (60 \u00f7 15 = 4, then 4 \u00d7 100 = 400%)",
+            wrongWorking: "60 \u00f7 15 = 4, then 4 \u00d7 100 = 400%"
+          },
+          {
+            name: "Rosie",
+            part: 12, whole: 40,
+            wrongAnswer: 30, correctAnswer: 30,
+            actualWrong: 3,
+            mistake: "divided correctly (12 \u00f7 40 = 0.3) but forgot to multiply by 100, so said 0.3%",
+            wrongWorking: "12 \u00f7 40 = 0.3, answer = 0.3%"
+          },
+          {
+            name: "Alfie",
+            part: 9, whole: 50,
+            wrongAnswer: 18, correctAnswer: 18,
+            actualWrong: 9,
+            mistake: "just wrote the part as the percentage without dividing (said 9%)",
+            wrongWorking: "9 out of 50... so 9%?"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you spot ${v.name}'s error?`,
+            body: (v) => `${v.name} tried to express **${v.part}** out of **${v.whole}** as a percentage.\n\n${v.name}'s working: ${v.wrongWorking}\n\nWhat went wrong?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s working: ${v.wrongWorking}`, why: "Is this right?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Here's the correct method!",
+            body: (v) => `${v.name} ${v.mistake}. The correct method is always **(part / whole) x 100** — and the order matters! Tap to see it done right.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Part \u00f7 whole: ${v.part} \u00f7 ${v.whole}`, result: `= ${v.part / v.whole}` },
+                  { text: `Multiply by 100`, result: `${v.part / v.whole} \u00d7 100 = ${v.correctAnswer}%` },
+                  { text: `${v.part} out of ${v.whole} = ${v.correctAnswer}%`, result: "Correct! ✓" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Now you try!",
+            body: (v) => `What is **${v.part}** out of **${v.whole}** as a percentage?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.part, label: `${v.part}`, color: "#c084fc" },
+                  { value: v.whole - v.part, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.whole} total`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.part} out of ${v.whole} as a percentage?`,
+              getOptions: (v) => generateDistractors(v.correctAnswer),
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Spot on! (${v.part} \u00f7 ${v.whole}) \u00d7 100 = **${v.correctAnswer}%**. ✓`,
+                incorrect: (v) => `Not quite! (${v.part} \u00f7 ${v.whole}) \u00d7 100 = **${v.correctAnswer}%**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Avoid these common traps!",
+            body: () => `When expressing as a percentage, always remember:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Divide PART by WHOLE (not the other way round!)", why: "The smaller number usually goes on top" },
+                  { text: "Don't forget to multiply by 100", why: "0.3 is NOT the same as 0.3% — it's 30%!" },
+                  { text: "The part alone is NOT the percentage", why: "9 out of 50 is not 9% — it's 18% ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 6: percentage-increase
+  // Percentage increase (find %, then add)
+  // Category: supporting
+  // Lesson A: step-by-step | Lesson B: curiosity-hook
+  // ==========================================
+  {
+    id: "percentage-increase",
+    name: "Percentage Increase",
+    category: "supporting",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "percentage-increase-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to calculate a price after a percentage increase",
+          "Why you find the percentage first, then add"
+        ],
+        variableSets: [
+          {
+            name: "A toy shop",
+            scenario: "increases prices by 20% after Christmas. A board game was",
+            original: 30, percent: 20,
+            increase: 6, newPrice: 36,
+            tenPercent: 3,
+            unit: "\u00a3"
+          },
+          {
+            name: "A landlord",
+            scenario: "raises the rent by 10%. The rent was",
+            original: 800, percent: 10,
+            increase: 80, newPrice: 880,
+            tenPercent: 80,
+            unit: "\u00a3"
+          },
+          {
+            name: "A bakery",
+            scenario: "puts up the price of bread by 25%. A loaf was",
+            original: 2, percent: 25,
+            increase: 0.5, newPrice: 2.5,
+            tenPercent: 0.2,
+            unit: "\u00a3"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.percent}% increase on ${v.unit}${v.original}`,
+            body: (v) => `${v.name} ${v.scenario} **${v.unit}${v.original}**.\n\nWhat's the new price after a **${v.percent}% increase**? Let's work it out step by step!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100, label: `Original: ${v.unit}${v.original}`, color: "#818cf8" },
+                  { value: v.percent, label: `+${v.percent}%`, color: "#34d399" }
+                ],
+                totalLabel: `Original + increase = new price`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find the %, then add it on!",
+            body: (v) => `Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it gets bigger\n3. **Check:** your answer should be MORE than you started with\n\nTap to see each step!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Find ${v.percent}% of ${v.unit}${v.original}`, why: `10% = ${v.unit}${v.tenPercent}, so ${v.percent}% = ${v.unit}${v.increase}`, result: `Increase = ${v.unit}${v.increase}` },
+                  { text: `Add to the original`, why: `${v.unit}${v.original} + ${v.unit}${v.increase}`, result: `New price = ${v.unit}${v.newPrice} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.unit}${v.original}** after a **${v.percent}% increase**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100, label: `${v.unit}${v.original}`, color: "#818cf8" },
+                  { value: v.percent, label: `+${v.percent}%?`, color: "#34d399" }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.unit}${v.original} increased by ${v.percent}% = ?`,
+              getOptions: (v) => generateDistractors(v.newPrice),
+              correctAnswer: (v) => v.newPrice,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.percent}% of ${v.unit}${v.original} = ${v.unit}${v.increase}. Add it on: ${v.unit}${v.original} + ${v.unit}${v.increase} = **${v.unit}${v.newPrice}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.unit}${v.increase}. Then add: ${v.unit}${v.original} + ${v.unit}${v.increase} = **${v.unit}${v.newPrice}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Percentage increase — the recipe",
+            body: () => `Remember: find the percentage, then ADD it on.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Find 10% by dividing by 10", why: "This is your building block" },
+                  { text: "2. Scale up to the percentage you need", why: "e.g. 30% = 10% × 3" },
+                  { text: "3. ADD the percentage to the original", why: "Increase means it gets bigger" },
+                  { text: "4. Check: is your answer bigger than the original?", why: "If not, you subtracted instead of added! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Curiosity Hook ----
+      {
+        id: "percentage-increase-curiosity",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to apply percentage increase to real shopping and money problems",
+          "When to watch out for adding the percentage to the wrong amount"
+        ],
+        variableSets: [
+          {
+            name: "A museum",
+            scenario: "had 500 visitors last month. This month, visitors went up by 30%. How many visitors this month?",
+            original: 500, percent: 30,
+            increase: 150, newAmount: 650,
+            tenPercent: 50,
+            unit: "", unitAfter: " visitors"
+          },
+          {
+            name: "A village",
+            scenario: "had a population of 2000. It grew by 15%. What's the new population?",
+            original: 2000, percent: 15,
+            increase: 300, newAmount: 2300,
+            tenPercent: 200,
+            unit: "", unitAfter: " people"
+          },
+          {
+            name: "A squirrel",
+            scenario: "had collected 80 acorns. By autumn, its stash grew by 50%. How many now?",
+            original: 80, percent: 50,
+            increase: 40, newAmount: 120,
+            tenPercent: 8,
+            unit: "", unitAfter: " acorns"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Up by ${v.percent}%!`,
+            body: (v) => `${v.name} ${v.scenario}\n\nA percentage increase means the amount gets **bigger**. But by how much exactly?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.original, label: `${v.original}`, color: "#818cf8" },
+                  { value: v.increase, label: `+${v.percent}%`, color: "#34d399" }
+                ],
+                totalLabel: `Original + increase = ?`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find it, then add it!",
+            body: (v) => `Start by finding **10%** as your building block, then build up to ${v.percent}%. Once you have the increase, just add it on. Tap to follow along!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `10% of ${v.original} = ${v.tenPercent}`, why: `${v.original} ÷ 10` },
+                  { text: `${v.percent}% of ${v.original} = ${v.increase}`, why: "Build from 10%" },
+                  { text: `${v.original} + ${v.increase} = ${v.newAmount}`, result: `New total = ${v.newAmount}${v.unitAfter} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Find 10%: ${v.original} ÷ 10 = ${v.tenPercent}`,
+                `Build up to ${v.percent}%: ${v.increase}`,
+                `Add to original: ${v.original} + ${v.increase} = ${v.newAmount}`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Find the percentage, then add it on. ✓`,
+                incorrect: (v) => `Not quite — first find the percentage amount, then add it to the original.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is ${v.original} increased by ${v.percent}%?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.original, label: `${v.original}`, color: "#818cf8" },
+                  { value: v.increase, label: "?", color: "#34d399" }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.original} increased by ${v.percent}% = ?`,
+              getOptions: (v) => generateDistractors(v.newAmount),
+              correctAnswer: (v) => v.newAmount,
+              feedback: {
+                correct: (v) => `Yes! ${v.percent}% of ${v.original} = ${v.increase}. Then ${v.original} + ${v.increase} = **${v.newAmount}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% of ${v.original} = ${v.increase}. Add it on: ${v.original} + ${v.increase} = **${v.newAmount}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Remember: increase = find %, then add!",
+            body: () => `Percentage increase is a two-step process:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Find the percentage amount", why: "Use 10% as your building block" },
+                  { text: "ADD it to the original", why: "Increase = bigger, so you add" },
+                  { text: "Sense check: new amount > original?", why: "If not, something went wrong! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 7: percentage-decrease
+  // Percentage decrease / discount
+  // Category: supporting
+  // Lesson A: step-by-step | Lesson B: curiosity-hook
+  // ==========================================
+  {
+    id: "percentage-decrease",
+    name: "Percentage Decrease and Discounts",
+    category: "supporting",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "percentage-decrease-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to calculate a sale price after a percentage discount",
+          "Why you find the percentage first, then subtract"
+        ],
+        variableSets: [
+          {
+            name: "Lauren",
+            scenario: "spots trainers in a sale with 20% off. They were",
+            original: 60, percent: 20,
+            decrease: 12, salePrice: 48,
+            tenPercent: 6,
+            unit: "\u00a3"
+          },
+          {
+            name: "Daisy",
+            scenario: "finds a jacket reduced by 30% in the January sales. It was",
+            original: 80, percent: 30,
+            decrease: 24, salePrice: 56,
+            tenPercent: 8,
+            unit: "\u00a3"
+          },
+          {
+            name: "Evie",
+            scenario: "gets 15% off a board game for her birthday. It normally costs",
+            original: 40, percent: 15,
+            decrease: 6, salePrice: 34,
+            tenPercent: 4,
+            unit: "\u00a3"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.percent}% off ${v.unit}${v.original}!`,
+            body: (v) => `${v.name} ${v.scenario} **${v.unit}${v.original}**.\n\nWhat's the sale price after **${v.percent}% off**? Let's work it out!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100 - v.percent, label: `You pay: ?`, color: "#818cf8" },
+                  { value: v.percent, label: `${v.percent}% off`, color: "#f87171" }
+                ],
+                totalLabel: `Original: ${v.unit}${v.original}`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find the %, then take it away!",
+            body: (v) => `Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the original — decrease means it gets smaller\n3. **Check:** your answer should be LESS than you started with\n\nTap to see each step of the discount!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Find ${v.percent}% of ${v.unit}${v.original}`, why: `10% = ${v.unit}${v.tenPercent}, build up to ${v.percent}%`, result: `Discount = ${v.unit}${v.decrease}` },
+                  { text: `Subtract from the original`, why: `${v.unit}${v.original} - ${v.unit}${v.decrease}`, result: `Sale price = ${v.unit}${v.salePrice} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `For a percentage decrease, find the percentage then ____ it from the original`,
+              options: (v) => ["add", "subtract", "multiply", "divide"],
+              correctIndex: (v) => 1,
+              feedback: {
+                correct: (v) => `Yes! Decrease means subtract — the answer should be less than the original. ✓`,
+                incorrect: (v) => `Not quite — decrease means it gets smaller, so you subtract.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.unit}${v.original}** after **${v.percent}% off**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100 - v.percent, label: `You pay`, color: "#818cf8" },
+                  { value: v.percent, label: `-${v.percent}%`, color: "#f87171" }
+                ],
+                totalLabel: `${v.unit}${v.original}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.unit}${v.original} with ${v.percent}% off = ?`,
+              getOptions: (v) => generateDistractors(v.salePrice),
+              correctAnswer: (v) => v.salePrice,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.percent}% of ${v.unit}${v.original} = ${v.unit}${v.decrease}. Take it away: ${v.unit}${v.original} - ${v.unit}${v.decrease} = **${v.unit}${v.salePrice}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.unit}${v.decrease}. Then ${v.unit}${v.original} - ${v.unit}${v.decrease} = **${v.unit}${v.salePrice}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Percentage decrease — the recipe",
+            body: () => `Remember: find the percentage, then SUBTRACT it.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Find 10% by dividing by 10", why: "This is your building block" },
+                  { text: "2. Scale up to the percentage you need", why: "e.g. 25% = 10% × 2 + 5%" },
+                  { text: "3. SUBTRACT the percentage from the original", why: "Decrease means it gets smaller" },
+                  { text: "4. Check: is your answer smaller than the original?", why: "If not, you added instead of subtracted! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Curiosity Hook ----
+      {
+        id: "percentage-decrease-curiosity",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to apply percentage discount calculations to real sale prices",
+          "When to watch out for subtracting the percentage instead of the amount"
+        ],
+        variableSets: [
+          {
+            name: "A school",
+            scenario: "had 400 pupils, but numbers dropped by 15%. How many now?",
+            original: 400, percent: 15,
+            decrease: 60, newAmount: 340,
+            tenPercent: 40,
+            unit: "", unitAfter: " pupils"
+          },
+          {
+            name: "A wildlife park",
+            scenario: "had 600 animals. After a harsh winter, numbers fell by 10%. How many survived?",
+            original: 600, percent: 10,
+            decrease: 60, newAmount: 540,
+            tenPercent: 60,
+            unit: "", unitAfter: " animals"
+          },
+          {
+            name: "A swimming pool",
+            scenario: "normally uses 2000 litres of water a day. A new system reduces this by 25%. How much now?",
+            original: 2000, percent: 25,
+            decrease: 500, newAmount: 1500,
+            tenPercent: 200,
+            unit: "", unitAfter: " litres"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Down by ${v.percent}%!`,
+            body: (v) => `${v.name} ${v.scenario}\n\nA percentage decrease means the amount gets **smaller**. But how much smaller?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100 - v.percent, label: `Remaining`, color: "#818cf8" },
+                  { value: v.percent, label: `-${v.percent}%`, color: "#f87171" }
+                ],
+                totalLabel: `Started with ${v.original}${v.unitAfter}`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find it, then take it away!",
+            body: (v) => `Build up to **${v.percent}%** using the 10% building block, then take it away from the original. Tap to follow the working!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `10% of ${v.original} = ${v.tenPercent}`, why: `${v.original} ÷ 10` },
+                  { text: `${v.percent}% of ${v.original} = ${v.decrease}`, why: "Build from 10%" },
+                  { text: `${v.original} - ${v.decrease} = ${v.newAmount}`, result: `New total = ${v.newAmount}${v.unitAfter} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "match-pairs",
+              pairs: (v) => [
+                { left: "Increase", right: "Add the %" },
+                { left: "Decrease", right: "Subtract the %" },
+                { left: "10%", right: "÷ 10" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is ${v.original} decreased by ${v.percent}%?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100 - v.percent, label: "?", color: "#818cf8" },
+                  { value: v.percent, label: `-${v.percent}%`, color: "#f87171" }
+                ],
+                totalLabel: `${v.original}${v.unitAfter}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.original} decreased by ${v.percent}% = ?`,
+              getOptions: (v) => generateDistractors(v.newAmount),
+              correctAnswer: (v) => v.newAmount,
+              feedback: {
+                correct: (v) => `Yes! ${v.percent}% of ${v.original} = ${v.decrease}. Then ${v.original} - ${v.decrease} = **${v.newAmount}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.decrease}. Subtract: ${v.original} - ${v.decrease} = **${v.newAmount}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Remember: decrease = find %, then subtract!",
+            body: () => `Percentage decrease is the opposite of increase:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Find the percentage amount", why: "Same method as always — building blocks" },
+                  { text: "SUBTRACT it from the original", why: "Decrease = smaller, so you take away" },
+                  { text: "Sense check: new amount < original?", why: "If not, something went wrong! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 8: percent-to-fraction
+  // Converting % to fraction and simplifying
+  // Category: supporting
+  // Lesson A: step-by-step | Lesson B: key-fact
+  // ==========================================
+  {
+    id: "percent-to-fraction",
+    name: "Converting Percentages to Fractions",
+    category: "supporting",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "percent-to-fraction-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to write a percentage as a fraction over 100",
+          "How to simplify the fraction"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            percent: 40,
+            fractionOver100: "40/100",
+            hcf: 20,
+            simplified: "2/5",
+            simpNum: 2, simpDen: 5
+          },
+          {
+            name: "Ben",
+            percent: 75,
+            fractionOver100: "75/100",
+            hcf: 25,
+            simplified: "3/4",
+            simpNum: 3, simpDen: 4
+          },
+          {
+            name: "Chloe",
+            percent: 60,
+            fractionOver100: "60/100",
+            hcf: 20,
+            simplified: "3/5",
+            simpNum: 3, simpDen: 5
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What is ${v.percent}% as a fraction?`,
+            body: (v) => `${v.name} needs to write **${v.percent}%** as a fraction. Remember: percent means "out of 100" — so that gives us our starting point!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: "#c084fc" },
+                  { value: 100 - v.percent, label: `${100 - v.percent}%`, color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: "100%",
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Put it over 100, then simplify!",
+            body: (v) => `Since percent means "out of 100", any percentage instantly becomes a fraction — then you just simplify. Tap to see the two-step process!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Write as a fraction: ${v.fractionOver100}`, why: "% means out of 100" },
+                  { text: `Find the HCF (biggest number that divides into both) of ${v.percent} and 100`, result: `HCF = ${v.hcf}` },
+                  { text: `Divide top and bottom by ${v.hcf}`, why: `${v.percent}÷${v.hcf} = ${v.simpNum}, 100÷${v.hcf} = ${v.simpDen}`, result: `${v.percent}% = ${v.simplified} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Write ${v.percent}% as ${v.fractionOver100}`,
+                `Find the HCF of ${v.percent} and 100: ${v.hcf}`,
+                `Divide top and bottom by ${v.hcf}: ${v.simplified}`
+              ],
+              feedback: {
+                correct: (v) => `Perfect order! Put over 100, find the HCF, then simplify. ✓`,
+                incorrect: (v) => `Not quite — first write it over 100, then simplify using the HCF.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Write **${v.percent}%** as a fraction in its simplest form.`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: "#c084fc" },
+                  { value: 100 - v.percent, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.percent}% = ${v.fractionOver100} = ?`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.percent}% as a simplified fraction?`,
+              getOptions: (v) => [
+                v.simplified,
+                `${v.percent}/100`,
+                `${v.simpDen}/${v.simpNum}`,
+                `${v.simpNum}/${v.simpDen + 1}`,
+                `${v.simpNum + 1}/${v.simpDen}`
+              ],
+              correctAnswer: (v) => v.simplified,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.percent}% = ${v.fractionOver100}. Simplify by dividing both by ${v.hcf}: **${v.simplified}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.fractionOver100}. Divide both by ${v.hcf} to get **${v.simplified}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "% to fraction — the recipe",
+            body: () => `Converting (changing) a percentage to a fraction is just two steps:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Write the percentage over 100", why: "40% becomes 40/100" },
+                  { text: "Step 2: Simplify the fraction", why: "Find the HCF and divide top and bottom" },
+                  { text: "Check: is the fraction in its simplest form?", why: "Can you divide both by anything else? If not, done! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Key Fact ----
+      {
+        id: "percent-to-fraction-keyfact",
+        templateType: "key-fact",
+        learningGoal: [
+          "How to apply percentage-to-fraction conversion in exam questions",
+          "When to watch out for not simplifying the fraction fully"
+        ],
+        variableSets: [
+          {
+            name: "Oliver",
+            percent: 35,
+            fractionOver100: "35/100",
+            hcf: 5,
+            simplified: "7/20",
+            simpNum: 7, simpDen: 20
+          },
+          {
+            name: "Mia",
+            percent: 15,
+            fractionOver100: "15/100",
+            hcf: 5,
+            simplified: "3/20",
+            simpNum: 3, simpDen: 20
+          },
+          {
+            name: "Hassan",
+            percent: 80,
+            fractionOver100: "80/100",
+            hcf: 20,
+            simplified: "4/5",
+            simpNum: 4, simpDen: 5
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Quick convert: ${v.percent}% to a fraction!`,
+            body: (v) => `${v.name} needs to convert (change) **${v.percent}%** to a fraction.\n\nThe key fact: **percent means out of 100**, so you already know the bottom number (denominator)!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: "#c084fc" },
+                  { value: 100 - v.percent, label: "", color: "#e5e7eb", empty: true }
+                ],
+                totalLabel: `${v.percent}% = ? as a fraction`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Key fact: just put it over 100!",
+            body: (v) => `The shortcut: put the percentage over 100, then simplify by dividing top and bottom by the same number. Tap to see it in action!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.percent}% = ${v.fractionOver100}`, why: "Put the % number over 100" },
+                  { text: `Simplify: ÷${v.hcf} on top and bottom`, result: `= ${v.simplified} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "match-pairs",
+              pairs: (v) => [
+                { left: "20%", right: "1/5" },
+                { left: "75%", right: "3/4" },
+                { left: "40%", right: "2/5" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.percent}%** as a fraction in simplest form?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percent, label: `${v.percent}%`, color: "#c084fc" },
+                  { value: 100 - v.percent, label: "", color: "#e5e7eb", empty: true }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.percent}% = which fraction?`,
+              getOptions: (v) => [
+                v.simplified,
+                v.fractionOver100,
+                `${v.simpDen}/${v.simpNum}`,
+                `${v.simpNum}/${v.simpDen - 1}`,
+                `${v.simpNum + 1}/${v.simpDen}`
+              ],
+              correctAnswer: (v) => v.simplified,
+              feedback: {
+                correct: (v) => `Spot on! ${v.percent}% = ${v.fractionOver100}, simplified to **${v.simplified}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.percent}% = ${v.fractionOver100}. Divide both by ${v.hcf}: **${v.simplified}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Remember the two steps!",
+            body: () => `Percent to fraction is always the same:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Write over 100", why: "The % number becomes the numerator (top number), 100 is the denominator (bottom number)" },
+                  { text: "Simplify by dividing top and bottom by the HCF (highest common factor — the biggest number that goes into both)", why: "Always give fractions in simplest form ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 9: percent-to-decimal
+  // Converting % to decimal and back
+  // Category: supporting
+  // Lesson A: key-fact | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "percent-to-decimal",
+    name: "Converting Between Percentages and Decimals",
+    category: "supporting",
+    lessons: [
+      // ---- Lesson A: Key Fact ----
+      {
+        id: "percent-to-decimal-keyfact",
+        templateType: "key-fact",
+        learningGoal: [
+          "How to convert (change) a percentage to a decimal by dividing by 100",
+          "Why 5% = 0.05, not 0.5"
+        ],
+        variableSets: [
+          {
+            name: "Priya",
+            percent: 35,
+            decimal: 0.35,
+            wrongDecimal: 3.5,
+            scenario: "converting 35% to a decimal for a calculator"
+          },
+          {
+            name: "Tom",
+            percent: 8,
+            decimal: 0.08,
+            wrongDecimal: 0.8,
+            scenario: "converting 8% interest rate to a decimal"
+          },
+          {
+            name: "Mia",
+            percent: 125,
+            decimal: 1.25,
+            wrongDecimal: 12.5,
+            scenario: "converting 125% to a decimal"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.percent}% as a decimal?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nTo convert a percentage to a decimal, you just need **one simple rule**: divide by 100!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.percent}% \u00f7 100 = ?`, why: "Move the decimal point two places to the LEFT" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Key fact: % to decimal = divide by 100",
+            body: (v) => `Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.percent}% ÷ 100 = ${v.decimal}`, why: "Move decimal point 2 places left", result: `${v.percent}% = ${v.decimal}` },
+                  { text: `Check: ${v.decimal} × 100 = ${v.percent}%`, why: "Multiply by 100 to go back", result: "It works! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "fill-blank",
+              sentence: (v) => `To convert a percentage to a decimal, divide by ____`,
+              options: (v) => ["10", "50", "100", "1000"],
+              correctIndex: (v) => 2,
+              feedback: {
+                correct: (v) => `Yes! Divide by 100 — move the decimal point 2 places left. ✓`,
+                incorrect: (v) => `Not quite — "per cent" means "per hundred", so divide by 100.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.percent}%** as a decimal?`,
+            visual: {
+              component: "NumberLine",
+              props: (v) => ({
+                min: 0,
+                max: v.percent > 100 ? 2 : 1,
+                points: [
+                  { value: v.decimal, label: `${v.percent}%`, color: "#6C5CE7" }
+                ],
+                tickInterval: v.percent > 100 ? 0.5 : 0.25,
+                showLabels: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.percent}% as a decimal = ?`,
+              getOptions: (v) => {
+                const opts = [
+                  String(v.decimal),
+                  String(v.wrongDecimal),
+                  String(v.decimal * 10),
+                  String(v.decimal / 10),
+                  String(v.percent)
+                ];
+                return [...new Set(opts)].slice(0, 5);
+              },
+              correctAnswer: (v) => String(v.decimal),
+              feedback: {
+                correct: (v) => `Yes! ${v.percent}% \u00f7 100 = **${v.decimal}**. Two places to the left! ✓`,
+                incorrect: (v) => `Not quite! Divide by 100: ${v.percent} \u00f7 100 = **${v.decimal}**. Move the decimal point two places left.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The conversion rules!",
+            body: () => `Just remember: **% to decimal = \u00f7 100**, and **decimal to % = \u00d7 100**.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "% to decimal: divide by 100", why: "Move the decimal point 2 places LEFT" },
+                  { text: "Decimal to %: multiply by 100", why: "Move the decimal point 2 places RIGHT" },
+                  { text: "Watch out for small percentages!", why: "5% = 0.05 (not 0.5!), 8% = 0.08 (not 0.8!) ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "percent-to-decimal-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid moving the decimal point the wrong number of places",
+          "When to watch out for the 5% = 0.5 trap"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            percent: 5, correctDecimal: 0.05,
+            wrongDecimal: 0.5,
+            mistake: "only moved the decimal one place instead of two — he divided by 10 instead of 100"
+          },
+          {
+            name: "Rosie",
+            percent: 35, correctDecimal: 0.35,
+            wrongDecimal: 3.5,
+            mistake: "divided by 10 instead of 100 — she moved the decimal point only one place left"
+          },
+          {
+            name: "Alfie",
+            percent: 2, correctDecimal: 0.02,
+            wrongDecimal: 0.2,
+            mistake: "wrote 0.2 instead of 0.02 — he forgot to put a zero in the tenths place"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.name} says ${v.percent}% = ${v.wrongDecimal}`,
+            body: (v) => `${v.name} converted **${v.percent}%** to a decimal and got **${v.wrongDecimal}**.\n\nDoes that look right?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s answer: ${v.percent}% = ${v.wrongDecimal}`, why: "Is this correct?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Here's the mistake!",
+            body: (v) => `${v.name} ${v.mistake}. Remember: converting to a decimal means dividing by **100**, not 10 — that is **two** places, not one! Tap to compare.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: ${v.percent}% = ${v.wrongDecimal}`, why: `${v.name} ${v.mistake}` },
+                  { text: `Correct: ${v.percent} ÷ 100 = ${v.correctDecimal}`, result: `${v.percent}% = ${v.correctDecimal} ✓` },
+                  { text: `Check: ${v.correctDecimal} × 100 = ${v.percent}%`, why: "Multiply back to verify" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "true-false",
+              statements: (v) => [
+                { text: `To convert a percentage to a decimal, move the point 2 places left`, answer: true, explanation: "Correct — dividing by 100 shifts the point 2 places left. ✓" },
+                { text: `25% as a decimal is 2.5`, answer: false, explanation: "25 ÷ 100 = 0.25, not 2.5 — that would be dividing by 10!" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct decimal?",
+            body: (v) => `What is **${v.percent}%** as a decimal?`,
+            visual: {
+              component: "NumberLine",
+              props: (v) => ({
+                min: 0,
+                max: 1,
+                points: [
+                  { value: v.correctDecimal, label: "?", color: "#6C5CE7" }
+                ],
+                tickInterval: 0.1,
+                showLabels: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.percent}% = which decimal?`,
+              getOptions: (v) => [
+                String(v.correctDecimal),
+                String(v.wrongDecimal),
+                String(v.correctDecimal * 10),
+                String(v.correctDecimal / 10),
+                String(v.percent)
+              ],
+              correctAnswer: (v) => String(v.correctDecimal),
+              feedback: {
+                correct: (v) => `Spot on! ${v.percent}% \u00f7 100 = **${v.correctDecimal}**. Two places left! ✓`,
+                incorrect: (v) => `Not quite! ${v.percent} \u00f7 100 = **${v.correctDecimal}**. Remember: TWO places to the left.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The decimal point trap!",
+            body: () => `The most common mistake is only moving one place instead of two:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "5% = 0.05 (NOT 0.5)", why: "0.5 would be 50%!" },
+                  { text: "8% = 0.08 (NOT 0.8)", why: "0.8 would be 80%!" },
+                  { text: "Always move TWO places left for \u00f7 100", why: "Count: one place = \u00f7 10, two places = \u00f7 100 ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 10: comparing-fdp
+  // Comparing fractions, decimals and percentages
+  // Category: other
+  // Lesson A: step-by-step | Lesson B: visual-discovery
+  // ==========================================
+  {
+    id: "comparing-fdp",
+    name: "Comparing Fractions, Decimals and Percentages",
+    category: "other",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "comparing-fdp-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+          "How to decide which form is easiest to change to"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "comparing test scores: she got 3/5, Ben got 0.55, and Chloe got 65%",
+            valueA: "3/5", valueB: "0.55", valueC: "65%",
+            percentA: 60, percentB: 55, percentC: 65,
+            order: "0.55, 3/5, 65%",
+            orderDesc: "Ben (55%), Aisha (60%), Chloe (65%)",
+            largest: "65%"
+          },
+          {
+            name: "Tom",
+            scenario: "checking which drink has the most juice: Bottle A is 1/4 juice, B is 0.3 juice, C is 20% juice",
+            valueA: "1/4", valueB: "0.3", valueC: "20%",
+            percentA: 25, percentB: 30, percentC: 20,
+            order: "20%, 1/4, 0.3",
+            orderDesc: "C (20%), A (25%), B (30%)",
+            largest: "0.3"
+          },
+          {
+            name: "Priya",
+            scenario: "comparing discounts: Shop A offers 2/5 off, Shop B offers 0.35 off, Shop C offers 45% off",
+            valueA: "2/5", valueB: "0.35", valueC: "45%",
+            percentA: 40, percentB: 35, percentC: 45,
+            order: "0.35, 2/5, 45%",
+            orderDesc: "B (35%), A (40%), C (45%)",
+            largest: "45%"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "Which is biggest?",
+            body: (v) => `${v.name} is ${v.scenario}.\n\nA fraction, a decimal and a percentage — how do you compare them? **Convert them all to the same type!**`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percentA, label: v.valueA, color: "#c084fc" },
+                  { value: v.percentB, label: v.valueB, color: "#818cf8" },
+                  { value: v.percentC, label: v.valueC, color: "#34d399" }
+                ],
+                totalLabel: "Which is the largest?",
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Convert everything to percentages!",
+            body: (v) => `The easiest way to compare is to convert everything to **percentages**:\n\n- **${v.valueA}** = **${v.percentA}%**\n- **${v.valueB}** = **${v.percentB}%**\n- **${v.valueC}** = **${v.percentC}%**\n\nNow it's easy to compare!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.valueA} = ${v.percentA}%`, why: "Fraction: divide then × 100, or use known equivalence" },
+                  { text: `${v.valueB} = ${v.percentB}%`, why: "Decimal: multiply by 100" },
+                  { text: `${v.valueC} = ${v.percentC}%`, why: "Already a percentage!" },
+                  { text: `Order: ${v.orderDesc}`, result: `Largest: ${v.largest} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "match-pairs",
+              pairs: (v) => [
+                { left: v.valueA, right: `${v.percentA}%` },
+                { left: v.valueB, right: `${v.percentB}%` },
+                { left: v.valueC, right: `${v.percentC}%` }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Which is the largest?",
+            body: (v) => `${v.valueA}, ${v.valueB}, and ${v.valueC} — convert them all to percentages. Which is the **largest**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percentA, label: `${v.valueA}`, color: "#c084fc" },
+                  { value: v.percentB, label: `${v.valueB}`, color: "#818cf8" },
+                  { value: v.percentC, label: `${v.valueC}`, color: "#34d399" }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which is the largest: ${v.valueA}, ${v.valueB}, or ${v.valueC}?`,
+              getOptions: (v) => [v.largest, v.valueA === v.largest ? v.valueB : v.valueA, v.valueC === v.largest ? v.valueB : v.valueC, "They're all equal", "Can't tell"],
+              correctAnswer: (v) => v.largest,
+              feedback: {
+                correct: (v) => `Yes! Converting to percentages: ${v.percentA}%, ${v.percentB}%, ${v.percentC}%. The largest is **${v.largest}** (${Math.max(v.percentA, v.percentB, v.percentC)}%). ✓`,
+                incorrect: (v) => `Not quite! Convert all to %: ${v.valueA}=${v.percentA}%, ${v.valueB}=${v.percentB}%, ${v.valueC}=${v.percentC}%. Largest is **${v.largest}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Comparing FDP — the recipe",
+            body: () => `When you need to compare fractions, decimals and percentages:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Convert everything to the SAME type", why: "Percentages are usually easiest" },
+                  { text: "Fraction \u2192 %: divide then \u00d7 100", why: "Or use known facts: 1/4 = 25%, 1/5 = 20%" },
+                  { text: "Decimal \u2192 %: multiply by 100", why: "0.35 \u00d7 100 = 35%" },
+                  { text: "Now compare the numbers directly!", why: "55% vs 60% vs 65% — easy! ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Visual Discovery ----
+      {
+        id: "comparing-fdp-visual",
+        templateType: "visual-discovery",
+        learningGoal: [
+          "How to apply fraction-decimal-percentage conversion to comparison questions",
+          "When to watch out for comparing values that are in different forms"
+        ],
+        variableSets: [
+          {
+            name: "Ben",
+            scenario: "choosing the best deal on chocolate: bar A is 1/2 cocoa, bar B is 0.45 cocoa, bar C is 55% cocoa",
+            valueA: "1/2", valueB: "0.45", valueC: "55%",
+            percentA: 50, percentB: 45, percentC: 55,
+            smallest: "0.45",
+            smallestPercent: 45
+          },
+          {
+            name: "Chloe",
+            scenario: "seeing which plant grew most: A grew by 3/10, B grew by 0.4, C grew by 25%",
+            valueA: "3/10", valueB: "0.4", valueC: "25%",
+            percentA: 30, percentB: 40, percentC: 25,
+            smallest: "25%",
+            smallestPercent: 25
+          },
+          {
+            name: "Oliver",
+            scenario: "checking battery levels: phone A is 7/10 charged, phone B is 0.65 charged, phone C is 72% charged",
+            valueA: "7/10", valueB: "0.65", valueC: "72%",
+            percentA: 70, percentB: 65, percentC: 72,
+            smallest: "0.65",
+            smallestPercent: 65
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "Three types, one comparison!",
+            body: (v) => `${v.name} is ${v.scenario}.\n\nThey're all written differently — but which is the **smallest**?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percentA, label: v.valueA, color: "#c084fc" },
+                  { value: v.percentB, label: v.valueB, color: "#38bdf8" },
+                  { value: v.percentC, label: v.valueC, color: "#fbbf24" }
+                ],
+                totalLabel: "Which bar is shortest?",
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Convert to see the truth!",
+            body: (v) => `Look at the bar model — you can already see which is smallest! But to prove it, convert:\n\n- ${v.valueA} = **${v.percentA}%**\n- ${v.valueB} = **${v.percentB}%**\n- ${v.valueC} = **${v.percentC}%**\n\nThe smallest is **${v.smallest}** (${v.smallestPercent}%).`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.valueA} = ${v.percentA}%`, result: `${v.percentA}%` },
+                  { text: `${v.valueB} = ${v.percentB}%`, result: `${v.percentB}%` },
+                  { text: `${v.valueC} = ${v.percentC}%`, result: `${v.percentC}%` },
+                  { text: `Smallest: ${v.smallest} = ${v.smallestPercent}%`, result: "✓" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Spot the smallest!",
+            body: (v) => `Which is the **smallest**: ${v.valueA}, ${v.valueB}, or ${v.valueC}?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.percentA, label: v.valueA, color: "#c084fc" },
+                  { value: v.percentB, label: v.valueB, color: "#38bdf8" },
+                  { value: v.percentC, label: v.valueC, color: "#fbbf24" }
+                ],
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which is smallest: ${v.valueA}, ${v.valueB}, or ${v.valueC}?`,
+              getOptions: (v) => [v.smallest, v.valueA === v.smallest ? v.valueB : v.valueA, v.valueC === v.smallest ? v.valueB : v.valueC, "They're all equal", "Can't compare them"],
+              correctAnswer: (v) => v.smallest,
+              feedback: {
+                correct: (v) => `Yes! Converting to %: ${v.percentA}%, ${v.percentB}%, ${v.percentC}%. Smallest is **${v.smallest}** (${v.smallestPercent}%). ✓`,
+                incorrect: (v) => `Not quite! Convert: ${v.valueA}=${v.percentA}%, ${v.valueB}=${v.percentB}%, ${v.valueC}=${v.percentC}%. Smallest = **${v.smallest}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Converting makes comparing easy!",
+            body: () => `You can always compare fractions, decimals and percentages by converting to the same form:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Pick one form (usually percentages)", why: "Percentages are whole numbers, easy to compare" },
+                  { text: "Convert all values to that form", why: "Fractions: \u00f7 then \u00d7100. Decimals: \u00d7100" },
+                  { text: "Compare the numbers!", why: "Now they're all in the same units ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 11: reverse-percentage
+  // Finding original when you know % and result
+  // Category: other
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "reverse-percentage",
+    name: "Reverse Percentages",
+    category: "other",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "reverse-percentage-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to find the original price when you know the discounted price",
+          "Why you work out what percentage the given amount represents"
+        ],
+        variableSets: [
+          {
+            name: "Lauren",
+            scenario: "bought a coat in a 20% off sale for \u00a3",
+            salePrice: 48, discount: 20,
+            remainingPercent: 80,
+            onePercent: 0.6, original: 60,
+            unit: "\u00a3"
+          },
+          {
+            name: "Daisy",
+            scenario: "paid for trainers after a 25% discount. She paid \u00a3",
+            salePrice: 36, discount: 25,
+            remainingPercent: 75,
+            onePercent: 0.48, original: 48,
+            unit: "\u00a3"
+          },
+          {
+            name: "Evie",
+            scenario: "got a book in a 10% off sale for \u00a3",
+            salePrice: 9, discount: 10,
+            remainingPercent: 90,
+            onePercent: 0.1, original: 10,
+            unit: "\u00a3"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `What was the original price?`,
+            body: (v) => `${v.name} ${v.scenario}**${v.salePrice}**.\n\nThe sale was **${v.discount}% off**. What was the **original** price before the sale?\n\nThis is a **reverse percentage** question — we work backwards!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.remainingPercent, label: `${v.unit}${v.salePrice} (${v.remainingPercent}%)`, color: "#818cf8" },
+                  { value: v.discount, label: `${v.discount}% off`, color: "#f87171" }
+                ],
+                totalLabel: `Original price = ? (100%)`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Work out what % you have, then scale to 100%",
+            body: (v) => `If there's **${v.discount}% off**, the sale price is **${v.remainingPercent}%** of the original.\n\nSo ${v.unit}${v.salePrice} = ${v.remainingPercent}%.\n\nFind 1%: ${v.unit}${v.salePrice} \u00f7 ${v.remainingPercent} = ${v.unit}${v.onePercent}\nFind 100%: ${v.unit}${v.onePercent} \u00d7 100 = **${v.unit}${v.original}**`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.discount}% off means you paid ${v.remainingPercent}%`, why: `100% - ${v.discount}% = ${v.remainingPercent}%` },
+                  { text: `${v.remainingPercent}% = ${v.unit}${v.salePrice}`, why: "This is what we know" },
+                  { text: `1% = ${v.unit}${v.salePrice} \u00f7 ${v.remainingPercent} = ${v.unit}${v.onePercent}`, why: "Divide to find one percent" },
+                  { text: `100% = ${v.unit}${v.onePercent} \u00d7 100 = ${v.unit}${v.original}`, result: `Original price = ${v.unit}${v.original} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `After **${v.discount}% off**, the price is **${v.unit}${v.salePrice}**. What was the original price?\n\nRemember: ${v.unit}${v.salePrice} = ${v.remainingPercent}%. Find 1%, then 100%.`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.remainingPercent, label: `${v.unit}${v.salePrice}`, color: "#818cf8" },
+                  { value: v.discount, label: `${v.discount}% off`, color: "#f87171" }
+                ],
+                totalLabel: `100% = ?`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Original price before ${v.discount}% off?`,
+              getOptions: (v) => generateDistractors(v.original),
+              correctAnswer: (v) => v.original,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.unit}${v.salePrice} = ${v.remainingPercent}%, so 1% = ${v.unit}${v.onePercent}, and 100% = **${v.unit}${v.original}**. ✓`,
+                incorrect: (v) => `Not quite! ${v.unit}${v.salePrice} is ${v.remainingPercent}% of the original. ${v.unit}${v.salePrice} \u00f7 ${v.remainingPercent} \u00d7 100 = **${v.unit}${v.original}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Reverse percentage — the recipe",
+            body: () => `When you know the result and need the original:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Work out what % the given amount represents", why: "e.g. 20% off means you have 80% left" },
+                  { text: "Step 2: Divide by that % to find 1%", why: "e.g. \u00a348 \u00f7 80 = \u00a30.60" },
+                  { text: "Step 3: Multiply by 100 to find the original (100%)", why: "e.g. \u00a30.60 \u00d7 100 = \u00a360 ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "reverse-percentage-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid taking a percentage of the discounted price instead of the original",
+          "When to watch out for the reverse percentage trap in exam questions"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            salePrice: 240, discount: 20,
+            wrongOriginal: 288, correctOriginal: 300,
+            mistake: "found 20% of \u00a3240 (\u00a348) and added it back on — but \u00a3240 is NOT 100%, it's 80%!",
+            wrongMethod: "\u00a3240 + 20% of \u00a3240 = \u00a3240 + \u00a348 = \u00a3288"
+          },
+          {
+            name: "Rosie",
+            salePrice: 150, discount: 25,
+            wrongOriginal: 187.5, correctOriginal: 200,
+            mistake: "found 25% of \u00a3150 (\u00a337.50) and added it on — but \u00a3150 is 75% of the original, not 100%",
+            wrongMethod: "\u00a3150 + 25% of \u00a3150 = \u00a3150 + \u00a337.50 = \u00a3187.50"
+          },
+          {
+            name: "Alfie",
+            salePrice: 180, discount: 10,
+            wrongOriginal: 198, correctOriginal: 200,
+            mistake: "found 10% of \u00a3180 (\u00a318) and added it back — but \u00a3180 represents 90%, not 100%",
+            wrongMethod: "\u00a3180 + 10% of \u00a3180 = \u00a3180 + \u00a318 = \u00a3198"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.name}'s reverse percentage trap!`,
+            body: (v) => `${v.name} paid **\u00a3${v.salePrice}** after **${v.discount}% off**. He worked out the original price like this:\n\n${v.wrongMethod}\n\nBut something's wrong...`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s answer: \u00a3${v.wrongOriginal}`, why: "Is this correct?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The classic reverse percentage trap!",
+            body: (v) => `${v.name} ${v.mistake}\n\nThe correct way: \u00a3${v.salePrice} = **${100 - v.discount}%**.\n\n1% = \u00a3${v.salePrice} \u00f7 ${100 - v.discount} = \u00a3${v.salePrice / (100 - v.discount)}\n100% = \u00a3${v.salePrice / (100 - v.discount)} \u00d7 100 = **\u00a3${v.correctOriginal}**`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: ${v.discount}% of £${v.salePrice} added back`, why: `£${v.salePrice} is NOT 100% — it's ${100 - v.discount}%!` },
+                  { text: `Correct: £${v.salePrice} = ${100 - v.discount}%`, why: `100% - ${v.discount}% = ${100 - v.discount}%` },
+                  { text: `1% = £${v.salePrice / (100 - v.discount)}`, why: `£${v.salePrice} ÷ ${100 - v.discount}` },
+                  { text: `100% = £${v.correctOriginal}`, result: `Original = £${v.correctOriginal} ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "true-false",
+              statements: (v) => [
+                { text: `After a 20% discount, the sale price represents 80% of the original`, answer: true, explanation: "Correct — 100% - 20% = 80%, so the sale price is 80%. ✓" },
+                { text: `To find the original price after a discount, just add the discount percentage back to the sale price`, answer: false, explanation: "That's the classic trap! The sale price isn't 100% — you must find 1% first, then scale to 100%." }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct original?",
+            body: (v) => `After **${v.discount}% off**, the price is **\u00a3${v.salePrice}**. What was the original price?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: 100 - v.discount, label: `\u00a3${v.salePrice}`, color: "#818cf8" },
+                  { value: v.discount, label: `${v.discount}% off`, color: "#f87171" }
+                ],
+                totalLabel: "100% = ?",
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Original price before ${v.discount}% off?`,
+              getOptions: (v) => generateDistractors(v.correctOriginal),
+              correctAnswer: (v) => v.correctOriginal,
+              feedback: {
+                correct: (v) => `Spot on! \u00a3${v.salePrice} = ${100 - v.discount}%, so original = **\u00a3${v.correctOriginal}**. Don't fall for the trap! ✓`,
+                incorrect: (v) => `Not quite! \u00a3${v.salePrice} is ${100 - v.discount}% of the original. \u00a3${v.salePrice} \u00f7 ${100 - v.discount} \u00d7 100 = **\u00a3${v.correctOriginal}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Don't use the sale price as 100%!",
+            body: () => `The biggest reverse percentage trap:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "WRONG: finding % of the sale price and adding back", why: "The sale price is NOT 100% — it's less!" },
+                  { text: "RIGHT: work out what % the sale price represents", why: "20% off means the sale price is 80%" },
+                  { text: "Then find 1% and scale up to 100%", why: "This gives you the TRUE original ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 12: successive-percentages
+  // Why two 10% discounts != 20% off
+  // Category: other
+  // Lesson A: curiosity-hook | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "successive-percentages",
+    name: "Successive Percentage Changes",
+    category: "other",
+    lessons: [
+      // ---- Lesson A: Curiosity Hook ----
+      {
+        id: "successive-percentages-curiosity",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "Why two 10% discounts don't equal a 20% discount",
+          "How to apply percentage changes one step at a time"
+        ],
+        variableSets: [
+          {
+            name: "A clothes shop",
+            scenario: "offers 10% off, then another 10% off the sale price. A jacket is",
+            original: 100, percentA: 10, percentB: 10,
+            afterFirst: 90, afterSecond: 81,
+            naiveResult: 80, actualPercent: 19,
+            naivePercent: 20,
+            unit: "\u00a3"
+          },
+          {
+            name: "A bookshop",
+            scenario: "gives 20% off, then a further 10% off. A book costs",
+            original: 50, percentA: 20, percentB: 10,
+            afterFirst: 40, afterSecond: 36,
+            naiveResult: 35, actualPercent: 28,
+            naivePercent: 30,
+            unit: "\u00a3"
+          },
+          {
+            name: "An electronics shop",
+            scenario: "has 25% off, then an extra 20% off sale items. A tablet costs",
+            original: 200, percentA: 25, percentB: 20,
+            afterFirst: 150, afterSecond: 120,
+            naiveResult: 110, actualPercent: 40,
+            naivePercent: 45,
+            unit: "\u00a3"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.percentA}% off + ${v.percentB}% off = ${v.naivePercent}% off... right?`,
+            body: (v) => `${v.name} ${v.scenario} **${v.unit}${v.original}**.\n\nYou might think ${v.percentA}% off then ${v.percentB}% off is the same as **${v.naivePercent}% off**. But it's NOT! Let's see why...`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.afterSecond, label: `${v.unit}${v.afterSecond}?`, color: "#818cf8" },
+                  { value: v.original - v.afterSecond, label: `Saved`, color: "#34d399" }
+                ],
+                totalLabel: `${v.unit}${v.original} original`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Apply each discount one at a time!",
+            body: (v) => `**Discount 1:** ${v.percentA}% off ${v.unit}${v.original} = ${v.unit}${v.original * v.percentA / 100} off \u2192 ${v.unit}${v.afterFirst}\n\n**Discount 2:** ${v.percentB}% off ${v.unit}${v.afterFirst} (NOT ${v.unit}${v.original}!) = ${v.unit}${v.afterFirst * v.percentB / 100} off \u2192 ${v.unit}${v.afterSecond}\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Start: ${v.unit}${v.original}`, why: "Original price" },
+                  { text: `${v.percentA}% off: ${v.unit}${v.original} - ${v.unit}${v.original * v.percentA / 100}`, result: `= ${v.unit}${v.afterFirst}` },
+                  { text: `${v.percentB}% off ${v.unit}${v.afterFirst}: ${v.unit}${v.afterFirst} - ${v.unit}${v.afterFirst * v.percentB / 100}`, result: `= ${v.unit}${v.afterSecond}` },
+                  { text: `Total saving: ${v.unit}${v.original - v.afterSecond} (= ${v.actualPercent}%, not ${v.naivePercent}%)`, result: `Final price: ${v.unit}${v.afterSecond} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "What's the final price?",
+            body: (v) => `**${v.unit}${v.original}** with **${v.percentA}% off**, then **${v.percentB}% off** the sale price. What do you actually pay?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.afterSecond, label: "You pay", color: "#818cf8" },
+                  { value: v.afterFirst - v.afterSecond, label: `2nd ${v.percentB}%`, color: "#fbbf24" },
+                  { value: v.original - v.afterFirst, label: `1st ${v.percentA}%`, color: "#34d399" }
+                ],
+                totalLabel: `${v.unit}${v.original}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.unit}${v.original} after ${v.percentA}% off then ${v.percentB}% off?`,
+              getOptions: (v) => generateDistractors(v.afterSecond),
+              correctAnswer: (v) => v.afterSecond,
+              feedback: {
+                correct: (v) => `Yes! ${v.percentA}% off = ${v.unit}${v.afterFirst}. Then ${v.percentB}% off that = **${v.unit}${v.afterSecond}**. NOT the same as ${v.naivePercent}% off! ✓`,
+                incorrect: (v) => `Not quite! First: ${v.percentA}% off ${v.unit}${v.original} = ${v.unit}${v.afterFirst}. Then: ${v.percentB}% off ${v.unit}${v.afterFirst} = **${v.unit}${v.afterSecond}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "You can't just add percentages!",
+            body: () => `When there are two percentage changes, apply them **one at a time**:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Apply the FIRST percentage change", why: "Work out the new amount after step 1" },
+                  { text: "Apply the SECOND percentage to the NEW amount", why: "NOT to the original!" },
+                  { text: "Two 10% discounts = 19% total, not 20%", why: "The second 10% is 10% of a smaller number ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "successive-percentages-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid the trap of adding successive percentages together",
+          "When to watch out for applying the second percentage to the wrong amount"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            original: 200, percentA: 10, percentB: 10,
+            wrongFinal: 160, correctFinal: 162,
+            afterFirst: 180,
+            mistake: "added 10% + 10% = 20% and took 20% off \u00a3200 in one go",
+            wrongMethod: "10% + 10% = 20%, so 20% of \u00a3200 = \u00a340 off, final = \u00a3160"
+          },
+          {
+            name: "Rosie",
+            original: 80, percentA: 25, percentB: 10,
+            wrongFinal: 52, correctFinal: 54,
+            afterFirst: 60,
+            mistake: "added 25% + 10% = 35% and took 35% off \u00a380",
+            wrongMethod: "25% + 10% = 35%, so 35% of \u00a380 = \u00a328 off, final = \u00a352"
+          },
+          {
+            name: "Alfie",
+            original: 150, percentA: 20, percentB: 20,
+            wrongFinal: 90, correctFinal: 96,
+            afterFirst: 120,
+            mistake: "added 20% + 20% = 40% and took 40% off \u00a3150",
+            wrongMethod: "20% + 20% = 40%, so 40% of \u00a3150 = \u00a360 off, final = \u00a390"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.name} just added the percentages!`,
+            body: (v) => `A shop gives **${v.percentA}% off**, then another **${v.percentB}% off** the sale price. The item costs **\u00a3${v.original}**.\n\n${v.name}'s working: ${v.wrongMethod}\n\nIs that right?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s answer: \u00a3${v.wrongFinal}`, why: "Can you spot the mistake?" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "You can't just add the percentages!",
+            body: (v) => `${v.name} ${v.mistake}. But the second discount applies to the **reduced price**, not the original!\n\n**Step 1:** ${v.percentA}% off \u00a3${v.original} = \u00a3${v.afterFirst}\n**Step 2:** ${v.percentB}% off \u00a3${v.afterFirst} = \u00a3${v.correctFinal}`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: ${v.percentA}% + ${v.percentB}% = ${v.percentA + v.percentB}% off £${v.original}`, why: `Gives £${v.wrongFinal} — incorrect!` },
+                  { text: `Step 1: ${v.percentA}% off £${v.original}`, result: `= £${v.afterFirst}` },
+                  { text: `Step 2: ${v.percentB}% off £${v.afterFirst}`, result: `= £${v.correctFinal}` },
+                  { text: `Correct answer: £${v.correctFinal}`, result: `(not £${v.wrongFinal}) ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "true-false",
+              statements: (v) => [
+                { text: `${v.percentA}% off then ${v.percentB}% off is the same as ${v.percentA + v.percentB}% off`, answer: false, explanation: `The second discount applies to the already reduced price, not the original — so the total saving is less than ${v.percentA + v.percentB}%.` },
+                { text: `The second discount applies to the reduced price, not the original`, answer: true, explanation: "Correct — each successive discount is on the new, smaller amount. ✓" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct final price?",
+            body: (v) => `\u00a3${v.original} with ${v.percentA}% off, then ${v.percentB}% off the sale price. What do you pay?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.correctFinal, label: "You pay", color: "#818cf8" },
+                  { value: v.original - v.correctFinal, label: "Total saving", color: "#34d399" }
+                ],
+                totalLabel: `\u00a3${v.original} original`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `\u00a3${v.original} after ${v.percentA}% off then ${v.percentB}% off?`,
+              getOptions: (v) => generateDistractors(v.correctFinal),
+              correctAnswer: (v) => v.correctFinal,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.percentA}% off = \u00a3${v.afterFirst}, then ${v.percentB}% off that = **\u00a3${v.correctFinal}**. ✓`,
+                incorrect: (v) => `Not quite! Step 1: \u00a3${v.afterFirst}. Step 2: ${v.percentB}% off \u00a3${v.afterFirst} = **\u00a3${v.correctFinal}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Never add successive percentages!",
+            body: () => `This is one of the trickiest percentage traps in the 11+:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Never add successive percentages together", why: "10% off then 10% off \u2260 20% off!" },
+                  { text: "Apply each percentage change to the CURRENT value", why: "The second change uses the new (smaller or bigger) amount" },
+                  { text: "Two 10% discounts actually save 19%, not 20%", why: "Because the second 10% is from a smaller number ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 13: percentage-word-problems
+  // Multi-step percentage word problems
+  // Category: other
+  // Lesson A: curiosity-hook | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "percentage-word-problems",
+    name: "Percentage Word Problems",
+    category: "other",
+    lessons: [
+      // ---- Lesson A: Curiosity Hook ----
+      {
+        id: "percentage-word-problems-curiosity",
+        templateType: "curiosity-hook",
+        learningGoal: [
+          "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+          "How to check your answer makes sense in context"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "A clothes shop has a sale with 30% off everything. Aisha buys a dress that was \u00a360 and a scarf that was \u00a320. How much does she spend in total?",
+            item1: "dress", price1: 60, item2: "scarf", price2: 20,
+            totalOriginal: 80, discount: 30,
+            saving: 24, answer: 56,
+            type: "decrease",
+            unit: "\u00a3"
+          },
+          {
+            name: "Ben",
+            scenario: "Ben scored 45 out of 60 on his English test and 32 out of 50 on his maths test. Which test did he do better on, as a percentage?",
+            score1: 45, total1: 60, percent1: 75,
+            score2: 32, total2: 50, percent2: 64,
+            answer: 75,
+            better: "English",
+            type: "express",
+            unit: "%"
+          },
+          {
+            name: "Chloe",
+            scenario: "A town has a population of 5000. It grows by 12% in one year. How many people live there now?",
+            original: 5000, percent: 12,
+            increase: 600, answer: 5600,
+            type: "increase",
+            unit: ""
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "What type of percentage question is this?",
+            body: (v) => `${v.scenario}\n\nBefore you start calculating, ask: **what kind of percentage problem is this?** Is it finding a %, increase, decrease, or comparing?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Question type: ${v.type === "decrease" ? "Percentage decrease (discount)" : v.type === "increase" ? "Percentage increase" : "Express as a percentage (compare)"}`, why: "Read the question carefully to identify the type" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Solve it step by step!",
+            body: (v) => {
+              if (v.type === "decrease") {
+                return `This is a **percentage decrease** problem.\n\nTotal before sale: ${v.unit}${v.price1} + ${v.unit}${v.price2} = ${v.unit}${v.totalOriginal}\n30% of ${v.unit}${v.totalOriginal} = ${v.unit}${v.saving}\nSale price: ${v.unit}${v.totalOriginal} - ${v.unit}${v.saving} = **${v.unit}${v.answer}**`;
+              } else if (v.type === "increase") {
+                return `This is a **percentage increase** problem.\n\n12% of ${v.original} = ${v.increase}\nNew population: ${v.original} + ${v.increase} = **${v.answer} people**`;
+              }
+              return `This is an **express as percentage** problem.\n\nEnglish: (${v.score1} \u00f7 ${v.total1}) \u00d7 100 = ${v.percent1}%\nMaths: (${v.score2} \u00f7 ${v.total2}) \u00d7 100 = ${v.percent2}%\n\n**${v.better}** was better at **${v.answer}%**`;
+            },
+            visual: {
+              component: "WorkedExample",
+              props: (v) => {
+                if (v.type === "decrease") {
+                  return {
+                    steps: [
+                      { text: `Add the original prices: ${v.unit}${v.price1} + ${v.unit}${v.price2}`, result: `= ${v.unit}${v.totalOriginal}` },
+                      { text: `Find ${v.discount}% of ${v.unit}${v.totalOriginal}`, result: `= ${v.unit}${v.saving}` },
+                      { text: `Subtract: ${v.unit}${v.totalOriginal} - ${v.unit}${v.saving}`, result: `= ${v.unit}${v.answer} ✓` }
+                    ],
+                    allRevealed: false
+                  };
+                } else if (v.type === "increase") {
+                  return {
+                    steps: [
+                      { text: `Find ${v.percent}% of ${v.original}`, why: "10% = 500, so 12% = 600", result: `= ${v.increase}` },
+                      { text: `Add to original: ${v.original} + ${v.increase}`, result: `= ${v.answer} people ✓` }
+                    ],
+                    allRevealed: false
+                  };
+                }
+                return {
+                  steps: [
+                    { text: `English: (${v.score1} \u00f7 ${v.total1}) \u00d7 100`, result: `= ${v.percent1}%` },
+                    { text: `Maths: (${v.score2} \u00f7 ${v.total2}) \u00d7 100`, result: `= ${v.percent2}%` },
+                    { text: `${v.better} is higher`, result: `${v.answer}% ✓` }
+                  ],
+                  allRevealed: false
+                };
+              }
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "What's the answer?",
+            body: (v) => {
+              if (v.type === "decrease") return `What does Aisha spend in total at the 30%-off sale?`;
+              if (v.type === "increase") return `What is the new population after 12% growth?`;
+              return `What percentage did Ben score on his better test?`;
+            },
+            visual: {
+              component: "BarModel",
+              props: (v) => {
+                if (v.type === "decrease") {
+                  return {
+                    segments: [
+                      { value: 70, label: `You pay: ?`, color: "#818cf8" },
+                      { value: 30, label: "30% off", color: "#f87171" }
+                    ],
+                    totalLabel: `${v.unit}${v.totalOriginal} total`,
+                    showValues: true
+                  };
+                } else if (v.type === "increase") {
+                  return {
+                    segments: [
+                      { value: 100, label: `${v.original}`, color: "#818cf8" },
+                      { value: 12, label: "+12%", color: "#34d399" }
+                    ],
+                    totalLabel: "New population?",
+                    showValues: true
+                  };
+                }
+                return {
+                  segments: [
+                    { value: v.percent1, label: `English ${v.percent1}%`, color: "#c084fc" },
+                    { value: v.percent2, label: `Maths ${v.percent2}%`, color: "#38bdf8" }
+                  ],
+                  totalLabel: "Which is higher?",
+                  showValues: true
+                };
+              }
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => {
+                if (v.type === "decrease") return `Total sale spend?`;
+                if (v.type === "increase") return `New population after 12% growth?`;
+                return `Best test score as a percentage?`;
+              },
+              getOptions: (v) => generateDistractors(v.answer),
+              correctAnswer: (v) => v.answer,
+              feedback: {
+                correct: (v) => {
+                  if (v.type === "decrease") return `Yes! 30% of ${v.unit}${v.totalOriginal} = ${v.unit}${v.saving}. She pays ${v.unit}${v.totalOriginal} - ${v.unit}${v.saving} = **${v.unit}${v.answer}**. ✓`;
+                  if (v.type === "increase") return `Yes! 12% of ${v.original} = ${v.increase}. New total: ${v.original} + ${v.increase} = **${v.answer}**. ✓`;
+                  return `Yes! English = ${v.percent1}%, Maths = ${v.percent2}%. **${v.better}** was best at **${v.answer}%**. ✓`;
+                },
+                incorrect: (v) => {
+                  if (v.type === "decrease") return `Not quite! Total = ${v.unit}${v.totalOriginal}. 30% off = ${v.unit}${v.saving}. Answer: **${v.unit}${v.answer}**.`;
+                  if (v.type === "increase") return `Not quite! 12% of ${v.original} = ${v.increase}. Add: **${v.answer}**.`;
+                  return `Not quite! English: ${v.percent1}%, Maths: ${v.percent2}%. Best = **${v.answer}%**.`;
+                }
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Tackling percentage word problems",
+            body: () => `Before you calculate, **read the question** and decide what type it is:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Identify the type", why: "Increase? Decrease? Express as %? Compare?" },
+                  { text: "Step 2: Pick the right method", why: "Increase = find % then add. Decrease = find % then subtract. Express = (part\u00f7whole)\u00d7100" },
+                  { text: "Step 3: Sense-check your answer", why: "Does it make sense in the real world? ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "percentage-word-problems-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to avoid confusing increase, decrease, and simple percentage questions",
+          "When to watch out for answers that are bigger or smaller than they should be"
+        ],
+        variableSets: [
+          {
+            name: "Jake",
+            scenario: "A shop has 20% off. Jake buys a \u00a345 jumper.",
+            original: 45, percent: 20,
+            wrongAnswer: 9,
+            correctAnswer: 36,
+            mistake: "found 20% correctly (\u00a39) but forgot to subtract it from \u00a345 — he gave the discount amount, not the sale price",
+            wrongMethod: "20% of \u00a345 = \u00a39. Answer: \u00a39"
+          },
+          {
+            name: "Rosie",
+            scenario: "A village had 800 people. The population increased by 15%.",
+            original: 800, percent: 15,
+            wrongAnswer: 120,
+            correctAnswer: 920,
+            mistake: "found 15% (120 people) but forgot to add it to the original — she gave just the increase, not the new total",
+            wrongMethod: "15% of 800 = 120. Answer: 120 people"
+          },
+          {
+            name: "Alfie",
+            scenario: "Alfie scored 36 out of 40 on a test.",
+            original: 40, part: 36,
+            wrongAnswer: 36,
+            correctAnswer: 90,
+            mistake: "gave his raw score (36) instead of converting to a percentage — he forgot the (\u00f7 whole) \u00d7 100 step",
+            wrongMethod: "36 out of 40... so 36%?"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Did ${v.name} answer the question?`,
+            body: (v) => `${v.scenario}\n\n${v.name}'s working: ${v.wrongMethod}\n\n${v.name} did some correct maths, but didn't actually answer the question! Can you see why?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s answer: ${v.wrongAnswer}`, why: "Something's missing..." }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Read the question again!",
+            body: (v) => `${v.name} ${v.mistake}.\n\nThe key: always re-read the question at the end. **What is it actually asking for?** The discount or the price? The increase or the new total? A raw score or a percentage?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name} found the right number...`, why: `${v.wrongAnswer} is a correct intermediate step` },
+                  { text: `...but didn't finish!`, why: `${v.name} ${v.mistake}` },
+                  { text: `Correct answer: ${v.correctAnswer}`, result: `Always check you've answered what was asked ✓` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "true-false",
+              statements: (v) => [
+                { text: `After solving a percentage word problem, you should re-read the question to check you answered what was asked`, answer: true, explanation: "Always check — the question might ask for the final price, not the discount amount. ✓" },
+                { text: `If the question asks for the sale price and you found the discount, you're done`, answer: false, explanation: "Finding the discount is only halfway — you still need to subtract it from the original!" }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the actual answer?",
+            body: (v) => `${v.scenario}\n\nWhat is the **final answer** to this question?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => {
+                if (v.part) {
+                  return {
+                    segments: [
+                      { value: v.part, label: `${v.part}`, color: "#c084fc" },
+                      { value: v.original - v.part, label: `${v.original - v.part}`, color: "#e5e7eb", empty: true }
+                    ],
+                    totalLabel: `${v.original} total — what %?`,
+                    showValues: true
+                  };
+                }
+                return {
+                  segments: [
+                    { value: 100 - (v.percent || 0), label: "Main part", color: "#818cf8" },
+                    { value: v.percent || 15, label: `${v.percent || 15}%`, color: "#34d399" }
+                  ],
+                  totalLabel: `What's the final amount?`,
+                  showValues: true
+                };
+              }
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is the correct final answer?`,
+              getOptions: (v) => generateDistractors(v.correctAnswer),
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Spot on! The answer is **${v.correctAnswer}**. Always finish the question — don't stop halfway! ✓`,
+                incorrect: (v) => `Not quite! The final answer is **${v.correctAnswer}**. Remember to complete all the steps.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Always answer what's asked!",
+            body: () => `The most common mistake in percentage word problems: doing the maths right but not finishing.`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "After finding the %, re-read the question", why: "Does it want the percentage or the final amount?" },
+                  { text: "Discount questions: subtract from original!", why: "Don't just give the discount amount" },
+                  { text: "Increase questions: add to original!", why: "Don't just give the increase" },
+                  { text: "Sense check: does your answer make sense?", why: "A sale price should be LESS than the original ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
+]; // end of percentagesSubConcepts array

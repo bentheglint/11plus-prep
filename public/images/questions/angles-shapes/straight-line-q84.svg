@@ -1,0 +1,8 @@
+<svg width="450" height="220" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="150" x2="420" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="225" y1="150" x2="266" y2="37" stroke="black" stroke-width="2"/>
+  <path d="M 165,150 A 60,60 0 0 1 246,94" fill="none" stroke="cornflowerblue" stroke-width="2"/>
+  <path d="M 246,94 A 60,60 0 0 1 285,150" fill="none" stroke="lightcoral" stroke-width="2"/>
+  <text x="195" y="130" font-family="Arial" font-size="16" fill="red" text-anchor="middle">11c°</text>
+  <text x="299" y="98" font-family="Arial" font-size="16" fill="red" text-anchor="middle">7c°</text>
+</svg>

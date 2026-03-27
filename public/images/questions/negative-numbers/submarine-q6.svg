@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background - sky -->
+  <rect width="400" height="60" fill="#E8F4FD"/>
+
+  <!-- Background - water gradient -->
+  <defs>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8D4E8"/>
+      <stop offset="100%" stop-color="#6B9DC2"/>
+    </linearGradient>
+  </defs>
+  <rect y="60" width="400" height="240" fill="url(#waterGrad)"/>
+
+  <!-- Wave pattern at sea level -->
+  <path d="M 0,60 Q 20,52 40,60 Q 60,68 80,60 Q 100,52 120,60 Q 140,68 160,60 Q 180,52 200,60 Q 220,68 240,60 Q 260,52 280,60 Q 300,68 320,60 Q 340,52 360,60 Q 380,68 400,60" fill="none" stroke="#7FB3D8" stroke-width="2"/>
+
+  <!-- Sea level label -->
+  <text x="30" y="52" font-family="Arial" font-size="12" font-weight="bold" fill="#2E86C1">Sea Level</text>
+  <text x="30" y="74" font-family="Arial" font-size="12" font-weight="bold" fill="#2E86C1">(0 m)</text>
+
+  <!-- Depth scale on right side -->
+  <line x1="350" y1="60" x2="350" y2="280" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Scale: 0m at y=60, 60m at y=270. Each 10m = 35px -->
+  <!-- 0m -->
+  <line x1="345" y1="60" x2="355" y2="60" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="64" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">0 m</text>
+
+  <!-- -10m at y=95 -->
+  <line x1="347" y1="95" x2="353" y2="95" stroke="#fff" stroke-width="1" opacity="0.5"/>
+  <text x="370" y="99" font-family="Arial" font-size="9" fill="#fff" opacity="0.7">-10</text>
+
+  <!-- -20m at y=130 -->
+  <line x1="345" y1="130" x2="355" y2="130" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="134" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">-20</text>
+
+  <!-- -25m at y=147.5 (new position after rising) -->
+  <line x1="347" y1="147.5" x2="353" y2="147.5" stroke="#fff" stroke-width="1" opacity="0.5"/>
+  <text x="370" y="151.5" font-family="Arial" font-size="9" fill="#fff" opacity="0.7">-25</text>
+
+  <!-- -30m at y=165 -->
+  <line x1="345" y1="165" x2="355" y2="165" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="169" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">-30</text>
+
+  <!-- -40m at y=200 -->
+  <line x1="345" y1="200" x2="355" y2="200" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="204" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">-40</text>
+
+  <!-- -45m at y=217.5 -->
+  <line x1="347" y1="217.5" x2="353" y2="217.5" stroke="#fff" stroke-width="1" opacity="0.5"/>
+
+  <!-- -50m at y=235 -->
+  <line x1="345" y1="235" x2="355" y2="235" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="239" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">-50</text>
+
+  <!-- -60m at y=270 -->
+  <line x1="345" y1="270" x2="355" y2="270" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="370" y="274" font-family="Arial" font-size="10" fill="#fff" opacity="0.9">-60</text>
+
+  <!-- Submarine at -45m (y=217.5) -->
+  <g transform="translate(160, 210)">
+    <!-- Submarine body -->
+    <ellipse cx="0" cy="0" rx="65" ry="18" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+    <!-- Conning tower -->
+    <rect x="-10" y="-28" width="20" height="12" rx="3" fill="#FFD700" stroke="#DAA520" stroke-width="1.5"/>
+    <!-- Periscope -->
+    <line x1="0" y1="-28" x2="0" y2="-38" stroke="#DAA520" stroke-width="2"/>
+    <line x1="0" y1="-38" x2="8" y2="-38" stroke="#DAA520" stroke-width="2"/>
+    <!-- Windows -->
+    <circle cx="-30" cy="0" r="6" fill="#87CEEB" stroke="#DAA520" stroke-width="1"/>
+    <circle cx="-10" cy="0" r="6" fill="#87CEEB" stroke="#DAA520" stroke-width="1"/>
+    <circle cx="10" cy="0" r="6" fill="#87CEEB" stroke="#DAA520" stroke-width="1"/>
+    <!-- Propeller -->
+    <line x1="63" y1="-8" x2="73" y2="-14" stroke="#DAA520" stroke-width="2"/>
+    <line x1="63" y1="0" x2="75" y2="0" stroke="#DAA520" stroke-width="2"/>
+    <line x1="63" y1="8" x2="73" y2="14" stroke="#DAA520" stroke-width="2"/>
+  </g>
+
+  <!-- Depth label for submarine -->
+  <text x="50" y="222" font-family="Arial" font-size="13" font-weight="bold" fill="#fff">-45 m</text>
+
+  <!-- Rising arrow (20m up, from y=217.5 to y=147.5) -->
+  <line x1="75" y1="215" x2="75" y2="152" stroke="#2ECC71" stroke-width="3"/>
+  <polygon points="75,148 69,158 81,158" fill="#2ECC71"/>
+  <text x="55" y="185" font-family="Arial" font-size="13" font-weight="bold" fill="#2ECC71" transform="rotate(-90, 55, 185)">+20 m</text>
+
+  <!-- Dashed line at new position -->
+  <line x1="90" y1="147.5" x2="250" y2="147.5" stroke="#2ECC71" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="260" y="152" font-family="Arial" font-size="12" font-weight="bold" fill="#2ECC71">?</text>
+
+  <!-- Sun in sky -->
+  <circle cx="370" cy="25" r="15" fill="#FFD700" opacity="0.6"/>
+</svg>
