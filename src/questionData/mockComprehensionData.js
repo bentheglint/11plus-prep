@@ -2105,6 +2105,355 @@ export const mockComprehensionPassages = [
       }
     ]
   },
+  {
+    id: 'lighthouse-storms-end',
+    title: "The Lighthouse at Storm's End",
+    genre: 'mystery-suspense-fiction',
+    passage: `(1) Nobody had lived in the lighthouse at Storm's End for eleven years, and the village of Pencarrow had grown so accustomed to its dark silhouette against the evening sky that most people had stopped noticing it entirely. It stood on a spur of black rock at the headland, battered by salt wind, its white paint peeling in long grey strips. The glass at the top, which had once housed the great revolving lamp that warned ships away from the reef, was cracked and clouded with grime. The lighthouse was, by every reasonable measure, abandoned.
+
+(2) Which was why, on the evening of October the fourteenth, twelve-year-old Noor Abbas nearly dropped her binoculars when she saw the light.
+
+(3) It was not a steady beam, like the old lighthouse would have produced. It was a quick, irregular flicker — three short flashes, then a pause, then two long flashes, then darkness again. Noor watched from her bedroom window, which looked directly across the bay towards the headland, and counted the pattern carefully. Three short, two long. A pause of exactly ten seconds. Then the sequence repeated. It was too deliberate, too rhythmic, to be a reflection or a trick of the moonlight. Someone was up there, and they were signalling.
+
+(4) Noor had moved to Pencarrow eighteen months earlier, when her mother had taken the position of headteacher at the village primary school. She had not entirely settled — the village was small, the nearest town was a forty-minute bus ride away, and the other children treated her with the polite wariness that small communities reserve for newcomers. But she had developed two consuming passions that made the isolation bearable: birdwatching, which was superb along this stretch of the Cornish coast, and codes.
+
+(5) The codes had begun as a rainy-afternoon hobby, when she discovered a battered copy of Simon Singh's 'The Code Book' in the mobile library. She had devoured it in three days and moved on to teaching herself Morse code, the Caesar cipher, and a handful of other systems that she practised by writing encrypted messages to herself in a notebook she kept under her mattress. She was not yet fluent in Morse, but she knew enough to recognise what she was seeing through the binoculars. The pattern was not Morse. Three short, two long did not correspond to any standard Morse character. This was something else — something she did not yet understand.
+
+(6) Over the following three nights, Noor kept careful watch. The signals appeared at precisely 9:47 pm each evening, lasted for approximately eight minutes, and followed the same basic structure — short and long flashes in varying combinations, separated by ten-second pauses. She recorded every sequence in her notebook, filling four pages with neat columns of dots and dashes. On the fourth night, she brought her mother's camera with its telephoto lens and managed to photograph the light source. When she enlarged the image on her laptop, she could just make out a pale, rectangular glow — not a torch, she decided, but something flat and even. A lantern, perhaps, or a tablet screen held up to the window.
+
+(7) The obvious step was to tell someone. Noor considered this carefully and decided against it. Adults, in her experience, had a tendency to either dismiss things they could not immediately explain or to overreact in ways that shut down the interesting possibilities. She wanted to understand the signal before anyone else got involved. She wanted to crack the code.
+
+(8) On Saturday morning, armed with a flask of tea, a packet of digestive biscuits, and her notebook, Noor climbed the coastal path to the headland. The lighthouse up close was more decrepit than it appeared from the village — the wooden door at the base hung from a single rusted hinge, and the interior smelled of damp stone and seagull droppings. She did not go inside. Instead, she circled the base of the tower, looking for clues, and found three things of interest.
+
+(9) The first was a fresh bicycle tyre track in the muddy path leading from the road to the lighthouse. Someone had visited recently and repeatedly — the track was deep and well-worn. The second was a length of blue nylon rope tied to the iron railing at the base of the tower, its end frayed as though something had been lowered from it. The third, and most puzzling, was scratched into the white paint beside the door at a height of roughly one and a half metres — low enough, Noor realised, to have been made by someone her own age. It read: "E8 G3 C1 A5."
+
+(10) Noor stared at the inscription for a long time. Four pairs of letters and numbers. It could be a grid reference, but it did not match any standard mapping format. It could be a book cipher — each pair pointing to a specific letter on a specific page — but without knowing the source book, that was a dead end. She copied it carefully into her notebook and walked home along the cliff path, her mind turning the puzzle over like a tumbler lock searching for the right combination.
+
+(11) The breakthrough came that evening, quite by accident. Noor was helping her mother organise the school's music cupboard when she noticed the labels on a shelf of glockenspiels: C, D, E, F, G, A, B — the musical notes. E8, G3, C1, A5. What if the letters were not code letters at all, but musical notes? What if the numbers indicated something about those notes — the octave, perhaps, or the number of beats? And what if the flashing lights from the lighthouse were not random patterns but a visual representation of a melody, transcribed by someone who could not play it aloud without being heard?
+
+(12) Noor sat down at the school's upright piano, which her mother had the key to, and carefully picked out the notes: E, G, C, A. Then again, in the rhythm of the light signals — three short, two long. She played it faster, then slower, trying different timings. And then, with a sudden rush of recognition that made the hairs on her arms stand up, she heard it. It was the opening four notes of a melody she knew — one that Grandpa Haroon used to hum while making tea. A folk song. A very old Cornish folk song. Someone at the lighthouse was playing music in light, and Noor was going to find out who.`,
+    comprehensionQuestions: [
+      {
+        id: 1,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "How long had the lighthouse been abandoned?",
+        options: ["Five years", "Eight years", "Eleven years", "Fifteen years", "Twenty years"],
+        correct: 2,
+        explanation: "Paragraph 1 states 'Nobody had lived in the lighthouse at Storm's End for eleven years'. ✓"
+      },
+      {
+        id: 2,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What were Noor's two main hobbies?",
+        options: ["Swimming and reading", "Birdwatching and codes", "Drawing and music", "Writing and photography", "Cycling and chess"],
+        correct: 1,
+        explanation: "Paragraph 4 states she had 'two consuming passions': birdwatching and codes. ✓"
+      },
+      {
+        id: 3,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "At what time did the signals appear each evening?",
+        options: ["8:30 pm", "9:15 pm", "9:30 pm", "9:47 pm", "10:00 pm"],
+        correct: 3,
+        explanation: "Paragraph 6 states 'The signals appeared at precisely 9:47 pm each evening'. ✓"
+      },
+      {
+        id: 4,
+        difficulty: 1,
+        questionSubType: 'retrieval',
+        question: "What was scratched into the paint beside the lighthouse door?",
+        options: ["A name and date", "E8 G3 C1 A5", "A map of the coastline", "KEEP OUT", "A series of arrows"],
+        correct: 1,
+        explanation: "Paragraph 9 states the inscription read 'E8 G3 C1 A5'. ✓"
+      },
+      {
+        id: 5,
+        difficulty: 1,
+        questionSubType: 'inference',
+        question: "Why did Noor nearly drop her binoculars when she saw the light?",
+        options: [
+          "The binoculars were too heavy for her",
+          "She was startled because no one was supposed to be in the abandoned lighthouse",
+          "The light was painfully bright",
+          "She heard a loud noise at the same time",
+          "Her hands were cold from the October weather"
+        ],
+        correct: 1,
+        explanation: "The passage establishes that the lighthouse had been abandoned for eleven years and 'most people had stopped noticing it'. Seeing a light in a place that should be empty would be a shock. ✓"
+      },
+      {
+        id: 6,
+        difficulty: 1,
+        questionSubType: 'text-type',
+        question: "This passage belongs to which genre?",
+        options: [
+          "Science fiction",
+          "Historical fiction set in the past",
+          "Mystery with elements of code-breaking",
+          "Horror and ghost story",
+          "Non-fiction about lighthouses"
+        ],
+        correct: 2,
+        explanation: "The passage centres on an unexplained mystery (lights in an abandoned lighthouse) and a protagonist trying to solve it by cracking a code. This is mystery fiction. ✓"
+      },
+      {
+        id: 7,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why did Noor decide not to tell an adult about the signals?",
+        options: [
+          "She was afraid of getting into trouble",
+          "She did not trust her mother",
+          "She wanted to solve the mystery herself before adults could dismiss or overreact to it",
+          "She thought the signals were not important",
+          "There were no adults available to tell"
+        ],
+        correct: 2,
+        explanation: "Paragraph 7 explains her reasoning: 'Adults had a tendency to either dismiss things they could not immediately explain or to overreact in ways that shut down the interesting possibilities.' She wanted to understand first. ✓"
+      },
+      {
+        id: 8,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What evidence suggests the lighthouse visitor was young?",
+        options: [
+          "A bicycle was found parked outside",
+          "The inscription was scratched at a height of about 1.5 metres — low enough for a child",
+          "Children's toys were found inside the lighthouse",
+          "The signals only appeared during school holidays",
+          "Noor recognised the handwriting as a child's"
+        ],
+        correct: 1,
+        explanation: "Paragraph 9 notes the inscription was 'at a height of roughly one and a half metres — low enough, Noor realised, to have been made by someone her own age'. An adult would typically scratch higher. ✓"
+      },
+      {
+        id: 9,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "Why does Noor rule out Morse code?",
+        options: [
+          "She does not know Morse code",
+          "The pattern does not match any standard Morse character",
+          "Morse code uses sound, not light",
+          "The signals were too slow for Morse code",
+          "She thinks Morse code is too old-fashioned"
+        ],
+        correct: 1,
+        explanation: "Paragraph 5 states she 'knew enough to recognise what she was seeing' and that 'Three short, two long did not correspond to any standard Morse character. This was something else.' ✓"
+      },
+      {
+        id: 10,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "What does Noor's approach to the mystery reveal about her character?",
+        options: [
+          "She is reckless and acts without thinking",
+          "She is methodical, patient, and analytical",
+          "She is easily frightened and avoids challenges",
+          "She is popular and enjoys working in teams",
+          "She is lazy and only investigates when bored"
+        ],
+        correct: 1,
+        explanation: "Noor records patterns carefully, fills 'four pages with neat columns', photographs the light source, analyses the evidence systematically, and considers multiple hypotheses before reaching a conclusion. This is methodical, analytical behaviour. ✓"
+      },
+      {
+        id: 11,
+        difficulty: 2,
+        questionSubType: 'inference',
+        question: "What does the bicycle tyre track tell us?",
+        options: [
+          "The visitor drove a car to the lighthouse",
+          "The visitor came once and left immediately",
+          "Someone had been visiting the lighthouse regularly",
+          "The path to the lighthouse was well-maintained",
+          "A postman had been delivering letters"
+        ],
+        correct: 2,
+        explanation: "Paragraph 9 describes the track as 'deep and well-worn', indicating repeated visits over time, not a single trip. The bicycle suggests someone who does not drive — possibly young. ✓"
+      },
+      {
+        id: 12,
+        difficulty: 2,
+        questionSubType: 'character-inference',
+        question: "How does Noor feel about living in Pencarrow?",
+        options: [
+          "She loves it and has many close friends",
+          "She has not fully settled but has found ways to cope with the isolation",
+          "She hates it and wants to move back immediately",
+          "She does not care where she lives",
+          "She finds the village exciting and full of things to do"
+        ],
+        correct: 1,
+        explanation: "Paragraph 4 says she 'had not entirely settled' and the village was small and remote. But her hobbies 'made the isolation bearable', suggesting she has adapted without fully belonging. ✓"
+      },
+      {
+        id: 13,
+        difficulty: 3,
+        questionSubType: 'inference',
+        question: "What is Noor's breakthrough at the end of the passage?",
+        options: [
+          "She discovers who is sending the signals",
+          "She realises the inscription letters are musical notes, not code letters, and the light signals represent a melody",
+          "She finds a secret entrance to the lighthouse",
+          "She deciphers a Morse code message",
+          "She recognises the light pattern as a distress signal"
+        ],
+        correct: 1,
+        explanation: "Paragraph 11 describes her realisation that E, G, C, A are musical notes, and paragraph 12 confirms the light signals match the rhythm of a melody — specifically a Cornish folk song she recognises. ✓"
+      },
+      {
+        id: 14,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which of the following clues did Noor NOT find at the lighthouse?",
+        options: [
+          "A bicycle tyre track",
+          "A blue nylon rope tied to the railing",
+          "An inscription scratched into the paint",
+          "A broken window with fabric caught on the glass",
+          "The smell of damp stone and seagull droppings"
+        ],
+        correct: 3,
+        explanation: "Paragraph 8-9 lists three clues: bicycle track, rope, and inscription. The smell is also mentioned (paragraph 8). A broken window with fabric is not described. ✓"
+      },
+      {
+        id: 15,
+        difficulty: 3,
+        questionSubType: 'negative-retrieval',
+        question: "Which code system is NOT mentioned in the passage?",
+        options: [
+          "Morse code",
+          "Caesar cipher",
+          "Book cipher",
+          "Pigpen cipher",
+          "Musical notation"
+        ],
+        correct: 3,
+        explanation: "Morse code (paragraph 5), Caesar cipher (paragraph 5), book cipher (paragraph 10), and musical notation (paragraph 11) are all mentioned. Pigpen cipher is not mentioned anywhere in the passage. ✓"
+      },
+      {
+        id: 16,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the author reveal details about the light pattern gradually across several paragraphs rather than all at once?",
+        options: [
+          "Because the author forgot to include them earlier",
+          "To build suspense and mirror the step-by-step process of solving a mystery",
+          "To make the passage longer",
+          "Because Noor was confused and needed time to think",
+          "To test whether the reader is paying attention"
+        ],
+        correct: 1,
+        explanation: "The gradual revelation — first seeing the light, then recording patterns, then photographing it, then finding physical clues, then cracking the code — mirrors a real investigation and builds suspense. Each new detail draws the reader deeper into the mystery. ✓"
+      },
+      {
+        id: 17,
+        difficulty: 3,
+        questionSubType: 'author-purpose',
+        question: "Why does the passage end with 'Noor was going to find out who' rather than revealing the answer?",
+        options: [
+          "Because the author does not know who it is",
+          "To frustrate the reader deliberately",
+          "To create a cliffhanger that makes the reader want to read on",
+          "Because who is sending the signal is not important",
+          "To show that Noor has given up on the mystery"
+        ],
+        correct: 2,
+        explanation: "The passage ends at the moment of breakthrough — Noor has cracked the code but not yet found the person. This cliffhanger creates a powerful urge in the reader to know what happens next. ✓"
+      },
+      {
+        id: 18,
+        difficulty: 3,
+        questionSubType: 'effect-on-reader',
+        question: "What effect does the phrase 'the hairs on her arms stand up' create when Noor recognises the melody?",
+        options: [
+          "It shows that Noor is cold from the evening air",
+          "It conveys the physical thrill of sudden understanding — a eureka moment",
+          "It suggests Noor is frightened by what she has discovered",
+          "It shows that the music is very loud",
+          "It describes a medical condition"
+        ],
+        correct: 1,
+        explanation: "Hairs standing up is a physical reaction to intense emotion — excitement, awe, or sudden recognition. Here it conveys the thrilling moment of realisation when scattered clues suddenly click into place. ✓"
+      }
+    ],
+    vocabularyQuestions: [
+      {
+        id: 19,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 1, what does 'silhouette' mean?",
+        options: ["A shadow", "A dark outline seen against a lighter background", "A photograph", "A type of building", "A reflection in water"],
+        correct: 1,
+        explanation: "A 'silhouette' is the dark shape or outline of something seen against a lighter background — here, the lighthouse's dark shape against the evening sky. ✓"
+      },
+      {
+        id: 20,
+        difficulty: 2,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 4, what does 'consuming' mean in 'two consuming passions'?",
+        options: ["Eating and drinking", "Taking up all her attention and energy", "Wasteful and expensive", "Recently discovered", "Secret and hidden"],
+        correct: 1,
+        explanation: "'Consuming' here means absorbing, taking up a great deal of time and attention. Her hobbies were not casual interests — they occupied her deeply. ✓"
+      },
+      {
+        id: 21,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 8, what does 'decrepit' mean?",
+        options: ["Beautiful but old", "Extremely tall", "In a very poor condition due to age and neglect", "Recently painted", "Hidden from view"],
+        correct: 2,
+        explanation: "'Decrepit' means worn out and in very poor condition through age and neglect. The lighthouse's peeling paint, rusted hinge, and smell of damp confirm this meaning. ✓"
+      },
+      {
+        id: 22,
+        difficulty: 3,
+        questionSubType: 'vocabulary-in-context',
+        question: "In paragraph 10, what does 'turning the puzzle over like a tumbler lock searching for the right combination' suggest?",
+        options: [
+          "Noor was physically turning something in her hands",
+          "Her mind was systematically working through possibilities to find the answer",
+          "She was feeling dizzy and confused",
+          "She had given up trying to solve the puzzle",
+          "She was comparing the puzzle to a safe she wanted to break into"
+        ],
+        correct: 1,
+        explanation: "A tumbler lock clicks through positions until the right combination aligns. The simile suggests Noor's mind was methodically working through possible interpretations, trying each one until something clicked. ✓"
+      }
+    ],
+    wordClassQuestions: [
+      {
+        id: 23,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "In paragraph 1, what type of word is 'battered'?",
+        options: ["Noun", "Verb", "Adjective", "Adverb", "Conjunction"],
+        correct: 2,
+        explanation: "'Battered' here is an adjective — it describes the state of the lighthouse (damaged by repeated exposure to salt wind). Although 'battered' can also be a verb, here it modifies a noun. ✓"
+      },
+      {
+        id: 24,
+        difficulty: 2,
+        questionSubType: 'word-class',
+        question: "What type of words are 'carefully', 'precisely', and 'recently' as used in the passage?",
+        options: ["Nouns", "Verbs", "Adjectives", "Adverbs", "Prepositions"],
+        correct: 3,
+        explanation: "All three are adverbs ending in '-ly'. They modify verbs: counted 'carefully' (paragraph 3), appeared 'precisely' at 9:47 (paragraph 6), visited 'recently' (paragraph 9). ✓"
+      },
+      {
+        id: 25,
+        difficulty: 3,
+        questionSubType: 'word-class',
+        question: "In paragraph 3, 'It was too deliberate, too rhythmic, to be a reflection or a trick of the moonlight.' Which word is an abstract noun?",
+        options: ["deliberate", "rhythmic", "reflection", "trick", "moonlight"],
+        correct: 3,
+        explanation: "'Trick' is an abstract noun here — it names a concept (a deception or illusion) rather than a physical object. 'Reflection' could also be considered abstract, but 'trick of the moonlight' specifically refers to an intangible concept of deception. Note: 'deliberate' and 'rhythmic' are adjectives, 'moonlight' is a concrete/compound noun. ✓"
+      }
+    ]
+  },
 ];
 
 export default mockComprehensionPassages;
