@@ -273,7 +273,8 @@ function App() {
       isCorrect = selectedAnswer === currentQuestion.correct;
     }
 
-    const timeSpentMs = Date.now() - questionStartTime.current;
+    const rawTimeMs = Date.now() - questionStartTime.current;
+    const timeSpentMs = rawTimeMs > 300000 ? 0 : rawTimeMs; // Cap at 5 mins — longer means they walked away
     setAnswers([...answers, {
       questionId: currentQuestion.id,
       correct: isCorrect,
@@ -972,17 +973,91 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   }
 
   if (currentView === 'mockTest' && mockTest.mockTestComplete) {
+    // Save mock test per-question results to progress tracking (once)
+    const results = mockTest.getResults();
+    if (results && !mockTest._resultsSavedToProgress) {
+      mockTest._resultsSavedToProgress = true;
+      const sessionId = Date.now();
+      const mockQuestions = mockTest.mockTestQuestions;
+      const mockAnswers = mockTest.mockTestAnswers;
+      let mockCorrectCount = 0;
+
+      mockQuestions.forEach((q, i) => {
+        const answer = mockAnswers[i];
+        const question = q.question;
+        let isCorrect = false;
+        if (question.questionType === 'select-two' || question.questionType === 'pick-from-sets') {
+          if (Array.isArray(answer) && question.correctPair) {
+            if (question.questionType === 'select-two') {
+              isCorrect = answer.length === 2 &&
+                ((answer[0] === question.correctPair[0] && answer[1] === question.correctPair[1]) ||
+                 (answer[0] === question.correctPair[1] && answer[1] === question.correctPair[0]));
+            } else {
+              isCorrect = answer[0] === question.correctPair[0] && answer[1] === question.correctPair[1];
+            }
+          }
+        } else {
+          isCorrect = answer === question.correct;
+        }
+        if (isCorrect) mockCorrectCount++;
+
+        userData.saveQuestionResult({
+          id: sessionId + i,
+          date: new Date().toISOString(),
+          questionId: question.id,
+          topicKey: q.topicKey,
+          subject: mockTest.mockTestSubject,
+          difficulty: question.difficulty || 2,
+          correct: isCorrect,
+          timeSpentMs: 0, // Mock tests don't track per-question time (timed overall)
+          mode: 'mock',
+          sessionId,
+        });
+      });
+
+      // Save practice session + update streak + award PP
+      userData.savePracticeSession({
+        id: sessionId,
+        date: new Date().toISOString().split('T')[0],
+        mode: 'mock',
+        subject: mockTest.mockTestSubject,
+        topicKey: null,
+        questionsAttempted: mockQuestions.length,
+        questionsCorrect: mockCorrectCount,
+      });
+      streaksAndPP.recordQuizCompletion();
+      const pct = Math.round((mockCorrectCount / mockQuestions.length) * 100);
+      const ppCalc = streaksAndPP.calculateQuizPP(mockQuestions.length, mockCorrectCount, pct, false);
+      streaksAndPP.awardPP(ppCalc.total, 'Mock test completed');
+
+      // Check achievements
+      setTimeout(() => {
+        const newAch = achievements.checkAchievements();
+        if (newAch.length > 0) setPendingAchievement(newAch[0]);
+      }, 500);
+    }
+
     return (
-      <MockTestResultsScreen
-        results={mockTest.getResults()}
-        onTryAgain={() => {
-          mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
-        }}
-        onHome={() => {
-          mockTest.endMockTest();
-          handleHome();
-        }}
-      />
+      <>
+        <MockTestResultsScreen
+          results={results}
+          onTryAgain={() => {
+            mockTest._resultsSavedToProgress = false;
+            mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
+          }}
+          onHome={() => {
+            mockTest._resultsSavedToProgress = false;
+            mockTest.endMockTest();
+            handleHome();
+          }}
+        />
+        {pendingAchievement && (
+          <AchievementModal
+            achievement={pendingAchievement}
+            onDismiss={() => setPendingAchievement(null)}
+          />
+        )}
+      </>
     );
   }
 
