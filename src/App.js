@@ -1182,47 +1182,91 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     return (
       <div className="app-bg p-4 min-h-screen flex items-center justify-center">
         <div className="max-w-md mx-auto card-elevated p-8 text-center animate-fade-in-up">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
-            <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
-          </div>
-          <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">Did that lesson help?</h2>
-          <p className="text-gray-600 mb-6">We showed you the <strong>{lessonFromQuiz.subConceptName}</strong> lesson. Did it help you understand the question better?</p>
-          <div className="flex gap-3 justify-center">
-            <button
-              onClick={() => {
-                setShowDidItHelp(false);
-                setLessonFromQuiz(null);
-              }}
-              className="px-8 py-3 bg-[#00B894] hover:bg-[#00A381] text-white font-bold rounded-xl text-lg transition-colors"
-            >
-              Yes, it helped!
-            </button>
-            <button
-              onClick={() => {
-                // Log to Google Sheet
-                submitToGoogleSheet({
-                  type: 'lesson-not-helpful',
-                  submitter: currentUser || 'Unknown',
-                  topicKey: lessonFromQuiz.topicKey,
-                  questionId: String(lessonFromQuiz.questionId),
-                  subConceptId: lessonFromQuiz.subConceptId,
-                  subConceptName: lessonFromQuiz.subConceptName,
-                  date: new Date().toISOString(),
-                });
-                setShowDidItHelp(false);
-                setLessonFromQuiz(null);
-                // Open AI Tutor chat with a helpful prompt
-                setShowTutorChat(true);
-                setChatMessages([{
-                  role: 'assistant',
-                  content: "The lesson didn't quite click? No worries — I'm here to help! 😊 Let me try explaining this question in a different way. What part are you finding tricky?"
-                }]);
-              }}
-              className="px-8 py-3 bg-[#FF6B6B] hover:bg-[#E55A5A] text-white font-bold rounded-xl text-lg transition-colors"
-            >
-              Not really
-            </button>
-          </div>
+          {showDidItHelp === 'feedback' ? (
+            // Step 2: feedback + AI Tutor CTA
+            <>
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
+                <Brain className="w-8 h-8 text-[#6C5CE7]" />
+              </div>
+              <h2 className="text-xl font-heading font-bold text-[#2D3436] mb-2">No worries — we can help!</h2>
+              <p className="text-gray-600 mb-4">What didn't make sense? This helps us improve the lessons.</p>
+              <textarea
+                value={feedbackText}
+                onChange={(e) => setFeedbackText(e.target.value)}
+                placeholder="e.g. I didn't understand the second step..."
+                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#6C5CE7] text-sm resize-none mb-4"
+                rows={3}
+              />
+              <div className="bg-[#EDE8FF] rounded-xl p-4 mb-4 text-left">
+                <p className="text-sm font-bold text-[#6C5CE7] mb-1">Your AI Tutor can explain this differently!</p>
+                <p className="text-sm text-[#636E72]">They'll look at the specific question you're stuck on and break it down step by step, just for you.</p>
+              </div>
+              <button
+                onClick={() => {
+                  // Log feedback to Google Sheet
+                  submitToGoogleSheet({
+                    type: 'lesson-not-helpful',
+                    submitter: currentUser || 'Unknown',
+                    topicKey: lessonFromQuiz.topicKey,
+                    questionId: String(lessonFromQuiz.questionId),
+                    subConceptId: lessonFromQuiz.subConceptId,
+                    subConceptName: lessonFromQuiz.subConceptName,
+                    feedback: feedbackText.trim() || 'No details given',
+                    date: new Date().toISOString(),
+                  });
+                  setShowDidItHelp(false);
+                  setLessonFromQuiz(null);
+                  setFeedbackText('');
+                  // Open AI Tutor with a helpful greeting
+                  setShowTutorChat(true);
+                  setChatMessages([{
+                    role: 'assistant',
+                    content: "The lesson didn't quite click? No worries — I'm here to help! 😊 Let me try explaining this question in a different way. What part are you finding tricky?"
+                  }]);
+                }}
+                className="w-full px-6 py-3 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-bold rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
+              >
+                <Brain className="w-5 h-5" />
+                Talk to AI Tutor
+              </button>
+              <button
+                onClick={() => {
+                  setShowDidItHelp(false);
+                  setLessonFromQuiz(null);
+                  setFeedbackText('');
+                }}
+                className="mt-3 text-sm text-[#636E72] hover:text-[#2D3436]"
+              >
+                Skip — go back to question
+              </button>
+            </>
+          ) : (
+            // Step 1: Did it help?
+            <>
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
+                <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
+              </div>
+              <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">Did that lesson help?</h2>
+              <p className="text-gray-600 mb-6">We showed you the <strong>{lessonFromQuiz.subConceptName}</strong> lesson. Did it help you understand the question better?</p>
+              <div className="flex gap-3 justify-center">
+                <button
+                  onClick={() => {
+                    setShowDidItHelp(false);
+                    setLessonFromQuiz(null);
+                  }}
+                  className="px-8 py-3 bg-[#00B894] hover:bg-[#00A381] text-white font-bold rounded-xl text-lg transition-colors"
+                >
+                  Yes, it helped!
+                </button>
+                <button
+                  onClick={() => setShowDidItHelp('feedback')}
+                  className="px-8 py-3 bg-[#FF6B6B] hover:bg-[#E55A5A] text-white font-bold rounded-xl text-lg transition-colors"
+                >
+                  Not really
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     );
