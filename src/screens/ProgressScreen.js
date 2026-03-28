@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ChildProgressView from './ChildProgressView';
 import ParentDashboard from './ParentDashboard';
 
-function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, onHome, onStartTopic }) {
+function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, onHome, onStartTopic, onDrillDown }) {
   const [view, setView] = useState('child'); // 'child' or 'parent'
 
   if (view === 'parent') {
@@ -11,7 +11,7 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
         mastery={mastery}
         streaksAndPP={streaksAndPP}
         userData={userData}
-        onTopicClick={onStartTopic}
+        onTopicClick={onDrillDown || onStartTopic}
         onBack={() => setView('child')}
         onHome={onHome}
       />

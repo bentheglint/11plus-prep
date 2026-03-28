@@ -16,6 +16,7 @@ import HomeScreen from './screens/HomeScreen';
 import QuizScreen from './screens/QuizScreen';
 import LearningModeScreen from './screens/LearningModeScreen';
 import TopicsScreen from './screens/TopicsScreen';
+import TopicDrillDown from './screens/TopicDrillDown';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import useMockTest from './hooks/useMockTest';
@@ -107,6 +108,7 @@ function App() {
   const [forcedLessonResult, setForcedLessonResult] = useState(null);
   const [lessonFromQuiz, setLessonFromQuiz] = useState(null);
   const [showDidItHelp, setShowDidItHelp] = useState(false);
+  const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem('tested-subconcepts')) || {}; } catch { return {}; }
@@ -1146,6 +1148,22 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     );
   }
 
+  if (currentView === 'topicDrillDown' && drillDownTopic) {
+    return (
+      <TopicDrillDown
+        subject={drillDownTopic.subject}
+        topicKey={drillDownTopic.topicKey}
+        mastery={mastery}
+        questionResults={questionResults}
+        onPractise={(subject, topicKey) => {
+          setSelectedSubject(subject);
+          handleTopicSelect(topicKey);
+        }}
+        onBack={() => setCurrentView('progress')}
+      />
+    );
+  }
+
   if (currentView === 'progress') {
     return (
       <ProgressScreen
@@ -1158,6 +1176,10 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
           handleTopicSelect(topicKey);
+        }}
+        onDrillDown={(subject, topicKey) => {
+          setDrillDownTopic({ subject, topicKey });
+          setCurrentView('topicDrillDown');
         }}
       />
     );
