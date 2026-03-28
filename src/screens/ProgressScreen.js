@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ChildProgressView from './ChildProgressView';
 import ParentDashboard from './ParentDashboard';
 
-function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, onHome, onStartTopic, onDrillDown }) {
+function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, onHome, onStartTopic, onDrillDown }) {
   // Check URL for direct parent dashboard access
   const defaultView = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('view') === 'progress-parent' ? 'parent' : 'child';
   const [view, setView] = useState(defaultView);
@@ -13,6 +13,7 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
         mastery={mastery}
         streaksAndPP={streaksAndPP}
         userData={userData}
+        currentUser={currentUser}
         onTopicClick={onDrillDown || onStartTopic}
         onBack={() => setView('child')}
         onHome={onHome}

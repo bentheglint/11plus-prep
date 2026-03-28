@@ -1268,6 +1268,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         mastery={mastery}
         streaksAndPP={streaksAndPP}
         userData={userData}
+        currentUser={currentUser}
         onHome={handleHome}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);

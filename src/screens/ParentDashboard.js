@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, BarChart3 } from 'lucide-react';
+import OnTrackCard from '../components/progress/OnTrackCard';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
 import TopicHeatMap from '../components/progress/TopicHeatMap';
 import PracticeCalendar from '../components/progress/PracticeCalendar';
@@ -7,7 +8,7 @@ import FocusAreas from '../components/progress/FocusAreas';
 import MockTestHistory from '../components/progress/MockTestHistory';
 import SpeedTracking from '../components/progress/SpeedTracking';
 
-function ParentDashboard({ mastery, streaksAndPP, userData, onTopicClick, onBack, onHome }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopicClick, onBack, onHome }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
 
   return (
@@ -26,6 +27,14 @@ function ParentDashboard({ mastery, streaksAndPP, userData, onTopicClick, onBack
             <h2 className="font-heading font-bold text-[#2D3436]">Parent Dashboard</h2>
           </div>
         </div>
+
+        {/* The most important card — answers "Is my child on track?" */}
+        <OnTrackCard
+          mastery={mastery}
+          streaksAndPP={streaksAndPP}
+          userData={userData}
+          currentUser={currentUser}
+        />
 
         <ExamReadinessCard mastery={mastery} />
 
