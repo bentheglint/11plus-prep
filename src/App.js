@@ -20,6 +20,8 @@ import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import useMockTest from './hooks/useMockTest';
 import useUserData from './hooks/useUserData';
+import useAchievements from './hooks/useAchievements';
+import AchievementModal from './components/AchievementModal';
 import useMastery from './hooks/useMastery';
 import useStreaksAndPP from './hooks/useStreaksAndPP';
 import mathsData from './questionData/mathsData';
@@ -67,6 +69,14 @@ function App() {
     userData.streakData, userData.prepPointsData,
     userData.saveStreakData, userData.savePrepPoints
   );
+
+  // Achievements
+  const achievements = useAchievements(
+    userData.achievements, userData.saveAchievements,
+    quizHistory, questionResults, userData.streakData,
+    userData.mockTestHistory, mastery.getTopicMastery
+  );
+  const [pendingAchievement, setPendingAchievement] = useState(null);
 
   const mockTest = useMockTest();
   const [currentView, setCurrentView] = useState('home');
@@ -728,6 +738,14 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       sessionQuestions.length, correctCount, percentage, isFirstTime
     );
     streaksAndPP.awardPP(ppCalc.total, 'Quiz completed');
+
+    // Check for new achievements (show first one found)
+    setTimeout(() => {
+      const newAchievements = achievements.checkAchievements();
+      if (newAchievements.length > 0) {
+        setPendingAchievement(newAchievements[0]);
+      }
+    }, 500);
   };
 
   // ── Question Preview Mode ──
@@ -897,6 +915,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onSubjectSelect={handleSubjectSelect}
         onViewProgress={() => setCurrentView('progress')}
         onSpeedReview={() => setCurrentView('speedReview')}
+        streaksAndPP={streaksAndPP}
       />
     );
   }
@@ -1109,13 +1128,21 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
   if (currentView === 'results') {
     return (
-      <ResultsScreen
-        answers={answers}
-        quizMode={quizMode}
-        onRetry={handleRetry}
-        onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
-        onHome={handleHome}
-      />
+      <>
+        <ResultsScreen
+          answers={answers}
+          quizMode={quizMode}
+          onRetry={handleRetry}
+          onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
+          onHome={handleHome}
+        />
+        {pendingAchievement && (
+          <AchievementModal
+            achievement={pendingAchievement}
+            onDismiss={() => setPendingAchievement(null)}
+          />
+        )}
+      </>
     );
   }
 

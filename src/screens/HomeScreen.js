@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench } from 'lucide-react';
 import UserAvatar from '../components/UserAvatar';
+import StreakDisplay from '../components/StreakDisplay';
 
 function SubjectCard({ title, icon: Icon, gradient, onClick }) {
   return (
@@ -16,12 +17,19 @@ function SubjectCard({ title, icon: Icon, gradient, onClick }) {
   );
 }
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onSpeedReview }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onSpeedReview, streaksAndPP }) {
   return (
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
-        {/* Top bar with avatar */}
-        <div className="flex justify-end mb-4">
+        {/* Top bar with streak + avatar */}
+        <div className="flex items-center justify-between mb-4">
+          {streaksAndPP ? (
+            <StreakDisplay
+              currentStreak={streaksAndPP.currentStreak}
+              longestStreak={streaksAndPP.longestStreak}
+              isActive={streaksAndPP.isStreakActive()}
+            />
+          ) : <div />}
           <UserAvatar currentUser={currentUser} onSetCurrentUser={onSetCurrentUser} />
         </div>
 
