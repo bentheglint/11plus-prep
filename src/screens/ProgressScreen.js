@@ -3,7 +3,9 @@ import ChildProgressView from './ChildProgressView';
 import ParentDashboard from './ParentDashboard';
 
 function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, onHome, onStartTopic, onDrillDown }) {
-  const [view, setView] = useState('child'); // 'child' or 'parent'
+  // Check URL for direct parent dashboard access
+  const defaultView = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('view') === 'progress-parent' ? 'parent' : 'child';
+  const [view, setView] = useState(defaultView);
 
   if (view === 'parent') {
     return (

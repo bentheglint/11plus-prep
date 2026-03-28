@@ -52,28 +52,38 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
     <div className="card-elevated p-5 mb-6">
       <h3 className="font-heading font-bold text-[#2D3436] mb-3">Practice Consistency</h3>
 
-      {/* Calendar grid */}
-      <div className="flex gap-[3px] mb-3 overflow-x-auto">
-        {weeks.map((week, wi) => (
-          <div key={wi} className="flex flex-col gap-[3px]">
-            {week.map(day => (
-              <div
-                key={day.date}
-                className="w-3.5 h-3.5 rounded-sm transition-colors"
-                style={{ background: intensityColours[day.intensity] }}
-                title={`${day.date}: ${day.questions} questions`}
-              />
-            ))}
-          </div>
-        ))}
+      {/* Day labels */}
+      <div className="flex gap-1 mb-2">
+        <div className="flex flex-col gap-1 text-[10px] text-[#636E72] pr-1 justify-between" style={{ paddingTop: 2, paddingBottom: 2 }}>
+          <span>Mon</span>
+          <span>Wed</span>
+          <span>Fri</span>
+          <span>Sun</span>
+        </div>
+
+        {/* Calendar grid */}
+        <div className="flex gap-1 flex-1">
+          {weeks.map((week, wi) => (
+            <div key={wi} className="flex flex-col gap-1 flex-1">
+              {week.map(day => (
+                <div
+                  key={day.date}
+                  className="aspect-square rounded transition-colors"
+                  style={{ background: intensityColours[day.intensity], minHeight: 14 }}
+                  title={`${day.date}: ${day.questions} questions`}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Legend */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-1 text-[10px] text-[#636E72]">
+      <div className="flex items-center justify-between mt-1">
+        <div className="flex items-center gap-1.5 text-xs text-[#636E72]">
           <span>Less</span>
           {intensityColours.map((c, i) => (
-            <div key={i} className="w-3 h-3 rounded-sm" style={{ background: c }} />
+            <div key={i} className="w-4 h-4 rounded-sm" style={{ background: c }} />
           ))}
           <span>More</span>
         </div>

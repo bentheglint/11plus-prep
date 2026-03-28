@@ -751,9 +751,30 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     }, 500);
   };
 
-  // ── Question Preview Mode ──
-  // Usage: ?preview=anglesshapes&q=65 or ?preview=synonyms&q=10&subject=vr
+  // ── Dev Navigation ──
+  // Direct URL access to any view for fast visual QA:
+  //   ?view=home | progress | progress-parent | topicDrillDown&subject=maths&topic=fractions
+  //   ?preview=anglesshapes&q=65 (existing question preview)
   const urlParams = new URLSearchParams(window.location.search);
+  const urlViewParam = urlParams.get('view');
+  const devNavDone = React.useRef(false);
+  useEffect(() => {
+    if (devNavDone.current || !urlViewParam) return;
+    devNavDone.current = true;
+    const urlSubject = urlParams.get('subject');
+    const urlTopic = urlParams.get('topic');
+    if (urlViewParam === 'progress' || urlViewParam === 'progress-parent') {
+      setCurrentView('progress');
+    } else if (urlViewParam === 'topicDrillDown' && urlSubject && urlTopic) {
+      setDrillDownTopic({ subject: urlSubject, topicKey: urlTopic });
+      setCurrentView('topicDrillDown');
+    } else if (urlViewParam === 'learningMode' && urlSubject) {
+      setSelectedSubject(urlSubject);
+      setCurrentView('learningMode');
+    } else if (urlViewParam === 'home') {
+      setCurrentView('home');
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const previewTopic = urlParams.get('preview');
   const previewQId = parseInt(urlParams.get('q'), 10);
   if (previewTopic && previewQId) {
