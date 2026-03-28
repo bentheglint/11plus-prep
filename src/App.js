@@ -114,6 +114,58 @@ function App() {
     try { return JSON.parse(localStorage.getItem('tested-subconcepts')) || {}; } catch { return {}; }
   });
 
+  // ── Quiz State Persistence ──
+  // Save quiz progress so children can resume if they leave mid-quiz
+  const quizSaveKey = currentUser ? `user:${currentUser}:active-quiz` : null;
+
+  // Save active quiz state whenever it changes
+  useEffect(() => {
+    if (!quizSaveKey) return;
+    if (currentView === 'quiz' && quizQuestions.length > 0) {
+      localStorage.setItem(quizSaveKey, JSON.stringify({
+        currentView, selectedSubject, selectedTopic, quizMode,
+        quizQuestions, currentQuestionIndex, answers,
+        selectedAnswer, selectedPair, showFeedback,
+        sessionId: quizSessionId.current,
+        savedAt: Date.now(),
+      }));
+    } else {
+      // Clear saved quiz when not in quiz view
+      localStorage.removeItem(quizSaveKey);
+    }
+  }, [quizSaveKey, currentView, quizQuestions, currentQuestionIndex, answers, selectedAnswer, selectedPair, showFeedback, selectedSubject, selectedTopic, quizMode]);
+
+  // Restore quiz on mount if one was in progress
+  const quizRestored = React.useRef(false);
+  useEffect(() => {
+    if (quizRestored.current || !quizSaveKey) return;
+    quizRestored.current = true;
+    try {
+      const saved = localStorage.getItem(quizSaveKey);
+      if (!saved) return;
+      const state = JSON.parse(saved);
+      // Only restore if saved within last 24 hours
+      if (Date.now() - state.savedAt > 24 * 60 * 60 * 1000) {
+        localStorage.removeItem(quizSaveKey);
+        return;
+      }
+      if (state.quizQuestions?.length > 0 && state.currentView === 'quiz') {
+        setSelectedSubject(state.selectedSubject);
+        setSelectedTopic(state.selectedTopic);
+        setQuizMode(state.quizMode);
+        setQuizQuestions(state.quizQuestions);
+        setCurrentQuestionIndex(state.currentQuestionIndex);
+        setAnswers(state.answers || []);
+        setSelectedAnswer(state.selectedAnswer);
+        setSelectedPair(state.selectedPair || []);
+        setShowFeedback(state.showFeedback || false);
+        quizSessionId.current = state.sessionId || Date.now();
+        questionStartTime.current = Date.now();
+        setCurrentView('quiz');
+      }
+    } catch { /* ignore corrupt data */ }
+  }, [quizSaveKey]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Keep Dev Review panel context updated
   useEffect(() => {
     window.__devReviewContext = {
