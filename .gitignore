@@ -36,6 +36,9 @@ yarn-error.log*
 # API keys and secrets
 /Master Brief Document and Working Instructions/Claude API Key
 
+# Research library (reference material, not app code)
+/research
+
 # Scanned reference materials (large binary files)
 /Examples for English and VR
 /research/kingsbury
