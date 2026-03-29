@@ -1217,23 +1217,24 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 <p className="text-sm font-bold text-[#6C5CE7] mb-1">Your AI Tutor can explain this differently!</p>
                 <p className="text-sm text-[#636E72]">They'll look at the specific question you're stuck on and break it down step by step, just for you.</p>
               </div>
+              {/* Submit feedback + open AI Tutor */}
               <button
                 onClick={() => {
-                  // Log feedback to Google Sheet
-                  submitToGoogleSheet({
-                    type: 'lesson-not-helpful',
-                    submitter: currentUser || 'Unknown',
-                    topicKey: lessonFromQuiz.topicKey,
-                    questionId: String(lessonFromQuiz.questionId),
-                    subConceptId: lessonFromQuiz.subConceptId,
-                    subConceptName: lessonFromQuiz.subConceptName,
-                    feedback: feedbackText.trim() || 'No details given',
-                    date: new Date().toISOString(),
-                  });
+                  if (feedbackText.trim()) {
+                    submitToGoogleSheet({
+                      type: 'lesson-not-helpful',
+                      submitter: currentUser || 'Unknown',
+                      topicKey: lessonFromQuiz.topicKey,
+                      questionId: String(lessonFromQuiz.questionId),
+                      subConceptId: lessonFromQuiz.subConceptId,
+                      subConceptName: lessonFromQuiz.subConceptName,
+                      feedback: feedbackText.trim(),
+                      date: new Date().toISOString(),
+                    });
+                  }
                   setShowDidItHelp(false);
                   setLessonFromQuiz(null);
                   setFeedbackText('');
-                  // Open AI Tutor with a helpful greeting
                   setShowTutorChat(true);
                   setChatMessages([{
                     role: 'assistant',
@@ -1245,15 +1246,29 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 <Brain className="w-5 h-5" />
                 Talk to AI Tutor
               </button>
+
+              {/* Submit feedback only (no tutor) */}
               <button
                 onClick={() => {
+                  if (feedbackText.trim()) {
+                    submitToGoogleSheet({
+                      type: 'lesson-not-helpful',
+                      submitter: currentUser || 'Unknown',
+                      topicKey: lessonFromQuiz.topicKey,
+                      questionId: String(lessonFromQuiz.questionId),
+                      subConceptId: lessonFromQuiz.subConceptId,
+                      subConceptName: lessonFromQuiz.subConceptName,
+                      feedback: feedbackText.trim(),
+                      date: new Date().toISOString(),
+                    });
+                  }
                   setShowDidItHelp(false);
                   setLessonFromQuiz(null);
                   setFeedbackText('');
                 }}
-                className="mt-3 text-sm text-[#636E72] hover:text-[#2D3436]"
+                className="w-full mt-2 px-6 py-3 bg-[#00B894] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
               >
-                Skip — go back to question
+                {feedbackText.trim() ? 'Submit Feedback' : 'Go Back to Question'}
               </button>
             </>
           ) : (
