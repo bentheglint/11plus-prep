@@ -131,6 +131,11 @@ export default function useUserData(userName) {
     userName ? loadJSON(userKey(userName, 'achievements'), []) : []
   );
 
+  // --- Seen Tips ---
+  const [seenTips, setSeenTips] = useState(() =>
+    userName ? loadJSON(userKey(userName, 'seen-tips'), []) : []
+  );
+
   // Reload all data when user changes
   useEffect(() => {
     if (userName && userName !== prevUser.current) {
@@ -150,6 +155,7 @@ export default function useUserData(userName) {
         total: 0, level: 0, todayPP: 0, todayDate: null
       }));
       setAchievements(loadJSON(userKey(userName, 'achievements'), []));
+      setSeenTips(loadJSON(userKey(userName, 'seen-tips'), []));
     }
   }, [userName]);
 
@@ -220,6 +226,13 @@ export default function useUserData(userName) {
     saveJSON(userKey(userName, 'achievements'), data);
   }, [userName]);
 
+  const markTipSeen = useCallback((tipId) => {
+    if (!userName) return;
+    const updated = seenTips.includes(tipId) ? seenTips : [...seenTips, tipId];
+    setSeenTips(updated);
+    saveJSON(userKey(userName, 'seen-tips'), updated);
+  }, [userName, seenTips]);
+
   return {
     // Data
     quizHistory,
@@ -243,5 +256,7 @@ export default function useUserData(userName) {
     saveStreakData,
     savePrepPoints,
     saveAchievements,
+    seenTips,
+    markTipSeen,
   };
 }

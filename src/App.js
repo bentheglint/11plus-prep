@@ -17,6 +17,7 @@ import QuizScreen from './screens/QuizScreen';
 import LearningModeScreen from './screens/LearningModeScreen';
 import TopicsScreen from './screens/TopicsScreen';
 import TopicDrillDown from './screens/TopicDrillDown';
+import StudyToolkitScreen from './screens/StudyToolkitScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import useMockTest from './hooks/useMockTest';
@@ -1007,7 +1008,22 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
           setCurrentView('mockTest');
         }}
+        onStudyToolkit={() => setCurrentView('studyToolkit')}
         onBack={handleHome}
+      />
+    );
+  }
+
+  if (currentView === 'studyToolkit') {
+    // Lazy import to avoid loading all tips on every page
+    const allTips = require('./data/studyTips').default;
+    return (
+      <StudyToolkitScreen
+        subject={selectedSubject}
+        tips={allTips}
+        seenTips={userData.seenTips}
+        onMarkSeen={userData.markTipSeen}
+        onBack={() => setCurrentView('learningMode')}
       />
     );
   }

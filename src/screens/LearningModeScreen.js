@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Target, ArrowLeft, Clock } from 'lucide-react';
+import { Calendar, Target, ArrowLeft, Clock, Lightbulb } from 'lucide-react';
 
 const mockTestInfo = {
   maths: { questions: 50, time: 50 },
@@ -7,7 +7,7 @@ const mockTestInfo = {
   verbalreasoning: { questions: 85, time: 50 },
 };
 
-function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLearning, onMockTest, onBack }) {
+function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLearning, onMockTest, onStudyToolkit, onBack }) {
   const testInfo = mockTestInfo[subjectKey] || { questions: 50, time: 50 };
 
   return (
@@ -28,7 +28,7 @@ function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLe
           <p className="text-[#636E72]">Choose how you'd like to practise</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 stagger-children">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
           <button
             onClick={onStartDaily}
             className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#0984E3]/30 animate-scale-in"
@@ -62,6 +62,17 @@ function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLe
             <p className="text-[#636E72]">
               Full practice paper — {testInfo.questions} questions in {testInfo.time} minutes. Timed, just like the real exam!
             </p>
+          </button>
+
+          <button
+            onClick={onStudyToolkit}
+            className="card rounded-2xl p-8 text-left hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#FDCB6E]/30 animate-scale-in"
+          >
+            <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
+              <Lightbulb className="w-8 h-8 text-[#F39C12]" />
+            </div>
+            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Study Toolkit</h3>
+            <p className="text-[#636E72]">Tips, tricks, and strategies to help you ace the exam!</p>
           </button>
         </div>
       </div>
