@@ -27338,7 +27338,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 341,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word suggests the STRONGEST feeling? angry, annoyed, furious, irritated, cross",
           "options": ["Angry", "Annoyed", "Furious", "Irritated", "Cross"],
           "correct": 2,
@@ -27347,7 +27346,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 342,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word suggests the WEAKEST feeling? terrified, nervous, anxious, uneasy, petrified",
           "options": ["Terrified", "Nervous", "Anxious", "Uneasy", "Petrified"],
           "correct": 3,
@@ -27356,7 +27354,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 343,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Put these words in order from smallest to biggest: huge, large, gigantic, big, colossal",
           "options": ["big → large → huge → gigantic → colossal", "large → big → huge → colossal → gigantic", "big → huge → large → gigantic → colossal", "colossal → gigantic → huge → large → big", "big → large → gigantic → huge → colossal"],
           "correct": 0,
@@ -27365,7 +27362,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 344,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word means 'happy' but in a STRONGER way?",
           "options": ["Pleased", "Content", "Ecstatic", "Cheerful", "Satisfied"],
           "correct": 2,
@@ -27374,7 +27370,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 345,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word means 'sad' but in a MILDER way?",
           "options": ["Heartbroken", "Melancholy", "Devastated", "Disappointed", "Grief-stricken"],
           "correct": 3,
@@ -27383,7 +27378,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 346,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which pair of words are CLOSEST in meaning to each other?",
           "options": ["scared and terrified", "tired and exhausted", "warm and lukewarm", "angry and irritated", "glad and overjoyed"],
           "correct": 2,
@@ -27392,7 +27386,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 347,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word would a writer choose to make a character sound MORE frightening than 'unfriendly'?",
           "options": ["Cold", "Menacing", "Stern", "Grumpy", "Distant"],
           "correct": 1,
@@ -27401,7 +27394,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 348,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word best replaces 'walked' to show the character is in a hurry?",
           "options": ["Strolled", "Ambled", "Strode", "Sauntered", "Wandered"],
           "correct": 2,
@@ -27410,7 +27402,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 349,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word means 'to look at' but suggests you are being sneaky about it?",
           "options": ["Stare", "Glance", "Peer", "Gaze", "Peek"],
           "correct": 4,
@@ -27419,7 +27410,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 350,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word means 'to eat' but suggests someone is eating very messily?",
           "options": ["Nibble", "Devour", "Gobble", "Savour", "Munch"],
           "correct": 2,
@@ -27428,7 +27418,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 351,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word best replaces 'said' to show the character is angry?",
           "options": ["Whispered", "Muttered", "Snarled", "Remarked", "Mentioned"],
           "correct": 2,
@@ -27437,7 +27426,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 352,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word means 'to laugh' but suggests the laughter is unkind?",
           "options": ["Giggle", "Chuckle", "Snigger", "Chortle", "Cackle"],
           "correct": 2,
@@ -27446,7 +27434,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 353,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word describes rain that is heavier than 'drizzle' but lighter than 'downpour'?",
           "options": ["Shower", "Torrent", "Deluge", "Cloudburst", "Mist"],
           "correct": 0,
@@ -27455,7 +27442,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 354,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word means 'to criticise' in the STRONGEST way?",
           "options": ["Question", "Condemn", "Challenge", "Disapprove", "Query"],
           "correct": 1,
@@ -27464,7 +27450,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 355,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word best describes a smile that is not genuine?",
           "options": ["Broad", "Warm", "Forced", "Beaming", "Radiant"],
           "correct": 2,
@@ -27473,7 +27458,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 356,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word would be most appropriate in a formal letter instead of 'get'?",
           "options": ["Grab", "Obtain", "Snag", "Nab", "Fetch"],
           "correct": 1,
@@ -27482,7 +27466,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 357,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word is the INFORMAL version of 'commence'?",
           "options": ["Initiate", "Begin", "Inaugurate", "Proceed", "Embark"],
           "correct": 1,
@@ -27491,7 +27474,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 358,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word is the FORMAL version of 'ask for'?",
           "options": ["Beg", "Request", "Pester", "Nag", "Plead"],
           "correct": 1,
@@ -27500,7 +27482,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 359,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word would replace 'help' in a formal report?",
           "options": ["Aid", "Assist", "Give a hand", "Pitch in", "Chip in"],
           "correct": 1,
@@ -27509,7 +27490,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 360,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which sentence uses the most appropriate FORMAL language?",
           "options": ["We need to chat about the problem.", "We should discuss the matter.", "We gotta sort this out.", "Let's have a word about it.", "We need to talk about the stuff."],
           "correct": 1,
@@ -27518,7 +27498,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 361,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word is the FORMAL version of 'enough'?",
           "options": ["Plenty", "Loads", "Sufficient", "Tons", "Heaps"],
           "correct": 2,
@@ -27527,7 +27506,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 362,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word would replace 'buy' in a formal business letter?",
           "options": ["Grab", "Purchase", "Pick up", "Snap up", "Bag"],
           "correct": 1,
@@ -27536,7 +27514,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 363,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word is the FORMAL version of 'go up'?",
           "options": ["Shoot up", "Ascend", "Rocket", "Soar", "Climb"],
           "correct": 1,
@@ -27545,7 +27522,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 364,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word would a headteacher use in a letter instead of 'told off'?",
           "options": ["Reprimanded", "Yelled at", "Had a go at", "Gave a telling-off", "Nagged"],
           "correct": 0,
@@ -27554,7 +27530,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 365,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which pair shows the correct FORMAL and INFORMAL versions?",
           "options": ["reside / live", "depart / go away", "enquire / ask", "observe / watch", "All of the above"],
           "correct": 4,
@@ -27563,7 +27538,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 366,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "The word 'bank' can mean different things. Which TWO meanings are correct?",
           "options": ["A place to keep money AND the side of a river", "A type of boat AND a wooden seat", "A tall building AND a deep hole", "A musical instrument AND a type of bird", "A type of food AND a sports field"],
           "correct": 0,
@@ -27572,7 +27546,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 367,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'light' mean 'not heavy'?",
           "options": ["Please turn on the light.", "The light from the sun was blinding.", "This bag is very light.", "There was a light in the window.", "The traffic light turned green."],
           "correct": 2,
@@ -27581,7 +27554,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 368,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'a container for flowers' AND 'the past tense of plant'?",
           "options": ["Pot", "Vase", "Planted", "Box", "Planter"],
           "correct": 0,
@@ -27590,7 +27562,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 369,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'match' mean 'a game or competition'?",
           "options": ["Can you match these socks into pairs?", "She struck a match to light the candle.", "We watched the football match on Saturday.", "Does this tie match my shirt?", "He is no match for the champion."],
           "correct": 2,
@@ -27599,7 +27570,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 370,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'reasonable' AND 'a place where rides and games are found'?",
           "options": ["Just", "Fair", "Right", "Equal", "Park"],
           "correct": 1,
@@ -27608,7 +27578,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 371,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'sentence' mean 'a punishment given by a judge'?",
           "options": ["Write a sentence using the word 'beautiful'.", "The judge gave a sentence of five years.", "Can you spot the error in this sentence?", "Start your sentence with a capital letter.", "That was a very long sentence to read."],
           "correct": 1,
@@ -27617,7 +27586,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 372,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'a type of tree' AND 'the flat part of your hand'?",
           "options": ["Oak", "Palm", "Ash", "Elm", "Fir"],
           "correct": 1,
@@ -27626,7 +27594,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 373,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'novel' mean 'new and unusual'?",
           "options": ["She read an exciting novel over the holidays.", "The author published her first novel last year.", "That's a very novel idea!", "He borrowed a novel from the library.", "The novel was over 300 pages long."],
           "correct": 2,
@@ -27635,7 +27602,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 374,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'the outer layer of a tree' AND 'the sound a dog makes'?",
           "options": ["Trunk", "Bark", "Root", "Branch", "Howl"],
           "correct": 1,
@@ -27644,7 +27610,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 375,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'crane' mean 'to stretch your neck'?",
           "options": ["The crane lifted the heavy steel beam.", "A crane stood perfectly still in the shallow water.", "She had to crane her neck to see the stage.", "The construction crane towered above the building.", "We spotted a beautiful crane by the lake."],
           "correct": 2,
@@ -27653,7 +27618,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 376,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'to produce a newspaper' AND 'to push firmly'?",
           "options": ["Print", "Press", "Publish", "Push", "Type"],
           "correct": 1,
@@ -27662,7 +27626,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 377,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'minute' mean 'extremely small'?",
           "options": ["Wait a minute, please.", "The minute hand pointed to twelve.", "The difference was minute and hard to spot.", "She arrived a minute late.", "Every minute counts in an exam."],
           "correct": 2,
@@ -27671,7 +27634,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 378,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'a round shape' AND 'a series of visits'?",
           "options": ["Circle", "Ring", "Round", "Loop", "Cycle"],
           "correct": 2,
@@ -27680,7 +27642,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 379,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "In which sentence does 'patient' mean 'a person receiving medical care'?",
           "options": ["Be patient — your turn will come.", "She was a very patient teacher.", "The patient was discharged from hospital.", "You need to be more patient with your sister.", "Patient people usually achieve their goals."],
           "correct": 2,
@@ -27689,7 +27650,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 380,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word can mean BOTH 'a musical instrument' AND 'a body organ'?",
           "options": ["Drum", "Organ", "Trumpet", "Bell", "Pipe"],
           "correct": 1,
@@ -27698,7 +27658,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 381,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "What does the prefix 'un-' mean in the word 'unhappy'?",
           "options": ["Very", "Not", "Before", "Again", "Too much"],
           "correct": 1,
@@ -27707,7 +27666,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 382,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "If 'visible' means 'able to be seen', what does 'invisible' mean?",
           "options": ["Easy to see", "Not able to be seen", "Hard to see", "Seen from far away", "Seen by everyone"],
           "correct": 1,
@@ -27716,7 +27674,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 383,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "What does the prefix 're-' mean in the word 'rebuild'?",
           "options": ["Not", "Before", "Again", "Under", "Against"],
           "correct": 2,
@@ -27725,7 +27682,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 384,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "If someone 'misbehaves', what are they doing?",
           "options": ["Behaving well", "Behaving badly", "Behaving quietly", "Behaving bravely", "Behaving strangely"],
           "correct": 1,
@@ -27734,7 +27690,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 385,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does the prefix 'pre-' mean in the word 'preview'?",
           "options": ["After", "Not", "Before", "Again", "Over"],
           "correct": 2,
@@ -27743,7 +27698,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 386,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "If 'auto' means 'self', what does 'autobiography' mean?",
           "options": ["A story about someone else's life", "A story about your own life", "A story about cars", "A science fiction story", "A made-up story"],
           "correct": 1,
@@ -27752,7 +27706,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 387,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does the prefix 'sub-' mean in 'submarine'?",
           "options": ["Above", "Under", "Around", "Through", "Between"],
           "correct": 1,
@@ -27761,7 +27714,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 388,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "If 'super' means 'above' or 'beyond', what does 'superhuman' mean?",
           "options": ["Less than human", "Exactly human", "Beyond normal human ability", "A type of human", "Almost human"],
           "correct": 2,
@@ -27770,7 +27722,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 389,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does the prefix 'anti-' mean in 'antibacterial'?",
           "options": ["For", "With", "Against", "Before", "After"],
           "correct": 2,
@@ -27779,7 +27730,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 390,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Using your knowledge of prefixes, what does 'transatlantic' most likely mean?",
           "options": ["Under the Atlantic", "Around the Atlantic", "Across the Atlantic", "Above the Atlantic", "Near the Atlantic"],
           "correct": 2,
@@ -27788,7 +27738,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 391,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "What does the prefix 'inter-' mean in 'international'?",
           "options": ["Inside", "Between", "Outside", "Against", "Without"],
           "correct": 1,
@@ -27797,7 +27746,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 392,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "If you know 'semi' means 'half', what is a 'semicircle'?",
           "options": ["A full circle", "Half a circle", "A quarter of a circle", "Two circles", "A small circle"],
           "correct": 1,
@@ -27806,7 +27754,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 393,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Using your knowledge of the prefix 'bi-', how often does a 'biannual' event happen?",
           "options": ["Once a year", "Twice a year", "Every two years", "Three times a year", "Once a month"],
           "correct": 1,
@@ -27815,7 +27762,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 394,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "The root 'aud' means 'to hear'. What is an 'audience'?",
           "options": ["People who perform on stage", "People who listen and watch", "People who sell tickets", "People who write plays", "People who build theatres"],
           "correct": 1,
@@ -27824,7 +27770,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 395,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "The root 'vis' means 'to see'. What does 'visible' mean?",
           "options": ["Able to be heard", "Able to be seen", "Able to be touched", "Able to be felt", "Able to be tasted"],
           "correct": 1,
@@ -27833,7 +27778,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 396,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "The root 'port' means 'to carry'. What does 'transport' mean?",
           "options": ["To carry across from one place to another", "To stay in one place", "To hide something", "To break something apart", "To build something new"],
           "correct": 0,
@@ -27842,7 +27786,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 397,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'dict' means 'to say or speak'. What does 'predict' mean?",
           "options": ["To say after", "To say before (foretell)", "To say quietly", "To say loudly", "To say again"],
           "correct": 1,
@@ -27851,7 +27794,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 398,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'scrib/script' means 'to write'. What is a 'manuscript'?",
           "options": ["A printed book", "A handwritten document", "A typewriter", "A reading lamp", "A library card"],
           "correct": 1,
@@ -27860,7 +27802,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 399,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'rupt' means 'to break'. What does 'interrupt' mean?",
           "options": ["To fix something", "To break into a conversation", "To build something", "To agree with someone", "To ignore someone"],
           "correct": 1,
@@ -27869,7 +27810,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 400,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'spec/spect' means 'to look'. What does 'inspect' mean?",
           "options": ["To look carefully at something", "To look away from something", "To close your eyes", "To listen carefully", "To touch carefully"],
           "correct": 0,
@@ -27878,7 +27818,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 401,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'struct' means 'to build'. What does 'destruction' mean?",
           "options": ["Building something up", "Taking something apart (un-building)", "Making something stronger", "Painting something", "Measuring something"],
           "correct": 1,
@@ -27887,7 +27826,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 402,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Using your knowledge that 'bene' means 'good', what does 'benevolent' most likely mean?",
           "options": ["Evil and cruel", "Kind and generous", "Loud and bossy", "Shy and quiet", "Brave and fearless"],
           "correct": 1,
@@ -27896,7 +27834,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 403,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Using your knowledge that 'mal' means 'bad', what does 'malfunction' most likely mean?",
           "options": ["To work perfectly", "To work badly or fail", "To work slowly", "To work loudly", "To work automatically"],
           "correct": 1,
@@ -27905,7 +27842,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 404,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "The root 'aqua' means 'water'. Which word means 'a tank for keeping fish'?",
           "options": ["Aquarium", "Aqualung", "Aquaplane", "Aqueduct", "Aquatic"],
           "correct": 0,
@@ -27914,7 +27850,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 405,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "The root 'terra' means 'earth/land'. What is a 'terrace'?",
           "options": ["A raised flat area of land", "A deep ocean", "A high cloud", "A strong wind", "A bright star"],
           "correct": 0,
@@ -27923,7 +27858,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 406,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "If 'chron' means 'time', what does 'chronological' mean?",
           "options": ["In order of size", "In order of time", "In order of importance", "In alphabetical order", "In random order"],
           "correct": 1,
@@ -27932,7 +27866,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 407,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "If 'graph' means 'to write or draw', what is an 'autograph'?",
           "options": ["A photograph", "A self-written signature", "A type of car", "A drawing of a map", "A printed letter"],
           "correct": 1,
@@ -27941,7 +27874,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 408,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "The root 'ped/pod' means 'foot'. What is a 'pedestrian'?",
           "options": ["Someone who drives a car", "Someone who rides a bicycle", "Someone who travels on foot", "Someone who flies a plane", "Someone who sails a boat"],
           "correct": 2,
@@ -27950,7 +27882,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 409,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word belongs to the same WORD FAMILY as 'happy'?",
           "options": ["Sadness", "Happiness", "Gladly", "Pleased", "Cheerful"],
           "correct": 1,
@@ -27959,7 +27890,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 410,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word is NOT in the same word family as 'play'?",
           "options": ["Player", "Playful", "Playing", "Replay", "Display"],
           "correct": 4,
@@ -27968,7 +27898,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 411,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "If 'create' is a verb, which word from its family is a NOUN?",
           "options": ["Creative", "Creating", "Creation", "Created", "Creatively"],
           "correct": 2,
@@ -27977,7 +27906,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 412,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word is the ADJECTIVE form in the word family of 'beauty'?",
           "options": ["Beautify", "Beautiful", "Beautifully", "Beauty", "Beautician"],
           "correct": 1,
@@ -27986,7 +27914,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 413,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word completes this word family? act → actor → action → ___",
           "options": ["Acting", "Acted", "Active", "Activity", "Actress"],
           "correct": 2,
@@ -27995,7 +27922,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 414,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word is in the same word family as 'sign'?",
           "options": ["Sing", "Signature", "Single", "Sight", "Signal"],
           "correct": 1,
@@ -28004,7 +27930,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 415,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "If 'courage' is the noun, what is the adjective?",
           "options": ["Couraging", "Courageous", "Courageously", "Encourage", "Discourage"],
           "correct": 1,
@@ -28013,7 +27938,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 416,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word completes this pattern? danger → dangerous, fame → famous, courage → courageous, mystery → ___",
           "options": ["Mysteried", "Mysteriousful", "Mysterious", "Mysterier", "Mysterial"],
           "correct": 2,
@@ -28022,7 +27946,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 417,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Which word family does 'unbreakable' belong to?",
           "options": ["Break", "Brake", "Bread", "Breathe", "Breed"],
           "correct": 0,
@@ -28031,7 +27954,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 418,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word is in the same word family as 'describe'?",
           "options": ["Prescribe", "Subscribe", "Description", "Ascribe", "Inscribe"],
           "correct": 2,
@@ -28040,7 +27962,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 419,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "What is the verb form of the noun 'imagination'?",
           "options": ["Imaginary", "Imaginative", "Imagine", "Imaginatively", "Imaginable"],
           "correct": 2,
@@ -28049,7 +27970,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 420,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word pair shows a correct noun → verb relationship?",
           "options": ["explanation → explain", "decision → decide", "Both A and B", "creation → creative", "beautiful → beautify"],
           "correct": 2,
@@ -28058,7 +27978,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 421,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which word does NOT belong to the word family of 'form'?",
           "options": ["Inform", "Reform", "Formal", "Formula", "Forum"],
           "correct": 4,
@@ -28067,7 +27986,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 422,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Complete the word family: electric → electrician → electricity → ___",
           "options": ["Electrical", "Electrify", "Electron", "Electrocute", "Electrode"],
           "correct": 0,
@@ -28076,7 +27994,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 423,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Which word is the ADVERB form in the word family of 'quick'?",
           "options": ["Quicker", "Quickest", "Quickly", "Quicken", "Quickness"],
           "correct": 2,
@@ -28085,7 +28002,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 424,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "In the sentence 'Time flies when you're having fun', what does 'flies' mean?",
           "options": ["Time has wings", "Time passes quickly", "Time disappears completely", "Time turns into insects", "Time stops and starts"],
           "correct": 1,
@@ -28094,7 +28010,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 425,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "'She has a heart of gold.' What does this expression mean?",
           "options": ["Her heart is made of metal", "She is very wealthy", "She is extremely kind and generous", "She has a health problem", "She wears gold jewellery"],
           "correct": 2,
@@ -28103,7 +28018,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 426,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "What type of figurative language is used in: 'The wind howled through the trees'?",
           "options": ["Simile", "Personification", "Alliteration", "Onomatopoeia", "Hyperbole"],
           "correct": 1,
@@ -28112,7 +28026,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 427,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "What type of figurative language is: 'He was as brave as a lion'?",
           "options": ["Metaphor", "Simile", "Personification", "Hyperbole", "Idiom"],
           "correct": 1,
@@ -28121,7 +28034,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 428,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "'I've told you a million times!' What type of figurative language is this?",
           "options": ["Simile", "Metaphor", "Hyperbole", "Personification", "Onomatopoeia"],
           "correct": 2,
@@ -28130,7 +28042,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 429,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "'The classroom was a zoo.' What does this metaphor mean?",
           "options": ["There were animals in the classroom", "The classroom was very noisy and chaotic", "The classroom had pictures of animals", "The children were studying animals", "The classroom was very cold"],
           "correct": 1,
@@ -28139,7 +28050,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 430,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does the idiom 'to let the cat out of the bag' mean?",
           "options": ["To free a trapped animal", "To reveal a secret accidentally", "To open a present", "To make a mess", "To start a fight"],
           "correct": 1,
@@ -28148,7 +28058,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 431,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "In 'The stars danced in the night sky', what figurative language is used?",
           "options": ["Simile", "Hyperbole", "Alliteration", "Personification", "Metaphor"],
           "correct": 3,
@@ -28157,7 +28066,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 432,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does the expression 'break the ice' mean?",
           "options": ["To smash something frozen", "To start a conversation with someone new", "To ruin a party", "To go ice skating", "To cause trouble"],
           "correct": 1,
@@ -28166,7 +28074,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 433,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "What does the metaphor 'He has the memory of a sieve' mean?",
           "options": ["He remembers everything perfectly", "He forgets things very easily", "He has a very organised mind", "He remembers faces but not names", "He only remembers important things"],
           "correct": 1,
@@ -28175,7 +28082,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 434,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "What does the idiom 'to be on thin ice' mean?",
           "options": ["To be ice skating", "To be in a dangerous or risky situation", "To be very cold", "To be losing weight", "To be in a hurry"],
           "correct": 1,
@@ -28184,7 +28090,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 435,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "'The news was a dagger to her heart.' What does this metaphor suggest?",
           "options": ["She was physically injured", "The news was extremely painful and upsetting", "She was brave and strong", "Someone attacked her", "She didn't care about the news"],
           "correct": 1,
@@ -28193,7 +28098,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 436,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "What does the expression 'to turn over a new leaf' mean?",
           "options": ["To start gardening", "To read a new book", "To make a fresh start and change behaviour", "To flip a page", "To move to a new house"],
           "correct": 2,
@@ -28202,7 +28106,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 437,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Which sentence contains a simile?",
           "options": ["The thunder roared across the valley.", "Her smile was like sunshine on a rainy day.", "The mountain was a sleeping giant.", "Hope blossomed in her chest.", "The clock stared down at them."],
           "correct": 1,
@@ -28211,7 +28114,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 438,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "What does 'to cost an arm and a leg' mean?",
           "options": ["To cause a physical injury", "To be very expensive", "To be on sale", "To require a lot of effort", "To be free of charge"],
           "correct": 1,
@@ -28220,7 +28122,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 439,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The ___ puppy followed its owner everywhere.'",
           "options": ["Loyal", "Terrible", "Ancient", "Musical", "Frozen"],
           "correct": 0,
@@ -28229,7 +28130,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 440,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'After running the race, she was completely ___.'",
           "options": ["Exhausted", "Invisible", "Rectangular", "Alphabetical", "Musical"],
           "correct": 0,
@@ -28238,7 +28138,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 441,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The old castle looked ___ in the moonlight.'",
           "options": ["Cheerful", "Spooky", "Delicious", "Mathematical", "Portable"],
           "correct": 1,
@@ -28247,7 +28146,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 442,
           "difficulty": 1,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The ___ of the crowd could be heard from streets away.'",
           "options": ["Silence", "Colour", "Roar", "Taste", "Weight"],
           "correct": 2,
@@ -28256,7 +28154,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 443,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The scientist made a ___ discovery that changed our understanding of the disease.'",
           "options": ["Trivial", "Groundbreaking", "Accidental", "Minor", "Temporary"],
           "correct": 1,
@@ -28265,7 +28162,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 444,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'Despite the ___ weather, the children still enjoyed their picnic.'",
           "options": ["Beautiful", "Dreadful", "Warm", "Sunny", "Perfect"],
           "correct": 1,
@@ -28274,7 +28170,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 445,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The teacher praised her for her ___ behaviour during the assembly.'",
           "options": ["Dreadful", "Appalling", "Exemplary", "Terrible", "Shocking"],
           "correct": 2,
@@ -28283,7 +28178,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 446,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The abandoned house had a ___ atmosphere that made us want to leave.'",
           "options": ["Welcoming", "Cosy", "Sinister", "Cheerful", "Inviting"],
           "correct": 2,
@@ -28292,7 +28186,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 447,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The ___ child asked question after question about how the world works.'",
           "options": ["Bored", "Curious", "Sleepy", "Angry", "Shy"],
           "correct": 1,
@@ -28301,7 +28194,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 448,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The evidence was ___, leaving no doubt about what had happened.'",
           "options": ["Ambiguous", "Conclusive", "Vague", "Uncertain", "Debatable"],
           "correct": 1,
@@ -28310,7 +28202,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 449,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'Her ___ remarks hurt everyone in the room, though she seemed not to notice.'",
           "options": ["Thoughtful", "Kind", "Insensitive", "Generous", "Tactful"],
           "correct": 2,
@@ -28319,7 +28210,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 450,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The ___ old man shared fascinating stories about his travels around the world.'",
           "options": ["Mundane", "Elderly", "Eccentric", "Monotonous", "Tedious"],
           "correct": 2,
@@ -28328,7 +28218,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 451,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The politician's ___ speech inspired thousands of people to take action.'",
           "options": ["Tedious", "Eloquent", "Mumbled", "Incoherent", "Rambling"],
           "correct": 1,
@@ -28337,7 +28226,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 452,
           "difficulty": 3,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The two countries signed a ___ agreement to end the conflict.'",
           "options": ["Hostile", "Bilateral", "Aggressive", "Confrontational", "Militant"],
           "correct": 1,
@@ -28346,7 +28234,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 453,
           "difficulty": 2,
-          "questionType": "vocabulary",
           "question": "Choose the word that best completes the sentence: 'The museum's collection of ancient artefacts was truly ___.'",
           "options": ["Boring", "Remarkable", "Ordinary", "Dull", "Forgettable"],
           "correct": 1,
@@ -32980,7 +32867,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 331,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "In the sentence 'She gave him the book', which word is a pronoun?",
           "options": ["gave", "the", "book", "him", "sentence"],
           "correct": 3,
@@ -32989,7 +32875,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 332,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "Which of these is a personal pronoun?",
           "options": ["quickly", "they", "under", "beautiful", "and"],
           "correct": 1,
@@ -32998,7 +32883,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 333,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "In the sentence 'I can do it myself', what type of pronoun is 'myself'?",
           "options": ["Personal pronoun", "Possessive pronoun", "Reflexive pronoun", "Relative pronoun", "Demonstrative pronoun"],
           "correct": 2,
@@ -33007,7 +32891,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 334,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'The dog that chased the cat was ours', which word is a relative pronoun?",
           "options": ["dog", "that", "chased", "cat", "ours"],
           "correct": 1,
@@ -33016,7 +32899,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 335,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "Which word is a possessive pronoun in: 'That jacket is mine, not yours'?",
           "options": ["That", "jacket", "is", "mine", "not"],
           "correct": 3,
@@ -33025,7 +32907,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 336,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "What type of pronoun is 'who' in the sentence 'The girl who won the prize was delighted'?",
           "options": ["Personal pronoun", "Possessive pronoun", "Reflexive pronoun", "Relative pronoun", "Interrogative pronoun"],
           "correct": 3,
@@ -33034,7 +32915,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 337,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'These are better than those', what type of word is 'those'?",
           "options": ["Adjective", "Adverb", "Demonstrative pronoun", "Personal pronoun", "Conjunction"],
           "correct": 2,
@@ -33043,7 +32923,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 338,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Nobody knew the answer', what type of pronoun is 'nobody'?",
           "options": ["Personal pronoun", "Relative pronoun", "Indefinite pronoun", "Possessive pronoun", "Reflexive pronoun"],
           "correct": 2,
@@ -33052,7 +32931,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 339,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which sentence uses a pronoun incorrectly?",
           "options": ["Her and I went to the shop.", "She and I went to the shop.", "They gave it to him.", "We asked them to help.", "She told us the answer."],
           "correct": 0,
@@ -33061,7 +32939,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 340,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Whose coat is this?', what type of pronoun is 'whose'?",
           "options": ["Relative pronoun", "Possessive pronoun", "Interrogative pronoun", "Personal pronoun", "Reflexive pronoun"],
           "correct": 2,
@@ -33070,7 +32947,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 341,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Each of the children brought their own lunch', what type of pronoun is 'each'?",
           "options": ["Personal pronoun", "Reflexive pronoun", "Relative pronoun", "Indefinite pronoun", "Demonstrative pronoun"],
           "correct": 3,
@@ -33079,7 +32955,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 342,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'They went for a run', what word class is 'run'?",
           "options": ["Verb", "Adjective", "Noun", "Adverb", "Preposition"],
           "correct": 2,
@@ -33088,7 +32963,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 343,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'She had a long drink of water', what word class is 'drink'?",
           "options": ["Verb", "Noun", "Adjective", "Adverb", "Conjunction"],
           "correct": 1,
@@ -33097,7 +32971,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 344,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'We need to book a table', what word class is 'book'?",
           "options": ["Noun", "Adjective", "Verb", "Adverb", "Pronoun"],
           "correct": 2,
@@ -33106,7 +32979,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 345,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'He is a fast runner', what word class is 'fast'?",
           "options": ["Adverb", "Noun", "Verb", "Adjective", "Pronoun"],
           "correct": 3,
@@ -33115,7 +32987,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 346,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'He runs fast', what word class is 'fast'?",
           "options": ["Adjective", "Noun", "Adverb", "Verb", "Conjunction"],
           "correct": 2,
@@ -33124,7 +32995,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 347,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She gave a light tap on the door', what word class is 'light'?",
           "options": ["Noun", "Verb", "Adjective", "Adverb", "Preposition"],
           "correct": 2,
@@ -33133,7 +33003,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 348,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Please round the corner carefully', what word class is 'round'?",
           "options": ["Adjective", "Noun", "Adverb", "Verb", "Preposition"],
           "correct": 4,
@@ -33142,7 +33011,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 349,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The well was very deep', what word class is 'well'?",
           "options": ["Adverb", "Adjective", "Noun", "Verb", "Conjunction"],
           "correct": 2,
@@ -33151,7 +33019,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 350,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The play was excellent', what word class is 'play'?",
           "options": ["Verb", "Adjective", "Adverb", "Noun", "Preposition"],
           "correct": 3,
@@ -33160,7 +33027,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 351,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which word changes class between these two sentences? 'I work hard' and 'The work is difficult'",
           "options": ["I", "hard", "work", "is", "difficult"],
           "correct": 2,
@@ -33169,7 +33035,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 352,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'The friendly dog wagged its tail', what word class is 'friendly'?",
           "options": ["Adverb", "Adjective", "Noun", "Verb", "Pronoun"],
           "correct": 1,
@@ -33178,7 +33043,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 353,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The running water was ice cold', what word class is 'running'?",
           "options": ["Verb", "Noun", "Adjective", "Adverb", "Pronoun"],
           "correct": 2,
@@ -33187,7 +33051,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 354,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She works hard' and 'She hardly works', do 'hard' and 'hardly' mean the same thing?",
           "options": ["Yes, they mean exactly the same", "No — 'hard' means with great effort; 'hardly' means almost not at all", "Yes, 'hardly' is just a more formal version", "No — 'hard' is an adjective; 'hardly' is a noun", "'Hardly' is not a real word"],
           "correct": 1,
@@ -33196,7 +33059,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 355,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "Which of these is a complete sentence (main clause)?",
           "options": ["Because it was raining", "The dog barked loudly", "Although she tried hard", "When the bell rang", "If you come early"],
           "correct": 1,
@@ -33205,7 +33067,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 356,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "What is a clause?",
           "options": ["A single word", "A group of words containing a verb", "A type of punctuation mark", "A paragraph", "A type of noun"],
           "correct": 1,
@@ -33214,7 +33075,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 357,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'I stayed inside because it was raining', which part is the subordinate clause?",
           "options": ["I stayed inside", "I stayed", "because it was raining", "it was raining", "inside because"],
           "correct": 2,
@@ -33223,7 +33083,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 358,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'The girl who lives next door is my friend', what is the relative clause?",
           "options": ["The girl", "who lives next door", "is my friend", "next door", "my friend"],
           "correct": 1,
@@ -33232,7 +33091,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 359,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "Which sentence has TWO clauses?",
           "options": ["The tall boy ran quickly.", "She ate her lunch.", "I went home because I felt ill.", "Open the door.", "The beautiful garden bloomed."],
           "correct": 2,
@@ -33241,7 +33099,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 360,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "What is the difference between a main clause and a subordinate clause?",
           "options": ["Main clauses are longer", "Main clauses make sense alone; subordinate clauses don't", "Subordinate clauses always come first", "Main clauses have adjectives; subordinate clauses don't", "There is no difference"],
           "correct": 1,
@@ -33250,7 +33107,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 361,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Although she practised daily, she still lost the match', which is the main clause?",
           "options": ["Although she practised", "she practised daily", "Although she practised daily", "she still lost the match", "lost the match"],
           "correct": 3,
@@ -33259,7 +33115,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 362,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which sentence contains an embedded relative clause?",
           "options": ["The boy ran to school.", "I like chocolate cake.", "The woman, who was wearing a hat, smiled.", "Close the window please.", "It started to rain."],
           "correct": 2,
@@ -33268,7 +33123,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 363,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "How many clauses are in: 'When the sun set, the birds stopped singing and the sky turned orange'?",
           "options": ["One", "Two", "Three", "Four", "Five"],
           "correct": 2,
@@ -33277,7 +33131,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 364,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "Which word starts a subordinate clause in: 'We went to the park after school finished'?",
           "options": ["We", "went", "park", "after", "school"],
           "correct": 3,
@@ -33286,7 +33139,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 365,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which sentence uses a subordinate clause at the START?",
           "options": ["The cat slept on the sofa.", "She smiled because she was happy.", "Before the match started, the team warmed up.", "I like apples and oranges.", "He ran quickly to school."],
           "correct": 2,
@@ -33295,7 +33147,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 366,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "What type of clause is 'which was very exciting' in: 'The trip, which was very exciting, lasted all day'?",
           "options": ["Main clause", "Subordinate clause", "Relative clause", "Conditional clause", "Adverbial clause"],
           "correct": 2,
@@ -33304,7 +33155,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 367,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "In 'The cat sat on the mat', what type of word is 'the'?",
           "options": ["Noun", "Pronoun", "Adjective", "Determiner", "Preposition"],
           "correct": 3,
@@ -33313,7 +33163,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 368,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "Which word is a determiner in: 'My brother has a new bike'?",
           "options": ["brother", "has", "new", "bike", "My"],
           "correct": 4,
@@ -33322,7 +33171,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 369,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "What is the job of a determiner?",
           "options": ["To describe an action", "To join two sentences", "To introduce or identify a noun", "To replace a noun", "To describe how something is done"],
           "correct": 2,
@@ -33331,7 +33179,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 370,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "In 'Those children are playing outside', what type of word is 'those'?",
           "options": ["Pronoun", "Adjective", "Determiner", "Adverb", "Conjunction"],
           "correct": 2,
@@ -33340,7 +33187,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 371,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "How many determiners are in: 'Every child should bring their own pencil'?",
           "options": ["One", "Two", "Three", "Four", "None"],
           "correct": 2,
@@ -33349,7 +33195,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 372,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "Which of these is NOT a determiner?",
           "options": ["the", "a", "quickly", "some", "every"],
           "correct": 2,
@@ -33358,7 +33203,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 373,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "What type of determiner is 'some' in 'Would you like some cake?'?",
           "options": ["Article", "Possessive determiner", "Demonstrative determiner", "Quantifier", "Interrogative determiner"],
           "correct": 3,
@@ -33367,7 +33211,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 374,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "What are 'a', 'an', and 'the' called?",
           "options": ["Pronouns", "Conjunctions", "Articles", "Prepositions", "Adverbs"],
           "correct": 2,
@@ -33376,7 +33219,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 375,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'His performance was incredible', is 'his' a pronoun or a determiner?",
           "options": ["Pronoun — it replaces a name", "Determiner — it comes before a noun", "Adjective — it describes the performance", "Adverb — it describes how he performed", "Conjunction — it joins two ideas"],
           "correct": 1,
@@ -33385,7 +33227,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 376,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Which flavour would you like?', what type of determiner is 'which'?",
           "options": ["Article", "Possessive determiner", "Demonstrative determiner", "Quantifier", "Interrogative determiner"],
           "correct": 4,
@@ -33394,7 +33235,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 377,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Why is 'the' classified as a determiner rather than an adjective?",
           "options": ["Because it describes a noun", "Because it replaces a noun", "Because it identifies which noun, not what it's like", "Because it comes after the noun", "Because it shows an action"],
           "correct": 2,
@@ -33403,7 +33243,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 378,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "In 'An elephant walked through the jungle', which words are determiners?",
           "options": ["elephant, jungle", "walked, through", "An, the", "through, the", "An, walked"],
           "correct": 2,
@@ -33412,7 +33251,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 379,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'No child was left behind', what type of word is 'no'?",
           "options": ["Adverb", "Adjective", "Conjunction", "Determiner", "Pronoun"],
           "correct": 3,
@@ -33421,7 +33259,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 380,
           "difficulty": 2,
-          "questionType": "word-class",
           "question": "Which sentence contains a demonstrative determiner?",
           "options": ["The dog barked.", "A bird sang.", "This cake is delicious.", "My coat is blue.", "Some people arrived."],
           "correct": 2,
@@ -33430,7 +33267,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 381,
           "difficulty": 1,
-          "questionType": "word-class",
           "question": "When do you use 'an' instead of 'a'?",
           "options": ["Before long words", "Before words starting with a vowel sound", "Before plural nouns", "Before proper nouns", "Before verbs"],
           "correct": 1,
@@ -33439,7 +33275,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 382,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The meeting was held before lunch', what word class is 'before'?",
           "options": ["Adverb", "Conjunction", "Preposition", "Adjective", "Noun"],
           "correct": 2,
@@ -33448,7 +33283,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 383,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She left before I arrived', what word class is 'before'?",
           "options": ["Preposition", "Adverb", "Conjunction", "Adjective", "Pronoun"],
           "correct": 2,
@@ -33457,7 +33291,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 384,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which word is an adverb in: 'The boy worked hard on his very difficult homework'?",
           "options": ["boy", "worked", "hard", "difficult", "homework"],
           "correct": 2,
@@ -33466,7 +33299,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 385,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The early bird catches the worm', what word class is 'early'?",
           "options": ["Adverb", "Noun", "Adjective", "Verb", "Preposition"],
           "correct": 2,
@@ -33476,7 +33308,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 386,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The sleeping baby smiled', what word class is 'sleeping'?",
           "options": ["Verb", "Noun", "Adjective", "Adverb", "Pronoun"],
           "correct": 2,
@@ -33485,7 +33316,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 387,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She felt well after her rest', what word class is 'well'?",
           "options": ["Adverb", "Adjective", "Noun", "Verb", "Conjunction"],
           "correct": 1,
@@ -33494,7 +33324,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 388,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'He arrived late', what word class is 'late'?",
           "options": ["Adjective", "Noun", "Adverb", "Preposition", "Conjunction"],
           "correct": 2,
@@ -33503,7 +33332,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 389,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Since Monday, it has rained every day', what word class is 'since'?",
           "options": ["Conjunction", "Adverb", "Preposition", "Adjective", "Pronoun"],
           "correct": 2,
@@ -33512,7 +33340,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 390,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The daily paper arrived', what word class is 'daily'?",
           "options": ["Adverb", "Noun", "Verb", "Adjective", "Preposition"],
           "correct": 3,
@@ -33521,7 +33348,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 391,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She set a fast pace', what word class is 'fast'?",
           "options": ["Adverb", "Verb", "Noun", "Adjective", "Pronoun"],
           "correct": 3,
@@ -33530,7 +33356,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 392,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "Which word is a preposition in: 'The cat jumped over the wall and through the hedge'?",
           "options": ["jumped", "wall", "and", "over", "cat"],
           "correct": 3,
@@ -33539,7 +33364,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 393,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'I need to iron my shirt before school', what word class is 'iron'?",
           "options": ["Noun", "Adjective", "Adverb", "Verb", "Preposition"],
           "correct": 3,
@@ -33548,7 +33372,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 394,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'That sounds right to me', what word class is 'right'?",
           "options": ["Noun", "Verb", "Adjective", "Adverb", "Conjunction"],
           "correct": 2,
@@ -33557,7 +33380,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 395,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'They left after the show', what word class is 'after'?",
           "options": ["Adverb", "Conjunction", "Adjective", "Preposition", "Pronoun"],
           "correct": 3,
@@ -33566,7 +33388,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 396,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The outside wall needs painting', what word class is 'outside'?",
           "options": ["Preposition", "Noun", "Adjective", "Adverb", "Verb"],
           "correct": 2,
@@ -33575,7 +33396,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 397,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'She can still come if she wants', what word class is 'still'?",
           "options": ["Adjective", "Noun", "Verb", "Conjunction", "Adverb"],
           "correct": 4,
@@ -33584,7 +33404,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 398,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "What word class is 'like' in: 'She swims like a fish'?",
           "options": ["Verb", "Adjective", "Conjunction", "Preposition", "Adverb"],
           "correct": 3,
@@ -33593,7 +33412,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 399,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The very idea is absurd', what word class is 'very'?",
           "options": ["Adverb", "Adjective", "Determiner", "Noun", "Pronoun"],
           "correct": 1,
@@ -33602,7 +33420,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 400,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'Please sit down', what word class is 'down'?",
           "options": ["Preposition", "Noun", "Adjective", "Adverb", "Verb"],
           "correct": 3,
@@ -33611,7 +33428,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 401,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The record was broken yesterday', is 'broken' a verb or adjective?",
           "options": ["Verb — it's the past participle of 'break'", "Adjective — it describes the record", "Both interpretations are valid depending on reading", "Noun — it names something", "Adverb — it modifies 'was'"],
           "correct": 0,
@@ -33620,7 +33436,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 402,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'The more the merrier', what word class is 'more'?",
           "options": ["Adjective", "Adverb", "Determiner", "Noun", "Pronoun"],
           "correct": 3,
@@ -33629,7 +33444,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 403,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'That is a pretty difficult question', what word class is 'pretty'?",
           "options": ["Adjective", "Noun", "Adverb", "Verb", "Conjunction"],
           "correct": 2,
@@ -33638,7 +33452,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 404,
           "difficulty": 3,
-          "questionType": "word-class",
           "question": "In 'I'll just have a little', what word class is 'little'?",
           "options": ["Adjective", "Adverb", "Determiner", "Pronoun", "Noun"],
           "correct": 3,

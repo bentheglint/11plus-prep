@@ -77,6 +77,13 @@ function QuizScreen({
                   <MessageCircle className="w-4 h-4" />
                   AI Tutor
                 </button>
+                <button
+                  onClick={() => onToggleFeedbackForm()}
+                  className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-[#636E72] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-gray-200"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  Report Issue
+                </button>
               </div>
 
               {/* Passage rendering for comprehension questions */}
