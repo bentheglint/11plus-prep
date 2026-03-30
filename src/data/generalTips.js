@@ -16,6 +16,7 @@ const generalTips = [
     explanation: "On your first lap, answer everything you find easy — don't stop to think too hard about anything. Then go back and spend your leftover time on the tough questions. This way, you grab all the easy marks first!",
     tryThis: "Next time you do a practice paper, try the two-lap method and see if your score goes up!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-never-leave-blank',
@@ -27,6 +28,7 @@ const generalTips = [
     explanation: "In the 11+, you don't lose marks for wrong answers. So if you're stuck, just pick your best guess! A guess has a chance of being right, but a blank has zero chance.",
     tryThis: "At the end of every practice paper, check you've answered EVERY single question — even if some are guesses!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-eliminate-wrong-answers',
@@ -38,6 +40,7 @@ const generalTips = [
     explanation: "If there are 5 options and you can cross out 2, you've gone from a 1-in-5 chance to a 1-in-3 chance! Look for answers that are way too big, way too small, or just don't make sense.",
     tryThis: "On your next quiz, before choosing an answer, see if you can cross out at least one wrong option first!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-read-question-twice',
@@ -49,6 +52,7 @@ const generalTips = [
     explanation: "So many marks are lost because people misread the question! The first read tells you what the question is about. The second read catches the sneaky details like 'how many are LEFT' or 'what is the DIFFERENCE'.",
     tryThis: "Practice reading every question twice — you'll be amazed how often you spot something you missed the first time!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-sense-check',
@@ -60,6 +64,7 @@ const generalTips = [
     explanation: "After you get an answer, do a quick sense check. If the question asks how many sweets someone has and your answer is 3,000... that's probably wrong! Real-life common sense catches lots of silly mistakes.",
     tryThis: "After answering, ask yourself: 'Could this happen in real life?' If not, check your working!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-trust-first-answer',
@@ -71,6 +76,7 @@ const generalTips = [
     explanation: "Research shows that people who change their answers usually change FROM right TO wrong! Your brain often knows the answer before you've fully thought it through. Only change if you spot an actual mistake in your working.",
     tryThis: "If you want to change an answer, ask yourself: 'Did I find an actual mistake, or am I just nervous?' Only change it if you found a real error!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-watch-the-clock',
@@ -82,6 +88,7 @@ const generalTips = [
     explanation: "You've got about 50 minutes for around 50 questions — roughly a minute each. If you check at those three points, you'll know if you're going too slowly and need to speed up, or if you've got loads of time left.",
     tryThis: "Write '10 — 25 — 40' on your rough paper at the start of the exam as a clock-check reminder!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-mark-and-move-on',
@@ -93,6 +100,7 @@ const generalTips = [
     explanation: "Every question is worth the same number of marks. Spending 5 minutes on one hard question means missing 4 easy ones! Put a small mark next to it and come back later with fresh eyes.",
     tryThis: "Set a rule: if you've been on a question for more than a minute, mark it and move on!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-easy-marks-first',
@@ -104,6 +112,7 @@ const generalTips = [
     explanation: "Think of it like a game where you collect coins. You wouldn't walk past easy coins to reach hard ones! Get all the easy marks in the bag first, then go back and fight for the tricky points.",
     tryThis: "On your next practice paper, answer the easy ones on your first pass and put a dot next to anything that needs more thought!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-underline-key-words',
@@ -115,6 +124,7 @@ const generalTips = [
     explanation: "Words like 'NOT', 'difference', 'total', 'remaining', and 'each' change what the question is actually asking. Underlining them makes your brain pay attention to the right thing.",
     tryThis: "In your next practice, underline at least one key word in every question before answering it!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-cover-the-options',
@@ -126,6 +136,7 @@ const generalTips = [
     explanation: "When you see the options straight away, wrong answers can trick you into choosing them. But if you work out the answer yourself first, you just need to find it in the list. It's like knowing what you want from a menu before you open it!",
     tryThis: "Try covering the options with your hand, working out the answer, and THEN looking — see how much more confident you feel!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-not-questions',
@@ -137,6 +148,7 @@ const generalTips = [
     explanation: "These are sneaky! Your brain wants to find the right answer, but the question is asking for the WRONG one. Four options WILL be correct, and you need the odd one out. It's easy to pick a right answer by mistake.",
     tryThis: "When you see 'NOT', 'LEAST', or 'EXCEPT' in a question, circle the word so your brain remembers what you're looking for!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-answer-actual-question',
@@ -148,6 +160,7 @@ const generalTips = [
     explanation: "Sometimes you see a question and think you know what it's asking before you finish reading. But it might ask for the perimeter when you assumed area, or the change when you calculated the total. Always check!",
     tryThis: "After answering, re-read just the question part (not the whole thing) and check your answer actually matches what they asked!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-mental-working',
@@ -159,6 +172,7 @@ const generalTips = [
     explanation: "Your brain is brilliant, but it can't hold everything at once. Jotting down key numbers or quick calculations on rough paper means you won't accidentally forget a step or mix up numbers.",
     tryThis: "Even for 'easy' questions, try writing one line of working — you might catch a mistake you would have missed!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-similar-answers',
@@ -170,6 +184,7 @@ const generalTips = [
     explanation: "Exam writers often make one answer that's the right one and another that's what you'd get if you made a common mistake. So if you see 24 and 42 in the options, the answer is probably one of those two! Focus your checking on telling them apart.",
     tryThis: "When you spot two similar-looking answers, slow down and double-check your working to make sure you've got the right one!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-smart-guessing',
@@ -181,6 +196,7 @@ const generalTips = [
     explanation: "Even if you're stuck, you can usually rule out one or two options. Maybe one answer is way too big, or one doesn't end in the right digit. Crossing out even one option makes your guess much more likely to be right!",
     tryThis: "Practice 'smart guessing' — on a tricky question, see how many options you can eliminate before guessing from the rest!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-hard-questions-at-end',
@@ -192,6 +208,7 @@ const generalTips = [
     explanation: "Exams are set up so the questions get harder as you go. The last few are meant to challenge even the cleverest students. If you find them difficult, so does everyone else! Just do your best and don't let them rattle you.",
     tryThis: "When you hit a really hard question near the end, remind yourself: 'This is SUPPOSED to be hard — I'll give it my best shot!'",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-read-all-options',
@@ -203,6 +220,7 @@ const generalTips = [
     explanation: "It's tempting to pick the first answer that looks right, but what if there's a BETTER answer further down? Option A might look good, but option D might be perfect. Always read every option before deciding.",
     tryThis: "Make it a habit to read from A to E before marking your answer — even if A looks right straight away!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-trust-preparation',
@@ -214,6 +232,7 @@ const generalTips = [
     explanation: "By the time you sit the exam, you'll have practised hundreds and hundreds of questions. That knowledge is all stored in your brain, ready to help you. Trust it! Sometimes the answer comes to you before you've even finished reading.",
     tryThis: "Before a practice paper, remind yourself of three topics you've improved at — it'll boost your confidence!",
     colour: '#F59E0B',
+    topicKeys: [],
   },
   {
     id: 'general-breathe-when-stuck',
@@ -225,6 +244,7 @@ const generalTips = [
     explanation: "When you're stressed, your brain goes into panic mode and can't think properly. Three slow, deep breaths tell your brain 'we're safe, we can think clearly now.' It really works — even astronauts use this trick!",
     tryThis: "Practice now: breathe in slowly for 4 counts, out for 4 counts. Do it 3 times. Notice how much calmer you feel?",
     colour: '#F59E0B',
+    topicKeys: [],
   },
 
   // ============================================================
@@ -240,6 +260,7 @@ const generalTips = [
     explanation: "Your brain is like a sponge. If you pour a bucket of water on it, most runs off. But if you drip water on it bit by bit, it soaks it all up! 20 minutes of focused practice beats an hour of tired studying every time.",
     tryThis: "Set a timer for 20 minutes, practise with full focus, then take a break. You've earned it!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-practice-regularly',
@@ -251,6 +272,7 @@ const generalTips = [
     explanation: "Taking days off isn't lazy — it's smart! Your brain does important work while you're resting and playing. It sorts through everything you've learned and stores it properly. Think of rest days as your brain's filing time.",
     tryThis: "Pick your rest days at the start of each week — maybe Wednesday and one weekend day. Put them in the calendar!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-mix-topics',
@@ -262,6 +284,7 @@ const generalTips = [
     explanation: "It's really tempting to keep doing the topics you're already good at because it feels nice to get things right. But your biggest score improvements come from working on the topics you find hardest! Mix easy and hard to keep it interesting.",
     tryThis: "Write each topic on a scrap of paper, put them in a bowl, and pick two randomly for today's practice!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-review-mistakes',
@@ -273,6 +296,7 @@ const generalTips = [
     explanation: "Getting something right means you already knew it. Getting something wrong means you just found a gap to fill! Every mistake is your brain saying 'I need to learn this bit.' That's incredibly useful information.",
     tryThis: "After each practice session, look at every wrong answer and make sure you understand WHY it was wrong before you stop!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-test-yourself',
@@ -284,6 +308,7 @@ const generalTips = [
     explanation: "When you test yourself, your brain has to RETRIEVE the information, and that retrieval is what builds strong memories. Just reading feels easy, but it doesn't stick as well. Think of it like exercise — your brain needs a workout, not a massage!",
     tryThis: "Instead of re-reading notes, close them and try to answer questions from memory. That's the magic!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-spacing-effect',
@@ -295,6 +320,7 @@ const generalTips = [
     explanation: "This is called 'spacing' and it's one of the most powerful learning tricks ever discovered. When you come back to something after a gap, your brain has to work harder to remember it — and that extra effort makes the memory stronger!",
     tryThis: "After learning something new, practise it again in 2 days, then again in a week. Watch how well you remember it!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-understand-why',
@@ -306,6 +332,7 @@ const generalTips = [
     explanation: "There's a big difference between 'oh, the answer was C' and 'oh, I forgot to convert to the same units first!' One fixes this question, the other fixes every similar question you'll ever see. Always dig into the WHY.",
     tryThis: "For every wrong answer, say out loud (or write down) the specific reason you got it wrong. Be as precise as you can!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-timed-practice',
@@ -317,6 +344,7 @@ const generalTips = [
     explanation: "The real exam has a time limit, so it's good to practise with one too — but not every time! Do some sessions at your own pace to really understand the topics, and some sessions with a timer to build speed. A good mix is best.",
     tryThis: "Try a 10-question mini quiz with a 10-minute timer. That's roughly exam pace — see how it feels!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-mistakes-notebook',
@@ -328,6 +356,7 @@ const generalTips = [
     explanation: "After a while, you'll notice patterns — maybe you always mess up unit conversions, or you keep misreading 'NOT' questions. Once you spot a pattern, you can fix it! Your mistakes notebook is like a treasure map to a better score.",
     tryThis: "Start a mistakes notebook today. For each mistake, write: the question topic, what you did wrong, and what to do next time!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-review-last-session',
@@ -339,6 +368,7 @@ const generalTips = [
     explanation: "Spending just 2-3 minutes looking at your previous session's work reminds your brain of where you left off. It's like warming up before a sport — you'll perform better because your brain is already in gear!",
     tryThis: "Before starting today's practice, spend 2 minutes looking at what you did yesterday. Can you remember the tricky bits?",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-challenge-yourself',
@@ -350,6 +380,7 @@ const generalTips = [
     explanation: "If you only ever practise things you can already do, you're not learning anything new! It's like only lifting light weights — you'll never get stronger. The uncomfortable feeling of struggling with a hard question is actually your brain getting smarter.",
     tryThis: "Pick a topic you find hard and do 5 questions on it today. It's OK to get some wrong — that's the point!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-use-lessons',
@@ -361,6 +392,7 @@ const generalTips = [
     explanation: "Knowing the answer to one question helps with one question. Knowing the METHOD helps with hundreds of questions! When you read an explanation, focus on the steps, not just the final number. The steps are what you'll use again and again.",
     tryThis: "After getting a question right, read the explanation anyway — you might learn a faster or better method!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-read-for-fun',
@@ -372,6 +404,7 @@ const generalTips = [
     explanation: "When you read stories, your brain is practising comprehension, learning new vocabulary, and getting faster at understanding text — all without even trying! Kids who read for fun regularly do better across ALL parts of the 11+, not just English.",
     tryThis: "Find a book you actually enjoy and read for 15 minutes before bed. It doesn't have to be 'educational' — any book counts!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-ask-for-help',
@@ -383,6 +416,7 @@ const generalTips = [
     explanation: "The smartest people in the world ask for help all the time — that's partly HOW they got so smart! If you're stuck on something for more than a few minutes, ask a parent, teacher, or use the AI tutor. Struggling in silence doesn't help anyone.",
     tryThis: "Next time you're stuck, try the AI tutor in the app — explain what's confusing you and it'll help you figure it out!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-set-small-goals',
@@ -394,6 +428,7 @@ const generalTips = [
     explanation: "Vague goals are hard to start and impossible to finish. But '10 fractions questions' is clear — you know exactly what to do and you know when you're done! Small, specific goals also feel great to tick off, which motivates you to do more.",
     tryThis: "Write down exactly what you'll practise today, with a number: '15 ratio questions and review my mistakes from yesterday.'",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-celebrate-progress',
@@ -405,6 +440,7 @@ const generalTips = [
     explanation: "It's easy to focus on what you haven't done yet, but look at everything you HAVE done! Check your progress charts in the app and see how your scores have improved. Every question you've practised has made you a little bit better.",
     tryThis: "Check your progress on three topics right now. Compare your latest scores to your first ones — see the improvement!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-dont-compare',
@@ -416,6 +452,7 @@ const generalTips = [
     explanation: "Some people are quick with numbers but slow with words. Others are the opposite. Your friend might find fractions easy and sequences hard, while you might be the other way around. The only score that matters is YOUR improvement over time.",
     tryThis: "Instead of comparing to friends, compare to YOUR past self. Are you better at this topic than you were a month ago? That's what counts!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-practice-papers-for-learning',
@@ -427,6 +464,7 @@ const generalTips = [
     explanation: "A practice paper score doesn't count for anything! Its only job is to show you which topics need more work. A 'bad' score on a practice paper is actually really useful — it's just pointed you towards exactly what to study next.",
     tryThis: "After your next practice paper, don't just look at the score. Make a list of topics where you dropped marks and practise those first!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-its-ok-to-struggle',
@@ -438,6 +476,7 @@ const generalTips = [
     explanation: "Scientists have actually shown that when you struggle with something, your brain grows new pathways. The struggle IS the learning! If everything was easy, you wouldn't be learning anything new. So next time something feels hard, know that's the feeling of getting smarter.",
     tryThis: "When something feels hard, say to yourself: 'This is my brain growing!' It sounds silly, but it really helps!",
     colour: '#EC4899',
+    topicKeys: [],
   },
   {
     id: 'general-sleep-is-learning',
@@ -449,6 +488,7 @@ const generalTips = [
     explanation: "While you sleep, your brain replays everything you learned during the day and moves it into long-term memory. Without enough sleep, all that practice doesn't stick as well! That's why a good night's sleep before the exam matters more than last-minute cramming.",
     tryThis: "Aim for lights-out by 8:30pm on school nights. Your brain will thank you by remembering more tomorrow!",
     colour: '#EC4899',
+    topicKeys: [],
   },
 
   // ============================================================
@@ -464,6 +504,7 @@ const generalTips = [
     explanation: "Your parents feel nervous before big meetings. Athletes feel nervous before races. Actors feel nervous before going on stage. Nerves are your body's way of saying 'this matters to me' — and that's actually a good thing! Everyone in the exam room will be feeling the same way.",
     tryThis: "Ask a parent or older family member about a time they felt nervous. You'll see — everyone feels it!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-butterflies-are-good',
@@ -475,6 +516,7 @@ const generalTips = [
     explanation: "When you feel nervous, your body releases energy chemicals that make you more alert and focused. It's like your body is putting on a superhero suit! The trick is learning to use that energy instead of fighting it. Those butterflies can help you fly!",
     tryThis: "Next time you feel butterflies, say: 'My body is getting ready to do something amazing!' and turn that nervous energy into excitement!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-box-breathing',
@@ -486,6 +528,7 @@ const generalTips = [
     explanation: "This is the same technique that Navy SEALs use to stay calm in tough situations! It works because the slow breathing tells your brain 'everything is fine, we can think clearly.' It's like pressing a reset button for your whole body.",
     tryThis: "Practice right now! Breathe in (1-2-3-4), hold (1-2-3-4), out (1-2-3-4), hold (1-2-3-4). Do it four times. Feel calmer?",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-dont-need-100-percent',
@@ -497,6 +540,7 @@ const generalTips = [
     explanation: "Even the most successful students don't get perfect scores on everything. The 11+ isn't about being perfect — it's about showing what you can do. Getting most questions right is brilliant! Don't put pressure on yourself to be flawless.",
     tryThis: "Set yourself a realistic target score for practice papers. Hitting 75-80% is genuinely excellent — celebrate that!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-focus-on-can-do',
@@ -508,6 +552,7 @@ const generalTips = [
     explanation: "It's easy to think about the topics that trip you up and forget about all the ones you're great at! You probably know your times tables, can work with fractions, understand percentages, and loads more. That's an impressive toolkit you've built!",
     tryThis: "Write down 5 topics or skills you feel confident about. Read that list when you're having a tough study day!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-mistakes-help-brain-grow',
@@ -519,6 +564,7 @@ const generalTips = [
     explanation: "Brain scans actually show MORE activity when someone makes a mistake than when they get something correct. That's because your brain is working extra hard to figure out what went wrong and fix it. So mistakes aren't bad — they're brain food!",
     tryThis: "Next time you get something wrong, instead of feeling bad, say: 'My brain just grew a little!' — because it really did!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-remember-success',
@@ -530,6 +576,7 @@ const generalTips = [
     explanation: "This is a real psychological trick. When you remember a time you succeeded, your brain releases confidence chemicals that help you perform better. It could be anything — a great score, winning a game, learning to ride a bike. That winning feeling is powerful!",
     tryThis: "Think of your proudest moment right now. Close your eyes and really remember how good it felt. Save that memory for exam day!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-exercise-helps',
@@ -541,6 +588,7 @@ const generalTips = [
     explanation: "Exercise pumps more blood to your brain, which helps it work faster and remember more. Just 20 minutes of moving around can improve your focus for hours afterwards! It also burns off nervous energy and makes you feel happier.",
     tryThis: "Before your next study session, do 10 minutes of something active — star jumps, a quick run, or kicking a ball. Then see how much better you focus!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-play-every-day',
@@ -552,6 +600,7 @@ const generalTips = [
     explanation: "When you play, your brain is quietly sorting and storing everything you studied. Think of it like your phone backing up overnight — it needs that time! Kids who play and have fun actually learn better than kids who study non-stop.",
     tryThis: "Make sure you do something fun EVERY day — see friends, play games, be creative. It's part of your preparation, not a break from it!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-talk-to-someone',
@@ -563,6 +612,7 @@ const generalTips = [
     explanation: "Keeping worries inside your head makes them feel bigger than they really are. When you say them out loud, they often shrink! Other people can also help you see things differently, remind you how well you're doing, and make you feel supported.",
     tryThis: "Tell someone how you're feeling about the exam — even just saying 'I'm a bit nervous' can make a huge difference!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-you-are-not-your-score',
@@ -574,6 +624,7 @@ const generalTips = [
     explanation: "An exam score measures how you answered some questions on one particular day. It doesn't measure how kind you are, how creative, how funny, how good a friend, or any of the hundreds of other things that make you brilliant. Never forget that!",
     tryThis: "Write down 5 things you're proud of that have nothing to do with exams. Keep that list somewhere you can see it!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-breakfast-fuel',
@@ -585,6 +636,7 @@ const generalTips = [
     explanation: "Your brain uses about 20% of all your energy, and it works best when it has a steady supply of fuel. A good breakfast with slow-release energy (like porridge, toast, or eggs) keeps your brain powered up for the whole exam. Sugary cereals give you a boost then a crash!",
     tryThis: "Try different breakfasts on practice days to find what works best for you — then have that same breakfast on exam day!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-prepare-night-before',
@@ -596,6 +648,7 @@ const generalTips = [
     explanation: "Rushing around on exam morning trying to find a pencil sharpener is NOT how you want to start! Having everything ready the night before means your morning is calm and relaxed. You'll walk into the exam feeling organised and in control.",
     tryThis: "Make a checklist now: 2 sharp pencils, rubber, water bottle, a small snack. Lay them out the night before practice tests too!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-dont-talk-about-exam',
@@ -607,6 +660,7 @@ const generalTips = [
     explanation: "You know that feeling when someone says 'Have you revised topic X?' and you suddenly panic because you haven't? That's not helpful! Other people's nerves are contagious. Stay calm, listen to music, or chat about something fun instead.",
     tryThis: "On exam day, have a plan: listen to your favourite song, think happy thoughts, or chat about weekend plans — anything except the exam!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-reward-yourself',
@@ -618,6 +672,7 @@ const generalTips = [
     explanation: "No matter how the exam went, you put in the effort, you showed up, and you did your best. That deserves a reward! Having something fun planned for afterwards also gives you something to look forward to, which actually helps you stay positive during the exam.",
     tryThis: "Plan your post-exam treat now — maybe a favourite meal, a trip out, or time with friends. Having it planned makes exam day less scary!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-come-back-to-it',
@@ -629,6 +684,7 @@ const generalTips = [
     explanation: "Getting stuck on one question can make you feel panicky about the whole exam. But saying 'I'll come back to this' turns it from a crisis into a plan. Your brain will actually keep working on it in the background while you answer other questions!",
     tryThis: "Practice this calm self-talk during your next quiz. When you're stuck, whisper 'I'll come back to this' and move on smoothly!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-preparation-matters-most',
@@ -640,6 +696,7 @@ const generalTips = [
     explanation: "By exam day, the hard work is already done! All those weeks and months of practice have built your skills and knowledge. The exam is just a chance to show what you already know. One day can't undo all that amazing preparation.",
     tryThis: "Make a 'preparation wall' — stick up evidence of all the practice you've done. Look at it when you need a confidence boost!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-visualise-success',
@@ -651,6 +708,7 @@ const generalTips = [
     explanation: "Top athletes imagine themselves winning before every competition, and science shows it actually improves performance! When you picture yourself feeling calm and answering questions confidently, your brain starts to believe it and makes it more likely to happen.",
     tryThis: "Close your eyes and imagine exam day: you walk in smiling, sit down calmly, read the first question and think 'I know this!' Do this for 2 minutes before bed!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-you-are-prepared',
@@ -662,6 +720,7 @@ const generalTips = [
     explanation: "Look at everything you've done! You've worked through maths, English, and verbal reasoning. You've learned methods, practised techniques, and reviewed your mistakes. All of that knowledge is stored in your brain, ready to use. You've put in the work — now trust it!",
     tryThis: "Check your progress stats in the app. Count how many questions you've done. Impressive, right? That's all in your brain now!",
     colour: '#F472B6',
+    topicKeys: [],
   },
   {
     id: 'general-be-proud',
@@ -673,6 +732,7 @@ const generalTips = [
     explanation: "Not everyone prepares for the 11+. Not everyone puts in the effort you have. The fact that you've been practising, learning from mistakes, and pushing yourself shows real character. That determination will help you succeed in life, no matter what happens in one exam!",
     tryThis: "Right now, give yourself a pat on the back (literally!) and say 'I'm doing great.' Because you really are!",
     colour: '#F472B6',
+    topicKeys: [],
   },
 ];
 

@@ -15,6 +15,7 @@ const KEYS = [
   'streaks',
   'prep-points',
   'achievements',
+  'last-session-date',
 ];
 
 function userKey(userName, key) {
@@ -131,9 +132,25 @@ export default function useUserData(userName) {
     userName ? loadJSON(userKey(userName, 'achievements'), []) : []
   );
 
-  // --- Seen Tips ---
-  const [seenTips, setSeenTips] = useState(() =>
-    userName ? loadJSON(userKey(userName, 'seen-tips'), []) : []
+  // --- Seen Tips (format: [{ id, lastSeenDate }]) ---
+  const [seenTips, setSeenTips] = useState(() => {
+    if (!userName) return [];
+    const raw = loadJSON(userKey(userName, 'seen-tips'), []);
+    // Migrate from old format (flat array of strings) to new format (array of objects)
+    if (raw.length > 0 && typeof raw[0] === 'string') {
+      const migrated = raw.map(id => ({ id, lastSeenDate: new Date().toISOString() }));
+      saveJSON(userKey(userName, 'seen-tips'), migrated);
+      return migrated;
+    }
+    return raw;
+  });
+
+  // Derived: just the IDs for backward compat (used by StudyToolkitScreen etc.)
+  const seenTipIds = seenTips.map(t => t.id);
+
+  // --- Last Session Date ---
+  const [lastSessionDate, setLastSessionDate] = useState(() =>
+    userName ? loadJSON(userKey(userName, 'last-session-date'), null) : null
   );
 
   // Reload all data when user changes
@@ -155,7 +172,16 @@ export default function useUserData(userName) {
         total: 0, level: 0, todayPP: 0, todayDate: null
       }));
       setAchievements(loadJSON(userKey(userName, 'achievements'), []));
-      setSeenTips(loadJSON(userKey(userName, 'seen-tips'), []));
+      // Migrate seenTips if needed on user switch
+      const rawTips = loadJSON(userKey(userName, 'seen-tips'), []);
+      if (rawTips.length > 0 && typeof rawTips[0] === 'string') {
+        const migrated = rawTips.map(id => ({ id, lastSeenDate: new Date().toISOString() }));
+        saveJSON(userKey(userName, 'seen-tips'), migrated);
+        setSeenTips(migrated);
+      } else {
+        setSeenTips(rawTips);
+      }
+      setLastSessionDate(loadJSON(userKey(userName, 'last-session-date'), null));
     }
   }, [userName]);
 
@@ -228,10 +254,25 @@ export default function useUserData(userName) {
 
   const markTipSeen = useCallback((tipId) => {
     if (!userName) return;
-    const updated = seenTips.includes(tipId) ? seenTips : [...seenTips, tipId];
+    const now = new Date().toISOString();
+    const existing = seenTips.findIndex(t => t.id === tipId);
+    let updated;
+    if (existing >= 0) {
+      // Update lastSeenDate for existing entry
+      updated = seenTips.map((t, i) => i === existing ? { ...t, lastSeenDate: now } : t);
+    } else {
+      // Add new entry
+      updated = [...seenTips, { id: tipId, lastSeenDate: now }];
+    }
     setSeenTips(updated);
     saveJSON(userKey(userName, 'seen-tips'), updated);
   }, [userName, seenTips]);
+
+  const saveLastSessionDate = useCallback((date) => {
+    if (!userName) return;
+    setLastSessionDate(date);
+    saveJSON(userKey(userName, 'last-session-date'), date);
+  }, [userName]);
 
   return {
     // Data
@@ -257,6 +298,9 @@ export default function useUserData(userName) {
     savePrepPoints,
     saveAchievements,
     seenTips,
+    seenTipIds,
     markTipSeen,
+    lastSessionDate,
+    saveLastSessionDate,
   };
 }

@@ -17,6 +17,7 @@ const vrTips = [
     explanation: "The alphabet line turns tricky letter codes into simple number puzzles. Write A=1, B=2, C=3... all the way to Z=26 at the top of your working space. You'll use it over and over!",
     tryThis: "Practise writing out A–Z with 1–26 until you can do it in under 30 seconds — it'll save you loads of time in the real exam!",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'letterPairSeries', 'letterMove'],
   },
   {
     id: 'vr-spot-the-shift',
@@ -28,6 +29,7 @@ const vrTips = [
     explanation: "If CAT becomes DBU, each letter moved forward by 1: C→D, A→B, T→U. Use your alphabet line to count the gap. The shift is the same for every letter in the word!",
     tryThis: "Next time you see a letter code, write the number under each letter and find the difference. Is it +1? +2? -3? That's your shift!",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'letterMove'],
   },
   {
     id: 'vr-backwards-shifts',
@@ -39,6 +41,7 @@ const vrTips = [
     explanation: "If DOG becomes CMF, each letter went back by 1: D→C, O→M... wait, that's -2! Check each letter carefully. If forward doesn't work, try counting backwards.",
     tryThis: "Take the word FISH and code it with a -3 shift. What do you get? (Answer: CFPE!) Now try decoding GRRG with a -2 shift.",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'letterMove'],
   },
   {
     id: 'vr-different-shifts',
@@ -50,6 +53,7 @@ const vrTips = [
     explanation: "If CAT becomes DCV, the shifts are +1, +2, +2. Write out the shift for each position separately. The pattern in the shifts is the real code!",
     tryThis: "Check each letter's shift one at a time. Write them in a row like +1, +2, +3. Can you see a pattern in those numbers?",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'wordCodeAnalogies'],
   },
   {
     id: 'vr-wrap-around-z',
@@ -61,6 +65,7 @@ const vrTips = [
     explanation: "If you need to shift Y forward by 3, count Y→Z→A→B. Think of the alphabet as a circle, not a straight line. Z connects back to A!",
     tryThis: "Shift the word YES forward by 3. Y→B, E→H, S→V. The answer is BHV! Practise a few of these so wrapping around feels natural.",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'letterMove'],
   },
   {
     id: 'vr-pair-series-split',
@@ -72,6 +77,7 @@ const vrTips = [
     explanation: "If you see AB, CD, EF, GH — the first letters go A, C, E, G (+2 each time) and the second letters go B, D, F, H (+2 each time). Two simple patterns are easier than one confusing one!",
     tryThis: "Write the first letters in one row and the second letters in another. Find each pattern separately, then combine them for your answer.",
     colour: '#6C5CE7',
+    topicKeys: ['letterPairSeries'],
   },
   {
     id: 'vr-pair-series-tricky',
@@ -83,6 +89,7 @@ const vrTips = [
     explanation: "In AZ, BY, CX, DW — the first letters go forward (+1) but the second letters go backward (-1). Don't assume both letters follow the same rule!",
     tryThis: "When you split the pair, write the number under each letter. The first row might be +1 while the second row is -2. Check them independently!",
     colour: '#6C5CE7',
+    topicKeys: ['letterPairSeries'],
   },
   {
     id: 'vr-number-series-differences',
@@ -94,6 +101,7 @@ const vrTips = [
     explanation: "For 2, 5, 8, 11, ? — the gaps are +3, +3, +3. Easy! The next number is 14. Always write the differences in a row between the numbers.",
     tryThis: "Try this: 3, 7, 11, 15, ? Write the gaps: +4, +4, +4. The answer is 19! Now try 1, 4, 9, 16, ? (Gaps: +3, +5, +7 — they're going up by 2!)",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-differences-of-differences',
@@ -105,6 +113,7 @@ const vrTips = [
     explanation: "For 1, 2, 4, 7, 11, ? — the gaps are +1, +2, +3, +4. The gaps are growing by 1 each time! So the next gap is +5, making the answer 16.",
     tryThis: "Write two rows: the first row is the differences, the second row is the differences of THOSE differences. This cracks most tricky series!",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-letter-sums-setup',
@@ -116,6 +125,7 @@ const vrTips = [
     explanation: "If the question says A + C = ?, write A=1, C=3 first. Then do 1 + 3 = 4. Convert back: 4 = D. Setting up properly stops silly mistakes!",
     tryThis: "Before you even think about the answer, label every letter with its number. A=1, B=2... all the way. THEN do the maths. THEN convert back to a letter.",
     colour: '#6C5CE7',
+    topicKeys: ['letterSums'],
   },
   {
     id: 'vr-letter-sums-convert-back',
@@ -127,6 +137,7 @@ const vrTips = [
     explanation: "You might work out that B + D = 2 + 4 = 6... but 6 isn't the answer! You need to convert 6 back to F. The answer is always a letter, not a number.",
     tryThis: "After doing the maths, ALWAYS ask: 'Have I turned my number back into a letter?' Circle your final letter answer so you don't accidentally write the number.",
     colour: '#6C5CE7',
+    topicKeys: ['letterSums'],
   },
   {
     id: 'vr-word-code-analogies',
@@ -138,6 +149,7 @@ const vrTips = [
     explanation: "If BEAR is coded as CFBS, work out the rule: B+1=C, E+1=F, A+1=B, R+1=S. The rule is +1! Now apply +1 to the right-side word to get your answer.",
     tryThis: "Cover the right side with your hand. Work out the rule from the left side only. Then uncover the right side and apply your rule. Much less confusing!",
     colour: '#6C5CE7',
+    topicKeys: ['wordCodeAnalogies', 'letterCodes'],
   },
   {
     id: 'vr-number-word-codes',
@@ -149,6 +161,7 @@ const vrTips = [
     explanation: "So the word CAB = 3, 1, 2. If the question asks for the total, add them up: 3+1+2 = 6. This is why your alphabet line is so important!",
     tryThis: "Work out the number code for your own name! Write each letter's number and add them up. What's your name's total?",
     colour: '#6C5CE7',
+    topicKeys: ['numberWordCodes', 'letterCodes'],
   },
   {
     id: 'vr-square-numbers',
@@ -160,6 +173,7 @@ const vrTips = [
     explanation: "If you see the sequence 1, 4, 9, 16, 25, ? and you know your squares, the answer jumps out: 36! Without knowing them, you'd waste time working it out.",
     tryThis: "Write out 1×1=1, 2×2=4, 3×3=9... all the way to 12×12=144. Stick it on your wall and test yourself every day until you just KNOW them!",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries', 'numberWordCodes'],
   },
   {
     id: 'vr-doubling-halving',
@@ -171,6 +185,7 @@ const vrTips = [
     explanation: "2, 4, 8, 16, 32, ? — each number doubles! The answer is 64. Or going the other way: 80, 40, 20, 10, ? — each one halves, so the answer is 5.",
     tryThis: "If the gaps between numbers keep getting bigger, try dividing each number by the one before it. If you always get 2, it's a doubling pattern!",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-prime-fibonacci',
@@ -182,6 +197,7 @@ const vrTips = [
     explanation: "In Fibonacci, you add the last two numbers to get the next one: 1+1=2, 1+2=3, 2+3=5, 3+5=8. Primes are numbers that only divide by 1 and themselves.",
     tryThis: "Memorise the first 10 primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. And the Fibonacci sequence up to 89. These come up more than you'd think!",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-cube-numbers',
@@ -193,6 +209,7 @@ const vrTips = [
     explanation: "1×1×1=1, 2×2×2=8, 3×3×3=27, 4×4×4=64, 5×5×5=125. If you see these in a number series and don't recognise them, you'll be stuck for ages!",
     tryThis: "Write cubes next to squares on your wall chart. 1²=1 and 1³=1, 2²=4 and 2³=8, 3²=9 and 3³=27. Spot how they're different!",
     colour: '#6C5CE7',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-two-step-codes',
@@ -204,6 +221,7 @@ const vrTips = [
     explanation: "If 3 becomes 7 (not +4... but ×2+1!), and 5 becomes 11 (×2+1 again!), there might be two steps. If one operation doesn't work consistently, try combining two.",
     tryThis: "When a simple rule doesn't fit every pair, ask: 'What if I multiply first THEN add?' or 'What if I shift AND reverse?' Two steps often cracks it.",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'wordCodeAnalogies', 'numberWordCodes'],
   },
   {
     id: 'vr-reverse-engineer',
@@ -215,6 +233,7 @@ const vrTips = [
     explanation: "If you think the rule is +3 and DOG becomes GRJ, check: G-3=D ✓, R-3=O ✓, J-3=G ✓. Working backwards confirms your answer!",
     tryThis: "Always spend 5 seconds checking your rule on the example you were given BEFORE applying it to find the answer. It catches mistakes!",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'wordCodeAnalogies', 'numberWordCodes'],
   },
   {
     id: 'vr-alphabet-shortcuts',
@@ -226,6 +245,7 @@ const vrTips = [
     explanation: "If you need to know what number S is, start from T=20 and go back one: S=19. Way faster than counting from A! These shortcuts save precious seconds.",
     tryThis: "Memorise E=5, J=10, O=15, T=20. Test yourself: what number is M? (O=15, two back = 13 ✓). What about R? (T=20, two back = 18 ✓).",
     colour: '#6C5CE7',
+    topicKeys: ['letterCodes', 'letterPairSeries', 'letterSums'],
   },
 
   // ═══════════════════════════════════════════════
@@ -242,6 +262,7 @@ const vrTips = [
     explanation: "'Happy' and 'birthday' are related, but they're not synonyms! 'Happy' and 'joyful' ARE synonyms because they mean almost the same thing. Look for the word you could swap in.",
     tryThis: "Test your answer by putting it into a sentence instead of the original word. Does the sentence still make sense? If yes, you've probably got the right synonym!",
     colour: '#7C3AED',
+    topicKeys: ['synonyms'],
   },
   {
     id: 'vr-synonym-swap-test',
@@ -253,6 +274,7 @@ const vrTips = [
     explanation: "'The large dog barked.' Can you swap 'large' for 'big'? 'The big dog barked.' Yes! So 'large' and 'big' are synonyms. Can you swap 'large' for 'heavy'? Not really the same meaning.",
     tryThis: "Make up a quick sentence with the given word, then try swapping in each option. The one that fits best without changing the meaning is your answer!",
     colour: '#7C3AED',
+    topicKeys: ['synonyms'],
   },
   {
     id: 'vr-antonym-exact-opposite',
@@ -264,6 +286,7 @@ const vrTips = [
     explanation: "'Hot' and 'warm' are NOT antonyms — they're similar! 'Hot' and 'cold' ARE antonyms because they're exact opposites. Think of it as the word at the other end of a scale.",
     tryThis: "Imagine a sliding scale or thermometer. Your word is at one end. Which option word sits right at the OTHER end? That's your antonym!",
     colour: '#7C3AED',
+    topicKeys: ['antonyms'],
   },
   {
     id: 'vr-antonym-traps',
@@ -275,6 +298,7 @@ const vrTips = [
     explanation: "If the word is 'brave', they might put 'bold' and 'fearless' as options — but those are SYNONYMS, not antonyms! The answer would be 'cowardly'. Read carefully!",
     tryThis: "Before picking, ask yourself: 'Is this word the OPPOSITE or just a DIFFERENT word?' Cross out any options that mean the same as the given word first.",
     colour: '#7C3AED',
+    topicKeys: ['antonyms', 'synonyms'],
   },
   {
     id: 'vr-compound-every-combo',
@@ -286,6 +310,7 @@ const vrTips = [
     explanation: "With words like 'sun', 'flower', 'light', 'house' — you might think 'sunflower' straight away, but check ALL combos. Could 'lighthouse' or 'sunlight' also work? Be systematic!",
     tryThis: "Write the words in a list. Try word 1 + word 2, word 1 + word 3, word 1 + word 4... then word 2 + word 1, word 2 + word 3... Check every single pair!",
     colour: '#7C3AED',
+    topicKeys: ['compoundWords'],
   },
   {
     id: 'vr-compound-order-matters',
@@ -297,6 +322,7 @@ const vrTips = [
     explanation: "When the question gives you two groups of words and asks you to make a compound word, the word from the LEFT group goes first. 'Sun' + 'shine' = 'sunshine', never 'shinesun'.",
     tryThis: "Say each combination out loud. 'Bookshelf' — yes, that's a word! 'Shelfbook' — nope! Your ear usually knows if it's a real compound word.",
     colour: '#7C3AED',
+    topicKeys: ['compoundWords'],
   },
   {
     id: 'vr-hidden-words-slide',
@@ -308,6 +334,7 @@ const vrTips = [
     explanation: "In 'the OVERall plan', the hidden word 'OVER' starts in 'the' and ends in 'overall'... wait, that's just one word. Try 'plAN Told' — 'ANT' hides across the gap!",
     tryThis: "Put your finger on the last few letters of the first word and slide it into the first few letters of the next word. Start with 1 letter from the left, then 2, then 3...",
     colour: '#7C3AED',
+    topicKeys: ['hiddenWords'],
   },
   {
     id: 'vr-hidden-words-systematic',
@@ -319,6 +346,7 @@ const vrTips = [
     explanation: "The hidden word could be between words 1-2, words 2-3, words 3-4, or any pair! If you only check the first gap, you might miss the answer hiding further along.",
     tryThis: "Write a little line | between each word. Then check each | one at a time. Take 1, 2, 3, 4 letters from each side of the | until you find a real word!",
     colour: '#7C3AED',
+    topicKeys: ['hiddenWords'],
   },
   {
     id: 'vr-letter-move-remove',
@@ -330,6 +358,7 @@ const vrTips = [
     explanation: "From 'WHEAT', remove W to get 'HEAT' — is W + another word real? Remove H to get 'WEAT'... that's not a word! Keep going until both parts work.",
     tryThis: "Write the word out and cross out one letter at a time. Check: is what's left a real word? Could the removed letter join the other word to make it real?",
     colour: '#7C3AED',
+    topicKeys: ['letterMove'],
   },
   {
     id: 'vr-missing-letters-own-word',
@@ -341,6 +370,7 @@ const vrTips = [
     explanation: "If the answer is 'AND', it must: 1) finish the first word (like 'b___' → 'band'), 2) start the second word (like '___le' → 'andle'... hmm, 'candle' maybe!), 3) be a word itself (AND ✓).",
     tryThis: "Start with the 3-letter word part — think of common 3-letter words (THE, AND, FOR, HIS, HER, ALL, CAN, etc.) and test each one in both gaps!",
     colour: '#7C3AED',
+    topicKeys: ['missingLettersWords'],
   },
   {
     id: 'vr-odd-two-out-find-three',
@@ -352,6 +382,7 @@ const vrTips = [
     explanation: "From: apple, carrot, banana, potato, grape — apple, banana, grape are all FRUITS (that's 3!). Carrot and potato are left over — they're the odd two out!",
     tryThis: "Look for what 3 words have in common. Are they all animals? All colours? All things in a kitchen? Once you find the group of 3, the odd two are whatever's left!",
     colour: '#7C3AED',
+    topicKeys: ['oddTwoOut'],
   },
   {
     id: 'vr-odd-two-out-categories',
@@ -363,6 +394,7 @@ const vrTips = [
     explanation: "The connection might not be obvious at first. 'Oak', 'ash', and 'elm' are all trees — even if you weren't sure about 'ash'. Think broadly about what could connect words.",
     tryThis: "For each word, ask: 'What category does this belong to?' Write the category next to each word. When 3 words share a category, you've cracked it!",
     colour: '#7C3AED',
+    topicKeys: ['oddTwoOut'],
   },
   {
     id: 'vr-verbal-analogies-relationship',
@@ -374,6 +406,7 @@ const vrTips = [
     explanation: "Puppy is to dog as kitten is to ___. The relationship is 'baby animal → adult animal'. So kitten → cat! Don't just think 'puppy is related to dog' — name the exact relationship.",
     tryThis: "Say it as a sentence: 'A puppy is a YOUNG dog.' Now use the same sentence shape: 'A kitten is a YOUNG ___.' The answer fills itself in!",
     colour: '#7C3AED',
+    topicKeys: ['verbalAnalogies'],
   },
   {
     id: 'vr-analogy-types',
@@ -385,6 +418,7 @@ const vrTips = [
     explanation: "Hammer is to nail as screwdriver is to screw (tool → what it works on). Finger is to hand as toe is to foot (part → whole). Knowing these types helps you spot the pattern faster!",
     tryThis: "When you see an analogy, run through the list: Are they opposites? Part of something? A tool and what it's used for? One of these will click!",
     colour: '#7C3AED',
+    topicKeys: ['verbalAnalogies'],
   },
   {
     id: 'vr-shared-letter-vowels-first',
@@ -396,6 +430,7 @@ const vrTips = [
     explanation: "If you need one letter that completes both '_at' and '_nd', try: Aat? Eat? Iat? Oat? Uat? 'A' works for both: 'bat/cat/hat' and 'and'. Vowels are your best first guess!",
     tryThis: "Always test A, E, I, O, U first. If none of those work, try the most common consonants next: T, S, R, N, L. You'll usually find it within 8 guesses!",
     colour: '#7C3AED',
+    topicKeys: ['sharedLetter'],
   },
   {
     id: 'vr-shared-letter-common-consonants',
@@ -407,6 +442,7 @@ const vrTips = [
     explanation: "If vowels didn't work, these five consonants appear in more words than any others. 'S' especially — it can turn almost any word into a plural! Try these before rare letters like X or Q.",
     tryThis: "Make a mental list: A-E-I-O-U then T-S-R-N-L. Go through them in that order every time. You'll rarely need to go further!",
     colour: '#7C3AED',
+    topicKeys: ['sharedLetter', 'missingLettersWords'],
   },
   {
     id: 'vr-synonym-multiple-meanings',
@@ -418,6 +454,7 @@ const vrTips = [
     explanation: "'Cross' can mean angry, or a shape, or to go across something. If none of the options seem to match your first idea of the word, think about its other meanings!",
     tryThis: "If you're stuck, ask: 'Could this word mean something ELSE?' Think of 2-3 different meanings. One of them will match an option!",
     colour: '#7C3AED',
+    topicKeys: ['synonyms', 'antonyms'],
   },
   {
     id: 'vr-word-puzzles-elimination',
@@ -429,6 +466,7 @@ const vrTips = [
     explanation: "If you have 5 options and can cross out 3 that are definitely wrong, you've only got 2 left to choose from! That's much better odds, even if you're still not 100% sure.",
     tryThis: "Read each option and ask: 'Could this POSSIBLY be right?' If the answer is definitely no, put a line through it. Then focus on what's left!",
     colour: '#7C3AED',
+    topicKeys: ['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies'],
   },
   {
     id: 'vr-hidden-word-length',
@@ -440,6 +478,7 @@ const vrTips = [
     explanation: "Knowing the length saves loads of time. For a 4-letter word in 'fast angle', try: asta, stan, tang, angl, ngle. 'Tang' — that's a word! (Well, maybe. 'ANGLE' uses 5 letters.)",
     tryThis: "Count the number of letters you need. Then use your finger to frame exactly that many letters as you slide across each gap. Don't waste time on wrong lengths!",
     colour: '#7C3AED',
+    topicKeys: ['hiddenWords'],
   },
   {
     id: 'vr-compound-say-it-aloud',
@@ -451,6 +490,7 @@ const vrTips = [
     explanation: "Reading 'bookworm' silently might not click, but 'hearing' it in your mind? You KNOW that's a word! Your ears have heard thousands more words than your eyes have read.",
     tryThis: "As you test each combination, pronounce it in your head like you're saying it to a friend. Real compound words will just SOUND right!",
     colour: '#7C3AED',
+    topicKeys: ['compoundWords'],
   },
 
   // ═══════════════════════════════════════════════
@@ -467,6 +507,7 @@ const vrTips = [
     explanation: "This works for letters, numbers, and shapes. If you see AB, AC, AD, AE — what stays the same? The A! What changes? The second letter goes up by 1. Pattern found!",
     tryThis: "Draw two columns headed 'SAME' and 'CHANGES'. List what goes in each column. The pattern is always in the 'CHANGES' column!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries', 'letterPairSeries', 'verbalAnalogies'],
   },
   {
     id: 'vr-two-patterns-interleaved',
@@ -478,6 +519,7 @@ const vrTips = [
     explanation: "In 2, 10, 4, 20, 6, 30, ? — the odd positions (2, 4, 6) go up by 2, and the even positions (10, 20, 30) go up by 10. The next number is in an odd position, so 8!",
     tryThis: "If the pattern seems random, split it into two lists: positions 1, 3, 5 and positions 2, 4, 6. Check each list separately for a pattern!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries', 'letterPairSeries'],
   },
   {
     id: 'vr-common-number-patterns',
@@ -489,6 +531,7 @@ const vrTips = [
     explanation: "Keep a mental checklist. Is it adding the same number? Doubling? Are these square numbers (1,4,9,16)? Primes (2,3,5,7,11)? Times tables (3,6,9,12)? Run through the list!",
     tryThis: "Make a poster of the 'Famous Patterns' with examples of each one. Stick it where you study. When you're stuck on a question, glance at the poster!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-increasing-gaps',
@@ -500,6 +543,7 @@ const vrTips = [
     explanation: "1, 3, 6, 10, 15, ? — the gaps are +2, +3, +4, +5. The gaps grow by 1 each time! So the next gap is +6, and the answer is 21. These are called triangle numbers.",
     tryThis: "Write the differences below the sequence. If THOSE differences aren't equal, write the differences of the differences! Keep going until you find something constant.",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-alternating-patterns',
@@ -511,6 +555,7 @@ const vrTips = [
     explanation: "3, 7, 3, 7, 3, ? — easy, it alternates! But they can be trickier: 2, 8, 4, 10, 6, ? — the odd positions go 2, 4, 6 (+2) and even positions go 8, 10 (+2). Answer: 12!",
     tryThis: "If numbers seem to bounce around, colour the odd positions in one colour and even positions in another. Two neat patterns might emerge!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries', 'letterPairSeries'],
   },
   {
     id: 'vr-write-out-differences',
@@ -522,6 +567,7 @@ const vrTips = [
     explanation: "Your working memory can only hold so much. Writing 3, _+5_, 8, _+7_, 15, _+9_, 24 makes the pattern (+5, +7, +9 — going up by 2) obvious. In your head, it's a muddle!",
     tryThis: "Write the differences in little arches between each number. Then if needed, write the differences of THOSE in arches above. It creates a pyramid of clues!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-multiply-divide-check',
@@ -533,6 +579,7 @@ const vrTips = [
     explanation: "2, 6, 18, 54, ? — the gaps are +4, +12, +36... messy! But each number is ×3 the last one: 2×3=6, 6×3=18, 18×3=54, 54×3=162! Always check multiplication.",
     tryThis: "If the differences look weird, try dividing each number by the one before it. If you always get the same answer (like 3), it's a times pattern!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-pattern-subtract-check',
@@ -544,6 +591,7 @@ const vrTips = [
     explanation: "100, 95, 90, 85, ? — it's just -5 each time! Answer: 80. Or 64, 32, 16, 8, ? — halving each time! Answer: 4. Decreasing patterns follow the same rules as increasing ones.",
     tryThis: "If numbers get smaller, find the differences the same way. Write them as -5, -5, -5 (with the minus sign!) so you remember the direction.",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
   {
     id: 'vr-pattern-check-answer',
@@ -555,6 +603,7 @@ const vrTips = [
     explanation: "If the pattern is +3 and you got 17 as your answer, check: does 17+3=20 feel right as the next number? If the sequence suddenly looks wrong, go back and recheck your differences.",
     tryThis: "Write your answer in the sequence, then work out what the NEXT number would be. If everything still flows smoothly, you can be confident!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries', 'letterPairSeries'],
   },
   {
     id: 'vr-triangle-numbers',
@@ -566,6 +615,7 @@ const vrTips = [
     explanation: "Add 2, then 3, then 4, then 5... the gaps grow by 1 each time. They're called triangle numbers because you can arrange them in a triangle pattern with dots. Learn them!",
     tryThis: "Write out the triangle numbers up to 55: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55. If you spot these in a sequence, you'll save loads of time!",
     colour: '#8B5CF6',
+    topicKeys: ['numberSeries'],
   },
 
   // ═══════════════════════════════════════════════
@@ -582,6 +632,7 @@ const vrTips = [
     explanation: "You can't afford to spend 3 minutes on one tough question. Quick questions should take 15-20 seconds, giving you more time for harder ones. Keep moving!",
     tryThis: "Set a timer and do 10 practice questions. Try to finish in under 6 minutes. This builds your sense of pace so you don't run out of time in the real exam!",
     colour: '#A78BFA',
+    topicKeys: ['letterCodes', 'synonyms', 'numberSeries', 'hiddenWords'],
   },
   {
     id: 'vr-best-first',
@@ -593,6 +644,7 @@ const vrTips = [
     explanation: "If you're brilliant at synonyms but struggle with letter codes, answer the synonyms quickly and confidently. Then use your remaining time on the tricky sections.",
     tryThis: "In your next practice paper, notice which question types you find easiest. Make a mental 'priority list' — do those sections first on exam day!",
     colour: '#A78BFA',
+    topicKeys: ['synonyms', 'letterCodes', 'numberSeries'],
   },
   {
     id: 'vr-skip-and-return',
@@ -604,6 +656,7 @@ const vrTips = [
     explanation: "Spending 2 minutes on one question means losing time for 3-4 easier ones! Put a small dot next to it, move on, and come back at the end if you have time.",
     tryThis: "Practise the 'mark and move' technique: if you don't know the answer within 30 seconds, circle the question number, make your best guess, and move on!",
     colour: '#A78BFA',
+    topicKeys: ['letterCodes', 'wordCodeAnalogies', 'letterSums'],
   },
   {
     id: 'vr-read-instructions',
@@ -615,6 +668,7 @@ const vrTips = [
     explanation: "You might think you know what to do, but what if this section asks for TWO answers instead of one? Or asks for the OPPOSITE of what you expected? 10 seconds reading saves big mistakes.",
     tryThis: "Before each section, force yourself to read every word of the instructions. Point your finger at each word. Don't start answering until you've read the last word!",
     colour: '#A78BFA',
+    topicKeys: ['oddTwoOut', 'antonyms', 'verbalAnalogies', 'hiddenWords'],
   },
   {
     id: 'vr-worked-example',
@@ -626,6 +680,7 @@ const vrTips = [
     explanation: "GL always gives you a worked example before the questions start. It shows you the exact format, what the answer looks like, and how to approach it. It's like getting the recipe before you cook!",
     tryThis: "When you read the worked example, try to solve it yourself BEFORE reading the explanation. Then check if your method matches theirs. This confirms you understand the question type!",
     colour: '#A78BFA',
+    topicKeys: ['letterCodes', 'wordCodeAnalogies', 'compoundWords'],
   },
   {
     id: 'vr-never-leave-blank',
@@ -637,6 +692,7 @@ const vrTips = [
     explanation: "With 5 options, a random guess gives you a 20% chance of being right. That's better than 0%! In the last minute, fill in EVERY blank with your best guess.",
     tryThis: "With 2 minutes left in a practice test, quickly fill in every blank. Pick the most likely option if you can, but even a random letter is better than nothing!",
     colour: '#A78BFA',
+    topicKeys: ['synonyms', 'antonyms', 'letterCodes', 'numberSeries'],
   },
   {
     id: 'vr-eliminate-then-guess',
@@ -648,6 +704,7 @@ const vrTips = [
     explanation: "If you can eliminate 2 wrong options, your guess goes from 20% (1 in 5) to 33% (1 in 3). That's a big improvement! Even crossing out one option helps.",
     tryThis: "For each option, ask: 'Is there ANY chance this is right?' If the answer is definitely no, cross it out. Then pick from the survivors!",
     colour: '#A78BFA',
+    topicKeys: ['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies'],
   },
   {
     id: 'vr-check-skipped',
@@ -659,6 +716,7 @@ const vrTips = [
     explanation: "If you're filling in a bubble sheet and skip question 15, your answer for question 16 goes in the 15 slot, 17 goes in 16... disaster! Check your numbering every 10 questions.",
     tryThis: "Every time you turn a page, check: does your answer number match the question number? This 3-second check could save your whole paper!",
     colour: '#A78BFA',
+    topicKeys: ['letterCodes', 'numberSeries', 'synonyms'],
   },
   {
     id: 'vr-use-alphabet-reference',
@@ -670,6 +728,7 @@ const vrTips = [
     explanation: "Look for the reference alphabet at the top or bottom of the page. It shows A=1, B=2... Z=26. Use it for every letter code question — that's what it's there for!",
     tryThis: "In practice papers, find where the alphabet reference is printed. Get used to glancing at it quickly. Train your eyes to find any letter's number in under 2 seconds!",
     colour: '#A78BFA',
+    topicKeys: ['letterCodes', 'letterPairSeries', 'letterSums', 'letterMove'],
   },
   {
     id: 'vr-stay-calm',
@@ -681,6 +740,7 @@ const vrTips = [
     explanation: "Take a deep breath before you start. If you feel panicky during the test, pause for 3 seconds and breathe. A calm brain spots patterns MUCH faster than a stressed one!",
     tryThis: "Before your next practice paper, close your eyes and take 5 slow breaths. Then start. Notice how much clearer your thinking is when you're calm. Do the same on exam day!",
     colour: '#A78BFA',
+    topicKeys: ['numberSeries', 'letterCodes', 'logicAndLanguage'],
   },
 
 ];

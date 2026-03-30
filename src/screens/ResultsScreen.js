@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useMemo, useEffect, useRef } from 'react';
 import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft } from 'lucide-react';
+import ResultsInsightCard from '../components/ResultsInsightCard';
+import { selectResultsInsightTip } from '../utils/tipSelection';
 
-function ResultsScreen({ answers, quizMode, onRetry, onChooseTopic, onHome }) {
+function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, onMarkTipSeen, onRetry, onChooseTopic, onHome }) {
   const correctCount = answers.filter(a => a.correct).length;
   const totalCount = answers.length;
   const percentage = Math.round((correctCount / totalCount) * 100);
@@ -9,6 +11,21 @@ function ResultsScreen({ answers, quizMode, onRetry, onChooseTopic, onHome }) {
   const strokeOffset = circumference - (percentage / 100) * circumference;
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
   const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#6C5CE7] to-[#5A4BD1]' : 'from-[#0984E3] to-[#0652DD]';
+
+  // Select a contextual tip based on performance band
+  const insightTip = useMemo(() => {
+    if (!allTips || !quizQuestions) return null;
+    return selectResultsInsightTip({ percentage, answers, quizQuestions, allTips, seenTips: seenTips || [] });
+  }, [percentage, answers, quizQuestions, allTips, seenTips]);
+
+  // Mark insight tip as seen when it renders
+  const markedRef = useRef(false);
+  useEffect(() => {
+    if (insightTip && onMarkTipSeen && !markedRef.current) {
+      markedRef.current = true;
+      onMarkTipSeen(insightTip.id);
+    }
+  }, [insightTip, onMarkTipSeen]);
 
   return (
     <div className="app-bg p-4">
@@ -55,6 +72,8 @@ function ResultsScreen({ answers, quizMode, onRetry, onChooseTopic, onHome }) {
             </div>
             <p className="text-lg text-[#636E72] font-medium">Questions Correct</p>
           </div>
+
+          <ResultsInsightCard tip={insightTip} />
 
           <div className="flex flex-col sm:flex-row gap-4 stagger-children">
             <button

@@ -1,12 +1,13 @@
 import React from 'react';
 import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff } from 'lucide-react';
+import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 
 function QuizScreen({
   quizQuestions, currentQuestionIndex, quizMode, selectedTopic,
   selectedAnswer, selectedPair, showFeedback, returnToSpeedReview,
   showTutorChat, chatMessages, userMessage, isAiThinking, isListening,
   showFeedbackForm, feedbackText, currentUser, speechSupported,
-  quizVisualComponents,
+  quizVisualComponents, postQuestionTip,
   onAnswerSelect, onSelectTwoToggle, onPickFromSet, onCheckAnswer,
   onNextQuestion, onFindLesson, onAskTutor, onSendMessage,
   onUserMessageChange, onToggleListening, onFeedbackTextChange,
@@ -344,6 +345,10 @@ function QuizScreen({
                         <p className="text-sm text-gray-600 mt-1">
                           The correct pair was: {currentQuestion.setA[currentQuestion.correctPair[0]]} and {currentQuestion.setB[currentQuestion.correctPair[1]]}
                         </p>
+                      )}
+
+                      {!isCorrect && postQuestionTip && (
+                        <PostQuestionTipBanner tip={postQuestionTip} />
                       )}
 
                       <div className="flex gap-2 mt-3">

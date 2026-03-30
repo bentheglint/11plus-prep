@@ -17,6 +17,7 @@ const englishTips = [
     explanation: "Your first read should be fast — just get the gist of what's happening. Then read the questions so you know what to look for. Then go back and read carefully. It's like watching a film trailer before the full movie!",
     tryThis: "Next time you get a comprehension, spend 60 seconds skimming before you even look at the questions.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -29,6 +30,7 @@ const englishTips = [
     explanation: "Retrieval questions ask you to find facts straight from the text. Pick out the important words in the question, then scan the passage for those exact words or similar ones. The answer is usually right there in the same sentence or the next one.",
     tryThis: "Underline the key words in the question, then scan the passage for those words. Circle them when you find them!",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -41,6 +43,7 @@ const englishTips = [
     explanation: "Sometimes the answer isn't written in plain words — you have to be a detective! If a character 'slammed the door and stomped upstairs', the text doesn't say they're angry, but you can work it out from the clues.",
     tryThis: "When you see an inference question, ask yourself: 'What clues has the author given me?' Look for describing words and actions.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -53,6 +56,7 @@ const englishTips = [
     explanation: "'Suggests' means the author is hinting, not telling you outright. Look at the words they chose — are they painting a happy picture or a sad one? The mood and tone of the writing are your biggest clues.",
     tryThis: "Look at the adjectives and verbs near the part the question asks about. Are they positive, negative, or neutral? That's your hint!",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -65,6 +69,7 @@ const englishTips = [
     explanation: "If you're stuck between options, start by crossing out the ones that are obviously wrong. If you can get rid of even two options, you've gone from a 1-in-5 chance to a 1-in-3 chance. That's a massive boost!",
     tryThis: "For every comprehension question, try to cross out at least two wrong answers before you pick your final one.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -77,6 +82,7 @@ const englishTips = [
     explanation: "Even if you know loads about a topic, the answer must come from the text. If the passage is about dogs, don't pick an answer because you know it's true from your own life — it has to be supported by what the author wrote.",
     tryThis: "Before you pick an answer, point to the exact line in the passage that proves it. If you can't point to it, it might not be right!",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -89,6 +95,7 @@ const englishTips = [
     explanation: "Don't just pick the first answer that sounds right! Sometimes option A looks good, but option D is actually better. These questions are sneaky — they put a tempting-but-wrong answer early to catch you out.",
     tryThis: "Read ALL five options before you choose. Put a tiny tick or cross next to each one as you check it against the passage.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -101,6 +108,7 @@ const englishTips = [
     explanation: "If the passage doesn't talk about something, that doesn't make it false — it just means the author didn't mention it. 'Not true' means the passage actually says the opposite. Watch out for this trick!",
     tryThis: "When you see 'not mentioned', check: does the passage actually talk about this at all? If it's silent on the topic, that's 'not mentioned'.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -113,6 +121,7 @@ const englishTips = [
     explanation: "The passage usually gives you enough context to figure out tricky words. If it says 'the famished boy ate three plates of food', you can guess 'famished' means really hungry. The sentence around the word is your best friend!",
     tryThis: "When you hit an unknown word, read the whole sentence and ask: 'What would make sense here?' Try swapping in a simpler word.",
     colour: '#00B894',
+    topicKeys: ['comprehension', 'vocabulary'],
   },
 
   {
@@ -125,6 +134,7 @@ const englishTips = [
     explanation: "In the real exam, getting stuck on one hard question could mean you miss three easy ones at the end. If you've been thinking about a question for more than a minute, make your best guess, mark it, and move on.",
     tryThis: "Practice with a timer! Give yourself about 1 minute per question and see how it feels.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -137,6 +147,7 @@ const englishTips = [
     explanation: "If the question says 'In line 12...', don't just read line 12. Read from line 10 to line 14 at least. The answer is often in the sentences around the line they mention, not just the exact line itself.",
     tryThis: "Always read 2-3 lines either side of any line reference. You'll find the answer much more easily!",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -149,6 +160,7 @@ const englishTips = [
     explanation: "If the passage uses words like 'dark', 'creaking', 'shadows', and 'silent', the mood is spooky or tense. If it uses 'bright', 'laughing', and 'warm', it's cheerful. The describing words tell you everything about the mood.",
     tryThis: "After reading a passage, write down three words that describe its mood. This helps you answer tone and atmosphere questions!",
     colour: '#00B894',
+    topicKeys: ['comprehension', 'vocabulary'],
   },
 
   {
@@ -161,6 +173,7 @@ const englishTips = [
     explanation: "If a question asks about the purpose of a paragraph, think about what it does for the story or text. Does it set the scene? Introduce a character? Give an argument? Build tension? That's its job.",
     tryThis: "After reading each paragraph, sum it up in 3-4 words in your head. 'Introduces the castle.' 'Shows the boy is scared.'",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -173,6 +186,7 @@ const englishTips = [
     explanation: "When asked to choose a title, some options will only match one paragraph or one event. The right answer is the one that covers the main idea of the entire passage. Think big picture, not small details!",
     tryThis: "Before looking at the options, try making up your own title. Then see which option is closest to yours.",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   {
@@ -185,6 +199,7 @@ const englishTips = [
     explanation: "It's totally fine to re-read parts of the passage — that's what good readers do! Rushing through once and trying to remember everything is much harder than going back and reading the key bit carefully a second time.",
     tryThis: "When you're unsure, put your finger on the part of the passage the question is about and read it again slowly. The answer usually jumps out!",
     colour: '#00B894',
+    topicKeys: ['comprehension'],
   },
 
   // ============================================================
@@ -201,6 +216,7 @@ const englishTips = [
     explanation: "'Aqua' means water (aquarium, aquatic). 'Port' means carry (transport, portable). 'Tele' means far (telephone, television). Once you know a handful of roots, you can decode hundreds of words you've never seen before!",
     tryThis: "Learn these three roots this week: 'bio' (life), 'graph' (write), 'micro' (small). How many words can you think of for each?",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'spelling'],
   },
 
   {
@@ -213,6 +229,7 @@ const englishTips = [
     explanation: "'Un-' means not (unhappy, unfair). 'Dis-' means not or opposite (disagree, disappear). 'Re-' means again (rebuild, replay). 'Pre-' means before (preview, prehistoric). Learning these lets you work out what new words mean!",
     tryThis: "Take the word 'kind'. How many prefixes can you add to change its meaning? (unkind... any others?)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'spelling'],
   },
 
   {
@@ -225,6 +242,7 @@ const englishTips = [
     explanation: "'-tion' turns verbs into nouns (educate → education). '-ful' means full of (hope → hopeful). '-less' means without (hope → hopeless). '-ness' turns adjectives into nouns (kind → kindness). Suffixes are super helpful for word class questions too!",
     tryThis: "Start with the word 'care'. How many different suffixes can you add? (careful, careless, caring...)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'spelling', 'wordClassGrammar'],
   },
 
   {
@@ -237,6 +255,7 @@ const englishTips = [
     explanation: "'Happy' and 'joyful' are close synonyms. 'Happy' and 'nice' are related but not very close. In the exam, you need the closest match, not just any word in the same ballpark. Try swapping the word into the sentence — does it still make sense?",
     tryThis: "Which is the best synonym for 'enormous': big, large, huge, or tall? (It's 'huge' — the others aren't strong enough or don't mean the same thing!)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary'],
   },
 
   {
@@ -249,6 +268,7 @@ const englishTips = [
     explanation: "The opposite of 'hot' is 'cold', not 'warm' or 'cool'. The opposite of 'ancient' is 'modern', not 'new' or 'young'. Pick the word that's the furthest away in meaning — the strongest, most direct opposite you can find.",
     tryThis: "What's the exact opposite of 'generous'? Is it 'mean', 'selfish', 'greedy', or 'stingy'? Think about which one is the most direct opposite.",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary'],
   },
 
   {
@@ -261,6 +281,7 @@ const englishTips = [
     explanation: "'Accept' (to receive) and 'except' (not including) look almost the same but mean totally different things. 'Affect' (to change something) and 'effect' (the result) are another sneaky pair. The exam loves testing these!",
     tryThis: "Learn this pair: 'compliment' (saying something nice) vs 'complement' (something that goes well with). Write a sentence for each one.",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'spelling'],
   },
 
   {
@@ -273,6 +294,7 @@ const englishTips = [
     explanation: "Every book you read teaches you words you'd never learn from a word list. Fiction, non-fiction, newspapers, magazines — they all use different words. You don't need to look up every new word either; you'll naturally absorb them!",
     tryThis: "Try reading something different this week — if you usually read fiction, try a non-fiction book or a news article for kids.",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'comprehension'],
   },
 
   {
@@ -285,6 +307,7 @@ const englishTips = [
     explanation: "If you read 'the dog was ravenous after its long walk and gobbled up all its food', you can guess 'ravenous' means very hungry. Look for cause and effect, examples, or contrasts in the sentence — they're all clues!",
     tryThis: "Cover up the unknown word and ask: 'What word would I put here?' Your guess will usually be close to the real meaning.",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'comprehension'],
   },
 
   {
@@ -297,6 +320,7 @@ const englishTips = [
     explanation: "'Annoyed', 'angry', and 'furious' all mean unhappy about something, but they go from mild to strong. In synonym questions, matching the strength matters! If the word is strong, pick a strong synonym, not a mild one.",
     tryThis: "Put these in order from mildest to strongest: terrified, nervous, worried, scared. (nervous → worried → scared → terrified!)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary'],
   },
 
   {
@@ -309,6 +333,7 @@ const englishTips = [
     explanation: "'Bank' can mean the side of a river or a place for money. 'Bat' can be an animal or sports equipment. When you see these words in a synonym or meaning question, check the sentence to figure out WHICH meaning they want!",
     tryThis: "How many meanings can you think of for the word 'match'? (a game, a stick that lights, to go with something...)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'comprehension'],
   },
 
   {
@@ -321,6 +346,7 @@ const englishTips = [
     explanation: "We say 'begin' in everyday chat but 'commence' in formal writing. 'Ask' is everyday; 'enquire' is formal. The 11+ often tests whether you know the fancier version of common words. They mean the same thing — one just sounds posher!",
     tryThis: "What's the fancier word for: 'help' (assist), 'buy' (purchase), 'end' (conclude)? Try to learn one new formal word each day.",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary'],
   },
 
   {
@@ -333,6 +359,7 @@ const englishTips = [
     explanation: "Start with 'courage': courageous, encourage, encouragement, discourage, discouragement. That's five words from one root! This is brilliant for the 11+ because it helps you recognise words you've never seen before.",
     tryThis: "Build a word family from 'create'. How many words can you make? (creative, creation, creativity, recreate, creator...)",
     colour: '#20B2AA',
+    topicKeys: ['vocabulary', 'spelling'],
   },
 
   // ============================================================
@@ -349,6 +376,7 @@ const englishTips = [
     explanation: "Don't read the whole sentence in one go — that makes your brain auto-correct errors! Cover up the other parts and look at each underlined section by itself. Ask: 'Is the spelling right? Is the grammar right?' for each chunk separately.",
     tryThis: "Use your finger or pencil to cover everything except the section you're checking. It stops your brain from skipping over mistakes!",
     colour: '#10B981',
+    topicKeys: ['spelling', 'punctuation', 'grammar'],
   },
 
   {
@@ -361,6 +389,7 @@ const englishTips = [
     explanation: "'Their' = belonging to them (their house). 'There' = a place (over there). 'They're' = they are (they're coming). The exam tests these ALL the time. If you can get these right every time, you'll pick up easy marks!",
     tryThis: "Try this sentence and pick the right one: '_____ going to _____ house which is over _____ .' (They're, their, there!)",
     colour: '#10B981',
+    topicKeys: ['spelling', 'grammar'],
   },
 
   {
@@ -373,6 +402,7 @@ const englishTips = [
     explanation: "'Necessary' has one 'c' and two 's's. 'Accommodate' has two 'c's and two 'm's. 'Embarrass' has two 'r's and two 's's. These are classic exam words that trip people up — learn the doubles!",
     tryThis: "Write out these five words three times each: necessary, accommodate, embarrass, committee, immediately. Your hand will remember!",
     colour: '#10B981',
+    topicKeys: ['spelling'],
   },
 
   {
@@ -385,6 +415,7 @@ const englishTips = [
     explanation: "Some students never pick 'No Mistake' because they think there must always be an error. That's a trap! If you've checked every section carefully and can't find a genuine mistake, be brave and pick 'No Mistake'. It comes up quite often.",
     tryThis: "When you think there's no mistake, double-check one more time — then trust yourself and pick it confidently!",
     colour: '#10B981',
+    topicKeys: ['spelling', 'punctuation', 'grammar'],
   },
 
   {
@@ -397,6 +428,7 @@ const englishTips = [
     explanation: "For ownership: 'the dog's bone' = the bone belonging to the dog. For missing letters: 'can't' = cannot, 'won't' = will not. The big mistake people make? Writing 'it's' when they mean 'its'. Remember: 'it's' ALWAYS means 'it is'!",
     tryThis: "Every time you see an apostrophe, ask: 'Is this showing ownership or a missing letter?' If neither — it shouldn't be there!",
     colour: '#10B981',
+    topicKeys: ['punctuation'],
   },
 
   {
@@ -409,6 +441,7 @@ const englishTips = [
     explanation: "In lists: 'I packed shoes, socks, a hat and gloves.' After openers: 'Suddenly, the door slammed.' Before joining words: 'I wanted to go, but it was raining.' Read the sentence aloud — if you naturally pause, there's probably a comma needed!",
     tryThis: "Read a paragraph from your book and notice where the commas are. Why is each one there? Which rule does it follow?",
     colour: '#10B981',
+    topicKeys: ['punctuation'],
   },
 
   {
@@ -421,6 +454,7 @@ const englishTips = [
     explanation: "The rules: open speech marks before the first spoken word. Put punctuation (comma, full stop, question mark) INSIDE the speech marks. Start a new line for each new speaker. Capital letter at the start of speech. Get these right and you'll nail speech mark questions!",
     tryThis: "Write a short conversation between two characters (3-4 lines). Check: new line each speaker? Punctuation inside the marks? Capital letters?",
     colour: '#10B981',
+    topicKeys: ['punctuation'],
   },
 
   {
@@ -433,6 +467,7 @@ const englishTips = [
     explanation: "The 'k' in 'knife', the 'w' in 'write', the 'b' in 'doubt', the 'h' in 'honest', the 'g' in 'gnaw'. Silent letters are a favourite exam trick because you'd never guess them from how the word sounds. You just have to learn them!",
     tryThis: "Make a list of 10 words with silent letters. Test yourself tomorrow — which ones did you remember?",
     colour: '#10B981',
+    topicKeys: ['spelling'],
   },
 
   {
@@ -445,6 +480,7 @@ const englishTips = [
     explanation: "Adore → adoration → adorable. Imagine → imagination → imaginable. But 'horrible', 'visible', and 'possible' use '-ible' because you can't make 'horation' or 'visiation'! It's not a perfect rule, but it works most of the time.",
     tryThis: "Try the '-ation' test on these: comfort___, terr___, sens___, enjoy___. (comfortable, terrible, sensible, enjoyable!)",
     colour: '#10B981',
+    topicKeys: ['spelling'],
   },
 
   {
@@ -457,6 +493,7 @@ const englishTips = [
     explanation: "'Hear' (with your ears) vs 'here' (this place). 'Wear' (clothes) vs 'where' (a place). 'Weather' (rain and sun) vs 'whether' (if). These pop up constantly in error-spotting because spell-check won't catch them — you have to know the right one!",
     tryThis: "Write a sentence using both words in each pair: bare/bear, peace/piece, brake/break. If you know the meaning, you'll spell it right!",
     colour: '#10B981',
+    topicKeys: ['spelling', 'vocabulary'],
   },
 
   {
@@ -469,6 +506,7 @@ const englishTips = [
     explanation: "'You're brilliant' = 'You are brilliant' — tick! 'Your coat is red' — try 'you are coat is red'? Nope, that's nonsense! So it's 'your'. This simple swap test works every single time and takes two seconds.",
     tryThis: "Check your last piece of writing — did you use 'your' and 'you're' correctly everywhere? Do the swap test on each one!",
     colour: '#10B981',
+    topicKeys: ['spelling', 'grammar'],
   },
 
   {
@@ -481,6 +519,7 @@ const englishTips = [
     explanation: "This trips up even adults! 'The cat licked its paw' — the paw belongs to the cat, so no apostrophe. 'It's raining' = 'It is raining' — missing letters, so apostrophe. Think of 'his' and 'hers' — they don't have apostrophes either, and neither does 'its' when it shows ownership.",
     tryThis: "Every time you write 'it's', try replacing it with 'it is'. If the sentence still makes sense, the apostrophe is correct!",
     colour: '#10B981',
+    topicKeys: ['punctuation', 'grammar'],
   },
 
   {
@@ -493,6 +532,7 @@ const englishTips = [
     explanation: "The rule works for: believe, achieve, field, piece, receive, ceiling, deceive. But some rebels break it: weird, seize, their, protein, foreign. Learn the common exceptions and you'll be fine — there aren't actually that many!",
     tryThis: "Sort these words into 'follows the rule' and 'breaks the rule': thief, weight, receipt, science, neighbour, shield.",
     colour: '#10B981',
+    topicKeys: ['spelling'],
   },
 
   // ============================================================
@@ -509,6 +549,7 @@ const englishTips = [
     explanation: "Big, red, happy, ancient, sparkling — these all describe things. Here's the test: can you put it before a noun and it makes sense? 'The ___ dog' — if it works (the happy dog, the big dog), it's an adjective!",
     tryThis: "Look around the room and describe five objects using two adjectives each. 'A small, silver laptop.' You're using adjectives!",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar'],
   },
 
   {
@@ -521,6 +562,7 @@ const englishTips = [
     explanation: "Yes, 'quickly' and 'carefully' are adverbs. But so are 'very', 'always', 'never', 'tomorrow', 'here', and 'quite'. They don't always end in -ly! If a word tells you more about a verb, adjective, or another adverb, it's an adverb.",
     tryThis: "Find the adverbs: 'She always runs extremely quickly there.' (always, extremely, quickly, there — four adverbs!)",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar'],
   },
 
   {
@@ -533,6 +575,7 @@ const englishTips = [
     explanation: "'Friendly', 'lonely', 'lovely', 'lively', and 'silly' all end in -ly but they're ADJECTIVES, not adverbs. They describe nouns: 'a friendly dog', 'a lovely day'. This is one of the 11+'s favourite tricks, so don't fall for it!",
     tryThis: "Try the noun test: can you say 'a ___ person'? 'A friendly person' works → adjective. 'A quickly person' doesn't → adverb!",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'grammar'],
   },
 
   {
@@ -545,6 +588,7 @@ const englishTips = [
     explanation: "'Was', 'is', 'seemed', 'appeared', 'became', 'felt' — these are all verbs even though nobody is running or jumping! They're called state verbs because they describe a state of being. 'She seemed happy' — 'seemed' is the verb here.",
     tryThis: "Find the verb: 'The old castle was mysterious.' It's 'was'! No action happening, but it's still the verb.",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'grammar'],
   },
 
   {
@@ -557,6 +601,7 @@ const englishTips = [
     explanation: "A noun doesn't have to be a physical thing. 'Happiness', 'bravery', 'time', 'love' — these are all nouns. The clue? Many abstract nouns end in -ness, -ment, -ity, or -tion. If the question asks for a noun and you see 'excitement', that's it!",
     tryThis: "Turn these adjectives into abstract nouns: kind → ___, brave → ___, happy → ___. (kindness, bravery, happiness!)",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'vocabulary'],
   },
 
   {
@@ -569,6 +614,7 @@ const englishTips = [
     explanation: "'Under the table', 'before lunch', 'beside the river', 'during the film', 'between the trees'. The words in bold are all prepositions. A handy trick: if you can say 'the cat went ___ the box' and it makes sense, it's probably a preposition!",
     tryThis: "How many prepositions can you use with 'the box'? Under, over, beside, behind, near, inside, on top of... keep going!",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'grammar'],
   },
 
   {
@@ -581,6 +627,7 @@ const englishTips = [
     explanation: "'And', 'but', 'because', 'although', 'while', 'when', 'if', 'so' — these all stick bits of sentences together. 'I wanted ice cream BUT the shop was closed.' Without 'but', you'd need two separate sentences. Conjunctions save the day!",
     tryThis: "Join these two sentences using a conjunction: 'It was raining.' 'We went out anyway.' (It was raining, but we went out anyway!)",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'grammar'],
   },
 
   {
@@ -593,6 +640,7 @@ const englishTips = [
     explanation: "'Light' can be a noun (turn on the light), a verb (light the candle), or an adjective (a light bag). Don't just look at the word — look at what job it's doing in THAT sentence. That's what tells you its word class.",
     tryThis: "Use the word 'play' as a noun, then as a verb: 'The play was funny' (noun). 'Let's play outside' (verb). See? Same word, different job!",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'grammar'],
   },
 
   {
@@ -605,6 +653,7 @@ const englishTips = [
     explanation: "'The dog', 'a book', 'this cake', 'some water', 'every child', 'my coat'. Determiners introduce nouns and tell you which one or how many. They're easy to spot once you know what to look for — just find the noun and look at what comes before it!",
     tryThis: "Count the determiners in this sentence: 'The boy ate his sandwich and some crisps in the park.' (The, his, some, the — four!)",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar'],
   },
 
   {
@@ -617,6 +666,7 @@ const englishTips = [
     explanation: "Instead of 'Emma gave Emma's book to Emma's friend', we say 'She gave her book to her friend.' He, she, it, they, we, him, her, them — these are all pronouns. In the exam, watch out for questions asking you to identify what a pronoun refers to!",
     tryThis: "Read a paragraph from a book and circle every pronoun. Then draw an arrow to the noun it's replacing. This skill helps with comprehension too!",
     colour: '#059669',
+    topicKeys: ['wordClassGrammar', 'comprehension'],
   },
 
 ];

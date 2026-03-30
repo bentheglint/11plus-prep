@@ -15,6 +15,7 @@ const mathsTips = [
     explanation: "10 × 5 is easy — it's 50. But what about 24 × 5? Do 24 × 10 = 240, then halve it: 120. Works every single time, even with big numbers!",
     tryThis: "Try 46 × 5 in your head using this trick. (46 × 10 = 460, halve it = 230!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
   {
     id: 'maths-multiply-by-9',
@@ -26,6 +27,7 @@ const mathsTips = [
     explanation: "So 7 × 9? Do 7 × 10 = 70, then take away 7 = 63. For bigger numbers like 15 × 9: 15 × 10 = 150, minus 15 = 135. Dead easy!",
     tryThis: "Use this to work out 23 × 9 in your head. (230 − 23 = 207!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
   {
     id: 'maths-multiply-by-11',
@@ -37,6 +39,7 @@ const mathsTips = [
     explanation: "For 36 × 11: split the 3 and 6, add them (3 + 6 = 9), pop it in the middle: 396! If the middle adds to more than 9, carry the 1 to the front digit.",
     tryThis: "Try 45 × 11. Split: 4_5, middle: 4+5=9, answer: 495!",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
   {
     id: 'maths-multiply-by-25',
@@ -48,6 +51,7 @@ const mathsTips = [
     explanation: "25 is a quarter of 100. So 16 × 25? Just do 16 ÷ 4 = 4, then × 100 = 400. It turns a hard sum into two easy ones!",
     tryThis: "Work out 32 × 25. (32 ÷ 4 = 8, × 100 = 800!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication', 'longdivision'],
   },
   {
     id: 'maths-percentage-building-blocks',
@@ -59,6 +63,7 @@ const mathsTips = [
     explanation: "Want 35% of 80? Start with 10% = 8. So 30% = 24, and 5% = 4 (half of 10%). Add them: 24 + 4 = 28. You can build ANY percentage this way!",
     tryThis: "Find 15% of 60 by building from 10% (6) + 5% (3) = 9!",
     colour: '#0984E3',
+    topicKeys: ['percentages'],
   },
   {
     id: 'maths-one-percent-trick',
@@ -70,6 +75,7 @@ const mathsTips = [
     explanation: "1% of 400 is 4. Need 3%? That's 4 × 3 = 12. Need 7%? That's 4 × 7 = 28. Once you've got 1%, you can make anything!",
     tryThis: "Find 4% of 200. (1% = 2, so 4% = 8!)",
     colour: '#0984E3',
+    topicKeys: ['percentages'],
   },
   {
     id: 'maths-fraction-decimal-shortcuts',
@@ -81,6 +87,7 @@ const mathsTips = [
     explanation: "Learn these by heart: ½ = 0.5, ¼ = 0.25, ¾ = 0.75, ⅕ = 0.2, ⅛ = 0.125, ⅓ ≈ 0.333. When a question switches between fractions and decimals, you'll fly through it!",
     tryThis: "Write out the decimal for every fraction with a denominator of 2, 4, 5, 8, and 10. Stick it on your wall!",
     colour: '#0984E3',
+    topicKeys: ['fractions', 'decimals'],
   },
   {
     id: 'maths-divisibility-by-3',
@@ -92,6 +99,7 @@ const mathsTips = [
     explanation: "Is 147 divisible by 3? Add the digits: 1 + 4 + 7 = 12. Is 12 a multiple of 3? Yes! So 147 ÷ 3 works perfectly. This also works for 9 — the digits must add to a multiple of 9.",
     tryThis: "Check if 258 divides by 3. (2 + 5 + 8 = 15, and 15 ÷ 3 = 5 — yes it does!)",
     colour: '#0984E3',
+    topicKeys: ['longdivision', 'primenumbersfactors'],
   },
   {
     id: 'maths-divisibility-quick-checks',
@@ -103,6 +111,7 @@ const mathsTips = [
     explanation: "Divides by 2? Last digit is even. By 5? Last digit is 0 or 5. By 10? Last digit is 0. By 4? Last two digits divide by 4. No actual dividing needed!",
     tryThis: "Does 3,456 divide by 4? Check the last two digits: 56 ÷ 4 = 14 — yes!",
     colour: '#0984E3',
+    topicKeys: ['longdivision', 'primenumbersfactors'],
   },
   {
     id: 'maths-near-round-numbers',
@@ -114,6 +123,7 @@ const mathsTips = [
     explanation: "For 356 + 99: add 100 to get 456, then subtract 1 = 455. For 500 − 298: subtract 300 to get 200, then add 2 back = 202. Round numbers are so much easier to work with!",
     tryThis: "Try 673 + 198 in your head. (673 + 200 = 873, minus 2 = 871!)",
     colour: '#0984E3',
+    topicKeys: ['placevalue'],
   },
   {
     id: 'maths-doubling-halving',
@@ -125,6 +135,7 @@ const mathsTips = [
     explanation: "Stuck on 35 × 4? Halve the 4 and double the 35: 70 × 2 = 140. Or 15 × 16: double 15 to 30, halve 16 to 8: 30 × 8 = 240. Keep going until one side is easy!",
     tryThis: "Try 25 × 12. (Double and halve: 50 × 6 = 300!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
   {
     id: 'maths-squaring-ending-5',
@@ -136,6 +147,7 @@ const mathsTips = [
     explanation: "For 35²: the tens digit is 3. Multiply 3 × 4 = 12. Stick 25 on the end: 1225. For 65²: 6 × 7 = 42, stick 25 on = 4225. Magic!",
     tryThis: "Work out 45² using this trick. (4 × 5 = 20, stick on 25 = 2025!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
   {
     id: 'maths-estimation-checking',
@@ -147,6 +159,7 @@ const mathsTips = [
     explanation: "If you're working out 49 × 21, estimate first: 50 × 20 = 1,000. So your answer should be close to 1,000. If you get 129, you know something went wrong!",
     tryThis: "Before your next calculation, write a quick estimate in the margin. Compare it to your answer!",
     colour: '#0984E3',
+    topicKeys: ['placevalue', 'longmultiplication', 'longdivision'],
   },
   {
     id: 'maths-halving-even-odd',
@@ -158,6 +171,7 @@ const mathsTips = [
     explanation: "Half of 78? Split it: half of 70 = 35, half of 8 = 4. So half of 78 = 39. This works for any number — just split it into chunks you're comfy with!",
     tryThis: "Find half of 156. (Half of 100 = 50, half of 56 = 28, total = 78!)",
     colour: '#0984E3',
+    topicKeys: ['longdivision', 'fractions'],
   },
   {
     id: 'maths-multiply-by-4-double-double',
@@ -169,6 +183,7 @@ const mathsTips = [
     explanation: "For 17 × 4: double 17 = 34, double again = 68. Much easier than doing 17 × 4 the long way! And × 8? Just double three times!",
     tryThis: "Try 23 × 4 by doubling twice. (23 → 46 → 92!)",
     colour: '#0984E3',
+    topicKeys: ['longmultiplication'],
   },
 
   // ===== PROBLEM SOLVING (15 tips) =====
@@ -183,6 +198,7 @@ const mathsTips = [
     explanation: "The first read is to get the picture in your head. The second read is to spot the key numbers and the actual question. Loads of marks are lost because people answer the wrong thing!",
     tryThis: "On your next word problem, underline the actual question they're asking. It's usually at the end!",
     colour: '#00B4D8',
+    topicKeys: ['ratio', 'percentages', 'speeddistancetime', 'algebra'],
   },
   {
     id: 'maths-rucsac-understand',
@@ -194,6 +210,7 @@ const mathsTips = [
     explanation: "Write 'I know:' and list the facts. Write 'I need:' and write what the answer should be. This stops you getting lost halfway through a tricky problem!",
     tryThis: "Next word problem — write 'I know' and 'I need' before you do any maths!",
     colour: '#00B4D8',
+    topicKeys: ['ratio', 'algebra', 'speeddistancetime', 'percentages'],
   },
   {
     id: 'maths-rucsac-choose-operation',
@@ -205,6 +222,7 @@ const mathsTips = [
     explanation: "'How many altogether?' = add. 'How many more?' = subtract. 'Share equally' = divide. 'Each person gets 3' = multiply. The question is giving you hints!",
     tryThis: "Make a poster of key words and their operations. Stick it where you study!",
     colour: '#00B4D8',
+    topicKeys: ['longmultiplication', 'longdivision', 'ratio'],
   },
   {
     id: 'maths-bar-model',
@@ -216,6 +234,7 @@ const mathsTips = [
     explanation: "If Tom has 3 times as many sweets as Sam, draw Sam's bar, then draw Tom's bar 3 times longer. Suddenly you can SEE the relationship. This is brilliant for ratio and fraction questions!",
     tryThis: "Draw a bar model for this: 'Ali has twice as many stickers as Ben. Together they have 18.'",
     colour: '#00B4D8',
+    topicKeys: ['ratio', 'fractions'],
   },
   {
     id: 'maths-work-backwards',
@@ -227,6 +246,7 @@ const mathsTips = [
     explanation: "'I doubled a number, added 5, and got 19. What was my number?' Start at 19, undo adding 5 (= 14), undo doubling (= 7). Working backwards turns hard questions into easy ones!",
     tryThis: "Try this: 'I tripled a number and subtracted 3 to get 15.' Work backwards to find it!",
     colour: '#00B4D8',
+    topicKeys: ['algebra', 'sequences'],
   },
   {
     id: 'maths-spot-keywords',
@@ -238,6 +258,7 @@ const mathsTips = [
     explanation: "This stops you missing important information. 'Sarah has 24 red marbles and 18 blue marbles. She gives away a quarter of her red marbles.' — if you don't notice it says RED marbles, you'll get it wrong!",
     tryThis: "On your next practice paper, physically circle numbers and underline key words before solving!",
     colour: '#00B4D8',
+    topicKeys: ['ratio', 'percentages', 'fractions', 'algebra'],
   },
   {
     id: 'maths-break-into-steps',
@@ -249,6 +270,7 @@ const mathsTips = [
     explanation: "A two-step problem is just two easy problems stuck together. 'How much change from £10 after buying 3 items at £2.50 each?' Step 1: 3 × £2.50 = £7.50. Step 2: £10 − £7.50 = £2.50. Done!",
     tryThis: "When a question has more than one step, number each step before you start calculating!",
     colour: '#00B4D8',
+    topicKeys: ['percentages', 'ratio', 'speeddistancetime'],
   },
   {
     id: 'maths-check-makes-sense',
@@ -260,6 +282,7 @@ const mathsTips = [
     explanation: "If someone's age comes out as 347, that's wrong! If a classroom has 0.5 children, something went wrong. If a sandwich costs £500, check your working. Your brain is the best calculator for spotting nonsense!",
     tryThis: "After every answer, spend 3 seconds asking: 'Is this a sensible number for this situation?'",
     colour: '#00B4D8',
+    topicKeys: ['placevalue', 'speeddistancetime', 'ratio', 'percentages'],
   },
   {
     id: 'maths-estimate-before-calculating',
@@ -271,6 +294,7 @@ const mathsTips = [
     explanation: "Before working out 312 × 19, think: '300 × 20 = 6,000, so it should be near 6,000.' If your answer is 592 or 59,280, you know you've made an error!",
     tryThis: "Write your estimate in the margin before every calculation. It takes 5 seconds and catches loads of mistakes!",
     colour: '#00B4D8',
+    topicKeys: ['placevalue', 'longmultiplication', 'longdivision'],
   },
   {
     id: 'maths-draw-a-picture',
@@ -282,6 +306,7 @@ const mathsTips = [
     explanation: "If a question talks about a garden, a journey, or sharing sweets — draw it! It doesn't need to be neat, just enough to help you see what's going on. Even stick figures help!",
     tryThis: "Next time you're stuck on a word problem, draw a rough picture before you try any maths!",
     colour: '#00B4D8',
+    topicKeys: ['areaperimeter', 'volume', 'anglesshapes', 'ratio'],
   },
   {
     id: 'maths-try-simpler-numbers',
@@ -293,6 +318,7 @@ const mathsTips = [
     explanation: "Confused by '37.5% of 480'? First try '50% of 10' — that's 5. Oh, so I'm finding a fraction of a number! Now you know what to do with the harder version.",
     tryThis: "If a question uses tricky numbers, swap them for 10, 2, or 100 to figure out the method first!",
     colour: '#00B4D8',
+    topicKeys: ['percentages', 'fractions', 'ratio'],
   },
   {
     id: 'maths-inverse-check',
@@ -304,6 +330,7 @@ const mathsTips = [
     explanation: "Got 156 + 237 = 393? Check: 393 − 237 should equal 156. Got 84 ÷ 7 = 12? Check: 12 × 7 should equal 84. It's a free way to catch mistakes!",
     tryThis: "After your next calculation, check it using the opposite operation. Make it a habit!",
     colour: '#00B4D8',
+    topicKeys: ['longmultiplication', 'longdivision', 'algebra'],
   },
   {
     id: 'maths-multi-step-track',
@@ -315,6 +342,7 @@ const mathsTips = [
     explanation: "Don't try to do three steps in your head! Write step 1, then step 2, then step 3. If you get the wrong answer, you can see exactly where it went wrong and fix just that bit.",
     tryThis: "For your next multi-step problem, write each step on its own line with a clear label!",
     colour: '#00B4D8',
+    topicKeys: ['algebra', 'percentages', 'speeddistancetime'],
   },
   {
     id: 'maths-look-for-patterns',
@@ -326,6 +354,7 @@ const mathsTips = [
     explanation: "If a sequence goes 2, 6, 18, 54 — what's happening? Each number is multiplied by 3! Spotting patterns is like finding a shortcut. It saves you from doing loads of working out.",
     tryThis: "In your next sequence question, write what you do to get from each number to the next!",
     colour: '#00B4D8',
+    topicKeys: ['sequences', 'algebra'],
   },
   {
     id: 'maths-eliminate-wrong-answers',
@@ -337,6 +366,7 @@ const mathsTips = [
     explanation: "If you're multiplying two odd numbers, the answer must be odd — cross out any even options! If you're adding two numbers over 100, cross out anything under 200. Use logic before calculation!",
     tryThis: "Before calculating on your next multiple choice question, see if you can eliminate at least one option!",
     colour: '#00B4D8',
+    topicKeys: ['longmultiplication', 'primenumbersfactors'],
   },
 
   // ===== SHAPE & SPACE (10 tips) =====
@@ -351,6 +381,7 @@ const mathsTips = [
     explanation: "If you know two angles, you can always find the third! Got 70° and 60°? The missing angle is 180 − 70 − 60 = 50°. This works for every triangle ever — skinny ones, fat ones, any triangle!",
     tryThis: "Find the missing angle in a triangle with angles of 90° and 45°. (180 − 90 − 45 = 45°!)",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes'],
   },
   {
     id: 'maths-straight-line-180',
@@ -362,6 +393,7 @@ const mathsTips = [
     explanation: "If you see a straight line with an angle of 130° on one side, the other side must be 50° because 130 + 50 = 180. This rule pops up everywhere — especially in shape questions!",
     tryThis: "Draw a straight line, put a line through it at any angle, and check both angles add to 180°!",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes'],
   },
   {
     id: 'maths-spot-isosceles',
@@ -373,6 +405,7 @@ const mathsTips = [
     explanation: "If you spot those little tick marks showing two equal sides, you know two angles match. If the top angle is 40°, the two base angles share the rest: (180 − 40) ÷ 2 = 70° each!",
     tryThis: "Look for tick marks in your next triangle question — they're telling you it's isosceles!",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes'],
   },
   {
     id: 'maths-area-vs-perimeter',
@@ -384,6 +417,7 @@ const mathsTips = [
     explanation: "Think of it this way: if you're painting a wall, you need the AREA. If you're building a fence around a garden, you need the PERIMETER. Area uses × (multiply), perimeter uses + (add up sides).",
     tryThis: "For a 5cm × 3cm rectangle: Area = 5 × 3 = 15cm², Perimeter = 5 + 3 + 5 + 3 = 16cm. See the difference?",
     colour: '#4361EE',
+    topicKeys: ['areaperimeter'],
   },
   {
     id: 'maths-cube-nets',
@@ -395,6 +429,7 @@ const mathsTips = [
     explanation: "Imagine cutting a box open and flattening it. There are 11 different nets that fold into a cube. The easiest to spot: a row of 4 squares with 1 poking out on each side. If opposite faces touch in the net, it won't fold right!",
     tryThis: "Draw a cross shape with 6 squares, cut it out, and fold it into a cube to prove it works!",
     colour: '#4361EE',
+    topicKeys: ['volume', 'anglesshapes'],
   },
   {
     id: 'maths-quadrilateral-properties',
@@ -406,6 +441,7 @@ const mathsTips = [
     explanation: "Square: 4 equal sides, 4 right angles. Rectangle: opposite sides equal, 4 right angles. Rhombus: 4 equal sides, opposite angles equal. Parallelogram: opposite sides parallel and equal. Trapezium: exactly one pair of parallel sides.",
     tryThis: "Draw each quadrilateral and write its special properties next to it — make a cheat sheet!",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes', 'areaperimeter'],
   },
   {
     id: 'maths-area-triangle',
@@ -417,6 +453,7 @@ const mathsTips = [
     explanation: "Draw a rectangle around any triangle and you'll see the triangle fills exactly half of it. So: base × height gives the rectangle's area, then ÷ 2 gives the triangle. Don't forget to halve it!",
     tryThis: "Find the area of a triangle with base 8cm and height 6cm. (8 × 6 = 48, ÷ 2 = 24cm²!)",
     colour: '#4361EE',
+    topicKeys: ['areaperimeter', 'anglesshapes'],
   },
   {
     id: 'maths-angles-full-turn',
@@ -428,6 +465,7 @@ const mathsTips = [
     explanation: "Think of spinning all the way around — that's 360°. If three angles at a point are 90°, 120°, and 80°, the missing one is 360 − 90 − 120 − 80 = 70°.",
     tryThis: "Find the missing angle at a point where the other angles are 150°, 110°, and 60°. (360 − 320 = 40°!)",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes'],
   },
   {
     id: 'maths-parallel-lines-angles',
@@ -439,6 +477,7 @@ const mathsTips = [
     explanation: "Alternate angles (Z-shape) are equal. Corresponding angles (F-shape) are equal. Co-interior angles (C-shape) add to 180°. Spot the letter shape in the diagram and you'll know the rule!",
     tryThis: "In your next parallel lines question, trace the Z, F, or C shape with your finger before answering!",
     colour: '#4361EE',
+    topicKeys: ['anglesshapes'],
   },
   {
     id: 'maths-volume-cuboid',
@@ -450,6 +489,7 @@ const mathsTips = [
     explanation: "Volume tells you how much space is inside a 3D shape — think about filling a box with water. A box that's 4cm × 3cm × 2cm has a volume of 24cm³. The little ³ means cubic (three dimensions)!",
     tryThis: "Find the volume of a box that's 5cm long, 4cm wide, and 3cm tall. (5 × 4 × 3 = 60cm³!)",
     colour: '#4361EE',
+    topicKeys: ['volume'],
   },
 
   // ===== NUMBERS & OPERATIONS (10 tips) =====
@@ -464,6 +504,7 @@ const mathsTips = [
     explanation: "In 3,527, the 5 is worth 500. But in 5,327, that same 5 is worth 5,000! Each step left makes a digit 10 times bigger. Each step right makes it 10 times smaller. This is true for decimals too!",
     tryThis: "In the number 46,803 — what is the value of the 8? (It's in the hundreds column, so it's worth 800!)",
     colour: '#3A86FF',
+    topicKeys: ['placevalue', 'decimals'],
   },
   {
     id: 'maths-bodmas',
@@ -475,6 +516,7 @@ const mathsTips = [
     explanation: "In 3 + 4 × 2, you do the × first: 4 × 2 = 8, then 3 + 8 = 11 (NOT 7 × 2 = 14!). If there are brackets, do those first no matter what. Division and multiplication are done left-to-right, same for addition and subtraction.",
     tryThis: "Solve: 2 + 3 × (4 + 1). Brackets first: (5), then × : 3 × 5 = 15, then +: 2 + 15 = 17!",
     colour: '#3A86FF',
+    topicKeys: ['algebra', 'longmultiplication', 'longdivision'],
   },
   {
     id: 'maths-negative-numbers',
@@ -486,6 +528,7 @@ const mathsTips = [
     explanation: "If it's −3°C and warms up by 5 degrees, you go up the thermometer: −3, −2, −1, 0, 1, 2 — you land on 2°C. Going down from 1 by 4? Count down: 1, 0, −1, −2, −3. You land on −3°C!",
     tryThis: "Start at −7. Add 10. Where do you end up? (Count up 10 from −7 = 3!)",
     colour: '#3A86FF',
+    topicKeys: ['negativenumbers'],
   },
   {
     id: 'maths-prime-numbers',
@@ -497,6 +540,7 @@ const mathsTips = [
     explanation: "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37. Notice that 2 is the ONLY even prime! 1 is NOT prime (that catches loads of people). Every other even number can be divided by 2, so they can't be prime.",
     tryThis: "Memorise the primes up to 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Test yourself!",
     colour: '#3A86FF',
+    topicKeys: ['primenumbersfactors'],
   },
   {
     id: 'maths-factors-pairs',
@@ -508,6 +552,7 @@ const mathsTips = [
     explanation: "Factors of 24: start with 1 × 24, then 2 × 12, then 3 × 8, then 4 × 6. Stop when the pairs meet in the middle! So factors of 24 are: 1, 2, 3, 4, 6, 8, 12, 24. You'll never miss any this way.",
     tryThis: "Find all the factor pairs of 36. Start with 1 × 36 and work upward!",
     colour: '#3A86FF',
+    topicKeys: ['primenumbersfactors', 'longdivision'],
   },
   {
     id: 'maths-multiples-patterns',
@@ -519,6 +564,7 @@ const mathsTips = [
     explanation: "Multiples of 6: 6, 12, 18, 24, 30, 36... It's just the 6 times table! To check if 42 is a multiple of 6, ask: 'Is 42 in the 6 times table?' 6 × 7 = 42 — yes it is!",
     tryThis: "Is 56 a multiple of 7? Think: is it in the 7 times table? (7 × 8 = 56 — yes!)",
     colour: '#3A86FF',
+    topicKeys: ['primenumbersfactors', 'longmultiplication'],
   },
   {
     id: 'maths-rounding-rules',
@@ -530,6 +576,7 @@ const mathsTips = [
     explanation: "Round 347 to the nearest 10: look at the 7 (ones digit). 7 ≥ 5, so round up: 350. Round 4,238 to the nearest 100: look at the 3 (tens digit). 3 < 5, so round down: 4,200.",
     tryThis: "Round 6,851 to the nearest 100. (Look at the 5 in the tens: 5 means round up = 6,900!)",
     colour: '#3A86FF',
+    topicKeys: ['placevalue'],
   },
   {
     id: 'maths-lcm-hcf',
@@ -541,6 +588,7 @@ const mathsTips = [
     explanation: "LCM of 4 and 6: list multiples. 4: 4, 8, 12, 16... 6: 6, 12, 18... First match = 12! HCF of 12 and 18: list factors. 12: 1, 2, 3, 4, 6, 12. 18: 1, 2, 3, 6, 9, 18. Biggest shared = 6!",
     tryThis: "Find the LCM of 3 and 5. (Multiples of 3: 3, 6, 9, 12, 15... Multiples of 5: 5, 10, 15... LCM = 15!)",
     colour: '#3A86FF',
+    topicKeys: ['primenumbersfactors', 'fractions'],
   },
   {
     id: 'maths-square-numbers',
@@ -552,6 +600,7 @@ const mathsTips = [
     explanation: "1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. A square number is just a number times itself. Knowing these means you can spot them instantly in questions about area, factors, and sequences!",
     tryThis: "Cover the list above and write out all square numbers from 1² to 15². How many can you get?",
     colour: '#3A86FF',
+    topicKeys: ['primenumbersfactors', 'areaperimeter', 'sequences'],
   },
   {
     id: 'maths-order-of-negative',
@@ -563,6 +612,7 @@ const mathsTips = [
     explanation: "−10 is smaller than −3, even though 10 looks bigger! Think temperature: −10°C is much colder (smaller) than −3°C. On a number line, left is always smaller. So: −8 < −5 < −1 < 0 < 2 < 7.",
     tryThis: "Put these in order from smallest to largest: 3, −7, 0, −2, 5, −10. (−10, −7, −2, 0, 3, 5!)",
     colour: '#3A86FF',
+    topicKeys: ['negativenumbers', 'placevalue'],
   },
 
   // ===== COMMON TRAPS (10 tips) =====
@@ -577,6 +627,7 @@ const mathsTips = [
     explanation: "Before you start calculating, highlight the word 'area' or 'perimeter' in the question. Area = multiply sides (cm²). Perimeter = add all sides (cm). They'll try to trick you by using both in the same question!",
     tryThis: "Before answering any shape question, point to the word 'area' or 'perimeter' in the question. Every time!",
     colour: '#F59E0B',
+    topicKeys: ['areaperimeter'],
   },
   {
     id: 'maths-trap-of-means-multiply',
@@ -588,6 +639,7 @@ const mathsTips = [
     explanation: "¼ of 20 = ¼ × 20 = 5. 30% of 50 = 30% × 50. 'Half of my sweets' = ½ × sweets. When you see 'of' in a fraction or percentage question, your brain should think 'multiply!'",
     tryThis: "Next time you see 'of' in a maths question, write a × sign above it!",
     colour: '#F59E0B',
+    topicKeys: ['fractions', 'percentages'],
   },
   {
     id: 'maths-trap-remainder-questions',
@@ -599,6 +651,7 @@ const mathsTips = [
     explanation: "'63 children need minibuses that hold 15. How many minibuses?' 63 ÷ 15 = 4 remainder 3. The answer is 5 minibuses (not 4!), because those 3 leftover children still need a bus! The question changes the answer.",
     tryThis: "Always re-read remainder questions and ask: 'What does the remainder MEAN in this real situation?'",
     colour: '#F59E0B',
+    topicKeys: ['longdivision'],
   },
   {
     id: 'maths-trap-unit-conversion',
@@ -610,6 +663,7 @@ const mathsTips = [
     explanation: "A rectangle is 2m long and 50cm wide. Area = 2 × 50 = 100? NO! Convert first: 2m = 200cm. Area = 200 × 50 = 10,000cm². Or: 50cm = 0.5m. Area = 2 × 0.5 = 1m². Different units, same answer!",
     tryThis: "Circle the units in every question. If they don't match, convert before calculating!",
     colour: '#F59E0B',
+    topicKeys: ['areaperimeter', 'volume', 'speeddistancetime'],
   },
   {
     id: 'maths-trap-answer-or-working',
@@ -621,6 +675,7 @@ const mathsTips = [
     explanation: "'Tom buys 3 pens at 45p each. How much change from £5?' Some people stop at 3 × 45p = £1.35 and choose that answer. But the question asks for CHANGE: £5 − £1.35 = £3.65. Always check: have you answered the actual question?",
     tryThis: "After calculating, re-read the last sentence of the question. Did you answer THAT specific thing?",
     colour: '#F59E0B',
+    topicKeys: ['percentages', 'ratio', 'speeddistancetime'],
   },
   {
     id: 'maths-trap-multiplication-bigger',
@@ -632,6 +687,7 @@ const mathsTips = [
     explanation: "20 × 0.5 = 10 (smaller!). 30 × ⅓ = 10 (smaller!). Your brain says 'multiply = bigger', but that's only true for whole numbers above 1. With decimals and fractions less than 1, multiplying shrinks the number.",
     tryThis: "Work out 100 × 0.1. Is the answer bigger or smaller than 100? (It's 10 — smaller!)",
     colour: '#F59E0B',
+    topicKeys: ['decimals', 'fractions'],
   },
   {
     id: 'maths-trap-read-twice',
@@ -643,6 +699,7 @@ const mathsTips = [
     explanation: "First read: understand the story. Second read: spot the key numbers and what they're asking for. You'll be amazed how often you catch something you missed the first time — a sneaky 'not' or a unit change!",
     tryThis: "Make it a rule: never start writing until you've read the question at least twice!",
     colour: '#F59E0B',
+    topicKeys: ['ratio', 'percentages', 'algebra', 'speeddistancetime'],
   },
   {
     id: 'maths-trap-dont-change-answer',
@@ -654,6 +711,7 @@ const mathsTips = [
     explanation: "Studies show people who change answers without finding a real error get WORSE scores. If you feel unsure, check your working step by step. If you find an actual mistake, change it. If it's just a feeling, leave it alone!",
     tryThis: "If you want to change an answer, write out why. If you can't explain the mistake, keep your original!",
     colour: '#F59E0B',
+    topicKeys: ['percentages', 'fractions', 'longdivision', 'algebra'],
   },
   {
     id: 'maths-trap-decimal-point',
@@ -665,6 +723,7 @@ const mathsTips = [
     explanation: "3.45 × 10 = 34.5 (not 3.450!). The decimal point moves, it doesn't just sit there! And 0.7 × 0.3 = 0.21 (not 2.1 or 0.021). Count your decimal places: 1 decimal place × 1 decimal place = 2 decimal places in the answer.",
     tryThis: "After any decimal calculation, estimate to check: is 0.7 × 0.3 closer to 0 or closer to 2? (Closer to 0 — so 0.21 makes sense!)",
     colour: '#F59E0B',
+    topicKeys: ['decimals', 'placevalue'],
   },
   {
     id: 'maths-trap-negative-subtraction',
@@ -676,6 +735,7 @@ const mathsTips = [
     explanation: "5 − (−3) = 5 + 3 = 8. Think of it as: if you take away a debt, you get richer! 'Minus a minus' = plus. But minus a plus is still minus: 5 − (+3) = 2. Watch out for brackets around negative numbers!",
     tryThis: "Work out: 10 − (−4). (It's 10 + 4 = 14!)",
     colour: '#F59E0B',
+    topicKeys: ['negativenumbers'],
   },
 ];
 

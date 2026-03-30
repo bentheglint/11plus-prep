@@ -1,27 +1,42 @@
 import React, { useState, useMemo } from 'react';
-import { ArrowLeft, Lightbulb, Sparkles } from 'lucide-react';
+import { ArrowLeft, Lightbulb, Sparkles, BookOpen } from 'lucide-react';
 import TipCard from '../components/TipCard';
+import LessonBrowser from '../components/LessonBrowser';
+import { getWeakTopics } from '../utils/tipSelection';
 
-function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, onBack }) {
+function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerformance, lessonBank, lessonHistory, onLaunchLesson, toolkitLessonsViewed, onStartQuiz, onBack }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showIntro, setShowIntro] = useState(true);
+  const [activeTab, setActiveTab] = useState('tips');
 
   const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
   const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
   const colour = subjectColours[subject] || '#6C5CE7';
   const subjectName = subjectNames[subject] || 'General';
 
-  // Filter tips for this subject + general tips, unseen first
+  // Filter tips for this subject + general tips, sorted by relevance to weak topics
   const availableTips = useMemo(() => {
     const subjectTips = (tips || []).filter(t => t.subject === subject || t.subject === 'general');
     const seenSet = new Set(seenTips || []);
 
-    // Unseen first, then seen (least recently seen first)
-    const unseen = subjectTips.filter(t => !seenSet.has(t.id));
-    const seen = subjectTips.filter(t => seenSet.has(t.id));
+    // Find child's weakest topics for relevance-based sorting
+    const weakTopics = getWeakTopics(topicPerformance, 3);
+    const weakSet = new Set(weakTopics);
 
-    return [...unseen, ...seen];
-  }, [tips, subject, seenTips]);
+    // 3-tier sort: unseen+weak-relevant (3), unseen (2), seen+weak-relevant (1), seen (0)
+    const scored = subjectTips.map(t => {
+      const isUnseen = !seenSet.has(t.id);
+      const isWeakRelevant = (t.topicKeys || []).some(k => weakSet.has(k));
+      let score = 0;
+      if (isUnseen && isWeakRelevant) score = 3;
+      else if (isUnseen) score = 2;
+      else if (isWeakRelevant) score = 1;
+      return { tip: t, score };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.map(s => s.tip);
+  }, [tips, subject, seenTips, topicPerformance]);
 
   const unseenCount = useMemo(() => {
     const seenSet = new Set(seenTips || []);
@@ -60,7 +75,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, onBack }) {
             {subjectName} Study Toolkit
           </h2>
           <p className="text-lg text-[#636E72] mb-2">
-            Tips, tricks, and strategies to help you ace the exam!
+            Tips, strategies, and lessons to help you ace the exam!
           </p>
           {unseenCount > 0 ? (
             <div className="flex items-center justify-center gap-2 mb-8">
@@ -79,25 +94,14 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, onBack }) {
             className="px-10 py-4 text-white font-bold rounded-xl text-lg transition-all shadow-lg hover:shadow-xl"
             style={{ background: colour }}
           >
-            Show Me Tips! ✨
+            Let's Study!
           </button>
           <button
             onClick={onBack}
             className="block mx-auto mt-4 text-sm text-[#636E72] hover:text-[#2D3436]"
           >
-            ← Back
+            &larr; Back
           </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (!currentTip) {
-    return (
-      <div className="app-bg p-4 min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-lg text-[#636E72]">No tips available yet!</p>
-          <button onClick={onBack} className="mt-4 px-6 py-3 btn-primary">Go Back</button>
         </div>
       </div>
     );
@@ -121,17 +125,64 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, onBack }) {
           </div>
         </div>
 
-        {/* Tip card */}
-        <div className="animate-fade-in-up">
-          <TipCard
-            tip={currentTip}
-            index={currentIndex}
-            total={availableTips.length}
-            onNext={handleNext}
-            onBack={handlePrev}
-            isLast={currentIndex === availableTips.length - 1}
-          />
+        {/* Tab bar */}
+        <div className="flex gap-1 bg-gray-100 rounded-xl p-1 mb-4">
+          <button
+            onClick={() => setActiveTab('tips')}
+            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+              activeTab === 'tips'
+                ? 'bg-white text-[#2D3436] shadow-sm'
+                : 'text-[#636E72] hover:text-[#2D3436]'
+            }`}
+          >
+            <Lightbulb className="w-4 h-4" />
+            Tips & Strategies
+          </button>
+          <button
+            onClick={() => setActiveTab('lessons')}
+            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+              activeTab === 'lessons'
+                ? 'bg-white text-[#2D3436] shadow-sm'
+                : 'text-[#636E72] hover:text-[#2D3436]'
+            }`}
+          >
+            <BookOpen className="w-4 h-4" />
+            Lessons
+          </button>
         </div>
+
+        {/* Tab content */}
+        {activeTab === 'tips' ? (
+          // Tips carousel
+          currentTip ? (
+            <div className="animate-fade-in-up">
+              <TipCard
+                tip={currentTip}
+                index={currentIndex}
+                total={availableTips.length}
+                onNext={handleNext}
+                onBack={handlePrev}
+                isLast={currentIndex === availableTips.length - 1}
+              />
+            </div>
+          ) : (
+            <div className="text-center py-8">
+              <p className="text-lg text-[#636E72]">No tips available yet!</p>
+            </div>
+          )
+        ) : (
+          // Lesson browser
+          <div className="animate-fade-in-up">
+            <LessonBrowser
+              subject={subject}
+              lessonBank={lessonBank}
+              lessonHistory={lessonHistory}
+              onLaunchLesson={onLaunchLesson}
+              toolkitLessonsViewed={toolkitLessonsViewed || 0}
+              onStartQuiz={onStartQuiz}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

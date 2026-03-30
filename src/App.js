@@ -29,6 +29,11 @@ import useStreaksAndPP from './hooks/useStreaksAndPP';
 import mathsData from './questionData/mathsData';
 import englishData from './questionData/englishData';
 import vrData from './questionData/vrData';
+import allTips from './data/studyTips';
+import { selectPostQuestionTip, selectPreQuizTip } from './utils/tipSelection';
+import PreQuizTipCard from './components/PreQuizTipCard';
+import WelcomeBackScreen from './components/WelcomeBackScreen';
+import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
 const quizVisualComponents = {
@@ -97,6 +102,20 @@ function App() {
   const recognitionRef = React.useRef(null);
   const questionStartTime = React.useRef(Date.now());
   const quizSessionId = React.useRef(Date.now());
+  // Post-question tip state (Oracle: show tip ~every 3rd wrong answer)
+  const wrongAnswerCount = React.useRef(0);
+  const sessionShownTipIds = React.useRef(new Set());
+  const [postQuestionTip, setPostQuestionTip] = useState(null);
+  // Pre-quiz tip state (Oracle: brief tip before quiz starts)
+  const [preQuizTip, setPreQuizTip] = useState(null);
+  const [showPreQuizTip, setShowPreQuizTip] = useState(false);
+  // Welcome Back state (Oracle: spaced resurfacing after 2+ days away)
+  const [showWelcomeBack, setShowWelcomeBack] = useState(false);
+  const [welcomeBackTip, setWelcomeBackTip] = useState(null);
+  const welcomeBackChecked = React.useRef(false);
+  // Lesson Browser state (Oracle: standalone lesson access from Study Toolkit)
+  const [returnToToolkit, setReturnToToolkit] = useState(false);
+  const toolkitLessonsViewed = React.useRef(0);
   const [quizMode, setQuizMode] = useState(null);
   const [returnToSpeedReview, setReturnToSpeedReview] = useState(false);
   const [speedReviewTab, setSpeedReviewTab] = useState('lessons');
@@ -215,6 +234,32 @@ function App() {
     });
   }, []);
 
+  // Welcome Back: check if 2+ days since last session
+  useEffect(() => {
+    if (!currentUser || welcomeBackChecked.current) return;
+    welcomeBackChecked.current = true;
+
+    const lastDate = userData.lastSessionDate;
+    if (!lastDate) {
+      // First ever session — just set the date, no welcome back
+      userData.saveLastSessionDate(new Date().toISOString());
+      return;
+    }
+    const daysSince = (Date.now() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24);
+    if (daysSince < 2) {
+      userData.saveLastSessionDate(new Date().toISOString());
+      return;
+    }
+    // 2+ days away: find a tip to resurface
+    const tip = selectWelcomeBackTip(allTips, userData.seenTips, topicPerformance);
+    if (tip) {
+      setWelcomeBackTip(tip);
+      setShowWelcomeBack(true);
+    } else {
+      userData.saveLastSessionDate(new Date().toISOString());
+    }
+  }, [currentUser]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const saveQuizResult = (subject, topic, score, total) => {
     const newResult = {
       id: Date.now(),
@@ -241,11 +286,18 @@ function App() {
     setAnswers([]);
     questionStartTime.current = Date.now();
     quizSessionId.current = Date.now();
+    wrongAnswerCount.current = 0;
+    sessionShownTipIds.current = new Set();
+    setPostQuestionTip(null);
     setSelectedAnswer(null);
     setSelectedPair([]);
     setShowFeedback(false);
     setShowTutorChat(false);
     setChatMessages([]);
+    // Pre-quiz tip for Daily: general strategy tip
+    const tip = selectPreQuizTip('daily', null, allTips, userData.seenTips);
+    setPreQuizTip(tip);
+    setShowPreQuizTip(!!tip);
     setCurrentView('quiz');
   };
 
@@ -258,6 +310,9 @@ function App() {
     setAnswers([]);
     questionStartTime.current = Date.now();
     quizSessionId.current = Date.now();
+    wrongAnswerCount.current = 0;
+    sessionShownTipIds.current = new Set();
+    setPostQuestionTip(null);
     setSelectedAnswer(null);
     setSelectedPair([]);
     setShowFeedback(false);
@@ -333,6 +388,24 @@ function App() {
       correct: isCorrect,
       timeSpentMs,
     }]);
+
+    // Post-question tip: show ~every 3rd wrong answer
+    if (!isCorrect) {
+      wrongAnswerCount.current += 1;
+      if (wrongAnswerCount.current % 3 === 1) {
+        const tip = selectPostQuestionTip(currentQ.topicKey, allTips, sessionShownTipIds.current, userData.seenTips);
+        if (tip) {
+          sessionShownTipIds.current.add(tip.id);
+          setPostQuestionTip(tip);
+        } else {
+          setPostQuestionTip(null);
+        }
+      } else {
+        setPostQuestionTip(null);
+      }
+    } else {
+      setPostQuestionTip(null);
+    }
   };
 
   const handleNextQuestion = () => {
@@ -361,8 +434,15 @@ function App() {
       recordQuizResults(quizQuestions, answers);
       const topicLabel = quizMode === 'daily' ? 'Daily Learning' : quizQuestions[0].topicName;
       saveQuizResult(selectedSubject, topicLabel, correctCount, quizQuestions.length);
+      userData.saveLastSessionDate(new Date().toISOString());
       setCurrentView('results');
     }
+  };
+
+  const handleDismissPreQuizTip = () => {
+    if (preQuizTip) userData.markTipSeen(preQuizTip.id);
+    setShowPreQuizTip(false);
+    setPreQuizTip(null);
   };
 
   const handleRetry = () => {
@@ -374,6 +454,9 @@ function App() {
     }
     setCurrentQuestionIndex(0);
     setAnswers([]);
+    wrongAnswerCount.current = 0;
+    sessionShownTipIds.current = new Set();
+    setPostQuestionTip(null);
     setSelectedAnswer(null);
     setSelectedPair([]);
     setShowFeedback(false);
@@ -430,6 +513,36 @@ function App() {
   };
 
   // "Find Me a Lesson" — look up the question's mapped lesson and launch it
+  // Launch a lesson from the Study Toolkit lesson browser
+  const handleToolkitLessonLaunch = (topicKey, subConceptId, lesson) => {
+    // Build forced lesson result similar to handleFindLesson
+    const topicLessons = lessonBank[topicKey];
+    if (!topicLessons) return;
+
+    const subConcept = topicLessons.subConcepts.find(sc => sc.id === subConceptId);
+    if (!subConcept || !lesson) return;
+
+    // Pick variable sets
+    const variableSets = lesson.variableSets || [];
+    const mainIdx = Math.floor(Math.random() * variableSets.length);
+    let interactIdx = mainIdx;
+    if (variableSets.length > 1) {
+      do { interactIdx = Math.floor(Math.random() * variableSets.length); } while (interactIdx === mainIdx);
+    }
+
+    setForcedLessonResult({
+      lesson,
+      variables: variableSets[mainIdx],
+      interactVariables: variableSets[interactIdx],
+      subConceptId,
+      topicName: topicLessons.name,
+    });
+    setSelectedTopic(topicKey);
+    setReturnToToolkit(true);
+    toolkitLessonsViewed.current += 1;
+    setCurrentView('lesson');
+  };
+
   const handleFindLesson = () => {
     const currentQ = quizQuestions[currentQuestionIndex];
     const topicKey = currentQ.topicKey || selectedTopic;
@@ -984,6 +1097,21 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     />;
   }
 
+  // Welcome Back interstitial (spaced resurfacing)
+  if (currentView === 'home' && showWelcomeBack && welcomeBackTip) {
+    return (
+      <WelcomeBackScreen
+        tip={welcomeBackTip}
+        onDismiss={() => {
+          userData.markTipSeen(welcomeBackTip.id);
+          userData.saveLastSessionDate(new Date().toISOString());
+          setShowWelcomeBack(false);
+          setWelcomeBackTip(null);
+        }}
+      />
+    );
+  }
+
   if (currentView === 'home') {
     return (
       <HomeScreen
@@ -1015,15 +1143,22 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   }
 
   if (currentView === 'studyToolkit') {
-    // Lazy import to avoid loading all tips on every page
-    const allTips = require('./data/studyTips').default;
     return (
       <StudyToolkitScreen
         subject={selectedSubject}
         tips={allTips}
-        seenTips={userData.seenTips}
+        seenTips={userData.seenTipIds}
         onMarkSeen={userData.markTipSeen}
-        onBack={() => setCurrentView('learningMode')}
+        topicPerformance={topicPerformance}
+        lessonBank={lessonBank}
+        lessonHistory={lessonHistory}
+        onLaunchLesson={handleToolkitLessonLaunch}
+        toolkitLessonsViewed={toolkitLessonsViewed.current}
+        onStartQuiz={() => setCurrentView('topics')}
+        onBack={() => {
+          toolkitLessonsViewed.current = 0;
+          setCurrentView('learningMode');
+        }}
       />
     );
   }
@@ -1159,7 +1294,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         currentUser={currentUser}
         onSheetSubmit={submitToGoogleSheet}
         forcedLessonResult={forcedLessonResult}
-        backLabel={returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
+        backLabel={returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
         onComplete={(lessonRecord) => {
           if (lessonRecord) {
             const updated = { ...lessonHistory };
@@ -1174,16 +1309,26 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           if (lessonFromQuiz) {
             setShowDidItHelp(true);
             setCurrentView('quiz');
+          } else if (returnToToolkit) {
+            setReturnToToolkit(false);
+            setCurrentView('studyToolkit');
           } else if (returnToSpeedReview) {
             setReturnToSpeedReview(false);
             setCurrentView('speedReview');
           } else {
+            // Pre-quiz tip for Focused Learning: topic-specific tip
+            const tip = selectPreQuizTip('focused', selectedTopic, allTips, userData.seenTips);
+            setPreQuizTip(tip);
+            setShowPreQuizTip(!!tip);
             setCurrentView('quiz');
           }
         }}
         onBack={() => {
           setForcedLessonResult(null);
-          if (returnToSpeedReview) {
+          if (returnToToolkit) {
+            setReturnToToolkit(false);
+            setCurrentView('studyToolkit');
+          } else if (returnToSpeedReview) {
             setReturnToSpeedReview(false);
             setCurrentView('speedReview');
           } else {
@@ -1303,6 +1448,11 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     );
   }
 
+  // Pre-quiz tip interstitial (after lesson, before quiz starts)
+  if (currentView === 'quiz' && showPreQuizTip && preQuizTip) {
+    return <PreQuizTipCard tip={preQuizTip} onDismiss={handleDismissPreQuizTip} />;
+  }
+
   if (currentView === 'quiz') {
     return (
       <QuizScreen
@@ -1324,6 +1474,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         currentUser={currentUser}
         speechSupported={speechSupported}
         quizVisualComponents={quizVisualComponents}
+        postQuestionTip={postQuestionTip}
         onAnswerSelect={handleAnswerSelect}
         onSelectTwoToggle={handleSelectTwoToggle}
         onPickFromSet={handlePickFromSet}
@@ -1357,6 +1508,10 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         <ResultsScreen
           answers={answers}
           quizMode={quizMode}
+          quizQuestions={quizQuestions}
+          allTips={allTips}
+          seenTips={userData.seenTips}
+          onMarkTipSeen={userData.markTipSeen}
           onRetry={handleRetry}
           onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
           onHome={handleHome}
