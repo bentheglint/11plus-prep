@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, ThumbsUp, Zap, ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle } from 'lucide-react';
+import { Trophy, ThumbsUp, Zap, ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Clock } from 'lucide-react';
 
 function MockTestResultsScreen({ results, onHome, onTryAgain }) {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -168,6 +168,53 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
             })}
           </div>
         </div>
+
+        {/* Time Analysis */}
+        {results.questionTimes && Object.keys(results.questionTimes).length > 0 && (() => {
+          const times = Object.values(results.questionTimes).filter(t => t > 0);
+          if (times.length === 0) return null;
+          const avgTime = Math.round(times.reduce((a, b) => a + b, 0) / times.length / 1000);
+          const slowQuestions = Object.entries(results.questionTimes)
+            .filter(([, t]) => t > avgTime * 2 * 1000)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5);
+
+          return (
+            <div className="card-elevated p-6 mb-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Clock className="w-5 h-5 text-[#6C5CE7]" />
+                <h3 className="text-xl font-heading font-bold text-[#2D3436]">Time Analysis</h3>
+              </div>
+              <div className="grid grid-cols-3 gap-4 mb-4">
+                <div className="text-center p-3 bg-gray-50 rounded-xl">
+                  <p className="text-2xl font-bold text-[#2D3436]">{avgTime}s</p>
+                  <p className="text-xs text-[#636E72]">Avg per question</p>
+                </div>
+                <div className="text-center p-3 bg-gray-50 rounded-xl">
+                  <p className="text-2xl font-bold text-[#2D3436]">{Math.round(Math.min(...times) / 1000)}s</p>
+                  <p className="text-xs text-[#636E72]">Fastest</p>
+                </div>
+                <div className="text-center p-3 bg-gray-50 rounded-xl">
+                  <p className="text-2xl font-bold text-[#2D3436]">{Math.round(Math.max(...times) / 1000)}s</p>
+                  <p className="text-xs text-[#636E72]">Slowest</p>
+                </div>
+              </div>
+              {slowQuestions.length > 0 && (
+                <div>
+                  <p className="text-sm font-bold text-amber-600 mb-2">Slow questions (over {avgTime * 2}s):</p>
+                  <div className="space-y-1">
+                    {slowQuestions.map(([idx, timeMs]) => (
+                      <div key={idx} className="flex items-center justify-between text-sm px-3 py-2 bg-amber-50 rounded-lg">
+                        <span className="text-[#2D3436]">Question {parseInt(idx) + 1}</span>
+                        <span className="font-bold text-amber-600">{Math.round(timeMs / 1000)}s</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">

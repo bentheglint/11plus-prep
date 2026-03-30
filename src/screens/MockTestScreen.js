@@ -1,14 +1,17 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, ChevronRight, ChevronLeft, ArrowLeft, AlertTriangle } from 'lucide-react';
+import { BookOpen, ChevronRight, ChevronLeft, ArrowLeft, AlertTriangle, Flag, Grid3X3 } from 'lucide-react';
 import Timer from '../components/Timer';
+import ClozeQuestionText from '../components/ClozeQuestionText';
+import MockTestNavigator from '../components/MockTestNavigator';
 
 function MockTestScreen({
   subject, questions, answers, currentIndex, sectionBreaks, passage,
-  timeLimit, onAnswer, onGoTo, onSubmit, onBack,
+  timeLimit, flags, onAnswer, onGoTo, onToggleFlag, onSubmit, onBack,
   quizVisualComponents,
 }) {
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const [showSectionIntro, setShowSectionIntro] = useState(true);
+  const [showNavigator, setShowNavigator] = useState(false);
 
   const currentQ = questions[currentIndex];
   const question = currentQ ? currentQ.question : null;
@@ -158,16 +161,44 @@ function MockTestScreen({
   return (
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-2xl mx-auto">
-        {/* Top bar: timer + progress */}
+        {/* Top bar: timer + flag + navigator + progress */}
         <div className="flex justify-between items-center mb-4">
           <Timer totalSeconds={timeLimit} onTimeUp={onSubmit} />
-          <div className="text-right">
-            <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
-              Question {currentIndex + 1} of {questions.length}
-            </span>
-            <div className="text-xs text-[#636E72]">{answeredCount} answered</div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => onToggleFlag && onToggleFlag(currentIndex)}
+              className={`p-2 rounded-lg transition-colors ${flags && flags[currentIndex] ? 'bg-amber-100 text-amber-600' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+              title={flags && flags[currentIndex] ? 'Remove flag' : 'Flag for review'}
+            >
+              <Flag className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => setShowNavigator(!showNavigator)}
+              className={`p-2 rounded-lg transition-colors ${showNavigator ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+              title="Question navigator"
+            >
+              <Grid3X3 className="w-4 h-4" />
+            </button>
+            <div className="text-right">
+              <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
+                Q{currentIndex + 1}/{questions.length}
+              </span>
+              <div className="text-xs text-[#636E72]">{answeredCount} done</div>
+            </div>
           </div>
         </div>
+
+        {/* Question navigator grid */}
+        {showNavigator && (
+          <MockTestNavigator
+            questions={questions}
+            answers={answers}
+            flags={flags}
+            currentIndex={currentIndex}
+            onGoTo={(i) => { onGoTo(i); setShowNavigator(false); }}
+            onClose={() => setShowNavigator(false)}
+          />
+        )}
 
         {/* Progress bar */}
         <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden mb-4">
@@ -231,7 +262,7 @@ function MockTestScreen({
 
           {/* Question text */}
           <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-6 whitespace-pre-line">
-            {question.question}
+            <ClozeQuestionText text={question.question} />
           </h3>
 
           {/* Visual component support */}

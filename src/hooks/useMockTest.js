@@ -233,6 +233,9 @@ export default function useMockTest() {
   const [mockTestTimeLimit, setMockTestTimeLimit] = useState(0);
   const [mockTestComplete, setMockTestComplete] = useState(false);
   const [mockTestStartTime, setMockTestStartTime] = useState(null);
+  const [mockTestFlags, setMockTestFlags] = useState({});
+  const [mockTestQuestionTimes, setMockTestQuestionTimes] = useState({});
+  const questionStartTimeRef = useRef(null);
   const [mockTestHistory, setMockTestHistory] = useState(() => {
     try { return JSON.parse(localStorage.getItem('mock-test-history')) || []; } catch { return []; }
   });
@@ -262,11 +265,14 @@ export default function useMockTest() {
     setMockTestSectionBreaks(sectionBreaks);
     setMockTestPassage(passage);
     setMockTestAnswers({});
+    setMockTestFlags({});
+    setMockTestQuestionTimes({});
     setMockTestCurrentIndex(0);
     setMockTestSubject(subject);
     setMockTestTimeLimit(timeLimit);
     setMockTestComplete(false);
     setMockTestStartTime(Date.now());
+    questionStartTimeRef.current = Date.now();
     setMockTestActive(true);
   }, []);
 
@@ -274,20 +280,45 @@ export default function useMockTest() {
     setMockTestAnswers(prev => ({ ...prev, [index]: answer }));
   }, []);
 
+  const toggleFlag = useCallback((index) => {
+    setMockTestFlags(prev => ({ ...prev, [index]: !prev[index] }));
+  }, []);
+
   const goToQuestion = useCallback((index) => {
     if (index >= 0 && index < mockTestQuestions.length) {
+      // Record time spent on current question before navigating
+      if (questionStartTimeRef.current) {
+        const elapsed = Date.now() - questionStartTimeRef.current;
+        setMockTestQuestionTimes(prev => ({
+          ...prev,
+          [mockTestCurrentIndex]: (prev[mockTestCurrentIndex] || 0) + elapsed,
+        }));
+      }
+      questionStartTimeRef.current = Date.now();
       setMockTestCurrentIndex(index);
     }
-  }, [mockTestQuestions.length]);
+  }, [mockTestQuestions.length, mockTestCurrentIndex]);
 
   const submitTest = useCallback(() => {
+    // Record time on final question before completing
+    if (questionStartTimeRef.current) {
+      const elapsed = Date.now() - questionStartTimeRef.current;
+      setMockTestQuestionTimes(prev => ({
+        ...prev,
+        [mockTestCurrentIndex]: (prev[mockTestCurrentIndex] || 0) + elapsed,
+      }));
+      questionStartTimeRef.current = null;
+    }
     setMockTestComplete(true);
-  }, []);
+  }, [mockTestCurrentIndex]);
 
   const endMockTest = useCallback(() => {
     setMockTestActive(false);
     setMockTestQuestions([]);
     setMockTestAnswers({});
+    setMockTestFlags({});
+    setMockTestQuestionTimes({});
+    questionStartTimeRef.current = null;
     setMockTestCurrentIndex(0);
     setMockTestSectionBreaks([]);
     setMockTestPassage(null);
@@ -335,6 +366,7 @@ export default function useMockTest() {
         question: q,
         answer,
         isCorrect,
+        timeMs: mockTestQuestionTimes[i] || 0,
       });
     });
 
@@ -346,10 +378,11 @@ export default function useMockTest() {
       timeTaken,
       timeLimit: mockTestTimeLimit,
       sectionResults,
+      questionTimes: mockTestQuestionTimes,
     };
 
     return result;
-  }, [mockTestComplete, mockTestQuestions, mockTestAnswers, mockTestSubject, mockTestTimeLimit, mockTestStartTime]);
+  }, [mockTestComplete, mockTestQuestions, mockTestAnswers, mockTestSubject, mockTestTimeLimit, mockTestStartTime, mockTestQuestionTimes]);
 
   // Save result to history when test completes
   const saveResultToHistory = useCallback((result) => {
@@ -401,9 +434,12 @@ export default function useMockTest() {
     mockTestComplete,
     mockTestStartTime,
     mockTestHistory,
+    mockTestFlags,
+    mockTestQuestionTimes,
     // Actions
     startMockTest,
     answerQuestion,
+    toggleFlag,
     goToQuestion,
     submitTest,
     endMockTest,

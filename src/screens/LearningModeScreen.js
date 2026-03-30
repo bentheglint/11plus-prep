@@ -1,5 +1,6 @@
-import React from 'react';
-import { Calendar, Target, ArrowLeft, Clock, Lightbulb } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { Calendar, Target, ArrowLeft, Clock, Lightbulb, Flame, Lock } from 'lucide-react';
+import { SUBJECT_TOPICS } from '../hooks/useMastery';
 
 const mockTestInfo = {
   maths: { questions: 50, time: 50 },
@@ -7,8 +8,19 @@ const mockTestInfo = {
   verbalreasoning: { questions: 85, time: 50 },
 };
 
-function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLearning, onMockTest, onStudyToolkit, onBack }) {
+function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, onFocusedLearning, onMockTest, onChallengeMode, onStudyToolkit, onBack }) {
   const testInfo = mockTestInfo[subjectKey] || { questions: 50, time: 50 };
+
+  // Challenge mode: unlock when 3+ topics reach exam-ready or excelling
+  const challengeStatus = useMemo(() => {
+    if (!mastery) return { unlocked: false, readyCount: 0, total: 0 };
+    const topics = SUBJECT_TOPICS[subjectKey] || [];
+    const readyCount = topics.filter(t => {
+      const m = mastery.getTopicMastery(t);
+      return m.band === 'exam-ready' || m.band === 'excelling';
+    }).length;
+    return { unlocked: readyCount >= 3, readyCount, total: topics.length };
+  }, [mastery, subjectKey]);
 
   return (
     <div className="app-bg p-4">
@@ -73,6 +85,49 @@ function LearningModeScreen({ subjectName, subjectKey, onStartDaily, onFocusedLe
             </div>
             <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Study Toolkit</h3>
             <p className="text-[#636E72] flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
+          </button>
+        </div>
+
+        {/* Challenge Mode — full-width banner below the grid */}
+        <div className="mt-6 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+          <button
+            onClick={challengeStatus.unlocked ? onChallengeMode : undefined}
+            disabled={!challengeStatus.unlocked}
+            className={`w-full card rounded-2xl p-6 text-left flex items-center gap-5 transition-all border-2 ${
+              challengeStatus.unlocked
+                ? 'hover:scale-[1.01] border-transparent hover:border-[#E17055]/30 cursor-pointer'
+                : 'opacity-60 cursor-not-allowed border-gray-200'
+            }`}
+          >
+            <div className={`flex items-center justify-center w-14 h-14 rounded-2xl flex-shrink-0 ${
+              challengeStatus.unlocked
+                ? 'bg-gradient-to-br from-[#FF6B6B] to-[#E17055]'
+                : 'bg-gray-200'
+            }`}>
+              {challengeStatus.unlocked
+                ? <Flame className="w-7 h-7 text-white" />
+                : <Lock className="w-6 h-6 text-gray-400" />
+              }
+            </div>
+            <div className="flex-1">
+              <h3 className={`text-lg font-heading font-bold mb-1 ${challengeStatus.unlocked ? 'text-[#2D3436]' : 'text-gray-400'}`}>
+                Challenge Mode
+              </h3>
+              {challengeStatus.unlocked ? (
+                <p className="text-sm text-[#636E72]">
+                  10 hard questions across your strongest topics. Can you handle it?
+                </p>
+              ) : (
+                <p className="text-sm text-gray-400">
+                  Get {3 - challengeStatus.readyCount} more topic{3 - challengeStatus.readyCount !== 1 ? 's' : ''} to Exam Ready to unlock
+                </p>
+              )}
+            </div>
+            {challengeStatus.unlocked && (
+              <div className="text-xs font-bold text-[#E17055] bg-[#E17055]/10 px-3 py-1.5 rounded-full flex-shrink-0">
+                D3 Only
+              </div>
+            )}
           </button>
         </div>
       </div>

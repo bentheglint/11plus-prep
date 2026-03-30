@@ -1,6 +1,8 @@
-import React from 'react';
-import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock } from 'lucide-react';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
+import ClozeQuestionText from '../components/ClozeQuestionText';
+import Timer from '../components/Timer';
 
 function QuizScreen({
   quizQuestions, currentQuestionIndex, quizMode, selectedTopic,
@@ -28,7 +30,8 @@ function QuizScreen({
   } else {
     isCorrect = selectedAnswer === currentQuestion.correct;
   }
-  const quizTitle = quizMode === 'daily' ? 'Daily Learning' : currentQ.topicName + ' Practice';
+  const quizTitle = quizMode === 'daily' ? 'Daily Learning' : quizMode === 'challenge' ? 'Challenge Mode' : currentQ.topicName + ' Practice';
+  const [timerEnabled, setTimerEnabled] = useState(false);
 
     return (
       <div className="app-bg p-4">
@@ -47,6 +50,18 @@ function QuizScreen({
                 <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
                   {quizTitle} — Question {currentQuestionIndex + 1} of {quizQuestions.length}
                 </span>
+                <div className="flex items-center gap-2">
+                  {timerEnabled && (
+                    <Timer mode="elapsed" resetKey={currentQuestionIndex} />
+                  )}
+                  <button
+                    onClick={() => setTimerEnabled(!timerEnabled)}
+                    className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+                    title={timerEnabled ? 'Hide timer' : 'Show timer'}
+                  >
+                    <Clock className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
               {/* Progress bar */}
               <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden mb-4">
@@ -139,7 +154,7 @@ function QuizScreen({
               )}
 
               <h3 className="text-2xl font-heading font-bold text-[#2D3436] mb-6 whitespace-pre-line">
-                {currentQuestion.question}
+                <ClozeQuestionText text={currentQuestion.question} />
               </h3>
 
               {/* Select-two rendering for dual-answer questions (e.g. VR synonyms, odd-two-out, hidden words) */}

@@ -81,7 +81,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
               className="flex-1 py-4 btn-primary flex items-center justify-center animate-fade-in-up"
             >
               <RotateCcw className="w-5 h-5 mr-2" />
-              {quizMode === 'daily' ? 'New Daily Quiz' : 'Try Again'}
+              {quizMode === 'daily' ? 'New Daily Quiz' : quizMode === 'challenge' ? 'New Challenge' : 'Try Again'}
             </button>
             <button
               onClick={onChooseTopic}

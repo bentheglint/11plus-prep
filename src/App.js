@@ -31,8 +31,13 @@ import englishData from './questionData/englishData';
 import vrData from './questionData/vrData';
 import allTips from './data/studyTips';
 import { selectPostQuestionTip, selectPreQuizTip } from './utils/tipSelection';
+import { selectWeightedTopics } from './utils/spacedRepetition';
+import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
+import useLeitner from './hooks/useLeitner';
+import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
+import MistakesScreen from './screens/MistakesScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -70,6 +75,9 @@ function App() {
 
   // Mastery scoring engine (computed from question results)
   const mastery = useMastery(questionResults, practiceLog, userData.mockTestHistory);
+
+  // Leitner spaced repetition queue
+  const leitner = useLeitner(userData.leitnerQueue, userData.saveLeitnerQueue);
 
   // Streaks and Prep Points
   const streaksAndPP = useStreaksAndPP(
@@ -278,6 +286,42 @@ function App() {
     setCurrentView('learningMode');
   };
 
+  const selectChallengeQuestions = () => {
+    const topics = questionData[selectedSubject].topics;
+    // Only pick from exam-ready topics
+    const eligibleKeys = Object.keys(topics).filter(key => {
+      const m = mastery.getTopicMastery(key);
+      return m.band === 'exam-ready' || m.band === 'excelling';
+    });
+    const topicKeys = shuffleArray(eligibleKeys).slice(0, 10);
+    const selected = [];
+    topicKeys.forEach(key => {
+      const question = pickQuestionAtDifficulty(topics[key].questions, seenQuestions[key] || [], 3);
+      selected.push({ question, topicKey: key, topicName: topics[key].name });
+    });
+    return shuffleArray(selected);
+  };
+
+  const handleChallengeMode = () => {
+    const selected = selectChallengeQuestions();
+    if (selected.length === 0) return;
+    setQuizQuestions(selected);
+    setQuizMode('challenge');
+    setCurrentQuestionIndex(0);
+    setAnswers([]);
+    questionStartTime.current = Date.now();
+    quizSessionId.current = Date.now();
+    wrongAnswerCount.current = 0;
+    sessionShownTipIds.current = new Set();
+    setPostQuestionTip(null);
+    setSelectedAnswer(null);
+    setSelectedPair([]);
+    setShowFeedback(false);
+    setShowTutorChat(false);
+    setChatMessages([]);
+    setCurrentView('quiz');
+  };
+
   const handleStartDaily = () => {
     const selected = selectDailyQuestions();
     setQuizQuestions(selected);
@@ -405,6 +449,42 @@ function App() {
       }
     } else {
       setPostQuestionTip(null);
+    }
+
+    // Adaptive difficulty: swap next question to match performance (skip for mock tests)
+    if (quizMode === 'daily' || quizMode === 'focused') {
+      const nextIdx = currentQuestionIndex + 1;
+      if (nextIdx < quizQuestions.length) {
+        const recentResults = [...answers, { correct: isCorrect, difficulty: currentQuestion.difficulty || 2 }]
+          .map(a => ({ correct: a.correct, difficulty: a.difficulty || 2 }));
+        const currentDiff = currentQuestion.difficulty || 2;
+        const targetDiff = getAdaptiveDifficulty(recentResults, currentDiff);
+
+        // Only swap if target differs from what's already queued
+        const nextQ = quizQuestions[nextIdx];
+        const nextDiff = nextQ.question.difficulty || 2;
+        if (targetDiff !== nextDiff) {
+          const topicKey = nextQ.topicKey;
+          const topicQuestions = questionData[selectedSubject]?.topics?.[topicKey]?.questions ||
+            englishData?.topics?.[topicKey]?.questions ||
+            vrData?.topics?.[topicKey]?.questions || [];
+          const replacement = pickQuestionAtDifficulty(topicQuestions, seenQuestions[topicKey] || [], targetDiff);
+          if (replacement && replacement.id !== nextQ.question.id) {
+            const updated = [...quizQuestions];
+            updated[nextIdx] = { ...nextQ, question: replacement };
+            setQuizQuestions(updated);
+          }
+        }
+      }
+    }
+
+    // Leitner queue: add wrong answers, promote correct ones
+    if (quizMode === 'daily' || quizMode === 'focused') {
+      if (!isCorrect) {
+        leitner.addToQueue(currentQuestion.id, currentQ.topicKey, selectedSubject);
+      } else if (leitner.isInQueue(currentQuestion.id, currentQ.topicKey)) {
+        leitner.promoteQuestion(currentQuestion.id, currentQ.topicKey);
+      }
     }
   };
 
@@ -760,23 +840,42 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
   const selectDailyQuestions = () => {
     const topics = questionData[selectedSubject].topics;
-    const topicKeys = shuffleArray(Object.keys(topics)).slice(0, 10);
-    // Difficulty targets: 3 easy, 4 medium, 3 hard
-    const diffTargets = shuffleArray([1,1,1, 2,2,2,2, 3,3,3]);
     const selected = [];
     const updatedSeen = { ...seenQuestions };
+    const usedQuestionIds = new Set();
 
-    topicKeys.forEach((key, i) => {
+    // Leitner: fill up to 3 slots with due review questions
+    const dueEntries = getDueQuestions(userData.leitnerQueue, selectedSubject, 3);
+    dueEntries.forEach(entry => {
+      const topicQuestions = topics[entry.topicKey]?.questions || [];
+      const question = topicQuestions.find(q => q.id === entry.questionId);
+      if (question && !usedQuestionIds.has(`${entry.topicKey}-${question.id}`)) {
+        selected.push({ question, topicKey: entry.topicKey, topicName: topics[entry.topicKey]?.name || entry.topicKey });
+        usedQuestionIds.add(`${entry.topicKey}-${question.id}`);
+      }
+    });
+
+    // Fill remaining slots with mastery-weighted topic selection
+    const remainingCount = 10 - selected.length;
+    const topicKeys = selectWeightedTopics(Object.keys(topics), mastery, remainingCount + 3); // pick extras in case of overlap
+    const diffTargets = shuffleArray([1,1,1, 2,2,2,2, 3,3,3]);
+
+    let filled = 0;
+    for (let i = 0; i < topicKeys.length && filled < remainingCount; i++) {
+      const key = topicKeys[i];
       const topicQuestions = topics[key].questions;
       const seenIds = updatedSeen[key] || [];
-      // Reset seen list if nearly exhausted
       const unseenCount = topicQuestions.filter(q => !seenIds.includes(q.id)).length;
       if (unseenCount < 1) {
         updatedSeen[key] = [];
       }
-      const question = pickQuestionAtDifficulty(topicQuestions, updatedSeen[key] || [], diffTargets[i]);
-      selected.push({ question, topicKey: key, topicName: topics[key].name });
-    });
+      const question = pickQuestionAtDifficulty(topicQuestions, updatedSeen[key] || [], diffTargets[filled] || 2);
+      if (!usedQuestionIds.has(`${key}-${question.id}`)) {
+        selected.push({ question, topicKey: key, topicName: topics[key].name });
+        usedQuestionIds.add(`${key}-${question.id}`);
+        filled++;
+      }
+    }
 
     return shuffleArray(selected);
   };
@@ -1119,7 +1218,13 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onSetCurrentUser={handleSetCurrentUser}
         onSubjectSelect={handleSubjectSelect}
         onViewProgress={() => setCurrentView('progress')}
+        onViewMistakes={() => setCurrentView('mistakes')}
         onSpeedReview={() => setCurrentView('speedReview')}
+        onStartTopic={(subject, topicKey) => {
+          setSelectedSubject(subject);
+          handleTopicSelect(topicKey);
+        }}
+        mastery={mastery}
         streaksAndPP={streaksAndPP}
       />
     );
@@ -1130,12 +1235,14 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       <LearningModeScreen
         subjectName={questionData[selectedSubject]?.name}
         subjectKey={selectedSubject}
+        mastery={mastery}
         onStartDaily={handleStartDaily}
         onFocusedLearning={() => setCurrentView('topics')}
         onMockTest={() => {
           mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
           setCurrentView('mockTest');
         }}
+        onChallengeMode={handleChallengeMode}
         onStudyToolkit={() => setCurrentView('studyToolkit')}
         onBack={handleHome}
       />
@@ -1185,7 +1292,9 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         passage={mockTest.mockTestPassage}
         timeLimit={mockTest.mockTestTimeLimit}
         quizVisualComponents={quizVisualComponents}
+        flags={mockTest.mockTestFlags}
         onAnswer={mockTest.answerQuestion}
+        onToggleFlag={mockTest.toggleFlag}
         onGoTo={mockTest.goToQuestion}
         onSubmit={mockTest.submitTest}
         onBack={() => {
@@ -1233,7 +1342,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           subject: mockTest.mockTestSubject,
           difficulty: question.difficulty || 2,
           correct: isCorrect,
-          timeSpentMs: 0, // Mock tests don't track per-question time (timed overall)
+          timeSpentMs: mockTest.mockTestQuestionTimes[i] || 0,
           mode: 'mock',
           sessionId,
         });
@@ -1538,6 +1647,22 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           handleTopicSelect(topicKey);
         }}
         onBack={() => setCurrentView('progress')}
+      />
+    );
+  }
+
+  if (currentView === 'mistakes') {
+    return (
+      <MistakesScreen
+        questionResults={userData.questionResults}
+        questionData={questionData}
+        englishData={englishData}
+        vrData={vrData}
+        onPractiseTopic={(subject, topicKey) => {
+          setSelectedSubject(subject);
+          handleTopicSelect(topicKey);
+        }}
+        onBack={handleHome}
       />
     );
   }

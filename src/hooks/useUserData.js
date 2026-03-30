@@ -16,6 +16,7 @@ const KEYS = [
   'prep-points',
   'achievements',
   'last-session-date',
+  'leitner-queue',
 ];
 
 function userKey(userName, key) {
@@ -153,6 +154,11 @@ export default function useUserData(userName) {
     userName ? loadJSON(userKey(userName, 'last-session-date'), null) : null
   );
 
+  // --- Leitner Queue ---
+  const [leitnerQueue, setLeitnerQueue] = useState(() =>
+    userName ? loadJSON(userKey(userName, 'leitner-queue'), []) : []
+  );
+
   // Reload all data when user changes
   useEffect(() => {
     if (userName && userName !== prevUser.current) {
@@ -182,6 +188,7 @@ export default function useUserData(userName) {
         setSeenTips(rawTips);
       }
       setLastSessionDate(loadJSON(userKey(userName, 'last-session-date'), null));
+      setLeitnerQueue(loadJSON(userKey(userName, 'leitner-queue'), []));
     }
   }, [userName]);
 
@@ -274,6 +281,12 @@ export default function useUserData(userName) {
     saveJSON(userKey(userName, 'last-session-date'), date);
   }, [userName]);
 
+  const saveLeitnerQueue = useCallback((queue) => {
+    if (!userName) return;
+    setLeitnerQueue(queue);
+    saveJSON(userKey(userName, 'leitner-queue'), queue);
+  }, [userName]);
+
   return {
     // Data
     quizHistory,
@@ -302,5 +315,7 @@ export default function useUserData(userName) {
     markTipSeen,
     lastSessionDate,
     saveLastSessionDate,
+    leitnerQueue,
+    saveLeitnerQueue,
   };
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench } from 'lucide-react';
 import UserAvatar from '../components/UserAvatar';
 import StreakDisplay from '../components/StreakDisplay';
+import RecommendationCard from '../components/RecommendationCard';
 
 function SubjectCard({ title, icon: Icon, gradient, onClick }) {
   return (
@@ -17,7 +18,10 @@ function SubjectCard({ title, icon: Icon, gradient, onClick }) {
   );
 }
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onSpeedReview, streaksAndPP }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onStartTopic, mastery, streaksAndPP }) {
+  // Get top 2 suggested topics from mastery system
+  const suggestions = mastery ? mastery.getFocusAreas().slice(0, 2) : [];
+
   return (
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
@@ -54,6 +58,15 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
             <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
             <span className="font-heading">View My Progress</span>
           </button>
+          {onViewMistakes && (
+            <button
+              onClick={onViewMistakes}
+              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
+            >
+              <BookOpen className="w-5 h-5 text-[#FF6B6B]" />
+              <span className="font-heading">My Mistakes</span>
+            </button>
+          )}
           {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
             <button
               onClick={onSpeedReview}
@@ -64,6 +77,22 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
             </button>
           )}
         </div>
+
+        {/* Suggested next sessions */}
+        {suggestions.length > 0 && (
+          <div className="mb-8 max-w-xl mx-auto space-y-3 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
+            <p className="text-xs font-bold text-[#636E72] uppercase tracking-wider text-center mb-2">
+              Suggested for you
+            </p>
+            {suggestions.map(rec => (
+              <RecommendationCard
+                key={rec.topicKey}
+                recommendation={rec}
+                onStart={onStartTopic}
+              />
+            ))}
+          </div>
+        )}
 
         <div className="grid md:grid-cols-3 gap-6 stagger-children">
           <SubjectCard
