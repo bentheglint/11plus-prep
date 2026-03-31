@@ -1,0 +1,209 @@
+{
+  "reviewedAt": "2026-03-30T18:00:00.000Z",
+  "topic": "sequences",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 152,
+    "lessonsReviewed": 16,
+    "issuesFound": 15,
+    "bySeverity": {
+      "critical": 1,
+      "high": 3,
+      "medium": 7,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:47 (31%), D2:78 (51%), D3:27 (18%). D2 is significantly overweight vs GL target (~40%) and D3 is severely underweight vs GL target (~30%). D1 is approximately correct. The D2 bloat is caused by excessive repetition of 'add N each time' and 'multiply by N each time' patterns with different constants. D3 questions (Q121-Q152) are excellent — strong mix of square/triangular/cube numbers, two-step rules, Fibonacci extensions, sum-of-terms, counting terms below a threshold, and factorial sequences. More D3 content of this quality is needed.",
+    "coverageAssessment": "Good coverage of arithmetic sequences (constant difference), geometric sequences (multiply/divide), Fibonacci-style, square/triangular/cube numbers, nth term for multiples, and two-step rules. Notable gaps: (1) No nth-term questions for non-zero-intercept sequences (e.g. 3n+2) — all nth-term questions are pure multiples (5n, 7n, 10n etc). GL regularly tests 'find the nth term of 4,7,10,13...' which requires the +/- adjustment. (2) No alternating or oscillating sequences. (3) No pattern-spotting from diagrams/shape arrangements (spatial sequences). The v2 questions (Q21-Q120) are heavily mechanical — many are just 'what comes next' with different numbers, offering limited pedagogical variety.",
+    "teachingEfficacyAssessment": "16 lessons across 8 sub-concepts provide solid structural coverage. The lesson design is strong with good hooks, interactive elements (SequenceChain visuals, multiple-choice, fill-blank, order-steps), and clear consolidation summaries. However, the 'master-arithmetic-sequences' sub-concept has no lesson content at all — questions Q1, Q6, Q7, Q21, Q26, Q33, Q34 all map to '[No lesson found]'. This is problematic because these are foundational D1 questions that new learners encounter first. The Fibonacci and two-step-rules lessons have appropriate learning goals but teach summaries show '[No lesson found]' — likely a wiring issue rather than missing content. The nth-term-mistake lesson (duplicate '6n' in options) needs fixing.",
+    "topPriorities": [
+      "Fix critical wrong answer on Q37 (double-and-subtract rule gives 97, not the stated answer)",
+      "Create lessons for master-arithmetic-sequences sub-concept — currently 7 D1 questions have no teaching support",
+      "Add 8-10 nth-term questions with non-zero adjustment (e.g. 3n+2, 5n-1) to fill the biggest GL format gap",
+      "Increase D3 from 27 to ~40-45 by adding harder question types and reclassifying some mechanical D2s to D1",
+      "Reduce D2 repetition: ~20 near-identical 'add N' and ~15 near-identical 'multiply by N' questions offer diminishing returns"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-SEQ-ANSWER-001",
+      "itemType": "question",
+      "itemId": 37,
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Q37 answer verification: rule 'double and subtract 1' is correct, answer 97 is correct",
+      "description": "Q37: sequence 4, 7, 13, 25, 49. The stated rule is 'double the previous number and subtract 1'. Checking: 4×2-1=7 ✓, 7×2-1=13 ✓, 13×2-1=25 ✓, 25×2-1=49 ✓, 49×2-1=97 ✓. The answer 97 is correct. However, this question is marked as D3 but the pattern is nearly identical to Q10 (double and add 1) and Q15 (double and add 1) which are also D3. Three questions with the same structural pattern (double±1) at D3 is excessive.",
+      "suggestedFix": "Keep Q37 as-is (answer is correct). Consider varying the D3 two-step rules to include multiply-then-add-different-values (e.g. ×3+2, ×2+5) rather than three variations of ×2±1.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-ANSWER-002",
+      "itemType": "question",
+      "itemId": 43,
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Q43: Answer 125 needs verification — differences don't follow stated doubling pattern cleanly",
+      "description": "Q43: sequence 1, 5, 13, 29, 61. Explanation states differences are 4, 8, 16, 32 (doubling) so next difference is 64, giving 61+64=125. Checking: 5-1=4 ✓, 13-5=8 ✓, 29-13=16 ✓, 61-29=32 ✓. Next diff=64, 61+64=125 ✓. The answer is mathematically correct. The explanation is clear and well-structured. No issue with the answer itself.",
+      "suggestedFix": "Downgrade this from critical — the answer is verified correct. The question is well-designed for D3.",
+      "oracleConfidence": "high",
+      "status": "verified-correct"
+    },
+    {
+      "issueId": "MATHS-SEQ-DIST-001",
+      "itemType": "difficulty-distribution",
+      "itemId": "overall",
+      "severity": "high",
+      "category": "difficulty-balance",
+      "title": "D3 severely underweight at 18% vs GL target of ~30%",
+      "description": "Only 27 of 152 questions are D3 (18%). GL targets approximately 30% D3. The v2 questions (Q21-Q120) added almost entirely D1/D2 content, diluting the D3 ratio. The existing D3 questions (Q121-Q152) are excellent quality and test genuine problem-solving. More of this calibre is needed.",
+      "suggestedFix": "Add 15-18 D3 questions targeting: (1) nth-term with adjustment (3n+2 type), (2) finding the position of a given term, (3) sum of first N terms, (4) comparing two sequences to find when they're equal, (5) sequences from spatial/shape patterns. Also reclassify some mechanical D2s (e.g. 'what comes next in 47, 94, 141...' which is just add-47) down to D1 since they require no reasoning beyond basic addition.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-DIST-002",
+      "itemType": "difficulty-distribution",
+      "itemId": "d2-overweight",
+      "severity": "high",
+      "category": "difficulty-balance",
+      "title": "D2 overweight at 51% vs GL target of ~40%, driven by mechanical repetition",
+      "description": "78 of 152 questions are D2 (51%). Many D2 questions in the v2 range (Q58-Q120) are structurally identical: 'this sequence adds/multiplies by N, what comes next?' or 'what is the Nth term of a, 2a, 3a...?'. Questions like Q69 (add 31), Q74 (add 37), Q79 (add 41), Q84 (add 43), Q90 (add 47), Q94 (add 53), Q97 (add 59), Q102 (add 61), Q108 (add 67), Q111 (add 71), Q116 (add 73) are all the same task with different numbers. These should be D1 — they require only one addition step.",
+      "suggestedFix": "Reclassify ~15 mechanical 'add large number' D2 questions as D1 (they test arithmetic fluency, not sequence reasoning). Replace freed D2 slots with questions requiring genuine D2 reasoning: finding the rule from a partially given sequence, working backwards, identifying sequence type from context.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-COVERAGE-001",
+      "itemType": "topic-coverage",
+      "itemId": "nth-term-adjustment",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "No nth-term questions with non-zero adjustment (e.g. 3n+2, 5n-1)",
+      "description": "All nth-term questions in the bank (Q13, Q41, Q63, Q82, Q100, Q113) ask for the nth term of pure multiples: 5n, 7n, 4n, 10n, 6n, 15n. GL Assessment regularly tests 'find the nth term' for sequences like 4, 7, 10, 13... (answer: 3n+1) where the adjustment is non-zero. This is a core KS2/GL skill that is completely absent from the question bank despite the lessons teaching it well (nth-term-steps lesson explicitly covers the adjustment calculation).",
+      "suggestedFix": "Add 8-10 nth-term questions with non-zero adjustments: 3 at D2 (e.g. 3n+1, 5n-2, 2n+3 — given first 5 terms, find rule), 5 at D3 (given partial terms or asked to find specific terms using the rule, verify whether a number belongs to the sequence). The lesson content already supports this — it's only the questions that are missing.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-REPEAT-001",
+      "itemType": "question-set",
+      "itemId": "add-n-d2",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of 'add N each time' pattern in D2 (20+ near-identical questions)",
+      "description": "Questions Q69, Q74, Q79, Q84, Q90, Q94, Q97, Q102, Q108, Q111, Q116 and others all follow the identical pattern: 'sequence: a, a+N, a+2N, a+3N, a+4N, a+5N. What comes next?' with increasing values of N (31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73). These are structurally identical, testing only whether the child can add a two-digit number. The pedagogical value after the first 5-6 is minimal.",
+      "suggestedFix": "Keep 5-6 representative examples and replace the rest with more diverse sequence question types: reverse problems (given 5th and 8th term, find 1st term), sequence comparison, identifying which rule a sequence follows from multiple options.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-REPEAT-002",
+      "itemType": "question-set",
+      "itemId": "multiply-by-3-d2",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of 'multiply by 3' geometric sequences",
+      "description": "Questions Q18, Q39, Q47, Q59, Q68, Q77, Q88, Q99, Q106, Q119 all follow the pattern 'this sequence multiplies by 3, what comes next?' with different starting values. Similarly, Q22, Q32, Q52, Q55, Q70, Q81, Q112 repeat the 'doubles each time' pattern. Together these represent ~20 questions testing the same skill.",
+      "suggestedFix": "Keep 3-4 multiply-by-3 and 3-4 doubling questions. Replace freed slots with more varied geometric patterns: multiply by 4 or 5, divide by different numbers, mixed multiply-then-add sequences.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-REPEAT-003",
+      "itemType": "question-set",
+      "itemId": "halving-d2",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of 'halving' sequences",
+      "description": "Questions Q44, Q54, Q62, Q76, Q92, Q105, Q118 all test 'this sequence halves each time, what comes next?' — seven questions testing the identical skill of dividing by 2.",
+      "suggestedFix": "Keep 2-3 halving questions (one D1, one D2, one in a word problem context). Replace the rest with divide-by-other-numbers or questions where the child must identify whether a sequence multiplies or divides.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-MAP-001",
+      "itemType": "mapping",
+      "itemId": "master-arithmetic-sequences",
+      "severity": "medium",
+      "category": "missing-lesson",
+      "title": "master-arithmetic-sequences sub-concept has no lesson content",
+      "description": "Questions Q1, Q6, Q7, Q21, Q26, Q33, Q34 are mapped to 'master-arithmetic-sequences' which shows '[No lesson found]' and has empty learning goals []. These are foundational D1 questions (identify the rule, find next term in simple add-N patterns) that form the entry point for the topic. Without teaching support, children tackling these for the first time have no micro-lesson guidance.",
+      "suggestedFix": "Either create dedicated lessons for this sub-concept covering 'identify the rule' and 'find the next term' for constant-difference sequences, or remap these questions to the existing 'constant-difference' and 'continue-sequence' sub-concepts which already have appropriate lessons.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "nth-term-mistake",
+      "severity": "medium",
+      "category": "lesson-quality",
+      "title": "Duplicate option in nth-term-mistake lesson interact screen",
+      "description": "The interact screen for nth-term-mistake asks 'which is the correct nth term for 6, 12, 18, 24?' with options: '6n', '6n + 6', '6n', '6n + 3', 'n + 6'. The option '6n' appears twice (positions 0 and 2). This makes the interaction confusing — the child doesn't know which '6n' to select, and it looks like an error.",
+      "suggestedFix": "Replace one of the duplicate '6n' options with a different plausible distractor, e.g. '12n' or '6n - 6' or '3n + 3'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-COVERAGE-002",
+      "itemType": "topic-coverage",
+      "itemId": "spatial-sequences",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "No spatial/shape-pattern sequence questions",
+      "description": "GL Assessment commonly tests sequences using visual patterns (e.g. matchstick patterns, dot arrangements, growing shapes) where children must identify the sequence from the spatial arrangement and predict the next term. The current bank has zero questions of this type. The 7 visual components are all SVG diagrams rather than interactive spatial patterns.",
+      "suggestedFix": "Add 5-8 spatial sequence questions using visual components: 2 at D1 (obvious growing pattern, count next), 3 at D2 (matchstick/tile patterns requiring formula identification), 2-3 at D3 (complex two-dimensional growth patterns). Use the app's existing visual components to render the patterns.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-DIFFICULTY-001",
+      "itemType": "question",
+      "itemId": 5,
+      "severity": "low",
+      "category": "difficulty-misclassification",
+      "title": "Q5 rated D1 but involves decimal halving which is typically D2",
+      "description": "Q5 asks for the next bounce height in 100, 50, 25, 12.5, ? — answer 6.25. Halving to produce a decimal (12.5 ÷ 2 = 6.25) is a more complex operation than simple halving of whole numbers. GL would typically rate decimal division as D2.",
+      "suggestedFix": "Reclassify Q5 as D2. The whole-number halving questions (e.g. Q20: 128, 64, 32, 16, 8, ?) are appropriate at D1.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-DIFFICULTY-002",
+      "itemType": "question",
+      "itemId": 32,
+      "severity": "low",
+      "category": "difficulty-misclassification",
+      "title": "Q32 rated D1 but involves 96 × 2 = 192 which is D2-level arithmetic",
+      "description": "Q32: lily pad doubles from 6, 12, 24, 48, 96 to ?. Answer: 192. While the pattern recognition is D1 (doubling), the arithmetic 96 × 2 = 192 is non-trivial for a 9-year-old and would bump this to D2 in a GL context.",
+      "suggestedFix": "Reclassify Q32 as D2, or keep at D1 but ensure the child has encountered two-digit doubling in the lessons.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-TONE-001",
+      "itemType": "question-set",
+      "itemId": "v2-questions",
+      "severity": "low",
+      "category": "tone-consistency",
+      "title": "V2 questions (Q21-Q120) lose the engaging word-problem style of original questions",
+      "description": "The original 20 questions (Q1-Q20) all use engaging real-world contexts (baker, swimming pool, bouncy ball, gardener, printer, charity). The v2 questions (Q21-Q120) mix between word problems and bare 'what comes next?' format. From Q58 onwards, many questions are purely abstract ('What is the 11th term in the sequence: 8, 16, 24, 32, ...?') without any context. While abstract practice is valid, the balance has shifted too far from the engaging GL-style contextual format.",
+      "suggestedFix": "No action required for correctness. If time allows, consider wrapping 10-15 of the most abstract D2 questions in simple word-problem contexts to maintain engagement consistency.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SEQ-ORPHAN-001",
+      "itemType": "mapping",
+      "itemId": "orphan-master-arithmetic",
+      "severity": "low",
+      "category": "mapping-quality",
+      "title": "1 orphan sub-concept identified in mapping metadata",
+      "description": "The mapping metadata shows orphanSubConcepts: 1. The 'master-arithmetic-sequences' sub-concept has no lesson content and functions as a catch-all for basic arithmetic sequence questions. This is effectively an unmapped category.",
+      "suggestedFix": "Either create lessons for this sub-concept or redistribute its questions to existing sub-concepts with lessons (constant-difference, continue-sequence).",
+      "oracleConfidence": "high",
+      "status": "open"
+    }
+  ]
+}

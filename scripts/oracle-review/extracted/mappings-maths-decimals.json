@@ -1,0 +1,3151 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "decimals",
+    "displayName": "Decimals",
+    "extractedAt": "2026-03-30T13:52:00.361Z",
+    "totalQuestions": 218,
+    "mappedQuestions": 218,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 14,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 218,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Five pupils measure how far they can throw a beanbag: Ali 3.7 m, Beth 3.07 m, Callum 3.77 m, Dina 3.70 m, Ethan 3.17 m. Who threw the furthest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3.77",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Two parcels weigh 4.6 kg and 2.8 kg. What is their total weight?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7.4",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 3,
+      "questionText": "A jug holds 8.5 litres of water. After pouring out 3.2 litres, how much is left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5.3",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "In a baking competition, five cakes should weigh exactly 5 kg. The cakes weigh 4.89 kg, 5.12 kg, 4.95 kg, 5.08 kg and 4.78 kg. Which cake is closest t",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.95",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A bag of sweets costs £0.60. What do 10 bags cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "A piece of rope is 4.5 metres long. It is cut into 10 equal pieces. How long is each piece, in metres?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.45",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Each side of a square field is 3.2 metres long. What is the perimeter?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12.8",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "A recipe says to use 3/4 of a litre of milk. What is 3/4 written as a decimal?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.75",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Four science beakers contain different amounts of liquid: Beaker A has 0.6 litres, Beaker B has 0.06 litres, Beaker C has 0.66 litres, and Beaker D ha",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.06, 0.6, 0.606, 0.66",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Four friends share 7.2 metres of ribbon equally. How much does each person get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1.8",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "A bottle contains 1.5 litres of juice. How many millilitres is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1500 ml",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "In a science experiment, Sam measures 5.8 ml in one beaker and 3.6 ml in another. What is the total volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9.4",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 13,
+      "questionText": "A swimmer finishes a race in 7.68 seconds. Round this time to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7.7",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "A recipe needs 0.8 kg of sugar, but Mum only makes half the recipe. How many kg of sugar does she need? (Hint: multiply 0.8 × 0.5)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.4",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Five pupils measure their long jumps: Amy 2.09 m, Ben 2.9 m, Cara 2.19 m, Dan 2.99 m, Eva 2.90 m. Who jumped the shortest distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.09",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A pencil costs £0.35 and a ruler costs £0.68. What is the total cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£1.03",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 17,
+      "questionText": "Twelve biscuits are shared equally among 5 children. How many does each child get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2.4",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "In a test, a pupil scores 0.25 of the total marks. What is this as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "25%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Dad drives 15.4 km to the shops and 8.7 km back by a shorter route. How much longer is the first journey?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6.7",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A rope is 3.75 metres long. It is cut into 5 equal pieces. How long is each piece?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.75 m",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "A recipe uses 6.5 grams of salt. Mum only needs 0.2 of that amount. How many grams does she need?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.3",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "In a spelling test, Amy gets 2/5 of the words correct. What is this as a decimal?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.4",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A box of crayons costs £4.80. How many pence is this? (Hint: multiply 4.8 × 100)",
+      "questionDifficulty": 1,
+      "correctAnswer": "480",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "A science scale reads 3.456 kg. Round this to two decimal places.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3.46",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Sarah runs 2.4 km on Monday and 3.8 km on Tuesday. How far does she run in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6.2 km",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 26,
+      "questionText": "Nine litres of juice are poured equally into 4 bottles. How many litres are in each bottle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2.25",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "A gardener has 0.6 kg of seeds. Each flower bed needs 0.2 kg. How many flower beds can be planted?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A book costs £8.45 and a pen costs £1.28. What is the total cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£9.73",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 29,
+      "questionText": "A school raises £7.50 and shares it equally among 100 pupils. How many pounds does each pupil receive?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.075",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A weather report says there is a 0.5 chance of rain. Which fraction is the same as 0.5? 1/5, 2/5, 3/5, 1/2, 2/3",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A square tile measures 0.9 metres on each side. What is the area of the tile in square metres? (Hint: multiply 0.9 × 0.9)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.81",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Tom has £10. He spends £3.65. How much money does he have left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£6.35",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Tickets for a school play cost £2.50 each. How much do 8 tickets cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "A bag of apples weighs 1.2 kg. What is this weight in grams?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1200 g",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "A ribbon is 5.4 metres long. It is cut into pieces that are each 0.6 metres. How many pieces are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A plank of wood is 5.8 metres long. Another plank is 4.7 metres long. What is their total length?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10.5",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 37,
+      "questionText": "A water tank holds 12.6 litres. After watering some plants, 7.9 litres are used. How many litres remain in the tank?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.7",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A pencil is 3.45 cm wide. What is this measurement multiplied by 10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "34.5",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A bag of 10 sweets weighs 68 grams in total. What is the weight of one sweet? (Hint: divide 68 by 10)",
+      "questionDifficulty": 1,
+      "correctAnswer": "6.8",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Five runners record their 50-metre sprint times: Aisha 4.56 s, Ben 4.5 s, Charu 4.65 s, David 4.6 s, Ella 4.05 s. Which is the largest time?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4.65",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "A garden path is 6.5 metres long. Dad walks along it 3 times. How many metres does he walk in total?",
+      "questionDifficulty": 1,
+      "correctAnswer": "19.5",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "A piece of cheese weighs 9.6 kg. It is cut into 4 equal blocks. How much does each block weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.4",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "In a spelling test, Mia gets 3/5 of the answers right. What is 3/5 written as a decimal?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.6",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "On sports day, Zara throws a javelin 7.8 metres and then 5.6 metres. What is her total distance across both throws?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13.4",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 45,
+      "questionText": "A scientist measures 0.38 metres of copper wire. How many centimetres is that? (Hint: multiply 0.38 × 100)",
+      "questionDifficulty": 1,
+      "correctAnswer": "38",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Emma has £10. She spends £4.35. How much does she have left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£5.65",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A group of 8 children share 18 stickers equally. How many stickers does each child get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2.25",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Five seedlings are measured in a science experiment: Plant A is 1.45 cm, Plant B is 1.54 cm, Plant C is 1.4 cm, Plant D is 1.5 cm, Plant E is 1.05 cm.",
+      "questionDifficulty": 1,
+      "correctAnswer": "1.05",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "A rectangular label is 0.7 metres wide and 0.6 metres tall. What is its area in square metres? (Hint: multiply 0.7 × 0.6)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.42",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A sprinter finishes a race in 8.74 seconds. Round this time to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "8.7",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A bag of rice weighs 4.2 kg. What do 5 bags weigh altogether?",
+      "questionDifficulty": 1,
+      "correctAnswer": "21",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "A pencil costs £0.42 and an eraser costs £0.79. What is the total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£1.21",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 53,
+      "questionText": "A school collects £15.30 and divides it equally among 100 charity boxes. How many pounds go into each box? (Hint: divide 15.3 by 100)",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.153",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A chocolate bar is split into 8 equal pieces. Tom eats 1 piece. What decimal of the whole bar has he eaten? (Which decimal equals 1/8?)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.125",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A jug holds 11.2 litres of lemonade. After pouring out 6.8 litres for a party, how many litres are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.4",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Four parcels weigh 0.8 kg, 0.08 kg, 0.88 kg and 0.808 kg. Put these weights in order from smallest to largest.",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.08, 0.8, 0.808, 0.88",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "A piece of string is 8.4 metres long. It is shared equally among 7 children for a craft project. How long is each piece?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.2",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A bottle contains 2.5 litres. How many millilitres is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2500 ml",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A cook uses 0.9 litres of cream but only needs 0.7 of that amount for a sauce. How many litres does the sauce need? (Hint: multiply 0.9 × 0.7)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.63",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "A pupil measures a leaf and finds it is 5.38 cm long. Round this measurement to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "5.4",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "A model aeroplane weighs 3.6 kg. Its box weighs 7.9 kg. What is the total weight?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11.5",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 62,
+      "questionText": "Five high jumpers try to clear a bar at 8 metres. Their actual jump heights are 7.89 m, 8.15 m, 7.94 m, 8.08 m and 7.76 m. Whose jump was closest to 8",
+      "questionDifficulty": 2,
+      "correctAnswer": "7.94",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "A garden fence panel is 7.2 metres long. A decorator paints 0.3 of the panel before lunch. How many metres has he painted? (Hint: multiply 7.2 × 0.3)",
+      "questionDifficulty": 2,
+      "correctAnswer": "2.16",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Four friends share 13 litres of juice equally. How many litres does each person get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3.25",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "A rope is 4.8 metres long. It's cut into 6 equal pieces. How long is each piece?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.8 m",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A scientist measures 5.5 metres of wire. How many centimetres is that? (Hint: multiply 5.5 × 100)",
+      "questionDifficulty": 1,
+      "correctAnswer": "550",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Five bags of flour are weighed: Bag A is 6.07 kg, Bag B is 6.7 kg, Bag C is 6.77 kg, Bag D is 6.70 kg, Bag E is 6.17 kg. Which bag is the heaviest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6.77",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Dad has a plank of wood that is 14.8 metres long. He saws off 9.3 metres. How long is the remaining piece?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5.5",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "In a maths test, a pupil gets 0.48 of the questions correct. What is 0.48 as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Each shelf in a bookcase is 2.8 metres wide. There are 6 shelves. What is the total shelf width?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16.8",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Noah buys a notebook for £2.45 and a pen for £1.38. What's the total cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£3.83",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 72,
+      "questionText": "A bottle holds 0.6 litres of medicine. Each dose is 0.3 litres. How many doses are in the bottle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "A weather station records a temperature of 6.951 degrees. Round this temperature to two decimal places.",
+      "questionDifficulty": 1,
+      "correctAnswer": "6.95",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "A jar of sweets is 7/10 full. What decimal is equivalent to 7/10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.7",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "A factory produces 9.1 litres of paint and pours it into 100 tiny pots. How many litres go into each pot?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.091",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "A bookshelf is 3.5 metres tall. A climbing wall is 8.8 metres tall. What is their combined height?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12.3",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 77,
+      "questionText": "A hiker walks 5.6 km each day for 4 days. How far does she walk in total?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22.4",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "A bag of potatoes weighs 11.5 kg. It is split equally into 5 smaller bags. How much does each bag weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.3",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Four bottles of cooking oil weigh 0.5 kg, 0.05 kg, 0.55 kg and 0.505 kg. Put these weights in order from lightest to heaviest.",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.05, 0.5, 0.505, 0.55",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "A rectangular poster is 0.8 metres wide and 0.9 metres tall. What is its area in square metres? (Hint: multiply 0.8 × 0.9)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.72",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "A parcel weighs 3.4 kg. What is this in grams?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3400 g",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "A bucket holds 16.7 litres of water. After washing the car, 8.9 litres have been used. How many litres are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7.8",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Five children share 17 biscuits equally. How many biscuits does each child get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3.4",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A thermometer reads 9.126 degrees Celsius in a science experiment. Round this reading to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "9.1",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Each bottle of water costs £1.25. How much do 8 bottles cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Five sunflowers are measured: Rose's is 3.09 m, Jake's is 3.9 m, Lily's is 3.19 m, Finn's is 3.99 m, and Nora's is 3.90 m. Whose sunflower is the shor",
+      "questionDifficulty": 1,
+      "correctAnswer": "3.09",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "A snack bar weighs 0.54 kg. What do 10 snack bars weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5.4",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A roll of tape is 8.2 metres long. Each gift tag needs 0.2 metres of tape. How many gift tags can be made?",
+      "questionDifficulty": 2,
+      "correctAnswer": "41",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Lily runs 3.6 km on Monday and 4.9 km on Tuesday. How far in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8.5 km",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 90,
+      "questionText": "A pizza is cut into 4 equal slices. Dad eats 1 slice. What decimal of the whole pizza did he eat? (Which decimal equals 1/4?)",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.25",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A swimming pool is 4.9 metres wide. A duck swims across 0.4 of the width. How far does the duck swim? (Hint: multiply 4.9 × 0.4)",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.96",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Gran gives Tom £12 for his birthday. He spends £5.75 at the bookshop. How much does he have left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6.25",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "A school shares 6.3 litres of paint equally among 100 pupils. How many litres does each pupil get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.063",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "A glass of squash is 0.2 full. Which fraction is the same as 0.2? 1/4, 1/5, 2/5, 1/2, 3/10",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "A bag of apples weighs 7.5 kg and a bag of pears weighs 6.8 kg. What do they weigh altogether?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14.3",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "A stopwatch shows a time of 4.567 seconds in a science experiment. Round this to two decimal places.",
+      "questionDifficulty": 1,
+      "correctAnswer": "4.57",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "A skipping rope is 9.6 metres long. It is folded in half. How long is the folded rope? (Hint: multiply 9.6 × 0.5)",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.8",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "A book costs £6.85 and a magazine costs £2.47. What's the total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£9.32",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 99,
+      "questionText": "A length of fabric measuring 14.4 metres is cut into 6 equal strips. How long is each strip?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.4",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Five pupils time how long they can hold their breath: Adam 5.45 s, Bella 5.5 s, Charlie 5.54 s, Daisy 5.4 s, Eddie 5.05 s. Who held their breath for t",
+      "questionDifficulty": 1,
+      "correctAnswer": "5.54",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Each lap of a running track is 3.7 km. A cyclist completes 9 laps. How many kilometres does the cyclist ride?",
+      "questionDifficulty": 2,
+      "correctAnswer": "33.3",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "A jug contains 0.72 litres of juice. Each glass holds 0.9 litres. What fraction of a glass can be filled? (Hint: divide 0.72 by 0.9)",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.8",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Four friends share £19 equally. How much does each person get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.75",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A ribbon is 5.6 metres long and is cut into 8 equal pieces. How long is each?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.7 m",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A gold coin weighs 0.85 grams. How much would 100 of these coins weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "85",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "A fish tank holds 18.9 litres of water. After cleaning, 11.4 litres are removed. How many litres remain?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7.5",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "A school choir has learnt 4/5 of the songs for the concert. What is 4/5 written as a decimal?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.8",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Grandma knits a scarf that is 4.5 metres long and then adds another section of 9.7 metres. What is the total length?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14.2",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 109,
+      "questionText": "A hamster weighs 7.845 grams on a precise scale. Round this weight to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7.8",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "A kitchen worktop is 8.1 metres long. A spill covers 0.7 of its length. How many metres of worktop are covered? (Hint: multiply 8.1 × 0.7)",
+      "questionDifficulty": 2,
+      "correctAnswer": "5.67",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Max spends £5.60 on lunch. He pays with a £10 note. How much change?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£4.40",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A bottle holds 0.9 litres of squash. Each cup uses 0.3 litres. How many cups can be poured?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Five bags of sweets are weighed: Bag A is 2.45 kg, Bag B is 2.54 kg, Bag C is 2.4 kg, Bag D is 2.5 kg, Bag E is 2.05 kg. Which bag is the lightest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.05",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "A toy car track is 2.4 metres long. How many centimetres is this? (Hint: multiply 2.4 × 100)",
+      "questionDifficulty": 1,
+      "correctAnswer": "240",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A machine makes 16.2 litres of orange juice and pours it into 100 sample cups. How many litres go into each cup?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.162",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Four friends measure how far they can jump: Oscar 0.7 m, Priya 0.07 m, Quinn 0.77 m, Ruby 0.707 m. Put these distances in order from shortest to longe",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.07, 0.7, 0.707, 0.77",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A baker uses 5.2 kg of flour each day. How much flour does he use over 7 days?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36.4",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "A chocolate bar weighing 10.8 grams is shared equally among 9 friends. How many grams does each friend receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.2",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "A photograph measures 0.6 metres wide and 0.8 metres tall. What is its area in square metres? (Hint: multiply 0.6 × 0.8)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.48",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "A bag weighs 2.8 kg. What is this in grams?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2800 g",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Mum has 13.5 metres of wrapping paper. She uses 7.8 metres to wrap presents. How many metres are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5.7",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "A scientist measures the mass of a crystal as 8.235 grams. Round this measurement to two decimal places.",
+      "questionDifficulty": 1,
+      "correctAnswer": "8.24",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Eggs cost £1.50 per box. How much do 12 boxes cost? (Hint: multiply 1.5 × 12)",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A cake is divided into 8 equal slices. Mia eats 3 slices. What decimal of the whole cake has she eaten? (Which decimal equals 3/8?)",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.375",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "A suitcase weighs 6.4 kg and a rucksack weighs 8.9 kg. What is their combined weight?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15.3",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 126,
+      "questionText": "A teacher shares 23 coloured pencils equally among 4 tables. How many pencils does each table get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5.75",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "A roll of fabric is 7.8 metres long. A tailor uses 0.6 of the roll. How many metres of fabric does the tailor use? (Hint: multiply 7.8 × 0.6)",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.68",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Five watermelons are weighed at the market: 8.08 kg, 8.8 kg, 8.88 kg, 8.80 kg, 8.18 kg. Which watermelon is the heaviest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8.88",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "A roll of string is 11 metres long. After cutting off 6.45 metres, how much string is left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.55",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "A single marble weighs 0.72 grams. What do 10 marbles weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7.2",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "A ball of wool is 9.6 metres long. Each pompom uses 0.4 metres of wool. How many pompoms can be made?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Ava cycles 2.7 km on Saturday and 5.8 km on Sunday. How far in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8.5 km",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 133,
+      "questionText": "A snail crawls 6.483 cm in one minute. Round this distance to one decimal place.",
+      "questionDifficulty": 1,
+      "correctAnswer": "6.5",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "A bag of sand weighs 4.8 kg. Only 0.8 of the bag is needed for a sandcastle. How many kg of sand are used? (Hint: multiply 4.8 × 0.8)",
+      "questionDifficulty": 2,
+      "correctAnswer": "3.84",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "A hosepipe is 12.6 metres long. It is cut into 7 equal sections. How long is each section?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.8",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "A shop gives £0.15 discount for every £1 spent. Priya buys items costing £4.60 and £3.40. How much does she save in total?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£1.20",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "After adding 2.75 to a number and then subtracting 1.38, the result is 4.97. What was the starting number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3.60",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Oliver buys 3 sandwiches at £2.85 each and 2 drinks at £1.45 each. How much does he spend altogether?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£11.45",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "What is 0.72 ÷ 0.08?",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A recipe needs 0.375 kg of flour. What fraction of a kilogram is this?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3/8",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A tank holds 12.5 litres of water. After 3.78 litres are used and then 1.64 litres are added back, how much water is in the tank?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10.36 litres",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Ella scores 7.5, 8.25 and 9.0 in three gymnastics rounds. What is her mean (average) score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8.25",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "What is 3.6 ÷ 0.12?",
+      "questionDifficulty": 3,
+      "correctAnswer": "30",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "A jacket originally costs £45. In a sale, the price is reduced by 0.3 of the original price. What is the sale price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£31.50",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "Put these in order from smallest to largest: 0.064, 0.604, 0.46, 0.406, 0.640",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.064, 0.406, 0.46, 0.604, 0.640",
+      "subConceptId": "comparing-decimals",
+      "subConceptName": "Comparing and Ordering Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to compare decimals by looking at each column from left to right",
+        "Why 0.8 is bigger than 0.08 even though 8 = 8"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "A bus journey is 14.6 km. The bus has already travelled 8.75 km. It then stops and travels another 3.25 km. How much further does it still need to go?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2.60 km",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "What is 0.125 × 0.8?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.1",
+      "subConceptId": "multiplying-decimal-by-decimal",
+      "subConceptName": "Multiplying Decimal by Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's the method. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply two decimals together",
+        "How to count total decimal places to place the point correctly"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "Tom thinks of a number. He multiplies it by 0.4 and gets 3.6. What number did Tom think of?",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "A 2-litre bottle of juice is shared equally among 8 children. How many millilitres does each child get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "250 ml",
+      "subConceptId": "dividing-to-decimal",
+      "subConceptName": "Dividing to Get a Decimal Answer",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to keep dividing past the decimal point to get an exact answer",
+        "When a remainder (the amount left over after dividing) turns into a decimal"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "Sophie has £20. She buys a book for £6.99 and a pen for £2.49. She then spends half of what is left on a gift. How much money does she have remaining?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£5.26",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "Which calculation gives the largest answer?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6.5 ÷ 2",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A runner completes 4 laps. The lap times are 1.25 minutes, 1.32 minutes, 1.18 minutes and 1.45 minutes. What is the total time for all 4 laps?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5.20 minutes",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 153,
+      "questionText": "A piece of ribbon is 3.2 metres long. Pieces of 0.45 m are cut from it. What is the maximum number of whole pieces that can be cut?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7",
+      "subConceptId": "dividing-decimal-by-decimal",
+      "subConceptName": "Dividing by a Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! T",
+      "lessonLearningGoal": [
+        "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+        "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "In a class, 0.35 of the children walk to school and 0.4 travel by car. The remaining 5 children cycle. How many children are in the class?",
+      "questionDifficulty": 3,
+      "correctAnswer": "20",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "A shop sells apples at £1.20 per kilogram. Mrs Chen buys 2.5 kg of apples and pays with a £5 note. How much change does she receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£2.00",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "What is (4.2 + 1.8) × (6.5 − 3.5)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "A box contains 8 identical books. The box and books together weigh 5.4 kg. The empty box weighs 0.6 kg. What does each book weigh?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.60 kg",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "Jake saves £2.50 each week. After several weeks he has saved £18.50. He then spends £6.00 on a game. How many more weeks of saving does he need to rea",
+      "questionDifficulty": 3,
+      "correctAnswer": "5",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "What is the value of the digit 4 in the number 3.45?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.4",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "How many hundredths are there in 0.07?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "In the number 5.82, what is the value of the digit 8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.8",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "What is the value of the digit 9 in the number 6.19?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.09",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "Which digit is in the thousandths place in 2.468?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "Write 3 tenths and 5 hundredths as a decimal.",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.35",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "In the number 7.063, what is the value of the digit 6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.06",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "A number has 2 in the ones place, 4 in the tenths place and 7 in the thousandths place. What is the number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2.407",
+      "subConceptId": "decimal-place-value",
+      "subConceptName": "Decimal Place Value",
+      "confidence": "high",
+      "lessonTeachSummary": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many *",
+      "lessonLearningGoal": [
+        "How to understand what each digit means after the decimal point",
+        "Why the position of a digit changes its value"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "Convert 0.25 to a percentage.",
+      "questionDifficulty": 1,
+      "correctAnswer": "25%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "Convert 0.7 to a percentage.",
+      "questionDifficulty": 1,
+      "correctAnswer": "70%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "Convert 0.5 to a percentage.",
+      "questionDifficulty": 1,
+      "correctAnswer": "50%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "Convert 0.125 to a percentage.",
+      "questionDifficulty": 2,
+      "correctAnswer": "12.5%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "In a class survey, 0.45 of the children chose football as their favourite sport. What percentage of the class chose football?",
+      "questionDifficulty": 2,
+      "correctAnswer": "45%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "A jug is 0.08 full. What percentage of the jug is full?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "A shop gives a 0.15 discount on all items. Charlotte buys a coat costing £60. How much money does she save?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£9.00",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "In a school of 400 pupils, 0.35 walk to school and 0.4 travel by car. What percentage of pupils use a different method of travel?",
+      "questionDifficulty": 3,
+      "correctAnswer": "25%",
+      "subConceptId": "decimal-to-percentage",
+      "subConceptName": "Decimal to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+      "lessonLearningGoal": [
+        "How to convert a decimal to a percentage by multiplying by 100",
+        "Why 0.5 = 50% and 0.05 = 5% are very different"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "What is 45.6 ÷ 100?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.456",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "A ribbon is 3500 mm long. How many metres is this?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3.5 m",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "What is 7.2 ÷ 100?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.072",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "A bag of sand weighs 25,000 g. How many kilograms is this?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25 kg",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "A factory makes 12,500 items. They are packed into boxes of 1000. How many boxes are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "Convert 0.035 km to metres.",
+      "questionDifficulty": 3,
+      "correctAnswer": "35 m",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "A swimming pool holds 4,750 litres of water. The pool is drained at a rate of 100 litres per minute. How many minutes does it take to drain to exactly",
+      "questionDifficulty": 3,
+      "correctAnswer": "45",
+      "subConceptId": "divide-by-10-100-1000",
+      "subConceptName": "Dividing by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2",
+      "lessonLearningGoal": [
+        "How to see that dividing by 10 moves every digit one place right",
+        "How to handle dividing a small number by 100"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "Tom buys a sandwich for £2.50 and a drink for £1.30. How much does he spend altogether?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£3.80",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "A rope is 4.5 m long. Emma cuts off 1.2 m. How much rope is left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3.3 m",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "A pencil costs £0.35. Amelia buys 4 pencils. How much does she pay?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£1.40",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "Oliver buys 3 books at £4.99 each. How much change does he get from £20?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£5.03",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "A recipe needs 0.75 kg of flour. Sophie wants to make 3 batches. How much flour does she need in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2.25 kg",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "Harry runs 2.4 km on Monday and 3.75 km on Tuesday. How much further did he run on Tuesday?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1.35 km",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "A bottle holds 1.5 litres of juice. Mia pours out 4 glasses, each holding 0.25 litres. How much juice is left in the bottle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.5 litres",
+      "subConceptId": "decimal-word-problems",
+      "subConceptName": "Decimal Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to spot which operation to use in a decimals word problem",
+        "How to check your answer is sensible"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "Convert 0.75 to a fraction in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 190,
+      "questionText": "Convert 0.125 to a fraction in its simplest form.",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/8",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 191,
+      "questionText": "Convert 0.6 to a fraction in its simplest form.",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 192,
+      "questionText": "Convert 0.375 to a fraction in its simplest form.",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/8",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 193,
+      "questionText": "Put these in order from smallest to largest: 3/8, 0.4, 0.35",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.35, 3/8, 0.4",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 194,
+      "questionText": "Which of these is NOT equal to the others? 0.4, 2/5, 40/100, 4/9, 0.40",
+      "questionDifficulty": 3,
+      "correctAnswer": "4/9",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+      "lessonLearningGoal": [
+        "How to write a decimal as a fraction over 10, 100 or 1000",
+        "How to simplify the fraction afterwards"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "What is £20 − £13.67?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£6.33",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "What is 5.003 − 2.997?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2.006",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "A plank is 3.2 metres long. Three pieces of 0.85 metres are cut from it. How much wood is left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.65 m",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "A jug holds 2 litres of water. Amira pours out 0.78 litres, then pours out another 0.65 litres. How much water is left in the jug?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.57 litres",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "Harry has £50. He buys a book for £7.85 and a toy for £14.99. How much does he have left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£27.16",
+      "subConceptId": "subtracting-decimals",
+      "subConceptName": "Subtracting Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to subtract decimals by lining up the decimal points",
+        "How to borrow across the decimal point"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "Convert 5/8 to a decimal.",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.625",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "Convert 7/20 to a decimal.",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.35",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "Convert 7/11 to a decimal, rounded to 2 decimal places.",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.64",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "Which is larger: 3/7 or 0.43?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.43",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "Convert 5/6 to a decimal, rounded to 2 decimal places.",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.83",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions you should know as decimals"
+      ]
+    },
+    {
+      "questionId": 205,
+      "questionText": "What is 0.045 × 1000?",
+      "questionDifficulty": 2,
+      "correctAnswer": "45",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 206,
+      "questionText": "A tile weighs 0.35 kg. What do 100 tiles weigh?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35 kg",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 207,
+      "questionText": "A penny weighs 3.56 grams. What do 10,000 pennies weigh in kilograms?",
+      "questionDifficulty": 3,
+      "correctAnswer": "35.6 kg",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 208,
+      "questionText": "A raindrop holds 0.0042 litres of water. How many litres is that for 10,000 raindrops?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42 litres",
+      "subConceptId": "multiply-by-10-100-1000",
+      "subConceptName": "Multiplying by 10, 100 and 1000",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 plac",
+      "lessonLearningGoal": [
+        "How to see that multiplying by 10 moves every digit one place left",
+        "Why 'adding a zero' does not work with decimals"
+      ]
+    },
+    {
+      "questionId": 209,
+      "questionText": "A plank costs £3.45 per metre. How much do 8 metres cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£27.60",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 210,
+      "questionText": "What is 7 × 0.99?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6.93",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 211,
+      "questionText": "A machine produces 0.035 kg of powder per minute. How much does it produce in 200 minutes?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7 kg",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 212,
+      "questionText": "Rosie buys 12 notebooks at £1.35 each. How much does she spend?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£16.20",
+      "subConceptId": "multiplying-decimals-whole",
+      "subConceptName": "Multiplying a Decimal by a Whole Number",
+      "confidence": "high",
+      "lessonTeachSummary": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+      "lessonLearningGoal": [
+        "How to multiply a decimal by a whole number",
+        "How to use partitioning (splitting into parts) to make it easier"
+      ]
+    },
+    {
+      "questionId": 213,
+      "questionText": "Round 4.652 to 1 decimal place.",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.7",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 214,
+      "questionText": "Round 8.995 to 2 decimal places.",
+      "questionDifficulty": 2,
+      "correctAnswer": "9.00",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 215,
+      "questionText": "A calculator shows 3.14159. What is this rounded to 3 decimal places?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3.142",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 216,
+      "questionText": "Two lengths are 3.456 m and 2.789 m. What is their total, rounded to 1 decimal place?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6.2",
+      "subConceptId": "rounding-decimals",
+      "subConceptName": "Rounding Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to round a decimal to 1 decimal place or the nearest whole number",
+        "How to choose which digit to look at when rounding up or down"
+      ]
+    },
+    {
+      "questionId": 217,
+      "questionText": "What is 12.456 + 8.79 + 3.5?",
+      "questionDifficulty": 3,
+      "correctAnswer": "24.746",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 218,
+      "questionText": "Four items cost £3.99, £12.50, £0.75, and £8.49. What is the total?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£25.73",
+      "subConceptId": "master-column-addition-decimals",
+      "subConceptName": "master-column-addition-decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "comparing-decimals": {
+      "name": "Comparing and Ordering Decimals",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 9,
+        "D2": 6,
+        "D3": 1
+      }
+    },
+    "master-column-addition-decimals": {
+      "name": "master-column-addition-decimals",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 9,
+        "D2": 8,
+        "D3": 3
+      }
+    },
+    "subtracting-decimals": {
+      "name": "Subtracting Decimals",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 1,
+        "D2": 12,
+        "D3": 5
+      }
+    },
+    "multiply-by-10-100-1000": {
+      "name": "Multiplying by 10, 100 and 1000",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 14,
+        "D2": 2,
+        "D3": 2
+      }
+    },
+    "divide-by-10-100-1000": {
+      "name": "Dividing by 10, 100 and 1000",
+      "questionCount": 14,
+      "difficulties": {
+        "D1": 7,
+        "D2": 4,
+        "D3": 3
+      }
+    },
+    "multiplying-decimals-whole": {
+      "name": "Multiplying a Decimal by a Whole Number",
+      "questionCount": 14,
+      "difficulties": {
+        "D1": 6,
+        "D2": 5,
+        "D3": 3
+      }
+    },
+    "fraction-to-decimal": {
+      "name": "Fraction to Decimal",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 3
+      }
+    },
+    "dividing-to-decimal": {
+      "name": "Dividing to Get a Decimal Answer",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 4,
+        "D2": 13,
+        "D3": 1
+      }
+    },
+    "rounding-decimals": {
+      "name": "Rounding Decimals",
+      "questionCount": 14,
+      "difficulties": {
+        "D1": 10,
+        "D2": 2,
+        "D3": 2
+      }
+    },
+    "multiplying-decimal-by-decimal": {
+      "name": "Multiplying Decimal by Decimal",
+      "questionCount": 14,
+      "difficulties": {
+        "D1": 0,
+        "D2": 13,
+        "D3": 1
+      }
+    },
+    "decimal-to-percentage": {
+      "name": "Decimal to Percentage",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 5,
+        "D2": 3,
+        "D3": 2
+      }
+    },
+    "dividing-decimal-by-decimal": {
+      "name": "Dividing by a Decimal",
+      "questionCount": 11,
+      "difficulties": {
+        "D1": 0,
+        "D2": 6,
+        "D3": 5
+      }
+    },
+    "decimal-to-fraction": {
+      "name": "Decimal to Fraction",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 4,
+        "D2": 3,
+        "D3": 3
+      }
+    },
+    "decimal-word-problems": {
+      "name": "Decimal Word Problems",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 3,
+        "D2": 4,
+        "D3": 14
+      }
+    },
+    "decimal-place-value": {
+      "name": "Decimal Place Value",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 4,
+        "D2": 3,
+        "D3": 1
+      }
+    }
+  }
+}

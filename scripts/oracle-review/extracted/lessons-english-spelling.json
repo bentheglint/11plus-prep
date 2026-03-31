@@ -1,0 +1,3550 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "spelling",
+    "displayName": "Spelling",
+    "extractedAt": "2026-03-30T13:51:13.707Z",
+    "subConceptCount": 14,
+    "lessonCount": 28,
+    "screenCount": 112,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "homophones",
+      "name": "Homophones — Same Sound, Different Spelling",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "homophones-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to choose the right homophone (a word that sounds the same but has a different meaning) — this one trips up loads of people!",
+            "A quick meaning test that makes picking the correct spelling easy"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the wrong word?",
+              "body": "Aisha is writing a story for English homework and wrote: **\"Their going to the park after school.\"** Something looks wrong! Did you know that homophones are sneaky words that **sound the same** but have **different spellings and meanings**? Even adults get caught out by these!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Their going to the park after school.",
+                "highlightWords": [
+                  {
+                    "word": "Their",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the mistake:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the meaning test",
+              "body": "The wrong word is **Their**. It should be **They're**. 'They're' is short for 'they are'. 'Their' means belonging to them. Here's a handy test that'll help you get it right every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "You've nailed it! Read, think about meaning, then pick the right spelling. ✓",
+                "incorrectFeedback": "Nearly there — start by reading the sentence, then think about meaning."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the sentence and find the homophone",
+                    "why": "Look for words that could be confused"
+                  },
+                  {
+                    "text": "Ask: what does the word MEAN here?",
+                    "why": "Can you replace the word with 'they are'? If yes, use they're."
+                  },
+                  {
+                    "text": "\"Their\" → \"They're\"",
+                    "why": "'They're' is short for 'they are'. 'Their' means belonging to them."
+                  },
+                  {
+                    "text": "Corrected: \"They're going to the park after school.\"",
+                    "why": "Now the meaning matches the spelling ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! Pick the word that fits the sentence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word correctly completes: \"The children packed ___ bags for the trip.\"",
+                "options": [
+                  "their",
+                  "they're",
+                  "there",
+                  "thier",
+                  "thair"
+                ],
+                "correctAnswer": "their",
+                "correctFeedback": "Brilliant! The bags belong to the children, so we need 'their' (belonging to them). ✓",
+                "incorrectFeedback": "Not quite! The bags belong to the children, so we need 'their' (belonging to them)."
+              },
+              "visualProps": {
+                "mode": "gap",
+                "text": "The children packed ___ bags for the trip.",
+                "gapWord": "",
+                "gapHighlight": "blank",
+                "label": "Fill in the correct word:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Homophone recipe",
+              "body": "You've learned the secret weapon! When you see a word that sounds like another word, use the **meaning test** to pick the right spelling. This trick works every single time.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the sentence carefully",
+                    "why": "What does the word actually mean here?"
+                  },
+                  {
+                    "text": "their = belonging to them",
+                    "why": "Their coats, their bags, their house"
+                  },
+                  {
+                    "text": "they're = they are",
+                    "why": "They're going, they're happy"
+                  },
+                  {
+                    "text": "there = a place",
+                    "why": "Over there, there is, there are"
+                  },
+                  {
+                    "text": "its = belonging to it / it's = it is",
+                    "why": "Remember: the apostrophe means 'it is' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "homophones-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot homophone (same-sounding word) errors in writing — you'll become a mistake detective!",
+            "How to use meaning to choose the right spelling every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Ella's mistake?",
+              "body": "Ella wrote a diary entry and wrote: **\"We went over their to play in the garden.\"** One of the homophones is wrong — can you be the detective and find it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We went over their to play in the garden.",
+                "highlightWords": [
+                  {
+                    "word": "their",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the mistake:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": "Ella wrote **\"their\"** but it should be **\"there\"**. Don't worry — this is one of the most common mix-ups! 'Their' means belonging to them. Here we mean a place, so it should be 'there'.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"We went over their to play in the garden.\"",
+                    "why": "\"their\" is the wrong homophone"
+                  },
+                  {
+                    "text": "Think about the meaning",
+                    "why": "'Their' means belonging to them. Here we mean a place, so it should be 'there'."
+                  },
+                  {
+                    "text": "✓ \"We went over there to play in the garden.\"",
+                    "why": "Now the spelling matches the meaning ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! Which word correctly fills the gap?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word correctly completes: \"___ the best friend I've ever had!\"",
+                "options": [
+                  "Your",
+                  "You're",
+                  "Yore",
+                  "Youre",
+                  "Yor"
+                ],
+                "correctAnswer": "You're",
+                "correctFeedback": "Well done! 'You're' is short for 'you are'. 'Your' means belonging to you. ✓",
+                "incorrectFeedback": "Close! 'You're' is short for 'you are'. 'Your' means belonging to you."
+              },
+              "visualProps": {
+                "mode": "gap",
+                "text": "___ the best friend I've ever had!",
+                "gapWord": "",
+                "gapHighlight": "blank",
+                "label": "Fill in the correct word:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "How to catch homophone mistakes",
+              "body": "Here's your superpower: always ask **what does this word mean in the sentence?** If the meaning doesn't match the spelling, swap it for the right homophone. You'll catch mistakes that most people miss!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the sentence slowly",
+                    "why": "Your brain loves to auto-correct — don't let it trick you!"
+                  },
+                  {
+                    "text": "Find the homophone",
+                    "why": "Words that sound alike but mean different things"
+                  },
+                  {
+                    "text": "Ask: what does the word MEAN here?",
+                    "why": "Meaning tells you the spelling"
+                  },
+                  {
+                    "text": "Swap in the correct spelling",
+                    "why": "Spelling must match meaning, not sound ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "silent-letters",
+      "name": "Silent Letters",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "silent-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to remember which words have silent letters — they're sneakier than you'd think!",
+            "How to spot the common silent letter patterns (kn, wr, mb, ps) so they never catch you out"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The letter you can't hear!",
+              "body": "Did you know some letters in English are completely invisible to your ears? Finn is learning words with a silent K. Say the word **\"knight\"** out loud. Can you hear the **K**? No — because it's **silent**! But you still have to write it.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"knight\" sounds like \"night\" — the K is silent!",
+                "highlightWords": [
+                  {
+                    "word": "knight",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Listen and look:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The \"kn-\" pattern",
+              "body": "The word **\"knight\"** sounds like \"night\" because the **K** is silent. When a word starts with 'kn', the K is silent — you only say the N sound. Once you know this pattern, you can spell a whole family of words — here they are:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Pattern: \"kn-\" — the K is silent",
+                    "why": "When a word starts with 'kn', the K is silent — you only say the N sound."
+                  },
+                  {
+                    "text": "Common words: knife, knight, knot, knee, knock, know",
+                    "why": "Learn these as a group — once you spot the pattern, you've got them all!"
+                  },
+                  {
+                    "text": "Memory trick: picture the silent letter wearing an invisible cloak!",
+                    "why": "It's there in the spelling, just hiding from your ears"
+                  },
+                  {
+                    "text": "Say it with the silent letter: \"knight\" → k-night",
+                    "why": "Saying the silent letter while you practise helps you remember it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Time to put your new knowledge to the test! Which of these is spelled correctly?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which spelling is correct?",
+                "options": [
+                  "knuckle",
+                  "nuckle",
+                  "knucle",
+                  "nuckell",
+                  "knukle"
+                ],
+                "correctAnswer": "knuckle",
+                "correctFeedback": "Superstar! The K in 'knuckle' is silent. We write 'kn' but only say the N sound. ✓",
+                "incorrectFeedback": "Not quite! The K in 'knuckle' is silent. We write 'kn' but only say the N sound."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Silent letter patterns to remember",
+              "body": "Silent letters are tricky because you can't hear them — but here's the good news: they follow patterns! Learn the pattern and you'll get the whole group right.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "kn- → silent K: knife, knight, knot, knee, knock",
+                    "why": "Say 'k-nife' in your head to remember the K"
+                  },
+                  {
+                    "text": "wr- → silent W: write, wrong, wrap, wrist",
+                    "why": "Say 'w-rite' in your head to remember the W"
+                  },
+                  {
+                    "text": "-mb → silent B: climb, lamb, thumb, crumb",
+                    "why": "Say 'clim-b' in your head to remember the B"
+                  },
+                  {
+                    "text": "ps- → silent P: psychology, pneumonia",
+                    "why": "Say 'p-sychology' in your head to remember the P ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "silent-letters-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a silent letter has been missed out — a really common mistake!",
+            "How to use patterns to remember those invisible letters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Jake's mistake?",
+              "body": "Jake wrote in his spelling test and wrote **\"nife\"**. Hmm, a letter is hiding! Can you work out which one has gone missing?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"nife\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "nife",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The silent letter was missing!",
+              "body": "Jake forgot the silent K. Words starting with the 'n' sound often need 'kn' at the start. The correct spelling is **\"knife\"** — the silent **K** follows the **\"kn-\"** pattern. This catches out loads of people, so knowing the pattern puts you ahead!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When a word starts with \"kn-\", the ____ is silent",
+                "options": [
+                  "K",
+                  "N",
+                  "Both letters",
+                  "Neither letter"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The K is silent in the \"kn-\" pattern. ✓",
+                "incorrectFeedback": "Not quite — in \"kn-\" words, the K is the silent letter!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"nife\" — missing the silent K",
+                    "why": "Jake forgot the silent K. Words starting with the 'n' sound often need 'kn' at the start."
+                  },
+                  {
+                    "text": "Pattern: \"kn-\"",
+                    "why": "The K is silent but always written"
+                  },
+                  {
+                    "text": "✓ \"knife\"",
+                    "why": "The correct spelling includes the silent K ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Someone wrote **\"rong\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling of \"rong\"?",
+                "options": [
+                  "wrong",
+                  "rong",
+                  "wrrong",
+                  "wroung",
+                  "wrang"
+                ],
+                "correctAnswer": "wrong",
+                "correctFeedback": "Well done! 'Wrong' starts with 'wr' — the W is silent but must be written. ✓",
+                "incorrectFeedback": "Close! 'Wrong' starts with 'wr' — the W is silent but must be written."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "rong",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't forget the silent letters!",
+              "body": "The most common mistake is leaving out letters you can't hear. But now you know the trick: **say the silent letter in your head** when you practise spelling the word. You've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If it sounds like 'n' at the start, check: is it 'kn'?",
+                    "why": "knife, knight, knee, knock, know"
+                  },
+                  {
+                    "text": "If it sounds like 'r' at the start, check: is it 'wr'?",
+                    "why": "write, wrong, wrap, wrist"
+                  },
+                  {
+                    "text": "If it sounds like 'm' at the end, check: is it 'mb'?",
+                    "why": "climb, lamb, thumb, crumb"
+                  },
+                  {
+                    "text": "Say the silent letter out loud when practising",
+                    "why": "K-nife, w-rite, clim-b — it helps you remember! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-letters",
+      "name": "Double Letters",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "double-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "When to double a consonant (a non-vowel letter) before adding a suffix (an ending like -ing or -ed) — there's a satisfying rule for this!",
+            "How to apply the short vowel rule for doubling letters so you always get it right"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Hassan",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Run + ing = running or runing?",
+              "body": "Here's a spelling puzzle that catches out almost everyone! Hassan is adding -ing to words. When you add **-ing** to **\"run\"**, do you double the last letter? Let's crack it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "undefined  or  undefined?",
+                "highlightWords": [
+                  {
+                    "color": "#e74c3c"
+                  },
+                  {
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The short vowel doubling rule",
+              "body": "Is it **\"running\"** or **\"runing\"**? Good news — there's a really satisfying rule that tells you exactly when to double the last letter:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Spot on! Check the word, check the vowel, check the consonant, then double. You've got it! ✓",
+                "incorrectFeedback": "Nearly there — start by looking at the base word first."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Look at the base word \"run\"",
+                    "why": "Check the vowel (a, e, i, o, u) before the last letter"
+                  },
+                  {
+                    "text": "Step 2a: SHORT vowels make a quick sound",
+                    "why": "cAt, bEd, sIt, hOp, rUn — the vowel is quick and snappy"
+                  },
+                  {
+                    "text": "Step 2b: LONG vowels say their own name",
+                    "why": "cAke, thEme, rIde, hOpe, cUte — the vowel sounds like its letter name"
+                  },
+                  {
+                    "text": "\"run\" has a SHORT \"u\" sound",
+                    "why": "It sounds like the \"u\" in \"run\" — quick and short!"
+                  },
+                  {
+                    "text": "Step 3: Does it end with just ONE consonant?",
+                    "why": "\"run\" ends with one \"n\" — yes!"
+                  },
+                  {
+                    "text": "Step 4: Short vowel + one consonant = DOUBLE IT",
+                    "why": "run → runn + ing = **running**"
+                  },
+                  {
+                    "text": "Why? Without doubling, \"runing\" would change the vowel to a LONG sound",
+                    "why": "\"runing\" looks like it should rhyme with \"tuning\" ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Let's see if you can use the rule! What happens when you add **-ing** to **\"sit\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is \"sit\" + \"-ing\"?",
+                "options": [
+                  "sitting",
+                  "siting",
+                  "sittng",
+                  "sitteing",
+                  "siteing"
+                ],
+                "correctAnswer": "sitting",
+                "correctFeedback": "Brilliant! 'Sit' has a short vowel (i) then a single consonant (t), so we double the T before adding -ing. ✓",
+                "incorrectFeedback": "Not quite! 'Sit' has a short vowel (i) then a single consonant (t), so we double the T before adding -ing."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "sit + ing = ?",
+                "highlightWords": [
+                  {
+                    "word": "sit",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What's the correct spelling?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "When to double the last letter",
+              "body": "Here's the golden rule to take away: **short vowel + single consonant = double it** before adding a suffix like -ing, -ed or -er. Once you know this, you'll spot the answer instantly!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check the vowel — is it short? (a, e, i, o, u as in cat, bed, sit, hop, run)",
+                    "why": "Long vowels (like in 'hope') do NOT double"
+                  },
+                  {
+                    "text": "Check the ending — is it a single consonant?",
+                    "why": "Two consonants (like 'jump') do NOT double"
+                  },
+                  {
+                    "text": "If both yes → double the consonant before the suffix",
+                    "why": "run → running, hop → hopped, big → bigger"
+                  },
+                  {
+                    "text": "If the vowel is long → DON'T double",
+                    "why": "hope → hoping (not hopping!) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "double-letters-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a letter should or shouldn't be doubled — these mistakes are everywhere!",
+            "How to avoid common double-letter mistakes that trip up even grown-ups"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Aisha's mistake?",
+              "body": "Aisha wrote in her story and spelled a word as **\"begining\"**. Something's off with the double letters! This one catches out grown-ups too — can you spot it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"begining\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "begining",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Aisha wrote **\"begining\"** — but the correct spelling is **\"beginning\"**."
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "✗ begining     ✓ beginning",
+                    "highlightWords": [
+                      {
+                        "word": "begining",
+                        "color": "#e74c3c"
+                      },
+                      {
+                        "word": "beginning",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "label": "Compare them side by side:"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "The N needs to be doubled. Say 'begin' — the last part sounds like 'GIN' with a short vowel, so double the N before adding -ing."
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Your turn to be the teacher! Someone wrote **\"occured\"**. What's the correct spelling?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "occurred",
+                  "occured",
+                  "ocurred",
+                  "occurrd",
+                  "ocured"
+                ],
+                "correctAnswer": "occurred",
+                "correctFeedback": "Superstar! 'Occur' has stress on the last part (oc-CUR), short vowel + single consonant, so double the R. ✓",
+                "incorrectFeedback": "Not quite! 'Occur' has stress on the last part (oc-CUR), short vowel + single consonant, so double the R."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "occured",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Double letter dos and don'ts",
+              "body": "Some words double letters, some don't — and now you know how to tell the difference! Use the short vowel rule for adding suffixes, and learn the tricky ones by heart.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Short vowel + single consonant → double before a suffix",
+                    "why": "running, hopped, bigger"
+                  },
+                  {
+                    "text": "Long vowel → do NOT double",
+                    "why": "hoping (not hopping), writing (not writting)"
+                  },
+                  {
+                    "text": "Tricky doubles to learn: accommodate, beginning, occurred",
+                    "why": "These follow the rule but people often forget"
+                  },
+                  {
+                    "text": "Tricky singles to learn: until, tomorrow, necessary",
+                    "why": "These are exceptions — just learn them by heart ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-before-e",
+      "name": "The i Before e Rule",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "i-before-e-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to apply the famous 'i before e except after c' rule — one of the most useful spelling rules there is!",
+            "How to remember the sneaky exceptions that break the rule"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "i before e — or e before i?",
+              "body": "Did you know there's a famous rhyme that's helped people spell for hundreds of years? Ella is learning the ie/ei pattern. Is it \"bel-ie-ve\" or \"bel-ei-ve\"? Let's learn the rule!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "i before e, except after c",
+                "highlightWords": [
+                  {
+                    "word": "i before e",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "The golden rule:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The rule and how to use it",
+              "body": "So is it **\"believe\"** with \"ie\" — or the other way round? The answer comes from this famous rhyme: **i before e, except after c** (when the sound is \"ee\"). It's been helping people spell for ages — let's see how it works:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The rule is: i before e, except after ____",
+                "options": [
+                  "c",
+                  "s",
+                  "t",
+                  "any consonant"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! \"i before e, except after c\" — that's the golden rule. ✓",
+                "incorrectFeedback": "Not quite — the rule is \"i before e, except after C\"!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Usually: i before e → \"ie\"",
+                    "why": "believe, piece, field, thief, chief"
+                  },
+                  {
+                    "text": "After C: e before i → \"ei\"",
+                    "why": "receive, ceiling, deceive, receipt, conceive"
+                  },
+                  {
+                    "text": "Check: is there a C right before?",
+                    "why": "If yes → ei. If no → ie"
+                  },
+                  {
+                    "text": "Careful! Some rebel words break the rule",
+                    "why": "weird, seize, their, neither, protein — learn these rebels by heart ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now it's your turn! Which of these is spelled correctly?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which spelling is correct?",
+                "options": [
+                  "achieve",
+                  "acheive",
+                  "acheve",
+                  "acheeve",
+                  "achiev"
+                ],
+                "correctAnswer": "achieve",
+                "correctFeedback": "Brilliant! No C before the sound, so it's i before e: ach-ie-ve. ✓",
+                "incorrectFeedback": "Not quite! No C before the sound, so it's i before e: ach-ie-ve."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "i before e — the full picture",
+              "body": "The rule works brilliantly most of the time — just watch out for a few rebel words that like to break it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "No C before → i before e (ie)",
+                    "why": "believe, piece, field, thief, chief"
+                  },
+                  {
+                    "text": "C before → e before i (ei)",
+                    "why": "receive, ceiling, deceive, receipt"
+                  },
+                  {
+                    "text": "EXCEPTIONS: weird, seize, their, neither",
+                    "why": "These are the rebels — learn them separately"
+                  },
+                  {
+                    "text": "EXCEPTIONS: protein, caffeine, species",
+                    "why": "Scientific words often go their own way too ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "i-before-e-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot ie/ei mistakes — they're some of the most common spelling errors around!",
+            "How to use the 'after c' part of the rule like a pro"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Finn's mistake?",
+              "body": "Finn wrote in his English book and spelled a word as **\"recieve\"**. The ie/ei is the wrong way round! These two little letters cause more spelling headaches than almost anything else. Can you fix it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"recieve\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "recieve",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The ie/ei is swapped!",
+              "body": "Finn wrote 'ie' after C, but after C it should be 'ei'. Receive → rec-ei-ve.\n\n**Your ie/ei checklist:**\n1. Is there a C right before? → use **ei** (receive, ceiling)\n2. No C? Then usually → **ie** (believe, piece, field)\n3. Check — is it an exception? (weird, seize, their, protein)\n4. When in doubt, write both and see which looks right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"recieve\"",
+                    "why": "The i and e are the wrong way round"
+                  },
+                  {
+                    "text": "Finn wrote 'ie' after C, but after C it should be 'ei'. Receive → rec-ei-ve.",
+                    "why": "Apply the rule: i before e, except after c"
+                  },
+                  {
+                    "text": "✓ \"receive\"",
+                    "why": "Now the ie/ei is correct ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Someone wrote **\"decieve\"**. What's the correct spelling?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "deceive",
+                  "decieve",
+                  "desieve",
+                  "deceve",
+                  "deceeve"
+                ],
+                "correctAnswer": "deceive",
+                "correctFeedback": "Well done! There's a C before the sound, so it's 'ei' not 'ie': dec-ei-ve. ✓",
+                "incorrectFeedback": "Close! There's a C before the sound, so it's 'ei' not 'ie': dec-ei-ve."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "decieve",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "ie or ei — your checklist",
+              "body": "You've now got a handy checklist that works almost every time. Here it is:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Is there a C just before?",
+                    "why": "If YES → use EI (e.g. receive, ceiling, deceit)"
+                  },
+                  {
+                    "text": "Step 2: No C before?",
+                    "why": "If NO → use IE (e.g. believe, field, thief)"
+                  },
+                  {
+                    "text": "Step 3: Watch out for exceptions!",
+                    "why": "weird, seize, neither, their — these break the rule"
+                  },
+                  {
+                    "text": "Memory trick: I before E, except after C",
+                    "why": "Learn the exceptions separately ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suffix-ful",
+      "name": "Word Endings: -ful (not -full)",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "suffix-ful-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why the suffix (word ending) -ful always has one L, not two — this surprises almost everyone!",
+            "How to add -ful to base words correctly every single time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "-ful or -full?",
+              "body": "Here's a question that tricks nearly everyone! Grace is writing about her weekend and needs to write the word **\"hopeful\"**. But wait — is it one L or two? The word \"full\" has two Ls, so should the suffix?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "hopefull  or  hopeful?",
+                "highlightWords": [
+                  {
+                    "word": "hopefull",
+                    "color": "#e74c3c"
+                  },
+                  {
+                    "word": "hopeful",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The -ful rule: always ONE L",
+              "body": "The answer is **\"hopeful\"** — with just ONE L. When \"full\" becomes a **suffix** (letters added to the end of another word), it loses one L and becomes **-ful**. Every single time!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The word \"full\" on its own has two Ls",
+                    "why": "The glass is full"
+                  },
+                  {
+                    "text": "As a suffix, it drops to one L: -ful",
+                    "why": "This ALWAYS happens — no exceptions!"
+                  },
+                  {
+                    "text": "hope + ful = hopeful",
+                    "why": "NOT \"hopefull\" — just one L"
+                  },
+                  {
+                    "text": "More examples: helpful, cheerful, powerful, playful",
+                    "why": "Every -ful word follows this rule ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Let's see if you remember the rule! What do you get when you add -ful to **\"care\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is \"care\" + \"-ful\"?",
+                "options": [
+                  "careful",
+                  "carefull",
+                  "carful",
+                  "carefal",
+                  "carfull"
+                ],
+                "correctAnswer": "careful",
+                "correctFeedback": "Superstar! The suffix -ful always has ONE L. Care + ful = careful. ✓",
+                "incorrectFeedback": "Not quite! The suffix -ful always has ONE L. Care + ful = careful."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Which spelling is correct?",
+                "highlightWords": [],
+                "label": "Pick the right one:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The -ful rule",
+              "body": "This is one of the simplest spelling rules — and one of the most commonly broken, even by adults! Now you know better.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The word 'full' on its own = two Ls",
+                    "why": "That's fine — it's a standalone word"
+                  },
+                  {
+                    "text": "The SUFFIX -ful = always ONE L",
+                    "why": "helpful, beautiful, wonderful, thankful, hopeful"
+                  },
+                  {
+                    "text": "There are NO exceptions",
+                    "why": "Every -ful word has one L at the end"
+                  },
+                  {
+                    "text": "Watch out for 'beautiful' (beauty → beauti → beautiful)",
+                    "why": "The Y changes to I before adding -ful ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "suffix-ful-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot the sneaky -full error that pops up everywhere",
+            "Why -ful always has one L as a suffix (word ending) — a fact that puts you ahead of most people!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Jake's mistake?",
+              "body": "Jake wrote in his homework book and wrote **\"wonderfull\"**. Something's not right at the end of the word! Can you spot what's gone wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"wonderfull\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "wonderfull",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Too many Ls!",
+              "body": "Jake wrote -full with two Ls. As a suffix, -ful always has just one L.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"wonderfull\" — two Ls at the end",
+                    "why": "The suffix -ful never has two Ls"
+                  },
+                  {
+                    "text": "\"Full\" drops an L when it becomes a suffix",
+                    "why": "full → -ful (always!)"
+                  },
+                  {
+                    "text": "✓ \"wonderful\" — one L",
+                    "why": "That's the correct spelling ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Your turn! Someone wrote **\"powerfull\"**. Can you fix it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "powerful",
+                  "powerfull",
+                  "powrful",
+                  "powerfl",
+                  "powarful"
+                ],
+                "correctAnswer": "powerful",
+                "correctFeedback": "Well done! The suffix -ful always has ONE L: powerful. ✓",
+                "incorrectFeedback": "Close! The suffix -ful always has ONE L: powerful."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "powerfull",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "One L for -ful — always!",
+              "body": "This is a guaranteed rule with zero exceptions — how satisfying is that? If it's a suffix, it's one L. Every time. No tricks!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The suffix -ful ALWAYS has one L",
+                    "why": "helpful, beautiful, wonderful, grateful"
+                  },
+                  {
+                    "text": "The word 'full' on its own has two Ls",
+                    "why": "Only the standalone word keeps both Ls"
+                  },
+                  {
+                    "text": "No exceptions — this rule is 100% reliable",
+                    "why": "If you see -full at the end, it's wrong"
+                  },
+                  {
+                    "text": "Quick check: cover the -ful. Is there a word left?",
+                    "why": "hope-ful, care-ful, play-ful — yes! One L ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suffix-pairs",
+      "name": "Tricky Suffix Pairs",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "suffix-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to choose between confusing suffix (word ending) pairs like -tion and -sion — they sound almost identical!",
+            "How to use clever memory tricks for -ent/-ant and -ence/-ance so you never mix them up"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which ending is right?",
+              "body": "Did you know that even teachers sometimes have to double-check these? Aisha is learning -tion and -sion endings. Is it **-tion** or **-sion**? These confusing pairs trip up everyone — but you're about to learn the secret!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"--tion\" or \"--sion\"? Which ending is correct?",
+                "highlightWords": [],
+                "label": "Suffix challenge:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "-tion or -sion?",
+              "body": "These two endings sound almost the same — but only one is right! Here's how to tell them apart:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "These two endings sound almost the same — but only one is right!"
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "\"education\" uses **-tion**",
+                        "why": "Say it: \"education\" — hear the ending!"
+                      },
+                      {
+                        "text": "\"television\" uses **-sion**",
+                        "why": "Say it: \"television\" — sounds different!"
+                      },
+                      {
+                        "text": "How to remember:",
+                        "why": "If the letter before the ending is L, N, R or S, use -sion (expuLsion, teNsion, veRsion, expresSion). Otherwise, use -tion!"
+                      },
+                      {
+                        "text": "Still stuck? Think of a word you already know how to spell",
+                        "why": "Words from the same family use the same ending ✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! Test yourself on **-tion** / **-sion**. Which spelling is correct?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which spelling is correct?",
+                "options": [
+                  "invention",
+                  "invension",
+                  "invenshun",
+                  "inventtion",
+                  "inventon"
+                ],
+                "correctAnswer": "invention",
+                "correctFeedback": "Brilliant! The base word 'invent' ends in T, not L/N/R/S, so it's -tion: invention. ✓",
+                "incorrectFeedback": "Not quite! The base word 'invent' ends in T, not L/N/R/S, so it's -tion: invention."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Suffix pairs cheat sheet",
+              "body": "These pairs are genuinely hard — even adults mix them up all the time. But now you've got the patterns, you're ahead of the game!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "-tion vs -sion: after L, N, R, S → use -sion",
+                    "why": "expulsion, tension, version, expression"
+                  },
+                  {
+                    "text": "-tion for most other words",
+                    "why": "education, invention, action, station"
+                  },
+                  {
+                    "text": "-ent/-ence: different, excellent, confidence",
+                    "why": "Learn these as a group"
+                  },
+                  {
+                    "text": "-ant/-ance: important, pleasant, importance",
+                    "why": "Learn these as a separate group ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "suffix-pairs-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot wrong suffix (word ending) pairs — become a spelling detective!",
+            "How to use related words as clues to check the suffix"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Ben's mistake?",
+              "body": "Ben wrote in his geography book and wrote **\"educasion\"**. The suffix is wrong! Can you see which part?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"educasion\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "educasion",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Wrong suffix!",
+              "body": "Ben used -sion, but 'educate' ends in T, so it's -tion: education.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"educasion\"",
+                    "why": "Wrong suffix used"
+                  },
+                  {
+                    "text": "Ben used -sion, but 'educate' ends in T, so it's -tion: education.",
+                    "why": "Think about the base word or the matching adjective/noun"
+                  },
+                  {
+                    "text": "✓ \"education\"",
+                    "why": "Correct suffix ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you have a go! Someone wrote **\"televition\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "television",
+                  "televition",
+                  "televishin",
+                  "telivision",
+                  "televission"
+                ],
+                "correctAnswer": "television",
+                "correctFeedback": "Superstar! The base is 'televise' which ends in S, so it's -sion: television. ✓",
+                "incorrectFeedback": "Close! The base is 'televise' which ends in S, so it's -sion: television."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "televition",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "-tion or -sion? The quick check!",
+              "body": "You've got a really useful trick now. Here's how to choose the right ending every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Look at the letter BEFORE the ending",
+                    "why": "What letter does the base word end with?"
+                  },
+                  {
+                    "text": "Step 2: Is it L, N, R or S?",
+                    "why": "If YES → use -sion (e.g. expuLsion, teNsion, veRsion, expresSion)"
+                  },
+                  {
+                    "text": "Step 3: Is it any other letter?",
+                    "why": "If YES → use -tion (e.g. educaTion, invenTion, celebraTion)"
+                  },
+                  {
+                    "text": "Still unsure? Say the base word out loud",
+                    "why": "If it ends with a 'zh' or 'sh' sound, it's probably -sion ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unexpected-sounds",
+      "name": "Letters Making Different Sounds",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "unexpected-sounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise when letters are in disguise, making unexpected sounds",
+            "How to spot the common patterns — soft c, soft g, ph=f, ch=k — so they never trick you"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Letters in disguise!",
+              "body": "Did you know that English letters love dressing up as other letters? Daisy is learning about soft C and has just discovered that the letter **c** can sound like **s (as in city)**! How sneaky is that?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The letter \"c\" can make the sound \"s (as in city)\"!",
+                "highlightWords": [],
+                "label": "Unexpected sound:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "When c makes a different sound",
+              "body": "On the previous screen, we saw how **\"city\"** uses the letter **c** to make the sound **s (as in city)**. C makes an S sound before E, I, or Y.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "c usually sounds like: k (as in cat)",
+                    "why": "The sound you'd expect"
+                  },
+                  {
+                    "text": "But sometimes it sounds like: s (as in city)",
+                    "why": "C makes an S sound before E, I, or Y."
+                  },
+                  {
+                    "text": "Examples: city, ceiling, cycle, cent, circle, cinema",
+                    "why": "Learn these as a group"
+                  },
+                  {
+                    "text": "The spelling uses the LETTER, not the sound",
+                    "why": "Don't write what you hear — write the correct letters ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now it's your turn! Which of these is spelled correctly?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which spelling is correct?",
+                "options": [
+                  "circle",
+                  "sircle",
+                  "circel",
+                  "cirkle",
+                  "sirkle"
+                ],
+                "correctAnswer": "circle",
+                "correctFeedback": "Well done! Even though it sounds like 'sircle', it's spelled with a C because C makes an S sound before I. ✓",
+                "incorrectFeedback": "Not quite! Even though it sounds like 'sircle', it's spelled with a C because C makes an S sound before I."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Letters in disguise — summary",
+              "body": "These patterns trip people up because the spelling doesn't match the sound. But once you know the disguises, they can't fool you any more!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Soft C → S sound before E, I, Y",
+                    "why": "city, ceiling, cycle, cent, circle"
+                  },
+                  {
+                    "text": "Soft G → J sound before E, I, Y",
+                    "why": "gym, gentle, giant, giraffe, energy"
+                  },
+                  {
+                    "text": "PH → F sound",
+                    "why": "phone, photo, pharmacy, elephant"
+                  },
+                  {
+                    "text": "CH → K sound (Greek words)",
+                    "why": "character, school, chemistry, stomach ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "unexpected-sounds-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot phonetic (spelled-by-sound) misspellings — English is full of them!",
+            "Why spelling by sound doesn't always work, and what to do instead"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Tom's mistake?",
+              "body": "Tom wrote in his book and wrote **\"fone\"**. Here's the tricky thing — it sounds right when you say it, but the spelling is wrong! English loves to play tricks like this. Can you see why?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"fone\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "fone",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spelled by sound — but English had other plans!",
+              "body": "Tom wrote the F sound as 'f', but this word uses PH for the F sound. It comes from Greek.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"fone\" — spelled by sound",
+                    "why": "Tom wrote the F sound as 'f', but this word uses PH for the F sound. It comes from Greek."
+                  },
+                  {
+                    "text": "In English, the same sound can be spelled different ways",
+                    "why": "You have to learn which letters each word uses"
+                  },
+                  {
+                    "text": "✓ \"phone\"",
+                    "why": "The correct spelling uses the right letter pattern ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Time to test your skills! Someone wrote **\"foto\"**. Can you fix it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "photo",
+                  "foto",
+                  "photto",
+                  "foeto",
+                  "phote"
+                ],
+                "correctAnswer": "photo",
+                "correctFeedback": "Brilliant! The F sound in 'photo' is spelled PH, not F. It comes from the Greek word for light. ✓",
+                "incorrectFeedback": "Close! The F sound in 'photo' is spelled PH, not F. It comes from the Greek word for light."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "foto",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't spell by sound alone!",
+              "body": "English has borrowed words from so many languages that the spelling often doesn't match the sound. But now you know the secret patterns, and that puts you way ahead!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "F sound might be spelled: f, ph, or gh (laugh)",
+                    "why": "phone, not fone; photo, not foto"
+                  },
+                  {
+                    "text": "J sound might be spelled: j, g, or dge (badge)",
+                    "why": "gym, not jym; giant, not jiant"
+                  },
+                  {
+                    "text": "K sound might be spelled: k, c, ck, or ch",
+                    "why": "character, not karacter; school, not skool"
+                  },
+                  {
+                    "text": "S sound might be spelled: s, c, or ss",
+                    "why": "city, not sity; circle, not sircle ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-demons",
+      "name": "Words You Just Have to Learn",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "spelling-demons-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use clever memory tricks (mnemonics) for the hardest common words — these are really fun!",
+            "How to break tricky words into parts so your brain locks them in"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isla",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How do you spell \"because\"?",
+              "body": "Did you know that **\"because\"** is one of the most misspelled words in the whole English language? Isla is learning to spell 'because'. This word doesn't follow the usual rules — but there's a brilliant trick to help you remember it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"because\"",
+                "highlightWords": [
+                  {
+                    "word": "because",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Focus word:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Memory trick for \"because\"",
+              "body": "Take the first letter of each word in the sentence to spell B-E-C-A-U-S-E.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The word: \"because\"",
+                    "why": "Break it down: be-cause"
+                  },
+                  {
+                    "text": "Memory trick: Big Elephants Can Always Understand Small Elephants",
+                    "why": "Take the first letter of each word in the sentence to spell B-E-C-A-U-S-E."
+                  },
+                  {
+                    "text": "Common mistake: becuse / becoz / becos",
+                    "why": "Now you know the trick, you won't make this mistake!"
+                  },
+                  {
+                    "text": "Practise writing it 3 times",
+                    "why": "Writing it helps your hand remember the pattern ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! One of these is the correct spelling — can you pick it?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct spelling?",
+                "options": [
+                  "because",
+                  "becuse",
+                  "becouse",
+                  "becaus",
+                  "becauce"
+                ],
+                "correctAnswer": "because",
+                "correctFeedback": "Superstar! Remember: Big Elephants Can Always Understand Small Elephants → B-E-C-A-U-S-E. ✓",
+                "incorrectFeedback": "Not quite! Remember: Big Elephants Can Always Understand Small Elephants → B-E-C-A-U-S-E."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Memory tricks for tricky words",
+              "body": "Some words just don't follow the rules — but that's OK! Use **mnemonics** (memory tricks) to outsmart them. These tricks are so good, you'll never forget them!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "because → Big Elephants Can Always Understand Small Elephants",
+                    "why": "First letters spell B-E-C-A-U-S-E"
+                  },
+                  {
+                    "text": "separate → there's A RAT in sepARATE",
+                    "why": "Look for hidden words inside tricky words"
+                  },
+                  {
+                    "text": "Wednesday → say Wed-NES-day out loud",
+                    "why": "Pronounce the silent letters when practising"
+                  },
+                  {
+                    "text": "definitely → it has the word FINITE inside",
+                    "why": "de-FINITE-ly — no A anywhere! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "spelling-demons-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot the most common misspellings of tricky words — you'll be surprised how often you see them!",
+            "How to use memory tricks to avoid these mistakes and impress your teacher"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Finn's mistake?",
+              "body": "Finn wrote in his diary and wrote **\"definately\"**. It looks close, but it's not quite right! Don't worry — this is one of the words that almost everybody gets wrong.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"definately\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "definately",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong",
+              "body": "Finn wrote 'definately' with an A, but the correct spelling has no A. Think of the word FINITE inside: de-FINITE-ly. Don't worry — now you know the trick, you'll remember it for life!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"definately\"",
+                    "why": "Finn wrote 'definately' with an A, but the correct spelling has no A. Think of the word FINITE inside: de-FINITE-ly."
+                  },
+                  {
+                    "text": "Memory trick: de-FINITE-ly — the word FINITE is inside",
+                    "why": "Use this to remember the correct spelling"
+                  },
+                  {
+                    "text": "✓ \"definitely\"",
+                    "why": "Now you'll get this right every time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"goverment\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "government",
+                  "goverment",
+                  "govermant",
+                  "govermnent",
+                  "govenment"
+                ],
+                "correctAnswer": "government",
+                "correctFeedback": "Well done! It's govern-ment — the word 'govern' keeps all its letters when you add -ment. ✓",
+                "incorrectFeedback": "Close! It's govern-ment — the word 'govern' keeps all its letters when you add -ment."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "goverment",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Spelling demons — learn them by heart",
+              "body": "These words trip up almost everyone — but not you any more! Use the tricks below, practise writing them out, and you'll have them nailed in no time.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "definitely → de-FINITE-ly (no A!)",
+                    "why": "The most commonly misspelled word in English"
+                  },
+                  {
+                    "text": "February → Feb-R-u-ary (don't drop the R)",
+                    "why": "Say all the syllables: Feb-roo-ary"
+                  },
+                  {
+                    "text": "library → lib-R-ary (two Rs)",
+                    "why": "Say: LIB-rare-ee"
+                  },
+                  {
+                    "text": "government → GOVERN-ment (keep the N)",
+                    "why": "The word 'govern' stays complete ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prefix-spelling",
+      "name": "Prefix Spelling Rules",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "prefix-spelling-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to remember that adding a prefix (a letter group at the start, like un- or re-) never changes the base word spelling — this is a golden rule!",
+            "How to recognise when prefixes naturally create double letters (and why that's perfectly fine)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why does \"disappear\" have a double letter?",
+              "body": "Aisha is checking her English homework and needs to spell **\"disappear\"**. Lots of people write **\"disapear\"** — but that's wrong! Here's the golden rule that makes it easy: **adding a prefix never changes the base word**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "dis + appear = disappear",
+                "highlightWords": [
+                  {
+                    "word": "disappear",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Prefix + word:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The golden rule: don't change the base word",
+              "body": "This rule is beautifully simple: when you add a prefix, keep the base word exactly as it is. No exceptions! The prefix 'dis-' is added to 'appear'. The base word doesn't change, so both letters stay.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Spot on! Write the base word first, add the prefix, and never drop a letter. You've got it! ✓",
+                "incorrectFeedback": "Nearly there — always start with the base word, then add the prefix in front."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with the base word: \"appear\"",
+                    "why": "Write this out first — don't change any letters"
+                  },
+                  {
+                    "text": "Add the prefix in front: \"dis-\"",
+                    "why": "The prefix \"dis\" goes right before \"appear\""
+                  },
+                  {
+                    "text": "dis- + appear = disappear",
+                    "why": "The two P's come from the base word — 'appear' already has two P's."
+                  },
+                  {
+                    "text": "✓ \"disappear\"",
+                    "why": "Both parts keep their full spelling — that's the rule ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! One of these is the correct spelling — can you pick it?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct spelling?",
+                "options": [
+                  "disagree",
+                  "diagree",
+                  "dissagree",
+                  "disargee",
+                  "disagreee"
+                ],
+                "correctAnswer": "disagree",
+                "correctFeedback": "Brilliant! 'Dis-' + 'agree' = 'disagree'. The base word 'agree' stays exactly the same. ✓",
+                "incorrectFeedback": "Not quite! 'Dis-' + 'agree' = 'disagree'. The base word 'agree' stays exactly the same."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prefix spelling recipe",
+              "body": "Here's the best bit: the base word **never changes** when you add a prefix. If this creates a double letter, that's perfectly correct! Don't be tempted to drop one.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "dis + appear = disappear (two P's from 'appear')",
+                    "why": "Don't drop a letter — keep both parts whole"
+                  },
+                  {
+                    "text": "mis + spell = misspell (two S's)",
+                    "why": "One S from 'mis', one from 'spell'"
+                  },
+                  {
+                    "text": "un + necessary = unnecessary (two N's)",
+                    "why": "One N from 'un', one from 'necessary'"
+                  },
+                  {
+                    "text": "over + rule = overrule (two R's)",
+                    "why": "One R from 'over', one from 'rule' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "prefix-spelling-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a prefix (beginning like un- or dis-) has wrongly changed the base word — a really common mistake!",
+            "How to fix prefix spelling mistakes quickly and confidently"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Grace's mistake?",
+              "body": "Grace wrote a letter to her teacher and wrote **\"disatisfied\"**. Is this right, or has a letter been lost when adding the prefix?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"dissatisfied\" — something is missing!",
+                "highlightWords": [
+                  {
+                    "word": "dissatisfied",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check: is the base word still whole?",
+              "body": "Grace dropped the second S. 'Dis-' + 'satisfied' = 'dissatisfied' — the S from 'dis' and the S from 'satisfied' both stay. Here's your detective trick: always split the word into prefix + base and check both parts are complete.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Look at what was written: \"disatisfied\"",
+                    "why": "Split it into prefix + base word"
+                  },
+                  {
+                    "text": "The base word must stay exactly the same",
+                    "why": "Don't drop or change any letters"
+                  },
+                  {
+                    "text": "✓ Correct spelling: \"dissatisfied\"",
+                    "why": "Both prefix and base word keep their full spelling ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"imature\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling of \"imature\"?",
+                "options": [
+                  "immature",
+                  "imature",
+                  "imatture",
+                  "immatcher",
+                  "immachure"
+                ],
+                "correctAnswer": "immature",
+                "correctFeedback": "Superstar! 'Im-' + 'mature' = 'immature'. The M from 'im' and the M from 'mature' both stay. ✓",
+                "incorrectFeedback": "Close! 'Im-' + 'mature' = 'immature'. The M from 'im' and the M from 'mature' both stay."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "imature",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "How to check prefix spellings",
+              "body": "You've now got a foolproof checking method! When you see a word with a prefix, split it into two parts. If the base word has been changed, the spelling is wrong. Simple as that!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Split the word: prefix + base word",
+                    "why": "Find where the prefix ends and the base word starts"
+                  },
+                  {
+                    "text": "Check: is the base word still whole?",
+                    "why": "Every letter must still be there"
+                  },
+                  {
+                    "text": "Double letters are fine!",
+                    "why": "dis + satisfied = dissatisfied (two S's is correct)"
+                  },
+                  {
+                    "text": "Write both parts fully",
+                    "why": "Never drop a letter to avoid a double ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "able-ible",
+      "name": "-able vs -ible: Which Ending?",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "able-ible-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to decide between -able and -ible endings — there's a surprisingly simple test!",
+            "How to use the 'complete word test' to choose the right ending with confidence"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is it -able or -ible?",
+              "body": "This is one of the trickiest spelling dilemmas in the English language! Ella is writing about a comfortable sofa in her story. The word is **\"comfortable\"**. But is it -able or -ible? There's a clever test that makes it surprisingly easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "comfortable",
+                "highlightWords": [
+                  {
+                    "word": "comfortable",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Focus word:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The complete word test",
+              "body": "The word **\"comfortable\"** uses **-able**. How do you know? Remove the ending — is what's left a complete English word? If yes → **-able**. If no → **-ible**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Take the word: \"comfortable\"",
+                    "why": "Let's remove the ending and see what's left"
+                  },
+                  {
+                    "text": "Remove the ending → \"comfort\"",
+                    "why": "\"comfort\" IS a complete word ✓"
+                  },
+                  {
+                    "text": "Complete word → use -able",
+                    "why": "'Comfort' is a complete English word on its own, so we add '-able'."
+                  },
+                  {
+                    "text": "✓ \"comfortable\"",
+                    "why": "The ending is \"-able\" ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Time to use the complete word test yourself! Is it **-able** or **-ible**? Can you pick the correct spelling?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct spelling of \"enjoyable\"?",
+                "options": [
+                  "enjoyable",
+                  "enjoyible",
+                  "enjoiable",
+                  "enjoyble",
+                  "enjoyeble"
+                ],
+                "correctAnswer": "enjoyable",
+                "correctFeedback": "Well done! 'Enjoy' is a complete word, so we add '-able' → 'enjoyable'. ✓",
+                "incorrectFeedback": "Not quite! 'Enjoy' is a complete word, so we add '-able' → 'enjoyable'."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "-able vs -ible cheat sheet",
+              "body": "You've got a brilliant shortcut now! Use the complete word test: if the base is a real word → **-able**. If not → **-ible**. This works most of the time and puts you ahead of the game.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "-able (base IS a word): comfort→comfortable, enjoy→enjoyable",
+                    "why": "-able is more common — use it when the base word stands alone"
+                  },
+                  {
+                    "text": "-ible (base is NOT a word): poss→possible, vis→visible",
+                    "why": "-ible words usually come from Latin roots"
+                  },
+                  {
+                    "text": "Watch out: notice → noticeable (keep the E!)",
+                    "why": "Some -able words keep the E to protect a soft C or G sound"
+                  },
+                  {
+                    "text": "When in doubt, -able is the safer guess",
+                    "why": "About 900 words use -able but only about 200 use -ible ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "able-ible-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot -able/-ible mistakes in writing — they're hiding everywhere once you start looking!",
+            "How to apply the complete word test to fix errors like a spelling expert"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Ben's mistake?",
+              "body": "Ben wrote in his book review and wrote **\"incredable\"**. Has the wrong ending been used? Let's put on our detective hats and find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"incredable\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "incredable",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Apply the complete word test",
+              "body": "Ben wrote '-able' but 'incred' isn't a complete word, so it should be '-ible' → 'incredible'.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"incredable\" — wrong ending used",
+                    "why": "Let's test: remove the ending and check the base"
+                  },
+                  {
+                    "text": "Base word: \"incred\"",
+                    "why": "\"incred\" IS a complete word → -able"
+                  },
+                  {
+                    "text": "✓ \"incredible\"",
+                    "why": "The correct ending gives us \"incredible\" ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"horrable\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling of \"horrable\"?",
+                "options": [
+                  "horrible",
+                  "horrable",
+                  "horrble",
+                  "horible",
+                  "horruble"
+                ],
+                "correctAnswer": "horrible",
+                "correctFeedback": "Fantastic! 'Horr' isn't a complete word, so we use '-ible' → 'horrible'. ✓",
+                "incorrectFeedback": "Close! 'Horr' isn't a complete word, so we use '-ible' → 'horrible'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "horrable",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember the test!",
+              "body": "Whenever you're stuck on -able or -ible, you've got your trusty test: remove the ending and check the base word. It works nearly every time — you've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove the ending (-able or -ible)",
+                    "why": "What's left?"
+                  },
+                  {
+                    "text": "Is the base a complete English word?",
+                    "why": "Yes → -able / No → -ible"
+                  },
+                  {
+                    "text": "Soft C or G? Keep the E!",
+                    "why": "noticeable, changeable, manageable"
+                  },
+                  {
+                    "text": "When in doubt, try -able first",
+                    "why": "It's correct about 4 times out of 5 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pluralisation",
+      "name": "Tricky Plurals",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "pluralisation-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to form plurals (the spelling for more than one) for words ending in -y, -f/-fe, -s/-x/-ch/-sh — not everything just adds an S!",
+            "How to remember common irregular plurals that love to break the rules"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "More than one city — but how do you spell it?",
+              "body": "Daisy is writing about her holiday visiting lots of cities and needs the plural of **\"city\"**. Is it **\"citys\"**? Nope! Did you know that some plurals are much trickier than just adding -s? Let's find out why.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "city → cities",
+                "highlightWords": [
+                  {
+                    "word": "cities",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "How do we make it plural?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The \"consonant + y\" plural rule",
+              "body": "'City' ends in consonant + Y. Change the Y to I and add -es: city → cities. Let's see how this works step by step:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To make \"city\" plural, we ____ to get \"cities\"",
+                "options": [
+                  "change Y to I and add -es",
+                  "just add -s",
+                  "add -ing",
+                  "double the last letter"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! 'City' ends in consonant + Y. Change the Y to I and add -es: city → cities. ✓",
+                "incorrectFeedback": "Not quite — 'City' ends in consonant + Y. Change the Y to I and add -es: city → cities."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Look at the ending: \"city\"",
+                    "why": "'City' ends in consonant + Y. Change the Y to I and add -es: city → cities."
+                  },
+                  {
+                    "text": "city → cities",
+                    "why": "NOT \"citys\" — that's wrong!"
+                  },
+                  {
+                    "text": "More examples of this rule:",
+                    "why": "baby → babies, story → stories, puppy → puppies"
+                  },
+                  {
+                    "text": "The pattern is always the same",
+                    "why": "Learn the rule and it works every time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Let's see if you've got it! What is the plural of **\"party\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct plural of \"party\"?",
+                "options": [
+                  "parties",
+                  "partys",
+                  "partyes",
+                  "partiez",
+                  "partees"
+                ],
+                "correctAnswer": "parties",
+                "correctFeedback": "Brilliant! 'Party' ends in consonant + Y → change Y to I and add -es → 'parties'. ✓",
+                "incorrectFeedback": "Not quite! 'Party' ends in consonant + Y → change Y to I and add -es → 'parties'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "What is the plural of \"party\"?",
+                "highlightWords": [
+                  {
+                    "word": "party",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Make it plural:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Plural rules cheat sheet",
+              "body": "Most plurals just add -s — but the tricky ones love to catch people out! Here are the patterns to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Consonant + Y → change Y to I, add -es",
+                    "why": "city→cities, party→parties, baby→babies"
+                  },
+                  {
+                    "text": "-f / -fe → change to -ves",
+                    "why": "leaf→leaves, knife→knives, wolf→wolves"
+                  },
+                  {
+                    "text": "-s, -x, -z, -ch, -sh → add -es",
+                    "why": "bus→buses, fox→foxes, church→churches"
+                  },
+                  {
+                    "text": "Irregulars: just learn them!",
+                    "why": "child→children, mouse→mice, tooth→teeth, person→people ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "pluralisation-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot incorrect plural spellings that crop up all the time in everyday writing",
+            "How to apply the right plural rule to fix mistakes confidently"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Grace's mistake?",
+              "body": "Grace wrote a story about wildlife and wrote **\"wolfs\"** as the plural of **\"wolf\"**. That doesn't look right! This is a really common mistake — can you see why it's wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"wolfs\" — is this the right plural?",
+                "highlightWords": [
+                  {
+                    "word": "wolfs",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the correct plural",
+              "body": "Grace wrote 'wolfs' but 'wolf' ends in F. Change the F to V and add -es → 'wolves'.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"wolfs\" — wrong!",
+                    "why": "\"wolf\" doesn't just add -s"
+                  },
+                  {
+                    "text": "✓ \"wolves\"",
+                    "why": "Grace wrote 'wolfs' but 'wolf' ends in F. Change the F to V and add -es → 'wolves'."
+                  },
+                  {
+                    "text": "More examples of this rule:",
+                    "why": "wolf→wolves, leaf→leaves, shelf→shelves, knife→knives, calf→calves"
+                  },
+                  {
+                    "text": "The pattern: change F to V, then add -es",
+                    "why": "This works for most words ending in F or FE ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"halfs\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct plural?",
+                "options": [
+                  "halves",
+                  "halfs",
+                  "halfes",
+                  "halvs",
+                  "halfs"
+                ],
+                "correctAnswer": "halves",
+                "correctFeedback": "Superstar! 'Half' ends in F → change to V, add -es → 'halves'. ✓",
+                "incorrectFeedback": "Close! 'Half' ends in F → change to V, add -es → 'halves'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "halfs",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Plural mistake checklist",
+              "body": "Before writing a plural, take a quick look at the ending of the singular word — it tells you exactly what to do:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ends in consonant + Y? → Change Y to I, add -es",
+                    "why": "city→cities, story→stories (but monkey→monkeys — vowel + Y!)"
+                  },
+                  {
+                    "text": "Ends in -f or -fe? → Change to -ves",
+                    "why": "wolf→wolves, wife→wives (but roof→roofs!)"
+                  },
+                  {
+                    "text": "Ends in -s, -x, -ch, -sh? → Add -es",
+                    "why": "fox→foxes, wish→wishes, bus→buses"
+                  },
+                  {
+                    "text": "Sounds weird with -s? → Probably irregular!",
+                    "why": "child→children, foot→feet, goose→geese ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noun-verb-confusables",
+      "name": "Practice or Practise? Advice or Advise?",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "noun-verb-confusables-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Some words sneakily change their spelling depending on whether they are a thing (noun) or an action (verb) — like practice/practise and advice/advise",
+            "A brilliantly simple trick to remember: C is for things, S is for actions"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "C or S? Which spelling do you need?",
+              "body": "Did you know that in British English, the same word can be spelled differently depending on how you use it? Charlie is writing about football after school and needs to choose: **\"I need more _____ before the match on Saturday.\"** Is it **practice** (with a C) or **practise** (with an S)?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"practice\" (noun) vs \"practise\" (verb)",
+                "highlightWords": [
+                  {
+                    "word": "practice",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "word": "practise",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Noun or verb?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "C for things, S for actions!",
+              "body": "Is it **\"practice\"** (with C) or **\"practise\"** (with S)? This catches out grown-ups all the time, but the rule is actually really simple:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In British English, nouns use ____ and verbs use S (e.g. advice vs advise)",
+                "options": [
+                  "C",
+                  "S",
+                  "K",
+                  "Z"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Nouns use C (like \"ice\" — a thing) and verbs use S (like \"advise\" — an action). ✓",
+                "incorrectFeedback": "Not quite — nouns use C (practice, advice, licence) and verbs use S!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If the word is a THING (noun) → spell it with C",
+                    "why": "adviCe (a thing you give), praCtiCe (a thing you do), liCenCe (a card you hold)"
+                  },
+                  {
+                    "text": "If the word is an ACTION (verb) → spell it with S",
+                    "why": "adviSe (to tell someone), practiSe (to do something), licenSe (to allow)"
+                  },
+                  {
+                    "text": "Read the sentence: \"I need more _____ before the match on Saturday.\"",
+                    "why": "Here we need the noun — 'more practice' is a thing. Nouns use C (like 'ice' — a thing)."
+                  },
+                  {
+                    "text": "Answer: \"I need more practice before the match on Saturday.\"",
+                    "why": "It's a thing (noun) → C ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Nearly there! Pick the correct word for this sentence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word correctly completes: \"The team _____ every Tuesday and Thursday.\"",
+                "options": [
+                  "practise",
+                  "practice",
+                  "practyce",
+                  "praktise",
+                  "practize"
+                ],
+                "correctAnswer": "practise",
+                "correctFeedback": "Well done! Here 'practise' is a verb — the team does an action. Verbs use S. ✓",
+                "incorrectFeedback": "Not quite! Here 'practise' is a verb — the team does an action. Verbs use S."
+              },
+              "visualProps": {
+                "mode": "gap",
+                "text": "The team _____ every Tuesday and Thursday.",
+                "gapWord": "",
+                "gapHighlight": "blank",
+                "label": "Fill in the correct word:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The C/S rule",
+              "body": "You've just learned something that most adults don't even know! In British English, these word pairs use **C for the noun** and **S for the verb**. Remember: **ice** is a thing, **advise** is an action.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "practice (noun) / practise (verb)",
+                    "why": "'Football practice' (thing) vs 'I practise piano' (action)"
+                  },
+                  {
+                    "text": "advice (noun) / advise (verb)",
+                    "why": "'Give me advice' (thing) vs 'I advise you' (action)"
+                  },
+                  {
+                    "text": "licence (noun) / license (verb)",
+                    "why": "'A driving licence' (thing) vs 'licensed to sell' (action)"
+                  },
+                  {
+                    "text": "Memory trick: iCe = noun (C), adviSe = verb (S)",
+                    "why": "C for the thing, S for the doing ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "noun-verb-confusables-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot C/S spelling errors in sentences — you'll find them everywhere once you know the trick!",
+            "How to tell nouns (naming words) from verbs (doing words) in context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Aisha's mistake?",
+              "body": "Aisha wrote in her diary and wrote: **\"Mum always gives me good advise about school.\"** One of the C/S words is wrong! Can you find it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Mum always gives me good advise about school.",
+                "highlightWords": [
+                  {
+                    "word": "advise",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the mistake:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Noun or verb? C or S?",
+              "body": "'Good advise' is wrong because this is a noun — a thing Mum gives. Nouns use C → 'advice'.\n\n**Your C or S quick check:**\n1. Find the word (practice/advice/licence)\n2. Is it a thing (noun) or an action (verb)? Try: can you say \"the ___\"? → noun\n3. **Noun → C** (advi**c**e = thing), **Verb → S** (advi**s**e = action)\n4. This only applies in British English!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"advise\" — wrong C/S spelling",
+                    "why": "Is this word a noun (thing) or verb (action)?"
+                  },
+                  {
+                    "text": "In this sentence, it's a noun",
+                    "why": "'Good advise' is wrong because this is a noun — a thing Mum gives. Nouns use C → 'advice'."
+                  },
+                  {
+                    "text": "✓ Should be: \"advice\"",
+                    "why": "Nouns use C ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Time to put your skills to the test! Look at this sentence: **\"I practise the piano every day after school.\"** Is the underlined word correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is \"practise\" correct in: \"I practise the piano every day after school.\"",
+                "options": [
+                  "It IS correct (verb → S)",
+                  "It should be 'practice'",
+                  "It should be 'praktise'",
+                  "It should be 'practize'",
+                  "It should be 'practes'"
+                ],
+                "correctAnswer": "It IS correct (verb → S)",
+                "correctFeedback": "Excellent! 'Practise' here is a verb — an action. Verbs use S, so 'practise' is correct! ✓",
+                "incorrectFeedback": "Not quite! 'Practise' here is a verb — an action. Verbs use S, so 'practise' is correct!"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "text": "I practise the piano every day after school.",
+                "gapWord": "",
+                "gapHighlight": "blank",
+                "label": "Fill in the correct word:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "C or S — the quick check",
+              "body": "All you need to remember is one question: is it a thing or an action? That's it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Is the word a THING (noun)?",
+                    "why": "If yes → spell it with C"
+                  },
+                  {
+                    "text": "Step 2: Is the word an ACTION (verb)?",
+                    "why": "If yes → spell it with S"
+                  },
+                  {
+                    "text": "adviCe (thing) / adviSe (action)",
+                    "why": "I gave some advice. I advise you to study."
+                  },
+                  {
+                    "text": "praCtiCe (thing) / practiSe (action)",
+                    "why": "Piano practice. I practise every day."
+                  },
+                  {
+                    "text": "liCenCe (thing) / licenSe (action)",
+                    "why": "A driving licence. Licensed to drive. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unstressed-vowels",
+      "name": "Unstressed Vowels — The Sneaky Letters",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "unstressed-vowels-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot unstressed vowels that love to hide — these cause some of the most common spelling mistakes!",
+            "How to use syllable-splitting (breaking a word into its beats, like def-i-nite-ly) to catch the hidden vowel"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The vowel you can't hear!",
+              "body": "Did you know your mouth secretly swallows some vowels when you speak quickly? Ella is writing about what she definitely wants for her birthday and wrote **\"definately\"**. It looks almost right — but a sneaky vowel has been swapped or lost!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"definitely\"",
+                "highlightWords": [
+                  {
+                    "word": "definitely",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Focus word:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split it into syllables",
+              "body": "The sneaky vowel is **i** in the third syllable: def-i-nite-ly. Here's how to find it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Say the word SLOWLY: \"def · i · nite · ly\"",
+                    "why": "Break it into syllables and say each one clearly"
+                  },
+                  {
+                    "text": "The hidden vowel is: \"i\"",
+                    "why": "It's in the third syllable: def-i-nite-ly"
+                  },
+                  {
+                    "text": "Memory trick: Think of the word 'FINITE' hiding inside: de-FINITE-ly",
+                    "why": "A trick to remember the tricky letter"
+                  },
+                  {
+                    "text": "✓ \"definitely\"",
+                    "why": "Now you know where the sneaky vowel hides ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! One of these is the correct spelling — can you pick it?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct spelling?",
+                "options": [
+                  "separately",
+                  "seperately",
+                  "separatley",
+                  "seperatly",
+                  "separitely"
+                ],
+                "correctAnswer": "separately",
+                "correctFeedback": "Brilliant! Say each syllable: sep-a-rate-ly. There's an A in the middle, not an E. Think: 'there's A RAT in separately!' ✓",
+                "incorrectFeedback": "Not quite! Say each syllable: sep-a-rate-ly. There's an A in the middle, not an E. Think: 'there's A RAT in separately!'"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "How to catch sneaky vowels",
+              "body": "Unstressed vowels all sound the same when we speak quickly — like a lazy \"uh\". But they're different letters in the spelling! Slow down, and you'll catch them every time.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "def-I-nite-ly (not definAtely)",
+                    "why": "Think: de-FINITE-ly — 'finite' is hiding inside"
+                  },
+                  {
+                    "text": "sep-A-rate-ly (not sepErate)",
+                    "why": "Think: there's A RAT in separately"
+                  },
+                  {
+                    "text": "bus-I-ness (not buIsness)",
+                    "why": "Think: it starts with BUS"
+                  },
+                  {
+                    "text": "Say every syllable slowly and clearly",
+                    "why": "The hidden vowel reveals itself when you slow down ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "unstressed-vowels-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot unstressed vowel errors in writing — once you know what to look for, they pop out at you!",
+            "How to use syllable-splitting and memory tricks to fix them for good"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Daisy's mistake?",
+              "body": "Daisy wrote in her English essay and wrote **\"seperate\"**. A sneaky vowel has gone wrong — but don't worry, this is one of the most common mistakes in English! Can you find the error?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"seperate\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "seperate",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split it into syllables to find the mistake",
+              "body": "Daisy wrote 'seperate' but the hidden vowel is A, not E. Remember: there's A RAT in 'separate'!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"seperate\" — the hidden vowel is wrong",
+                    "why": "The sneaky vowel is: a"
+                  },
+                  {
+                    "text": "Say it slowly, syllable by syllable",
+                    "why": "Daisy wrote 'seperate' but the hidden vowel is A, not E. Remember: there's A RAT in 'separate'!"
+                  },
+                  {
+                    "text": "✓ \"separate\"",
+                    "why": "The correct vowel is restored ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"differant\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling of \"differant\"?",
+                "options": [
+                  "different",
+                  "differant",
+                  "diffrent",
+                  "diferent",
+                  "diffrant"
+                ],
+                "correctAnswer": "different",
+                "correctFeedback": "Superstar! Say it slowly: dif-fer-ENT. The last syllable is '-ent', not '-ant'. ✓",
+                "incorrectFeedback": "Close! Say it slowly: dif-fer-ENT. The last syllable is '-ent', not '-ant'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "differant",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Unstressed vowel survival guide",
+              "body": "These are some of the most commonly misspelled words in the English language — even adults struggle with them! But now you've got syllable-splitting and memory tricks, you can beat them all.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Say every syllable clearly and slowly",
+                    "why": "The hidden vowel appears when you slow down"
+                  },
+                  {
+                    "text": "Learn memory tricks for the worst ones",
+                    "why": "de-FINITE-ly, A RAT in separate, BUS-i-ness"
+                  },
+                  {
+                    "text": "Write the tricky word out 5 times",
+                    "why": "Your hand learns the spelling even when your ear can't hear it"
+                  },
+                  {
+                    "text": "When in doubt, look it up!",
+                    "why": "There's no shame in checking — even adults get these wrong ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suffix-adding-rules",
+      "name": "Rules for Adding Suffixes",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "suffix-adding-rules-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to apply the three suffix (word ending) rules: drop the E, double the consonant, change Y to I — three rules that cover almost everything!",
+            "How to decide which rule to use so you get it right first time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What happens when you add \"-ing\"?",
+              "body": "Here's a spelling puzzle! Oliver is writing about hoping to win the race. Adding **\"-ing\"** to **\"hope\"** — is it **\"hopeing\"**? Nope! There's a handy rule that tells you exactly what to do.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "hopeing  or  hoping?",
+                "highlightWords": [
+                  {
+                    "word": "hopeing",
+                    "color": "#e74c3c"
+                  },
+                  {
+                    "word": "hoping",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Rule: drop the silent E",
+              "body": "'Hope' ends in a silent E. When adding a vowel suffix (-ing), drop the E: hope → hoping.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with: \"hope\"",
+                    "why": "Look at the ending of the base word"
+                  },
+                  {
+                    "text": "Rule: drop the silent E",
+                    "why": "'Hope' ends in a silent E. When adding a vowel suffix (-ing), drop the E: hope → hoping."
+                  },
+                  {
+                    "text": "hope + -ing = hoping",
+                    "why": "Apply the rule before adding the suffix"
+                  },
+                  {
+                    "text": "Also: \"hopeful\"",
+                    "why": "But before a consonant suffix (-ful), we KEEP the E: hope → hopeful. ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! What is **\"make\"** + **\"-ing\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is \"make\" + \"-ing\"?",
+                "options": [
+                  "making",
+                  "makeing",
+                  "makking",
+                  "macking",
+                  "makng"
+                ],
+                "correctAnswer": "making",
+                "correctFeedback": "Brilliant! 'Make' ends in silent E. Drop the E before '-ing' → 'making'. ✓",
+                "incorrectFeedback": "Not quite! 'Make' ends in silent E. Drop the E before '-ing' → 'making'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "make + -ing = ?",
+                "highlightWords": [
+                  {
+                    "word": "make",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What's the correct spelling?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three suffix rules to remember",
+              "body": "You've now got three powerful rules in your toolkit! Before adding a suffix, just check the base word ending and pick the right one:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Silent E? Drop it before vowel suffixes",
+                    "why": "hope→hoping, make→making (but hopeful — keep E before consonant)"
+                  },
+                  {
+                    "text": "Short vowel + single consonant? Double it",
+                    "why": "run→running, sit→sitting, begin→beginning"
+                  },
+                  {
+                    "text": "Consonant + Y? Change Y to I",
+                    "why": "happy→happiness, beauty→beautiful (but carry→carrying — keep Y before -ing)"
+                  },
+                  {
+                    "text": "Ask: what's the last letter? What's the suffix?",
+                    "why": "The ending of the base word tells you which rule to use ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "suffix-adding-rules-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot suffix-adding (word ending) errors in writing — these pop up all the time!",
+            "How to apply the correct rule to fix the mistake quickly and confidently"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Isla",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Isla's mistake?",
+              "body": "Isla wrote in her story about a race and wrote **\"runing\"**. A suffix rule has been broken — can you spot which one? This is a really common slip-up!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The word \"runing\" doesn't look right...",
+                "highlightWords": [
+                  {
+                    "word": "runing",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Spot the error:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the rule that was broken",
+              "body": "Isla forgot to double the N. 'Run' has a short vowel + single consonant, so we double: run → running.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"runing\" — suffix rule not followed",
+                    "why": "Base word: \"run\" + suffix: \"-ing\""
+                  },
+                  {
+                    "text": "The rule: Isla forgot to double the N. 'Run' has a short vowel + single consonant, so we double: run → running.",
+                    "why": "Check the base word ending, then apply the rule"
+                  },
+                  {
+                    "text": "✓ \"running\"",
+                    "why": "Now the suffix rule is followed correctly ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone wrote **\"stoping\"**. What should it be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct spelling?",
+                "options": [
+                  "stopping",
+                  "stoping",
+                  "stoppng",
+                  "stoping",
+                  "stooping"
+                ],
+                "correctAnswer": "stopping",
+                "correctFeedback": "Superstar! 'Stop' has a short vowel (o) + single consonant (p). Double the P → 'stopping'. ✓",
+                "incorrectFeedback": "Close! 'Stop' has a short vowel (o) + single consonant (p). Double the P → 'stopping'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "stoping",
+                "highlightWords": [],
+                "label": "Fix this:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Suffix rules — quick checklist",
+              "body": "You're now a suffix expert! Before adding a suffix, just run through this quick checklist:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Silent E + vowel suffix → drop the E",
+                    "why": "hope→hoping, excite→exciting, write→writing"
+                  },
+                  {
+                    "text": "Short vowel + single consonant → double it",
+                    "why": "run→running, stop→stopping, begin→beginning"
+                  },
+                  {
+                    "text": "Consonant + Y + suffix → change Y to I",
+                    "why": "happy→happiness, lazy→lazier, beauty→beautiful"
+                  },
+                  {
+                    "text": "BUT: Y + -ing → keep the Y!",
+                    "why": "carry→carrying, study→studying, play→playing ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

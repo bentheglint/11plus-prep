@@ -1,0 +1,1945 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "anglesshapes",
+    "displayName": "Angles & Shapes",
+    "extractedAt": "2026-03-30T13:51:13.599Z",
+    "subConceptCount": 11,
+    "lessonCount": 22,
+    "screenCount": 88,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "angle-types",
+      "name": "Recognising Angle Types",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "angle-types-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+            "Why the size of an angle matters, not the length of the lines"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What type of angle is that?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The five angle types",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "An angle between 90° and 180° is called ____",
+                "options": [
+                  "acute",
+                  "obtuse",
+                  "reflex",
+                  "right"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! An angle between 90° and 180° is obtuse — wider than a right angle (an angle of exactly 90 degrees) but less than a straight line. ✓",
+                "incorrectFeedback": "Not quite — an angle between 90° and 180° is obtuse. Acute is less than 90°, reflex is more than 180°."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Ella found an angle of **35°**. What type of angle is it?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "An angle of 35° is...",
+                "options": [
+                  "Acute",
+                  "Right",
+                  "Obtuse",
+                  "Straight",
+                  "Reflex"
+                ],
+                "correctAnswer": "Acute",
+                "correctFeedback": "Spot on! 35° is **acute** because it's less than 90°. ✓",
+                "incorrectFeedback": "Not quite! 35° is **acute** because it's less than 90°. Remember: acute < 90°, right = 90°, obtuse is 91°-179°, straight = 180°, reflex > 180°."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The angle type checklist!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "angle-types-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to classify any angle by comparing it to 90° and 180°",
+            "Why reflex angles (angles bigger than 180°) are the ones people forget most often"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Quick — what type?",
+              "body": "Tom is labelling angles on a treasure map for a class project. One angle measures **72°**. Can you name its type in under 5 seconds? The trick is knowing just **two key numbers**...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 72,
+                    "label": "72°",
+                    "color": "#818cf8"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The two magic numbers: 90° and 180°",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Tom found another angle: **155°**. What type is it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of angle is 155°?",
+                "options": [
+                  "Acute",
+                  "Right",
+                  "Obtuse",
+                  "Straight",
+                  "Reflex"
+                ],
+                "correctAnswer": "Obtuse",
+                "correctFeedback": "Well done! 155° is **obtuse**. You nailed it! ✓",
+                "incorrectFeedback": "Not quite! 155° is **obtuse**. Check where it sits on the number line — is it before 90°, between 90° and 180°, or after 180°?"
+              },
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 155,
+                    "label": "155°",
+                    "color": "#818cf8"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember the number line!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "straight-line",
+      "name": "Angles on a Straight Line = 180°",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "straight-line-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a missing angle on a straight line",
+            "Why angles on a straight line always add up to 180°"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the missing angle?",
+              "body": "Grace is measuring angles where two paths meet at a crossroads. One angle is **65°** and the other sits on the same **straight line**. What could the missing angle be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 65,
+                    "label": "65°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 115,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Angles on a straight line add up to 180°",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Spot the line, note the known angle, subtract from 180°. ✓",
+                "incorrectFeedback": "Not quite — first spot it's a straight line, then note the known angle, then subtract from 180°."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Grace is measuring angles where two paths meet at a crossroads. One angle is **72°**. What is the other angle on the straight line?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "108",
+                  "107",
+                  "110",
+                  "105",
+                  "112"
+                ],
+                "correctAnswer": "108",
+                "correctFeedback": "Brilliant! **180° − 72° = 108°**. ✓",
+                "incorrectFeedback": "Not quite! Angles on a straight line add up to 180°. So the missing angle is 180° − 72° = **108°**."
+              },
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 72,
+                    "label": "72°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 108,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The straight line rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "straight-line-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid confusing 180° with 360° on straight line questions",
+            "Why checking your answer matters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Charlie is finding the missing angle on a straight line where one angle is 75°. Charlie wrote: \"360° − 75° = **285°**\". Something's gone wrong. Can you see it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Charlie's working:",
+                    "why": ""
+                  },
+                  {
+                    "text": "360° − 75° = 285°",
+                    "why": "Does this look right to you?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The mistake: using 360° instead of 180°",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The angle on a straight line is **83°**. What is the missing angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle on the straight line?",
+                "options": [
+                  "97",
+                  "96",
+                  "99",
+                  "94",
+                  "101"
+                ],
+                "correctAnswer": "97",
+                "correctFeedback": "Yes! **180° − 83° = 97°**. You used the right rule! ✓",
+                "incorrectFeedback": "Not quite! Remember: straight line = 180°. So 180° − 83° = **97°**. Don't use 360° here!"
+              },
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 83,
+                    "label": "83°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 97,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't mix up 180° and 360°!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "around-a-point",
+      "name": "Angles Around a Point = 360°",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "around-a-point-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a missing angle around a point",
+            "Why angles around a point always add up to 360°"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Find the missing angle!",
+              "body": "Sophie is measuring angles where four roads meet at a roundabout. The known angles are **90°, 120°, 80°**. There's one angle missing — and there's a simple rule to find it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 90,
+                    "label": "90°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 120,
+                    "label": "120°",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 80,
+                    "label": "80°",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 70,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Angles around a point add up to 360°",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Sophie is measuring angles where four roads meet at a roundabout. The known angles are **105°, 95°, 85°**. What is the missing angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "75",
+                  "74",
+                  "77",
+                  "72",
+                  "79"
+                ],
+                "correctAnswer": "75",
+                "correctFeedback": "Spot on! **360° − 285° = 75°**. ✓",
+                "incorrectFeedback": "Not quite! Add the known angles: 105° + 95° + 85° = 285°. Then subtract from 360°: 360° − 285° = **75°**."
+              },
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 105,
+                    "label": "105°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 95,
+                    "label": "95°",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 85,
+                    "label": "85°",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 75,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The full-turn rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "around-a-point-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid using 180° when you need 360°",
+            "When to use the 'around a point' rule versus the 'straight line' rule"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the mistake!",
+              "body": "Aisha is finding the missing angle at a point where angles are 140°, 95°, and ?°. Aisha wrote: \"180° − 235° = can't do it!\"\nThey're stuck — the number went negative! What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 140,
+                    "label": "140°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 95,
+                    "label": "95°",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 125,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Wrong rule! Use 360°, not 180°!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The angles around a point are **130°, 100°** and **?°**. What is the missing angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle around the point?",
+                "options": [
+                  "130",
+                  "129",
+                  "132",
+                  "127",
+                  "134"
+                ],
+                "correctAnswer": "130",
+                "correctFeedback": "Brilliant! **360° − 230° = 130°**. You used the right rule! ✓",
+                "incorrectFeedback": "Not quite! These angles are around a POINT, so use 360°. 360° − 230° = **130°**."
+              },
+              "visualProps": {
+                "angles": [
+                  {
+                    "value": 130,
+                    "label": "130°",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 100,
+                    "label": "100°",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 130,
+                    "label": "?°",
+                    "color": "#d1d5db"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Straight line or around a point?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quadrilateral-angles",
+      "name": "Angles in a Quadrilateral = 360°",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "quadrilateral-angles-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a missing angle in a quadrilateral (a four-sided shape)",
+            "Why the four angles in any quadrilateral add up to 360°"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Find the missing angle in the quadrilateral!",
+              "body": "Tom is measuring angles on a rectangular picture frame that got squashed. Three angles are **90°**, **110°**, and **80°**. What's the fourth angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "QuadShape",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  90,
+                  110,
+                  80,
+                  80
+                ],
+                "labels": [
+                  "90°",
+                  "110°",
+                  "80°",
+                  "?°"
+                ],
+                "colors": [
+                  "#818cf8",
+                  "#38bdf8",
+                  "#c084fc",
+                  "#d1d5db"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Angles in a quadrilateral add up to 360°",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Add the known angles, recall the 360° total, then subtract. ✓",
+                "incorrectFeedback": "Not quite — first add the known angles, then remember they total 360°, then subtract."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Three angles in the quadrilateral are **85°**, **105°**, and **95°**. What is the fourth angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "QuadShape",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "75",
+                  "74",
+                  "77",
+                  "72",
+                  "79"
+                ],
+                "correctAnswer": "75",
+                "correctFeedback": "Brilliant! **360° − 285° = 75°**. ✓",
+                "incorrectFeedback": "Not quite! Add the three angles: 85° + 105° + 95° = 285°. Then 360° − 285° = **75°**."
+              },
+              "visualProps": {
+                "angles": [
+                  85,
+                  105,
+                  95,
+                  75
+                ],
+                "labels": [
+                  "85°",
+                  "105°",
+                  "95°",
+                  "?°"
+                ],
+                "colors": [
+                  "#818cf8",
+                  "#38bdf8",
+                  "#c084fc",
+                  "#d1d5db"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The quadrilateral rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "quadrilateral-angles-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid using 180° for quadrilaterals (four-sided shapes)",
+            "Why a quadrilateral is not the same as a triangle"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oscar",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What went wrong?",
+              "body": "Oscar is finding the fourth angle of a quadrilateral with angles 85°, 100°, and 90°. They wrote: \"180° − 275° = impossible!\"\nThe answer came out negative. Can you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "QuadShape",
+              "interaction": null,
+              "visualProps": {
+                "angles": [
+                  85,
+                  100,
+                  90,
+                  85
+                ],
+                "labels": [
+                  "85°",
+                  "100°",
+                  "90°",
+                  "?°"
+                ],
+                "colors": [
+                  "#818cf8",
+                  "#38bdf8",
+                  "#c084fc",
+                  "#d1d5db"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Triangles use 180°, quadrilaterals use 360°!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Three angles in a quadrilateral are **95°**, **80°**, and **110°**. What is the fourth?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "QuadShape",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "75",
+                  "74",
+                  "77",
+                  "72",
+                  "79"
+                ],
+                "correctAnswer": "75",
+                "correctFeedback": "Yes! **360° − 285° = 75°**. ✓",
+                "incorrectFeedback": "Not quite! Quadrilateral = 360°. So 360° − 285° = **75°**."
+              },
+              "visualProps": {
+                "angles": [
+                  95,
+                  80,
+                  110,
+                  75
+                ],
+                "labels": [
+                  "95°",
+                  "80°",
+                  "110°",
+                  "?°"
+                ],
+                "colors": [
+                  "#818cf8",
+                  "#38bdf8",
+                  "#c084fc",
+                  "#d1d5db"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Count the sides first!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isosceles-triangle",
+      "name": "Isosceles Triangle — Two Equal Angles",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "isosceles-triangle-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+            "Why two equal sides means two equal angles"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two sides the same — what does that mean?",
+              "body": "Daisy is building a symmetrical arch for a school play set. The triangle has **two equal sides** (shown by tick marks). The top angle is **40°**. Can you guess the two base angles without measuring?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 40,
+                "angle2": 70,
+                "angle3": 70,
+                "showAngle2": false,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Equal sides = equal angles!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In an isosceles triangle, two equal sides means two ____ angles",
+                "options": [
+                  "different",
+                  "right",
+                  "equal",
+                  "obtuse"
+                ],
+                "correctIndex": "2",
+                "correctFeedback": "Yes! Equal sides always means equal angles opposite them. ✓",
+                "incorrectFeedback": "Not quite — in an isosceles triangle, the two sides that are equal have equal angles opposite them."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "An isosceles triangle has a top angle of **60°**. What is each base angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is each base angle?",
+                "options": [
+                  "60",
+                  "59",
+                  "62",
+                  "57",
+                  "64"
+                ],
+                "correctAnswer": "60",
+                "correctFeedback": "Brilliant! (180° − 60°) ÷ 2 = **60°**. ✓",
+                "incorrectFeedback": "Not quite! Subtract the top angle from 180°: 180° − 60° = 120°. Then divide by 2: 120° ÷ 2 = **60°**."
+              },
+              "visualProps": {
+                "angle1": 60,
+                "angle2": 60,
+                "angle3": 60,
+                "showAngle2": false,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The isosceles shortcut!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "isosceles-triangle-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid forgetting to divide by 2 in isosceles (two equal sides) problems",
+            "Why you must identify which angle is the 'odd one out'"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Ben found an isosceles triangle with a top angle of 50°. They wrote: \"180° − 50° = 130°, so each base angle is 130°.\"\nBut that can't be right — can you see why?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 50,
+                "angle2": 65,
+                "angle3": 65,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Don't forget to divide by 2!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "An isosceles (two equal sides) triangle has a top angle of **70°**. What is each base angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is each base angle?",
+                "options": [
+                  "55",
+                  "54",
+                  "57",
+                  "52",
+                  "59"
+                ],
+                "correctAnswer": "55",
+                "correctFeedback": "Well done! (180° − 70°) ÷ 2 = **55°**. ✓",
+                "incorrectFeedback": "Remember to divide by 2! 180° − 70° = 110°, then 110° ÷ 2 = **55°**."
+              },
+              "visualProps": {
+                "angle1": 70,
+                "angle2": 55,
+                "angle3": 55,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The isosceles checklist!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "right-angled-triangle",
+      "name": "Missing Angle in a Right-Angled Triangle",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "right-angled-triangle-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use the right angle (90°) as a known angle",
+            "Why the other two angles in a right-angled triangle add up to 90°"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A right angle (an angle of exactly 90 degrees) gives you a head start!",
+              "body": "Ella is working out angles on a ramp for a school wheelchair access project. The triangle has a **right angle (90°)** and another angle of **35°**. Finding the third angle is easier than you think!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 90,
+                "angle2": 35,
+                "angle3": 55,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The other two angles add up to 90°!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A right-angled triangle has one angle of **28°**. What is the missing angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "62",
+                  "61",
+                  "64",
+                  "59",
+                  "66"
+                ],
+                "correctAnswer": "62",
+                "correctFeedback": "Yes! **90° − 28° = 62°**. ✓",
+                "incorrectFeedback": "Not quite! In a right-angled triangle, the other two angles add to 90°. So 90° − 28° = **62°**."
+              },
+              "visualProps": {
+                "angle1": 90,
+                "angle2": 28,
+                "angle3": 62,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The right-angle shortcut!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "right-angled-triangle-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot right-angled triangles in real life",
+            "When to use the 90° shortcut"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Right angles are everywhere!",
+              "body": "Finn noticed a right-angled triangle in the roof of a bus shelter. Right-angled triangles are one of the **most common shapes** in the real world. Can you guess why architects and builders love them?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 90,
+                "angle2": 25,
+                "angle3": 65,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The 90° shortcut makes life easy!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A right-angled triangle has another angle of **38°**. What's the third angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AngleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "52",
+                  "51",
+                  "54",
+                  "49",
+                  "56"
+                ],
+                "correctAnswer": "52",
+                "correctFeedback": "Well done! **90° − 38° = 52°**. ✓",
+                "incorrectFeedback": "Not quite! The other two angles add to 90°. So 90° − 38° = **52°**."
+              },
+              "visualProps": {
+                "angle1": 90,
+                "angle2": 38,
+                "angle3": 52,
+                "showAngle3": false,
+                "totalLabel": "Total: 180°"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Look for the square corner!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algebraic-angles",
+      "name": "Using Algebra to Find Angles",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "algebraic-angles-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+            "Why you must substitute back to find the actual angle, not just x"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Algebra meets angles!",
+              "body": "Aisha is solving a triangle problem where the angles are x°, 2x°, and 3x°. The angles use **x** instead of numbers. Don't worry — if you know the total, you can find x!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The angles: x°, 2x°, 3x°",
+                    "why": "They're all written using x."
+                  },
+                  {
+                    "text": "They're in a triangle",
+                    "why": "So they add up to 180°."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: solve for x, then find each angle",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The angles in a triangle are **2x°, 3x°, 4x°**. What is the value of **x**?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the value of x?",
+                "options": [
+                  "20",
+                  "19",
+                  "22",
+                  "17",
+                  "24"
+                ],
+                "correctAnswer": "20",
+                "correctFeedback": "Yes! **x = 20**. The angles are 40°, 60°, 80°. ✓",
+                "incorrectFeedback": "Not quite! 9x = 180, so x = 180 ÷ 9 = **20**."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Algebra + angles recipe!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "algebraic-angles-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid giving x as the answer when the question asks for the angle",
+            "Why substituting back into the expression is essential"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ravi",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "So close — but not quite!",
+              "body": "Ravi solved 2x + 3x + x = 180 and got x = 30. The question asks: \"What is the angle 2x°?\" Ravi wrote: \"**30°**\". Is that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2x + 3x + x = 180",
+                    "why": "The equation is set up correctly."
+                  },
+                  {
+                    "text": "x = 30",
+                    "why": "Solving is correct too."
+                  },
+                  {
+                    "text": "Answer: 30°",
+                    "why": "But wait — is this the angle they asked for?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "x is not always the answer!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "If x = 25, what is the angle **3x°**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the angle 3x°?",
+                "options": [
+                  "75",
+                  "74",
+                  "77",
+                  "72",
+                  "79"
+                ],
+                "correctAnswer": "75",
+                "correctFeedback": "Brilliant! 3x = **75°**. You remembered to substitute! ✓",
+                "incorrectFeedback": "Not quite! x = 25, so 3x = **75°**. Don't confuse x with the angle!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "x = 25",
+                    "why": "The value of x."
+                  },
+                  {
+                    "text": "The angle asked for: 3x°",
+                    "why": "Substitute x into this expression."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Always substitute back!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exterior-angles",
+      "name": "Exterior Angle of a Triangle",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "exterior-angles-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+            "Why this shortcut works every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A magic shortcut for exterior angles!",
+              "body": "Sophie is investigating angles on a triangular road sign. When you extend one side of a triangle, the **exterior angle** that forms has a cool property. It equals the sum of the **two opposite interior angles**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ExteriorAngle",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 50,
+                "angle2": 70,
+                "angle3": 60,
+                "showExterior": true,
+                "exteriorLabel": "120°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Exterior angle = sum of two opposite interior angles",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The exterior angle of a triangle equals the ____ of the two opposite interior angles",
+                "options": [
+                  "difference",
+                  "sum",
+                  "product",
+                  "average"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! The exterior angle equals the sum of the two opposite interior angles. ✓",
+                "incorrectFeedback": "Not quite — the exterior angle equals the sum (total) of the two opposite interior angles added together."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The two opposite interior angles are **55°** and **75°**. What is the exterior angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ExteriorAngle",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the exterior angle?",
+                "options": [
+                  "130",
+                  "129",
+                  "132",
+                  "127",
+                  "134"
+                ],
+                "correctAnswer": "130",
+                "correctFeedback": "Yes! **55° + 75° = 130°**. ✓",
+                "incorrectFeedback": "Not quite! The exterior angle equals the sum of the two opposite interior angles: 55° + 75° = **130°**."
+              },
+              "visualProps": {
+                "angle1": 55,
+                "angle2": 75,
+                "angle3": 50,
+                "showExterior": true,
+                "exteriorLabel": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The exterior angle shortcut!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "exterior-angles-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "When to use the exterior angle (outside angle) rule versus the straight line rule",
+            "How to identify which interior angles (inside angles) are 'opposite'"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Quick fact: exterior angles!",
+              "body": "Ben knows two interior angles of a triangle are 40° and 75°. There's a quick way to find the exterior angle without finding the third interior angle first. Just **add the two opposite interior angles**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ExteriorAngle",
+              "interaction": null,
+              "visualProps": {
+                "angle1": 40,
+                "angle2": 75,
+                "angle3": 65,
+                "showExterior": true,
+                "exteriorLabel": "115°"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Why does this work?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Two interior angles are **45°** and **60°**. What is the exterior angle at the third corner?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ExteriorAngle",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the exterior angle?",
+                "options": [
+                  "105",
+                  "104",
+                  "107",
+                  "102",
+                  "109"
+                ],
+                "correctAnswer": "105",
+                "correctFeedback": "Spot on! **45° + 60° = 105°**. ✓",
+                "incorrectFeedback": "Not quite! Add the two opposite interior angles: 45° + 60° = **105°**."
+              },
+              "visualProps": {
+                "angle1": 45,
+                "angle2": 60,
+                "angle3": 75,
+                "showExterior": true,
+                "exteriorLabel": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember this shortcut!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parallel-lines",
+      "name": "Angles with Parallel Lines",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "parallel-lines-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+            "Why these angles are equal when lines are parallel"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Parallel lines create equal angles!",
+              "body": "Grace is looking at the angles formed where a path crosses two parallel fences. When a line crosses two **parallel lines** (lines that run in the same direction and never meet), some angles are **exactly equal** and some add to 180°. Let's find the pattern!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ParallelLines",
+              "interaction": null,
+              "visualProps": {
+                "givenAngle": 65,
+                "highlight": null
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Corresponding and alternate angles",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "One angle is **58°**. What is the **co-interior angle** (the one on the same side, between the parallel lines)?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ParallelLines",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the co-interior angle?",
+                "options": [
+                  "122",
+                  "121",
+                  "124",
+                  "119",
+                  "126"
+                ],
+                "correctAnswer": "122",
+                "correctFeedback": "Yes! Co-interior angles add to 180°, so 180° − 58° = **122°**. ✓",
+                "incorrectFeedback": "Not quite! Co-interior angles add to 180°. So 180° − 58° = **122°**."
+              },
+              "visualProps": {
+                "givenAngle": 58,
+                "highlight": "co-interior",
+                "hideAnswer": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "F, Z, and C — the parallel line letters!",
+              "body": "When you see parallel lines (shown with arrows), look for these letter shapes:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "parallel-lines-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to quickly identify which angle rule to use with parallel lines (lines that never meet)",
+            "When angles are equal versus when they add to 180°"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isaac",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Equal or add to 180°?",
+              "body": "Isaac sees an angle of 48° and needs the alternate angle. The **alternate** angle (the angle on the opposite side of the transversal) — is it **equal** to 48°, or does it **add** to 180°? There's an easy way to remember!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ParallelLines",
+              "interaction": null,
+              "visualProps": {
+                "givenAngle": 48,
+                "highlight": "alternate"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The simple rule",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The given angle is **62°**. What is the **alternate** angle?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the alternate angle?",
+                "options": [
+                  "62",
+                  "61",
+                  "64",
+                  "59",
+                  "66"
+                ],
+                "correctAnswer": "62",
+                "correctFeedback": "Yes! The alternate angle is **62°**. ✓",
+                "incorrectFeedback": "Not quite! alternate angles equal. The answer is **62°**."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The parallel lines cheat sheet!",
+              "body": "Just remember which angle pairs are **equal** and which **add to 180°**:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-angles",
+      "name": "Interior Angles of Regular Polygons",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "polygon-angles-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+            "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Priya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's each angle in a regular pentagon?",
+              "body": "Priya is calculating angles in a regular pentagon for a tiling project. A pentagon has **5 sides**. In a **regular** polygon (a shape where all sides and angles are equal), all angles are equal — but what are they?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": null,
+              "visualProps": {
+                "sides": 5,
+                "eachAngle": 108,
+                "angleLabel": "?",
+                "showDiagonals": false,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The (n - 2) x 180° rule",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A regular hexagon has 6 sides. What is each interior angle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is each interior angle?",
+                "options": [
+                  "120",
+                  "119",
+                  "122",
+                  "117",
+                  "124"
+                ],
+                "correctAnswer": "120",
+                "correctFeedback": "Yes! 720° ÷ 6 = **120°**. ✓",
+                "incorrectFeedback": "Not quite! Angle sum = (6 − 2) × 180° = 720°. Then 720° ÷ 6 = **120°**."
+              },
+              "visualProps": {
+                "sides": 6,
+                "eachAngle": 120,
+                "angleLabel": "?",
+                "showDiagonals": true,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The polygon angle rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "polygon-angles-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that the number of triangles grows as the polygon (multi-sided shape) gets more sides",
+            "Why the rule (n - 2) x 180° always works"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oscar",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the pattern!",
+              "body": "Oscar is comparing angles in different regular polygons. Look at how the angle sum grows as the polygon (multi-sided shape) gets more sides. Can you see the pattern?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": null,
+              "visualProps": {
+                "sides": 5,
+                "eachAngle": 108,
+                "showDiagonals": true,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Each extra side adds 180°!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is each interior angle of a regular **pentagon**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Each angle of a regular pentagon is...",
+                "options": [
+                  "108",
+                  "107",
+                  "110",
+                  "105",
+                  "112"
+                ],
+                "correctAnswer": "108",
+                "correctFeedback": "Well done! Each angle of a regular pentagon is **108°**. ✓",
+                "incorrectFeedback": "Not quite! Use the rule (n − 2) × 180° and divide by n to find **108°**."
+              },
+              "visualProps": {
+                "sides": 5,
+                "eachAngle": 108,
+                "angleLabel": "?",
+                "showDiagonals": true,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The polygon angle pattern!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregular-polygon-angle",
+      "name": "Finding a Missing Angle in an Irregular Polygon",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "irregular-polygon-angle-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+            "How to subtract the known angles to find a missing angle"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the missing angle in this pentagon?",
+              "body": "Ella is calculating a missing angle in an irregular pentagon on her homework. The pentagon has **5 sides** and the known angles are **110°, 95°, 130°, 85°**. One angle is missing!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": null,
+              "visualProps": {
+                "sides": 5,
+                "eachAngle": 120,
+                "angleLabel": "?",
+                "showDiagonals": false,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the rule, then subtract!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the total, add the known angles, then subtract. ✓",
+                "incorrectFeedback": "Not quite — first find the total using (n − 2) × 180°, then add the known angles, then subtract."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "An irregular pentagon has angles of **105°, 100°, 120°, 90°** and one unknown. What is the missing angle?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "125",
+                  "124",
+                  "127",
+                  "122",
+                  "129"
+                ],
+                "correctAnswer": "125",
+                "correctFeedback": "Yes! 540° − 415° = **125°**. ✓",
+                "incorrectFeedback": "Not quite. Total = 540°. Known = 415°. So missing = 540° − 415° = **125°**."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The 3-step method for missing angles!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "irregular-polygon-angle-mistake",
+          "templateType": "mistake-analysis",
+          "learningGoal": [
+            "How to spot common mistakes when finding missing angles in polygons (multi-sided shapes)",
+            "Why getting the angle sum right is the most important first step"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Tom made a mistake finding the missing angle of an irregular pentagon. He got **130°** but the teacher marked it wrong. What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Shape: irregular pentagon (5 sides)",
+                    "why": ""
+                  },
+                  {
+                    "text": "Known angles: 100°, 120°, 95°, 115°",
+                    "why": ""
+                  },
+                  {
+                    "text": "Tom's answer: 130°  ✗",
+                    "why": "Something went wrong..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Now you try!",
+              "body": "An irregular pentagon has angles **115°, 105°, 90°, 125°** and one unknown. What is it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RegularPolygon",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing angle?",
+                "options": [
+                  "105",
+                  "104",
+                  "107",
+                  "102",
+                  "109"
+                ],
+                "correctAnswer": "105",
+                "correctFeedback": "Spot on! 540° − 435° = **105°**. ✓",
+                "incorrectFeedback": "Remember: total = (5 − 2) × 180° = 540°. Then 540° − 435° = **105°**."
+              },
+              "visualProps": {
+                "sides": 5,
+                "eachAngle": 108,
+                "angleLabel": "?",
+                "showDiagonals": false,
+                "highlightAngle": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Watch out for these traps!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3500 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "decimals",
+    "displayName": "Decimals",
+    "extractedAt": "2026-03-30T13:51:13.284Z",
+    "subConceptCount": 14,
+    "lessonCount": 28,
+    "screenCount": 112,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "decimal-place-value",
+      "name": "Decimal Place Value",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "decimal-place-value-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to understand what each digit means after the decimal point",
+            "Why the position of a digit changes its value"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does 2.364 really mean?",
+              "body": "Aisha is measuring the length of a ladybird for a science project. The reading is **2.364 cm**.\n\nYou know what the digits BEFORE the point mean. But what about the digits AFTER it? Each one has a special place value!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths",
+                  "1000ths"
+                ],
+                "rows": [
+                  {
+                    "label": "2.364",
+                    "values": [
+                      2,
+                      ".",
+                      3,
+                      6,
+                      4
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Each column is 10 times smaller",
+              "body": "After the decimal point, each column is **10 times smaller** than the one before it.\n\n**Tenths** (t) = the digit is worth that many **tenths** (out of 10 equal pieces)\n**Hundredths** (h) = that many **hundredths** (out of 100 equal pieces)\n**Thousandths** (th) = that many **thousandths** (out of 1000 equal pieces)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths",
+                  "1000ths"
+                ],
+                "rows": [
+                  {
+                    "label": "2.364",
+                    "values": [
+                      2,
+                      ".",
+                      3,
+                      6,
+                      4
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    0,
+                    4
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the number **2.364**, what is the value of the digit **3** in the tenths column?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the VALUE of the 3 in the tenths column?",
+                "options": [
+                  "0.3",
+                  "3",
+                  "0.06",
+                  "30",
+                  "0.03"
+                ],
+                "correctAnswer": "0.3",
+                "correctFeedback": "Spot on! The digit 3 in the tenths column is worth **0.3** — that's 3 tenths of a whole. ✓",
+                "incorrectFeedback": "Not quite! The digit 3 in the **tenths** column means 3 out of 10, which is **0.3**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths",
+                  "1000ths"
+                ],
+                "rows": [
+                  {
+                    "label": "2.364",
+                    "values": [
+                      2,
+                      ".",
+                      3,
+                      6,
+                      4
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    3
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Place value after the decimal point",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "decimal-place-value-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to apply place value knowledge to break apart any decimal",
+            "When to use tenths, hundredths, or thousandths in real-life measurements"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know?",
+              "body": "The word **\"decimal\"** comes from the Latin word *decimus*, meaning **tenth**. That's because every column after the decimal point is based on dividing by 10!\n\nDaisy is reading a thermometer in science class and gets **36.85 °C**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Tens",
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "36.85",
+                    "values": [
+                      3,
+                      6,
+                      ".",
+                      8,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Break the number apart",
+              "body": "We can break **36.85** into its place values. Tap to see each step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The 3 in the tens column = 30",
+                    "why": "Tens"
+                  },
+                  {
+                    "text": "The 6 in the ones column = 6",
+                    "why": "Ones"
+                  },
+                  {
+                    "text": "The 8 in the tenths column = 0.8",
+                    "why": "One tenth = 0.1"
+                  },
+                  {
+                    "text": "The 5 in the hundredths column = 0.05",
+                    "why": "One hundredth = 0.01"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In **24.63**, what is the value of the digit **6** in the **tenths** column?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the value of the 6 in the tenths column of 24.63?",
+                "options": [
+                  "0.6",
+                  "6",
+                  "60",
+                  "6",
+                  "0.06"
+                ],
+                "correctAnswer": "0.6",
+                "correctFeedback": "Brilliant! The digit 6 in the **tenths** column is worth **0.6**. ✓",
+                "incorrectFeedback": "Not quite! In the **tenths** column, the digit 6 is worth **0.6**. Remember: the position decides the value!"
+              },
+              "visualProps": {
+                "columns": [
+                  "Tens",
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "24.63",
+                    "values": [
+                      2,
+                      4,
+                      ".",
+                      6,
+                      3
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The key fact about decimal place value",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparing-decimals",
+      "name": "Comparing and Ordering Decimals",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "comparing-decimals-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to compare decimals by looking at each column from left to right",
+            "Why 0.8 is bigger than 0.08 even though 8 = 8"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which is bigger: 3.45 or 3.54?",
+              "body": "Aisha is comparing two long jump results on sports day. The two numbers are **3.45** and **3.54**.\n\nHow do you tell which is bigger? It's easier than you think!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "A: 3.45",
+                    "values": [
+                      3,
+                      ".",
+                      4,
+                      5
+                    ]
+                  },
+                  {
+                    "label": "B: 3.54",
+                    "values": [
+                      3,
+                      ".",
+                      5,
+                      4
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Compare column by column, left to right",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Always compare column by column from the left. ✓",
+                "incorrectFeedback": "Not quite — start by padding with zeros, then compare left to right."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which is larger: **6.72** or **6.27**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is larger?",
+                "options": [
+                  "6.72",
+                  "6.27",
+                  "They are equal",
+                  "6.270",
+                  "6.720"
+                ],
+                "correctAnswer": "6.72",
+                "correctFeedback": "Well done! **6.72 > 6.27**. Compare column by column from the left! ✓",
+                "incorrectFeedback": "Not quite! Line them up and compare column by column. **6.72** is larger because Both start with 6, so look at tenths: 7 tenths > 2 tenths."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "A: 6.72",
+                    "values": [
+                      6,
+                      ".",
+                      7,
+                      2
+                    ]
+                  },
+                  {
+                    "label": "B: 6.27",
+                    "values": [
+                      6,
+                      ".",
+                      2,
+                      7
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    1,
+                    2
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "How to compare decimals",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "comparing-decimals-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid comparing digits after the decimal point without checking their columns",
+            "When to watch out for the 'ignore the zero' trap in decimal comparisons"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom's mistake",
+              "body": "Tom says 0.15 is bigger than 0.9 because 15 is bigger than 9.\n\nCan you spot what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "0.15",
+                    "values": [
+                      0,
+                      ".",
+                      1,
+                      5
+                    ]
+                  },
+                  {
+                    "label": "0.9",
+                    "values": [
+                      0,
+                      ".",
+                      9,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": "Tom treated the decimals like whole numbers — 15 vs 9. But decimals don't work like whole numbers!\n\n0.9 = 9 tenths, but 0.15 = 1 tenth and 5 hundredths. 9 tenths is much more!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "0.15",
+                    "values": [
+                      0,
+                      ".",
+                      1,
+                      5
+                    ]
+                  },
+                  {
+                    "label": "0.9",
+                    "values": [
+                      0,
+                      ".",
+                      9,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    1,
+                    2
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "Which is larger: **0.45** or **0.5**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "0.5",
+                  "0.45",
+                  "0.45 + 0.5",
+                  "Cannot tell",
+                  "Neither"
+                ],
+                "correctAnswer": "0.5",
+                "correctFeedback": "Exactly right! **0.5**. 0.5 has 5 tenths, but 0.45 has only 4 tenths. Compare tenths first! ✓",
+                "incorrectFeedback": "Not quite! 0.5 has 5 tenths, but 0.45 has only 4 tenths. Compare tenths first! The answer is **0.5**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "0.45",
+                    "values": [
+                      0,
+                      ".",
+                      4,
+                      5
+                    ]
+                  },
+                  {
+                    "label": "0.5",
+                    "values": [
+                      0,
+                      ".",
+                      5,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    1,
+                    2
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't fall into this trap!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subtracting-decimals",
+      "name": "Subtracting Decimals",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "subtracting-decimals-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to subtract decimals by lining up the decimal points",
+            "How to borrow across the decimal point"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "£5.73 - £2.41 = ?",
+              "body": "Daisy is working out how much change she gets. We need to work out **£5.73 - £2.41**.\n\nJust like adding, the golden rule is: **line up the decimal points!**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "5.73",
+                    "values": [
+                      5,
+                      ".",
+                      7,
+                      3
+                    ]
+                  },
+                  {
+                    "label": "- 2.41",
+                    "values": [
+                      2,
+                      ".",
+                      4,
+                      1
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Subtract from the right",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **7.86 - 4.53**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 7.86 - 4.53?",
+                "options": [
+                  13.33,
+                  3.43,
+                  3.33,
+                  2.33,
+                  3.83
+                ],
+                "correctAnswer": "3.33",
+                "correctFeedback": "Brilliant! **7.86 - 4.53 = 3.33**. ✓",
+                "incorrectFeedback": "Not quite! Line up the points and subtract from the right: 6 - 3 = 3, 8 - 5 = 3, 7 - 4 = 3. The answer is **3.33**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "7.86",
+                    "values": [
+                      7,
+                      ".",
+                      8,
+                      6
+                    ]
+                  },
+                  {
+                    "label": "- 4.53",
+                    "values": [
+                      4,
+                      ".",
+                      5,
+                      3
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The recipe for subtracting decimals",
+              "body": "Subtracting decimals works just like whole numbers — but with one golden rule:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Line up the decimal points",
+                    "why": "Write one number directly above the other"
+                  },
+                  {
+                    "text": "Step 2: Subtract from the right",
+                    "why": "Hundredths first, then tenths, then ones"
+                  },
+                  {
+                    "text": "Step 3: Borrow if needed",
+                    "why": "If the top digit is smaller, borrow 1 from the next column left"
+                  },
+                  {
+                    "text": "Step 4: Bring the decimal point straight down",
+                    "why": "The point in the answer lines up with the ones above ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "subtracting-decimals-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid misaligning decimal points when subtracting",
+            "When to watch out for borrowing errors across the decimal point"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Tom's mistake?",
+              "body": "Tom tried to work out 7.3 - 2.8 and got 5.5.\n\nBut the answer is wrong! Can you see what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths"
+                ],
+                "rows": [
+                  {
+                    "label": "7.3",
+                    "values": [
+                      7,
+                      ".",
+                      3
+                    ]
+                  },
+                  {
+                    "label": "- 2.8",
+                    "values": [
+                      2,
+                      ".",
+                      8
+                    ]
+                  },
+                  {
+                    "label": "Wrong!",
+                    "values": [
+                      5,
+                      ".",
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "What should **7.3 - 2.8** actually be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "7.3 - 2.8 = ?",
+                "options": [
+                  4.3,
+                  4.5,
+                  4,
+                  14.5,
+                  4.4
+                ],
+                "correctAnswer": "4.5",
+                "correctFeedback": "Well done! **7.3 - 2.8 = 4.5**. You spotted the mistake! ✓",
+                "incorrectFeedback": "Not quite! You can't do 3 - 8, so you need to borrow. Borrow 1 from the 7 (making it 6), then 13 - 8 = 5 tenths, and 6 - 2 = 4 ones. Answer: 4.5 The correct answer is **4.5**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths"
+                ],
+                "rows": [
+                  {
+                    "label": "7.3",
+                    "values": [
+                      7,
+                      ".",
+                      3
+                    ]
+                  },
+                  {
+                    "label": "- 2.8",
+                    "values": [
+                      2,
+                      ".",
+                      8
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Watch out for borrowing!",
+              "body": "The most common mistake in decimal subtraction is **forgetting to borrow**. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If the top digit is smaller than the bottom digit, you MUST borrow",
+                    "why": "You can't do 3 - 8, so borrow 1 from the next column"
+                  },
+                  {
+                    "text": "Borrowing changes the column you borrowed FROM",
+                    "why": "If you borrow from 5 tenths, it becomes 4 tenths"
+                  },
+                  {
+                    "text": "Double-check by adding: answer + smaller = bigger",
+                    "why": "e.g. 4.5 + 2.8 = 7.3 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiply-by-10-100-1000",
+      "name": "Multiplying by 10, 100 and 1000",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "multiply-10-100-1000-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to see that multiplying by 10 moves every digit one place left",
+            "Why 'adding a zero' does not work with decimals"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.35 × 10 = ?",
+              "body": "Aisha is working out how much 10 pencils cost at 35p each. That's **0.35 × 10**.\n\nSome people say \"just add a zero\" — but that **doesn't work with decimals**! 0.35 with a zero added would be 0.350, which is still 0.35. There's a better way...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      0,
+                      ".",
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Digits SHIFT left!",
+              "body": "When you multiply by **10**, every digit moves **one place left** in the place value chart. The number gets bigger because each digit is now worth more!\n\n× 10 = shift 1 place left\n× 100 = shift 2 places left\n× 1000 = shift 3 places left",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When you multiply by 10, every digit shifts ____ place(s) to the left",
+                "options": [
+                  "1",
+                  "2",
+                  "3",
+                  "0"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! × 10 shifts digits one place left. ✓",
+                "incorrectFeedback": "Not quite — × 10 means shift one place left."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths"
+                ],
+                "rows": [
+                  {
+                    "label": "After",
+                    "values": [
+                      3,
+                      ".",
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **0.35 × 10**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.35 × 10 = ?",
+                "options": [
+                  4,
+                  13.5,
+                  3.3,
+                  3.6,
+                  3.5
+                ],
+                "correctAnswer": "3.5",
+                "correctFeedback": "Brilliant! **0.35 × 10 = 3.5**. Every digit shifted one place left! ✓",
+                "incorrectFeedback": "Not quite! Multiply by 10 means shift every digit one place left. **0.35 × 10 = 3.5**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      0,
+                      ".",
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Multiplying by 10, 100, 1000",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "multiply-10-100-1000-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the 'just add a zero' mistake when multiplying decimals by 10",
+            "When to watch out for the decimal point not moving the right number of places"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom says 3.4 × 10 = 3.40",
+              "body": "Tom says 3.4 × 10 = 3.40 because you add a zero.\n\nIs that right? Something doesn't look right...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths"
+                ],
+                "rows": [
+                  {
+                    "label": "3.4",
+                    "values": [
+                      3,
+                      ".",
+                      4
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Adding a zero doesn't work with decimals!",
+              "body": "Tom added a zero to the end instead of shifting digits.\n\n3.40 is the same as 3.4! Multiplying by 10 moves every digit one place left, so 3.4 × 10 = 34.\n\nThe trick is: **digits shift left, they don't just get a zero stuck on**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 3.4 × 10 = 3.40",
+                    "why": "3.40 is the same number as 3.4!"
+                  },
+                  {
+                    "text": "Right: 3.4 × 10 = 34",
+                    "why": "Every digit shifted left ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **4.7 × 10** really?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4.7 × 10 = ?",
+                "options": [
+                  4.7,
+                  47,
+                  46,
+                  48,
+                  470
+                ],
+                "correctAnswer": "47",
+                "correctFeedback": "Spot on! **4.7 × 10 = 47**. Digits shift left, not just add a zero! ✓",
+                "incorrectFeedback": "Not quite! Shift every digit left. **4.7 × 10 = 47**."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 57,
+                "points": [
+                  {
+                    "value": 4.7,
+                    "label": "4.7",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 47,
+                    "label": "47",
+                    "color": "#34d399"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 4.7,
+                    "to": 47,
+                    "label": "× 10"
+                  }
+                ],
+                "tickInterval": 10,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember this golden rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divide-by-10-100-1000",
+      "name": "Dividing by 10, 100 and 1000",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "divide-10-100-1000-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to see that dividing by 10 moves every digit one place right",
+            "How to handle dividing a small number by 100"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "45 ÷ 10 = ?",
+              "body": "Aisha is sharing 45 sweets equally among 10 party bags. That's **45 ÷ 10**.\n\nDividing by 10, 100 or 1000 is the **opposite** of multiplying — the digits shift **right** instead of left!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "T",
+                  "O"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      4,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Digits shift RIGHT",
+              "body": "When you divide by **10**, every digit moves **one place right** in the place value chart. The number gets **smaller** because each digit is now worth less.\n\n÷ 10 = shift 1 place right\n÷ 100 = shift 2 places right\n÷ 1000 = shift 3 places right",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When you divide by 10, every digit shifts to the ____",
+                "options": [
+                  "left",
+                  "right",
+                  "top",
+                  "bottom"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Dividing shifts digits to the right — the number gets smaller. ✓",
+                "incorrectFeedback": "Not quite — dividing makes the number smaller, so digits shift to the right."
+              },
+              "visualProps": {
+                "columns": [
+                  "O",
+                  ".",
+                  "t"
+                ],
+                "rows": [
+                  {
+                    "label": "After",
+                    "values": [
+                      4,
+                      ".",
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **45 ÷ 10**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "45 ÷ 10 = ?",
+                "options": [
+                  4.5,
+                  3.5,
+                  4.4,
+                  4.7,
+                  14.5
+                ],
+                "correctAnswer": "4.5",
+                "correctFeedback": "Brilliant! **45 ÷ 10 = 4.5**. Every digit shifted one place right! ✓",
+                "incorrectFeedback": "Not quite! ÷ 10 means shift every digit one place right. **45 ÷ 10 = 4.5**."
+              },
+              "visualProps": {
+                "columns": [
+                  "T",
+                  "O"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      4,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Dividing by 10, 100, 1000",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "divide-10-100-1000-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid moving the digits the wrong direction when dividing by 10 or 100",
+            "When to watch out for confusing multiplication and division direction shifts"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom says 7 ÷ 10 = 70",
+              "body": "Tom says 7 ÷ 10 = 70 because you add a zero.\n\nCan you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 75,
+                "points": [
+                  {
+                    "value": 7,
+                    "label": "7",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "value": 70,
+                    "label": "70?",
+                    "color": "#ef4444"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 5,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong",
+              "body": "Tom multiplied instead of dividing — the number should get SMALLER.\n\n7 ÷ 10 = 0.7 (shift right). 70 is 7 × 10 — that's the wrong direction!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 7 ÷ 10 = 70",
+                    "why": "multiplied instead of dividing — the number should get SMALLER"
+                  },
+                  {
+                    "text": "Right: 7 ÷ 10 = 0.7",
+                    "why": "Correct shift ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **9 ÷ 10**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "9 ÷ 10 = ?",
+                "options": [
+                  "0.9",
+                  "9",
+                  "0.09",
+                  "90",
+                  "1.9"
+                ],
+                "correctAnswer": "0.9",
+                "correctFeedback": "Exactly! **9 ÷ 10 = 0.9**. ✓",
+                "incorrectFeedback": "Not quite! 9 ÷ 10 = 0.9. Shift one place to the right. The answer is **0.9**."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 15,
+                "points": [
+                  {
+                    "value": 9,
+                    "label": "9",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 0.9,
+                    "label": "0.9",
+                    "color": "#34d399"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 5,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Common mistakes to avoid!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiplying-decimals-whole",
+      "name": "Multiplying a Decimal by a Whole Number",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "multiplying-decimals-whole-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to multiply a decimal by a whole number",
+            "How to use partitioning (splitting into parts) to make it easier"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "2.35 × 4 = ?",
+              "body": "Daisy is buying 4 notebooks that cost £2.35 each. That's **2.35 × 4**.\n\nMultiplying a decimal by a whole number is easier than it looks. The trick? **Ignore the decimal point, multiply, then put it back!**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2.35 × 4 = ???",
+                    "why": "Let's break it down..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Remove, multiply, replace!",
+              "body": "Watch the shortcut: remove the decimal point, multiply as whole numbers, then put the point back. Tap to see each step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Remove, multiply, replace. ✓",
+                "incorrectFeedback": "Not quite — first remove the point, then multiply, then put it back."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove the point: 2.35 becomes 235",
+                    "why": "Count the decimal places: 2"
+                  },
+                  {
+                    "text": "Multiply: 235 × 4 = 940",
+                    "why": "Just whole-number multiplication!"
+                  },
+                  {
+                    "text": "Put the point back: 2 decimal places from the right",
+                    "why": "940 becomes 9.40"
+                  },
+                  {
+                    "text": "2.35 × 4 = 9.40",
+                    "result": "£9.40 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **3.15 × 3**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "3.15 × 3 = ?",
+                "options": [
+                  9.45,
+                  10.45,
+                  9.55,
+                  9.44,
+                  19.45
+                ],
+                "correctAnswer": "9.45",
+                "correctFeedback": "Brilliant! **3.15 × 3 = 9.45**. ✓",
+                "incorrectFeedback": "Not quite! 315 × 3 = 945. Put the point back 2 places from the right = **9.45**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "315 × 3 = 945",
+                    "why": "Whole-number multiplication done!"
+                  },
+                  {
+                    "text": "Now put the decimal point back (2 places)",
+                    "why": "Count from the right..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The 'ignore the point' shortcut",
+              "body": "This trick works for multiplying **any** decimal by a whole number:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Remove the decimal point",
+                    "why": "Turn 2.35 into 235"
+                  },
+                  {
+                    "text": "Step 2: Multiply the whole numbers",
+                    "why": "235 × 4 = 940"
+                  },
+                  {
+                    "text": "Step 3: Count how many decimal places there were",
+                    "why": "2.35 had 2 decimal places"
+                  },
+                  {
+                    "text": "Step 4: Put the point back that many places from the right",
+                    "why": "940 → 9.40 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "multiplying-decimals-whole-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to use partitioning (splitting a number into its place values) to multiply decimals",
+            "When to watch out for forgetting to add the decimal parts back together"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "George",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Partition the decimal!",
+              "body": "Each chocolate bar costs £1.45. He buys 5.\n\nThat's **1.45 × 5**. Let's **partition** (split) the decimal and multiply each part separately.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1.45 × 5 = ???",
+                    "why": "Split the decimal into its parts..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply each part",
+              "body": "There are two ways to multiply a decimal by a whole number — **partition** (split into place values) or **ignore the point** (multiply as whole numbers, then put the point back). Let's focus on the partition method.\n\nSplit **1.45** into its place values and multiply each by **5**. Tap to see!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1 × 5 = 5",
+                    "why": "Ones part"
+                  },
+                  {
+                    "text": "0.4 × 5 = 2",
+                    "why": "Tenths part"
+                  },
+                  {
+                    "text": "0.05 × 5 = 0.25",
+                    "why": "Hundredths part"
+                  },
+                  {
+                    "text": "Add: 5 + 2 + 0.25 = 7.25",
+                    "result": "£7.25 ✓"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **2.35 × 4**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "2.35 × 4 = ?",
+                "options": [
+                  9.2,
+                  9.4,
+                  9.9,
+                  9.6,
+                  9.39
+                ],
+                "correctAnswer": "9.4",
+                "correctFeedback": "Superstar! **2.35 × 4 = 9.40**. Partitioning works every time! ✓",
+                "incorrectFeedback": "Not quite! Partition and multiply each part, then add them. Answer: **9.40**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2.35 × 4 = ?",
+                    "why": "Use whichever method you prefer!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two methods — one toolbox",
+              "body": "You now know the **partition method** (split and multiply each part). The other method — **ignore the point** (multiply as whole numbers, then put the decimal back) — works just as well. Use whichever feels fastest!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Method 1: Partition — split into ones, tenths, hundredths and multiply each",
+                    "why": "1.45 × 5 = (1×5) + (0.4×5) + (0.05×5) = 7.25"
+                  },
+                  {
+                    "text": "Method 2: Ignore the point — multiply as whole numbers, then put the decimal back",
+                    "why": "145 × 5 = 725, then 2 decimal places → 7.25 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dividing-to-decimal",
+      "name": "Dividing to Get a Decimal Answer",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "dividing-to-decimal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to keep dividing past the decimal point to get an exact answer",
+            "When a remainder (the amount left over after dividing) turns into a decimal"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "9 ÷ 4 — but it doesn't divide exactly!",
+              "body": "Daisy is sharing £9 equally among 4 friends. That's **9 ÷ 4**.\n\nBut 9 doesn't divide exactly by 4! What do you do with the remainder (what's left over)? You **keep going past the decimal point**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "9 ÷ 4 = ???",
+                    "why": "There will be a remainder — but we can deal with it!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Keep dividing past the point!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **11 ÷ 4**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "11 ÷ 4 = ?",
+                "options": [
+                  2.76,
+                  2.85,
+                  2.95,
+                  2.25,
+                  2.75
+                ],
+                "correctAnswer": "2.75",
+                "correctFeedback": "Brilliant! **11 ÷ 4 = 2.75**. You kept going past the decimal point! ✓",
+                "incorrectFeedback": "Not quite! 11 ÷ 4 = 2 remainder 3. Then keep dividing past the point. The answer is **2.75**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "11 ÷ 4 = 2 remainder 3",
+                    "why": "Got a remainder..."
+                  },
+                  {
+                    "text": "Add decimal point and keep going!",
+                    "why": "Turn the remainder into tenths and hundredths"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remainders become decimals!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "dividing-to-decimal-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply decimal division to real-life sharing and measuring problems",
+            "When to watch out for stopping the division too early"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "George",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What happens when you can't share equally?",
+              "body": "Four friends share a £7 prize. How much each?\n\nThat's **7 ÷ 4**. It doesn't split into whole numbers — so we need a **decimal answer**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 8,
+                "points": [
+                  {
+                    "value": 1.75,
+                    "label": "1.75",
+                    "color": "#34d399"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Keep dividing!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When division has a remainder, add a ____ point and keep dividing",
+                "options": [
+                  "decimal",
+                  "fraction",
+                  "percentage",
+                  "minus"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Add a decimal point and zeros, then keep dividing the remainder. ✓",
+                "incorrectFeedback": "Not quite — when you have a remainder, add a decimal point and keep going."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **5 ÷ 4**? Keep dividing past the decimal point!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "5 ÷ 4 = ?",
+                "options": [
+                  1.05,
+                  1.35,
+                  0.75,
+                  1.25,
+                  2.25
+                ],
+                "correctAnswer": "1.25",
+                "correctFeedback": "Superstar! **5 ÷ 4 = 1.25**. ✓",
+                "incorrectFeedback": "Not quite! Keep dividing past the point. **5 ÷ 4 = 1.25**."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decimals from division",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rounding-decimals",
+      "name": "Rounding Decimals",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "rounding-decimals-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to round a decimal to 1 decimal place or the nearest whole number",
+            "How to choose which digit to look at when rounding up or down"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Round 12.47 to 1 decimal place",
+              "body": "Aisha is rounding a race time to 1 decimal place. The exact value is **12.47**, but we need it rounded to **1 decimal place**.\n\nRounding means finding the **nearest** simpler number. But which way — up or down?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 12.2,
+                "max": 12.7,
+                "points": [
+                  {
+                    "value": 12.47,
+                    "label": "12.47",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 0.1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Look at the NEXT digit",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find, look, decide, answer. ✓",
+                "incorrectFeedback": "Not quite — first find the digit, then look at the next one to decide up or down."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Round **8.63** to **1 decimal place**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "8.63 rounded to 1 decimal place = ?",
+                "options": [
+                  8.5,
+                  8.6,
+                  18.6,
+                  9.1,
+                  8.4
+                ],
+                "correctAnswer": "8.6",
+                "correctFeedback": "Spot on! **8.63** rounded to 1 decimal place is **8.6**. ✓",
+                "incorrectFeedback": "Not quite! Look at the hundredths digit (3). It's less than 5, so round down. Answer: **8.6**."
+              },
+              "visualProps": {
+                "min": 8,
+                "max": 9,
+                "points": [
+                  {
+                    "value": 8.63,
+                    "label": "8.63",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 0.1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The rounding rule",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "rounding-decimals-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid looking at the wrong digit when rounding decimals",
+            "Why rounding 7.68 to 1 decimal place (1dp) gives 7.7, not 7.6"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Tom round correctly?",
+              "body": "Tom rounded 7.68 to 1 decimal place and got 7.6 — he looked at the 6 instead of the 8.\n\nIs the answer right or wrong?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Let's check step by step",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What does **5.43** round to?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Round 5.43 correctly:",
+                "options": [
+                  15.4,
+                  5.3,
+                  5.5,
+                  5.4,
+                  5.2
+                ],
+                "correctAnswer": "5.4",
+                "correctFeedback": "Well done! **5.43** rounds to **5.4**. ✓",
+                "incorrectFeedback": "Not quite! Look at the hundredths (3). 3 < 5, so round down. 5.43 → 5.4 The answer is **5.4**."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Common rounding mistakes to avoid",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decimal-to-fraction",
+      "name": "Decimal to Fraction",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "decimal-to-fraction-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to write a decimal as a fraction over 10, 100 or 1000",
+            "How to simplify the fraction afterwards"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.75 as a fraction?",
+              "body": "Aisha is writing her science result as a fraction. The value is **0.75**. Can we write that as a **fraction**?\n\nYes! Every decimal can be written as a fraction. Here's how...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ones",
+                  ".",
+                  "10ths",
+                  "100ths"
+                ],
+                "rows": [
+                  {
+                    "label": "0.75",
+                    "values": [
+                      0,
+                      ".",
+                      7,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count the decimal places!",
+              "body": "The number of decimal places tells you the denominator (the bottom number of a fraction). Tap to see the steps!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Count places, write the fraction, then simplify. ✓",
+                "incorrectFeedback": "Not quite — first count the decimal places to find the denominator."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.75 has 2 decimal places",
+                    "why": "So the bottom number is 100"
+                  },
+                  {
+                    "text": "Write as a fraction: 75/100",
+                    "why": "0.75 = 75 over 100"
+                  },
+                  {
+                    "text": "Simplify: 75 and 100 both divide by 25",
+                    "why": "÷ 25 top and bottom"
+                  },
+                  {
+                    "text": "0.75 = 3/4",
+                    "result": "3/4 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **0.6** as a simplified fraction?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.6 as a simplified fraction = ?",
+                "options": [
+                  "3/5",
+                  "6/10",
+                  "4/5",
+                  "3/6",
+                  "3/4"
+                ],
+                "correctAnswer": "3/5",
+                "correctFeedback": "Brilliant! **0.6 = 3/5**. ✓",
+                "incorrectFeedback": "Not quite! 0.6 = 6/10. 6 and 10 both divide by 2, giving **3/5**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.6 = 6/10",
+                    "why": "Now simplify..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decimal to fraction recipe",
+              "body": "To convert any decimal to a fraction, follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1 decimal place → bottom number is 10",
+                    "why": "0.3 = 3/10"
+                  },
+                  {
+                    "text": "2 decimal places → bottom number is 100",
+                    "why": "0.75 = 75/100"
+                  },
+                  {
+                    "text": "3 decimal places → bottom number is 1000",
+                    "why": "0.125 = 125/1000"
+                  },
+                  {
+                    "text": "Then simplify by dividing top and bottom by the same number",
+                    "why": "75/100 = 3/4 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "decimal-to-fraction-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to apply decimal-to-fraction conversion to everyday quantities",
+            "When to watch out for forgetting to simplify the fraction at the end"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Decimals and fractions are friends!",
+              "body": "Did you know that **0.5** is the same as **1/2**? Every decimal is secretly a fraction. Let's see why!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "1/2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "0.5 = 1/2",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The key facts to memorise",
+              "body": "These common decimals and fractions come up ALL the time in 11+ exams. Learn them by heart!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.5 = 1/2",
+                    "why": "Half"
+                  },
+                  {
+                    "text": "0.25 = 1/4",
+                    "why": "Quarter"
+                  },
+                  {
+                    "text": "0.75 = 3/4",
+                    "why": "Three quarters"
+                  },
+                  {
+                    "text": "0.1 = 1/10",
+                    "why": "One tenth"
+                  },
+                  {
+                    "text": "0.2 = 1/5",
+                    "why": "One fifth"
+                  },
+                  {
+                    "text": "0.125 = 1/8",
+                    "why": "One eighth"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Quick fire!",
+              "body": "What fraction is **0.5**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.5 = ?",
+                "options": [
+                  "1/2",
+                  "1/4",
+                  "2/2",
+                  "5/10",
+                  "1/4"
+                ],
+                "correctAnswer": "1/2",
+                "correctFeedback": "Spot on! **0.5 = 1/2**. One to remember! ✓",
+                "incorrectFeedback": "Not quite! **0.5 = 1/2**. This is one to learn by heart."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "?",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Memorise these conversions!",
+              "body": "Knowing these by heart will save you loads of time in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.5 = 1/2 | 0.25 = 1/4 | 0.75 = 3/4",
+                    "why": "Halves and quarters"
+                  },
+                  {
+                    "text": "0.1 = 1/10 | 0.2 = 1/5 | 0.4 = 2/5",
+                    "why": "Tenths and fifths"
+                  },
+                  {
+                    "text": "0.125 = 1/8 | 0.375 = 3/8",
+                    "why": "Eighths ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fraction-to-decimal",
+      "name": "Fraction to Decimal",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "fraction-to-decimal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to turn a fraction into a decimal by dividing",
+            "How to recall which common fractions you should know as decimals"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 3/4 as a decimal?",
+              "body": "Aisha is converting 3/4 to a decimal for her calculator.\n\nTo turn a fraction into a decimal, just **divide the top by the bottom**. The fraction bar literally means \"divided by\"!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3/4 means 3 ÷ 4",
+                    "why": "The fraction bar = division"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Divide top by bottom",
+              "body": "To convert a fraction, divide the **numerator** (top number) by the **denominator** (bottom number). Let's work through 3 ÷ 4 step by step. Tap to see!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3 ÷ 4: 4 doesn't go into 3, so write 0.",
+                    "why": "Start dividing"
+                  },
+                  {
+                    "text": "30 ÷ 4 = 7 remainder 2",
+                    "why": "Keep going with the remainder (what is left over after dividing)"
+                  },
+                  {
+                    "text": "20 ÷ 4 = 5 exactly",
+                    "why": "Continue until done"
+                  },
+                  {
+                    "text": "3/4 = 0.75",
+                    "result": "0.75 ✓"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **1/4** as a decimal?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "1/4 = ?",
+                "options": [
+                  0.45,
+                  0.15,
+                  0.26,
+                  10.25,
+                  0.25
+                ],
+                "correctAnswer": "0.25",
+                "correctFeedback": "Brilliant! **1/4 = 0.25**. Just divide top by bottom! ✓",
+                "incorrectFeedback": "Not quite! 1 ÷ 4 = **0.25**. The fraction bar means divide!"
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 1,
+                "points": [],
+                "jumps": [],
+                "tickInterval": 0.1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Fraction to decimal = divide!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "fraction-to-decimal-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to apply fraction-to-decimal conversion in exam-style questions",
+            "When to use known decimal equivalents instead of calculating from scratch"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you see 1/2 on the number line?",
+              "body": "Daisy is looking at **1/2** on a number line. Where does it land?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 1,
+                "points": [
+                  {
+                    "value": 0.5,
+                    "label": "?",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 0.1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "1/2 = 0.5",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **3/4** as a decimal?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "3/4 as a decimal = ?",
+                "options": [
+                  0.75,
+                  1,
+                  1.8,
+                  0.8,
+                  0.9
+                ],
+                "correctAnswer": "0.75",
+                "correctFeedback": "Superstar! **3/4 = 0.75**. ✓",
+                "incorrectFeedback": "Not quite! 3 ÷ 4 = **0.75**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "3/4 = ?",
+                "showValues": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Key fraction-decimal pairs",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decimal-to-percentage",
+      "name": "Decimal to Percentage",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "decimal-to-percentage-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to convert a decimal to a percentage by multiplying by 100",
+            "Why 0.5 = 50% and 0.05 = 5% are very different"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.85 = what percent?",
+              "body": "Aisha got 0.85 on a test and wants to know her percentage.\n\nConverting a decimal to a percentage is super easy: just **multiply by 100**! That's the same as shifting all digits **two places left**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.85 × 100 = 85",
+                    "why": "So 0.85 = 85%"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply by 100 = shift 2 left",
+              "body": "\"Per cent\" literally means \"per hundred\". So to go from a decimal to a percentage, multiply by 100.\n\n**0.85 × 100 = 85**, so **0.85 = 85%**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To convert a decimal to a percentage, multiply by ____",
+                "options": [
+                  "10",
+                  "100",
+                  "1000",
+                  "50"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! \"Per cent\" means \"per hundred\", so multiply by 100. ✓",
+                "incorrectFeedback": "Not quite — \"per cent\" means \"per hundred\", so you multiply by 100."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 85,
+                    "label": "85%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 15,
+                    "label": "15%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "0.85 = 85% (out of 100%)",
+                "showValues": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **0.72** as a percentage?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.72 = what percentage?",
+                "options": [
+                  "72",
+                  "71",
+                  "74",
+                  "69",
+                  "76"
+                ],
+                "correctAnswer": "72",
+                "correctFeedback": "Brilliant! **0.72 = 72%**. Just multiply by 100! ✓",
+                "incorrectFeedback": "Not quite! 0.72 × 100 = **72**, so it's **72%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 72,
+                    "label": "?%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 28,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decimal → percentage",
+              "body": "Remember: **decimal × 100 = percentage**. And watch out for the common trap!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.5 × 100 = 50%",
+                    "why": "Half"
+                  },
+                  {
+                    "text": "0.05 × 100 = 5%",
+                    "why": "NOT 50%! That extra zero matters"
+                  },
+                  {
+                    "text": "0.1 × 100 = 10%",
+                    "why": "One tenth = 10 out of 100"
+                  },
+                  {
+                    "text": "1.0 × 100 = 100%",
+                    "why": "The whole thing! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "decimal-to-percentage-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid confusing 0.5 (50%) with 0.05 (5%) when converting",
+            "When to watch out for moving the decimal point the wrong number of places"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom says 0.05 = 50%",
+              "body": "Tom says 0.05 = 50% because 'you just remove the 0 and the point'.\n\nIs that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tom's answer: 0.05 = 50%",
+                    "why": "Check this!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": "Tom ignored the zero after the point — 0.05 is NOT 0.5!.\n\n0.05 × 100 = 5, so 0.05 = 5%. That's very different from 0.5 = 50%!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 0.05 = 50%",
+                    "why": "ignored the zero after the point — 0.05 is NOT 0.5!"
+                  },
+                  {
+                    "text": "Right: 0.05 = 5%",
+                    "why": "0.05 × 100 = 5 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **0.35** as a percentage?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.35 = what %?",
+                "options": [
+                  35,
+                  40,
+                  350,
+                  3.5,
+                  30
+                ],
+                "correctAnswer": "35",
+                "correctFeedback": "Spot on! **0.35 = 35%**. ✓",
+                "incorrectFeedback": "Not quite! 0.35 × 100 = 35, so 0.35 = 35%. The answer is **35%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 35,
+                    "label": "?%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 65,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Watch these common traps!",
+              "body": "When converting decimals to percentages, always **multiply by 100** (shift two places left).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.5 = 50% but 0.05 = 5%",
+                    "why": "That zero after the point makes a HUGE difference"
+                  },
+                  {
+                    "text": "0.8 = 80% (not 8%!)",
+                    "why": "Shift TWO places, not one"
+                  },
+                  {
+                    "text": "Anything over 1.0 = more than 100%",
+                    "why": "1.5 = 150% — that's more than the whole! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiplying-decimal-by-decimal",
+      "name": "Multiplying Decimal by Decimal",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "multiplying-decimal-by-decimal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to multiply two decimals together",
+            "How to count total decimal places to place the point correctly"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.3 × 0.4 = ?",
+              "body": "Aisha is finding the area of a rectangle 0.3 m by 0.4 m.\n\nMultiplying two decimals might look tricky, but there's a simple method: **ignore the points, multiply, then count the decimal places to put the point back!**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.3 × 0.4 = ???",
+                    "why": "Let's use the counting method!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Ignore, multiply, count!",
+              "body": "Here's the method. Tap to see each step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ignore the points: 0.3 becomes 3, 0.4 becomes 4",
+                    "why": "Remove all decimal points"
+                  },
+                  {
+                    "text": "Multiply: 3 × 4 = 12",
+                    "why": "Just whole-number multiplication"
+                  },
+                  {
+                    "text": "Count total decimal places: 1 + 1 = 2",
+                    "why": "0.3 has 1 decimal place, 0.4 has 1 decimal place"
+                  },
+                  {
+                    "text": "Put the point 2 places from the right",
+                    "why": "12 becomes 0.12"
+                  },
+                  {
+                    "text": "0.3 × 0.4 = 0.12",
+                    "result": "0.12 m² ✓"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **0.3 × 0.4**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.5 × 0.7 = ?",
+                "options": [
+                  0.85,
+                  0.34,
+                  0.45,
+                  0.55,
+                  0.35
+                ],
+                "correctAnswer": "0.35",
+                "correctFeedback": "Brilliant! **0.5 × 0.7 = 0.35**. Count those decimal places! ✓",
+                "incorrectFeedback": "Not quite! 5 × 7 = 35. With 2 decimal places, that's **0.35**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "5 × 7 = 35",
+                    "why": "Whole-number multiplication done!"
+                  },
+                  {
+                    "text": "Total decimal places: 2",
+                    "why": "Now place the point..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Multiplying two decimals",
+              "body": "The method: **ignore, multiply, count, place**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Remove all decimal points",
+                    "why": "Turn 0.3 into 3 and 0.4 into 4"
+                  },
+                  {
+                    "text": "Step 2: Multiply as whole numbers",
+                    "why": "3 × 4 = 12"
+                  },
+                  {
+                    "text": "Step 3: Count TOTAL decimal places from both numbers",
+                    "why": "1 + 1 = 2 decimal places"
+                  },
+                  {
+                    "text": "Step 4: Place the point that many places from the right",
+                    "why": "12 → 0.12 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "multiplying-decimal-by-decimal-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid placing the decimal point in the wrong position after multiplying",
+            "Why counting decimal places in BOTH numbers matters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom says 0.8 × 0.6 = 4.8",
+              "body": "Tom says 0.8 × 0.6 = 4.8 because 8 × 6 = 48 and he put 1 decimal place.\n\nBut that doesn't look right. Can you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tom: 0.8 × 0.6 = 4.8",
+                    "why": "Something's off..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count ALL the decimal places!",
+              "body": "Tom only counted 1 decimal place instead of 2 (one from each number).\n\n0.8 has 1 decimal place and 0.6 has 1 decimal place = 2 decimal places total. 8 × 6 = 48. With 2 decimal places: 0.48, not 4.8.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 0.8 × 0.6 = 4.8",
+                    "why": "only counted 1 decimal place instead of 2 (one from each number)"
+                  },
+                  {
+                    "text": "Right: 0.8 × 0.6 = 0.48",
+                    "why": "Count decimal places from BOTH numbers! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **0.7 × 0.4**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.7 × 0.4 = ?",
+                "options": [
+                  0.28,
+                  0.18,
+                  0.78,
+                  0.29,
+                  0.27
+                ],
+                "correctAnswer": "0.28",
+                "correctFeedback": "Spot on! **0.7 × 0.4 = 0.28**. Those decimal places matter! ✓",
+                "incorrectFeedback": "Not quite! 7 × 4 = 28. Total decimal places = 2. So 0.28. The answer is **0.28**."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 1,
+                "points": [
+                  {
+                    "value": 0.28,
+                    "label": "?",
+                    "color": "#34d399"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 0.1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The decimal places rule",
+              "body": "When multiplying decimals, the answer has as many decimal places as **both numbers combined**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.3 (1 decimal place) × 0.4 (1 decimal place) = 0.12 (2 decimal places)",
+                    "why": "1 + 1 = 2 decimal places"
+                  },
+                  {
+                    "text": "0.8 (1 decimal place) × 0.6 (1 decimal place) = 0.48 (2 decimal places)",
+                    "why": "Not 4.8!"
+                  },
+                  {
+                    "text": "Quick check: is the answer sensible?",
+                    "why": "0.8 × 0.6 must be LESS than 0.8 and LESS than 0.6 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dividing-decimal-by-decimal",
+      "name": "Dividing by a Decimal",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "dividing-decimal-by-decimal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to divide by a decimal by making the divisor (the number you divide by) a whole number first",
+            "Why 5.4 ÷ 0.6 is the same as 54 ÷ 6"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "5.4 ÷ 0.6 = ?",
+              "body": "Daisy is cutting a 5.4-metre ribbon into 0.6-metre pieces. That's **5.4 ÷ 0.6**.\n\nDividing by a decimal looks hard, but there's a brilliant trick: make the divisor (the number you divide by) a **whole number** first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "5.4 ÷ 0.6 = ???",
+                    "why": "Let's make that divisor whole!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Make the divisor whole!",
+              "body": "Multiply BOTH numbers by the same amount to make the divisor a whole number. This works because it creates **equivalent fractions** (fractions worth the same amount) — and doesn't change the answer! Tap to see:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The divisor is 0.6 — multiply both by 10 to make it whole",
+                    "why": "0.6 × 10 = 6"
+                  },
+                  {
+                    "text": "5.4 × 10 = 54",
+                    "why": "Multiply the dividend (the number being divided) by the same amount"
+                  },
+                  {
+                    "text": "Now divide: 54 ÷ 6 = 9",
+                    "why": "Easy whole-number division!"
+                  },
+                  {
+                    "text": "5.4 ÷ 0.6 = 9",
+                    "result": "9 pieces ✓"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **4.2 ÷ 0.7**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4.2 ÷ 0.7 = ?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Brilliant! **4.2 ÷ 0.7 = 6**. Make the divisor whole first! ✓",
+                "incorrectFeedback": "Not quite! Multiply both by 10: 42 ÷ 7 = **6**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Multiply both by 10: 42 ÷ 7",
+                    "why": "Now it's whole-number division!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Dividing by a decimal",
+              "body": "The trick: **multiply both numbers** by 10, 100, or 1000 to make the divisor a whole number.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Make the divisor whole by multiplying both numbers",
+                    "why": "0.6 → 6, so multiply both by 10"
+                  },
+                  {
+                    "text": "5.4 ÷ 0.6 becomes 54 ÷ 6 = 9",
+                    "why": "Same answer, easier division!"
+                  },
+                  {
+                    "text": "This works because multiplying both by the same number doesn't change the answer",
+                    "why": "It's like equivalent fractions (fractions worth the same) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "dividing-decimal-by-decimal-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply the multiply-both-by-10 trick to real division problems",
+            "When to watch out for only multiplying one number instead of both"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "George",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why does this trick work?",
+              "body": "A plank is 3.6 metres. He cuts it into 0.9 m pieces. How many pieces?\n\nThat's **3.6 ÷ 0.9**. Dividing by a decimal is confusing — but what if we could turn it into **whole-number division** instead?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3.6 ÷ 0.9 = the same as 36 ÷ 9",
+                    "why": "Multiply both by 10!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "It's like equivalent fractions (fractions worth the same)!",
+              "body": "Think of **3.6 ÷ 0.9** as a fraction: 3.6/0.9.\n\nMultiplying top and bottom by 10 gives 36/9 — the same fraction, but with whole numbers!\n\n36 ÷ 9 = **4**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3.6/0.9 = 36/9",
+                    "why": "Multiply top and bottom by 10"
+                  },
+                  {
+                    "text": "36 ÷ 9 = 4",
+                    "result": "4 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **4.8 ÷ 0.6**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4.8 ÷ 0.6 = ?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Superstar! **4.8 ÷ 0.6 = 8**. Make the divisor whole! ✓",
+                "incorrectFeedback": "Not quite! Multiply both by 10: 48 ÷ 6 = **8**."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 6.8,
+                "points": [
+                  {
+                    "value": 4.8,
+                    "label": "4.8",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The big idea",
+              "body": "Dividing by a decimal = multiplying both numbers until the divisor (the number you divide by) is whole. The answer stays the same!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Divisor has 1 decimal place? Multiply both by 10",
+                    "why": "0.6 → 6"
+                  },
+                  {
+                    "text": "Divisor has 2 decimal places? Multiply both by 100",
+                    "why": "0.25 → 25"
+                  },
+                  {
+                    "text": "Then do normal whole-number division",
+                    "why": "Much easier! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decimal-word-problems",
+      "name": "Decimal Word Problems",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "decimal-word-problems-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot which operation to use in a decimals word problem",
+            "How to check your answer is sensible"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Aisha's problem",
+              "body": "Aisha buys 3 books at £4.99 each and pays with a £20 note.\n\n**How much change does she get?**\n\nThe first step is always: **which operation do I need?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "How much change does she get?",
+                    "why": "Read carefully — what's the key word?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Break it into steps",
+              "body": "Aisha buys 3 books at £4.99 each and pays with a £20 note. How much change does she get? This is a **multiply then subtract** problem — let's work through it step by step. Tap to see!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Identify, calculate, check. ✓",
+                "incorrectFeedback": "Not quite — always start by identifying the operation, then work through the steps."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Identify the operation: multiply then subtract",
+                    "why": "Read the problem carefully"
+                  },
+                  {
+                    "text": "Step 1: 3 × £4.99 = £14.97",
+                    "why": "Do the first calculation"
+                  },
+                  {
+                    "text": "Step 2: £20.00 - £14.97 = £5.03",
+                    "why": "Finish the problem"
+                  },
+                  {
+                    "text": "Check: £5.03 + £14.97 = £20.00 ✓",
+                    "result": "Answer: £5.03 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the answer?",
+              "body": "Aisha buys 4 sandwiches at £2.75 each and pays with a £20 note.\n\n**How much change does she get?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How much change does she get?",
+                "options": [
+                  9,
+                  8,
+                  10,
+                  12,
+                  19
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Superstar! The answer is **£9.00**. Great problem solving! ✓",
+                "incorrectFeedback": "Not quite! 4 × £2.75 = £11.00. Then £20.00 - £11.00 = £9.00. The answer is **£9.00**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "4 × £2.75 = £11.00",
+                    "why": "First calculation"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tackling word problems",
+              "body": "Word problems are just maths in disguise. Follow these steps every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read carefully — what are you being asked to find?",
+                    "why": "Underline the question"
+                  },
+                  {
+                    "text": "Step 2: Pick the operation — add, subtract, multiply or divide?",
+                    "why": "Key words: 'total' = add, 'change' = subtract, 'each' = multiply/divide"
+                  },
+                  {
+                    "text": "Step 3: Line up decimal points for +/−, count decimal places for ×",
+                    "why": "Use the right method for your operation"
+                  },
+                  {
+                    "text": "Step 4: Check — is your answer sensible?",
+                    "why": "Estimate first, then check you're in the right ballpark ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "decimal-word-problems-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid picking the wrong operation in a decimals word problem",
+            "When to watch out for answers that don't make sense in context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Tom get it right?",
+              "body": "A shirt costs £12.50 and trousers cost £18.75. Tom was asked for the total but subtracted instead.\n\nTom says the answer is **£6.25**. Is that correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tom's working: £18.75 - £12.50 = £6.25",
+                    "why": "Check this carefully..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Let's check",
+              "body": "Tom subtracted when the question asked for the TOTAL.\n\n'Total' means ADD. £12.50 + £18.75 = £31.25.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tom's answer: £6.25",
+                    "why": "This is WRONG"
+                  },
+                  {
+                    "text": "Correct working: £12.50 + £18.75 = £31.25",
+                    "result": "Answer: £31.25 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "A hat costs £7.50 and gloves cost £9.25. What is the total?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct answer?",
+                "options": [
+                  16.74,
+                  16.76,
+                  16.95,
+                  16.75,
+                  16.85
+                ],
+                "correctAnswer": "16.75",
+                "correctFeedback": "Well done! The answer is **£16.75**. Always read the question carefully! ✓",
+                "incorrectFeedback": "Not quite! £7.50 + £9.25 = £16.75. The answer is **£16.75**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "£7.50 + £9.25 = £16.75",
+                    "why": "Follow the correct steps"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Top tips for word problems",
+              "body": "Most mistakes in word problems come from **choosing the wrong operation** or **stopping too early**. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the question TWICE before calculating",
+                    "why": "What exactly are they asking for?"
+                  },
+                  {
+                    "text": "Key words: 'total' = add, 'difference/change' = subtract",
+                    "why": "'Each/per' = multiply or divide"
+                  },
+                  {
+                    "text": "Multi-step: don't stop after the first calculation!",
+                    "why": "Change problems need TWO steps: find total, THEN subtract"
+                  },
+                  {
+                    "text": "Always check: is my answer sensible?",
+                    "why": "If change is MORE than what you paid, something's wrong! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2892 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "areaperimeter",
+    "displayName": "Area & Perimeter",
+    "extractedAt": "2026-03-30T13:51:13.564Z",
+    "subConceptCount": 9,
+    "lessonCount": 18,
+    "screenCount": 72,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "perimeter-rectangles",
+      "name": "Perimeter of Rectangles and Squares",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "perimeter-rectangles-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the perimeter by adding all the sides",
+            "Why 2 x (length + width) is a shortcut for rectangles"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mr Singh",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How much fencing/ribbon does Mr Singh need?",
+              "body": "Mr Singh is putting a fence around the school vegetable patch. The rectangle is **12m** long and **8m** wide.\nThe **perimeter (the total distance around the outside)** — let's find it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 12,
+                "width": 8,
+                "dimUnit": "m"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Add all four sides!",
+              "body": "A rectangle has **4 sides**. To find the perimeter, add them all up. Follow the steps below!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 12,
+                    "width": 8,
+                    "dimUnit": "m"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Two lengths: 12 + 12 = 24",
+                        "why": "Opposite sides are equal"
+                      },
+                      {
+                        "text": "Two widths: 8 + 8 = 16",
+                        "why": "The other pair"
+                      },
+                      {
+                        "text": "Total: 24 + 16",
+                        "why": "Add them together",
+                        "result": "= 40m ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Add the sides step by step to get 40m. ✓",
+                "incorrectFeedback": "Not quite — start by adding the two lengths, then the two widths, then combine them."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A rectangle is **11m** long and **7m** wide. What is the perimeter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the perimeter?",
+                "options": [
+                  "36",
+                  "35",
+                  "38",
+                  "33",
+                  "40"
+                ],
+                "correctAnswer": "36",
+                "correctFeedback": "Brilliant! The perimeter is **36m**. You added all four sides! ✓",
+                "incorrectFeedback": "Not quite! Perimeter = 11 + 7 + 11 + 7 = **36m**. Remember to add ALL four sides!"
+              },
+              "visualProps": {
+                "length": 11,
+                "width": 7,
+                "dimUnit": "m"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The perimeter recipe!",
+              "body": "**Perimeter** = the total distance around the outside. Here's how to find it:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 8,
+                    "width": 5,
+                    "dimUnit": "cm"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rectangle: P = 2 x (length + width)",
+                        "why": "Add length and width, then double it."
+                      },
+                      {
+                        "text": "Square: P = 4 x side length",
+                        "why": "All four sides are the same!"
+                      },
+                      {
+                        "text": "Don't confuse perimeter with area!",
+                        "why": "Perimeter = adding sides. Area = multiplying sides. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "perimeter-rectangles-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot the common mistake of forgetting to double",
+            "Why length + width is only HALF the perimeter"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Harry",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Harry's mistake?",
+              "body": "Harry is calculating how much tape he needs to go around a parcel. The rectangle is **14cm** by **9cm**.\nHarry says the perimeter (the total distance around the outside) is **23cm**. That's not right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 14,
+                "width": 9,
+                "dimUnit": "cm"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Don't forget to DOUBLE!",
+              "body": "Harry only added length + width once (14 + 9 = 23) instead of doubling it. The **perimeter** (total distance around the outside) needs all **4 sides** — two lengths and two widths. Tap to see the wrong way and the right way side by side.",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 14,
+                    "width": 9,
+                    "dimUnit": "cm"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Wrong: 14 + 9 = 23",
+                        "why": "Only counted 2 sides!",
+                        "result": "✗"
+                      },
+                      {
+                        "text": "Right: 2 × (14 + 9) = 2 × 23",
+                        "why": "Count all 4 sides",
+                        "result": "= 46cm ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct perimeter?",
+              "body": "A rectangle is **13cm** long and **8cm** wide. What is the perimeter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the perimeter?",
+                "options": [
+                  "42",
+                  "41",
+                  "44",
+                  "39",
+                  "46"
+                ],
+                "correctAnswer": "42",
+                "correctFeedback": "Well done! **2 x (13 + 8) = 42cm**. You remembered to double! ✓",
+                "incorrectFeedback": "Not quite! Perimeter = 2 × (13 + 8) = **42cm**. Make sure you count all four sides!"
+              },
+              "visualProps": {
+                "length": 13,
+                "width": 8,
+                "dimUnit": "cm"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember: all FOUR sides!",
+              "body": "The number one perimeter mistake is adding only **two** sides. A rectangle has **four**!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 14,
+                    "width": 9,
+                    "dimUnit": "cm"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Length + width = HALF the perimeter",
+                        "why": "That's only 2 sides out of 4!"
+                      },
+                      {
+                        "text": "Perimeter = 2 x (length + width)",
+                        "why": "Double it to get all four sides."
+                      },
+                      {
+                        "text": "Quick check: is your answer roughly double (l + w)?",
+                        "why": "If it's about the same as l + w, you forgot to double! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing-side-perimeter",
+      "name": "Finding Missing Side from Known Perimeter",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "missing-side-perimeter-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to work backwards from the perimeter to find a missing side",
+            "Why halving the perimeter first makes it easier"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jasmine",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you find the missing side?",
+              "body": "Jasmine has a rectangular garden with a perimeter of 36 m. The length is 12 m.\nWhat is the width? You know the perimeter (the total distance around the outside) — can you work **backwards** to find the missing side?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 12,
+                "width": 6,
+                "dimUnit": "m",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Work backwards in two steps!",
+              "body": "The perimeter is **36m** and the length is **12m**. Since perimeter counts each side **twice**, we can work backwards to find the width. Are these statements true or false?",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 12,
+                    "width": 6,
+                    "dimUnit": "m",
+                    "missingDim": "width"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Perimeter ÷ 2 = 36 ÷ 2",
+                        "why": "Halve the perimeter",
+                        "result": "= 18"
+                      },
+                      {
+                        "text": "18 - 12",
+                        "why": "Subtract the known length",
+                        "result": "= 6m ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Perimeter = **40m**. The length is **11m**. What is the width?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the width?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Brilliant! 40 ÷ 2 = 20, then 20 - 11 = **9m**! ✓",
+                "incorrectFeedback": "Not quite! Halve the perimeter: 40 ÷ 2 = 20. Then subtract: 20 - 11 = **9m**."
+              },
+              "visualProps": {
+                "length": 11,
+                "width": 9,
+                "dimUnit": "m",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding a missing side from perimeter!",
+              "body": "When you know the perimeter and one side, work backwards:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 12,
+                    "width": 6,
+                    "dimUnit": "m"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Step 1: Halve the perimeter",
+                        "why": "Perimeter ÷ 2 = length + width"
+                      },
+                      {
+                        "text": "Step 2: Subtract the known side",
+                        "why": "What's left is the missing side!"
+                      },
+                      {
+                        "text": "Check: 2 × (length + width) should = perimeter",
+                        "why": "Plug both sides back in to verify. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "missing-side-perimeter-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid forgetting to halve the perimeter first",
+            "Why subtracting one side from the full perimeter gives the wrong answer"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oscar",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Oscar's mistake?",
+              "body": "Oscar is finding the width of a rectangular field with perimeter 50 m and length 17 m.\nOscar says the missing side is **33m**. That seems way too big!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 17,
+                "width": 8,
+                "dimUnit": "m",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You must halve the perimeter first!",
+              "body": "Oscar subtracted from the full perimeter (50 - 17 = 33) instead of halving first. The perimeter (the total distance around the outside) includes **two** of each side, so you must halve it before subtracting. Tap to see the wrong and right approach.",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 17,
+                    "width": 8,
+                    "dimUnit": "m",
+                    "missingDim": "width"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Wrong: 50 - 17 = 33",
+                        "why": "Forgot to halve!",
+                        "result": "✗"
+                      },
+                      {
+                        "text": "Right: 50 ÷ 2 = 25",
+                        "why": "Halve first",
+                        "result": "✓"
+                      },
+                      {
+                        "text": "Then: 25 - 17 = 8m",
+                        "why": "Now subtract the known side",
+                        "result": "✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "Perimeter = **58m**. One side = **18m**. What is the missing side?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing side?",
+                "options": [
+                  "11",
+                  "10",
+                  "13",
+                  "8",
+                  "15"
+                ],
+                "correctAnswer": "11",
+                "correctFeedback": "Well done! 58 ÷ 2 = 29, then 29 - 18 = **11m**! ✓",
+                "incorrectFeedback": "Not quite! Halve first: 58 ÷ 2 = 29. Then 29 - 18 = **11m**."
+              },
+              "visualProps": {
+                "length": 18,
+                "width": 11,
+                "dimUnit": "m",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Always halve the perimeter first!",
+              "body": "The perimeter counts each side **twice**. So to find a missing side:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 17,
+                    "width": 8,
+                    "dimUnit": "m"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Halve the perimeter first!",
+                        "why": "Perimeter ÷ 2 = length + width (one of each)"
+                      },
+                      {
+                        "text": "THEN subtract the known side",
+                        "why": "What's left is the missing side."
+                      },
+                      {
+                        "text": "If your answer is bigger than half the perimeter, something's wrong!",
+                        "why": "A side can't be bigger than l + w combined. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing-side-area",
+      "name": "Finding Missing Side from Known Area",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "missing-side-area-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a missing side when you know the area",
+            "Why dividing the area by the known side gives the missing side"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Collins",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you find the missing side?",
+              "body": "Mrs Collins has a rectangular flower bed with an area of 48 m². The length is 8 m.\nYou know **Area = length x width**. If you know the area and one side, can you work out the other side? Of course — just **divide**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 8,
+                "width": 6,
+                "dimUnit": "m",
+                "areaLabel": "48 m²",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Divide the area by the known side!",
+              "body": "Division undoes multiplication — so if you know the area and one side, you can find the missing side. Put the steps in order!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 8,
+                    "width": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "48 m²",
+                    "missingDim": "width"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = length × width",
+                        "why": "The rule for rectangle area"
+                      },
+                      {
+                        "text": "48 = 8 × ?",
+                        "why": "We know the area and one side"
+                      },
+                      {
+                        "text": "? = 48 ÷ 8",
+                        "why": "Rearrange: divide area by the known side",
+                        "result": "= 6m ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Start with the rule, plug in what you know, then divide. ✓",
+                "incorrectFeedback": "Not quite — start with the area rule, then plug in the numbers, then divide."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Area = **56m²**. The length is **7m**. What is the width?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 56 ÷ 7?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Brilliant! **56 ÷ 7 = 8m**. Check: 7 × 8 = 56 ✓",
+                "incorrectFeedback": "Not quite! 56 ÷ 7 = **8m**. Divide the area by the side you know!"
+              },
+              "visualProps": {
+                "length": 7,
+                "width": 8,
+                "dimUnit": "m",
+                "areaLabel": "56 m²",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding a missing side from area!",
+              "body": "When you know the area and one side of a rectangle:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 8,
+                    "width": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "48 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Missing side = Area ÷ known side",
+                        "why": "Division undoes multiplication!"
+                      },
+                      {
+                        "text": "Check: multiply both sides together",
+                        "why": "The answer should equal the area."
+                      },
+                      {
+                        "text": "Think: ? × known = area",
+                        "why": "This is the same as area ÷ known = ? ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "missing-side-area-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to use division to find a missing side from the area",
+            "Why a bigger area with the same width means a longer length"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How long is it?",
+              "body": "A rectangular rug covers 54 m² of floor. It is 6 m wide.\nHow long is it? You know the area and one side. Think about it: if 6 rows of **something** make 54, what's the **something**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 6,
+                "width": 9,
+                "dimUnit": "m",
+                "areaLabel": "54 m²",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Area ÷ one side = the other side!",
+              "body": "When you know the area and one side, the other side is hiding inside a division. Tap to uncover it step by step!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 6,
+                    "width": 9,
+                    "dimUnit": "m",
+                    "areaLabel": "54 m²",
+                    "missingDim": "width"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = 54m²",
+                        "why": "Given"
+                      },
+                      {
+                        "text": "One side = 6m",
+                        "why": "Given"
+                      },
+                      {
+                        "text": "Other side = 54 ÷ 6 = 9m",
+                        "why": "Divide area by the known side",
+                        "result": "✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Area = **42m²**. One side = **7m**. What is the other side?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 42 ÷ 7?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Well done! **42 ÷ 7 = 6m**. The missing side is 6m! ✓",
+                "incorrectFeedback": "Not quite! 42 ÷ 7 = **6m**. Think: 7 × what = 42?"
+              },
+              "visualProps": {
+                "length": 7,
+                "width": 6,
+                "dimUnit": "m",
+                "areaLabel": "42 m²",
+                "missingDim": "width"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Area and division — best friends!",
+              "body": "Finding a missing side from area is just **division in disguise**:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 6,
+                    "width": 9,
+                    "dimUnit": "m",
+                    "areaLabel": "54 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = length × width",
+                        "why": "The core rule."
+                      },
+                      {
+                        "text": "Missing side = Area ÷ known side",
+                        "why": "Division undoes the multiplication."
+                      },
+                      {
+                        "text": "Always check by multiplying back!",
+                        "why": "Known × missing should equal the area. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "area-triangles",
+      "name": "Area of Triangles (half base times height)",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "area-triangles-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that a triangle is half of a rectangle",
+            "Why the rule is half x base x height"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ruby",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do you notice?",
+              "body": "Imagine a rectangle that is **10cm** wide and **6cm** tall. Now draw a diagonal line corner to corner. What do you get? **Two triangles!**\n\nEach triangle is exactly **half** the rectangle. So if the rectangle's area is 60cm², the triangle's area is...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TriangleAreaDiagram",
+              "interaction": null,
+              "visualProps": {
+                "base": 10,
+                "height": 6,
+                "dimUnit": "cm",
+                "showRectangle": true,
+                "areaLabel": "30 cm²"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Triangle area = half the rectangle!",
+              "body": "A triangle is exactly **half** of the rectangle it fits inside. The height must be **perpendicular** (at a right angle) to the base, not slanted. Match each shape to its area rule!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "TriangleAreaDiagram",
+                  "props": {
+                    "base": 10,
+                    "height": 6,
+                    "dimUnit": "cm",
+                    "showRectangle": true,
+                    "areaLabel": "30 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rectangle: 10 × 6 = 60",
+                        "why": "Full rectangle area"
+                      },
+                      {
+                        "text": "Triangle = half: 60 ÷ 2",
+                        "why": "A triangle is half of the rectangle",
+                        "result": "= 30cm² ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A triangle has a base of **8cm** and a height of **4cm**. What is the area?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TriangleAreaDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is ½ × 8 × 4?",
+                "options": [
+                  "16",
+                  "15",
+                  "18",
+                  "13",
+                  "20"
+                ],
+                "correctAnswer": "16",
+                "correctFeedback": "Brilliant! ½ × 8 × 4 = **16cm²**. You remembered to halve! ✓",
+                "incorrectFeedback": "Not quite! 8 × 4 = 32. Then halve it: 32 ÷ 2 = **16cm²**. Don't forget the ÷ 2!"
+              },
+              "visualProps": {
+                "base": 8,
+                "height": 4,
+                "dimUnit": "cm",
+                "areaLabel": "? cm²"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Triangle area — halve the rectangle!",
+              "body": "A triangle is **half a rectangle** with the same base and height:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "TriangleAreaDiagram",
+                  "props": {
+                    "base": 10,
+                    "height": 6,
+                    "dimUnit": "cm",
+                    "showRectangle": true,
+                    "areaLabel": "30 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area of triangle = ½ × base × height",
+                        "why": "Or: base × height ÷ 2"
+                      },
+                      {
+                        "text": "Use the perpendicular height (straight up, at 90° to the base)",
+                        "why": "Not the slanted side — the straight-up height!"
+                      },
+                      {
+                        "text": "The most common mistake: forgetting to halve!",
+                        "why": "If your answer is double what you expected, divide by 2. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "area-triangles-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use the rule ½ × base × height step by step",
+            "Why you must use the perpendicular height (straight up at 90°), not the slant"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Amir",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the area of this triangle?",
+              "body": "A triangular garden bed has a base of 14 m and a height of 8 m.\nLet's use the rule step by step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TriangleAreaDiagram",
+              "interaction": null,
+              "visualProps": {
+                "base": 14,
+                "height": 8,
+                "dimUnit": "m",
+                "areaLabel": "? m²"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Follow the rule!",
+              "body": "Let's find the area of this triangle with base **14m** and height **8m**. Tap each step to see how the calculation works:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "TriangleAreaDiagram",
+                  "props": {
+                    "base": 14,
+                    "height": 8,
+                    "dimUnit": "m",
+                    "showRectangle": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Multiply base × height",
+                        "why": "14 × 8",
+                        "result": "= 112"
+                      },
+                      {
+                        "text": "Divide by 2",
+                        "why": "112 ÷ 2",
+                        "result": "= 56m²"
+                      },
+                      {
+                        "text": "Area = 56m²",
+                        "why": "That's ½ × base × height!",
+                        "result": "✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Base = **12m**, height = **6m**. What's the area?",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "TriangleAreaDiagram",
+                  "props": {
+                    "base": 12,
+                    "height": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "? m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "½ × 12 × 6 = ?",
+                        "why": "Multiply first, then halve!"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is ½ × 12 × 6?",
+                "options": [
+                  "36",
+                  "35",
+                  "38",
+                  "33",
+                  "40"
+                ],
+                "correctAnswer": "36",
+                "correctFeedback": "Spot on! ½ × 12 × 6 = **36m²**! ✓",
+                "incorrectFeedback": "Not quite! 12 × 6 = 72, then ÷ 2 = **36m²**. Multiply first, then halve!"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two steps for triangle area!",
+              "body": "Triangle area in two easy steps:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "TriangleAreaDiagram",
+                  "props": {
+                    "base": 14,
+                    "height": 8,
+                    "dimUnit": "m",
+                    "showRectangle": true,
+                    "areaLabel": "56 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Step 1: Multiply base × height",
+                        "why": "This gives you the rectangle area."
+                      },
+                      {
+                        "text": "Step 2: Divide by 2",
+                        "why": "The triangle is half the rectangle. Done! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "area-parallelograms",
+      "name": "Area of Parallelograms (base times height)",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "area-parallelograms-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that a parallelogram (a slanted rectangle with two pairs of parallel sides) can be rearranged into a rectangle",
+            "Why the area rule is the same as a rectangle: base x height"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Green",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A shape-shifting trick!",
+              "body": "A parallelogram looks like a **squashed rectangle**. But here's a magic trick: chop off one end and slide it to the other side... and you get a **perfect rectangle**!\n\nThat means the area rule is the same: **base × height**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ParallelogramDiagram",
+              "interaction": null,
+              "visualProps": {
+                "base": 10,
+                "height": 6,
+                "slant": 7,
+                "dimUnit": "m"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same as a rectangle!",
+              "body": "A parallelogram can be rearranged into a rectangle — so the area rule is the same! But watch out for the **slant side** trap. Fill in the missing word:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 10,
+                    "height": 6,
+                    "slant": 7,
+                    "dimUnit": "m",
+                    "areaLabel": "60 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = base × perpendicular height",
+                        "why": "Use the height at 90° to the base — same rule as a rectangle!"
+                      },
+                      {
+                        "text": "= 10 × 6",
+                        "why": "NOT 10 × 7 (that uses the slant)",
+                        "result": "= 60m² ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The area of a parallelogram is base × ____ height",
+                "options": [
+                  "slant",
+                  "perpendicular (at right angles)",
+                  "diagonal",
+                  "longest"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Use the perpendicular height (straight up at 90°), not the slant. ✓",
+                "incorrectFeedback": "Not quite — you must use the perpendicular height (at a right angle to the base), not the slant side!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A parallelogram has a base of **9m** and a perpendicular height of **5m**. What is the area?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "ParallelogramDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 9 × 5?",
+                "options": [
+                  "45",
+                  "44",
+                  "47",
+                  "42",
+                  "49"
+                ],
+                "correctAnswer": "45",
+                "correctFeedback": "Brilliant! **9 × 5 = 45m²**. Same as a rectangle — just use the perpendicular height! ✓",
+                "incorrectFeedback": "Not quite! 9 × 5 = **45m²**. Remember: use the perpendicular height, not the slant!"
+              },
+              "visualProps": {
+                "base": 9,
+                "height": 5,
+                "dimUnit": "m",
+                "areaLabel": "? m²"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Parallelogram = rearranged rectangle!",
+              "body": "A parallelogram and a rectangle with the same base and height have the **same area**:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 10,
+                    "height": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "60 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = base × perpendicular height",
+                        "why": "Cut off one end, slide it across — it's a rectangle!"
+                      },
+                      {
+                        "text": "Use the perpendicular height (straight up at 90°)",
+                        "why": "NOT the slant side — that's a common trap!"
+                      },
+                      {
+                        "text": "No halving needed!",
+                        "why": "Unlike triangles, parallelograms aren't halved. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "area-parallelograms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to apply base x height for parallelograms (slanted rectangles)",
+            "How to identify the perpendicular height (the straight-up height, at a right angle) vs the slant height"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which height do you use?",
+              "body": "A parallelogram-shaped patio is 9 m along the base and 4 m in perpendicular height. The slant side is 5 m.\nCareful! There are two measurements that look like \"height\" — the perpendicular height of **4m** and the **slant** of 5m. Which one goes in the rule?",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 9,
+                    "height": 4,
+                    "slant": 5,
+                    "dimUnit": "m"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Base = 9m",
+                        "why": "The bottom edge"
+                      },
+                      {
+                        "text": "Perpendicular height = 4m",
+                        "why": "Straight up from base"
+                      },
+                      {
+                        "text": "Slant side = 5m",
+                        "why": "The tilted edge — NOT the height!"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Always use the perpendicular height!",
+              "body": "The question gives you two measurements that look like heights — but only the **perpendicular** one goes in the rule. Match each measurement to what it is:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 9,
+                    "height": 4,
+                    "slant": 5,
+                    "dimUnit": "m",
+                    "areaLabel": "36 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Correct: 9 × 4 = 36m²",
+                        "why": "Using perpendicular height",
+                        "result": "✓"
+                      },
+                      {
+                        "text": "Wrong: 9 × 5 = 45",
+                        "why": "Using slant — too big!",
+                        "result": "✗"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Base = **11m**, perpendicular height = **3m**. What is the area?",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 11,
+                    "height": 3,
+                    "dimUnit": "m",
+                    "areaLabel": "? m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "11 × 3 = ?",
+                        "why": "Base × perpendicular height"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the area?",
+                "options": [
+                  "33",
+                  "32",
+                  "35",
+                  "30",
+                  "37"
+                ],
+                "correctAnswer": "33",
+                "correctFeedback": "Well done! **11 × 3 = 33m²**. You used the right height! ✓",
+                "incorrectFeedback": "Not quite! Area = base × perpendicular height = 11 × 3 = **33m²**. Did you accidentally use the slant?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Perpendicular height — the key!",
+              "body": "The most common mistake with parallelograms is using the **wrong height**:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "ParallelogramDiagram",
+                  "props": {
+                    "base": 9,
+                    "height": 4,
+                    "dimUnit": "m",
+                    "areaLabel": "36 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Perpendicular height = straight up at 90°",
+                        "why": "This is what you multiply by the base."
+                      },
+                      {
+                        "text": "Slant height = the tilted edge",
+                        "why": "This is NOT used in the area rule!"
+                      },
+                      {
+                        "text": "Look for the right-angle marker",
+                        "why": "It shows you which measurement is the perpendicular height. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compound-shapes",
+      "name": "Splitting L-shapes into Rectangles",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "compound-shapes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to split an L-shape into two rectangles",
+            "How to find the area of each rectangle and add them"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Walters",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "An L-shape — how do you find the area?",
+              "body": "Mrs Walters is tiling an L-shaped kitchen floor. The shape isn't a simple rectangle — it's an **L-shape**!\nThe trick: **split it into two rectangles**, find each area, then **add** them together.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LShapeDiagram",
+              "interaction": null,
+              "visualProps": {
+                "totalLength": 10,
+                "totalWidth": 7,
+                "cutLength": 4,
+                "cutWidth": 3,
+                "rect1": {
+                  "label": "A",
+                  "length": 10,
+                  "width": 4
+                },
+                "rect2": {
+                  "label": "B",
+                  "length": 6,
+                  "width": 3
+                },
+                "dimUnit": "m",
+                "showSplit": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split, calculate, add!",
+              "body": "Draw a line to split the L-shape into **Rectangle A** and **Rectangle B**. Tap to reveal the steps!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "LShapeDiagram",
+                  "props": {
+                    "totalLength": 10,
+                    "totalWidth": 7,
+                    "cutLength": 4,
+                    "cutWidth": 3,
+                    "rect1": {
+                      "label": "A",
+                      "length": 10,
+                      "width": 4
+                    },
+                    "rect2": {
+                      "label": "B",
+                      "length": 6,
+                      "width": 3
+                    },
+                    "dimUnit": "m",
+                    "showSplit": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rectangle A: 10 × 4",
+                        "why": "First rectangle",
+                        "result": "= 40m²"
+                      },
+                      {
+                        "text": "Rectangle B: 6 × 3",
+                        "why": "Second rectangle",
+                        "result": "= 18m²"
+                      },
+                      {
+                        "text": "Total: 40 + 18",
+                        "why": "Add both areas",
+                        "result": "= 58m² ✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Rectangle A is **9m × 5m**. Rectangle B is **4m × 3m**. What is the total area?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LShapeDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 45 + 12?",
+                "options": [
+                  "57",
+                  "56",
+                  "59",
+                  "54",
+                  "61"
+                ],
+                "correctAnswer": "57",
+                "correctFeedback": "Brilliant! **45 + 12 = 57m²**. Split, calculate, add — you've got it! ✓",
+                "incorrectFeedback": "Not quite! 45 + 12 = **57m²**. Add the two rectangle areas together!"
+              },
+              "visualProps": {
+                "totalLength": 9,
+                "totalWidth": 8,
+                "cutLength": 5,
+                "cutWidth": 3,
+                "rect1": {
+                  "label": "A",
+                  "length": 9,
+                  "width": 5
+                },
+                "rect2": {
+                  "label": "B",
+                  "length": 4,
+                  "width": 3
+                },
+                "dimUnit": "m",
+                "showSplit": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Compound shapes — split and add!",
+              "body": "Any compound shape can be split into simpler shapes:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "LShapeDiagram",
+                  "props": {
+                    "totalLength": 10,
+                    "totalWidth": 7,
+                    "cutLength": 4,
+                    "cutWidth": 3,
+                    "rect1": {
+                      "label": "A",
+                      "length": 10,
+                      "width": 4
+                    },
+                    "rect2": {
+                      "label": "B",
+                      "length": 6,
+                      "width": 3
+                    },
+                    "dimUnit": "m",
+                    "showSplit": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Step 1: Draw a line to split it into rectangles",
+                        "why": "Look for where you can divide it neatly."
+                      },
+                      {
+                        "text": "Step 2: Find the area of each rectangle",
+                        "why": "Length × width for each one."
+                      },
+                      {
+                        "text": "Step 3: Add the areas together",
+                        "why": "Total area = Area A + Area B. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "compound-shapes-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot mistakes in splitting compound shapes (shapes made from simpler shapes joined together)",
+            "Why you need to use the right dimensions for each rectangle"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tyler",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Tyler's mistake?",
+              "body": "Tyler is finding the area of an L-shaped room.\nTyler says the area is **135m²**. But the correct answer is much smaller!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LShapeDiagram",
+              "interaction": null,
+              "visualProps": {
+                "totalLength": 9,
+                "totalWidth": 8,
+                "cutLength": 5,
+                "cutWidth": 3,
+                "rect1": {
+                  "label": "A",
+                  "length": 9,
+                  "width": 5
+                },
+                "rect2": {
+                  "label": "B",
+                  "length": 4,
+                  "width": 3
+                },
+                "dimUnit": "m",
+                "showSplit": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split it properly!",
+              "body": "Tyler multiplied the total length by the total width (9 × 15 = 135) as if it were a full rectangle, instead of splitting the L-shape. You must split the L-shape into **two separate rectangles** and use the correct dimensions for each. Tap to see the right approach.",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "LShapeDiagram",
+                  "props": {
+                    "totalLength": 9,
+                    "totalWidth": 8,
+                    "cutLength": 5,
+                    "cutWidth": 3,
+                    "rect1": {
+                      "label": "A",
+                      "length": 9,
+                      "width": 5
+                    },
+                    "rect2": {
+                      "label": "B",
+                      "length": 4,
+                      "width": 3
+                    },
+                    "dimUnit": "m",
+                    "showSplit": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Wrong: 135m²",
+                        "why": "multiplied the total length by the total width (9 × 15 = 135) as if it were a full rectangle, instead of splitting the L-shape",
+                        "result": "✗"
+                      },
+                      {
+                        "text": "Rectangle A: 9 × 5 = 45",
+                        "why": "First rectangle",
+                        "result": "✓"
+                      },
+                      {
+                        "text": "Rectangle B: 4 × 3 = 12",
+                        "why": "Second rectangle",
+                        "result": "✓"
+                      },
+                      {
+                        "text": "Total: 45 + 12 = 57",
+                        "why": "Add them together",
+                        "result": "57m² ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct area?",
+              "body": "Rectangle A: **8 × 4** = 32. Rectangle B: **5 × 3** = 15. Total?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LShapeDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the total area?",
+                "options": [
+                  "47",
+                  "46",
+                  "49",
+                  "44",
+                  "51"
+                ],
+                "correctAnswer": "47",
+                "correctFeedback": "Well done! **32 + 15 = 47m²**! ✓",
+                "incorrectFeedback": "Not quite! 32 + 15 = **47m²**. Make sure you're adding, not multiplying!"
+              },
+              "visualProps": {
+                "totalLength": 8,
+                "totalWidth": 7,
+                "cutLength": 3,
+                "cutWidth": 3,
+                "rect1": {
+                  "label": "A",
+                  "length": 8,
+                  "width": 4
+                },
+                "rect2": {
+                  "label": "B",
+                  "length": 5,
+                  "width": 3
+                },
+                "dimUnit": "m",
+                "showSplit": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't treat an L-shape as a rectangle!",
+              "body": "The biggest compound shape mistake is treating the whole shape as one rectangle:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "LShapeDiagram",
+                  "props": {
+                    "totalLength": 9,
+                    "totalWidth": 8,
+                    "cutLength": 5,
+                    "cutWidth": 3,
+                    "rect1": {
+                      "label": "A",
+                      "length": 9,
+                      "width": 5
+                    },
+                    "rect2": {
+                      "label": "B",
+                      "length": 4,
+                      "width": 3
+                    },
+                    "dimUnit": "m",
+                    "showSplit": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "An L-shape is NOT a full rectangle",
+                        "why": "A corner is missing — so you can't just do total l × total w."
+                      },
+                      {
+                        "text": "Split into separate rectangles",
+                        "why": "Each rectangle gets its OWN length and width."
+                      },
+                      {
+                        "text": "Add the separate areas together",
+                        "why": "Total area = sum of the parts. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "area-vs-perimeter",
+      "name": "Same Area Does Not Mean Same Perimeter",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "area-vs-perimeter-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to understand that two shapes can have the same area but different perimeters",
+            "Why area and perimeter measure different things"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same area — same perimeter?",
+              "body": "Ella is comparing two rectangular gardens.\n\nRectangle A is **6m × 4m**.\nRectangle B is **12m × 2m**.\n\nBoth have the same area (**24m²**). But do they have the same perimeter (the total distance around the outside)?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 6,
+                "width": 4,
+                "dimUnit": "m",
+                "areaLabel": "24 m²"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Area and perimeter are DIFFERENT!",
+              "body": "These two rectangles have the same area — but very different perimeters! Match each concept to its meaning:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 6,
+                    "width": 4,
+                    "dimUnit": "m",
+                    "areaLabel": "24 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rectangle A: 6 × 4 = 24",
+                        "why": "Perimeter = 2×(6+4) = 20m"
+                      },
+                      {
+                        "text": "Rectangle B: 12 × 2 = 24",
+                        "why": "Perimeter = 2×(12+2) = 28m"
+                      },
+                      {
+                        "text": "Same area, different perimeters!",
+                        "why": "Longer and thinner = bigger perimeter",
+                        "result": "✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the perimeter!",
+              "body": "A rectangle is **8m** long and **3m** wide. What is its perimeter?",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 8,
+                    "width": 3,
+                    "dimUnit": "m"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "2 × (8 + 3) = ?",
+                        "why": "Add length and width, then double"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the perimeter?",
+                "options": [
+                  "22",
+                  "21",
+                  "24",
+                  "19",
+                  "26"
+                ],
+                "correctAnswer": "22",
+                "correctFeedback": "Correct! 2 × (8 + 3) = **22m**. Perimeter is the distance around the outside! ✓",
+                "incorrectFeedback": "Not quite! 2 × (8 + 3) = **22m**. Remember to double!"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Area and perimeter — not the same!",
+              "body": "This is a really important thing to remember:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 6,
+                    "width": 4,
+                    "dimUnit": "m",
+                    "areaLabel": "24 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Same area does NOT mean same perimeter",
+                        "why": "A long thin shape has more perimeter than a square-ish shape with the same area."
+                      },
+                      {
+                        "text": "Area = flat space inside (multiply)",
+                        "why": "Measured in cm², m², etc."
+                      },
+                      {
+                        "text": "Perimeter = distance around (add)",
+                        "why": "Measured in cm, m, etc. — no ² symbol! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "area-vs-perimeter-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to tell area and perimeter apart in exam questions",
+            "Why the units are different (cm² vs cm)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Area or perimeter — which one?",
+              "body": "Sophie has a rectangular swimming pool that is 10 m long and 6 m wide.\n\n**Area** = 10 × 6 = **60m²**\n**Perimeter (the total distance around the outside)** = 2 × (10 + 6) = **32m**\n\nNotice: the **units** are different! Area uses ², perimeter doesn't.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": null,
+              "visualProps": {
+                "length": 10,
+                "width": 6,
+                "dimUnit": "m",
+                "areaLabel": "60 m²"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "How to tell them apart!",
+              "body": "Take Sophie's rectangle (**10m** × **6m**). Area = 10 × 6 = **60m²**. Perimeter = 2 × (10 + 6) = **32m**.\n\nNotice the different **units** and **operations**! Fill in the blank:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 10,
+                    "width": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "60 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Area = MULTIPLY (10 × 6 = 60)",
+                        "why": "How much space inside? Units have ² → m²"
+                      },
+                      {
+                        "text": "Perimeter = ADD (10 + 6 + 10 + 6 = 32)",
+                        "why": "How far around the outside? No ² → m"
+                      },
+                      {
+                        "text": "Read the question carefully!",
+                        "why": "Covering/filling = area. Fencing/border = perimeter. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "\"How much carpet to cover the floor?\" is asking for the ____",
+                "options": [
+                  "perimeter",
+                  "area",
+                  "volume",
+                  "length"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Covering a surface means area. Perimeter is the distance around the edge. ✓",
+                "incorrectFeedback": "Not quite — \"covering\" a surface is about the space inside, which is area!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the area!",
+              "body": "A rectangle is **9m** long and **7m** wide. How much surface does it cover?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "RectangleDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the area?",
+                "options": [
+                  "63",
+                  "62",
+                  "65",
+                  "60",
+                  "67"
+                ],
+                "correctAnswer": "63",
+                "correctFeedback": "Well done! Covering a surface is **area** = 9 × 7 = **63m²** ✓",
+                "incorrectFeedback": "Not quite! Area = 9 × 7 = **63m²**. \"Covering\" means area (multiply length × width)!"
+              },
+              "visualProps": {
+                "length": 9,
+                "width": 7,
+                "dimUnit": "m",
+                "areaLabel": "? m²"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The cheat sheet!",
+              "body": "Here's how to never mix up area and perimeter again:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 10,
+                    "width": 6,
+                    "dimUnit": "m",
+                    "areaLabel": "60 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "AREA = inside space = multiply = cm² or m²",
+                        "why": "Think: paint, tiles, carpet, grass"
+                      },
+                      {
+                        "text": "PERIMETER = outside edge = add = cm or m",
+                        "why": "Think: fence, frame, border, string"
+                      },
+                      {
+                        "text": "Quick check: does the unit have ²?",
+                        "why": "² = area. No ² = perimeter. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-conversion",
+      "name": "Converting cm² and m²",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "unit-conversion-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "Why 1 m² = 10,000 cm² (not 100 cm²)",
+            "How to convert between square units"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isaac",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "1 m² = how many cm²?",
+              "body": "Most people say **100 cm²** — but that's WRONG!\n\n1 metre = 100 cm. But 1 **square** metre is a square that's 100 cm by 100 cm.\n**100 × 100 = 10,000**\n\nSo **1 m² = 10,000 cm²**. That's a lot bigger than you'd think!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1 m = 100 cm",
+                    "why": "For length, just multiply by 100"
+                  },
+                  {
+                    "text": "1 m² = 100 × 100 cm²",
+                    "why": "For area, multiply TWICE (both dimensions!)",
+                    "result": "= 10,000 cm²"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply by 10,000, not 100!",
+              "body": "Isaac is converting the area of his bedroom floor from m² to cm². The area is **12 m²** — but how many cm² is that? Converting area units is **not** the same as converting length units!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 100,
+                    "width": 100,
+                    "dimUnit": "cm",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Since 1 m² = **10,000** cm², we multiply 12 by 10,000:"
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "12 m² × 10,000 = 120000 cm²",
+                        "why": "Multiply by 10,000 for area!",
+                        "result": "✓"
+                      },
+                      {
+                        "text": "Common mistake: 12 × 100 = 1200",
+                        "why": "That's only for converting lengths, not areas!",
+                        "result": "✗"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To convert m² to cm², multiply by ____",
+                "options": [
+                  "100",
+                  "1,000",
+                  "10,000",
+                  "100,000"
+                ],
+                "correctIndex": "2",
+                "correctFeedback": "Yes! 1 m² = 100 × 100 = 10,000 cm². You must square the multiplier for area! ✓",
+                "incorrectFeedback": "Not quite — for area you square the conversion factor: 100² = 10,000. So multiply by 10,000!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **8 m²** to cm².",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 1,
+                    "width": 1,
+                    "dimUnit": "m",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "8 m² = ? cm²",
+                        "why": "Remember: × 10,000 for square units!"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 8 m² in cm²?",
+                "options": [
+                  "80000",
+                  "79999",
+                  "80002",
+                  "79997",
+                  "80004"
+                ],
+                "correctAnswer": "80000",
+                "correctFeedback": "Brilliant! **8 × 10,000 = 80000 cm²**. You remembered the 10,000! ✓",
+                "incorrectFeedback": "Not quite! 8 × 10,000 = **80000 cm²**. For area, multiply by 10,000 (not 100)!"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Square unit conversions!",
+              "body": "When converting **area** (square) units, the number you multiply by gets **squared** too:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 1,
+                    "width": 1,
+                    "dimUnit": "m",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "1 m² = 10,000 cm²",
+                        "why": "Because 100 × 100 = 10,000 (not just 100!)"
+                      },
+                      {
+                        "text": "m² → cm²: multiply by 10,000",
+                        "why": "Going to a smaller unit = bigger number"
+                      },
+                      {
+                        "text": "cm² → m²: divide by 10,000",
+                        "why": "Going to a bigger unit = smaller number. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "unit-conversion-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot the 100 vs 10,000 mistake",
+            "Why you must square the multiplier when converting area units"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lucas",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Lucas's mistake?",
+              "body": "Lucas is converting his rectangular garden (4 m²) to cm².\nLucas says: 4 m² = **400 cm²**.\nThat doesn't seem right...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Lucas's answer: 400 cm²",
+                    "why": "Hmm, that seems too small!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "× 10,000, not × 100!",
+              "body": "Lucas is converting his rectangular garden (4 m²) to cm². Lucas wrote 4 × 100 = **400 cm²**, but Lucas multiplied by 100 instead of 10,000.\n\nWhen you convert **area** (square) units, you must **square** the multiplier too:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 100,
+                    "width": 100,
+                    "dimUnit": "cm",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Wrong: 4 × 100 = 400 cm²",
+                        "why": "That's the length conversion, not area!",
+                        "result": "✗"
+                      },
+                      {
+                        "text": "Right: 4 × 10,000 = 40000 cm²",
+                        "why": "Square the conversion: 100² = 10,000",
+                        "result": "✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "Convert **6 m²** to cm².",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 1,
+                    "width": 1,
+                    "dimUnit": "m",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "6 × 10,000 = ?",
+                        "why": "Remember: area uses × 10,000!"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 6 m² in cm²?",
+                "options": [
+                  "60000",
+                  "59999",
+                  "60002",
+                  "59997",
+                  "60004"
+                ],
+                "correctAnswer": "60000",
+                "correctFeedback": "Well done! **6 × 10,000 = 60000 cm²**! ✓",
+                "incorrectFeedback": "Not quite! 6 × 10,000 = **60000 cm²**. For area, always multiply by 10,000!"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The conversion trap!",
+              "body": "The exam loves to test whether you know the difference:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "RectangleDiagram",
+                  "props": {
+                    "length": 1,
+                    "width": 1,
+                    "dimUnit": "m",
+                    "areaLabel": "1 m² = 10,000 cm²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Length: 1 m = 100 cm",
+                        "why": "Just one dimension."
+                      },
+                      {
+                        "text": "Area: 1 m² = 10,000 cm²",
+                        "why": "Two dimensions: 100 × 100 = 10,000"
+                      },
+                      {
+                        "text": "Volume: 1 m³ = 1,000,000 cm³",
+                        "why": "Three dimensions: 100 × 100 × 100 = 1,000,000! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paths-and-borders",
+      "name": "Area of Path/Border (outer minus inner)",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "paths-and-borders-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to find the area of a border or path around a rectangle",
+            "Why you subtract inner area from outer area"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Green",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How much path is there?",
+              "body": "Mrs Green is laying a stone path around a rectangular pond.\nThe inner rectangle is **8m × 5m**. The path is **1m** wide all the way around.\nHow do you find the area of **just the path** (the yellow part)? There's a clever trick!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PathBorderDiagram",
+              "interaction": null,
+              "visualProps": {
+                "outerL": 10,
+                "outerW": 7,
+                "innerL": 8,
+                "innerW": 5,
+                "pathWidth": 1,
+                "dimUnit": "m",
+                "innerLabel": "40 m²",
+                "pathLabel": "Path"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Outer minus inner!",
+              "body": "Mrs Green is laying a stone path around a rectangular pond. The outer rectangle is **10m × 7m** and the inner one is **8m × 5m**.\n\nTo find the area of just the path, work out the **whole thing**, then **subtract** the inside. Put the steps in order!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "PathBorderDiagram",
+                  "props": {
+                    "outerL": 10,
+                    "outerW": 7,
+                    "innerL": 8,
+                    "innerW": 5,
+                    "pathWidth": 1,
+                    "dimUnit": "m",
+                    "innerLabel": "40 m²",
+                    "pathLabel": "30 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Outer: 10 × 7 = 70m²",
+                        "why": "Inner + 1 on each side"
+                      },
+                      {
+                        "text": "Inner: 8 × 5 = 40m²",
+                        "why": "The rectangle inside"
+                      },
+                      {
+                        "text": "Path: 70 − 40 = 30m²",
+                        "why": "Outer minus inner!",
+                        "result": "✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Outer area first, then inner, then subtract. ✓",
+                "incorrectFeedback": "Not quite — find the outer area first, then the inner area, then subtract to get the path."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Outer area = **63m²**. Inner area = **35m²**. What is the area of just the path?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PathBorderDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 63 − 35?",
+                "options": [
+                  "28",
+                  "27",
+                  "30",
+                  "25",
+                  "32"
+                ],
+                "correctAnswer": "28",
+                "correctFeedback": "Brilliant! **63 − 35 = 28m²**. The path area is 28m²! ✓",
+                "incorrectFeedback": "Not quite! 63 − 35 = **28m²**. Subtract the inner from the outer!"
+              },
+              "visualProps": {
+                "outerL": 10,
+                "outerW": 7,
+                "innerL": 8,
+                "innerW": 5,
+                "pathWidth": 1,
+                "dimUnit": "m",
+                "innerLabel": "35 m²",
+                "pathLabel": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Paths, borders, frames — same trick!",
+              "body": "Whenever you need the area of a border or path around a rectangle:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "PathBorderDiagram",
+                  "props": {
+                    "outerL": 10,
+                    "outerW": 7,
+                    "innerL": 8,
+                    "innerW": 5,
+                    "pathWidth": 1,
+                    "dimUnit": "m",
+                    "innerLabel": "40 m²",
+                    "pathLabel": "30 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Step 1: Find the OUTER area",
+                        "why": "The path adds width to BOTH sides — so add 2× path width to length AND width."
+                      },
+                      {
+                        "text": "Step 2: Find the INNER area",
+                        "why": "The rectangle (or shape) inside."
+                      },
+                      {
+                        "text": "Step 3: Subtract inner from outer",
+                        "why": "What's left is just the path/border! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "paths-and-borders-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate the outer dimensions when a path width is given",
+            "How to subtract areas step by step"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Archie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How much border is there?",
+              "body": "A rectangular swimming pool (6 m × 4 m) has a 2 m wide path around it.\nThe path is on **all sides** — so the outer rectangle is bigger than the inner one. Let's work through it step by step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PathBorderDiagram",
+              "interaction": null,
+              "visualProps": {
+                "outerL": 10,
+                "outerW": 8,
+                "innerL": 6,
+                "innerW": 4,
+                "pathWidth": 2,
+                "dimUnit": "m",
+                "innerLabel": "24 m²",
+                "pathLabel": "Path"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Work out the outer dimensions first!",
+              "body": "A rectangular swimming pool (6 m × 4 m) has a 2 m wide path around it.\n\nThe path adds **2m** on **each side**. That's **4m** extra on both the length and the width. Tap to reveal each step!",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "PathBorderDiagram",
+                  "props": {
+                    "outerL": 10,
+                    "outerW": 8,
+                    "innerL": 6,
+                    "innerW": 4,
+                    "pathWidth": 2,
+                    "dimUnit": "m",
+                    "innerLabel": "24 m²",
+                    "pathLabel": "56 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Outer length: 6 + 2 + 2 = 10m",
+                        "why": "Path on left AND right"
+                      },
+                      {
+                        "text": "Outer width: 4 + 2 + 2 = 8m",
+                        "why": "Path on top AND bottom"
+                      },
+                      {
+                        "text": "Outer area: 10 × 8 = 80m²",
+                        "why": "The whole thing including the path"
+                      },
+                      {
+                        "text": "Inner area: 6 × 4 = 24m²",
+                        "why": "Just the inside"
+                      },
+                      {
+                        "text": "Path area: 80 − 24 = 56m²",
+                        "why": "Subtract inner from outer!",
+                        "result": "✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Outer area = **72m²**. Inner area = **30m²**. What is the area of just the path?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PathBorderDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the path area?",
+                "options": [
+                  "42",
+                  "41",
+                  "44",
+                  "39",
+                  "46"
+                ],
+                "correctAnswer": "42",
+                "correctFeedback": "Well done! **72 − 30 = 42m²**! ✓",
+                "incorrectFeedback": "Not quite! 72 − 30 = **42m²**. Subtract the inner area from the outer!"
+              },
+              "visualProps": {
+                "outerL": 10,
+                "outerW": 8,
+                "innerL": 6,
+                "innerW": 4,
+                "pathWidth": 2,
+                "dimUnit": "m",
+                "innerLabel": "30 m²",
+                "pathLabel": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The path/border recipe!",
+              "body": "For any path, border, or frame problem:",
+              "bodyParts": [
+                {
+                  "type": "visual",
+                  "component": "PathBorderDiagram",
+                  "props": {
+                    "outerL": 10,
+                    "outerW": 8,
+                    "innerL": 6,
+                    "innerW": 4,
+                    "pathWidth": 2,
+                    "dimUnit": "m",
+                    "innerLabel": "24 m²",
+                    "pathLabel": "56 m²"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Add TWICE the path width to each dimension",
+                        "why": "The path goes on BOTH sides (left+right, top+bottom)."
+                      },
+                      {
+                        "text": "Calculate outer area and inner area",
+                        "why": "Outer = big rectangle. Inner = original rectangle."
+                      },
+                      {
+                        "text": "Path area = outer − inner",
+                        "why": "Subtraction gives you just the path. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

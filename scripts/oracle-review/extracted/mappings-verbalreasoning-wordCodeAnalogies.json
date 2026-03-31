@@ -1,0 +1,1837 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "wordCodeAnalogies",
+    "displayName": "Word Code Analogies",
+    "extractedAt": "2026-03-30T13:52:00.662Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 2,
+    "confidenceBreakdown": {
+      "high": 48,
+      "medium": 32,
+      "low": 45
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "big (dig) → cat (__). The word in brackets is made by changing the first letter. What word goes in the brackets?",
+      "questionDifficulty": 1,
+      "correctAnswer": "bat",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Complete the third pair in the same way: (cold, old) (charm, harm) (chill, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "hill",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "If each letter is moved forward by 1 place in the alphabet, what does FISH become?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GJTI",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Look at this pattern: (SEAT, ATE) (CLAM, LAM) (TRIP, ___). The word in brackets uses some of the letters from the first word. What completes the patte",
+      "questionDifficulty": 3,
+      "correctAnswer": "RIP",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Which word completes the pattern? arm, arm-our; col, col-our; flav, flav-___",
+      "questionDifficulty": 1,
+      "correctAnswer": "our",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Complete the third pair in the same way: (ship, hip) (stall, tall) (bland, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "land",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Look at the pattern: BIG → GIB, TOP → POT. What does MAP become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "PAM",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Complete the third pair in the same way: (bake, baker) (teach, teacher) (swim, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "swimmer",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "What comes next? A1, B2, C3, D4, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "E5",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Complete the third pair: (hear, heart) (star, start) (par, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "part",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Look at the pattern: SUN → SUNNY, RAIN → RAINY. What does CLOUD become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "CLOUDY",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Complete the third pair: (write, wrote) (drive, drove) (ride, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "rode",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "What comes next in this pattern? ZA, YB, XC, WD, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "VE",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Complete the pattern: (STAR, RATS) (LIVE, EVIL) (STOP, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "POTS",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Complete the third pair: (tall, taller) (fast, faster) (slow, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "slower",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "What comes next? AB, CD, EF, GH, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "IJ",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Complete the pattern: (POTS, STOP) (RATS, STAR) (WARD, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "DRAW",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Complete the pattern: (tooth, teeth) (foot, feet) (goose, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "geese",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Complete the third pair: (light, delight) (sign, design) (press, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "depress",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "What comes next? AAB, BBC, CCD, DDE, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "EEF",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "If PEN = 123, what is the code for NEP?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "If HAT = 123, what number represents the letter A?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "If BOX = 123, what is the code for OX?",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "If FIG = 123 and GIF = 321, what letter does the number 2 represent?",
+      "questionDifficulty": 1,
+      "correctAnswer": "I",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "If MOP = 123, what is the code for POM?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "If WAR = 123, what is the code for RAW?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "If DIM = 123, what is the code for MID?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "If OWL = 123, what is the code for LOW?",
+      "questionDifficulty": 1,
+      "correctAnswer": "312",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "If ROPE = 1234, what is the code for PORE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3214",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "If GAME = 1234, what is the code for MAGE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3214",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "If HAND = 1234, what is the code for AND?",
+      "questionDifficulty": 2,
+      "correctAnswer": "234",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "If MILE = 1234, what is the code for LIME?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3214",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "If CORN = 1234, what is the code for NOON?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4224",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "If SILK = 1234, what is the code for KILL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4233",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "If BOLD = 1234, what is the code for DOLL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4233",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "If FROG = 1234, what is the code for GOOF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4331",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "If HINT = 1234, what is the code for THIN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4123",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "If LAST = 1234, what is the code for SALT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3214",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "If WELT = 1234, what is the code for WELL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1233",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "If PUMA = 1234, what is the code for PUMP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1231",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "If FORM = 1234, what is the code for ROOM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3224",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "If DUST = 1234, what is the code for STUD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3421",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "If GULP = 1234, what is the code for PLUG?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4321",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "If TOAD = 1234 and DATO = 4312, what is the code for DOT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "421",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "If HOUSE = 12345, what is the code for SHOE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4125",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "If STONE = 12345, what is the code for NOTES?",
+      "questionDifficulty": 3,
+      "correctAnswer": "43251",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "If DREAM = 12345, what is the code for ARMED?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42531",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "If BRAIN = 12345, what is the code for BARN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1325",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "If PIG = 362 and GIP = 263, what is the code for GIG?",
+      "questionDifficulty": 3,
+      "correctAnswer": "262",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "If CAT = 415 and TAC = 514, what is the code for ACT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "145",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "If CREAM = 12345, what is the code for MARE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5423",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "If STARE = 12345, what is the code for TEARS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "25341",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "If HOG = 539 and GOH = 935, what is the code for GO?",
+      "questionDifficulty": 3,
+      "correctAnswer": "93",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "If SMART = 12345, what is the code for MAST?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2315",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "If CHAIR = 12345, what is the code for ARCH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3512",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "If BET = 827 and TEB = 728, what is the code for TEE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "722",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "If CRATE = 12345, what is the code for TRACE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42315",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "If FLINT = 12345, what is the code for LIFT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2315",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "If RUG = 864 and GUR = 468, what number represents the letter U?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "If GRAPE = 12345, what is the code for PAGER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "43152",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "If SET = 693 and TES = 396, what is the code for SEES?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6996",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "If SPEAR = 12345, what is the code for PEARS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23451",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "If CLOTH = 12345, what is the code for LOCH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2315",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "If MAP = 573 and PAM = 375, what is the code for MAMA?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5757",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "If SWIRL = 12345, what is the code for WILLS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23551",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "low",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Complete the third pair in the same way: (plate, late) (train, rain) (blade, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "lade",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Look at the pattern: TAP → PAT, TEN → NET. What does TIP become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "PIT",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Complete the third pair: (slow, slowly) (quick, quickly) (brave, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "bravely",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Complete the third pair: (top, stop) (till, still) (talk, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "stalk",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Complete the third pair: (scare, care) (scold, cold) (score, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "core",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Complete the third pair: (hope, hopeful) (care, careful) (play, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "playful",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Look at the pattern: GOD → DOG, TIP → PIT. What does RAT become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "TAR",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Complete the third pair: (happy, unhappy) (kind, unkind) (fair, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "unfair",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Complete the third pair: (pin, nip) (tap, pat) (pot, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "top",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Complete the third pair: (do, redo) (make, remake) (build, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "rebuild",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Complete the third pair: (sing, sang) (ring, rang) (swim, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "swam",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Complete the third pair: (untie, tie) (undo, do) (unlock, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "lock",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Complete the third pair: (dark, darkness) (kind, kindness) (sad, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "sadness",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Complete the third pair: (later, latter) (diner, dinner) (super, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "supper",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Complete the third pair: (think, thought) (buy, bought) (bring, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "brought",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Complete the third pair: (brace, race) (brain, rain) (bread, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "read",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Look at the pattern: POOL → LOOP, KEEP → PEEK. What does MOOD become?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DOOM",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Complete the third pair: (whole, hole) (write, rite) (wrap, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "rap",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Complete the third pair: (man, men) (woman, women) (child, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "children",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Complete the third pair: (look, overlook) (come, overcome) (turn, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "overturn",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Complete the third pair: (agree, disagree) (appear, disappear) (obey, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "disobey",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Complete the third pair: (BLEND, LEN) (GRAND, RAN) (STINK, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "TIN",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Complete the third pair: (SEAT, ATE) (CLAM, LAM) (TRIP, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "RIP",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Look at the pattern: LACE → ACE, CROW → ROW. What does GLOW become?",
+      "questionDifficulty": 2,
+      "correctAnswer": "LOW",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Look at the pattern: CLAP → PAL, SNAP → PAN. What does STEW become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "WET",
+      "subConceptId": "combined-rules",
+      "subConceptName": "Two Rules at Once",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → TA**. When one rule doesn't explain the change, try combining two rules. Do them one at a time.",
+      "lessonLearningGoal": [
+        "Spot when TWO transformations have been applied — not just one!",
+        "Break a combined rule into two separate steps so it's easy to follow"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Complete the third pair: (HIT, HAT) (BIG, BAG) (LID, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "LAD",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Look at the pattern: PAN → PLAN, TEN → THEN. What does BAN become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "BRAN",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Complete the third pair: (FLOW, WOLF) (STAR, RATS) (PLUG, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "GULP",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Complete the third pair: (BEAT, BEET) (MAST, MIST) (BAND, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "BEND",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Look at the pattern: GRAPE → DRAPE, GLOW → BLOW. What does GRAIN become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "BRAIN",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Complete the third pair: (CAR, SCAR) (HEAR, SHEAR) (HARE, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "SHARE",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does ANGEL become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "GLEAN",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Complete the third pair: (MILE, SMILE) (LAUGHTER, SLAUGHTER) (TAKE, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "STAKE",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Complete the third pair: (WHEAT, HEAT) (WRING, RING) (WRACK, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "RACK",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Look at the pattern: SHORE → HORSE, PLUM → LUMP. What does CAFE become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "FACE",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Complete the third pair in the same way: (seat, eat) (spin, pin) (slid, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "lid",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Look at the pattern: DOG → DOGS, CAT → CATS. What does BIRD become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "BIRDS",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Complete the third pair in the same way: (harm, arm) (heat, eat) (hear, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "ear",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Look at the pattern: RED → DER, BUS → SUB. What does TEN become?",
+      "questionDifficulty": 1,
+      "correctAnswer": "NET",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Complete the third pair in the same way: (paint, painter) (sing, singer) (read, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "reader",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Complete the third pair in the same way: (possible, impossible) (patient, impatient) (polite, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "impolite",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Complete the third pair in the same way: (loud, louder) (bright, brighter) (clean, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "cleaner",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Complete the third pair in the same way: (glad, gladly) (soft, softly) (neat, ___)",
+      "questionDifficulty": 1,
+      "correctAnswer": "neatly",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Complete the third pair in the same way: (blow, blown) (grow, grown) (show, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "shown",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Complete the third pair in the same way: (stripe, ripe) (stable, able) (stream, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "ream",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "What comes next in this pattern? AZ, BY, CX, DW, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "EV",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Complete the third pair in the same way: (run, rerun) (write, rewrite) (play, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "replay",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Complete the third pair in the same way: (SNAP, PAN) (CLAP, PAL) (TRAM, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "MAR",
+      "subConceptId": "combined-rules",
+      "subConceptName": "Two Rules at Once",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → TA**. When one rule doesn't explain the change, try combining two rules. Do them one at a time.",
+      "lessonLearningGoal": [
+        "Spot when TWO transformations have been applied — not just one!",
+        "Break a combined rule into two separate steps so it's easy to follow"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Complete the third pair in the same way: (MIST, MAST) (FILL, FALL) (WISH, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "WASH",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "What comes next? Z1, X2, V3, T4, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "R5",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Complete the third pair in the same way: (TEAM, MEAT) (PART, TRAP) (SNIP, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "PINS",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Complete the third pair in the same way: (act, react) (turn, return) (fill, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "refill",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Complete the third pair in the same way: (brace, race) (block, lock) (brand, ___)",
+      "questionDifficulty": 2,
+      "correctAnswer": "rand",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Complete the third pair in the same way: (LAMP, CLAMP) (LOCK, CLOCK) (LEAN, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "CLEAN",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Complete the third pair: (DEAL, LEAD) (EVIL, LIVE) (DEER, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "REED",
+      "subConceptId": "reverse-word",
+      "subConceptName": "Reverse the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+      "lessonLearningGoal": [
+        "Spot when a word has been flipped backwards — it's a common trick!",
+        "Reverse words of different lengths accurately every time"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Complete the third pair: (WHEAT, HEAT) (WROTE, ROTE) (WHOLE, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "HOLE",
+      "subConceptId": "letter-removal",
+      "subConceptName": "Remove a Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+      "lessonLearningGoal": [
+        "Spot when a letter has vanished from the word — and figure out which one",
+        "Identify which position the letter was removed from"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "What comes next? AC, CE, EG, GI, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "IK",
+      "subConceptId": "letter-shift",
+      "subConceptName": "Alphabet Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+      "lessonLearningGoal": [
+        "Spot when every letter has shifted forward or backward in the alphabet",
+        "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Complete the third pair: (LISTEN, SILENT) (EARTH, HEART) (BELOW, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "ELBOW",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Complete the third pair: (MILE, SMILE) (LAUGHTER, SLAUGHTER) (WORD, ___)",
+      "questionDifficulty": 3,
+      "correctAnswer": "SWORD",
+      "subConceptId": "letter-replacement",
+      "subConceptName": "Replace a Letter",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+      "lessonLearningGoal": [
+        "Spot when one letter has been secretly swapped for another",
+        "Figure out WHICH position changes and what it changes to"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does MEATS become?",
+      "questionDifficulty": 3,
+      "correctAnswer": "STEAM",
+      "subConceptId": "position-change",
+      "subConceptName": "Letter Rearrangement",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+      "lessonLearningGoal": [
+        "Spot when letters have been shuffled around — like a word puzzle!",
+        "Track where each letter position moves to so you can apply the same pattern"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "letter-swap",
+      "name": "First & Last Letter Swap"
+    },
+    {
+      "id": "vowel-removal",
+      "name": "Remove All Vowels"
+    }
+  ],
+  "subConceptCoverage": {
+    "letter-replacement": {
+      "name": "Replace a Letter",
+      "questionCount": 38,
+      "difficulties": {
+        "D1": 14,
+        "D2": 15,
+        "D3": 9
+      }
+    },
+    "letter-removal": {
+      "name": "Remove a Letter",
+      "questionCount": 17,
+      "difficulties": {
+        "D1": 5,
+        "D2": 9,
+        "D3": 3
+      }
+    },
+    "letter-shift": {
+      "name": "Alphabet Shift",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 0,
+        "D2": 6,
+        "D3": 2
+      }
+    },
+    "reverse-word": {
+      "name": "Reverse the Word",
+      "questionCount": 11,
+      "difficulties": {
+        "D1": 4,
+        "D2": 3,
+        "D3": 4
+      }
+    },
+    "position-change": {
+      "name": "Letter Rearrangement",
+      "questionCount": 49,
+      "difficulties": {
+        "D1": 8,
+        "D2": 16,
+        "D3": 25
+      }
+    },
+    "combined-rules": {
+      "name": "Two Rules at Once",
+      "questionCount": 2,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 1
+      }
+    }
+  }
+}

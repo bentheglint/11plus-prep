@@ -1,0 +1,3725 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "primenumbers",
+    "displayName": "Prime Numbers & Factors",
+    "extractedAt": "2026-03-30T13:05:56.054Z",
+    "questionCount": 195,
+    "difficultyDistribution": {
+      "D1": 71,
+      "D2": 84,
+      "D3": 40
+    },
+    "questionTypes": {
+      "standard": 195
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is a prime number?",
+      "options": [
+        "12",
+        "15",
+        "17",
+        "21",
+        "25"
+      ],
+      "correct": 2,
+      "correctAnswer": "17",
+      "explanation": "A prime number only has two factors: 1 and itself. 17 can only be divided by 1 and 17, so it's prime. The others have more factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A maths challenge card asks: how many factors does 24 have?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "The factors of 24 are: 1, 2, 3, 4, 6, 8, 12, 24. Count them: that's 8 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Emma wants to arrange 18 chairs in equal rows with no chairs left over. Which of these is NOT a possible number of rows?",
+      "options": [
+        "2 rows",
+        "3 rows",
+        "4 rows",
+        "6 rows",
+        "9 rows"
+      ],
+      "correct": 2,
+      "correctAnswer": "4 rows",
+      "explanation": "The number of rows must be a factor of 18. Factors of 18 are: 1, 2, 3, 6, 9, 18. The number 4 is NOT a factor of 18. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the smallest prime number?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "The smallest prime number is 2. It's the only even prime number! (1 is not considered prime, and 0 is not prime either.) ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number is both a factor of 30 and a factor of 45?",
+      "options": [
+        "2",
+        "4",
+        "9",
+        "15",
+        "20"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Factors of 45: 1, 3, 5, 9, 15, 45. Common factors include 1, 3, 5, and 15. From the options, 15 is a factor of both. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jake has 36 chocolates. He wants to share them equally among his friends with none left over. Which number of friends is NOT possible?",
+      "options": [
+        "4 friends",
+        "5 friends",
+        "6 friends",
+        "9 friends",
+        "12 friends"
+      ],
+      "correct": 1,
+      "correctAnswer": "5 friends",
+      "explanation": "The number of friends must be a factor of 36. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. The number 5 is NOT a factor of 36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A homework sheet asks pupils to list every prime number between 20 and 30. How many prime numbers are there between 20 and 30?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "correctAnswer": "2",
+      "explanation": "Prime numbers between 20 and 30 are: 23 and 29. That's 2 prime numbers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A teacher has 12 red pencils and 18 blue pencils. She wants to put them into equal groups with the same number of each colour. What is the largest group size? (Find the Highest Common Factor (HCF) of 12 and 18.)",
+      "options": [
+        "2",
+        "3",
+        "6",
+        "9",
+        "36"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. Common factors: 1, 2, 3, 6. The highest is 6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is NOT a prime number?",
+      "options": [
+        "13",
+        "19",
+        "23",
+        "27",
+        "31"
+      ],
+      "correct": 3,
+      "correctAnswer": "27",
+      "explanation": "27 can be divided by 1, 3, 9, and 27, so it has more than two factors. Therefore 27 is NOT prime. All the others are prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie is making gift bags. She has 20 sweets and 30 stickers. She wants each bag to have the same number of sweets and the same number of stickers, with none left over. What is the maximum number of gift bags she can make?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correct": 1,
+      "correctAnswer": "10",
+      "explanation": "Find the Highest Common Factor (HCF) of 20 and 30. Factors of 20: 1, 2, 4, 5, 10, 20. Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. The HCF is 10, so she can make 10 gift bags. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two flashing lights start together. One flashes every 4 seconds and the other every 6 seconds. After how many seconds will they next flash at the same time? (Find the smallest number that is a multiple of both 4 and 6.)",
+      "options": [
+        "10",
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "correct": 1,
+      "correctAnswer": "12",
+      "explanation": "Multiples of 4: 4, 8, 12, 16, 20, 24... Multiples of 6: 6, 12, 18, 24, 30... The smallest common multiple is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In class, the teacher writes 17 on the board and asks how many numbers divide into it exactly. How many factors does the number 17 have?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "17"
+      ],
+      "correct": 1,
+      "correctAnswer": "2",
+      "explanation": "17 is a prime number, so it only has two factors: 1 and 17. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom says 'All odd numbers are prime'. Is he correct?",
+      "options": [
+        "Yes, always",
+        "No, because 9 is odd but not prime",
+        "Yes, but only for numbers under 10",
+        "No, because 2 is prime but even",
+        "Only sometimes"
+      ],
+      "correct": 1,
+      "correctAnswer": "No, because 9 is odd but not prime",
+      "explanation": "Tom is wrong. A prime number (a number that can only be divided by 1 and itself) doesn't have to be odd. 9 is odd but NOT prime because 3 × 3 = 9, so it has an extra factor (a number that divides into it evenly). Other odd numbers that aren't prime: 15, 21, 25, 27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A teacher has 24 pencils and 36 erasers. She wants to make identical packs with the same number of pencils and erasers in each pack, with nothing left over. What is the largest number of packs she can make?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12",
+        "18"
+      ],
+      "correct": 3,
+      "correctAnswer": "12",
+      "explanation": "Find the Highest Common Factor (HCF) of 24 and 36. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. The HCF is 12, so she can make 12 packs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a quiz, the question says: which number below has exactly 3 factors?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "15",
+        "18"
+      ],
+      "correct": 1,
+      "correctAnswer": "9",
+      "explanation": "A number with exactly 3 factors must be the square of a prime. 9 = 3² and has factors: 1, 3, 9. That's exactly 3 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy is arranging 42 books on shelves. Each shelf must have the same number of books. Which of these is a possible number of books per shelf?",
+      "options": [
+        "4",
+        "5",
+        "8",
+        "14",
+        "15"
+      ],
+      "correct": 3,
+      "correctAnswer": "14",
+      "explanation": "The number must be a factor of 42. Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42. From the options, 14 is a factor of 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A florist has 15 roses and 25 tulips. She wants to make identical bunches using all the flowers, with the same number of each type in every bunch. What is the biggest number of bunches she can make? (Find the Highest Common Factor (HCF) of 15 and 25.)",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "15",
+        "25"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factors of 15: 1, 3, 5, 15. Factors of 25: 1, 5, 25. Common factors: 1, 5. The highest is 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ben's phone buzzes every 6 minutes and chimes every 8 minutes. If they both happen together now, how many minutes until they both happen together again?",
+      "options": [
+        "14 minutes",
+        "18 minutes",
+        "24 minutes",
+        "32 minutes",
+        "48 minutes"
+      ],
+      "correct": 2,
+      "correctAnswer": "24 minutes",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 6 and 8. Multiples of 6: 6, 12, 18, 24, 30... Multiples of 8: 8, 16, 24, 32... The LCM is 24 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a classroom competition, pupils score a point for each factor a number has. Which of these numbers would score the most points?",
+      "options": [
+        "20",
+        "24",
+        "28",
+        "26",
+        "32"
+      ],
+      "correct": 1,
+      "correctAnswer": "24",
+      "explanation": "Count factors: 20 has 6 factors (1,2,4,5,10,20); 24 has 8 factors (1,2,3,4,6,8,12,24); 28 has 6 factors; 26 has 4 factors (1,2,13,26); 32 has 6 factors. 24 has the most factors with 8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mia and Oliver are running laps. Mia completes a lap every 4 minutes and Oliver every 5 minutes. If they start together, after how many minutes will they both be at the starting point together again?",
+      "options": [
+        "9 minutes",
+        "15 minutes",
+        "20 minutes",
+        "25 minutes",
+        "40 minutes"
+      ],
+      "correct": 2,
+      "correctAnswer": "20 minutes",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 4 and 5. Multiples of 4: 4, 8, 12, 16, 20... Multiples of 5: 5, 10, 15, 20... The LCM is 20 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Olivia is sorting number cards into 'prime' and 'not prime' piles. Which of these numbers should go in the prime pile?",
+      "options": [
+        "25",
+        "29",
+        "33",
+        "35",
+        "39"
+      ],
+      "correct": 1,
+      "correctAnswer": "29",
+      "explanation": "29 can only be divided by 1 and 29, so it is prime. All others are composite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack is listing all the numbers that divide exactly into 30. How many factors does 30 have?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factors of 30 are: 1, 2, 3, 5, 6, 10, 15, and 30. That's 8 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "On a factor tree challenge card, you must break 72 down into prime factors. What is the prime factorisation of 72?",
+      "options": [
+        "2³ × 9",
+        "2³ × 3²",
+        "2² × 3³",
+        "2⁴ × 3",
+        "8 × 9"
+      ],
+      "correct": 1,
+      "correctAnswer": "2³ × 3²",
+      "explanation": "72 = 2 × 36 = 2 × 2 × 18 = 2 × 2 × 2 × 9 = 2 × 2 × 2 × 3 × 3 = 2³ × 3². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A PE teacher has 30 footballs and 45 tennis balls. She wants to share them equally into boxes with the same number of each type, using all the balls. What is the largest number of boxes she can fill? (Find the Highest Common Factor (HCF) of 30 and 45.)",
+      "options": [
+        "5",
+        "10",
+        "12",
+        "15",
+        "30"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Factors of 45: 1, 3, 5, 9, 15, 45. The Highest Common Factor (HCF) is 15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two buses leave the station at the same time. Bus A comes every 16 minutes and Bus B every 24 minutes. How many minutes until they both leave together again? (Find the Lowest Common Multiple (LCM) of 16 and 24.)",
+      "options": [
+        "32",
+        "40",
+        "48",
+        "56",
+        "64"
+      ],
+      "correct": 2,
+      "correctAnswer": "48",
+      "explanation": "Multiples of 16: 16, 32, 48... Multiples of 24: 24, 48, 72... The Lowest Common Multiple (LCM) is 48. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the largest prime number less than 30?",
+      "options": [
+        "23",
+        "25",
+        "27",
+        "28",
+        "29"
+      ],
+      "correct": 4,
+      "correctAnswer": "29",
+      "explanation": "Testing: 28 = 2 × 14, 27 = 3 × 9, 25 = 5 × 5 (all composite). 29 is only divisible by 1 and 29, so it's prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A PE teacher wants to split 28 pupils into two equal teams in every possible way. How many different factor pairs does 28 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 28 are: (1, 28), (2, 14), and (4, 7). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver is finding the Highest Common Factor (HCF) of 40 and 60. What answer should he get?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "correct": 4,
+      "correctAnswer": "20",
+      "explanation": "Factors of 40: 1, 2, 4, 5, 8, 10, 20, 40. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. The Highest Common Factor (HCF) is 20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "On a factor tree worksheet, you break 42 into its prime factors, then add them up. What is the sum of the prime factors of 42?",
+      "options": [
+        "7",
+        "10",
+        "12",
+        "14",
+        "21"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "42 = 2 × 3 × 7. The prime factors are 2, 3, and 7. Sum: 2 + 3 + 7 = 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 14 and 21?",
+      "options": [
+        "28",
+        "42",
+        "56",
+        "63",
+        "84"
+      ],
+      "correct": 1,
+      "correctAnswer": "42",
+      "explanation": "Multiples of 14: 14, 28, 42, 56... Multiples of 21: 21, 42, 63... The Lowest Common Multiple (LCM) is 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a prime number?",
+      "options": [
+        "51",
+        "52",
+        "55",
+        "57",
+        "59"
+      ],
+      "correct": 4,
+      "correctAnswer": "59",
+      "explanation": "Check each: 51 = 3 × 17, 52 = 4 × 13, 55 = 5 × 11, 57 = 3 × 19 — these are all composite. Only 59 is prime (divisible only by 1 and 59). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "For homework, Emily must find all the factors of 50. How many factors does 50 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factors of 50 are: 1, 2, 5, 10, 25, and 50. That's 6 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a maths challenge, pupils must break 90 down into its prime factors. What is the prime factorisation of 90?",
+      "options": [
+        "2 × 3 × 15",
+        "2 × 3² × 5",
+        "2² × 3 × 5",
+        "3² × 10",
+        "2 × 5 × 9"
+      ],
+      "correct": 1,
+      "correctAnswer": "2 × 3² × 5",
+      "explanation": "90 = 2 × 45 = 2 × 9 × 5 = 2 × 3 × 3 × 5 = 2 × 3² × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A baker has 28 cupcakes and 42 biscuits to pack into identical party bags, sharing them out equally with none left over. What is the greatest number of bags he can make? (Find the Highest Common Factor (HCF) of 28 and 42.)",
+      "options": [
+        "7",
+        "12",
+        "14",
+        "21",
+        "28"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "Factors of 28: 1, 2, 4, 7, 14, 28. Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42. The Highest Common Factor (HCF) is 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Hot dogs come in packs of 10 and rolls come in packs of 15. What is the smallest number of each you need to buy so you have the same number of hot dogs and rolls? (Find the Lowest Common Multiple (LCM) of 10 and 15.)",
+      "options": [
+        "15",
+        "25",
+        "30",
+        "45",
+        "60"
+      ],
+      "correct": 2,
+      "correctAnswer": "30",
+      "explanation": "Multiples of 10: 10, 20, 30, 40... Multiples of 15: 15, 30, 45... The Lowest Common Multiple (LCM) is 30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Amy knows the Highest Common Factor (HCF) of two numbers is 8 and their Lowest Common Multiple (LCM) is 96. What is the product of the two numbers?",
+      "options": [
+        "576",
+        "640",
+        "704",
+        "768",
+        "832"
+      ],
+      "correct": 3,
+      "correctAnswer": "768",
+      "explanation": "For any two numbers: Highest Common Factor (HCF) × Lowest Common Multiple (LCM) = Product. So 8 × 96 = 768. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a prime number between 40 and 50?",
+      "options": [
+        "42",
+        "45",
+        "46",
+        "48",
+        "43"
+      ],
+      "correct": 4,
+      "correctAnswer": "43",
+      "explanation": "Testing: 42 = 2 × 21, 45 = 5 × 9, 46 = 2 × 23, 48 = 6 × 8 (all composite). 43 is only divisible by 1 and 43, so it's prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Noah needs to find the Highest Common Factor (HCF) of three numbers: 15, 20, and 25. What is the HCF?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "10",
+        "15"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factors of 15: 1, 3, 5, 15. Factors of 20: 1, 2, 4, 5, 10, 20. Factors of 25: 1, 5, 25. The highest common factor is 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A chocolatier is designing boxes so that 40 chocolates sit in a perfect rectangle. How many different factor pairs does 40 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 0,
+      "correctAnswer": "4",
+      "explanation": "Factor pairs of 40: (1, 40), (2, 20), (4, 10), (5, 8). That's 4 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "For a maths quiz bonus round, you must add up every prime number between 10 and 20. What is the sum of all prime numbers between 10 and 20?",
+      "options": [
+        "52",
+        "60",
+        "68",
+        "76",
+        "84"
+      ],
+      "correct": 1,
+      "correctAnswer": "60",
+      "explanation": "Prime numbers between 10 and 20: 11, 13, 17, 19. Sum: 11 + 13 + 17 + 19 = 60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Bus A leaves the station every 8 minutes and Bus B leaves every 14 minutes. They both leave at 9:00 am. What is the Lowest Common Multiple (LCM) of 8 and 14 to find when they next leave together?",
+      "options": [
+        "28",
+        "42",
+        "56",
+        "70",
+        "84"
+      ],
+      "correct": 2,
+      "correctAnswer": "56",
+      "explanation": "Multiples of 8: 8, 16, 24, 32, 40, 48, 56... Multiples of 14: 14, 28, 42, 56... The Lowest Common Multiple (LCM) is 56. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sam says all of these numbers are prime, but one of them is not. Which of these numbers is NOT prime?",
+      "options": [
+        "31",
+        "37",
+        "39",
+        "41",
+        "43"
+      ],
+      "correct": 2,
+      "correctAnswer": "39",
+      "explanation": "39 is not a prime number because it can be divided by 3 and 13 (3 × 13 = 39). A prime number can only be divided by 1 and itself. All the other numbers can only be divided by 1 and themselves, so they are prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mrs Jones asks her class to find all the ways 48 chairs can be arranged in equal rows. How many different factors does 48 have?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "10",
+      "explanation": "Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. That's 10 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "For her homework, Amira must write 100 as a product of prime numbers. What is the prime factorisation of 100?",
+      "options": [
+        "2² × 5²",
+        "2³ × 5",
+        "2 × 5³",
+        "2⁴ × 5",
+        "10²"
+      ],
+      "correct": 0,
+      "correctAnswer": "2² × 5²",
+      "explanation": "100 = 4 × 25 = 2 × 2 × 5 × 5 = 2² × 5². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A florist has 54 roses and 72 tulips. She wants to make identical bouquets using all the flowers. What is the Highest Common Factor (HCF) of 54 and 72?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "18",
+        "27"
+      ],
+      "correct": 3,
+      "correctAnswer": "18",
+      "explanation": "Factors of 54: 1, 2, 3, 6, 9, 18, 27, 54. Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. The Highest Common Factor (HCF) is 18. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two lighthouses flash their lights. One flashes every 9 seconds and the other every 12 seconds. What is the Lowest Common Multiple (LCM) of 9 and 12 to find when they next flash together?",
+      "options": [
+        "18",
+        "24",
+        "36",
+        "48",
+        "72"
+      ],
+      "correct": 2,
+      "correctAnswer": "36",
+      "explanation": "Multiples of 9: 9, 18, 27, 36... Multiples of 12: 12, 24, 36... The Lowest Common Multiple (LCM) is 36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily finds the prime factors of 56. What is the product of all the different prime factors?",
+      "options": [
+        "6",
+        "12",
+        "14",
+        "28",
+        "56"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "56 = 2³ × 7. The different prime factors are 2 and 7. Product: 2 × 7 = 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a number hunt, Zara must find the first prime number after 60 on the number line. Which is the smallest prime number greater than 60?",
+      "options": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65"
+      ],
+      "correct": 0,
+      "correctAnswer": "61",
+      "explanation": "61 is only divisible by 1 and 61, so it's prime. It's the smallest prime > 60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Harry is tiling a wall with 32 square tiles arranged in a rectangle. How many different factor pairs does 32 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 0,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 32: (1, 32), (2, 16), (4, 8). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A craft teacher has 35 red beads and 49 blue beads to divide equally into bags with the same mix. What is the Highest Common Factor (HCF) of 35 and 49?",
+      "options": [
+        "1",
+        "5",
+        "7",
+        "14",
+        "35"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Factors of 35: 1, 5, 7, 35. Factors of 49: 1, 7, 49. The Highest Common Factor (HCF) is 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Class 5 has PE every 6 school days and art every 9 school days. Both happen today. What is the Lowest Common Multiple (LCM) of 6 and 9 to find when they next fall on the same day?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "24",
+        "36"
+      ],
+      "correct": 2,
+      "correctAnswer": "18",
+      "explanation": "Multiples of 6: 6, 12, 18, 24... Multiples of 9: 9, 18, 27... The Lowest Common Multiple (LCM) is 18. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of the following is a prime number?",
+      "options": [
+        "63",
+        "65",
+        "68",
+        "69",
+        "71"
+      ],
+      "correct": 4,
+      "correctAnswer": "71",
+      "explanation": "63 = 9 × 7, 65 = 5 × 13, 68 = 4 × 17, 69 = 3 × 23 — all composite. Only 71 is prime (divisible only by 1 and 71). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A teacher arranges 36 chairs into equal rows. She lists every possible row size. How many factors does 36 have?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct": 2,
+      "correctAnswer": "9",
+      "explanation": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. That's 9 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 84?",
+      "options": [
+        "2² × 3 × 7",
+        "2 × 3² × 7",
+        "2³ × 3 × 7",
+        "2² × 21",
+        "4 × 21"
+      ],
+      "correct": 0,
+      "correctAnswer": "2² × 3 × 7",
+      "explanation": "84 = 2 × 42 = 2 × 2 × 21 = 2 × 2 × 3 × 7 = 2² × 3 × 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A librarian has 32 fiction books and 48 non-fiction books to display in equal stacks with the same number of each type. What is the Highest Common Factor (HCF) of 32 and 48?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "24",
+        "32"
+      ],
+      "correct": 2,
+      "correctAnswer": "16",
+      "explanation": "Factors of 32: 1, 2, 4, 8, 16, 32. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The Highest Common Factor (HCF) is 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two runners circle a track. One completes a lap every 20 seconds, the other every 30 seconds. What is the Lowest Common Multiple (LCM) of 20 and 30 to find when they next cross the start line together?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct": 2,
+      "correctAnswer": "60",
+      "explanation": "Multiples of 20: 20, 40, 60... Multiples of 30: 30, 60, 90... The Lowest Common Multiple (LCM) is 60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ethan needs to find the smallest number divisible by both 7 and 9. What is this number?",
+      "options": [
+        "49",
+        "54",
+        "63",
+        "72",
+        "81"
+      ],
+      "correct": 2,
+      "correctAnswer": "63",
+      "explanation": "This is the Lowest Common Multiple (LCM) of 7 and 9. Since 7 and 9 share no common factors, LCM = 7 × 9 = 63. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "One of these numbers is composite. Which one?",
+      "options": [
+        "73",
+        "77",
+        "79",
+        "83",
+        "89"
+      ],
+      "correct": 1,
+      "correctAnswer": "77",
+      "explanation": "77 = 7 × 11, so it is composite. All others are prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 45 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 45: (1, 45), (3, 15), (5, 9). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "On a puzzle card, Charlotte must find the prime factors of 66 and then add them together. What is the sum of the prime factors of 66?",
+      "options": [
+        "11",
+        "13",
+        "16",
+        "17",
+        "22"
+      ],
+      "correct": 2,
+      "correctAnswer": "16",
+      "explanation": "Find the prime factors of 66: 66 = 2 × 33 = 2 × 3 × 11. The prime factors are 2, 3, and 11. Their sum is 2 + 3 + 11 = 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 56 and 84?",
+      "options": [
+        "14",
+        "21",
+        "28",
+        "42",
+        "56"
+      ],
+      "correct": 2,
+      "correctAnswer": "28",
+      "explanation": "Factors of 56: 1, 2, 4, 7, 8, 14, 28, 56. Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. The Highest Common Factor (HCF) is 28. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "At sports day, the drum beats every 4 seconds and the whistle blows every 10 seconds. They start together. What is the Lowest Common Multiple (LCM) of 4 and 10 to find when they next happen at the same time?",
+      "options": [
+        "10",
+        "14",
+        "20",
+        "30",
+        "40"
+      ],
+      "correct": 2,
+      "correctAnswer": "20",
+      "explanation": "Multiples of 4: 4, 8, 12, 16, 20... Multiples of 10: 10, 20, 30... The Lowest Common Multiple (LCM) is 20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A quiz master asks: what is the biggest prime number you can find that is still less than 70? Which is the largest prime number less than 70?",
+      "options": [
+        "63",
+        "65",
+        "67",
+        "68",
+        "69"
+      ],
+      "correct": 2,
+      "correctAnswer": "67",
+      "explanation": "Testing: 69 = 3 × 23, 68 = 4 × 17 (composite). 67 is only divisible by 1 and 67, so it's prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school hall has 60 seats to arrange in equal rows for the assembly. How many factors does 60 have?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. That's 12 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A quiz card asks you to express 120 using only prime factors. What is the prime factorisation of 120?",
+      "options": [
+        "2³ × 3 × 5",
+        "2² × 3² × 5",
+        "2⁴ × 3",
+        "2³ × 15",
+        "8 × 15"
+      ],
+      "correct": 0,
+      "correctAnswer": "2³ × 3 × 5",
+      "explanation": "120 = 2 × 60 = 2 × 2 × 30 = 2 × 2 × 2 × 15 = 2 × 2 × 2 × 3 × 5 = 2³ × 3 × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A gardener has 18 daffodils and 27 crocuses to plant in identical groups using every bulb. What is the Highest Common Factor (HCF) of 18 and 27?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "18",
+        "27"
+      ],
+      "correct": 2,
+      "correctAnswer": "9",
+      "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 27: 1, 3, 9, 27. The Highest Common Factor (HCF) is 9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A clock chimes every 5 minutes and a cuckoo clock calls every 8 minutes. They both sound at noon. What is the Lowest Common Multiple (LCM) of 5 and 8?",
+      "options": [
+        "13",
+        "20",
+        "30",
+        "40",
+        "45"
+      ],
+      "correct": 3,
+      "correctAnswer": "40",
+      "explanation": "Since 5 and 8 have no common factors, the Lowest Common Multiple (LCM) = 5 × 8 = 40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Only one of these numbers is prime. Which one?",
+      "options": [
+        "81",
+        "83",
+        "85",
+        "87",
+        "91"
+      ],
+      "correct": 1,
+      "correctAnswer": "83",
+      "explanation": "81 = 9², 85 = 5 × 17, 87 = 3 × 29, 91 = 7 × 13 (all composite). 83 is prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Sophie knows the Highest Common Factor (HCF) of two numbers is 12 and their Lowest Common Multiple (LCM) is 120. What is the product?",
+      "options": [
+        "1,320",
+        "1,440",
+        "1,560",
+        "1,680",
+        "1,800"
+      ],
+      "correct": 1,
+      "correctAnswer": "1,440",
+      "explanation": "There is a useful rule: for any two numbers, HCF × LCM = the product of the two numbers. Here, Highest Common Factor (HCF) = 12 and Lowest Common Multiple (LCM) = 120. So the product = 12 × 120 = 1,440. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 50 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 50: (1, 50), (2, 25), (5, 10). That's 3 pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 75 and 100?",
+      "options": [
+        "5",
+        "15",
+        "25",
+        "50",
+        "75"
+      ],
+      "correct": 2,
+      "correctAnswer": "25",
+      "explanation": "Factors of 75: 1, 3, 5, 15, 25, 75. Factors of 100: 1, 2, 4, 5, 10, 20, 25, 50, 100. The Highest Common Factor (HCF) is 25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 11 and 13?",
+      "options": [
+        "24",
+        "121",
+        "143",
+        "156",
+        "169"
+      ],
+      "correct": 2,
+      "correctAnswer": "143",
+      "explanation": "Since 11 and 13 are both prime with no common factors, the Lowest Common Multiple (LCM) = 11 × 13 = 143. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the smallest prime number greater than 80?",
+      "options": [
+        "81",
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "correct": 2,
+      "correctAnswer": "83",
+      "explanation": "Testing: 81 = 9², 82 = 2 × 41 (composite). 83 is only divisible by 1 and 83, so it's prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the sum of the prime factors of 105?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "19",
+        "21"
+      ],
+      "correct": 1,
+      "correctAnswer": "15",
+      "explanation": "105 = 3 × 5 × 7. Prime factors: 3, 5, 7. Sum: 3 + 5 + 7 = 15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom has 64 football stickers to stick evenly across pages of his album. How many factors does 64 have?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Factors of 64: 1, 2, 4, 8, 16, 32, 64. That's 7 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Mr Patel asks his class to draw a factor tree for 45. What is the prime factorisation of 45?",
+      "options": [
+        "3² × 5",
+        "3 × 15",
+        "5 × 9",
+        "3³ × 5",
+        "9 × 5"
+      ],
+      "correct": 0,
+      "correctAnswer": "3² × 5",
+      "explanation": "45 = 9 × 5 = 3 × 3 × 5 = 3² × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 63 and 81?",
+      "options": [
+        "3",
+        "7",
+        "9",
+        "21",
+        "27"
+      ],
+      "correct": 2,
+      "correctAnswer": "9",
+      "explanation": "Factors of 63: 1, 3, 7, 9, 21, 63. Factors of 81: 1, 3, 9, 27, 81. The Highest Common Factor (HCF) is 9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 25 and 30?",
+      "options": [
+        "50",
+        "100",
+        "125",
+        "150",
+        "750"
+      ],
+      "correct": 3,
+      "correctAnswer": "150",
+      "explanation": "Multiples of 25: 25, 50, 75, 100, 125, 150... Multiples of 30: 30, 60, 90, 120, 150... The Lowest Common Multiple (LCM) is 150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Only one of these is NOT a prime number. Which one?",
+      "options": [
+        "97",
+        "99",
+        "101",
+        "103",
+        "107"
+      ],
+      "correct": 1,
+      "correctAnswer": "99",
+      "explanation": "99 = 9 × 11, so it is composite. All others are prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 60 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factor pairs of 60: (1, 60), (2, 30), (3, 20), (4, 15), (5, 12), (6, 10). That's 6 pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Year 5 collected 44 cans and 66 bottles for recycling. They want to sort them into equal groups. What is the Highest Common Factor (HCF) of 44 and 66?",
+      "options": [
+        "2",
+        "11",
+        "22",
+        "33",
+        "44"
+      ],
+      "correct": 2,
+      "correctAnswer": "22",
+      "explanation": "Factors of 44: 1, 2, 4, 11, 22, 44. Factors of 66: 1, 2, 3, 6, 11, 22, 33, 66. The Highest Common Factor (HCF) is 22. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school bell rings every 7 minutes for one class and every 10 minutes for another. What is the Lowest Common Multiple (LCM) of 7 and 10 to find when they next ring at the same time?",
+      "options": [
+        "17",
+        "35",
+        "50",
+        "70",
+        "100"
+      ],
+      "correct": 3,
+      "correctAnswer": "70",
+      "explanation": "Since 7 and 10 have no common factors, the Lowest Common Multiple (LCM) = 7 × 10 = 70. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the largest prime number less than 100?",
+      "options": [
+        "93",
+        "95",
+        "97",
+        "98",
+        "99"
+      ],
+      "correct": 2,
+      "correctAnswer": "97",
+      "explanation": "Testing: 99 = 9 × 11, 98 = 2 × 49 (composite). 97 is only divisible by 1 and 97, so it's prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A baker made 72 cupcakes and wants to know every way to pack them equally into boxes. How many factors does 72 have?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. That's 12 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "During a maths relay, your team must find the prime factorisation of 126. What is the prime factorisation of 126?",
+      "options": [
+        "2 × 3² × 7",
+        "2² × 3 × 7",
+        "2 × 3 × 21",
+        "3³ × 7",
+        "6 × 21"
+      ],
+      "correct": 0,
+      "correctAnswer": "2 × 3² × 7",
+      "explanation": "126 = 2 × 63 = 2 × 9 × 7 = 2 × 3 × 3 × 7 = 2 × 3² × 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of three numbers: 24, 36, and 48?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12",
+        "24"
+      ],
+      "correct": 3,
+      "correctAnswer": "12",
+      "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The Highest Common Factor (HCF) is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily waters her tomatoes every 4 days and her sunflowers every 6 days. She waters both today. What is the Lowest Common Multiple (LCM) of 4 and 6 to find when she next waters both on the same day?",
+      "options": [
+        "10",
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "correct": 1,
+      "correctAnswer": "12",
+      "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... The Lowest Common Multiple (LCM) is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a prime number between 50 and 60?",
+      "options": [
+        "51",
+        "54",
+        "55",
+        "57",
+        "59"
+      ],
+      "correct": 4,
+      "correctAnswer": "59",
+      "explanation": "51 = 3 × 17, 54 = 2 × 27, 55 = 5 × 11, 57 = 3 × 19 — all composite. Only 59 is prime (divisible only by 1 and 59). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mia knows the product of two numbers is 180 and their Highest Common Factor (HCF) is 6. What is their Lowest Common Multiple (LCM)?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "correct": 2,
+      "correctAnswer": "30",
+      "explanation": "Highest Common Factor (HCF) × Lowest Common Multiple (LCM) = Product. So 6 × LCM = 180. Therefore LCM = 180 ÷ 6 = 30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 72 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factor pairs of 72: (1, 72), (2, 36), (3, 24), (4, 18), (6, 12), (8, 9). That's 6 pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the sum of all the prime numbers less than 15?",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "41",
+        "43"
+      ],
+      "correct": 3,
+      "correctAnswer": "41",
+      "explanation": "Primes < 15: 2, 3, 5, 7, 11, 13. Sum: 2 + 3 + 5 + 7 + 11 + 13 = 41. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sweet shop owner has 50 toffees and 80 chocolates to pack into identical party bags. What is the Highest Common Factor (HCF) of 50 and 80?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "40"
+      ],
+      "correct": 1,
+      "correctAnswer": "10",
+      "explanation": "Factors of 50: 1, 2, 5, 10, 25, 50. Factors of 80: 1, 2, 4, 5, 8, 10, 16, 20, 40, 80. The Highest Common Factor (HCF) is 10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Train A departs every 18 minutes and Train B every 24 minutes from the same platform. What is the Lowest Common Multiple (LCM) of 18 and 24 to find when they next depart together?",
+      "options": [
+        "36",
+        "48",
+        "60",
+        "72",
+        "96"
+      ],
+      "correct": 3,
+      "correctAnswer": "72",
+      "explanation": "Multiples of 18: 18, 36, 54, 72... Multiples of 24: 24, 48, 72... The Lowest Common Multiple (LCM) is 72. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the smallest prime number?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "2 is the smallest prime number. It's also the only even prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Grandma knitted 81 squares for a patchwork blanket. She wants to sew them into equal rows. How many factors does 81 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factors of 81: 1, 3, 9, 27, 81. That's 5 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 54?",
+      "options": [
+        "2 × 27",
+        "2 × 3³",
+        "2² × 3²",
+        "3³ × 2",
+        "6 × 9"
+      ],
+      "correct": 1,
+      "correctAnswer": "2 × 3³",
+      "explanation": "54 = 2 × 27 = 2 × 3 × 9 = 2 × 3 × 3 × 3 = 2 × 3³. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 90 and 135?",
+      "options": [
+        "15",
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
+      "correct": 2,
+      "correctAnswer": "45",
+      "explanation": "Factors of 90: 1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45, 90. Factors of 135: 1, 3, 5, 9, 15, 27, 45, 135. The Highest Common Factor (HCF) is 45. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 3 and 7?",
+      "options": [
+        "10",
+        "14",
+        "18",
+        "21",
+        "28"
+      ],
+      "correct": 3,
+      "correctAnswer": "21",
+      "explanation": "Since 3 and 7 are both prime with no common factors, the Lowest Common Multiple (LCM) = 3 × 7 = 21. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which number has more than two factors?",
+      "options": [
+        "109",
+        "113",
+        "127",
+        "117",
+        "131"
+      ],
+      "correct": 3,
+      "correctAnswer": "117",
+      "explanation": "117 = 9 × 13, so it has more than two factors and is composite. 109, 113, 127, and 131 are all prime (only divisible by 1 and themselves). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 100 have?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 0,
+      "correctAnswer": "5",
+      "explanation": "The factors of 100 are: 1, 2, 4, 5, 10, 20, 25, 50, 100. Pair them up: (1, 100), (2, 50), (4, 25), (5, 20), (10, 10). That gives 5 different factor pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the sum of the prime factors of 70?",
+      "options": [
+        "9",
+        "12",
+        "14",
+        "17",
+        "19"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "Find the prime factors of 70: 70 = 2 × 35 = 2 × 5 × 7. The prime factors are 2, 5, and 7. Their sum is 2 + 5 + 7 = 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 52 and 78?",
+      "options": [
+        "2",
+        "13",
+        "26",
+        "39",
+        "52"
+      ],
+      "correct": 2,
+      "correctAnswer": "26",
+      "explanation": "Factors of 52: 1, 2, 4, 13, 26, 52. Factors of 78: 1, 2, 3, 6, 13, 26, 39, 78. The Highest Common Factor (HCF) is 26. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 15 and 25?",
+      "options": [
+        "50",
+        "75",
+        "100",
+        "125",
+        "150"
+      ],
+      "correct": 1,
+      "correctAnswer": "75",
+      "explanation": "Multiples of 15: 15, 30, 45, 60, 75... Multiples of 25: 25, 50, 75... The Lowest Common Multiple (LCM) is 75. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which number below can only be divided by 1 and itself?",
+      "options": [
+        "87",
+        "89",
+        "91",
+        "93",
+        "95"
+      ],
+      "correct": 1,
+      "correctAnswer": "89",
+      "explanation": "87 = 3 × 29, 91 = 7 × 13, 93 = 3 × 31, 95 = 5 × 19 (all composite). 89 is prime. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the product of all prime factors of 110?",
+      "options": [
+        "22",
+        "55",
+        "77",
+        "110",
+        "220"
+      ],
+      "correct": 3,
+      "correctAnswer": "110",
+      "explanation": "110 = 2 × 5 × 11. Product of prime factors: 2 × 5 × 11 = 110. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A farmer is planting 100 bulbs in equal rows across a flower bed. How many factors does 100 have?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct": 2,
+      "correctAnswer": "9",
+      "explanation": "Factors of 100: 1, 2, 4, 5, 10, 20, 25, 50, 100. That's 9 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 80?",
+      "options": [
+        "2⁴ × 5",
+        "2³ × 10",
+        "2² × 20",
+        "16 × 5",
+        "8 × 10"
+      ],
+      "correct": 0,
+      "correctAnswer": "2⁴ × 5",
+      "explanation": "80 = 16 × 5 = 2 × 2 × 2 × 2 × 5 = 2⁴ × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 64 and 96?",
+      "options": [
+        "16",
+        "24",
+        "32",
+        "48",
+        "64"
+      ],
+      "correct": 2,
+      "correctAnswer": "32",
+      "explanation": "Factors of 64: 1, 2, 4, 8, 16, 32, 64. Factors of 96: 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96. The Highest Common Factor (HCF) is 32. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 22 and 33?",
+      "options": [
+        "44",
+        "55",
+        "66",
+        "99",
+        "132"
+      ],
+      "correct": 2,
+      "correctAnswer": "66",
+      "explanation": "Multiples of 22: 22, 44, 66, 88... Multiples of 33: 33, 66, 99... The Lowest Common Multiple (LCM) is 66. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the smallest prime number greater than 100?",
+      "options": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "correct": 0,
+      "correctAnswer": "101",
+      "explanation": "101 is only divisible by 1 and 101, so it's prime. It's the smallest prime > 100. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 84 have?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 1,
+      "correctAnswer": "6",
+      "explanation": "Factor pairs of 84: (1, 84), (2, 42), (3, 28), (4, 21), (6, 14), (7, 12). That's 6 pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of three numbers: 30, 45, and 60?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "30",
+        "45"
+      ],
+      "correct": 2,
+      "correctAnswer": "15",
+      "explanation": "Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Factors of 45: 1, 3, 5, 9, 15, 45. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. The Highest Common Factor (HCF) is 15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 12 and 16?",
+      "options": [
+        "24",
+        "32",
+        "48",
+        "64",
+        "96"
+      ],
+      "correct": 2,
+      "correctAnswer": "48",
+      "explanation": "Multiples of 12: 12, 24, 36, 48... Multiples of 16: 16, 32, 48... The Lowest Common Multiple (LCM) is 48. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a prime number between 70 and 80?",
+      "options": [
+        "72",
+        "74",
+        "75",
+        "77",
+        "79"
+      ],
+      "correct": 4,
+      "correctAnswer": "79",
+      "explanation": "72 = 8 × 9, 74 = 2 × 37, 75 = 3 × 25, 77 = 7 × 11 — all composite. Only 79 is prime (divisible only by 1 and 79). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Noah knows two numbers have a product of 432 and a Highest Common Factor (HCF) of 12. What is their Lowest Common Multiple (LCM)?",
+      "options": [
+        "24",
+        "30",
+        "36",
+        "42",
+        "48"
+      ],
+      "correct": 2,
+      "correctAnswer": "36",
+      "explanation": "Highest Common Factor (HCF) × Lowest Common Multiple (LCM) = Product. So 12 × LCM = 432. Therefore LCM = 432 ÷ 12 = 36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The school kitchen has 96 cartons of milk to place equally on trays. How many factors does 96 have?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Factors of 96: 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96. That's 12 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 150?",
+      "options": [
+        "2 × 3 × 5²",
+        "2² × 3 × 5",
+        "2 × 5 × 15",
+        "3 × 50",
+        "6 × 25"
+      ],
+      "correct": 0,
+      "correctAnswer": "2 × 3 × 5²",
+      "explanation": "150 = 2 × 75 = 2 × 3 × 25 = 2 × 3 × 5 × 5 = 2 × 3 × 5². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 85 and 119?",
+      "options": [
+        "1",
+        "7",
+        "13",
+        "17",
+        "85"
+      ],
+      "correct": 3,
+      "correctAnswer": "17",
+      "explanation": "Factors of 85: 1, 5, 17, 85. Factors of 119: 1, 7, 17, 119. The Highest Common Factor (HCF) is 17. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 28 and 35?",
+      "options": [
+        "70",
+        "105",
+        "140",
+        "175",
+        "210"
+      ],
+      "correct": 2,
+      "correctAnswer": "140",
+      "explanation": "Multiples of 28: 28, 56, 84, 112, 140... Multiples of 35: 35, 70, 105, 140... The Lowest Common Multiple (LCM) is 140. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the only even prime number?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "2 is the only even prime number. All other even numbers are divisible by 2, making them composite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many prime numbers are there between 30 and 50?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Prime numbers between 30 and 50: 31, 37, 41, 43, 47. That's 5 prime numbers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the sum of the two largest prime numbers less than 50?",
+      "options": [
+        "84",
+        "86",
+        "88",
+        "90",
+        "92"
+      ],
+      "correct": 3,
+      "correctAnswer": "90",
+      "explanation": "The two largest primes less than 50 are 47 and 43. Sum: 47 + 43 = 90. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many prime numbers between 1 and 100 end in the digit 3?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Primes ending in 3: 3, 13, 23, 43, 53, 73, 83. That's 7 prime numbers. (33 = 3×11, 63 = 7×9, 93 = 3×31 are not prime.) ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers has the fewest factors?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "23",
+        "24"
+      ],
+      "correct": 3,
+      "correctAnswer": "23",
+      "explanation": "23 is prime, so it has only 2 factors (1 and 23). 16 has 5 factors, 18 has 6, 20 has 6, 24 has 8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A teacher gives bonus marks for the number with the most factors. Which number wins?",
+      "options": [
+        "30",
+        "32",
+        "35",
+        "36",
+        "40"
+      ],
+      "correct": 3,
+      "correctAnswer": "36",
+      "explanation": "Factors of 30: 8. Factors of 32: 6. Factors of 35: 4. Factors of 36: 9 (1,2,3,4,6,9,12,18,36). Factors of 40: 8. 36 has the most. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many factors does 20 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factors of 20: 1, 2, 4, 5, 10, 20. That's 6 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many numbers from 1 to 50 have exactly two factors?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 4,
+      "correctAnswer": "16",
+      "explanation": "Numbers with exactly two factors are prime numbers. Primes from 1 to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. That's 15 primes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many factors does 15 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "Factors of 15: 1, 3, 5, 15. That's 4 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Mrs Taylor writes a number on the board. It has exactly 5 factors. Which number could it be?",
+      "options": [
+        "12",
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "correct": 1,
+      "correctAnswer": "16",
+      "explanation": "A number with exactly 5 factors must be the fourth power of a prime. 16 = 2⁴ has factors: 1, 2, 4, 8, 16. That's exactly 5 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many factors does 25 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factors of 25: 1, 5, 25. That's 3 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers has exactly 8 factors?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "24",
+        "25"
+      ],
+      "correct": 3,
+      "correctAnswer": "24",
+      "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. That's exactly 8 factors. (16 has 5, 18 has 6, 20 has 6, 25 has 3.) ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A number has exactly 4 factors: 1, 2, 4, and itself. What is the number?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "correctAnswer": "8",
+      "explanation": "If the factors are 1, 2, 4, and the number itself, the number must be 8. Check: factors of 8 are 1, 2, 4, 8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "For a maths competition, James must find how many factors 48 has. What is the correct answer?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "10",
+      "explanation": "Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. That's 10 factors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers has the most factors?",
+      "options": [
+        "48",
+        "50",
+        "54",
+        "56",
+        "60"
+      ],
+      "correct": 4,
+      "correctAnswer": "60",
+      "explanation": "Factors of 48: 10. Factors of 50: 6. Factors of 54: 8. Factors of 56: 8. Factors of 60: 12 (1,2,3,4,5,6,10,12,15,20,30,60). 60 has the most with 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a common factor of 12 and 18?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. Common factors: 1, 2, 3, 6. From the options, 6 is a common factor. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a factor of both 20 and 30?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": 3,
+      "correctAnswer": "10",
+      "explanation": "Factors of 20: 1, 2, 4, 5, 10, 20. Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Common factors include 10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 36 and 48?",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The Highest Common Factor (HCF) is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which number is a common factor of 24 and 36?",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "12",
+        "15"
+      ],
+      "correct": 3,
+      "correctAnswer": "12",
+      "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. From the options, 12 is a common factor of both. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 42 and 56?",
+      "options": [
+        "6",
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42. Factors of 56: 1, 2, 4, 7, 8, 14, 28, 56. The Highest Common Factor (HCF) is 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 60 and 84?",
+      "options": [
+        "4",
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. The Highest Common Factor (HCF) is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 72 and 108?",
+      "options": [
+        "12",
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "correct": 3,
+      "correctAnswer": "36",
+      "explanation": "Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. Factors of 108: 1, 2, 3, 4, 6, 9, 12, 18, 27, 36, 54, 108. The Highest Common Factor (HCF) is 36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a common factor of 16 and 24?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "correct": 3,
+      "correctAnswer": "8",
+      "explanation": "Factors of 16: 1, 2, 4, 8, 16. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 4, 8. From the options, 8 is correct. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 28 and 70?",
+      "options": [
+        "2",
+        "7",
+        "14",
+        "28",
+        "35"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "Factors of 28: 1, 2, 4, 7, 14, 28. Factors of 70: 1, 2, 5, 7, 10, 14, 35, 70. The Highest Common Factor (HCF) is 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of three numbers: 36, 54, and 90?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "18",
+        "27"
+      ],
+      "correct": 3,
+      "correctAnswer": "18",
+      "explanation": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 54: 1, 2, 3, 6, 9, 18, 27, 54. Factors of 90: 1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45, 90. The Highest Common Factor (HCF) is 18. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is NOT a common factor of 30 and 42?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": 3,
+      "correctAnswer": "5",
+      "explanation": "Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42. Common factors are 1, 2, 3, 6. The number 5 is a factor of 30 but NOT of 42, so it is NOT a common factor. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 45 and 75?",
+      "options": [
+        "3",
+        "5",
+        "9",
+        "15",
+        "25"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "Factors of 45: 1, 3, 5, 9, 15, 45. Factors of 75: 1, 3, 5, 15, 25, 75. The Highest Common Factor (HCF) is 15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Highest Common Factor (HCF) of 84 and 126?",
+      "options": [
+        "7",
+        "14",
+        "21",
+        "42",
+        "63"
+      ],
+      "correct": 3,
+      "correctAnswer": "42",
+      "explanation": "Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. Factors of 126: 1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63, 126. The Highest Common Factor (HCF) is 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a common multiple of 3 and 5?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18",
+        "25"
+      ],
+      "correct": 2,
+      "correctAnswer": "15",
+      "explanation": "Multiples of 3: 3, 6, 9, 12, 15... Multiples of 5: 5, 10, 15, 20... The number 15 is a multiple of both 3 and 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 6 and 10?",
+      "options": [
+        "20",
+        "24",
+        "30",
+        "40",
+        "60"
+      ],
+      "correct": 2,
+      "correctAnswer": "30",
+      "explanation": "Multiples of 6: 6, 12, 18, 24, 30... Multiples of 10: 10, 20, 30... The Lowest Common Multiple (LCM) is 30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the Lowest Common Multiple (LCM) of 12, 15, and 20?",
+      "options": [
+        "30",
+        "40",
+        "60",
+        "120",
+        "180"
+      ],
+      "correct": 2,
+      "correctAnswer": "60",
+      "explanation": "Multiples of 12: 12, 24, 36, 48, 60... Multiples of 15: 15, 30, 45, 60... Multiples of 20: 20, 40, 60... The Lowest Common Multiple (LCM) is 60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ruby has 12 apples and 8 oranges. She wants to put them into identical fruit bags with the same number of each fruit, using all the fruit. What is the greatest number of bags she can make?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "Find the Highest Common Factor (HCF) of 12 and 8. Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 8: 1, 2, 4, 8. The HCF is 4, so she can make 4 bags. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two alarm clocks go off together at 7:00 am. One rings every 5 minutes and the other every 10 minutes. When will they next ring at the same time?",
+      "options": [
+        "7:05 am",
+        "7:10 am",
+        "7:15 am",
+        "7:20 am",
+        "7:50 am"
+      ],
+      "correct": 1,
+      "correctAnswer": "7:10 am",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 5 and 10. Since 10 is a multiple of 5, the LCM is 10. So they next ring together at 7:10 am. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A baker has 36 scones and 48 muffins to arrange on trays. Each tray must have the same number of scones and the same number of muffins, with nothing left over. What is the greatest number of trays?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12",
+        "18"
+      ],
+      "correct": 3,
+      "correctAnswer": "12",
+      "explanation": "Find the Highest Common Factor (HCF) of 36 and 48. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The HCF is 12, so the greatest number of trays is 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sausages come in packs of 8 and bread rolls come in packs of 12. What is the smallest number of each you need to buy so you have the same number of sausages and rolls?",
+      "options": [
+        "12",
+        "16",
+        "24",
+        "48",
+        "96"
+      ],
+      "correct": 2,
+      "correctAnswer": "24",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 8 and 12. Multiples of 8: 8, 16, 24... Multiples of 12: 12, 24... The LCM is 24. You need 24 of each. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ava has 45 red beads and 60 blue beads. She wants to make identical necklaces using all the beads, with the same number of each colour per necklace. What is the maximum number of necklaces?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correct": 2,
+      "correctAnswer": "15",
+      "explanation": "Find the Highest Common Factor (HCF) of 45 and 60. Factors of 45: 1, 3, 5, 9, 15, 45. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. The HCF is 15, so she can make 15 necklaces. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Three traffic lights change at different intervals. Light A changes every 30 seconds, Light B every 45 seconds, and Light C every 60 seconds. They all change together now. After how many seconds will they next all change at the same time?",
+      "options": [
+        "90",
+        "120",
+        "150",
+        "180",
+        "360"
+      ],
+      "correct": 3,
+      "correctAnswer": "180",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 30, 45, and 60. 30 = 2 × 3 × 5, 45 = 3² × 5, 60 = 2² × 3 × 5. LCM = 2² × 3² × 5 = 180 seconds. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Leo knows two numbers have a Highest Common Factor (HCF) of 9 and a Lowest Common Multiple (LCM) of 63. What is the product of the two numbers?",
+      "options": [
+        "441",
+        "504",
+        "567",
+        "630",
+        "693"
+      ],
+      "correct": 2,
+      "correctAnswer": "567",
+      "explanation": "For any two numbers: HCF × LCM = Product. So 9 × 63 = 567. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jack cleans his room every 7 days and Ella cleans hers every 14 days. They both clean today. In how many days will they next both clean on the same day?",
+      "options": [
+        "7",
+        "14",
+        "21",
+        "28",
+        "42"
+      ],
+      "correct": 1,
+      "correctAnswer": "14",
+      "explanation": "Find the Lowest Common Multiple (LCM) of 7 and 14. Since 14 is a multiple of 7, the LCM is 14. They next both clean in 14 days. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 12 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 12: (1, 12), (2, 6), (3, 4). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 24 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1,
+      "correctAnswer": "4",
+      "explanation": "Factor pairs of 24: (1, 24), (2, 12), (3, 8), (4, 6). That's 4 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 36 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factor pairs of 36: (1, 36), (2, 18), (3, 12), (4, 9), (6, 6). That's 5 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 48 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factor pairs of 48: (1, 48), (2, 24), (3, 16), (4, 12), (6, 8). That's 5 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 18 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 18: (1, 18), (2, 9), (3, 6). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A teacher asks her class to find all the ways to split 56 into two groups that multiply together. How many factor pairs does 56 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1,
+      "correctAnswer": "4",
+      "explanation": "Factor pairs of 56: (1, 56), (2, 28), (4, 14), (7, 8). That's 4 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 96 have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factor pairs of 96: (1, 96), (2, 48), (3, 32), (4, 24), (6, 16), (8, 12). That's 6 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 120 have?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factor pairs of 120: (1, 120), (2, 60), (3, 40), (4, 30), (5, 24), (6, 20), (8, 15), (10, 12). That's 8 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 16 have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "Factor pairs of 16: (1, 16), (2, 8), (4, 4). That's 3 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A display board has 64 photos arranged in a rectangle. How many different factor pairs does 64 have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1,
+      "correctAnswer": "4",
+      "explanation": "Factor pairs of 64: (1, 64), (2, 32), (4, 16), (8, 8). That's 4 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many different factor pairs does 144 have?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factor pairs of 144: (1, 144), (2, 72), (3, 48), (4, 36), (6, 24), (8, 18), (9, 16), (12, 12). That's 8 different pairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 18?",
+      "options": [
+        "2 × 9",
+        "2 × 3²",
+        "3 × 6",
+        "2² × 3",
+        "3³"
+      ],
+      "correct": 1,
+      "correctAnswer": "2 × 3²",
+      "explanation": "18 = 2 × 9 = 2 × 3 × 3 = 2 × 3². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 20?",
+      "options": [
+        "2 × 10",
+        "4 × 5",
+        "2² × 5",
+        "2 × 5²",
+        "2³ × 5"
+      ],
+      "correct": 2,
+      "correctAnswer": "2² × 5",
+      "explanation": "20 = 4 × 5 = 2 × 2 × 5 = 2² × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 12?",
+      "options": [
+        "2 × 6",
+        "3 × 4",
+        "2² × 3",
+        "2 × 3²",
+        "6²"
+      ],
+      "correct": 2,
+      "correctAnswer": "2² × 3",
+      "explanation": "12 = 4 × 3 = 2 × 2 × 3 = 2² × 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 60?",
+      "options": [
+        "2² × 3 × 5",
+        "2 × 3² × 5",
+        "2³ × 5",
+        "4 × 15",
+        "2 × 30"
+      ],
+      "correct": 0,
+      "correctAnswer": "2² × 3 × 5",
+      "explanation": "60 = 4 × 15 = 2 × 2 × 3 × 5 = 2² × 3 × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 180?",
+      "options": [
+        "2² × 3² × 5",
+        "2³ × 3 × 5",
+        "2 × 3³ × 5",
+        "2² × 3 × 5²",
+        "2² × 45"
+      ],
+      "correct": 0,
+      "correctAnswer": "2² × 3² × 5",
+      "explanation": "180 = 4 × 45 = 2 × 2 × 9 × 5 = 2 × 2 × 3 × 3 × 5 = 2² × 3² × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the sum of the prime factors of 30?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15",
+        "30"
+      ],
+      "correct": 1,
+      "correctAnswer": "10",
+      "explanation": "30 = 2 × 3 × 5. The prime factors are 2, 3, and 5. Sum: 2 + 3 + 5 = 10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 200?",
+      "options": [
+        "2² × 5²",
+        "2³ × 5²",
+        "2³ × 25",
+        "2² × 50",
+        "8 × 25"
+      ],
+      "correct": 1,
+      "correctAnswer": "2³ × 5²",
+      "explanation": "200 = 8 × 25 = 2 × 2 × 2 × 5 × 5 = 2³ × 5². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the product of the different prime factors of 84?",
+      "options": [
+        "12",
+        "21",
+        "28",
+        "42",
+        "84"
+      ],
+      "correct": 3,
+      "correctAnswer": "42",
+      "explanation": "84 = 2² × 3 × 7. The different prime factors are 2, 3, and 7. Product: 2 × 3 × 7 = 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 178,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the prime factorisation of 30?",
+      "options": [
+        "2 × 3 × 5",
+        "2 × 15",
+        "3 × 10",
+        "5 × 6",
+        "2² × 5"
+      ],
+      "correct": 0,
+      "correctAnswer": "2 × 3 × 5",
+      "explanation": "30 = 2 × 15 = 2 × 3 × 5. All three are prime, so the prime factorisation is 2 × 3 × 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 179,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a factor of 35?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 3,
+      "correctAnswer": "7",
+      "explanation": "Try dividing 35 by each option: 35 ÷ 7 = 5 exactly. So 7 is a factor of 35. None of the others divide into 35 evenly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 180,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is NOT a factor of 36?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "9",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "5",
+      "explanation": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. The number 5 is NOT a factor of 36 because 36 ÷ 5 = 7.2, which is not a whole number. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 181,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A teacher has 30 stickers to give out equally. Which of these is a possible number of children to share them between?",
+      "options": [
+        "4",
+        "7",
+        "8",
+        "10",
+        "11"
+      ],
+      "correct": 3,
+      "correctAnswer": "10",
+      "explanation": "The number of children must be a factor of 30. Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. From the options, 10 is a factor of 30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 182,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these is NOT a factor of 72?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "18"
+      ],
+      "correct": 2,
+      "correctAnswer": "10",
+      "explanation": "Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. The number 10 is NOT a factor because 72 ÷ 10 = 7.2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 183,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is a factor of 56?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "correct": 3,
+      "correctAnswer": "8",
+      "explanation": "56 ÷ 8 = 7 exactly, so 8 is a factor of 56. The others don't divide into 56 evenly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 184,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A head teacher wants to split 84 pupils into equal groups for a school trip. Which of these group sizes is NOT possible?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "12",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. The number 8 is NOT a factor of 84 because 84 ÷ 8 = 10.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 185,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a factor of 48?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "16",
+        "18"
+      ],
+      "correct": 3,
+      "correctAnswer": "16",
+      "explanation": "48 ÷ 16 = 3 exactly, so 16 is a factor of 48. None of the other options divide into 48 evenly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 186,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer is planting 54 trees in equal rows. Which of these is NOT a possible number of trees per row?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9",
+        "18"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factors of 54: 1, 2, 3, 6, 9, 18, 27, 54. The number 8 is NOT a factor of 54 because 54 ÷ 8 = 6.75. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 187,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is NOT a factor of 40?",
+      "options": [
+        "2",
+        "5",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Factors of 40: 1, 2, 4, 5, 8, 10, 20, 40. The number 6 is NOT a factor of 40 because 40 ÷ 6 = 6.67. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 188,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these is NOT a factor of 90?",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "10",
+        "15"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factors of 90: 1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45, 90. The number 8 is NOT a factor of 90 because 90 ÷ 8 = 11.25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 189,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop owner has 60 cans to arrange on shelves. Each shelf must hold the same number. Which of these is NOT a possible number of cans per shelf?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12",
+        "15"
+      ],
+      "correct": 2,
+      "correctAnswer": "8",
+      "explanation": "Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. The number 8 is NOT a factor because 60 ÷ 8 = 7.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 190,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is a factor of 42?",
+      "options": [
+        "4",
+        "5",
+        "8",
+        "14",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "14",
+      "explanation": "42 ÷ 14 = 3 exactly, so 14 is a factor of 42. None of the other options divide evenly into 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 191,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers is a factor of both 48 and 72?",
+      "options": [
+        "9",
+        "16",
+        "18",
+        "24",
+        "32"
+      ],
+      "correct": 3,
+      "correctAnswer": "24",
+      "explanation": "Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. From the options, 24 is a factor of both. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 192,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school hall has 75 chairs. The caretaker needs to arrange them in equal rows with no chairs left over. Which of these row sizes is NOT possible?",
+      "options": [
+        "3",
+        "5",
+        "10",
+        "15",
+        "25"
+      ],
+      "correct": 2,
+      "correctAnswer": "10",
+      "explanation": "Factors of 75: 1, 3, 5, 15, 25, 75. The number 10 is NOT a factor of 75 because 75 ÷ 10 = 7.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 193,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers has exactly one factor pair where both numbers are the same?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "correct": 1,
+      "correctAnswer": "25",
+      "explanation": "A number where both numbers in a factor pair are the same is a perfect square: √25 = 5, so 5 × 5 = 25. The pair (5, 5) has both numbers the same. 25 is the only perfect square among the options. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 194,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers is NOT a factor of 120?",
+      "options": [
+        "8",
+        "12",
+        "15",
+        "16",
+        "24"
+      ],
+      "correct": 3,
+      "correctAnswer": "16",
+      "explanation": "Factors of 120: 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120. The number 16 is NOT a factor because 120 ÷ 16 = 7.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 195,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a factor of 63?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "8",
+        "9"
+      ],
+      "correct": 4,
+      "correctAnswer": "9",
+      "explanation": "63 ÷ 9 = 7 exactly, so 9 is a factor of 63. None of the other options divide into 63 evenly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

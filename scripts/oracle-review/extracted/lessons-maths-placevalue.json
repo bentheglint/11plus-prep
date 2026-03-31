@@ -1,0 +1,2213 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "placevalue",
+    "displayName": "Place Value & Rounding",
+    "extractedAt": "2026-03-30T13:51:13.526Z",
+    "subConceptCount": 8,
+    "lessonCount": 16,
+    "screenCount": 64,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "reading-writing-numbers",
+      "name": "Reading & Writing Numbers in Words and Digits",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reading-writing-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to read and write numbers up to a million in words",
+            "Why we group digits in threes when writing large numbers"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How do you say 163,500?",
+              "body": "Ben reads the population sign for a town in Dorset. The number is **163,500**. Can you say it out loud? Big numbers look scary, but there's a simple trick to reading them!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "HTh",
+                  "TTh",
+                  "Th",
+                  "H",
+                  "T",
+                  "O"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      1,
+                      6,
+                      3,
+                      5,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split it into groups of three!",
+              "body": "Big numbers are easier to read when you **split them into groups of three** from the right.\n\nThe left group is the **thousands**. The right group is the **ones**.\n\n**163,500** = **one hundred and sixty-three thousand, five hundred**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Split into groups from the right",
+                    "why": "163,500"
+                  },
+                  {
+                    "text": "Read the thousands part",
+                    "why": "The digits before the comma"
+                  },
+                  {
+                    "text": "Say \"thousand\"",
+                    "why": "This tells you the place value"
+                  },
+                  {
+                    "text": "Read the ones part",
+                    "why": "The digits after the comma"
+                  },
+                  {
+                    "text": "Full reading:",
+                    "result": "one hundred and sixty-three thousand, five hundred"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which one is correct?",
+              "body": "Which is the correct way to write **245,200** in words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How do you write 245,200 in words?",
+                "options": [
+                  "two hundred and forty-five thousand, two hundred",
+                  "two hundred and forty-five thousand and two hundred",
+                  "two hundred and forty-five hundred, two hundred",
+                  "twenty-four thousand, five hundred and two hundred",
+                  "two hundred forty-five thousand, two hundred"
+                ],
+                "correctAnswer": "two hundred and forty-five thousand, two hundred",
+                "correctFeedback": "Well done! **245,200** in words is: **two hundred and forty-five thousand, two hundred** ✓",
+                "incorrectFeedback": "Not quite! The correct way is: **two hundred and forty-five thousand, two hundred**. Remember to split the number into groups of three from the right."
+              },
+              "visualProps": {
+                "columns": [
+                  "HTh",
+                  "TTh",
+                  "Th",
+                  "H",
+                  "T",
+                  "O"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      2,
+                      4,
+                      5,
+                      2,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reading big numbers — the recipe!",
+              "body": "Follow these steps for any large number:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Split into groups of three from the right",
+                    "why": "Use commas to separate: thousands, millions, etc."
+                  },
+                  {
+                    "text": "Step 2: Read each group as a normal number",
+                    "why": "e.g. 384 = three hundred and eighty-four"
+                  },
+                  {
+                    "text": "Step 3: Say the group name after each chunk",
+                    "why": "thousand, million, billion..."
+                  },
+                  {
+                    "text": "Step 4: Combine them all together",
+                    "why": "384,400 = three hundred and eighty-four thousand, four hundred ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reading-writing-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid common mistakes when writing numbers in words",
+            "Why zeros matter as placeholders in large numbers"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Holly's mistake!",
+              "body": "Holly writes a number from a newspaper article. The number is **205,300**, but Holly wrote it as: \"twenty-five thousand, three hundred\". Can you see what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      2,
+                      0,
+                      5,
+                      3,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Zeros are placeholders!",
+              "body": "Holly missed the zero and read 205 as 25.\n\nThe **zeros** hold the other digits in their correct columns. Without them, the digits slide into the wrong places!\n\nThe correct reading is: **two hundred and five thousand, three hundred**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Correct",
+                    "values": [
+                      2,
+                      0,
+                      5,
+                      3,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "label": "Wrong",
+                    "values": [
+                      0,
+                      2,
+                      5,
+                      3,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What number did the words describe?",
+              "body": "Someone wrote \"thirty-six thousand, two hundred\". What number would that actually be in digits?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"thirty-six thousand, two hundred\" would actually be which number?",
+                "options": [
+                  "36200",
+                  "36199",
+                  "36202",
+                  "36197",
+                  "36204"
+                ],
+                "correctAnswer": "36200",
+                "correctFeedback": "That's right! \"thirty-six thousand, two hundred\" = **36,200**, but the actual number is **306,200**. Zeros matter! ✓",
+                "incorrectFeedback": "Not quite! \"thirty-six thousand, two hundred\" = **36,200**. The actual number should be **306,200**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Someone wrote: \"thirty-six thousand, two hundred\"",
+                    "why": "But the real number has a zero they missed!"
+                  },
+                  {
+                    "text": "Hint: the actual number is 306,200",
+                    "why": "three hundred and six thousand, two hundred"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't skip the zeros!",
+              "body": "Zeros are **placeholders** — they keep every digit in the right column. When reading or writing numbers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check every column in the place value chart",
+                    "why": "Don't skip the zeros!"
+                  },
+                  {
+                    "text": "A zero means 'nothing in this place'",
+                    "why": "e.g. 205 has zero tens — it's not 25!"
+                  },
+                  {
+                    "text": "Read each group of three carefully",
+                    "why": "300,040 = three hundred thousand AND forty ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digit-value",
+      "name": "Understanding the Value of Each Digit",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "digit-value-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the value of any digit in a number",
+            "Why the position of a digit changes its value"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is the 5 worth in 45,678?",
+              "body": "Ben reads the attendance at a football match. The total is **45,678**. The digit **5** appears in this number — but what is it actually **worth**? Is it just 5? Or something much bigger?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The position tells you the value!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To find the value of a digit, multiply it by its ____ value",
+                "options": [
+                  "face",
+                  "place",
+                  "column",
+                  "number"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Multiply the digit by its place value. ✓",
+                "incorrectFeedback": "Not quite — you multiply the digit by its **place** value to find what it's worth!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the number **63,842**, what is the value of the digit **8**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the value of the digit 8 in 63,842?",
+                "options": [
+                  "800",
+                  "799",
+                  "802",
+                  "797",
+                  "804"
+                ],
+                "correctAnswer": "800",
+                "correctFeedback": "Brilliant! The 8 is in the hundreds column, so it's worth **800** ✓",
+                "incorrectFeedback": "Not quite! The 8 is in the **hundreds** column. 8 × 100 = **800**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      6,
+                      3,
+                      8,
+                      4,
+                      2
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    2
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Digit vs value — know the difference!",
+              "body": "The **digit** is the number you see. The **value** depends on its **position** in the number:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the digit in the number",
+                    "why": "Which digit are you looking at?"
+                  },
+                  {
+                    "text": "Step 2: Check which column it's in",
+                    "why": "Ones, tens, hundreds, thousands, etc."
+                  },
+                  {
+                    "text": "Step 3: Multiply the digit by its place value",
+                    "why": "e.g. 5 in the thousands column = 5 × 1,000 = 5,000 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "digit-value-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to understand that the same digit has different values in different positions",
+            "Why position matters more than the digit itself"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same digit, different value?",
+              "body": "Grace notices that the digit 3 appears twice in a number. Look at **33,456** — the digit **3** appears more than once! But are both 3s worth the same amount?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      3,
+                      3,
+                      4,
+                      5,
+                      6
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Position is everything!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "How much more is it worth?",
+              "body": "In **66,821**, the **6** in the **ten-thousands** column is worth how many times more than the **6** in the **thousands** column?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many times more is the ten-thousands 6 worth compared to the thousands 6?",
+                "options": [
+                  "10",
+                  "9",
+                  "12",
+                  "7",
+                  "14"
+                ],
+                "correctAnswer": "10",
+                "correctFeedback": "Spot on! **60,000 ÷ 6,000 = 10**. Each column to the left is 10× bigger! ✓",
+                "incorrectFeedback": "Not quite! **60,000 ÷ 6,000 = 10**. Each place to the left is 10 times bigger."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      6,
+                      6,
+                      8,
+                      2,
+                      1
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Position changes everything!",
+              "body": "The same digit can be worth completely different amounts depending on where it sits:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Each column is 10× bigger than the one to its right",
+                    "why": "O → T → H → Th → TTh: ×10 each time"
+                  },
+                  {
+                    "text": "The digit tells you HOW MANY of that place value",
+                    "why": "e.g. 5 in hundreds = 5 hundreds = 500"
+                  },
+                  {
+                    "text": "Same digit, different column = different value!",
+                    "why": "5 in thousands = 5,000 but 5 in tens = 50 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparing-ordering",
+      "name": "Comparing & Ordering Multi-Digit Numbers",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "comparing-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to compare two numbers by checking digits from left to right",
+            "Why we start with the highest place value column"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which is bigger: 34,567 or 34,589?",
+              "body": "Aisha compares the populations of two towns. One had **34,567** people and the other had **34,589**. Which number is larger? There's a step-by-step method!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "A",
+                    "values": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ]
+                  },
+                  {
+                    "label": "B",
+                    "values": [
+                      3,
+                      4,
+                      5,
+                      8,
+                      9
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Compare from left to right!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When comparing numbers, start from the ____ and work right",
+                "options": [
+                  "right",
+                  "middle",
+                  "left",
+                  "bottom"
+                ],
+                "correctIndex": "2",
+                "correctFeedback": "Yes! Always compare from the left — the highest place value decides first. ✓",
+                "incorrectFeedback": "Not quite — start from the **left** (the biggest place value column) and work right!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which symbol goes between these two numbers?\n\n**57,312  ☐  57,348**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "57,312  ☐  57,348 — which symbol fits?",
+                "options": [
+                  "<",
+                  ">",
+                  "=",
+                  "≤",
+                  "≥"
+                ],
+                "correctAnswer": "<",
+                "correctFeedback": "That's right! **57,312 < 57,348**. The tens digit decided it: 1 vs 4 ✓",
+                "incorrectFeedback": "Not quite! Look at the **tens** column: 1 vs 4. So **57,312 < 57,348**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "A",
+                    "values": [
+                      5,
+                      7,
+                      3,
+                      1,
+                      2
+                    ]
+                  },
+                  {
+                    "label": "B",
+                    "values": [
+                      5,
+                      7,
+                      3,
+                      4,
+                      8
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comparing numbers — the recipe!",
+              "body": "To compare any two numbers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Check they have the same number of digits",
+                    "why": "More digits = bigger number (unless leading zeros)"
+                  },
+                  {
+                    "text": "Step 2: Compare from the LEFT",
+                    "why": "Start with the highest place value"
+                  },
+                  {
+                    "text": "Step 3: Find the first column that's different",
+                    "why": "That column decides which is bigger"
+                  },
+                  {
+                    "text": "Step 4: The bigger digit wins!",
+                    "why": "Once you find a difference, you can stop ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "comparing-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid comparing numbers from the wrong end",
+            "Why starting from the right gives wrong answers"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Charlie's mistake!",
+              "body": "Charlie says: **45,892 < 45,867**\n\nThat doesn't look right! Can you see where Charlie went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "A",
+                    "values": [
+                      4,
+                      5,
+                      8,
+                      9,
+                      2
+                    ]
+                  },
+                  {
+                    "label": "B",
+                    "values": [
+                      4,
+                      5,
+                      8,
+                      6,
+                      7
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Always compare from the LEFT!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which is correct?",
+              "body": "What is the correct comparison?\n\n**73,214  ☐  73,248**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "73,214 < 73,248",
+                  "73,214 > 73,248",
+                  "73,214 = 73,248",
+                  "Cannot tell",
+                  "They are approximately equal"
+                ],
+                "correctAnswer": "73,214 < 73,248",
+                "correctFeedback": "Well done! **73,214 < 73,248** — always compare from the left! ✓",
+                "incorrectFeedback": "Not quite! The tens column shows 1 vs 4. So **73,214 < 73,248**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "A",
+                    "values": [
+                      7,
+                      3,
+                      2,
+                      1,
+                      4
+                    ]
+                  },
+                  {
+                    "label": "B",
+                    "values": [
+                      7,
+                      3,
+                      2,
+                      4,
+                      8
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Left to right — every time!",
+              "body": "The biggest mistake in comparing numbers is looking at the **wrong end**. Here's the recipe:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rounding-nearest-1000-plus",
+      "name": "Rounding to Nearest 1000, 10000, 100000",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "rounding-1000-plus-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to round to the nearest 1000, 10000 or 100000",
+            "How to find the decider digit for larger place values"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Round 156,732 to the nearest ten thousand",
+              "body": "Aisha estimates the number of visitors to a theme park. The exact number is **156,732**, but it needs rounding to the **nearest ten thousand**. The method is the same as rounding to the nearest 10 or 100 — just with bigger numbers!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      1,
+                      5,
+                      6,
+                      7,
+                      3,
+                      2
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the target and decider!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Target → decider → apply the rule. ✓",
+                "incorrectFeedback": "Not quite — first find the target digit, then check the decider, then apply the rounding rule."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **283,415** rounded to the **nearest ten thousand**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 283,415 rounded to the nearest ten thousand?",
+                "options": [
+                  "280000",
+                  "279999",
+                  "280002",
+                  "279997",
+                  "280004"
+                ],
+                "correctAnswer": "280,000",
+                "correctFeedback": "Brilliant! The decider is **3**, so we round **down**. **283,415 → 280,000** ✓",
+                "incorrectFeedback": "Not quite! The decider is **3**. 3 < 5 → round down. The answer is **280,000**."
+              },
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      2,
+                      8,
+                      3,
+                      4,
+                      1,
+                      5
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Rounding big numbers — same method!",
+              "body": "Whether you're rounding to the nearest 10 or 100,000, the method is always the same:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the TARGET digit",
+                    "why": "The digit in the column you're rounding to"
+                  },
+                  {
+                    "text": "Step 2: Look at the DECIDER (one place right)",
+                    "why": "This digit decides up or down"
+                  },
+                  {
+                    "text": "Step 3: 0-4 → round down, 5-9 → round up",
+                    "why": "The same rule, no matter how big the number"
+                  },
+                  {
+                    "text": "Step 4: Replace everything to the right with zeros",
+                    "why": "Done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "rounding-1000-plus-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid sequential (cascading) rounding",
+            "Why you should round in one step, not multiple steps"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Charlie's mistake!",
+              "body": "Charlie tries to round a number to the nearest thousand.\n\nCharlie says: **4,449** rounded to the nearest thousand = **5,000**\n\nThat's not right! Can you see what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      0,
+                      0,
+                      4,
+                      4,
+                      4,
+                      9
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Round in ONE step — never cascade!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "What is **4,449** correctly rounded to the **nearest thousand**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4,449 rounded to the nearest thousand = ?",
+                "options": [
+                  "4000",
+                  "3999",
+                  "4002",
+                  "3997",
+                  "4004"
+                ],
+                "correctAnswer": "4000",
+                "correctFeedback": "That's right! **4,449 → 4,000**. Round in one step, never cascade! ✓",
+                "incorrectFeedback": "Not quite! The decider is **4**, so we round **down**. The answer is **4,000**."
+              },
+              "visualProps": {
+                "columns": [
+                  "HundTh",
+                  "Ten Th",
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      0,
+                      0,
+                      4,
+                      4,
+                      4,
+                      9
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Never cascade your rounding!",
+              "body": "A very common mistake is rounding in stages (10 → 100 → 1000). This gives the **wrong** answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 4,449 → 4,450 → 4,500 → 5,000",
+                    "why": "Cascading gives the wrong answer!"
+                  },
+                  {
+                    "text": "RIGHT: 4,449 → look at hundreds digit (4)",
+                    "why": "4 < 5 so round down"
+                  },
+                  {
+                    "text": "4,449 → 4,000",
+                    "why": "One step, done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rounding-decimals",
+      "name": "Rounding Decimals",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "rounding-decimals-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to round a decimal to the nearest whole number",
+            "How to round a decimal to one decimal place"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Round 1.47 to the nearest whole number",
+              "body": "Daisy measures the length of her desk in metres and gets **1.47 metres**. She needs to round it to the **nearest whole number**. The method is exactly the same as rounding whole numbers!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 1,
+                "max": 2,
+                "points": [
+                  {
+                    "value": 1.47,
+                    "label": "1.47",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same method — target and decider!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Rounding decimals uses the same ____ as rounding whole numbers",
+                "options": [
+                  "formula",
+                  "method",
+                  "calculator",
+                  "chart"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! The same method — find the target, check the decider, apply the 0-4/5-9 rule. ✓",
+                "incorrectFeedback": "Not quite — rounding decimals uses the same **method** as whole numbers: target digit, decider digit, 0-4 down / 5-9 up!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **2.73** rounded to the **nearest whole number**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 2.73 rounded to the nearest whole number?",
+                "options": [
+                  "3",
+                  "2",
+                  "5",
+                  "0",
+                  "7"
+                ],
+                "correctAnswer": "3",
+                "correctFeedback": "Well done! The decider is **7**, so we round **up**. **2.73 → 3** ✓",
+                "incorrectFeedback": "Not quite! The decider is **7**. 7 ≥ 5 → round up. The answer is **3**."
+              },
+              "visualProps": {
+                "min": 2,
+                "max": 3,
+                "points": [
+                  {
+                    "value": 2.73,
+                    "label": "2.73",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Rounding decimals — same recipe!",
+              "body": "Rounding decimals works **exactly** the same as rounding whole numbers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Nearest whole number → target is the ones digit",
+                    "why": "Decider is the tenths (first decimal) digit"
+                  },
+                  {
+                    "text": "One decimal place → target is the tenths digit",
+                    "why": "Decider is the hundredths (second decimal) digit"
+                  },
+                  {
+                    "text": "Apply the same 0-4/5-9 rule",
+                    "why": "Then drop everything after the target ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "rounding-decimals-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to round money amounts to the nearest pound",
+            "When rounding decimals is useful in real life"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Quick estimate: how much altogether?",
+              "body": "Finn estimates the total cost of his shopping: bread £1.85, milk £1.15, apples £2.49. Instead of adding the exact amounts, you can **round each to the nearest pound** for a quick estimate (a rough guess)!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "bread £1.85",
+                    "result": "≈ £2"
+                  },
+                  {
+                    "text": "milk £1.15",
+                    "result": "≈ £1"
+                  },
+                  {
+                    "text": "apples £2.49",
+                    "result": "≈ £2"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Round to the nearest pound!",
+              "body": "To round money to the nearest pound, look at the **pence** (the tenths digit).\n\n• 50p or more → round **up**\n• Less than 50p → round **down**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "bread £1.85",
+                    "result": "≈ £2"
+                  },
+                  {
+                    "text": "milk £1.15",
+                    "result": "≈ £1"
+                  },
+                  {
+                    "text": "apples £2.49",
+                    "result": "≈ £2"
+                  },
+                  {
+                    "text": "Total estimate: £2 + £1 + £2",
+                    "result": "≈ £5"
+                  },
+                  {
+                    "text": "Exact total: £5.49",
+                    "why": "Close to our estimate!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Round **£7.62** to the nearest pound.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "£7.62 rounded to the nearest pound = ?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Spot on! **£7.62 ≈ £8** ✓",
+                "incorrectFeedback": "Not quite! Look at the pence. **£7.62 → £8**."
+              },
+              "visualProps": {
+                "min": 7,
+                "max": 8,
+                "points": [
+                  {
+                    "value": 7.62,
+                    "label": "£7.62",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  7,
+                  8
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Rounding money — a life skill!",
+              "body": "Rounding to the nearest pound is great for **quick estimates** when shopping:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Look at the pence (digits after the point)",
+                    "why": "50p or more → round up. Less than 50p → round down"
+                  },
+                  {
+                    "text": "Round each item to the nearest pound",
+                    "why": "e.g. £3.75 → £4, £2.30 → £2"
+                  },
+                  {
+                    "text": "Add the rounded amounts for a quick total",
+                    "why": "It won't be exact, but it's close enough to check! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partitioning",
+      "name": "Partitioning Numbers",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "partitioning-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to partition a number into thousands, hundreds, tens and ones",
+            "Why partitioning helps with mental addition and subtraction"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Break 4,567 into pieces!",
+              "body": "Ella breaks down a number for a mental maths challenge. The number is **4,567**.\n\n**Partitioning** means splitting a number into its place value parts. It makes adding and subtracting in your head much easier — instead of working with one big number, you deal with smaller, simpler pieces!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Each digit becomes its full value!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Write values, skip zeros, then check by adding. ✓",
+                "incorrectFeedback": "Not quite — first write each digit's full value, then skip zeros, then add up to check."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the full partition?",
+              "body": "What does **7,321** partition into? Add up all the parts!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "7,321 = ?",
+                "options": [
+                  "7,000 + 300 + 20 + 1",
+                  "700 + 300 + 20 + 1",
+                  "7000 + 300 + 20 + 1",
+                  "7,000 + 300 + 20",
+                  "1 + 20 + 300 + 7000"
+                ],
+                "correctAnswer": "7,000 + 300 + 20 + 1",
+                "correctFeedback": "Brilliant! **7,321 = 7,000 + 300 + 20 + 1** ✓",
+                "incorrectFeedback": "Not quite! Each digit keeps its column value: **7,000 + 300 + 20 + 1**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Number",
+                    "values": [
+                      7,
+                      3,
+                      2,
+                      1
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Partitioning — a powerful tool!",
+              "body": "Partitioning means breaking a number into its **place value parts**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Write each digit with its full place value",
+                    "why": "e.g. the 4 in 4,567 is worth 4,000"
+                  },
+                  {
+                    "text": "Skip any zeros (they add nothing)",
+                    "why": "e.g. 3,052 = 3,000 + 50 + 2 (no hundreds)"
+                  },
+                  {
+                    "text": "Check: the parts should add back to the original!",
+                    "why": "4,000 + 500 + 60 + 7 = 4,567 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "partitioning-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to use partitioning for mental addition",
+            "When to use partitioning in real calculations"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "346 + 235 in your head!",
+              "body": "Ben adds two numbers mentally using partitioning: **346 + 235**. That looks tricky to do mentally — but **partitioning** makes it easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "346 + 235 = ???",
+                    "why": "Looks hard... but partitioning helps!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Partition, add, combine!",
+              "body": "Break both numbers into hundreds, tens and ones. Then add each group separately:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "346 = 300 + 40 + 6",
+                    "why": "Partition the first number"
+                  },
+                  {
+                    "text": "235 = 200 + 30 + 5",
+                    "why": "Partition the second number"
+                  },
+                  {
+                    "text": "Hundreds: 300 + 200 = 500",
+                    "why": "Add the hundreds"
+                  },
+                  {
+                    "text": "Tens: 40 + 30 = 70",
+                    "why": "Add the tens"
+                  },
+                  {
+                    "text": "Ones: 6 + 5 = 11",
+                    "why": "Add the ones"
+                  },
+                  {
+                    "text": "500 + 70 + 11 = 581",
+                    "result": "346 + 235 = 581"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use partitioning to work out **346 + 235**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "346 + 235 = ?",
+                "options": [
+                  "581",
+                  "580",
+                  "583",
+                  "578",
+                  "585"
+                ],
+                "correctAnswer": "581",
+                "correctFeedback": "Brilliant! 346 + 235 = **581**. Partitioning makes mental maths so much easier! ✓",
+                "incorrectFeedback": "Not quite! H: 500, T: 70, O: 11 → **581**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "346 = 300 + 40 + 6"
+                  },
+                  {
+                    "text": "235 = 200 + 30 + 5"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Partition to add mentally!",
+              "body": "Partitioning turns one hard addition into three easy ones:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Partition both numbers (H + T + O)",
+                    "why": "e.g. 346 = 300 + 40 + 6"
+                  },
+                  {
+                    "text": "Add the hundreds, then tens, then ones",
+                    "why": "Each step is a simple calculation"
+                  },
+                  {
+                    "text": "Combine the totals",
+                    "why": "500 + 70 + 11 = 581 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adding-subtracting-powers-10",
+      "name": "Adding/Subtracting 10, 100, 1000 Mentally",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "powers-10-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that adding 10, 100, or 1000 changes only one digit",
+            "Why the other digits stay the same"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "4,567 + 100 = ?",
+              "body": "Daisy watches numbers change on a scoreboard. The number goes from **4,567** up by **100**. Which digit changes? Let's find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Only ONE digit changes!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **4,567 + 100**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4,567 + 100 = ?",
+                "options": [
+                  "4667",
+                  "4666",
+                  "4669",
+                  "4664",
+                  "4671"
+                ],
+                "correctAnswer": "4,667",
+                "correctFeedback": "That's right! Only the hundreds digit changes: 5 → 6. **4,667** ✓",
+                "incorrectFeedback": "Not quite! Adding 100 only changes the hundreds digit. **4,567 + 100 = 4,667**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ]
+                  }
+                ],
+                "highlight": [
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The magic of powers of 10!",
+              "body": "Adding 10, 100, or 1000 is super easy once you know the trick:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Adding 10 → only the TENS digit goes up by 1",
+                    "why": "e.g. 4,567 + 10 = 4,577"
+                  },
+                  {
+                    "text": "Adding 100 → only the HUNDREDS digit goes up by 1",
+                    "why": "e.g. 4,567 + 100 = 4,667"
+                  },
+                  {
+                    "text": "Adding 1,000 → only the THOUSANDS digit goes up by 1",
+                    "why": "e.g. 4,567 + 1,000 = 5,567"
+                  },
+                  {
+                    "text": "Subtracting works the same way — the digit goes DOWN by 1",
+                    "why": "e.g. 4,567 − 100 = 4,467 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "powers-10-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid changing the wrong digit when adding 10, 100 or 1000",
+            "Why carrying sometimes changes more than one digit"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Charlie's mistake!",
+              "body": "Charlie subtracts 100 from a number.\n\nCharlie says: **5,023 − 100 = 5,123**\n\nThat's not right! What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": null,
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      5,
+                      0,
+                      2,
+                      3
+                    ]
+                  },
+                  {
+                    "label": "Charlie's",
+                    "values": [
+                      5,
+                      1,
+                      2,
+                      3
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Change the right digit!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "What is **7,841 − 1,000**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PlaceValueChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "7,841 − 1,000 = ?",
+                "options": [
+                  "6841",
+                  "6840",
+                  "6843",
+                  "6838",
+                  "6845"
+                ],
+                "correctAnswer": "6841",
+                "correctFeedback": "That's right! **7,841 − 1,000 = 6,841** ✓",
+                "incorrectFeedback": "Not quite! Remember to change the thousands digit. **7,841 − 1,000 = 6,841**."
+              },
+              "visualProps": {
+                "columns": [
+                  "Thous",
+                  "Hund",
+                  "Tens",
+                  "Ones"
+                ],
+                "rows": [
+                  {
+                    "label": "Before",
+                    "values": [
+                      7,
+                      8,
+                      4,
+                      1
+                    ]
+                  }
+                ],
+                "highlight": []
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Watch out for carries!",
+              "body": "Usually only one digit changes, but sometimes it **carries** into a new column:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making-numbers",
+      "name": "Making Largest/Smallest Number from Digits",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "making-numbers-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to arrange digits to make the largest possible number",
+            "How to arrange digits to make the smallest possible number"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the biggest number you can make?",
+              "body": "Jake has these digit cards: **3, 7, 1, 9, 5**. Using each digit exactly once, what's the **largest** number you can make? And the **smallest**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Available digits: 3, 7, 1, 9, 5",
+                    "why": "Use each digit exactly once"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Biggest digit first!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the largest?",
+              "body": "Using the digits **3, 7, 1, 9, 5**, what is the **largest** number you can make?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Largest number from digits 3, 7, 1, 9, 5?",
+                "options": [
+                  "97,531",
+                  "79,531",
+                  "97,513",
+                  "13,579"
+                ],
+                "correctAnswer": "97,531",
+                "correctFeedback": "Brilliant! Put the biggest digits first: **97,531** ✓",
+                "incorrectFeedback": "Not quite! Sort the digits from biggest to smallest: 9, 7, 5, 3, 1 → **97,531**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Digits: 3, 7, 1, 9, 5",
+                    "why": "Put the biggest digit in the highest place"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The sorting shortcut!",
+              "body": "Making the largest or smallest number from digits is easy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "LARGEST: Sort digits biggest → smallest",
+                    "why": "Biggest digit in the highest place value"
+                  },
+                  {
+                    "text": "SMALLEST: Sort digits smallest → biggest",
+                    "why": "Smallest digit in the highest place value"
+                  },
+                  {
+                    "text": "Watch out for ZERO!",
+                    "why": "Zero can't be the first digit — swap it with the next smallest ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "making-numbers-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to handle zero when making the smallest number",
+            "Why the first digit can never be zero in a whole number"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The zero trap!",
+              "body": "Holly tries to make the smallest number from these digits: **5, 0, 3, 8, 0**. She sorts them smallest first: **0, 0, 3, 5, 8** and writes **00358**.\n\nBut wait — that starts with zero! Is it really a 5-digit number?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Holly's attempt: 00358",
+                    "why": "Starting with 0 gives a 3-digit number (358), not a 5-digit number"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Zero can't be first!",
+              "body": "A number can't start with zero — **00358** is really just **358**.\n\nInstead, put the **smallest non-zero digit** (3) first, then put the zeros next:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sort digits: 0, 0, 3, 5, 8",
+                    "why": "Smallest first"
+                  },
+                  {
+                    "text": "First digit can't be 0!",
+                    "why": "Swap 0 with the next smallest non-zero digit"
+                  },
+                  {
+                    "text": "Put 3 first, then zeros, then the rest",
+                    "result": "30,058"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct smallest number?",
+              "body": "Using the digits **5, 0, 3, 8, 0**, what is the correct **smallest** 5-digit number?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Smallest 5-digit number from 5, 0, 3, 8, 0?",
+                "options": [
+                  "30058",
+                  "30057",
+                  "30060",
+                  "30055",
+                  "30062"
+                ],
+                "correctAnswer": "30058",
+                "correctFeedback": "Well done! Put 3 first, then the zeros: **30,058** ✓",
+                "incorrectFeedback": "Not quite! The smallest non-zero digit (3) goes first, then the zeros. Answer: **30,058**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Digits: 5, 0, 3, 8, 0",
+                    "why": "Remember: zero can't be first!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The zero rule!",
+              "body": "When making the smallest number from digits that include zero:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sort all digits from smallest to biggest",
+                    "why": "e.g. 0, 0, 3, 5, 8"
+                  },
+                  {
+                    "text": "If the smallest is 0, swap it with the next non-zero digit",
+                    "why": "Put 3 first → 3, 0, 0, 5, 8"
+                  },
+                  {
+                    "text": "The zeros go right after the first digit",
+                    "why": "30,058 — not 00,358! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

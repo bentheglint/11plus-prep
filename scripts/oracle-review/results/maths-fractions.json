@@ -1,0 +1,243 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "fractions",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 210,
+    "lessonsReviewed": 26,
+    "issuesFound": 18,
+    "bySeverity": {
+      "critical": 1,
+      "high": 5,
+      "medium": 8,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:104 (49.5%), D2:67 (31.9%), D3:39 (18.6%) — heavily skewed towards D1 vs the target ~30:40:30. D1 is overrepresented by ~20 percentage points and D3 is underrepresented by ~11 percentage points. Many D1 questions are simple same-denominator addition/subtraction or basic simplification that could be consolidated. The D2 band is also light — fraction-of-amount questions rated D2 (e.g. Q14 '3/4 of 8') are arguably D1 given the round numbers and single step. Conversely, some D1 questions like Q133 (convert 0.35 to a fraction) arguably belong at D2 for a 9-year-old.",
+    "coverageAssessment": "Good breadth across GL-tested skills. All 8 major GL categories are represented: fraction of an amount (~45 Qs), equivalent/simplifying (~30 Qs), adding/subtracting same denom (~40 Qs), adding/subtracting different denom (~25 Qs), comparing/ordering (~15 Qs), FDP conversions (~20 Qs), mixed numbers/improper (~10 Qs), multiplying fractions (~10 Qs), word problems (~15 Qs). Notable gap: dividing fractions by whole numbers (Year 6 statutory requirement) has zero questions. Reverse/working-backwards problems are present but thin (only ~5 questions). Visual/diagram fraction questions are very limited.",
+    "teachingEfficacyAssessment": "13 sub-concepts with 26 lessons is solid coverage. The 'master-adding-fractions' sub-concept has no lesson — 10 questions map to it with '[No lesson found]'. These are adding-different-denominator questions that happen to use one denominator as a multiple of the other (e.g. 1/2 + 1/4), which is a simpler case than the full LCD method. Without a dedicated lesson, these children get no teaching before these questions. Otherwise, lesson quality is good — WorkedExamples are clear, BarModel visuals reinforce concepts well, and the step-by-step + spot-the-mistake pairing per topic is effective. The multiplying-fractions lesson only covers fraction × whole number, but Q138 (2/3 × 3/4) and Q146 (3/5 × 5/9) require fraction × fraction — the lesson doesn't prepare for these.",
+    "topPriorities": [
+      "1. Fix the 'master-adding-fractions' missing lesson — 10 questions have no teaching",
+      "2. Rebalance difficulty distribution: promote ~20 D1 questions to D2, add ~15 new D3 questions",
+      "3. Add dividing-fractions sub-concept and questions (GL-tested, zero coverage)"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-FRC-META-001",
+      "itemType": "meta",
+      "itemId": "master-adding-fractions",
+      "severity": "critical",
+      "category": "coverage-gap",
+      "title": "10 questions mapped to 'master-adding-fractions' sub-concept have no lesson",
+      "description": "Questions Q12, Q26, Q32, Q45, Q57, Q82, Q104, Q113, Q120, Q125 are all adding-fractions-with-different-denominators questions mapped to 'master-adding-fractions', which has '[No lesson found]'. These questions require finding a common denominator where one denominator is a multiple of the other (e.g. 1/2 + 1/4, 2/3 + 1/6). The existing 'adding-diff-denom' lesson covers the full LCD case (e.g. 1/3 + 1/4) but these questions are mapped to a separate missing sub-concept instead. Children encountering these questions in Focused Learning get zero teaching preparation.",
+      "suggestedFix": "Either (a) create a 'master-adding-fractions' lesson that teaches the simpler 'one is a multiple' case, or (b) remap these 10 questions to 'adding-diff-denom' which already has a lesson. Option (b) is quickest and the existing lesson would adequately prepare children.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-META-002",
+      "itemType": "meta",
+      "itemId": "difficulty-distribution",
+      "severity": "high",
+      "category": "difficulty-mismatch",
+      "title": "D1:D2:D3 distribution (50:32:19) heavily skewed vs GL target (30:40:30)",
+      "description": "D1 has 104 questions (49.5%) vs target ~30%. D2 has 67 (31.9%) vs target ~40%. D3 has 39 (18.6%) vs target ~30%. This means practice is too heavily weighted towards easy questions. Children get insufficient exposure to the medium and hard questions that differentiate scores in the actual GL exam.",
+      "suggestedFix": "Promote ~20 D1 questions to D2 (candidates: Q14 fraction-of-amount with small round numbers, Q133 convert 0.35, Q181-183 simple different-denom subtraction where one denom is a multiple). Add ~15 new D3 questions covering: reverse/working-backwards, fraction-of-a-fraction, ordering mixed FDP representations, multi-step 'of the remainder' problems.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-META-003",
+      "itemType": "meta",
+      "itemId": "dividing-fractions",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "Zero questions on dividing fractions — a Year 6 statutory requirement and GL-tested skill",
+      "description": "The GL research file lists 'Multiplying & dividing fractions' at ~10% estimated weight. The National Curriculum requires Year 6 pupils to 'Divide proper fractions by whole numbers (e.g., 1/3 / 2 = 1/6)'. The question bank has no dividing-fractions questions at all, and no corresponding lesson. This is a real gap for exam preparation.",
+      "suggestedFix": "Add 10-15 dividing-fractions questions across D1-D3 (e.g. D1: '1/4 ÷ 2', D2: '3/8 ÷ 3', D3: 'How many 2/5 are in 4?'). Create a corresponding dividing-fractions lesson sub-concept.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q055-001",
+      "itemType": "question",
+      "itemId": "Q55",
+      "severity": "high",
+      "category": "wrong-answer",
+      "title": "Q55 correct answer is unsimplified '6/10' when '3/5' is also an option",
+      "description": "Q55 asks '9/10 - 3/10' and marks '6/10' (option A, index 0) as correct. However option B is '3/5' which is the simplified form. The explanation even says 'Simplify: 6/10 = 3/5'. GL Assessment expects answers in simplest form unless stated otherwise. Having the unsimplified form as the 'correct' answer while the simplified form is present as a distractor is misleading — a child who correctly simplifies would pick '3/5' and be marked wrong.",
+      "suggestedFix": "Change correct answer from index 0 ('6/10') to index 1 ('3/5'). Update explanation to lead with the simplified answer.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q078-001",
+      "itemType": "question",
+      "itemId": "Q78",
+      "severity": "high",
+      "category": "wrong-answer",
+      "title": "Q78 correct answer is unsimplified '4/8' when '1/2' is also an option",
+      "description": "Q78 asks '1/8 + 3/8' and marks '4/8' (option B, index 1) as correct. However option C is '1/2' which is the simplified form. The explanation says 'Simplify: 4/8 = 1/2'. Same issue as Q55 — the simplified answer is present but not marked correct.",
+      "suggestedFix": "Change correct answer from index 1 ('4/8') to index 2 ('1/2'). Update explanation accordingly.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q097-001",
+      "itemType": "question",
+      "itemId": "Q97",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q97 correct answer is '6/12' when '1/2' is also an option — same unsimplified pattern",
+      "description": "Q97 asks '11/12 - 5/12' and marks '6/12' (option A, index 0) as correct, but '1/2' (option B) is also present. The explanation says 'Simplify: 6/12 = 1/2'. Unlike Q55/Q78, this question doesn't explicitly ask for simplest form, but it follows the same problematic pattern where a child who correctly simplifies is penalised.",
+      "suggestedFix": "Change correct answer to '1/2' (index 1), or remove '1/2' from options and replace with a different distractor.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q100-001",
+      "itemType": "question",
+      "itemId": "Q100",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q100 correct answer is '4/8' when '1/2' is also an option — same unsimplified pattern",
+      "description": "Q100 asks '3/8 + 1/8' and marks '4/8' (option B, index 1) as correct, but '1/2' (option C) is also present. Explanation says 'Simplify: 4/8 = 1/2'. Identical issue to Q55/Q78/Q97.",
+      "suggestedFix": "Change correct answer to '1/2' (index 2), or remove '1/2' from options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q102-001",
+      "itemType": "question",
+      "itemId": "Q102",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q102 correct answer is '6/9' when '2/3' is also an option — same unsimplified pattern",
+      "description": "Q102 asks '8/9 - 2/9' and marks '6/9' (option A, index 0) as correct, but '2/3' (option B) is also present. Explanation says 'Simplify: 6/9 = 2/3'.",
+      "suggestedFix": "Change correct answer to '2/3' (index 1), or remove '2/3' from options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q119-001",
+      "itemType": "question",
+      "itemId": "Q119",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q119 correct answer is '8/12' when '2/3' is also an option",
+      "description": "Q119 asks '7/12 + 1/12' and marks '8/12' (option A, index 0) as correct, but '2/3' (option B) is also present. Explanation says 'Simplify: 8/12 = 2/3'. Same systematic issue.",
+      "suggestedFix": "Change correct answer to '2/3' (index 1), or remove '2/3' from options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q123-001",
+      "itemType": "question",
+      "itemId": "Q123",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q123 correct answer is '6/9' when '2/3' is also an option",
+      "description": "Q123 asks '4/9 + 2/9' and marks '6/9' (option B, index 1) as correct, but '2/3' (option C, index 2) is also present. Explanation says 'Simplify: 6/9 = 2/3'. Same systematic issue.",
+      "suggestedFix": "Change correct answer to '2/3' (index 2), or remove '2/3' from options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q127-001",
+      "itemType": "question",
+      "itemId": "Q127",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q127 correct answer is '9/15' when '3/5' is also an option",
+      "description": "Q127 asks '13/15 - 4/15' and marks '9/15' (option A, index 0) as correct, but '3/5' (option B, index 1) is also present. Explanation says 'Simplify: 9/15 = 3/5'. Same systematic issue.",
+      "suggestedFix": "Change correct answer to '3/5' (index 1), or remove '3/5' from options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q116-001",
+      "itemType": "question",
+      "itemId": "Q116",
+      "severity": "medium",
+      "category": "ambiguous",
+      "title": "Q116 correct answer is '2/5' but '4/10' (unsimplified) is the direct calculation result",
+      "description": "Q116 asks '8/10 - 4/10' and marks '2/5' (option B, index 1) as correct. This is actually fine — the simplified form IS the correct answer here. However this is inconsistent with Q55, Q78, Q97, Q100, Q102, Q119, Q123, Q127 where the unsimplified form is marked correct. The inconsistency is confusing for children practising.",
+      "suggestedFix": "This question is correct as-is. The fix is to make the other 8 questions consistent with this approach (simplified = correct).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q138-001",
+      "itemType": "mapping",
+      "itemId": "Q138",
+      "severity": "medium",
+      "category": "mapping-efficacy",
+      "title": "Q138 (fraction × fraction) mapped to lesson that only teaches fraction × whole number",
+      "description": "Q138 asks 'Lily has 3/4 of a pizza. She gives 2/3 of what she has to her brother. What fraction of the whole pizza does her brother get?' This requires 2/3 × 3/4 (fraction times fraction). It's mapped to 'multiplying-fractions' which only teaches fraction × whole number (e.g. 2/5 × 3). The lesson doesn't cover multiplying two fractions together. Same issue affects Q146 (3/5 × 5/9), Q199 (2/3 × 3/5), Q200 (3/4 × 2/7), Q201 (2/3 × 3/4).",
+      "suggestedFix": "Either expand the multiplying-fractions lesson to cover fraction × fraction (with the 'multiply tops, multiply bottoms' method), or create a separate sub-concept. The existing lesson name 'Multiplying Fractions by Whole Numbers' makes clear it doesn't cover this case.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q067-001",
+      "itemType": "question",
+      "itemId": "Q67",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "Q67 rated D3 but is a straightforward D2 subtraction with different denominators",
+      "description": "Q67 asks 'A recipe needs 2/3 cup of sugar. Sophie has 1/6 cup. How much more does she need?' This is a simple subtraction: 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2. It's a two-step problem (find LCD, subtract) with friendly numbers and one denominator is a multiple of the other. This matches D2 criteria, not D3.",
+      "suggestedFix": "Reclassify from D3 to D2.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q010-001",
+      "itemType": "question",
+      "itemId": "Q10",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "Q10 rated D2 but is a simple D1 same-denominator subtraction",
+      "description": "Q10 asks 'A pizza is cut into 8 equal slices. Tom eats 3 slices. What fraction of the pizza is left?' This is 8/8 - 3/8 = 5/8. Single step, same denominator, small familiar numbers. The only 'extra' step is recognising that 3 slices out of 8 = 3/8, which is basic for a 9-year-old. Matches D1 criteria.",
+      "suggestedFix": "Reclassify from D2 to D1.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q019-001",
+      "itemType": "question",
+      "itemId": "Q19",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "Q19 rated D2 but is basic simplification (D1)",
+      "description": "Q19 asks 'In a bag of 60 sweets, 15 are red. What fraction are red?' This is 15/60 = 1/4. It requires forming the fraction and simplifying — but 15 and 60 are very friendly numbers (divide by 15). This is the same difficulty as other D1 simplification questions (e.g. Q13: 18/24, Q40: 15/25).",
+      "suggestedFix": "Reclassify from D2 to D1.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-META-004",
+      "itemType": "meta",
+      "itemId": "visual-questions",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "Very few visual/diagram fraction questions despite GL emphasis",
+      "description": "Only 9 questions have visual components (all SVG images for the first 35 questions). The GL research notes visual/diagram fractions as a distinct question type: 'What fraction of this shape is shaded?' with potentially irregular divisions. The question bank has no 'fraction of a shape' visual questions — all visuals are illustrative (bottle, pizza, jugs) rather than requiring the child to interpret a diagram to find the fraction.",
+      "suggestedFix": "Add 5-10 visual fraction questions where children must determine what fraction of a shape is shaded, including: regular grids with partial shading, shapes divided into unequal parts, composite shapes. These test a distinct GL skill.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-FRC-Q001-001",
+      "itemType": "question",
+      "itemId": "Q1",
+      "severity": "low",
+      "category": "poor-distractors",
+      "title": "Q1 has both '1/2' and '2/4' as options — these are equivalent fractions",
+      "description": "Q1 asks 'What fraction has Aisha drunk?' (1/4 + 1/4). Options include '1/2' (correct, index 1) and '2/4' (index 2). Since 2/4 = 1/2, there are technically two correct answers. The intended design is that 2/4 is the unsimplified distractor, but a child who picks 2/4 is mathematically correct. In a real GL exam, equivalent fractions in the options would not include both simplified and unsimplified as separate choices unless the question explicitly asks for simplest form.",
+      "suggestedFix": "Either add 'in its simplest form' to the question, or replace '2/4' with a different distractor (e.g. '3/8').",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

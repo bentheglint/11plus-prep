@@ -1,0 +1,1665 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "wordCodeAnalogies",
+    "displayName": "Word Code Analogies",
+    "extractedAt": "2026-03-30T13:51:13.906Z",
+    "subConceptCount": 8,
+    "lessonCount": 12,
+    "screenCount": 48,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "letter-swap",
+      "name": "First & Last Letter Swap",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "letter-swap-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when the first and last letters have swapped places",
+            "Use the 3-step method to crack swap transformations every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What happened to \"big\"?",
+              "body": "Daisy is solving word code puzzles at the kitchen table.\n\nIn a word code (a rule that changes how letters are written), a word goes in and a changed word comes out. It's like a secret language!\n\n**big → gib**\n\nThe letters haven't been added or removed — they've **moved**! Can you see what happened?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "big",
+                      "gib"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "hat",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "First & Last Swap",
+              "body": "Look at **big → gib**. The first and last letters have swapped places. The middle letter(s) stay where they are.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Spot, name, then apply. ✓",
+                "incorrectFeedback": "Not quite — always spot the change first before naming the rule!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: big → gib — the B and G swapped",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: first and last letters swap places",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to hat: swap H and T → tah",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — apply the rule!",
+              "body": "**big(gib)** → **hat(???)**\n\nThe first and last letters swap. What does **hat** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "tah",
+                  "ath",
+                  "hta",
+                  "tab",
+                  "tha"
+                ],
+                "correctAnswer": "tah",
+                "correctFeedback": "Brilliant! big→gib: the first letter (b) and last letter (g) swapped. Apply to hat: swap h and t → tah. The middle letter stays put. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"tah\". big→gib: the first letter (b) and last letter (g) swapped. Apply to hat: swap h and t → tah. The middle letter stays put. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "big",
+                      "gib"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "hat",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "First & Last Swap — sorted!",
+              "body": "You've got the swap rule down. Here's your checklist:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check: did the first letter move to the end?",
+                    "why": "And did the last letter move to the front?"
+                  },
+                  {
+                    "text": "2. The middle letters stay exactly where they are",
+                    "why": "Only the ends move"
+                  },
+                  {
+                    "text": "3. Apply: swap the first and last letters of the new word",
+                    "why": "pin → nip, hat → tah ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "letter-swap-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Understand why reversing the whole word is NOT the same as swapping the ends",
+            "Avoid the classic trap of confusing swap with reverse"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"mirt\" right for \"trim\"?",
+              "body": "Evie is checking her friend's VR homework. The rule is: **first and last letters swap**.\n\nThe answer given for **trim** was **\"mirt\"**.\n\nBut is that right? Press Next to find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "snap",
+                      "pnas"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "trim",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Swap ≠ Reverse!",
+              "body": "They reversed the whole word instead of just swapping the first and last letters\n\nA **swap** only moves the first and last letters. A **reverse** flips everything. They're different rules!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"trim\" — only swap the ENDS",
+                    "why": "The middle letters stay exactly where they are"
+                  },
+                  {
+                    "text": "Wrong: \"mirt\"",
+                    "why": "They reversed the whole word instead of just swapping the first and last letters"
+                  },
+                  {
+                    "text": "Correct: \"mrit\" ✓",
+                    "why": "Only the first and last letters changed places"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "The rule is **first and last letters swap**. What does **trim** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "mrit",
+                  "mirt",
+                  "tmir",
+                  "irmt",
+                  "rtim"
+                ],
+                "correctAnswer": "mrit",
+                "correctFeedback": "Well done! Only the first and last swap: t-r-i-m → m-r-i-t. The middle letters (r, i) stay in their places. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"mrit\". Only the first and last swap: t-r-i-m → m-r-i-t. The middle letters (r, i) stay in their places. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "snap",
+                      "pnas"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "trim",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Swap vs Reverse — now you'll never mix them up!",
+              "body": "These two rules look similar but work very differently:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "SWAP: only the first and last letters switch",
+                    "why": "stop → p-t-o-s (middle stays: t, o)"
+                  },
+                  {
+                    "text": "REVERSE: ALL letters flip backwards",
+                    "why": "stop → p-o-t-s (everything moves)"
+                  },
+                  {
+                    "text": "Check the MIDDLE letters — did they move?",
+                    "why": "If they stayed put, it's a swap ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "letter-removal",
+      "name": "Remove a Letter",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "letter-removal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when a letter has vanished from the word — and figure out which one",
+            "Identify which position the letter was removed from"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A letter has vanished!",
+              "body": "Daisy is solving word code puzzles in her VR book.\n\nLook carefully at this pair:\n\n**charm → harm**\n\nThe output word is shorter — a letter has been **removed**! Your job: figure out which one disappeared and from where.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "charm",
+                      "harm"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "blend",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spot the Missing Letter",
+              "body": "Look at **charm → harm**. Line up the letters side by side. The one that's gone tells you the rule — was it the first, second, or last letter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: charm → harm — the C at the start is gone",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: the first letter is removed",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to blend: remove B → lend",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — remove the letter!",
+              "body": "**charm(harm)** → **blend(???)**\n\nThe rule is: **remove the first letter**. What does **blend** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "lend",
+                  "bend",
+                  "lent",
+                  "blnd",
+                  "lena"
+                ],
+                "correctAnswer": "lend",
+                "correctFeedback": "Brilliant! charm→harm: the first letter (c) was removed. Apply to blend: remove the first letter (b) → lend. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"lend\". charm→harm: the first letter (c) was removed. Apply to blend: remove the first letter (b) → lend. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "charm",
+                      "harm"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "blend",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Letter removal — you've got this!",
+              "body": "When a letter disappears, here's your plan:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Line up the letters — which one is missing?",
+                    "why": "Count the letters: the output is shorter"
+                  },
+                  {
+                    "text": "2. Note the POSITION: first, second, last?",
+                    "why": "The position is the rule, not which specific letter"
+                  },
+                  {
+                    "text": "3. Remove the letter at the same position from the new word",
+                    "why": "charm→harm means 'remove first letter' for ANY word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "letter-removal-variety",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Handle removal from any position — first, second, last, or anywhere else",
+            "Count carefully to identify exactly which position was removed"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which letter vanished this time?",
+              "body": "Evie is tackling different letter removal patterns.\n\n**pleat → peat**\n\nOne letter has been removed — but this time it might not be the first or last! Your job: find WHICH position it was in, then remove the letter at the same position from the new word.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "pleat",
+                      "peat"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "steam",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count the position",
+              "body": "Look at **pleat → peat**. Line up the letters and count from the left to find which position is missing.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: pleat → peat — the L (2nd letter) is gone",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: the second letter is removed",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to steam: remove T (2nd letter) → seam",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**pleat(peat)** → **steam(???)**\n\nRemove the correct letter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "seam",
+                  "stem",
+                  "stam",
+                  "sear",
+                  "team"
+                ],
+                "correctAnswer": "seam",
+                "correctFeedback": "Brilliant! pleat→peat: the second letter (l) was removed. Apply to steam: remove the second letter (t) → seam. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"seam\". pleat→peat: the second letter (l) was removed. Apply to steam: remove the second letter (t) → seam. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "pleat",
+                      "peat"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "steam",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Position is everything!",
+              "body": "Here's the important thing to remember — the rule is about POSITION, not which specific letter it is:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letter: charm → harm, train → rain",
+                    "why": "Always the letter at position 1"
+                  },
+                  {
+                    "text": "Second letter: plan → pan, pleat → peat",
+                    "why": "Always the letter at position 2"
+                  },
+                  {
+                    "text": "Last letter: boat → boa, wheat → whea",
+                    "why": "Always the final letter ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "letter-replacement",
+      "name": "Replace a Letter",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "letter-replacement-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when one letter has been secretly swapped for another",
+            "Figure out WHICH position changes and what it changes to"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Olivia",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something's different...",
+              "body": "Olivia is working on code puzzles in her VR practice.\n\n**bat → cat**\n\nThe word is the same length — no letters were added or removed. But something has **changed**! Can you spot which letter is different, and what it changed to?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "bat",
+                      "cat"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dog",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the Changed Letter",
+              "body": "Look at **bat → cat**. Go through each letter position. When you find one that's different, you've found the rule.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the change, understand the pattern, then apply it. ✓",
+                "incorrectFeedback": "Not quite — start by comparing letter by letter to find what changed!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: bat → cat — the B changed to C",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: first letter moves forward one in the alphabet (B→C)",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to dog: D moves forward one → E, so dog → eog",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — make the swap!",
+              "body": "**bat(cat)** → **dog(???)**\n\nThe rule is: **the first letter changes to the next letter in the alphabet**. What does **dog** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "eog",
+                  "cog",
+                  "fog",
+                  "doh",
+                  "doe"
+                ],
+                "correctAnswer": "eog",
+                "correctFeedback": "Brilliant! bat→cat: the first letter moved forward one in the alphabet (B→C). Apply to dog: D→E, so dog → eog. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"eog\". bat→cat: the first letter moved forward one in the alphabet (B→C). Apply to dog: D→E, so dog → eog. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "bat",
+                      "cat"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dog",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Letter replacement — easy when you know how!",
+              "body": "When a letter changes to a different one, follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Compare letter by letter — which position changed?",
+                    "why": "Same length word = a replacement, not removal"
+                  },
+                  {
+                    "text": "2. What did it change TO? Is there a pattern?",
+                    "why": "Fixed letter (always T)? Or alphabet shift (B→C, D→E)?"
+                  },
+                  {
+                    "text": "3. Apply the same change at the same position",
+                    "why": "map→mat (last→T) means cap→cat (last→T) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-word",
+      "name": "Reverse the Word",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "reverse-word-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when a word has been flipped backwards — it's a common trick!",
+            "Reverse words of different lengths accurately every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you read it backwards?",
+              "body": "Daisy is spotting reversal patterns in her VR book.\n\nDid you know? STAR backwards is RATS, and LIVE backwards is EVIL! Writing words backwards is one of the most common word code rules — and once you spot it, it's really satisfying.\n\n**STAR → RATS**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STAR",
+                      "RATS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "STOP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Write it backwards",
+              "body": "Look at **STAR → RATS**. Start from the LAST letter of **STOP** and work backwards to the first. Write down each letter as you go.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: STAR → RATS — the letters are in reverse order",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: the whole word is reversed",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to STOP: write it backwards → POTS",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — reverse it!",
+              "body": "**STAR(RATS)** → **STOP(???)**\n\nReverse the word!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "POTS",
+                  "TOPS",
+                  "SPOT",
+                  "POST",
+                  "OPTS"
+                ],
+                "correctAnswer": "POTS",
+                "correctFeedback": "Brilliant! STAR→RATS: every letter is reversed. Apply to STOP: S-T-O-P backwards = P-O-T-S → POTS. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"POTS\". STAR→RATS: every letter is reversed. Apply to STOP: S-T-O-P backwards = P-O-T-S → POTS. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STAR",
+                      "RATS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "STOP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reversals — simple but satisfying!",
+              "body": "To reverse a word, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Start from the LAST letter",
+                    "why": "Write it down first"
+                  },
+                  {
+                    "text": "2. Work backwards to the FIRST letter",
+                    "why": "Write each letter as you go"
+                  },
+                  {
+                    "text": "3. Check: the first letter is now last, and vice versa",
+                    "why": "STAR → RATS, STOP → POTS ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "letter-shift",
+      "name": "Alphabet Shift",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "letter-shift-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when every letter has shifted forward or backward in the alphabet",
+            "Apply +1, +2, or -1 shifts confidently — one letter at a time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Every letter has shifted!",
+              "body": "Daisy is cracking alphabet shift codes.\n\n**CAT → DBU**\n\nEvery single letter has changed — but here's the key: they've all moved by the **same amount**! Use the alphabet line to count how far each letter shifted.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Count the shift",
+              "body": "Look at **CAT → DBU**. Use the alphabet line to count how many places the first letter moved. Then check the others match.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In an alphabet shift, every letter moves by the ____ amount in the alphabet",
+                "options": [
+                  "same",
+                  "different",
+                  "random",
+                  "increasing"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Every letter shifts by the same amount — that's what makes it an alphabet shift. ✓",
+                "incorrectFeedback": "Not quite — in an alphabet shift, every letter moves by the same amount!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — shift the letters!",
+              "body": "**CAT(DBU)** → **DOG(???)**\n\nThe rule is: **each letter shifts forward 1 place in the alphabet**. Apply it letter by letter.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "EPH",
+                  "CPF",
+                  "DOH",
+                  "EOG",
+                  "FQI"
+                ],
+                "correctAnswer": "EPH",
+                "correctFeedback": "Brilliant! CAT→DBU: each letter shifted forward 1 (C→D, A→B, T→U). Apply to DOG: D→E, O→P, G→H → EPH. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"EPH\". CAT→DBU: each letter shifted forward 1 (C→D, A→B, T→U). Apply to DOG: D→E, O→P, G→H → EPH. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "CAT",
+                      "DBU"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DOG",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Alphabet shifts — you've got the method!",
+              "body": "When every letter changes by the same amount, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check the first letter — how far did it shift?",
+                    "why": "Count: A→B is +1, A→C is +2"
+                  },
+                  {
+                    "text": "2. Confirm the other letters shifted by the SAME amount",
+                    "why": "If the first is +1, ALL should be +1"
+                  },
+                  {
+                    "text": "3. Apply that shift to every letter in the new word",
+                    "why": "Go one letter at a time — don't rush! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "letter-shift-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Apply alphabet shifts to longer words — take it one letter at a time",
+            "Build the habit of working carefully so you don't make silly mistakes"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How far did the letters shift?",
+              "body": "Evie is practising +1 shifts with longer words.\n\n**FISH → GJTI**\n\nUse the alphabet line to count the gap between each pair of letters. Is it +1, +2, or -1?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Apply letter by letter",
+              "body": "Look at **FISH → GJTI**. Use the alphabet line — take each letter of **BARN** and shift it by the same amount.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**FISH(GJTI)** → **BARN(???)**\n\nShift each letter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "CBSO",
+                  "ABQM",
+                  "CBSN",
+                  "DCTP",
+                  "CBPO"
+                ],
+                "correctAnswer": "CBSO",
+                "correctFeedback": "Brilliant! FISH→GJTI: each letter shifted +1. Apply to BARN: B→C, A→B, R→S, N→O → CBSO. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"CBSO\". FISH→GJTI: each letter shifted +1. Apply to BARN: B→C, A→B, R→S, N→O → CBSO. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "FISH",
+                      "GJTI"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "BARN",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Top tips for staying accurate!",
+              "body": "Here are some tips that will help you nail alphabet shifts every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Write the alphabet out if you need to",
+                    "why": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+                  },
+                  {
+                    "text": "Go ONE letter at a time — no shortcuts",
+                    "why": "Rushing causes mistakes on the middle letters"
+                  },
+                  {
+                    "text": "Watch for wrap-around: after Z comes A",
+                    "why": "Z+1=A, A-1=Z ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "position-change",
+      "name": "Letter Rearrangement",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "position-change-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when letters have been shuffled around — like a word puzzle!",
+            "Track where each letter position moves to so you can apply the same pattern"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The letters have been shuffled!",
+              "body": "Daisy is cracking rearrangement codes in her VR book.\n\n**ABC → BCA**\n\nAll the same letters are still there — but they've **changed position**! It's like someone picked up the letters and moved them around. Can you spot the pattern?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "ABC",
+                      "BCA"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DOG",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Track each position",
+              "body": "Look at **ABC → BCA**. Number each letter's position, then see where each one ended up.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — rearrange!",
+              "body": "**ABC(BCA)** → **DOG(???)**\n\nThe rule is: **each letter rotates one position left (first goes to end)**. Rearrange the letters!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "OGD",
+                  "GDO",
+                  "DGO",
+                  "GOD",
+                  "ODG"
+                ],
+                "correctAnswer": "OGD",
+                "correctFeedback": "Brilliant! ABC→BCA: the first letter moved to the end (left rotation). Apply to DOG: D moves to end → OGD. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"OGD\". ABC→BCA: the first letter moved to the end (left rotation). Apply to DOG: D moves to end → OGD. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "ABC",
+                      "BCA"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DOG",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Rearrangements — just track the positions!",
+              "body": "When letters change position, here's how to crack it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check: are the same letters all still there?",
+                    "why": "If yes, it's a rearrangement (not removal or replacement)"
+                  },
+                  {
+                    "text": "2. Track where each position moved to",
+                    "why": "Did the 1st go to the end? Did the last go to the front?"
+                  },
+                  {
+                    "text": "3. Apply the same position changes to the new word",
+                    "why": "ABC→BCA means DOG→OGD ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vowel-removal",
+      "name": "Remove All Vowels",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "vowel-removal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when all the vowels have been stripped away!",
+            "Apply vowel removal carefully to any word"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The vowels have vanished!",
+              "body": "Daisy is cracking vowel removal codes.\n\n**HOUSE → HS**\n\nThe word got much shorter! Some letters were removed — but not just any letters. Think about what A, E, I, O, U have in common. They're all **vowels**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "HOUSE",
+                      "HS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TRAIN",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Vowels = A, E, I, O, U",
+              "body": "Look at **HOUSE → HS**. The vowels are **A, E, I, O, U**. When these are all removed, only the consonants (all the other letters) are left.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The letters removed from HOUSE are all ____ — A, E, I, O, U",
+                "options": [
+                  "vowels",
+                  "consonants",
+                  "capitals",
+                  "silent letters"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Vowels are A, E, I, O, U — remove them all and only consonants remain. ✓",
+                "incorrectFeedback": "Not quite — the five letters A, E, I, O, U are called vowels!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: HOUSE → HS — the O, U, and E are gone",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: all vowels are removed",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to TRAIN: remove A and I → TRN",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — strip the vowels!",
+              "body": "**HOUSE(HS)** → **TRAIN(???)**\n\nRemove all vowels (A, E, I, O, U)!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "TRN",
+                  "TRAN",
+                  "RAIN",
+                  "TRA",
+                  "RN"
+                ],
+                "correctAnswer": "TRN",
+                "correctFeedback": "Brilliant! HOUSE→HS: all vowels (O, U, E) were removed. Apply to TRAIN: remove vowels (A, I) → TRN. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"TRN\". HOUSE→HS: all vowels (O, U, E) were removed. Apply to TRAIN: remove vowels (A, I) → TRN. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "HOUSE",
+                      "HS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TRAIN",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Vowel removal — simple but effective!",
+              "body": "Remember your five vowels: A, E, I, O, U. Here's the method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Spot it: the output is much shorter",
+                    "why": "And the remaining letters are all consonants"
+                  },
+                  {
+                    "text": "2. Check: A, E, I, O, U — are they ALL gone?",
+                    "why": "If yes, the rule is 'remove all vowels'"
+                  },
+                  {
+                    "text": "3. Go through the new word letter by letter",
+                    "why": "Cross out every A, E, I, O, U you find ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combined-rules",
+      "name": "Two Rules at Once",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "combined-rules-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when TWO transformations have been applied — not just one!",
+            "Break a combined rule into two separate steps so it's easy to follow"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This one has TWO rules!",
+              "body": "Daisy is tackling harder code puzzles with two rules.\n\n**CAT → TA**\n\nThis doesn't look like any single rule you've seen before, does it? That's because sometimes the puzzle uses **two transformations** applied one after the other. Once you spot that, it all clicks!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "CAT",
+                      "TA"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "BIG",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Break it into two steps",
+              "body": "Look at **CAT → TA**. When one rule doesn't explain the change, try combining two rules. Do them one at a time.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: CAT → TA — the C is gone, and AT is reversed to TA",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: remove the first letter, then reverse",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to BIG: remove B → IG, reverse → GI",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — two rules!",
+              "body": "**CAT(TA)** → **BIG(???)**\n\nThe rule is: **remove the first letter, then reverse what's left**. Apply both steps!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "GI",
+                  "IG",
+                  "IB",
+                  "BI",
+                  "BG"
+                ],
+                "correctAnswer": "GI",
+                "correctFeedback": "Brilliant! CAT→TA: remove the first letter (C→AT), then reverse (AT→TA). Apply to BIG: remove B (→IG), then reverse → GI. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"GI\". CAT→TA: remove the first letter (C→AT), then reverse (AT→TA). Apply to BIG: remove B (→IG), then reverse → GI. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "CAT",
+                      "TA"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "BIG",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two rules — you can handle anything now!",
+              "body": "When one rule doesn't explain the change, here's your approach:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. If one rule doesn't work, try TWO",
+                    "why": "Remove + reverse? Shift + reverse?"
+                  },
+                  {
+                    "text": "2. Do one rule at a time — write down the middle step",
+                    "why": "Don't try to do both in your head!"
+                  },
+                  {
+                    "text": "3. Common combos: remove + reverse, shift + reverse",
+                    "why": "Practise these pairs and they'll become easy ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "combined-rules-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Tackle different combinations of two rules with growing confidence",
+            "Master multi-step transformations — applying more than one change to a word"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot BOTH rules?",
+              "body": "Evie is practising double rules to build speed.\n\n**STOP → OTS**\n\nThis one definitely has more than one step. Can you work out what two things happened?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STOP",
+                      "OTS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CLAP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Two steps, one at a time",
+              "body": "Look at **STOP → OTS**. Write down the middle step — the result after rule 1 but before rule 2.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Compare: STOP reversed = POTS, remove first letter P → OTS ✓",
+                    "why": "Look for what changed between the original and coded word"
+                  },
+                  {
+                    "text": "Step 2: Name the rule: reverse the word, then remove the first letter",
+                    "why": "Put the rule into words you can apply"
+                  },
+                  {
+                    "text": "Step 3: Apply to CLAP: reverse → PALC, remove first letter P → ALC",
+                    "why": "Use the exact same rule on the new word ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**STOP(OTS)** → **CLAP(???)**\n\nApply the combined rule: **reverse the word, then remove the first letter**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "ALC",
+                  "LAP",
+                  "ALP",
+                  "PLA",
+                  "CAL"
+                ],
+                "correctAnswer": "ALC",
+                "correctFeedback": "Brilliant! STOP reversed = POTS, remove first letter P = OTS ✓. Apply to CLAP: reverse = PALC, remove first letter P = ALC. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ALC\". STOP reversed = POTS, remove first letter P = OTS ✓. Apply to CLAP: reverse = PALC, remove first letter P = ALC. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Input",
+                  "Output"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STOP",
+                      "OTS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CLAP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You can tackle anything now!",
+              "body": "Multi-step rules are the trickiest ones in the exam — but now you know the secret:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. If one rule doesn't explain everything, try two",
+                    "why": "The word changed length AND order? That's two rules"
+                  },
+                  {
+                    "text": "2. WRITE DOWN the middle step on paper",
+                    "why": "Don't hold both transformations in your head"
+                  },
+                  {
+                    "text": "3. Apply rules in the same order each time",
+                    "why": "Step 1 first, step 2 second — order matters! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

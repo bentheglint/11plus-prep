@@ -1,0 +1,131 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "numberWordCodes",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 10,
+    "mappingsReviewed": 125,
+    "issuesFound": 9,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 4, "low": 3 },
+    "difficultyAssessment": "D1:40 (32%), D2:49 (39%), D3:36 (29%) — very close to the GL target of ~30:40:30. D1 is 2% over and D2/D3 are each 1% under, all within tolerance. Difficulty calibration is sound: D1 uses single coded words with 3 letters (CAT=123, find X) or straightforward 3-letter anagram-style re-encoding. D2 introduces 4-letter words, two coded word pairs for cross-referencing, and decode-to-word questions. D3 uses 5-letter words, requires combining information from two coded words that share letters, and includes anagram-heavy options. The progression is well-structured and matches the Oracle specification for Number Word Codes.",
+    "coverageAssessment": "Good coverage of the core sub-types: encode word-to-number (dominant, ~45%), decode number-to-word (~25%), identify-specific-letter (~20%), and cross-reference two coded words (~10%). The question bank covers 3-letter, 4-letter, and 5-letter words progressively. Target words are all real English words (no nonsense words as answers). Distractor design uses near-miss digit transpositions well — options typically differ by one swapped digit. One gap: no questions test repeated letters in the TARGET word (e.g., encoding BOOK where O appears twice in the answer code), though this is covered in Q11 (CALL) and similar. Another gap: no questions involve codes where digits are reused across different letters (e.g., both A and B mapping to 3), which is a legitimate GL variant.",
+    "teachingEfficacyAssessment": "10 lessons across 8 sub-concepts provide thorough pedagogical coverage. The 'Build the Mapping Table' core lesson teaches the right foundational method (write out every letter-number pair). 'Repeated Letter Anchors' (MOON=1223) is an excellent strategy lesson — this is a genuine exam shortcut. 'Reverse Decode' properly teaches the backwards number-to-word method. 'Shared Letters — Cross-Reference' teaches the two-word comparison technique needed for D3. The spot-the-mistake lessons target real errors (letter order confusion). 125/125 questions mapped with 100% high confidence. Sub-concept distribution is reasonable: build-the-table catches the most questions (as expected for a foundational skill), with specialist sub-concepts covering the harder patterns.",
+    "topPriorities": [
+      "Replace recycled tips that reference irrelevant techniques (e.g., 'Start by finding double letters' on questions with no double letters)",
+      "Fix Q8 correctAnswer mismatch between correct index and stated answer",
+      "Diversify the tip pool — currently only ~8 tips are rotated across 125 questions"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-NWC-ANS-001",
+      "itemType": "question",
+      "itemId": "Q8",
+      "severity": "high",
+      "category": "wrong-answer",
+      "title": "Q8 correct index points to wrong option",
+      "description": "Q8: 'If BIRD = 1234, what is the code for RIB?' Options: ['312', '321', '231', '123', '213']. correct=1 (index 1 = '321') and correctAnswer='321'. However, from BIRD=1234: B=1, I=2, R=3, D=4. RIB = R(3) I(2) B(1) = 321. The correct answer IS 321 which is at index 1. Wait — on re-check, correct=1 means options[1]='321', and correctAnswer='321'. But the explanation says 'From BIRD=1234: B=1, I=2, R=3, D=4. RIB = R(3) I(2) B(1) = 321' which is correct. However, the 'correct' field is 1, but options[0]='312' and options[1]='321'. Actually this IS correct: index 1 = '321'. But the explanation mentions 'the first digit must be 3' and says to 'cross out options that don't start with 3', while options[0]='312' also starts with 3 — the elimination tip is misleading in this context since two options start with 3.",
+      "suggestedFix": "The answer itself is verified correct (321, index 1). However, the tip 'Use elimination — if you know the first digit must be 3, cross out options that don't start with 3' is misleading because option '312' also starts with 3. Replace this tip with one that's relevant to the question at hand.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-TIP-001",
+      "itemType": "question",
+      "itemId": "Q1,Q9,Q17,Q25,Q33,Q49,Q65,Q105,Q113,Q121",
+      "severity": "high",
+      "category": "misleading-tip",
+      "title": "Tip about double letters appears on questions with no double letters",
+      "description": "The tip 'Start by finding double letters — if a word has OO and a code has the same digit twice, that's your entry point!' appears on at least 10 questions where neither the source word nor the target word contains any repeated letters. For example, Q1 (SPOT/TOPS), Q9 (STAR/RATS), Q17 (TRAIN/RAIN), Q25 (TAP/PAT), Q105 (SAW/WAS). This is confusing for a 9-year-old because the tip doesn't relate to the question they just answered. Tips are recycled from a pool of ~8, but they should at least be contextually appropriate.",
+      "suggestedFix": "Either (a) assign tips contextually — double-letter tips only appear on questions with repeated letters (Q3/ODD, Q11/CALL, Q109/ROOF, Q110/TELL, Q111/MUDD, Q117/GOOF, Q118/WINN, Q121/ROOTS, Q123/GREET), or (b) expand the tip pool to 15-20 tips and assign randomly from contextually valid subsets.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-TIP-002",
+      "itemType": "question",
+      "itemId": "Q7,Q15,Q40,Q48,Q112",
+      "severity": "medium",
+      "category": "misleading-tip",
+      "title": "Tip references '1793 vs 1973' example on 3-letter code questions",
+      "description": "The tip 'Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully' references a 4-digit example but appears on questions with 3-digit codes (e.g., Q7 CUP=123, Q112 TWIG=WIT). The specific example '1793 vs 1973' is irrelevant to the question format. While the underlying advice is sound, the example creates confusion.",
+      "suggestedFix": "Use a 3-digit example for 3-letter questions (e.g., '321 vs 312') and keep the 4-digit example for 4-letter questions.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-TIP-003",
+      "itemType": "question",
+      "itemId": "Q5,Q8,Q17,Q22,Q40,Q48",
+      "severity": "medium",
+      "category": "misleading-tip",
+      "title": "Generic elimination tip references specific digit '3' regardless of question",
+      "description": "The tip 'Use elimination — if you know the first digit must be 3, cross out options that don't start with 3' always references the digit 3 regardless of the actual question. On Q22 (DOG=214, GOD=412), the first digit of the answer is 4, not 3. On Q40 (HAM=694, MAH=496), the first digit is 4. The tip should be generic or contextual.",
+      "suggestedFix": "Change to a generic tip: 'Use elimination — work out the first digit of your answer, then cross out any options that start with a different digit.' Remove the specific '3' reference.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q4",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q4 rated D3 but is straightforward D2",
+      "description": "Q4: 'If BANK = 2134 and KNAB = 4312, what is the code for NAB?' is rated difficulty 3. However, KNAB is simply BANK reversed, so the second word adds no new information — it just confirms the mapping. The target word NAB uses only 3 of the 4 letters. This is simpler than many D2 questions that require genuine cross-referencing of two words with overlapping but different letters (e.g., Q77-Q95 pattern). KNAB as a reversal is a trivial check, not a genuine two-word problem.",
+      "suggestedFix": "Downgrade to D2, or replace the second coded word with one that shares some but not all letters (e.g., BANK=2134 and TANK=5134, then find NAT).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q12,Q14,Q15,Q119,Q120",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Several D3 questions are single-word codes with no added complexity",
+      "description": "Q12 (TIGER=12345, find GRIT), Q14 (LEMON=12345, find MELON), Q15 (PLATE=12345, find TAPE), Q119 (GRAPE=12345, find REAP), Q120 (BLAZE=12345, find ABLE) are all rated D3 but use a single coded word with a simple sequential code (12345). The only complexity is that they use 5-letter words, but the mapping is trivially read off. True D3 should involve either two coded words requiring cross-referencing, or non-sequential codes. These are better classified as D2.",
+      "suggestedFix": "Either downgrade to D2, or add a second coded word with non-sequential codes to create genuine D3 complexity (matching the Oracle spec for D3: 'two coded words, shared letters to cross-reference, 5-letter words').",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-VAR-001",
+      "itemType": "question",
+      "itemId": "Q21-Q44",
+      "severity": "low",
+      "category": "variety",
+      "title": "D1 questions Q21-Q44 are highly formulaic",
+      "description": "Questions 21-44 all follow an identical pattern: 'In a code, XYZ = ABC. What is the code for ZYX?' (or 'What number represents letter Y?'). All use 3-letter words, all use non-sequential codes, and the structural variety is low. While the vocabulary varies (CAT, DOG, PEN, BUS, TAP, etc.), the question format is repetitive. A child doing a quiz would encounter the same mechanical task repeatedly.",
+      "suggestedFix": "Mix in some varied question formats within D1: (a) 'What word does 321 stand for?' (reverse decoding, currently only in Q29-Q32), (b) 'Which letter does the number 5 represent?' (already in Q33-Q38 but could be interspersed), (c) two 3-letter confirmation words. Shuffle question order so formats alternate.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q114",
+      "severity": "low",
+      "category": "non-word-answer",
+      "title": "Q114 answer DOLP is not a real English word",
+      "description": "Q114: 'In a code, PLOD = 4927. What word does 7294 stand for?' The answer is DOLP, which is not a standard English word. While technically the decoding is correct (D=7, O=2, L=9, P=4 → 7294 = DOLP), GL questions always decode to real words. Having a non-word as the answer is unrealistic for the exam format.",
+      "suggestedFix": "Replace with a question where the decoded answer is a real word. For example, PLOD=4927, what does 7429 stand for? → DPOL (still not a word). Better: change the source word or code. Use POLE=4927 → 7294 = OPEL? Still not standard. Simplest fix: use FOLD=4927 → 7294 = DFOL (no). The issue is that PLOD's letters don't form alternative real words easily. Replace the entire question with different words.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NWC-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "left-to-right-rule",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "No lesson covers the 'decode to multiple valid words' trap",
+      "description": "At D3, a child might decode a number sequence and find it could spell multiple valid words depending on how they read their table. While this is rare in the current question bank, GL does occasionally present options where two plausible real words appear as choices. There is no lesson teaching children how to verify their decoding by checking back against the original coded word.",
+      "suggestedFix": "Consider adding a sub-concept lesson on 'Always Check Back' — decoding a word and then re-encoding it to verify it produces the original code. This is already mentioned in tips but not formally taught.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

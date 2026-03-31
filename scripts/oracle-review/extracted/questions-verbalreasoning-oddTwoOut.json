@@ -1,0 +1,2770 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "oddTwoOut",
+    "displayName": "Odd Two Out",
+    "extractedAt": "2026-03-30T13:05:32.797Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 51,
+      "D3": 36
+    },
+    "questionTypes": {
+      "select-two": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "eagle",
+        "sparrow",
+        "bat",
+        "penguin",
+        "robin"
+      ],
+      "correctAnswer": "bat + penguin",
+      "explanation": "Eagle, sparrow, and robin are all common flying birds. Bat is a mammal (not a bird), and penguin is a bird that cannot fly. Both are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "table",
+        "chair",
+        "lamp",
+        "sofa",
+        "wardrobe"
+      ],
+      "correctAnswer": "lamp + wardrobe",
+      "explanation": "Table, chair, and sofa are all furniture you sit at or on. A lamp provides light and a wardrobe stores clothes — neither is for sitting. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "apple",
+        "carrot",
+        "banana",
+        "grape",
+        "potato"
+      ],
+      "correctAnswer": "carrot + potato",
+      "explanation": "Apple, banana, and grape are all fruits. Carrot and potato are vegetables, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "goldfish",
+        "hamster",
+        "rabbit",
+        "trout",
+        "guinea pig"
+      ],
+      "correctAnswer": "goldfish + trout",
+      "explanation": "Hamster, rabbit, and guinea pig are furry pets you can hold. Goldfish and trout are both fish, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "red",
+        "triangle",
+        "blue",
+        "green",
+        "square"
+      ],
+      "correctAnswer": "triangle + square",
+      "explanation": "Red, blue, and green are all colours. Triangle and square are shapes, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "violin",
+        "crayon",
+        "trumpet",
+        "flute",
+        "paintbrush"
+      ],
+      "correctAnswer": "crayon + paintbrush",
+      "explanation": "Violin, trumpet, and flute are all musical instruments. Crayon and paintbrush are art supplies, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "tennis",
+        "chess",
+        "badminton",
+        "draughts",
+        "squash"
+      ],
+      "correctAnswer": "chess + draughts",
+      "explanation": "Tennis, badminton, and squash are all racquet sports. Chess and draughts are board games, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "fork",
+        "saucepan",
+        "knife",
+        "spoon",
+        "frying pan"
+      ],
+      "correctAnswer": "saucepan + frying pan",
+      "explanation": "Fork, knife, and spoon are all cutlery. Saucepan and frying pan are cooking pans, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oak",
+        "daisy",
+        "willow",
+        "beech",
+        "tulip"
+      ],
+      "correctAnswer": "daisy + tulip",
+      "explanation": "Oak, willow, and beech are all types of tree. Daisy and tulip are flowers, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "whisper",
+        "listen",
+        "shout",
+        "announce",
+        "hear"
+      ],
+      "correctAnswer": "listen + hear",
+      "explanation": "Whisper, shout, and announce all involve speaking or making a sound. Listen and hear both involve receiving sound, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "iron",
+        "cotton",
+        "steel",
+        "bronze",
+        "silk"
+      ],
+      "correctAnswer": "cotton + silk",
+      "explanation": "Iron, steel, and bronze are all metals. Cotton and silk are fabrics, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "foal",
+        "stallion",
+        "calf",
+        "mare",
+        "lamb"
+      ],
+      "correctAnswer": "calf + lamb",
+      "explanation": "Foal, stallion, and mare are all types of horse (young, male adult, female adult). Calf (young cow) and lamb (young sheep) are baby animals of different species, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "sprint",
+        "marathon",
+        "crawl",
+        "relay",
+        "stroll"
+      ],
+      "correctAnswer": "crawl + stroll",
+      "explanation": "Sprint, marathon, and relay are all types of race. Crawl and stroll are slow ways of moving, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "metre",
+        "kilogram",
+        "centimetre",
+        "mile",
+        "tonne"
+      ],
+      "correctAnswer": "kilogram + tonne",
+      "explanation": "Metre, centimetre, and mile are all units of length. Kilogram and tonne are units of weight, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "biography",
+        "tragedy",
+        "autobiography",
+        "comedy",
+        "encyclopedia"
+      ],
+      "correctAnswer": "tragedy + comedy",
+      "explanation": "Biography, autobiography, and encyclopedia are all types of non-fiction writing. Tragedy and comedy are types of drama, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 16,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "radius",
+        "volume",
+        "diameter",
+        "circumference",
+        "capacity"
+      ],
+      "correctAnswer": "volume + capacity",
+      "explanation": "Radius, diameter, and circumference are all measurements of a circle. Volume and capacity are measurements of 3D space, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 17,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "simile",
+        "adjective",
+        "metaphor",
+        "personification",
+        "adverb"
+      ],
+      "correctAnswer": "adjective + adverb",
+      "explanation": "Simile, metaphor, and personification are all figures of speech. Adjective and adverb are word classes, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 18,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "serene",
+        "furious",
+        "tranquil",
+        "placid",
+        "irate"
+      ],
+      "correctAnswer": "furious + irate",
+      "explanation": "Serene, tranquil, and placid all mean calm and peaceful. Furious and irate both mean very angry, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "valley",
+        "strait",
+        "plateau",
+        "channel",
+        "cliff"
+      ],
+      "correctAnswer": "strait + channel",
+      "explanation": "Valley, plateau, and cliff are all land formations. Strait and channel are both narrow passages of water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "democracy",
+        "sonnet",
+        "republic",
+        "monarchy",
+        "limerick"
+      ],
+      "correctAnswer": "sonnet + limerick",
+      "explanation": "Democracy, republic, and monarchy are all types of government. Sonnet and limerick are types of poem, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "shark",
+        "cod",
+        "eagle",
+        "mackerel",
+        "owl"
+      ],
+      "correctAnswer": "eagle + owl",
+      "explanation": "Shark, cod, and mackerel are all fish. Eagle and owl are birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "bookcase",
+        "wardrobe",
+        "jumper",
+        "trousers",
+        "coat"
+      ],
+      "correctAnswer": "bookcase + wardrobe",
+      "explanation": "Jumper, trousers, and coat are all items of clothing. Bookcase and wardrobe are pieces of furniture, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "helicopter",
+        "bicycle",
+        "scooter",
+        "skateboard",
+        "aeroplane"
+      ],
+      "correctAnswer": "helicopter + aeroplane",
+      "explanation": "Bicycle, scooter, and skateboard all travel on the ground with wheels. Helicopter and aeroplane both fly, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "rose",
+        "hammer",
+        "daffodil",
+        "screwdriver",
+        "sunflower"
+      ],
+      "correctAnswer": "hammer + screwdriver",
+      "explanation": "Rose, daffodil, and sunflower are all flowers. Hammer and screwdriver are tools, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "rain",
+        "ankle",
+        "elbow",
+        "snow",
+        "wrist"
+      ],
+      "correctAnswer": "rain + snow",
+      "explanation": "Ankle, elbow, and wrist are all joints in the body. Rain and snow are types of weather, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "pear",
+        "lettuce",
+        "mango",
+        "spinach",
+        "plum"
+      ],
+      "correctAnswer": "lettuce + spinach",
+      "explanation": "Pear, mango, and plum are all fruits. Lettuce and spinach are leafy vegetables, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "drum",
+        "guitar",
+        "teddy bear",
+        "piano",
+        "doll"
+      ],
+      "correctAnswer": "teddy bear + doll",
+      "explanation": "Drum, guitar, and piano are all musical instruments. Teddy bear and doll are toys, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "Monday",
+        "March",
+        "Friday",
+        "August",
+        "Wednesday"
+      ],
+      "correctAnswer": "March + August",
+      "explanation": "Monday, Friday, and Wednesday are all days of the week. March and August are months of the year, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "sparrow",
+        "whale",
+        "dolphin",
+        "robin",
+        "seal"
+      ],
+      "correctAnswer": "sparrow + robin",
+      "explanation": "Whale, dolphin, and seal are all marine mammals. Sparrow and robin are small garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "library",
+        "hospital",
+        "school",
+        "bus",
+        "train"
+      ],
+      "correctAnswer": "bus + train",
+      "explanation": "Library, hospital, and school are all buildings. Bus and train are types of transport, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "crab",
+        "lobster",
+        "parrot",
+        "prawn",
+        "budgie"
+      ],
+      "correctAnswer": "parrot + budgie",
+      "explanation": "Crab, lobster, and prawn are all shellfish. Parrot and budgie are pet birds, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "bread",
+        "toast",
+        "milk",
+        "sandwich",
+        "juice"
+      ],
+      "correctAnswer": "milk + juice",
+      "explanation": "Bread, toast, and sandwich are all foods made from bread. Milk and juice are drinks, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oven",
+        "pencil",
+        "ruler",
+        "toaster",
+        "eraser"
+      ],
+      "correctAnswer": "oven + toaster",
+      "explanation": "Pencil, ruler, and eraser are all stationery items. Oven and toaster are kitchen appliances, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "cow",
+        "tiger",
+        "lion",
+        "leopard",
+        "sheep"
+      ],
+      "correctAnswer": "cow + sheep",
+      "explanation": "Tiger, lion, and leopard are all big cats. Cow and sheep are farm animals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "pond",
+        "lake",
+        "cherry",
+        "strawberry",
+        "raspberry"
+      ],
+      "correctAnswer": "pond + lake",
+      "explanation": "Cherry, strawberry, and raspberry are all red berries. Pond and lake are bodies of fresh water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "football",
+        "rugby",
+        "painting",
+        "cricket",
+        "sculpture"
+      ],
+      "correctAnswer": "painting + sculpture",
+      "explanation": "Football, rugby, and cricket are all team sports played with a ball. Painting and sculpture are forms of art, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "hat",
+        "glove",
+        "scarf",
+        "boot",
+        "slipper"
+      ],
+      "correctAnswer": "boot + slipper",
+      "explanation": "Hat, glove, and scarf are all winter accessories worn above the waist. Boot and slipper are types of footwear, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "candle",
+        "sun",
+        "pillow",
+        "torch",
+        "blanket"
+      ],
+      "correctAnswer": "pillow + blanket",
+      "explanation": "Candle, sun, and torch all give off light. Pillow and blanket are bedding items, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "broccoli",
+        "orange",
+        "cabbage",
+        "peach",
+        "apricot"
+      ],
+      "correctAnswer": "broccoli + cabbage",
+      "explanation": "Orange, peach, and apricot are all fruits. Broccoli and cabbage are vegetables, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "caterpillar",
+        "frog",
+        "butterfly",
+        "toad",
+        "bee"
+      ],
+      "correctAnswer": "frog + toad",
+      "explanation": "Caterpillar, butterfly, and bee are all insects. Frog and toad are amphibians, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "television",
+        "radio",
+        "sofa",
+        "armchair",
+        "stool"
+      ],
+      "correctAnswer": "television + radio",
+      "explanation": "Sofa, armchair, and stool are all things you sit on. Television and radio are electronic entertainment devices, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "eye",
+        "spoon",
+        "ear",
+        "fork",
+        "nose"
+      ],
+      "correctAnswer": "spoon + fork",
+      "explanation": "Eye, ear, and nose are all parts of the face. Spoon and fork are items of cutlery, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "nurse",
+        "teacher",
+        "stethoscope",
+        "thermometer",
+        "headteacher"
+      ],
+      "correctAnswer": "stethoscope + thermometer",
+      "explanation": "Nurse, teacher, and headteacher are all people with jobs. Stethoscope and thermometer are pieces of medical equipment, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "river",
+        "stream",
+        "mountain",
+        "canal",
+        "hill"
+      ],
+      "correctAnswer": "mountain + hill",
+      "explanation": "River, stream, and canal are all waterways. Mountain and hill are raised landforms, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "salmon",
+        "sparrow",
+        "trout",
+        "starling",
+        "pike"
+      ],
+      "correctAnswer": "sparrow + starling",
+      "explanation": "Salmon, trout, and pike are all freshwater fish. Sparrow and starling are common garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "cello",
+        "easel",
+        "violin",
+        "palette",
+        "harp"
+      ],
+      "correctAnswer": "easel + palette",
+      "explanation": "Cello, violin, and harp are all stringed instruments. Easel and palette are both used by painters, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "France",
+        "Edinburgh",
+        "Cardiff",
+        "Germany",
+        "Belfast"
+      ],
+      "correctAnswer": "France + Germany",
+      "explanation": "Edinburgh, Cardiff, and Belfast are all capital cities of UK nations. France and Germany are countries, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oboe",
+        "harp",
+        "clarinet",
+        "cello",
+        "bassoon"
+      ],
+      "correctAnswer": "harp + cello",
+      "explanation": "Oboe, clarinet, and bassoon are all woodwind instruments. Harp and cello are stringed instruments, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "rabbit",
+        "lion",
+        "wolf",
+        "deer",
+        "bear"
+      ],
+      "correctAnswer": "rabbit + deer",
+      "explanation": "Lion, wolf, and bear are all carnivores (meat-eaters). Rabbit and deer are herbivores (plant-eaters), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "Saturn",
+        "comet",
+        "Mars",
+        "asteroid",
+        "Jupiter"
+      ],
+      "correctAnswer": "comet + asteroid",
+      "explanation": "Saturn, Mars, and Jupiter are all planets in our solar system. Comet and asteroid are smaller objects that orbit the Sun, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "Antarctica",
+        "Brazil",
+        "Egypt",
+        "Arctic",
+        "India"
+      ],
+      "correctAnswer": "Antarctica + Arctic",
+      "explanation": "Brazil, Egypt, and India are all countries. Antarctica and Arctic are polar regions (not countries), so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "cub",
+        "puppy",
+        "stallion",
+        "kitten",
+        "bull"
+      ],
+      "correctAnswer": "stallion + bull",
+      "explanation": "Cub, puppy, and kitten are all names for young animals. Stallion (adult male horse) and bull (adult male cow) are names for adult animals, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "ruler",
+        "thermometer",
+        "protractor",
+        "barometer",
+        "compass"
+      ],
+      "correctAnswer": "thermometer + barometer",
+      "explanation": "Ruler, protractor, and compass are all maths instruments used for drawing and measuring on paper. Thermometer and barometer are scientific instruments that measure weather conditions, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "tennis",
+        "diving",
+        "volleyball",
+        "swimming",
+        "basketball"
+      ],
+      "correctAnswer": "diving + swimming",
+      "explanation": "Tennis, volleyball, and basketball are all played with a ball. Diving and swimming are water sports without a ball, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "yoghurt",
+        "cream",
+        "cheddar",
+        "brie",
+        "stilton"
+      ],
+      "correctAnswer": "yoghurt + cream",
+      "explanation": "Cheddar, brie, and stilton are all types of cheese. Yoghurt and cream are other dairy products, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "emerald",
+        "ruby",
+        "diamond",
+        "gold",
+        "silver"
+      ],
+      "correctAnswer": "gold + silver",
+      "explanation": "Emerald, ruby, and diamond are all gemstones. Gold and silver are precious metals, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "crocodile",
+        "whale",
+        "salmon",
+        "lizard",
+        "trout"
+      ],
+      "correctAnswer": "crocodile + lizard",
+      "explanation": "Whale, salmon, and trout all live in water. Crocodile and lizard are both reptiles that spend most of their time on land, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "bungalow",
+        "flat",
+        "cottage",
+        "tent",
+        "caravan"
+      ],
+      "correctAnswer": "tent + caravan",
+      "explanation": "Bungalow, flat, and cottage are all permanent homes. Tent and caravan are temporary or movable shelters, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "giggle",
+        "chuckle",
+        "sob",
+        "snigger",
+        "weep"
+      ],
+      "correctAnswer": "sob + weep",
+      "explanation": "Giggle, chuckle, and snigger are all ways of laughing. Sob and weep are ways of crying, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "nephew",
+        "aunt",
+        "cousin",
+        "uncle",
+        "niece"
+      ],
+      "correctAnswer": "aunt + uncle",
+      "explanation": "Nephew, cousin, and niece are all younger or same-generation relatives. Aunt and uncle are older-generation relatives (parents' siblings), so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "pint",
+        "gallon",
+        "inch",
+        "foot",
+        "yard"
+      ],
+      "correctAnswer": "pint + gallon",
+      "explanation": "Inch, foot, and yard are all units of length. Pint and gallon are units of volume (liquid measurement), so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "atlas",
+        "biography",
+        "globe",
+        "diary",
+        "map"
+      ],
+      "correctAnswer": "biography + diary",
+      "explanation": "Atlas, globe, and map are all used for geography and finding places. Biography and diary are both types of writing about a person's life, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "glacier",
+        "iceberg",
+        "desert",
+        "avalanche",
+        "volcano"
+      ],
+      "correctAnswer": "desert + volcano",
+      "explanation": "Glacier, iceberg, and avalanche are all related to ice and snow. Desert and volcano are associated with extreme heat, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oxygen",
+        "nitrogen",
+        "granite",
+        "helium",
+        "marble"
+      ],
+      "correctAnswer": "granite + marble",
+      "explanation": "Oxygen, nitrogen, and helium are all gases. Granite and marble are types of stone, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "judge",
+        "surgeon",
+        "dentist",
+        "barrister",
+        "optician"
+      ],
+      "correctAnswer": "judge + barrister",
+      "explanation": "Surgeon, dentist, and optician all work in healthcare. Judge and barrister both work in law, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "hurricane",
+        "earthquake",
+        "tornado",
+        "tsunami",
+        "cyclone"
+      ],
+      "correctAnswer": "earthquake + tsunami",
+      "explanation": "Hurricane, tornado, and cyclone are all powerful wind storms. Earthquake and tsunami are caused by movements of the Earth's crust, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "tortoise",
+        "python",
+        "cobra",
+        "turtle",
+        "viper"
+      ],
+      "correctAnswer": "tortoise + turtle",
+      "explanation": "Python, cobra, and viper are all types of snake. Tortoise and turtle both have shells, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "dash",
+        "sprint",
+        "crawl",
+        "race",
+        "creep"
+      ],
+      "correctAnswer": "crawl + creep",
+      "explanation": "Dash, sprint, and race all mean moving very quickly. Crawl and creep both mean moving very slowly, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "verse",
+        "chapter",
+        "chorus",
+        "paragraph",
+        "bridge"
+      ],
+      "correctAnswer": "chapter + paragraph",
+      "explanation": "Verse, chorus, and bridge are all parts of a song. Chapter and paragraph are parts of a book, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "cathedral",
+        "mosque",
+        "museum",
+        "synagogue",
+        "gallery"
+      ],
+      "correctAnswer": "museum + gallery",
+      "explanation": "Cathedral, mosque, and synagogue are all places of worship. Museum and gallery are places for viewing exhibits and art, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "violin",
+        "trombone",
+        "viola",
+        "trumpet",
+        "cello"
+      ],
+      "correctAnswer": "trombone + trumpet",
+      "explanation": "Violin, viola, and cello are all stringed instruments played with a bow. Trombone and trumpet are brass instruments, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "walnut",
+        "almond",
+        "wheat",
+        "cashew",
+        "barley"
+      ],
+      "correctAnswer": "wheat + barley",
+      "explanation": "Walnut, almond, and cashew are all types of nut. Wheat and barley are cereal grains, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "captain",
+        "private",
+        "bishop",
+        "sergeant",
+        "vicar"
+      ],
+      "correctAnswer": "bishop + vicar",
+      "explanation": "Captain, private, and sergeant are all military ranks. Bishop and vicar are members of the clergy, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "solar",
+        "coal",
+        "oil",
+        "wind",
+        "gas"
+      ],
+      "correctAnswer": "solar + wind",
+      "explanation": "Coal, oil, and gas are all fossil fuels. Solar and wind are renewable energy sources, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oak",
+        "fern",
+        "maple",
+        "moss",
+        "birch"
+      ],
+      "correctAnswer": "fern + moss",
+      "explanation": "Oak, maple, and birch are all deciduous trees. Fern and moss are small plants that grow in shady, damp places, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "sketch",
+        "novel",
+        "portrait",
+        "poem",
+        "watercolour"
+      ],
+      "correctAnswer": "novel + poem",
+      "explanation": "Sketch, portrait, and watercolour are all types of visual artwork. Novel and poem are types of written literature, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "second",
+        "metre",
+        "minute",
+        "kilometre",
+        "hour"
+      ],
+      "correctAnswer": "metre + kilometre",
+      "explanation": "Second, minute, and hour are all units of time. Metre and kilometre are units of distance, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 78,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "canine",
+        "molar",
+        "femur",
+        "wisdom",
+        "tibia"
+      ],
+      "correctAnswer": "femur + tibia",
+      "explanation": "Canine, molar, and wisdom are all types of tooth. Femur and tibia are bones in the leg, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "hexagon",
+        "pentagon",
+        "bicep",
+        "octagon",
+        "spine"
+      ],
+      "correctAnswer": "bicep + spine",
+      "explanation": "Hexagon, pentagon, and octagon are all geometric shapes (polygons). Bicep and spine are parts of the human body, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "kinetic",
+        "thermal",
+        "friction",
+        "electrical",
+        "gravity"
+      ],
+      "correctAnswer": "friction + gravity",
+      "explanation": "Kinetic, thermal, and electrical are all types of energy. Friction and gravity are types of force, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "igneous",
+        "clay",
+        "sedimentary",
+        "chalk",
+        "metamorphic"
+      ],
+      "correctAnswer": "clay + chalk",
+      "explanation": "Igneous, sedimentary, and metamorphic are the three types of rock. Clay and chalk are types of soil or soft earth material, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "scarce",
+        "abundant",
+        "plentiful",
+        "rare",
+        "ample"
+      ],
+      "correctAnswer": "scarce + rare",
+      "explanation": "Abundant, plentiful, and ample all mean there is a lot of something. Scarce and rare both mean there is very little, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "parliament",
+        "verdict",
+        "election",
+        "sentence",
+        "cabinet"
+      ],
+      "correctAnswer": "verdict + sentence",
+      "explanation": "Parliament, election, and cabinet are all related to government and politics. Verdict and sentence are terms used in law courts, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "erosion",
+        "weathering",
+        "evaporation",
+        "condensation",
+        "precipitation"
+      ],
+      "correctAnswer": "erosion + weathering",
+      "explanation": "Evaporation, condensation, and precipitation are all stages of the water cycle. Erosion and weathering are processes that wear away rock, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "tendon",
+        "artery",
+        "ligament",
+        "vein",
+        "cartilage"
+      ],
+      "correctAnswer": "artery + vein",
+      "explanation": "Tendon, ligament, and cartilage all connect or support bones and muscles. Artery and vein are both blood vessels, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "longitude",
+        "altitude",
+        "latitude",
+        "depth",
+        "equator"
+      ],
+      "correctAnswer": "altitude + depth",
+      "explanation": "Longitude, latitude, and equator are all geographical terms for positions on the Earth's surface. Altitude and depth are vertical measurements (height and how deep), so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "famine",
+        "drought",
+        "plague",
+        "flood",
+        "epidemic"
+      ],
+      "correctAnswer": "drought + flood",
+      "explanation": "Famine, plague, and epidemic are all related to widespread suffering from hunger or disease. Drought and flood are both extreme water-related weather events, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "prefix",
+        "suffix",
+        "paragraph",
+        "root",
+        "chapter"
+      ],
+      "correctAnswer": "paragraph + chapter",
+      "explanation": "Prefix, suffix, and root are all parts of a word. Paragraph and chapter are sections of written text, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "predator",
+        "photosynthesis",
+        "prey",
+        "respiration",
+        "germination"
+      ],
+      "correctAnswer": "predator + prey",
+      "explanation": "Photosynthesis, respiration, and germination are all biological processes in plants. Predator and prey describe animals in a food chain, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "acre",
+        "decade",
+        "hectare",
+        "century",
+        "square mile"
+      ],
+      "correctAnswer": "decade + century",
+      "explanation": "Acre, hectare, and square mile are all units of area. Decade and century are units of time, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "compass",
+        "anchor",
+        "telescope",
+        "rudder",
+        "microscope"
+      ],
+      "correctAnswer": "anchor + rudder",
+      "explanation": "Compass, telescope, and microscope are all instruments used for navigation or observation. Anchor and rudder are both parts of a ship, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "conceal",
+        "disguise",
+        "reveal",
+        "camouflage",
+        "expose"
+      ],
+      "correctAnswer": "reveal + expose",
+      "explanation": "Conceal, disguise, and camouflage all mean to hide something. Reveal and expose both mean to show something that was hidden, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "conductor",
+        "architect",
+        "orchestra",
+        "blueprint",
+        "symphony"
+      ],
+      "correctAnswer": "architect + blueprint",
+      "explanation": "Conductor, orchestra, and symphony are all related to music. Architect and blueprint are both related to designing buildings, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "helium",
+        "mercury",
+        "iron",
+        "neon",
+        "copper"
+      ],
+      "correctAnswer": "helium + neon",
+      "explanation": "Mercury, iron, and copper are all metals on the periodic table. Helium and neon are noble gases, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "peninsula",
+        "archipelago",
+        "continent",
+        "bay",
+        "gulf"
+      ],
+      "correctAnswer": "bay + gulf",
+      "explanation": "Peninsula, archipelago, and continent are all landmasses or land formations. Bay and gulf are both bodies of water partly enclosed by land, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "democracy",
+        "habitat",
+        "monarchy",
+        "ecosystem",
+        "dictatorship"
+      ],
+      "correctAnswer": "habitat + ecosystem",
+      "explanation": "Democracy, monarchy, and dictatorship are all systems of government. Habitat and ecosystem are both terms from ecology about where living things exist, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "soprano",
+        "crotchet",
+        "tenor",
+        "quaver",
+        "alto"
+      ],
+      "correctAnswer": "crotchet + quaver",
+      "explanation": "Soprano, tenor, and alto are all types of singing voice. Crotchet and quaver are musical note values (lengths of notes), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "immune",
+        "nervous",
+        "cumulus",
+        "digestive",
+        "nimbus"
+      ],
+      "correctAnswer": "cumulus + nimbus",
+      "explanation": "Immune, nervous, and digestive are all systems of the human body. Cumulus and nimbus are types of cloud, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "stalactite",
+        "crater",
+        "stalagmite",
+        "orbit",
+        "cavern"
+      ],
+      "correctAnswer": "crater + orbit",
+      "explanation": "Stalactite, stalagmite, and cavern are all found in underground caves. Crater and orbit are both associated with space and astronomy, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "solstice",
+        "isosceles",
+        "equinox",
+        "scalene",
+        "eclipse"
+      ],
+      "correctAnswer": "isosceles + scalene",
+      "explanation": "Solstice, equinox, and eclipse are all astronomical events. Isosceles and scalene are types of triangle, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "football",
+        "cricket",
+        "painting",
+        "rugby",
+        "sculpture"
+      ],
+      "correctAnswer": "painting + sculpture",
+      "explanation": "Football, cricket, and rugby are all sports. Painting and sculpture are forms of art, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "hammer",
+        "cake",
+        "biscuit",
+        "muffin",
+        "drill"
+      ],
+      "correctAnswer": "hammer + drill",
+      "explanation": "Cake, biscuit, and muffin are all baked goods you can eat. Hammer and drill are tools, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "shelf",
+        "ankle",
+        "wrist",
+        "cupboard",
+        "knee"
+      ],
+      "correctAnswer": "shelf + cupboard",
+      "explanation": "Ankle, wrist, and knee are all joints in the human body. Shelf and cupboard are pieces of furniture, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "January",
+        "Monday",
+        "March",
+        "Friday",
+        "April"
+      ],
+      "correctAnswer": "Monday + Friday",
+      "explanation": "January, March, and April are all months of the year. Monday and Friday are days of the week, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "salmon",
+        "cow",
+        "sheep",
+        "pig",
+        "trout"
+      ],
+      "correctAnswer": "salmon + trout",
+      "explanation": "Cow, sheep, and pig are all farm animals. Salmon and trout are fish, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "gloves",
+        "scarf",
+        "sandals",
+        "coat",
+        "shorts"
+      ],
+      "correctAnswer": "sandals + shorts",
+      "explanation": "Gloves, scarf, and coat are all warm winter clothing. Sandals and shorts are worn in summer, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "piano",
+        "pencil",
+        "ruler",
+        "guitar",
+        "rubber"
+      ],
+      "correctAnswer": "piano + guitar",
+      "explanation": "Pencil, ruler, and rubber are all stationery items. Piano and guitar are musical instruments, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "daisy",
+        "rose",
+        "elm",
+        "tulip",
+        "oak"
+      ],
+      "correctAnswer": "elm + oak",
+      "explanation": "Daisy, rose, and tulip are all flowers. Elm and oak are types of tree, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "bridge",
+        "cathedral",
+        "mosque",
+        "temple",
+        "tunnel"
+      ],
+      "correctAnswer": "bridge + tunnel",
+      "explanation": "Cathedral, mosque, and temple are all places of worship. Bridge and tunnel are both structures for crossing obstacles, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "simile",
+        "fraction",
+        "metaphor",
+        "decimal",
+        "alliteration"
+      ],
+      "correctAnswer": "fraction + decimal",
+      "explanation": "Simile, metaphor, and alliteration are all techniques used in English writing. Fraction and decimal are both mathematical terms, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "Atlantic",
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Pacific"
+      ],
+      "correctAnswer": "Atlantic + Pacific",
+      "explanation": "Mars, Venus, and Jupiter are all planets in our solar system. Atlantic and Pacific are oceans, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "easel",
+        "cello",
+        "harp",
+        "violin",
+        "canvas"
+      ],
+      "correctAnswer": "easel + canvas",
+      "explanation": "Cello, harp, and violin are all stringed musical instruments. Easel and canvas are used for painting, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "elm",
+        "pine",
+        "granite",
+        "maple",
+        "marble"
+      ],
+      "correctAnswer": "granite + marble",
+      "explanation": "Elm, pine, and maple are all types of tree. Granite and marble are types of stone, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "iron",
+        "oxygen",
+        "helium",
+        "nitrogen",
+        "lead"
+      ],
+      "correctAnswer": "iron + lead",
+      "explanation": "Oxygen, helium, and nitrogen are all gases at room temperature. Iron and lead are solid metals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "beret",
+        "turban",
+        "bracelet",
+        "cap",
+        "necklace"
+      ],
+      "correctAnswer": "bracelet + necklace",
+      "explanation": "Beret, turban, and cap are all headwear. Bracelet and necklace are jewellery, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "sprint",
+        "stammer",
+        "mumble",
+        "whisper",
+        "jog"
+      ],
+      "correctAnswer": "sprint + jog",
+      "explanation": "Stammer, mumble, and whisper are all ways of speaking. Sprint and jog are ways of running, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "kettle",
+        "compass",
+        "telescope",
+        "binoculars",
+        "toaster"
+      ],
+      "correctAnswer": "kettle + toaster",
+      "explanation": "Compass, telescope, and binoculars are all instruments for navigation or observation. Kettle and toaster are kitchen appliances, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "waltz",
+        "sketch",
+        "tango",
+        "portrait",
+        "salsa"
+      ],
+      "correctAnswer": "sketch + portrait",
+      "explanation": "Waltz, tango, and salsa are all types of dance. Sketch and portrait are both types of artwork, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "allegro",
+        "sonnet",
+        "tempo",
+        "limerick",
+        "crescendo"
+      ],
+      "correctAnswer": "sonnet + limerick",
+      "explanation": "Allegro, tempo, and crescendo are all musical terms. Sonnet and limerick are both types of poem, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "archipelago",
+        "glacier",
+        "peninsula",
+        "iceberg",
+        "isthmus"
+      ],
+      "correctAnswer": "glacier + iceberg",
+      "explanation": "Archipelago, peninsula, and isthmus are all geographical landforms. Glacier and iceberg are both large masses of ice, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "quartz",
+        "emerald",
+        "limestone",
+        "sapphire",
+        "sandstone"
+      ],
+      "correctAnswer": "limestone + sandstone",
+      "explanation": "Quartz, emerald, and sapphire are all gemstones or precious minerals. Limestone and sandstone are sedimentary rocks, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "treaty",
+        "famine",
+        "plague",
+        "drought",
+        "alliance"
+      ],
+      "correctAnswer": "treaty + alliance",
+      "explanation": "Famine, plague, and drought are all disasters that cause suffering. Treaty and alliance are both agreements between groups, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "prologue",
+        "equation",
+        "epilogue",
+        "formula",
+        "chapter"
+      ],
+      "correctAnswer": "equation + formula",
+      "explanation": "Prologue, epilogue, and chapter are all parts of a book. Equation and formula are both mathematical expressions, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "meridian",
+        "latitude",
+        "velocity",
+        "equator",
+        "acceleration"
+      ],
+      "correctAnswer": "velocity + acceleration",
+      "explanation": "Meridian, latitude, and equator are all geographical terms relating to lines on a map or globe. Velocity and acceleration are both physics terms about motion, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "select-two",
+      "question": "Find the two words that are the odd ones out.",
+      "options": [
+        "oboe",
+        "bassoon",
+        "sonata",
+        "clarinet",
+        "symphony"
+      ],
+      "correctAnswer": "sonata + symphony",
+      "explanation": "Oboe, bassoon, and clarinet are all woodwind instruments. Sonata and symphony are both types of musical composition, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "correctPair": [
+        2,
+        4
+      ]
+    }
+  ]
+}

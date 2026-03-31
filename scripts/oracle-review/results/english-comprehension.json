@@ -1,0 +1,156 @@
+{
+  "reviewedAt": "2026-03-30T21:00:00.000Z",
+  "topic": "comprehension",
+  "subject": "english",
+  "qualityScore": 9,
+  "summary": {
+    "questionsReviewed": 410,
+    "lessonsReviewed": 20,
+    "mappingsReviewed": 410,
+    "issuesFound": 11,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 5, "low": 4 },
+    "difficultyAssessment": "D1:118 (29%), D2:178 (43%), D3:114 (28%) — excellent match to GL target distribution of ~30:40:30. D1 questions are genuine retrieval tasks with answers directly stated in the text (dates, numbers, names, places). D2 questions require inference, vocabulary-in-context, or combining information across sentences. D3 questions demand analysis of author purpose, literary devices, structural choices, and thematic interpretation. Difficulty calibration is strong across all passages — the question types are well-distributed within each passage set, creating a natural difficulty gradient.",
+    "coverageAssessment": "410 questions across approximately 40 unique passages covering fiction (lighthouse, museum, storm, new girl, bake-off), poetry (spider's web), non-fiction (hedgehogs, Roman baths, rock pools, bees, ocean depths, cycling, Florence Nightingale, Vikings, weather), and persuasive texts. Excellent variety of text types matching GL expectations. Sub-type coverage: retrieval, inference, vocabulary-in-context, author-purpose, literary-device, negative-retrieval, and prediction are all well-represented. The later questions (380-410) include additional inference questions revisiting earlier passages, providing useful reinforcement. Two passages about Roman baths (roman-baths and roman-baths-sulis) and two hedgehog passages (hedgehogs and hedgehog-life) create thematic overlap — not a problem per se but could have used one slot for a different topic like sport, technology, or autobiography.",
+    "teachingEfficacyAssessment": "20 lessons across 10 sub-concepts provide strong pedagogical coverage. Core skills (retrieval, inference, vocab-in-context) each have 2 lessons with complementary approaches — one step-by-step method and one spot-the-mistake/curiosity-hook variant. The retrieval lessons teach a clear 4-step scanning method. The inference lessons use the excellent 'multiple clues' approach (check your inference against ALL clues, not just one). The vocab-in-context lessons correctly teach the 'substitution test' (try replacing the word with each option). Author-purpose and literary-devices lessons are well-constructed with real text examples. All passages in lessons use British settings (Whitby, Bristol, Millbrook Park) and contexts. The 3 orphan sub-concepts (sub-concepts with no lesson found in the mapping) are a minor concern — mapping shows '[No lesson found]' for most teach summaries, which likely reflects a data extraction issue rather than missing lessons. All 410 questions mapped with high confidence.",
+    "topPriorities": [
+      "Fix Q150 questionSubType: 'literary-device' should be 'author-purpose' — it asks about the story's main message/theme, not a specific literary technique",
+      "Investigate the '[No lesson found]' teach summaries in the mapping data — 410/410 show this, which appears to be an extraction issue",
+      "Review the double-letters lesson hook screen which shows 'undefined' in the highlight words (SentenceDisplay visual rendering issue, not a comprehension issue but observed in cross-topic data)",
+      "Consider diversifying passage topics — two Roman baths passages and two hedgehog passages could trade one each for sport/technology/biography variety"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "ENG-COMP-SUBTYPE-001",
+      "itemType": "question",
+      "itemId": "Q150",
+      "severity": "high",
+      "category": "classification-error",
+      "title": "Q150 questionSubType is 'literary-device' but question asks about main message/theme",
+      "description": "Q150 asks 'What is the main message of this story?' about The Bake Off passage and is classified as questionSubType 'literary-device'. However, this is a classic author-purpose/theme question, not a literary device question. Literary device questions ask about specific techniques (simile, metaphor, personification, alliteration). Theme/message questions are about the overarching meaning the author wants to convey. This misclassification affects the sub-type distribution statistics and lesson mapping accuracy.",
+      "suggestedFix": "Change questionSubType from 'literary-device' to 'author-purpose' to match the actual skill being tested.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-SUBTYPE-002",
+      "itemType": "question",
+      "itemId": "Q156",
+      "severity": "high",
+      "category": "classification-error",
+      "title": "Q156 questionSubType is 'prediction' which is not a standard comprehension sub-type",
+      "description": "Q156 asks 'Based on the passage, what would most likely happen if all bees disappeared from Britain?' and is classified as questionSubType 'prediction'. While prediction is a valid reading skill, it is not one of the declared sub-types in the data model (retrieval, inference, vocabulary-in-context, word-class, literary-device, author-purpose). This should be classified as 'inference' since the child must use textual evidence to reason about a hypothetical scenario. GL tests this type of question under inference, not as a separate category.",
+      "suggestedFix": "Change questionSubType from 'prediction' to 'inference'. The explanation already demonstrates inference reasoning from textual evidence.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-SUBTYPE-003",
+      "itemType": "question",
+      "itemId": "Q154",
+      "severity": "medium",
+      "category": "classification-error",
+      "title": "Q154 questionSubType 'negative-retrieval' is non-standard",
+      "description": "Q154 asks 'Which of the following is NOT mentioned as a task performed by worker bees?' and is classified as 'negative-retrieval'. While functionally this is retrieval (the child scans the text to check what IS mentioned), 'negative-retrieval' is not one of the declared sub-types. GL does use 'NOT' questions in comprehension, but they are classified under retrieval. Using non-standard sub-types fragments the data and affects mapping accuracy.",
+      "suggestedFix": "Change questionSubType from 'negative-retrieval' to 'retrieval'. Add a note in the explanation that this is a 'NOT' question requiring elimination of all options that ARE mentioned.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-SUBTYPE-004",
+      "itemType": "question",
+      "itemId": "Q6,Q24,Q25,Q30,Q39,Q45,Q57,Q63,Q69,Q75",
+      "severity": "medium",
+      "category": "classification-consistency",
+      "title": "Questions about structure/contrast classified under 'literary-device' rather than 'author-purpose'",
+      "description": "Several questions asking about passage structure (Q21, Q69), author's contrast techniques (Q25), or tension-building methods (Q6) are classified as 'literary-device'. In GL marking schemes, questions about HOW the author structures a passage or builds tension fall under 'authorial technique/purpose' rather than 'literary device' (which specifically means simile, metaphor, personification, etc.). For example, Q69 asks 'How does the author use the structure of the passage to guide the reader?' — this is about text organisation, not a literary device. Q6 asks 'How does the author build tension?' — this is about narrative technique. This conflation makes it difficult to accurately assess sub-type coverage.",
+      "suggestedFix": "Distinguish between 'literary-device' (simile, metaphor, personification, alliteration, onomatopoeia) and 'author-technique' or reclassify structural/contrast questions under 'author-purpose'. GL treats both as higher-order comprehension skills but they test different abilities.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-PASSAGE-001",
+      "itemType": "question",
+      "itemId": "Q15-Q21,Q64-Q69",
+      "severity": "medium",
+      "category": "content-overlap",
+      "title": "Two separate Roman baths passages cover very similar content",
+      "description": "Passage 'roman-baths' (The Roman Baths, Q15-Q21) and passage 'roman-baths-sulis' (The Roman Baths of Aquae Sulis, Q64-Q69) cover the same topic with significant factual overlap. Both mention Aquae Sulis, 46-degree water temperature, the bathing sequence (tepidarium, caldarium, frigidarium), social life at the baths, and 18th-century rediscovery. Several questions are near-duplicates: Q15 and Q65 both ask about water temperature; Q16 and Q64 both ask about the Roman name. Children encountering both passages would face repetitive content, which reduces the breadth of topics tested.",
+      "suggestedFix": "Consolidate into a single passage with a larger question set (10-12 questions) or replace one passage with a different historical topic (e.g., the Great Fire of London, Pompeii, Anglo-Saxon England).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-PASSAGE-002",
+      "itemType": "question",
+      "itemId": "Q11-Q14,Q34-Q39",
+      "severity": "medium",
+      "category": "content-overlap",
+      "title": "Two separate hedgehog passages cover overlapping content",
+      "description": "Passage 'hedgehogs' (Saving the Hedgehogs, Q11-Q14) and passage 'hedgehog-life' (The Secret Life of Hedgehogs, Q34-Q39) both cover hedgehog biology and population decline. Both mention the population drop from thirty million, curling-into-a-ball defence, and the need for conservation. While the second passage provides more biological detail, a child encountering both would experience content repetition.",
+      "suggestedFix": "Replace one passage with a different non-fiction animal topic (e.g., migration, coral reefs, endangered species) to improve topic diversity.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-MAP-001",
+      "itemType": "mapping",
+      "itemId": "ALL",
+      "severity": "medium",
+      "category": "data-extraction",
+      "title": "All 410 mapping entries show '[No lesson found]' for lessonTeachSummary",
+      "description": "Every efficacy pair in the mapping file shows lessonTeachSummary as '[No lesson found]', despite the lessons file containing 20 well-structured lessons across 10 sub-concepts. The lessons clearly exist and cover all the core skills (retrieval, inference, vocab-in-context, author-purpose, literary-devices). This appears to be an extraction issue where the mapping script could not locate the teach screen summary for the matched lesson. The mapping confidence is 100% high (410/410), and the sub-concept IDs are correct, so the mapping logic itself is working — it is just the teach summary field that failed to populate.",
+      "suggestedFix": "Debug the extraction script's teach-summary lookup. The lessons file has teach screens with body content for each lesson — the script may be looking for a different field name or structure.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-ORPHAN-001",
+      "itemType": "mapping",
+      "itemId": "orphan-sub-concepts",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "3 orphan sub-concepts have lessons but may not be receiving questions",
+      "description": "The mapping metadata shows 3 orphan sub-concepts. The lessons file has 10 sub-concepts: retrieval, inference, vocab-in-context, author-purpose, literary-devices, word-class, text-structure, summary, comparison, evaluation. The questions use sub-types: retrieval, inference, vocabulary-in-context, author-purpose, literary-device, negative-retrieval, prediction. Some sub-concepts likely have lessons but no direct question mapping (e.g., text-structure, summary, comparison). This is a minor gap — these skills are tested implicitly within other question types.",
+      "suggestedFix": "Review which 3 sub-concepts are orphans and either add questions that map to them or note them as 'cross-cutting skills' that don't need dedicated questions.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-TONE-001",
+      "itemType": "question",
+      "itemId": "Q380-Q410",
+      "severity": "low",
+      "category": "tone-consistency",
+      "title": "Questions 380-410 use a noticeably more informal, chatty explanation style",
+      "description": "The later questions (approximately Q380-Q410) use a more conversational explanation style compared to the earlier questions. For example, Q389 says 'it hooks us into wanting to read more!' and Q393 says 'This is 'show, don't tell' in action!' compared to the more measured tone of earlier explanations. While both styles are age-appropriate and engaging, the inconsistency in register between earlier (formal-educational) and later (chatty-enthusiastic) questions is noticeable. This suggests they were written in different batches.",
+      "suggestedFix": "No action required — both tones work well for the target age group. If consistency is desired, a light editing pass could standardise the register. The chatty style is arguably more engaging for a 9-year-old.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q35",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "Q35 (hibernacula) rated D1 but requires knowledge of specialist vocabulary",
+      "description": "Q35 asks 'What is the name given to a hedgehog's nest?' with the answer 'A hibernacula'. While the answer is directly stated in the passage (making it technically retrieval/D1), the word 'hibernacula' is highly unusual specialist vocabulary that a 9-year-old would not know. The distractors (burrow, warren, lodge, den) are all common words that children might reasonably associate with animal homes. A child might select a wrong answer based on prior knowledge (e.g., 'burrow' or 'den') rather than scanning the passage. This makes it feel harder than D1 despite being pure retrieval.",
+      "suggestedFix": "This is borderline — it IS pure retrieval (the answer is stated directly), which justifies D1. However, consider upgrading to D2 since the unfamiliar vocabulary adds a second cognitive demand. No change strictly required.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-COMP-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q32",
+      "severity": "low",
+      "category": "classification-consistency",
+      "title": "Q32 classified as 'vocabulary-in-context' but asks about personification effect",
+      "description": "Q32 asks 'What qualities does the poet give the spider by calling her a patient queen?' and is classified as 'vocabulary-in-context'. However, this question is really about the EFFECT of personification — giving human qualities to an animal. The word 'patient' has a clear meaning; the question is about what the personification technique achieves, which is closer to 'literary-device' or 'inference'. This minor misclassification does not affect the child's experience but impacts sub-type analytics.",
+      "suggestedFix": "Reclassify as 'literary-device' (personification effect) or 'inference' (what the word choice implies about the spider).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

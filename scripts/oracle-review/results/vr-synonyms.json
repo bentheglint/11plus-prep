@@ -1,0 +1,167 @@
+{
+  "reviewedAt": "2026-03-30T18:00:00.000Z",
+  "topic": "synonyms",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 10,
+    "mappingsReviewed": 125,
+    "issuesFound": 12,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 6, "low": 4 },
+    "difficultyAssessment": "D1:38 (30%), D2:50 (40%), D3:37 (30%) — this is an excellent match to the GL target distribution of ~30:40:30. Difficulty calibration is strong: D1 questions use common everyday words (big/large, sad/unhappy, fast/quick), D2 uses curriculum-level vocabulary (obstinate/stubborn, abundant/plentiful, arrogant/conceited), and D3 uses sophisticated vocabulary (clandestine/secret, scrupulous/painstaking, gregarious/sociable). A small number of borderline cases exist but nothing requiring recalibration.",
+    "coverageAssessment": "Strong vocabulary breadth across word categories: emotions (joyful/happy, terrified/scared), physical properties (loud/noisy, fast/quick, big/large), character traits (diligent/hardworking, arrogant/conceited), actions (conceal/hide, flourish/thrive, demolish/destroy), and formal-informal pairs (purchase/buy, annual/yearly, scrutinise/examine). Good mix of adjective, verb, and noun synonym pairs. Context-dependent synonyms and intensity-matching are both tested. Missing: no questions testing polysemy/double-meaning synonyms in context (e.g. 'light' = bright vs lightweight), which GL does test in VR comprehension.",
+    "teachingEfficacyAssessment": "10 lessons across 8 sub-concepts provide good conceptual scaffolding. The 'swap test' strategy (common-synonyms) and 'picture the action' strategy (verb-synonyms) are pedagogically sound and memorable. Formal-informal lessons effectively teach register equivalence. The 'spot-the-mistake' lesson on intensity (deafening vs loud) addresses a genuine GL trap. One orphan sub-concept ('context-dependent') has only 1 lesson despite being a critical skill. All 125 questions are mapped with high confidence, which is excellent. Lesson tone is warm, age-appropriate, and encouraging throughout.",
+    "topPriorities": [
+      "Remove duplicate word 'challenge' in Q97 setA and setB — structural error",
+      "Address 'soggy = damp' (Q76) being presented as synonyms when they differ in intensity (soggy is much wetter than damp)",
+      "Expand the orphan 'context-dependent' sub-concept to cover polysemy, which GL tests heavily"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-SYN-STRUCT-001",
+      "itemType": "question",
+      "itemId": "Q97",
+      "severity": "high",
+      "category": "structural-error",
+      "title": "Duplicate word 'challenge' appears in both setA and setB",
+      "description": "Q97 (absolve + forgive): setA contains ['absolve', 'condemn', 'challenge'] and setB contains ['dispute', 'forgive', 'challenge']. The word 'challenge' appears in both sets. In GL pick-from-sets format, each word should appear in only one set. This is a data integrity issue that could confuse the rendering or the child.",
+      "suggestedFix": "Replace one instance of 'challenge' with a different distractor. In setB, replace 'challenge' with 'forbid' or 'accuse' to maintain the semantic field.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-ACC-001",
+      "itemType": "question",
+      "itemId": "Q76",
+      "severity": "high",
+      "category": "answer-accuracy",
+      "title": "'Soggy' and 'damp' presented as synonyms despite intensity difference",
+      "description": "Q76 presents soggy + damp as the correct synonym pair, with explanation stating they 'both mean slightly wet'. However, 'soggy' means thoroughly soaked and unpleasant (much wetter), while 'damp' means slightly moist. These differ significantly in intensity — the same intensity trap the app's own lessons warn about (lesson 'common-synonyms-mistake' teaches that deafening is NOT a synonym of loud because it's too strong). By the app's own teaching, soggy is to damp as deafening is to loud. The explanation incorrectly defines 'soggy' as 'slightly wet' when it means 'very wet and soft'.",
+      "suggestedFix": "Change the correct pair. Either: (a) replace 'soggy' with 'moist' in setA so the pair is moist + damp (true synonyms at the same intensity), or (b) replace 'damp' with 'waterlogged' in setB to pair soggy + waterlogged (both strong-intensity wet).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-DIST-001",
+      "itemType": "question",
+      "itemId": "Q51",
+      "severity": "medium",
+      "category": "distractor-quality",
+      "title": "'Valuable' appears in both setA and setB of Q51",
+      "description": "Q51 (genuine + authentic): setA contains ['genuine', 'fake', 'valuable'] and setB contains ['valuable', 'authentic', 'rare']. The word 'valuable' appears in both sets. This is the same structural issue as Q97. In GL format each word appears in only one group.",
+      "suggestedFix": "Replace 'valuable' in one set with a different word. In setA, replace with 'precious' or 'original' to maintain variety.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q4",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q4 (diligent + hardworking) rated D3 but 'hardworking' is very common",
+      "description": "Q4 pairs 'diligent' with 'hardworking' and is rated D3. While 'diligent' is a D3-level word, the answer word 'hardworking' is extremely common and obvious once a child knows what 'diligent' means. The distractors (lazy, clumsy, graceful, careless) are from completely different semantic fields, making elimination trivial. Per GL D3 criteria, distractors should be semantically related and highly plausible. This is borderline D2/D3.",
+      "suggestedFix": "Either upgrade distractors to be more plausible (e.g. replace 'clumsy' and 'careless' with 'ambitious' and 'studious' which are closer to the semantic field of hard work) or reclassify as D2.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q36,Q37,Q38,Q39,Q40,Q42,Q43,Q44",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "8 D1 questions have weak distractors from completely unrelated fields",
+      "description": "Questions Q36-Q44 (D1) use distractors that are entirely from different semantic domains — physical actions vs body sounds (Q35: laugh/giggle with sneeze/yawn/cough/hiccup), physical objects vs actions (Q42: gift/present with stone/path/bridge/cloud). While D1 distractors should be clearly wrong, GL still places them in adjacent semantic fields to test basic discrimination. Having all distractors from completely unrelated domains makes these too easy even for D1.",
+      "suggestedFix": "Replace some unrelated distractors with words from the same broad category. E.g., for Q42 (gift/present), use 'reward', 'parcel', 'treat', 'souvenir' instead of 'stone', 'path', 'bridge', 'cloud'.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q13",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Q13 explanation mentions words not in the question options",
+      "description": "Q13 (laborious + arduous) explanation says: 'Popular' means well-liked, 'straightforward' means easy, 'famous' means well known. But the actual setA is ['laborious', 'enjoyable', 'frequent'] and setB is ['sudden', 'arduous', 'straightforward']. 'Popular' and 'famous' are not in either set. The explanation should only describe words actually present in the question.",
+      "suggestedFix": "Update explanation to describe the actual words: 'Enjoyable' means pleasant, 'frequent' means happening often, 'sudden' means quick and unexpected, 'straightforward' means easy.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-EXPL-002",
+      "itemType": "question",
+      "itemId": "Q35",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Q35 explanation says giggle is a 'lighter laugh' which undermines synonym claim",
+      "description": "Q35 (laugh + giggle) explanation states: 'A giggle is a lighter, quieter laugh.' This explicitly acknowledges an intensity difference — the same issue the app warns about in the 'spot-the-mistake' lesson (deafening vs loud). If a giggle is 'lighter' than a laugh, they differ in intensity, which contradicts the synonym teaching. The explanation inadvertently teaches the child to accept intensity differences in synonyms.",
+      "suggestedFix": "Either (a) rephrase the explanation to say 'Laugh and giggle both mean to make sounds showing amusement or fun' without mentioning the intensity difference, or (b) replace the pair with laugh + chuckle which are closer in intensity.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-COV-001",
+      "itemType": "lesson",
+      "itemId": "context-dependent",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "Only 1 lesson for context-dependent synonyms despite being a key GL skill",
+      "description": "The 'Same Word, Different Synonyms' sub-concept has only 1 lesson but covers a critical GL skill: polysemy (words with multiple meanings needing different synonyms depending on context). GL tests this heavily in comprehension passages. The single lesson teaches 'light' (brightness vs weight) but doesn't practise other common polysemy examples (bank, bat, run, match, point, etc.). No questions in the bank explicitly test context-dependent synonym selection.",
+      "suggestedFix": "Add a second lesson with more examples of polysemous words, and consider creating questions that provide sentence context to test context-dependent synonym selection.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-COV-002",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No noun synonym pairs tested",
+      "description": "The question bank covers adjective synonyms (big/large, ancient/old), verb synonyms (conceal/hide, flourish/thrive), and formal-informal pairs extensively, but pure noun synonym pairs are underrepresented. Only a few questions test noun pairs (gift/present, error/mistake, centre/middle). GL tests nouns like voyage/journey, pupil/student, automobile/car, liberty/freedom.",
+      "suggestedFix": "Add more noun synonym pairs at each difficulty level, especially abstract nouns (liberty/freedom, courage/bravery, sorrow/grief) which appear at D2/D3 in GL.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-TONE-001",
+      "itemType": "question",
+      "itemId": "Q29",
+      "severity": "low",
+      "category": "answer-accuracy",
+      "title": "'Silent' and 'quiet' are not exact synonyms",
+      "description": "Q29 pairs 'silent' with 'quiet' as synonyms. 'Silent' means making no sound at all (absolute), while 'quiet' means making little sound (relative). A silent room has zero noise; a quiet room has low noise. This is a gradient difference, not a perfect synonym match. While acceptable at D1 level where approximate matches are common, it's worth noting for precision.",
+      "suggestedFix": "No change required — acceptable at D1. If desired for precision, change 'quiet' to 'noiseless' or 'soundless' for a tighter match, or change the pair to 'silent + hushed'.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-PATTERN-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "structural-pattern",
+      "title": "correctPair position shows slight bias toward [0,1]",
+      "description": "Across the 125 questions, the correct answer pair position shows a pattern: the correct word in setA is very frequently at position 0, and the correct word in setB is frequently at position 1. While GL distributes answer positions roughly evenly, having a detectable pattern allows children to develop position-based guessing strategies rather than vocabulary skills.",
+      "suggestedFix": "Audit correctPair distribution and shuffle word positions within sets to ensure even distribution across all 9 possible position combinations ([0,0], [0,1], [0,2], [1,0], [1,1], [1,2], [2,0], [2,1], [2,2]).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-SYN-MAP-001",
+      "itemType": "mapping",
+      "itemId": "general",
+      "severity": "medium",
+      "category": "mapping-efficacy",
+      "title": "1 orphan sub-concept has questions but limited lesson coverage",
+      "description": "The mappings show 1 orphan sub-concept. The 'hard-vocabulary' sub-concept maps to D3 questions like 'laborious + arduous', 'gregarious + sociable', 'clandestine + secret'. While these questions have mapped lessons teaching elimination strategy, the lessons don't actually teach the specific vocabulary words children need. The lesson for 'hard-vocabulary' uses 'diligent' as its example but doesn't systematically teach the Latin/Greek roots (mal-, bene-, greg-, etc.) that would help children decode unfamiliar D3 words.",
+      "suggestedFix": "Add root-word teaching to the hard-vocabulary lessons. For example, teach that 'greg-' means flock/group (gregarious), 'mal-' means bad (malevolent), 'bene-' means good (benevolent). This matches the Oracle's recommendation for vocabulary teaching (see Key Prefixes & Roots section).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

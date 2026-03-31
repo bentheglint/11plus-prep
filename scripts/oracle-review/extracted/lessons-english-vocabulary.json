@@ -1,0 +1,2396 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "vocabulary",
+    "displayName": "Vocabulary",
+    "extractedAt": "2026-03-30T13:51:13.775Z",
+    "subConceptCount": 9,
+    "lessonCount": 18,
+    "screenCount": 72,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "synonyms",
+      "name": "Finding Synonyms",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to find a word that means the same or nearly the same — it's like being a word detective!",
+            "You'll discover how to check your synonym (a word with the same meaning) fits the sentence perfectly"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does \"furious\" mean?",
+              "body": "Daisy is reading a story and comes across the sentence:\n\n**\"The furious dragon stomped through the village.\"**\n\nDid you know? A **synonym** is a word that means the **same** or **nearly the same** as another word. You probably use synonyms every day without even realising! Can you find one for **furious**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The furious dragon stomped through the village.",
+                "highlightWords": [
+                  {
+                    "word": "furious",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"furious\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Substitution Method",
+              "body": "Let's find a synonym (a word that means the same) for **\"furious\"** in Daisy's sentence. Here's a brilliant trick: try **swapping** the word and see if the sentence still means the same thing. If it does — you've nailed it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the sentence: \"The furious dragon stomped through the village.\"",
+                    "why": "Zero in on the word \"furious\""
+                  },
+                  {
+                    "text": "Think: what does \"furious\" mean?",
+                    "why": "Picture it in your head — what's happening in the scene?"
+                  },
+                  {
+                    "text": "Try swapping in \"angry\": \"The angry dragon stomped through the village.\"",
+                    "why": "Does it still make sense? Yes — brilliant!"
+                  },
+                  {
+                    "text": "\"angry\" is a synonym for \"furious\" ✓",
+                    "why": "The meaning hasn't budged — that's how you know it works!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! Which word is closest in meaning to **\"cheerful\"** in this sentence?\n\n**\"The cheerful children sang songs on the bus.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is closest in meaning to \"cheerful\"?",
+                "options": [
+                  "happy",
+                  "noisy",
+                  "naughty",
+                  "bored",
+                  "shy"
+                ],
+                "correctAnswer": "happy",
+                "correctFeedback": "Brilliant! \"happy\" means the same as \"cheerful\". Cheerful means happy and in good spirits, so 'happy' is the closest synonym. You're a natural! ✓",
+                "incorrectFeedback": "Nearly! The answer is \"happy\". Cheerful means happy and in good spirits, so 'happy' is the closest synonym. You'll spot it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The cheerful children sang songs on the bus.",
+                "highlightWords": [
+                  {
+                    "word": "cheerful",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"cheerful\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding Synonyms — your recipe for success!",
+              "body": "You've got the hang of it! Here's the method you can use to find a synonym every single time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the sentence carefully",
+                    "why": "Get a feel for what's happening in the sentence"
+                  },
+                  {
+                    "text": "Step 2: Focus on the target word — what does it mean?",
+                    "why": "Picture the meaning in your head like a little film"
+                  },
+                  {
+                    "text": "Step 3: Try swapping in each option",
+                    "why": "Does the sentence still mean the same thing? That's the key test!"
+                  },
+                  {
+                    "text": "Step 4: Pick the word that keeps the meaning closest",
+                    "why": "That's your synonym — well done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "synonyms-context",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll discover why the same word can need totally different synonyms depending on the sentence — sneaky, right?",
+            "You'll learn how to use context clues to decide which synonym is the right one"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One word, two meanings!",
+              "body": "Did you know that one little word can play tricks on you? Evie notices that the word **\"bright\"** can mean completely different things:\n\n**Sentence 1:** \"The bright light hurt her eyes.\" — here it means **dazzling**\n\n**Sentence 2:** \"Amara is a very bright student.\" — but here it means something different!\n\nThe **context** (the words around it) is your secret weapon for working out which meaning is right.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "highlightWords": [
+                  {
+                    "word": "bright",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"bright\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Context changes everything!",
+              "body": "Here's something that catches loads of people out: the word **\"bright\"** can mean **\"dazzling\"** in one sentence but something completely different in another! Some words are sneaky like that — they have **more than one meaning**. The rest of the sentence — the **context** — tells you which meaning is being used.\n\nThe golden rule: always read the **whole sentence** before choosing a synonym (a word that means the same).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"Amara is a very bright student.\"",
+                    "why": "What is \"bright\" describing here?"
+                  },
+                  {
+                    "text": "Look at the context — the words around it",
+                    "why": "These clue words tell you the meaning"
+                  },
+                  {
+                    "text": "\"bright\" here means \"intelligent\"",
+                    "why": "Not \"dazzling\" — that was the other meaning!"
+                  },
+                  {
+                    "text": "Context changes meaning — always check! ✓",
+                    "why": "The same word can need a completely different synonym each time. Tricky but you can handle it!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! What is the best synonym for **\"sharp\"** in this sentence? Remember to look at the context!\n\n**\"Grandma has a very sharp mind for her age.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is closest in meaning to \"sharp\" in this sentence?",
+                "options": [
+                  "keen",
+                  "pointed",
+                  "dangerous",
+                  "thin",
+                  "painful"
+                ],
+                "correctAnswer": "keen",
+                "correctFeedback": "Well done! Here 'sharp' describes Grandma's mind — it means quick and clever, so 'keen' is the best synonym. 'Pointed' would only work if 'sharp' described a knife. You read the context like a pro! ✓",
+                "incorrectFeedback": "Not quite — but this is a tricky one! Here 'sharp' describes Grandma's mind — it means quick and clever, so 'keen' is the best synonym. 'Pointed' would only work if 'sharp' described a knife. Keep practising, you're getting better every time."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Grandma has a very sharp mind for her age.",
+                "highlightWords": [
+                  {
+                    "word": "sharp",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym for \"sharp\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Same word, different synonyms!",
+              "body": "You've cracked it! Remember: context is everything when choosing a synonym. This skill will come up again and again in the exam, so you're already ahead of the game.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the WHOLE sentence",
+                    "why": "Don't just look at the target word on its own — the clues are all around it"
+                  },
+                  {
+                    "text": "Step 2: Ask — what is this word describing here?",
+                    "why": "Is it about a person, a thing, or a feeling? This narrows it right down"
+                  },
+                  {
+                    "text": "Step 3: Pick the synonym that matches THIS meaning",
+                    "why": "The same word can need a totally different synonym in a different sentence — and now you know how to spot it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antonyms",
+      "name": "Finding Opposites",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to find a word that means the complete opposite — think of it like flipping a word upside down!",
+            "You'll pick up handy prefix (word beginning) shortcuts like un-, dis-, im- that make finding opposites a breeze"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the opposite of \"generous\"?",
+              "body": "Grace needs to find the opposite of a word in her English test:\n\n**\"The generous man donated money to the charity.\"**\n\nDid you know? An **antonym** is just a fancy word for **opposite**. If you can picture what a word means, you can flip it around to find the antonym. What's the opposite of **generous**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The generous man donated money to the charity.",
+                "highlightWords": [
+                  {
+                    "word": "generous",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"generous\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Opposite Test",
+              "body": "We need an antonym (a word that means the opposite) for **\"generous\"**. Here's the trick: think about what the word means — then flip it completely around, like turning a coin from heads to tails!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"The generous man donated money to the charity.\"",
+                    "why": "What does \"generous\" mean in this sentence?"
+                  },
+                  {
+                    "text": "\"generous\" means...",
+                    "why": "Picture the meaning in your head — really see it"
+                  },
+                  {
+                    "text": "Now flip it: what's the complete opposite?",
+                    "why": "If generous means giving freely, what means NOT giving? Think of the total reverse!"
+                  },
+                  {
+                    "text": "The antonym is \"selfish\" ✓",
+                    "why": "\"The selfish man kept all the money for himself.\" — see how the meaning has completely flipped?"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! Which word is the **opposite** of **\"calm\"**?\n\n**\"The calm sea sparkled under the morning sun.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is the opposite of \"calm\"?",
+                "options": [
+                  "rough",
+                  "warm",
+                  "deep",
+                  "blue",
+                  "wide"
+                ],
+                "correctAnswer": "rough",
+                "correctFeedback": "Brilliant! Calm means still and peaceful, so rough (stormy and choppy) is the opposite. You flipped it perfectly! ✓",
+                "incorrectFeedback": "Close! The answer is \"rough\". Calm means still and peaceful, so rough (stormy and choppy) is the opposite. You'll get the next one!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The calm sea sparkled under the morning sun.",
+                "highlightWords": [
+                  {
+                    "word": "calm",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"calm\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding Antonyms — your recipe for success!",
+              "body": "Nice work! Here's how to find an antonym every time — keep this in your back pocket for the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the sentence and understand the target word",
+                    "why": "What does it actually mean here?"
+                  },
+                  {
+                    "text": "Step 2: Think — what's the complete opposite?",
+                    "why": "Not just a bit different — completely flipped around, like night and day"
+                  },
+                  {
+                    "text": "Step 3: Check for prefix shortcuts (un-, dis-, im-)",
+                    "why": "e.g. happy → unhappy, agree → disagree, possible → impossible — these are quick wins!"
+                  },
+                  {
+                    "text": "Step 4: Swap it in — does the sentence now mean the opposite?",
+                    "why": "If yes, you've nailed it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "antonyms-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll learn how to dodge the sneaky trap of picking a word that's just different rather than truly opposite",
+            "You'll see why checking the meaning carefully is the key to getting these right every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Holly's mistake!",
+              "body": "Uh oh! Holly was asked to find the antonym of **\"brave\"** in this sentence:\n\n**\"The brave firefighter ran into the burning building.\"**\n\nHolly chose **\"foolish\"** as the antonym. But that's a trap — can you spot why it's wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The brave firefighter ran into the burning building.",
+                "highlightWords": [
+                  {
+                    "word": "brave",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"brave\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Opposite, not just different!",
+              "body": "Holly picked 'foolish' because running into a fire could seem foolish — but foolish means unwise, not the opposite of brave. The opposite of brave (willing to face danger) is cowardly (too afraid to act).\n\nThis catches out loads of people — even grown-ups! The mistake is picking a word that is **related** to the target word but isn't the **exact opposite**. Always ask yourself: \"Does this word flip the meaning completely?\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"brave\" means...",
+                    "why": "Think about the exact meaning"
+                  },
+                  {
+                    "text": "\"foolish\" is NOT the opposite",
+                    "why": "It's related but means something different"
+                  },
+                  {
+                    "text": "\"cowardly\" IS the opposite ✓",
+                    "why": "It completely flips the meaning"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the real antonym?",
+              "body": "Now it's your turn — don't fall into the same trap! What is the **correct** antonym for **\"generous\"**?\n\n**\"The generous lady bought gifts for all the children.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is the opposite of \"generous\"?",
+                "options": [
+                  "mean",
+                  "poor",
+                  "busy",
+                  "careful",
+                  "shy"
+                ],
+                "correctAnswer": "mean",
+                "correctFeedback": "Well done! \"mean\" is the true opposite of \"generous\". You didn't fall for the trap! ✓",
+                "incorrectFeedback": "That's a tricky one! The answer is \"mean\". Generous means willing to give, so mean (unwilling to share) is the true opposite. Remember: opposite means completely flipped, not just different."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The generous lady bought gifts for all the children.",
+                "highlightWords": [
+                  {
+                    "word": "generous",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"generous\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Opposite — not just different!",
+              "body": "Now you know the trap, you won't fall for it again! Watch out for these common antonym mistakes in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Don't pick a word that's just RELATED",
+                    "why": "'foolish' is related to 'brave' but isn't its opposite — that's the classic trap!"
+                  },
+                  {
+                    "text": "Ask: does this COMPLETELY flip the meaning?",
+                    "why": "The sentence should mean the total reverse, like turning a light switch on and off"
+                  },
+                  {
+                    "text": "Check for prefix shortcuts: un-, dis-, im-, in-",
+                    "why": "happy → unhappy, honest → dishonest, patient → impatient — easy marks! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "context-clues",
+      "name": "Working Out Meaning from Context",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "context-clues-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to work out what an unfamiliar word means — even if you've never seen it before!",
+            "You'll discover how the surrounding words act as secret clues to unlock the meaning"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does \"decrepit\" mean?",
+              "body": "Daisy comes across an unfamiliar word in her reading book:\n\n**\"The decrepit old building had crumbling walls and broken windows.\"**\n\nDid you know? Even if you've never seen the word **\"decrepit\"** before, you can still work it out! The other words in the sentence are like a trail of **clues** leading you straight to the answer.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The decrepit old building had crumbling walls and broken windows.",
+                "highlightWords": [
+                  {
+                    "word": "decrepit",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"decrepit\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Hunt for clue words!",
+              "body": "What does **\"decrepit\"** mean in Daisy's sentence? Here's the cool part: the words around an unfamiliar word are called **context clues** (the other words nearby that give you hints). They help you work out the meaning without a dictionary — like being a detective who solves the case from the evidence!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Read, find clues, guess the meaning, then check by swapping it in. You've got the detective method down! ✓",
+                "incorrectFeedback": "Nearly there — start by reading the sentence, then hunt for clue words nearby to help you guess the meaning. You'll crack it!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"The decrepit old building had crumbling walls and broken windows.\"",
+                    "why": "Zero in on the unknown word: \"decrepit\""
+                  },
+                  {
+                    "text": "Find the clue words: \"crumbling walls, broken windows\"",
+                    "why": "These words paint a picture of what's really going on"
+                  },
+                  {
+                    "text": "Think: what do these clues tell me?",
+                    "why": "Put the clues together like a detective gathering evidence"
+                  },
+                  {
+                    "text": "\"decrepit\" must mean \"old and in poor condition\" ✓",
+                    "why": "Case solved — the clue words prove it!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn, detective!",
+              "body": "Time to put your detective skills to work! What does **\"famished\"** most likely mean?\n\n**\"The famished children rushed to the table and devoured their lunch in minutes.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"famished\" most likely mean?",
+                "options": [
+                  "extremely hungry",
+                  "very excited",
+                  "badly behaved",
+                  "incredibly tired",
+                  "in a great hurry"
+                ],
+                "correctAnswer": "extremely hungry",
+                "correctFeedback": "Brilliant detective work! The clues 'rushed to the table' and 'devoured their lunch in minutes' show the children were starving, so famished means extremely hungry. ✓",
+                "incorrectFeedback": "Not quite — but keep hunting for those clues! The clues 'rushed to the table' and 'devoured their lunch in minutes' show the children were starving, so famished means extremely hungry."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The famished children rushed to the table and devoured their lunch in minutes.",
+                "highlightWords": [
+                  {
+                    "word": "famished",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"famished\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Context Clues — your detective toolkit!",
+              "body": "Fantastic work! Here's how to crack any unfamiliar word you meet — in the exam or anywhere else:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Don't panic — read the whole sentence",
+                    "why": "The answer is hiding right there in the words around it"
+                  },
+                  {
+                    "text": "Step 2: Find the clue words nearby",
+                    "why": "Look for describing words, actions, or results — they're your evidence"
+                  },
+                  {
+                    "text": "Step 3: Put the clues together",
+                    "why": "What picture do they paint? Build it up piece by piece"
+                  },
+                  {
+                    "text": "Step 4: Try your meaning in the sentence",
+                    "why": "Does it make sense? Then you've cracked the case! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "context-clues-discovery",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll see how to crack even the trickiest, most unusual words using the clues hidden in the sentence",
+            "You'll become a proper word detective — this skill is a superpower for the exam!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Priya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you crack this word?",
+              "body": "Priya finds a really unusual word in a story:\n\n**\"The loquacious parrot never stopped talking, chattering away from morning until night.\"**\n\nDid you know? Even adults struggle with words like **\"loquacious\"** — but you can work it out! Every clue you need is hiding right there in the sentence. Let's find them!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The loquacious parrot never stopped talking, chattering away from morning until night.",
+                "highlightWords": [
+                  {
+                    "word": "loquacious",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"loquacious\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Be a word detective!",
+              "body": "**The word detective method:**\n1. Don't panic — even adults don't know every word, and that's completely fine!\n2. Hunt for EVERY clue in the sentence\n3. Put all the clues together — they usually point the same way\n4. Choose the meaning that matches ALL the clues\n\nLet's collect all the clues, one by one. The more you find, the more certain you can be. It's like piecing together a jigsaw!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Clue 1: 'never stopped talking' = lots of talking",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "Clue 2: 'chattering away' = more talking",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "Clue 3: 'morning until night' = all day long",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "Loquacious = very talkative!",
+                    "why": "All the clues point the same way ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn, detective!",
+              "body": "Time to crack the case! What does **\"loquacious\"** most likely mean? Hunt for those clue words!\n\n**\"The loquacious parrot never stopped talking, chattering away from morning until night.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"loquacious\" most likely mean?",
+                "options": [
+                  "very talkative",
+                  "extremely colourful",
+                  "badly behaved",
+                  "incredibly clever",
+                  "unusually large"
+                ],
+                "correctAnswer": "very talkative",
+                "correctFeedback": "Case closed, detective! Three different clues all point to talking: 'never stopped talking', 'chattering away', and 'morning until night' — so loquacious must mean very talkative. Top-notch sleuthing! ✓",
+                "incorrectFeedback": "Not quite — but don't worry, even tricky words like this become easier with practice! Three different clues all point to talking: 'never stopped talking', 'chattering away', and 'morning until night' — so loquacious must mean very talkative."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The loquacious parrot never stopped talking, chattering away from morning until night.",
+                "highlightWords": [
+                  {
+                    "word": "loquacious",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"loquacious\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The word detective method!",
+              "body": "You've proved it — even the trickiest words can be cracked with context clues. Take this method into the exam and you'll be unstoppable:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Don't panic — unknown words are completely normal!",
+                    "why": "Stay cool and look around the word for help"
+                  },
+                  {
+                    "text": "Step 2: Hunt for clues in the sentence",
+                    "why": "Other words nearby are practically waving at you with hints!"
+                  },
+                  {
+                    "text": "Step 3: Put the clues together",
+                    "why": "Build up a picture — like assembling a jigsaw"
+                  },
+                  {
+                    "text": "Step 4: Choose the meaning that fits all the clues",
+                    "why": "The right answer clicks with everything around it — case solved! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prefixes",
+      "name": "Prefixes That Change Meaning",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "prefixes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to spot a prefix (a letter group like un- or re-) hiding at the start of a word",
+            "You'll see how prefixes change the meaning of the root word (the base word before anything is added) — it's like a magic switch!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's hiding at the start of \"unhappy\"?",
+              "body": "Evie is working out what the word 'unhappy' really means.\n\nDid you know? A **prefix** is a group of letters added to the **start** of a word that completely changes its meaning — like flicking a switch! Can you spot the prefix hiding in **\"unhappy\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The unhappy child sat alone in the playground.",
+                "highlightWords": [
+                  {
+                    "word": "unhappy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Focus on: \"unhappy\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split the word apart!",
+              "body": "The word **\"unhappy\"** has a prefix (letters added to the start): **\"un-\"**. Here's the trick: every word with a prefix has two parts — the prefix and the **root word** (the main word before any letters are added). Once you learn to split them, you can decode loads of words!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with: \"unhappy\"",
+                    "why": "Let's split this word into its parts"
+                  },
+                  {
+                    "text": "Prefix: \"un-\" means \"not\"",
+                    "why": "This is the part added to the front"
+                  },
+                  {
+                    "text": "Root word: \"happy\"",
+                    "why": "This is the original word"
+                  },
+                  {
+                    "text": "un- + happy = not happy ✓",
+                    "why": "Other \"un-\" words: unkind, unfair, untidy"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Split the word apart and work out what **\"unhappy\"** means.\n\n**\"The unhappy child sat alone in the playground.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"unhappy\" mean?",
+                "options": [
+                  "not happy",
+                  "very happy",
+                  "quite happy",
+                  "always happy",
+                  "once happy"
+                ],
+                "correctAnswer": "not happy",
+                "correctFeedback": "Brilliant! The prefix \"un-\" means \"not\", so \"unhappy\" means \"not happy\". You split it like a pro! ✓",
+                "incorrectFeedback": "Nearly! The prefix \"un-\" means \"not\". So \"un-\" + \"happy\" = not happy. You'll get the hang of this!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The unhappy child sat alone in the playground.",
+                "highlightWords": [
+                  {
+                    "word": "unhappy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"unhappy\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prefix power — your secret weapon!",
+              "body": "You've got prefix power now! Here's the recipe to crack any word with a prefix:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Spot the prefix at the START of the word",
+                    "why": "Common prefixes: un-, dis-, mis-, re-, pre-, anti- — learn these six and you're golden!"
+                  },
+                  {
+                    "text": "Step 2: Work out the root word",
+                    "why": "Cover the prefix with your thumb — what word is left underneath?"
+                  },
+                  {
+                    "text": "Step 3: Combine the prefix meaning with the root word",
+                    "why": "un- (not) + kind = not kind, re- (again) + build = build again — easy!"
+                  },
+                  {
+                    "text": "Step 4: Check it makes sense in the sentence",
+                    "why": "If it fits, you've cracked it — well done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "prefixes-families",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "You'll meet the six most common prefix (word beginning) families and learn what they mean — this is proper exam gold!",
+            "You'll discover how knowing just one prefix can unlock the meaning of loads of different words"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The \"pre-\" family!",
+              "body": "Oliver learns that the prefix 'pre-' means 'before'.\n\nDid you know? If you learn what **\"pre-\"** means, you can unlock the meaning of LOADS of words! It's like having a **secret code** that works on word after word. Pretty cool, right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We watched a preview of the new film before it was released.",
+                "highlightWords": [
+                  {
+                    "word": "preview",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Prefix: \"pre--\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One prefix, many words!",
+              "body": "The prefix **\"pre-\"** means **\"before\"**. Once you know this, you can work out any word that starts with it — how brilliant is that?\n\nThere are **six prefix families** you need to know: **un-** (not), **dis-** (opposite of), **mis-** (wrongly), **re-** (again), **pre-** (before), and **anti-/im-/in-** (not or against). Learn these six and you'll unlock hundreds of words. That's a serious exam superpower!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Prefix: \"pre-\" = \"before\"",
+                    "why": "This is the key that unlocks the word"
+                  },
+                  {
+                    "text": "Root word: \"view\"",
+                    "why": "This is the word before the prefix was added"
+                  },
+                  {
+                    "text": "\"pre-\" + \"view\" = \"preview\"",
+                    "why": "Meaning: \"to see something before others do\""
+                  },
+                  {
+                    "text": "Other \"pre-\" words: predict (say before), prehistoric (before history), prepay (pay before)",
+                    "why": "They all follow the same pattern"
+                  },
+                  {
+                    "text": "un- = not  |  dis- = opposite of  |  mis- = wrongly",
+                    "why": "unhappy, disappear, misspell"
+                  },
+                  {
+                    "text": "re- = again  |  pre- = before  |  anti-/im-/in- = not/against",
+                    "why": "replay, preview, impossible ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use your prefix knowledge! What does **\"preview\"** mean?\n\n**\"We watched a preview of the new film before it was released.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"preview\" mean?",
+                "options": [
+                  "to see before it's released",
+                  "to watch carefully",
+                  "to see again",
+                  "to watch together",
+                  "to stop watching"
+                ],
+                "correctAnswer": "to see before it's released",
+                "correctFeedback": "Well done! 'Pre-' means before, and 'view' means to see — so preview means to see something before it's officially out. Your prefix knowledge is paying off! ✓",
+                "incorrectFeedback": "Nearly! 'Pre-' means before, and 'view' means to see — so preview means to see something before it's officially out. Remember the prefix code and you'll crack it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We watched a preview of the new film before it was released.",
+                "highlightWords": [],
+                "label": "Which word uses the prefix \"pre--\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prefix families — your secret weapon!",
+              "body": "You're building a proper vocabulary toolkit now! Knowing prefix families unlocks hundreds of words:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Spot the prefix at the start of the word",
+                    "why": "Look for common beginnings like un-, re-, dis-, mis- — they pop up everywhere!"
+                  },
+                  {
+                    "text": "Step 2: Remember which family it belongs to",
+                    "why": "Each prefix family has a clear meaning — you've already learnt the big six"
+                  },
+                  {
+                    "text": "Step 3: Work out the root word underneath",
+                    "why": "Cover the prefix — the root word is what's left"
+                  },
+                  {
+                    "text": "Step 4: Combine prefix meaning + root meaning",
+                    "why": "Prefix + root = full meaning. You've cracked the code! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "word-families",
+      "name": "Suffixes That Change Word Class",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "word-families-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover how adding a suffix (a word ending like -ness or -tion) can magically change a word's class — turning a describing word into a naming word!",
+            "You'll learn how to turn adjectives (describing words) into nouns (naming words) and verbs (doing words) into nouns — a really handy trick"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How do you change \"happy\"?",
+              "body": "Grace is learning how to change the adjective 'happy' into a noun.\n\nDid you know? A **suffix** is a group of letters added to the **end** of a word — and suffixes have a superpower! They can change a word from one **word class** (whether it's a noun, verb, adjective, or adverb) to a completely different one!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Her happiness was clear from the huge smile on her face.",
+                "highlightWords": [
+                  {
+                    "word": "happy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Root word: \"happy\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Add a suffix, change the class!",
+              "body": "Watch this — it's pretty cool! The suffix **\"-ness\"** turns an adjective into a noun — it names the feeling or quality. Just a few letters stuck on the end and the whole word transforms!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Adding the suffix \"-ness\" to \"happy\" changes it from a adjective (describing word) to a ____",
+                "options": [
+                  "noun (naming word)",
+                  "adjective (describing word)",
+                  "prefix",
+                  "pronoun"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! \"happy\" + \"-ness\" = \"happiness\", which is a noun (naming word). ✓",
+                "incorrectFeedback": "Not quite — adding \"-ness\" changes \"happy\" (a adjective (describing word)) into \"happiness\" (a noun (naming word))."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with: \"happy\" — an adjective (describing word)",
+                    "why": "This is the root word"
+                  },
+                  {
+                    "text": "Add the suffix: \"-ness\"",
+                    "why": "\"-ness\" turns an adjective into a noun — it names the feeling or quality"
+                  },
+                  {
+                    "text": "\"happy\" + \"-ness\" = \"happiness\"",
+                    "why": "Now it's a noun (naming word)!"
+                  },
+                  {
+                    "text": "\"Her happiness was clear from the huge smile on her face.\"",
+                    "why": "\"happiness\" works as a noun (naming word) in this sentence ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Right, you've got this! Which word is the noun (naming word) form of **\"dark\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the noun (naming word) form of \"dark\"?",
+                "options": [
+                  "darkness",
+                  "darkly",
+                  "darker",
+                  "darkest",
+                  "darken"
+                ],
+                "correctAnswer": "darkness",
+                "correctFeedback": "Brilliant! Adding '-ness' to 'dark' creates 'darkness' — a noun that names the quality. Other examples: sad → sadness, kind → kindness, dark → darkness. You're getting the hang of this! ✓",
+                "incorrectFeedback": "Nearly! Adding '-ness' to 'dark' creates 'darkness' — a noun that names the quality. Don't worry — once you spot the suffix pattern, these become much easier!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The darkness of the cave made it impossible to see.",
+                "highlightWords": [
+                  {
+                    "word": "dark",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which word comes from \"dark\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Suffix transformations — your cheat sheet!",
+              "body": "Nice work! Here's your go-to guide for how suffixes change word classes. Keep this in mind for the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "-ly turns adjectives into adverbs",
+                    "why": "quick → quickly (tells you HOW)"
+                  },
+                  {
+                    "text": "-ness turns adjectives into nouns",
+                    "why": "happy → happiness (names the feeling)"
+                  },
+                  {
+                    "text": "-ment turns verbs into nouns",
+                    "why": "enjoy → enjoyment (names the experience)"
+                  },
+                  {
+                    "text": "-ful turns nouns into adjectives",
+                    "why": "care → careful (full of care) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "word-families-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "You'll see how one root word (the base word) can grow into a whole family of words — like a tree with branches!",
+            "You'll learn to recognise which suffix (word ending) creates which word class, so you can spot the pattern every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The \"create\" word family!",
+              "body": "Holly discovers how many words come from the root word **\"create\"**.\n\nDid you know? From just one little root word, you can grow a whole **word family** by adding different suffixes. Each suffix changes the **word class** — it's like having one seed that grows into completely different plants!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Holly is a very creative artist who paints amazing pictures.",
+                "highlightWords": [
+                  {
+                    "word": "create",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Root word: \"create\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Suffixes are word-class changers!",
+              "body": "Check out the **\"create\"** word family — each suffix (letters added to the end) creates a different word class (whether a word is a noun, verb, adjective, or adverb). The brilliant thing is: if you can spot the suffix, you instantly know what class the word belongs to!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Root: \"create\" (verb)",
+                    "why": "This is where the family starts"
+                  },
+                  {
+                    "text": "+ -tion → \"creation\" (noun)",
+                    "why": "the thing that was made"
+                  },
+                  {
+                    "text": "+ -ive → \"creative\" (adjective)",
+                    "why": "good at making things"
+                  },
+                  {
+                    "text": "+ -ly → \"creatively\" (adverb)",
+                    "why": "in a creative way"
+                  },
+                  {
+                    "text": "One root → many word classes! ✓",
+                    "why": "The suffix tells you which class"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Look at the suffix to work out what word class **\"creative\"** belongs to in this sentence:\n\n**\"Holly is a very creative artist who paints amazing pictures.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What word class is \"creative\"?",
+                "options": [
+                  "adjective",
+                  "noun",
+                  "verb",
+                  "adverb",
+                  "pronoun"
+                ],
+                "correctAnswer": "adjective",
+                "correctFeedback": "Well done! 'Creative' ends in '-ive' which makes it an adjective — it describes the artist. You spotted the suffix like a pro! ✓",
+                "incorrectFeedback": "Nearly! 'Creative' ends in '-ive' which makes it an adjective — it describes the artist. Keep an eye on the ending — it always gives the word class away!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Holly is a very creative artist who paints amazing pictures.",
+                "highlightWords": [
+                  {
+                    "word": "creative",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What does \"creative\" mean?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Suffix spotting guide!",
+              "body": "You're building a brilliant toolkit here! Spot the suffix and you'll know the word class straight away:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "-tion, -ment, -ness → NOUN",
+                    "why": "creation, enjoyment, happiness — they name things"
+                  },
+                  {
+                    "text": "-ful, -ive, -ous, -able → ADJECTIVE",
+                    "why": "beautiful, creative, famous, comfortable — they describe"
+                  },
+                  {
+                    "text": "-ly → ADVERB",
+                    "why": "quickly, beautifully, carefully — they say HOW"
+                  },
+                  {
+                    "text": "-fy, -ise, -en → VERB",
+                    "why": "beautify, organise, strengthen — they show actions ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homonyms",
+      "name": "Words with Multiple Meanings",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "homonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+            "You'll master using the sentence context to choose the right meaning every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which \"bank\" is it?",
+              "body": "Daisy reads this sentence in her comprehension passage:\n\n**\"We sat on the bank of the river and watched the ducks.\"**\n\nDid you know? The word **\"bank\"** has more than one meaning! Words like this are called **homonyms** — same spelling, completely different meanings. English is full of them!\n\n**Meaning 1:** a place where you keep money\n**Meaning 2:** the side of a river\n\nWhich meaning is being used here? The sentence holds the answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We sat on the bank of the river and watched the ducks.",
+                "highlightWords": [
+                  {
+                    "word": "bank",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"bank\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The sentence always gives it away!",
+              "body": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you which meaning is being used. Look for **clue words** that match one meaning but not the other — they're your best friends here!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"We sat on the bank of the river and watched the ducks.\"",
+                    "why": "Focus on the word \"bank\""
+                  },
+                  {
+                    "text": "Find the clue words: \"river, sat on, watched the ducks\"",
+                    "why": "These words narrow it down"
+                  },
+                  {
+                    "text": "Do the clues match \"a place where you keep money\"?",
+                    "why": "Test the first meaning against the clues"
+                  },
+                  {
+                    "text": "\"bank\" here means \"the side of a river\" ✓",
+                    "why": "The clues 'river' and 'watched the ducks' tell us this bank is the sloping ground beside water, not a building for money"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try — which meaning of **\"bank\"** is being used here? Hunt for those clue words!\n\n**\"Mum went to the bank to pay in a cheque this morning.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which meaning of \"bank\" is used here?",
+                "options": [
+                  "a place where you keep money",
+                  "the side of a river",
+                  "a type of seat",
+                  "a steep hill",
+                  "a row of switches"
+                ],
+                "correctAnswer": "a place where you keep money",
+                "correctFeedback": "Brilliant! The clues 'pay in' and 'cheque' tell us this bank is a financial building where you manage money, not the side of a river. The clue words gave it away! ✓",
+                "incorrectFeedback": "Not quite — this one's tricky! The clues 'pay in' and 'cheque' tell us this bank is a financial building where you manage money, not the side of a river. Look at the words around the homonym next time."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Mum went to the bank to pay in a cheque this morning.",
+                "highlightWords": [
+                  {
+                    "word": "bank",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"bank\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Homonyms — same word, different meaning!",
+              "body": "You've got this! Here's how to crack homonyms every time they pop up in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Spot that the word has more than one meaning",
+                    "why": "Common homonyms: bank, bat, light, ring, match, fair — they come up loads!"
+                  },
+                  {
+                    "text": "Step 2: Read the whole sentence carefully",
+                    "why": "The context always gives the game away"
+                  },
+                  {
+                    "text": "Step 3: Find clue words that match ONE meaning",
+                    "why": "River → bank of a river, not a money bank — the clues point the way"
+                  },
+                  {
+                    "text": "Step 4: Pick the meaning that fits the clues",
+                    "why": "If all the clues match, you've cracked it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "homonyms-matching",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll discover that the same word can actually be used as different word classes (noun, verb, adjective) — words are shapeshifters!",
+            "You'll get really good at matching the right definition to the right context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"match\" strikes again!",
+              "body": "Here's a fun one! Grace discovers that the word **\"match\"** has completely different meanings depending on how it's used:\n\n**Sentence 1:** \"Evie struck a match to light the birthday candles.\" — here it means **a small stick used to start a fire**\n\n**Sentence 2:** \"Does this hat match my scarf?\" — here it means something totally different!\n\nHomonyms are words that are **spelled the same** but have **different meanings**. The sentence around the word is always the key to cracking which one it is.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "highlightWords": [
+                  {
+                    "word": "match",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"match\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same spelling, different meaning!",
+              "body": "Remember **\"match\"** from the previous screen? It's a homonym (a word spelled the same but with different meanings). Here's the pro tip: **ignore** what you think the word means and focus on what the **sentence** tells you. The words around it always give the answer away — you just have to look!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"Does this hat match my scarf?\"",
+                    "why": "What is \"match\" doing in this sentence?"
+                  },
+                  {
+                    "text": "It can't mean \"a small stick used to start a fire\"",
+                    "why": "That doesn't fit this sentence at all"
+                  },
+                  {
+                    "text": "It can't mean \"a sports game\" either",
+                    "why": "That's another meaning but still doesn't fit here"
+                  },
+                  {
+                    "text": "\"match\" here means \"to go well together\" ✓",
+                    "why": "This is the only meaning that makes the sentence work"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! What does **\"match\"** mean in this sentence? Look at the context!\n\n**\"We watched an exciting match between the two school football teams.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"match\" mean in this sentence?",
+                "options": [
+                  "a sports game",
+                  "to go well together",
+                  "a small fire stick",
+                  "to compete against",
+                  "to be equal to"
+                ],
+                "correctAnswer": "a sports game",
+                "correctFeedback": "Well done! 'Watched' and 'between two teams' tell us this match is a sports game — a competitive event, not about colours or fire. You read the context perfectly! ✓",
+                "incorrectFeedback": "Not quite — but homonyms are properly tricky! 'Watched' and 'between two teams' tell us this match is a sports game — a competitive event, not about colours or fire. The context clues will get you there next time."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We watched an exciting match between the two school football teams.",
+                "highlightWords": [
+                  {
+                    "word": "match",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the meaning of \"match\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Homonyms — don't be tricked!",
+              "body": "In the exam, homonyms pop up everywhere — but now you know how to handle them like a pro:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Notice that the word has multiple meanings",
+                    "why": "If you know two meanings, the exam could use either one — stay alert!"
+                  },
+                  {
+                    "text": "Step 2: Read the WHOLE sentence, not just the word",
+                    "why": "The sentence always tells you which meaning is right"
+                  },
+                  {
+                    "text": "Step 3: Try each meaning in the sentence",
+                    "why": "Only one will make sense — the others will sound completely off"
+                  },
+                  {
+                    "text": "Step 4: Pick the meaning that fits perfectly",
+                    "why": "Context is king — and now you rule it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "word-roots",
+      "name": "Latin and Greek Word Roots",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "word-roots-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to spot ancient Latin and Greek roots hiding inside everyday English words — it's like discovering a secret code!",
+            "You'll use these roots to work out the meaning of words you've never seen before"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's hiding inside \"aquarium\"?",
+              "body": "Evie is trying to work out what 'aquarium' means.\n\nDid you know? Loads of English words are built from **Latin roots** — ancient building blocks from thousands of years ago that STILL shape our language today! The root **\"aqua\"** means **\"water\"**.\n\nIf 'aqua' means water, what kind of place would an aquarium be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We visited the aquarium and saw sharks swimming overhead.",
+                "highlightWords": [
+                  {
+                    "word": "aquarium",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Focus on: \"aquarium\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Crack the code with roots!",
+              "body": "Here's something amazing: if you know what the root means, you can work out words you've never seen before! Think of roots as **secret codes** that ancient Romans and Greeks left inside our words.\n\n**Key root families to learn:**\n- **aqua** = water (aquarium, aquatic, aqualung)\n- **bio** = life (biology, biography, biodegradable)\n- **tele** = far away (telephone, television, telescope)\n- **port** = carry (transport, portable, export)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The root \"aqua\" means ____, so \"aquarium\" is related to water",
+                "options": [
+                  "water",
+                  "big",
+                  "fast",
+                  "old"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The root \"aqua\" means \"water\", which helps you decode \"aquarium\" and any other word with the same root. ✓",
+                "incorrectFeedback": "Not quite — the root \"aqua\" means \"water\". Knowing this unlocks the meaning of \"aquarium\"!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Word: \"aquarium\"",
+                    "why": "Let's break this word apart"
+                  },
+                  {
+                    "text": "Root: \"aqua\" = \"water\"",
+                    "why": "This Latin root is the heart of the word"
+                  },
+                  {
+                    "text": "If 'aqua' means water, what kind of place would an aquarium be?",
+                    "why": "Use the root meaning to work out the whole word"
+                  },
+                  {
+                    "text": "\"aquarium\" = a glass tank for keeping fish and water creatures ✓",
+                    "why": "The root \"aqua\" (water) gives it away!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use your root knowledge to crack this one! What does **\"aquatic\"** mean?\n\n**\"Dolphins and whales are aquatic mammals that spend their whole lives in the ocean.\"**\n\nRemember: **\"aqua\"** means **\"water\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"aquatic\" mean?",
+                "options": [
+                  "living in or relating to water",
+                  "very fast",
+                  "found underground",
+                  "related to air",
+                  "extremely large"
+                ],
+                "correctAnswer": "living in or relating to water",
+                "correctFeedback": "Brilliant! The root 'aqua' means water — so 'aquatic' describes things that live in or are connected to water, like dolphins and whales. Your root knowledge is seriously impressive! ✓",
+                "incorrectFeedback": "Nearly! The root 'aqua' means water — so 'aquatic' describes things that live in or are connected to water, like dolphins and whales. The more roots you learn, the easier this gets — keep going!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Dolphins and whales are aquatic mammals that spend their whole lives in the ocean.",
+                "highlightWords": [
+                  {
+                    "word": "aquatic",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"aquatic\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Word roots — your secret weapon!",
+              "body": "You're building a proper code-breaking toolkit! The more root families you learn, the more exam words you can crack:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Look inside the word for a root you recognise",
+                    "why": "Roots like 'port' (carry) or 'ject' (throw) pop up in loads of words!"
+                  },
+                  {
+                    "text": "Step 2: Recall what that root means",
+                    "why": "Each root has a core meaning that stays the same — learn it once, use it forever"
+                  },
+                  {
+                    "text": "Step 3: Work out the whole word from the root",
+                    "why": "The root gives you the main idea — the other parts add detail"
+                  },
+                  {
+                    "text": "Step 4: Check it makes sense in the sentence",
+                    "why": "If it fits, you've cracked the code — well done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "word-roots-decode",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll use root knowledge to figure out words you've NEVER seen before — even really long, scary-looking ones!",
+            "You'll learn how to combine two or three roots together to unlock the full meaning"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you decode \"microscope\"?",
+              "body": "Finn has never seen the word 'microscope' before, but he knows a trick.\n\n**\"The scientist used a microscope to study the tiny cells.\"**\n\nThe word **\"microscope\"** looks long and scary — but here's a secret: it's built from roots you can learn! Let's break it apart like cracking a code. You'll be surprised how simple it is underneath!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The scientist used a microscope to study the tiny cells.",
+                "highlightWords": [
+                  {
+                    "word": "microscope",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What does \"microscope\" mean?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Break it into roots!",
+              "body": "Let's crack **\"microscope\"** from the previous screen. Here's the brilliant thing about long words: they're often just **two or three roots** (the base parts that carry meaning) **stuck together**. **\"micro\"** means \"small\" and **\"scope\"** means \"to look at\" — put them together and the meaning falls right out!\n\n**The 4-step root-cracking method:**\n1. Look for roots you recognise inside the word (micro, tele, bio, geo, auto, port, rupt, aqua...)\n2. Work out what each root means — even ONE root gives you a massive clue\n3. Combine the root meanings together\n4. Check it fits the sentence — if it makes sense, you've cracked it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Root 1: 'micro' = small",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "Root 2: 'scope' = to look at",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "micro + scope = looking at small things",
+                    "why": "Another piece of the puzzle"
+                  },
+                  {
+                    "text": "A microscope is a device for seeing tiny things!",
+                    "why": "All the roots combine to give the full meaning ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn, code-breaker!",
+              "body": "Right, time to crack the code yourself! What does **\"microscope\"** mean?\n\n**\"The scientist used a microscope to study the tiny cells.\"**\n\nHint: **\"micro\"** = small, **\"scope\"** = to look at",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"microscope\" mean?",
+                "options": [
+                  "a device for looking at very small things",
+                  "a very small camera",
+                  "a type of magnifying glass",
+                  "a computer screen",
+                  "a pair of special glasses"
+                ],
+                "correctAnswer": "a device for looking at very small things",
+                "correctFeedback": "Brilliant code-breaking! 'Micro' means small and 'scope' means to look at — so a microscope is a device that lets you look at very small things you can't see with your eyes alone. You smashed it! ✓",
+                "incorrectFeedback": "Nearly! 'Micro' means small and 'scope' means to look at — so a microscope is a device that lets you look at very small things you can't see with your eyes alone. Keep practising with roots — they get easier and easier to spot!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The scientist used a microscope to study the tiny cells.",
+                "highlightWords": [
+                  {
+                    "word": "microscope",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Decode \"microscope\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Root-cracking — the method!",
+              "body": "Master this and you can decode any long word in the exam — even ones that look impossible at first glance:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the roots inside the word",
+                    "why": "Long words often have two or three roots stuck together — pull them apart!"
+                  },
+                  {
+                    "text": "Step 2: Work out what each root means",
+                    "why": "e.g. 'micro' = small, 'scope' = to look at — you're already learning these"
+                  },
+                  {
+                    "text": "Step 3: Combine the root meanings",
+                    "why": "micro + scope = looking at small things — it just clicks!"
+                  },
+                  {
+                    "text": "Step 4: Check it fits the sentence",
+                    "why": "Does your meaning make sense in context? Then you've cracked it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shades-of-meaning",
+      "name": "Shades of Meaning — Choosing the Strongest Word",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "shades-of-meaning-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover that words come in different strengths — like a volume dial going from quiet to LOUD!",
+            "You'll learn how to order words from weakest to strongest, which is a favourite exam trick"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How \"happiness\" are we talking?",
+              "body": "Daisy is learning that 'happy' words come in different strengths.\n\nDid you know? Words can mean similar things but with **totally different strengths**. Think of it like a volume dial — you can turn it up from mild to EXTREME!\n\n**pleased → happy → delighted → ecstatic**\n\nFrom gentle to powerful — each word is a step up. Getting the right strength matters in the exam!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "When Daisy found out she'd won first prize, she was absolutely ______.",
+                "highlightWords": [
+                  {
+                    "word": "ecstatic",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "happiness: which word fits best?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Match the strength to the situation!",
+              "body": "We saw the happiness scale: **pleased → happy → delighted → ecstatic**. In the exam, you need to choose the word with the **right intensity** — and this is where lots of people slip up! A small event needs a mild word. A dramatic event needs a powerful word. The **context** always tells you how strong the word should be.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"When Daisy found out she'd won first prize, she was absolutely ______.\"",
+                    "why": "Which word fills the gap?"
+                  },
+                  {
+                    "text": "Context clue: \"won first prize, absolutely\"",
+                    "why": "How extreme is the situation?"
+                  },
+                  {
+                    "text": "Is it mild, medium, strong, or extreme?",
+                    "why": "Match the word strength to the situation"
+                  },
+                  {
+                    "text": "The best word is \"ecstatic\" ✓",
+                    "why": "Winning first prize is a huge achievement — 'absolutely' tells you it's an extreme feeling, so 'ecstatic' (the strongest happiness word) fits perfectly"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Read the sentence carefully and think about how strong the feeling or situation is. Which word fits best?\n\n**\"Daisy was ______ when her friend remembered her birthday.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word best fits the sentence?",
+                "options": [
+                  "pleased",
+                  "ecstatic",
+                  "furious",
+                  "terrified",
+                  "exhausted"
+                ],
+                "correctAnswer": "pleased",
+                "correctFeedback": "Well done! Remembering a birthday is a nice thing but not life-changing — 'pleased' is the mild happiness word that fits this gentle, warm feeling. You matched the shade perfectly! ✓",
+                "incorrectFeedback": "Close! Remembering a birthday is a nice thing but not life-changing — 'pleased' is the mild happiness word that fits this gentle, warm feeling. Think about how intense the situation is — that tells you which word to pick."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Daisy was ______ when her friend remembered her birthday.",
+                "highlightWords": [],
+                "label": "Which word fits best?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Shades of meaning — your recipe for success!",
+              "body": "Brilliant work! Here's how to pick the right-strength word every time in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the sentence — how intense is the situation?",
+                    "why": "A small upset or a huge disaster? This sets the level"
+                  },
+                  {
+                    "text": "Step 2: Look for intensity clues (absolutely, completely, a bit)",
+                    "why": "These little signal words tell you exactly how strong the word needs to be"
+                  },
+                  {
+                    "text": "Step 3: Rank the options from weakest to strongest",
+                    "why": "Line them up like a volume dial in your head"
+                  },
+                  {
+                    "text": "Step 4: Choose the word that matches the situation's intensity",
+                    "why": "The right shade of meaning makes the sentence sing! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "shades-of-meaning-context",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll find out why the exam loves testing whether you can pick the CLOSEST word in meaning — and how to nail it!",
+            "You'll learn how to compare two similar words and confidently decide which one fits better"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"exhausted\" — how strong is it?",
+              "body": "Grace is choosing between two similar words in a exam question:\n\n**\"The exhausted runner collapsed at the finish line after the marathon.\"**\n\nHere's something that trips up loads of people in the exam: \"tired\" and \"exhausted\" sound similar — but they're NOT the same strength! Spotting the **exact shade** of meaning is the key to getting the mark.\n\n'Tired' is mild — you feel tired after homework. 'Exhausted' is extreme — you feel exhausted after running a marathon!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The exhausted runner collapsed at the finish line after the marathon.",
+                "highlightWords": [
+                  {
+                    "word": "exhausted",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"exhausted\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Match the exact shade!",
+              "body": "Think about **\"exhausted\"** from the previous screen. \"tired\" is in the same family — but **\"exhausted\"** is much stronger. Here's the thing that catches people out: when the exam asks \"which word is CLOSEST in meaning\", you need to match the **exact intensity**, not just the general idea. A mild word won't match a strong word — even if they're in the same family!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Find the word, rate its intensity, then match it to an option with the same strength. You nailed the method! ✓",
+                "incorrectFeedback": "Nearly — start by reading the sentence, then decide how strong the word is before looking at the options. You're getting there!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"exhausted\" is used in: \"The exhausted runner collapsed at the finish line after the marathon.\"",
+                    "why": "Look at the context — how intense is it?"
+                  },
+                  {
+                    "text": "\"a bit sleepy\" — too weak!",
+                    "why": "'A bit sleepy' is far too mild — you don't collapse from being a bit sleepy!"
+                  },
+                  {
+                    "text": "\"utterly drained of energy\" — perfect match!",
+                    "why": "Same strength as the original word"
+                  },
+                  {
+                    "text": "Always match the INTENSITY, not just the topic ✓",
+                    "why": "'Tired' is mild — you feel tired after homework. 'Exhausted' is extreme — you feel exhausted after running a marathon!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! Which phrase is **closest in meaning** to **\"weary\"**? Think about the intensity!\n\n**\"Grace felt a little weary after a long day at school.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is closest in meaning to \"weary\"?",
+                "options": [
+                  "slightly tired and ready to rest",
+                  "utterly drained of energy",
+                  "wide awake and energetic",
+                  "extremely ill",
+                  "deeply upset"
+                ],
+                "correctAnswer": "slightly tired and ready to rest",
+                "correctFeedback": "Spot on! 'A little weary' and 'long day at school' show a mild tiredness — 'slightly tired and ready to rest' matches the gentle, everyday feeling of being weary. You matched the shade like a pro! ✓",
+                "incorrectFeedback": "Close! 'A little weary' and 'long day at school' show a mild tiredness — 'slightly tired and ready to rest' matches the gentle, everyday feeling of being weary. Think about whether the situation is mild or extreme — that's the key to the right shade."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Grace felt a little weary after a long day at school.",
+                "highlightWords": [
+                  {
+                    "word": "weary",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"weary\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Shades of meaning in the exam!",
+              "body": "You've cracked the shade-matching skill! In the exam, \"closest in meaning\" means matching the EXACT shade — and now you know how:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mild words: pleased, annoyed, cool, large",
+                    "why": "Everyday, gentle versions"
+                  },
+                  {
+                    "text": "Medium words: happy, angry, cold, big",
+                    "why": "The standard versions"
+                  },
+                  {
+                    "text": "Strong words: delighted, furious, freezing, enormous",
+                    "why": "Powerful, intense versions"
+                  },
+                  {
+                    "text": "Match the shade — not just the topic!",
+                    "why": "The right intensity makes all the difference ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formal-informal-vocab",
+      "name": "Formal vs Informal Vocabulary",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "formal-informal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover that the same idea can be said in a chatty, everyday way or a polished, grown-up way — and the exam tests this!",
+            "You'll learn to spot which register (level of formality) a word belongs to, so you can pick the right one every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"kid\" or \"child\"?",
+              "body": "Ella is learning to spot the difference between chatty and polished language.\n\nDid you know? The same idea can be said in a **chatty, informal** way or a **polished, formal** way — it's like switching between talking to your mates and talking to the headteacher!\n\n**Informal:** \"The kid ran across the playground.\"\n**Formal:** \"The child crossed the playground in a hurry.\"\n\nBoth say the same thing — but the **tone** is completely different!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"kid\" → \"child\"",
+                "highlightWords": [
+                  {
+                    "word": "child",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Formal or informal?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Match the formality to the situation!",
+              "body": "We compared **\"kid\"** (informal) with **\"child\"** (formal). Here's the key: the **context** tells you whether to use formal or informal vocabulary. Official letters, exam papers and news reports use **formal** words. Texts to friends, playground chats and stories with dialogue use **informal** words. Think: \"Would a headteacher say this, or my best friend?\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In a formal letter, you should write \"____\" instead of \"kid\"",
+                "options": [
+                  "child",
+                  "kid",
+                  "gonna",
+                  "stuff"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! \"child\" is the formal version of \"kid\" — perfect for official writing. ✓",
+                "incorrectFeedback": "Not quite — \"child\" is the formal alternative to \"kid\". Formal writing needs professional vocabulary."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"The headteacher wrote a letter to parents about every ______ in Year 5.\"",
+                    "why": "Is this formal or informal?"
+                  },
+                  {
+                    "text": "Context clue: \"headteacher, letter to parents\"",
+                    "why": "These words tell you the tone"
+                  },
+                  {
+                    "text": "This is a FORMAL situation",
+                    "why": "Official language is needed here"
+                  },
+                  {
+                    "text": "\"child\" fits perfectly ✓",
+                    "why": "\"kid\" would sound too casual for this context"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try! Think about who's \"speaking\" in this sentence and pick the word that matches the tone:\n\n**\"The headteacher wrote a letter to parents about every ______ in Year 5.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word best fits this formal sentence?",
+                "options": [
+                  "child",
+                  "kid",
+                  "youngster",
+                  "little one",
+                  "mate"
+                ],
+                "correctAnswer": "child",
+                "correctFeedback": "Brilliant! A headteacher writing an official letter would use formal language — 'child' is the formal version of 'kid'. You've got a great ear for formality! ✓",
+                "incorrectFeedback": "Nearly! A headteacher writing an official letter would use formal language — 'child' is the formal version of 'kid'. Ask yourself: \"Would a headteacher say this?\" If yes, it's formal enough!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The headteacher wrote a letter to parents about every ______ in Year 5.",
+                "highlightWords": [],
+                "label": "Which register fits?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Formal vs informal — your exam guide!",
+              "body": "Nice work! Here's how to choose the right level of formality every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the sentence — who is 'speaking'?",
+                    "why": "A headteacher? A news report? Or a friend chatting at break time?"
+                  },
+                  {
+                    "text": "Step 2: Look for formality clues",
+                    "why": "Official titles, polite phrasing, and serious topics = formal territory"
+                  },
+                  {
+                    "text": "Step 3: Match the word to the tone",
+                    "why": "kid (informal) → child (formal), get → obtain, ask → request — learn these pairs!"
+                  },
+                  {
+                    "text": "Step 4: The formal word usually sounds more 'grown-up'",
+                    "why": "If it sounds like something a headteacher or newsreader would say, it's formal! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "formal-informal-register",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll learn how to spot when the exam is testing formal and informal alternatives — it's one of their favourite question types!",
+            "You'll get confident at recognising when a question is asking you to change register (switch between formal and informal)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you make it more formal?",
+              "body": "Ben spots a exam question that asks for a 'more formal' word:\n\n**\"The scientist looked at the results carefully.\"**\n\n**Which word could replace 'looked at' to make the sentence more formal?**\n\nDid you know? The exam loves asking you to swap an everyday word for a more **formal** alternative. It's testing whether you know the difference between chatty and official language — and you're about to get really good at it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The scientist looked at the results carefully.",
+                "highlightWords": [
+                  {
+                    "word": "looked at",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Make it more formal:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Swap for the formal version!",
+              "body": "The hook asked you to replace **\"looked at\"** with something more formal. The answer is **\"examined\"** — 'Examined' means to look at something very carefully and thoroughly — it's the formal, precise version of 'looked at' and fits a scientist perfectly.\n\nHere's a top tip: when the exam says \"more formal\", it wants a word that sounds **official, professional and polished**. Imagine a headteacher, a news reader or a judge saying it — if it fits, it's formal enough! This is one of the easiest types of marks to pick up once you know the trick.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Original: \"The scientist looked at the results carefully.\"",
+                    "why": "\"looked at\" is the everyday word"
+                  },
+                  {
+                    "text": "Think: what would a news reader say instead?",
+                    "why": "News readers use formal, professional language"
+                  },
+                  {
+                    "text": "\"examined\" is the formal version",
+                    "why": "'Examined' means to look at something very carefully and thoroughly — it's the formal, precise version of 'looked at' and fits a scientist perfectly"
+                  },
+                  {
+                    "text": "\"The scientist examined the results carefully.\" ✓",
+                    "why": "Now it sounds professional and polished"
+                  },
+                  {
+                    "text": "Key swaps: kid → child, buy → purchase, get → obtain",
+                    "why": "Everyday words have formal twins"
+                  },
+                  {
+                    "text": "ask → request, start → commence, said → announced",
+                    "why": "These come up again and again in the exam"
+                  },
+                  {
+                    "text": "big → substantial, help → assist, try → attempt",
+                    "why": "Learn these pairs — they're exam gold! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you have a go! Think: \"What would a newsreader say instead?\"\n\nWhich word could replace 'start' to make the sentence more formal?\n\n**\"The teacher asked the children to ______ the test.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word makes the sentence more formal?",
+                "options": [
+                  "commence",
+                  "begin",
+                  "kick off",
+                  "get going on",
+                  "have a go at"
+                ],
+                "correctAnswer": "commence",
+                "correctFeedback": "Well done! 'Commence' is the formal version of 'start' — it's used in official instructions and exams, and sounds professional coming from a teacher. You're getting great at this! ✓",
+                "incorrectFeedback": "Nearly! 'Commence' is the formal version of 'start' — it's used in official instructions and exams, and sounds professional coming from a teacher. Remember: the formal word usually sounds like something you'd hear on the news."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The teacher asked the children to ______ the test.",
+                "highlightWords": [],
+                "label": "Which word is more formal?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Formal vocabulary — exam gold!",
+              "body": "Learn these swaps — they come up again and again in the exam, so knowing them gives you easy marks:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Informal → Formal: kid → child, buy → purchase",
+                    "why": "Swap everyday words for polished, professional ones"
+                  },
+                  {
+                    "text": "get → obtain, ask → request, start → commence",
+                    "why": "These formal words pop up in exam passages all the time"
+                  },
+                  {
+                    "text": "said → announced, big → substantial",
+                    "why": "Formal writing swaps simple words for precise, grown-up ones"
+                  },
+                  {
+                    "text": "help → assist, try → attempt",
+                    "why": "Spot the pattern: formal words are usually longer and more precise — learn the pairs and you'll pick up easy marks! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

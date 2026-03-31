@@ -1,0 +1,3746 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "longdivision",
+    "displayName": "Long Division",
+    "extractedAt": "2026-03-30T13:52:00.371Z",
+    "totalQuestions": 265,
+    "mappedQuestions": 265,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 6,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 265,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "A teacher shares 144 coloured pencils equally among 12 tables. How many pencils does each table get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "A baker makes 375 biscuits and packs them into boxes of 15. How many boxes does he fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "A school has 456 exercise books to share equally among 24 classes. How many books does each class receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "19",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "A coach can carry 48 passengers. How many coaches are needed to carry 336 passengers?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A sweet shop has 624 lollipops to put into jars of 26. How many jars can they fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "A PE teacher has 540 tennis balls to share equally among 18 groups. How many balls does each group get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 7,
+      "questionText": "A gardener plants 420 seeds in trays. Each tray holds 35 seeds. How many trays does he use?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "A farmer picks 672 apples and packs them into crates of 21. How many crates does he fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "A charity collects 736 tins of soup and distributes them equally to 32 food banks. How many tins does each food bank receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Cricket balls are packed in boxes of 12. John has 156 cricket balls. How many boxes can he fill completely?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 11,
+      "questionText": "A printing company prints 812 leaflets and bundles them into packs of 28. How many packs are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "29",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "A garden centre has 945 flower pots arranged in rows of 27. How many rows are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "A rope 840 cm long is cut into 24 equal pieces. How long is each piece?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35 cm",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "A school canteen makes 966 sandwiches for 42 classes. How many sandwiches does each class get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "A newsagent has 780 newspapers to deliver equally along 26 streets. How many papers go to each street?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Pencils are sold in packs of 16. A school orders 448 pencils. How many packs is this?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "A toy shop receives 1044 building blocks and sorts them into bags of 36. How many bags are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "29",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A craft teacher has 588 beads to share equally among 14 children. How many beads does each child get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "A farmer packs 792 eggs into boxes of 36. How many boxes does he need?",
+      "questionDifficulty": 2,
+      "correctAnswer": "22",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A coach travels 1140 miles over 38 days. If it travels the same distance each day, how many miles does it cover per day?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "A library receives a donation of 851 books to be placed equally on 23 shelves. How many books go on each shelf?",
+      "questionDifficulty": 2,
+      "correctAnswer": "37",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Books are arranged in boxes of 45. There are 1080 books. How many boxes are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A school orders 1224 rulers for 34 classrooms. How many rulers does each classroom receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "A farmer has 912 strawberries to put into punnets of 16. How many punnets does he fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "57",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "A school trip costs £1560 in total. There are 52 students. How much does each student pay?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£30",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "A sports club raises £1368 and splits it equally among 38 members. How many pounds does each member get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£36",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Sweets are packed in bags of 48. A factory produces 1392 sweets. How many bags can be filled?",
+      "questionDifficulty": 2,
+      "correctAnswer": "29",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A swimming pool has 1575 tiles laid in rows of 45. How many rows of tiles are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "A warehouse stores 1764 bottles of juice on shelves holding 42 bottles each. How many shelves are used?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A charity raises £2016. They split it equally between 56 families. How much does each family receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£36",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A scout group has 576 badges to share equally among 16 troops. How many badges does each troop receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "A factory produces 825 toy cars and packs them into boxes of 25. How many boxes are filled?",
+      "questionDifficulty": 2,
+      "correctAnswer": "33",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "A gardener has 432 seeds to plant in 18 equal rows. How many seeds go in each row?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "A cinema has 960 seats arranged in 32 equal rows. How many seats are in each row?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Emma has 714 stickers. She arranges them in albums with 14 stickers per page. How many pages does she fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "51",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A bookshop sells 1188 pencils in packs of 27. How many packs is that?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A zookeeper has 684 pieces of fruit to feed 19 monkeys equally. How many pieces does each monkey get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A bakery makes 1350 cupcakes. They pack them in boxes of 54. How many boxes do they fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A supermarket receives 876 yoghurts and places them in fridges holding 12 each. How many fridges are needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "73",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "A delivery driver travels 1295 miles over 35 trips. If each trip is the same distance, how many miles is each trip?",
+      "questionDifficulty": 2,
+      "correctAnswer": "37",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "A school collects 1104 cereal box tokens to share equally among 23 classrooms. How many tokens does each classroom get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "48",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Tom divides £1456 equally among 28 people. How much does each person receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£52",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "A park ranger plants 1540 trees in rows of 35. How many rows does she plant?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "A post office sorts 1680 letters into 40 equal bundles. How many letters are in each bundle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Sophie has 1824 beads. She strings them in necklaces of 57 beads each. How many necklaces can she make?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A school raises £1,927 at a fair and shares it equally among 47 charities. How many pounds does each charity receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£41",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A baker uses 2100 grams of flour, dividing it equally into 50 portions. How many grams is each portion?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A football club has 2232 programmes to distribute equally among 31 stewards. How many programmes does each steward get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Jake packs 2,365 cards into sets of 43. How many complete sets can he make?",
+      "questionDifficulty": 3,
+      "correctAnswer": "55",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A warehouse packs 2496 oranges into crates of 52. How many crates are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A carpet fitter has 2640 centimetres of carpet to cut into 55 equal strips. How long is each strip in centimetres?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "A school kitchen prepares 2772 fish fingers for 63 classes. How many fish fingers does each class get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "44",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Lucy divides £2898 equally among 69 winners. How much does each winner receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A museum receives 3024 visitors over 72 days. If the same number visit each day, how many visitors come per day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A charity shop sorts 3150 donated books onto shelves holding 75 books each. How many shelves are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A school collects 3276 crisp packets for a recycling scheme over 78 days. How many packets are collected each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Ben packs 3384 marbles into bags of 94. How many bags can he fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "36",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A lorry carries 3500 bricks, delivering them equally to 70 houses. How many bricks does each house receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A farm harvests 3,612 potatoes and packs them into sacks of 86. How many sacks are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "A printing press produces 3744 magazines and bundles them into stacks of 96. How many stacks are there?",
+      "questionDifficulty": 3,
+      "correctAnswer": "39",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Mia divides £3,913 equally among 91 charities. How much does each charity receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£43",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "A confectionery factory makes 3,916 sweets and packs them into tins of 89. How many tins are packed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "44",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "A garden centre sells 4095 plant pots over 91 days. If they sell the same number each day, how many do they sell per day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "A school distributes 4,185 reading books equally among 93 pupils. How many books does each pupil receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Oliver packs 4,263 stamps into albums of 87 stamps each. How many albums does he fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "49",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A sports shop orders 4,455 footballs and stores them in boxes of 99. How many boxes are used?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "A train travels 4560 miles over 95 journeys. If each journey is the same length, how many miles is each journey?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "A furniture workshop uses 4,656 screws to build 97 identical tables. How many screws are used per table?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "A farmer gathers 4,784 eggs over 92 days. If the same number are gathered each day, how many eggs per day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "52",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Hannah divides £4900 equally among 98 people. How much does each person receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£50",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A paper mill produces 5016 sheets of card and cuts them into 88 equal batches. How many sheets are in each batch?",
+      "questionDifficulty": 3,
+      "correctAnswer": "57",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A nursery grows 5130 seedlings and plants them in 90 equal rows. How many seedlings are in each row?",
+      "questionDifficulty": 3,
+      "correctAnswer": "57",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "A bottling plant fills 5244 bottles of water and packs them in trays of 92. How many trays are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "57",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Charlie packs 5,340 coins into rolls of 89. How many rolls can he make?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "A school kitchen uses 5472 paper plates over 96 school days. How many plates are used each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "57",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "An art teacher orders 5,580 sheets of coloured paper for 93 pupils. How many sheets does each pupil get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "A charity event raises £5700 and distributes it equally among 95 families. How many pounds does each family receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£60",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Ella divides £5,820 equally among 97 families. How much does each family receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£60",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A shoe factory produces 5,880 pairs of trainers and ships them in boxes of 98. How many boxes are shipped?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "A school canteen serves 6,039 meals over 99 days. How many meals are served each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "61",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "A builder lays 6,132 bricks over 84 hours. How many bricks does he lay per hour?",
+      "questionDifficulty": 3,
+      "correctAnswer": "73",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Max packs 6,210 pencils into boxes of 90. How many boxes does he need?",
+      "questionDifficulty": 3,
+      "correctAnswer": "69",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "A warehouse stores 6384 jars of jam on shelves holding 84 jars each. How many shelves are used?",
+      "questionDifficulty": 3,
+      "correctAnswer": "76",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A chocolate factory wraps 6,438 bars and packs them into cartons of 87. How many cartons are packed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "74",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "A council delivers 6,624 recycling bags to 92 streets equally. How many bags does each street receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Ava divides £6720 equally among 96 students. How much does each student receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£70",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "A music shop sells 6,825 guitar picks over 91 weeks. How many picks are sold each week?",
+      "questionDifficulty": 3,
+      "correctAnswer": "75",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A bakery bakes 6,942 bread rolls over 89 days. How many rolls are baked each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "78",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "A florist arranges 7056 roses into bunches of 98. How many bunches does she make?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Noah packs 7,144 buttons into boxes of 94. How many boxes can he fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "76",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A bus company covers 7280 miles over 91 routes. If each route is the same distance, how many miles is each route?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "A toy factory packs 7392 action figures into display boxes of 96. How many display boxes are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "77",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "A farm produces 7,480 litres of milk over 88 days. How many litres are produced each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "85",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Sophie divides £7,544 equally among 92 charities. How much does each charity receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£82",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "A tile shop has 7,680 mosaic tiles to arrange into sets of 96. How many sets can they make?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "A postal worker delivers 7840 letters over 98 days. How many letters does he deliver each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "A school uses 7,920 pieces of chalk over 88 weeks. How many pieces are used each week?",
+      "questionDifficulty": 3,
+      "correctAnswer": "90",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Lily packs 8064 stickers into albums of 96 per album. How many albums does she fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "84",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "A pet shop orders 8,178 dog treats and divides them equally into 94 bags. How many treats go in each bag?",
+      "questionDifficulty": 3,
+      "correctAnswer": "87",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "A painter uses 8280 millilitres of paint over 90 days. How many millilitres does he use each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "92",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A stationery supplier distributes 8,366 notebooks equally to 89 shops. How many notebooks does each shop receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "94",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Ben divides £8,439 equally among 97 organizations. How much does each organization receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£87",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "A sports club buys 8,556 shuttlecocks and shares them equally among 93 players. How many does each player get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "92",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A sweet factory produces 8,740 lemon drops and fills jars of 95. How many jars are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "92",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A school photocopier prints 8832 worksheets over 96 days. How many worksheets are printed each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "92",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "A window cleaner earns £8,900 over 89 jobs. If he charges the same for each job, how much does each job cost?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£100",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Hannah packs 9,024 beads into boxes of 94. How many boxes can she fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "96",
+      "subConceptId": "long-division-method",
+      "subConceptName": "Dividing by a 2-digit Number",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to divide by a 2-digit number using long division",
+        "How to estimate, multiply, subtract, and move to the next number"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "A juice company fills 9,114 cartons of orange juice and packs them into crates of 98. How many crates are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "93",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "A biscuit factory bakes 9,216 digestives and packs them in tins of 96. How many tins are packed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "96",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "A courier delivers 9,292 parcels over 92 days. How many parcels does he deliver each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "101",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Charlie divides £9,405 equally among 95 winners. How much does each winner receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£99",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A school fundraiser raises £9,579 and splits it equally among 93 projects. How many pounds does each project receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£103",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "A vegetable farm packs 9696 carrots into bags of 96. How many bags are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "101",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "A theme park sells 9800 tickets over 98 days. If the same number are sold each day, how many tickets are sold per day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "100",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A sticker company prints 9,856 stickers and puts them into packets of 88. How many packets are made?",
+      "questionDifficulty": 3,
+      "correctAnswer": "112",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Max packs 10,010 cards into boxes of 91. How many complete boxes can he fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "110",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A bread factory bakes 10,080 loaves over 96 days. How many loaves are baked each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "105",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "A pencil factory produces 10,152 pencils and bundles them into packs of 94. How many packs are made?",
+      "questionDifficulty": 3,
+      "correctAnswer": "108",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "A bookshop receives 10,282 paperbacks and arranges them equally on 97 shelves. How many books go on each shelf?",
+      "questionDifficulty": 3,
+      "correctAnswer": "106",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Ella divides £10,396 equally among 92 people. How much does each person receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£113",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "A plumber cuts 10,486 centimetres of pipe into 98 equal lengths. How many centimetres long is each piece?",
+      "questionDifficulty": 3,
+      "correctAnswer": "107",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "A craft shop sorts 10656 buttons into jars of 96. How many jars are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "111",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "A honey farm fills 10,769 jars of honey and distributes them equally to 89 shops. How many jars does each shop receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "121",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Noah packs 10,788 marbles into bags of 93. How many bags can he fill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "116",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "An ice cream van sells 10,920 ice lollies over 91 days. How many lollies are sold each day?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "A school buys 11,040 crayons to share equally among 96 pupils. How many crayons does each pupil receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "115",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "Sophie divides £11,186 equally among 94 teams. How much does each team receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£119",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "A cheese factory makes 11,286 slices and packs them into packets of 99. How many packets are filled?",
+      "questionDifficulty": 3,
+      "correctAnswer": "114",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "A marathon raises £11,349 in sponsorship, split equally among 97 runners. How many pounds does each runner raise?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£117",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "A warehouse ships 11520 light bulbs in boxes of 96. How many boxes are shipped?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "A teacher has 96 gold stars to give out equally to 8 pupils. How many stars does each pupil get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "A teacher shares 55 stickers equally among 5 children. How many stickers does each child get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "A shopkeeper arranges 150 tins of beans into rows of 10. How many rows does she make?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 134,
+      "questionText": "A farmer packs 108 eggs into boxes of 12. How many boxes does he fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 135,
+      "questionText": "A football coach has 126 cones to set out equally on 7 pitches. How many cones go on each pitch?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "A librarian places 135 books equally onto 9 shelves. How many books go on each shelf?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A dinner lady serves 168 fish fingers equally onto 8 trays. How many fish fingers go on each tray?",
+      "questionDifficulty": 1,
+      "correctAnswer": "21",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "James has 110 marbles. He shares them equally among 5 friends. How many marbles does each friend get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A camp leader has 192 marshmallows to divide equally among 6 campfire groups. How many marshmallows does each group get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "32",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A cricket club has 176 balls to split equally into 11 nets. How many balls go in each net?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 141,
+      "questionText": "A baker packs 180 biscuits into tins of 12. How many tins does she need?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 142,
+      "questionText": "A teacher has 117 reward stickers to give out equally to 9 children. How many stickers does each child get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "There are 152 crayons to be shared equally among 8 tables. How many crayons does each table get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "19",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "A baker cuts 170 slices of cake and arranges them on plates of 10. How many plates does she fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "17",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 145,
+      "questionText": "A gardener plants 198 bulbs in rows of 11. How many rows does she make?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 146,
+      "questionText": "A pet shop has 84 goldfish to put equally into 6 tanks. How many goldfish go in each tank?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Sarah has 144 centimetres of ribbon. She cuts it into 9 equal pieces. How long is each piece?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16 cm",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "A postman delivers 91 letters equally to 7 streets. How many letters does each street receive?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "A greengrocer packs 132 oranges into bags of 12. How many bags does he fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 150,
+      "questionText": "A gardener picks 175 daffodils and ties them into bunches of 5. How many bunches does she make?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "Mia has 36 sweets to share equally among 4 friends. How many sweets does each friend get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A teacher has 45 stickers to share equally among 5 tables. How many stickers does each table get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "Oliver has 72 football cards to share equally among 8 friends. How many cards does each friend get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "A dinner lady shares 54 fish fingers equally among 6 plates. How many fish fingers go on each plate?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "A charity has 168 selection boxes to share equally among 7 children's homes. How many boxes does each home receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "A scout leader shares 252 badges equally among 9 scout groups. How many badges does each group get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "A farmer shares 336 eggs equally among 8 shops. How many eggs does each shop receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "A headteacher shares £576 of prize money equally among 9 year groups. Each year group then splits its share equally among 8 classes. How much does eac",
+      "questionDifficulty": 3,
+      "correctAnswer": "£8",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "A baker has 85 scones. She puts 4 scones on each plate. How many plates does she fill completely, and how many scones are left over?",
+      "questionDifficulty": 1,
+      "correctAnswer": "21 plates, 1 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "There are 67 children going on a school trip. Each minibus holds 8 children. How many minibuses are full, and how many children are left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8 full, 3 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "A teacher has 195 sheets of paper to share equally among 7 pupils. How many sheets does each pupil get, and how many are left over?",
+      "questionDifficulty": 2,
+      "correctAnswer": "27 sheets, 6 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "A farmer picks 247 apples and puts 9 in each bag. How many full bags does he make, and how many apples are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "27 bags, 4 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "A ribbon is 529 cm long. It is cut into pieces of 6 cm each. How many complete pieces are cut, and how many centimetres of ribbon are left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "88 pieces, 1 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "A minibus holds 9 people. There are 50 people going on a trip. How many minibuses are needed so everyone can go?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "Eggs are sold in boxes of 6. A baker needs 40 eggs. How many boxes must she buy?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "A gardener has 50 tulip bulbs. She plants 8 bulbs in each row. How many complete rows can she plant?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "A teacher has 47 pencils to share equally among 5 children. How many pencils does each child get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "Cupcakes are packed in boxes of 4. A baker makes 30 cupcakes. How many full boxes can she fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "A school needs to transport 155 children to a sports event. Each coach holds 48 passengers. How many coaches must the school book?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "A rope is 500 cm long. Tom cuts it into pieces exactly 12 cm long. How many complete pieces can he cut?",
+      "questionDifficulty": 2,
+      "correctAnswer": "41",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "A farmer has 200 strawberries. He puts 15 in each punnet. How many full punnets can he fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "Chairs are arranged in rows of 12 for a school assembly. There are 250 children. How many full rows are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "A builder needs 350 bricks. Bricks are sold in packs of 24. How many packs must he buy?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "A ferry holds 45 cars. There are 280 cars waiting to cross. How many ferry trips are needed to carry all the cars?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "A school orders 500 exercise books. They come in packs of 36. How many packs must the school order?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "A florist has 500 roses. She makes bouquets of 18 roses each and sells each bouquet for £12. How many bouquets can she sell?",
+      "questionDifficulty": 3,
+      "correctAnswer": "27",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "A hall has 850 seats arranged in rows of 32. The last row is not full. How many seats are in the last row?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "A factory makes 1000 chocolate bars. They are packed into boxes of 36. Full boxes are sold for £15 each. What is the total income from selling all the",
+      "questionDifficulty": 3,
+      "correctAnswer": "£405",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "Which of these is the closest estimate for 312 ÷ 8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "Rosie says 156 ÷ 12 = 14. She checks by multiplying. What should she calculate?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14 × 12",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "Which of these is the best estimate for 245 ÷ 5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "A pupil calculates 576 ÷ 24 = 26. She checks using multiplication. Is she correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, the answer is 24",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "Estimate 783 ÷ 39 by rounding both numbers.",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "Jack estimates 462 ÷ 7 by rounding 462 to 490. What estimate does he get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "A teacher says the answer to 891 ÷ 9 is 89. Without calculating, explain why this must be wrong.",
+      "questionDifficulty": 2,
+      "correctAnswer": "89 × 9 = 801, not 891",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "Estimate 1176 ÷ 28 by rounding both numbers to the nearest ten.",
+      "questionDifficulty": 2,
+      "correctAnswer": "40",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "Emma calculates 1,368 ÷ 36 = 38. Tom calculates 1,368 ÷ 36 = 42. Without doing the full division, whose answer is more likely to be correct?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Emma, because 36 × 38 = 1,368",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "Without calculating the exact answer, which is the best estimate for 4,752 ÷ 48?",
+      "questionDifficulty": 3,
+      "correctAnswer": "100",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "A shopkeeper arranges 120 tins into rows of 10. How many rows does he make?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 190,
+      "questionText": "A school has 264 pencils to share equally among 12 classes. How many pencils does each class get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 191,
+      "questionText": "A baker puts 11 biscuits in each packet. She has 341 biscuits. How many packets can she fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "31",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 192,
+      "questionText": "A gardener plants 360 seeds in rows of 12. How many rows does she plant?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 193,
+      "questionText": "A warehouse stores 1,452 bottles of water in crates of 12. How many crates are needed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "121",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 194,
+      "questionText": "A school fete raises £450. The money is shared equally among 5 charities. How much does each charity receive?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£90",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "A roll of ribbon is 240 cm long. Sophie cuts it into equal pieces of 8 cm. How many pieces does she get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "A car travels 525 miles using 25 litres of petrol. How many miles does it travel per litre?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "A swimming pool holds 5,400 litres of water. A pump fills it at 75 litres per minute. How many minutes does it take to fill the pool?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "A school trip costs £1,260 in total. There are 45 children going. How much does each child need to pay?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£28",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "A delivery van does 3 trips a day. Each trip covers 85 km. How many days does it take the van to travel a total of 2,040 km?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "Tickets for a school play cost £6 each. The school raises £1,674 from ticket sales. It spends £324 on costumes. The rest is split equally among 9 char",
+      "questionDifficulty": 3,
+      "correctAnswer": "£150",
+      "subConceptId": "dividing-word-problems",
+      "subConceptName": "Division Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+      "lessonLearningGoal": [
+        "How to spot when a word problem needs division",
+        "How to pick out the right numbers from a word problem"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "A mum shares 28 grapes equally among 4 children. How many grapes does each child get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "There are 63 counters shared equally among 7 groups. How many counters does each group get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "A teacher shares 216 coloured pencils equally among 6 art tables. How many pencils does each table get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "A camp leader shares 294 marshmallows equally among 7 campfire groups. How many marshmallows does each group get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 205,
+      "questionText": "A baker shares 378 iced buns equally among 9 shop counters. How many buns go on each counter?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 206,
+      "questionText": "A charity receives 648 tins of food and shares them equally among 8 food banks. Each food bank then splits its share equally onto 9 shelves. How many ",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 207,
+      "questionText": "A sports day has 432 medals to share equally among 6 year groups. Each year group then shares its medals equally among 8 teams. How many medals does e",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "sharing-equally",
+      "subConceptName": "Division as Sharing Equally",
+      "confidence": "high",
+      "lessonTeachSummary": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+      "lessonLearningGoal": [
+        "How to understand that sharing equally is the same as dividing",
+        "Why division undoes multiplication"
+      ]
+    },
+    {
+      "questionId": 208,
+      "questionText": "Which is the best estimate for 396 ÷ 4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "100",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 209,
+      "questionText": "Sam says 672 ÷ 32 = 22. Check his answer using multiplication. Is he correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, the answer is 21",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 210,
+      "questionText": "Estimate 594 ÷ 6 by rounding 594 to the nearest hundred.",
+      "questionDifficulty": 2,
+      "correctAnswer": "100",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 211,
+      "questionText": "A pupil estimates 1,591 ÷ 8 by rounding 1,591 to 1,600. What estimate does she get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 212,
+      "questionText": "Without calculating exactly, which is closest to 2,997 ÷ 3?",
+      "questionDifficulty": 3,
+      "correctAnswer": "999",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 213,
+      "questionText": "A teacher has 75 stickers to share equally among 4 children. How many stickers does each child get, and how many are left over?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18 each, 3 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 214,
+      "questionText": "A gardener has 99 bulbs to plant in rows of 7. How many complete rows can she plant, and how many bulbs are left over?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14 rows, 1 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 215,
+      "questionText": "There are 58 children in a PE lesson. The teacher puts them into teams of 6. How many full teams are there, and how many children are left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9 teams, 4 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 216,
+      "questionText": "A baker has 103 biscuits. She puts 8 in each packet. How many full packets can she make, and how many biscuits are left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12 packets, 7 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 217,
+      "questionText": "A postman has 83 letters to deliver equally to 9 streets. How many letters does each street get, and how many are left over?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9 letters, 2 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 218,
+      "questionText": "A shopkeeper has 47 oranges. He puts them into bags of 5. How many full bags does he make, and how many oranges are left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9 bags, 2 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 219,
+      "questionText": "A teacher has 257 crayons to share equally among 6 art tables. How many crayons does each table get, and how many are left over?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42 each, 5 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 220,
+      "questionText": "A shop has 314 sweets to put into jars of 9. How many full jars can be filled, and how many sweets are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "34 jars, 8 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 221,
+      "questionText": "A farmer collects 183 eggs and puts 8 in each box. How many full boxes does he fill, and how many eggs are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "22 boxes, 7 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 222,
+      "questionText": "A sports coach has 206 tennis balls to divide equally among 9 baskets. How many balls go in each basket, and how many are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "22 balls, 8 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 223,
+      "questionText": "A ribbon is 365 cm long. It is cut into pieces of 7 cm each. How many complete pieces are cut, and how many centimetres are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "52 pieces, 1 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 224,
+      "questionText": "A school has 289 pencils to share equally among 8 classes. How many pencils does each class get, and how many are left over?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36 each, 1 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 225,
+      "questionText": "A camp cook has 173 sausages to divide equally among 6 barbecue stations. How many sausages go to each station, and how many are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28 each, 5 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 226,
+      "questionText": "A florist has 349 daffodils. She ties them into bunches of 8. How many full bunches can she make, and how many are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "43 bunches, 5 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 227,
+      "questionText": "A delivery driver has 427 parcels to load equally into 9 vans. How many parcels go in each van, and how many are left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "47 parcels, 4 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 228,
+      "questionText": "A warehouse has 578 tins of paint. They are packed into crates of 9. How many full crates are there, and how many tins are left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "64 crates, 2 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 229,
+      "questionText": "A school library has 643 bookmarks to share equally among 7 year groups. How many bookmarks does each year group get, and how many are left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "91 each, 6 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 230,
+      "questionText": "A chef has 815 cherry tomatoes. She puts 6 on each plate. How many plates can she prepare, and how many tomatoes are left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "135 plates, 5 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 231,
+      "questionText": "A printer produces 947 leaflets. They are bundled into groups of 8. How many full bundles are made, and how many leaflets are left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "118 bundles, 3 left",
+      "subConceptId": "short-division-remainders",
+      "subConceptName": "Short Division with Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle remainders in the bus stop method",
+        "How to write the remainder (the amount left over after dividing) at the end of your answer"
+      ]
+    },
+    {
+      "questionId": 232,
+      "questionText": "A lift holds 8 people. There are 35 people waiting. How many trips must the lift make to carry everyone?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 233,
+      "questionText": "A packet holds 6 muffins. Sam bakes 26 muffins. How many full packets can he fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 234,
+      "questionText": "Tables seat 5 people each. There are 23 guests at a party. How many tables are needed so everyone has a seat?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 235,
+      "questionText": "A jar holds 7 pencils. Tom has 45 pencils. How many full jars can he fill?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 236,
+      "questionText": "Benches hold 4 children each. There are 19 children in the class. How many benches are needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 237,
+      "questionText": "A baker cuts a 29 cm ribbon into 8 cm pieces. How many complete pieces can she cut?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 238,
+      "questionText": "A taxi holds 4 passengers. There are 27 people who need a taxi. How many taxis must be booked?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 239,
+      "questionText": "Eggs come in boxes of 6. A recipe needs 32 eggs. How many boxes must be bought?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 240,
+      "questionText": "A rope is 200 cm long. It is cut into pieces of 15 cm. How many complete pieces can be cut?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 241,
+      "questionText": "A school trip needs to transport 83 children. Each minibus holds 14 children. How many minibuses must be booked?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 242,
+      "questionText": "A gardener has 100 plants. Each row holds 7 plants. How many complete rows can she plant?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 243,
+      "questionText": "A baker needs 250 grams of butter. Butter comes in 90g packets. How many packets must she buy?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 244,
+      "questionText": "A hall has 150 chairs. They are set out in rows of 11. How many chairs are in the incomplete last row?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 245,
+      "questionText": "An egg box holds 12 eggs. A farmer has 500 eggs. How many full boxes can he fill?",
+      "questionDifficulty": 2,
+      "correctAnswer": "41",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 246,
+      "questionText": "A ferry carries 35 cars per trip. There are 150 cars waiting. How many ferry trips are needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 247,
+      "questionText": "Children sit in groups of 6 for lunch. There are 100 children. How many full tables are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 248,
+      "questionText": "A charity posts letters costing 85p each. They have £20 to spend. How many letters can they post?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 249,
+      "questionText": "A lift has a weight limit of 400 kg. Each person weighs approximately 65 kg. What is the maximum number of people the lift can carry at once?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 250,
+      "questionText": "A school orders pencils in packs of 24. They need at least 500 pencils. How many packs must they order?",
+      "questionDifficulty": 3,
+      "correctAnswer": "21",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 251,
+      "questionText": "A lorry can carry 750 kg. Boxes weigh 32 kg each. How many boxes can the lorry carry?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 252,
+      "questionText": "Tiles are 15 cm wide. A wall is 200 cm wide. How many whole tiles fit across the wall, and how wide is the gap left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13 tiles, 5 cm gap",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 253,
+      "questionText": "A concert hall has 1,000 seats. Each row has 38 seats. How many full rows are there, and how many seats are in the last row?",
+      "questionDifficulty": 3,
+      "correctAnswer": "26 rows, 12 in last",
+      "subConceptId": "interpreting-remainders",
+      "subConceptName": "What To Do With Remainders",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to decide whether to round up, round down, or give the remainder as a fraction",
+        "Why the context of a word problem changes what you do with the remainder"
+      ]
+    },
+    {
+      "questionId": 254,
+      "questionText": "Which is the closest estimate for 189 ÷ 4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 255,
+      "questionText": "Harry says 132 ÷ 11 = 14. He checks by multiplying 14 × 11. What answer does he get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "154",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 256,
+      "questionText": "Estimate 297 ÷ 6 by rounding 297 to the nearest hundred.",
+      "questionDifficulty": 1,
+      "correctAnswer": "50",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 257,
+      "questionText": "A pupil calculates 864 ÷ 36 = 24. Use multiplication to check. Is she correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Yes, she is correct",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 258,
+      "questionText": "Estimate 612 ÷ 29 by rounding both numbers.",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 259,
+      "questionText": "Tom estimates 378 ÷ 9 by rounding 378 to 360. What estimate does he get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 260,
+      "questionText": "Freya says 1,120 ÷ 35 = 34. Without doing the full calculation, is this reasonable?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, the answer should be around 32",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 261,
+      "questionText": "Without calculating exactly, which is the best estimate for 3,648 ÷ 72?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 262,
+      "questionText": "Jake calculates 2,484 ÷ 54 = 46. Mia calculates 2,484 ÷ 54 = 48. Who is correct? Check using multiplication.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Jake, because 54 × 46 = 2,484",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 263,
+      "questionText": "Estimate 7,956 ÷ 82. Which answer is closest?",
+      "questionDifficulty": 3,
+      "correctAnswer": "97",
+      "subConceptId": "estimation-checking",
+      "subConceptName": "Estimating Before Dividing, Checking with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After div",
+      "lessonLearningGoal": [
+        "How to estimate (make a rough guess at) a division answer by rounding",
+        "How to check your answer using multiplication"
+      ]
+    },
+    {
+      "questionId": 264,
+      "questionText": "A PE teacher has 84 tennis balls to share equally among 7 groups. How many balls does each group get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 265,
+      "questionText": "A factory packs 396 biscuits into packets of 11. How many packets are made?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "master-bus-stop",
+      "subConceptName": "master-bus-stop",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "master-bus-stop": {
+      "name": "master-bus-stop",
+      "questionCount": 17,
+      "difficulties": {
+        "D1": 13,
+        "D2": 3,
+        "D3": 1
+      }
+    },
+    "long-division-method": {
+      "name": "Dividing by a 2-digit Number",
+      "questionCount": 39,
+      "difficulties": {
+        "D1": 0,
+        "D2": 18,
+        "D3": 21
+      }
+    },
+    "dividing-word-problems": {
+      "name": "Division Word Problems",
+      "questionCount": 93,
+      "difficulties": {
+        "D1": 2,
+        "D2": 28,
+        "D3": 63
+      }
+    },
+    "interpreting-remainders": {
+      "name": "What To Do With Remainders",
+      "questionCount": 38,
+      "difficulties": {
+        "D1": 11,
+        "D2": 18,
+        "D3": 9
+      }
+    },
+    "short-division-remainders": {
+      "name": "Short Division with Remainders",
+      "questionCount": 38,
+      "difficulties": {
+        "D1": 21,
+        "D2": 12,
+        "D3": 5
+      }
+    },
+    "sharing-equally": {
+      "name": "Division as Sharing Equally",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 6,
+        "D2": 6,
+        "D3": 3
+      }
+    },
+    "estimation-checking": {
+      "name": "Estimating Before Dividing, Checking with Multiplication",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 7,
+        "D2": 12,
+        "D3": 6
+      }
+    }
+  }
+}

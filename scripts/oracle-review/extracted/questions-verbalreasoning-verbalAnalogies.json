@@ -1,0 +1,3270 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "verbalAnalogies",
+    "displayName": "Verbal Analogies",
+    "extractedAt": "2026-03-30T13:05:32.799Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 39,
+      "D2": 49,
+      "D3": 37
+    },
+    "questionTypes": {
+      "pick-from-sets": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to brush as writer is to ___",
+      "options": null,
+      "correctAnswer": "painter + pen",
+      "explanation": "A painter uses a brush, just as a writer uses a pen. Both are tools of their craft. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "painter",
+        "cleaner",
+        "artist"
+      ],
+      "setB": [
+        "book",
+        "pen",
+        "paper"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to hand as helmet is to ___",
+      "options": null,
+      "correctAnswer": "glove + head",
+      "explanation": "A glove covers and protects a hand, just as a helmet covers and protects a head. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ring",
+        "glove",
+        "watch"
+      ],
+      "setB": [
+        "head",
+        "bike",
+        "safety"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to bear as cygnet is to ___",
+      "options": null,
+      "correctAnswer": "cub + swan",
+      "explanation": "A cub is a young bear, just as a cygnet is a young swan. Both are baby animals. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cub",
+        "den",
+        "fur"
+      ],
+      "setB": [
+        "lake",
+        "feather",
+        "swan"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to patient as teacher is to ___",
+      "options": null,
+      "correctAnswer": "doctor + pupil",
+      "explanation": "A doctor looks after a patient, just as a teacher looks after a pupil. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nurse",
+        "doctor",
+        "hospital"
+      ],
+      "setB": [
+        "school",
+        "pupil",
+        "lesson"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to foot as finger is to ___",
+      "options": null,
+      "correctAnswer": "toe + hand",
+      "explanation": "A toe is part of a foot, just as a finger is part of a hand. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shoe",
+        "toe",
+        "ankle"
+      ],
+      "setB": [
+        "ring",
+        "nail",
+        "hand"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to book as verse is to ___",
+      "options": null,
+      "correctAnswer": "chapter + poem",
+      "explanation": "A chapter is a section of a book, just as a verse is a section of a poem. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "page",
+        "chapter",
+        "cover"
+      ],
+      "setB": [
+        "rhyme",
+        "poem",
+        "song"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cat as hoof is to ___",
+      "options": null,
+      "correctAnswer": "paw + horse",
+      "explanation": "A paw belongs to a cat, just as a hoof belongs to a horse. Both are feet of animals. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "claw",
+        "paw",
+        "whisker"
+      ],
+      "setB": [
+        "stable",
+        "horse",
+        "saddle"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to car as wing is to ___",
+      "options": null,
+      "correctAnswer": "wheel + bird",
+      "explanation": "A wheel helps a car move, just as a wing helps a bird fly. Both enable movement. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wheel",
+        "door",
+        "engine"
+      ],
+      "setB": [
+        "sky",
+        "bird",
+        "feather"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to sheep as pack is to ___",
+      "options": null,
+      "correctAnswer": "flock + wolves",
+      "explanation": "A flock is the collective noun for sheep, just as a pack is the collective noun for wolves. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "lamb",
+        "flock",
+        "field"
+      ],
+      "setB": [
+        "wolves",
+        "bag",
+        "cards"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to tired as shiver is to ___",
+      "options": null,
+      "correctAnswer": "yawn + cold",
+      "explanation": "You yawn when you are tired, just as you shiver when you are cold. Both are involuntary reactions. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sleep",
+        "yawn",
+        "stretch"
+      ],
+      "setB": [
+        "cold",
+        "shake",
+        "winter"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to orchestra as captain is to ___",
+      "options": null,
+      "correctAnswer": "conductor + team",
+      "explanation": "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "musician",
+        "conductor",
+        "violin"
+      ],
+      "setB": [
+        "team",
+        "ship",
+        "army"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to dog as meow is to ___",
+      "options": null,
+      "correctAnswer": "bark + cat",
+      "explanation": "Bark is the sound a dog makes, just as meow is the sound a cat makes. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bark",
+        "bone",
+        "lead"
+      ],
+      "setB": [
+        "kitten",
+        "cat",
+        "mouse"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to ink as brush is to ___",
+      "options": null,
+      "correctAnswer": "pen + paint",
+      "explanation": "A pen uses ink to write, just as a brush uses paint to create art. Both are tools paired with their medium. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pen",
+        "bottle",
+        "stain"
+      ],
+      "setB": [
+        "hair",
+        "paint",
+        "canvas"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to pen as canvas is to ___",
+      "options": null,
+      "correctAnswer": "paper + brush",
+      "explanation": "You write on paper with a pen, just as you paint on canvas with a brush. Both pairs link a surface to the tool used on it. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "paper",
+        "pencil",
+        "book"
+      ],
+      "setB": [
+        "brush",
+        "frame",
+        "easel"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to uncle as niece is to ___",
+      "options": null,
+      "correctAnswer": "nephew + aunt",
+      "explanation": "A nephew is the male relation to an uncle, just as a niece is the female relation to an aunt. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nephew",
+        "son",
+        "brother"
+      ],
+      "setB": [
+        "aunt",
+        "mother",
+        "sister"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to bird as fin is to ___",
+      "options": null,
+      "correctAnswer": "wing + fish",
+      "explanation": "A wing helps a bird move through the air, just as a fin helps a fish move through water. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nest",
+        "wing",
+        "beak"
+      ],
+      "setB": [
+        "sea",
+        "fish",
+        "scale"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to morning as supper is to ___",
+      "options": null,
+      "correctAnswer": "breakfast + evening",
+      "explanation": "Breakfast is the meal eaten in the morning, just as supper is the meal eaten in the evening. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "breakfast",
+        "lunch",
+        "dawn"
+      ],
+      "setB": [
+        "evening",
+        "night",
+        "dusk"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to sheep as kennel is to ___",
+      "options": null,
+      "correctAnswer": "pen + dog",
+      "explanation": "A pen is an enclosure for sheep, just as a kennel is a shelter for a dog. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wool",
+        "pen",
+        "field"
+      ],
+      "setB": [
+        "dog",
+        "bone",
+        "lead"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to grape as tree is to ___",
+      "options": null,
+      "correctAnswer": "vine + apple",
+      "explanation": "A grape grows on a vine, just as an apple grows on a tree. Both are fruits and where they grow. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vine",
+        "wine",
+        "fruit"
+      ],
+      "setB": [
+        "leaf",
+        "apple",
+        "wood"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to flour as cow is to ___",
+      "options": null,
+      "correctAnswer": "wheat + milk",
+      "explanation": "Wheat is processed to produce flour, just as a cow produces milk. Both are raw sources of a product. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bread",
+        "wheat",
+        "baker"
+      ],
+      "setB": [
+        "milk",
+        "beef",
+        "farm"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to tall as light is to ___",
+      "options": null,
+      "correctAnswer": "short + heavy",
+      "explanation": "Short is the opposite of tall, and light is the opposite of heavy. Both are antonym pairs describing contrasting qualities. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "short",
+        "height",
+        "big"
+      ],
+      "setB": [
+        "lamp",
+        "heavy",
+        "bright"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to fast as quiet is to ___",
+      "options": null,
+      "correctAnswer": "slow + loud",
+      "explanation": "Slow is the opposite of fast, and quiet is the opposite of loud. Both are antonym pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "slow",
+        "speed",
+        "quick"
+      ],
+      "setB": [
+        "loud",
+        "soft",
+        "silent"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to hard as smooth is to ___",
+      "options": null,
+      "correctAnswer": "soft + rough",
+      "explanation": "Soft is the opposite of hard, and smooth is the opposite of rough. Both are antonym pairs about texture. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "rock",
+        "soft",
+        "tough"
+      ],
+      "setB": [
+        "rough",
+        "silk",
+        "flat"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to narrow as tall is to ___",
+      "options": null,
+      "correctAnswer": "wide + short",
+      "explanation": "Wide is the opposite of narrow, and tall is the opposite of short. Both are antonym pairs describing size. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wide",
+        "thin",
+        "long"
+      ],
+      "setB": [
+        "high",
+        "short",
+        "big"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to polite as brave is to ___",
+      "options": null,
+      "correctAnswer": "rude + cowardly",
+      "explanation": "Rude is the opposite of polite, and brave is the opposite of cowardly. Both are antonym pairs about behaviour. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "kind",
+        "gentle",
+        "rude"
+      ],
+      "setB": [
+        "cowardly",
+        "strong",
+        "hero"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to ancient as shallow is to ___",
+      "options": null,
+      "correctAnswer": "modern + deep",
+      "explanation": "Modern is the opposite of ancient, and shallow is the opposite of deep. Both are antonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "old",
+        "ruin",
+        "modern"
+      ],
+      "setB": [
+        "deep",
+        "water",
+        "puddle"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to generous as honest is to ___",
+      "options": null,
+      "correctAnswer": "selfish + deceitful",
+      "explanation": "Selfish is the opposite of generous, and honest is the opposite of deceitful. Both are antonym pairs about character. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "greedy",
+        "kind",
+        "selfish"
+      ],
+      "setB": [
+        "truth",
+        "deceitful",
+        "fair"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 28,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to temporary as rigid is to ___",
+      "options": null,
+      "correctAnswer": "permanent + flexible",
+      "explanation": "Permanent is the opposite of temporary, and rigid is the opposite of flexible. Both are antonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "brief",
+        "permanent",
+        "lasting"
+      ],
+      "setB": [
+        "flexible",
+        "stiff",
+        "firm"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to abundant as visible is to ___",
+      "options": null,
+      "correctAnswer": "scarce + hidden",
+      "explanation": "Scarce is the opposite of abundant, and visible is the opposite of hidden. Both are antonym pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "plenty",
+        "scarce",
+        "rich"
+      ],
+      "setB": [
+        "clear",
+        "hidden",
+        "bright"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 30,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to timid as cautious is to ___",
+      "options": null,
+      "correctAnswer": "bold + reckless",
+      "explanation": "Bold is the opposite of timid, and cautious is the opposite of reckless. Both are antonym pairs about confidence. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shy",
+        "bold",
+        "nervous"
+      ],
+      "setB": [
+        "reckless",
+        "careful",
+        "safe"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to innocent as artificial is to ___",
+      "options": null,
+      "correctAnswer": "guilty + genuine",
+      "explanation": "Guilty is the opposite of innocent, and artificial is the opposite of genuine. Both are antonym pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pure",
+        "guilty",
+        "young"
+      ],
+      "setB": [
+        "plastic",
+        "genuine",
+        "fake"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to empty as open is to ___",
+      "options": null,
+      "correctAnswer": "full + shut",
+      "explanation": "Full is the opposite of empty, and open is the opposite of shut. Both are antonym pairs. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "full",
+        "bottle",
+        "hollow"
+      ],
+      "setB": [
+        "door",
+        "shut",
+        "wide"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to hand as toe is to ___",
+      "options": null,
+      "correctAnswer": "finger + foot",
+      "explanation": "A finger is part of a hand, just as a toe is part of a foot. Both are part-to-whole relationships. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "finger",
+        "glove",
+        "wrist"
+      ],
+      "setB": [
+        "shoe",
+        "foot",
+        "sock"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to tree as petal is to ___",
+      "options": null,
+      "correctAnswer": "leaf + flower",
+      "explanation": "A leaf is part of a tree, just as a petal is part of a flower. Both are parts of plants. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "forest",
+        "leaf",
+        "bark"
+      ],
+      "setB": [
+        "garden",
+        "flower",
+        "stem"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to clock as key is to ___",
+      "options": null,
+      "correctAnswer": "hand + lock",
+      "explanation": "A hand is part of a clock, just as a key is part of a lock. Both are essential components. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "time",
+        "hand",
+        "tick"
+      ],
+      "setB": [
+        "lock",
+        "door",
+        "metal"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to car as mast is to ___",
+      "options": null,
+      "correctAnswer": "bonnet + boat",
+      "explanation": "A bonnet is part of a car, just as a mast is part of a boat. Both are structural parts of vehicles. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bonnet",
+        "road",
+        "driver"
+      ],
+      "setB": [
+        "flag",
+        "boat",
+        "sail"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to guitar as key is to ___",
+      "options": null,
+      "correctAnswer": "string + piano",
+      "explanation": "A string is part of a guitar, just as a key is part of a piano. Both are parts of musical instruments. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "music",
+        "string",
+        "player"
+      ],
+      "setB": [
+        "piano",
+        "lock",
+        "note"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to face as elbow is to ___",
+      "options": null,
+      "correctAnswer": "nose + arm",
+      "explanation": "A nose is part of a face, just as an elbow is part of an arm. Both are part-to-whole relationships of the body. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "smile",
+        "nose",
+        "head"
+      ],
+      "setB": [
+        "arm",
+        "bend",
+        "joint"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to sentence as brick is to ___",
+      "options": null,
+      "correctAnswer": "word + wall",
+      "explanation": "A word is part of a sentence, just as a brick is part of a wall. Both are small units making up a larger whole. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "word",
+        "full stop",
+        "paragraph"
+      ],
+      "setB": [
+        "cement",
+        "house",
+        "wall"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 40,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to skeleton as stitch is to ___",
+      "options": null,
+      "correctAnswer": "bone + fabric",
+      "explanation": "A bone is part of a skeleton, just as a stitch is part of a fabric. Both are individual units forming a larger structure. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bone",
+        "body",
+        "skull"
+      ],
+      "setB": [
+        "needle",
+        "fabric",
+        "thread"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 41,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to archipelago as scene is to ___",
+      "options": null,
+      "correctAnswer": "island + play",
+      "explanation": "An island is part of an archipelago, just as a scene is part of a play. Both are individual elements within a larger whole. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ocean",
+        "island",
+        "beach"
+      ],
+      "setB": [
+        "actor",
+        "play",
+        "stage"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 42,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to chain as carriage is to ___",
+      "options": null,
+      "correctAnswer": "link + train",
+      "explanation": "A link is part of a chain, just as a carriage is part of a train. Both are individual units in a connected series. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "metal",
+        "fence",
+        "link"
+      ],
+      "setB": [
+        "horse",
+        "wheel",
+        "train"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to fruit as carrot is to ___",
+      "options": null,
+      "correctAnswer": "apple + vegetable",
+      "explanation": "An apple is a type of fruit, just as a carrot is a type of vegetable. Both are category relationships. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tree",
+        "apple",
+        "juice"
+      ],
+      "setB": [
+        "orange",
+        "vegetable",
+        "garden"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to colour as violin is to ___",
+      "options": null,
+      "correctAnswer": "red + instrument",
+      "explanation": "Red is a type of colour, just as a violin is a type of instrument. Both belong to a wider category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "paint",
+        "red",
+        "rainbow"
+      ],
+      "setB": [
+        "instrument",
+        "music",
+        "bow"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to bird as trout is to ___",
+      "options": null,
+      "correctAnswer": "robin + fish",
+      "explanation": "A robin is a type of bird, just as a trout is a type of fish. Both are specific examples of an animal group. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nest",
+        "feather",
+        "robin"
+      ],
+      "setB": [
+        "fish",
+        "river",
+        "scale"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to planet as Thames is to ___",
+      "options": null,
+      "correctAnswer": "Mars + river",
+      "explanation": "Mars is a type of planet, just as the Thames is a type of river. Both are specific examples of a category. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "star",
+        "Mars",
+        "space"
+      ],
+      "setB": [
+        "river",
+        "London",
+        "bridge"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to metal as oak is to ___",
+      "options": null,
+      "correctAnswer": "iron + wood",
+      "explanation": "Iron is a type of metal, just as oak is a type of wood. Both are specific materials within a broader group. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "iron",
+        "strong",
+        "mine"
+      ],
+      "setB": [
+        "leaf",
+        "acorn",
+        "wood"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to shape as emerald is to ___",
+      "options": null,
+      "correctAnswer": "triangle + gemstone",
+      "explanation": "A triangle is a type of shape, just as an emerald is a type of gemstone. Both are specific examples of a category. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "circle",
+        "triangle",
+        "square"
+      ],
+      "setB": [
+        "ring",
+        "gemstone",
+        "green"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to furniture as daisy is to ___",
+      "options": null,
+      "correctAnswer": "table + flower",
+      "explanation": "A table is a type of furniture, just as a daisy is a type of flower. Both are examples belonging to a wider group. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "room",
+        "table",
+        "wood"
+      ],
+      "setB": [
+        "garden",
+        "petal",
+        "flower"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 50,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to reptile as eagle is to ___",
+      "options": null,
+      "correctAnswer": "snake + raptor",
+      "explanation": "A snake is a type of reptile, just as an eagle is a type of raptor (bird of prey). Both are category relationships. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cold",
+        "snake",
+        "scales"
+      ],
+      "setB": [
+        "sky",
+        "feather",
+        "raptor"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 51,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cereal as spinach is to ___",
+      "options": null,
+      "correctAnswer": "wheat + leafy vegetable",
+      "explanation": "Wheat is a type of cereal crop, just as spinach is a type of leafy vegetable. Both are specific examples of food groups. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wheat",
+        "breakfast",
+        "bowl"
+      ],
+      "setB": [
+        "green",
+        "salad",
+        "leafy vegetable"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 52,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to dwelling as sonnet is to ___",
+      "options": null,
+      "correctAnswer": "cottage + poem",
+      "explanation": "A cottage is a type of dwelling, just as a sonnet is a type of poem. Both are specific forms within a broader category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "roof",
+        "family",
+        "cottage"
+      ],
+      "setB": [
+        "rhyme",
+        "Shakespeare",
+        "poem"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to write as spoon is to ___",
+      "options": null,
+      "correctAnswer": "pencil + eat",
+      "explanation": "A pencil is used to write, just as a spoon is used to eat. Both are tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "paper",
+        "letter",
+        "pencil"
+      ],
+      "setB": [
+        "soup",
+        "bowl",
+        "eat"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 54,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to see as ear is to ___",
+      "options": null,
+      "correctAnswer": "eye + hear",
+      "explanation": "An eye is used to see, just as an ear is used to hear. Both are sense organs paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "glasses",
+        "look",
+        "eye"
+      ],
+      "setB": [
+        "sound",
+        "hear",
+        "music"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 55,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to rain as coat is to ___",
+      "options": null,
+      "correctAnswer": "umbrella + cold",
+      "explanation": "An umbrella protects you from rain, just as a coat protects you from cold. Both have a protective purpose. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cloud",
+        "umbrella",
+        "puddle"
+      ],
+      "setB": [
+        "cold",
+        "wool",
+        "button"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to measure as telescope is to ___",
+      "options": null,
+      "correctAnswer": "ruler + magnify",
+      "explanation": "A ruler is used to measure, just as a telescope is used to magnify. Both are instruments paired with their function. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "length",
+        "maths",
+        "ruler"
+      ],
+      "setB": [
+        "star",
+        "magnify",
+        "lens"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to warm as fan is to ___",
+      "options": null,
+      "correctAnswer": "radiator + cool",
+      "explanation": "A radiator is used to warm, just as a fan is used to cool. Both are appliances with opposite temperature functions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "fire",
+        "blanket",
+        "radiator"
+      ],
+      "setB": [
+        "cool",
+        "blade",
+        "air"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to dig as net is to ___",
+      "options": null,
+      "correctAnswer": "spade + catch",
+      "explanation": "A spade is used to dig, just as a net is used to catch. Both are tools paired with their action. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "spade",
+        "soil",
+        "garden"
+      ],
+      "setB": [
+        "fish",
+        "catch",
+        "rope"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to lock as anchor is to ___",
+      "options": null,
+      "correctAnswer": "key + hold",
+      "explanation": "A key operates a lock, just as an anchor holds a ship in place. Both serve a securing function. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "key",
+        "door",
+        "safe"
+      ],
+      "setB": [
+        "hold",
+        "ship",
+        "chain"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to preserve as filter is to ___",
+      "options": null,
+      "correctAnswer": "salt + purify",
+      "explanation": "Salt is used to preserve food, just as a filter is used to purify water. Both serve a processing function. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "jar",
+        "fridge",
+        "salt"
+      ],
+      "setB": [
+        "purify",
+        "screen",
+        "water"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to navigate as compass is to ___",
+      "options": null,
+      "correctAnswer": "map + direction",
+      "explanation": "A map is used to navigate, just as a compass is used to find direction. Both are navigation tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "map",
+        "road",
+        "journey"
+      ],
+      "setB": [
+        "direction",
+        "north",
+        "needle"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to illuminate as microscope is to ___",
+      "options": null,
+      "correctAnswer": "torch + enlarge",
+      "explanation": "A torch is used to illuminate, just as a microscope is used to enlarge. Both are devices paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "candle",
+        "lantern",
+        "torch"
+      ],
+      "setB": [
+        "scientist",
+        "lens",
+        "enlarge"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 63,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to boiling as cool is to ___",
+      "options": null,
+      "correctAnswer": "warm + freezing",
+      "explanation": "Warm is a mild form and boiling is an extreme form of heat, just as cool is mild and freezing is an extreme form of cold. Both show degree of intensity. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "warm",
+        "water",
+        "steam"
+      ],
+      "setB": [
+        "ice",
+        "freezing",
+        "cold"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 64,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to shout as tap is to ___",
+      "options": null,
+      "correctAnswer": "whisper + thump",
+      "explanation": "A whisper is quiet and a shout is loud, just as a tap is gentle and a thump is forceful. Both show increasing intensity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "whisper",
+        "talk",
+        "voice"
+      ],
+      "setB": [
+        "thump",
+        "knock",
+        "door"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to furious as pleased is to ___",
+      "options": null,
+      "correctAnswer": "annoyed + delighted",
+      "explanation": "Annoyed is a mild form of anger and furious is the extreme, just as pleased is mild satisfaction and delighted is the extreme. Both show increasing intensity. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "angry",
+        "annoyed",
+        "cross"
+      ],
+      "setB": [
+        "delighted",
+        "happy",
+        "content"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to starving as tired is to ___",
+      "options": null,
+      "correctAnswer": "hungry + exhausted",
+      "explanation": "Hungry is moderate and starving is extreme, just as tired is moderate and exhausted is extreme. Both show increasing intensity. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "peckish",
+        "hungry",
+        "food"
+      ],
+      "setB": [
+        "exhausted",
+        "sleep",
+        "yawn"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to downpour as breeze is to ___",
+      "options": null,
+      "correctAnswer": "drizzle + gale",
+      "explanation": "A drizzle is light rain and a downpour is heavy rain, just as a breeze is a light wind and a gale is a strong wind. Both show degree of intensity. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "rain",
+        "drizzle",
+        "cloud"
+      ],
+      "setB": [
+        "wind",
+        "air",
+        "gale"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 68,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to terrified as dislike is to ___",
+      "options": null,
+      "correctAnswer": "nervous + hate",
+      "explanation": "Nervous is a mild form of fear and terrified is the extreme, just as dislike is mild and hate is the extreme. Both show increasing intensity of feeling. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scared",
+        "nervous",
+        "worried"
+      ],
+      "setB": [
+        "hate",
+        "loathe",
+        "detest"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to ancient as damp is to ___",
+      "options": null,
+      "correctAnswer": "old + soaked",
+      "explanation": "Old is a mild form and ancient is extreme in terms of age, just as damp is mild and soaked is extreme in terms of wetness. Both show increasing degree. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "old",
+        "new",
+        "aged"
+      ],
+      "setB": [
+        "wet",
+        "soaked",
+        "moist"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 70,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to blizzard as nibble is to ___",
+      "options": null,
+      "correctAnswer": "flurry + devour",
+      "explanation": "A flurry is a light snowfall and a blizzard is an extreme one, just as a nibble is a small bite and devour means to eat ravenously. Both show increasing intensity. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "snow",
+        "frost",
+        "flurry"
+      ],
+      "setB": [
+        "chew",
+        "bite",
+        "devour"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 71,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to oven as gardener is to ___",
+      "options": null,
+      "correctAnswer": "chef + spade",
+      "explanation": "A chef uses an oven, just as a gardener uses a spade. Both are workers paired with their tools. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "food",
+        "kitchen",
+        "chef"
+      ],
+      "setB": [
+        "plant",
+        "spade",
+        "lawn"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 72,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to camera as surgeon is to ___",
+      "options": null,
+      "correctAnswer": "photographer + scalpel",
+      "explanation": "A photographer uses a camera, just as a surgeon uses a scalpel. Both are professionals paired with their tools. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "film",
+        "photographer",
+        "picture"
+      ],
+      "setB": [
+        "scalpel",
+        "hospital",
+        "patient"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to chisel as farmer is to ___",
+      "options": null,
+      "correctAnswer": "sculptor + plough",
+      "explanation": "A sculptor uses a chisel, just as a farmer uses a plough. Both are workers paired with their essential tools. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "stone",
+        "art",
+        "sculptor"
+      ],
+      "setB": [
+        "field",
+        "crop",
+        "plough"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to microscope as electrician is to ___",
+      "options": null,
+      "correctAnswer": "scientist + multimeter",
+      "explanation": "A scientist uses a microscope, just as an electrician uses a multimeter. Both are professionals paired with their specialist tools. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scientist",
+        "lab",
+        "experiment"
+      ],
+      "setB": [
+        "wire",
+        "light",
+        "multimeter"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 75,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to stethoscope as archaeologist is to ___",
+      "options": null,
+      "correctAnswer": "doctor + trowel",
+      "explanation": "A doctor uses a stethoscope, just as an archaeologist uses a trowel. Both are professionals paired with their diagnostic or discovery tools. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nurse",
+        "doctor",
+        "hospital"
+      ],
+      "setB": [
+        "trowel",
+        "museum",
+        "bones"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to baton as astronomer is to ___",
+      "options": null,
+      "correctAnswer": "conductor + telescope",
+      "explanation": "A conductor uses a baton, just as an astronomer uses a telescope. Both are professionals paired with their key tools. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "police",
+        "relay",
+        "conductor"
+      ],
+      "setB": [
+        "planet",
+        "telescope",
+        "star"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 77,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to dog as chick is to ___",
+      "options": null,
+      "correctAnswer": "puppy + hen",
+      "explanation": "A puppy is a young dog, just as a chick is a young hen. Both are baby-to-adult animal pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bone",
+        "puppy",
+        "kennel"
+      ],
+      "setB": [
+        "egg",
+        "nest",
+        "hen"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 78,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cow as lamb is to ___",
+      "options": null,
+      "correctAnswer": "calf + sheep",
+      "explanation": "A calf is a young cow, just as a lamb is a young sheep. Both are baby-to-adult animal pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "milk",
+        "calf",
+        "bull"
+      ],
+      "setB": [
+        "sheep",
+        "wool",
+        "field"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to horse as gosling is to ___",
+      "options": null,
+      "correctAnswer": "foal + goose",
+      "explanation": "A foal is a young horse, just as a gosling is a young goose. Both are baby-to-adult animal pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "foal",
+        "stable",
+        "pony"
+      ],
+      "setB": [
+        "pond",
+        "goose",
+        "feather"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to frog as caterpillar is to ___",
+      "options": null,
+      "correctAnswer": "tadpole + butterfly",
+      "explanation": "A tadpole grows into a frog, just as a caterpillar grows into a butterfly. Both are young-to-adult pairs that undergo transformation. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tadpole",
+        "pond",
+        "lily"
+      ],
+      "setB": [
+        "leaf",
+        "cocoon",
+        "butterfly"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to deer as joey is to ___",
+      "options": null,
+      "correctAnswer": "fawn + kangaroo",
+      "explanation": "A fawn is a young deer, just as a joey is a young kangaroo. Both are baby-to-adult animal pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "antler",
+        "fawn",
+        "forest"
+      ],
+      "setB": [
+        "kangaroo",
+        "pouch",
+        "Australia"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to owl as elver is to ___",
+      "options": null,
+      "correctAnswer": "owlet + eel",
+      "explanation": "An owlet is a young owl, just as an elver is a young eel. Both are baby-to-adult animal pairs with unusual names. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "owlet",
+        "hoot",
+        "talon"
+      ],
+      "setB": [
+        "river",
+        "eel",
+        "slippery"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 83,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to bread as wool is to ___",
+      "options": null,
+      "correctAnswer": "flour + jumper",
+      "explanation": "Flour is used to make bread, just as wool is used to make a jumper. Both are materials paired with their products. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "baker",
+        "oven",
+        "flour"
+      ],
+      "setB": [
+        "sheep",
+        "jumper",
+        "knit"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to paper as sand is to ___",
+      "options": null,
+      "correctAnswer": "wood + glass",
+      "explanation": "Wood pulp is used to make paper, just as sand is used to make glass. Both are raw materials paired with their products. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pen",
+        "wood",
+        "book"
+      ],
+      "setB": [
+        "beach",
+        "castle",
+        "glass"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cheese as grape is to ___",
+      "options": null,
+      "correctAnswer": "milk + wine",
+      "explanation": "Milk is used to make cheese, just as a grape is used to make wine. Both are raw ingredients paired with their products. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "mouse",
+        "slice",
+        "milk"
+      ],
+      "setB": [
+        "vine",
+        "fruit",
+        "wine"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to pottery as ore is to ___",
+      "options": null,
+      "correctAnswer": "clay + metal",
+      "explanation": "Clay is shaped to make pottery, just as ore is smelted to produce metal. Both are raw materials paired with their refined products. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wheel",
+        "kiln",
+        "clay"
+      ],
+      "setB": [
+        "metal",
+        "mine",
+        "rock"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to linen as rubber is to ___",
+      "options": null,
+      "correctAnswer": "flax + tyre",
+      "explanation": "Flax is the plant used to make linen, just as rubber is made into tyres. Both are material-to-product relationships. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cloth",
+        "weave",
+        "flax"
+      ],
+      "setB": [
+        "bounce",
+        "latex",
+        "tyre"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 88,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to learn as kitchen is to ___",
+      "options": null,
+      "correctAnswer": "school + cook",
+      "explanation": "You go to school to learn, just as you go to the kitchen to cook. Both are places paired with their main activity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "school",
+        "teacher",
+        "book"
+      ],
+      "setB": [
+        "knife",
+        "food",
+        "cook"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 89,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to swim as pitch is to ___",
+      "options": null,
+      "correctAnswer": "pool + play",
+      "explanation": "A pool is where you swim, just as a pitch is where you play. Both are places paired with their activities. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "towel",
+        "pool",
+        "water"
+      ],
+      "setB": [
+        "football",
+        "grass",
+        "play"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to worship as court is to ___",
+      "options": null,
+      "correctAnswer": "church + trial",
+      "explanation": "A church is a place of worship, just as a court is a place of trial. Both are buildings paired with their main purpose. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "church",
+        "prayer",
+        "hymn"
+      ],
+      "setB": [
+        "judge",
+        "trial",
+        "law"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to act as studio is to ___",
+      "options": null,
+      "correctAnswer": "theatre + record",
+      "explanation": "A theatre is where you act, just as a studio is where you record. Both are places paired with their creative activities. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "stage",
+        "audience",
+        "theatre"
+      ],
+      "setB": [
+        "music",
+        "record",
+        "artist"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to experiment as observatory is to ___",
+      "options": null,
+      "correctAnswer": "laboratory + observe",
+      "explanation": "A laboratory is where you experiment, just as an observatory is where you observe. Both are specialist places paired with their activities. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scientist",
+        "beaker",
+        "laboratory"
+      ],
+      "setB": [
+        "telescope",
+        "observe",
+        "planet"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to flood as wind is to ___",
+      "options": null,
+      "correctAnswer": "rain + storm",
+      "explanation": "Heavy rain causes a flood, just as strong wind causes a storm. Both are cause-and-effect pairs in weather. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "rain",
+        "river",
+        "dam"
+      ],
+      "setB": [
+        "kite",
+        "gale",
+        "storm"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to ash as exercise is to ___",
+      "options": null,
+      "correctAnswer": "fire + sweat",
+      "explanation": "Fire produces ash, just as exercise produces sweat. Both are cause-and-effect relationships. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "volcano",
+        "fire",
+        "smoke"
+      ],
+      "setB": [
+        "muscle",
+        "sweat",
+        "gym"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to echo as sun is to ___",
+      "options": null,
+      "correctAnswer": "shout + shadow",
+      "explanation": "A shout causes an echo, just as the sun causes a shadow (when it shines on an object). Both are cause-and-effect pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cave",
+        "noise",
+        "shout"
+      ],
+      "setB": [
+        "heat",
+        "shadow",
+        "light"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to rust as neglect is to ___",
+      "options": null,
+      "correctAnswer": "moisture + decay",
+      "explanation": "Moisture causes rust on metal, just as neglect causes decay. Both are cause-and-effect relationships showing deterioration. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "iron",
+        "rain",
+        "moisture"
+      ],
+      "setB": [
+        "garden",
+        "decay",
+        "weeds"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 97,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to leap as quick is to ___",
+      "options": null,
+      "correctAnswer": "jump + rapid",
+      "explanation": "Jump and leap mean the same thing, just as quick and rapid mean the same thing. Both are synonym pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "jump",
+        "frog",
+        "high"
+      ],
+      "setB": [
+        "rapid",
+        "slow",
+        "race"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to snatch as mend is to ___",
+      "options": null,
+      "correctAnswer": "grab + repair",
+      "explanation": "Grab and snatch both mean to seize quickly, just as mend and repair both mean to fix something. Both are synonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "thief",
+        "steal",
+        "grab"
+      ],
+      "setB": [
+        "fix",
+        "broken",
+        "repair"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cunning as weary is to ___",
+      "options": null,
+      "correctAnswer": "sly + fatigued",
+      "explanation": "Sly and cunning both mean crafty or devious, just as weary and fatigued both mean very tired. Both are synonym pairs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "fox",
+        "clever",
+        "sly"
+      ],
+      "setB": [
+        "tired",
+        "sleepy",
+        "fatigued"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to ample as feeble is to ___",
+      "options": null,
+      "correctAnswer": "plentiful + weak",
+      "explanation": "Plentiful and ample both mean more than enough, just as feeble and weak both mean lacking strength. Both are synonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sufficient",
+        "plenty",
+        "plentiful"
+      ],
+      "setB": [
+        "frail",
+        "small",
+        "weak"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to fur as bird is to ___",
+      "options": null,
+      "correctAnswer": "cat + feathers",
+      "explanation": "A cat is covered in fur, just as a bird is covered in feathers. Both are body coverings of animals. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cat",
+        "brush",
+        "warm"
+      ],
+      "setB": [
+        "nest",
+        "feathers",
+        "sky"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to eye as hearing is to ___",
+      "options": null,
+      "correctAnswer": "sight + ear",
+      "explanation": "Sight is the sense that uses the eye, just as hearing is the sense that uses the ear. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sight",
+        "glasses",
+        "colour"
+      ],
+      "setB": [
+        "ear",
+        "sound",
+        "music"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cow as lamb is to ___",
+      "options": null,
+      "correctAnswer": "calf + sheep",
+      "explanation": "A calf is a young cow, just as a lamb is a young sheep. The relationship is baby animal to adult animal. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "milk",
+        "calf",
+        "barn"
+      ],
+      "setB": [
+        "sheep",
+        "wool",
+        "field"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to breakfast as dinner is to ___",
+      "options": null,
+      "correctAnswer": "morning + evening",
+      "explanation": "Morning is the time for breakfast, just as evening is the time for dinner. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cereal",
+        "morning",
+        "toast"
+      ],
+      "setB": [
+        "plate",
+        "food",
+        "evening"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to book as actor is to ___",
+      "options": null,
+      "correctAnswer": "author + film",
+      "explanation": "An author creates a book, just as an actor performs in a film. Both are creators in their field. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "author",
+        "reader",
+        "library"
+      ],
+      "setB": [
+        "stage",
+        "film",
+        "costume"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to hot as ice is to ___",
+      "options": null,
+      "correctAnswer": "fire + cold",
+      "explanation": "Fire is hot, just as ice is cold. Both describe the temperature of something. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sun",
+        "summer",
+        "fire"
+      ],
+      "setB": [
+        "winter",
+        "cold",
+        "snow"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to drive as aeroplane is to ___",
+      "options": null,
+      "correctAnswer": "car + fly",
+      "explanation": "You drive a car, just as you fly an aeroplane. Both describe how a vehicle is operated. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "road",
+        "car",
+        "wheel"
+      ],
+      "setB": [
+        "wing",
+        "airport",
+        "fly"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "___ is to page as song is to ___",
+      "options": null,
+      "correctAnswer": "book + verse",
+      "explanation": "A book is made up of pages, just as a song is made up of verses. Both are parts of a whole. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "read",
+        "paper",
+        "book"
+      ],
+      "setB": [
+        "singer",
+        "verse",
+        "radio"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to flock as wolf is to ___",
+      "options": null,
+      "correctAnswer": "bird + pack",
+      "explanation": "A group of birds is called a flock, just as a group of wolves is called a pack. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bird",
+        "feather",
+        "nest"
+      ],
+      "setB": [
+        "den",
+        "pack",
+        "howl"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to France as Tokyo is to ___",
+      "options": null,
+      "correctAnswer": "Paris + Japan",
+      "explanation": "Paris is the capital of France, just as Tokyo is the capital of Japan. Both are capitals of their countries. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "Paris",
+        "French",
+        "Europe"
+      ],
+      "setB": [
+        "Asia",
+        "Japan",
+        "sushi"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to piano as bow is to ___",
+      "options": null,
+      "correctAnswer": "key + violin",
+      "explanation": "A key is used to play a piano, just as a bow is used to play a violin. Both are how the instrument is played. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "key",
+        "music",
+        "tune"
+      ],
+      "setB": [
+        "arrow",
+        "violin",
+        "string"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to tree as petal is to ___",
+      "options": null,
+      "correctAnswer": "leaf + flower",
+      "explanation": "A leaf is a part of a tree, just as a petal is a part of a flower. Both are parts of a plant. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "leaf",
+        "bark",
+        "root"
+      ],
+      "setB": [
+        "stem",
+        "flower",
+        "garden"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to cold as drought is to ___",
+      "options": null,
+      "correctAnswer": "frost + dry",
+      "explanation": "Frost is caused by cold weather, just as a drought is caused by dry conditions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "winter",
+        "frost",
+        "snow"
+      ],
+      "setB": [
+        "desert",
+        "thirst",
+        "dry"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to chapter as atlas is to ___",
+      "options": null,
+      "correctAnswer": "novel + map",
+      "explanation": "A novel is divided into chapters, just as an atlas is divided into maps. Both are units within a larger work. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "story",
+        "author",
+        "novel"
+      ],
+      "setB": [
+        "globe",
+        "map",
+        "country"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to fish as lungs are to ___",
+      "options": null,
+      "correctAnswer": "gills + human",
+      "explanation": "Gills allow a fish to breathe underwater, just as lungs allow a human to breathe air. Both are breathing organs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scales",
+        "fin",
+        "gills"
+      ],
+      "setB": [
+        "human",
+        "breathe",
+        "chest"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to teeth as shampoo is to ___",
+      "options": null,
+      "correctAnswer": "toothpaste + hair",
+      "explanation": "Toothpaste is used to clean teeth, just as shampoo is used to clean hair. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "dentist",
+        "brush",
+        "toothpaste"
+      ],
+      "setB": [
+        "shower",
+        "hair",
+        "bottle"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to spider as hive is to ___",
+      "options": null,
+      "correctAnswer": "web + bee",
+      "explanation": "A web is the home built by a spider, just as a hive is the home built by a bee. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "leg",
+        "insect",
+        "web"
+      ],
+      "setB": [
+        "bee",
+        "honey",
+        "queen"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "___ is to king as duchess is to ___",
+      "options": null,
+      "correctAnswer": "queen + duke",
+      "explanation": "A queen is the female equivalent of a king, just as a duchess is the female equivalent of a duke. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "prince",
+        "queen",
+        "duke"
+      ],
+      "setB": [
+        "duke",
+        "royal",
+        "lord"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to word as brick is to ___",
+      "options": null,
+      "correctAnswer": "letter + wall",
+      "explanation": "A letter is the smallest building block of a word, just as a brick is the smallest building block of a wall. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sentence",
+        "pen",
+        "letter"
+      ],
+      "setB": [
+        "wall",
+        "cement",
+        "house"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to telescope as small is to ___",
+      "options": null,
+      "correctAnswer": "distant + microscope",
+      "explanation": "A telescope is used to see distant things, just as a microscope is used to see small things. Both are tools for seeing what the eye cannot. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "distant",
+        "star",
+        "lens"
+      ],
+      "setB": [
+        "magnifying glass",
+        "tiny",
+        "microscope"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to mammal as salmon is to ___",
+      "options": null,
+      "correctAnswer": "whale + fish",
+      "explanation": "A whale is a type of mammal, just as a salmon is a type of fish. Both describe an animal and its classification. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "whale",
+        "ocean",
+        "blubber"
+      ],
+      "setB": [
+        "river",
+        "fish",
+        "scales"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to orchestra as captain is to ___",
+      "options": null,
+      "correctAnswer": "conductor + team",
+      "explanation": "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "conductor",
+        "violin",
+        "concert"
+      ],
+      "setB": [
+        "ship",
+        "team",
+        "badge"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to caterpillar as frog is to ___",
+      "options": null,
+      "correctAnswer": "butterfly + tadpole",
+      "explanation": "A butterfly is the adult form of a caterpillar, just as a frog is the adult form of a tadpole. Both undergo metamorphosis. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "leaf",
+        "cocoon",
+        "butterfly"
+      ],
+      "setB": [
+        "tadpole",
+        "pond",
+        "lily"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to guilty as acquit is to ___",
+      "options": null,
+      "correctAnswer": "convict + innocent",
+      "explanation": "To convict someone is to find them guilty, just as to acquit someone is to find them innocent. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "judge",
+        "prison",
+        "convict"
+      ],
+      "setB": [
+        "innocent",
+        "court",
+        "free"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "___ is to painting as playwright is to ___",
+      "options": null,
+      "correctAnswer": "artist + drama",
+      "explanation": "An artist creates a painting, just as a playwright creates a drama. Both are creators and their works. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "canvas",
+        "gallery",
+        "artist"
+      ],
+      "setB": [
+        "drama",
+        "theatre",
+        "stage"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    }
+  ]
+}

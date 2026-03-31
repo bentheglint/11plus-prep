@@ -1,0 +1,1837 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "missingLettersWords",
+    "displayName": "Missing Letters",
+    "extractedAt": "2026-03-30T13:52:00.635Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 2,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Which three-letter word completes this longer word? CH _ _ _ ER",
+      "questionDifficulty": 1,
+      "correctAnswer": "APT",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Which three-letter word completes this longer word? PL _ _ _ ED",
+      "questionDifficulty": 1,
+      "correctAnswer": "ANT",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Which three-letter word completes this longer word? CAR _ _ _ S",
+      "questionDifficulty": 1,
+      "correctAnswer": "PET",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Which three-letter word completes this longer word? MAN _ _ _ D",
+      "questionDifficulty": 2,
+      "correctAnswer": "AGE",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Which three-letter word completes this longer word? CON _ _ _ T",
+      "questionDifficulty": 2,
+      "correctAnswer": "TEN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Which three-letter word completes this longer word? PAS _ _ _ E",
+      "questionDifficulty": 2,
+      "correctAnswer": "SAG",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Which three-letter word completes this longer word? H _ _ _ SOME",
+      "questionDifficulty": 2,
+      "correctAnswer": "AND",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Which three-letter word completes this longer word? C _ _ _ AIN",
+      "questionDifficulty": 3,
+      "correctAnswer": "APT",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Which three-letter word completes this longer word? PAR _ _ _ T",
+      "questionDifficulty": 3,
+      "correctAnswer": "APE",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TERN",
+      "questionDifficulty": 3,
+      "correctAnswer": "PAT",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Which single letter completes this word? B _ AUTY",
+      "questionDifficulty": 1,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Which single letter completes this word? SC _ ENCE",
+      "questionDifficulty": 1,
+      "correctAnswer": "I",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Which single letter completes this word? _ NOWLEDGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "K",
+      "subConceptId": "consonant-gaps",
+      "subConceptName": "Missing Consonants",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ A _ E**. When consonants (letters like B, C, D, F, G...) are missing, the vowels you CAN see tell you what the word sounds like. Sound it out!",
+      "lessonLearningGoal": [
+        "Flipping it around: sometimes the missing letters are consonants, not vowels!",
+        "A clever trick — looking at the vowels you CAN see helps you work out what's missing"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Which single letter completes this word? RHYTH _",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "ending-gaps",
+      "subConceptName": "Missing Letters at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **FORE _ _ _** — the ending is missing! Read the start and think of common English endings: -DOM, -FUL, -MENT, -NESS, -ING, -TION.",
+      "lessonLearningGoal": [
+        "How to solve words with missing letters at the end — common endings are your secret weapon!",
+        "Why knowing endings like ING, TION, LY and ED gives you a massive head start"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Which single letter completes this word? NECE _ SARY",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "consonant-gaps",
+      "subConceptName": "Missing Consonants",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ A _ E**. When consonants (letters like B, C, D, F, G...) are missing, the vowels you CAN see tell you what the word sounds like. Sound it out!",
+      "lessonLearningGoal": [
+        "Flipping it around: sometimes the missing letters are consonants, not vowels!",
+        "A clever trick — looking at the vowels you CAN see helps you work out what's missing"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Which three-letter word completes this longer word? FORE _ _ _",
+      "questionDifficulty": 1,
+      "correctAnswer": "MAN",
+      "subConceptId": "ending-gaps",
+      "subConceptName": "Missing Letters at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **FORE _ _ _** — the ending is missing! Read the start and think of common English endings: -DOM, -FUL, -MENT, -NESS, -ING, -TION.",
+      "lessonLearningGoal": [
+        "How to solve words with missing letters at the end — common endings are your secret weapon!",
+        "Why knowing endings like ING, TION, LY and ED gives you a massive head start"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Which three-letter word completes this longer word? W _ _ _ OW",
+      "questionDifficulty": 2,
+      "correctAnswer": "ILL",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ ROOM",
+      "questionDifficulty": 2,
+      "correctAnswer": "BAT",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TAGE",
+      "questionDifficulty": 3,
+      "correctAnswer": "COT",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ ITAL",
+      "questionDifficulty": 3,
+      "correctAnswer": "CAP",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ PET",
+      "questionDifficulty": 1,
+      "correctAnswer": "CAR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ DEN",
+      "questionDifficulty": 1,
+      "correctAnswer": "GAR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ NET",
+      "questionDifficulty": 1,
+      "correctAnswer": "PLA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ DLE",
+      "questionDifficulty": 1,
+      "correctAnswer": "CAN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TEN",
+      "questionDifficulty": 1,
+      "correctAnswer": "KIT",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ BIT",
+      "questionDifficulty": 1,
+      "correctAnswer": "RAB",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ VER",
+      "questionDifficulty": 1,
+      "correctAnswer": "SIL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ ROT",
+      "questionDifficulty": 1,
+      "correctAnswer": "CAR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TAIN",
+      "questionDifficulty": 2,
+      "correctAnswer": "CAP",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TION",
+      "questionDifficulty": 2,
+      "correctAnswer": "POR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TERN",
+      "questionDifficulty": 2,
+      "correctAnswer": "LAN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ PTER",
+      "questionDifficulty": 2,
+      "correctAnswer": "CHA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ MENT",
+      "questionDifficulty": 2,
+      "correctAnswer": "PAY",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TURE",
+      "questionDifficulty": 2,
+      "correctAnswer": "VEN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ IAGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "MAR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ RAGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "STO",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ LISH",
+      "questionDifficulty": 2,
+      "correctAnswer": "PUB",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ CRET",
+      "questionDifficulty": 2,
+      "correctAnswer": "SEC",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ THER",
+      "questionDifficulty": 2,
+      "correctAnswer": "WEA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ LUME",
+      "questionDifficulty": 2,
+      "correctAnswer": "VOL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ ESTOR",
+      "questionDifficulty": 3,
+      "correctAnswer": "ANC",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ RENDER",
+      "questionDifficulty": 3,
+      "correctAnswer": "SUR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ MANENT",
+      "questionDifficulty": 3,
+      "correctAnswer": "PER",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ NITURE",
+      "questionDifficulty": 3,
+      "correctAnswer": "FUR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ ARTURE",
+      "questionDifficulty": 3,
+      "correctAnswer": "DEP",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ TACLE",
+      "questionDifficulty": 3,
+      "correctAnswer": "SPE",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ VENTURE",
+      "questionDifficulty": 3,
+      "correctAnswer": "ADV",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Which three-letter word completes this longer word? _ _ _ GUAGE",
+      "questionDifficulty": 3,
+      "correctAnswer": "LAN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Which letter completes this word? G _ F T",
+      "questionDifficulty": 1,
+      "correctAnswer": "I",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Which letter completes this word? H _ L P",
+      "questionDifficulty": 1,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Which letter completes this word? G _ L D",
+      "questionDifficulty": 1,
+      "correctAnswer": "O",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Which letter completes this word? J _ M P",
+      "questionDifficulty": 1,
+      "correctAnswer": "U",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Which letter completes this word? N _ S T",
+      "questionDifficulty": 1,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Which letter completes this word? M _ L K",
+      "questionDifficulty": 1,
+      "correctAnswer": "I",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Which letter completes this word? S _ F T",
+      "questionDifficulty": 1,
+      "correctAnswer": "O",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Which letter completes this word? G R _ S P",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Which letter completes this word? S C _ L P",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Which letter completes this word? S T _ M P",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Which letter completes this word? F R _ G H T",
+      "questionDifficulty": 2,
+      "correctAnswer": "I",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Which letter completes this word? S P L _ S H",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Which letter completes this word? C L _ T C H",
+      "questionDifficulty": 2,
+      "correctAnswer": "U",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Which letter completes this word? S C R _ T C H",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Which letter completes this word? S T R _ T C H",
+      "questionDifficulty": 2,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Which letter completes this word? S Q U _ L L",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Which letter completes this word? S T R _ N G T H",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Which letter completes this word? T H R _ U G H",
+      "questionDifficulty": 3,
+      "correctAnswer": "O",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Which letter completes this word? R H _ T H M",
+      "questionDifficulty": 3,
+      "correctAnswer": "Y",
+      "subConceptId": "consonant-gaps",
+      "subConceptName": "Missing Consonants",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ A _ E**. When consonants (letters like B, C, D, F, G...) are missing, the vowels you CAN see tell you what the word sounds like. Sound it out!",
+      "lessonLearningGoal": [
+        "Flipping it around: sometimes the missing letters are consonants, not vowels!",
+        "A clever trick — looking at the vowels you CAN see helps you work out what's missing"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Which letter completes this word? T W _ L F T H",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Which letter completes this word? K N _ W L E D G E",
+      "questionDifficulty": 3,
+      "correctAnswer": "O",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Which letter completes this word? S M _ D G E",
+      "questionDifficulty": 3,
+      "correctAnswer": "U",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Which letter completes this word? W R _ S T L E",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Which letter completes this word? S C H _ D U L E",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Which letter completes this word? P L _ D G E",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "vowel-gaps",
+      "subConceptName": "Missing Vowels",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+        "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LING",
+      "questionDifficulty": 1,
+      "correctAnswer": "DAR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) STER",
+      "questionDifficulty": 1,
+      "correctAnswer": "MON",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) MER",
+      "questionDifficulty": 1,
+      "correctAnswer": "SUM",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BER",
+      "questionDifficulty": 1,
+      "correctAnswer": "TIM",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) NER",
+      "questionDifficulty": 1,
+      "correctAnswer": "DIN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LET",
+      "questionDifficulty": 1,
+      "correctAnswer": "BUL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) PEN",
+      "questionDifficulty": 1,
+      "correctAnswer": "HAP",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TURE",
+      "questionDifficulty": 2,
+      "correctAnswer": "CUL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TORY",
+      "questionDifficulty": 2,
+      "correctAnswer": "FAC",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) VOUR",
+      "questionDifficulty": 2,
+      "correctAnswer": "FLA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IBLE",
+      "questionDifficulty": 2,
+      "correctAnswer": "VIS",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SAGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "MES",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "PRA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LACE",
+      "questionDifficulty": 2,
+      "correctAnswer": "REP",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RATE",
+      "questionDifficulty": 2,
+      "correctAnswer": "OPE",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CADE",
+      "questionDifficulty": 2,
+      "correctAnswer": "ARC",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LUME",
+      "questionDifficulty": 2,
+      "correctAnswer": "VOL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSITY",
+      "questionDifficulty": 3,
+      "correctAnswer": "CUR",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) QUENT",
+      "questionDifficulty": 3,
+      "correctAnswer": "FRE",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SIBLE",
+      "questionDifficulty": 3,
+      "correctAnswer": "POS",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CIENT",
+      "questionDifficulty": 3,
+      "correctAnswer": "EFF",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BRATE",
+      "questionDifficulty": 3,
+      "correctAnswer": "CEL",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TIFUL",
+      "questionDifficulty": 3,
+      "correctAnswer": "BEA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GRANCE",
+      "questionDifficulty": 3,
+      "correctAnswer": "FRA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LENGE",
+      "questionDifficulty": 3,
+      "correctAnswer": "CHA",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GMENT",
+      "questionDifficulty": 3,
+      "correctAnswer": "JUD",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DERER",
+      "questionDifficulty": 3,
+      "correctAnswer": "WAN",
+      "subConceptId": "beginning-gaps",
+      "subConceptName": "Missing Letters at the Start",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+      "lessonLearningGoal": [
+        "How to crack words with missing letters at the start — read the ending first!",
+        "Why the end of a word is often your biggest clue to what's at the beginning"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Which three-letter word completes this longer word?\n\nF ( _ _ _ ) YARD",
+      "questionDifficulty": 1,
+      "correctAnswer": "ARM",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Which three-letter word completes this longer word?\n\nWAR ( _ _ _ ) S",
+      "questionDifficulty": 1,
+      "correctAnswer": "DEN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Which three-letter word completes this longer word?\n\nGAR ( _ _ _ ) ER",
+      "questionDifficulty": 1,
+      "correctAnswer": "DEN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Which three-letter word completes this longer word?\n\nPAR ( _ _ _ ) S",
+      "questionDifficulty": 1,
+      "correctAnswer": "ROT",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Which three-letter word completes this longer word?\n\nBAL ( _ _ _ ) S",
+      "questionDifficulty": 1,
+      "correctAnswer": "LET",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Which three-letter word completes this longer word?\n\nHAM ( _ _ _ ) S",
+      "questionDifficulty": 1,
+      "correctAnswer": "PER",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Which three-letter word completes this longer word?\n\nDAM ( _ _ _ ) D",
+      "questionDifficulty": 1,
+      "correctAnswer": "AGE",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Which three-letter word completes this longer word?\n\nMUS ( _ _ _ ) D",
+      "questionDifficulty": 1,
+      "correctAnswer": "TAR",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Which three-letter word completes this longer word?\n\nCUS ( _ _ _ ) S",
+      "questionDifficulty": 2,
+      "correctAnswer": "TOM",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Which three-letter word completes this longer word?\n\nHOS ( _ _ _ ) E",
+      "questionDifficulty": 2,
+      "correctAnswer": "TAG",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Which three-letter word completes this longer word?\n\nBUT ( _ _ _ ) S",
+      "questionDifficulty": 2,
+      "correctAnswer": "TON",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Which three-letter word completes this longer word?\n\nCOT ( _ _ _ ) E",
+      "questionDifficulty": 2,
+      "correctAnswer": "TAG",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Which three-letter word completes this longer word?\n\nWAL ( _ _ _ ) S",
+      "questionDifficulty": 2,
+      "correctAnswer": "LET",
+      "subConceptId": "double-letters",
+      "subConceptName": "Double-Letter Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+      "lessonLearningGoal": [
+        "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+        "Common words with double letters that pop up all the time in the exam"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Which three-letter word completes this longer word?\n\nFOR ( _ _ _ ) DEN",
+      "questionDifficulty": 2,
+      "correctAnswer": "BID",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Which three-letter word completes this longer word?\n\nMAN ( _ _ _ ) R",
+      "questionDifficulty": 2,
+      "correctAnswer": "AGE",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Which three-letter word completes this longer word?\n\nDOC ( _ _ _ ) S",
+      "questionDifficulty": 2,
+      "correctAnswer": "TOR",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Which three-letter word completes this longer word?\n\nCOM ( _ _ _ ) E",
+      "questionDifficulty": 2,
+      "correctAnswer": "PET",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Which three-letter word completes this longer word?\n\nPAL ( _ _ _ ) S",
+      "questionDifficulty": 2,
+      "correctAnswer": "ACE",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Which three-letter word completes this longer word?\n\nMAG ( _ _ _ ) IC",
+      "questionDifficulty": 3,
+      "correctAnswer": "NET",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Which three-letter word completes this longer word?\n\nTEM ( _ _ _ ) ATURE",
+      "questionDifficulty": 3,
+      "correctAnswer": "PER",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Which three-letter word completes this longer word?\n\nCAR ( _ _ _ ) TER",
+      "questionDifficulty": 3,
+      "correctAnswer": "PEN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Which three-letter word completes this longer word?\n\nDIS ( _ _ _ ) CE",
+      "questionDifficulty": 3,
+      "correctAnswer": "TAN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Which three-letter word completes this longer word?\n\nMIS ( _ _ _ ) TUNE",
+      "questionDifficulty": 3,
+      "correctAnswer": "FOR",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Which three-letter word completes this longer word?\n\nVOL ( _ _ _ ) O",
+      "questionDifficulty": 3,
+      "correctAnswer": "CAN",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Which three-letter word completes this longer word?\n\nNEWS ( _ _ _ ) ER",
+      "questionDifficulty": 3,
+      "correctAnswer": "PAP",
+      "subConceptId": "middle-gaps",
+      "subConceptName": "Missing Letters in the Middle",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+      "lessonLearningGoal": [
+        "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+        "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "common-patterns",
+      "name": "Common Letter Patterns"
+    },
+    {
+      "id": "process-of-elimination",
+      "name": "Eliminate and Solve"
+    }
+  ],
+  "subConceptCoverage": {
+    "middle-gaps": {
+      "name": "Missing Letters in the Middle",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 9,
+        "D2": 11,
+        "D3": 9
+      }
+    },
+    "beginning-gaps": {
+      "name": "Missing Letters at the Start",
+      "questionCount": 60,
+      "difficulties": {
+        "D1": 15,
+        "D2": 24,
+        "D3": 21
+      }
+    },
+    "vowel-gaps": {
+      "name": "Missing Vowels",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 9,
+        "D2": 8,
+        "D3": 8
+      }
+    },
+    "consonant-gaps": {
+      "name": "Missing Consonants",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 2
+      }
+    },
+    "ending-gaps": {
+      "name": "Missing Letters at the End",
+      "questionCount": 2,
+      "difficulties": {
+        "D1": 1,
+        "D2": 1,
+        "D3": 0
+      }
+    },
+    "double-letters": {
+      "name": "Double-Letter Words",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 2,
+        "D2": 4,
+        "D3": 0
+      }
+    }
+  }
+}

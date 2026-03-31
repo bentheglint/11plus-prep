@@ -1,0 +1,1419 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterMove",
+    "displayName": "Letter Move",
+    "extractedAt": "2026-03-30T13:51:13.856Z",
+    "subConceptCount": 9,
+    "lessonCount": 11,
+    "screenCount": 44,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "remove-first-letter",
+      "name": "Moving the First Letter",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "remove-first-letter-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+            "How to quickly test this by covering the front letter — it takes just seconds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Start at the start!",
+              "body": "Daisy is working on letter-move puzzles at home.\n\nHere's a great shortcut: the **first letter** of word 1 is often the one that moves. It's the easiest to test — just chop it off the front and see what's left!\n\n**BLAND** and **OAR** — what happens if you remove the first letter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "B",
+                  "L",
+                  "A",
+                  "N",
+                  "D"
+                ],
+                "label": "BLAND  →  move a letter  →  OAR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Chop the front — see what's hiding!",
+              "body": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Cover, check, insert, check — that's the system. ✓",
+                "incorrectFeedback": "Not quite — start by covering the first letter, then check both new words."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "BLAND: cover \"B\" → LAND",
+                    "why": "Is LAND a real word? YES!"
+                  },
+                  {
+                    "text": "Insert \"B\" into OAR → BOAR",
+                    "why": "Is BOAR a real word? YES!"
+                  },
+                  {
+                    "text": "Both LAND and BOAR are real ✓",
+                    "why": "The first letter was the answer!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **FLAME** to **OWL**?\n\nTry the first letter first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from FLAME to OWL?",
+                "options": [
+                  "F",
+                  "L",
+                  "A",
+                  "M",
+                  "E"
+                ],
+                "correctAnswer": "F",
+                "correctFeedback": "Brilliant! Remove F from FLAME = LAME (unable to walk properly). Insert F at the start of OWL = FOWL (a bird). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"F\". Remove F from FLAME = LAME (unable to walk properly). Insert F at the start of OWL = FOWL (a bird). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "F",
+                  "L",
+                  "A",
+                  "M",
+                  "E"
+                ],
+                "label": "Move a letter from FLAME into OWL:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "First letter first — easy wins!",
+              "body": "You've got a great starting strategy now! When you see a letter-move question:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try the FIRST letter of word 1",
+                    "why": "Just cover it up — is the rest a real word?"
+                  },
+                  {
+                    "text": "2. If it's real, try inserting that letter into word 2",
+                    "why": "Usually at the start of word 2"
+                  },
+                  {
+                    "text": "3. Both real? You're done!",
+                    "why": "The first letter is the answer more often than you'd think ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "remove-first-letter-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "What to do when the first letter trick doesn't work — don't panic, just try the next!",
+            "How to stay calm and move through options without wasting time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "First letter of SHOUT — does it work?",
+              "body": "Evie is checking her practice answers.\n\nYou'd normally try the **first letter** — but look what happens with **SHOUT** and **PEN**:\n\nRemove \"S\" from SHOUT → **HOUT** — not a real word! Don't worry — just move on to the next letter. You've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "H",
+                  "O",
+                  "U",
+                  "T"
+                ],
+                "label": "SHOUT  →  move a letter  →  PEN"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "When the first letter fails — try the next!",
+              "body": "The first letter \"S\" didn't work: SHOUT → HOUT (not a word!). So we move to the **next letter** and keep testing:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try \"S\": SHOUT → HOUT",
+                    "why": "Not a real word — move on!"
+                  },
+                  {
+                    "text": "Try \"O\": SHOUT → SHUT",
+                    "why": "SHUT IS a real word! Keep going..."
+                  },
+                  {
+                    "text": "Insert \"O\" into PEN → OPEN",
+                    "why": "OPEN is a real word too! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **GROWN** to **ATE**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from GROWN to ATE?",
+                "options": [
+                  "G",
+                  "R",
+                  "O",
+                  "W",
+                  "N"
+                ],
+                "correctAnswer": "R",
+                "correctFeedback": "Well done! Remove G? ROWN isn't a word! Try R: GROWN → GOWN (a long dress). Insert R into ATE → RATE (a speed). Both real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"R\". Remove G? ROWN isn't a word! Try R: GROWN → GOWN (a long dress). Insert R into ATE → RATE (a speed). Both real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "G",
+                  "R",
+                  "O",
+                  "W",
+                  "N"
+                ],
+                "label": "Move a letter from GROWN into ATE:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "No stress — just try the next one!",
+              "body": "The first letter is a great starting point, but it won't always be the answer. No problem! Here's your plan:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try removing the first letter",
+                    "why": "Is the rest a real word? If YES, great — test it with word 2"
+                  },
+                  {
+                    "text": "If NOT a real word, don't panic!",
+                    "why": "Move on to the second letter, then the third, and so on"
+                  },
+                  {
+                    "text": "Keep testing until BOTH new words work",
+                    "why": "The answer is often the 2nd or last letter when the 1st fails ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remove-last-letter",
+      "name": "Moving the Last Letter",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "remove-last-letter-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Another quick test: sometimes it's the LAST letter that needs to move!",
+            "Why checking the end is just as fast as checking the front"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Don't forget the end!",
+              "body": "Daisy is trying a new set of letter-move questions.\n\nIf the first letter doesn't work, try the **last letter** next! It's just as quick — cover the end of the word and see what's left. Easy!\n\n**PLANT** — what happens if you remove the last letter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "P",
+                  "L",
+                  "A",
+                  "N",
+                  "T"
+                ],
+                "label": "PLANT  →  move a letter  →  OUR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Cover the end — read what's left",
+              "body": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "PLANT: cover \"T\" → PLAN",
+                    "why": "Is PLAN a real word? YES!"
+                  },
+                  {
+                    "text": "Insert \"T\" into OUR → TOUR",
+                    "why": "Is TOUR a real word? YES!"
+                  },
+                  {
+                    "text": "PLAN ✓ and TOUR ✓ — the last letter was the answer!",
+                    "why": "Always check BOTH new words"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **JOINT** to **OUR**?\n\nTry the last letter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from JOINT to OUR?",
+                "options": [
+                  "J",
+                  "O",
+                  "I",
+                  "N",
+                  "T"
+                ],
+                "correctAnswer": "T",
+                "correctFeedback": "Brilliant! Remove T from the end of JOINT = JOIN (to connect). Insert T at the start of OUR = TOUR (a journey). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"T\". Remove T from the end of JOINT = JOIN (to connect). Insert T at the start of OUR = TOUR (a journey). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "J",
+                  "O",
+                  "I",
+                  "N",
+                  "T"
+                ],
+                "label": "Move a letter from JOINT into OUR:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two quick tests in your pocket!",
+              "body": "Brilliant — now you've got TWO fast checks. The first and last letters are the easiest:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try the FIRST letter first",
+                    "why": "Cover the front — read the rest"
+                  },
+                  {
+                    "text": "2. If that doesn't work, try the LAST letter",
+                    "why": "Cover the end — read what's left"
+                  },
+                  {
+                    "text": "3. First + last covers most questions!",
+                    "why": "Only go to middle letters if neither works ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remove-middle-letter",
+      "name": "Moving a Middle Letter",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "remove-middle-letter-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+            "Why trying first and last before the middle keeps you fast and organised"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Sometimes it's hiding in the middle!",
+              "body": "Lily is stuck on a tricky letter-move question.\n\nOK, so the first and last letters didn't work. No worries — sometimes the letter that moves is **hiding in the middle** of word 1. These are the trickiest ones, but you can handle them!\n\n**GRAVE** and **OAR** — which middle letter makes two real words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "G",
+                  "R",
+                  "A",
+                  "V",
+                  "E"
+                ],
+                "label": "GRAVE  →  move a letter  →  OAR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pull out the middle letter",
+              "body": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "GRAVE: remove \"R\" from the middle",
+                    "why": "The other letters close the gap"
+                  },
+                  {
+                    "text": "Result: GAVE",
+                    "why": "Is GAVE a real word? YES!"
+                  },
+                  {
+                    "text": "Insert \"R\" into OAR → ROAR",
+                    "why": "ROAR is a real word too! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **PLANE** to **ATE**?\n\nHint: it's NOT the first or last letter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from PLANE to ATE?",
+                "options": [
+                  "P",
+                  "L",
+                  "A",
+                  "N",
+                  "E"
+                ],
+                "correctAnswer": "L",
+                "correctFeedback": "Brilliant! Remove L from PLANE = PANE (a sheet of glass). Insert L at the start of ATE = LATE (not on time). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"L\". Remove L from PLANE = PANE (a sheet of glass). Insert L at the start of ATE = LATE (not on time). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "P",
+                  "L",
+                  "A",
+                  "N",
+                  "E"
+                ],
+                "label": "Move a letter from PLANE into ATE:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Middle letters — you can handle these!",
+              "body": "Middle letters are the trickiest, so save them for last. But now you know how:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try the first letter",
+                    "why": "Quickest check"
+                  },
+                  {
+                    "text": "2. Try the last letter",
+                    "why": "Second quickest"
+                  },
+                  {
+                    "text": "3. Only then try middle letters",
+                    "why": "When you remove a middle letter, the sides close up ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insert-at-start",
+      "name": "Adding the Letter to the Front",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "insert-at-start-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Where does the letter land? Start position is the most common — and easiest to test!",
+            "Why trying start-insertion first gives you the best chance of a quick answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Where does the letter land?",
+              "body": "Evie is learning where to put the moved letter.\n\nOnce you've found the letter to move, the next question is: **where does it go** in word 2? Good news — the most common spot is right at the **START**! Try that first.\n\n**SPINE** → move \"S\" → pop it at the start of **OAR**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "P",
+                  "I",
+                  "N",
+                  "E"
+                ],
+                "label": "SPINE  →  move a letter  →  OAR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Start position — the most common",
+              "body": "We've found that **\"S\"** moves from **SPINE**. Where does it go in **OAR**? In most letter-move questions, the moved letter goes to the **front** of word 2. Always try the start first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In most letter-move questions, the moved letter goes to the ____ of word 2",
+                "options": [
+                  "start",
+                  "end",
+                  "middle",
+                  "nowhere"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The start is the most common insertion position — always try it first. ✓",
+                "incorrectFeedback": "Not quite — in most cases, the moved letter goes to the START of word 2!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Letter to move: \"S\"",
+                    "why": "Removed from SPINE to make PINE"
+                  },
+                  {
+                    "text": "Try the START: \"S\" + OAR = SOAR",
+                    "why": "Is SOAR a real word? YES!"
+                  },
+                  {
+                    "text": "Both PINE and SOAR are real ✓",
+                    "why": "Start position worked!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **CRATE** to the START of **OAT**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from CRATE to OAT?",
+                "options": [
+                  "C",
+                  "R",
+                  "A",
+                  "T",
+                  "E"
+                ],
+                "correctAnswer": "C",
+                "correctFeedback": "Brilliant! Remove C from CRATE = RATE (a speed or level). Insert C at the START of OAT = COAT (a jacket). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"C\". Remove C from CRATE = RATE (a speed or level). Insert C at the START of OAT = COAT (a jacket). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "C",
+                  "R",
+                  "A",
+                  "T",
+                  "E"
+                ],
+                "label": "Move a letter from CRATE into OAT:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Start position — your best bet!",
+              "body": "Great work! When inserting the moved letter into word 2, try the start first:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try the START of word 2 first",
+                    "why": "Put the letter right at the front"
+                  },
+                  {
+                    "text": "2. Read the new word — is it real?",
+                    "why": "Say it out loud if you need to"
+                  },
+                  {
+                    "text": "3. Most answers use start-insertion",
+                    "why": "S + OAR = SOAR, B + OWL = BOWL, T + OWN = TOWN ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insert-at-end",
+      "name": "Adding the Letter to the End",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "insert-at-end-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The backup plan: if the start doesn't work, try putting the letter at the END!",
+            "Why having two positions to check (start and end) means you'll always find the answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Plot twist — it goes at the end!",
+              "body": "Daisy is discovering the letter can go at the end.\n\nUsually the moved letter goes at the **start** of word 2. But sometimes it goes at the **END** instead! If the front doesn't make a real word, just flip to the back. Easy switch!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "H",
+                  "A",
+                  "V",
+                  "E"
+                ],
+                "label": "SHAVE  →  move a letter  →  EAR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Try the end when the start fails",
+              "body": "Look at **SHAVE** and **EAR**. If putting the letter at the front of word 2 doesn't make a real word, try putting it at the **end** instead.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove \"S\" from SHAVE → HAVE",
+                    "why": "HAVE is a real word!"
+                  },
+                  {
+                    "text": "Try START: \"S\" + EAR = ?",
+                    "why": "Does it make a real word? Maybe not..."
+                  },
+                  {
+                    "text": "Try END: EAR + \"S\" = EARS",
+                    "why": "EARS IS a real word! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter moves from **PLANT** to **BEA**?\n\nRemember — the letter might go at the END!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from PLANT to BEA?",
+                "options": [
+                  "P",
+                  "L",
+                  "A",
+                  "N",
+                  "T"
+                ],
+                "correctAnswer": "T",
+                "correctFeedback": "Brilliant! Remove T from the end of PLANT = PLAN (a scheme). Insert T at the END of BEA = BEAT (to win against). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"T\". Remove T from the end of PLANT = PLAN (a scheme). Insert T at the END of BEA = BEAT (to win against). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "P",
+                  "L",
+                  "A",
+                  "N",
+                  "T"
+                ],
+                "label": "Move a letter from PLANT into BEA:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Start or end — now you can try both!",
+              "body": "Brilliant! You've got two places to check when placing the moved letter:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try the letter at the START first",
+                    "why": "This works most of the time"
+                  },
+                  {
+                    "text": "2. If that's not a word, try the END",
+                    "why": "HIS + S = HISS, HEAR + T = HEART"
+                  },
+                  {
+                    "text": "3. Check BOTH new words are real",
+                    "why": "Don't forget to verify word 1 too ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vowel-moves",
+      "name": "Moving a Vowel",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "vowel-moves-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Don't forget the vowels! Sometimes A, E, I, O or U is the letter that moves",
+            "Why vowel moves can surprise you — the word looks totally different without them"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Surprise — vowels move too!",
+              "body": "Evie is tackling a vowel-move question.\n\n**Did you know?** Don't just test consonants (B, C, D...) — sometimes a **vowel** (A, E, I, O, U) is the letter that moves! Vowel moves can be surprising because the word looks totally different without its vowel.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "H",
+                  "O",
+                  "U",
+                  "S",
+                  "E"
+                ],
+                "label": "HOUSE  →  move a letter  →  NIT"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Testing vowel removal",
+              "body": "Look at **HOUSE** and **NIT**. When you remove a vowel from a word, the remaining letters can look very odd. Say it aloud — does it sound like a real word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove \"U\" from HOUSE",
+                    "why": "\"U\" is a vowel"
+                  },
+                  {
+                    "text": "Result: HOSE",
+                    "why": "Is HOSE a real word? YES!"
+                  },
+                  {
+                    "text": "Insert \"U\" into NIT → UNIT",
+                    "why": "UNIT is a real word too ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which **vowel** moves from **HOUSE** to **NIT**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from HOUSE to NIT?",
+                "options": [
+                  "H",
+                  "O",
+                  "U",
+                  "S",
+                  "E"
+                ],
+                "correctAnswer": "U",
+                "correctFeedback": "Brilliant! Remove U from HOUSE = HOSE (a tube for water). Insert U at the start of NIT = UNIT (a single item). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"U\". Remove U from HOUSE = HOSE (a tube for water). Insert U at the start of NIT = UNIT (a single item). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "H",
+                  "O",
+                  "U",
+                  "S",
+                  "E"
+                ],
+                "label": "Move a letter from HOUSE into NIT:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Vowels — now in your toolkit!",
+              "body": "Nice one! Now you know vowels can move too. Here's what to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Vowels: A, E, I, O, U",
+                    "why": "Any of these can be the moved letter"
+                  },
+                  {
+                    "text": "Remove the vowel and say what's left out loud",
+                    "why": "Does it sound like a real word?"
+                  },
+                  {
+                    "text": "HOUSE - U = HOSE, FLOAT - O = FLAT",
+                    "why": "Vowel moves are real — test them ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consonant-moves",
+      "name": "Moving a Consonant",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "consonant-moves-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Meet the usual suspects: the consonants that move the most (B, C, S, G, P, F, T)",
+            "How recognising these common movers gives you a head start"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Meet the usual suspects!",
+              "body": "Daisy is looking for which consonant moves.\n\n**Did you know?** Consonants are the letters that move most often, and some are real favourites: **S, B, P, G, F** and **C**. Spot one of these at the start or end of word 1? That's a great place to start testing!\n\n**GRIPE** and **LOW** — which consonant moves?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "G",
+                  "R",
+                  "I",
+                  "P",
+                  "E"
+                ],
+                "label": "GRIPE  →  move a letter  →  LOW"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The usual suspects: S, B, P, G, F, C",
+              "body": "**GRIPE** starts with **\"G\"** — is that one of the usual suspects? The consonants S, B, P, G, F, and C are the most commonly moved letters. If word 1 starts with one of them, test it first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "GRIPE starts with \"G\"",
+                    "why": "Is \"G\" one of the usual suspects?"
+                  },
+                  {
+                    "text": "Remove \"G\": GRIPE → RIPE",
+                    "why": "RIPE is a real word!"
+                  },
+                  {
+                    "text": "Insert into LOW: GLOW",
+                    "why": "GLOW is a real word too ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which consonant moves from **SWEAR** to **POT**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from SWEAR to POT?",
+                "options": [
+                  "S",
+                  "W",
+                  "E",
+                  "A",
+                  "R"
+                ],
+                "correctAnswer": "S",
+                "correctFeedback": "Brilliant! Remove S from SWEAR = WEAR (to put on clothes). Insert S at the start of POT = SPOT (a mark or place). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"S\". Remove S from SWEAR = WEAR (to put on clothes). Insert S at the start of POT = SPOT (a mark or place). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "W",
+                  "E",
+                  "A",
+                  "R"
+                ],
+                "label": "Move a letter from SWEAR into POT:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your consonant cheat sheet",
+              "body": "Excellent! Keep these common movers in mind — they'll save you time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "S: STALE→TALE, SPINE→PINE, STONE→TONE",
+                    "why": "S is the #1 most common mover"
+                  },
+                  {
+                    "text": "B: BLAND→LAND, BRAVE→RAVE, BRACE→RACE",
+                    "why": "B is very common at the start"
+                  },
+                  {
+                    "text": "P, G, F, C: PRICE→RICE, GLOVE→LOVE, FLAKE→LAKE",
+                    "why": "These are all worth testing first ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "systematic-testing",
+      "name": "Testing Letters Systematically",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "systematic-testing-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "A proper system for testing letters: first, last, then middle — no more guessing!",
+            "Why having this system means you'll never feel stuck or panicky in the exam"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Work smart — use a system!",
+              "body": "Evie is using a system to find the answer quickly.\n\nHere's the thing that separates good solvers from great ones: having a **system** instead of guessing randomly.\n\n1. Try the **first** letter\n2. Try the **last** letter\n3. Then try **middle** letters\n\nThis order is fastest because first and last letters are the quickest to test!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "C",
+                  "R",
+                  "E",
+                  "A",
+                  "M"
+                ],
+                "label": "CREAM  →  move a letter  →  OAT"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "First → Last → Middle",
+              "body": "Let's work through **CREAM** and **OAT** step by step:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! First → last → middle is the fastest system. ✓",
+                "incorrectFeedback": "Not quite — always try first letter, then last, then middle."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Try \"C\" (first letter)",
+                    "why": "Remove it: does the rest make a word?"
+                  },
+                  {
+                    "text": "Step 2: If not, try \"M\" (last letter)",
+                    "why": "Cover the end — is the rest real?"
+                  },
+                  {
+                    "text": "Answer: \"C\" — REAM and COAT",
+                    "why": "System found it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — use the system!",
+              "body": "Follow the system: first → last → middle.\n\nWhich letter moves from **CREAM** to **OAT**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from CREAM to OAT?",
+                "options": [
+                  "C",
+                  "R",
+                  "E",
+                  "A",
+                  "M"
+                ],
+                "correctAnswer": "C",
+                "correctFeedback": "Well done! Test the first letter: remove C from CREAM = REAM (a quantity of paper). Insert C at the start of OAT = COAT (a jacket). Both are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"C\". Test the first letter: remove C from CREAM = REAM (a quantity of paper). Insert C at the start of OAT = COAT (a jacket). Both are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "C",
+                  "R",
+                  "E",
+                  "A",
+                  "M"
+                ],
+                "label": "Move a letter from CREAM into OAT:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your testing system — locked in!",
+              "body": "Fantastic! You've got a proper system now. Always test in this order:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. FIRST letter — cover it, read the rest",
+                    "why": "Takes 2 seconds to check"
+                  },
+                  {
+                    "text": "2. LAST letter — cover the end, read what's left",
+                    "why": "Also takes 2 seconds"
+                  },
+                  {
+                    "text": "3. MIDDLE letters — only if 1 and 2 fail",
+                    "why": "First + last solves most questions ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking-both-words",
+      "name": "Checking BOTH Words Are Real",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "checking-both-words-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The golden rule: BOTH new words must be real — one out of two won't do!",
+            "How to dodge the sneaky traps where one word looks real but the other isn't"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Both words MUST be real!",
+              "body": "Daisy is learning to double-check both words.\n\nWatch out for the biggest trap in letter-move questions: sometimes removing a letter makes word 1 look fine, but the new word 2 **isn't a real word at all**.\n\nAlways check **BOTH** words before you commit to your answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "P",
+                  "A",
+                  "R",
+                  "K"
+                ],
+                "label": "SPARK  →  move a letter  →  OAK"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The double-check rule",
+              "body": "Let's check **SPARK** and **OAK**. After removing a letter, ask TWO questions:\n1. Is the new word 1 real?\n2. Is the new word 2 real?\n\nIf EITHER answer is no, try a different letter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "After moving a letter, you must check that ____ new words are real",
+                "options": [
+                  "both",
+                  "one",
+                  "neither",
+                  "three"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Both new words must be real English words. ✓",
+                "incorrectFeedback": "Not quite — BOTH new words must be real for the answer to be correct!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove \"S\" from SPARK → PARK",
+                    "why": "Is PARK a real word? YES ✓"
+                  },
+                  {
+                    "text": "Insert \"S\" into OAK → SOAK",
+                    "why": "Is SOAK a real word? YES ✓"
+                  },
+                  {
+                    "text": "BOTH are real — this is the answer!",
+                    "why": "Never submit until you've checked both ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — check both!",
+              "body": "Which letter moves from **BRACE** to **OAT** to make **TWO** real words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from BRACE to OAT?",
+                "options": [
+                  "B",
+                  "R",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "correctAnswer": "B",
+                "correctFeedback": "Brilliant! Remove B from BRACE = RACE (a competition). Insert B at the start of OAT = BOAT (floats on water). RACE ✓ and BOAT ✓ — both real! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"B\". Remove B from BRACE = RACE (a competition). Insert B at the start of OAT = BOAT (floats on water). RACE ✓ and BOAT ✓ — both real! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "B",
+                  "R",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "label": "Move a letter from BRACE into OAT:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The BOTH rule — your safety net!",
+              "body": "You've learned the golden rule that keeps you safe from traps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Remove the letter from word 1",
+                    "why": "Is what's left a REAL word?"
+                  },
+                  {
+                    "text": "2. Insert the letter into word 2",
+                    "why": "Is the new word 2 REAL?"
+                  },
+                  {
+                    "text": "3. BOTH must be real — or try again!",
+                    "why": "One real + one fake = WRONG answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "checking-both-words-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "The one-word trap: it looks right but only ONE new word is real — gotcha!",
+            "Why taking an extra second to check saves you from losing easy marks"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Trap alert: \"L\" looks tempting!",
+              "body": "Evie is finding the mistake in her friend's answer.\n\nSomeone picked **\"L\"** as the letter to move from **BLEND** to **OAR**.\n\nRemove \"L\" → BEND (looks OK!)\nInsert \"L\" → LOAR (is that a word...?)\n\nBEND is real, but LOAR isn't a word! You must check BOTH.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "B",
+                  "L",
+                  "E",
+                  "N",
+                  "D"
+                ],
+                "label": "BLEND  →  move a letter  →  OAR"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The trap — one real, one fake",
+              "body": "BEND is real, but LOAR isn't a word! You must check BOTH.\n\nThe correct letter is **\"B\"** — let's check BOTH words:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Remove \"B\" from BLEND → LEND",
+                    "why": "LEND — real word? YES ✓"
+                  },
+                  {
+                    "text": "Insert \"B\" into OAR → BOAR",
+                    "why": "BOAR — real word? YES ✓"
+                  },
+                  {
+                    "text": "BOTH are real — this is correct!",
+                    "why": "Always verify both before answering ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — avoid the trap!",
+              "body": "Which letter ACTUALLY moves from **STALE** to **OAR**?\n\nRemember to check BOTH new words are real!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter should you move from STALE to OAR?",
+                "options": [
+                  "S",
+                  "T",
+                  "A",
+                  "L",
+                  "E"
+                ],
+                "correctAnswer": "S",
+                "correctFeedback": "Brilliant! Remove S from STALE = TALE (a story). Insert S at the start of OAR = SOAR (to fly high). TALE ✓ and SOAR ✓ — both real! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"S\". Remove S from STALE = TALE (a story). Insert S at the start of OAR = SOAR (to fly high). TALE ✓ and SOAR ✓ — both real! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "S",
+                  "T",
+                  "A",
+                  "L",
+                  "E"
+                ],
+                "label": "Move a letter from STALE into OAR:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Trap-proof — you've got this!",
+              "body": "Now you know the sneakiest trap in letter-move questions — and how to avoid it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Checking word 1 but forgetting word 2",
+                    "why": "SOLD is real, but COWN isn't!"
+                  },
+                  {
+                    "text": "Or checking word 2 but forgetting word 1",
+                    "why": "Both must be real English words"
+                  },
+                  {
+                    "text": "ALWAYS check BOTH before you answer",
+                    "why": "Two ticks needed: word 1 ✓ AND word 2 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

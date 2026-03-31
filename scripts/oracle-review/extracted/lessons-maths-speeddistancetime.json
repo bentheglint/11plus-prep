@@ -1,0 +1,1839 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "speeddistancetime",
+    "displayName": "Speed, Distance, Time",
+    "extractedAt": "2026-03-30T13:51:13.661Z",
+    "subConceptCount": 9,
+    "lessonCount": 18,
+    "screenCount": 72,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "calculate-distance",
+      "name": "Distance = Speed × Time",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "calculate-distance-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate distance using speed and time",
+            "Why distance equals speed multiplied by time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Priya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How far did Priya go?",
+              "body": "Priya cycled at a steady speed from her house to the beach.\nThey travelled at **12 km/h** for **3 hours**.\nWe know the speed and the time — but how **far** did they go? There's a simple way to work it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 36,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "Start",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 36,
+                    "label": "?",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 0,
+                    "to": 36,
+                    "label": "12 km/h for 3 hours"
+                  }
+                ],
+                "tickInterval": 9
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Distance = Speed × Time",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Priya travels at **15 km/h** for **4 hours**. How far do they go?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 15 × 4?",
+                "options": [
+                  "60",
+                  "59",
+                  "62",
+                  "57",
+                  "64"
+                ],
+                "correctAnswer": "60",
+                "correctFeedback": "Brilliant! 15 × 4 = **60 km**. Distance = Speed × Time! ✓",
+                "incorrectFeedback": "Not quite! Distance = Speed × Time = 15 × 4 = **60 km**."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 60,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "Start",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 15,
+                    "label": "15",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 30,
+                    "label": "30",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 45,
+                    "label": "45",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 60,
+                    "label": "?",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 0,
+                    "to": 15,
+                    "label": "15 km"
+                  },
+                  {
+                    "from": 15,
+                    "to": 30,
+                    "label": "15 km"
+                  },
+                  {
+                    "from": 30,
+                    "to": 45,
+                    "label": "15 km"
+                  },
+                  {
+                    "from": 45,
+                    "to": 60,
+                    "label": "15 km"
+                  }
+                ],
+                "tickInterval": 15
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The distance rule recipe!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "calculate-distance-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply the distance rule to real journeys and races",
+            "When to watch out for using the wrong units in distance calculations"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How far at 50 mph?",
+              "body": "Sophie is on a road trip and wondering how far the family has driven.\nThey've been going at **50 mph** for **3 hours**.\nCan you figure out the distance without a sat-nav? All you need is a **one-step multiplication**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 150,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "Start",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 150,
+                    "label": "? miles",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 0,
+                    "to": 150,
+                    "label": "3 hours"
+                  }
+                ],
+                "tickInterval": 38
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Just multiply!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Travelling at **40 mph** for **4 hours**. What's the distance?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 40 × 4?",
+                "options": [
+                  "160",
+                  "159",
+                  "162",
+                  "157",
+                  "164"
+                ],
+                "correctAnswer": "160",
+                "correctFeedback": "Spot on! **160 miles**. Just multiply and you're done! ✓",
+                "incorrectFeedback": "Not quite! 40 × 4 = **160 miles**. Distance = Speed × Time."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Distance = Speed × Time = 40 × 4 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Distance = Speed × Time!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calculate-time",
+      "name": "Time = Distance ÷ Speed",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "calculate-time-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate time using distance and speed",
+            "Why time equals distance divided by speed"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How long will it take?",
+              "body": "Ben is driving from London to Brighton at a steady speed.\nThe journey is **120 miles** and they travel at **60 mph**.\nWe know how far and how fast — but how **long** will it take?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 120,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "Start",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 120,
+                    "label": "120 miles",
+                    "color": "#34d399"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 0,
+                    "to": 120,
+                    "label": "60 mph — how long?"
+                  }
+                ],
+                "tickInterval": 30
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Time = Distance ÷ Speed",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Ben travels **150 miles** at **50 mph**. How long does it take?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 150 ÷ 50?",
+                "options": [
+                  "3",
+                  "2",
+                  "5",
+                  "0",
+                  "7"
+                ],
+                "correctAnswer": "3",
+                "correctFeedback": "Brilliant! 150 ÷ 50 = **3 hours**. Time = Distance ÷ Speed! ✓",
+                "incorrectFeedback": "Not quite! Time = Distance ÷ Speed = 150 ÷ 50 = **3 hours**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Time = Distance ÷ Speed = 150 ÷ 50 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The time rule recipe!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "calculate-time-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid dividing speed by distance instead of the other way round",
+            "When to watch out for giving a decimal answer when minutes are needed"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isaac",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Isaac got the wrong answer!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Divide, don't multiply!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A journey of **180 miles** at **60 mph**. How long does it take?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SDTTriangle",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 180 ÷ 60?",
+                "options": [
+                  "3",
+                  "2",
+                  "5",
+                  "0",
+                  "7"
+                ],
+                "correctAnswer": "3",
+                "correctFeedback": "Well done! 180 ÷ 60 = **3 hours**. Remember: for time, always DIVIDE! ✓",
+                "incorrectFeedback": "Not quite! Time = Distance ÷ Speed = 180 ÷ 60 = **3 hours**."
+              },
+              "visualProps": {
+                "cover": "T",
+                "label": "Cover T → D ÷ S"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Time = DIVIDE, never multiply!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sdt-triangle",
+      "name": "The SDT Triangle",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "sdt-triangle-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to use the speed-distance-time triangle",
+            "How to cover up the value you want to find"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One triangle, three rules!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Cover up what you want to find!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — use the triangle!",
+              "body": "Now you need to find the **distance**. Which letter do you cover up?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SDTTriangle",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "To find distance, which letter do you cover?",
+                "options": [
+                  "S",
+                  "D",
+                  "T",
+                  "S × T",
+                  "D ÷ T"
+                ],
+                "correctAnswer": "D",
+                "correctFeedback": "That's right! Cover **D** and you see **S × T**. So Distance = Speed × Time! ✓",
+                "incorrectFeedback": "Not quite! To find distance, cover up **D**. What's left is **S × T** — so Distance = Speed × Time."
+              },
+              "visualProps": {}
+            },
+            {
+              "type": "consolidate",
+              "title": "The SDT triangle — your secret weapon!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "sdt-triangle-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to apply the SDT (Speed, Distance, Time) triangle to quickly choose the right rule",
+            "When to watch out for covering up the wrong letter in the triangle"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One triangle rules them all!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The key fact to memorise!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the distance!",
+              "body": "Speed = **40 mph** and Time = **3 hours**. Cover **D** — what formula do you get?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SDTTriangle",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the distance?",
+                "options": [
+                  "120",
+                  "119",
+                  "122",
+                  "117",
+                  "124"
+                ],
+                "correctAnswer": "120",
+                "correctFeedback": "Spot on! Distance = Speed × Time = **120 miles**. The triangle never lies! ✓",
+                "incorrectFeedback": "Not quite! Distance = Speed × Time. Work it out: the answer is **120 miles**."
+              },
+              "visualProps": {
+                "cover": "D",
+                "label": "Cover D → S × T"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "SDT triangle — memorise this!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minutes-to-hours",
+      "name": "Converting Minutes to Hours for SDT",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "minutes-to-hours-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to convert (change) minutes into hours for speed calculations",
+            "Why 30 minutes is 0.5 hours, not 0.30 hours"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "30 minutes — but the speed is per HOUR!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Divide minutes by 60!",
+              "body": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.75 hrs (¾) | 20 min = ⅓ hr ≈ 0.333",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "30 minutes ÷ 60",
+                    "why": "60 minutes in one hour",
+                    "result": "= 0.5 hours"
+                  },
+                  {
+                    "text": "Now: Speed = Distance ÷ Time",
+                    "why": "Speed = 6 ÷ 0.5",
+                    "result": "= 12 km/h ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **45 minutes** into hours. Remember: divide by 60!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "45 minutes = ? hours",
+                "options": [
+                  0.75,
+                  0.74,
+                  0.77,
+                  0.72,
+                  0.79
+                ],
+                "correctAnswer": "0.75",
+                "correctFeedback": "Yes! 45 ÷ 60 = **0.75 hours**. Always divide by 60, never just move the decimal! ✓",
+                "incorrectFeedback": "Not quite! 45 ÷ 60 = **0.75 hours**. Remember: 60 minutes = 1 hour, so divide by 60."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 60,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0 min",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 45,
+                    "label": "45 min",
+                    "color": "#34d399"
+                  },
+                  {
+                    "value": 60,
+                    "label": "60 min = 1 hr",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 15
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Quick recap!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "minutes-to-hours-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the 0.30 hours trap when converting 30 minutes",
+            "When to watch out for treating minutes as decimals of an hour"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Ben's conversion went wrong!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Minutes are NOT decimals of an hour!",
+              "body": "Ben wrote 30 minutes as 0.30 hours instead of 0.5 hours.\n\n**30 minutes is NOT 0.3 hours!**\nTo convert: divide by 60 (because there are 60 minutes in an hour).\n\n30 ÷ 60 = **0.5 hours**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 30 min = 0.3 hours",
+                    "why": "Just moving the decimal point doesn't work!"
+                  },
+                  {
+                    "text": "RIGHT: 30 ÷ 60 = 0.5 hours",
+                    "why": "Always divide by 60"
+                  },
+                  {
+                    "text": "Correct speed: 5 ÷ 0.5 = 10 km/h",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is the correct speed for 9 km in 45 minutes?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 9 ÷ 0.75?",
+                "options": [
+                  "12",
+                  "11",
+                  "14",
+                  "9",
+                  "16"
+                ],
+                "correctAnswer": "12",
+                "correctFeedback": "Brilliant! 9 ÷ 0.75 = **12 km/h**. You converted the minutes properly! ✓",
+                "incorrectFeedback": "Not quite! First convert: 45 min = 0.75 hours. Then 9 ÷ 0.75 = **12 km/h**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Time: 45 ÷ 60 = 0.75 hours"
+                  },
+                  {
+                    "text": "Speed = 9 ÷ 0.75 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Never just move the decimal!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metres-to-km",
+      "name": "Converting Metres to Kilometres for SDT",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "metres-to-km-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to convert (change) metres to kilometres",
+            "When to change the units before calculating speed"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Metres or kilometres?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "1000 metres = 1 kilometre!",
+              "body": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1 km = 1000 m",
+                    "why": "'Kilo' means thousand!"
+                  },
+                  {
+                    "text": "1500 m ÷ 1000 = 1.5 km",
+                    "why": "Divide by 1000 to go from m to km",
+                    "result": "= 1.5 km ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **2500 metres** to kilometres.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "2500 metres = ? km",
+                "options": [
+                  2.5,
+                  2.4,
+                  2.7,
+                  2.2,
+                  2.9
+                ],
+                "correctAnswer": "2.5",
+                "correctFeedback": "Spot on! 2500 ÷ 1000 = **2.5 km**. Divide by 1000 every time! ✓",
+                "incorrectFeedback": "Not quite! 2500 ÷ 1000 = **2.5 km**. Remember: 1000 metres = 1 kilometre."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 4,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0 km",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "1 km",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2 km",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3 km",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 4,
+                    "label": "4 km",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 0.5
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Metres ↔ kilometres!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "metres-to-km-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid dividing by 100 instead of 1000 when converting metres to km",
+            "When to watch out for mixing metres and kilometres in the same calculation"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "3000 km/h? That can't be right!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Convert metres to km FIRST!",
+              "body": "Daisy used metres instead of km: 1500 ÷ 0.5 = 3000 km/h — impossible!\n\nThe speed is in **km/h**, so the distance must be in **km** too!\n\n1500 m ÷ 1000 = **1.5 km**\nThen: 1.5 ÷ 0.5 = **3 km/h** — much more sensible!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 1500 ÷ 0.5 = 3000 km/h",
+                    "why": "Used metres with km/h — units don't match!"
+                  },
+                  {
+                    "text": "Convert: 1500 m ÷ 1000 = 1.5 km",
+                    "why": "Convert to km first"
+                  },
+                  {
+                    "text": "RIGHT: 1.5 ÷ 0.5 = 3 km/h",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Someone ran **2000 m** in **0.5 hours**. What is the correct speed in km/h?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 2 ÷ 0.5?",
+                "options": [
+                  4,
+                  3.9,
+                  4.2,
+                  3.7,
+                  4.4
+                ],
+                "correctAnswer": "4",
+                "correctFeedback": "Brilliant! 2 ÷ 0.5 = **4 km/h**. Always convert metres to km first! ✓",
+                "incorrectFeedback": "Not quite! Convert first: 2000 m = 2 km. Then 2 ÷ 0.5 = **4 km/h**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2000 m = 2 km"
+                  },
+                  {
+                    "text": "Speed = 2 ÷ 0.5 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Always match your units!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kmh-to-ms",
+      "name": "Converting km/h to m/s",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "kmh-to-ms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to convert (change) km/h to m/s",
+            "Why you multiply by 1000 then divide by 3600"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "72 km/h — but what's that in m/s?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The ÷ 3.6 shortcut!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **54 km/h** to m/s. Use the shortcut: divide by 3.6!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 54 ÷ 3.6?",
+                "options": [
+                  "15",
+                  "14",
+                  "17",
+                  "12",
+                  "19"
+                ],
+                "correctAnswer": "15",
+                "correctFeedback": "Brilliant! 54 ÷ 3.6 = **15 m/s**. The ÷ 3.6 trick works every time! ✓",
+                "incorrectFeedback": "Not quite! 54 ÷ 3.6 = **15 m/s**. Remember: km/h to m/s = divide by 3.6."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "54 ÷ 3.6 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "km/h ↔ m/s — the shortcuts!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "kmh-to-ms-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid multiplying or dividing in the wrong order when converting speed units",
+            "When to watch out for confusing km/h to m/s with m/s to km/h"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "90000 m/s? Something's off!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "You need BOTH conversions!",
+              "body": "Tom converted km to metres but forgot to convert hours to seconds.\n\nTo go from km/h to m/s, you need **two** steps:\n1. km → m (× 1000)\n2. hours → seconds (÷ 3600)\n\nOr use the shortcut: **÷ 3.6**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: just multiplied by 1000 and forgot to divide by 3600",
+                    "why": "Missing a step!"
+                  },
+                  {
+                    "text": "RIGHT: 90 ÷ 3.6 = 25 m/s",
+                    "result": "✓"
+                  },
+                  {
+                    "text": "Check: a fast car ≈ 30 m/s, sprinter ≈ 10 m/s",
+                    "why": "Does it make sense now?"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **72 km/h** to m/s correctly.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 72 km/h in m/s?",
+                "options": [
+                  "20",
+                  "19",
+                  "22",
+                  "17",
+                  "24"
+                ],
+                "correctAnswer": "20",
+                "correctFeedback": "Spot on! 72 ÷ 3.6 = **20 m/s**. Both units must be converted! ✓",
+                "incorrectFeedback": "Not quite! 72 ÷ 3.6 = **20 m/s**. Remember: divide by 3.6 to go from km/h to m/s."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "72 ÷ 3.6 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't forget both conversions!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "time-in-minutes",
+      "name": "Converting Decimal Hours to Minutes",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "time-in-minutes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to convert (change) a decimal answer back into minutes",
+            "Why 0.25 hours equals 15 minutes"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.75 hours — but what's that in minutes?",
+              "body": "Grace calculated her running time as 0.75 hours and needs to know the minutes.\nBut **0.75 hours** isn't very useful — She ran a 5K in the park.\nHow many **minutes** is 0.75 hours?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.75 hours = ? minutes",
+                    "why": "We need to convert to a unit we understand!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply by 60!",
+              "body": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.75 hours × 60",
+                    "why": "60 minutes in every hour",
+                    "result": "= 45 minutes"
+                  },
+                  {
+                    "text": "So 0.75 hours = 45 minutes",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Convert **0.5 hours** into minutes.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.5 hours = ? minutes",
+                "options": [
+                  "30",
+                  "29",
+                  "32",
+                  "27",
+                  "34"
+                ],
+                "correctAnswer": "30",
+                "correctFeedback": "Spot on! 0.5 × 60 = **30 minutes**. Always multiply by 60! ✓",
+                "incorrectFeedback": "Not quite! 0.5 × 60 = **30 minutes**. Multiply decimal hours by 60 to get minutes."
+              },
+              "visualProps": {
+                "min": 0,
+                "max": 180,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 60,
+                    "label": "60 min",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 120,
+                    "label": "120 min",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 180,
+                    "label": "180 min",
+                    "color": "#c084fc"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 30
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decimal hours → minutes: × 60!",
+              "body": "Key decimal-to-minutes conversions:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.25 hours = 15 minutes",
+                    "why": "0.25 × 60 = 15 (a quarter of an hour)"
+                  },
+                  {
+                    "text": "0.5 hours = 30 minutes",
+                    "why": "0.5 × 60 = 30 (half an hour)"
+                  },
+                  {
+                    "text": "0.75 hours = 45 minutes",
+                    "why": "0.75 × 60 = 45 (three quarters of an hour)"
+                  },
+                  {
+                    "text": "For mixed: 1.5 hours = 1 hr 30 min",
+                    "why": "The whole part stays, multiply the decimal by 60 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "time-in-minutes-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid leaving a time answer as a confusing decimal",
+            "When to watch out for writing 0.5 hours as 50 minutes instead of 30"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isaac",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "0.25 hours = 25 minutes?",
+              "body": "Isaac calculated a journey time of 0.25 hours.\nIsaac wrote: \"0.25 hours = **25 minutes**\".\n\nThat's not right! Can you spot the error?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Isaac's answer: 0.25 hours = 25 minutes",
+                    "why": "Is this correct?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply by 60, not 100!",
+              "body": "Isaac read 0.25 hours as 25 minutes — but 0.25 means a QUARTER, not 25!\n\nHours are NOT like money (where 0.25 = 25p). There are **60 minutes** in an hour, not 100!\n\n**0.25 × 60 = 15 minutes**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 0.25 hours = 25 minutes",
+                    "why": "Treated decimals like pence — but hours have 60 mins, not 100!"
+                  },
+                  {
+                    "text": "RIGHT: 0.25 × 60 = 15 minutes",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "How many minutes is **0.5 hours**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "0.5 hours = ? minutes",
+                "options": [
+                  "30",
+                  "29",
+                  "32",
+                  "27",
+                  "34"
+                ],
+                "correctAnswer": "30",
+                "correctFeedback": "Yes! 0.5 × 60 = **30 minutes**. Multiply by 60, never by 100! ✓",
+                "incorrectFeedback": "Not quite! 0.5 × 60 = **30 minutes**. Remember: 60 minutes in an hour."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.5 × 60 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Hours are NOT like money!",
+              "body": "The big trap: treating decimal hours like pounds and pence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "0.25 hours = 15 minutes (NOT 25!)",
+                    "why": "0.25 × 60 = 15"
+                  },
+                  {
+                    "text": "0.5 hours = 30 minutes (NOT 50!)",
+                    "why": "0.5 × 60 = 30"
+                  },
+                  {
+                    "text": "0.75 hours = 45 minutes (NOT 75!)",
+                    "why": "0.75 × 60 = 45"
+                  },
+                  {
+                    "text": "Always multiply by 60 to convert!",
+                    "why": "60 minutes in an hour, not 100! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "average-speed",
+      "name": "Average Speed for Two-Part Journeys",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "average-speed-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+            "Why you must NOT just average the two speeds"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the average speed?",
+              "body": "Aisha drove to her grandmother's house in two parts.\nPart 1 (through the town): **60 miles** at **30 mph**\nPart 2 (on the main road): **40 miles** at **40 mph**\n\nWhat was their average speed? **Don't** just add the speeds and divide by 2!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SDTTriangle",
+              "interaction": null,
+              "visualProps": {
+                "cover": "S",
+                "size": 180,
+                "label": "Total: 100 miles"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Total distance ÷ total time!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Total distance = **80 miles**. Total time = **2 hours**.\nWhat is the average speed?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 80 ÷ 2 (to the nearest whole number)?",
+                "options": [
+                  "40",
+                  "39",
+                  "42",
+                  "37",
+                  "44"
+                ],
+                "correctAnswer": "40",
+                "correctFeedback": "Brilliant! 80 ÷ 2 = **40 mph**. Total distance ÷ total time! ✓",
+                "incorrectFeedback": "Not quite! Average speed = total distance ÷ total time = 80 ÷ 2 = **40 mph**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Average speed = 80 ÷ 2 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Average speed — the golden rule!",
+              "body": "Average speed is NOT the average of the two speeds:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Average speed = TOTAL distance ÷ TOTAL time",
+                    "why": "Add up all the distances, add up all the times, then divide"
+                  },
+                  {
+                    "text": "DON'T add speeds and divide by 2!",
+                    "why": "This only works if you spend the SAME time at each speed"
+                  },
+                  {
+                    "text": "You may need to calculate each time first",
+                    "why": "Time = Distance ÷ Speed for each part"
+                  },
+                  {
+                    "text": "Then add distances, add times, and divide!",
+                    "why": "That gives the true average speed ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "average-speed-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the trap of just averaging two speeds",
+            "Why total distance divided by total time is the only correct method"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Sophie took a shortcut — and got it wrong!",
+              "body": "Sophie drove 60 miles at 30 mph, then 60 miles at 60 mph.\nSophie calculated: **(30 + 60) ÷ 2 = 45 mph**.\n\nIs that correct? Or did Sophie fall into the biggest SDT trap?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sophie's working: (30 + 60) ÷ 2 = 45 mph",
+                    "why": "Just averaged the two speeds — is that OK?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You can't just average the speeds!",
+              "body": "Sophie added the two speeds and divided by 2. That's the **wrong** method!\n\nYou spend **different amounts of time** at each speed, so you must use:\n**Average speed = total distance ÷ total time**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: (30 + 60) ÷ 2 = 45 mph",
+                    "why": "Simply averaging speeds ignores how long you spent at each one"
+                  },
+                  {
+                    "text": "Part 1 time: 60 ÷ 30 = 2h",
+                    "why": "Work out each time separately"
+                  },
+                  {
+                    "text": "Part 2 time: 60 ÷ 60 = 1h",
+                    "why": "Then add them up"
+                  },
+                  {
+                    "text": "RIGHT: 120 ÷ 3 = 40 mph",
+                    "result": "= 40 mph ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Total distance = **200 miles**, total time = **4 hours**.\nWhat is the correct average speed?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 200 ÷ 4?",
+                "options": [
+                  "50",
+                  "49",
+                  "52",
+                  "47",
+                  "54"
+                ],
+                "correctAnswer": "50",
+                "correctFeedback": "Brilliant! 200 ÷ 4 = **50 mph**. Total distance ÷ total time! ✓",
+                "incorrectFeedback": "Not quite! Average speed = 200 ÷ 4 = **50 mph**. Don't just average the two speeds!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Average speed = 200 ÷ 4 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The average speed trap!",
+              "body": "This is the sneakiest question type in the 11+:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "NEVER add speeds and divide by 2!",
+                    "why": "That only works if you spend equal TIME at each speed"
+                  },
+                  {
+                    "text": "Average speed = total distance ÷ total time",
+                    "why": "This ALWAYS works"
+                  },
+                  {
+                    "text": "Work out each journey time first if needed",
+                    "why": "Time = Distance ÷ Speed for each part"
+                  },
+                  {
+                    "text": "Then: add all distances, add all times, divide!",
+                    "why": "That's the real average speed ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "word-problems",
+      "name": "Multi-Step SDT Word Problems",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "word-problems-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to pick out speed, distance, and time from a wordy question",
+            "How to decide which rule to use"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A wordy question — where do you start?",
+              "body": "Here's the question:\n\"A train travels at 80 mph from London to Manchester, which is 160 miles away. How long is the journey?\"\n\nLong and confusing? **Not if you know the trick.** Start by finding the three key pieces: **speed**, **distance**, and **time**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SDTTriangle",
+              "interaction": null,
+              "visualProps": {
+                "label": "Find S, D, and T in the question"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pick out S, D, and T!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A train travels at 80 mph from London to Manchester, which is 160 miles away. How long is the journey?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the answer?",
+                "options": [
+                  "2",
+                  "1",
+                  "4",
+                  "-1",
+                  "6"
+                ],
+                "correctAnswer": "2",
+                "correctFeedback": "Brilliant! You picked the right rule and got **2 hours**! ✓",
+                "incorrectFeedback": "Not quite! Identify: Distance = 160 miles, Speed = 80 mph. Time = 160 ÷ 80 = 2 hours. The answer is **2 hours**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "What rule do you need?",
+                    "why": "Time = Distance ÷ Speed"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Word problems — a step-by-step recipe!",
+              "body": "For any SDT word problem:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: READ the question — what are you asked to find?",
+                    "why": "Speed, distance, or time?"
+                  },
+                  {
+                    "text": "Step 2: UNDERLINE the numbers given",
+                    "why": "Circle speeds, distances, and times"
+                  },
+                  {
+                    "text": "Step 3: CHOOSE the right rule using SDT triangle",
+                    "why": "Cover up what you need to find"
+                  },
+                  {
+                    "text": "Step 4: CHECK — does your answer make sense?",
+                    "why": "Walking speed ≈ 5 km/h, car ≈ 50 mph ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "word-problems-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid using the wrong values from a multi-step word problem",
+            "When to watch out for extra information that is not needed in the calculation"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Where did Grace go wrong?",
+              "body": "A bus travels 90 miles in 1 hour 30 minutes. What is its average speed?\n\nGrace worked it out and got **90 mph**.\n\nThat doesn't seem right. Can you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Grace's answer: 90 mph",
+                    "why": "forgot 1 hr 30 min = 1.5 hours, not 1 hour. Used 90 ÷ 1 = 90 mph"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Convert the time properly!",
+              "body": "Grace forgot 1 hr 30 min = 1.5 hours, not 1 hour. Used 90 ÷ 1 = 90 mph\n\nThe time must be converted to a **decimal** before dividing.\n\n**Convert: 1 hr 30 min = 1.5 hours. Speed = 90 ÷ 1.5 = 60 mph**\n\n**Watch out for these traps:**\n1 hr 30 min = **1.5** hours (NOT 1.30!)\n1 hr 15 min = **1.25** hours (NOT 1.15!)\n2 hr 45 min = **2.75** hours (NOT 2.45!)\nAlways divide the minutes by 60, then add to the hours.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: forgot 1 hr 30 min = 1.5 hours, not 1 hour. Used 90 ÷ 1 = 90 mph",
+                    "why": "Time wasn't converted properly!"
+                  },
+                  {
+                    "text": "RIGHT: Convert: 1 hr 30 min = 1.5 hours. Speed = 90 ÷ 1.5 = 60 mph",
+                    "result": "= 60 mph ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A vehicle travels **100 miles** in **2.5 hours**. What is its speed?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 100 ÷ 2.5?",
+                "options": [
+                  "40",
+                  "39",
+                  "42",
+                  "37",
+                  "44"
+                ],
+                "correctAnswer": "40",
+                "correctFeedback": "Spot on! 100 ÷ 2.5 = **40 mph**. You converted the time properly! ✓",
+                "incorrectFeedback": "Not quite! 100 ÷ 2.5 = **40 mph**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Speed = 100 ÷ 2.5 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Word problem checklist!",
+              "body": "Follow these steps every time you get a speed, distance or time word problem:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the question — what are you finding?",
+                    "why": "Speed, distance, or time? Cover that letter in the triangle"
+                  },
+                  {
+                    "text": "Step 2: Convert the time to hours first!",
+                    "why": "Divide minutes by 60 (e.g. 30 min = 30 ÷ 60 = 0.5 hours)"
+                  },
+                  {
+                    "text": "Step 3: Watch the trap — 1 hour 30 min is NOT 1.30",
+                    "why": "It's 1.5 hours (because 30 ÷ 60 = 0.5)"
+                  },
+                  {
+                    "text": "Step 4: Put the numbers into the formula and calculate",
+                    "why": "Use the triangle: D = S × T, S = D ÷ T, T = D ÷ S ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

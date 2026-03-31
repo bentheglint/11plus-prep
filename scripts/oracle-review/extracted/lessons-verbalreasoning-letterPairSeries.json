@@ -1,0 +1,1762 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterPairSeries",
+    "displayName": "Letter Pair Series",
+    "extractedAt": "2026-03-30T13:51:13.896Z",
+    "subConceptCount": 8,
+    "lessonCount": 11,
+    "screenCount": 44,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "both-forward",
+      "name": "Both Letters Move Forward",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "both-forward-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when both letters in a pair march forward through the alphabet together",
+            "Use the Split and Track method when both rows go the same direction"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Both letters marching forward!",
+              "body": "Daisy is working through her VR practice booklet.\n\nDid you know? Sometimes both letters in a pair go **forward** through the alphabet together — like two friends walking side by side! Split them into two rows and you'll see the pattern straight away.\n\n**AC, BD, CE, DF, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AC",
+                  "BD",
+                  "CE",
+                  "DF"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split and Track — both forward",
+              "body": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Split, find patterns, then combine. ✓",
+                "incorrectFeedback": "Not quite — always split into two rows first!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, B, C, D — goes up by 1 each time, so next is E",
+                    "why": "Count the hops between each letter"
+                  },
+                  {
+                    "text": "Second letters: C, D, E, F — goes up by 1 each time, so next is G",
+                    "why": "Same direction — both going forward!"
+                  },
+                  {
+                    "text": "Combine: next pair = EG",
+                    "why": "First: 1, 2, 3, 4 → 5. Second: 3, 4, 5, 6 → 7"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use Split and Track to find the next pair:\n\n**GI, HJ, IK, JL, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "KM",
+                  "KL",
+                  "LM",
+                  "JM",
+                  "KN"
+                ],
+                "correctAnswer": "KM",
+                "correctFeedback": "Brilliant! Both letters go forward by 1. First row: G, H, I, J, K. Second row: I, J, K, L, M. Next pair = KM. ✓",
+                "incorrectFeedback": "Not quite! The answer is KM. Both letters go forward by 1. First row: G, H, I, J, K. Second row: I, J, K, L, M. Next pair = KM. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "K",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Both forward — nailed it!",
+              "body": "When both letters move forward, it's one of the friendliest patterns:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Split pairs into two rows",
+                    "why": "First letters in one row, second letters in another"
+                  },
+                  {
+                    "text": "2. Both rows count UP",
+                    "why": "They go the same direction — just check the step size"
+                  },
+                  {
+                    "text": "3. Apply the step to each row and combine",
+                    "why": "Easy once you can see it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "both-forward-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Understand why mixing up the two rows trips people up",
+            "Avoid the classic trap of swapping first and second letter patterns"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"HE\" really the next pair?",
+              "body": "Evie is checking her friend's VR homework. The answer given was **HE** — she mixed up which row was first and which was second.\n\nSeries (a list of letters that follow a rule): **AD, BE, CF, DG, ___**\n\nBut is that right? Press Next to find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AD",
+                  "BE",
+                  "CF",
+                  "DG"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check each row carefully!",
+              "body": "The first letters are A, B, C, D (left side of each pair). The friend put the second-row answer first!\n\nAlways split first, then check each row's pattern **separately**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong answer: HE",
+                    "why": "she mixed up which row was first and which was second"
+                  },
+                  {
+                    "text": "The first letters are A, B, C, D (left side of each pair). The friend put the second-row answer first!",
+                    "why": "The mistake"
+                  },
+                  {
+                    "text": "Correct answer: EH",
+                    "why": "First row: A, B, C, D → E. Second row: D, E, F, G → H. Combine = EH, not HE."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the correct next pair!",
+              "body": "**FI, GJ, HK, IL, ___**\n\nSplit into two rows and track each pattern:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "JM",
+                  "MJ",
+                  "KM",
+                  "JL",
+                  "IM"
+                ],
+                "correctAnswer": "JM",
+                "correctFeedback": "Well done! First row: F, G, H, I → J (+1). Second row: I, J, K, L → M (+1). Next pair = JM. ✓",
+                "incorrectFeedback": "Not quite! The answer is JM. First row: F, G, H, I → J (+1). Second row: I, J, K, L → M (+1). Next pair = JM."
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "F",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "K",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Now you won't fall for these!",
+              "body": "Watch out for these common mistakes with both-forward patterns:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Don't swap the two rows around",
+                    "why": "First letter of each pair = first row, second letter = second row"
+                  },
+                  {
+                    "text": "Don't forget to advance BOTH letters",
+                    "why": "Both rows have their own pattern — check each one"
+                  },
+                  {
+                    "text": "Don't guess the step size — count it!",
+                    "why": "+1 and +2 look similar but give different answers ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opposite-directions",
+      "name": "One Forward, One Backward",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "opposite-directions-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot the twist: one letter goes forward while the other goes backward!",
+            "See why Split and Track is essential when letters head in opposite directions"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "They're heading opposite ways!",
+              "body": "Daisy is solving letter pair puzzles.\n\nHere's the twist: one letter goes **forward** while the other goes **backward** — like two people on an escalator going in opposite directions! That's why splitting into two rows is so important.\n\n**AZ, BY, CX, DW, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AZ",
+                  "BY",
+                  "CX",
+                  "DW"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split and Track — opposite directions",
+              "body": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, B, C, D — goes forward by 1, so next is E",
+                    "why": "Track this row separately"
+                  },
+                  {
+                    "text": "Second letters: Z, Y, X, W — goes backward by 1, so next is V",
+                    "why": "Going the OTHER way!"
+                  },
+                  {
+                    "text": "Combine: next pair = EV",
+                    "why": "First: 1, 2, 3, 4 → 5. Second: 26, 25, 24, 23 → 22"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Split and Track — watch out for opposite directions:\n\n**FU, GT, HS, IR, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "JQ",
+                  "JP",
+                  "KQ",
+                  "IQ",
+                  "JR"
+                ],
+                "correctAnswer": "JQ",
+                "correctFeedback": "Brilliant! First letters go forward: F, G, H, I, J (+1). Second letters go backward: U, T, S, R, Q (-1). Next pair = JQ. ✓",
+                "incorrectFeedback": "Not quite! The answer is JQ. First letters go forward: F, G, H, I, J (+1). Second letters go backward: U, T, S, R, Q (-1). Next pair = JQ. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "F",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "R",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Opposite directions — sorted!",
+              "body": "This is actually the most common pattern in the exam, so knowing it gives you a real advantage:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Split pairs into two rows",
+                    "why": "First letters and second letters"
+                  },
+                  {
+                    "text": "2. Check: is each row going UP or DOWN?",
+                    "why": "They often go in opposite directions"
+                  },
+                  {
+                    "text": "3. Apply the correct direction to each row",
+                    "why": "Forward for one, backward for the other ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "opposite-directions-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why assuming both letters go the same way leads to wrong answers",
+            "How to double-check direction for each row"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"EX\" the right answer?",
+              "body": "Evie is reviewing her friend's answer. The answer given was **EX** — she assumed both letters go forward.\n\nSeries: **AZ, BY, CX, DW, ___**\n\nBut is that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AZ",
+                  "BY",
+                  "CX",
+                  "DW"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check each row's direction!",
+              "body": "The first letter does go forward (A→B→C→D→E), but the second goes BACKWARD (Z→Y→X→W→V), not forward.\n\nAlways check: is each row going **up** or **down**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: EX",
+                    "why": "she assumed both letters go forward"
+                  },
+                  {
+                    "text": "The first letter does go forward (A→B→C→D→E), but the second goes BACKWARD (Z→Y→X→W→V), not forward.",
+                    "why": "Always check direction separately"
+                  },
+                  {
+                    "text": "Correct: EV",
+                    "why": "First row: A, B, C, D → E (+1). Second row: Z, Y, X, W → V (-1). Next = EV, not EX."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the correct answer!",
+              "body": "**GU, HT, IS, JR, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "KQ",
+                  "KS",
+                  "LQ",
+                  "JP",
+                  "KP"
+                ],
+                "correctAnswer": "KQ",
+                "correctFeedback": "Well done! First row: G, H, I, J → K (+1). Second row: U, T, S, R → Q (-1). Next = KQ. ✓",
+                "incorrectFeedback": "Not quite! The answer is KQ. First row: G, H, I, J → K (+1). Second row: U, T, S, R → Q (-1). Next = KQ."
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "R",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You know the trap — and you'll avoid it!",
+              "body": "The biggest trap in letter pair series, and how to dodge it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Never assume both rows go the same way",
+                    "why": "One forward + one backward is the most common pattern"
+                  },
+                  {
+                    "text": "Check direction for each row separately",
+                    "why": "A, B, C = forward. Z, Y, X = backward"
+                  },
+                  {
+                    "text": "Then apply the right step to each",
+                    "why": "Get both letters right before combining ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skip-one-pattern",
+      "name": "Skip-One Jumps (+2 or -2)",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "skip-one-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when letters skip one position — jumping by 2 instead of 1",
+            "Use Split and Track with +2 or -2 step patterns confidently"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "These letters are skipping!",
+              "body": "Grace is practising skip-one letter patterns.\n\nInstead of moving one letter at a time, these pairs **skip one** — jumping by 2 positions each step! It's like going up stairs two at a time.\n\n**AC, CE, EG, GI, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AC",
+                  "CE",
+                  "EG",
+                  "GI"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split and Track — skip patterns",
+              "body": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When letters skip one position each time, the step size is ____",
+                "options": [
+                  "+2",
+                  "+1",
+                  "+3",
+                  "+4"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Skipping one letter means the gap is +2 (or -2 going backward). ✓",
+                "incorrectFeedback": "Not quite — skipping one letter means jumping by 2, not 1!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, C, E, G — skips one each time (+2), so next is I",
+                    "why": "Jumping by 2 (skipping one letter)"
+                  },
+                  {
+                    "text": "Second letters: C, E, G, I — skips one each time (+2), so next is K",
+                    "why": "Check: is it +2 or -2?"
+                  },
+                  {
+                    "text": "Combine: next pair = IK",
+                    "why": "First: 1, 3, 5, 7 → 9. Second: 3, 5, 7, 9 → 11"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the next pair — remember, these skip one!\n\n**MO, OQ, QS, SU, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "UW",
+                  "UV",
+                  "VW",
+                  "TW",
+                  "UX"
+                ],
+                "correctAnswer": "UW",
+                "correctFeedback": "Brilliant! Both letters skip one (+2). First row: M, O, Q, S, U. Second row: O, Q, S, U, W. Next pair = UW. ✓",
+                "incorrectFeedback": "Not quite! The answer is UW. Both letters skip one (+2). First row: M, O, Q, S, U. Second row: O, Q, S, U, W. Next pair = UW. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "Q",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Skip patterns — you've got this!",
+              "body": "When letters skip one position, just follow the same steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Split pairs into two rows",
+                    "why": "Same first step as always!"
+                  },
+                  {
+                    "text": "2. Count the gap: A→C = skip 1 = +2",
+                    "why": "B is skipped, so A to C is +2"
+                  },
+                  {
+                    "text": "3. Apply +2 (or -2) to find the next letter",
+                    "why": "Skip-one forward or skip-one backward ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constant-gap",
+      "name": "Same Gap in Every Pair",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "constant-gap-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Discover the constant gap — a brilliant shortcut hiding inside many series",
+            "Use the gap as a quick double-check to make sure your answer is right"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the hidden gap!",
+              "body": "Daisy is noticing something special about the pairs.\n\nHere's a really neat trick: look at each pair — the **gap** between the first and second letter is **always the same**!\n\n**AD, BE, CF, DG, ___**\n\nEvery pair has a gap of 3 between its letters. You can use this to double-check your answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AD",
+                  "BE",
+                  "CF",
+                  "DG"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The constant gap shortcut",
+              "body": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, B, C, D — goes up by 1, so next is E",
+                    "why": "Find the next first letter"
+                  },
+                  {
+                    "text": "Second letters: D, E, F, G — goes up by 1, so next is H",
+                    "why": "Find the next second letter"
+                  },
+                  {
+                    "text": "Check: gap of 3 between E and H?",
+                    "why": "Yes! Gap in each pair: D-A=3, E-B=3, F-C=3, G-D=3 → H-E=3 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the next pair — check the gap stays the same:\n\n**GL, HM, IN, JO, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "KP",
+                  "KQ",
+                  "LP",
+                  "JN",
+                  "KO"
+                ],
+                "correctAnswer": "KP",
+                "correctFeedback": "Brilliant! Both letters advance by 1, keeping a constant gap of 5. G-L, H-M, I-N, J-O, K-P. Next pair = KP. ✓",
+                "incorrectFeedback": "Not quite! The answer is KP. Both letters advance by 1, keeping a constant gap of 5. G-L, H-M, I-N, J-O, K-P. Next pair = KP. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The constant gap — your checking superpower!",
+              "body": "The constant gap is a brilliant way to double-check answers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Count the gap between letters in each pair",
+                    "why": "A to D = gap of 3, B to E = gap of 3"
+                  },
+                  {
+                    "text": "2. If the gap is the same every time, it's constant",
+                    "why": "This means both rows advance at the same rate"
+                  },
+                  {
+                    "text": "3. Check your answer has the same gap",
+                    "why": "Quick way to verify you haven't made an error ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternating-pattern",
+      "name": "Alternating Step Sizes",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "alternating-pattern-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Handle the trickiest type: when each row uses a different step size",
+            "See why Split and Track always works, even when the steps don't match"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two different step sizes!",
+              "body": "Daisy is working out a trickier letter pair series.\n\nHere's a twist that catches a lot of people out: the first and second letters don't move by the **same amount**. One might jump by 1 while the other jumps by 2! But once you split them into rows, the pattern becomes clear.\n\n**AF, BH, CJ, DL, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AF",
+                  "BH",
+                  "CJ",
+                  "DL"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Track each row's step size",
+              "body": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, B, C, D — goes up by 1, so next is E",
+                    "why": "Count the gap in THIS row"
+                  },
+                  {
+                    "text": "Second letters: F, H, J, L — goes up by 2, so next is N",
+                    "why": "Count the gap in THIS row — it might be different!"
+                  },
+                  {
+                    "text": "Combine: next pair = EN",
+                    "why": "First: 1, 2, 3, 4 → 5 (+1). Second: 6, 8, 10, 12 → 14 (+2)"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find each row's step size separately:\n\n**AF, BH, CJ, DL, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "EN",
+                  "EM",
+                  "FM",
+                  "DN",
+                  "FN"
+                ],
+                "correctAnswer": "EN",
+                "correctFeedback": "Brilliant! First letters advance by 1: A, B, C, D, E. Second letters advance by 2: F, H, J, L, N. Different step sizes! Next = EN. ✓",
+                "incorrectFeedback": "Not quite! The answer is EN. First letters advance by 1: A, B, C, D, E. Second letters advance by 2: F, H, J, L, N. Different step sizes! Next = EN. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "F",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Different steps — no problem!",
+              "body": "When each row has a different step size, the same method still works:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Split into two rows as always",
+                    "why": "Never skip this step!"
+                  },
+                  {
+                    "text": "2. Count the gap in EACH row separately",
+                    "why": "First row might be +1, second row might be +2"
+                  },
+                  {
+                    "text": "3. Don't assume they match",
+                    "why": "+1 and +2, or +2 and -1 — anything is possible ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-alphabet",
+      "name": "Counting Back from Z",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "reverse-alphabet-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Recognise when the second letter is counting backward from Z",
+            "Use a quick trick to spot these patterns instantly"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Z, Y, X, W... a countdown!",
+              "body": "Daisy is spotting a countdown from Z.\n\nWhen you spot **Z** as the starting second letter, that's a big clue! The second row is often counting **backward** through the alphabet — like a countdown.\n\n**AZ, BX, CV, DT, ___**\n\nThe question is: how fast is it counting back?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AZ",
+                  "BX",
+                  "CV",
+                  "DT"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Backwards from Z",
+              "body": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A, B, C, D — goes forward by 1, so next is E",
+                    "why": "Going forward as usual"
+                  },
+                  {
+                    "text": "Second letters: Z, X, V, T — counts back by 2 from Z, so next is R",
+                    "why": "Counting backward — check the step!"
+                  },
+                  {
+                    "text": "Combine: next pair = ER",
+                    "why": "First: 1, 2, 3, 4 → 5. Second: 26, 24, 22, 20 → 18"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Watch for the backward count:\n\n**AZ, BX, CV, DT, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "ER",
+                  "ES",
+                  "FR",
+                  "DR",
+                  "ET"
+                ],
+                "correctAnswer": "ER",
+                "correctFeedback": "Brilliant! First letters go +1: A, B, C, D, E. Second letters count back by 2 from Z: Z, X, V, T, R. Next = ER. ✓",
+                "incorrectFeedback": "Not quite! The answer is ER. First letters go +1: A, B, C, D, E. Second letters count back by 2 from Z: Z, X, V, T, R. Next = ER. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "Z",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "X",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Countdown from Z — easy to spot!",
+              "body": "When the second letter counts back from Z, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Spot the clue: second letters start at/near Z",
+                    "why": "Z, Y, X... or Z, X, V... or Z, W, T..."
+                  },
+                  {
+                    "text": "2. Count the step size backward",
+                    "why": "-1 (every letter), -2 (skip one), -3 (skip two)"
+                  },
+                  {
+                    "text": "3. Apply that step to find the next second letter",
+                    "why": "Then combine with the first letter ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-jump",
+      "name": "Big Jumps (+3 or More)",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "double-jump-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Handle bigger jumps of 3 or more positions without breaking a sweat",
+            "Use the numbers trick to make big jumps easy to count"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Taking bigger leaps!",
+              "body": "Daisy is tackling a bigger-jump series.\n\nSome series have letters that jump by **3 or more** positions at a time. That can feel tricky — but here's a great trick: convert letters to **numbers** (A=1, B=2, ...) and suddenly it's just adding and subtracting!\n\n**AD, DG, GJ, JM, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AD",
+                  "DG",
+                  "GJ",
+                  "JM"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Convert to numbers for big jumps",
+              "body": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Let's work through **AD, DG, GJ, JM**. When the jump is big, convert letters to numbers using the alphabet line:"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "showPositionNumbers": true,
+                    "points": [
+                      {
+                        "letter": "A",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "D",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "G",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "J",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "D",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "G",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "J",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "M",
+                        "color": "#22c55e"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "First letters: A, D, G, J — jumps by 3, so next is M",
+                        "why": "First: 1, 4, 7, 10 → 13 (+3)"
+                      },
+                      {
+                        "text": "Second letters: D, G, J, M — jumps by 3, so next is P",
+                        "why": "Second: 4, 7, 10, 13 → 16 (+3)"
+                      },
+                      {
+                        "text": "Combine: next pair = MP",
+                        "why": "Convert the number back to a letter ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When letters jump by 3 or more, convert them to ____ to make counting easier",
+                "options": [
+                  "numbers",
+                  "colours",
+                  "shapes",
+                  "words"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Converting letters to numbers (A=1, B=2... Z=26) makes big jumps much easier to count. ✓",
+                "incorrectFeedback": "Not quite — convert letters to numbers (A=1, B=2...) for big jumps!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Try converting to numbers:\n\n**AD, DG, GJ, JM, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "MP",
+                  "MO",
+                  "NP",
+                  "LO",
+                  "MQ"
+                ],
+                "correctAnswer": "MP",
+                "correctFeedback": "Brilliant! Both letters jump by 3. First: A(1), D(4), G(7), J(10), M(13). Second: D(4), G(7), J(10), M(13), P(16). Next = MP. ✓",
+                "incorrectFeedback": "Not quite! The answer is MP. Both letters jump by 3. First: A(1), D(4), G(7), J(10), M(13). Second: D(4), G(7), J(10), M(13), P(16). Next = MP. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "J",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Big jumps — no worries!",
+              "body": "When letters jump by 3 or more, just use numbers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Convert letters to numbers (A=1, Z=26)",
+                    "why": "Makes big gaps easier to count"
+                  },
+                  {
+                    "text": "2. Find the step size in each row",
+                    "why": "+3, +4, -3 — whatever the pattern is"
+                  },
+                  {
+                    "text": "3. Add the step, convert back to a letter",
+                    "why": "13=M, 14=N, 15=O, 16=P ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mirror-pairs",
+      "name": "Mirror Pairs (Add to 27)",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "mirror-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Discover the magic of mirror pairs — where letter positions always add to 27!",
+            "Learn why A+Z=27, B+Y=27, C+X=27, and use it as a checking shortcut"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The magic number 27!",
+              "body": "Daisy is discovering the mirror pair trick.\n\nDid you know? There's a magic number hiding in the alphabet! In some series, the **positions of the two letters always add to 27**:\n\nA=1, Z=26 → 1+26 = **27**\nB=2, Y=25 → 2+25 = **27**\n\nOnce you know this trick, you can check your answers instantly!\n\n**AZ, BY, CX, DW, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AZ",
+                  "BY",
+                  "CX",
+                  "DW"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Mirror pairs — add to 27",
+              "body": "Look at **AZ, BY, CX, DW**. The alphabet has 26 letters. A mirror pair uses letters from **opposite ends**: A↔Z, B↔Y, C↔X...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find both letters, then verify with the 27 check. ✓",
+                "incorrectFeedback": "Not quite — find each letter first, then check they add to 27!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "First letters: A(1), B(2), C(3), D(4) — next is E(5)",
+                    "why": "Goes forward"
+                  },
+                  {
+                    "text": "Second letters: Z(26), Y(25), X(24), W(23) — next is V(22)",
+                    "why": "Goes backward — it's the mirror!"
+                  },
+                  {
+                    "text": "Check: 1+26=27, 2+25=27, 3+24=27, 4+23=27 → 5+22=27",
+                    "why": "Every pair adds to 27 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use the add-to-27 shortcut:\n\n**AZ, BY, CX, DW, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "EV",
+                  "EU",
+                  "FV",
+                  "EW",
+                  "DV"
+                ],
+                "correctAnswer": "EV",
+                "correctFeedback": "Brilliant! These are mirror pairs — positions always add to 27. A(1)+Z(26)=27, B(2)+Y(25)=27, ... E(5)+V(22)=27. Next = EV. ✓",
+                "incorrectFeedback": "Not quite! The answer is EV. These are mirror pairs — positions always add to 27. A(1)+Z(26)=27, B(2)+Y(25)=27, ... E(5)+V(22)=27. Next = EV. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "Z",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "Y",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "X",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "W",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Mirror pairs — a brilliant shortcut!",
+              "body": "The add-to-27 trick is one of the neatest shortcuts in VR:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A+Z=27, B+Y=27, C+X=27 ...",
+                    "why": "Letters from opposite ends of the alphabet"
+                  },
+                  {
+                    "text": "To find the mirror: 27 minus the position",
+                    "why": "E=5 → mirror is 27-5=22=V"
+                  },
+                  {
+                    "text": "Use this to CHECK your Split and Track answer",
+                    "why": "If the pair doesn't add to 27, something's wrong ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "mirror-pairs-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Spot mirror pairs quickly even when they skip — the 27 rule still works!",
+            "Use the mirror check as a speed tool in timed tests"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Do these SKIP-mirror too?",
+              "body": "Evie is discovering that mirror pairs can skip too.\n\nWe know A+Z=27, B+Y=27... but what if the series **skips by 2**? Does the 27 rule still work?\n\n**AZ, CX, EV, GT, ___**\n\nLet's find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "AZ",
+                  "CX",
+                  "EV",
+                  "GT"
+                ],
+                "showDifferences": false,
+                "nextValue": "?",
+                "showNext": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The 27 rule works with skips!",
+              "body": "Let's check **AZ, CX, EV, GT**. Even when both rows skip by 2, each pair still adds to 27:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Let's check **AZ, CX, EV, GT**. Even with skips, each pair still adds to 27!"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "showPositionNumbers": true,
+                    "points": [
+                      {
+                        "letter": "A",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "C",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "E",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "G",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "Z",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "X",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "V",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "T",
+                        "color": "#dc2626"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "First letters: A(1), C(3), E(5), G(7) — skips by 2, next is I(9)",
+                        "why": "Skipping forward by 2"
+                      },
+                      {
+                        "text": "Second letters: Z(26), X(24), V(22), T(20) — skips back by 2, next is R(18)",
+                        "why": "Skipping backward by 2"
+                      },
+                      {
+                        "text": "Check: Still mirror pairs! Each adds to 27, but they skip by 2",
+                        "why": "1+26=27, 3+24=27, 5+22=27, 7+20=27 → 9+18=27"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use the 27 shortcut to check your answer:\n\n**AZ, CX, EV, GT, ___**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "IR",
+                  "IS",
+                  "HR",
+                  "JR",
+                  "IT"
+                ],
+                "correctAnswer": "IR",
+                "correctFeedback": "Brilliant! Skip-mirror! First +2: A, C, E, G, I. Second -2: Z, X, V, T, R. Every pair still adds to 27. Next = IR. ✓",
+                "incorrectFeedback": "Not quite! The answer is IR. Skip-mirror! First +2: A, C, E, G, I. Second -2: Z, X, V, T, R. Every pair still adds to 27. Next = IR. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "showPositionNumbers": true,
+                "points": [
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "Z",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "X",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The 27 trick works every time!",
+              "body": "The 27 shortcut works with ANY step size — how brilliant is that?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "+1/-1 mirrors: AZ, BY, CX, DW...",
+                    "why": "Each pair adds to 27"
+                  },
+                  {
+                    "text": "+2/-2 mirrors: AZ, CX, EV, GT...",
+                    "why": "Still adds to 27 — just skipping!"
+                  },
+                  {
+                    "text": "Quick check: first letter position + second = 27?",
+                    "why": "If yes, you've got the right answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

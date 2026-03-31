@@ -1,0 +1,149 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "letterPairSeries",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 132,
+    "lessonsReviewed": 11,
+    "mappingsReviewed": 132,
+    "issuesFound": 10,
+    "bySeverity": {
+      "critical": 0,
+      "high": 2,
+      "medium": 4,
+      "low": 4
+    },
+    "difficultyAssessment": "D1:41 (31%), D2:52 (39%), D3:39 (30%) — excellent distribution matching the GL target of ~30:40:30 almost exactly. D1 questions use simple +1/+2 constant patterns on single letters or paired letters appropriately. D2 questions introduce opposite directions, larger step sizes (+3/+4), and letter-number combinations — good progression. D3 questions include increasing gap patterns, alternating sequences, convergent series, and complex letter-number combinations with perfect squares (Q100, Q124). The difficulty calibration is among the best across all reviewed topics.",
+    "coverageAssessment": "Comprehensive coverage of GL pattern types. Single-letter series (Q1-Q18, Q37-Q46, Q65, Q73-Q81, Q95, Q101-Q108) cover +1 through +4 forward and -1 through -4 backward with increasing gaps. Letter pair series (Q19-Q36, Q47-Q72, Q82-Q99, Q102-Q132) cover both-forward, both-backward, opposite directions, different step sizes, and constant-gap patterns. Letter-number combinations (Q26-Q30, Q34, Q58-Q63, Q67, Q70, Q90-Q94, Q97, Q100, Q106, Q111, Q114, Q117, Q124) add arithmetic complexity. However, there is a notable gap: no wrap-around series (sequences crossing Z-A boundary) despite the Oracle spec listing this as a D3 pattern type. Also, Q1 and Q9 are effectively duplicate questions (both ask A, C, E, G, ___).",
+    "teachingEfficacyAssessment": "11 lessons across 8 sub-concepts provide strong pedagogical coverage. The 'Split and Track' method (separate first and second letters into two rows, analyse each independently) is an excellent, systematic strategy that maps directly to how GL designs these questions. The SequenceChain and AlphabetLine visual components make patterns visible. All 132 questions mapped (106 high confidence, 26 medium, 0 low). The 26 medium-confidence mappings are primarily single-letter series questions mapped to pair-based sub-concepts — these work but the lessons use paired examples that don't perfectly match single-letter questions. One orphan sub-concept exists. Overall teaching efficacy is strong — the Split and Track strategy gives children a repeatable method.",
+    "topPriorities": [
+      "Remove duplicate question Q9 (identical to Q1: A, C, E, G, ___)",
+      "Add 3-5 wrap-around series questions at D3 to cover the missing GL pattern type",
+      "Review whether single-letter series questions (roughly 40% of the bank) belong in this topic or should be split into a separate sub-topic for clearer lesson mapping",
+      "Q104 (AB repeating) is too trivial — consider replacing with a more challenging D1 pattern"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-LPS-001",
+      "itemType": "question",
+      "itemId": "Q1,Q9",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Q1 and Q9 are identical questions — both ask A, C, E, G, ___",
+      "description": "Q1 (D2) asks 'What comes next in this letter series? A, C, E, G, ___' with answer I. Q9 (D1) asks the exact same question with the exact same answer. The options differ slightly (Q1: H,I,J,K,L; Q9: H,I,J,K,L — actually identical options too). Having the same question twice wastes a slot and could appear in the same quiz session. Q1 is rated D2 and Q9 is rated D1, which itself is inconsistent — the same question can't be two different difficulties.",
+      "suggestedFix": "Remove Q9 entirely (keep Q1 which has the better difficulty rating of D2 — a simple skip-one pattern is arguably low-D2). Alternatively, change Q9 to a different D1 pattern like 'A, B, C, D, ___' or 'B, D, F, H, ___' (though the latter already exists as Q3 and Q10).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-002",
+      "itemType": "question",
+      "itemId": "Q3,Q10",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Q3 and Q10 are identical questions — both ask B, D, F, H, ___",
+      "description": "Q3 (D1) asks 'What comes next in this letter series? B, D, F, H, ___' with answer J. Q10 (D1) asks the exact same question with the same answer. Both are rated D1. Options are slightly different (Q3: I,J,K,L,M; Q10: I,K,L,J,M) but the question and answer are identical. This is a direct duplicate.",
+      "suggestedFix": "Remove Q10. Replace with a different D1 single-letter series such as 'C, E, G, I, ___' (K) or 'D, F, H, J, ___' (L).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-003",
+      "itemType": "question",
+      "itemId": "Q7",
+      "severity": "medium",
+      "category": "near-duplicate",
+      "title": "Q7 is a near-duplicate of Q1/Q9 — same pattern with one extra term",
+      "description": "Q7 asks 'A, C, E, G, I, ___' (K). Q1/Q9 ask 'A, C, E, G, ___' (I). These test the identical skip-one-forward pattern. Q7 merely adds one more term. Having three questions on A,C,E,G... is excessive. The answer K is correct (verified: +2 pattern).",
+      "suggestedFix": "Keep Q7 (the longest version) and remove Q1 and Q9, or keep Q1 and remove Q7 and Q9. One representative question per pattern is sufficient.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-004",
+      "itemType": "question",
+      "itemId": "Q8,Q25,Q107,Q130",
+      "severity": "medium",
+      "category": "near-duplicate",
+      "title": "ZZ, YY, XX, WW, ___ appears 4 times across the bank",
+      "description": "Q8 (D2), Q25 (D1), Q107 (D1), and Q130 (D2) all test the 'doubled letter going back 1' pattern with ZZ, YY, XX, WW, ___. Q8 and Q25 use exactly the same series (4 terms); Q107 uses 5 terms (ZZ through VV); Q130 uses 4 terms. All have answer VV (or UU for Q107). Having 4 questions testing the same pattern is excessive even across different quiz sessions.",
+      "suggestedFix": "Keep Q25 (D1) and Q107 (D1, longer version). Remove Q8 and Q130. Replace with different patterns — e.g., 'AA, CC, EE, GG, ___' (II) for a skip-one doubled pattern, or 'ZY, XW, VU, TS, ___' (RQ) which is already covered but less repetitive.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-005",
+      "itemType": "question",
+      "itemId": "Q104",
+      "severity": "medium",
+      "category": "question-design",
+      "title": "Repeating constant series AB,AB,AB,AB,___ is trivially easy — below D1 level",
+      "description": "Q104 asks 'What comes next? AB, AB, AB, AB, ___' with answer AB. This requires no pattern recognition whatsoever — any child can see it repeats. This would never appear in a GL paper. It's below the cognitive threshold of any real test question and wastes a D1 slot that could test a genuine pattern.",
+      "suggestedFix": "Replace with a genuine D1 letter pair pattern such as 'CE, DF, EG, FH, ___' (GI) — both letters +1, with a constant gap of 2.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-006",
+      "itemType": "question",
+      "itemId": "Q26,Q106",
+      "severity": "medium",
+      "category": "near-duplicate",
+      "title": "A1,B2,C3,D4,___ appears as both Q26 and Q106",
+      "description": "Q26 (D1) asks 'What comes next? A1, B2, C3, D4, ___' with answer E5. Q106 (D1) asks 'What comes next? A1, B2, C3, D4, E5, ___' with answer F6. These are the same letter+number pattern with different series lengths. Both are D1. While Q106 has one more term, the pattern is identical.",
+      "suggestedFix": "Keep Q106 (longer, slightly harder) and remove Q26, or vice versa. One representative per pattern is sufficient.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-007",
+      "itemType": "question",
+      "itemId": "Q1",
+      "severity": "low",
+      "category": "difficulty-calibration",
+      "title": "Q1 rated D2 but pattern is D1 — simple skip-one forward",
+      "description": "Q1 asks 'A, C, E, G, ___' with answer I. This is a +2 constant pattern on single letters — the Oracle spec puts this squarely at D1 ('Same simple rule, small steps +1/+2'). Rating it D2 inflates the difficulty. Q9 (identical question) is rated D1, confirming the inconsistency.",
+      "suggestedFix": "Recalibrate Q1 from D2 to D1. It's a simple skip-one pattern that any child who knows the alphabet can spot.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-008",
+      "itemType": "question",
+      "itemId": "Q6",
+      "severity": "low",
+      "category": "difficulty-calibration",
+      "title": "Q6 rated D3 but is a simple both-forward +1/+1 pair pattern — should be D1",
+      "description": "Q6 asks 'AC, BD, CE, DF, ___' with answer EG. Both letters advance by +1 each step. Per the Oracle spec, D1 is 'Same simple rule for both letters, small steps +1/+2, same direction, no wrap-around'. This is exactly that. D3 requires asymmetric steps, wrap-around, convergent patterns, or accelerating gaps. Q6 is the definition of D1.",
+      "suggestedFix": "Recalibrate Q6 from D3 to D1.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-009",
+      "itemType": "question",
+      "itemId": "coverage-gap",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No wrap-around series questions despite Oracle spec listing it as D3 type",
+      "description": "The Oracle spec lists 'Wrap-around — sequences crossing Z→A boundary' as a D3 pattern type for letter pair series. No questions in the 132-question bank test this pattern. A child could encounter a wrap-around series in a GL paper (e.g., XZ, ZB, BD, DF, ___) and be unprepared.",
+      "suggestedFix": "Add 3-5 D3 wrap-around questions. Examples: 'XZ, ZB, BD, DF, ___' (FH — both +2 with wrap), or 'WZ, YB, AD, CF, ___' (EH — both +2 forward with wrap at Z/A boundary).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LPS-010",
+      "itemType": "question",
+      "itemId": "Q5",
+      "severity": "low",
+      "category": "difficulty-calibration",
+      "title": "Q5 rated D1 but uses increasing gaps — more appropriate for D2 or D3",
+      "description": "Q5 asks 'A, B, D, G, ___' with answer K. The gaps increase: +1, +2, +3, +4. Per the Oracle spec, D3 includes 'accelerating gaps'. This is genuinely harder than simple constant-step patterns. Rating it D1 undersells the cognitive demand. A child must notice the gaps are increasing and predict the next gap (+4), which requires second-order pattern recognition.",
+      "suggestedFix": "Recalibrate Q5 from D1 to D2 (or even D3 if the child must discover the pattern without hints). Increasing-gap patterns are explicitly listed as D3 in the Oracle spec.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

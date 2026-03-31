@@ -1,0 +1,4295 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "anglesshapes",
+    "displayName": "Angles & Shapes",
+    "extractedAt": "2026-03-30T13:05:32.764Z",
+    "questionCount": 225,
+    "difficultyDistribution": {
+      "D1": 82,
+      "D2": 86,
+      "D3": 57
+    },
+    "questionTypes": {
+      "standard": 225
+    },
+    "visualComponentCount": 195
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles on a straight line measure 115° and x°. What is the value of x?",
+      "options": [
+        "45°",
+        "55°",
+        "65°",
+        "75°",
+        "85°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "Angles on a straight line add up to 180°. So 115° + x° = 180°. Therefore x = 180 - 115 = 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q1.svg"
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma draws three angles around a point. Two angles are 100° and 130°. What is the third angle?",
+      "options": [
+        "100°",
+        "110°",
+        "120°",
+        "130°",
+        "140°"
+      ],
+      "correct": 3,
+      "correctAnswer": "130°",
+      "explanation": "Angles around a point add up to 360°. So 100° + 130° + third angle = 360°. The third angle = 360 - 100 - 130 = 130°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q2.svg"
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 70° and 55°. What is the third angle?",
+      "options": [
+        "45°",
+        "50°",
+        "55°",
+        "60°",
+        "65°"
+      ],
+      "correct": 2,
+      "correctAnswer": "55°",
+      "explanation": "Angles in a triangle add up to 180°. So 70° + 55° + third angle = 180°. The third angle = 180 - 70 - 55 = 55°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q3.svg"
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jake measures an angle and finds it is 135°. What type of angle is this?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse",
+      "explanation": "An obtuse angle is between 90° and 180°. Since 135° is in this range, it's an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An equilateral triangle has all three sides equal. What is each angle in an equilateral triangle?",
+      "options": [
+        "45°",
+        "60°",
+        "75°",
+        "90°",
+        "120°"
+      ],
+      "correct": 1,
+      "correctAnswer": "60°",
+      "explanation": "In an equilateral triangle, all three angles are equal. Since angles in a triangle add up to 180°, each angle = 180 ÷ 3 = 60°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/equilateral-q5.svg"
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie is building a rectangular frame. What is the sum of all four angles in a rectangle?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "450°",
+        "540°"
+      ],
+      "correct": 2,
+      "correctAnswer": "360°",
+      "explanation": "All quadrilaterals (4-sided shapes) have angles that add up to 360°. A rectangle is a quadrilateral, so its angles sum to 360°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles in a triangle are 45° and 90°. What type of triangle is this?",
+      "options": [
+        "Equilateral",
+        "Isosceles",
+        "Right-angled",
+        "Obtuse",
+        "Scalene"
+      ],
+      "correct": 2,
+      "correctAnswer": "Right-angled",
+      "explanation": "A triangle with a 90° angle is called a right-angled triangle. The third angle is 180 - 45 - 90 = 45°, making it a right-angled isosceles triangle, but 'right-angled' is the main classification. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q7.svg"
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Tom draws an isosceles triangle with two equal angles of 65° each. What is the third angle?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 65° + 65° + third angle = 180°. The third angle = 180 - 130 = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q8.svg"
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
+      "options": [
+        "70°",
+        "75°",
+        "80°",
+        "85°",
+        "90°"
+      ],
+      "correct": 2,
+      "correctAnswer": "80°",
+      "explanation": "Angles around a point add up to 360°. So 85° + 90° + 105° + fourth angle = 360°. The fourth angle = 360 - 280 = 80°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q9.svg"
+    },
+    {
+      "id": 10,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy draws a quadrilateral with angles 80°, 100°, and 95°. What is the fourth angle?",
+      "options": [
+        "75°",
+        "80°",
+        "85°",
+        "90°",
+        "95°"
+      ],
+      "correct": 2,
+      "correctAnswer": "85°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 80° + 100° + 95° + fourth angle = 360°. The fourth angle = 360 - 275 = 85°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q10.svg"
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An angle measures 220°. What type of angle is this?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 4,
+      "correctAnswer": "Reflex",
+      "explanation": "A reflex angle is between 180° and 360°. Since 220° is in this range, it's a reflex angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben measures angles on a straight line. One angle is 3x° and the other is 2x°. What is the value of x?",
+      "options": [
+        "30°",
+        "36°",
+        "40°",
+        "45°",
+        "60°"
+      ],
+      "correct": 1,
+      "correctAnswer": "36°",
+      "explanation": "Angles on a straight line add up to 180°. So 3x + 2x = 180. This gives 5x = 180, so x = 180 ÷ 5 = 36°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q12.svg"
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has two angles that are each x°, and a third angle of 80°. What is x?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "Angles in a triangle add up to 180°. So x + x + 80 = 180. This gives 2x = 100, so x = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q13.svg"
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Oliver draws two parallel lines crossed by a third line. An angle on one side is 65°. What is the corresponding angle on the other parallel line?",
+      "options": [
+        "55°",
+        "60°",
+        "65°",
+        "115°",
+        "125°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q14.svg"
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mia finds that an exterior angle of a triangle is 120°. The two interior opposite angles are 70° and y°. What is y?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 70° + y = 120°. Therefore y = 120 - 70 = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q15.svg"
+    },
+    {
+      "id": 16,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular pentagon has 5 equal sides and 5 equal angles. What is each interior angle?",
+      "options": [
+        "100°",
+        "105°",
+        "108°",
+        "110°",
+        "120°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "The sum of interior angles in a pentagon is (5-2) × 180° = 540°. In a regular pentagon, all angles are equal, so each angle = 540 ÷ 5 = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sarah draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
+      "options": [
+        "45°",
+        "50°",
+        "60°",
+        "72°",
+        "90°"
+      ],
+      "correct": 2,
+      "correctAnswer": "60°",
+      "explanation": "Let the smaller angle be x. Then the larger angle is 2x. On a straight line: x + 2x = 180°. So 3x = 180°, and x = 60°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q17.svg"
+    },
+    {
+      "id": 18,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
+      "options": [
+        "60°",
+        "90°",
+        "100°",
+        "120°",
+        "150°"
+      ],
+      "correct": 3,
+      "correctAnswer": "120°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 60° + 120° + 60° + x = 360°. This gives x = 360 - 240 = 120°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/rhombus-q18.svg"
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 110°. What is the alternate angle?",
+      "options": [
+        "60°",
+        "70°",
+        "80°",
+        "90°",
+        "110°"
+      ],
+      "correct": 4,
+      "correctAnswer": "110°",
+      "explanation": "When parallel lines are cut by a transversal, alternate angles are equal. So the alternate angle is also 110°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/alternate-q19.svg"
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles of 2x°, 3x°, and 4x°. What is the value of x?",
+      "options": [
+        "15°",
+        "20°",
+        "25°",
+        "30°",
+        "36°"
+      ],
+      "correct": 1,
+      "correctAnswer": "20°",
+      "explanation": "Angles in a triangle add up to 180°. So 2x + 3x + 4x = 180. This gives 9x = 180, so x = 20°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q20.svg"
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Charlie draws a right-angled triangle with one other angle of 35°. What is the third angle?",
+      "options": [
+        "45°",
+        "50°",
+        "55°",
+        "60°",
+        "65°"
+      ],
+      "correct": 2,
+      "correctAnswer": "55°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° (right angle) + 35° + third angle = 180°. So the third angle = 180 - 90 - 35 = 55°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q21.svg"
+    },
+    {
+      "id": 22,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular hexagon has 6 equal sides and 6 equal angles. What is each interior angle?",
+      "options": [
+        "100°",
+        "108°",
+        "110°",
+        "120°",
+        "135°"
+      ],
+      "correct": 3,
+      "correctAnswer": "120°",
+      "explanation": "The sum of interior angles in a hexagon is (6-2) × 180° = 720°. In a regular hexagon, all angles are equal, so each angle = 720 ÷ 6 = 120°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 128° and x°. What is the value of x?",
+      "options": [
+        "42°",
+        "48°",
+        "52°",
+        "58°",
+        "62°"
+      ],
+      "correct": 2,
+      "correctAnswer": "52°",
+      "explanation": "Angles on a straight line add up to 180°. So 128° + x° = 180°. Therefore x = 180 - 128 = 52°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q23.svg"
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma draws a triangle with angles 48°, 67°, and y°. What is y?",
+      "options": [
+        "55°",
+        "60°",
+        "65°",
+        "70°",
+        "75°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "Angles in a triangle add up to 180°. So 48° + 67° + y = 180°. Therefore y = 180 - 48 - 67 = 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q24.svg"
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 95°, 42°, and z°. What is z?",
+      "options": [
+        "33°",
+        "38°",
+        "43°",
+        "48°",
+        "53°"
+      ],
+      "correct": 2,
+      "correctAnswer": "43°",
+      "explanation": "Angles in a triangle add up to 180°. So 95° + 42° + z = 180°. Therefore z = 180 - 95 - 42 = 43°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q25.svg"
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
+      "options": [
+        "65°",
+        "70°",
+        "75°",
+        "80°",
+        "85°"
+      ],
+      "correct": 2,
+      "correctAnswer": "75°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 92° + 88° + 105° + a = 360°. Therefore a = 360 - 285 = 75°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q26.svg"
+    },
+    {
+      "id": 27,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Tom draws an isosceles triangle with two equal angles of 72° each. What is the third angle?",
+      "options": [
+        "26°",
+        "31°",
+        "36°",
+        "41°",
+        "46°"
+      ],
+      "correct": 2,
+      "correctAnswer": "36°",
+      "explanation": "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 72° + 72° + third angle = 180°. The third angle = 180 - 144 = 36°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q27.svg"
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Three angles meet around a point: 115°, 130°, and p°. What is p?",
+      "options": [
+        "105°",
+        "110°",
+        "115°",
+        "120°",
+        "125°"
+      ],
+      "correct": 2,
+      "correctAnswer": "115°",
+      "explanation": "Angles around a point add up to 360°. So 115° + 130° + p = 360°. Therefore p = 360 - 245 = 115°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q28.svg"
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie has angles on a straight line measuring 4x° and 5x°. What is x?",
+      "options": [
+        "15°",
+        "18°",
+        "20°",
+        "24°",
+        "30°"
+      ],
+      "correct": 2,
+      "correctAnswer": "20°",
+      "explanation": "Angles on a straight line add up to 180°. So 4x + 5x = 180. This gives 9x = 180, so x = 20°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q29.svg"
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 58°. What is the angle at the top?",
+      "options": [
+        "54°",
+        "59°",
+        "64°",
+        "69°",
+        "74°"
+      ],
+      "correct": 2,
+      "correctAnswer": "64°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 58° + 58° + top angle = 180°. The top angle = 180 - 116 = 64°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q30.svg"
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jake measures a right-angled triangle with one angle of 38°. What is the third angle?",
+      "options": [
+        "42°",
+        "47°",
+        "52°",
+        "57°",
+        "62°"
+      ],
+      "correct": 2,
+      "correctAnswer": "52°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° (right angle) + 38° + third angle = 180°. So the third angle = 180 - 90 - 38 = 52°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q31.svg"
+    },
+    {
+      "id": 32,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular octagon has 8 equal sides and 8 equal angles. What is each interior angle?",
+      "options": [
+        "120°",
+        "125°",
+        "130°",
+        "135°",
+        "140°"
+      ],
+      "correct": 3,
+      "correctAnswer": "135°",
+      "explanation": "The sum of interior angles in an octagon is (8-2) × 180° = 1080°. In a regular octagon, all angles are equal, so each angle = 1080 ÷ 8 = 135°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy calculates that three angles around a point are 90°, 145°, and 75°. What is the fourth angle?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "Angles around a point add up to 360°. So 90° + 145° + 75° + fourth angle = 360°. The fourth angle = 360 - 310 = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q33.svg"
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 61°. What is the third angle?",
+      "options": [
+        "19°",
+        "24°",
+        "29°",
+        "34°",
+        "39°"
+      ],
+      "correct": 2,
+      "correctAnswer": "29°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 61° + third angle = 180°. So the third angle = 180 - 151 = 29°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q34.svg"
+    },
+    {
+      "id": 35,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ben measures parallel lines crossed by a transversal. One angle is 118°. What is the corresponding angle?",
+      "options": [
+        "62°",
+        "72°",
+        "82°",
+        "118°",
+        "128°"
+      ],
+      "correct": 3,
+      "correctAnswer": "118°",
+      "explanation": "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 118°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q35.svg"
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles measuring 3y°, 4y°, and 5y°. What is y?",
+      "options": [
+        "12°",
+        "15°",
+        "18°",
+        "20°",
+        "24°"
+      ],
+      "correct": 1,
+      "correctAnswer": "15°",
+      "explanation": "Angles in a triangle add up to 180°. So 3y + 4y + 5y = 180. This gives 12y = 180, so y = 15°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q36.svg"
+    },
+    {
+      "id": 37,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle measures 135°. Two interior opposite angles are 68° and m°. What is m?",
+      "options": [
+        "57°",
+        "62°",
+        "67°",
+        "72°",
+        "77°"
+      ],
+      "correct": 2,
+      "correctAnswer": "67°",
+      "explanation": "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 68° + m = 135°. Therefore m = 135 - 68 = 67°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q37.svg"
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
+      "options": [
+        "74°",
+        "79°",
+        "84°",
+        "89°",
+        "94°"
+      ],
+      "correct": 2,
+      "correctAnswer": "84°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 78° + 102° + 96° + n = 360°. Therefore n = 360 - 276 = 84°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q38.svg"
+    },
+    {
+      "id": 39,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are in the ratio 2:7. What is the smaller angle?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "The ratio 2:7 means the angles are 2x and 7x. On a straight line: 2x + 7x = 180°. So 9x = 180°, giving x = 20°. The smaller angle is 2x = 2 × 20 = 40°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q39.svg"
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 68° each. What is the third angle?",
+      "options": [
+        "34°",
+        "39°",
+        "44°",
+        "49°",
+        "54°"
+      ],
+      "correct": 2,
+      "correctAnswer": "44°",
+      "explanation": "Angles in a triangle sum to 180°. So 68° + 68° + third angle = 180°. The third angle = 180 - 136 = 44°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q40.svg"
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Charlie finds a triangle with angles 5a°, 6a°, and 7a°. What is a?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 5a + 6a + 7a = 180. This gives 18a = 180, so a = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q41.svg"
+    },
+    {
+      "id": 42,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Parallel lines are cut by a transversal. An angle measures 73°. What is the alternate interior angle?",
+      "options": [
+        "63°",
+        "68°",
+        "73°",
+        "107°",
+        "117°"
+      ],
+      "correct": 2,
+      "correctAnswer": "73°",
+      "explanation": "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 73°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q42.svg"
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
+      "options": [
+        "82°",
+        "87°",
+        "92°",
+        "97°",
+        "102°"
+      ],
+      "correct": 2,
+      "correctAnswer": "92°",
+      "explanation": "Angles around a point add up to 360°. So 85° + 95° + 88° + b = 360°. Therefore b = 360 - 268 = 92°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q43.svg"
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line measure 7c° and 11c°. What is c?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 7c + 11c = 180. This gives 18c = 180, so c = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q44.svg"
+    },
+    {
+      "id": 45,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular heptagon has 7 equal sides and 7 equal angles. What is each interior angle? (Round to 1 decimal place)",
+      "options": [
+        "125.7°",
+        "128.6°",
+        "131.4°",
+        "134.3°",
+        "137.1°"
+      ],
+      "correct": 1,
+      "correctAnswer": "128.6°",
+      "explanation": "The sum of interior angles in a heptagon is (7-2) × 180° = 900°. In a regular heptagon, all angles are equal, so each angle = 900 ÷ 7 ≈ 128.6°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 148°. The two opposite interior angles are 79° and d°. What is d?",
+      "options": [
+        "59°",
+        "64°",
+        "69°",
+        "74°",
+        "79°"
+      ],
+      "correct": 2,
+      "correctAnswer": "69°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 79° + d = 148°. Therefore d = 148 - 79 = 69°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q46.svg"
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A trapezium has angles 105°, 75°, 105°, and e°. What is e?",
+      "options": [
+        "65°",
+        "70°",
+        "75°",
+        "80°",
+        "85°"
+      ],
+      "correct": 2,
+      "correctAnswer": "75°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 105° + 75° + 105° + e = 360°. Therefore e = 360 - 285 = 75°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q47.svg"
+    },
+    {
+      "id": 48,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular nonagon has 9 equal sides and 9 equal angles. What is each interior angle?",
+      "options": [
+        "130°",
+        "135°",
+        "140°",
+        "145°",
+        "150°"
+      ],
+      "correct": 2,
+      "correctAnswer": "140°",
+      "explanation": "The sum of interior angles in a nonagon is (9-2) × 180° = 1260°. In a regular nonagon, all angles are equal, so each angle = 1260 ÷ 9 = 140°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
+      "options": [
+        "31°",
+        "36°",
+        "41°",
+        "46°",
+        "51°"
+      ],
+      "correct": 2,
+      "correctAnswer": "41°",
+      "explanation": "Angles around a point add up to 360°. So 108° + 127° + 84° + fourth angle = 360°. The fourth angle = 360 - 319 = 41°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q49.svg"
+    },
+    {
+      "id": 50,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An isosceles triangle has an exterior angle of 132°. The two base angles are equal. What is each base angle?",
+      "options": [
+        "54°",
+        "60°",
+        "66°",
+        "72°",
+        "78°"
+      ],
+      "correct": 2,
+      "correctAnswer": "66°",
+      "explanation": "The interior angle adjacent to the exterior angle is 180° - 132° = 48°. This is the top angle. In an isosceles triangle with top angle 48°, the two base angles are equal. So 48° + base + base = 180°. Each base angle = (180 - 48) ÷ 2 = 66°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q50.svg"
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Angles on a straight line are 3f° and 2f°. What is f?",
+      "options": [
+        "30°",
+        "36°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 1,
+      "correctAnswer": "36°",
+      "explanation": "Angles on a straight line add up to 180°. So 3f + 2f = 180. This gives 5f = 180, so f = 36°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q51.svg"
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles g°, 2g°, and 3g°. What is g?",
+      "options": [
+        "25°",
+        "30°",
+        "35°",
+        "40°",
+        "45°"
+      ],
+      "correct": 1,
+      "correctAnswer": "30°",
+      "explanation": "Angles in a triangle add up to 180°. So g + 2g + 3g = 180. This gives 6g = 180, so g = 30°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q52.svg"
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 76° each. What is the third angle?",
+      "options": [
+        "18°",
+        "23°",
+        "28°",
+        "33°",
+        "38°"
+      ],
+      "correct": 2,
+      "correctAnswer": "28°",
+      "explanation": "Angles in a triangle sum to 180°. So 76° + 76° + third angle = 180°. The third angle = 180 - 152 = 28°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q53.svg"
+    },
+    {
+      "id": 54,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular decagon has 10 equal sides and 10 equal angles. What is each interior angle?",
+      "options": [
+        "135°",
+        "140°",
+        "144°",
+        "150°",
+        "156°"
+      ],
+      "correct": 2,
+      "correctAnswer": "144°",
+      "explanation": "The sum of interior angles in a decagon is (10-2) × 180° = 1440°. In a regular decagon, all angles are equal, so each angle = 1440 ÷ 10 = 144°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 26°. What is the third angle?",
+      "options": [
+        "54°",
+        "59°",
+        "64°",
+        "69°",
+        "74°"
+      ],
+      "correct": 2,
+      "correctAnswer": "64°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 26° + third angle = 180°. So the third angle = 180 - 116 = 64°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q55.svg"
+    },
+    {
+      "id": 56,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
+      "options": [
+        "102°",
+        "107°",
+        "112°",
+        "117°",
+        "122°"
+      ],
+      "correct": 2,
+      "correctAnswer": "112°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 68° + 112° + 68° + h = 360°. Therefore h = 360 - 248 = 112°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q56.svg"
+    },
+    {
+      "id": 57,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two parallel lines are crossed by a transversal. One angle measures 124°. What is the corresponding angle?",
+      "options": [
+        "56°",
+        "66°",
+        "76°",
+        "114°",
+        "124°"
+      ],
+      "correct": 4,
+      "correctAnswer": "124°",
+      "explanation": "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 124°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q57.svg"
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 9j° and 6j°. What is j?",
+      "options": [
+        "10°",
+        "12°",
+        "15°",
+        "18°",
+        "20°"
+      ],
+      "correct": 1,
+      "correctAnswer": "12°",
+      "explanation": "Angles on a straight line add up to 180°. So 9j + 6j = 180. This gives 15j = 180, so j = 12°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q58.svg"
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 47°. What is the top angle?",
+      "options": [
+        "76°",
+        "81°",
+        "86°",
+        "91°",
+        "96°"
+      ],
+      "correct": 2,
+      "correctAnswer": "86°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 47° + 47° + top angle = 180°. The top angle = 180 - 94 = 86°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q59.svg"
+    },
+    {
+      "id": 60,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 156°. The two opposite interior angles are 88° and k°. What is k?",
+      "options": [
+        "58°",
+        "63°",
+        "68°",
+        "73°",
+        "78°"
+      ],
+      "correct": 2,
+      "correctAnswer": "68°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 88° + k = 156°. Therefore k = 156 - 88 = 68°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q60.svg"
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 2p°, 3p°, and 4p°. What is p?",
+      "options": [
+        "15°",
+        "18°",
+        "20°",
+        "24°",
+        "30°"
+      ],
+      "correct": 2,
+      "correctAnswer": "20°",
+      "explanation": "Angles in a triangle add up to 180°. So 2p + 3p + 4p = 180. This gives 9p = 180, so p = 20°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q61.svg"
+    },
+    {
+      "id": 62,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
+      "options": [
+        "75°",
+        "80°",
+        "85°",
+        "90°",
+        "95°"
+      ],
+      "correct": 2,
+      "correctAnswer": "85°",
+      "explanation": "Angles around a point add up to 360°. So 72° + 98° + 105° + q = 360°. Therefore q = 360 - 275 = 85°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q62.svg"
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 5r° and 7r°. What is r?",
+      "options": [
+        "12°",
+        "15°",
+        "18°",
+        "20°",
+        "24°"
+      ],
+      "correct": 1,
+      "correctAnswer": "15°",
+      "explanation": "Angles on a straight line add up to 180°. So 5r + 7r = 180. This gives 12r = 180, so r = 15°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q63.svg"
+    },
+    {
+      "id": 64,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 49°. What is the third angle?",
+      "options": [
+        "31°",
+        "36°",
+        "41°",
+        "46°",
+        "51°"
+      ],
+      "correct": 2,
+      "correctAnswer": "41°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 49° + third angle = 180°. So the third angle = 180 - 139 = 41°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q64.svg"
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 81° each. What is the third angle?",
+      "options": [
+        "8°",
+        "13°",
+        "18°",
+        "23°",
+        "28°"
+      ],
+      "correct": 2,
+      "correctAnswer": "18°",
+      "explanation": "Angles in a triangle sum to 180°. So 81° + 81° + third angle = 180°. The third angle = 180 - 162 = 18°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q65.svg"
+    },
+    {
+      "id": 66,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular dodecagon has 12 equal sides and 12 equal angles. What is each interior angle?",
+      "options": [
+        "140°",
+        "144°",
+        "150°",
+        "156°",
+        "160°"
+      ],
+      "correct": 2,
+      "correctAnswer": "150°",
+      "explanation": "The sum of interior angles in a dodecagon is (12-2) × 180° = 1800°. In a regular dodecagon, all angles are equal, so each angle = 1800 ÷ 12 = 150°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
+      "options": [
+        "76°",
+        "81°",
+        "86°",
+        "91°",
+        "96°"
+      ],
+      "correct": 2,
+      "correctAnswer": "86°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 84° + 93° + 97° + s = 360°. Therefore s = 360 - 274 = 86°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q67.svg"
+    },
+    {
+      "id": 68,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 67°. What is the alternate interior angle?",
+      "options": [
+        "57°",
+        "62°",
+        "67°",
+        "113°",
+        "123°"
+      ],
+      "correct": 2,
+      "correctAnswer": "67°",
+      "explanation": "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 67°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q68.svg"
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 54° each. What is the third angle?",
+      "options": [
+        "62°",
+        "67°",
+        "72°",
+        "77°",
+        "82°"
+      ],
+      "correct": 2,
+      "correctAnswer": "72°",
+      "explanation": "Angles in a triangle sum to 180°. So 54° + 54° + third angle = 180°. The third angle = 180 - 108 = 72°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q69.svg"
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 4t°, 5t°, and 6t°. What is t?",
+      "options": [
+        "10°",
+        "12°",
+        "15°",
+        "18°",
+        "20°"
+      ],
+      "correct": 1,
+      "correctAnswer": "12°",
+      "explanation": "Angles in a triangle add up to 180°. So 4t + 5t + 6t = 180. This gives 15t = 180, so t = 12°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q70.svg"
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles measuring 7u°, 8u°, and 3u°. What is u?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 7u + 8u + 3u = 180. This gives 18u = 180, so u = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q71.svg"
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Angles on a straight line are 8v° and 10v°. What is v?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "20°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 8v + 10v = 180. This gives 18v = 180, so v = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q72.svg"
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 162°. The two opposite interior angles are 95° and w°. What is w?",
+      "options": [
+        "57°",
+        "62°",
+        "67°",
+        "72°",
+        "77°"
+      ],
+      "correct": 2,
+      "correctAnswer": "67°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 95° + w = 162°. Therefore w = 162 - 95 = 67°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q73.svg"
+    },
+    {
+      "id": 74,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
+      "options": [
+        "54°",
+        "59°",
+        "64°",
+        "69°",
+        "74°"
+      ],
+      "correct": 2,
+      "correctAnswer": "64°",
+      "explanation": "Angles around a point add up to 360°. So 116° + 98° + 82° + fourth angle = 360°. The fourth angle = 360 - 296 = 64°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q74.svg"
+    },
+    {
+      "id": 75,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 57°. What is the third angle?",
+      "options": [
+        "23°",
+        "28°",
+        "33°",
+        "38°",
+        "43°"
+      ],
+      "correct": 2,
+      "correctAnswer": "33°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 57° + third angle = 180°. So the third angle = 180 - 147 = 33°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q75.svg"
+    },
+    {
+      "id": 76,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A kite has angles 72°, 108°, 72°, and z°. What is z?",
+      "options": [
+        "98°",
+        "103°",
+        "108°",
+        "113°",
+        "118°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 72° + 108° + 72° + z = 360°. Therefore z = 360 - 252 = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q76.svg"
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 6x° and 12x°. What is x?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 6x + 12x = 180. This gives 18x = 180, so x = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q77.svg"
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 39°. What is the top angle?",
+      "options": [
+        "92°",
+        "97°",
+        "102°",
+        "107°",
+        "112°"
+      ],
+      "correct": 2,
+      "correctAnswer": "102°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 39° + 39° + top angle = 180°. The top angle = 180 - 78 = 102°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q78.svg"
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 6y°, 7y°, and 5y°. What is y?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 6y + 7y + 5y = 180. This gives 18y = 180, so y = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q79.svg"
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Parallel lines are crossed by a transversal. One angle is 139°. What is the corresponding angle?",
+      "options": [
+        "39°",
+        "41°",
+        "49°",
+        "131°",
+        "139°"
+      ],
+      "correct": 4,
+      "correctAnswer": "139°",
+      "explanation": "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 139°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q80.svg"
+    },
+    {
+      "id": 81,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
+      "options": [
+        "67°",
+        "72°",
+        "77°",
+        "82°",
+        "87°"
+      ],
+      "correct": 2,
+      "correctAnswer": "77°",
+      "explanation": "Angles around a point add up to 360°. So 89° + 103° + 91° + b = 360°. Therefore b = 360 - 283 = 77°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q81.svg"
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 63° each. What is the third angle?",
+      "options": [
+        "44°",
+        "49°",
+        "54°",
+        "59°",
+        "64°"
+      ],
+      "correct": 2,
+      "correctAnswer": "54°",
+      "explanation": "Angles in a triangle sum to 180°. So 63° + 63° + third angle = 180°. The third angle = 180 - 126 = 54°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q82.svg"
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular 15-sided polygon (pentadecagon) has equal angles. What is each interior angle?",
+      "options": [
+        "156°",
+        "160°",
+        "164°",
+        "168°",
+        "172°"
+      ],
+      "correct": 0,
+      "correctAnswer": "156°",
+      "explanation": "The sum of interior angles in a 15-sided polygon is (15-2) × 180° = 2340°. Each angle = 2340 ÷ 15 = 156°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 11c° and 7c°. What is c?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 11c + 7c = 180. This gives 18c = 180, so c = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q84.svg"
+    },
+    {
+      "id": 85,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles 92°, 53°, and d°. What is d?",
+      "options": [
+        "25°",
+        "30°",
+        "35°",
+        "40°",
+        "45°"
+      ],
+      "correct": 2,
+      "correctAnswer": "35°",
+      "explanation": "Angles in a triangle add up to 180°. So 92° + 53° + d = 180°. Therefore d = 180 - 145 = 35°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q85.svg"
+    },
+    {
+      "id": 86,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
+      "options": [
+        "78°",
+        "83°",
+        "88°",
+        "93°",
+        "98°"
+      ],
+      "correct": 2,
+      "correctAnswer": "88°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 87° + 94° + 91° + e = 360°. Therefore e = 360 - 272 = 88°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q86.svg"
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 141°. The two opposite interior angles are 76° and f°. What is f?",
+      "options": [
+        "55°",
+        "60°",
+        "65°",
+        "70°",
+        "75°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 76° + f = 141°. Therefore f = 141 - 76 = 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q87.svg"
+    },
+    {
+      "id": 88,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 44°. What is the third angle?",
+      "options": [
+        "36°",
+        "41°",
+        "46°",
+        "51°",
+        "56°"
+      ],
+      "correct": 2,
+      "correctAnswer": "46°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 44° + third angle = 180°. So the third angle = 180 - 134 = 46°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q88.svg"
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Angles on a straight line are 13g° and 5g°. What is g?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 13g + 5g = 180. This gives 18g = 180, so g = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q89.svg"
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 77° each. What is the third angle?",
+      "options": [
+        "16°",
+        "21°",
+        "26°",
+        "31°",
+        "36°"
+      ],
+      "correct": 2,
+      "correctAnswer": "26°",
+      "explanation": "Angles in a triangle sum to 180°. So 77° + 77° + third angle = 180°. The third angle = 180 - 154 = 26°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q90.svg"
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 8h°, 9h°, and h°. What is h?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 8h + 9h + h = 180. This gives 18h = 180, so h = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q91.svg"
+    },
+    {
+      "id": 92,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
+      "options": [
+        "43°",
+        "48°",
+        "53°",
+        "58°",
+        "63°"
+      ],
+      "correct": 2,
+      "correctAnswer": "53°",
+      "explanation": "Angles around a point add up to 360°. So 124° + 87° + 96° + fourth angle = 360°. The fourth angle = 360 - 307 = 53°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q92.svg"
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 82°. What is the alternate interior angle?",
+      "options": [
+        "72°",
+        "78°",
+        "82°",
+        "98°",
+        "108°"
+      ],
+      "correct": 2,
+      "correctAnswer": "82°",
+      "explanation": "When two parallel lines are crossed by another line (called a transversal), the angles on opposite sides are equal. These are called alternate angles. Since one angle is 82°, the alternate angle is also 82°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q93.svg"
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 9j°, 6j°, and 3j°. What is j?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 9j + 6j + 3j = 180. This gives 18j = 180, so j = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q94.svg"
+    },
+    {
+      "id": 95,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
+      "options": [
+        "105°",
+        "110°",
+        "115°",
+        "120°",
+        "125°"
+      ],
+      "correct": 2,
+      "correctAnswer": "115°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 65° + 115° + 65° + k = 360°. Therefore k = 360 - 245 = 115°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q95.svg"
+    },
+    {
+      "id": 96,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles 86°, 58°, and m°. What is m?",
+      "options": [
+        "26°",
+        "31°",
+        "36°",
+        "41°",
+        "46°"
+      ],
+      "correct": 2,
+      "correctAnswer": "36°",
+      "explanation": "Angles in a triangle add up to 180°. So 86° + 58° + m = 180°. Therefore m = 180 - 144 = 36°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q96.svg"
+    },
+    {
+      "id": 97,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 31°. What is the third angle?",
+      "options": [
+        "49°",
+        "54°",
+        "59°",
+        "64°",
+        "69°"
+      ],
+      "correct": 2,
+      "correctAnswer": "59°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 31° + third angle = 180°. So the third angle = 180 - 121 = 59°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q97.svg"
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 14n° and 4n°. What is n?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 14n + 4n = 180. This gives 18n = 180, so n = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q98.svg"
+    },
+    {
+      "id": 99,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 52°. What is the top angle?",
+      "options": [
+        "66°",
+        "71°",
+        "76°",
+        "81°",
+        "86°"
+      ],
+      "correct": 2,
+      "correctAnswer": "76°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 52° + 52° + top angle = 180°. The top angle = 180 - 104 = 76°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q99.svg"
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 128°. The two opposite interior angles are 64° and p°. What is p?",
+      "options": [
+        "54°",
+        "59°",
+        "64°",
+        "69°",
+        "74°"
+      ],
+      "correct": 2,
+      "correctAnswer": "64°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 64° + p = 128°. Therefore p = 128 - 64 = 64°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q100.svg"
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
+      "options": [
+        "66°",
+        "71°",
+        "76°",
+        "81°",
+        "86°"
+      ],
+      "correct": 2,
+      "correctAnswer": "76°",
+      "explanation": "Angles around a point add up to 360°. So 94° + 82° + 108° + q = 360°. Therefore q = 360 - 284 = 76°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q101.svg"
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 59° each. What is the third angle?",
+      "options": [
+        "52°",
+        "57°",
+        "62°",
+        "67°",
+        "72°"
+      ],
+      "correct": 2,
+      "correctAnswer": "62°",
+      "explanation": "Angles in a triangle sum to 180°. So 59° + 59° + third angle = 180°. The third angle = 180 - 118 = 62°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q102.svg"
+    },
+    {
+      "id": 103,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Angles on a straight line are 15r° and 3r°. What is r?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 15r + 3r = 180. This gives 18r = 180, so r = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q103.svg"
+    },
+    {
+      "id": 104,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A regular 20-sided polygon (icosagon) has equal angles. What is each interior angle?",
+      "options": [
+        "156°",
+        "160°",
+        "162°",
+        "164°",
+        "168°"
+      ],
+      "correct": 2,
+      "correctAnswer": "162°",
+      "explanation": "The sum of interior angles in a 20-sided polygon is (20-2) × 180° = 3240°. Each angle = 3240 ÷ 20 = 162°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A trapezium has angles 98°, 82°, 98°, and s°. What is s?",
+      "options": [
+        "72°",
+        "77°",
+        "82°",
+        "87°",
+        "92°"
+      ],
+      "correct": 2,
+      "correctAnswer": "82°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 98° + 82° + 98° + s = 360°. Therefore s = 360 - 278 = 82°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q105.svg"
+    },
+    {
+      "id": 106,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Parallel lines are crossed by a transversal. One angle is 146°. What is the corresponding angle?",
+      "options": [
+        "34°",
+        "44°",
+        "54°",
+        "136°",
+        "146°"
+      ],
+      "correct": 4,
+      "correctAnswer": "146°",
+      "explanation": "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 146°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q106.svg"
+    },
+    {
+      "id": 107,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 10t°, 5t°, and 3t°. What is t?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 10t + 5t + 3t = 180. This gives 18t = 180, so t = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q107.svg"
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 43°. What is the top angle?",
+      "options": [
+        "84°",
+        "89°",
+        "94°",
+        "99°",
+        "104°"
+      ],
+      "correct": 2,
+      "correctAnswer": "94°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 43° + 43° + top angle = 180°. The top angle = 180 - 86 = 94°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q108.svg"
+    },
+    {
+      "id": 109,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 52°. What is the third angle?",
+      "options": [
+        "28°",
+        "33°",
+        "38°",
+        "43°",
+        "48°"
+      ],
+      "correct": 2,
+      "correctAnswer": "38°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 52° + third angle = 180°. So the third angle = 180 - 142 = 38°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q109.svg"
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are 16u° and 2u°. What is u?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 16u + 2u = 180. This gives 18u = 180, so u = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q110.svg"
+    },
+    {
+      "id": 111,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An exterior angle of a triangle is 150°. The two opposite interior angles are 82° and v°. What is v?",
+      "options": [
+        "58°",
+        "63°",
+        "68°",
+        "73°",
+        "78°"
+      ],
+      "correct": 2,
+      "correctAnswer": "68°",
+      "explanation": "An exterior angle equals the sum of the two opposite interior angles. So 82° + v = 150°. Therefore v = 150 - 82 = 68°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": "angles-shapes/exterior-q111.svg"
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has angles 11w°, 4w°, and 3w°. What is w?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles in a triangle add up to 180°. So 11w + 4w + 3w = 180. This gives 18w = 180, so w = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q112.svg"
+    },
+    {
+      "id": 113,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles 78°, 64°, and x°. What is x?",
+      "options": [
+        "28°",
+        "33°",
+        "38°",
+        "43°",
+        "48°"
+      ],
+      "correct": 2,
+      "correctAnswer": "38°",
+      "explanation": "Angles in a triangle add up to 180°. So 78° + 64° + x = 180°. Therefore x = 180 - 142 = 38°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/triangle-q113.svg"
+    },
+    {
+      "id": 114,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
+      "options": [
+        "35°",
+        "40°",
+        "45°",
+        "50°",
+        "55°"
+      ],
+      "correct": 2,
+      "correctAnswer": "45°",
+      "explanation": "Angles around a point add up to 360°. So 132° + 78° + 105° + fourth angle = 360°. The fourth angle = 360 - 315 = 45°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q114.svg"
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
+      "options": [
+        "96°",
+        "101°",
+        "106°",
+        "111°",
+        "116°"
+      ],
+      "correct": 2,
+      "correctAnswer": "106°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 74° + 106° + 74° + y = 360°. Therefore y = 360 - 254 = 106°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "QuadShape",
+      "image": "angles-shapes/quadrilateral-q115.svg"
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Angles on a straight line are 17z° and z°. What is z?",
+      "options": [
+        "8°",
+        "10°",
+        "12°",
+        "15°",
+        "18°"
+      ],
+      "correct": 1,
+      "correctAnswer": "10°",
+      "explanation": "Angles on a straight line add up to 180°. So 17z + z = 180. This gives 18z = 180, so z = 10°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q116.svg"
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 70° each. What is the third angle?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "Angles in a triangle sum to 180°. So 70° + 70° + third angle = 180°. The third angle = 180 - 140 = 40°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q117.svg"
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An isosceles triangle has a base angle of 36°. What is the top angle?",
+      "options": [
+        "98°",
+        "103°",
+        "108°",
+        "113°",
+        "118°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "In an isosceles triangle, the two base angles are equal. So we have 36° + 36° + top angle = 180°. The top angle = 180 - 72 = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/isosceles-q118.svg"
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 93°. What is the alternate interior angle?",
+      "options": [
+        "83°",
+        "87°",
+        "93°",
+        "97°",
+        "103°"
+      ],
+      "correct": 2,
+      "correctAnswer": "93°",
+      "explanation": "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 93°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": "angles-shapes/parallel-q119.svg"
+    },
+    {
+      "id": 120,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has another angle of 68°. What is the third angle?",
+      "options": [
+        "12°",
+        "17°",
+        "22°",
+        "27°",
+        "32°"
+      ],
+      "correct": 2,
+      "correctAnswer": "22°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 68° + third angle = 180°. So the third angle = 180 - 158 = 22°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDiagram",
+      "image": "angles-shapes/right-triangle-q120.svg"
+    },
+    {
+      "id": 121,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
+      "options": [
+        "57°",
+        "62°",
+        "67°",
+        "72°",
+        "77°"
+      ],
+      "correct": 2,
+      "correctAnswer": "67°",
+      "explanation": "Angles around a point add up to 360°. So 96° + 109° + 88° + b = 360°. Therefore b = 360 - 293 = 67°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/point-q121.svg"
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are in the ratio 5:13. What is the smaller angle?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "The ratio 5:13 means the angles are 5x and 13x. On a straight line: 5x + 13x = 180°. So 18x = 180°, giving x = 10°. The smaller angle is 5x = 5 × 10 = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": "angles-shapes/straight-line-q122.svg"
+    },
+    {
+      "id": 123,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What do angles on a straight line add up to?",
+      "options": [
+        "90°",
+        "120°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct": 2,
+      "correctAnswer": "180°",
+      "explanation": "Angles on a straight line always add up to 180°. This is one of the key angle facts to remember. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles are on a straight line. One angle is 115°. What is the other angle?",
+      "options": [
+        "55°",
+        "65°",
+        "75°",
+        "85°",
+        "95°"
+      ],
+      "correct": 1,
+      "correctAnswer": "65°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 115° = 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles sit on a straight line. One angle is 72°. What is the other angle?",
+      "options": [
+        "98°",
+        "100°",
+        "108°",
+        "112°",
+        "118°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 72° = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An angle of 90° sits on a straight line with another angle. What is the other angle?",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct": 2,
+      "correctAnswer": "90°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 90° = 90°. Both angles are right angles. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles are formed on a straight line. One is 143°. What is the other?",
+      "options": [
+        "27°",
+        "37°",
+        "43°",
+        "47°",
+        "57°"
+      ],
+      "correct": 1,
+      "correctAnswer": "37°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 143° = 37°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver draws a straight line and marks an angle of 58° on one side. What is the angle on the other side?",
+      "options": [
+        "112°",
+        "118°",
+        "122°",
+        "128°",
+        "132°"
+      ],
+      "correct": 2,
+      "correctAnswer": "122°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 58° = 122°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma measures one of two angles on a straight line and gets 165°. What is the other angle?",
+      "options": [
+        "5°",
+        "10°",
+        "15°",
+        "20°",
+        "25°"
+      ],
+      "correct": 2,
+      "correctAnswer": "15°",
+      "explanation": "Angles on a straight line add up to 180°. The other angle = 180° − 165° = 15°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are equal. What is each angle?",
+      "options": [
+        "45°",
+        "60°",
+        "80°",
+        "90°",
+        "120°"
+      ],
+      "correct": 3,
+      "correctAnswer": "90°",
+      "explanation": "Angles on a straight line add up to 180°. If both are equal, each angle = 180° ÷ 2 = 90°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Three angles on a straight line are 54°, 68°, and x°. What is x?",
+      "options": [
+        "48°",
+        "52°",
+        "56°",
+        "58°",
+        "62°"
+      ],
+      "correct": 3,
+      "correctAnswer": "58°",
+      "explanation": "Angles on a straight line add up to 180°. So 54° + 68° + x° = 180°. That gives 122° + x° = 180°, so x = 180 − 122 = 58°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Three angles sit on a straight line. Two of them are 37° and 85°. What is the third angle?",
+      "options": [
+        "48°",
+        "52°",
+        "56°",
+        "58°",
+        "62°"
+      ],
+      "correct": 3,
+      "correctAnswer": "58°",
+      "explanation": "Angles on a straight line add up to 180°. The third angle = 180° − 37° − 85° = 58°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two straight lines cross each other. One of the angles formed is 125°. What is the angle vertically opposite to it?",
+      "options": [
+        "45°",
+        "55°",
+        "65°",
+        "115°",
+        "125°"
+      ],
+      "correct": 4,
+      "correctAnswer": "125°",
+      "explanation": "Vertically opposite angles are always equal. So the angle opposite 125° is also 125°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two straight lines cross. One angle is 70°. What is the angle next to it on the straight line?",
+      "options": [
+        "70°",
+        "90°",
+        "100°",
+        "110°",
+        "120°"
+      ],
+      "correct": 3,
+      "correctAnswer": "110°",
+      "explanation": "Adjacent angles on a straight line add up to 180°. The angle next to 70° = 180° − 70° = 110°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
+      "options": [
+        "55°",
+        "60°",
+        "65°",
+        "70°",
+        "75°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "Angles on a straight line add up to 180°. So 42° + y° + 73° = 180°. That gives 115° + y° = 180°, so y = 180 − 115 = 65°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are in the ratio 1:3. What is the larger angle?",
+      "options": [
+        "30°",
+        "45°",
+        "90°",
+        "120°",
+        "135°"
+      ],
+      "correct": 4,
+      "correctAnswer": "135°",
+      "explanation": "The angles are in the ratio 1:3, so they are 1 part and 3 parts. Total parts = 4. Each part = 180° ÷ 4 = 45°. The larger angle = 3 × 45° = 135°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "72°",
+        "90°"
+      ],
+      "correct": 2,
+      "correctAnswer": "60°",
+      "explanation": "Angles on a straight line add up to 180°. If one is twice the other, call them x° and 2x°. So x + 2x = 180, meaning 3x = 180, so x = 60°. The smaller angle is 60°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Three equal angles sit on a straight line. What is each angle?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 4,
+      "correctAnswer": "60°",
+      "explanation": "Angles on a straight line add up to 180°. If all three are equal, each angle = 180° ÷ 3 = 60°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Four angles on a straight line are 28°, 47°, 63°, and w°. What is w?",
+      "options": [
+        "32°",
+        "37°",
+        "42°",
+        "47°",
+        "52°"
+      ],
+      "correct": 2,
+      "correctAnswer": "42°",
+      "explanation": "Angles on a straight line add up to 180°. So 28° + 47° + 63° + w° = 180°. That gives 138° + w° = 180°, so w = 180 − 138 = 42°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A door is open, making an angle of 65° with the wall. What is the angle between the door and the wall on the other side?",
+      "options": [
+        "95°",
+        "105°",
+        "115°",
+        "125°",
+        "135°"
+      ],
+      "correct": 2,
+      "correctAnswer": "115°",
+      "explanation": "The door and the wall form a straight line (180°). The angle on the other side = 180° − 65° = 115°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Angle a is on a straight line with 130°. Angle b is vertically opposite to angle a. What is b?",
+      "options": [
+        "40°",
+        "50°",
+        "60°",
+        "130°",
+        "140°"
+      ],
+      "correct": 1,
+      "correctAnswer": "50°",
+      "explanation": "Angles on a straight line add up to 180°. So angle a = 180° − 130° = 50°. Vertically opposite angles are equal, so angle b = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Four angles on a straight line are 15°, 35°, x°, and 55°. What is x?",
+      "options": [
+        "65°",
+        "70°",
+        "75°",
+        "80°",
+        "85°"
+      ],
+      "correct": 2,
+      "correctAnswer": "75°",
+      "explanation": "Angles on a straight line add up to 180°. So 15° + 35° + x° + 55° = 180°. That gives 105° + x° = 180°, so x = 180 − 105 = 75°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Lily has two angles on a straight line. One angle is 3 times the size of the other. What is the smaller angle?",
+      "options": [
+        "30°",
+        "36°",
+        "45°",
+        "54°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "45°",
+      "explanation": "Angles on a straight line add up to 180°. Call the smaller angle x°. The larger is 3x°. So x + 3x = 180, meaning 4x = 180, so x = 45°. The smaller angle is 45°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
+      "options": [
+        "22°",
+        "68°",
+        "102°",
+        "112°",
+        "122°"
+      ],
+      "correct": 3,
+      "correctAnswer": "112°",
+      "explanation": "Angles on a straight line add up to 180°. So angle q = 180° − 68° = 112°. Vertically opposite angles are equal, so angle r = 112°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An angle measures 47°. What type of angle is it?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 0,
+      "correctAnswer": "Acute",
+      "explanation": "An acute angle is less than 90°. Since 47° is less than 90°, it is an acute angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An angle measures 135°. What type of angle is it?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse",
+      "explanation": "An obtuse angle is between 90° and 180°. Since 135° is between 90° and 180°, it is an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is a right angle?",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "180°",
+        "270°"
+      ],
+      "correct": 2,
+      "correctAnswer": "90°",
+      "explanation": "A right angle is exactly 90°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie measures an angle of 180°. What type of angle is this?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 3,
+      "correctAnswer": "Straight",
+      "explanation": "An angle of exactly 180° is called a straight angle. It forms a straight line. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An angle measures 82°. What type of angle is it?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 0,
+      "correctAnswer": "Acute",
+      "explanation": "An acute angle is less than 90°. Since 82° is less than 90°, it is an acute angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Harry measures an angle of 163°. What type of angle is it?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse",
+      "explanation": "An obtuse angle is between 90° and 180°. Since 163° is between 90° and 180°, it is an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An angle is greater than 180° but less than 360°. What type of angle is it?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 4,
+      "correctAnswer": "Reflex",
+      "explanation": "A reflex angle is any angle greater than 180° but less than 360°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily says an angle of 200° is obtuse. Is she correct?",
+      "options": [
+        "Yes, because it is bigger than 90°",
+        "Yes, because it is bigger than 180°",
+        "No, it is a reflex angle",
+        "No, it is a straight angle",
+        "No, it is an acute angle"
+      ],
+      "correct": 2,
+      "correctAnswer": "No, it is a reflex angle",
+      "explanation": "An obtuse angle is between 90° and 180°. An angle of 200° is greater than 180°, so it is a reflex angle, not obtuse. Lily is incorrect. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver draws a triangle. Two of its angles are 50° and 60°. What type of angle is the third angle?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 0,
+      "correctAnswer": "Acute",
+      "explanation": "Angles in a triangle add up to 180°. The third angle = 180° − 50° − 60° = 70°. Since 70° is less than 90°, it is an acute angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these angles is reflex?",
+      "options": [
+        "89°",
+        "91°",
+        "179°",
+        "181°",
+        "90°"
+      ],
+      "correct": 3,
+      "correctAnswer": "181°",
+      "explanation": "A reflex angle is greater than 180° and less than 360°. Only 181° is in that range, so 181° is a reflex angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack draws a triangle with angles 25° and 35°. What type of angle is the third angle?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse",
+      "explanation": "Angles in a triangle add up to 180°. The third angle = 180° − 25° − 35° = 120°. Since 120° is between 90° and 180°, it is an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A clock shows 4 o'clock. What type of angle is formed between the hour hand and the minute hand?",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight",
+        "Reflex"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse",
+      "explanation": "Each hour on a clock represents 30° (since 360° ÷ 12 = 30°). At 4 o'clock, the hands are 4 hours apart, so the angle = 4 × 30° = 120°. Since 120° is between 90° and 180°, it is an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The minute hand of a clock turns from 12 to 9. How many degrees does it turn through, and what type of angle is this?",
+      "options": [
+        "90° — a right angle",
+        "180° — a straight angle",
+        "240° — a reflex angle",
+        "270° — a reflex angle",
+        "360° — a full turn"
+      ],
+      "correct": 3,
+      "correctAnswer": "270° — a reflex angle",
+      "explanation": "From 12 to 9, the minute hand passes through 9 hours on the clock face. Each hour = 30° (360° ÷ 12 = 30°). So the turn = 9 × 30° = 270°. Since 270° is between 180° and 360°, it is a reflex angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An obtuse angle is exactly 3 times the size of a 40° angle. What is the obtuse angle?",
+      "options": [
+        "80°",
+        "100°",
+        "120°",
+        "140°",
+        "160°"
+      ],
+      "correct": 2,
+      "correctAnswer": "120°",
+      "explanation": "3 × 40° = 120°. Since 120° is between 90° and 180°, it is indeed an obtuse angle. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 60° and 80°. What is the third angle?",
+      "options": [
+        "30°",
+        "40°",
+        "50°",
+        "60°",
+        "70°"
+      ],
+      "correct": 1,
+      "correctAnswer": "40°",
+      "explanation": "Angles in a triangle add up to 180°. So 60° + 80° + third angle = 180°. The third angle = 180 - 60 - 80 = 40°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 50° and 90°. What is the third angle?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "Angles in a triangle add up to 180°. So 50° + 90° + third angle = 180°. The third angle = 180 - 50 - 90 = 40°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 75° and 65°. What is the third angle?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "Angles in a triangle add up to 180°. So 75° + 65° + third angle = 180°. The third angle = 180 - 75 - 65 = 40°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 45° and 85°. What is the third angle?",
+      "options": [
+        "40°",
+        "45°",
+        "50°",
+        "55°",
+        "60°"
+      ],
+      "correct": 2,
+      "correctAnswer": "50°",
+      "explanation": "Angles in a triangle add up to 180°. So 45° + 85° + third angle = 180°. The third angle = 180 - 45 - 85 = 50°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has angles of 38° and 72°. What is the third angle?",
+      "options": [
+        "60°",
+        "65°",
+        "70°",
+        "75°",
+        "80°"
+      ],
+      "correct": 2,
+      "correctAnswer": "70°",
+      "explanation": "Angles in a triangle add up to 180°. So 38° + 72° + third angle = 180°. The third angle = 180 - 38 - 72 = 70°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Emma draws a triangle with angles 35° and 110°. What is the third angle?",
+      "options": [
+        "25°",
+        "30°",
+        "35°",
+        "40°",
+        "45°"
+      ],
+      "correct": 2,
+      "correctAnswer": "35°",
+      "explanation": "Angles in a triangle add up to 180°. So 35° + 110° + third angle = 180°. The third angle = 180 - 35 - 110 = 35°. This is an obtuse triangle because one angle is greater than 90°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver draws a triangle. One angle is 28° and another is 124°. What is the third angle?",
+      "options": [
+        "18°",
+        "23°",
+        "28°",
+        "33°",
+        "38°"
+      ],
+      "correct": 2,
+      "correctAnswer": "28°",
+      "explanation": "Angles in a triangle add up to 180°. So 28° + 124° + third angle = 180°. The third angle = 180 - 28 - 124 = 28°. This is an obtuse triangle with two equal angles, making it an obtuse isosceles triangle. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily measures two angles in a triangle as 56° and 97°. What is the third angle?",
+      "options": [
+        "17°",
+        "22°",
+        "27°",
+        "32°",
+        "37°"
+      ],
+      "correct": 2,
+      "correctAnswer": "27°",
+      "explanation": "Angles in a triangle add up to 180°. So 56° + 97° + third angle = 180°. The third angle = 180 - 56 - 97 = 27°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie draws a triangle where one angle is twice another. The two angles are 46° and 92°. What is the third angle?",
+      "options": [
+        "32°",
+        "37°",
+        "42°",
+        "47°",
+        "52°"
+      ],
+      "correct": 2,
+      "correctAnswer": "42°",
+      "explanation": "Angles in a triangle add up to 180°. So 46° + 92° + third angle = 180°. The third angle = 180 - 46 - 92 = 42°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack draws a triangle with angles of 15° and 135°. What type of triangle is this, and what is the third angle?",
+      "options": [
+        "Acute, 30°",
+        "Right-angled, 30°",
+        "Obtuse, 30°",
+        "Obtuse, 40°",
+        "Acute, 40°"
+      ],
+      "correct": 2,
+      "correctAnswer": "Obtuse, 30°",
+      "explanation": "Angles in a triangle add up to 180°. The third angle = 180 - 15 - 135 = 30°. Since one angle (135°) is greater than 90°, this is an obtuse triangle. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In triangle ABC, angle A is twice angle B. Angle C is 36°. What is angle A?",
+      "options": [
+        "48°",
+        "72°",
+        "96°",
+        "108°",
+        "120°"
+      ],
+      "correct": 2,
+      "correctAnswer": "96°",
+      "explanation": "Let angle B = x. Then angle A = 2x. We know x + 2x + 36 = 180. So 3x = 144, giving x = 48°. Angle A = 2 × 48 = 96°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In triangle PQR, angle P = angle Q. Angle R is 50°. What is angle P?",
+      "options": [
+        "55°",
+        "60°",
+        "65°",
+        "70°",
+        "75°"
+      ],
+      "correct": 2,
+      "correctAnswer": "65°",
+      "explanation": "Since angle P = angle Q, let each be x. Then x + x + 50 = 180. So 2x = 130, giving x = 65°. Angle P = 65°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a triangle, one angle is three times the smallest angle, and the third angle is 60°. The smallest angle is x°. What is the largest angle?",
+      "options": [
+        "80°",
+        "85°",
+        "90°",
+        "95°",
+        "100°"
+      ],
+      "correct": 2,
+      "correctAnswer": "90°",
+      "explanation": "Let the smallest angle be x. The other angle is 3x. So x + 3x + 60 = 180. This gives 4x = 120, so x = 30°. The largest angle = 3 × 30 = 90°. But we must check: 60° is also an angle. Since 90° > 60° > 30°, the largest angle is 90°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a triangle, two angles are equal and the third angle is 30° more than each of the equal angles. What are the equal angles?",
+      "options": [
+        "45°",
+        "50°",
+        "55°",
+        "60°",
+        "65°"
+      ],
+      "correct": 1,
+      "correctAnswer": "50°",
+      "explanation": "Let each equal angle be x. The third angle is x + 30. So x + x + (x + 30) = 180. This gives 3x + 30 = 180, so 3x = 150 and x = 50°. Each equal angle is 50°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four angles meet at a point. Three of them are 78°, 112°, and 95°. What is the fourth angle?",
+      "options": [
+        "65°",
+        "70°",
+        "75°",
+        "80°",
+        "85°"
+      ],
+      "correct": 2,
+      "correctAnswer": "75°",
+      "explanation": "Angles around a point add up to 360°. So 78° + 112° + 95° + fourth angle = 360°. The fourth angle = 360 - 285 = 75°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Three angles meet at a point. Two of them are 148° and 97°. What is the third angle?",
+      "options": [
+        "105°",
+        "110°",
+        "115°",
+        "120°",
+        "125°"
+      ],
+      "correct": 2,
+      "correctAnswer": "115°",
+      "explanation": "Angles around a point add up to 360°. So 148° + 97° + third angle = 360°. The third angle = 360 - 245 = 115°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Five angles meet at a point. Four of them are 65°, 82°, 74°, and 91°. What is the fifth angle?",
+      "options": [
+        "38°",
+        "43°",
+        "48°",
+        "53°",
+        "58°"
+      ],
+      "correct": 2,
+      "correctAnswer": "48°",
+      "explanation": "Angles around a point add up to 360°. So 65° + 82° + 74° + 91° + fifth angle = 360°. The fifth angle = 360 - 312 = 48°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four angles around a point are 118°, 76°, 83°, and x°. What is x?",
+      "options": [
+        "73°",
+        "78°",
+        "83°",
+        "88°",
+        "93°"
+      ],
+      "correct": 2,
+      "correctAnswer": "83°",
+      "explanation": "Angles around a point add up to 360°. So 118° + 76° + 83° + x = 360°. Therefore x = 360 - 277 = 83°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Three roads meet at a roundabout. The angles between them are 156°, 98°, and y°. What is y?",
+      "options": [
+        "96°",
+        "101°",
+        "106°",
+        "111°",
+        "116°"
+      ],
+      "correct": 2,
+      "correctAnswer": "106°",
+      "explanation": "Angles around a point add up to 360°. So 156° + 98° + y = 360°. Therefore y = 360 - 254 = 106°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 178,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four angles meet at a point. Three of them are 64°, 128°, and 96°. What is the fourth angle?",
+      "options": [
+        "62°",
+        "67°",
+        "72°",
+        "77°",
+        "82°"
+      ],
+      "correct": 2,
+      "correctAnswer": "72°",
+      "explanation": "Angles around a point add up to 360°. So 64° + 128° + 96° + fourth angle = 360°. The fourth angle = 360 - 288 = 72°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 179,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Three equal angles and one angle of 90° meet at a point. What is each equal angle?",
+      "options": [
+        "80°",
+        "85°",
+        "90°",
+        "95°",
+        "100°"
+      ],
+      "correct": 2,
+      "correctAnswer": "90°",
+      "explanation": "Let each equal angle be x. Then x + x + x + 90 = 360. So 3x = 270, giving x = 90°. Each equal angle is 90°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 180,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The minute hand of a clock points at 12. It turns clockwise to point at 8. What angle has it turned through?",
+      "options": [
+        "200°",
+        "220°",
+        "240°",
+        "260°",
+        "280°"
+      ],
+      "correct": 2,
+      "correctAnswer": "240°",
+      "explanation": "The clock face is divided into 12 equal sections, each covering 360° ÷ 12 = 30°. From 12 to 8 is 8 sections. So the angle = 8 × 30° = 240°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 181,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two angles around a point are equal, and two other angles are 70° and 130°. What is each equal angle?",
+      "options": [
+        "70°",
+        "75°",
+        "80°",
+        "85°",
+        "90°"
+      ],
+      "correct": 2,
+      "correctAnswer": "80°",
+      "explanation": "Let each equal angle be x. Then x + x + 70 + 130 = 360. So 2x + 200 = 360, giving 2x = 160 and x = 80°. Each equal angle is 80°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 182,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The minute hand of a clock points at 12. It turns clockwise to point at 5. What angle has it turned through?",
+      "options": [
+        "120°",
+        "130°",
+        "140°",
+        "150°",
+        "160°"
+      ],
+      "correct": 3,
+      "correctAnswer": "150°",
+      "explanation": "Each number on the clock face is 360° ÷ 12 = 30° apart. From 12 to 5 is 5 sections. So the angle = 5 × 30° = 150°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 183,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Four equal angles meet at a point, but one of them is then split into two parts: 50° and the rest. What is 'the rest'?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "If four equal angles meet at a point, each is 360° ÷ 4 = 90°. One angle is split into 50° and the rest. So the rest = 90 - 50 = 40°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 184,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An irregular quadrilateral has angles of 115°, 82°, and 74°. What is the fourth angle?",
+      "options": [
+        "79°",
+        "84°",
+        "89°",
+        "94°",
+        "99°"
+      ],
+      "correct": 2,
+      "correctAnswer": "89°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 115° + 82° + 74° + fourth angle = 360°. The fourth angle = 360 - 271 = 89°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 185,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A parallelogram has one angle of 65°. What is the angle directly opposite to it?",
+      "options": [
+        "55°",
+        "65°",
+        "90°",
+        "115°",
+        "125°"
+      ],
+      "correct": 1,
+      "correctAnswer": "65°",
+      "explanation": "In a parallelogram, opposite angles are equal. So the angle opposite 65° is also 65°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 186,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A parallelogram has one angle of 72°. What is the angle next to it?",
+      "options": [
+        "72°",
+        "88°",
+        "98°",
+        "108°",
+        "118°"
+      ],
+      "correct": 3,
+      "correctAnswer": "108°",
+      "explanation": "In a parallelogram, adjacent angles add up to 180° (they are co-interior angles). So the angle next to 72° = 180 - 72 = 108°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 187,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A quadrilateral has angles of 93°, 107°, and 68°. What is the fourth angle?",
+      "options": [
+        "82°",
+        "87°",
+        "92°",
+        "97°",
+        "102°"
+      ],
+      "correct": 2,
+      "correctAnswer": "92°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 93° + 107° + 68° + fourth angle = 360°. The fourth angle = 360 - 268 = 92°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 188,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A trapezium has two parallel sides. One angle is 58°. The angle on the same side (co-interior) must add up to 180°. What is that co-interior angle?",
+      "options": [
+        "112°",
+        "117°",
+        "122°",
+        "127°",
+        "132°"
+      ],
+      "correct": 2,
+      "correctAnswer": "122°",
+      "explanation": "Co-interior angles between parallel lines add up to 180°. So the co-interior angle = 180 - 58 = 122°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 189,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Three angles of a quadrilateral are 80°, 100°, and 95°. What is the fourth angle?",
+      "options": [
+        "75°",
+        "80°",
+        "85°",
+        "90°",
+        "95°"
+      ],
+      "correct": 2,
+      "correctAnswer": "85°",
+      "explanation": "Angles in a quadrilateral add up to 360°. So 80° + 100° + 95° + fourth angle = 360°. The fourth angle = 360 - 275 = 85°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 190,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A kite has two pairs of equal adjacent angles. One pair of equal angles is 110° each. What is each angle in the other pair?",
+      "options": [
+        "60°",
+        "65°",
+        "70°",
+        "75°",
+        "80°"
+      ],
+      "correct": 2,
+      "correctAnswer": "70°",
+      "explanation": "Angles in a quadrilateral add up to 360°. The kite has two angles of 110°. So 110° + 110° + x + x = 360°. This gives 2x = 140, so x = 70°. Each angle in the other pair is 70°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 191,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pentagon has angles of 108°, 112°, 95°, 120° and x°. What is x?",
+      "options": [
+        "95°",
+        "100°",
+        "105°",
+        "110°",
+        "115°"
+      ],
+      "correct": 2,
+      "correctAnswer": "105°",
+      "explanation": "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. So 108° + 112° + 95° + 120° + x = 540°. The four known angles add up to 435°. Therefore x = 540 − 435 = 105°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 192,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Grace draws a pentagon with angles 98°, 124°, 106°, 110° and y°. What is y?",
+      "options": [
+        "92°",
+        "97°",
+        "102°",
+        "107°",
+        "112°"
+      ],
+      "correct": 2,
+      "correctAnswer": "102°",
+      "explanation": "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. So 98° + 124° + 106° + 110° + y = 540°. The four known angles add up to 438°. Therefore y = 540 − 438 = 102°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 193,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A hexagon has angles of 130°, 110°, 125°, 115°, 140° and z°. What is z?",
+      "options": [
+        "90°",
+        "95°",
+        "100°",
+        "105°",
+        "110°"
+      ],
+      "correct": 2,
+      "correctAnswer": "100°",
+      "explanation": "The sum of interior angles in a hexagon is (6−2) × 180° = 720°. So 130° + 110° + 125° + 115° + 140° + z = 720°. The five known angles add up to 620°. Therefore z = 720 − 620 = 100°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 194,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A hexagon has angles of 100°, 135°, 120°, 115°, 130° and a°. What is a?",
+      "options": [
+        "110°",
+        "115°",
+        "120°",
+        "125°",
+        "130°"
+      ],
+      "correct": 2,
+      "correctAnswer": "120°",
+      "explanation": "The sum of interior angles in a hexagon is (6−2) × 180° = 720°. So 100° + 135° + 120° + 115° + 130° + a = 720°. The five known angles add up to 600°. Therefore a = 720 − 600 = 120°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 195,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A pentagon has angles 100°, 110°, 120°, 130° and x°. Find x.",
+      "options": [
+        "60°",
+        "70°",
+        "80°",
+        "90°",
+        "100°"
+      ],
+      "correct": 2,
+      "correctAnswer": "80°",
+      "explanation": "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. So 100° + 110° + 120° + 130° + x = 540°. The four known angles add up to 460°. Therefore x = 540 − 460 = 80°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 196,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A heptagon (7-sided shape) has six angles of 115°, 130°, 140°, 125°, 135° and 120°. What is the seventh angle?",
+      "options": [
+        "125°",
+        "130°",
+        "135°",
+        "140°",
+        "145°"
+      ],
+      "correct": 2,
+      "correctAnswer": "135°",
+      "explanation": "The sum of interior angles in a heptagon is (7−2) × 180° = 900°. The six given angles add up to 115° + 130° + 140° + 125° + 135° + 120° = 765°. So the seventh angle = 900° − 765° = 135°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 197,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Oliver draws a heptagon (7 sides). Six of the angles are 128°, 132°, 119°, 145°, 126° and 110°. What is the seventh angle?",
+      "options": [
+        "130°",
+        "135°",
+        "140°",
+        "145°",
+        "150°"
+      ],
+      "correct": 2,
+      "correctAnswer": "140°",
+      "explanation": "The sum of interior angles in a heptagon is (7−2) × 180° = 900°. The six given angles add up to 128° + 132° + 119° + 145° + 126° + 110° = 760°. So the seventh angle = 900° − 760° = 140°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 198,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A pentagon has three angles of 108° each. The other two angles are equal. What is each of the equal angles?",
+      "options": [
+        "98°",
+        "103°",
+        "108°",
+        "113°",
+        "118°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. Three angles of 108° give 3 × 108° = 324°. The remaining two equal angles share 540° − 324° = 216°. Each one = 216° ÷ 2 = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 199,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is each interior angle of a regular hexagon?",
+      "options": [
+        "100°",
+        "108°",
+        "110°",
+        "120°",
+        "135°"
+      ],
+      "correct": 3,
+      "correctAnswer": "120°",
+      "explanation": "The sum of interior angles in a hexagon is (6−2) × 180° = 720°. A regular hexagon has 6 equal angles, so each angle = 720° ÷ 6 = 120°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 200,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How many degrees is each interior angle of a regular pentagon?",
+      "options": [
+        "100°",
+        "104°",
+        "108°",
+        "112°",
+        "120°"
+      ],
+      "correct": 2,
+      "correctAnswer": "108°",
+      "explanation": "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. A regular pentagon has 5 equal angles, so each angle = 540° ÷ 5 = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 201,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the sum of the interior angles in any triangle?",
+      "options": [
+        "90°",
+        "120°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct": 2,
+      "correctAnswer": "180°",
+      "explanation": "The interior angles in any triangle always add up to 180°. This is one of the most important angle facts to remember. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 202,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the sum of the interior angles in any quadrilateral?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "450°",
+        "540°"
+      ],
+      "correct": 2,
+      "correctAnswer": "360°",
+      "explanation": "A quadrilateral has 4 sides. The sum of interior angles = (4−2) × 180° = 2 × 180° = 360°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 203,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A regular polygon has interior angles of 120° each. How many sides does it have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "For a regular polygon, each interior angle = ((n−2) × 180°) ÷ n. Setting this equal to 120° gives (n−2) × 180 = 120n. So 180n − 360 = 120n, meaning 60n = 360 and n = 6. It has 6 sides — it's a hexagon. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 204,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "options": [
+        "540°",
+        "630°",
+        "720°",
+        "810°",
+        "900°"
+      ],
+      "correct": 2,
+      "correctAnswer": "720°",
+      "explanation": "The sum of interior angles in any polygon is (n−2) × 180°. For a hexagon, n = 6, so the sum = (6−2) × 180° = 4 × 180° = 720°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RegularPolygon",
+      "image": null
+    },
+    {
+      "id": 205,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A right-angled triangle sits on a straight line. The right angle is at the bottom-left corner. The angle at the top of the triangle is 35°. What is the angle between the sloping side and the straight line, outside the triangle?",
+      "options": [
+        "35°",
+        "55°",
+        "125°",
+        "135°",
+        "145°"
+      ],
+      "correct": 2,
+      "correctAnswer": "125°",
+      "explanation": "The triangle's angles are 90°, 35° and 180° − 90° − 35° = 55°. The bottom-right angle inside the triangle is 55°. The angle between the sloping side and the straight line outside the triangle = 180° − 55° = 125°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 206,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a right-angled triangle, one of the other angles is 28°. What is the third angle?",
+      "options": [
+        "52°",
+        "57°",
+        "62°",
+        "67°",
+        "72°"
+      ],
+      "correct": 2,
+      "correctAnswer": "62°",
+      "explanation": "Angles in a triangle add up to 180°. We have 90° + 28° + third angle = 180°. The third angle = 180° − 90° − 28° = 62°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 207,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie draws a right-angled triangle on a straight line. The angle at the top of the triangle is 50°. What is the angle between the sloping side of the triangle and the straight line, outside the triangle?",
+      "options": [
+        "40°",
+        "130°",
+        "140°",
+        "150°",
+        "160°"
+      ],
+      "correct": 2,
+      "correctAnswer": "140°",
+      "explanation": "The triangle's angles are 90°, 50° and 180° − 90° − 50° = 40°. The base angle next to the straight line is 40°. The angle outside the triangle on the straight line = 180° − 40° = 140°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 208,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a right-angled triangle, one angle is twice the size of the other non-right angle. What are the two smaller angles?",
+      "options": [
+        "20° and 40°",
+        "25° and 50°",
+        "30° and 60°",
+        "35° and 70°",
+        "40° and 80°"
+      ],
+      "correct": 2,
+      "correctAnswer": "30° and 60°",
+      "explanation": "Let the smaller angle be x°. The other non-right angle is 2x°. So 90° + x + 2x = 180°. This gives 3x = 90°, so x = 30°. The two angles are 30° and 60°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 209,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a right-angled triangle, one angle is three times the size of the other non-right angle. What is the smallest angle in the triangle?",
+      "options": [
+        "18.5°",
+        "20°",
+        "22.5°",
+        "25°",
+        "27.5°"
+      ],
+      "correct": 2,
+      "correctAnswer": "22.5°",
+      "explanation": "Let the smaller non-right angle be x°. The other is 3x°. So 90° + x + 3x = 180°. This gives 4x = 90°, so x = 22.5°. The smallest angle is 22.5°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 210,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 70°. What is the third angle?",
+      "options": [
+        "30°",
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct": 2,
+      "correctAnswer": "40°",
+      "explanation": "In an isosceles triangle, two angles are equal. Angles in a triangle add up to 180°. So 70° + 70° + third angle = 180°. The third angle = 180° − 140° = 40°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 211,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 50°. What is the third angle?",
+      "options": [
+        "60°",
+        "70°",
+        "80°",
+        "90°",
+        "100°"
+      ],
+      "correct": 2,
+      "correctAnswer": "80°",
+      "explanation": "In an isosceles triangle, two angles are equal. Angles in a triangle add up to 180°. So 50° + 50° + third angle = 180°. The third angle = 180° − 100° = 80°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 212,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An isosceles triangle has two equal angles of 55°. What is the third angle?",
+      "options": [
+        "60°",
+        "65°",
+        "70°",
+        "75°",
+        "80°"
+      ],
+      "correct": 2,
+      "correctAnswer": "70°",
+      "explanation": "In an isosceles triangle, two angles are equal. Angles in a triangle add up to 180°. So 55° + 55° + third angle = 180°. The third angle = 180° − 110° = 70°. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 213,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The interior angle of a triangle at one vertex is 60°. What is the exterior angle at that vertex?",
+      "options": [
+        "60°",
+        "90°",
+        "100°",
+        "120°",
+        "130°"
+      ],
+      "correct": 3,
+      "correctAnswer": "120°",
+      "explanation": "An interior angle and its exterior angle sit on a straight line, so they add up to 180°. The exterior angle = 180° − 60° = 120°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": null
+    },
+    {
+      "id": 214,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The interior angle of a triangle at one vertex is 75°. What is the exterior angle at that vertex?",
+      "options": [
+        "85°",
+        "95°",
+        "105°",
+        "115°",
+        "125°"
+      ],
+      "correct": 2,
+      "correctAnswer": "105°",
+      "explanation": "An interior angle and its exterior angle sit on a straight line, so they add up to 180°. The exterior angle = 180° − 75° = 105°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": null
+    },
+    {
+      "id": 215,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The exterior angle of a triangle is 110°. The two non-adjacent interior angles are equal. What is each one?",
+      "options": [
+        "45°",
+        "50°",
+        "55°",
+        "60°",
+        "65°"
+      ],
+      "correct": 2,
+      "correctAnswer": "55°",
+      "explanation": "An exterior angle of a triangle equals the sum of the two non-adjacent interior angles. So the two equal angles add up to 110°. Each angle = 110° ÷ 2 = 55°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": null
+    },
+    {
+      "id": 216,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The exterior angle of a triangle is 124°. The two non-adjacent interior angles are equal. What is each one?",
+      "options": [
+        "52°",
+        "57°",
+        "62°",
+        "67°",
+        "72°"
+      ],
+      "correct": 2,
+      "correctAnswer": "62°",
+      "explanation": "An exterior angle of a triangle equals the sum of the two non-adjacent interior angles. So the two equal angles add up to 124°. Each angle = 124° ÷ 2 = 62°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ExteriorAngle",
+      "image": null
+    },
+    {
+      "id": 217,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 70°. What is the corresponding angle?",
+      "options": [
+        "70°",
+        "80°",
+        "90°",
+        "100°",
+        "110°"
+      ],
+      "correct": 0,
+      "correctAnswer": "70°",
+      "explanation": "When a transversal crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 70°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 218,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 115°. What is the alternate angle?",
+      "options": [
+        "55°",
+        "65°",
+        "75°",
+        "105°",
+        "115°"
+      ],
+      "correct": 4,
+      "correctAnswer": "115°",
+      "explanation": "When a transversal crosses two parallel lines, alternate angles are equal. So the alternate angle is also 115°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 219,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 48°. What is the corresponding angle on the other parallel line?",
+      "options": [
+        "42°",
+        "48°",
+        "52°",
+        "132°",
+        "138°"
+      ],
+      "correct": 1,
+      "correctAnswer": "48°",
+      "explanation": "When a transversal crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 48°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 220,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 55°. Co-interior angles (same side of the transversal, between the parallel lines) add up to 180°. What is the co-interior angle?",
+      "options": [
+        "55°",
+        "105°",
+        "115°",
+        "125°",
+        "135°"
+      ],
+      "correct": 3,
+      "correctAnswer": "125°",
+      "explanation": "Co-interior angles (also called allied angles) add up to 180°. So the co-interior angle = 180° − 55° = 125°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 221,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal. One angle is 68°. What is the co-interior angle on the same side?",
+      "options": [
+        "68°",
+        "102°",
+        "108°",
+        "112°",
+        "122°"
+      ],
+      "correct": 3,
+      "correctAnswer": "112°",
+      "explanation": "Co-interior angles add up to 180°. So the co-interior angle = 180° − 68° = 112°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 222,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two parallel lines are cut by a transversal forming an angle of 72°. What are the two different angle sizes formed at each intersection?",
+      "options": [
+        "72° and 98°",
+        "72° and 108°",
+        "72° and 118°",
+        "72° and 128°",
+        "72° and 138°"
+      ],
+      "correct": 1,
+      "correctAnswer": "72° and 108°",
+      "explanation": "At each intersection, adjacent angles on a straight line add up to 180°. So the two angle sizes are 72° and 180° − 72° = 108°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelLines",
+      "image": null
+    },
+    {
+      "id": 223,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are x° and 130°. What is x?",
+      "options": [
+        "40°",
+        "50°",
+        "60°",
+        "70°",
+        "80°"
+      ],
+      "correct": 1,
+      "correctAnswer": "50°",
+      "explanation": "Angles on a straight line add up to 180°. So x + 130 = 180. Therefore x = 180 − 130 = 50°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 224,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Two angles on a straight line are x° and 95°. What is x?",
+      "options": [
+        "75°",
+        "80°",
+        "85°",
+        "90°",
+        "95°"
+      ],
+      "correct": 2,
+      "correctAnswer": "85°",
+      "explanation": "Angles on a straight line add up to 180°. So x + 95 = 180. Therefore x = 180 − 95 = 85°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    },
+    {
+      "id": 225,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Angles around a point are x°, 100° and 150°. What is x?",
+      "options": [
+        "100°",
+        "105°",
+        "110°",
+        "115°",
+        "120°"
+      ],
+      "correct": 2,
+      "correctAnswer": "110°",
+      "explanation": "Angles around a point add up to 360°. So x + 100 + 150 = 360. Therefore x = 360 − 250 = 110°. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "AngleDisplay",
+      "image": null
+    }
+  ]
+}

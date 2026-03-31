@@ -1,0 +1,1462 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "missingLettersWords",
+    "displayName": "Missing Letters",
+    "extractedAt": "2026-03-30T13:51:13.866Z",
+    "subConceptCount": 8,
+    "lessonCount": 11,
+    "screenCount": 44,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "vowel-gaps",
+      "name": "Missing Vowels",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "vowel-gaps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "A brilliant shortcut: when letters are missing, try the vowels (A, E, I, O, U) first!",
+            "Why vowels are often the missing piece and how testing them cracks the word in seconds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What vowels are hiding in \"B _ K E\"?",
+              "body": "Daisy is working out a word with missing vowels.\n\n**Did you know?** Every English word needs at least one vowel (A, E, I, O, U) — so when you see blanks, try the vowels first! It works more often than you'd think.\n\n**B _ K E** — which vowel completes this word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "B",
+                  "_",
+                  "K",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "1 missing letter to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Vowels first — give it a go!",
+              "body": "Look at **B _ K E** — which letters are missing? When letters are missing from a word, try slotting in vowels (A, E, I, O, U) — they're the most commonly missing letters.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When letters are missing from a word, try slotting in ____ first — they're the most commonly missing letters.",
+                "options": [
+                  "vowels",
+                  "consonants",
+                  "punctuation",
+                  "numbers"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "That's right — vowels (A, E, I, O, U) are the most commonly missing letters! ✓",
+                "incorrectFeedback": "The answer is \"vowels\". A, E, I, O, U are the five vowels — and they're the most commonly missing letters. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Look at the consonants (all the letters that aren't vowels) you CAN see: B _ K E",
+                    "why": "The consonant skeleton gives you the word's shape"
+                  },
+                  {
+                    "text": "Try vowels in the gaps: A, E, I, O, U",
+                    "why": "Which vowel(s) make a real word?"
+                  },
+                  {
+                    "text": "Answer: A → BAKE",
+                    "why": "to cook in an oven ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter(s) complete **C _ K E**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter(s) complete C _ K E?",
+                "options": [
+                  "O",
+                  "A",
+                  "I",
+                  "U",
+                  "E"
+                ],
+                "correctAnswer": "O",
+                "correctFeedback": "Brilliant! C + O + KE = COKE — a type of fizzy drink. The missing vowel is O. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"O\". C + O + KE = COKE — a type of fizzy drink. The missing vowel is O. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "C",
+                  "_",
+                  "K",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Vowels first — you've got the trick!",
+              "body": "Nice one! Here's your go-to method when letters are missing:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look at the consonants you can see",
+                    "why": "They give you the word's skeleton"
+                  },
+                  {
+                    "text": "2. Try A, E, I, O, U in the gaps",
+                    "why": "Vowels are the most commonly missing letters"
+                  },
+                  {
+                    "text": "3. Say the word aloud — does it sound right?",
+                    "why": "Your ears know more words than you think! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "vowel-gaps-practice",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Levelling up: spotting missing vowels in trickier words where two options look possible",
+            "How to choose the right vowel when you're torn between two — a real exam skill!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two vowels are hiding in \"S _ L _ D\"",
+              "body": "Evie is double-checking her VR answers.\n\nThis word has **two vowels** missing — a bit trickier! But look at the consonants that are still there. They give you the **skeleton** of the word, like a puzzle outline.\n\n**S _ L _ D** — can you work out which vowels fit?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "S",
+                  "_",
+                  "L",
+                  "_",
+                  "D"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the consonant skeleton!",
+              "body": "Look at **S _ L _ D**. The consonants you can see are like a skeleton — they show you the word's shape. Now try different vowels (A, E, I, O, U) until you find a real word.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Read the skeleton, try vowels, say it aloud, then pick the real word. ✓",
+                "incorrectFeedback": "The correct order is: read the consonants, try vowel pairs, say it aloud, then pick the real word. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Skeleton: S _ L _ D",
+                    "why": "These consonants narrow it down"
+                  },
+                  {
+                    "text": "Try vowel pairs: AA?",
+                    "why": "Does this make a word you know?"
+                  },
+                  {
+                    "text": "SALAD — a cold dish of mixed vegetables",
+                    "why": "Say it aloud to check ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which vowels complete **P _ N _ L**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which vowels complete P _ N _ L?",
+                "options": [
+                  "AE",
+                  "OI",
+                  "AA",
+                  "UI",
+                  "EE"
+                ],
+                "correctAnswer": "AE",
+                "correctFeedback": "Well done! P + A + N + E + L = PANEL — a flat section forming part of a surface. The vowels A and E fill the blanks. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"AE\". P + A + N + E + L = PANEL — a flat section forming part of a surface. The vowels A and E fill the blanks. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "P",
+                  "_",
+                  "N",
+                  "_",
+                  "L"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The consonant skeleton — clever!",
+              "body": "Great work! When multiple vowels are missing, the consonants are your guide:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the consonants — they're the skeleton",
+                    "why": "S_L_D → S?L?D — what fits?"
+                  },
+                  {
+                    "text": "2. Try common vowel pairs: AI, OE, IO, OU",
+                    "why": "Many English words use these combinations"
+                  },
+                  {
+                    "text": "3. Say the whole word aloud to check",
+                    "why": "SALAD, LEMON, ROBOT — trust your ears ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consonant-gaps",
+      "name": "Missing Consonants",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "consonant-gaps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Flipping it around: sometimes the missing letters are consonants, not vowels!",
+            "A clever trick — looking at the vowels you CAN see helps you work out what's missing"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which consonants complete \"_ A _ E\"?",
+              "body": "Daisy is working out which consonants are missing.\n\nHere's a twist — the **vowels are still there** but the **consonants** are missing! Use the vowels as your guide. Try saying the word out loud — the vowels tell you what it sounds like!\n\n**_ A _ E** — which consonants fit?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "A",
+                  "_",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Vowels are your guide — listen to them!",
+              "body": "Look at **_ A _ E**. When consonants (letters like B, C, D, F, G...) are missing, the vowels you CAN see tell you what the word sounds like. Sound it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Vowels visible: _ A _ E",
+                    "why": "These tell you what the word sounds like"
+                  },
+                  {
+                    "text": "Sound it out: what word has these vowels in this pattern?",
+                    "why": "Think of words you know that sound like this"
+                  },
+                  {
+                    "text": "Answer: G T → GATE",
+                    "why": "a hinged barrier used to close an opening in a wall or fence ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which consonant(s) complete **_ A _ E**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which consonant(s) complete _ A _ E?",
+                "options": [
+                  "L K",
+                  "G T",
+                  "C K",
+                  "D T",
+                  "R T"
+                ],
+                "correctAnswer": "L K",
+                "correctFeedback": "Brilliant! L + A + K + E = LAKE — a large body of water surrounded by land. The vowels A and E were your guide; L and K completed the word. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"L K\". L + A + K + E = LAKE — a large body of water surrounded by land. The vowels A and E were your guide; L and K completed the word. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "A",
+                  "_",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Missing consonants — sorted!",
+              "body": "Brilliant! Now you can handle missing consonants too. Here's the method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the vowels — they show the sound pattern",
+                    "why": "_A_E = something that sounds like 'aye'"
+                  },
+                  {
+                    "text": "2. Think of words with that vowel pattern",
+                    "why": "GATE, BAKE, LAKE, CAKE — lots of options!"
+                  },
+                  {
+                    "text": "3. Check which consonants match the options given",
+                    "why": "Only one set of consonants will be in the list ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-letters",
+      "name": "Double-Letter Words",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "double-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Double letters are a massive clue! How to spot when TT, LL, SS or similar are hiding",
+            "Common words with double letters that pop up all the time in the exam"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the double letters in \"B _ TT _ R\"!",
+              "body": "Daisy is solving a word with double letters hiding.\n\n**Did you know?** Double letters like TT, DD, PP or BB appear in HUNDREDS of English words. Spotting a double is like finding a big neon clue — it narrows things down fast!\n\n**B _ TT _ R** — what goes in the gaps?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "B",
+                  "_",
+                  "T",
+                  "T",
+                  "_",
+                  "R"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Double letters = massive clue!",
+              "body": "Look at **B _ TT _ R**. When you see double letters (TT, DD, PP, BB, LL, SS), they narrow down the word hugely. Think of words with that double-letter pattern.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Spot the doubles: B _ TT _ R",
+                    "why": "Double letters are unusual — they limit the options"
+                  },
+                  {
+                    "text": "Think of words with this double pattern",
+                    "why": "How many words do you know with these doubles?"
+                  },
+                  {
+                    "text": "Answer: U E → BUTTER",
+                    "why": "a soft yellow food made from cream ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letters complete **K _ TT _ N**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete K _ TT _ N?",
+                "options": [
+                  "I E",
+                  "U E",
+                  "A E",
+                  "O E",
+                  "E E"
+                ],
+                "correctAnswer": "I E",
+                "correctFeedback": "Brilliant! K + I + TT + E + N = KITTEN — a young cat. The double T was visible, and I and E filled the gaps. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"I E\". K + I + TT + E + N = KITTEN — a young cat. The double T was visible, and I and E filled the gaps. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "K",
+                  "_",
+                  "T",
+                  "T",
+                  "_",
+                  "N"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Double-letter detective — case closed!",
+              "body": "Well done! You're a double-letter detective now. Here's what to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Notice the doubles: TT, DD, PP, BB, LL, SS",
+                    "why": "These narrow down the word massively"
+                  },
+                  {
+                    "text": "2. Think of words you know with those doubles",
+                    "why": "BUTTER, LADDER, RABBIT, HAPPEN, KITTEN..."
+                  },
+                  {
+                    "text": "3. Check which one fits the other visible letters",
+                    "why": "The surrounding letters confirm your guess ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beginning-gaps",
+      "name": "Missing Letters at the Start",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "beginning-gaps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to crack words with missing letters at the start — read the ending first!",
+            "Why the end of a word is often your biggest clue to what's at the beginning"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What starts \"_ _ AIN\"?",
+              "body": "Ella is working out a word where the start is missing.\n\nWhen the **beginning** of a word is missing, here's a top tip: read the **ending** first! The ending often tells you what kind of word it is, and that helps you guess the start.\n\n**_ _ AIN** — what letters go at the start?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "A",
+                  "I",
+                  "N"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the ending — it's your biggest clue!",
+              "body": "Look at **_ _ AIN** — the start is missing! When the start of a word is missing, the ending is your best clue. Read the ending, then think of words that end that way.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Spot on! Read the ending, brainstorm words, check the options, then pick the real word. ✓",
+                "incorrectFeedback": "The correct order is: read the ending, think of matching words, check the options, then pick the real word. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the ending: _ _ AIN",
+                    "why": "What does this word END with?"
+                  },
+                  {
+                    "text": "Think of words ending this way",
+                    "why": "How many words end with these letters?"
+                  },
+                  {
+                    "text": "Answer: BR → BRAIN",
+                    "why": "the organ inside your head that controls your body ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letters go at the **start** of **_ _ AMP**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete _ _ AMP?",
+                "options": [
+                  "ST",
+                  "CL",
+                  "CR",
+                  "TR",
+                  "SW"
+                ],
+                "correctAnswer": "ST",
+                "correctFeedback": "Brilliant! ST + AMP = STAMP — a small sticky label for posting letters. The ending AMP was visible; ST completed the start. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ST\". ST + AMP = STAMP — a small sticky label for posting letters. The ending AMP was visible; ST completed the start. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "A",
+                  "M",
+                  "P"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Start-gap strategy — nailed it!",
+              "body": "Great work! When the beginning of a word is missing, you now know what to do:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the ENDING of the word first",
+                    "why": "The ending narrows down your options hugely"
+                  },
+                  {
+                    "text": "2. Think of words that end this way",
+                    "why": "_AIN → BRAIN, CHAIN, DRAIN, TRAIN..."
+                  },
+                  {
+                    "text": "3. Check which starting letters are in the options",
+                    "why": "Only one option will make a real word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ending-gaps",
+      "name": "Missing Letters at the End",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "ending-gaps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to solve words with missing letters at the end — common endings are your secret weapon!",
+            "Why knowing endings like ING, TION, LY and ED gives you a massive head start"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What finishes \"FORE _ _ _\"?",
+              "body": "Daisy is completing a word where the ending is missing.\n\nWhen the **ending** of a word is missing, the **start** is your best friend! Read the beginning and then think about common word endings — ING, TION, LY, ED. One of them will click!\n\n**FORE _ _ _** — what letters finish this word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "F",
+                  "O",
+                  "R",
+                  "E",
+                  "_",
+                  "_",
+                  "_"
+                ],
+                "showFilled": false,
+                "label": "3 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the start — then think endings!",
+              "body": "Look at **FORE _ _ _** — the ending is missing! Read the start and think of common English endings: -DOM, -FUL, -MENT, -NESS, -ING, -TION.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs",
+                "correctFeedback": "Well matched! KINGDOM, HELPFUL, EXCITEMENT, KINDNESS — common endings make word-guessing much easier. ✓",
+                "incorrectFeedback": "The correct pairs are: KINGDOM, HELPFUL, EXCITEMENT, KINDNESS. Learning common endings like -DOM, -FUL, -MENT and -NESS helps you solve end-gap puzzles fast. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the start: FORE _ _ _",
+                    "why": "What word begins with these letters?"
+                  },
+                  {
+                    "text": "Try common endings: DOM, FUL, ING, MENT, NESS",
+                    "why": "English has lots of standard word endings"
+                  },
+                  {
+                    "text": "Answer: VER → FOREVER",
+                    "why": "for all time, without end ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letters go at the **end** of **WONDER _ _ _**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete WONDER _ _ _?",
+                "options": [
+                  "FUL",
+                  "MAN",
+                  "ING",
+                  "DOM",
+                  "LET"
+                ],
+                "correctAnswer": "FUL",
+                "correctFeedback": "Brilliant! WONDER + FUL = WONDERFUL — extremely good or marvellous. The suffix -FUL means 'full of'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"FUL\". WONDER + FUL = WONDERFUL — extremely good or marvellous. The suffix -FUL means 'full of'. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "W",
+                  "O",
+                  "N",
+                  "D",
+                  "E",
+                  "R",
+                  "_",
+                  "_",
+                  "_"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "End-gap strategy — sorted!",
+              "body": "Brilliant! When the ending of a word is missing, common endings are your shortcut:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the START of the word first",
+                    "why": "It tells you what the word is about"
+                  },
+                  {
+                    "text": "2. Try common English endings",
+                    "why": "-DOM, -FUL, -MENT, -NESS, -ING, -TION"
+                  },
+                  {
+                    "text": "3. Pick the ending that makes a real word",
+                    "why": "KINGDOM, HELPFUL, FREEDOM — trust what sounds right ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle-gaps",
+      "name": "Missing Letters in the Middle",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "middle-gaps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The sandwich method: use the start AND end of a word to work out what's in the middle!",
+            "How knowing the outside letters helps you fill in the gap — like a word sandwich"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's hiding in the middle of \"CH _ _ SE\"?",
+              "body": "Daisy is working out the middle of a word.\n\nWhen letters are missing from the **middle**, you've actually got an advantage — the **start AND the end** are both visible! Think of them like bread in a sandwich, and the missing letters are the filling.\n\n**CH _ _ SE** — what filling goes in the middle?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "C",
+                  "H",
+                  "_",
+                  "_",
+                  "S",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The sandwich method — bread first!",
+              "body": "Look at **CH _ _ SE** — the middle is missing! Read the start of the word, then the end. Think of words that begin and end this way — the answer must fit in the middle like a sandwich!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start: read the first letters of CH _ _ SE",
+                    "why": "What does the word begin with?"
+                  },
+                  {
+                    "text": "End: read the last letters",
+                    "why": "What does the word end with?"
+                  },
+                  {
+                    "text": "Sandwich: EE → CHEESE",
+                    "why": "a food made from milk curds ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letters go in the **middle** of **FR _ _ ZE**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete FR _ _ ZE?",
+                "options": [
+                  "EE",
+                  "OO",
+                  "AA",
+                  "OU",
+                  "AI"
+                ],
+                "correctAnswer": "EE",
+                "correctFeedback": "Brilliant! FR + EE + ZE = FREEZE — to turn into ice or become very cold. The start FR and end ZE sandwiched the answer EE. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"EE\". FR + EE + ZE = FREEZE — to turn into ice or become very cold. The start FR and end ZE sandwiched the answer EE. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "F",
+                  "R",
+                  "_",
+                  "_",
+                  "Z",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The sandwich method — delicious!",
+              "body": "You've got the sandwich method down! When letters are missing from the middle:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the START of the word",
+                    "why": "This is one slice of bread"
+                  },
+                  {
+                    "text": "2. Read the END of the word",
+                    "why": "This is the other slice"
+                  },
+                  {
+                    "text": "3. What fits in the middle?",
+                    "why": "CH__SE → CHEESE, BR__GE → BRIDGE ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "middle-gaps-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Levelling up: tackling trickier middle-gap words with confidence",
+            "How to use the sandwich method at speed so you can fly through these in the exam"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you fill the sandwich? \"WH _ _ PER\"",
+              "body": "Evie is practising more middle-gap puzzles.\n\nYou already know the sandwich method — brilliant! Let's level up with some trickier words. The start and end are visible, middle is missing.\n\n**WH _ _ PER** — what's the filling?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "W",
+                  "H",
+                  "_",
+                  "_",
+                  "P",
+                  "E",
+                  "R"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Sandwich method — next level!",
+              "body": "Look at **WH _ _ PER**. For trickier words, try sounding out each option with the start and end letters — one will click!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start + End: WH _ _ PER",
+                    "why": "Your sandwich bread"
+                  },
+                  {
+                    "text": "Try each option in the gap",
+                    "why": "Sound them out: which makes a real word?"
+                  },
+                  {
+                    "text": "IS → WHISPER",
+                    "why": "to speak very softly ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letters complete **SL _ _ PER**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters go in the middle of SL _ _ PER?",
+                "options": [
+                  "IP",
+                  "IM",
+                  "IS",
+                  "IT",
+                  "IN"
+                ],
+                "correctAnswer": "IP",
+                "correctFeedback": "Brilliant! SL + IP + PER = SLIPPER — a soft shoe worn indoors. The start SL and end PER sandwiched IP perfectly. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"IP\". SL + IP + PER = SLIPPER — a soft shoe worn indoors. The start SL and end PER sandwiched IP perfectly. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "S",
+                  "L",
+                  "_",
+                  "_",
+                  "P",
+                  "E",
+                  "R"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sandwich master — level up!",
+              "body": "You're smashing it! The sandwich method works on all sorts of words:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read START + END = your two clues",
+                    "why": "They narrow down the word massively"
+                  },
+                  {
+                    "text": "Sound out each option in the gap",
+                    "why": "One will click — trust your ears"
+                  },
+                  {
+                    "text": "WHISPER, SHELTER, THUNDER, WINDOW",
+                    "why": "The sandwich method works every time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-patterns",
+      "name": "Common Letter Patterns",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "common-patterns-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Pattern power! How recognising combos like TH, SH, CH and CK makes you faster",
+            "Why knowing these patterns is like having a cheat code for missing-letter questions"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the pattern in \"_ _ APTER\"!",
+              "body": "Daisy is spotting a common letter pattern in a word.\n\n**Did you know?** English has common **letter pairs** that pop up again and again: CH, SH, TH, CK, GH, SK, PH, WH. Once you learn them, they're like having a cheat code for these questions!\n\n**_ _ APTER** — which common pattern fits?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "A",
+                  "P",
+                  "T",
+                  "E",
+                  "R"
+                ],
+                "showFilled": false,
+                "label": "2 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spot the pattern — it's your superpower!",
+              "body": "Look at **_ _ APTER**. English has standard letter combinations (like CH, SH, TH) that appear in thousands of words. If you know them, you can solve missing-letter questions much faster.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Common patterns: CH, SH, TH, CK, GH, SK, PH, WH",
+                    "why": "These appear in hundreds of words"
+                  },
+                  {
+                    "text": "Look at _ _ APTER — which pattern fits?",
+                    "why": "Try each one until you find a real word"
+                  },
+                  {
+                    "text": "Answer: CH → CHAPTER",
+                    "why": "a section of a book ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which common letter pattern completes **_ _ URCH**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter pattern completes _ _ URCH?",
+                "options": [
+                  "CH",
+                  "SH",
+                  "TH",
+                  "WH",
+                  "PH"
+                ],
+                "correctAnswer": "CH",
+                "correctFeedback": "Brilliant! CH + URCH = CHURCH — a building used for Christian worship. The CH pattern appears at both the start and end of this word! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"CH\". CH + URCH = CHURCH — a building used for Christian worship. The CH pattern appears at both the start and end of this word! ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "U",
+                  "R",
+                  "C",
+                  "H"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Pattern power — unlocked!",
+              "body": "Excellent! These common letter patterns will speed you up massively:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "CH (chapter, chicken, church, cheese)",
+                    "why": "One of the most common patterns"
+                  },
+                  {
+                    "text": "SH, TH, WH, PH (ship, think, whale, phone)",
+                    "why": "H-combinations appear everywhere"
+                  },
+                  {
+                    "text": "CK, SK, GH, NK (back, basket, knight, think)",
+                    "why": "Consonant clusters to watch for ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-of-elimination",
+      "name": "Eliminate and Solve",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "elimination-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Your safety net: how to use elimination when you're stuck on a tricky one",
+            "Why crossing out impossible options is way smarter (and faster!) than random guessing"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Stuck? Try elimination! \"_ _ _ NITURE\"",
+              "body": "Daisy is stuck on a tricky missing-letter question.\n\nFeeling stuck? Don't worry — there's always a way through! **Try each option** and cross out the ones that don't make a real word. This is called **process of elimination**, and it's your safety net when nothing else clicks.\n\n**_ _ _ NITURE** — which option makes a real word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "_",
+                  "N",
+                  "I",
+                  "T",
+                  "U",
+                  "R",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "3 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Cross out the fakes — be ruthless!",
+              "body": "Look at **_ _ _ NITURE**. When you're stuck, try each option one by one. If it doesn't make a real word, cross it out — the last one standing is your answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When you're stuck, try each option and ____ the ones that don't make real words.",
+                "options": [
+                  "cross out",
+                  "underline",
+                  "copy",
+                  "count"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Exactly! Cross out (eliminate) the fakes — the last one standing is your answer. ✓",
+                "incorrectFeedback": "The answer is \"cross out\". Try each option, cross out the fakes, and the last one standing is your answer. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try each option with _ _ _ NITURE",
+                    "why": "Plug in each set of letters"
+                  },
+                  {
+                    "text": "Cross out any that don't make real words",
+                    "why": "If you've never heard of it, it's probably not a word"
+                  },
+                  {
+                    "text": "Answer: FUR → FURNITURE",
+                    "why": "tables, chairs, beds and other items in a home ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — eliminate!",
+              "body": "Try each option with **_ _ _ ATHLON** and cross out the fakes. Which one makes a real word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete _ _ _ ATHLON?",
+                "options": [
+                  "DEC",
+                  "TRI",
+                  "PEN",
+                  "HEX",
+                  "BIG"
+                ],
+                "correctAnswer": "DEC",
+                "correctFeedback": "Brilliant! DEC + ATHLON = DECATHLON — a sporting event with ten activities. TRIATHLON is a real word but with only three events, and PENATHLON, HEXATHLON and BIGATHLON don't exist. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"DEC\". DEC + ATHLON = DECATHLON — a sporting event with ten activities. TRIATHLON is a real word but with only three events, and PENATHLON, HEXATHLON and BIGATHLON don't exist. ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "_",
+                  "A",
+                  "T",
+                  "H",
+                  "L",
+                  "O",
+                  "N"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Elimination — you'll never be stuck!",
+              "body": "Now you've got a safety net for the trickiest questions. When nothing else works:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try each option in the gap",
+                    "why": "Plug them in one by one"
+                  },
+                  {
+                    "text": "2. Cross out any that don't make real words",
+                    "why": "GARNITURE? SIGNITURE? Not real — cross them out!"
+                  },
+                  {
+                    "text": "3. The last one standing is your answer",
+                    "why": "FURNITURE — the only real word left ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "elimination-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Taking elimination to the next level with harder words — you're ready for this!",
+            "How to build real speed by testing options in a smart, systematic way"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Eliminate to win! \"_ _ _ GUAGE\"",
+              "body": "Evie is using elimination on a really tricky word.\n\nThese are harder words — but you've got this! The elimination method works every time. Try each option, cross out the fakes, and watch the answer reveal itself.\n\n**_ _ _ GUAGE**\n\nOptions: **LAN**  |  **BAG**  |  **MOR**  |  **SAU**  |  **VER**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "_",
+                  "G",
+                  "U",
+                  "A",
+                  "G",
+                  "E"
+                ],
+                "showFilled": false,
+                "label": "3 missing letters to find:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Test smart, not random!",
+              "body": "Look at **_ _ _ GUAGE**. Go through each option methodically — don't just stare at the word. Actively try each one!\n\nOptions: **LAN**  |  **BAG**  |  **MOR**  |  **SAU**  |  **VER**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Option by option: try each with _ _ _ GUAGE",
+                    "why": "Be systematic — don't skip any"
+                  },
+                  {
+                    "text": "Most options will create nonsense words",
+                    "why": "Cross those out straight away"
+                  },
+                  {
+                    "text": "LAN → LANGUAGE",
+                    "why": "the method of human communication using words ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Eliminate!",
+              "body": "Which option completes **_ _ _ GRAPH**? Try each one!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letters complete _ _ _ GRAPH?",
+                "options": [
+                  "PARA",
+                  "AUTO",
+                  "MONO",
+                  "TELE",
+                  "MEGA"
+                ],
+                "correctAnswer": "PARA",
+                "correctFeedback": "Well done! PARA + GRAPH = PARAGRAPH — a section of writing starting on a new line. AUTOGRAPH is a real word but means a signature. Only PARAGRAPH matches! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"PARA\". PARA + GRAPH = PARAGRAPH — a section of writing starting on a new line. AUTOGRAPH is a real word but means a signature. Only PARAGRAPH matches! ✓"
+              },
+              "visualProps": {
+                "mode": "gap",
+                "template": [
+                  "_",
+                  "_",
+                  "_",
+                  "G",
+                  "R",
+                  "A",
+                  "P",
+                  "H"
+                ],
+                "showFilled": false,
+                "label": "Fill in the gaps:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Elimination master — nothing can stop you!",
+              "body": "You've built up a brilliant toolkit! For even the hardest missing-letter questions:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Don't panic — even hard words follow the rules",
+                    "why": "Every answer makes a real English word"
+                  },
+                  {
+                    "text": "2. Try EVERY option, not just the first one",
+                    "why": "Be systematic — test them all"
+                  },
+                  {
+                    "text": "3. The fake words are usually obvious",
+                    "why": "BAGGUAGE? SAUGUAGE? Cross them out and move on ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

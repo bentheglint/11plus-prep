@@ -1,0 +1,3060 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "fractions",
+    "displayName": "Fractions",
+    "extractedAt": "2026-03-30T13:52:00.390Z",
+    "totalQuestions": 210,
+    "mappedQuestions": 210,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 13,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 210,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Aisha drinks 1/4 of a bottle of water before lunch and another 1/4 after lunch. What fraction of the bottle has she drunk altogether?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Which fraction is equivalent to 3/6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "There are 20 children in a swimming class. 3/4 of them can swim a full length. How many children can swim a full length?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Which of these fractions is the largest? 2/5, 3/10, 1/2, 3/5, 4/10",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/5",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A bowl is 5/8 full of flour. Jack uses 1/8 of the bowl for a recipe. What fraction of the bowl is left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "In a class of 16 pupils, 12 bought their lunch from the canteen. What fraction bought their lunch? Give your answer in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "A football club has 18 members. 2/3 of them turn up for Saturday practice. How many members turn up?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Which fraction is equivalent to 0.25?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/4",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Ella fills 3/5 of her water bottle at home and adds another 1/5 at school. What fraction of the bottle is full now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/5",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "A pizza is cut into 8 equal slices. Tom eats 3 slices. What fraction of the pizza is left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/8",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Two jugs are the same size. One is 2/3 full of squash and the other is 3/4 full. Which jug has more squash?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/4",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Lily eats 1/2 of a cake on Saturday and 1/4 on Sunday. What fraction of the cake has she eaten altogether?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/4",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 13,
+      "questionText": "In a pack of 24 coloured pencils, 18 are sharp. What fraction of the pencils are sharp? Give your answer in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Noah has 8 metres of ribbon. He uses 3/4 of it for a craft project. How many metres does he use?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Sarah has 35 paperback books and 20 hardback books. What fraction of her books are hardbacks?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4/11",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "What is 7/10 - 2/10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Which fraction is equivalent to 4/8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A baker makes 30 biscuits. He gives 2/5 of them to his neighbours. How many biscuits does he give away?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "In a bag of 60 sweets, 15 are red. What fraction are red?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "What is 5/6 + 1/6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Which of these fractions is closest to 1? 7/8, 5/6, 9/10, 4/5, 11/12",
+      "questionDifficulty": 3,
+      "correctAnswer": "11/12",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "What is 3/4 - 1/4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Convert 0.6 to a fraction in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "What is 5/12 + 1/12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "A chocolate bar has 24 pieces. Emily eats 1/3 of it. How many pieces does she eat?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Harry walks 2/3 of a mile to school and then 1/6 of a mile to the park. What fraction of a mile has he walked altogether?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/6",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 27,
+      "questionText": "In a class of 30 pupils, 20 have a school dinner. What fraction have a school dinner? Give your answer in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A school choir has 45 members. 4/5 of them attend a concert. How many members attend?",
+      "questionDifficulty": 1,
+      "correctAnswer": "36",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Which fraction equals 75%?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the jug. What fraction of the jug still has juice?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "In a test with 50 questions, Jake answered 40 correctly. What fraction did he get correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "In a garden, 1/3 is planted with vegetables and 1/6 with herbs. What fraction of the garden is planted altogether?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/2",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 33,
+      "questionText": "Which is the smallest fraction? 1/3, 2/5, 3/8, 1/2, 3/10",
+      "questionDifficulty": 3,
+      "correctAnswer": "3/10",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "There are 12 eggs in a box. Mum uses 5/6 of them to make a cake. How many eggs does she use?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "A ribbon is 3/4 metre long. How many centimetres is this?",
+      "questionDifficulty": 2,
+      "correctAnswer": "75 cm",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Ravi eats 1/3 of a pie at lunch and another 1/3 after school. What fraction of the pie has he eaten?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A quiz asks: which fraction is equivalent to 4/10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "There are 35 children in a year group. 2/5 of them sign up for the school play. How many children sign up?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "What is 7/9 - 2/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/9",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "In a baking contest, 15 out of 25 cakes are chocolate. What is 15/25 in its simplest form?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "A craft box has 24 coloured buttons. Priya uses 3/8 of them for her project. How many buttons does she use?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "What is 1/4 + 3/4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "On a spelling test, Amara gets 16 out of 20 correct. What is 16/20 in its simplest form?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Which is larger: 3/5 or 5/8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/8",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Maya paints 2/3 of a fence in the morning and 1/12 more after lunch. What fraction of the fence has she painted?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/4",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 46,
+      "questionText": "A cake is cut into 12 equal pieces. Lucy eats 5 pieces. What fraction is left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/12",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A tin of paint is 5/6 full. Ruby uses 1/6 of the tin for her art project. What fraction of the tin is left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2/3",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Which fraction is equivalent to 0.75?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "What is 3/7 of 28?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "What is 2/9 + 5/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/9",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "At a school sports day, 14 out of 21 events are running races. What is 14/21 in its simplest form?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "What is 4/9 of 27?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "What is 3/11 + 5/11?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8/11",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Emma has 60 stickers. She gives away 3/5 of them. How many does she give away?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "What is 9/10 - 3/10?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6/10",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Which fraction is equivalent to 0.6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Jake drinks 1/6 of a carton of juice before school and 1/3 at break time. What fraction has he drunk altogether?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/2",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 58,
+      "questionText": "Simplify 20/28.",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/7",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "There are 32 children going on a school trip. 7/8 of them bring a packed lunch. How many children bring a packed lunch?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Tom has read 5/8 of a 160-page book. How many pages has he read?",
+      "questionDifficulty": 2,
+      "correctAnswer": "100",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "What is 4/7 + 2/7?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6/7",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Which is larger: 2/5 or 3/7?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/7",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "A roll of sticky tape is 8/12 full. After wrapping a present, 2/12 has been used. What fraction is left?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Simplify 18/27.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "There are 48 crayons in a box. Leah uses 5/12 of them for her drawing. How many crayons does she use?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "What is 2/13 + 7/13?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9/13",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "A recipe needs 2/3 cup of sugar. Sophie has 1/6 cup. How much more does she need?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/2 cup",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "What is 11/15 - 4/15?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/15",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Which fraction equals 25%?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/4",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Simplify 35/49.",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/7",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "On sports day, 20 races are planned. 3/4 of them are completed before it rains. How many races are completed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Ben travels 3/8 of a 64 km journey. How far has he travelled?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24 km",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "What is 5/9 + 3/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8/9",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Which is the smallest: 1/3, 2/7, 3/10, or 1/4?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/4",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "What is 10/12 - 5/12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/12",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Simplify 28/35.",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "A netball club has 45 members. 2/5 of them are in Year 5. How many members are in Year 5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "What is 1/8 + 3/8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/8",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A garden is 3/4 acre. What decimal is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.75",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "What is 9/11 - 4/11?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/11",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Which fraction is equivalent to 0.5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Freya walks 1/5 of a mile to the shops and 3/10 of a mile back a different way. What fraction of a mile does she walk in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/2",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 83,
+      "questionText": "Simplify 22/33.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A PE teacher has 33 tennis balls. She puts 4/11 of them into a basket. How many balls are in the basket?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Mia drinks 2/7 of a 700 ml bottle. How much does she drink?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200 ml",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Simplify 24/32.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "What is 5/8 × 16?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "In a class of 32 students, 24 passed a test. What fraction passed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "What is 1/5 + 2/5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Which is the smallest fraction? 1/4, 2/7, 3/10, 1/3, 2/9",
+      "questionDifficulty": 3,
+      "correctAnswer": "2/9",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "What is 4/5 - 1/5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Convert 0.4 to a fraction in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What is 2/7 + 3/7?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/7",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "A jug holds 2 litres. How much is 3/4 of the jug in millilitres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1500ml",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "What is 5/9 + 2/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/9",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Which is closer to 1/2: 4/9 or 5/11?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5/11",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "What is 11/12 - 5/12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6/12",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Simplify 27/36.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "A recipe makes 50 biscuits. Oscar gives 7/10 of them to his friends. How many biscuits does he give away?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "What is 3/8 + 1/8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/8",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Which fraction equals 60%?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/5",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "What is 8/9 - 2/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6/9",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "In a bag of 45 marbles, 18 are blue. What fraction are blue?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Grace eats 1/4 of a chocolate bar after school and 1/8 after dinner. What fraction of the bar has she eaten in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/8",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 105,
+      "questionText": "Simplify 30/45.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "What is 4/7 of 42?",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "What is 3/10 + 7/10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Which is the largest fraction? 5/6, 7/8, 4/5, 9/10, 11/12",
+      "questionDifficulty": 3,
+      "correctAnswer": "11/12",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Oliver has read 5/6 of his book. His sister has read 1/3 of the same book. How much more of the book has Oliver read than his sister?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Convert 0.8 to a fraction in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "4/5",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "What is 4/11 + 3/11?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/11",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A box of 56 chocolates has 21 dark chocolates. What fraction are dark?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/8",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "What is 1/2 + 1/5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/10",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "Simplify 36/48.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "What is 5/8 × 24?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "What is 8/10 - 4/10?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A rope is 5/8 metre long. How many centimetres is this?",
+      "questionDifficulty": 2,
+      "correctAnswer": "62.5 cm",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Which fraction equals 40%?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "What is 7/12 + 1/12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8/12",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Zara fills 3/4 of her water bottle in the morning and adds another 1/8 at lunchtime. What fraction of the bottle is now full?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/8",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 121,
+      "questionText": "Simplify 42/56.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "What is 5/9 of 36?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "What is 4/9 + 2/9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6/9",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "In a test with 80 questions, Emma answered 64 correctly. What fraction did she get correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4/5",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "What is 1/3 + 1/9?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4/9",
+      "subConceptId": "master-adding-fractions",
+      "subConceptName": "master-adding-fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 126,
+      "questionText": "Which is smaller: 4/7 or 5/9?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/9",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "What is 13/15 - 4/15?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9/15",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Simplify 45/60.",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "What is 7/12 × 24?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "What is 5/7 + 1/7?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6/7",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "A bag contains 72 sweets. If 2/9 are strawberry flavour, how many are strawberry?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "What is 3/5 - 1/5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "subtracting-same-denom",
+      "subConceptName": "Subtracting Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "Just like addition — but we **subtract** the top numbers instead. The bottom number stays the same because the piece size hasn't changed!",
+      "lessonLearningGoal": [
+        "How to subtract fractions when the bottom numbers (denominators) are the same",
+        "Why we subtract the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "Convert 0.35 to a fraction in its simplest form.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/20",
+      "subConceptId": "decimal-to-fraction",
+      "subConceptName": "Decimal to Fraction",
+      "confidence": "high",
+      "lessonTeachSummary": "Count the decimal places. One place = **tenths**, two places = **hundredths**. Then simplify!",
+      "lessonLearningGoal": [
+        "How to turn a decimal like 0.6 into a fraction",
+        "How to simplify 6/10 to 3/5"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "What is 5/12 + 7/12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "adding-same-denom",
+      "subConceptName": "Adding Fractions (Same Denominator)",
+      "confidence": "high",
+      "lessonTeachSummary": "When the bottom numbers are the **same**, the pieces are already the same size. Just **add the top numbers** and keep the bottom number!",
+      "lessonLearningGoal": [
+        "How to add fractions when the bottom numbers (denominators) are the same",
+        "Why we add the top numbers but keep the bottom number the same"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "Which fraction is closest to 1? 8/9, 6/7, 10/11, 5/6, 12/13",
+      "questionDifficulty": 3,
+      "correctAnswer": "12/13",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "After eating 3/5 of his sweets, Tom has 24 left. How many sweets did he start with?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A recipe uses 2/3 of a bag of flour. Each bag weighs 1.5 kg. How many grams of flour are used?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1000 g",
+      "subConceptId": "fraction-of-amount",
+      "subConceptName": "Fraction of an Amount",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide by the **denominator** (bottom number) to find **one part**, then multiply by the **numerator** (top number). Tap to see!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a number: divide by the bottom, multiply by the top",
+        "Why finding 1/4 first helps you find 3/4"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Lily has 3/4 of a pizza. She gives 2/3 of what she has to her brother. What fraction of the whole pizza does her brother get?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/2",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "Sam walks 1/4 of a mile to school, 1/3 of a mile to the shops, and 5/12 of a mile home. How far does he walk in total?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1 mile",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "In a class, 1/4 of the pupils walk to school and 30% cycle. What fraction of the class either walk or cycle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "11/20",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A builder has 3 1/2 metres of wood. He uses 1 3/4 metres for a shelf. How much wood is left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1 3/4 m",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Oliver has £48. He spends 3/8 on books and 1/6 on a gift. How much does he have left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£22",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "A bag has 15 red, 10 blue, and 5 green marbles. What fraction of the marbles are NOT blue?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2/3",
+      "subConceptId": "simplifying-fractions",
+      "subConceptName": "Simplifying Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's simplify **6/8**.\nFind the **biggest number** that divides evenly into both 6 and 8 — that's the **highest common factor**.",
+      "lessonLearningGoal": [
+        "How to simplify a fraction by dividing top and bottom by the same number",
+        "How to find the highest common factor (the biggest number that divides into both) to get the simplest form"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "Which of these has the greatest value? 3/8, 0.45, 37%, 2/5, 7/16",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.45",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "Priya spends 1/4 of her money on a book and 1/3 on a game. She has £25 left. How much money did she start with?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£60",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "What is 3/5 × 5/9?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/3",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Three children share a 2.4 kg bag of oranges. Ava takes 1/3, Ben takes 3/8 of what is left, and Charlie gets the rest. How many grams does Charlie get",
+      "questionDifficulty": 3,
+      "correctAnswer": "1000 g",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "A water tank is 5/6 full. Then 3/8 of the tank is drained. What fraction of the tank is still full?",
+      "questionDifficulty": 3,
+      "correctAnswer": "11/24",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "Hannah runs 2 1/3 km on Monday and 1 5/6 km on Tuesday. How far does she run in total?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4 1/6 km",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "A school has 240 pupils. 3/8 are in Key Stage 1 and 5/12 are in lower Key Stage 2. The rest are in upper Key Stage 2. How many pupils are in upper Key",
+      "questionDifficulty": 3,
+      "correctAnswer": "50",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "Tom has 24 sweets. He gives 1/4 of them to his sister. How many sweets does he give away?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A pizza has 8 slices. Ava eats 3/8 of the pizza. How many slices does she eat?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "There are 30 children on a school trip. 2/5 of them bring a packed lunch. How many children bring a packed lunch?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "Lily bakes 20 cupcakes. She gives 1/2 to her neighbours. How many cupcakes does she give away?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "A box contains 36 coloured pencils. 1/6 of them are red. How many red pencils are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "Sophie has £60. She spends 2/5 on a book and 1/6 on a toy. How much has she spent in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£34",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "A jar holds 48 marbles. 3/8 are blue and 1/4 are green. How many marbles are neither blue nor green?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "Jack has a 3/4 full bottle of squash. He pours out 1/3 of what is in the bottle. What fraction of the full bottle is left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/2",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "A sports club has 40 members. 3/5 are boys. Of the boys, 1/4 play football. How many boys play football?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "Oliver walks 3/4 km to school and 3/4 km home again. He does this 5 days a week. How far does he walk in a week?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7 1/2 km",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "Mia has 50 stickers. She gives 2/5 to her brother and 1/10 to her friend. How many stickers does she have left?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "A recipe needs 3/4 kg of flour. Emily only has 1/3 kg. How much more flour does she need?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/12 kg",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "A class of 32 children vote for their favourite sport. 1/4 choose football, 3/8 choose netball, and the rest choose swimming. How many choose swimming",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "After eating 3/5 of the cakes, there are 12 left. How many cakes were there to start with?",
+      "questionDifficulty": 3,
+      "correctAnswer": "30",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "Harry spends 2/5 of his pocket money on a comic and 1/4 on sweets. He has £1.75 left. How much pocket money did he start with?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£5.00",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "A school fête raises £360. The PTA keeps 1/3 for next year. Of the rest, 3/4 goes to charity. How much goes to charity?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£180",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "A tank is 5/6 full of water. After using 2/3 of the water, what fraction of the tank still has water?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5/18",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "Grace reads 2/7 of her book on Monday and 1/3 on Tuesday. What fraction does she still have left to read?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8/21",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "Ben and Chloe share a prize. Ben gets 3/8 and Chloe gets 5/12. The remaining £45 goes back to the school. What was the total prize?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£216",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "A farmer plants carrots on 2/5 of his field and potatoes on 1/4. The rest of the field is 140 square metres. What is the total area of the field?",
+      "questionDifficulty": 3,
+      "correctAnswer": "400 m²",
+      "subConceptId": "fraction-word-problems",
+      "subConceptName": "Fraction Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick with multi-step problems is to **break them down**. Do one fraction at a time! Tap to see the steps.",
+      "lessonLearningGoal": [
+        "How to spot which type of calculation to use in a fractions word problem",
+        "How to check your answer makes sense"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "Convert 7/4 to a mixed number.",
+      "questionDifficulty": 1,
+      "correctAnswer": "1 3/4",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "Convert 2 1/3 to an improper fraction.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7/3",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "Convert 11/5 to a mixed number.",
+      "questionDifficulty": 1,
+      "correctAnswer": "2 1/5",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "Convert 3 2/5 to an improper fraction.",
+      "questionDifficulty": 1,
+      "correctAnswer": "17/5",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "What is 1 2/5 + 2 1/5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3 3/5",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "What is 3 1/4 − 1 3/4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1 1/2",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "What is 2 3/8 + 1 5/8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "What is 4 1/6 − 2 5/6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1 1/3",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "What is 2 2/3 + 1 5/6?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4 1/2",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "What is 5 1/4 − 2 2/3?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2 7/12",
+      "subConceptId": "mixed-improper",
+      "subConceptName": "Mixed and Improper Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **2 1/3** into a single fraction. Multiply the whole number by the **denominator (the bottom number)**, add the top, then keep the same bottom:",
+      "lessonLearningGoal": [
+        "How to turn a mixed number (a whole number and a fraction together) like 2 and 1/3 into an improper fraction (where the top number is bigger than the bottom)",
+        "How to turn an improper fraction (a fraction where the top number is bigger than the bottom) like 7/4 back into a mixed number (a whole number and a fraction together)"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "What is 3/4 − 1/2?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/4",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "What is 5/6 − 1/3?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "What is 7/8 − 1/4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5/8",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "What is 3/5 − 1/4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/20",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "What is 7/8 − 2/3?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5/24",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "What is 4/5 − 1/3?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/15",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "What is 5/6 − 3/8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11/24",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "Emily has 7/8 of a metre of ribbon. She uses 2/5 of a metre for a card. How much ribbon does she have left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "19/40 m",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "A bottle is 5/6 full of juice. Jack pours out 3/10 of the bottle. What fraction of the bottle still has juice?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8/15",
+      "subConceptId": "subtracting-diff-denom",
+      "subConceptName": "Subtracting Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **2/3 − 1/6**. Just like adding — find a common denominator (the same bottom number for both fractions), convert both fractions, then subtract. The denominator (the bottom number of a f",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before subtracting",
+        "Why 2/3 − 1/6 needs converting before you can subtract"
+      ]
+    },
+    {
+      "questionId": 190,
+      "questionText": "What is 1/4 + 1/2?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3/4",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 191,
+      "questionText": "What is 1/3 + 1/6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 192,
+      "questionText": "What is 2/5 + 1/3?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11/15",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 193,
+      "questionText": "What is 3/8 + 1/6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13/24",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 194,
+      "questionText": "What is 2/3 + 1/5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13/15",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "What is 1/4 + 1/3 + 1/6?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3/4",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "Rosie walks 2/5 of a mile to school, then 1/4 of a mile to the library. How far does she walk altogether?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13/20 mile",
+      "subConceptId": "adding-diff-denom",
+      "subConceptName": "Adding Fractions (Different Denominators)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work out **1/3 + 1/4**. You can't add fractions when the **denominator** (bottom number) is different — the pieces are different sizes! Find a **common denominator** (the same bottom number for ",
+      "lessonLearningGoal": [
+        "How to find a common bottom number (denominator) before adding",
+        "How to convert both fractions so the bottom numbers match"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "What is 3/4 × 8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "What is 2/5 × 15?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "What is 2/3 × 3/5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2/5",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "What is 3/4 × 2/7?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/14",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "A recipe uses 3/4 of a cup of sugar. Sophie makes 2/3 of the recipe. How much sugar does she use?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/2 cup",
+      "subConceptId": "multiplying-fractions",
+      "subConceptName": "Multiplying Fractions by Whole Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "When you multiply a fraction by a whole number, only the **numerator** (top number) changes. The **denominator** (bottom number) stays the same! If the answer is bigger than 1, convert it to a **mixed",
+      "lessonLearningGoal": [
+        "How to multiply a fraction by a whole number",
+        "Why you only multiply the top number (numerator)"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "What is 1/4 as a decimal?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.25",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "What is 3/8 as a decimal?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.375",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "What is 7/20 as a decimal?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.35",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 205,
+      "questionText": "Which is greater: 5/8 or 0.6?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5/8",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 206,
+      "questionText": "Put these in order from smallest to largest: 0.3, 1/4, 2/7",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/4, 2/7, 0.3",
+      "subConceptId": "fraction-to-decimal",
+      "subConceptName": "Fraction to Decimal",
+      "confidence": "high",
+      "lessonTeachSummary": "A fraction **is** a division. **3/4** means **3 ÷ 4**.\nLet's work through the division step by step. Tap to see!",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a decimal by dividing",
+        "How to recall which common fractions equal which decimals (1/2=0.5, 1/4=0.25, 3/4=0.75)"
+      ]
+    },
+    {
+      "questionId": 207,
+      "questionText": "Which is larger: 1/3 or 1/4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/3",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 208,
+      "questionText": "Which is smaller: 2/5 or 3/5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2/5",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 209,
+      "questionText": "Put these fractions in order from smallest to largest: 1/2, 1/4, 1/3",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/4, 1/3, 1/2",
+      "subConceptId": "comparing-fractions",
+      "subConceptName": "Comparing Fractions",
+      "confidence": "high",
+      "lessonTeachSummary": "Which is bigger: **2/3** or **3/5**? To compare, both fractions need the **same bottom number**. Find a number that both 3 and 5 go into. Tap to see!",
+      "lessonLearningGoal": [
+        "How to compare fractions by converting to the same bottom number (denominator)",
+        "Why you can only compare fractions when the pieces are the same size"
+      ]
+    },
+    {
+      "questionId": 210,
+      "questionText": "What is 7/20 as a percentage?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35%",
+      "subConceptId": "fraction-to-percentage",
+      "subConceptName": "Fraction to Percentage",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's convert **3/5** to a percentage. Multiply top and bottom to make an **equivalent fraction** (a fraction with the same value but different numbers) where the bottom number becomes **100**. The to",
+      "lessonLearningGoal": [
+        "How to turn a fraction into a percentage",
+        "Why percent means out of 100"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "adding-same-denom": {
+      "name": "Adding Fractions (Same Denominator)",
+      "questionCount": 22,
+      "difficulties": {
+        "D1": 22,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "simplifying-fractions": {
+      "name": "Simplifying Fractions",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 20,
+        "D2": 7,
+        "D3": 1
+      }
+    },
+    "fraction-of-amount": {
+      "name": "Fraction of an Amount",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 14,
+        "D2": 13,
+        "D3": 1
+      }
+    },
+    "comparing-fractions": {
+      "name": "Comparing Fractions",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 3,
+        "D2": 5,
+        "D3": 8
+      }
+    },
+    "subtracting-same-denom": {
+      "name": "Subtracting Fractions (Same Denominator)",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 15,
+        "D2": 4,
+        "D3": 0
+      }
+    },
+    "decimal-to-fraction": {
+      "name": "Decimal to Fraction",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 8,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "master-adding-fractions": {
+      "name": "master-adding-fractions",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 0,
+        "D2": 10,
+        "D3": 0
+      }
+    },
+    "fraction-to-percentage": {
+      "name": "Fraction to Percentage",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 4,
+        "D2": 1,
+        "D3": 1
+      }
+    },
+    "subtracting-diff-denom": {
+      "name": "Subtracting Fractions (Different Denominators)",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 3,
+        "D2": 5,
+        "D3": 4
+      }
+    },
+    "fraction-to-decimal": {
+      "name": "Fraction to Decimal",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 2,
+        "D2": 2,
+        "D3": 2
+      }
+    },
+    "multiplying-fractions": {
+      "name": "Multiplying Fractions by Whole Numbers",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 2,
+        "D2": 5,
+        "D3": 3
+      }
+    },
+    "fraction-word-problems": {
+      "name": "Fraction Word Problems",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 5,
+        "D2": 8,
+        "D3": 12
+      }
+    },
+    "adding-diff-denom": {
+      "name": "Adding Fractions (Different Denominators)",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 2,
+        "D2": 3,
+        "D3": 3
+      }
+    },
+    "mixed-improper": {
+      "name": "Mixed and Improper Fractions",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 4,
+        "D2": 4,
+        "D3": 4
+      }
+    }
+  }
+}

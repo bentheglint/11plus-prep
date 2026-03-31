@@ -1,0 +1,1842 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "oddTwoOut",
+    "displayName": "Odd Two Out",
+    "extractedAt": "2026-03-30T13:52:00.606Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "bat + penguin",
+      "subConceptId": "red-herring-words",
+      "subConceptName": "Red Herring Words",
+      "confidence": "high",
+      "lessonTeachSummary": "With **sand, shore, tide, wave, dune**, don't lock onto the first connection you see. Try different groupings and pick the one where **all 3 clearly belong** and the **2 leftovers also connect**.",
+      "lessonLearningGoal": [
+        "How to avoid being tricked by words that LOOK like they belong together but actually don't — the 11+ loves this trick!",
+        "Why your first instinct can sometimes lead you astray, and how to double-check before committing"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "lamp + wardrobe",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "carrot + potato",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "goldfish + trout",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "triangle + square",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "crayon + paintbrush",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "chess + draughts",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "saucepan + frying pan",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "daisy + tulip",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "listen + hear",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "cotton + silk",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "calf + lamb",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "crawl + stroll",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "kilogram + tonne",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "tragedy + comedy",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "volume + capacity",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "adjective + adverb",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "furious + irate",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "strait + channel",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "sonnet + limerick",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "eagle + owl",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bookcase + wardrobe",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "helicopter + aeroplane",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hammer + screwdriver",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rain + snow",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "lettuce + spinach",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "teddy bear + doll",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "March + August",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sparrow + robin",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bus + train",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "parrot + budgie",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "milk + juice",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "oven + toaster",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "cow + sheep",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "pond + lake",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "painting + sculpture",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "boot + slipper",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "pillow + blanket",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "broccoli + cabbage",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "frog + toad",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "television + radio",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "spoon + fork",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "stethoscope + thermometer",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "mountain + hill",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sparrow + starling",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "easel + palette",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "France + Germany",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "harp + cello",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "rabbit + deer",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "comet + asteroid",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Antarctica + Arctic",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "stallion + bull",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "thermometer + barometer",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "diving + swimming",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "yoghurt + cream",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "gold + silver",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "crocodile + lizard",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "tent + caravan",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sob + weep",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "aunt + uncle",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "pint + gallon",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "biography + diary",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "desert + volcano",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "granite + marble",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "judge + barrister",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "earthquake + tsunami",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "tortoise + turtle",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "crawl + creep",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "chapter + paragraph",
+      "subConceptId": "red-herring-words",
+      "subConceptName": "Red Herring Words",
+      "confidence": "high",
+      "lessonTeachSummary": "With **sand, shore, tide, wave, dune**, don't lock onto the first connection you see. Try different groupings and pick the one where **all 3 clearly belong** and the **2 leftovers also connect**.",
+      "lessonLearningGoal": [
+        "How to avoid being tricked by words that LOOK like they belong together but actually don't — the 11+ loves this trick!",
+        "Why your first instinct can sometimes lead you astray, and how to double-check before committing"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "museum + gallery",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "trombone + trumpet",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "wheat + barley",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "bishop + vicar",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "solar + wind",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "fern + moss",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "novel + poem",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "metre + kilometre",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "femur + tibia",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bicep + spine",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "friction + gravity",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "clay + chalk",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "scarce + rare",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "verdict + sentence",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "erosion + weathering",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "artery + vein",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "altitude + depth",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "drought + flood",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "paragraph + chapter",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "predator + prey",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "decade + century",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "anchor + rudder",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "reveal + expose",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "architect + blueprint",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "helium + neon",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bay + gulf",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "habitat + ecosystem",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "crotchet + quaver",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "cumulus + nimbus",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "crater + orbit",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "isosceles + scalene",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "painting + sculpture",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hammer + drill",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "shelf + cupboard",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Monday + Friday",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "salmon + trout",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sandals + shorts",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "piano + guitar",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 1,
+      "correctAnswer": "elm + oak",
+      "subConceptId": "concrete-categories",
+      "subConceptName": "Concrete Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **apple, carrot, banana, grape, potato**. Here's the clever bit: don't hunt for the two odd ones. Instead, find the **three** words that connect — once you spot the group of 3, the odd pair re",
+      "lessonLearningGoal": [
+        "How to spot obvious category groups like animals, fruits, colours, and sports — you'll get a feel for this really quickly!",
+        "How to find the 3-and-2 split where three words share a group and the other two are the odd ones out"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "bridge + tunnel",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "fraction + decimal",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Atlantic + Pacific",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "easel + canvas",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "granite + marble",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "iron + lead",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "bracelet + necklace",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sprint + jog",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "kettle + toaster",
+      "subConceptId": "function-categories",
+      "subConceptName": "Function Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **bucket, hammer, jug, vase, spanner**. Ask yourself: **\"What is each thing used for?\"** Things with the same purpose belong together, even if they look completely different.",
+      "lessonLearningGoal": [
+        "How to group words by what things DO rather than what they ARE — this is a really clever way to think!",
+        "Why asking 'what is this used for?' can reveal hidden connections that aren't obvious at first"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sketch + portrait",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "sonnet + limerick",
+      "subConceptId": "abstract-categories",
+      "subConceptName": "Abstract Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **serene, furious, tranquil, placid, irate** — these are abstract (idea) words. Ask yourself: **what does each word describe?** Group by meaning, not by how they look or sound.",
+      "lessonLearningGoal": [
+        "How to spot less obvious groups like emotions, qualities, and weather types — these are the ones that trip people up!",
+        "Why abstract categories need a bit more digging than simple ones (and why that makes them more satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "glacier + iceberg",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "limestone + sandstone",
+      "subConceptId": "material-categories",
+      "subConceptName": "Material Categories",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **iron, cotton, steel, bronze, silk**. Ask: **\"What is each thing made of?\"** or **\"What type of material is this?\"** Three will share a material type, two won't.",
+      "lessonLearningGoal": [
+        "How to group words by what things are made of: metals, fabrics, woods",
+        "Why material-based categories are a common 11+ trick"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "treaty + alliance",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "equation + formula",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Hard Vocabulary",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **simile, adjective, metaphor, personification, adverb**. You don't need to know every word — if you can spot **2 or 3 words** from the same subject area, you can work out the grouping.",
+      "lessonLearningGoal": [
+        "How to handle odd-two-out when the words look scary: literary, scientific, and musical terms",
+        "Why knowing a few key vocabulary sets gives you a massive advantage (you'll recognise more than you think!)"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "velocity + acceleration",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Find the two words that are the odd ones out.",
+      "questionDifficulty": 3,
+      "correctAnswer": "sonata + symphony",
+      "subConceptId": "category-within-category",
+      "subConceptName": "Category Within Category",
+      "confidence": "high",
+      "lessonTeachSummary": "All five words — **eagle, sparrow, bat, penguin, robin** — are flying creatures. But don't stop at the big category! Ask: **\"Can I split these further?\"** The sub-group of 3 is the real answer.",
+      "lessonLearningGoal": [
+        "How to spot sub-category tricks: all 5 words seem to belong, but only 3 share a tighter group — this is a favourite 11+ trick!",
+        "Why the obvious big category is actually a trap, and how to zoom in on the smaller sub-group"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "look-for-three",
+      "name": "Look For Three"
+    }
+  ],
+  "subConceptCoverage": {
+    "red-herring-words": {
+      "name": "Red Herring Words",
+      "questionCount": 2,
+      "difficulties": {
+        "D1": 0,
+        "D2": 2,
+        "D3": 0
+      }
+    },
+    "function-categories": {
+      "name": "Function Categories",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 0,
+        "D2": 14,
+        "D3": 1
+      }
+    },
+    "concrete-categories": {
+      "name": "Concrete Categories",
+      "questionCount": 38,
+      "difficulties": {
+        "D1": 38,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "category-within-category": {
+      "name": "Category Within Category",
+      "questionCount": 37,
+      "difficulties": {
+        "D1": 0,
+        "D2": 23,
+        "D3": 14
+      }
+    },
+    "abstract-categories": {
+      "name": "Abstract Categories",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 0,
+        "D2": 8,
+        "D3": 7
+      }
+    },
+    "material-categories": {
+      "name": "Material Categories",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 0,
+        "D2": 4,
+        "D3": 2
+      }
+    },
+    "hard-vocabulary": {
+      "name": "Hard Vocabulary",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 12
+      }
+    }
+  }
+}

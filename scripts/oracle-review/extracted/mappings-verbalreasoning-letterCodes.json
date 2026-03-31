@@ -1,0 +1,2946 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterCodes",
+    "displayName": "Letter Codes",
+    "extractedAt": "2026-03-30T13:52:00.650Z",
+    "totalQuestions": 166,
+    "mappedQuestions": 166,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 2,
+    "confidenceBreakdown": {
+      "high": 202,
+      "medium": 5,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "If the code for HELP is GDKO, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "If COLD is coded as DPME, what is WARM coded as?",
+      "questionDifficulty": 3,
+      "correctAnswer": "XBSN",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "If the code for GAME is HBNF, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "If BOAT is coded as ERDW, what word is coded as VKLS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "SHIP",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "If RAIN is coded as UDLQ, what is SNOW coded as?",
+      "questionDifficulty": 3,
+      "correctAnswer": "VQRZ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "If TREE is coded as WUHH, what word is coded as FROG?",
+      "questionDifficulty": 3,
+      "correctAnswer": "COLD",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "If the code for STAR is TUBS, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "If CAT is coded as DBU, what is the code for CAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "DBU",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "If DOG is coded as CNF, what is the code for SUN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "RTM",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "If LOG is coded as MPH, what word is coded as EPH?",
+      "questionDifficulty": 1,
+      "correctAnswer": "DOG",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "If SUN is coded as RTM, what is the code for PEN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "ODM",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "If PEN is coded as RGP, what is the code for HAT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "JCV",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "If FIG is coded as DGE, what word is coded as AMP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "COR",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "If JUMP is coded as KVNQ, what is LAND coded as?",
+      "questionDifficulty": 2,
+      "correctAnswer": "MBOE",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "If BARN is coded as DCTP, what is the code for BORN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DQTP",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "If DUSK is coded as GXVN, what is the code for DESK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "GHVN",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "If FISH is coded as ILVK, what word is coded as ORYH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "LOVE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "If MILK is coded as PLON, what word is coded as IROG?",
+      "questionDifficulty": 3,
+      "correctAnswer": "FOLD",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "If GIFT is coded as JLIW, what is the code for WISH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ZLVK",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "If LAMP is coded as JYKN, what is the code for FIRE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DGPC",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "If LOG is coded as MPH, what is the code for CAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "DBU",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "If FIG is coded as GJH, what is the code for DOG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "EPH",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "If CAT is coded as BZS, what is the code for SUN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "RTM",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "If DOG is coded as EPH, what is the code for PEN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "QFO",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "If SUN is coded as RTM, what is the code for CUP?",
+      "questionDifficulty": 1,
+      "correctAnswer": "BTO",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "If PEN is coded as QFO, what is the code for HAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "IBU",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "If HAT is coded as IBU, what is the code for BED?",
+      "questionDifficulty": 1,
+      "correctAnswer": "CFE",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "If BUS is coded as ATR, what is the code for RUN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "QTM",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "If DOG is coded as EPH, what word is coded as SVO?",
+      "questionDifficulty": 1,
+      "correctAnswer": "RUN",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "If SUN is coded as TVO, what word is coded as HFU?",
+      "questionDifficulty": 1,
+      "correctAnswer": "GET",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "If PEN is coded as ODM, what word is coded as GHS?",
+      "questionDifficulty": 1,
+      "correctAnswer": "HIT",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "If HAT is coded as IBU, what word is coded as CBU?",
+      "questionDifficulty": 1,
+      "correctAnswer": "BAT",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "If BUS is coded as ATR, what word is coded as OHM?",
+      "questionDifficulty": 1,
+      "correctAnswer": "PIN",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "If JAM is coded as KBN, what word is coded as GPY?",
+      "questionDifficulty": 1,
+      "correctAnswer": "FOX",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "If CUP is coded as BTO, what word is coded as QDC?",
+      "questionDifficulty": 1,
+      "correctAnswer": "RED",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "If MIST is coded as NJTU, what word is coded as CVTL?",
+      "questionDifficulty": 1,
+      "correctAnswer": "BUSK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "If the code for PIG is QJH, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "If the code for BIG is AHF, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "If the code for HEN is IFO, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "If the code for TOP is SNO, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "If the code for DIP is EJQ, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "If the code for TIN is SHM, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "If the code for FIG is GJH, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "If the code for COT is BNS, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 1",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "If GIFT is coded as IKHV, what is the code for BIRD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DKTF",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "If LAMP is coded as NCOR, what is the code for FISH?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HKUJ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "If MIST is coded as OKUV, what is the code for TREE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "VTGG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "If ROCK is coded as TQEM, what is the code for MOON?",
+      "questionDifficulty": 2,
+      "correctAnswer": "OQQP",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "If FISH is coded as HKUJ, what is the code for HILL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "JKNN",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "If HELP is coded as JGNR, what is the code for GATE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "ICVG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "If COLD is coded as AMJB, what is the code for HELP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "FCJN",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "If STAR is coded as UVCT, what is the code for ROPE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TQRG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "If BARN is coded as ZYPL, what is the code for NEST?",
+      "questionDifficulty": 2,
+      "correctAnswer": "LCQR",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "If DUSK is coded as FWUM, what is the code for FROG?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HTQI",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "If GIFT is coded as EGDR, what is the code for POEM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NMCK",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "If LAMP is coded as NCOR, what is the code for LION?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NKQP",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "If ROCK is coded as TQEM, what word is coded as ECUG?",
+      "questionDifficulty": 2,
+      "correctAnswer": "CASE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "If FISH is coded as HKUJ, what word is coded as NCEM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "LACK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "If HELP is coded as FCJN, what word is coded as JCDR?",
+      "questionDifficulty": 2,
+      "correctAnswer": "LEFT",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "If COLD is coded as EQNF, what word is coded as TKPI?",
+      "questionDifficulty": 2,
+      "correctAnswer": "RING",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "If STAR is coded as QRYP, what word is coded as DGQF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "FISH",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "If BARN is coded as DCTP, what word is coded as JQQF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HOOD",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "If DUSK is coded as FWUM, what word is coded as YKPF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "WIND",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "If GIFT is coded as EGDR, what word is coded as FCPM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HERO",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "If LAMP is coded as NCOR, what word is coded as EQQM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "COOK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "If MIST is coded as KGQR, what word is coded as NMPI?",
+      "questionDifficulty": 2,
+      "correctAnswer": "PORK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "If ROCK is coded as TQEM, what word is coded as NQQR?",
+      "questionDifficulty": 2,
+      "correctAnswer": "LOOP",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "If FISH is coded as HKUJ, what word is coded as DWEM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "BUCK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "If the code for HELP is JGNR, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "If the code for FROG is DPME, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "If the code for GOLD is IQNF, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "If the code for MINT is KGLR, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "If the code for DESK is FGUM, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "If the code for PLUM is NJSK, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "If the code for PINE is RKPG, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "If the code for WOLF is UMJD, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 2",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "If CHARM is coded as FKDUP, what is the code for FLAME?",
+      "questionDifficulty": 3,
+      "correctAnswer": "IODPH",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "If GLOBE is coded as DILYB, what is the code for STORM?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PQLOJ",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "If PLANT is coded as SODQW, what is the code for CROWN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "FURZQ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "If BRICK is coded as YOFZH, what is the code for SWIFT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PTFCQ",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "If SHELF is coded as VKHOI, what is the code for TIGER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "WLJHU",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "If FROST is coded as IURVW, what is the code for GRAPE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "JUDSH",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "If CLOUD is coded as ZILRA, what is the code for SHELF?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PEBIC",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "If DRINK is coded as GULQN, what is the code for LUCKY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "OXFNB",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "If TRUNK is coded as WUXQN, what is the code for FIXED?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ILAHG",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "If SLOPE is coded as VORSH, what is the code for BUYER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "EXBHU",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "If BRICK is coded as EULFN, what word is coded as WRUFK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "TORCH",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "TRICK",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "medium",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "If FROST is coded as IURVW, what word is coded as VWRQH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "STONE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "GRIST",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "If DRINK is coded as GULQN, what word is coded as EULQJ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "BRING",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "MAGIC",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "medium",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "CREAM",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "If CHARM is coded as FKDUP, what word is coded as SODFH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PLACE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
+      "questionDifficulty": 3,
+      "correctAnswer": "SHARE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "medium",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "If PLANT is coded as SODQW, what word is coded as PLAHU?",
+      "questionDifficulty": 3,
+      "correctAnswer": "MIXER",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "medium",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "If the code for HELP is KHOS, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves forward 3",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "If the code for PRIDE is MOFAB, what rule has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each letter moves back 3",
+      "subConceptId": "spotting-the-pattern",
+      "subConceptName": "Spotting the Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+      "lessonLearningGoal": [
+        "Crack the shift rule from a given example pair — like a real codebreaker",
+        "Apply the rule you've discovered to encode a brand new word"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "If FROG is coded as GTRH, what pattern has been used for the shifts?",
+      "questionDifficulty": 3,
+      "correctAnswer": "+1, +2, +3, +1",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "If MICE is coded as OJEF, what pattern has been used for the shifts?",
+      "questionDifficulty": 3,
+      "correctAnswer": "+2, +1, +2, +1",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "If the code for FISH is GJTI (each letter moved forward by 1), what is the code for DUCK?",
+      "questionDifficulty": 1,
+      "correctAnswer": "EVDL",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "If the code for HAND is IBOE (each letter moved forward by 1), what is the code for FEET?",
+      "questionDifficulty": 1,
+      "correctAnswer": "GFFU",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "If the code for COME is BNLD (each letter moved back by 1), what is the code for PLAY?",
+      "questionDifficulty": 1,
+      "correctAnswer": "OKZX",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "If the code for BALL is DCNN (each letter moved forward by 2), what is the code for KICK?",
+      "questionDifficulty": 1,
+      "correctAnswer": "MKEM",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "If the code for CAKE is DBLF (each letter moved forward by 1), what is the code for MILK?",
+      "questionDifficulty": 1,
+      "correctAnswer": "NJML",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
+      "questionDifficulty": 1,
+      "correctAnswer": "MDRS",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
+      "questionDifficulty": 1,
+      "correctAnswer": "MFBG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "If the code for FROG is HTQI (each letter moved forward by 2), what is the code for TOAD?",
+      "questionDifficulty": 1,
+      "correctAnswer": "VQCF",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "If the code for LAMP is ODPS, what is the code for DARK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GDUN",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "If the code for MINT is KGLR, what is the code for SALT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "QYJR",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "If the code for WIND is ZLQG, what is the code for RAIN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "UDLQ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "If PARK is coded as MXOH, what word is coded as JXII?",
+      "questionDifficulty": 2,
+      "correctAnswer": "MALL",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "If the code for HERO is LIVS, what is the code for KING?",
+      "questionDifficulty": 2,
+      "correctAnswer": "OMRK",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "If the code for STOP is QRMN, what is the code for FAST?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DYQR",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "If GOLD is coded as IQNF, what is the code for RING?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TKPI",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "If the code for JUMP is ITLO, what is the code for SWIM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "RVHL",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "If the code for BOOK is ERRN, what is the code for READ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "UHDG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "If the code for BLUE is GQZJ, what is the code for PINK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "UNSP",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "If the code for TIGER is PECAN, what is the code for HORSE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "DKNOA",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "If the code for CAMP is IGSV, what is the code for TENT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ZKTZ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "If SMILE is coded as WQMPI, what word is coded as ASVPH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "WORLD",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for FROG?",
+      "questionDifficulty": 3,
+      "correctAnswer": "GTPI",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "If HELP is coded as SVOK using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "URIV",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "medium",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "If CROWN is coded as FURZQ, what word is coded as VWDUW?",
+      "questionDifficulty": 3,
+      "correctAnswer": "START",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "TOLMG",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "If DRAW is coded as ETDA, what is the code for FISH?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GKVL",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "If BARK is coded as AYOG, what is the code for HELP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GCIL",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "If CART is coded as EDVY, what is the code for LAND?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NDRI",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "If DRAWN is coded as CPXSI, what is the code for STONE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "RRLJZ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "If GAME is coded as HZND, what is the code for BOOK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "CNPJ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "If COLD is coded as DQOH, what is the code for MILK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NKOO",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "If TRAIN is coded as UTDMS, what is the code for PIANO?",
+      "questionDifficulty": 3,
+      "correctAnswer": "QKDRT",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "If RIVER is coded as PFRZL, what is the code for HOUSE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "FLQNY",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "If BELL is coded as DFNM, what is the code for RING?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TJPH",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "If KINGS is coded as JGKCN, what is the code for QUEEN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PSBAI",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "If HORSE is coded as KQSVG, what is the code for BEACH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "EGBFJ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "If HELP is coded as KHOS, what is the code for YARD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "BDUG",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "If HELP is coded as JGNR, what is the code for WAXY?",
+      "questionDifficulty": 2,
+      "correctAnswer": "YCZA",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "If HELP is coded as LIPT, what is the code for ZERO?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DIVS",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "If HELP is coded as KHOS, what is the code for BUZZ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "EXCC",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "If HELP is coded as MJQU, what is the code for COZY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "HTED",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "If HELP is coded as LIPT, what is the code for JINX?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NMRB",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "If HELP is coded as EBIM, what word is coded as QXUF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TAXI",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "If HELP is coded as DAHL, what word is coded as JATP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NEXT",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "If HELP is coded as CZGK, what word is coded as HVUZ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "MAZE",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "If HELP is coded as KHOS, what is the code for LYNX?",
+      "questionDifficulty": 3,
+      "correctAnswer": "OBQA",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "If HELP is coded as JGNR, what is the code for YAWN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "ACYP",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "If HELP is coded as LIPT, what is the code for FIZZY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "JMDDC",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "If STOP is coded as HGLK, what is the code for HELP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SVOK",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 150,
+      "questionText": "If STOP is coded as HGLK, what is the code for COLD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "XLOW",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 151,
+      "questionText": "If STOP is coded as HGLK, what is the code for SWIM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HDRN",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 152,
+      "questionText": "If STOP is coded as HGLK, what word is coded as IZRM?",
+      "questionDifficulty": 3,
+      "correctAnswer": "RAIN",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 153,
+      "questionText": "If STOP is coded as HGLK, what word is coded as WZIP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "DARK",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 154,
+      "questionText": "If STOP is coded as HGLK, what is the code for LIGHT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ORTSG",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 155,
+      "questionText": "If STOP is coded as HGLK, what is the code for MONEY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NLMVB",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 156,
+      "questionText": "If STOP is coded as HGLK, what word is coded as YIZEV?",
+      "questionDifficulty": 3,
+      "correctAnswer": "BRAVE",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 157,
+      "questionText": "If BLUE is coded as EOXH, what is the code for GOLD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "JROG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "If BLUE is coded as YIRB, what is the code for FARM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "CXOJ",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "If BLUE is coded as FPYI, what is the code for DESK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HIWO",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "If BLUE is coded as XHQA, what is the code for JUMP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "FQIL",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "If BLUE is coded as EOXH, what is the code for TRAIN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "WUDLQ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "If BLUE is coded as YIRB, what is the code for CLOCK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ZILZH",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "If BLUE is coded as FPYI, what is the code for RIVER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "VMZIV",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "If BLUE is coded as XHQA, what word is coded as LHWJA?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PLANE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "If BLUE is coded as EOXH, what word is coded as VWRUP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "STORM",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "If BLUE is coded as YIRB, what word is coded as PEFM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SHIP",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "If DRAW is coded as ETDA, what is the code for FISH?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GKVL",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "If BARK is coded as AYOG, what is the code for HELP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "GCIL",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "If CART is coded as EDVY, what is the code for LAND?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NDRI",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "If DRAWN is coded as CPXSI, what is the code for STONE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "RRLJZ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "If GAME is coded as HZND, what is the code for BOOK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "CNPJ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "If COLD is coded as DQOH, what is the code for MILK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NKOO",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "If TRAIN is coded as UTDMS, what is the code for PIANO?",
+      "questionDifficulty": 3,
+      "correctAnswer": "QKDRT",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "If RIVER is coded as PFRZL, what is the code for HOUSE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "FLQNY",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "If BELL is coded as DFNM, what is the code for RING?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TJPH",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "If KINGS is coded as JGKCN, what is the code for QUEEN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PSBAI",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "If HORSE is coded as KQSVG, what is the code for BEACH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "EGBFJ",
+      "subConceptId": "variable-shift",
+      "subConceptName": "Variable Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+      "lessonLearningGoal": [
+        "Handle trickier codes where each position shifts by a different amount",
+        "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "If HELP is coded as KHOS, what is the code for YARD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "BDUG",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "If HELP is coded as JGNR, what is the code for WAXY?",
+      "questionDifficulty": 2,
+      "correctAnswer": "YCZA",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "If HELP is coded as LIPT, what is the code for ZERO?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DIVS",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "If HELP is coded as KHOS, what is the code for BUZZ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "EXCC",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "If HELP is coded as MJQU, what is the code for COZY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "HTED",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "If HELP is coded as LIPT, what is the code for JINX?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NMRB",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "If HELP is coded as EBIM, what word is coded as QXUF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TAXI",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "If HELP is coded as DAHL, what word is coded as JATP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NEXT",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "If HELP is coded as CZGK, what word is coded as HVUZ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "MAZE",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "If HELP is coded as KHOS, what is the code for LYNX?",
+      "questionDifficulty": 3,
+      "correctAnswer": "OBQA",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "If HELP is coded as JGNR, what is the code for YAWN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "ACYP",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "If HELP is coded as LIPT, what is the code for FIZZY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "JMDDC",
+      "subConceptId": "wrap-around",
+      "subConceptName": "Wrap-Around — Past Z or Before A",
+      "confidence": "high",
+      "lessonTeachSummary": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+      "lessonLearningGoal": [
+        "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+        "Count through the wrap-around join like a pro"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "If STOP is coded as HGLK, what is the code for HELP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SVOK",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 150,
+      "questionText": "If STOP is coded as HGLK, what is the code for COLD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "XLOW",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 151,
+      "questionText": "If STOP is coded as HGLK, what is the code for SWIM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HDRN",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 152,
+      "questionText": "If STOP is coded as HGLK, what word is coded as IZRM?",
+      "questionDifficulty": 3,
+      "correctAnswer": "RAIN",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 153,
+      "questionText": "If STOP is coded as HGLK, what word is coded as WZIP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "DARK",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 154,
+      "questionText": "If STOP is coded as HGLK, what is the code for LIGHT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ORTSG",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 155,
+      "questionText": "If STOP is coded as HGLK, what is the code for MONEY?",
+      "questionDifficulty": 3,
+      "correctAnswer": "NLMVB",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 156,
+      "questionText": "If STOP is coded as HGLK, what word is coded as YIZEV?",
+      "questionDifficulty": 3,
+      "correctAnswer": "BRAVE",
+      "subConceptId": "mirror-code",
+      "subConceptName": "mirror-code",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 157,
+      "questionText": "If BLUE is coded as EOXH, what is the code for GOLD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "JROG",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "If BLUE is coded as YIRB, what is the code for FARM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "CXOJ",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "If BLUE is coded as FPYI, what is the code for DESK?",
+      "questionDifficulty": 2,
+      "correctAnswer": "HIWO",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "If BLUE is coded as XHQA, what is the code for JUMP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "FQIL",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "If BLUE is coded as EOXH, what is the code for TRAIN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "WUDLQ",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "If BLUE is coded as YIRB, what is the code for CLOCK?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ZILZH",
+      "subConceptId": "backward-shift",
+      "subConceptName": "Backward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+      "lessonLearningGoal": [
+        "Master backward shifts — the same skill, just in reverse",
+        "Apply -1, -2, -3 shifts without getting muddled"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "If BLUE is coded as FPYI, what is the code for RIVER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "VMZIV",
+      "subConceptId": "forward-shift",
+      "subConceptName": "Forward Shift",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your pla",
+      "lessonLearningGoal": [
+        "Learn to shift letters forward through the alphabet like a codebreaker",
+        "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "If BLUE is coded as XHQA, what word is coded as LHWJA?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PLANE",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "If BLUE is coded as EOXH, what word is coded as VWRUP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "STORM",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "If BLUE is coded as YIRB, what word is coded as PEFM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SHIP",
+      "subConceptId": "reverse-decoding",
+      "subConceptName": "Reverse Decoding — Find the Original",
+      "confidence": "high",
+      "lessonTeachSummary": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+      "lessonLearningGoal": [
+        "Work backward from a coded word to reveal the hidden original",
+        "Discover the golden rule: decoding means doing the OPPOSITE shift"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "consistent-shift",
+      "name": "Consistent Shift"
+    },
+    {
+      "id": "ejoty-technique",
+      "name": "EJOTY — Quick Alphabet Positioning"
+    }
+  ],
+  "subConceptCoverage": {
+    "spotting-the-pattern": {
+      "name": "Spotting the Pattern",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 21,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "forward-shift": {
+      "name": "Forward Shift",
+      "questionCount": 47,
+      "difficulties": {
+        "D1": 12,
+        "D2": 22,
+        "D3": 13
+      }
+    },
+    "reverse-decoding": {
+      "name": "Reverse Decoding — Find the Original",
+      "questionCount": 46,
+      "difficulties": {
+        "D1": 9,
+        "D2": 16,
+        "D3": 21
+      }
+    },
+    "backward-shift": {
+      "name": "Backward Shift",
+      "questionCount": 24,
+      "difficulties": {
+        "D1": 7,
+        "D2": 11,
+        "D3": 6
+      }
+    },
+    "wrap-around": {
+      "name": "Wrap-Around — Past Z or Before A",
+      "questionCount": 27,
+      "difficulties": {
+        "D1": 0,
+        "D2": 14,
+        "D3": 13
+      }
+    },
+    "variable-shift": {
+      "name": "Variable Shift",
+      "questionCount": 26,
+      "difficulties": {
+        "D1": 0,
+        "D2": 8,
+        "D3": 18
+      }
+    },
+    "mirror-code": {
+      "name": "mirror-code",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 0,
+        "D2": 6,
+        "D3": 10
+      }
+    }
+  }
+}

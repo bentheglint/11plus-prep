@@ -1,0 +1,2501 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "datahandling",
+    "displayName": "Data Handling",
+    "extractedAt": "2026-03-30T13:51:13.628Z",
+    "subConceptCount": 10,
+    "lessonCount": 20,
+    "screenCount": 80,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "finding-median",
+      "name": "Finding the Median",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "finding-median-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to order values from smallest to largest",
+            "How to find the middle value in an ordered list"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ava",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the middle value?",
+              "body": "Ava recorded the number of books she read each month: **7, 3, 5, 9, 1** books.\nThe **median** is the middle value — but you must put the numbers in **order** first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 0,
+                "max": 10,
+                "points": [
+                  {
+                    "value": 7,
+                    "label": "7",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 9,
+                    "label": "9",
+                    "color": "#34d399"
+                  },
+                  {
+                    "value": 1,
+                    "label": "1",
+                    "color": "#fbbf24"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 2
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: find the median",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Order first, count, then find the middle. ✓",
+                "incorrectFeedback": "Not quite — you must put values in order first, then count them, then find the middle one."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Ava now has a new set of data: **6, 2, 8, 4, 10** books. What is the median?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the median of 2, 4, 6, 8, 10?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Spot on! The middle value is **6 books**. ✓",
+                "incorrectFeedback": "Not quite! Put the values in order: 2, 4, 6, 8, 10. The middle value (3th out of 5) is **6**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ordered: 2, 4, 6, 8, 10",
+                    "why": "Values in order, smallest to largest."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The median recipe!",
+              "body": "The median is the **middle value** when the data is in **order**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Put all values in order (smallest to largest)",
+                    "why": "This is the step most people forget!"
+                  },
+                  {
+                    "text": "Step 2: Count how many values there are",
+                    "why": "You need to know whether the count is odd or even."
+                  },
+                  {
+                    "text": "Step 3 (odd count): Pick the middle value",
+                    "why": "Cross off one from each end until one is left. ✓"
+                  },
+                  {
+                    "text": "Step 4 (even count): Find the mean of the two middle values",
+                    "why": "Add the two middle values and divide by 2. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "finding-median-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid finding the median (the middle value) without ordering first",
+            "Why the order matters for finding the middle"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Charlie has test scores: 8, 3, 6, 1, 5. They said: \"The middle number is **6**, so the median is 6.\" But that's wrong! Can you see why?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Values: 8, 3, 6, 1, 5",
+                    "why": "Charlie picked 6 from this list."
+                  },
+                  {
+                    "text": "\"Median = 6\"",
+                    "why": "Is this really the middle value?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You MUST order the values first!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New values: **9, 2, 7, 4, 11**. What is the median?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the median?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Yes! The ordered list is 2, 4, 7, 9, 11 and the middle value is **7**. ✓",
+                "incorrectFeedback": "Not quite! Order first: 2, 4, 7, 9, 11. The middle value is **7**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ordered: 2, 4, 7, 9, 11",
+                    "why": "Find the middle of THIS list."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Order first — always!",
+              "body": "The number one mistake with medians: forgetting to order the values.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Put values in ORDER (smallest to largest)",
+                    "why": "Never skip this step!"
+                  },
+                  {
+                    "text": "Step 2: Cross off from each end to find the middle",
+                    "why": "Cross off the smallest and the largest, then repeat."
+                  },
+                  {
+                    "text": "The last one left is the median!",
+                    "why": "It's the true middle of the ordered data. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-mode",
+      "name": "Finding the Mode",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "finding-mode-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the most frequent value in a data set",
+            "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which value appears the most?",
+              "body": "Ella asked her classmates their favourite number of pets to own: **2, 3, 1, 2, 4, 2, 3, 1, 2**.\nThe **mode** is the value that appears **most often**. Can you spot it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 2,
+                    "label": "1 (×2)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 4,
+                    "label": "2 (×4)",
+                    "color": "#34d399"
+                  },
+                  {
+                    "value": 2,
+                    "label": "3 (×2)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "4 (×1)",
+                    "color": "#818cf8"
+                  }
+                ],
+                "totalLabel": "Which value appears most?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count each value — the highest count wins!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New data: **3, 1, 4, 3, 2, 3, 1, 3, 5**. What is the mode?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the mode?",
+                "options": [
+                  "3",
+                  "2",
+                  "5",
+                  "0",
+                  "7"
+                ],
+                "correctAnswer": "3",
+                "correctFeedback": "Well done! **3** appears 4 times — more than any other value. ✓",
+                "incorrectFeedback": "Not quite! Count each value. **3** appears 4 times — that's the most, so the mode is **3**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 2,
+                    "label": "1 (×2)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "2 (×1)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 4,
+                    "label": "3 (×4)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "4 (×1)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "5 (×1)",
+                    "color": "#818cf8"
+                  }
+                ],
+                "totalLabel": "Which value appears most?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The mode is the MOST!",
+              "body": "**MO**de is the **MO**st com**MO**n — all three words have **MO** in them! That's your memory trick.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "MOde = MOst comMOn",
+                    "why": "All three words share 'MO' — easy to remember!"
+                  },
+                  {
+                    "text": "Step 1: Tally up each value",
+                    "why": "Count how many times each number appears."
+                  },
+                  {
+                    "text": "Step 2: Find the value with the highest count",
+                    "why": "That's the mode!"
+                  },
+                  {
+                    "text": "The mode is the VALUE, not the count",
+                    "why": "Don't say 'the mode is 4 times' — say 'the mode is 5'. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "finding-mode-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Why the mode (most common value) can be more useful than the mean (total divided by how many) sometimes",
+            "How to handle data with no mode or two modes"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "When the mode beats the mean!",
+              "body": "Ben asked his classmates their shoe size to help the PE teacher order new trainers. Sometimes you don't need the average — you need to know what's **most popular**. That's exactly what the **mode** tells you!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Data: 3, 4, 4, 5, 5, 5, 6, 6, 7",
+                    "why": ""
+                  },
+                  {
+                    "text": "Mode: 5 (appears 3 times)",
+                    "why": "The PE teacher should order more size 5 trainers — that's the most common size!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Mode = most popular!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New data: **2, 3, 3, 4, 4, 4, 5, 5, 6**. What is the mode?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the mode?",
+                "options": [
+                  "4",
+                  "3",
+                  "6",
+                  "1",
+                  "8"
+                ],
+                "correctAnswer": "4",
+                "correctFeedback": "Yes! **4** appears the most (3 times). ✓",
+                "incorrectFeedback": "Not quite! The value **4** appears 3 times — more than any other. That's the mode!"
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "2 (×1)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 2,
+                    "label": "3 (×2)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 3,
+                    "label": "4 (×3)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 2,
+                    "label": "5 (×2)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 1,
+                    "label": "6 (×1)",
+                    "color": "#818cf8"
+                  }
+                ],
+                "totalLabel": "Find the most frequent value"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Mode = Most common!",
+              "body": "Remember: **Mo**de = **Mo**st. Easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mode = the value that appears MOST often",
+                    "why": "Not the count — the actual value!"
+                  },
+                  {
+                    "text": "Use it for: 'most popular', 'most common'",
+                    "why": "Great for shoe sizes, favourites, and categories."
+                  },
+                  {
+                    "text": "Some data has NO mode (all equal) or TWO modes",
+                    "why": "That's fine — just say 'no mode' or list both. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calculating-range",
+      "name": "Calculating the Range",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "calculating-range-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to calculate the range as highest minus lowest",
+            "Why the range is a single number, not two numbers"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How spread out is the data?",
+              "body": "Grace recorded daily temperatures for a week: **8, 14, 11, 6, 15, 9, 12** °C.\nThe **range** tells us how **spread out** the data is. It's the simplest measure there is — just one subtraction!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 5,
+                "max": 16,
+                "points": [
+                  {
+                    "value": 6,
+                    "label": "Lowest: 6",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 15,
+                    "label": "Highest: 15",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 6,
+                    "to": 15,
+                    "label": "Range = ?"
+                  }
+                ],
+                "tickInterval": 2
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Range = highest - lowest",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Range = highest value ____ lowest value",
+                "options": [
+                  "plus",
+                  "minus",
+                  "times",
+                  "divided by"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Range = highest minus lowest. One subtraction gives you one number. ✓",
+                "incorrectFeedback": "Not quite — the range is found by **subtracting** the lowest from the highest!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New data: **10, 16, 13, 5, 17, 7, 14** °C. What is the range?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the range?",
+                "options": [
+                  "12",
+                  "11",
+                  "14",
+                  "9",
+                  "16"
+                ],
+                "correctAnswer": "12",
+                "correctFeedback": "Yes! **17 − 5 = 12**. ✓",
+                "incorrectFeedback": "Not quite! Highest (17) minus lowest (5) = **12**."
+              },
+              "visualProps": {
+                "min": 4,
+                "max": 18,
+                "points": [
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 17,
+                    "label": "17",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 5,
+                    "to": 17,
+                    "label": "Range = ?"
+                  }
+                ],
+                "tickInterval": 2
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "One subtraction — that's it!",
+              "body": "The range is the easiest measure in data handling:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the highest value",
+                    "why": "The biggest number in the data."
+                  },
+                  {
+                    "text": "Find the lowest value",
+                    "why": "The smallest number in the data."
+                  },
+                  {
+                    "text": "Range = highest − lowest",
+                    "why": "Give ONE number, not 'from 6 to 15'. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "calculating-range-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid giving two values instead of one for the range",
+            "Why the range is a subtraction, not a pair of numbers"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Close — but not quite!",
+              "body": "Tom has test scores: 4, 9, 6, 3, 8. They wrote: \"The range is **3 to 9**.\" Is that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Data: 4, 9, 6, 3, 8",
+                    "why": ""
+                  },
+                  {
+                    "text": "\"Range = 3 to 9\"",
+                    "why": "Is this a valid answer?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The range is ONE number, not two!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New data: **5, 12, 7, 2, 10**. What is the range?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the range?",
+                "options": [
+                  "10",
+                  "9",
+                  "12",
+                  "7",
+                  "14"
+                ],
+                "correctAnswer": "10",
+                "correctFeedback": "Yes! **12 − 2 = 10**. One number, not two! ✓",
+                "incorrectFeedback": "Not quite! Range = highest − lowest = 12 − 2 = **10**."
+              },
+              "visualProps": {
+                "min": 1,
+                "max": 13,
+                "points": [
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 12,
+                    "label": "12",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 2,
+                    "to": 12,
+                    "label": "? = Range"
+                  }
+                ],
+                "tickInterval": 2
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Range = one subtraction!",
+              "body": "The range is always a **single number**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Range = highest − lowest",
+                    "why": "Always subtract!"
+                  },
+                  {
+                    "text": "Give ONE number as your answer",
+                    "why": "Not '3 to 9' — just write '6'."
+                  },
+                  {
+                    "text": "It measures how SPREAD OUT the data is",
+                    "why": "Big range = spread out. Small range = clustered. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-bar-charts",
+      "name": "Reading Bar Charts",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reading-bar-charts-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+            "Why checking the scale is important before reading bars"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does the bar chart show?",
+              "body": "Ella collected data on favourite fruits in her class. Look at the bar chart below.\nBefore reading any values, always check the **scale** on the axis!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarChart",
+              "interaction": null,
+              "visualProps": {
+                "bars": [
+                  {
+                    "label": "Apple",
+                    "value": 8
+                  },
+                  {
+                    "label": "Banana",
+                    "value": 5
+                  },
+                  {
+                    "label": "Orange",
+                    "value": 6
+                  },
+                  {
+                    "label": "Grape",
+                    "value": 3
+                  },
+                  {
+                    "label": "Pear",
+                    "value": 4
+                  }
+                ],
+                "scale": 1,
+                "yLabel": "Count"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check the scale, then read carefully",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Using the bar chart, work out **how many more chose Apple than Grape**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many more chose Apple than Grape?",
+                "options": [
+                  "5",
+                  "4",
+                  "7",
+                  "2",
+                  "9"
+                ],
+                "correctAnswer": "5",
+                "correctFeedback": "Spot on! The answer is **5**. ✓",
+                "incorrectFeedback": "Not quite! Read the values carefully from the chart. The answer is **5**."
+              },
+              "visualProps": {
+                "bars": [
+                  {
+                    "label": "Apple",
+                    "value": 8
+                  },
+                  {
+                    "label": "Banana",
+                    "value": 5
+                  },
+                  {
+                    "label": "Orange",
+                    "value": 6
+                  },
+                  {
+                    "label": "Grape",
+                    "value": 3
+                  },
+                  {
+                    "label": "Pear",
+                    "value": 4
+                  }
+                ],
+                "scale": 1,
+                "yLabel": "Count"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Bar chart reading tips!",
+              "body": "Before answering any bar chart question:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Check the SCALE on the axis",
+                    "why": "What does each grid line represent? 1? 2? 5? 10?"
+                  },
+                  {
+                    "text": "Step 2: Read the TOP of each bar against the scale",
+                    "why": "Line it up carefully — don't guess!"
+                  },
+                  {
+                    "text": "Step 3: Answer what the question ASKS",
+                    "why": "'How many more' = subtract. 'How many altogether' = add. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reading-bar-charts-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot when bar charts are misleading because the scale is tricky",
+            "When to use bar charts versus other types of chart"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Don't let the chart trick you!",
+              "body": "Finn is comparing two bar charts of the same data — one starts at 0 and one starts at 50. Bar charts can be **misleading** if you don't check the scale first. Starting at 50 makes the differences look HUGE, but they're actually small.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarChart",
+              "interaction": null,
+              "visualProps": {
+                "bars": [
+                  {
+                    "label": "Team A",
+                    "value": 55
+                  },
+                  {
+                    "label": "Team B",
+                    "value": 60
+                  },
+                  {
+                    "label": "Team C",
+                    "value": 52
+                  },
+                  {
+                    "label": "Team D",
+                    "value": 58
+                  }
+                ],
+                "scale": 5,
+                "yLabel": "Score"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Always check the scale!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "From the chart below, **what is the range of the scores**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the range of the scores?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Well done! The answer is **8**. ✓",
+                "incorrectFeedback": "Not quite! Read the values carefully. The answer is **8**."
+              },
+              "visualProps": {
+                "bars": [
+                  {
+                    "label": "Team A",
+                    "value": 55
+                  },
+                  {
+                    "label": "Team B",
+                    "value": 60
+                  },
+                  {
+                    "label": "Team C",
+                    "value": 52
+                  },
+                  {
+                    "label": "Team D",
+                    "value": 58
+                  }
+                ],
+                "scale": 5,
+                "yLabel": "Score"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Bar chart survival guide!",
+              "body": "Remember these tips every time you see a bar chart:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check the axis labels and scale FIRST",
+                    "why": "Know what each grid line is worth."
+                  },
+                  {
+                    "text": "Does the axis start at 0?",
+                    "why": "If not, be extra careful — the bars might be misleading."
+                  },
+                  {
+                    "text": "Read the NUMBER, don't estimate by eye",
+                    "why": "Trust the scale, not the bar height. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-line-graphs",
+      "name": "Reading Line Graphs",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reading-line-graphs-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to read line graphs that show change over time",
+            "How to read values and spot trends on a line graph"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the pattern?",
+              "body": "Sophie tracked the temperature outside school each hour. The line graph shows:\n**9am=8°C, 10am=10°C, 11am=13°C, 12pm=15°C, 1pm=14°C, 2pm=12°C**\nLine graphs are brilliant for showing how things **change over time**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LineGraph",
+              "interaction": null,
+              "visualProps": {
+                "data": [
+                  {
+                    "label": "9am",
+                    "value": 8
+                  },
+                  {
+                    "label": "10am",
+                    "value": 10
+                  },
+                  {
+                    "label": "11am",
+                    "value": 13
+                  },
+                  {
+                    "label": "12pm",
+                    "value": 15
+                  },
+                  {
+                    "label": "1pm",
+                    "value": 14
+                  },
+                  {
+                    "label": "2pm",
+                    "value": 12
+                  }
+                ],
+                "highlight": 3,
+                "showGrid": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Reading line graphs: values and trends",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "From the line graph, **what was the range of temperatures**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LineGraph",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What was the range of temperatures?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Yes! The answer is **7**. ✓",
+                "incorrectFeedback": "Not quite! Check the data carefully. The answer is **7**."
+              },
+              "visualProps": {
+                "data": [
+                  {
+                    "label": "9am",
+                    "value": 8
+                  },
+                  {
+                    "label": "10am",
+                    "value": 10
+                  },
+                  {
+                    "label": "11am",
+                    "value": 13
+                  },
+                  {
+                    "label": "12pm",
+                    "value": 15
+                  },
+                  {
+                    "label": "1pm",
+                    "value": 14
+                  },
+                  {
+                    "label": "2pm",
+                    "value": 12
+                  }
+                ],
+                "showGrid": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Line graph reading tips!",
+              "body": "Line graphs show **change over time**. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Line going UP = value increasing",
+                    "why": "The steeper the line, the faster the increase."
+                  },
+                  {
+                    "text": "Line going DOWN = value decreasing",
+                    "why": "A steep drop means a rapid decrease."
+                  },
+                  {
+                    "text": "Flat line = no change",
+                    "why": "The value stayed the same between those points. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reading-line-graphs-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot the steepest section of a line graph",
+            "Why the steepest part shows the biggest change"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Where's the steepest bit?",
+              "body": "Charlie is watching how water temperature changes when heated. The **steepest part** of a line graph shows where the **biggest change** happened. Can you spot it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LineGraph",
+              "interaction": null,
+              "visualProps": {
+                "data": [
+                  {
+                    "label": "0min",
+                    "value": 20
+                  },
+                  {
+                    "label": "2min",
+                    "value": 25
+                  },
+                  {
+                    "label": "4min",
+                    "value": 35
+                  },
+                  {
+                    "label": "6min",
+                    "value": 42
+                  },
+                  {
+                    "label": "8min",
+                    "value": 45
+                  }
+                ],
+                "showGrid": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Steep = big change!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "From the line graph, **what was the total temperature rise**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LineGraph",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What was the total temperature rise?",
+                "options": [
+                  "25",
+                  "24",
+                  "27",
+                  "22",
+                  "29"
+                ],
+                "correctAnswer": "25",
+                "correctFeedback": "Well done! The answer is **25**. ✓",
+                "incorrectFeedback": "Not quite! Check the data carefully. The answer is **25**."
+              },
+              "visualProps": {
+                "data": [
+                  {
+                    "label": "0min",
+                    "value": 20
+                  },
+                  {
+                    "label": "2min",
+                    "value": 25
+                  },
+                  {
+                    "label": "4min",
+                    "value": 35
+                  },
+                  {
+                    "label": "6min",
+                    "value": 42
+                  },
+                  {
+                    "label": "8min",
+                    "value": 45
+                  }
+                ],
+                "showGrid": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reading line graphs like a pro!",
+              "body": "Line graphs are all about **change over time**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Steepest section = biggest change",
+                    "why": "Look for the part where the line rises or falls fastest."
+                  },
+                  {
+                    "text": "Flattest section = smallest change",
+                    "why": "The line barely moves — things stayed roughly the same."
+                  },
+                  {
+                    "text": "To find total change: last value − first value",
+                    "why": "Subtract the start from the end. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-pie-charts",
+      "name": "Reading Pie Charts",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reading-pie-charts-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate values from a pie chart using fractions and degrees",
+            "How to find the angle for a section when you know the fraction"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ava",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do the slices mean?",
+              "body": "Ava has a pie chart showing how 60 pupils travel to school. A pie chart shows **fractions of the whole**. The full circle = **360°** = **all 60 people**. Each slice is a fraction of the total.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PieChart",
+              "interaction": null,
+              "visualProps": {
+                "sections": [
+                  {
+                    "label": "Walk",
+                    "fraction": "1/2",
+                    "angle": 180,
+                    "count": 30
+                  },
+                  {
+                    "label": "Car",
+                    "fraction": "1/4",
+                    "angle": 90,
+                    "count": 15
+                  },
+                  {
+                    "label": "Bus",
+                    "fraction": "1/6",
+                    "angle": 60,
+                    "count": 10
+                  },
+                  {
+                    "label": "Cycle",
+                    "fraction": "1/12",
+                    "angle": 30,
+                    "count": 5
+                  }
+                ],
+                "total": 60
+              }
+            },
+            {
+              "type": "teach",
+              "title": "From fraction to number of people",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A new pie chart shows **48** people. How many chose **Car**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PieChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many chose Car?",
+                "options": [
+                  "16",
+                  "15",
+                  "18",
+                  "13",
+                  "20"
+                ],
+                "correctAnswer": "16",
+                "correctFeedback": "Yes! **16** people chose Car. ✓",
+                "incorrectFeedback": "Not quite! Car = 1/3 of 48 = **16**."
+              },
+              "visualProps": {
+                "sections": [
+                  {
+                    "label": "Walk",
+                    "fraction": "1/4",
+                    "angle": 90,
+                    "count": 12
+                  },
+                  {
+                    "label": "Car",
+                    "fraction": "1/3",
+                    "angle": 120,
+                    "count": 16
+                  },
+                  {
+                    "label": "Bus",
+                    "fraction": "1/6",
+                    "angle": 60,
+                    "count": 8
+                  },
+                  {
+                    "label": "Cycle",
+                    "fraction": "1/4",
+                    "angle": 90,
+                    "count": 12
+                  }
+                ],
+                "total": 48
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Pie chart reading recipe!",
+              "body": "Pie charts show **fractions of a total**. Here's how to read them:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the TOTAL (how many people/things altogether)",
+                    "why": "The whole pie = the total."
+                  },
+                  {
+                    "text": "Step 2: Read the FRACTION (or angle) for each slice",
+                    "why": "360° = the whole. 180° = half. 90° = quarter."
+                  },
+                  {
+                    "text": "Step 3: Calculate fraction × total",
+                    "why": "That gives you the actual number for that slice. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reading-pie-charts-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid confusing the angle with the number of people",
+            "Why 90° does not always mean 90 people"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Tom sees a 90° slice in a pie chart of 80 people. They wrote: \"The number of people = **90**.\" But the total is only 80! What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PieChart",
+              "interaction": null,
+              "visualProps": {
+                "sections": [
+                  {
+                    "label": "90°",
+                    "angle": 90,
+                    "count": "90°",
+                    "fraction": "1/4"
+                  },
+                  {
+                    "label": "Rest",
+                    "angle": 270,
+                    "count": "",
+                    "fraction": ""
+                  }
+                ],
+                "total": 80
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Degrees are not people!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To find the number of people, convert the angle to a ____ first",
+                "options": [
+                  "percentage",
+                  "fraction",
+                  "decimal",
+                  "degree"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Convert the angle to a fraction (angle ÷ 360), then multiply by the total. ✓",
+                "incorrectFeedback": "Not quite — convert the angle to a **fraction** (angle ÷ 360), then multiply by the total!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A 120° slice in a pie chart of **60** people. How many people does it represent?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "PieChart",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many people does the 120° slice represent?",
+                "options": [
+                  "20",
+                  "19",
+                  "22",
+                  "17",
+                  "24"
+                ],
+                "correctAnswer": "20",
+                "correctFeedback": "Yes! 1/3 of 60 = **20** people. ✓",
+                "incorrectFeedback": "Not quite! 120° ÷ 360° = 1/3. Then 1/3 × 60 = **20**."
+              },
+              "visualProps": {
+                "sections": [
+                  {
+                    "label": "120°",
+                    "angle": 120,
+                    "count": "120°",
+                    "fraction": "1/3"
+                  },
+                  {
+                    "label": "Rest",
+                    "angle": 240,
+                    "count": "",
+                    "fraction": ""
+                  }
+                ],
+                "total": 60
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Degrees are not counts!",
+              "body": "The most common pie chart mistake: confusing the **angle** with the **number of people**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the angle (°)",
+                    "why": "This is NOT the answer!"
+                  },
+                  {
+                    "text": "Step 2: Convert to a fraction (angle ÷ 360)",
+                    "why": "90° = 1/4, 180° = 1/2, 120° = 1/3, etc."
+                  },
+                  {
+                    "text": "Step 3: Multiply fraction × total",
+                    "why": "NOW you have the actual number of people. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-tables",
+      "name": "Reading Two-Way Tables",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reading-tables-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to read values from a two-way table",
+            "How to find totals and missing values"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tables organise data in rows and columns!",
+              "body": "Lily has a table showing children's pet preferences by gender. Two-way tables let you compare data across **two categories** at once!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TwoWayTable",
+              "interaction": null,
+              "visualProps": {
+                "tableDesc": "Boys: Cat=8, Dog=12, Fish=5. Girls: Cat=10, Dog=7, Fish=3.",
+                "showTotals": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Reading across and down",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use the table to answer: **how many children chose fish altogether**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TwoWayTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many children chose fish altogether?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Yes! Boys fish (4) + Girls fish (5) = 9 = **9**. ✓",
+                "incorrectFeedback": "Not quite! Boys fish (4) + Girls fish (5) = 9 = **9**."
+              },
+              "visualProps": {
+                "tableDesc": "Boys: Cat=6, Dog=14, Fish=4. Girls: Cat=9, Dog=8, Fish=5.",
+                "showTotals": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two-way table tips!",
+              "body": "Two-way tables are simple once you know how to navigate them:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the RIGHT row and column",
+                    "why": "Use the labels to guide you."
+                  },
+                  {
+                    "text": "Step 2: For totals, add a whole row or column",
+                    "why": "Add all values in that row or column."
+                  },
+                  {
+                    "text": "Step 3: For missing values, use the total to work backwards",
+                    "why": "Total − known values = missing value. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reading-tables-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to find a missing value in a two-way table",
+            "When to add and when to subtract"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Find the missing value!",
+              "body": "Finn has a table where one value is missing. The row total is **25**. Can you find the **?** value?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TwoWayTable",
+              "interaction": null,
+              "visualProps": {
+                "tableDesc": "Boys: Cat=8, Dog=10, Fish=?. Girls: Cat=6, Dog=5, Fish=4.",
+                "showTotals": true,
+                "rowTotals": {
+                  "Boys": 25
+                }
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the total to find what's missing",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Total, then add known, then subtract. ✓",
+                "incorrectFeedback": "Not quite — first find the total, then add the known values, then subtract to find the missing one."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The row total is **28**. Find the **?** value in the table.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "TwoWayTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing value?",
+                "options": [
+                  "11",
+                  "10",
+                  "13",
+                  "8",
+                  "15"
+                ],
+                "correctAnswer": "11",
+                "correctFeedback": "Yes! **28 − 17 = 11**. ✓",
+                "incorrectFeedback": "Not quite! 28 − 6 − 11 = **11**."
+              },
+              "visualProps": {
+                "tableDesc": "Boys: Walk=6, Bus=11, Car=?. Girls: Walk=9, Bus=5, Car=3.",
+                "showTotals": true,
+                "rowTotals": {
+                  "Boys": 28
+                }
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Missing values in tables!",
+              "body": "When a table has a gap, use the **totals** to work backwards:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the total for that row or column",
+                    "why": "This is usually given in the table."
+                  },
+                  {
+                    "text": "Add up the values you DO know",
+                    "why": "These are the filled-in cells."
+                  },
+                  {
+                    "text": "Missing = Total − known values",
+                    "why": "Simple subtraction gives you the answer. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing-from-mean",
+      "name": "Finding a Missing Number When the Mean is Given",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "missing-from-mean-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to work backwards from the mean (total divided by how many) to find a missing value",
+            "Why you multiply the mean by the count to find the total"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Working backwards from the mean!",
+              "body": "Sophie got scores of 7, 9, and 8 in three tests. Her mean across all four tests is 8. You know the **mean** and all the values except one. Can you find the missing number?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 7,
+                    "label": "7",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 9,
+                    "label": "9",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 8,
+                    "label": "8",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 8,
+                    "label": "?",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "Mean = 8 (4 values)"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Mean × count = total!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To find the total from the mean, you ____ the mean by the count",
+                "options": [
+                  "divide",
+                  "multiply",
+                  "subtract",
+                  "add"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Total = mean × count. Then subtract the known values to find the missing one. ✓",
+                "incorrectFeedback": "Not quite — you **multiply** the mean by the count to find the total!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The mean of 4 values is **7**. The known values are **6, 10, 5**. What is the missing value?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing value?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Yes! **28 − 21 = 7**. ✓",
+                "incorrectFeedback": "Not quite! Total = 7 × 4 = 28. Then 28 − 21 = **7**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Total needed: 7 × 4 = 28",
+                    "why": ""
+                  },
+                  {
+                    "text": "Known sum: 21",
+                    "why": ""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The backwards mean recipe!",
+              "body": "When you know the mean and need to find a missing value:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Total = Mean × Count",
+                    "why": "This tells you what all the values should add up to."
+                  },
+                  {
+                    "text": "Step 2: Add up the known values",
+                    "why": "Find the sum of the numbers you already have."
+                  },
+                  {
+                    "text": "Step 3: Missing = Total − known sum",
+                    "why": "The difference is the missing value. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "missing-from-mean-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid dividing when you should multiply",
+            "Why the first step is always Mean x Count"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something doesn't add up!",
+              "body": "Charlie knows the mean of 5 values is 8, and 4 values add to 34. They wrote: \"8 ÷ 5 = 1.6\" and got stuck. What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mean = 8, Count = 5",
+                    "why": ""
+                  },
+                  {
+                    "text": "Charlie's working: 8 ÷ 5 = 1.6",
+                    "why": "This doesn't look right!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Multiply, don't divide!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The mean of 5 values is **7**. The known values add to **29**. What's the missing value?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the missing value?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Yes! **35 − 29 = 6**. ✓",
+                "incorrectFeedback": "Not quite! Total = 7 × 5 = 35. Then 35 − 29 = **6**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Total: 7 × 5 = 35",
+                    "why": "Multiply, not divide!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember: MULTIPLY to find the total!",
+              "body": "The first step is always **Mean × Count = Total**. Never divide!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mean × Count = Total",
+                    "why": "MULTIPLY — this undoes the division in the mean formula."
+                  },
+                  {
+                    "text": "Total − known sum = missing value",
+                    "why": "Subtract what you already know."
+                  },
+                  {
+                    "text": "Check: does the mean work with your answer?",
+                    "why": "Add all values, divide by count — you should get the given mean. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "even-median",
+      "name": "Median with an Even Number of Values",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "even-median-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the median (the middle value) when there is an even number of values",
+            "Why you must average the two middle values"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What if there's no single middle value?",
+              "body": "Holly has six test scores: **4, 8, 3, 7, 5, 9** marks. That's **6** values — an **even number**. There's no single middle value, so what do we do?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ordered: 3, 4, 5, 7, 8, 9",
+                    "why": "6 values — no single middle!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Average the two middle values!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Order, find two middles, then average them. ✓",
+                "incorrectFeedback": "Not quite — first order, then find the two middle values, then average them by adding and dividing by 2."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New values in order: **2, 4, 6, 8, 10, 12**. The two middle values are **6** and **8**. What is the median?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the median?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Yes! (6 + 8) ÷ 2 = **7**. ✓",
+                "incorrectFeedback": "Not quite! Average the two middles: (6 + 8) ÷ 2 = **7**."
+              },
+              "visualProps": {
+                "min": 1,
+                "max": 13,
+                "points": [
+                  {
+                    "value": 6,
+                    "label": "6",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 8,
+                    "label": "8",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 7,
+                    "label": "Median?",
+                    "color": "#fbbf24"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 6,
+                    "to": 8,
+                    "label": "Average these"
+                  }
+                ],
+                "tickInterval": 1
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Even count? Average the middle two!",
+              "body": "When the number of values is **even**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Order the values",
+                    "why": "Smallest to largest — always!"
+                  },
+                  {
+                    "text": "Step 2: Find the two middle values",
+                    "why": "They're the ones either side of the centre."
+                  },
+                  {
+                    "text": "Step 3: Add them and divide by 2",
+                    "why": "Their average is the median. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "even-median-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid picking just one middle value when the count is even",
+            "Why averaging two values gives a more accurate median (middle value)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Close — but not quite right!",
+              "body": "Tom has four values: 3, 6, 9, 14. They said the median is **6**. But with an even number of values, you can't just pick one middle number...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ordered: 3, 6, 9, 14",
+                    "why": "4 values — even number!"
+                  },
+                  {
+                    "text": "Tom's answer: 6",
+                    "why": "Is this correct?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You must average BOTH middle values!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New values: **4, 7, 11, 16**. The two middle values are 7 and 11. What is the median?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the median?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Yes! (7 + 11) ÷ 2 = **9**. ✓",
+                "incorrectFeedback": "Not quite! Average both middles: (7 + 11) ÷ 2 = **9**."
+              },
+              "visualProps": {
+                "min": 3,
+                "max": 17,
+                "points": [
+                  {
+                    "value": 7,
+                    "label": "7",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 11,
+                    "label": "11",
+                    "color": "#38bdf8"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 7,
+                    "to": 11,
+                    "label": "Average"
+                  }
+                ],
+                "tickInterval": 2
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Even count = average the two middles!",
+              "body": "This is a classic exam mistake. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Odd count → one middle value (easy!)",
+                    "why": "Just pick the one in the centre."
+                  },
+                  {
+                    "text": "Even count → TWO middle values",
+                    "why": "Don't just pick one — you need both!"
+                  },
+                  {
+                    "text": "Add the two middles and divide by 2",
+                    "why": "That's the median. The answer might be a decimal! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combined-averages",
+      "name": "Questions Using Mode AND Range Together",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "combined-averages-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to handle questions that test two different measures at once",
+            "When to use mode (most common value) and when to use range (highest minus lowest)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two measures tell you more than one!",
+              "body": "Grace has two sets of test scores and needs to compare consistency.\n**Set A:** 6, 8, 6, 9, 6\n**Set B:** 5, 10, 3, 9, 8\nThe **mode** tells you the most common value. The **range** tells you how spread out the data is. Together, they paint a full picture!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Set A — Mode: 6, Range: 3",
+                    "why": ""
+                  },
+                  {
+                    "text": "Set B — Mode: no mode, Range: 7",
+                    "why": ""
+                  },
+                  {
+                    "text": "Set A is more consistent (smaller range) and the most common score is 6",
+                    "why": "Mode + range together tell the full story!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Mode for 'most common', range for 'spread'",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "New data set: **4, 7, 2, 9, 3**. What is the range?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the range?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Yes! 9 − 2 = **7**. ✓",
+                "incorrectFeedback": "Not quite! Highest (9) − lowest (2) = **7**."
+              },
+              "visualProps": {
+                "min": 1,
+                "max": 10,
+                "points": [
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 9,
+                    "label": "9",
+                    "color": "#f87171"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 2,
+                    "to": 9,
+                    "label": "Range = ?"
+                  }
+                ],
+                "tickInterval": 1
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comparing data sets!",
+              "body": "When exam questions ask you to **compare** data sets, use multiple measures:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mode: which value appears most often?",
+                    "why": "Tells you the most common or most popular result."
+                  },
+                  {
+                    "text": "Range: highest − lowest",
+                    "why": "Tells you how spread out or consistent the data is."
+                  },
+                  {
+                    "text": "Compare: 'Set A is more consistent because...'",
+                    "why": "Always EXPLAIN using the numbers. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "combined-averages-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to decide which average to use in different situations",
+            "Why some averages are better than others for certain data"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which average should you use?",
+              "body": "Tom wants to know the most popular shoe size to order for the school shop. There are three main averages: **mean**, **median**, and **mode** (plus the **range** for spread). Which one is best here?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mean: add all, divide by count",
+                    "why": "Best for evenly spread data."
+                  },
+                  {
+                    "text": "Median: the middle value (ordered)",
+                    "why": "Best when there are extreme values."
+                  },
+                  {
+                    "text": "Mode: the most common value",
+                    "why": "Best for 'most popular'."
+                  },
+                  {
+                    "text": "Range: highest − lowest",
+                    "why": "Shows how spread out or consistent data is."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the right tool for the job!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Tom wants to know the most popular shoe size to order for the school shop. Data: **3, 4, 5, 5, 5, 6, 6, 7**. Calculate the **mode**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the mode?",
+                "options": [
+                  "5",
+                  "4",
+                  "7",
+                  "2",
+                  "9"
+                ],
+                "correctAnswer": "5",
+                "correctFeedback": "Yes! The mode is **5**. ✓",
+                "incorrectFeedback": "Not quite! The mode is **5**. Try calculating it again step by step."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Data: 3, 4, 5, 5, 5, 6, 6, 7",
+                    "why": "Find the mode."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The averages song!",
+              "body": "Here's a rhyme to help you remember all four:\n\n*Hey diddle diddle, the **Median's** the middle,*\n*You add and divide for the **Mean**.*\n*The **Mode** is the one that appears the most,*\n*And the **Range** is the difference between!*",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mean: add all values, divide by count",
+                    "why": "'You add and divide for the Mean.'"
+                  },
+                  {
+                    "text": "Median: the middle value (order first!)",
+                    "why": "'The Median's the middle.'"
+                  },
+                  {
+                    "text": "Mode: the most common value",
+                    "why": "'The Mode is the one that appears the most.'"
+                  },
+                  {
+                    "text": "Range: highest minus lowest",
+                    "why": "'The Range is the difference between!' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

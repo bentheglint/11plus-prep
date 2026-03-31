@@ -1,0 +1,1247 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "sharedLetter",
+    "displayName": "Shared Letter",
+    "extractedAt": "2026-03-30T13:51:13.874Z",
+    "subConceptCount": 8,
+    "lessonCount": 10,
+    "screenCount": 40,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "vowel-shared",
+      "name": "When the Shared Letter Is a Vowel",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "vowel-shared-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Spot when the hidden letter is a vowel (A, E, I, O, U)",
+            "Why vowels are sneaky — they fit lots of words, so you need to test carefully"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Could a vowel be hiding in there?",
+              "body": "Daisy is working on shared-letter puzzles after school.\n\nDid you know? Each pair is really **two words joined together** — the missing letter **ends** the first word and **starts** the second. So TE(?)RM becomes TEA + ARM when the letter is A.\n\nSometimes the shared letter is a **vowel** — A, E, I, O or U. Let's find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "TE(?)RM",
+                  "PE(?)ND"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Only 5 to try!",
+              "body": "Look at the pairs **TE(?)RM and PE(?)ND**. Here's the great thing about vowels — there are only **5 to try**: A, E, I, O, U. That's a short list you can whizz through!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Restrictive word: TE(?)RM",
+                    "why": "Only A makes real words for both sides: TEA + ARM. TEE+ERM? TEI+IRM? TEO+ORM? None work!"
+                  },
+                  {
+                    "text": "Try each vowel: A? E? I? O? U?",
+                    "why": "Only 5 options — try them all!"
+                  },
+                  {
+                    "text": "Answer: A → TEA + ARM, PEA + AND",
+                    "why": "The only vowel that makes real words for ALL pairs ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — which vowel fits?",
+              "body": "Which vowel completes ALL the word pairs?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which vowel completes ALL the word pairs?",
+                "options": [
+                  "A",
+                  "E",
+                  "I",
+                  "O",
+                  "U"
+                ],
+                "correctAnswer": "A",
+                "correctFeedback": "Brilliant! The letter A completes both pairs: PA + AGE, and SPA + ACE. A is hiding in both — test every vowel to be sure! ✓",
+                "incorrectFeedback": "Not quite! The answer is A. The letter A completes both pairs: PA + AGE, and SPA + ACE. A is hiding in both — test every vowel to be sure! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "P(?)GE",
+                  "SP(?)CE"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've got vowels sorted!",
+              "body": "When you think the answer might be a vowel, here's your game plan:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. There are only 5 vowels: A, E, I, O, U",
+                    "why": "That's a short list to check!"
+                  },
+                  {
+                    "text": "2. Try each one in the restrictive word first",
+                    "why": "Which vowel makes a real word?"
+                  },
+                  {
+                    "text": "3. Test your answer on ALL pairs",
+                    "why": "The vowel must work everywhere, not just one pair ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consonant-shared",
+      "name": "When the Shared Letter Is a Consonant",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "consonant-shared-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Track down a shared consonant hiding between word pairs",
+            "Why the restrictive-word trick is your best friend with consonants"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Hunt the hidden consonant!",
+              "body": "Evie is working through her VR practice book.\n\nRemember: each pair is **two words joined together**. The missing letter **ends** the first word and **starts** the second.\n\nMost shared-letter answers are **consonants** — that's 21 letters! But don't worry, the restrictive-word trick means you only need to test a few.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CU(?)AP",
+                  "FA(?)ALL"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The smart shortcut",
+              "body": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 options.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Restrictive word: CU(?)AP",
+                    "why": "CUT+TAP works. CUP+PAP? CUB+BAP? Only T gives clean common words for both pairs."
+                  },
+                  {
+                    "text": "Candidate: T",
+                    "why": "CUT + TAP — both real words!"
+                  },
+                  {
+                    "text": "Test on pair 2: FAT + TALL ✓",
+                    "why": "Works for ALL pairs — that's the answer!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — find the consonant!",
+              "body": "Which consonant completes ALL the word pairs?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which consonant completes ALL the word pairs?",
+                "options": [
+                  "D",
+                  "L",
+                  "N",
+                  "R",
+                  "T"
+                ],
+                "correctAnswer": "T",
+                "correctFeedback": "Well done! The letter T completes both pairs: HOT + TOOL, and WIT + TUNE. T is a very common shared consonant! ✓",
+                "incorrectFeedback": "Not quite! The answer is T. The letter T completes both pairs: HOT + TOOL, and WIT + TUNE. T is a very common shared consonant! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "HO(?)OOL",
+                  "WI(?)UNE"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Consonants — no sweat!",
+              "body": "When the shared letter is a consonant, here's your plan:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Don't panic — you won't need to try all 21 consonants",
+                    "why": "The restrictive word limits your options"
+                  },
+                  {
+                    "text": "2. Find the word pair with fewest possible completions",
+                    "why": "Which pair only works with 2-3 letters?"
+                  },
+                  {
+                    "text": "3. Test each candidate on ALL pairs",
+                    "why": "One letter must work everywhere ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-word-pairs",
+      "name": "Two Word Pairs — The Standard Format",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "two-word-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Solve the most common shared-letter format quickly and confidently",
+            "Find the one letter that completes BOTH word pairs"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Maisie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One letter, two word pairs!",
+              "body": "Maisie is warming up with standard shared-letter questions.\n\nThis is the format you'll see most often in the test: find **one letter** that completes **both** pairs of words. The letter ends one word and starts the next. Let's crack it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CA(?)EN",
+                  "BU(?)ANK"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The 3-step method",
+              "body": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Start restrictive, find a candidate, then verify. ✓",
+                "incorrectFeedback": "Not quite — always start with the restrictive pair first!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Pick the restrictive pair: BU(?)ANK",
+                    "why": "BUS+SANK? BUT+TANK? BUN+NANK? Only T and S make clean words, but CAS isn't a word — only T works for both pairs."
+                  },
+                  {
+                    "text": "2. Candidate letter: T → CAT + TEN",
+                    "why": "This makes real words!"
+                  },
+                  {
+                    "text": "3. Test on pair 2: BUT + TANK ✓",
+                    "why": "Both pairs work — done!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter completes **both** word pairs?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes BOTH word pairs?",
+                "options": [
+                  "D",
+                  "L",
+                  "N",
+                  "R",
+                  "T"
+                ],
+                "correctAnswer": "N",
+                "correctFeedback": "Brilliant! The letter N completes both pairs: PAN + NICE, and WIN + NEST. Both are clean, common words! ✓",
+                "incorrectFeedback": "Not quite! The answer is N. The letter N completes both pairs: PAN + NICE, and WIN + NEST. Both are clean, common words! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "PA(?)ICE",
+                  "WI(?)EST"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've nailed the method!",
+              "body": "For standard 2-pair questions, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Pick the more restrictive pair",
+                    "why": "Which pair has fewer possible letters?"
+                  },
+                  {
+                    "text": "2. List letters that work for that pair",
+                    "why": "Usually only 2-3 letters make real words"
+                  },
+                  {
+                    "text": "3. Test each candidate on the other pair",
+                    "why": "The shared letter must work for BOTH ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-word-pairs-practice",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Build speed solving 2-pair shared-letter questions",
+            "Get confident with the restrictive-word method so it becomes second nature"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two pairs — spot the link!",
+              "body": "Evie is doing extra practice before her test.\n\nYou know the drill — one letter goes in both gaps. It **ends** the first word and **starts** the second word in each pair. Can you find it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "HO(?)EN",
+                  "STO(?)ARK"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Start with the trickier pair",
+              "body": "For **HO(?)EN and STO(?)ARK**, the pair with fewer possible letters is your best starting point. Solve that one first, then check the other.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Restrictive pair: HO(?)EN",
+                    "why": "HOP+PEN and HOT+TEN both work for pair 1, but STOT+TARK? Not real! Only P works for both."
+                  },
+                  {
+                    "text": "Shared letter: P",
+                    "why": "HOP + PEN"
+                  },
+                  {
+                    "text": "Verify pair 2: STOP + PARK ✓",
+                    "why": "Confirmed!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter completes **both** word pairs?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes BOTH word pairs?",
+                "options": [
+                  "D",
+                  "L",
+                  "N",
+                  "P",
+                  "T"
+                ],
+                "correctAnswer": "P",
+                "correctFeedback": "Brilliant! The letter P completes both pairs: CUP + POOL, and SHOP + PALE. Both sides make common words! ✓",
+                "incorrectFeedback": "Not quite! The answer is P. The letter P completes both pairs: CUP + POOL, and SHOP + PALE. Both sides make common words! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CU(?)OOL",
+                  "SHO(?)ALE"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're getting fast at this!",
+              "body": "Quick checklist for 2-pair questions:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Which pair limits the options most?",
+                    "why": "Start there — fewer letters to test"
+                  },
+                  {
+                    "text": "Does the letter make REAL words both sides?",
+                    "why": "Both the ending and starting word must exist"
+                  },
+                  {
+                    "text": "Does it work for BOTH pairs?",
+                    "why": "A letter that only works for one pair is wrong ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-word-pairs",
+      "name": "Three Word Pairs — Harder Questions",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "three-word-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Tackle 3-word shared-letter questions with confidence",
+            "Discover why more words actually makes things EASIER, not harder"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Three words — actually easier!",
+              "body": "Daisy is attempting the harder shared-letter questions.\n\nDid you know? Three words might look scarier, but they're actually your **friend**! The **same letter** goes at the start of all three words — and more words means **more chances to eliminate** wrong letters.\n\nLet's find the one letter that makes ALL of them real words!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared",
+                "words": [
+                  "_AIN",
+                  "_ULE",
+                  "_OAD"
+                ],
+                "gapPosition": 0,
+                "showFilled": false,
+                "label": "One letter completes all three words:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "More words = faster elimination",
+              "body": "Here's why three words is actually brilliant: for **_AIN, _ULE, _OAD**, a wrong letter will usually fail on at least one word. That makes ruling out wrong answers much quicker!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Restrictive word: _ULE",
+                    "why": "Only MULE, RULE and YULE are common words — just 3 options to test!"
+                  },
+                  {
+                    "text": "Try R: RAIN, RULE, ROAD",
+                    "why": "All three are real words!"
+                  },
+                  {
+                    "text": "R works for ALL three ✓",
+                    "why": "No other letter manages all three"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — all three words!",
+              "body": "Which letter completes **all three** words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL THREE words?",
+                "options": [
+                  "L",
+                  "M",
+                  "N",
+                  "P",
+                  "T"
+                ],
+                "correctAnswer": "M",
+                "correctFeedback": "Brilliant! The letter M completes all three: MOON, MAIL, MAST. L gives LOON, LAIL — LAIL isn't a word! ✓",
+                "incorrectFeedback": "Not quite! The answer is M. The letter M completes all three: MOON, MAIL, MAST. L gives LOON, LAIL — LAIL isn't a word! ✓"
+              },
+              "visualProps": {
+                "mode": "shared",
+                "words": [
+                  "_OON",
+                  "_AIL",
+                  "_AST"
+                ],
+                "gapPosition": 0,
+                "showFilled": false,
+                "label": "One letter completes all three words:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three words — your secret advantage!",
+              "body": "Next time you see 3 words, smile — you've got this:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "More words = more elimination power",
+                    "why": "Wrong letters fail faster with 3 words than 2"
+                  },
+                  {
+                    "text": "Still use the restrictive word first",
+                    "why": "Start with the word that has fewest possible letters"
+                  },
+                  {
+                    "text": "Test your answer on ALL words before moving on",
+                    "why": "Don't skip the check — it catches mistakes ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restrictive-word-strategy",
+      "name": "Spotting the Restrictive Word",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "restrictive-word-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Quickly spot which word pair narrows down your options the most",
+            "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The one that narrows it down",
+              "body": "Daisy is learning to spot the restrictive word quickly.\n\nRemember: each pair is **two words joined**. The missing letter **ends** the first and **starts** the second.\n\nHere's the time-saving trick top scorers use: find the **restrictive word** — the pair where only a few letters could possibly work. It's like having a shortcut built right into the question!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "STA(?)ING",
+                  "FEA(?)OOF"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spot the clues!",
+              "body": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The ____ word is the pair where fewest letters make real words on both sides",
+                "options": [
+                  "restrictive",
+                  "longest",
+                  "easiest",
+                  "random"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The restrictive word limits your options — always start there. ✓",
+                "incorrectFeedback": "Not quite — the restrictive word is the pair where fewest letters work!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Restrictive pair: FEA(?)OOF",
+                    "why": "How many letters make a word ending in OOF? ROOF, HOOF, POOF, WOOF — very few! This is the restrictive pair."
+                  },
+                  {
+                    "text": "Only R makes real words for this pair",
+                    "why": "STAR + RING"
+                  },
+                  {
+                    "text": "Verify: FEAR + ROOF ✓",
+                    "why": "Confirmed on the other pair!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the restrictive pair, then solve!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL the word pairs?",
+                "options": [
+                  "D",
+                  "L",
+                  "N",
+                  "P",
+                  "R"
+                ],
+                "correctAnswer": "P",
+                "correctFeedback": "Brilliant! The letter P completes both pairs: SHEEP + PAIR, and DEEP + POOL. The longer fragments make it easier to spot! ✓",
+                "incorrectFeedback": "Not quite! The answer is P. The letter P completes both pairs: SHEEP + PAIR, and DEEP + POOL. The longer fragments make it easier to spot! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "SHEE(?)AIR",
+                  "DEE(?)OOL"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your restrictive-word radar is on!",
+              "body": "Look for these clues to find the restrictive word quickly:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Unusual letter patterns (DES_, CLU_, WIS_)",
+                    "why": "These have very few possible completions"
+                  },
+                  {
+                    "text": "Rare starting/ending combos (_OOF, _IRD)",
+                    "why": "Fewer words start or end this way"
+                  },
+                  {
+                    "text": "Longer fragments leave fewer gaps",
+                    "why": "CRAS_ has fewer options than CA_ ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-letter-positions",
+      "name": "Where Does the Letter Sit?",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "letter-positions-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "See how fragment length changes the puzzle — and use it to your advantage",
+            "Discover why longer fragments actually make things easier for you"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Short gap or long gap?",
+              "body": "Evie is exploring how letter positions change the puzzle.\n\nHere's something really useful: sometimes the letter sits between short fragments like CA(?)EN. Sometimes it's between longer ones like STOR(?)ICE. The longer the fragments, the **fewer** letters can work — which makes your job easier!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CA(?)EN",
+                  "BU(?)ANK"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Longer = easier!",
+              "body": "In **CA(?)EN and BU(?)ANK**, longer fragments make the puzzle **easier** — fewer letters can possibly fit. Shorter fragments give more options, so check both sides.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check the restrictive pair: CA(?)EN",
+                    "why": "Two letters before and two after — the letter sits in the middle. CA_ makes many words (CAB, CAD, CAR, CAT...) so check the other side too."
+                  },
+                  {
+                    "text": "Letter T: CAT + TEN",
+                    "why": "Real words on both sides!"
+                  },
+                  {
+                    "text": "Verify: BUT + TANK ✓",
+                    "why": "Works everywhere!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which letter fills the gap?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL the word pairs?",
+                "options": [
+                  "D",
+                  "L",
+                  "N",
+                  "R",
+                  "T"
+                ],
+                "correctAnswer": "R",
+                "correctFeedback": "Well done! The letter R completes both pairs: WAR + RINK, and FAR + ROOT. Short fragments give more options — check both sides carefully! ✓",
+                "incorrectFeedback": "Not quite! The answer is R. The letter R completes both pairs: WAR + RINK, and FAR + ROOT. Short fragments give more options — check both sides carefully! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "WA(?)INK",
+                  "FA(?)OOT"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Now you know the shortcut!",
+              "body": "Use fragment length to your advantage:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Short fragments (CA_, _EN) = many possible letters",
+                    "why": "You'll need to test more options"
+                  },
+                  {
+                    "text": "Long fragments (STOR_, _ICE) = very few options",
+                    "why": "The answer almost gives itself away!"
+                  },
+                  {
+                    "text": "Always start with the LONGEST fragment pair",
+                    "why": "That's your most restrictive word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process-of-elimination",
+      "name": "Ruling Out Letters Systematically",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "elimination-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Use elimination like a detective — rule out wrong letters one by one",
+            "Save time by testing each option against just ONE pair first"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Be a letter detective!",
+              "body": "Daisy is using elimination to solve a tricky puzzle.\n\nRemember: each pair is **two words joined**. The missing letter **ends** the first and **starts** the second.\n\nOptions: **D**  |  **N**  |  **R**  |  **S**  |  **T**\n\nLet's play detective — go through each option one by one. Most will fail to make real words, so you can cross them off!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "GLA(?)ONE",
+                  "MIL(?)AMP"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Eliminate against ONE pair first",
+              "body": "Pick one pair and try all 5 options. Cross off any that don't make real words. Then test what's left on the other pair.\n\nOptions: **D**  |  **N**  |  **R**  |  **S**  |  **T**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Eliminate, then verify the survivor. ✓",
+                "incorrectFeedback": "Not quite — start by testing letters against one pair first!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Test pair: GLA(?)ONE",
+                    "why": "Try each option: GLAN+NONE? GLAR+RONE? GLAS+SONE? GLAT+TONE? GLAD+DONE ✓ — only D makes real words!"
+                  },
+                  {
+                    "text": "Survivor: D → GLAD + DONE",
+                    "why": "This letter makes real words!"
+                  },
+                  {
+                    "text": "Verify pair 2: MILD + DAMP ✓",
+                    "why": "The last letter standing wins!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — eliminate!",
+              "body": "Try each option. Which letter survives?\n\nOptions: **D**  |  **N**  |  **R**  |  **S**  |  **T**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL the word pairs?",
+                "options": [
+                  "D",
+                  "N",
+                  "R",
+                  "S",
+                  "T"
+                ],
+                "correctAnswer": "D",
+                "correctFeedback": "Well done! The letter D completes both pairs: GLAD + DONE, and MILD + DAMP. Go through each option: N gives GLAN (not a word), R gives GLAR (not a word). Only D works! ✓",
+                "incorrectFeedback": "Not quite! The answer is D. The letter D completes both pairs: GLAD + DONE, and MILD + DAMP. Go through each option: N gives GLAN (not a word), R gives GLAR (not a word). Only D works! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "GLA(?)ONE",
+                  "MIL(?)AMP"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Elimination — your backup plan!",
+              "body": "When you're stuck, elimination always works:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Pick one pair (the more restrictive one)",
+                    "why": "More letters will fail here"
+                  },
+                  {
+                    "text": "2. Try each of the 5 options",
+                    "why": "Does it make a real word on BOTH sides?"
+                  },
+                  {
+                    "text": "3. Test survivors on the other pair(s)",
+                    "why": "The last letter standing is your answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tricky-pairs",
+      "name": "Tricky Pairs — When Multiple Letters Seem to Work",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "tricky-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Handle the sneakiest questions — where multiple letters seem to work",
+            "Learn to avoid the classic trap of assuming too early"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Watch out — sneaky trap ahead!",
+              "body": "Daisy is tackling a question where two letters seem right.\n\nRemember: each pair is **two words joined**. The missing letter **ends** the first and **starts** the second.\n\nDid you know? Some questions are designed to **trick** you on purpose! A letter might work perfectly for one pair but **fail** on the other. That's why checking **every** pair is so important!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "SAN(?)ARE",
+                  "FIN(?)EAR"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Never assume — always verify!",
+              "body": "For **SAN(?)ARE and FIN(?)EAR**, the most common mistake is finding a letter that works for ONE pair and assuming it works for all. Always test both!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with: SAN(?)ARE",
+                    "why": "SAND+DARE ✓. SANK+KARE? No. What about SANT+TARE? TARE is a word, but FINT isn't!"
+                  },
+                  {
+                    "text": "D works: SAND + DARE",
+                    "why": "But does it work for the other pair too?"
+                  },
+                  {
+                    "text": "Check: FIND + DEAR ✓",
+                    "why": "Yes! Both pairs confirmed — that's the answer!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — avoid the trap!",
+              "body": "Which letter works for **ALL** pairs, not just one?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL the word pairs?",
+                "options": [
+                  "D",
+                  "G",
+                  "K",
+                  "N",
+                  "T"
+                ],
+                "correctAnswer": "D",
+                "correctFeedback": "Brilliant! The letter D completes both pairs: SAND + DARE, and FIND + DEAR. T tempts with TARE but FINT isn't a word! Always check ALL pairs. ✓",
+                "incorrectFeedback": "Not quite! The answer is D. The letter D completes both pairs: SAND + DARE, and FIND + DEAR. T tempts with TARE but FINT isn't a word! Always check ALL pairs. ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "SAN(?)ARE",
+                  "FIN(?)EAR"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You won't fall for the trap now!",
+              "body": "Here's how to stay one step ahead of the question setters:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "NEVER stop after checking one pair",
+                    "why": "A letter that works for one pair might fail on others"
+                  },
+                  {
+                    "text": "Test your answer on EVERY pair",
+                    "why": "Both words must be real in EVERY pair"
+                  },
+                  {
+                    "text": "If two letters seem to work, one will fail on a pair you haven't checked",
+                    "why": "The test setters design it this way on purpose! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "tricky-pairs-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Spot the mistakes others make when multiple letters seem to fit",
+            "Catch yourself before picking a tempting wrong answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why is \"P\" wrong?",
+              "body": "Evie is checking her practice test answers.\n\nThe answer chosen was **P** — She tried P first: CLAP + PELT — both real words! But then TRIP + POON — POON isn't a standard word.\n\nCan you spot why it fails and find the correct letter?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CLA(?)ELT",
+                  "TRI(?)OON"
+                ],
+                "filledLetter": "P",
+                "showFilled": true,
+                "label": "Wrong answer: P — why doesn't it work?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The verification step catches mistakes!",
+              "body": "She tried P first: CLAP + PELT — both real words! But then TRIP + POON — POON isn't a standard word.\n\nThis is why you must **always test on ALL pairs** before choosing your answer.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: P — fails on one pair",
+                    "why": "She tried P first: CLAP + PELT — both real words! But then TRIP + POON — POON isn't a standard word."
+                  },
+                  {
+                    "text": "Right: M → CLAM + MELT",
+                    "why": "Real words on both sides"
+                  },
+                  {
+                    "text": "Verify: TRIM + MOON ✓",
+                    "why": "Works for EVERY pair!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the correct letter!",
+              "body": "Which letter actually works for **all** pairs?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which letter completes ALL the word pairs?",
+                "options": [
+                  "L",
+                  "M",
+                  "N",
+                  "P",
+                  "T"
+                ],
+                "correctAnswer": "M",
+                "correctFeedback": "Well done! The letter M completes both pairs: CLAM + MELT, and TRIM + MOON. P works for CLAP+PELT but fails on TRIP+POON! ✓",
+                "incorrectFeedback": "Not quite! The answer is M. The letter M completes both pairs: CLAM + MELT, and TRIM + MOON. P works for CLAP+PELT but fails on TRIP+POON! ✓"
+              },
+              "visualProps": {
+                "mode": "shared-pair",
+                "words": [
+                  "CLA(?)ELT",
+                  "TRI(?)OON"
+                ],
+                "showFilled": false,
+                "label": "One letter ends the first word and starts the second:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Learn from mistakes!",
+              "body": "The most common shared-letter mistakes:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Picking a letter that works for ONE pair only",
+                    "why": "Always check EVERY pair before answering"
+                  },
+                  {
+                    "text": "Forgetting to check BOTH words in a pair",
+                    "why": "The letter must make real words on BOTH sides"
+                  },
+                  {
+                    "text": "Rushing — take 5 extra seconds to verify",
+                    "why": "A quick check saves you from silly mistakes ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1020 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "verbalAnalogies",
+    "displayName": "Verbal Analogies",
+    "extractedAt": "2026-03-30T13:51:13.821Z",
+    "subConceptCount": 8,
+    "lessonCount": 8,
+    "screenCount": 32,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "young-adult",
+      "name": "Young to Adult",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "young-adult-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+            "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "puppy is to dog as kitten is to ___?",
+              "body": "Daisy is working on word relationship puzzles.\n\nDid you know that some baby animals have really unusual names? A baby swan is a cygnet, and a baby kangaroo is a joey! Word analogies work like this: **A is to B as C is to ___**.\n\nThe trick is to spot the **relationship** between the first pair, then apply the SAME pattern to the second pair. Let's have a go!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "puppy",
+                  "dog"
+                ],
+                "pair2word": "kitten",
+                "answer": null,
+                "label": "What connects the first pair?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Young to Adult",
+              "body": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to **kitten**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "An analogy is a puzzle where you find the ____ between two pairs of words",
+                "options": [
+                  "relationship",
+                  "difference",
+                  "spelling",
+                  "rhyme"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Analogies are about finding the same relationship in both pairs. ✓",
+                "incorrectFeedback": "Not quite — analogies are about the RELATIONSHIP between the word pairs!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"puppy\" is a young \"dog\"",
+                    "why": "First pair: baby → grown-up"
+                  },
+                  {
+                    "text": "So \"kitten\" must be a young ___?",
+                    "why": "Apply the same relationship"
+                  },
+                  {
+                    "text": "Answer: \"kitten\" is a young \"cat\" ✓",
+                    "why": "A puppy is a young dog, just as a kitten is a young cat"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**chick** is to **hen** as **fawn** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "chick is to hen as fawn is to ___?",
+                "options": [
+                  "deer",
+                  "forest",
+                  "antler",
+                  "rabbit",
+                  "fox"
+                ],
+                "correctAnswer": "deer",
+                "correctFeedback": "Brilliant! A chick is a young hen. A fawn is a young deer. Both pairs follow the young-to-adult pattern. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"deer\". A chick is a young hen. A fawn is a young deer. Both pairs follow the young-to-adult pattern. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "chick",
+                  "hen"
+                ],
+                "pair2word": "fawn",
+                "answer": null,
+                "relationship": "young to adult",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Young → Adult pattern — you've got it!",
+              "body": "Nice work! You've cracked one of the most popular analogy patterns. Here's your quick-reference guide:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: is the first word a BABY version of the second?",
+                    "why": "puppy → dog, kitten → cat, cub → bear"
+                  },
+                  {
+                    "text": "2. If yes, the answer is the adult version of the third word",
+                    "why": "Same relationship applied to the new pair"
+                  },
+                  {
+                    "text": "3. Learn the tricky ones: cygnet → swan, joey → kangaroo",
+                    "why": "Some baby names are unusual — these come up often ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tool-user",
+      "name": "Tool to User",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "tool-user-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+            "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "pen is to writer as brush is to ___?",
+              "body": "Evie is working through analogy puzzles.\n\nThink about the **first pair**: what is a \"pen\" to a \"writer\"? Imagine them at work together.\n\nOnce you can name the relationship, you can solve ANY analogy that uses the same pattern!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "pen",
+                  "writer"
+                ],
+                "pair2word": "brush",
+                "answer": null,
+                "label": "What does the first pair have in common?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Tool → User",
+              "body": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A \"writer\" uses a \"pen\"",
+                    "why": "First pair: tool → professional"
+                  },
+                  {
+                    "text": "So who uses a \"brush\"?",
+                    "why": "Apply the same relationship"
+                  },
+                  {
+                    "text": "A \"painter\" uses a \"brush\" ✓",
+                    "why": "A writer uses a pen to write, just as a painter uses a brush to paint"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**hammer** is to **carpenter** as **needle** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "hammer is to carpenter as needle is to ___?",
+                "options": [
+                  "tailor",
+                  "doctor",
+                  "nurse",
+                  "knitter",
+                  "dressmaker"
+                ],
+                "correctAnswer": "tailor",
+                "correctFeedback": "Brilliant! A carpenter uses a hammer. A tailor uses a needle. Both pairs link a tool to the professional who uses it. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"tailor\". A carpenter uses a hammer. A tailor uses a needle. Both pairs link a tool to the professional who uses it. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "hammer",
+                  "carpenter"
+                ],
+                "pair2word": "needle",
+                "answer": null,
+                "relationship": "tool to user",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tool → User pattern — well done!",
+              "body": "Great work! You've added another pattern to your collection. When you spot a tool-to-user analogy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: is the first word a TOOL used by the second word?",
+                    "why": "pen → writer, scalpel → surgeon, gavel → judge"
+                  },
+                  {
+                    "text": "2. If yes, the answer is the PERSON who uses the third word",
+                    "why": "Who uses a brush? A painter!"
+                  },
+                  {
+                    "text": "3. Pick the most specific user, not just anyone related",
+                    "why": "A brush → painter (not 'artist' or 'cleaner') ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part-whole",
+      "name": "Part to Whole",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "part-whole-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+            "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Zara",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "page is to book as key is to ___?",
+              "body": "Zara is puzzling over a word relationship question.\n\nLook at the first pair: **\"page\"** and **\"book\"**.\n\nIs one a PIECE of the other? Like a slice from a cake or a brick from a wall? If so, you've found a **part-to-whole** analogy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "page",
+                  "book"
+                ],
+                "pair2word": "key",
+                "answer": null,
+                "label": "Is the first word part of the second?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Part → Whole",
+              "body": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A \"page\" is part of a \"book\"",
+                    "why": "First pair: a piece of the bigger thing"
+                  },
+                  {
+                    "text": "So a \"key\" is part of a ___?",
+                    "why": "What bigger thing contains this piece?"
+                  },
+                  {
+                    "text": "A \"key\" is part of a \"keyboard\" ✓",
+                    "why": "A page is one part of a book, just as a key is one part of a keyboard"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**wing** is to **aeroplane** as **sail** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "wing is to aeroplane as sail is to ___?",
+                "options": [
+                  "boat",
+                  "wind",
+                  "sea",
+                  "mast",
+                  "ship"
+                ],
+                "correctAnswer": "boat",
+                "correctFeedback": "Brilliant! A wing is part of an aeroplane. A sail is part of a boat. Both pairs link a piece to the whole thing it belongs to. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"boat\". A wing is part of an aeroplane. A sail is part of a boat. Both pairs link a piece to the whole thing it belongs to. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "wing",
+                  "aeroplane"
+                ],
+                "pair2word": "sail",
+                "answer": null,
+                "relationship": "part to whole",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Part → Whole pattern — nice one!",
+              "body": "Brilliant! You've got another analogy pattern in your toolkit now. When you spot a part-to-whole connection:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: is the first word a PIECE of the second?",
+                    "why": "page → book, wheel → car, brick → wall"
+                  },
+                  {
+                    "text": "2. If yes, the answer is the WHOLE THING that contains the third word",
+                    "why": "A key is part of a keyboard!"
+                  },
+                  {
+                    "text": "3. Don't confuse part-whole with tool-user!",
+                    "why": "A wheel is PART of a car, not a tool used by a car ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cause-effect",
+      "name": "Cause and Effect",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "cause-effect-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+            "How to apply the pattern: cause leads to effect as cause leads to effect"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "heat is to melt as cold is to ___?",
+              "body": "Evie is working through a verbal reasoning worksheet.\n\nLook at **\"heat\"** and **\"melt\"**.\n\nDoes the first thing **cause** or **lead to** the second? Like how rain causes puddles, or how studying leads to good marks? If so, you've found a **cause-and-effect** analogy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "heat",
+                  "melt"
+                ],
+                "pair2word": "cold",
+                "answer": null,
+                "label": "Does the first word cause the second?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Cause → Effect",
+              "body": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Spot the cause in pair 1, then apply it to pair 2. ✓",
+                "incorrectFeedback": "Not quite — start by identifying the cause-effect in the first pair."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"heat\" causes \"melt\"",
+                    "why": "First pair: cause → result"
+                  },
+                  {
+                    "text": "So what does \"cold\" cause?",
+                    "why": "Apply the same cause-effect logic"
+                  },
+                  {
+                    "text": "\"cold\" causes \"freeze\" ✓",
+                    "why": "Heat causes things to melt, just as cold causes things to freeze"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**wind** is to **erosion** as **fire** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "wind is to erosion as fire is to ___?",
+                "options": [
+                  "ash",
+                  "smoke",
+                  "flame",
+                  "heat",
+                  "burn"
+                ],
+                "correctAnswer": "ash",
+                "correctFeedback": "Brilliant! Wind causes erosion. Fire causes ash. Both pairs link a cause to the result it produces. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ash\". Wind causes erosion. Fire causes ash. Both pairs link a cause to the result it produces. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "wind",
+                  "erosion"
+                ],
+                "pair2word": "fire",
+                "answer": null,
+                "relationship": "cause and effect",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Cause → Effect pattern — you've got it!",
+              "body": "Excellent! You've cracked another pattern. Cause-and-effect analogies are everywhere once you start looking for them:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: does the first word CAUSE the second?",
+                    "why": "heat → melt, rain → flood, practice → improvement"
+                  },
+                  {
+                    "text": "2. If yes, find what the third word CAUSES",
+                    "why": "cold → freeze, study → knowledge"
+                  },
+                  {
+                    "text": "3. Pick the direct result, not just something related",
+                    "why": "Cold causes freezing (not 'shiver' or 'winter') ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synonym-antonym-pairs",
+      "name": "Synonym & Antonym Pairs",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "synonym-antonym-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+            "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "hot is to cold as big is to ___?",
+              "body": "Daisy is working on word relationship puzzles.\n\nHere's a neat twist: sometimes the relationship in an analogy is that the words are **opposites**! Everything you've already learned about synonyms and antonyms comes in handy here.\n\nLook at **\"hot\"** and **\"cold\"** — do they mean the same thing, or opposite things?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "hot",
+                  "cold"
+                ],
+                "pair2word": "big",
+                "answer": null,
+                "label": "Synonyms (same) or antonyms (opposite)?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Synonym or Antonym?",
+              "body": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"hot\" and \"cold\" are opposites",
+                    "why": "They mean opposite things"
+                  },
+                  {
+                    "text": "So find the antonym of \"big\"",
+                    "why": "Apply the same relationship type"
+                  },
+                  {
+                    "text": "\"big\" → \"small\" ✓",
+                    "why": "Hot is the opposite of cold, just as big is the opposite of small"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**light** is to **dark** as **wet** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "light is to dark as wet is to ___?",
+                "options": [
+                  "dry",
+                  "damp",
+                  "water",
+                  "rain",
+                  "warm"
+                ],
+                "correctAnswer": "dry",
+                "correctFeedback": "Brilliant! Light and dark are opposites. Wet and dry are opposites. Both pairs follow the antonym pattern. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"dry\". Light and dark are opposites. Wet and dry are opposites. Both pairs follow the antonym pattern. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "light",
+                  "dark"
+                ],
+                "pair2word": "wet",
+                "answer": null,
+                "relationship": "antonym (opposite) pairs",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Synonym & Antonym analogies — two birds, one stone!",
+              "body": "Well done! You've just connected two different skills together. When the relationship IS about word meaning:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check: are the first pair synonyms or antonyms?",
+                    "why": "happy/glad = synonyms, hot/cold = antonyms"
+                  },
+                  {
+                    "text": "2. Apply the SAME relationship to the second pair",
+                    "why": "If pair 1 are opposites, pair 2 must be opposites too"
+                  },
+                  {
+                    "text": "3. Watch out for CLOSE but not exact matches",
+                    "why": "angry → furious (synonym), NOT angry → sad (different emotion) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animal-home",
+      "name": "Animal to Home",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "animal-home-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'animal to its home' analogies — did you know an otter's home is called a holt?",
+            "How to apply the pattern: animal is to its home as animal is to its home (there are some brilliant ones to learn!)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "bird is to nest as rabbit is to ___?",
+              "body": "Evie is matching animals to where they live.\n\nDid you know that lots of animals have special names for their homes? A **\"bird\"** lives in a **\"nest\"**. So what does a **\"rabbit\"** live in?\n\nThis is the **animal-to-home** pattern — a really popular one in the 11+!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "bird",
+                  "nest"
+                ],
+                "pair2word": "rabbit",
+                "answer": null,
+                "label": "Where does the second animal live?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Animal → Home",
+              "body": "A **bird** lives in a **nest**. This pattern links an **animal** to its **home or dwelling**. So where does a **rabbit** live?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Spot the animal-to-home link, then apply it. ✓",
+                "incorrectFeedback": "Not quite — first spot how pair 1 connects, then apply the same pattern."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A \"bird\" lives in a \"nest\"",
+                    "why": "First pair: animal → its home"
+                  },
+                  {
+                    "text": "So a \"rabbit\" lives in a ___?",
+                    "why": "What is this animal's home called?"
+                  },
+                  {
+                    "text": "A \"rabbit\" lives in a \"burrow\" ✓",
+                    "why": "A bird lives in a nest, just as a rabbit lives in a burrow"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**squirrel** is to **drey** as **otter** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "squirrel is to drey as otter is to ___?",
+                "options": [
+                  "holt",
+                  "den",
+                  "burrow",
+                  "river",
+                  "lodge"
+                ],
+                "correctAnswer": "holt",
+                "correctFeedback": "Brilliant! A squirrel lives in a drey. An otter lives in a holt. Both pairs link an animal to its specific home. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"holt\". A squirrel lives in a drey. An otter lives in a holt. Both pairs link an animal to its specific home. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "squirrel",
+                  "drey"
+                ],
+                "pair2word": "otter",
+                "answer": null,
+                "relationship": "animal to home",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Animal → Home pattern — brilliant!",
+              "body": "Well done! These animal homes are great to have in your back pocket for the exam. Learn the tricky ones and you'll be ahead of the pack:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "bird → nest, bee → hive, spider → web",
+                    "why": "Common ones you probably know"
+                  },
+                  {
+                    "text": "rabbit → burrow, fox → den, horse → stable",
+                    "why": "Farm and countryside animals"
+                  },
+                  {
+                    "text": "beaver → lodge, pig → sty, otter → holt",
+                    "why": "Trickier ones that catch people out ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category-specific",
+      "name": "Category to Example",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "category-specific-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+            "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "rose is to flower as Mars is to ___?",
+              "body": "Daisy is working on grouping word puzzles.\n\nHere's one you'll get the hang of quickly! Is **\"rose\"** a type of **\"flower\"**? If the first word is a **specific example** and the second is its **category**, you've spotted the pattern!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "rose",
+                  "flower"
+                ],
+                "pair2word": "Mars",
+                "answer": null,
+                "label": "What category does it belong to?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Example → Category",
+              "body": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"rose\" is a type of \"flower\"",
+                    "why": "First pair: example → category"
+                  },
+                  {
+                    "text": "So \"Mars\" is a type of ___?",
+                    "why": "What group does this belong to?"
+                  },
+                  {
+                    "text": "\"Mars\" is a type of \"planet\" ✓",
+                    "why": "A rose is a type of flower, just as Mars is a type of planet"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**violin** is to **instrument** as **eagle** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "violin is to instrument as eagle is to ___?",
+                "options": [
+                  "bird",
+                  "animal",
+                  "predator",
+                  "wing",
+                  "sky"
+                ],
+                "correctAnswer": "bird",
+                "correctFeedback": "Brilliant! A violin is a type of instrument. An eagle is a type of bird. Both pairs link a specific example to its category. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"bird\". A violin is a type of instrument. An eagle is a type of bird. Both pairs link a specific example to its category. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "violin",
+                  "instrument"
+                ],
+                "pair2word": "eagle",
+                "answer": null,
+                "relationship": "example to category",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Example → Category pattern — spot on!",
+              "body": "Another pattern in the bag! When you spot an example-to-category analogy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: is the first word a TYPE OF the second?",
+                    "why": "rose → flower, guitar → instrument, oak → tree"
+                  },
+                  {
+                    "text": "2. If yes, find the CATEGORY that the third word belongs to",
+                    "why": "Mars is a type of planet, not a type of star"
+                  },
+                  {
+                    "text": "3. Pick the most precise category, not too broad",
+                    "why": "Salmon → fish (not 'animal' — too vague) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creator-creation",
+      "name": "Creator to Creation",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "creator-creation-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+            "How to apply the pattern: creator is to creation as creator is to creation"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "author is to book as composer is to ___?",
+              "body": "Evie is puzzling over who makes what.\n\nThink about it: an **\"author\"** creates a **\"book\"** — that's their job! So what does a **\"composer\"** create?\n\nThis is the **creator-to-creation** pattern — matching people to the things they make. It's like a fun jobs quiz!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "pair1": [
+                  "author",
+                  "book"
+                ],
+                "pair2word": "composer",
+                "answer": null,
+                "label": "What does the creator make?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Creator → Creation",
+              "body": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "An \"author\" creates a \"book\"",
+                    "why": "First pair: maker → product"
+                  },
+                  {
+                    "text": "So a \"composer\" creates a ___?",
+                    "why": "What does this person make or produce?"
+                  },
+                  {
+                    "text": "A \"composer\" creates a \"symphony\" ✓",
+                    "why": "An author creates a book, just as a composer creates a symphony"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**author** is to **book** as **composer** is to ___?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "author is to book as composer is to ___?",
+                "options": [
+                  "symphony",
+                  "music",
+                  "orchestra",
+                  "piano",
+                  "song"
+                ],
+                "correctAnswer": "symphony",
+                "correctFeedback": "Brilliant! An author creates books. A composer creates symphonies. Both pairs link the creator to what they produce. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"symphony\". An author creates books. A composer creates symphonies. Both pairs link the creator to what they produce. ✓"
+              },
+              "visualProps": {
+                "pair1": [
+                  "author",
+                  "book"
+                ],
+                "pair2word": "composer",
+                "answer": null,
+                "relationship": "creator to creation",
+                "label": "Complete the analogy:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Creator → Creation pattern — well done!",
+              "body": "Fantastic! You've now got a whole collection of analogy patterns. When you spot a creator-to-creation connection:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Ask: does the first person MAKE the second thing?",
+                    "why": "author → book, baker → bread, poet → poem"
+                  },
+                  {
+                    "text": "2. If yes, find what the third person MAKES",
+                    "why": "composer → symphony, sculptor → statue"
+                  },
+                  {
+                    "text": "3. Pick the specific product, not the material or workplace",
+                    "why": "Carpenter → furniture (not 'wood' or 'workshop') ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

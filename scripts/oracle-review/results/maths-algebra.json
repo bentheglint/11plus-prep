@@ -1,0 +1,197 @@
+{
+  "reviewedAt": "2026-03-30T16:00:00.000Z",
+  "topic": "algebra",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 204,
+    "lessonsReviewed": 16,
+    "issuesFound": 14,
+    "bySeverity": {
+      "critical": 0,
+      "high": 2,
+      "medium": 7,
+      "low": 5
+    },
+    "difficultyAssessment": "Distribution is D1:58 (28%), D2:112 (55%), D3:34 (17%). D2 is overweight vs GL target (~40%) and D3 is significantly underweight vs GL target (~30%). The 17% D3 share means advanced pupils are under-challenged. Many D2 two-step equations are near-identical in structure (ax + b = c pattern repeated ~30 times). D1 questions are appropriately pitched with single operations and friendly numbers.",
+    "coverageAssessment": "Good coverage of substitution, solving equations, writing expressions, function machines, inverse operations, BIDMAS/brackets, and simple formulae. Sequences and linear nth-term rules are entirely absent (0 questions) despite GL weighting these at ~15% combined. Pairs-of-unknowns/enumeration questions are absent (GL ~5%). Shape/picture equations (symbol algebra) are absent. These three gaps represent ~20% of GL algebra weighting with zero coverage.",
+    "teachingEfficacyAssessment": "16 lessons across 8 sub-concepts provide solid coverage of core skills. Lessons are well-structured with hook/teach/interact/consolidate flow and use appropriate visual components (FunctionMachine, WorkedExample, RectangleDiagram). The function-machines sub-concept has lessons but the mapping shows '[No lesson found]' for some questions, suggesting a wiring issue rather than missing content. The master-two-step-equations sub-concept has no lesson content at all (Q13, Q33 show '[No lesson found]'). Writing-expressions lessons could better cover the multi-step word problems (combining like terms) that appear in D3 questions.",
+    "topPriorities": [
+      "Add 15-20 sequence questions (find next term, find rule, nth term) to fill the largest GL coverage gap",
+      "Increase D3 count from 34 to ~50-55 by adding harder question types: sequences, two-unknowns, shape equations, unknowns-on-both-sides",
+      "Fix the master-two-step-equations sub-concept — either create lessons or merge these questions into two-step-equations",
+      "Reduce D2 repetition: ~30 near-identical 'Solve: ax + b = c' questions could be reduced to ~15 with greater variety",
+      "Add pairs-of-unknowns questions (2-3 at D2, 3-4 at D3) per GL curriculum requirement"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-ALG-COVERAGE-001",
+      "itemType": "topic-coverage",
+      "itemId": "sequences",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "No sequence questions despite ~15% GL weighting",
+      "description": "Linear sequences (find next term, find rule, find nth term) account for approximately 10-15% of GL algebra questions. The topic has zero sequence questions. This is the single largest coverage gap in the algebra question bank.",
+      "suggestedFix": "Add 15-20 sequence questions: 5 at D1 (obvious common difference, find next two terms), 8 at D2 (find rule from table, find 10th/20th term), 5 at D3 (express nth term algebraically, non-obvious rules). Include both ascending and descending sequences.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-COVERAGE-002",
+      "itemType": "topic-coverage",
+      "itemId": "pairs-of-unknowns",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "No pairs-of-unknowns / enumeration questions despite being a Year 6 statutory requirement",
+      "description": "The Year 6 National Curriculum explicitly requires pupils to 'find pairs of numbers that satisfy an equation with 2 unknowns' and 'enumerate possibilities of combinations of 2 variables'. GL tests this at ~5% weighting. The only question approaching this is Q204 (unknowns on both sides), but no true 'find all pairs' or 'x + y = N' enumeration questions exist.",
+      "suggestedFix": "Add 5-8 questions: 2 at D2 (find pairs satisfying a + b = 15 where both positive, simple constraints), 4 at D3 (two constraints like a + b = 20 and a = 3b; enumerate all whole number solutions). Include shape/picture equation format for 2-3 of these.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-DIST-001",
+      "itemType": "difficulty-distribution",
+      "itemId": "overall",
+      "severity": "medium",
+      "category": "difficulty-balance",
+      "title": "D3 significantly underweight at 17% vs GL target of ~30%",
+      "description": "Only 34 of 204 questions are D3 (17%). GL targets approximately 30% D3. This means the top-performing children who need to be stretched are not getting enough challenge. The D2 count of 112 (55%) is also inflated above the ~40% target, mostly due to repetitive two-step equation patterns.",
+      "suggestedFix": "Reclassify some current D2 questions that involve more complex reasoning (e.g. Q17, Q30, Q32, Q55 which require multi-step expression building) as D3 or near-D3. Add new D3 questions in the missing categories (sequences, two-unknowns, shape equations). Target: D1 ~58, D2 ~80-85, D3 ~55-60.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-REPEAT-001",
+      "itemType": "question-set",
+      "itemId": "two-step-equations-d2",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition in D2 two-step equation solving pattern",
+      "description": "Approximately 30 D2 questions follow the near-identical pattern 'Solve: ax + b = c' (e.g. Q40, Q44, Q51, Q61, Q66, Q71, Q75, Q77, Q80, Q83, Q86, Q89, Q92, Q95, Q98, Q101, Q104, Q107, Q110, Q113, Q116, Q119, Q122, Q125, Q128, Q131, Q134). While practice is valuable, this many structurally identical questions offers diminishing returns. The only variation is in the coefficients and constants.",
+      "suggestedFix": "Reduce to ~15 of this exact pattern and replace the freed slots with more diverse D2 question types: reverse function machines, substitution with two variables and brackets, forming equations from word problems, sequence questions. This maintains practice volume while broadening skill coverage.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-MAP-001",
+      "itemType": "mapping",
+      "itemId": "master-two-step-equations",
+      "severity": "medium",
+      "category": "mapping-gap",
+      "title": "master-two-step-equations sub-concept has no lesson content",
+      "description": "Questions Q13 and Q33 are mapped to sub-concept 'master-two-step-equations' which shows '[No lesson found]' and empty learning goals in the mapping data. These questions are standard two-step equations (2x + 6 = 20 and 4y - 7 = 21) that are functionally identical to questions mapped to the working 'two-step-equations' sub-concept.",
+      "suggestedFix": "Either create lessons for master-two-step-equations, or remap Q13 and Q33 to the existing 'two-step-equations' sub-concept which already has full lesson coverage. The latter is simpler and appropriate since the questions are not materially different.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-MAP-002",
+      "itemType": "mapping",
+      "itemId": "function-machines",
+      "severity": "medium",
+      "category": "mapping-gap",
+      "title": "Function machine questions show '[No lesson found]' despite lessons existing",
+      "description": "The lessons file contains two well-structured function machine lessons (function-machines-visual and function-machines-backwards) but the mapping file shows '[No lesson found]' for function machine questions (Q8, Q15, Q27, Q47 etc.). This appears to be a wiring issue where the mapping extraction did not connect the lessons to the sub-concept.",
+      "suggestedFix": "Verify the lesson-to-subconcept wiring in the source data. The lessons exist in the extracted data under sub-concept 'function-machines' so this may be a mapping extraction bug rather than missing content.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-Q050-001",
+      "itemType": "question",
+      "itemId": "Q50",
+      "severity": "medium",
+      "category": "distractor-quality",
+      "title": "Q50 has two equivalent answer options",
+      "description": "Q50 asks for the perimeter of a rectangle with length 8 and width w. Options include '16 + 2w' (correct, at index 2) and '2w + 8' (at index 4). These are mathematically distinct expressions (16 + 2w vs 2w + 8), BUT a child could legitimately argue 2w + 8 is also a valid simplification if they computed 2(w) + 2(4) = 2w + 8 instead of 2(8) + 2w = 16 + 2w. Wait — 2w + 8 is NOT the same as 16 + 2w. 2w + 8 would come from a rectangle with length 4 and width w (perimeter = 2(4) + 2w = 8 + 2w). So the distractor is valid — it catches children who use width 4 instead of 8. No issue.",
+      "suggestedFix": "No fix needed — on re-analysis the distractor is valid. Removing this issue.",
+      "oracleConfidence": "low",
+      "status": "withdrawn"
+    },
+    {
+      "issueId": "MATHS-ALG-Q030-001",
+      "itemType": "question",
+      "itemId": "Q30",
+      "severity": "medium",
+      "category": "difficulty-mislabel",
+      "title": "Q30 labelled D3 but is a straightforward D2 expression-building question",
+      "description": "Q30: 'A tablet costs £t. A phone costs £50 more. Total cost of both?' Answer: 2t + 50. This requires combining two expressions (t and t+50) which is a single-step conceptual jump. Compare to Q32 (D3, three-day walking problem requiring three expressions combined) which is genuinely harder. Q30 is more typical of D2 difficulty.",
+      "suggestedFix": "Reclassify Q30 as D2. Similarly review Q65 which is the same pattern (tablet + laptop = 2c + 200) also labelled D3.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-Q137-001",
+      "itemType": "question",
+      "itemId": "Q137",
+      "severity": "low",
+      "category": "difficulty-mislabel",
+      "title": "Q137 labelled D1 but answer is not among options at stated index",
+      "description": "Q137: 'A number machine adds 9. Put 14 in, what comes out?' Options: [5, 19, 23, 25, 32]. Correct index is 2 (= '23'). But 14 + 9 = 23, and '23' is at index 2. This is correct. However, the question is labelled D1 when it's genuinely a trivial single-addition question — the D1 label is appropriate. No issue on the answer. But the distractor '19' at index 1 is odd — a child who subtracted 9 from 14 would not get 19 either. The distractor set could be stronger.",
+      "suggestedFix": "Consider replacing distractor '19' with '5' (14 - 9, the inverse-operation error) to better trap the common mistake. Currently '5' is already option A, so the distractors do include the subtraction error. On review, distractors are adequate. Withdrawing.",
+      "oracleConfidence": "low",
+      "status": "withdrawn"
+    },
+    {
+      "issueId": "MATHS-ALG-Q099-001",
+      "itemType": "question",
+      "itemId": "Q99",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q99 explanation is too terse for a D2 expression question",
+      "description": "Q99: 'Sophie is s years old. Her brother is 5 times as old minus 8 years. Which shows her brother's age?' Explanation: 'Brother is 5s - 8 years old.' This does not walk through the reasoning — why '5 times as old' becomes 5s, and why 'minus 8' becomes '- 8'. Compare to Q34 which has the same structure but a slightly better explanation ('Harry has 3 times Freya's cards (3f), minus 5 cards: 3f - 5').",
+      "suggestedFix": "Expand explanation to: 'Brother is 5 times Sophie's age (5s), minus 8 years: 5s - 8.'",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-Q087-001",
+      "itemType": "question",
+      "itemId": "Q87",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q87 explanation is too terse",
+      "description": "Q87: 'Ruby scores r points. Jake scores twice as many plus 12. Which shows Jake's score?' Explanation: 'Jake scores 2r + 12 points.' Does not explain the step-by-step translation from words to algebra.",
+      "suggestedFix": "Expand explanation to: 'Jake scores twice Ruby's points (2r), plus 12 bonus: 2r + 12.'",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-Q181-001",
+      "itemType": "question",
+      "itemId": "Q181",
+      "severity": "low",
+      "category": "ambiguity",
+      "title": "Q181 says 'Emma invites 6 friends' but formula uses n = number of children — is n 6 or 7?",
+      "description": "Q181: 'A party planner uses C = 8n + 20 where n is the number of children. Emma invites 6 friends. What is the total cost?' The answer uses n = 6, giving £68. However, 'Emma invites 6 friends' could mean 7 children total (Emma plus 6 friends). If n = 7, C = 8(7) + 20 = 76 which is also an option. This ambiguity could cause a correct-reasoning child to pick the wrong answer.",
+      "suggestedFix": "Reword to: 'There are 6 children at the party' or 'Emma invites 6 friends. The formula covers only the friends, not Emma.' Alternatively, change the numbers so the 'n vs n+1' ambiguity doesn't produce another available option.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-TONE-001",
+      "itemType": "question-set",
+      "itemId": "D1-substitution",
+      "severity": "low",
+      "category": "tone-inconsistency",
+      "title": "Some D1 substitution questions are harder than labelled",
+      "description": "Several D1 questions involve expressions like 9x - 20 (Q73), 6x - 19 (Q82), 8x - 35 (Q109), 5m - 42 (Q127) which require multi-digit multiplication followed by subtraction of larger numbers. While conceptually D1 (single substitution, one variable), the arithmetic complexity pushes these beyond easy territory for a 9-10 year old. A child who understands substitution perfectly could still err on 8 x 9 = 72, then 72 - 35 = 37.",
+      "suggestedFix": "Consider reclassifying the harder-arithmetic substitution questions (Q73, Q82, Q109, Q127) as D2, or simplifying the arithmetic (smaller coefficients, rounder numbers) to keep them genuinely D1. GL D1 algebra typically uses single-digit answers and simple multiples.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-ALG-LESSON-001",
+      "itemType": "lesson-set",
+      "itemId": "bidmas-brackets",
+      "severity": "medium",
+      "category": "lesson-coverage",
+      "title": "BIDMAS/Brackets sub-concept lessons not visible in extracted data",
+      "description": "Questions Q186-Q195 are mapped to the 'bidmas-brackets' sub-concept and the mapping shows lesson learning goals about BIDMAS. However, the lessons extraction file shows only 8 sub-concepts: using-letters, substitution, two-step-equations, writing-expressions, function-machines, simple-formulae, inverse-operations, and one more. The BIDMAS/brackets lesson content was not visible in the extracted data read. This may mean the lessons exist but weren't captured, or that they are missing.",
+      "suggestedFix": "Verify BIDMAS/brackets lessons exist in the source lessonData.js. If missing, create 2 lessons covering: (1) BIDMAS order of operations with and without brackets, (2) common BIDMAS mistakes (left-to-right vs correct order). These 10 questions (Q186-Q195) need lesson support.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

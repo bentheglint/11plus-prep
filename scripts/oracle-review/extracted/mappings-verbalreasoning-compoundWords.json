@@ -1,0 +1,2464 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "compoundWords",
+    "displayName": "Compound Words",
+    "extractedAt": "2026-03-30T13:52:00.618Z",
+    "totalQuestions": 145,
+    "mappedQuestions": 165,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 11,
+    "orphanSubConcepts": 2,
+    "confidenceBreakdown": {
+      "high": 163,
+      "medium": 2,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Which word can go in front of both 'light' and 'rise' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Sun",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Which word can go after both 'book' and 'suit' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Case",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Which word can go in front of both 'fall' and 'proof' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Water",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Which word can go after both 'black' and 'blue' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Berry",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Which word can go in front of both 'bow' and 'coat' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Rain",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Which word can go after both 'foot' and 'base' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Ball",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Which word can go in front of both 'work' and 'wife' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "House",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Which word can go after both 'arm' and 'wheel' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Chair",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Which word can go after both 'any' and 'every' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Where",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Which word can go in front of both 'ward' and 'right' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Out",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Which word can go in front of both 'rise' and 'set' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Sun",
+      "subConceptId": "nature-compounds",
+      "subConceptName": "Nature Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, sn",
+      "lessonLearningGoal": [
+        "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+        "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Which word can go after both 'bed' and 'class' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Room",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Which word can go in front of both 'print' and 'step' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Foot",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Which word can go after both 'tooth' and 'hair' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Brush",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Which word can go in front of both 'keeper' and 'hold' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "House",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Which word can go in front of both 'scape' and 'lord' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Land",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Which word can go after both 'sun' and 'star' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Light",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Which word can go in front of both 'berry' and 'bird' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Black",
+      "subConceptId": "nature-compounds",
+      "subConceptName": "Nature Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, sn",
+      "lessonLearningGoal": [
+        "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+        "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Which word can go in front of both 'time' and 'break' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Day",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Which word can go after both 'news' and 'waste' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "paper",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Which word can go in front of both 'ball' and 'line' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Base",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Which word can go in front of both 'bag' and 'shake' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Hand",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Which word can go in front of both 'pot' and 'spoon' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Tea",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Which word can go in front of both 'side' and 'shell' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Sea",
+      "subConceptId": "nature-compounds",
+      "subConceptName": "Nature Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, sn",
+      "lessonLearningGoal": [
+        "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+        "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Which word can go in front of both 'brush' and 'paste' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Tooth",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Which word can go in front of both 'brow' and 'lash' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Eye",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Which word can go after both 'butter' and 'egg' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Cup",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Which word can go in front of both 'coat' and 'night' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Over",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Which word can go in front of both 'thing' and 'where' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Some",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Which word can go in front of both 'day' and 'thing' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Every",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Which word can go in front of both 'port' and 'craft' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Air",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Which word can go in front of both 'ground' and 'water' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Under",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Which word can go in front of both 'pack' and 'ground' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Back",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Which word can go after both 'air' and 'high' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Way",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Which word can go after both 'tooth' and 'heart' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Ache",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Which word can go in front of both 'ground' and 'time' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Play",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Which word can go after both 'play' and 'no' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Thing",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Which word can go after both 'home' and 'school' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Work",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Which word can go after both 'sand' and 'thunder' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Storm",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Which word can go after both 'star' and 'gold' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Fish",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Which word can go after both 'day' and 'night' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Time",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Which word can go in front of both 'bird' and 'smith' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Black",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Which word can go after both 'cow' and 'tom' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Boy",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Which word can go after both 'tooth' and 'head' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Ache",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Which word can go in front of both 'shoe' and 'power' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Horse",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Which word can go in front of both 'lord' and 'mark' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Land",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Which word can go in front of both 'through' and 'down' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Break",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Which word can go in front of both 'road' and 'word' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Cross",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Which word can go in front of both 'print' and 'tip' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Finger",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Which word can go in front of both 'house' and 'weight' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Light",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Which word can go in front of both 'table' and 'line' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Time",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Which word can go in front of both 'colour' and 'mark' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Water",
+      "subConceptId": "nature-compounds",
+      "subConceptName": "Nature Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, sn",
+      "lessonLearningGoal": [
+        "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+        "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Which word can go in front of both 'bolt' and 'storm' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Thunder",
+      "subConceptId": "nature-compounds",
+      "subConceptName": "Nature Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, sn",
+      "lessonLearningGoal": [
+        "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+        "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Which word can go in front of both 'fall' and 'mare' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Night",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Which word can go in front of both 'board' and 'ring' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Key",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Which word can go in front of both 'card' and 'man' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Post",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Which word can go after both 'book' and 'land' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mark",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Which word can go after both 'sun' and 'wild' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Flower",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Which word can go after both 'cup' and 'card' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Board",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Which word can go in front of both 'place' and 'side' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Fire",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Which word can go after both 'grass' and 'farm' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Land",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Which word can go after both 'grand' and 'god' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Father",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Which word can go after both 'him' and 'my' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Self",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Which word can go in front of both 'wife' and 'hold' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "House",
+      "subConceptId": "home-compounds",
+      "subConceptName": "Home & Building Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house ",
+      "lessonLearningGoal": [
+        "Why home and building words like door, house and room are great compound builders",
+        "How to spot house and room compound families quickly in the exam"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Which word can go after both 'snow' and 'skate' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Board",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Which word can go after both 'chalk' and 'dart' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Board",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Which word can go in front of both 'nail' and 'post' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Finger",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Which word can go after both 'door' and 'gate' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Way",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Which word can go after both 'lamp' and 'sun' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Shade",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Which word can go after both 'head' and 'neck' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Band",
+      "subConceptId": "body-compounds",
+      "subConceptName": "Body Part Compound Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in se",
+      "lessonLearningGoal": [
+        "Why body part words like head, hand, foot and eye are brilliant compound builders",
+        "How to build up a mental word bank so you can spot them in a flash"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Which word can go after both 'sun' and 'moon' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Shine",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Which word can go in front of both 'light' and 'dream' to make two new words?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Day",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Which word can go after both 'sea' and 'lake' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Shore",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Which word can go in front of both 'cake' and 'handle' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Pan",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Which word can go after both 'break' and 'stead' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Fast",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Which word can go in front of both 'bone' and 'fire' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Back",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Which word can go in front of both 'sight' and 'head' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Fore",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Which word can go in front of both 'stairs' and 'fall' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Down",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Which word can go in front of both 'lap' and 'due' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Over",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Which word can go in front of both 'spoken' and 'number' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Out",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Which word can go in front of both 'market' and 'pile' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Stock",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Which word can go in front of both 'storm' and 'wash' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Brain",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Which word can go in front of both 'part' and 'attack' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Counter",
+      "subConceptId": "common-traps",
+      "subConceptName": "Common Compound Word Traps",
+      "confidence": "high",
+      "lessonTeachSummary": "So is **\"carpet\"** a real compound word? Here's the test: a REAL compound word's meaning comes from BOTH its parts. If the meaning doesn't connect to both halves, it's an imposter!",
+      "lessonLearningGoal": [
+        "The sneaky imposters: words that LOOK like compounds but totally aren't (is 'carpet' really 'car' + 'pet'?!)",
+        "A quick meaning test that tells you if a compound is real or fake"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Which word can go in front of both 'hand' and 'cut' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Short",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Which word can go in front of both 'mind' and 'piece' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Master",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Which word can go in front of both 'box' and 'stick' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Match",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Which word can go in front of both 'back' and 'final' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Quarter",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Which word can go in front of both 'board' and 'time' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Spring",
+      "subConceptId": "front-placement",
+      "subConceptName": "Front Placement — Word Goes in Front",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you",
+      "lessonLearningGoal": [
+        "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+        "A handy trick called Say It, Spell It that makes testing combinations super quick"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Which word can go after both 'fore' and 'after' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Thought",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Which word can go after both 'ship' and 'team' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Mate",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Which word can go after both 'hard' and 'soft' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Wood",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Which word can go after both 'head' and 'ear' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Phones",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Which word can go after both 'hand' and 'needle' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Work",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Which word can go after both 'mean' and 'some' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Time",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Which word can go after both 'where' and 'there' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "By",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Which word can go in front of both 'break' and 'burst' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Out",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Which word can go after both 'rain' and 'tear' to make two new words?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Drop",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Which word can go after both 'fire' and 'spot' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Light",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Which word can go in front of both 'line' and 'stand' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Under",
+      "subConceptId": "direction-compounds",
+      "subConceptName": "Direction & Position Compounds",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+      "lessonLearningGoal": [
+        "Why direction words like over, under, out, up and down are compound-making machines",
+        "How knowing these gives you a massive head start in the exam"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Which word can go after both 'out' and 'with' to make two new words?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Draw",
+      "subConceptId": "back-placement",
+      "subConceptName": "Back Placement — Word Goes at the End",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+      "lessonLearningGoal": [
+        "How to find a word that slots in AFTER another to complete a compound word",
+        "Using Say It, Spell It to test back-placement combos like a pro"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rain + bow",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "fire + place",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tea + pot",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "snow + ball",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bed + room",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "play + ground",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tooth + paste",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 1,
+      "correctAnswer": "star + fish",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "butter + fly",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "news + paper",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "book + worm",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "water + fall",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "day + dream",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "head + line",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sea + horse",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "finger + print",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "thunder + storm",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "arm + chair",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "over + look",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 3,
+      "correctAnswer": "black + smith",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 3,
+      "correctAnswer": "land + lord",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "half + way",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 2,
+      "correctAnswer": "no + where",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 3,
+      "correctAnswer": "with + draw",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Find two words, one from each group, that join together to make a new word.",
+      "questionDifficulty": 3,
+      "correctAnswer": "up + stream",
+      "subConceptId": "reverse-compounds",
+      "subConceptName": "Reverse Compounds — Split the Word",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+      "lessonLearningGoal": [
+        "How to split a compound word back into its two parts — like cracking a code!",
+        "A split-and-check method that makes reverse questions feel easy"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rain + bow",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "cup + board",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bed + room",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "snow + ball",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "door + bell",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tooth + brush",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "arm + chair",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hand + bag",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sun + burn",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "star + fish",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "gold + fish",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "eye + brow",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 1,
+      "correctAnswer": "home + work",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "under + stand",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "butter + fly",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "break + fast",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "news + paper",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "horse + shoe",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "light + house",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
+      "questionDifficulty": 2,
+      "correctAnswer": "day + dream",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "[Question 146 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "[Question 147 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "[Question 148 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "[Question 149 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "[Question 150 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "[Question 151 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "[Question 152 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "[Question 153 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "[Question 154 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "[Question 155 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "[Question 156 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "[Question 157 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "[Question 158 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "[Question 159 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "[Question 160 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "[Question 161 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "[Question 162 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "[Question 163 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "[Question 164 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "[Question 165 not found]",
+      "questionDifficulty": "?",
+      "correctAnswer": "?",
+      "subConceptId": "gl-compound-pairs",
+      "subConceptName": "GL Compound Pairs — Pick From Two Groups",
+      "confidence": "high",
+      "lessonTeachSummary": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+      "lessonLearningGoal": [
+        "How to solve the real GL compound word format — picking one word from each of two groups",
+        "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+        "Why spelling matters more than sound for tricky compounds"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "three-way-links",
+      "name": "Three-Way Compound Links"
+    },
+    {
+      "id": "speed-strategy",
+      "name": "Speed Strategy — Quick Compound Solving"
+    }
+  ],
+  "subConceptCoverage": {
+    "front-placement": {
+      "name": "Front Placement — Word Goes in Front",
+      "questionCount": 30,
+      "difficulties": {
+        "D1": 9,
+        "D2": 14,
+        "D3": 7
+      }
+    },
+    "back-placement": {
+      "name": "Back Placement — Word Goes at the End",
+      "questionCount": 39,
+      "difficulties": {
+        "D1": 10,
+        "D2": 20,
+        "D3": 9
+      }
+    },
+    "home-compounds": {
+      "name": "Home & Building Compound Words",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 2,
+        "D2": 4,
+        "D3": 0
+      }
+    },
+    "direction-compounds": {
+      "name": "Direction & Position Compounds",
+      "questionCount": 11,
+      "difficulties": {
+        "D1": 3,
+        "D2": 2,
+        "D3": 6
+      }
+    },
+    "nature-compounds": {
+      "name": "Nature Compound Words",
+      "questionCount": 5,
+      "difficulties": {
+        "D1": 3,
+        "D2": 2,
+        "D3": 0
+      }
+    },
+    "body-compounds": {
+      "name": "Body Part Compound Words",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 4,
+        "D2": 3,
+        "D3": 1
+      }
+    },
+    "common-traps": {
+      "name": "Common Compound Word Traps",
+      "questionCount": 1,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 1
+      }
+    },
+    "reverse-compounds": {
+      "name": "Reverse Compounds — Split the Word",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 8,
+        "D2": 13,
+        "D3": 4
+      }
+    },
+    "gl-compound-pairs": {
+      "name": "GL Compound Pairs — Pick From Two Groups",
+      "questionCount": 40,
+      "difficulties": {
+        "D1": 13,
+        "D2": 27,
+        "D3": 0
+      }
+    }
+  }
+}

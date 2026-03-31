@@ -1,0 +1,107 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "numberSeries",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 99,
+    "lessonsReviewed": 10,
+    "mappingsReviewed": 99,
+    "issuesFound": 7,
+    "bySeverity": { "critical": 0, "high": 1, "medium": 3, "low": 3 },
+    "difficultyAssessment": "D1:30 (30%), D2:40 (40%), D3:29 (29%) — essentially perfect GL distribution of ~30:40:30. Difficulty calibration is strong: D1 uses constant-difference patterns (times tables, counting by n), simple doubling/halving, and basic interleaved sequences. D2 introduces increasing differences (triangular numbers), square numbers, Fibonacci, prime number sequences, multiplication by 3/4, and alternating-step patterns. D3 uses interleaved sequences with mixed operations (one sub-sequence multiplies while another adds), multi-step patterns with larger numbers, and complex alternating sequences. The progression from D1 to D3 is well-structured and matches the Oracle specification.",
+    "coverageAssessment": "Excellent coverage of pattern types. Constant difference (addition): Q1-Q15, Q21-Q25, Q57-Q64 — well represented with varied step sizes (+3 to +25, -5 to -111). Doubling/halving: Q16-Q20, Q56 — good coverage. Increasing differences: Q31-Q40, Q69-Q70 — strong block including triangular numbers. Square numbers: Q41-Q45 — ascending and descending. Fibonacci/sum-of-previous-two: Q46-Q49 — good representation. Primes: Q50-Q52 — appropriate for D2. Multiplication (x3, x4): Q53-Q55 — covered. Interleaved/alternating: Q26-Q30, Q65-Q68, Q71-Q73 — well represented at D1/D2/D3. One gap: no negative number series (e.g., -5, -2, 1, 4, 7) which GL does test occasionally. Another gap: no ratio/fractional patterns (multiply by 1.5 or divide by 3). The interleaved sequence coverage at D3 is particularly strong.",
+    "teachingEfficacyAssessment": "Lessons cover all major pattern types with appropriate strategies. The 'Write the Hops' method (constant difference) is taught as the foundational skill, which is correct — it's the first thing to try. Increasing differences, square numbers, Fibonacci, and interleaved sequences each have dedicated lessons. 99/99 mapped with 100% high confidence. 1 orphan sub-concept noted in meta but all questions are mapped, so this is a structural note rather than an issue. The strategy hierarchy (try constant first → try increasing → try multiply/divide → try interleave) is implicitly taught through the lesson ordering, which is pedagogically sound.",
+    "topPriorities": [
+      "Review Q60 — negative answer (-12) may confuse children not yet comfortable with negative numbers",
+      "Add a few questions testing negative starting points or fractional multipliers",
+      "Diversify tip pool — same tips cycle across all 99 questions"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-NS-SCOPE-001",
+      "itemType": "question",
+      "itemId": "Q60",
+      "severity": "high",
+      "category": "age-appropriateness",
+      "title": "Q60 answer is -12, introducing negative numbers unexpectedly",
+      "description": "Q60: '543, 432, 321, 210, 99, ___' with answer -12 (pattern is -111). This is rated D2 but the answer involves a negative number. While the VR Number Series Oracle spec does not explicitly exclude negatives, the GL Assessment typically does not require negative number answers in the VR paper. Negative numbers are a separate maths topic. A child who correctly identifies the -111 pattern might still get confused by the negative answer, which is a maths skill issue rather than a pattern recognition issue. Additionally, all five options are negative, which removes the 'is the answer negative?' decision from the problem — a real GL question would mix positive and negative options to test understanding.",
+      "suggestedFix": "Either: (a) Replace with a series where -111 yields a small positive answer (e.g., 654, 543, 432, 321, 210, ___  → answer 99, which is already Q60's penultimate term — so use different starting numbers), or (b) move to D3 and include a mix of positive and negative options to genuinely test whether the child understands the answer should be negative.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q26,Q27,Q28,Q29,Q30",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Interleaved sequence questions Q26-Q30 rated D1 but are D2-level",
+      "description": "Questions 26-30 use interleaved (alternating) sequences: 2,5,3,6,4,__ and 10,20,15,25,20,__ etc. These are rated D1 but require the child to recognise that two separate patterns are interleaved — a cognitively more demanding skill than simple constant difference. The Oracle spec places interleaved sequences at D2 minimum ('D2: Different rules per letter OR opposite directions'). While the sub-patterns within each interleaved pair are simple (+1, +5, +10), the act of separating them is what makes these harder than straight D1.",
+      "suggestedFix": "Upgrade Q26-Q30 to D2. Replace them with 5 additional straight constant-difference D1 questions (perhaps using negative constant differences or less common step sizes like +3 or +9 from non-zero starting points).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q71",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q71 rated D3 but is a straightforward interleaved +2/+2 pattern",
+      "description": "Q71: '27, 37, 29, 39, 31, ___' is rated D3. Odd positions: 27, 29, 31 (+2). Even positions: 37, 39, 41 (+2). Both sub-sequences use the same simple +2 step. This is equivalent to Q26-Q30 (interleaved with simple steps), which are rated D1. A true D3 interleaved sequence should have mixed operations (one multiplies, one adds) or larger/varying step sizes.",
+      "suggestedFix": "Downgrade to D2, or replace with a genuine D3 interleaved pattern — e.g., odd positions doubling (3, 6, 12, 24) while even positions subtract 5 (40, 35, 30, 25).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-ARITH-001",
+      "itemType": "question",
+      "itemId": "Q58",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q58 constant difference of +69 is unusually large for D2",
+      "description": "Q58: '58, 127, 196, 265, 334, ___' with a constant difference of +69. While this is a valid constant-difference pattern, the arithmetic of adding 69 to 334 (=403) is significantly harder than typical D2 arithmetic. The pattern itself is D1-level (constant difference), but the computational burden pushes it beyond what a 9-year-old would comfortably do in exam conditions. GL tends to use smaller gaps for constant-difference D2 questions, reserving large numbers for patterns where the complexity is in recognising the pattern, not the arithmetic.",
+      "suggestedFix": "Either downgrade the step size to something more manageable (e.g., +23 or +37) or move to D3 if large arithmetic is the intentional challenge.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-GAP-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "No questions test series starting with or crossing through negative numbers",
+      "description": "The question bank has no series that start negative or cross from positive to negative (except Q60's answer). GL occasionally tests series like -8, -5, -2, 1, 4, ___ or 10, 5, 0, -5, ___. This is a genuine GL pattern type that tests whether children understand negative number ordering, which overlaps with the Negative Numbers maths topic.",
+      "suggestedFix": "Add 3-5 questions at D2/D3 using series that include negative numbers. Example: -10, -6, -2, 2, 6, ___ (answer: 10, pattern +4).",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-GAP-002",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "No questions test cube numbers or power sequences",
+      "description": "The bank includes square numbers (Q41-Q45) but no cube numbers (1, 8, 27, 64, 125) or other power sequences. While cube numbers are less common in GL, they do appear occasionally at D3. Powers of 2 are well-covered through doubling/halving but not presented as 'powers' explicitly.",
+      "suggestedFix": "Add 2-3 D3 questions testing cube number sequences or mixed power patterns.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-NS-TIP-001",
+      "itemType": "question",
+      "itemId": "Q5,Q8,Q17,Q36,Q46",
+      "severity": "low",
+      "category": "misleading-tip",
+      "title": "Tips are recycled regardless of question context",
+      "description": "Similar to Number Word Codes, tips are drawn from a small pool (~12) and assigned without regard to the question type. For example, Q5 (constant +7 pattern) gets 'Check the gap between the first two numbers, then verify it works for all pairs' which is appropriate, but Q46 (Fibonacci: 1,1,2,3,5,___) gets a tip about adding the last two numbers which is perfect. However, some questions get tips about recognising times tables when the pattern is clearly not a times table. The mismatch is less severe here than in Number Word Codes because the tips are more generally applicable.",
+      "suggestedFix": "Group tips by pattern type and assign from the relevant group. Constant-difference tips for constant-difference questions, Fibonacci tips for Fibonacci questions, etc.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

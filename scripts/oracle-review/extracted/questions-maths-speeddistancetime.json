@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "speeddistancetime",
+    "displayName": "Speed, Distance, Time",
+    "extractedAt": "2026-03-30T13:05:32.771Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 44,
+      "D2": 55,
+      "D3": 26
+    },
+    "questionTypes": {
+      "standard": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma drives 150 km in 3 hours. What is her average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "60 km/h",
+        "65 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "50 km/h",
+      "explanation": "Speed = Distance ÷ Time. Speed = 150 ÷ 3 = 50 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom cycles at 20 km/h for 2.5 hours. How far does he travel?",
+      "options": [
+        "50 km",
+        "45 km",
+        "40 km",
+        "55 km",
+        "60 km"
+      ],
+      "correct": 0,
+      "correctAnswer": "50 km",
+      "explanation": "Distance = Speed × Time. Distance = 20 × 2.5 = 50 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie travels 240 km at a speed of 80 km/h. How long does the journey take?",
+      "options": [
+        "2 hours",
+        "2.5 hours",
+        "3 hours",
+        "3.5 hours",
+        "4 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "3 hours",
+      "explanation": "Time = Distance ÷ Speed. Time = 240 ÷ 80 = 3 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jake cycles 12 km in 20 minutes. What is his speed in km/h?",
+      "options": [
+        "30 km/h",
+        "32 km/h",
+        "34 km/h",
+        "36 km/h",
+        "38 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "36 km/h",
+      "explanation": "First convert 20 minutes to hours: 20 ÷ 60 = 1/3 hour. Speed = 12 ÷ 1/3 = 12 × 3 = 36 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy runs at 8 m/s for 45 seconds. How far does she run?",
+      "options": [
+        "320 m",
+        "340 m",
+        "360 m",
+        "380 m",
+        "400 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "360 m",
+      "explanation": "Distance = Speed × Time. Distance = 8 × 45 = 360 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ben drives 80 km in 2 hours, then 60 km in 1.5 hours. What is his average speed for the whole journey?",
+      "options": [
+        "35 km/h",
+        "40 km/h",
+        "45 km/h",
+        "50 km/h",
+        "55 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "40 km/h",
+      "explanation": "Total distance = 80 + 60 = 140 km. Total time = 2 + 1.5 = 3.5 hours. Average speed = 140 ÷ 3.5 = 40 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Mia's car travels at 72 km/h. What is this speed in metres per second?",
+      "options": [
+        "18 m/s",
+        "20 m/s",
+        "22 m/s",
+        "24 m/s",
+        "26 m/s"
+      ],
+      "correct": 1,
+      "correctAnswer": "20 m/s",
+      "explanation": "To convert km/h to m/s, multiply by 1000 and divide by 3600. 72 × 1000 ÷ 3600 = 72000 ÷ 3600 = 20 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver travels 15 km at 60 km/h. How many minutes does this take?",
+      "options": [
+        "15 minutes",
+        "20 minutes",
+        "25 minutes",
+        "30 minutes",
+        "35 minutes"
+      ],
+      "correct": 0,
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = Distance ÷ Speed = 15 ÷ 60 = 0.25 hours. Convert to minutes: 0.25 × 60 = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sarah drives at 50 km/h for 1 hour 30 minutes. How far does she travel?",
+      "options": [
+        "65 km",
+        "70 km",
+        "72 km",
+        "75 km",
+        "80 km"
+      ],
+      "correct": 3,
+      "correctAnswer": "75 km",
+      "explanation": "1 hour 30 minutes = 1.5 hours. Distance = Speed × Time = 50 × 1.5 = 75 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Charlie drives 20 km in 30 minutes. What is his speed in km/h?",
+      "options": [
+        "35 km/h",
+        "38 km/h",
+        "40 km/h",
+        "42 km/h",
+        "45 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "40 km/h",
+      "explanation": "Convert 30 minutes to hours: 30 ÷ 60 = 0.5 hours. Speed = Distance ÷ Time = 20 ÷ 0.5 = 40 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Hannah drives 200 km at 80 km/h. How many minutes does the journey take?",
+      "options": [
+        "120 minutes",
+        "130 minutes",
+        "140 minutes",
+        "145 minutes",
+        "150 minutes"
+      ],
+      "correct": 4,
+      "correctAnswer": "150 minutes",
+      "explanation": "Time = Distance ÷ Speed = 200 ÷ 80 = 2.5 hours. Convert to minutes: 2.5 × 60 = 150 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ava travels at 45 km/h for 4 hours. How far does she travel?",
+      "options": [
+        "160 km",
+        "180 km",
+        "200 km",
+        "220 km",
+        "240 km"
+      ],
+      "correct": 1,
+      "correctAnswer": "180 km",
+      "explanation": "Distance = Speed × Time. Distance = 45 × 4 = 180 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Noah jogs 1500 metres in 5 minutes. What is his speed in km/h?",
+      "options": [
+        "15 km/h",
+        "16 km/h",
+        "18 km/h",
+        "20 km/h",
+        "22 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "18 km/h",
+      "explanation": "Convert to km and hours: 1500 m = 1.5 km, 5 minutes = 5 ÷ 60 = 1/12 hour. Speed = 1.5 ÷ 1/12 = 1.5 × 12 = 18 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ella drives 90 km in 2 hours, then 60 km in 1 hour. What is her average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h",
+        "60 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "50 km/h",
+      "explanation": "Total distance = 90 + 60 = 150 km. Total time = 2 + 1 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Max is driving 300 km. He has already driven 180 km in 3 hours. What speed must he average for the remaining journey to complete it in 2 more hours?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 km/h",
+      "explanation": "Remaining distance = 300 - 180 = 120 km. Time remaining = 2 hours. Speed needed = 120 ÷ 2 = 60 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A family drives 180 km to the seaside in 4 hours. What is their average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "60 km/h",
+        "65 km/h"
+      ],
+      "correct": 0,
+      "correctAnswer": "45 km/h",
+      "explanation": "Speed = Distance ÷ Time = 180 ÷ 4 = 45 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A family car cruises at 55 km/h along the coast road for 3 hours. How far do they travel?",
+      "options": [
+        "155 km",
+        "160 km",
+        "165 km",
+        "170 km",
+        "175 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "165 km",
+      "explanation": "Distance = speed × time = 55 × 3 = 165 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A delivery van travels 300 km at 75 km/h. How long does the journey take?",
+      "options": [
+        "3 hours",
+        "3.5 hours",
+        "3.75 hours",
+        "4 hours",
+        "4.5 hours"
+      ],
+      "correct": 3,
+      "correctAnswer": "4 hours",
+      "explanation": "Time = Distance ÷ Speed = 300 ÷ 75 = 4 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cyclist covers 18 km in 30 minutes. What is the speed in km/h?",
+      "options": [
+        "32 km/h",
+        "36 km/h",
+        "40 km/h",
+        "44 km/h",
+        "48 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "36 km/h",
+      "explanation": "30 minutes = 0.5 hours. Speed = 18 ÷ 0.5 = 36 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A runner runs at 10 m/s for 50 seconds. How far does she run?",
+      "options": [
+        "400 m",
+        "450 m",
+        "475 m",
+        "490 m",
+        "500 m"
+      ],
+      "correct": 4,
+      "correctAnswer": "500 m",
+      "explanation": "Distance = Speed × Time = 10 × 50 = 500 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A peregrine falcon dives at 90 km/h. What is this speed in metres per second?",
+      "options": [
+        "20 m/s",
+        "22 m/s",
+        "23 m/s",
+        "24 m/s",
+        "25 m/s"
+      ],
+      "correct": 4,
+      "correctAnswer": "25 m/s",
+      "explanation": "90 × 1000 ÷ 3600 = 90000 ÷ 3600 = 25 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An ambulance races 25 km to the hospital at 100 km/h. How many minutes does the journey take?",
+      "options": [
+        "15 minutes",
+        "18 minutes",
+        "20 minutes",
+        "22 minutes",
+        "25 minutes"
+      ],
+      "correct": 0,
+      "correctAnswer": "15 minutes",
+      "explanation": "Time = 25 ÷ 100 = 0.25 hours = 0.25 × 60 = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A driver travels 100 km in 2 hours, then 80 km in 2 hours. What is the average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correct": 0,
+      "correctAnswer": "45 km/h",
+      "explanation": "Total distance = 180 km. Total time = 4 hours. Average = 180 ÷ 4 = 45 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A postman cycles 2000 metres delivering letters in 10 minutes. What is his speed in km/h?",
+      "options": [
+        "10 km/h",
+        "12 km/h",
+        "14 km/h",
+        "16 km/h",
+        "18 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "12 km/h",
+      "explanation": "2000 m = 2 km. 10 min = 1/6 hour. Speed = 2 ÷ 1/6 = 12 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A commuter train travels at 55 km/h for 2 hours 30 minutes from Weymouth to Southampton. How far is the journey?",
+      "options": [
+        "127.5 km",
+        "130 km",
+        "132.5 km",
+        "135 km",
+        "137.5 km"
+      ],
+      "correct": 3,
+      "correctAnswer": "135 km",
+      "explanation": "2 hours 30 min = 2.5 hours. Distance = 55 × 2.5 = 137.5 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A delivery van covers 210 km in 3 hours. What is its speed?",
+      "options": [
+        "65 km/h",
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "75 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "70 km/h",
+      "explanation": "Speed = 210 ÷ 3 = 70 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school bus trundles at 48 km/h for 2.5 hours on a geography field trip. How far does it travel?",
+      "options": [
+        "110 km",
+        "115 km",
+        "120 km",
+        "125 km",
+        "130 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "120 km",
+      "explanation": "Distance = 48 × 2.5 = 120 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A train travels 360 km from London to the Lake District at 90 km/h. How long does the journey take?",
+      "options": [
+        "3 hours",
+        "3.5 hours",
+        "4 hours",
+        "4.5 hours",
+        "5 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "4 hours",
+      "explanation": "Time = 360 ÷ 90 = 4 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A cyclist covers 24 km in 40 minutes. What is the speed in km/h?",
+      "options": [
+        "32 km/h",
+        "34 km/h",
+        "36 km/h",
+        "38 km/h",
+        "40 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "36 km/h",
+      "explanation": "40 min = 40/60 = 2/3 hour. Speed = 24 ÷ 2/3 = 24 × 3/2 = 36 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A model rocket flies at 12 m/s for 35 seconds. How far does it travel?",
+      "options": [
+        "380 m",
+        "400 m",
+        "420 m",
+        "440 m",
+        "460 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "420 m",
+      "explanation": "Distance = 12 × 35 = 420 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A racing car zooms around a track at 108 km/h. What is this speed in metres per second?",
+      "options": [
+        "25 m/s",
+        "28 m/s",
+        "30 m/s",
+        "32 m/s",
+        "35 m/s"
+      ],
+      "correct": 2,
+      "correctAnswer": "30 m/s",
+      "explanation": "108 × 1000 ÷ 3600 = 30 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An ambulance races to the hospital 30 km away at 120 km/h. How many minutes does it take?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "120 km in 60 min. 30/120 = 1/4. Time = 60 ÷ 4 = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A car drives 120 km in 2 hours, then 90 km in 1.5 hours. What is the average speed?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 210 km in 3.5 hours. Average = 210 ÷ 3.5 = 60 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Someone jogs 2500 metres in 15 minutes. What is the speed in km/h?",
+      "options": [
+        "8 km/h",
+        "10 km/h",
+        "12 km/h",
+        "14 km/h",
+        "16 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "10 km/h",
+      "explanation": "2.5 km in 0.25 hours. Speed = 2.5 ÷ 0.25 = 10 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A plane flies at 650 km/h for 1 hour 30 minutes. How far does it fly?",
+      "options": [
+        "900 km",
+        "925 km",
+        "950 km",
+        "975 km",
+        "1000 km"
+      ],
+      "correct": 3,
+      "correctAnswer": "975 km",
+      "explanation": "1.5 hours. Distance = 650 × 1.5 = 975 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A coach must cover 270 km in 4.5 hours to arrive on time. What speed does it need to average?",
+      "options": [
+        "55 km/h",
+        "58 km/h",
+        "60 km/h",
+        "62 km/h",
+        "65 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 km/h",
+      "explanation": "Speed = 270 ÷ 4.5 = 60 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver cycles at 35 km/h for 4 hours during a charity bike ride along the South Coast. How far does he ride?",
+      "options": [
+        "130 km",
+        "135 km",
+        "140 km",
+        "145 km",
+        "150 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "140 km",
+      "explanation": "Distance = 35 × 4 = 140 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A lorry drives from London to Leeds, a distance of 420 km, at 70 km/h. How long does the journey take?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 420 ÷ 70 = 6 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A car covers 30 km in 25 minutes. What is the speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "25 min = 25/60 hours. Speed = 30 ÷ (25/60) = 30 × 60/25 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A dog chases a ball across a park at 8 m/s for a full 60 seconds. How far does the dog run?",
+      "options": [
+        "440 m",
+        "460 m",
+        "480 m",
+        "500 m",
+        "520 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "480 m",
+      "explanation": "Distance = speed × time = 8 × 60 = 480 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a wildlife documentary, a cheetah sprints at 126 km/h. The narrator gives this in m/s. What does she say?",
+      "options": [
+        "30 m/s",
+        "33 m/s",
+        "35 m/s",
+        "37 m/s",
+        "40 m/s"
+      ],
+      "correct": 2,
+      "correctAnswer": "35 m/s",
+      "explanation": "126 × 1000 ÷ 3600 = 35 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A Formula 1 car blasts around Silverstone at 160 km/h. How many minutes to cover 40 km?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "160 km in 60 min. 40 km is 40/160 = 1/4 of the distance. Time = 60 ÷ 4 = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A family drives 150 km on the motorway in 3 hours, then 50 km through town in 1 hour. What is their average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "50 km/h",
+      "explanation": "Total distance = 150 + 50 = 200 km. Total time = 3 + 1 = 4 hours. Average = 200 ÷ 4 = 50 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Evie cycles 3000 metres around the park in 12 minutes for a fitness challenge. What is her speed in km/h?",
+      "options": [
+        "12 km/h",
+        "13 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "15 km/h",
+      "explanation": "3000 m = 3 km. 12 min = 0.2 hours. Speed = 3 ÷ 0.2 = 15 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A coastguard helicopter patrols at 180 km/h for 2 hours 15 minutes along the Dorset coast. How far does it fly?",
+      "options": [
+        "390 km",
+        "395 km",
+        "400 km",
+        "405 km",
+        "410 km"
+      ],
+      "correct": 3,
+      "correctAnswer": "405 km",
+      "explanation": "2 hours 15 min = 2.25 hours. Distance = 180 × 2.25 = 405 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rescue helicopter needs to reach an island 336 km away in 5.25 hours. What speed must it fly at?",
+      "options": [
+        "60 km/h",
+        "62 km/h",
+        "64 km/h",
+        "66 km/h",
+        "68 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "64 km/h",
+      "explanation": "Speed = distance ÷ time = 336 ÷ 5.25 = 64 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Daisy rides her electric scooter along the seafront at 42 km/h for 3.5 hours. How far does she travel?",
+      "options": [
+        "140 km",
+        "143 km",
+        "147 km",
+        "150 km",
+        "153 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "147 km",
+      "explanation": "Distance = 42 × 3.5 = 147 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A family drives 480 km from London to Cornwall for their holiday, cruising at 96 km/h. How long does the drive take?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 hours",
+      "explanation": "Time = distance ÷ speed = 480 ÷ 96 = 5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A motorbike zips along a coastal road, covering 36 km in 20 minutes. Speed in km/h?",
+      "options": [
+        "96 km/h",
+        "100 km/h",
+        "104 km/h",
+        "108 km/h",
+        "112 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "108 km/h",
+      "explanation": "20 min = 1/3 hour. Speed = 36 ÷ (1/3) = 108 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "During Sports Day, Evie sprints at 9 m/s for 40 seconds in the relay. How far does she run?",
+      "options": [
+        "320 m",
+        "340 m",
+        "360 m",
+        "380 m",
+        "400 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "360 m",
+      "explanation": "Distance = speed × time = 9 × 40 = 360 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A peregrine falcon dives at 144 km/h. A scientist records this in metres per second. What is it?",
+      "options": [
+        "36 m/s",
+        "38 m/s",
+        "40 m/s",
+        "42 m/s",
+        "44 m/s"
+      ],
+      "correct": 2,
+      "correctAnswer": "40 m/s",
+      "explanation": "144 × 1000 ÷ 3600 = 40 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An express train races through Dorset at 180 km/h. A bridge is 45 km ahead. How many minutes until it reaches the bridge?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "180 km in 60 min. 45 km = 45/180 = 1/4. Time = 60 × (1/4) = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A school coach drives 180 km on the M3 in 2 hours, then crawls 60 km through town in 2 hours. Average speed?",
+      "options": [
+        "48 km/h",
+        "54 km/h",
+        "60 km/h",
+        "66 km/h",
+        "72 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 km/h",
+      "explanation": "Total = 180 + 60 = 240 km. Time = 2 + 2 = 4 hours. Average = 240 ÷ 4 = 60 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A park runner completes a 3500 m course through the New Forest in 20 minutes. Speed in km/h?",
+      "options": [
+        "9 km/h",
+        "9.5 km/h",
+        "10 km/h",
+        "10.5 km/h",
+        "11 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "10 km/h",
+      "explanation": "3500 m = 3.5 km. 20 min = 1/3 hour. Speed = 3.5 ÷ (1/3) = 10.5 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A ferry from Poole to Cherbourg sails at 25 km/h for 3 hours 12 minutes. How far is the crossing?",
+      "options": [
+        "76 km",
+        "78 km",
+        "80 km",
+        "82 km",
+        "84 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km",
+      "explanation": "3 hours 12 min = 3.2 hours. Distance = 25 × 3.2 = 80 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A taxi needs to reach the airport 396 km away in 5.5 hours. What speed must the driver average?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "Speed = 396 ÷ 5.5 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A delivery driver covers 145 km between Bournemouth and Bristol in 2.5 hours. What was her average speed?",
+      "options": [
+        "52 km/h",
+        "54 km/h",
+        "56 km/h",
+        "58 km/h",
+        "60 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "58 km/h",
+      "explanation": "Speed = distance ÷ time = 145 ÷ 2.5 = 58 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A family drives 540 km from Manchester to the Scottish Highlands at 108 km/h. How long?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 540 ÷ 108 = 5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A speedboat races across the bay, covering 42 km in 35 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "35 min = 7/12 hours. Speed = 42 ÷ (7/12) = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A remote-control car whizzes across a car park at 11 m/s. Oliver times it: 30 seconds. How far did it go?",
+      "options": [
+        "300 m",
+        "310 m",
+        "320 m",
+        "330 m",
+        "340 m"
+      ],
+      "correct": 3,
+      "correctAnswer": "330 m",
+      "explanation": "Distance = speed × time = 11 × 30 = 330 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A tennis serve clocks 162 km/h on the speed gun. What is this in metres per second?",
+      "options": [
+        "40 m/s",
+        "43 m/s",
+        "45 m/s",
+        "47 m/s",
+        "50 m/s"
+      ],
+      "correct": 2,
+      "correctAnswer": "45 m/s",
+      "explanation": "162 × 1000 ÷ 3600 = 45 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pizza delivery driver must cover 50 km at 200 km/h in a game show challenge. How many minutes?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "200 km in 60 min. 50/200 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "During a sponsored cycle, Mia rides 200 km on flat roads in 4 hours, then 100 km uphill in 2 hours. Average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "50 km/h",
+      "explanation": "Total = 200 + 100 = 300 km. Time = 4 + 2 = 6 hours. Average = 300 ÷ 6 = 50 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "During cross-country, Ben runs 4000 metres across muddy fields in 16 minutes. Speed in km/h?",
+      "options": [
+        "12 km/h",
+        "13 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "15 km/h",
+      "explanation": "4000 m = 4 km. 16 min = 4/15 hours. Speed = 4 ÷ (4/15) = 15 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A narrowboat chugs along the canal at 32 km/h for 1 hour 45 minutes. How far does it travel?",
+      "options": [
+        "52 km",
+        "54 km",
+        "56 km",
+        "58 km",
+        "60 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "56 km",
+      "explanation": "1 hour 45 min = 1.75 hours. Distance = 32 × 1.75 = 56 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A courier van must deliver a parcel 456 km away in exactly 6 hours. What speed is needed?",
+      "options": [
+        "72 km/h",
+        "74 km/h",
+        "76 km/h",
+        "78 km/h",
+        "80 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "76 km/h",
+      "explanation": "Speed = 456 ÷ 6 = 76 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Gran drives 171 km to visit her grandchildren at a steady 38 km/h. How long does the journey take?",
+      "options": [
+        "3.5 hours",
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "4.5 hours",
+      "explanation": "Time = distance ÷ speed = 171 ÷ 38 = 4.5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Gran drives 600 km from Edinburgh to Bournemouth, averaging 120 km/h on the motorway. How long is the journey?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 hours",
+      "explanation": "Time = distance ÷ speed = 600 ÷ 120 = 5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A car drives along the A31 through the New Forest, covering 48 km in 40 minutes. Average speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "40 min = 2/3 hour. Speed = 48 ÷ (2/3) = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lauren jogs around the school field at a steady 7 m/s for 90 seconds. What distance does she cover?",
+      "options": [
+        "600 m",
+        "610 m",
+        "620 m",
+        "630 m",
+        "640 m"
+      ],
+      "correct": 3,
+      "correctAnswer": "630 m",
+      "explanation": "Distance = speed × time = 7 × 90 = 630 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cricket ball is bowled at 180 km/h. The scoreboard shows the speed in m/s. What does it display?",
+      "options": [
+        "45 m/s",
+        "48 m/s",
+        "50 m/s",
+        "52 m/s",
+        "55 m/s"
+      ],
+      "correct": 2,
+      "correctAnswer": "50 m/s",
+      "explanation": "180 × 1000 ÷ 3600 = 50 m/s. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A helicopter flies 55 km to rescue a stranded walker at 220 km/h. How many minutes?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "220 km in 60 min. 55/220 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A lorry delivers goods: 240 km on the A-road in 4 hours, then 60 km on country lanes in 2 hours. Average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "55 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "50 km/h",
+      "explanation": "Total = 240 + 60 = 300 km. Time = 4 + 2 = 6 hours. Average = 300 ÷ 6 = 50 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lauren power-walks 4500 metres along Bournemouth promenade in 18 minutes. Speed in km/h?",
+      "options": [
+        "12 km/h",
+        "13 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "15 km/h",
+      "explanation": "4500 m = 4.5 km. 18 min = 0.3 hours. Speed = 4.5 ÷ 0.3 = 15 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cruise ship sails at 28 km/h for 2 hours 30 minutes across the English Channel. How far does it go?",
+      "options": [
+        "65 km",
+        "67 km",
+        "69 km",
+        "70 km",
+        "72 km"
+      ],
+      "correct": 3,
+      "correctAnswer": "70 km",
+      "explanation": "2 hours 30 min = 2.5 hours. Distance = 28 × 2.5 = 70 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A relief lorry must reach a flooded village 516 km away in 6.45 hours. What speed is needed?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 516 ÷ 6.45 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "During a charity bike ride, Maya cycles 77 km in 3.5 hours. What was her average speed?",
+      "options": [
+        "18 km/h",
+        "20 km/h",
+        "22 km/h",
+        "24 km/h",
+        "26 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "22 km/h",
+      "explanation": "Speed = distance ÷ time = 77 ÷ 3.5 = 22 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A train travels 660 km from London to Edinburgh at 110 km/h. How long is the journey?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 660 ÷ 110 = 6 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bus travels 54 km from Poole to Dorchester in 45 minutes. Average speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "45 min = 0.75 hours. Speed = 54 ÷ 0.75 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A park runner jogs at a steady 6 m/s around a loop that takes 120 seconds. How far is the loop?",
+      "options": [
+        "680 m",
+        "700 m",
+        "720 m",
+        "740 m",
+        "760 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "720 m",
+      "explanation": "Distance = speed × time = 6 × 120 = 720 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A family drives from Bournemouth to London, a distance of 180 km. They leave at 9:00 am and arrive at 11:30 am. What was their average speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "Journey time = 11:30 − 9:00 = 2.5 hours. Speed = 180 ÷ 2.5 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A lifeboat speeds 60 km out to sea at 240 km/h to reach a yacht. How many minutes does it take?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "240 km in 60 min. 60/240 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A removal van drives 270 km on the M3 in 3 hours, then 90 km through suburbs in 2 hours. Average speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "Total = 270 + 90 = 360 km. Time = 3 + 2 = 5 hours. Average = 360 ÷ 5 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A mountain biker races 5000 metres down a forest trail in 25 minutes. Speed in km/h?",
+      "options": [
+        "10 km/h",
+        "11 km/h",
+        "12 km/h",
+        "13 km/h",
+        "14 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "12 km/h",
+      "explanation": "5000 m = 5 km. 25 min = 5/12 hours. Speed = 5 ÷ (5/12) = 12 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sea kayaker paddles at 8 km/h along the Jurassic Coast for 3 hours 45 minutes. How far does she go?",
+      "options": [
+        "28 km",
+        "29 km",
+        "30 km",
+        "31 km",
+        "32 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "30 km",
+      "explanation": "3 hours 45 min = 3.75 hours. Distance = 8 × 3.75 = 30 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An emergency plumber needs to reach a burst pipe 576 km away in 7.2 hours. What speed must he drive?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 576 ÷ 7.2 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver skateboards 36 km along the seafront at an average speed of 15 km/h. How long does it take?",
+      "options": [
+        "2 hours",
+        "2.2 hours",
+        "2.4 hours",
+        "2.6 hours",
+        "2.8 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "2.4 hours",
+      "explanation": "Time = distance ÷ speed = 36 ÷ 15 = 2.4 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A coach takes a school trip 720 km from Bristol to the Highlands at 144 km/h. How long?",
+      "options": [
+        "4 hours",
+        "4.5 hours",
+        "5 hours",
+        "5.5 hours",
+        "6 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 hours",
+      "explanation": "Time = 720 ÷ 144 = 5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A lorry covers 60 km on the motorway in 50 minutes before hitting roadworks. What was its speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "50 min = 5/6 hours. Speed = 60 ÷ (5/6) = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A model train runs along a track at 5 m/s. It takes 180 seconds to complete the circuit. How long is the track?",
+      "options": [
+        "850 m",
+        "870 m",
+        "890 m",
+        "900 m",
+        "910 m"
+      ],
+      "correct": 3,
+      "correctAnswer": "900 m",
+      "explanation": "Distance = speed × time = 5 × 180 = 900 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Daisy runs 2.4 km to school at 8 km/h. She leaves at 8:20 am. What time does she arrive?",
+      "options": [
+        "8:35 am",
+        "8:36 am",
+        "8:38 am",
+        "8:39 am",
+        "8:40 am"
+      ],
+      "correct": 2,
+      "correctAnswer": "8:38 am",
+      "explanation": "Time = 2.4 ÷ 8 = 0.3 hours = 18 minutes. 8:20 + 18 min = 8:38 am. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A police car chases along a motorway at 260 km/h. How many minutes to cover 65 km?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "260 km in 60 min. 65/260 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "On holiday, Dad drives 300 km on French motorways in 3 hours, then 120 km on coastal roads in 3 hours. Average speed?",
+      "options": [
+        "65 km/h",
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "75 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "70 km/h",
+      "explanation": "Total = 300 + 120 = 420 km. Time = 3 + 3 = 6 hours. Average = 420 ÷ 6 = 70 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An elderly couple walks 5500 metres around a nature reserve in 50 minutes. Speed in km/h?",
+      "options": [
+        "5.6 km/h",
+        "6 km/h",
+        "6.6 km/h",
+        "7 km/h",
+        "7.6 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "6.6 km/h",
+      "explanation": "5500 m = 5.5 km. 50 min = 5/6 hours. Speed = 5.5 ÷ (5/6) = 6.6 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A raft drifts down the River Avon at 4 km/h for 4 hours 30 minutes during a charity float. How far?",
+      "options": [
+        "16 km",
+        "17 km",
+        "18 km",
+        "19 km",
+        "20 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "18 km",
+      "explanation": "4 hours 30 min = 4.5 hours. Distance = 4 × 4.5 = 18 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pilot must fly 636 km to a small airfield in 7.95 hours. What speed is needed?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 636 ÷ 7.95 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school minibus drives 77 km from Poole to Salisbury in 1.75 hours. What was its average speed?",
+      "options": [
+        "40 km/h",
+        "42 km/h",
+        "44 km/h",
+        "46 km/h",
+        "48 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "44 km/h",
+      "explanation": "Speed = distance ÷ time = 77 ÷ 1.75 = 44 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A lorry drives 780 km from Dover to Glasgow at 130 km/h. How long is the drive?",
+      "options": [
+        "5 hours",
+        "5.5 hours",
+        "6 hours",
+        "6.5 hours",
+        "7 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 hours",
+      "explanation": "Time = 780 ÷ 130 = 6 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A delivery van races 66 km through the countryside in 55 minutes. Speed in km/h?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "55 min = 11/12 hours. Speed = 66 ÷ (11/12) = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimmer does laps at 4 m/s. After 150 seconds of continuous swimming, how far has she swum?",
+      "options": [
+        "560 m",
+        "580 m",
+        "600 m",
+        "620 m",
+        "640 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "600 m",
+      "explanation": "Distance = speed × time = 4 × 150 = 600 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A coach leaves Bristol at 10:15 am and arrives in Exeter at 12:00 noon, covering 120 km. On the return, traffic slows it to 48 km/h. What time does it arrive back in Bristol?",
+      "options": [
+        "2:15 pm",
+        "2:30 pm",
+        "2:45 pm",
+        "3:00 pm",
+        "3:15 pm"
+      ],
+      "correct": 1,
+      "correctAnswer": "2:30 pm",
+      "explanation": "Return time = 120 ÷ 48 = 2.5 hours. Leaves at noon, arrives at 2:30 pm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A news helicopter flies 70 km to cover a story at 280 km/h. How many minutes?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "280 km in 60 min. 70/280 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A coach takes a school trip: 330 km on the motorway in 3 hours, then 90 km through the Lake District in 2 hours. Average speed?",
+      "options": [
+        "80 km/h",
+        "82 km/h",
+        "84 km/h",
+        "86 km/h",
+        "88 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "84 km/h",
+      "explanation": "Total = 330 + 90 = 420 km. Time = 3 + 2 = 5 hours. Average = 420 ÷ 5 = 84 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity runner completes 6000 metres of a fun run in 30 minutes. Speed in km/h?",
+      "options": [
+        "10 km/h",
+        "11 km/h",
+        "12 km/h",
+        "13 km/h",
+        "14 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "12 km/h",
+      "explanation": "6000 m = 6 km. 30 min = 0.5 hours. Speed = 6 ÷ 0.5 = 12 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A research submarine cruises at 16 km/h for 3 hours 15 minutes mapping the seabed. How far does it go?",
+      "options": [
+        "48 km",
+        "50 km",
+        "52 km",
+        "54 km",
+        "56 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "52 km",
+      "explanation": "3 hours 15 min = 3.25 hours. Distance = 16 × 3.25 = 52 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A lorry driver needs to reach a warehouse 696 km away in 8.7 hours to avoid a late fee. What speed?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Speed = 696 ÷ 8.7 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A canal boat travels 58.5 km along the Kennet and Avon Canal at 18 km/h. How long is the journey?",
+      "options": [
+        "2.75 hours",
+        "3 hours",
+        "3.25 hours",
+        "3.5 hours",
+        "3.75 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "3.25 hours",
+      "explanation": "Time = distance ÷ speed = 58.5 ÷ 18 = 3.25 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A removal van drives 840 km from London to the Highlands at 105 km/h. How many hours?",
+      "options": [
+        "6 hours",
+        "7 hours",
+        "8 hours",
+        "9 hours",
+        "10 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 hours",
+      "explanation": "Time = 840 ÷ 105 = 8 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A taxi covers 72 km from the airport to the hotel in exactly one hour. What is its speed?",
+      "options": [
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "74 km/h",
+        "76 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 km/h",
+      "explanation": "Speed = 72 ÷ 1 = 72 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia races her wheelchair at 3 m/s around a 600 m track. How long does one lap take in seconds?",
+      "options": [
+        "180 s",
+        "190 s",
+        "200 s",
+        "210 s",
+        "220 s"
+      ],
+      "correct": 2,
+      "correctAnswer": "200 s",
+      "explanation": "Time = distance ÷ speed = 600 ÷ 3 = 200 seconds. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ben cycles 24 km to his friend's house. After 45 minutes he has cycled 12 km. If he keeps the same speed, what time will he arrive if he left at 2:00 pm?",
+      "options": [
+        "2:45 pm",
+        "3:00 pm",
+        "3:15 pm",
+        "3:30 pm",
+        "3:45 pm"
+      ],
+      "correct": 3,
+      "correctAnswer": "3:30 pm",
+      "explanation": "Speed = 12 ÷ 0.75 = 16 km/h. Total time = 24 ÷ 16 = 1.5 hours. Left at 2:00 pm, arrives at 3:30 pm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An air ambulance flies 75 km to an accident at 300 km/h. How many minutes does the flight take?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": 3,
+      "correctAnswer": "15",
+      "explanation": "300 km in 60 min. 75/300 = 1/4. Time = 15 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A delivery truck drives 360 km on the M1 in 4 hours, then 120 km through town in 2 hours. Average speed?",
+      "options": [
+        "76 km/h",
+        "78 km/h",
+        "80 km/h",
+        "82 km/h",
+        "84 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Total = 360 + 120 = 480 km. Time = 4 + 2 = 6 hours. Average = 480 ÷ 6 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A triathlete runs 6500 metres in 26 minutes during the running leg of a race. Speed in km/h?",
+      "options": [
+        "13 km/h",
+        "14 km/h",
+        "15 km/h",
+        "16 km/h",
+        "17 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "16 km/h",
+      "explanation": "6500 m = 6.5 km. 26 min = 13/30 hours. Speed = 6.5 ÷ (13/30) = 15 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A hot air balloon drifts over the New Forest at 12 km/h for 4 hours 30 minutes. How far does it travel?",
+      "options": [
+        "52 km",
+        "53 km",
+        "54 km",
+        "55 km",
+        "56 km"
+      ],
+      "correct": 2,
+      "correctAnswer": "54 km",
+      "explanation": "4 hours 30 minutes = 4.5 hours. Distance = 12 × 4.5 = 54 km. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A train leaves Bournemouth at 9:15 am and arrives in London at 11:15 am. The distance is 160 km. What was the train's average speed?",
+      "options": [
+        "72 km/h",
+        "76 km/h",
+        "80 km/h",
+        "84 km/h",
+        "88 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "80 km/h",
+      "explanation": "Journey time = 11:15 − 9:15 = 2 hours. Speed = 160 ÷ 2 = 80 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mum drives 240 km to visit Auntie. She drives the first 120 km at 60 km/h, then stops for 30 minutes for lunch, then drives the remaining 120 km at 80 km/h. What is her average speed for the whole journey (not including the lunch stop)?",
+      "options": [
+        "65.1 km/h",
+        "68.6 km/h",
+        "70.0 km/h",
+        "72.5 km/h",
+        "75.0 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "68.6 km/h",
+      "explanation": "Time for first half = 120 ÷ 60 = 2 hours. Time for second half = 120 ÷ 80 = 1.5 hours. Total driving time = 3.5 hours. Average speed = 240 ÷ 3.5 = 68.6 km/h (rounded to 1 d.p.). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A swimmer completes a 1500 m race in 25 minutes. What is her speed in metres per minute?",
+      "options": [
+        "55 m/min",
+        "58 m/min",
+        "60 m/min",
+        "62 m/min",
+        "65 m/min"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 m/min",
+      "explanation": "Speed = distance ÷ time = 1500 ÷ 25 = 60 metres per minute. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Dad is driving 300 km. After 2 hours at 60 km/h, he realises he needs to arrive within the next 1.5 hours. What speed must he average for the rest of the journey?",
+      "options": [
+        "100 km/h",
+        "110 km/h",
+        "120 km/h",
+        "130 km/h",
+        "140 km/h"
+      ],
+      "correct": 2,
+      "correctAnswer": "120 km/h",
+      "explanation": "Distance covered = 60 × 2 = 120 km. Remaining = 300 − 120 = 180 km. Speed needed = 180 ÷ 1.5 = 120 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school bus travels 45 km from the school to a museum. The journey takes 1 hour. On the way back, the bus takes 1.5 hours because of traffic. How much slower was the return journey?",
+      "options": [
+        "10 km/h",
+        "15 km/h",
+        "20 km/h",
+        "25 km/h",
+        "30 km/h"
+      ],
+      "correct": 1,
+      "correctAnswer": "15 km/h",
+      "explanation": "Going: 45 ÷ 1 = 45 km/h. Return: 45 ÷ 1.5 = 30 km/h. Difference = 45 − 30 = 15 km/h slower. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two friends leave school at the same time. Evie walks home at 5 km/h and arrives in 24 minutes. Lauren cycles at 15 km/h. How many minutes does Lauren's journey take?",
+      "options": [
+        "6 minutes",
+        "7 minutes",
+        "8 minutes",
+        "9 minutes",
+        "10 minutes"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 minutes",
+      "explanation": "Evie's distance = 5 × (24/60) = 5 × 0.4 = 2 km. Lauren's time = 2 ÷ 15 = 2/15 hours = 8 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A ferry crosses a channel that is 30 km wide. It sails at 20 km/h. How long does the crossing take?",
+      "options": [
+        "1 hour",
+        "1.25 hours",
+        "1.5 hours",
+        "1.75 hours",
+        "2 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "1.5 hours",
+      "explanation": "Time = distance ÷ speed = 30 ÷ 20 = 1.5 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A cyclist rides 48 km. For the first 30 km she rides at 20 km/h. For the rest she slows to 12 km/h because of hills. How long does the whole ride take?",
+      "options": [
+        "2.5 hours",
+        "2.75 hours",
+        "3 hours",
+        "3.25 hours",
+        "3.5 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "3 hours",
+      "explanation": "First part: 30 ÷ 20 = 1.5 hours. Second part: 18 ÷ 12 = 1.5 hours. Total = 1.5 + 1.5 = 3 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A drone flies 4500 metres in 5 minutes. What is its speed in km/h?",
+      "options": [
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "54 km/h",
+        "56 km/h"
+      ],
+      "correct": 3,
+      "correctAnswer": "54 km/h",
+      "explanation": "4500 m = 4.5 km. 5 minutes = 5/60 = 1/12 hour. Speed = 4.5 ÷ (1/12) = 4.5 × 12 = 54 km/h. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A snail moves at 0.05 km/h. How far does it travel in 4 hours?",
+      "options": [
+        "0.15 km",
+        "0.2 km",
+        "0.25 km",
+        "0.3 km",
+        "0.35 km"
+      ],
+      "correct": 1,
+      "correctAnswer": "0.2 km",
+      "explanation": "Distance = speed × time = 0.05 × 4 = 0.2 km (that's 200 metres!). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

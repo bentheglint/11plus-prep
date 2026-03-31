@@ -1,0 +1,1846 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "verbalAnalogies",
+    "displayName": "Verbal Analogies",
+    "extractedAt": "2026-03-30T13:52:00.611Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "___ is to brush as writer is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "painter + pen",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "___ is to hand as helmet is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "glove + head",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "___ is to bear as cygnet is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "cub + swan",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "___ is to patient as teacher is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "doctor + pupil",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "___ is to foot as finger is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "toe + hand",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "___ is to book as verse is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "chapter + poem",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "___ is to cat as hoof is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "paw + horse",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "___ is to car as wing is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "wheel + bird",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "___ is to sheep as pack is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "flock + wolves",
+      "subConceptId": "animal-home",
+      "subConceptName": "Animal to Home",
+      "confidence": "high",
+      "lessonTeachSummary": "A **bird** lives in a **nest**. This pattern links an **animal** to its **home or dwelling**. So where does a **rabbit** live?",
+      "lessonLearningGoal": [
+        "How to spot 'animal to its home' analogies — did you know an otter's home is called a holt?",
+        "How to apply the pattern: animal is to its home as animal is to its home (there are some brilliant ones to learn!)"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "___ is to tired as shiver is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "yawn + cold",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "___ is to orchestra as captain is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "conductor + team",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "___ is to dog as meow is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "bark + cat",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "___ is to ink as brush is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "pen + paint",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "___ is to pen as canvas is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "paper + brush",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "___ is to uncle as niece is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "nephew + aunt",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "___ is to bird as fin is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "wing + fish",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "___ is to morning as supper is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "breakfast + evening",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "___ is to sheep as kennel is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "pen + dog",
+      "subConceptId": "animal-home",
+      "subConceptName": "Animal to Home",
+      "confidence": "high",
+      "lessonTeachSummary": "A **bird** lives in a **nest**. This pattern links an **animal** to its **home or dwelling**. So where does a **rabbit** live?",
+      "lessonLearningGoal": [
+        "How to spot 'animal to its home' analogies — did you know an otter's home is called a holt?",
+        "How to apply the pattern: animal is to its home as animal is to its home (there are some brilliant ones to learn!)"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "___ is to grape as tree is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "vine + apple",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "___ is to flour as cow is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "wheat + milk",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "___ is to tall as light is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "short + heavy",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "___ is to fast as quiet is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "slow + loud",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "___ is to hard as smooth is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "soft + rough",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "___ is to narrow as tall is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "wide + short",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "___ is to polite as brave is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "rude + cowardly",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "___ is to ancient as shallow is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "modern + deep",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "___ is to generous as honest is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "selfish + deceitful",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "___ is to temporary as rigid is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "permanent + flexible",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "___ is to abundant as visible is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "scarce + hidden",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "___ is to timid as cautious is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "bold + reckless",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "___ is to innocent as artificial is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "guilty + genuine",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "___ is to empty as open is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "full + shut",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "___ is to hand as toe is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "finger + foot",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "___ is to tree as petal is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "leaf + flower",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "___ is to clock as key is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "hand + lock",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "___ is to car as mast is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "bonnet + boat",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "___ is to guitar as key is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "string + piano",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "___ is to face as elbow is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "nose + arm",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "___ is to sentence as brick is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "word + wall",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "___ is to skeleton as stitch is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "bone + fabric",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "___ is to archipelago as scene is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "island + play",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "___ is to chain as carriage is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "link + train",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "___ is to fruit as carrot is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "apple + vegetable",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "___ is to colour as violin is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "red + instrument",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "___ is to bird as trout is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "robin + fish",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "___ is to planet as Thames is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mars + river",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "___ is to metal as oak is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "iron + wood",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "___ is to shape as emerald is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "triangle + gemstone",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "___ is to furniture as daisy is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "table + flower",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "___ is to reptile as eagle is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "snake + raptor",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "___ is to cereal as spinach is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "wheat + leafy vegetable",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "___ is to dwelling as sonnet is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "cottage + poem",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "___ is to write as spoon is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "pencil + eat",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "___ is to see as ear is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "eye + hear",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "___ is to rain as coat is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "umbrella + cold",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "___ is to measure as telescope is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "ruler + magnify",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "___ is to warm as fan is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "radiator + cool",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "___ is to dig as net is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "spade + catch",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "___ is to lock as anchor is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "key + hold",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "___ is to preserve as filter is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "salt + purify",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "___ is to navigate as compass is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "map + direction",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "___ is to illuminate as microscope is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "torch + enlarge",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "___ is to boiling as cool is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "warm + freezing",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "___ is to shout as tap is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "whisper + thump",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "___ is to furious as pleased is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "annoyed + delighted",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "___ is to starving as tired is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "hungry + exhausted",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "___ is to downpour as breeze is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "drizzle + gale",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "___ is to terrified as dislike is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "nervous + hate",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "___ is to ancient as damp is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "old + soaked",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "___ is to blizzard as nibble is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "flurry + devour",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "___ is to oven as gardener is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "chef + spade",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "___ is to camera as surgeon is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "photographer + scalpel",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "___ is to chisel as farmer is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "sculptor + plough",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "___ is to microscope as electrician is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "scientist + multimeter",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "___ is to stethoscope as archaeologist is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "doctor + trowel",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "___ is to baton as astronomer is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "conductor + telescope",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "___ is to dog as chick is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "puppy + hen",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "___ is to cow as lamb is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "calf + sheep",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "___ is to horse as gosling is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "foal + goose",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "___ is to frog as caterpillar is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "tadpole + butterfly",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "___ is to deer as joey is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "fawn + kangaroo",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "___ is to owl as elver is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "owlet + eel",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "___ is to bread as wool is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "flour + jumper",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "___ is to paper as sand is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "wood + glass",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "___ is to cheese as grape is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "milk + wine",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "___ is to pottery as ore is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "clay + metal",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "___ is to linen as rubber is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "flax + tyre",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "___ is to learn as kitchen is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "school + cook",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "___ is to swim as pitch is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "pool + play",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "___ is to worship as court is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "church + trial",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "___ is to act as studio is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "theatre + record",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "___ is to experiment as observatory is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "laboratory + observe",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "___ is to flood as wind is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "rain + storm",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "___ is to ash as exercise is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "fire + sweat",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "___ is to echo as sun is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "shout + shadow",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "___ is to rust as neglect is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "moisture + decay",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "___ is to leap as quick is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "jump + rapid",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "___ is to snatch as mend is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "grab + repair",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "___ is to cunning as weary is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "sly + fatigued",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "___ is to ample as feeble is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "plentiful + weak",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "___ is to fur as bird is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "cat + feathers",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "___ is to eye as hearing is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "sight + ear",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "___ is to cow as lamb is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "calf + sheep",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "___ is to breakfast as dinner is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "morning + evening",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "___ is to book as actor is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "author + film",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "___ is to hot as ice is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "fire + cold",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "___ is to drive as aeroplane is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "car + fly",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "___ is to page as song is to ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "book + verse",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "___ is to flock as wolf is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "bird + pack",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "___ is to France as Tokyo is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "Paris + Japan",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "___ is to piano as bow is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "key + violin",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "___ is to tree as petal is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "leaf + flower",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "___ is to cold as drought is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "frost + dry",
+      "subConceptId": "cause-effect",
+      "subConceptName": "Cause and Effect",
+      "confidence": "high",
+      "lessonTeachSummary": "**heat** causes **melt**. In this pattern, the first word **causes** or **leads to** the second. So what does **cold** cause?",
+      "lessonLearningGoal": [
+        "How to spot 'cause and effect' analogies — one thing leads to another, like dominoes!",
+        "How to apply the pattern: cause leads to effect as cause leads to effect"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "___ is to chapter as atlas is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "novel + map",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "___ is to fish as lungs are to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "gills + human",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "___ is to teeth as shampoo is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "toothpaste + hair",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "___ is to spider as hive is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "web + bee",
+      "subConceptId": "animal-home",
+      "subConceptName": "Animal to Home",
+      "confidence": "high",
+      "lessonTeachSummary": "A **bird** lives in a **nest**. This pattern links an **animal** to its **home or dwelling**. So where does a **rabbit** live?",
+      "lessonLearningGoal": [
+        "How to spot 'animal to its home' analogies — did you know an otter's home is called a holt?",
+        "How to apply the pattern: animal is to its home as animal is to its home (there are some brilliant ones to learn!)"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "___ is to king as duchess is to ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "queen + duke",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "___ is to word as brick is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "letter + wall",
+      "subConceptId": "part-whole",
+      "subConceptName": "Part to Whole",
+      "confidence": "high",
+      "lessonTeachSummary": "A **page** is part of a **book**. In this pattern, the first word is a **small piece** of the second word. So what is a **key** part of?",
+      "lessonLearningGoal": [
+        "How to spot 'part to whole' analogies — where one thing is a piece of something bigger",
+        "How to apply the pattern: part is to whole as part is to whole (think jigsaw pieces!)"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "___ is to telescope as small is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "distant + microscope",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "___ is to mammal as salmon is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "whale + fish",
+      "subConceptId": "category-specific",
+      "subConceptName": "Category to Example",
+      "confidence": "high",
+      "lessonTeachSummary": "A **rose** is a type of **flower**. In this pattern, the first word is a **specific example** and the second is the **group or category** it belongs to. So what group does **Mars** belong to?",
+      "lessonLearningGoal": [
+        "How to spot 'example to category' analogies — where one thing is a type of something bigger",
+        "How to apply the pattern: example is to category as example is to category (think sorting things into groups!)"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "___ is to orchestra as captain is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "conductor + team",
+      "subConceptId": "tool-user",
+      "subConceptName": "Tool to User",
+      "confidence": "high",
+      "lessonTeachSummary": "A **writer** uses a **pen**. This pattern links a **tool or instrument** to the **person who uses it**. So who uses a **brush**?",
+      "lessonLearningGoal": [
+        "How to spot 'tool to person who uses it' analogies — think about who uses what at work!",
+        "How to apply the pattern: tool is to professional as tool is to professional (this one's really satisfying to crack)"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "___ is to caterpillar as frog is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "butterfly + tadpole",
+      "subConceptId": "young-adult",
+      "subConceptName": "Young to Adult",
+      "confidence": "high",
+      "lessonTeachSummary": "**puppy** is to **dog** — can you see the connection? This is one of the most common analogy patterns: **baby animal → adult animal**. Once you spot it in the first pair, just apply the same idea to *",
+      "lessonLearningGoal": [
+        "How to spot 'young animal to adult animal' analogies — these come up loads, and some of the baby names are really surprising!",
+        "How to apply the pattern: baby is to adult as baby is to adult (once you see it, you can't miss it)"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "___ is to guilty as acquit is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "convict + innocent",
+      "subConceptId": "synonym-antonym-pairs",
+      "subConceptName": "Synonym & Antonym Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "Are **\"hot\"** and **\"cold\"** synonyms (words that mean the same) or antonyms (words that mean the opposite)? Decide which, then apply the same rule to **\"big\"**.",
+      "lessonLearningGoal": [
+        "How to spot analogies where the relationship IS about words meaning the same (synonym) or the opposite (antonym) — two skills in one!",
+        "How to apply the pattern: word is to synonym/antonym as word is to synonym/antonym"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "___ is to painting as playwright is to ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "artist + drama",
+      "subConceptId": "creator-creation",
+      "subConceptName": "Creator to Creation",
+      "confidence": "high",
+      "lessonTeachSummary": "An **author** creates a **book**. In this pattern, the first word is a **person who makes things** and the second is **what they make**. So what does a **composer** create?",
+      "lessonLearningGoal": [
+        "How to spot 'creator to creation' analogies — who makes what? Think about people and the things they create!",
+        "How to apply the pattern: creator is to creation as creator is to creation"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "tool-user": {
+      "name": "Tool to User",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 9,
+        "D2": 9,
+        "D3": 7
+      }
+    },
+    "part-whole": {
+      "name": "Part to Whole",
+      "questionCount": 26,
+      "difficulties": {
+        "D1": 11,
+        "D2": 11,
+        "D3": 4
+      }
+    },
+    "young-adult": {
+      "name": "Young to Adult",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 3,
+        "D2": 3,
+        "D3": 3
+      }
+    },
+    "animal-home": {
+      "name": "Animal to Home",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 0,
+        "D2": 2,
+        "D3": 1
+      }
+    },
+    "cause-effect": {
+      "name": "Cause and Effect",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 0,
+        "D2": 4,
+        "D3": 2
+      }
+    },
+    "synonym-antonym-pairs": {
+      "name": "Synonym & Antonym Pairs",
+      "questionCount": 30,
+      "difficulties": {
+        "D1": 9,
+        "D2": 10,
+        "D3": 11
+      }
+    },
+    "creator-creation": {
+      "name": "Creator to Creation",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 2,
+        "D2": 2,
+        "D3": 4
+      }
+    },
+    "category-specific": {
+      "name": "Category to Example",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 5,
+        "D2": 8,
+        "D3": 5
+      }
+    }
+  }
+}

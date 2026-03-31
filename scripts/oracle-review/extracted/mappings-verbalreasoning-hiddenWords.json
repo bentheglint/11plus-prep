@@ -1,0 +1,2246 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "hiddenWords",
+    "displayName": "Hidden Words",
+    "extractedAt": "2026-03-30T13:52:00.623Z",
+    "totalQuestions": 155,
+    "mappedQuestions": 155,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 9,
+    "orphanSubConcepts": 6,
+    "confidenceBreakdown": {
+      "high": 154,
+      "medium": 1,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "A 4-letter word meaning 'not closed' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "top + end",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "A 4-letter word meaning 'warmth' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "she + ate",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "A 4-letter word meaning 'part of the body' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "beach + and",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "A 4-letter word meaning 'to care for deeply' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "school + over",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A 4-letter word meaning 'a brave person' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "she + rode",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "A 4-letter word meaning 'water falling from clouds' is hidden across two of these words. Look where two words join together.",
+      "questionDifficulty": 1,
+      "correctAnswer": "camera + inside",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "A 4-letter word meaning 'a curved structure' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "clear + chance",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "A 4-letter word meaning 'slim or not thick' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "warmth + inside",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "A 4-letter word meaning 'capable' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "extra + blend",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "A 4-letter word meaning 'a magic stick' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "saw + Andrew",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "A 4-letter word meaning 'to practise boxing' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "chess + partner",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "A 4-letter word meaning 'a large black bird' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "epic + row",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "A 4-letter word meaning 'a wheeled vehicle pulled by a horse' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "magic + artist",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "A 4-letter word meaning 'an irritating feeling on the skin' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "rabbit + chose",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "A 4-letter word meaning 'a grain eaten around the world' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "electric + engine",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A 4-letter word meaning 'a military position' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "rubber + ankle",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "villa + menu",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "great + allies",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "A 4-letter word meaning 'a bundle of hay or straw' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tuba + lesson",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Peru + starting",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "A 4-letter word meaning 'a small body of still water' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "upon + damp",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "A 4-letter word meaning 'an entrance in a fence or wall' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "yoga + test",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A 4-letter word meaning 'a device that gives light' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "school + ample",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "A 4-letter word meaning 'where a bird lays its eggs' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "moon + estate",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "A 4-letter word meaning 'a bright object in the night sky' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "fast + argue",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "A 4-letter word meaning 'a hollow metal object that rings' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "grab + ellipse",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "A 4-letter word meaning 'a sweet baked treat' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "orca + kept",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A 4-letter word meaning 'tiny dry particles found on surfaces' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Hindu + still",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "A 4-letter word meaning 'thick strong cord used for tying' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hero + peak",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A 4-letter word meaning 'a male ruler of a country' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "thick + ingot",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "climb + android",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "A 4-letter word meaning 'having a low temperature' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "music + older",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "A 4-letter word meaning 'a circular band worn on a finger' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "floor + ingest",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "A 4-letter word meaning 'a vertical structure around a garden' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "draw + allow",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "A 4-letter word meaning 'a shelter made of canvas for camping' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bright + enter",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A 4-letter word meaning 'tiny grains found on a beach' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "grass + android",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A 4-letter word meaning 'a white drink from cows' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "dream + ilk",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A 4-letter word meaning 'to eat an evening meal' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "laid + inert",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A 4-letter word meaning 'a strong building used for defence' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "loaf + orthodox",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "club + one",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "medium",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "A 4-letter word meaning 'a large area of fresh water' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "formula + keep",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "A 4-letter word meaning 'to want or hope for something' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "kiwi + shelf",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "A 4-letter word meaning 'to search for something' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "match + until",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "A 4-letter word meaning 'a pale red colour' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tulip + inkwell",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "A 4-letter word meaning 'a tall pole on a sailing ship' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "llama + stop",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A 4-letter word meaning 'to repair something broken' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "swam + endless",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A 4-letter word meaning 'the time just before nightfall' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Hindu + skate",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A 4-letter word meaning 'the wheel or tiller used to steer a ship' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "much + elms",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "A 4-letter word meaning 'a room or space under the roof' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "pedal + often",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A 4-letter word meaning 'a very small brown bird' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "brew + rental",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A 4-letter word meaning 'a metal fastener or to run quickly' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "symbol + tank",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "A 4-letter word meaning 'a young deer' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "loaf + awning",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "A 4-letter word meaning 'a ridge of rock or coral near the sea surface' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sure + effort",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A 4-letter word meaning 'the smallest piece in chess' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "steep + awning",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A 4-letter word meaning 'a thick flat piece of stone or concrete' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "plus + label",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A 4-letter word meaning 'a fastening made by tying string' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "drink + note",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "A 4-letter word meaning 'a shellfish with two hinged shells' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "magic + lamb",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A 4-letter word meaning 'a thin branch of a tree' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "post + wiggle",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "wand + entry",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "A 4-letter word meaning 'a sudden strong rush of wind' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "fungus + took",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "A 4-letter word meaning 'a stopper for a bottle, or a city in Ireland' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "decor + kept",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "A 4-letter word meaning 'to beat or sell something' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "dwarf + logic",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "A 4-letter word meaning 'an aromatic herb or a place where coins are made' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "swim + into",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "A 4-letter word meaning 'a sharp curved nail on an animal's foot' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "music + lawn",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "A 4-letter word meaning 'a soft round purple fruit' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "help + lump",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A 4-letter word meaning 'a broad smile' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "shag + rinse",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "A 4-letter word meaning 'a narrow opening or gap' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "girls + lotion",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "A 4-letter word meaning 'to move wings up and down' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "half + laptop",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "A 4-letter word meaning 'a dish of meat and vegetables cooked slowly' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "frost + ewe",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "A 4-letter word meaning 'a fastener or to cut with scissors' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "music + lips",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A 4-letter word meaning 'a narrow valley' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "shrug + lend",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A 4-letter word meaning 'to kick a ball before it hits the ground' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "step + until",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "A 4-letter word meaning 'a short funny performance' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "brisk + item",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "A 4-letter word meaning 'to walk with difficulty' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "trial + import",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "A 4-letter word meaning 'serious and gloomy' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "debug + rim",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "A 4-letter word meaning 'a piece of cloth worn to cover the face' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "grave + illness",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "A 4-letter word meaning 'a clever trick or deception' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "guru + seed",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "A 4-letter word meaning 'a cause of great distress' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tuba + next",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A 4-letter word meaning 'a large fire for burning a dead body' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "copy + realm",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "A 4-letter word meaning 'to gradually decrease or decline' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "straw + anew",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "A 4-letter word meaning 'a very strong wind' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "drag + alert",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "A 4-letter word meaning 'an urgent request or appeal' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "steeple + afoot",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "A 4-letter word meaning 'the upper edge of a cup or hat' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "club + rim",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A 4-letter word meaning 'a wise person, or an aromatic herb' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "mesa + get",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "A 4-letter word meaning 'a precious stone that shimmers with colours' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "into + palace",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "A 4-letter word meaning 'skilful and quick in movement' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bored + efts",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "A 4-letter word meaning 'great enthusiasm or passion' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "froze + altar",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A 4-letter word meaning 'a major musical composition' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bishop + usher",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "A 4-letter word meaning 'a mound of sand shaped by wind' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Hindu + never",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "A 4-letter word meaning 'an ancient stringed musical instrument' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "July + read",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A 4-letter word meaning 'traditional knowledge passed down through stories' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "pool + oregano",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "A 4-letter word meaning 'a soothing ointment or something that comforts' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "verb + almond",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "A 4-letter word meaning 'extremely serious or urgent' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "grand + ire",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "A 4-letter word meaning 'a green plant with feathery leaves' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "offer + night",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "A 4-letter word meaning 'a device that shows wind direction' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "larva + never",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "A 4-letter word meaning 'the back of the neck' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "turn + apex",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "A 4-letter word meaning 'a formal written legal document' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "brew + ritual",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "A 4-letter word meaning 'a cunning plan or scheme' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tulip + loyal",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "A 4-letter word meaning 'a large heavy book' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "veto + meant",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "A 4-letter word meaning 'to stare at in a rude or admiring way' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "shoo + gleam",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A 4-letter word meaning 'a light you can carry' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "school + ample",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "A 4-letter word meaning 'a bird's home' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "clean + estate",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "boat + allowed",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A 4-letter word meaning 'a green fruit' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "shape + around",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A 4-letter word meaning 'to hurt or damage' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "with + armour",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "A 4-letter word meaning 'part of a bird or aeroplane' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "brew + ingredients",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "A 4-letter word meaning 'to get money by working' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "true + Arnold",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "A 4-letter word meaning 'as well' or 'too' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "metal + some",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "A 4-letter word meaning 'a decorative fabric' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "signal + aced",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "A 4-letter word meaning 'something you cook food in' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "into + venture",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "club + Andrew",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A 4-letter word meaning 'a soft, steady light' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "shrug + lower",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "A 4-letter word meaning 'every one' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "race + achieved",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "A 4-letter word meaning 'a small singing bird' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "solar + kind",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A 4-letter word meaning 'to eat a meal' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "board + inedible",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "A 4-letter word meaning 'to wander freely' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "hero + among",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A 4-letter word meaning 'an annoying insect or creature' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "tulip + estate",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "A 4-letter word meaning 'a covering for the face' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "drama + sketch",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "A 4-letter word meaning 'an urgent request' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "stop + leaving",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "A 4-letter word meaning 'a long flowing garment' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "manor + obeyed",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "A 4-letter word meaning 'a very wise person' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bus + agent",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "A 4-letter word meaning 'a wide valley' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "larva + left",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "A 4-letter word meaning 'a sudden sharp feeling' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "cheap + anger",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A 4-letter word meaning 'a thin covering for the face' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "dove + illustrated",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "A 4-letter word meaning 'to manage or deal with something' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "disco + performed",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "A 3-letter word meaning 'to gain a victory' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "new + inner",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "A 3-letter word meaning 'an animal that barks' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "old + ogre",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "A 3-letter word meaning 'a rodent' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Her + atlas",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "A 3-letter word meaning 'a head covering' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Each + athlete",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "crisp + envelope",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "A 3-letter word meaning 'a floor covering' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Our + ugly",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "A 3-letter word meaning 'a large vehicle' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hub + used",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "A 3-letter word meaning 'a body part used for seeing' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "She + yelled",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "A 3-letter word meaning 'something you sleep on' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "lamb + edged",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "A 3-letter word meaning 'to attempt' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Short + rye",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Music + utility",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A 3-letter word meaning 'an insect that makes honey' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tube + enters",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "A 3-letter word meaning 'a baby cow' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "basic + alphabet",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A 3-letter word meaning 'to pull something' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Get + owls",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A 5-letter word meaning 'a large feather' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "crisp + lumen",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "A 5-letter word meaning 'the speed of music' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "temp + often",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "A 5-letter word meaning 'a secret worker' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "flag + entered",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "A 5-letter word meaning 'to change' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "metal + terrified",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "A 5-letter word meaning 'a yellow fruit' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "camel + on",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "A 5-letter word meaning 'soft and smooth' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "music + reams",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "A 5-letter word meaning 'a wooden seat' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bench + aired",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A 5-letter word meaning 'a tool for sweeping' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "club + roomed",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "A 5-letter word meaning 'a citrus fruit' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "rule + monsters",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "gang + errand",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "A 5-letter word meaning 'to begin' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "mast + article",
+      "subConceptId": "two-two-split",
+      "subConceptName": "2+2 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type,",
+      "lessonLearningGoal": [
+        "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+        "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "A 4-letter word meaning 'a loud noise' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "crab + anger",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "A 4-letter word meaning 'to break suddenly' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "lens + napped",
+      "subConceptId": "one-three-split",
+      "subConceptName": "1+3 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the f",
+      "lessonLearningGoal": [
+        "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+        "Why this split fools so many people, and how you can be the one who spots it"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "A 3-letter word meaning 'frozen water' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 3,
+      "correctAnswer": "basic + energy",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "historic + entire",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "A 4-letter word meaning 'a small hollow or damage' is hidden across two of these words. Find the two words.",
+      "questionDifficulty": 2,
+      "correctAnswer": "garden + tools",
+      "subConceptId": "three-one-split",
+      "subConceptName": "3+1 Letter Split",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and wat",
+      "lessonLearningGoal": [
+        "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+        "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "within-word",
+      "name": "Hidden Inside One Word"
+    },
+    {
+      "id": "clue-first",
+      "name": "Use the Clue First"
+    },
+    {
+      "id": "three-letter-hidden",
+      "name": "3-Letter Hidden Words"
+    },
+    {
+      "id": "five-letter-hidden",
+      "name": "5-Letter Hidden Words"
+    },
+    {
+      "id": "backwards-hidden",
+      "name": "Hidden Words Reading Backwards"
+    },
+    {
+      "id": "double-meaning",
+      "name": "Hidden Words with Double Meanings"
+    }
+  ],
+  "subConceptCoverage": {
+    "two-two-split": {
+      "name": "2+2 Letter Split",
+      "questionCount": 45,
+      "difficulties": {
+        "D1": 13,
+        "D2": 10,
+        "D3": 22
+      }
+    },
+    "one-three-split": {
+      "name": "1+3 Letter Split",
+      "questionCount": 95,
+      "difficulties": {
+        "D1": 37,
+        "D2": 36,
+        "D3": 22
+      }
+    },
+    "three-one-split": {
+      "name": "3+1 Letter Split",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 2,
+        "D2": 6,
+        "D3": 7
+      }
+    }
+  }
+}

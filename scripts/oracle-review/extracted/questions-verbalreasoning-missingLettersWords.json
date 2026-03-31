@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "missingLettersWords",
+    "displayName": "Missing Letters",
+    "extractedAt": "2026-03-30T13:05:32.806Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 36,
+      "D2": 49,
+      "D3": 40
+    },
+    "questionTypes": {
+      "standard": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? CH _ _ _ ER",
+      "options": [
+        "OPT",
+        "APT",
+        "ACT",
+        "ART",
+        "APE"
+      ],
+      "correct": 1,
+      "correctAnswer": "APT",
+      "explanation": "The answer is APT, making CHAPTER. 'Apt' means suitable or appropriate. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? PL _ _ _ ED",
+      "options": [
+        "AND",
+        "ATE",
+        "ANT",
+        "ACE",
+        "AGE"
+      ],
+      "correct": 2,
+      "correctAnswer": "ANT",
+      "explanation": "The answer is ANT, making PLANTED. 'Ant' is a small insect. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? CAR _ _ _ S",
+      "options": [
+        "PIE",
+        "PEN",
+        "PEW",
+        "PET",
+        "PUT"
+      ],
+      "correct": 3,
+      "correctAnswer": "PET",
+      "explanation": "The answer is PET, making CARPETS. 'Pet' means a tame animal kept for companionship. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? MAN _ _ _ D",
+      "options": [
+        "ACE",
+        "AGE",
+        "ATE",
+        "ARE",
+        "APE"
+      ],
+      "correct": 1,
+      "correctAnswer": "AGE",
+      "explanation": "The answer is AGE, making MANAGED. 'Age' means a period of time. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? CON _ _ _ T",
+      "options": [
+        "TIN",
+        "TAN",
+        "TON",
+        "TEN",
+        "TUN"
+      ],
+      "correct": 3,
+      "correctAnswer": "TEN",
+      "explanation": "The answer is TEN, making CONTENT. 'Ten' is the number 10. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? PAS _ _ _ E",
+      "options": [
+        "SAT",
+        "SAG",
+        "SAD",
+        "SAP",
+        "SAW"
+      ],
+      "correct": 1,
+      "correctAnswer": "SAG",
+      "explanation": "The answer is SAG, making PASSAGE. 'Sag' means to droop or sink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? H _ _ _ SOME",
+      "options": [
+        "ARM",
+        "ANT",
+        "ANY",
+        "ARC",
+        "AND"
+      ],
+      "correct": 4,
+      "correctAnswer": "AND",
+      "explanation": "The answer is AND, making HANDSOME. 'And' is a joining word. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? C _ _ _ AIN",
+      "options": [
+        "ART",
+        "APT",
+        "ACT",
+        "ANT",
+        "AMP"
+      ],
+      "correct": 1,
+      "correctAnswer": "APT",
+      "explanation": "The answer is APT, making CAPTAIN. 'Apt' means suitable or appropriate. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? PAR _ _ _ T",
+      "options": [
+        "AGE",
+        "APE",
+        "ATE",
+        "ACE",
+        "ARE"
+      ],
+      "correct": 1,
+      "correctAnswer": "APE",
+      "explanation": "The answer is APE, making PARAPET. 'Ape' is a large primate. A parapet is a low wall along the edge of a roof or bridge. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TERN",
+      "options": [
+        "PAD",
+        "PAN",
+        "PAT",
+        "PAW",
+        "PEA"
+      ],
+      "correct": 2,
+      "correctAnswer": "PAT",
+      "explanation": "The answer is PAT, making PATTERN. 'Pat' means to touch gently. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which single letter completes this word? B _ AUTY",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The answer is E, making BEAUTY. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which single letter completes this word? SC _ ENCE",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 2,
+      "correctAnswer": "I",
+      "explanation": "The answer is I, making SCIENCE. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which single letter completes this word? _ NOWLEDGE",
+      "options": [
+        "G",
+        "H",
+        "J",
+        "K",
+        "N"
+      ],
+      "correct": 3,
+      "correctAnswer": "K",
+      "explanation": "The answer is K, making KNOWLEDGE. The K is silent at the start of the word. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which single letter completes this word? RHYTH _",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "M",
+        "X"
+      ],
+      "correct": 3,
+      "correctAnswer": "M",
+      "explanation": "The answer is M, making RHYTHM. This is a commonly misspelt word with no obvious vowels. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which single letter completes this word? NECE _ SARY",
+      "options": [
+        "C",
+        "L",
+        "R",
+        "S",
+        "T"
+      ],
+      "correct": 3,
+      "correctAnswer": "S",
+      "explanation": "The answer is S, making NECESSARY. A common spelling rule: one C, two S's — 'necessary'. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? FORE _ _ _",
+      "options": [
+        "MAX",
+        "MEN",
+        "MAP",
+        "MAT",
+        "MAN"
+      ],
+      "correct": 4,
+      "correctAnswer": "MAN",
+      "explanation": "The answer is MAN, making FOREMAN. A foreman is a person in charge of a group of workers. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? W _ _ _ OW",
+      "options": [
+        "ALL",
+        "ILL",
+        "OWL",
+        "ELF",
+        "INN"
+      ],
+      "correct": 1,
+      "correctAnswer": "ILL",
+      "explanation": "The answer is ILL, making WILLOW. A willow is a type of tree often found near rivers. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ ROOM",
+      "options": [
+        "BIT",
+        "BAT",
+        "BOT",
+        "BUT",
+        "BET"
+      ],
+      "correct": 1,
+      "correctAnswer": "BAT",
+      "explanation": "The answer is BAT, making BATHROOM. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TAGE",
+      "options": [
+        "CAT",
+        "CUT",
+        "COT",
+        "CAN",
+        "CAP"
+      ],
+      "correct": 2,
+      "correctAnswer": "COT",
+      "explanation": "The answer is COT, making COTTAGE. A cottage is a small house, typically in the countryside. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ ITAL",
+      "options": [
+        "CAN",
+        "COP",
+        "CUP",
+        "CAP",
+        "CAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "CAP",
+      "explanation": "The answer is CAP, making CAPITAL. A capital can mean the main city of a country or an uppercase letter. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ PET",
+      "options": [
+        "TIP",
+        "CAR",
+        "MOP",
+        "COP",
+        "TAP"
+      ],
+      "correct": 1,
+      "correctAnswer": "CAR",
+      "explanation": "The answer is CAR, making CARPET. A carpet is a thick textile floor covering. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ DEN",
+      "options": [
+        "BUR",
+        "RAN",
+        "GAR",
+        "JOR",
+        "TEN"
+      ],
+      "correct": 2,
+      "correctAnswer": "GAR",
+      "explanation": "The answer is GAR, making GARDEN. A garden is an area of ground used for growing flowers, fruit or vegetables. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ NET",
+      "options": [
+        "TIN",
+        "COR",
+        "FUN",
+        "PLA",
+        "VAL"
+      ],
+      "correct": 3,
+      "correctAnswer": "PLA",
+      "explanation": "The answer is PLA, making PLANET. A planet is a large body that orbits a star, such as Earth. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ DLE",
+      "options": [
+        "BIN",
+        "TIL",
+        "MID",
+        "CAN",
+        "GRI"
+      ],
+      "correct": 3,
+      "correctAnswer": "CAN",
+      "explanation": "The answer is CAN, making CANDLE. A candle is a cylinder of wax with a wick that produces light when lit. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TEN",
+      "options": [
+        "WAL",
+        "KIT",
+        "JAM",
+        "DOT",
+        "CUR"
+      ],
+      "correct": 1,
+      "correctAnswer": "KIT",
+      "explanation": "The answer is KIT, making KITTEN. A kitten is a young cat. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ BIT",
+      "options": [
+        "HIP",
+        "TAB",
+        "DOG",
+        "COP",
+        "RAB"
+      ],
+      "correct": 4,
+      "correctAnswer": "RAB",
+      "explanation": "The answer is RAB, making RABBIT. A rabbit is a small furry animal with long ears. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ VER",
+      "options": [
+        "TIN",
+        "GOL",
+        "BRA",
+        "COP",
+        "SIL"
+      ],
+      "correct": 4,
+      "correctAnswer": "SIL",
+      "explanation": "The answer is SIL, making SILVER. Silver is a precious grey-white metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ ROT",
+      "options": [
+        "DOG",
+        "FIN",
+        "JAM",
+        "CAR",
+        "TIP"
+      ],
+      "correct": 3,
+      "correctAnswer": "CAR",
+      "explanation": "The answer is CAR, making CARROT. A carrot is an orange root vegetable. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TAIN",
+      "options": [
+        "HOP",
+        "JAR",
+        "CAP",
+        "TIN",
+        "MOB"
+      ],
+      "correct": 2,
+      "correctAnswer": "CAP",
+      "explanation": "The answer is CAP, making CAPTAIN. A captain is the leader of a team or the commander of a ship. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TION",
+      "options": [
+        "JAR",
+        "POR",
+        "TIP",
+        "MOB",
+        "HUB"
+      ],
+      "correct": 1,
+      "correctAnswer": "POR",
+      "explanation": "The answer is POR, making PORTION. A portion is a part or share of something, such as a helping of food. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TERN",
+      "options": [
+        "TIP",
+        "HUB",
+        "MOB",
+        "LAN",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "LAN",
+      "explanation": "The answer is LAN, making LANTERN. A lantern is a lamp with a protective case, often used outdoors. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ PTER",
+      "options": [
+        "JAR",
+        "CHA",
+        "TIP",
+        "MOB",
+        "HUB"
+      ],
+      "correct": 1,
+      "correctAnswer": "CHA",
+      "explanation": "The answer is CHA, making CHAPTER. A chapter is a main division of a book. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ MENT",
+      "options": [
+        "MOB",
+        "HUB",
+        "TIP",
+        "JAR",
+        "PAY"
+      ],
+      "correct": 4,
+      "correctAnswer": "PAY",
+      "explanation": "The answer is PAY, making PAYMENT. A payment is the act of giving money in exchange for goods or services. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TURE",
+      "options": [
+        "TIP",
+        "JAR",
+        "VEN",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 2,
+      "correctAnswer": "VEN",
+      "explanation": "The answer is VEN, making VENTURE. A venture is a risky or daring undertaking. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ IAGE",
+      "options": [
+        "MOB",
+        "HUB",
+        "TIP",
+        "MAR",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "MAR",
+      "explanation": "The answer is MAR, making MARRIAGE. Marriage is the legal union of two people as partners. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ RAGE",
+      "options": [
+        "TIP",
+        "STO",
+        "JAR",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 1,
+      "correctAnswer": "STO",
+      "explanation": "The answer is STO, making STORAGE. Storage is the action of keeping things in a particular place for future use. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ LISH",
+      "options": [
+        "TIP",
+        "PUB",
+        "JAR",
+        "MOB",
+        "HUB"
+      ],
+      "correct": 1,
+      "correctAnswer": "PUB",
+      "explanation": "The answer is PUB, making PUBLISH. Publish means to produce and distribute a book, newspaper or other written work. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ CRET",
+      "options": [
+        "TIP",
+        "JAR",
+        "MOB",
+        "HUB",
+        "SEC"
+      ],
+      "correct": 4,
+      "correctAnswer": "SEC",
+      "explanation": "The answer is SEC, making SECRET. A secret is something that is kept hidden from others. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ THER",
+      "options": [
+        "JAR",
+        "TIP",
+        "WEA",
+        "MOB",
+        "HUB"
+      ],
+      "correct": 2,
+      "correctAnswer": "WEA",
+      "explanation": "The answer is WEA, making WEATHER. Weather is the state of the atmosphere at a given time and place. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ LUME",
+      "options": [
+        "MOB",
+        "JAR",
+        "TIP",
+        "VOL",
+        "HUB"
+      ],
+      "correct": 3,
+      "correctAnswer": "VOL",
+      "explanation": "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ ESTOR",
+      "options": [
+        "TIP",
+        "MOB",
+        "ANC",
+        "HUB",
+        "JAR"
+      ],
+      "correct": 2,
+      "correctAnswer": "ANC",
+      "explanation": "The answer is ANC, making ANCESTOR. An ancestor is a person from whom one is descended, such as a great-grandparent. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ RENDER",
+      "options": [
+        "TIP",
+        "SUR",
+        "MOB",
+        "HUB",
+        "JAR"
+      ],
+      "correct": 1,
+      "correctAnswer": "SUR",
+      "explanation": "The answer is SUR, making SURRENDER. Surrender means to give up or yield to the power of another. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ MANENT",
+      "options": [
+        "MOB",
+        "TIP",
+        "PER",
+        "HUB",
+        "JAR"
+      ],
+      "correct": 2,
+      "correctAnswer": "PER",
+      "explanation": "The answer is PER, making PERMANENT. Permanent means lasting for an indefinitely long time. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ NITURE",
+      "options": [
+        "TIP",
+        "MOB",
+        "HUB",
+        "FUR",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "FUR",
+      "explanation": "The answer is FUR, making FURNITURE. Furniture refers to movable items such as tables, chairs and beds used in a home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ ARTURE",
+      "options": [
+        "MOB",
+        "TIP",
+        "HUB",
+        "JAR",
+        "DEP"
+      ],
+      "correct": 4,
+      "correctAnswer": "DEP",
+      "explanation": "The answer is DEP, making DEPARTURE. Departure means the act of leaving, especially to start a journey. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ TACLE",
+      "options": [
+        "HUB",
+        "MOB",
+        "TIP",
+        "SPE",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "SPE",
+      "explanation": "The answer is SPE, making SPECTACLE. A spectacle is an impressive or remarkable sight or event. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ VENTURE",
+      "options": [
+        "TIP",
+        "JAR",
+        "ADV",
+        "MOB",
+        "HUB"
+      ],
+      "correct": 2,
+      "correctAnswer": "ADV",
+      "explanation": "The answer is ADV, making ADVENTURE. An adventure is an exciting and sometimes dangerous experience. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word? _ _ _ GUAGE",
+      "options": [
+        "HUB",
+        "LAN",
+        "MOB",
+        "TIP",
+        "JAR"
+      ],
+      "correct": 1,
+      "correctAnswer": "LAN",
+      "explanation": "The answer is LAN, making LANGUAGE. Language is the method of human communication using words. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? G _ F T",
+      "options": [
+        "A",
+        "I",
+        "R",
+        "N",
+        "L"
+      ],
+      "correct": 1,
+      "correctAnswer": "I",
+      "explanation": "The letter is I, making GIFT. A gift is a present given to someone. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? H _ L P",
+      "options": [
+        "A",
+        "O",
+        "E",
+        "U",
+        "I"
+      ],
+      "correct": 2,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making HELP. Help means to assist or aid someone. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? G _ L D",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 3,
+      "correctAnswer": "O",
+      "explanation": "The letter is O, making GOLD. Gold is a precious yellow metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? J _ M P",
+      "options": [
+        "A",
+        "I",
+        "O",
+        "U",
+        "E"
+      ],
+      "correct": 3,
+      "correctAnswer": "U",
+      "explanation": "The letter is U, making JUMP. Jump means to push yourself off the ground using your legs. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? N _ S T",
+      "options": [
+        "A",
+        "O",
+        "U",
+        "I",
+        "E"
+      ],
+      "correct": 4,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making NEST. A nest is a structure built by a bird to lay its eggs in. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? M _ L K",
+      "options": [
+        "A",
+        "O",
+        "I",
+        "U",
+        "E"
+      ],
+      "correct": 2,
+      "correctAnswer": "I",
+      "explanation": "The letter is I, making MILK. Milk is a white liquid produced by cows, often used as a drink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S _ F T",
+      "options": [
+        "U",
+        "I",
+        "A",
+        "O",
+        "E"
+      ],
+      "correct": 3,
+      "correctAnswer": "O",
+      "explanation": "The letter is O, making SOFT. Soft means easy to press or bend, not hard or firm. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? G R _ S P",
+      "options": [
+        "U",
+        "E",
+        "I",
+        "O",
+        "A"
+      ],
+      "correct": 4,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making GRASP. Grasp means to seize and hold firmly. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S C _ L P",
+      "options": [
+        "O",
+        "A",
+        "E",
+        "I",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making SCALP. The scalp is the skin covering the top of the head. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S T _ M P",
+      "options": [
+        "E",
+        "I",
+        "O",
+        "U",
+        "A"
+      ],
+      "correct": 4,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making STAMP. A stamp is a small adhesive label placed on a letter to pay for postage. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? F R _ G H T",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 2,
+      "correctAnswer": "I",
+      "explanation": "The letter is I, making FRIGHT. Fright means a sudden feeling of fear. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S P L _ S H",
+      "options": [
+        "E",
+        "I",
+        "O",
+        "U",
+        "A"
+      ],
+      "correct": 4,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making SPLASH. A splash is a sound made by something striking water. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? C L _ T C H",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 4,
+      "correctAnswer": "U",
+      "explanation": "The letter is U, making CLUTCH. Clutch means to grasp something tightly. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S C R _ T C H",
+      "options": [
+        "E",
+        "I",
+        "O",
+        "U",
+        "A"
+      ],
+      "correct": 4,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making SCRATCH. Scratch means to score or mark a surface with a sharp object. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S T R _ T C H",
+      "options": [
+        "A",
+        "I",
+        "O",
+        "U",
+        "E"
+      ],
+      "correct": 4,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making STRETCH. Stretch means to extend something to its full length. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S Q U _ L L",
+      "options": [
+        "E",
+        "I",
+        "O",
+        "U",
+        "A"
+      ],
+      "correct": 4,
+      "correctAnswer": "A",
+      "explanation": "The letter is A, making SQUALL. A squall is a sudden strong gust of wind, often with rain or snow. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S T R _ N G T H",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making STRENGTH. Strength is the quality of being physically powerful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? T H R _ U G H",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 3,
+      "correctAnswer": "O",
+      "explanation": "The letter is O, making THROUGH. Through means moving in one side and out of the other. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? R H _ T H M",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "Y"
+      ],
+      "correct": 4,
+      "correctAnswer": "Y",
+      "explanation": "The letter is Y, making RHYTHM. Rhythm is a strong, regular repeated pattern of movement or sound. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? T W _ L F T H",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making TWELFTH. Twelfth means the ordinal number for twelve, coming after eleventh. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? K N _ W L E D G E",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 3,
+      "correctAnswer": "O",
+      "explanation": "The letter is O, making KNOWLEDGE. Knowledge is information, understanding and skills gained through experience or education. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S M _ D G E",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 4,
+      "correctAnswer": "U",
+      "explanation": "The letter is U, making SMUDGE. A smudge is a blurred or smeared mark on a surface. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? W R _ S T L E",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making WRESTLE. Wrestle means to struggle or fight by grappling with an opponent. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? S C H _ D U L E",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making SCHEDULE. A schedule is a plan that lists events or tasks and the times they will happen. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which letter completes this word? P L _ D G E",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "The letter is E, making PLEDGE. A pledge is a solemn promise or undertaking. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LING",
+      "options": [
+        "CUP",
+        "DAR",
+        "JAM",
+        "TIP",
+        "MOB"
+      ],
+      "correct": 1,
+      "correctAnswer": "DAR",
+      "explanation": "The answer is DAR, making DARLING. Darling is an affectionate term for someone dearly loved. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) STER",
+      "options": [
+        "TIP",
+        "MON",
+        "CUP",
+        "JAM",
+        "HUB"
+      ],
+      "correct": 1,
+      "correctAnswer": "MON",
+      "explanation": "The answer is MON, making MONSTER. A monster is a large, frightening imaginary creature. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) MER",
+      "options": [
+        "CUP",
+        "JAM",
+        "SUM",
+        "TIP",
+        "HUB"
+      ],
+      "correct": 2,
+      "correctAnswer": "SUM",
+      "explanation": "The answer is SUM, making SUMMER. Summer is the warmest season of the year. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BER",
+      "options": [
+        "CUP",
+        "JAM",
+        "TIP",
+        "TIM",
+        "HUB"
+      ],
+      "correct": 3,
+      "correctAnswer": "TIM",
+      "explanation": "The answer is TIM, making TIMBER. Timber is wood prepared for use in building and carpentry. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) NER",
+      "options": [
+        "CUP",
+        "JAM",
+        "TIP",
+        "HUB",
+        "DIN"
+      ],
+      "correct": 4,
+      "correctAnswer": "DIN",
+      "explanation": "The answer is DIN, making DINNER. Dinner is the main meal of the day. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LET",
+      "options": [
+        "HAM",
+        "CUP",
+        "BUL",
+        "TIP",
+        "JAM"
+      ],
+      "correct": 2,
+      "correctAnswer": "BUL",
+      "explanation": "The answer is BUL, making BULLET. A bullet is a small metal projectile fired from a gun. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) PEN",
+      "options": [
+        "CUP",
+        "JAM",
+        "TIP",
+        "HAP",
+        "HUB"
+      ],
+      "correct": 3,
+      "correctAnswer": "HAP",
+      "explanation": "The answer is HAP, making HAPPEN. Happen means to take place or occur. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TURE",
+      "options": [
+        "JAM",
+        "CUL",
+        "TIP",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 1,
+      "correctAnswer": "CUL",
+      "explanation": "The answer is CUL, making CULTURE. Culture refers to the customs, arts and achievements of a particular group or nation. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TORY",
+      "options": [
+        "CUP",
+        "FAC",
+        "TIP",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 1,
+      "correctAnswer": "FAC",
+      "explanation": "The answer is FAC, making FACTORY. A factory is a building where goods are manufactured. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) VOUR",
+      "options": [
+        "CUP",
+        "TIP",
+        "FLA",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 2,
+      "correctAnswer": "FLA",
+      "explanation": "The answer is FLA, making FLAVOUR. Flavour is the taste of food or drink. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IBLE",
+      "options": [
+        "CUP",
+        "TIP",
+        "HUB",
+        "VIS",
+        "MOB"
+      ],
+      "correct": 3,
+      "correctAnswer": "VIS",
+      "explanation": "The answer is VIS, making VISIBLE. Visible means able to be seen. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SAGE",
+      "options": [
+        "CUP",
+        "TIP",
+        "HUB",
+        "MOB",
+        "MES"
+      ],
+      "correct": 4,
+      "correctAnswer": "MES",
+      "explanation": "The answer is MES, making MESSAGE. A message is a piece of information sent from one person to another. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TICE",
+      "options": [
+        "TIP",
+        "CUP",
+        "PRA",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 2,
+      "correctAnswer": "PRA",
+      "explanation": "The answer is PRA, making PRACTICE. Practice means repeated exercise to improve a skill. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LACE",
+      "options": [
+        "CUP",
+        "REP",
+        "TIP",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 1,
+      "correctAnswer": "REP",
+      "explanation": "The answer is REP, making REPLACE. Replace means to put something back or to substitute one thing for another. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RATE",
+      "options": [
+        "CUP",
+        "TIP",
+        "OPE",
+        "HUB",
+        "MOB"
+      ],
+      "correct": 2,
+      "correctAnswer": "OPE",
+      "explanation": "The answer is OPE, making OPERATE. Operate means to control the functioning of a machine or to perform surgery. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CADE",
+      "options": [
+        "CUP",
+        "TIP",
+        "HUB",
+        "ARC",
+        "MOB"
+      ],
+      "correct": 3,
+      "correctAnswer": "ARC",
+      "explanation": "The answer is ARC, making ARCADE. An arcade is a covered passage with shops along one or both sides. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LUME",
+      "options": [
+        "CUP",
+        "TIP",
+        "HUB",
+        "MOB",
+        "VOL"
+      ],
+      "correct": 4,
+      "correctAnswer": "VOL",
+      "explanation": "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSITY",
+      "options": [
+        "MOB",
+        "TIP",
+        "HUB",
+        "CUR",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "CUR",
+      "explanation": "The answer is CUR, making CURIOSITY. Curiosity is a strong desire to know or learn something. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) QUENT",
+      "options": [
+        "TIP",
+        "FRE",
+        "HUB",
+        "MOB",
+        "JAR"
+      ],
+      "correct": 1,
+      "correctAnswer": "FRE",
+      "explanation": "The answer is FRE, making FREQUENT. Frequent means occurring or done many times at short intervals. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SIBLE",
+      "options": [
+        "TIP",
+        "HUB",
+        "POS",
+        "MOB",
+        "JAR"
+      ],
+      "correct": 2,
+      "correctAnswer": "POS",
+      "explanation": "The answer is POS, making POSSIBLE. Possible means able to be done or achieved. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CIENT",
+      "options": [
+        "TIP",
+        "HUB",
+        "MOB",
+        "EFF",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "EFF",
+      "explanation": "The answer is EFF, making EFFICIENT. Efficient means achieving maximum results with minimum waste. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BRATE",
+      "options": [
+        "TIP",
+        "HUB",
+        "MOB",
+        "JAR",
+        "CEL"
+      ],
+      "correct": 4,
+      "correctAnswer": "CEL",
+      "explanation": "The answer is CEL, making CELEBRATE. Celebrate means to mark a special occasion with enjoyable activities. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TIFUL",
+      "options": [
+        "JAR",
+        "TIP",
+        "HUB",
+        "MOB",
+        "BEA"
+      ],
+      "correct": 4,
+      "correctAnswer": "BEA",
+      "explanation": "The answer is BEA, making BEAUTIFUL. Beautiful means pleasing to the senses or mind. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GRANCE",
+      "options": [
+        "TIP",
+        "FRA",
+        "HUB",
+        "MOB",
+        "JAR"
+      ],
+      "correct": 1,
+      "correctAnswer": "FRA",
+      "explanation": "The answer is FRA, making FRAGRANCE. A fragrance is a pleasant, sweet smell. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LENGE",
+      "options": [
+        "TIP",
+        "HUB",
+        "CHA",
+        "MOB",
+        "JAR"
+      ],
+      "correct": 2,
+      "correctAnswer": "CHA",
+      "explanation": "The answer is CHA, making CHALLENGE. A challenge is a task or situation that tests someone's abilities. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GMENT",
+      "options": [
+        "TIP",
+        "HUB",
+        "MOB",
+        "JUD",
+        "JAR"
+      ],
+      "correct": 3,
+      "correctAnswer": "JUD",
+      "explanation": "The answer is JUD, making JUDGEMENT. Judgement is the ability to make considered decisions or come to sensible conclusions. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DERER",
+      "options": [
+        "TIP",
+        "HUB",
+        "MOB",
+        "JAR",
+        "WAN"
+      ],
+      "correct": 4,
+      "correctAnswer": "WAN",
+      "explanation": "The answer is WAN, making WANDERER. A wanderer is a person who travels from place to place without a fixed home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nF ( _ _ _ ) YARD",
+      "options": [
+        "ARM",
+        "ART",
+        "ARK",
+        "OAR",
+        "AIR"
+      ],
+      "correct": 0,
+      "correctAnswer": "ARM",
+      "explanation": "The three missing letters are A, R, M making the word ARM. The complete word is FARMYARD. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nWAR ( _ _ _ ) S",
+      "options": [
+        "DEN",
+        "TEN",
+        "HEN",
+        "PEN",
+        "MEN"
+      ],
+      "correct": 0,
+      "correctAnswer": "DEN",
+      "explanation": "The three missing letters are D, E, N making the word DEN. The complete word is WARDENS. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nGAR ( _ _ _ ) ER",
+      "options": [
+        "DEN",
+        "TEN",
+        "HEN",
+        "NET",
+        "PEN"
+      ],
+      "correct": 0,
+      "correctAnswer": "DEN",
+      "explanation": "The three missing letters are D, E, N making the word DEN. The complete word is GARDENER. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nPAR ( _ _ _ ) S",
+      "options": [
+        "ROT",
+        "ROD",
+        "ROW",
+        "RAN",
+        "RAT"
+      ],
+      "correct": 0,
+      "correctAnswer": "ROT",
+      "explanation": "The three missing letters are R, O, T making the word ROT. The complete word is PARROTS. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nBAL ( _ _ _ ) S",
+      "options": [
+        "LET",
+        "LOT",
+        "LIT",
+        "LAP",
+        "LID"
+      ],
+      "correct": 0,
+      "correctAnswer": "LET",
+      "explanation": "The three missing letters are L, E, T making the word LET. The complete word is BALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nHAM ( _ _ _ ) S",
+      "options": [
+        "PER",
+        "HER",
+        "FUR",
+        "FOR",
+        "OUR"
+      ],
+      "correct": 0,
+      "correctAnswer": "PER",
+      "explanation": "The three missing letters are P, E, R making the word PER. The complete word is HAMPERS. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nDAM ( _ _ _ ) D",
+      "options": [
+        "AGE",
+        "ACE",
+        "ATE",
+        "APE",
+        "ARE"
+      ],
+      "correct": 0,
+      "correctAnswer": "AGE",
+      "explanation": "The three missing letters are A, G, E making the word AGE. The complete word is DAMAGED. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nMUS ( _ _ _ ) D",
+      "options": [
+        "TAR",
+        "TAN",
+        "TAP",
+        "TAB",
+        "TAG"
+      ],
+      "correct": 0,
+      "correctAnswer": "TAR",
+      "explanation": "The three missing letters are T, A, R making the word TAR. The complete word is MUSTARD. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nCUS ( _ _ _ ) S",
+      "options": [
+        "TOM",
+        "TOP",
+        "TON",
+        "TOW",
+        "TOE"
+      ],
+      "correct": 0,
+      "correctAnswer": "TOM",
+      "explanation": "The three missing letters are T, O, M making the word TOM. The complete word is CUSTOMS. A tom is a male cat. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nHOS ( _ _ _ ) E",
+      "options": [
+        "TAG",
+        "TAB",
+        "TAN",
+        "TAP",
+        "TAR"
+      ],
+      "correct": 0,
+      "correctAnswer": "TAG",
+      "explanation": "The three missing letters are T, A, G making the word TAG. The complete word is HOSTAGE. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nBUT ( _ _ _ ) S",
+      "options": [
+        "TON",
+        "TIN",
+        "TAN",
+        "TEN",
+        "TUN"
+      ],
+      "correct": 0,
+      "correctAnswer": "TON",
+      "explanation": "The three missing letters are T, O, N making the word TON. The complete word is BUTTONS. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nCOT ( _ _ _ ) E",
+      "options": [
+        "TAG",
+        "TAN",
+        "TAP",
+        "TAR",
+        "TAB"
+      ],
+      "correct": 0,
+      "correctAnswer": "TAG",
+      "explanation": "The three missing letters are T, A, G making the word TAG. The complete word is COTTAGE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nWAL ( _ _ _ ) S",
+      "options": [
+        "LET",
+        "LAP",
+        "LED",
+        "LEG",
+        "LID"
+      ],
+      "correct": 0,
+      "correctAnswer": "LET",
+      "explanation": "The three missing letters are L, E, T making the word LET. The complete word is WALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nFOR ( _ _ _ ) DEN",
+      "options": [
+        "BID",
+        "BAD",
+        "BED",
+        "BUD",
+        "BOD"
+      ],
+      "correct": 0,
+      "correctAnswer": "BID",
+      "explanation": "The three missing letters are B, I, D making the word BID. The complete word is FORBIDDEN. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nMAN ( _ _ _ ) R",
+      "options": [
+        "AGE",
+        "ACE",
+        "ATE",
+        "APE",
+        "ARE"
+      ],
+      "correct": 0,
+      "correctAnswer": "AGE",
+      "explanation": "The three missing letters are A, G, E making the word AGE. The complete word is MANAGER. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nDOC ( _ _ _ ) S",
+      "options": [
+        "TOR",
+        "TOP",
+        "TON",
+        "TOW",
+        "TOE"
+      ],
+      "correct": 0,
+      "correctAnswer": "TOR",
+      "explanation": "The three missing letters are T, O, R making the word TOR. The complete word is DOCTORS. A tor is a high rocky hill. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nCOM ( _ _ _ ) E",
+      "options": [
+        "PET",
+        "PEN",
+        "PEW",
+        "PIE",
+        "POT"
+      ],
+      "correct": 0,
+      "correctAnswer": "PET",
+      "explanation": "The three missing letters are P, E, T making the word PET. The complete word is COMPETE. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nPAL ( _ _ _ ) S",
+      "options": [
+        "ACE",
+        "AGE",
+        "ATE",
+        "APE",
+        "ARE"
+      ],
+      "correct": 0,
+      "correctAnswer": "ACE",
+      "explanation": "The three missing letters are A, C, E making the word ACE. The complete word is PALACES. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nMAG ( _ _ _ ) IC",
+      "options": [
+        "NET",
+        "NIT",
+        "NOT",
+        "NUT",
+        "NAT"
+      ],
+      "correct": 0,
+      "correctAnswer": "NET",
+      "explanation": "The three missing letters are N, E, T making the word NET. The complete word is MAGNETIC. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nTEM ( _ _ _ ) ATURE",
+      "options": [
+        "PER",
+        "PAR",
+        "FOR",
+        "HER",
+        "OUR"
+      ],
+      "correct": 0,
+      "correctAnswer": "PER",
+      "explanation": "The three missing letters are P, E, R making the word PER. The complete word is TEMPERATURE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nCAR ( _ _ _ ) TER",
+      "options": [
+        "PEN",
+        "PIN",
+        "PAN",
+        "PUN",
+        "PON"
+      ],
+      "correct": 0,
+      "correctAnswer": "PEN",
+      "explanation": "The three missing letters are P, E, N making the word PEN. The complete word is CARPENTER. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nDIS ( _ _ _ ) CE",
+      "options": [
+        "TAN",
+        "TIN",
+        "TON",
+        "TEN",
+        "TUN"
+      ],
+      "correct": 0,
+      "correctAnswer": "TAN",
+      "explanation": "The three missing letters are T, A, N making the word TAN. The complete word is DISTANCE. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nMIS ( _ _ _ ) TUNE",
+      "options": [
+        "FOR",
+        "FUR",
+        "FAR",
+        "FAN",
+        "FIN"
+      ],
+      "correct": 0,
+      "correctAnswer": "FOR",
+      "explanation": "The three missing letters are F, O, R making the word FOR. The complete word is MISFORTUNE. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nVOL ( _ _ _ ) O",
+      "options": [
+        "CAN",
+        "CAR",
+        "CAT",
+        "CAP",
+        "CUP"
+      ],
+      "correct": 0,
+      "correctAnswer": "CAN",
+      "explanation": "The three missing letters are C, A, N making the word CAN. The complete word is VOLCANO. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which three-letter word completes this longer word?\n\nNEWS ( _ _ _ ) ER",
+      "options": [
+        "PAP",
+        "POP",
+        "PIP",
+        "PEP",
+        "PUP"
+      ],
+      "correct": 0,
+      "correctAnswer": "PAP",
+      "explanation": "The three missing letters are P, A, P making the word PAP. The complete word is NEWSPAPER. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

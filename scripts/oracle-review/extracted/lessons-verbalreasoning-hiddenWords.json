@@ -1,0 +1,1979 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "hiddenWords",
+    "displayName": "Hidden Words",
+    "extractedAt": "2026-03-30T13:51:13.846Z",
+    "subConceptCount": 9,
+    "lessonCount": 10,
+    "screenCount": 40,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "three-one-split",
+      "name": "3+1 Letter Split",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "three-one-split-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot hidden words that split 3+1 across word boundaries — it's like finding a secret message!",
+            "The trick of checking the last 3 letters of one word joining the first 1 of the next"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the 3+1 split?",
+              "body": "Daisy is looking for a 3+1 split across a word boundary.\n\nIn a **3+1 split**, the last **3 letters** of one word join the **first 1 letter** of the next to make a hidden word.\n\nLook for: **a 4-letter word meaning 'belonging to me'**\n\n**\"The vitamin extra helped her feel better.\"**\n\nFocus on the words: **vitamin** and **extra**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is looking for a 3+1 split across a word boundary.\n\nIn a **3+1 split**, the last **3 letters** of one word join the **first 1 letter** of the next to make a hidden word.\n\nLook for: **a 4-letter word meaning 'belonging to me'**\n\n**\"The vitamin extra helped her feel better.\"**\n\nFocus on the words: **vitamin** and **extra**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "vitamin",
+                    "word2": "extra",
+                    "hiddenWord": "MINE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "v",
+                      "i",
+                      "t",
+                      "a",
+                      "m",
+                      "i",
+                      "n",
+                      "e",
+                      "x",
+                      "t",
+                      "r",
+                      "a"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "In \"vitamin extra\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The 3+1 Split — sneaky but findable!",
+              "body": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and watch the word appear!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"vitamin extra\"** — the clue says: a 4-letter word meaning 'belonging to me'. Grab the last **3 letters** from one word and the **first letter** of the next. Slide your window across and watch the word appear!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "vitamin",
+                    "word2": "extra",
+                    "hiddenWord": "MINE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"vitaMIN Extra\"",
+                        "why": "The hidden word spans these two words"
+                      },
+                      {
+                        "text": "Last 3 of \"vitamin\" + first 1 of \"extra\"",
+                        "why": "Split type: 3+1"
+                      },
+                      {
+                        "text": "Hidden word: MINE ✓",
+                        "why": "The word MINE is hidden across 'vitaMIN' and 'Extra' — MIN(3) + E(1) = MINE, meaning 'belonging to me'. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Read the clue, find the boundary, then check the 3+1 split. ✓",
+                "incorrectFeedback": "Not quite — start with the clue, then look at word boundaries."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the hidden word using a 3+1 split.\n\n**\"Aladdin escaped through the window.\"**\n\nClue: a 4-letter word meaning 'to eat a meal'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the hidden word using a 3+1 split.\n\n**\"Aladdin escaped through the window.\"**\n\nClue: a 4-letter word meaning 'to eat a meal'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "Aladdin",
+                    "word2": "escaped",
+                    "hiddenWord": "DINE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "A",
+                      "l",
+                      "a",
+                      "d",
+                      "d",
+                      "i",
+                      "n",
+                      "e",
+                      "s",
+                      "c",
+                      "a",
+                      "p",
+                      "e",
+                      "d"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"Aladdin escaped\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "DINE",
+                  "DUNE",
+                  "DICE",
+                  "DENT",
+                  "NINE"
+                ],
+                "correctAnswer": "DINE",
+                "correctFeedback": "Brilliant! The word DINE is hidden across 'aladDIN' and 'Escaped' — DIN(3) + E(1) = DINE, meaning 'to eat a meal'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"DINE\". The word DINE is hidden across 'aladDIN' and 'Escaped' — DIN(3) + E(1) = DINE, meaning 'to eat a meal'. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "3+1 Split — you've cracked it!",
+              "body": "Nice one! Here's your recipe for 3+1 splits:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look at the LAST 3 letters of each word",
+                    "why": "These form the start of the hidden word"
+                  },
+                  {
+                    "text": "2. Add the FIRST letter of the next word",
+                    "why": "This completes the 4-letter hidden word"
+                  },
+                  {
+                    "text": "3. Does it spell a real word matching the clue?",
+                    "why": "electRIC + Engine = RICE ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "three-one-split-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why 3+1 splits are the sneakiest ones to miss — and how to catch them",
+            "Why only checking 2+2 splits will cost you marks"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why is the 3+1 split easy to miss?",
+              "body": "Evie is reviewing a tricky hidden word question she got wrong.\n\nA friend picked **\"FUND\"** — thought the answer had to use 2 letters from each word.\n\nBut the real answer is hiding in a sneaky **3+1 split** that's easy to miss. Can you spot it?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Evie is reviewing a tricky hidden word question she got wrong.\n\nA friend picked **\"FUND\"** — thought the answer had to use 2 letters from each word.\n\nBut the real answer is hiding in a sneaky **3+1 split** that's easy to miss. Can you spot it?"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "muffin",
+                    "word2": "ended",
+                    "hiddenWord": "FINE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "m",
+                      "u",
+                      "f",
+                      "f",
+                      "i",
+                      "n",
+                      "e",
+                      "n",
+                      "d",
+                      "e",
+                      "d"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "\"FUND\" is wrong — can you find the real answer?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The 3+1 — don't let it slip past you!",
+              "body": "Only checking 2+2 splits means you miss 3+1 combinations like FIN+E = FINE\n\nThe golden rule: always try **all** split types — 3+1, 2+2, AND 1+3. Miss one and you might miss the answer!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Only checking 2+2 splits means you miss 3+1 combinations like FIN+E = FINE\n\nThe golden rule: always try **all** split types — 3+1, 2+2, AND 1+3. Miss one and you might miss the answer!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "muffin",
+                    "word2": "ended",
+                    "hiddenWord": "FINE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "\"FUND\" — wrong!",
+                        "why": "Only checking 2+2 splits means you miss 3+1 combinations like FIN+E = FINE"
+                      },
+                      {
+                        "text": "Look at: \"muFFIN Ended\"",
+                        "why": "Split: 3+1"
+                      },
+                      {
+                        "text": "Answer: FINE ✓",
+                        "why": "The word FINE is hidden across 'muFFIN' and 'Ended' — FIN(3) + E(1) = FINE. Always try ALL split types, not just 2+2. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the 3+1 hidden word!",
+              "body": "**\"The baton entered the relay race.\"**\n\nClue: a 4-letter word meaning 'a musical sound'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "**\"The baton entered the relay race.\"**\n\nClue: a 4-letter word meaning 'a musical sound'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "baton",
+                    "word2": "entered",
+                    "hiddenWord": "TONE",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "b",
+                      "a",
+                      "t",
+                      "o",
+                      "n",
+                      "e",
+                      "n",
+                      "t",
+                      "e",
+                      "r",
+                      "e",
+                      "d"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"baton entered\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "TONE",
+                  "BONE",
+                  "TUNE",
+                  "NOTE",
+                  "TENT"
+                ],
+                "correctAnswer": "TONE",
+                "correctFeedback": "Well done! The word TONE is hidden across 'baTON' and 'Entered' — TON(3) + E(1) = TONE, a musical sound. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"TONE\". The word TONE is hidden across 'baTON' and 'Entered' — TON(3) + E(1) = TONE, a musical sound. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You won't miss the 3+1 again!",
+              "body": "Now you know the sneakiest split — here's how to always catch it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3+1 means: 3 letters from end + 1 letter from start",
+                    "why": "The bigger chunk hides inside the first word"
+                  },
+                  {
+                    "text": "Always try ALL split types on EVERY boundary",
+                    "why": "Don't just check 2+2 — try 3+1 and 1+3 too"
+                  },
+                  {
+                    "text": "electRIC + Engine = RICE",
+                    "why": "3 from 'electric' + 1 from 'engine' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-two-split",
+      "name": "2+2 Letter Split",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "two-two-split-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot the most common hidden word split — the 2+2 — which shows up loads in the exam",
+            "The knack of grabbing the last 2 letters of one word and joining them to the first 2 of the next"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the 2+2 split?",
+              "body": "Daisy is looking for 2+2 splits in her VR practice.\n\nA **2+2 split** is the most common: the last **2 letters** of one word join the **first 2 letters** of the next.\n\nLook for: **a 4-letter word meaning 'not closed'**\n\n**\"Please stop engines when parking the bus.\"**\n\nFocus on the words: **stop** and **engines**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is looking for 2+2 splits in her VR practice.\n\nA **2+2 split** is the most common: the last **2 letters** of one word join the **first 2 letters** of the next.\n\nLook for: **a 4-letter word meaning 'not closed'**\n\n**\"Please stop engines when parking the bus.\"**\n\nFocus on the words: **stop** and **engines**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "stop",
+                    "word2": "engines",
+                    "hiddenWord": "OPEN",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "t",
+                      "o",
+                      "p",
+                      "e",
+                      "n",
+                      "g",
+                      "i",
+                      "n",
+                      "e",
+                      "s"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "In \"stop engines\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The 2+2 Split — the most common one!",
+              "body": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type, so mastering it gives you a real edge!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"stop engines\"** — the clue says: a 4-letter word meaning 'not closed'. Grab the last **2 letters** from one word and the **first 2 letters** of the next. This is the most common split type, so mastering it gives you a real edge!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "stop",
+                    "word2": "engines",
+                    "hiddenWord": "OPEN",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"stOP ENgines\"",
+                        "why": "The hidden word spans these two words"
+                      },
+                      {
+                        "text": "Last 2 of \"stop\" + first 2 of \"engines\"",
+                        "why": "Split type: 2+2"
+                      },
+                      {
+                        "text": "Hidden word: OPEN ✓",
+                        "why": "The word OPEN is hidden across 'stOP' and 'ENgines' — OP(2) + EN(2) = OPEN, meaning 'not closed'. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The most common split type for hidden words is the ____ split",
+                "options": [
+                  "2+2",
+                  "3+1",
+                  "1+3",
+                  "4+0"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The 2+2 split (2 letters from each word) is the most common type. ✓",
+                "incorrectFeedback": "Not quite — the 2+2 split is the most common type of hidden word split!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the hidden word using a 2+2 split.\n\n**\"The villa measured up really well.\"**\n\nClue: a 4-letter word meaning 'unable to walk properly'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the hidden word using a 2+2 split.\n\n**\"The villa measured up really well.\"**\n\nClue: a 4-letter word meaning 'unable to walk properly'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "villa",
+                    "word2": "measured",
+                    "hiddenWord": "LAME",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "v",
+                      "i",
+                      "l",
+                      "l",
+                      "a",
+                      "m",
+                      "e",
+                      "a",
+                      "s",
+                      "u",
+                      "r",
+                      "e",
+                      "d"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"villa measured\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "LAME",
+                  "LAMB",
+                  "LIME",
+                  "FAME",
+                  "MALE"
+                ],
+                "correctAnswer": "LAME",
+                "correctFeedback": "Brilliant! The word LAME is hidden across 'vilLA' and 'MEasured' — LA(2) + ME(2) = LAME, meaning 'unable to walk properly'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"LAME\". The word LAME is hidden across 'vilLA' and 'MEasured' — LA(2) + ME(2) = LAME, meaning 'unable to walk properly'. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "2+2 Split — nailed it!",
+              "body": "Brilliant! You've learned the most common split type. Here's your recipe:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look at the LAST 2 letters of each word",
+                    "why": "These form the start of the hidden word"
+                  },
+                  {
+                    "text": "2. Add the FIRST 2 letters of the next word",
+                    "why": "This completes the 4-letter hidden word"
+                  },
+                  {
+                    "text": "3. Check: real word matching the clue?",
+                    "why": "stOP + ENgines = OPEN ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-three-split",
+      "name": "1+3 Letter Split",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "one-three-split-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to catch the trickiest split — the 1+3 — where just ONE letter comes from the first word",
+            "Why this split fools so many people, and how you can be the one who spots it"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the 1+3 split?",
+              "body": "Grace is searching for 1+3 splits in a sentence.\n\nIn a **1+3 split**, just the **last letter** of one word joins the **first 3 letters** of the next.\n\nLook for: **a 4-letter word meaning 'a magic stick'**\n\n**\"He finally saw Andrew leave the building.\"**\n\nFocus on the words: **saw** and **Andrew**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Grace is searching for 1+3 splits in a sentence.\n\nIn a **1+3 split**, just the **last letter** of one word joins the **first 3 letters** of the next.\n\nLook for: **a 4-letter word meaning 'a magic stick'**\n\n**\"He finally saw Andrew leave the building.\"**\n\nFocus on the words: **saw** and **Andrew**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "saw",
+                    "word2": "Andrew",
+                    "hiddenWord": "WAND",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "a",
+                      "w",
+                      "A",
+                      "n",
+                      "d",
+                      "r",
+                      "e",
+                      "w"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "In \"saw Andrew\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The 1+3 Split — super sneaky!",
+              "body": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the first word — that's what makes it so sneaky!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"saw Andrew\"** — the clue says: a 4-letter word meaning 'a magic stick'. This time, just the **last letter** from one word joins the **first 3 letters** of the next. Only 1 letter from the first word — that's what makes it so sneaky!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "saw",
+                    "word2": "Andrew",
+                    "hiddenWord": "WAND",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"saW ANDrew\"",
+                        "why": "The hidden word spans these two words"
+                      },
+                      {
+                        "text": "Last 1 of \"saw\" + first 3 of \"Andrew\"",
+                        "why": "Split type: 1+3"
+                      },
+                      {
+                        "text": "Hidden word: WAND ✓",
+                        "why": "The word WAND is hidden across 'saW' and 'ANDrew' — W(1) + AND(3) = WAND, a magic stick. ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the hidden word using a 1+3 split.\n\n**\"The horse astounded everyone at the show.\"**\n\nClue: a 4-letter word meaning 'a compass direction'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the hidden word using a 1+3 split.\n\n**\"The horse astounded everyone at the show.\"**\n\nClue: a 4-letter word meaning 'a compass direction'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "horse",
+                    "word2": "astounded",
+                    "hiddenWord": "EAST",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "h",
+                      "o",
+                      "r",
+                      "s",
+                      "e",
+                      "a",
+                      "s",
+                      "t",
+                      "o",
+                      "u",
+                      "n",
+                      "d",
+                      "e",
+                      "d"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"horse astounded\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "EAST",
+                  "EASY",
+                  "LAST",
+                  "FAST",
+                  "MAST"
+                ],
+                "correctAnswer": "EAST",
+                "correctFeedback": "Brilliant! The word EAST is hidden across 'horsE' and 'ASTounded' — E(1) + AST(3) = EAST, a compass direction. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"EAST\". The word EAST is hidden across 'horsE' and 'ASTounded' — E(1) + AST(3) = EAST, a compass direction. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "1+3 Split — now you can catch it!",
+              "body": "Well done — you've learned the sneakiest split! Here's your recipe:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look at the LAST letter of each word",
+                    "why": "Just one letter from the first word!"
+                  },
+                  {
+                    "text": "2. Add the FIRST 3 letters of the next word",
+                    "why": "The bulk of the hidden word comes from word two"
+                  },
+                  {
+                    "text": "3. Check: real word matching the clue?",
+                    "why": "saW + ANDrew = WAND ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "within-word",
+      "name": "Hidden Inside One Word",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "within-word-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The surprise twist: sometimes the hidden word is hiding INSIDE a single word!",
+            "Why checking inside longer words as well as across boundaries catches answers others miss"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A word hiding INSIDE another word?",
+              "body": "Daisy is surprised to find a word hiding inside another word.\n\nSometimes the hidden word doesn't span two words at all — it sits entirely **inside** a single word!\n\nLook for: **a 4-letter word meaning 'a narrow road'**\n\n**\"The planet orbited the distant star.\"**\n\nFocus on the words: **planet** and **(within)**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "window",
+                "topLetters": [
+                  "p",
+                  "l",
+                  "a",
+                  "n",
+                  "e",
+                  "t"
+                ],
+                "windowStart": -1,
+                "windowEnd": -1,
+                "label": "Look inside \"planet\":"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Hidden Inside One Word — surprise!",
+              "body": "The clue says: a 4-letter word meaning 'a narrow road'. Here's something cool — not every hidden word crosses a boundary! Some hide entirely **within** a longer word like **\"planet\"**. Check the beginning, middle AND end of each word. You'd be amazed what's hiding in there!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Look inside: \"pLANEt\"",
+                    "why": "The hidden word is entirely within this word"
+                  },
+                  {
+                    "text": "The letters spell: LANE",
+                    "why": "No boundary crossing needed!"
+                  },
+                  {
+                    "text": "LANE matches the clue ✓",
+                    "why": "The word LANE is hidden entirely inside 'pLANEt' — L-A-N-E. No boundary needed! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the hidden word — it's inside a single word this time!\n\n**\"The planet orbited the distant star.\"**\n\nClue: a 4-letter word meaning 'a narrow road'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "LANE",
+                  "PLAN",
+                  "LATE",
+                  "PALE",
+                  "NEAT"
+                ],
+                "correctAnswer": "LANE",
+                "correctFeedback": "Brilliant! The word LANE is hidden entirely inside 'pLANEt' — L-A-N-E. No boundary needed! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"LANE\". The word LANE is hidden entirely inside 'pLANEt' — L-A-N-E. No boundary needed! ✓"
+              },
+              "visualProps": {
+                "mode": "window",
+                "topLetters": [
+                  "p",
+                  "l",
+                  "a",
+                  "n",
+                  "e",
+                  "t"
+                ],
+                "windowStart": -1,
+                "windowEnd": -1,
+                "label": "Search inside \"planet\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Inside words — your extra trick!",
+              "body": "Now you've got an extra trick up your sleeve — hidden words don't always cross boundaries:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check across word boundaries (the sliding window)",
+                    "why": "Try 3+1, 2+2, and 1+3 splits"
+                  },
+                  {
+                    "text": "2. ALSO check inside each individual word",
+                    "why": "Longer words can contain shorter ones"
+                  },
+                  {
+                    "text": "3. pLANEt = LANE, harVEST = VEST",
+                    "why": "The word hides inside a single word ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clue-first",
+      "name": "Use the Clue First",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "clue-first-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "A time-saving trick: read the clue FIRST so you already know what you're hunting for",
+            "Why this one simple habit can make you twice as fast at hidden word questions"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Read the clue FIRST!",
+              "body": "Daisy is learning to read the clue before scanning the sentence.\n\nBefore sliding across boundaries, **read the clue**. If you already know what word you're looking for, you can scan much faster!\n\nClue: **a 4-letter word meaning 'a brave person'**\n\n**\"Just before she rode away on her bicycle.\"**\n\nFocus on the words: **she** and **rode**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is learning to read the clue before scanning the sentence.\n\nBefore sliding across boundaries, **read the clue**. If you already know what word you're looking for, you can scan much faster!\n\nClue: **a 4-letter word meaning 'a brave person'**\n\n**\"Just before she rode away on her bicycle.\"**\n\nFocus on the words: **she** and **rode**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "she",
+                    "word2": "rode",
+                    "hiddenWord": "HERO",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "h",
+                      "e",
+                      "r",
+                      "o",
+                      "d",
+                      "e"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "What word matches the clue?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Clue First, Then Scan — so much faster!",
+              "body": "The clue says: **a 4-letter word meaning 'a brave person'**. First, read the clue and think — what word matches? Once you've got it, scan **\"Just before she rode away on her bicycle.\"** looking for those exact letters. It's like knowing what treasure you're hunting before you start digging!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "The clue says: **a 4-letter word meaning 'a brave person'**. First, read the clue and think — what word matches? Once you've got it, scan **\"Just before she rode away on her bicycle.\"** looking for those exact letters. It's like knowing what treasure you're hunting before you start digging!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "she",
+                    "word2": "rode",
+                    "hiddenWord": "HERO",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Clue: \"a 4-letter word meaning 'a brave person'\"",
+                        "why": "Think: what word means this? → HERO"
+                      },
+                      {
+                        "text": "Now scan for HERO in the sentence",
+                        "why": "Look for the letters H-E-R-O spanning a boundary"
+                      },
+                      {
+                        "text": "Found it: \"sHE ROde\" ✓",
+                        "why": "The clue says 'a brave person' — that's HERO! Now find it: sHE + ROde = HERO. Knowing the word makes it faster. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Clue first, think of the word, then scan. ✓",
+                "incorrectFeedback": "Not quite — always read the clue FIRST, then scan the sentence."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — clue first!",
+              "body": "Read the clue, think of the word, then find it.\n\n**\"Just before she rode away on her bicycle.\"**\n\nClue: a 4-letter word meaning 'a brave person'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Read the clue, think of the word, then find it.\n\n**\"Just before she rode away on her bicycle.\"**\n\nClue: a 4-letter word meaning 'a brave person'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "she",
+                    "word2": "rode",
+                    "hiddenWord": "HERO",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "h",
+                      "e",
+                      "r",
+                      "o",
+                      "d",
+                      "e"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"she rode\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "HERO",
+                  "HERE",
+                  "HERD",
+                  "RODE",
+                  "SHED"
+                ],
+                "correctAnswer": "HERO",
+                "correctFeedback": "Brilliant! The clue says 'a brave person' — that's HERO! Now find it: sHE + ROde = HERO. Knowing the word makes it faster. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"HERO\". The clue says 'a brave person' — that's HERO! Now find it: sHE + ROde = HERO. Knowing the word makes it faster. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Clue First — your speed superpower!",
+              "body": "This one trick will save you loads of time in the exam. You've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the clue — what word matches the definition?",
+                    "why": "If you can guess the word, you're halfway there"
+                  },
+                  {
+                    "text": "2. Scan for those SPECIFIC letters in the sentence",
+                    "why": "Much faster than checking every boundary blindly"
+                  },
+                  {
+                    "text": "3. Confirm: do the letters actually span a boundary?",
+                    "why": "Make sure the word is really hidden there ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-letter-hidden",
+      "name": "3-Letter Hidden Words",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "three-letter-hidden-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to hunt down tiny 3-letter hidden words — they're small but mighty tricky!",
+            "The two split types for 3-letter words: 2+1 and 1+2 — fewer options but easy to miss"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tiny but tricky — 3-letter hidden words!",
+              "body": "Daisy is looking for a tiny 3-letter hidden word.\n\n**3-letter words** are short, so they're easy to miss. They split either **2+1** or **1+2** across a boundary.\n\nLook for: **a 3-letter word meaning 'a nocturnal bird'**\n\n**\"They had to show Lauren the way to the hall.\"**\n\nFocus on the words: **show** and **Lauren**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is looking for a tiny 3-letter hidden word.\n\n**3-letter words** are short, so they're easy to miss. They split either **2+1** or **1+2** across a boundary.\n\nLook for: **a 3-letter word meaning 'a nocturnal bird'**\n\n**\"They had to show Lauren the way to the hall.\"**\n\nFocus on the words: **show** and **Lauren**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "show",
+                    "word2": "Lauren",
+                    "hiddenWord": "OWL",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Look at **\"show Lauren\"** — the clue says: a 3-letter word meaning 'a nocturnal bird'. With only 3 letters, the word splits either **2+1** (two from the first word, one from the next) or **1+2** (one from the first, two from the next)."
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "h",
+                      "o",
+                      "w",
+                      "L",
+                      "a",
+                      "u",
+                      "r",
+                      "e",
+                      "n"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "In \"show Lauren\" (3 letters):"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "3-Letter Splits: 2+1 or 1+2",
+              "body": "Look at **\"show Lauren\"** — the clue says: a 3-letter word meaning 'a nocturnal bird'. With only 3 letters, the word splits either **2+1** (two from the first word, one from the next) or **1+2** (one from the first, two from the next).",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"show Lauren\"** — the clue says: a 3-letter word meaning 'a nocturnal bird'. With only 3 letters, the word splits either **2+1** (two from the first word, one from the next) or **1+2** (one from the first, two from the next)."
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "show",
+                    "word2": "Lauren",
+                    "hiddenWord": "OWL",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Find the 3-letter hidden word.\n\n**\"They had to show Lauren the way to the hall.\"**\n\nClue: a 3-letter word meaning 'a nocturnal bird'"
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"shOW Lauren\"",
+                        "why": "The hidden word spans these two words"
+                      },
+                      {
+                        "text": "Split: 2+1",
+                        "why": "Only 2 possible split types for 3-letter words"
+                      },
+                      {
+                        "text": "Hidden word: OWL ✓",
+                        "why": "The word OWL is hidden across 'shOW' and 'Lauren' — OW(2) + L(1) = OWL, a nocturnal bird. ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the 3-letter hidden word.\n\n**\"They had to show Lauren the way to the hall.\"**\n\nClue: a 3-letter word meaning 'a nocturnal bird'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the 3-letter hidden word.\n\n**\"They had to show Lauren the way to the hall.\"**\n\nClue: a 3-letter word meaning 'a nocturnal bird'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "show",
+                    "word2": "Lauren",
+                    "hiddenWord": "OWL",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "s",
+                      "h",
+                      "o",
+                      "w",
+                      "L",
+                      "a",
+                      "u",
+                      "r",
+                      "e",
+                      "n"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"show Lauren\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "OWL",
+                  "OAR",
+                  "OAK",
+                  "OWE",
+                  "AWL"
+                ],
+                "correctAnswer": "OWL",
+                "correctFeedback": "Brilliant! The word OWL is hidden across 'shOW' and 'Lauren' — OW(2) + L(1) = OWL, a nocturnal bird. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"OWL\". The word OWL is hidden across 'shOW' and 'Lauren' — OW(2) + L(1) = OWL, a nocturnal bird. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tiny words, big catches!",
+              "body": "Great work! 3-letter hidden words are small but you've got the skills to find them:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Only 2 split types: 2+1 or 1+2",
+                    "why": "Fewer options, but easy to overlook"
+                  },
+                  {
+                    "text": "Also check INSIDE single words",
+                    "why": "Short words hide inside longer ones easily"
+                  },
+                  {
+                    "text": "shOW + Lauren = OWL, topIC + Each = ICE",
+                    "why": "Small words, big catches ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "five-letter-hidden",
+      "name": "5-Letter Hidden Words",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "five-letter-hidden-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tackle the big ones — 5-letter hidden words that need more detective work",
+            "The four split types to try (4+1, 3+2, 2+3, 1+4) and why the clue is your best friend here"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you find the 5-letter hidden word?",
+              "body": "Daisy is tackling a 5-letter hidden word for the first time.\n\n**5-letter words** are harder because they have more split types: 4+1, 3+2, 2+3, or 1+4. You need to try more combinations!\n\nLook for: **a 5-letter word meaning 'something to sit on'**\n\n**\"We saw the beach air balloon at the fair.\"**\n\nFocus on the words: **beach** and **air**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is tackling a 5-letter hidden word for the first time.\n\n**5-letter words** are harder because they have more split types: 4+1, 3+2, 2+3, or 1+4. You need to try more combinations!\n\nLook for: **a 5-letter word meaning 'something to sit on'**\n\n**\"We saw the beach air balloon at the fair.\"**\n\nFocus on the words: **beach** and **air**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "beach",
+                    "word2": "air",
+                    "hiddenWord": "CHAIR",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "b",
+                      "e",
+                      "a",
+                      "c",
+                      "h",
+                      "a",
+                      "i",
+                      "r"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "In \"beach air\" (5 letters):"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "5-Letter Splits — more combos to try!",
+              "body": "Look at **\"beach air\"** — the clue says: a 5-letter word meaning 'something to sit on'. A 5-letter hidden word can split **4+1, 3+2, 2+3, or 1+4** across a boundary. That's more options, but don't worry — use the clue to narrow your search and you'll find it!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"beach air\"** — the clue says: a 5-letter word meaning 'something to sit on'. A 5-letter hidden word can split **4+1, 3+2, 2+3, or 1+4** across a boundary. That's more options, but don't worry — use the clue to narrow your search and you'll find it!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "beach",
+                    "word2": "air",
+                    "hiddenWord": "CHAIR",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"beaCH AIR\"",
+                        "why": "The hidden word spans these two words"
+                      },
+                      {
+                        "text": "Split: 2+3 — 5 letters total",
+                        "why": "More split types to check than with 4-letter words"
+                      },
+                      {
+                        "text": "Hidden word: CHAIR ✓",
+                        "why": "The word CHAIR is hidden across 'beaCH' and 'AIR' — CH(2) + AIR(3) = CHAIR, something to sit on. ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the 5-letter hidden word.\n\n**\"We saw the beach air balloon at the fair.\"**\n\nClue: a 5-letter word meaning 'something to sit on'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the 5-letter hidden word.\n\n**\"We saw the beach air balloon at the fair.\"**\n\nClue: a 5-letter word meaning 'something to sit on'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "beach",
+                    "word2": "air",
+                    "hiddenWord": "CHAIR",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "b",
+                      "e",
+                      "a",
+                      "c",
+                      "h",
+                      "a",
+                      "i",
+                      "r"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"beach air\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "CHAIR",
+                  "BEACH",
+                  "CHARM",
+                  "CHAIN",
+                  "REACH"
+                ],
+                "correctAnswer": "CHAIR",
+                "correctFeedback": "Brilliant! The word CHAIR is hidden across 'beaCH' and 'AIR' — CH(2) + AIR(3) = CHAIR, something to sit on. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"CHAIR\". The word CHAIR is hidden across 'beaCH' and 'AIR' — CH(2) + AIR(3) = CHAIR, something to sit on. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "5-letter words — you can handle these!",
+              "body": "Longer words just need a bit more patience. You've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "4 possible split types: 4+1, 3+2, 2+3, 1+4",
+                    "why": "More combinations to check"
+                  },
+                  {
+                    "text": "Use the CLUE to guess the word first",
+                    "why": "Then scan for those specific letters"
+                  },
+                  {
+                    "text": "beaCH + AIR = CHAIR, exTRA + INk = TRAIN",
+                    "why": "Longer words need patience ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backwards-hidden",
+      "name": "Hidden Words Reading Backwards",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "backwards-hidden-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The ultimate twist: sometimes the hidden word reads BACKWARDS — like a mirror message!",
+            "Why checking both directions is your secret weapon when you feel stuck"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What if the word reads BACKWARDS?",
+              "body": "Daisy is discovering that hidden words can read backwards.\n\nSome hidden word questions have a twist — the word reads **backwards** through the sentence! If you can't find it forwards, try reversing.\n\nLook for: **a 4-letter word meaning 'a section or piece' — reading backwards!**\n\n**\"The extra passengers boarded the bus quickly.\"**\n\nFocus on the words: **extra** and **passengers**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"extra passengers\"** — the clue says: a 4-letter word meaning 'a section or piece' — reading backwards!. Can't find the word going forwards? Try reading the letters **backwards** across the boundary — it's like looking in a mirror!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "extra",
+                    "word2": "passengers",
+                    "hiddenWord": "PART",
+                    "reversed": true,
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "e",
+                      "x",
+                      "t",
+                      "r",
+                      "a",
+                      "p",
+                      "a",
+                      "s",
+                      "s",
+                      "e",
+                      "n",
+                      "g",
+                      "e",
+                      "r",
+                      "s"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Try reading backwards across \"extra passengers\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Reading Backwards — flip it!",
+              "body": "Look at **\"extra passengers\"** — the clue says: a 4-letter word meaning 'a section or piece' — reading backwards!. Can't find the word going forwards? Try reading the letters **backwards** across the boundary — it's like looking in a mirror!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Look at **\"extra passengers\"** — the clue says: a 4-letter word meaning 'a section or piece' — reading backwards!. Can't find the word going forwards? Try reading the letters **backwards** across the boundary — it's like looking in a mirror!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "extra",
+                    "word2": "passengers",
+                    "hiddenWord": "PART",
+                    "reversed": true,
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Look at: \"exTRA Passengers\"",
+                        "why": "These letters span the boundary"
+                      },
+                      {
+                        "type": "text"
+                      },
+                      {
+                        "text": "Read the letters backwards",
+                        "why": "Reverse the order to reveal the word"
+                      },
+                      {
+                        "text": "Hidden word: PART ✓",
+                        "why": "The letters T-R-A-P are hidden across 'exTRA' and 'Passengers'. Read backwards: P-A-R-T = PART, meaning 'a section'. ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "If you can't find the hidden word going forwards, try reading the letters ____",
+                "options": [
+                  "backwards",
+                  "faster",
+                  "louder",
+                  "randomly"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Some hidden words read backwards across the boundary. ✓",
+                "incorrectFeedback": "Not quite — try reading the letters BACKWARDS to reveal the hidden word!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — try backwards!",
+              "body": "Find the hidden word — it reads BACKWARDS.\n\n**\"The extra passengers boarded the bus quickly.\"**\n\nClue: a 4-letter word meaning 'a section or piece' — reading backwards!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Find the hidden word — it reads BACKWARDS.\n\n**\"The extra passengers boarded the bus quickly.\"**\n\nClue: a 4-letter word meaning 'a section or piece' — reading backwards!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "extra",
+                    "word2": "passengers",
+                    "hiddenWord": "PART",
+                    "reversed": true,
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "e",
+                      "x",
+                      "t",
+                      "r",
+                      "a",
+                      "p",
+                      "a",
+                      "s",
+                      "s",
+                      "e",
+                      "n",
+                      "g",
+                      "e",
+                      "r",
+                      "s"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide and reverse across \"extra passengers\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden backwards in the sentence?",
+                "options": [
+                  "PART",
+                  "TRAP",
+                  "PARS",
+                  "TARP",
+                  "RAPT"
+                ],
+                "correctAnswer": "PART",
+                "correctFeedback": "Brilliant! The letters T-R-A-P are hidden across 'exTRA' and 'Passengers'. Read backwards: P-A-R-T = PART, meaning 'a section'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"PART\". The letters T-R-A-P are hidden across 'exTRA' and 'Passengers'. Read backwards: P-A-R-T = PART, meaning 'a section'. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Forwards AND backwards — you've got both covered!",
+              "body": "Now you know to check both directions. That puts you ahead of most people!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try finding the word FORWARDS first",
+                    "why": "Most hidden words read left to right"
+                  },
+                  {
+                    "text": "2. If stuck, try reading BACKWARDS",
+                    "why": "Some tricky questions reverse the word"
+                  },
+                  {
+                    "text": "3. exTRA + Passengers → TRAP → PART",
+                    "why": "Reverse the letters to find the answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-meaning",
+      "name": "Hidden Words with Double Meanings",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "double-meaning-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The clever trick exam-setters use: making the hidden word mean something totally different from the sentence!",
+            "How to ignore the sentence's topic and focus on what actually matters — the letters"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The hidden word doesn't match the sentence!",
+              "body": "Daisy is noticing the hidden word means something different to the sentence.\n\nHere's the trick: the **hidden word** often means something completely **different** to what the sentence is about. This misdirection is deliberate — it makes the word harder to spot!\n\nLook for: **a 4-letter word meaning 'water falling from the sky'**\n\n**\"Pack your camera inside before it gets dark.\"**\n\nFocus on the words: **camera** and **inside**",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is noticing the hidden word means something different to the sentence.\n\nHere's the trick: the **hidden word** often means something completely **different** to what the sentence is about. This misdirection is deliberate — it makes the word harder to spot!\n\nLook for: **a 4-letter word meaning 'water falling from the sky'**\n\n**\"Pack your camera inside before it gets dark.\"**\n\nFocus on the words: **camera** and **inside**"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "camera",
+                    "word2": "inside",
+                    "hiddenWord": "RAIN",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "c",
+                      "a",
+                      "m",
+                      "e",
+                      "r",
+                      "a",
+                      "i",
+                      "n",
+                      "s",
+                      "i",
+                      "d",
+                      "e"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Focus on the letters, not the meaning:"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Don't fall for the red herring!",
+              "body": "The sentence is about packing a camera — nothing to do with weather!\n\nHere's the key: don't look for a word that **fits** the sentence — focus on one that matches the **clue**. The sentence is trying to distract you!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "The sentence is about packing a camera — nothing to do with weather!\n\nHere's the key: don't look for a word that **fits** the sentence — focus on one that matches the **clue**. The sentence is trying to distract you!"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "camera",
+                    "word2": "inside",
+                    "hiddenWord": "RAIN",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Sentence topic: something else entirely",
+                        "why": "The sentence is about packing a camera — nothing to do with weather!"
+                      },
+                      {
+                        "text": "Clue topic: \"a 4-letter word meaning 'water falling from the sky'\"",
+                        "why": "Focus on the CLUE, not the sentence meaning"
+                      },
+                      {
+                        "text": "Found: \"cameRA INside\" = RAIN ✓",
+                        "why": "RAIN is hidden in 'cameRA INside' — the sentence talks about cameras, but the hidden word means water from the sky. The meaning mismatch is deliberate! ✓"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — ignore the misdirection!",
+              "body": "The hidden word has NOTHING to do with the sentence topic.\n\n**\"Pack your camera inside before it gets dark.\"**\n\nClue: a 4-letter word meaning 'water falling from the sky'",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "The hidden word has NOTHING to do with the sentence topic.\n\n**\"Pack your camera inside before it gets dark.\"**\n\nClue: a 4-letter word meaning 'water falling from the sky'"
+                },
+                {
+                  "type": "visual",
+                  "component": "SlidingWindow",
+                  "props": {
+                    "word1": "camera",
+                    "word2": "inside",
+                    "hiddenWord": "RAIN",
+                    "label": "Slide the purple letters across to find the hidden word"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "window",
+                    "topLetters": [
+                      "c",
+                      "a",
+                      "m",
+                      "e",
+                      "r",
+                      "a",
+                      "i",
+                      "n",
+                      "s",
+                      "i",
+                      "d",
+                      "e"
+                    ],
+                    "windowStart": -1,
+                    "windowEnd": -1,
+                    "label": "Slide across \"camera inside\":"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is hidden in the sentence?",
+                "options": [
+                  "RAIN",
+                  "MAIN",
+                  "RUIN",
+                  "PAIN",
+                  "LAIR"
+                ],
+                "correctAnswer": "RAIN",
+                "correctFeedback": "Brilliant! RAIN is hidden in 'cameRA INside' — the sentence talks about cameras, but the hidden word means water from the sky. The meaning mismatch is deliberate! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"RAIN\". RAIN is hidden in 'cameRA INside' — the sentence talks about cameras, but the hidden word means water from the sky. The meaning mismatch is deliberate! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're too smart for their tricks!",
+              "body": "Now you know the secret: hidden word sentences are DESIGNED to mislead — but you won't fall for it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The sentence topic is a RED HERRING",
+                    "why": "It's there to distract you from the hidden word"
+                  },
+                  {
+                    "text": "Focus on the CLUE definition, not the sentence meaning",
+                    "why": "The clue tells you what word to find"
+                  },
+                  {
+                    "text": "Scan the LETTERS, not the words' meanings",
+                    "why": "cameRA + INside = RAIN (nothing to do with cameras!) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

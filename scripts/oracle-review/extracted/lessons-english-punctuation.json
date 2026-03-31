@@ -1,0 +1,3446 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "punctuation",
+    "displayName": "Punctuation",
+    "extractedAt": "2026-03-30T13:51:13.728Z",
+    "subConceptCount": 14,
+    "lessonCount": 28,
+    "screenCount": 112,
+    "evalFailures": 1
+  },
+  "subConcepts": [
+    {
+      "id": "apostrophe-contraction",
+      "name": "Apostrophes in Contractions",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "apostrophe-contraction-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "What happens when you squash two words together into a contraction (a shortened word like don't or I'm) — and why everyone does it!",
+            "The secret the apostrophe (the ' mark) is hiding — it marks the exact spot where letters disappeared"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Where did the missing letters go?",
+              "body": "Aisha is writing a letter to her pen pal in Scotland and wrote:\n\n**\"I'm really excited to visit Edinburgh this summer.\"**\n\nSee that little floating comma? That's an **apostrophe** — and it's hiding a secret! **I'm** is actually **I am** squashed together. The apostrophe marks the spot where the missing letters used to be!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I'm really excited to visit Edinburgh this summer.",
+                "highlightWords": [
+                  {
+                    "word": "I'm",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the contraction:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The squash-and-mark trick!",
+              "body": "Think of contractions like squashing two words together and leaving a little marker where you removed the letters. It's like a treasure map — the apostrophe says \"letters were buried here!\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Nailed it! Squash, remove, mark — you've got the recipe! ✓",
+                "incorrectFeedback": "Nearly! Remember: start with the two full words, then squash them together."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with two words: \"do not\"",
+                    "why": "These are the full, boring, long versions!"
+                  },
+                  {
+                    "text": "Squash them together and remove letters: drop the \"o\"",
+                    "why": "We're making it snappier — like how you'd actually say it"
+                  },
+                  {
+                    "text": "Stick an apostrophe where the letter was: don't",
+                    "why": "The ' is like a flag saying \"a letter used to live here!\""
+                  },
+                  {
+                    "text": "I am → I'm",
+                    "why": "The \"a\" vanished and ' took its place!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try!",
+              "body": "Time to squash some words! **\"do not\"** — what does it become when you contract it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the contraction of \"do not\"?",
+                "options": [
+                  "don't",
+                  "donot",
+                  "do'not",
+                  "do-not",
+                  "do not"
+                ],
+                "correctAnswer": "don't",
+                "correctFeedback": "You've got it! \"do not\" squashes down to **don't** — the \"o\" disappeared and the apostrophe took its place! ✓",
+                "incorrectFeedback": "So close! \"do not\" becomes **don't**. The apostrophe sits right where the \"o\" used to be."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I don't want to miss the castle!",
+                "highlightWords": [],
+                "label": "Check the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Contractions — you've got this!",
+              "body": "Here's everything you need to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A contraction squashes two words into one",
+                    "why": "It's how people actually talk — quicker and more natural!"
+                  },
+                  {
+                    "text": "The apostrophe marks the spot where letters vanished",
+                    "why": "Think of it as a little flag: \"letters were here!\""
+                  },
+                  {
+                    "text": "Learn the big ones: don't, can't, it's, I'm, they're, we've",
+                    "why": "You'll see these in almost every exam paper — knowing them is like a superpower!"
+                  },
+                  {
+                    "text": "Secret check: expand it back into two words",
+                    "why": "If 'don't' turns back into 'do not', you nailed it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "apostrophe-contraction-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll become an apostrophe detective — spotting missing or wrongly placed apostrophes (the ' mark) in contractions (shortened words)",
+            "The sneaky mistakes that trip people up with contractions — and how to dodge them"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the sneaky mistake!",
+              "body": "Oliver is checking his friend's homework — but one contraction has gone wrong! Can you find it?\n\n**\"I cant wait for the school trip to London!\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I cant wait for the school trip to London!",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong!",
+              "body": "Oops! Oliver forgot the apostrophe in 'can't'. This is one of the most common mistakes — even grown-ups get it wrong sometimes!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"I cant wait for the school trip to London!\"",
+                    "why": "Oliver forgot the apostrophe in 'can't'"
+                  },
+                  {
+                    "text": "✓ \"I can't wait for the school trip to London!\"",
+                    "why": "can't = can not — the apostrophe replaces the missing 'o'"
+                  },
+                  {
+                    "text": "Golden rule: the apostrophe goes EXACTLY where the letters were removed",
+                    "why": "Not before, not after — right in the spot where the letters used to live!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Fix this sentence!",
+              "body": "Which version is correct?\n\n**\"We do'nt need our coats today.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct version?",
+                "options": [
+                  "We don't need our coats today.",
+                  "We do'nt need our coats today.",
+                  "We dont need our coats today.",
+                  "We don`t need our coats today.",
+                  "We don,t need our coats today."
+                ],
+                "correctAnswer": "We don't need our coats today.",
+                "correctFeedback": "Well done! The apostrophe goes where the 'o' in 'not' was removed — don't, NOT do'nt ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"We don't need our coats today.\"**. The apostrophe goes where the 'o' in 'not' was removed — don't, NOT do'nt"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We do'nt need our coats today.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Avoid these contraction mistakes",
+              "body": "When you proofread, always check your contractions!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Never forget the apostrophe: cant → can't",
+                    "why": "Without it, 'cant' is a completely different word!"
+                  },
+                  {
+                    "text": "Put the apostrophe where the letter was removed",
+                    "why": "does not → doesn't (NOT does'nt)"
+                  },
+                  {
+                    "text": "Use an apostrophe, not a comma: we're (NOT we,re)",
+                    "why": "Commas and apostrophes look similar but do very different jobs"
+                  },
+                  {
+                    "text": "Quick check: can you expand it back to two words?",
+                    "why": "If can't = can not, you've placed it correctly ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apostrophe-possession",
+      "name": "Apostrophes for Possession",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "apostrophe-possession-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover how one tiny apostrophe (the ' mark) can show that something belongs to someone",
+            "The trick to knowing where the apostrophe goes when one person owns something versus when lots of people do — singular and plural possession (ownership)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Who does it belong to?",
+              "body": "Ella is labelling things at school. Ella needs to show that things **belong** to someone.\n\nFor example: **the dog's bone** means the bone belonging to the dog.\n\nBut here's the tricky bit — where does the apostrophe go? It depends on whether there's ONE owner or MORE THAN ONE!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "the dog's bone — the dogs' kennel",
+                "highlightWords": [
+                  {
+                    "word": "the dog's bone",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "word": "the dogs' kennel",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "One owner vs many:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three rules — and they're easier than you think!",
+              "body": "We saw **the dog's bone** and **the dogs' kennel** — notice the apostrophe (the ' mark) is in a different place! Once you learn these three rules, you'll nail possessive apostrophes every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Singular (one owner): add 's → the dog's bone",
+                    "why": "One dog, so apostrophe then s — easy!"
+                  },
+                  {
+                    "text": "Plural ending in s: add just ' → the dogs' kennel",
+                    "why": "More than one dog — the s is already there, so just pop the apostrophe after it"
+                  },
+                  {
+                    "text": "Irregular plural (no s): add 's → the children's playground",
+                    "why": "\"children\" doesn't end in s, so treat it like singular — sneaky!"
+                  },
+                  {
+                    "text": "NEVER put an apostrophe on pronouns: its, yours, hers, theirs",
+                    "why": "Pronouns already show ownership — they don't need any help!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What does **\"the cat's toy\"** mean?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"the cat's toy\" mean?",
+                "options": [
+                  "the toy belonging to one cat",
+                  "the toy belonging to many cat",
+                  "More than one cat",
+                  "The toy is a cat",
+                  "It is a contraction (two words joined)"
+                ],
+                "correctAnswer": "the toy belonging to one cat",
+                "correctFeedback": "Superstar! **\"the cat's toy\"** means the toy belonging to one cat. You've cracked the code! ✓",
+                "incorrectFeedback": "So close! **\"the cat's toy\"** means **the toy belonging to one cat**. When you see 's on a singular noun, it means belonging to — you'll get it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "the cat's toy",
+                "highlightWords": [
+                  {
+                    "word": "the cat's toy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What does this mean?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Possessive apostrophes — you've got this!",
+              "body": "Here's your recipe for showing ownership — follow it and you'll never go wrong:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "One owner → add 's: the dog's bone",
+                    "why": "Singular nouns always get apostrophe + s — the easiest rule!"
+                  },
+                  {
+                    "text": "More than one (ends in s) → add ': the dogs' bones",
+                    "why": "The s is already there doing its job, so just pop the apostrophe after it"
+                  },
+                  {
+                    "text": "Irregular plurals → add 's: the children's toys",
+                    "why": "Children doesn't end in s, so treat it like singular — this catches people out!"
+                  },
+                  {
+                    "text": "NEVER on pronouns: its, yours, hers, ours, theirs",
+                    "why": "These already mean 'belonging to' — no apostrophe needed. That's a superpower for the exam! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "apostrophe-possession-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll sharpen your eye for possessive (ownership) apostrophes that have wandered to the wrong spot",
+            "A surprising rule — why pronouns (words like he, she, it, they) never need an apostrophe to show ownership"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Leo",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Apostrophe alert — something's wrong!",
+              "body": "Leo is marking his younger sister's writing. Something is wrong here — can you be the detective?\n\n**\"The teacher's all agreed the trips' destination was perfect.\"**\n\nApostrophes have snuck into the wrong places!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The teacher's all agreed the trips' destination was perfect.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's where it all went wrong!",
+              "body": "Leo put an apostrophe on 'teachers' (no possession) and on 'trips' (wrong place).\n\nDon't worry — this is one of the most common mistakes in English, and even adults get it wrong!\n\n**Rule:** 'teachers' here is just a plural (more than one teacher) — no apostrophe needed. 'Trip's' shows the destination belongs to the trip.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"The teacher's all agreed the trips' destination was perfect.\"",
+                    "why": "put an apostrophe on 'teachers' (no possession) and on 'trips' (wrong place)"
+                  },
+                  {
+                    "text": "RIGHT: \"The teachers all agreed the trip's destination was perfect.\"",
+                    "why": "'teachers' here is just a plural (more than one teacher) — no apostrophe needed. 'Trip's' shows the destination belongs to the trip"
+                  },
+                  {
+                    "text": "Ask yourself: does something BELONG to this word?",
+                    "why": "If yes → apostrophe. If it's just 'more than one' → no apostrophe. Simple!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn to fix it!",
+              "body": "Which version is correct?\n\n**\"The dog wagged it's tail happily.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct version?",
+                "options": [
+                  "The dog wagged its tail happily.",
+                  "The dog wagged it's tail happily.",
+                  "The dog wagged it's tail happily!",
+                  "The dog wagged it's tail happily!",
+                  "The dog wagged it's tail happily!"
+                ],
+                "correctAnswer": "The dog wagged its tail happily.",
+                "correctFeedback": "Well done! 'its' (no apostrophe) means 'belonging to it'. 'it's' with an apostrophe means 'it is' or 'it has' ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"The dog wagged its tail happily.\"**. 'its' (no apostrophe) means 'belonging to it'. 'it's' with an apostrophe means 'it is' or 'it has'"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The dog wagged it's tail happily.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Possessive apostrophes — nailed it!",
+              "body": "Before you hand in any writing, run through this checklist. It only takes a few seconds and it'll make your work shine:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Does something BELONG to this word? If not, no apostrophe",
+                    "why": "Plain plurals (cats, dogs, books) never need an apostrophe — don't let them trick you!"
+                  },
+                  {
+                    "text": "One owner ending in s? Add 's: the boss's office",
+                    "why": "Yes, even when the word already ends in s — that surprises a lot of people!"
+                  },
+                  {
+                    "text": "More than one owner ending in s? Add just ': the dogs' leads",
+                    "why": "The s is already there doing its job"
+                  },
+                  {
+                    "text": "Never put apostrophes on pronouns: its, yours, theirs",
+                    "why": "Pronouns already show ownership — getting this right makes examiners go 'wow'! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capital-letters",
+      "name": "Capital Letter Rules",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "capital-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn the real rules for when a word deserves a capital letter — it's not as many as you'd think!",
+            "The words that look like they should have capitals but actually don't — and how to tell the difference"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know some words DEMAND a capital?",
+              "body": "Daisy is writing a postcard from her holiday in Cornwall. Daisy wrote: **\"The beach in Cornwall was amazing.\"**\n\nThe first word has a capital letter — but which OTHER words need capitals? Some words are divas and insist on being capitalised! Let's find out which ones.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The beach in Cornwall was amazing.",
+                "highlightWords": [
+                  {
+                    "word": "Cornwall",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which words need capitals?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Four rules that cover (almost) everything!",
+              "body": "In Daisy's sentence, **\"Cornwall\"** needs a capital because it's a a place. Good news — there are only four rules to learn, and you probably know most of them already:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Days and months need capitals, but ____ do not",
+                "options": [
+                  "seasons",
+                  "proper nouns",
+                  "names",
+                  "places"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Seasons (spring, summer, autumn, winter) don't need capitals — knowing that is a superpower for the exam! ✓",
+                "incorrectFeedback": "Nearly! Seasons like spring and summer don't need capitals, unlike days and months. This one trips up loads of people!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule 1: The first word of every sentence",
+                    "why": "\"The beach in Cornwall was amazing.\" — the first word always gets a capital. The easiest one!"
+                  },
+                  {
+                    "text": "Rule 2: Names of people, places and things (proper nouns)",
+                    "why": "Cornwall is a place — proper nouns always get the VIP treatment"
+                  },
+                  {
+                    "text": "Rule 3: Days of the week and months of the year",
+                    "why": "on Saturday in July — both get capitals (they're special enough to earn them!)"
+                  },
+                  {
+                    "text": "Rule 4: The word 'I' is always a capital",
+                    "why": "Even in the middle of a sentence: 'Then I went home' — because you're important!"
+                  },
+                  {
+                    "text": "NOT seasons: summer has no capital",
+                    "why": "Here's the sneaky one — seasons are common nouns, not proper nouns. This catches loads of people out!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Fix the capitals!",
+              "body": "This sentence needs fixing:\n\n**\"last march, we visited the tower of london on a tuesday.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correctly capitalised version?",
+                "options": [
+                  "Last March, we visited the Tower of London on a Tuesday.",
+                  "last march, we visited the tower of london on a tuesday.",
+                  "last March, we visited the Tower of London on a Tuesday.",
+                  "LAST MARCH, WE VISITED THE TOWER OF LONDON ON A TUESDAY.",
+                  "Last march, we visited the tower of london on a tuesday."
+                ],
+                "correctAnswer": "Last March, we visited the Tower of London on a Tuesday.",
+                "correctFeedback": "Brilliant! You spotted every single one: Last (sentence start), March (month), Tower of London (proper noun), Tuesday (day). ✓",
+                "incorrectFeedback": "So close! The correct version is: **\"Last March, we visited the Tower of London on a Tuesday.\"**. Capitals needed: Last (sentence start), March (month), Tower of London (proper noun), Tuesday (day). You'll nail it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "last march, we visited the tower of london on a tuesday.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Capitals — you've cracked the code!",
+              "body": "Remember: capitals are for special words, not just any word you feel like! Here's your cheat sheet:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start of a sentence: always a capital",
+                    "why": "The easiest rule — you've been doing this for years!"
+                  },
+                  {
+                    "text": "Proper nouns: names of people, places, titles",
+                    "why": "London, Mrs Smith, River Thames — they're important enough to earn a big letter"
+                  },
+                  {
+                    "text": "Days and months: Monday, January",
+                    "why": "But NOT seasons: spring, summer, autumn, winter — remember this exam trick!"
+                  },
+                  {
+                    "text": "The word 'I': always a capital letter",
+                    "why": "Because you're important — you deserve a big letter! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "capital-letters-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll become a capital letter detective — catching ones that are missing AND ones that shouldn't be there",
+            "Why 'summer' doesn't get a capital but 'Monday' does — the surprising rules that catch people out"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ethan",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Capital letter chaos — can you fix it?",
+              "body": "Ethan is checking his geography homework. This sentence is a mess — capitals everywhere they shouldn't be, and missing where they should!\n\n**\"in Autumn, we visited the lake district with our Teacher.\"**\n\nCan you spot what's gone wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "in Autumn, we visited the lake district with our Teacher.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's where it went wrong!",
+              "body": "Ethan capitalised 'Autumn' (a season) and 'Teacher' (common noun) but forgot to capitalise 'In' (sentence start) and 'Lake District' (proper noun).\n\nThis is really common — even grown-ups muddle up which words deserve capitals!\n\n**Rule:** Seasons and common nouns like 'teacher' don't need capitals, but proper nouns and sentence starts do.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"in Autumn, we visited the lake district with our Teacher.\"",
+                    "why": "capitalised 'Autumn' (a season) and 'Teacher' (common noun) but forgot to capitalise 'In' (sentence start) and 'Lake District' (proper noun)"
+                  },
+                  {
+                    "text": "RIGHT: \"In autumn, we visited the Lake District with our teacher.\"",
+                    "why": "Seasons and common nouns like 'teacher' don't need capitals, but proper nouns and sentence starts do"
+                  },
+                  {
+                    "text": "Ask: is this a proper noun (name of a specific thing)?",
+                    "why": "If yes → capital. If it's a general word → no capital. That one question solves almost everything!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try!",
+              "body": "Which version has the capitals in all the right places?\n\n**\"my Family went to paris in Summer to see the eiffel tower.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correctly capitalised?",
+                "options": [
+                  "My family went to Paris in summer to see the Eiffel Tower.",
+                  "my Family went to paris in Summer to see the eiffel tower.",
+                  "My Family went to paris in Summer to see the eiffel tower.",
+                  "MY FAMILY WENT TO PARIS IN SUMMER TO SEE THE EIFFEL TOWER.",
+                  "my family went to paris in summer to see the eiffel tower."
+                ],
+                "correctAnswer": "My family went to Paris in summer to see the Eiffel Tower.",
+                "correctFeedback": "Brilliant! 'My' (sentence start), 'Paris' and 'Eiffel Tower' (proper nouns) need capitals. 'family' and 'summer' don't. ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"My family went to Paris in summer to see the Eiffel Tower.\"**. 'My' (sentence start), 'Paris' and 'Eiffel Tower' (proper nouns) need capitals. 'family' and 'summer' don't."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "my Family went to paris in Summer to see the eiffel tower.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Capital letters — sorted!",
+              "body": "Before you hand in any writing, run through this quick checklist. It takes ten seconds and could save you marks:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Does the sentence start with a capital? If not, add one",
+                    "why": "The most basic rule — you'd be surprised how often people miss it!"
+                  },
+                  {
+                    "text": "Are all proper nouns capitalised? (names, places, titles)",
+                    "why": "London, Mrs Smith, the River Thames — they deserve the big letter treatment"
+                  },
+                  {
+                    "text": "Are days and months capitalised?",
+                    "why": "Monday, January — but NOT spring or summer (remember the trick!)"
+                  },
+                  {
+                    "text": "Have you wrongly capitalised any common nouns?",
+                    "why": "Words like 'teacher', 'school', 'assembly' don't need capitals — catching this makes your writing look really polished ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commas-lists",
+      "name": "Commas in Lists",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "commas-lists-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover why commas are like the gaps between items on a shelf — they keep everything in a list neat and clear",
+            "The big question: do you put a comma before 'and' or 'or' at the end of a list? You'll find out!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Kai",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Imagine reading a list with no commas...",
+              "body": "Kai is writing a shopping list for his mum's birthday party. Kai needs to write a list of items in a sentence.\n\nWithout commas: **\"balloons streamers cake and candles\"** — yikes, that's a jumbled mess!\n\nWith commas: **\"balloons, streamers, cake and candles\"** — ahh, much better! Commas are like little signposts between each item.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "balloons, streamers, cake and candles",
+                "highlightWords": [],
+                "label": "Items separated by commas:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The simplest comma rule there is!",
+              "body": "Kai's list **\"balloons, streamers, cake and candles\"** uses commas to separate the items. The rule is beautifully simple: put a **comma** after every item in a list, except the last one (which usually has **'and'** or **'or'** before it).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! You've got the recipe down! ✓",
+                "incorrectFeedback": "Nearly! Start by writing the first item, then add commas between each one. You'll get it!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Write the first item: \"balloons\"",
+                    "why": "No comma needed yet — just get started!"
+                  },
+                  {
+                    "text": "Add a comma, then the next item: \"balloons, streamers\"",
+                    "why": "The comma tells your reader 'here comes another one!'"
+                  },
+                  {
+                    "text": "Keep going: \"balloons, streamers, cake\"",
+                    "why": "A comma after every item except the last — you're getting the hang of it!"
+                  },
+                  {
+                    "text": "Add 'and' before the last item: \"balloons, streamers, cake and candles\"",
+                    "why": "Use 'and' (or 'or') instead of a comma before the final item — like a finishing flourish"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which sentence has the commas in the right places?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which list is punctuated correctly?",
+                "options": [
+                  "apples, bananas, grapes, oranges and pears",
+                  "apples bananas, grapes oranges, and pears",
+                  "apples bananas grapes oranges pears",
+                  "apples, bananas, grapes, oranges, pears",
+                  "apples and bananas and grapes and oranges and pears"
+                ],
+                "correctAnswer": "apples, bananas, grapes, oranges and pears",
+                "correctFeedback": "Nailed it! Commas between each item, 'and' before the last one — you make it look easy! ✓",
+                "incorrectFeedback": "So close! The correct version is: **\"apples, bananas, grapes, oranges and pears\"**. Put a comma after every item except the last, where you use 'and'. You'll get it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "apples  /  bananas  /  grapes  /  oranges  /  pears",
+                "highlightWords": [],
+                "label": "Put these into a sentence with commas:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "List commas — easy as 1, 2, 3!",
+              "body": "You've got this! Here's how to punctuate a list every single time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Put a comma after each item in the list",
+                    "why": "Think of commas as little separators keeping everything tidy"
+                  },
+                  {
+                    "text": "Use 'and' or 'or' before the last item",
+                    "why": "This is the finishing touch that tells your reader the list is done"
+                  },
+                  {
+                    "text": "No comma before 'and' in standard British English",
+                    "why": "Write: apples, oranges and bananas (NOT apples, oranges, and bananas)"
+                  },
+                  {
+                    "text": "Read it aloud — pause where the commas are",
+                    "why": "Your ear is actually a brilliant comma detector! If it sounds natural, you've nailed it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "commas-lists-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll hunt for missing and extra commas in lists — like a proofreading pro",
+            "Why leaving out a comma can make your sentence say something completely different from what you meant!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Maya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This list is a comma disaster!",
+              "body": "Maya is checking her recipe write-up in food technology. This list has gone wrong — the commas are all over the place!\n\n**\"You will need flour sugar, eggs butter, and milk.\"**\n\nCan you spot what needs fixing?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "You will need flour sugar, eggs butter, and milk.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong!",
+              "body": "Maya missed commas after 'flour' and 'eggs', making it unclear where each item starts and ends. Don't worry — comma mistakes in lists are super common!\n\n**Rule:** Every item in a list needs a comma after it (except the last, which gets 'and').",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"You will need flour sugar, eggs butter, and milk.\"",
+                    "why": "missed commas after 'flour' and 'eggs', making it unclear where each item starts and ends"
+                  },
+                  {
+                    "text": "RIGHT: \"You will need flour, sugar, eggs, butter and milk.\"",
+                    "why": "Every item in a list needs a comma after it (except the last, which gets 'and')"
+                  },
+                  {
+                    "text": "Top tip: read the list aloud and pause at each comma",
+                    "why": "If it sounds choppy or confusing, your commas need fixing!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — fix this list!",
+              "body": "Which version is correct?\n\n**\"For the trip, bring a coat a hat, gloves, and, a scarf.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which list is punctuated correctly?",
+                "options": [
+                  "For the trip, bring a coat, a hat, gloves and a scarf.",
+                  "For the trip, bring a coat a hat, gloves, and, a scarf.",
+                  "For the trip bring a coat a hat gloves and a scarf.",
+                  "For the trip, bring a coat a hat, gloves, and a scarf.",
+                  "For the trip, bring a coat, a hat, gloves, and, a scarf."
+                ],
+                "correctAnswer": "For the trip, bring a coat, a hat, gloves and a scarf.",
+                "correctFeedback": "Brilliant! Each item needs a comma after it. Don't put a comma after 'and' — 'and' replaces the final comma ✓",
+                "incorrectFeedback": "Close! The correct version is: **\"For the trip, bring a coat, a hat, gloves and a scarf.\"**. Each item needs a comma after it. Don't put a comma after 'and' — 'and' replaces the final comma"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "For the trip, bring a coat a hat, gloves, and, a scarf.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "List commas — you've got this!",
+              "body": "Quick check before you hand in your writing — run every list through this:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Every item needs a comma after it",
+                    "why": "Keeps each item separate and clear — no jumbled mess!"
+                  },
+                  {
+                    "text": "The last item gets 'and' (or 'or') instead",
+                    "why": "This is how your reader knows the list is wrapping up"
+                  },
+                  {
+                    "text": "Never put a comma AFTER 'and'",
+                    "why": "'and' replaces the comma — you don't need both. This catches loads of people out!"
+                  },
+                  {
+                    "text": "Read it aloud to check it sounds right",
+                    "why": "Your ear is actually brilliant at spotting dodgy commas! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commas-clauses",
+      "name": "Commas with Clauses and Connectives",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "commas-clauses-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn the golden rule: when a clause (a group of words with a verb) kicks off your sentence, pop a comma after it",
+            "How commas team up with connectives (linking words) like 'However' and 'Meanwhile' to glue your ideas together smoothly"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Freya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One sentence has a comma, one doesn't — why?",
+              "body": "Freya is writing a story about a brave knight. Here's a puzzle — look at these two sentences:\n\n1. **\"Although the dragon was enormous, the knight stood her ground.\"**\n2. **\"The knight stood her ground although the dragon was enormous.\"**\n\nSentence 1 has a comma. Sentence 2 doesn't. Same words, different order. So what's going on?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Although the dragon was enormous, the knight stood her ground.",
+                "highlightWords": [
+                  {
+                    "word": "However",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the clause:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The 'extra bit first' rule!",
+              "body": "In Freya's first sentence, the **subordinate clause** (think of it as a bonus fact that can't stand alone) **\"Although the dragon was enormous\"** comes BEFORE the main clause (the main part that makes sense on its own). When the bonus bit comes first, pop a **comma** between them.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When a subordinate clause comes ____ the main clause, you need a comma between them",
+                "options": [
+                  "before",
+                  "after",
+                  "inside",
+                  "without"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Bonus bit first, then a comma, then the main clause. You've got it! ✓",
+                "incorrectFeedback": "Nearly! When the subordinate clause comes BEFORE the main clause, you need a comma between them. Think: extra bit first = comma needed!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Subordinate clause first → COMMA → main clause",
+                    "why": "\"Although the dragon was enormous, the knight stood her ground.\" — the comma is the join!"
+                  },
+                  {
+                    "text": "Main clause first → usually NO comma",
+                    "why": "\"The knight stood her ground although the dragon was enormous.\" flows naturally without one — nice and easy"
+                  },
+                  {
+                    "text": "Connectives at the start need a comma too",
+                    "why": "\"However, the dragon was not finished yet.\" — always a comma after 'However'. Always!"
+                  },
+                  {
+                    "text": "Look for starters: Although, Because, When, If, After, However, Meanwhile",
+                    "why": "Spotting these words is like having a superpower — they're your comma clue!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Add the comma!",
+              "body": "This sentence needs a comma:\n\n**\"Because it was raining heavily the match was cancelled.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version has the comma in the right place?",
+                "options": [
+                  "Because it was raining heavily, the match was cancelled.",
+                  "Because it was raining heavily the match was cancelled.",
+                  "Because, it was raining heavily the match was cancelled.",
+                  "Because it was raining heavily the match was cancelled, ."
+                ],
+                "correctAnswer": "Because it was raining heavily, the match was cancelled.",
+                "correctFeedback": "Well done! The subordinate clause ('Because it was raining heavily') comes first, so you need a comma before the main clause. ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"Because it was raining heavily, the match was cancelled.\"**. The subordinate clause ('Because it was raining heavily') comes first, so you need a comma before the main clause."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Because it was raining heavily the match was cancelled.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Clauses and commas — sorted!",
+              "body": "This rule makes your writing flow beautifully. Once you've got it, your sentences will sound really polished:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If the subordinate clause comes FIRST → add a comma",
+                    "why": "'Although it rained, we still had fun.' — the comma is the bridge!"
+                  },
+                  {
+                    "text": "If the main clause comes first → usually no comma",
+                    "why": "'We still had fun although it rained.' — it flows naturally"
+                  },
+                  {
+                    "text": "Connectives at the start always get a comma",
+                    "why": "'However, the weather improved later.' — no exceptions!"
+                  },
+                  {
+                    "text": "Starters to watch for: Although, Because, When, If, After, Since",
+                    "why": "Spot one of these at the start and you know a comma is coming. That's exam gold! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "commas-clauses-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll train your eye to catch missing commas after clauses (groups of words with a verb) — the mistake almost everyone makes",
+            "The tricky spots where commas and connectives (linking words) go wrong — and how to get them right every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Archie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The comma's gone walkabout!",
+              "body": "Archie is marking his own writing in English class. This sentence has a comma problem — it's either missing or in completely the wrong place!\n\n**\"Although he had practised for weeks he still felt nervous before the concert.\"**\n\nCan you figure out where it should be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Although he had practised for weeks he still felt nervous before the concert.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix!",
+              "body": "Archie forgot the comma after the subordinate clause 'Although he had practised for weeks'. This is a really common mistake — the tricky part is figuring out where the subordinate clause ends!\n\n**Rule:** When a subordinate clause comes first, you MUST put a comma before the main clause.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"Although he had practised for weeks he still felt nervous before the concert.\"",
+                    "why": "forgot the comma after the subordinate clause 'Although he had practised for weeks'"
+                  },
+                  {
+                    "text": "RIGHT: \"Although he had practised for weeks, he still felt nervous before the concert.\"",
+                    "why": "When a subordinate clause comes first, you MUST put a comma before the main clause"
+                  },
+                  {
+                    "text": "Find the subordinate clause first, then put the comma at its end",
+                    "why": "Think of the comma as a bridge between the two parts — it goes right at the join!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you have a go!",
+              "body": "Which version has the comma in the right place?\n\n**\"However the team did not give up and they scored in the last minute.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correctly punctuated?",
+                "options": [
+                  "However, the team did not give up and they scored in the last minute.",
+                  "However the team did not give up and they scored in the last minute.",
+                  "However the team did not give up and they scored in the last minute.",
+                  "However,, the team did not give up and they scored in the last minute.",
+                  "However, the team did not give up and they scored in the last minute."
+                ],
+                "correctAnswer": "However, the team did not give up and they scored in the last minute.",
+                "correctFeedback": "Superstar! 'However' is a connective at the start of the sentence — it always needs a comma after it. ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"However, the team did not give up and they scored in the last minute.\"**. 'However' is a connective at the start of the sentence — it always needs a comma after it."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "However the team did not give up and they scored in the last minute.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comma placement — you've cracked it!",
+              "body": "Here's the rule one more time. Getting this right will make your writing sound really professional:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the subordinate clause (the 'bonus fact' part)",
+                    "why": "It often starts with Although, Because, When, If, After, While — these are your clue words!"
+                  },
+                  {
+                    "text": "If it comes FIRST → comma at the END of that clause",
+                    "why": "'Although it rained, we had fun.' NOT 'Although, it rained we had fun.' — big difference!"
+                  },
+                  {
+                    "text": "Connectives (However, Meanwhile, Furthermore) get a comma right after",
+                    "why": "'However, the plan worked.' — always, always, always a comma after the connective"
+                  },
+                  {
+                    "text": "Read it aloud — pause where the comma should be",
+                    "why": "A natural pause usually shows you exactly where the comma belongs. Trust your ear! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speech-marks",
+      "name": "Speech Marks",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "speech-marks-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll master how to wrap someone's exact words in speech marks — so readers can hear the characters talking",
+            "Where all the little punctuation marks go around speech — the comma, full stop, and capital letter each have their own spot"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ruby",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know speech has its own uniform?",
+              "body": "Ruby is writing a story about two friends at the seaside. When a character speaks, you need **speech marks** (also called inverted commas) to wrap around their exact words — like a uniform that says \"someone is talking!\"\n\n\"Let's build a sandcastle!\" shouted Ruby.\n\nLet's learn the rules!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"Let's build a sandcastle!\" shouted Ruby.",
+                "highlightWords": [],
+                "label": "Read the speech:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Four rules — and your dialogue will look amazing!",
+              "body": "Look at Ruby's dialogue: \"Let's build a sandcastle!\" shouted Ruby.. Follow these four rules and your dialogue will be spot-on every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! You've nailed the order — open marks, capital letter, punctuation inside, comma before the reporting clause. ✓",
+                "incorrectFeedback": "Nearly! Start by opening the speech marks, then use a capital letter for the first spoken word. You'll get it!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule 1: Speech marks go around the EXACT words spoken",
+                    "why": "\"Let's go!\" — only the spoken words go inside the marks. Nothing else sneaks in!"
+                  },
+                  {
+                    "text": "Rule 2: Capital letter at the start of the speech",
+                    "why": "\"Let's go!\" — spoken words always start with a capital, like a mini-sentence"
+                  },
+                  {
+                    "text": "Rule 3: Punctuation goes INSIDE the closing speech mark",
+                    "why": "\"Let's go!\" NOT \"Let's go\"! — this one catches out even adults!"
+                  },
+                  {
+                    "text": "Rule 4: Use a comma (not a full stop) before 'said/asked/shouted'",
+                    "why": "\"Hello,\" said Tom. NOT \"Hello.\" said Tom. — the comma keeps everything connected"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Punctuate this speech!",
+              "body": "Ella says: \"I can see a dolphin\"\n\nWhich is correctly punctuated?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correctly punctuated?",
+                "options": [
+                  "\"I can see a dolphin,\" whispered Ella.",
+                  "\"I can see a dolphin\" whispered Ella.",
+                  "whispered Ella, \"I can see a dolphin.\"",
+                  "\"I can see a dolphin\", whispered Ella",
+                  "whispered Ella \"I can see a dolphin\"."
+                ],
+                "correctAnswer": "\"I can see a dolphin,\" whispered Ella.",
+                "correctFeedback": "Well done! Speech marks around the words, punctuation inside, and a comma or question mark before the reporting clause. ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"I can see a dolphin,\" whispered Ella.**. Remember: speech marks around the exact words, punctuation INSIDE the closing mark."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"I can see a dolphin\" whispered Ella.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Speech marks — you're a pro now!",
+              "body": "Every time you write dialogue, follow this recipe. Getting speech marks right makes your stories look really polished:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Open speech marks before the first spoken word",
+                    "why": "Start with \" — the door to what someone says"
+                  },
+                  {
+                    "text": "Capital letter for the first word of speech",
+                    "why": "\"Hello\" not \"hello\" — spoken words deserve the big letter treatment"
+                  },
+                  {
+                    "text": "Punctuation goes INSIDE the closing speech mark",
+                    "why": "\"Hello!\" not \"Hello\"! — this is the one examiners always check for"
+                  },
+                  {
+                    "text": "Use a comma before 'said/asked/shouted'",
+                    "why": "\"Hello,\" said Tom — comma replaces the full stop. That's your secret weapon! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "speech-marks-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll become a speech mark detective — catching errors that even adults miss in their writing",
+            "The sneaky punctuation mistakes people make inside speech marks — and how to avoid every single one"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jasper",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This dialogue is full of mistakes!",
+              "body": "Jasper is editing his adventure story. This dialogue has gone wrong — can you be the punctuation detective?\n\n**\"Come quickly\" said Jasper \"I found something amazing\".**\n\nWhat's gone wrong here?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"Come quickly\" said Jasper \"I found something amazing\".",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong!",
+              "body": "Jasper forgot the comma after 'quickly', and the spoken words each need their own speech marks with punctuation inside. Don't worry — speech mark mistakes are incredibly common, but once you know what to look for, they're easy to fix!\n\n**Rule:** Each piece of speech gets its own speech marks, and punctuation goes inside the closing mark.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"Come quickly\" said Jasper \"I found something amazing\".",
+                    "why": "forgot the comma after 'quickly', and the spoken words each need their own speech marks with punctuation inside"
+                  },
+                  {
+                    "text": "RIGHT: \"Come quickly,\" said Jasper. \"I found something amazing.\"",
+                    "why": "Each piece of speech gets its own speech marks, and punctuation goes inside the closing mark"
+                  },
+                  {
+                    "text": "Three quick checks: capital at start, punctuation inside, comma before reporting clause",
+                    "why": "Run through these three and you'll catch almost every speech mark error — like a cheat code!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn to fix it!",
+              "body": "Which version is correctly punctuated?\n\n**Olivia said \"where are we going\".**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correctly punctuated?",
+                "options": [
+                  "Olivia said, \"Where are we going?\"",
+                  "Olivia said \"where are we going\".",
+                  "Olivia said \"Where are we going?\"",
+                  "Olivia said, \"where are we going?\"",
+                  "Olivia said, \"Where are we going\"?"
+                ],
+                "correctAnswer": "Olivia said, \"Where are we going?\"",
+                "correctFeedback": "Brilliant! Capital W because it's the start of speech, question mark because it's a question, and both go inside the speech marks. ✓",
+                "incorrectFeedback": "Close! The correct version is: **Olivia said, \"Where are we going?\"**. Capital W because it's the start of speech, question mark because it's a question, and both go inside the speech marks."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Olivia said \"where are we going\".",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Speech marks — three checks and you're golden!",
+              "body": "Before you hand in any writing with dialogue, run through these checks. They'll make your stories look really professional:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Capital letter at the start of each piece of speech",
+                    "why": "\"Hello,\" not \"hello,\" — the spoken words get the VIP treatment"
+                  },
+                  {
+                    "text": "All punctuation (. , ! ?) goes INSIDE the closing speech mark",
+                    "why": "\"Stop!\" not \"Stop\"! — this is the one that catches out grown-ups too!"
+                  },
+                  {
+                    "text": "No capital letter on 'said/asked/shouted' after speech",
+                    "why": "\"Hello,\" said Tom (lowercase s) — the speech and reporting clause are one sentence"
+                  },
+                  {
+                    "text": "New speaker = new paragraph (new line)",
+                    "why": "This makes it crystal clear who is talking. Examiners love this! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "question-exclamation",
+      "name": "Question Marks and Exclamation Marks",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "question-exclamation-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover when a sentence is really asking something — and needs a question mark instead of a boring full stop",
+            "When a sentence is bursting with excitement, surprise, or a command — that's when the exclamation mark gets its moment!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Three endings, three completely different moods!",
+              "body": "Evie is writing interview questions for the school newspaper. Did you know the mark at the end of a sentence completely changes its personality?\n\n**\"What is your favourite subject?\"** — asking something (curious!)\n**\"My favourite subject is science.\"** — telling something (calm)\n**\"That is amazing!\"** — strong feeling (dramatic!)\n\nHow do you pick the right one?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "What is your favourite subject? / My favourite subject is science. / That is amazing!",
+                "highlightWords": [],
+                "label": "Three types of sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One question that solves everything!",
+              "body": "We saw three sentences from Evie: a question, a statement, and an exclamation. Here's the trick — just ask yourself: **what is this sentence DOING?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Asking a question? → Use ?",
+                    "why": "\"What is your favourite subject?\" — question words like What, Where, How are your clue!"
+                  },
+                  {
+                    "text": "Telling/stating something? → Use .",
+                    "why": "\"My favourite subject is science.\" — just giving information, nice and calm"
+                  },
+                  {
+                    "text": "Showing strong feeling? → Use !",
+                    "why": "\"That is amazing!\" — surprise, excitement, anger — imagine shouting it!"
+                  },
+                  {
+                    "text": "Giving a command/warning? → Use ! or .",
+                    "why": "\"Tell me more about it!\" — ! for urgency ('Run!'), . for calm orders ('Please sit down.')"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What punctuation mark should end this sentence?\n\n**\"How many goals did you score\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which ending is correct?",
+                "options": [
+                  "How many goals did you score?",
+                  "How many goals did you score.",
+                  "How many goals did you score,",
+                  "How many goals did you score;",
+                  "How many goals did you score:"
+                ],
+                "correctAnswer": "How many goals did you score?",
+                "correctFeedback": "Well done! It's a question — it asks for information, so it needs a question mark. ✓",
+                "incorrectFeedback": "Not quite! The correct answer is: **\"How many goals did you score?\"**. It's a question — it asks for information, so it needs a question mark."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "How many goals did you score",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sentence endings — easy as asking one question!",
+              "body": "Before you put that final mark down, just ask: \"What is this sentence doing?\" Here's your cheat sheet:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Is it asking something? → Question mark (?)",
+                    "why": "Look for question words: Who, What, Where, When, Why, How, Can, Do, Is — they're your clue!"
+                  },
+                  {
+                    "text": "Is it telling/explaining? → Full stop (.)",
+                    "why": "Most sentences are statements — the trusty full stop does the job"
+                  },
+                  {
+                    "text": "Is it showing strong feeling? → Exclamation mark (!)",
+                    "why": "Surprise, excitement, shock, anger, urgency — imagine shouting it!"
+                  },
+                  {
+                    "text": "Never use more than one: NOT !! or ?!",
+                    "why": "One mark is always enough in formal writing. Restraint is a superpower! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "question-exclamation-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll spot sentences wearing the wrong ending — like a question pretending to be a statement!",
+            "Why swapping a ? for a . (or the other way round) can totally change what a sentence means"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ava",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Wrong ending alert!",
+              "body": "Ava is checking her pen pal letter. This sentence has been given the wrong ending — like putting a question mark on a shout!\n\n**\"What time does your school start.\"**\n\nCan you spot what it should be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "What time does your school start.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix!",
+              "body": "Ava used a full stop instead of a question mark. This is a sneaky one — the trick is to think about what the sentence is actually doing.\n\n**Rule:** Sentences starting with question words (What, When, How, etc.) are questions and need ?.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"What time does your school start.\"",
+                    "why": "used a full stop instead of a question mark"
+                  },
+                  {
+                    "text": "RIGHT: \"What time does your school start?\"",
+                    "why": "Sentences starting with question words (What, When, How, etc.) are questions and need ?"
+                  },
+                  {
+                    "text": "Ask: is the sentence ASKING something? If yes → ?",
+                    "why": "Look for question starters: Who/What/Where/When/Why/How/Can/Do — they're your best friends here!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which ending is correct?\n\n**\"Help, the boat is sinking.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "Help, the boat is sinking!",
+                  "Help, the boat is sinking.",
+                  "Help, the boat is sinking,",
+                  "Help, the boat is sinking;",
+                  "Help, the boat is sinking:"
+                ],
+                "correctAnswer": "Help, the boat is sinking!",
+                "correctFeedback": "Superstar! This is an urgent warning/cry for help — it needs an exclamation mark to show the strong feeling. ✓",
+                "incorrectFeedback": "Close! The correct version is: **\"Help, the boat is sinking!\"**. This is an urgent warning/cry for help — it needs an exclamation mark to show the strong feeling."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Help, the boat is sinking.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sentence endings — sorted!",
+              "body": "Here's a trick that works every time. Before you put the final mark, ask yourself:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Is it a direct question? → ?",
+                    "why": "Even dramatic or rhetorical questions use ? — they're still asking!"
+                  },
+                  {
+                    "text": "Is it a statement (even if it mentions a question)? → .",
+                    "why": "'I wonder where it is.' is a statement about wondering — sneaky, but it's a full stop"
+                  },
+                  {
+                    "text": "Is it showing strong feeling or urgency? → !",
+                    "why": "Commands, warnings, surprise, excitement — imagine shouting it!"
+                  },
+                  {
+                    "text": "When in doubt, read it aloud — your voice goes UP for a question",
+                    "why": "If your voice rises at the end, it's a question. Your voice knows the answer! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brackets-colons",
+      "name": "Brackets, Colons and Semi-colons",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "brackets-colons-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how brackets let you whisper bonus information to the reader — like a secret side note",
+            "The colon's superpower: introducing a list — and the semi-colon's trick for joining two ideas into one smooth sentence"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Cleo",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Three punctuation marks that make you look really clever!",
+              "body": "Cleo is writing a fact file about British wildlife. These three punctuation marks are used less often — but using them well makes your writing stand out:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Cleo is writing a fact file about British wildlife. Look at how these three punctuation marks are used:"
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "The red fox (Britain's most common wild predator) is found across the UK.",
+                    "highlightWords": [],
+                    "label": "Brackets — extra information:"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "The fox eats many things: berries, mice, insects and scraps.",
+                    "highlightWords": [],
+                    "label": "Colon — introduces a list:"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "Foxes are clever hunters; they can adapt to any habitat.",
+                    "highlightWords": [],
+                    "label": "Semi-colon — joins two related ideas:"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Each one has its own special job!",
+              "body": "Cleo's sentences showed brackets, a colon, and a semi-colon. Think of them as tools in a toolkit — each one does something different:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Brackets ( ): wrap around EXTRA information",
+                    "why": "Like whispering a side note — if you removed it, the sentence would still work!"
+                  },
+                  {
+                    "text": "Colon : introduces a list or explanation",
+                    "why": "\"The fox eats many things: berries, mice, insects and scraps.\" — the colon is like a drumroll saying 'here they come!'"
+                  },
+                  {
+                    "text": "Semi-colon ; joins two RELATED complete sentences",
+                    "why": "\"Foxes are clever hunters; they can adapt to any habitat.\" — both halves could stand alone, but the semi-colon shows they're best friends"
+                  },
+                  {
+                    "text": "No capital letter after a colon or semi-colon",
+                    "why": "The sentence carries on — it's not starting fresh"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which punctuation mark completes this sentence correctly?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "You will need the following ingredients: flour, eggs, sugar and butter.",
+                  "You will need the following ingredients; flour, eggs, sugar and butter.",
+                  "You will need the following ingredients - flour, eggs, sugar and butter.",
+                  "You will need the following ingredients, flour, eggs, sugar and butter.",
+                  "You will need the following ingredients... flour, eggs, sugar and butter."
+                ],
+                "correctAnswer": "You will need the following ingredients: flour, eggs, sugar and butter.",
+                "correctFeedback": "Brilliant! You picked the perfect tool for the job — that's impressive! ✓",
+                "incorrectFeedback": "So close! The correct version is: **\"You will need the following ingredients: flour, eggs, sugar and butter.\"**. Remember: colons introduce lists, semi-colons join related sentences, brackets add extra info. You'll get it!"
+              },
+              "visualProps": "[EVAL_FAILED: (v) => ({\n                mode: \"highlight\",\n                text: v.testItems.join('  /  '),\n                highlightWords: [],\n                label: \"Put these into a sentence with commas:\"\n      ]"
+            },
+            {
+              "type": "consolidate",
+              "title": "Three marks, three jobs — you've got this!",
+              "body": "Using these correctly makes your writing look really sophisticated. Here's your quick reference:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Brackets ( ): extra info you could remove",
+                    "why": "The River Thames (346 km long) flows through London. — like a whispered side note!"
+                  },
+                  {
+                    "text": "Colon : introduces a list or explanation",
+                    "why": "You need: eggs, flour and sugar. — the colon says 'here's what's coming!'"
+                  },
+                  {
+                    "text": "Semi-colon ; joins two related sentences",
+                    "why": "It was raining; we stayed inside. — two ideas, closely connected"
+                  },
+                  {
+                    "text": "No capital after : or ; (the sentence continues)",
+                    "why": "These are joiners, not sentence starters. Knowing this makes examiners impressed! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "brackets-colons-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll learn to spot when a colon, semi-colon, or bracket has been used in the wrong place — they get mixed up all the time!",
+            "The common traps with colons and semi-colons — and simple ways to tell them apart"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Felix",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Wrong mark! Can you spot it?",
+              "body": "Felix is proofreading his history project. One of the punctuation marks in this sentence is wrong — they look similar but do very different jobs!\n\n**\"The Romans built many things; roads, bridges, baths and temples.\"**\n\nCan you spot which one needs swapping?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The Romans built many things; roads, bridges, baths and temples.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mix-up!",
+              "body": "Felix used a semi-colon instead of a colon before a list. Colons and semi-colons look really similar, so mixing them up is super common!\n\n**Rule:** Colons (:) introduce lists. Semi-colons (;) join two complete sentences.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"The Romans built many things; roads, bridges, baths and temples.\"",
+                    "why": "used a semi-colon instead of a colon before a list"
+                  },
+                  {
+                    "text": "RIGHT: \"The Romans built many things: roads, bridges, baths and temples.\"",
+                    "why": "Colons (:) introduce lists. Semi-colons (;) join two complete sentences"
+                  },
+                  {
+                    "text": "Quick test: is it a list? → colon. Two sentences? → semi-colon",
+                    "why": "This one simple question helps you choose every time — it's like a cheat code!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which version uses the correct punctuation?\n\n**\"She packed her bag: she was ready to leave.\"**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "She packed her bag; she was ready to leave.",
+                  "She packed her bag: she was ready to leave.",
+                  "She packed her bag, she was ready to leave.",
+                  "She packed her bag. she was ready to leave.",
+                  "She packed her bag - she was ready to leave."
+                ],
+                "correctAnswer": "She packed her bag; she was ready to leave.",
+                "correctFeedback": "Well done! Both halves are complete sentences that are closely related — use a semi-colon to join them, not a colon. ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"She packed her bag; she was ready to leave.\"**. Both halves are complete sentences that are closely related — use a semi-colon to join them, not a colon."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Colons, semi-colons, brackets — nailed it!",
+              "body": "Remember the simple test — one question tells you which mark to use:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Introducing a list? → Use a colon :",
+                    "why": "The colon is like a drumroll — 'here comes the list!'"
+                  },
+                  {
+                    "text": "Joining two complete sentences? → Use a semi-colon ;",
+                    "why": "The semi-colon says 'these ideas are best friends'"
+                  },
+                  {
+                    "text": "Adding removable extra info? → Use brackets ( )",
+                    "why": "The sentence must still work without them — like a bonus side note"
+                  },
+                  {
+                    "text": "No capital letter after : ; or ( )",
+                    "why": "The sentence carries on — these marks don't start new sentences. Knowing this is a real flex! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "its-vs-its",
+      "name": "it's vs its — The Big One",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "its-vs-its-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The it's vs its battle — you'll finally crack when the apostrophe version (it's = it is / it has) is right",
+            "When 'its' goes naked with no apostrophe — because it's showing that something belongs to 'it'",
+            "A brilliant shortcut: the 'swap in it is' trick that tells you the answer in two seconds"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Bella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The two-letter trap that catches EVERYONE!",
+              "body": "Bella is writing about her pet rabbit. Did you know that **it's** and **its** cause more mistakes than almost any other words in English? Even teachers get them mixed up!\n\n**\"It's a very fluffy rabbit.\"** — it's = it is a very fluffy rabbit\n**\"The rabbit twitched its nose.\"** — its = the nose belonging to the rabbit\n\nThey SOUND the same but mean completely different things!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"It's a very fluffy rabbit.\" (it is) vs \"The rabbit twitched its nose.\" (belonging to it)",
+                "highlightWords": [],
+                "label": "it's or its?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The magic trick that works EVERY time!",
+              "body": "We saw **\"It's a very fluffy rabbit.\"** (it's = it is a very fluffy rabbit) and **\"The rabbit twitched its nose.\"** (its = the nose belonging to the rabbit). Here's a brilliant trick — once you learn this, you'll never get it wrong again:\n\nReplace the word with **\"it is\"**. If the sentence still makes sense → use **it's**. If not → use **its**. That's it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To check whether to use it's or its, try replacing the word with \"____\"",
+                "options": [
+                  "it is",
+                  "it was",
+                  "it has been",
+                  "its own"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Replace with \"it is\" — if the sentence still makes sense, use it's. If not, use its. You've cracked the code! ✓",
+                "incorrectFeedback": "Nearly! The magic trick is to replace with \"it is\". If the sentence works, use it's (contraction). If not, use its (possessive). Try it again!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Test: \"It's a very fluffy rabbit.\"",
+                    "why": "Replace: \"It is a very fluffy rabbit.\" — makes sense! ✓ So use it's. Easy!"
+                  },
+                  {
+                    "text": "Test: \"The rabbit twitched its nose.\"",
+                    "why": "Replace: \"The rabbit twitched it is nose\" — nope, that sounds bonkers! So use its"
+                  },
+                  {
+                    "text": "it's = it is / it has (a contraction — apostrophe replaces letters)",
+                    "why": "Just like don't = do not, can't = can not — same idea!"
+                  },
+                  {
+                    "text": "its = belonging to it (like his, hers, yours — NO apostrophe)",
+                    "why": "Possessive pronouns never have apostrophes — they're special like that"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Fill in the gaps:\n\n**\"The cat licked ___ paw because ___ dirty.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which fills the gaps correctly?",
+                "options": [
+                  "its ... it's",
+                  "it's ... its",
+                  "its ... its",
+                  "it's ... it's",
+                  "its' ... its'"
+                ],
+                "correctAnswer": "its ... it's",
+                "correctFeedback": "Superstar! 'its paw' = the paw belonging to it (possessive). 'it's dirty' = it is dirty (contraction). ✓",
+                "incorrectFeedback": "Not quite! The answer is **its ... it's**. 'its paw' = the paw belonging to it (possessive). 'it's dirty' = it is dirty (contraction). Remember: try replacing with 'it is' — if it works, use it's."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The cat licked ___ paw because ___ dirty.",
+                "highlightWords": [],
+                "label": "Check the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "it's vs its — your secret weapon!",
+              "body": "This is the most tested punctuation question in the 11+. Seriously! Learning this trick is like having a cheat code for the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "it's = it is OR it has",
+                    "why": "A contraction — the apostrophe replaces the missing letters, just like don't"
+                  },
+                  {
+                    "text": "its = belonging to it",
+                    "why": "A possessive pronoun — like his, hers, yours (NO apostrophe — they're special!)"
+                  },
+                  {
+                    "text": "THE TRICK: replace with 'it is'",
+                    "why": "If the sentence still makes sense → it's. If not → its. Works every single time!"
+                  },
+                  {
+                    "text": "There is NO SUCH WORD as its' (with apostrophe after s)",
+                    "why": "This form doesn't exist — it's always either it's or its. Now you know something most adults don't! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "its-vs-its-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll hunt down it's/its mix-ups in real sentences — the mistake that catches out even grown-ups!",
+            "You'll practise the 'swap in it is' replacement trick until it becomes second nature"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The its/it's swap — can you catch it?",
+              "body": "Holly is marking her partner's work in English. These sentences have it's and its mixed up — the apostrophes have ended up in the wrong places!\n\n**\"The dog wagged it's tail because its a good boy.\"**\n\nUse the \"it is\" trick to spot the mistakes!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The dog wagged it's tail because its a good boy.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix — and the magic trick!",
+              "body": "Holly swapped it's and its — used the apostrophe for possession and left it out for the contraction. This is THE most common mistake in English — even professional writers get it wrong!\n\n**Rule:** 'its tail' = the tail belonging to the dog (possessive, no apostrophe). 'it's a good boy' = it is a good boy (contraction).\n\n**The replacement test (works every time!):**\n1. Find every \"its\" or \"it's\" in your writing\n2. Replace each one with \"it is\" and read aloud\n3. Does \"it is\" make sense? → use **it's** (with apostrophe)\n4. Does \"it is\" NOT make sense? → use **its** (no apostrophe)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"The dog wagged it's tail because its a good boy.\"",
+                    "why": "swapped it's and its — used the apostrophe for possession and left it out for the contraction"
+                  },
+                  {
+                    "text": "RIGHT: \"The dog wagged its tail because it's a good boy.\"",
+                    "why": "'its tail' = the tail belonging to the dog (possessive, no apostrophe). 'it's a good boy' = it is a good boy (contraction)"
+                  },
+                  {
+                    "text": "Always use the replacement trick: swap in 'it is'",
+                    "why": "If it makes sense → it's. If not → its. Simple and foolproof!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Fix this sentence!",
+              "body": "Which version is correct?\n\n**\"The school painted it's walls. It's playground was also improved.\"**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is correct?",
+                "options": [
+                  "The school painted its walls. Its playground was also improved.",
+                  "The school painted it's walls. It's playground was also improved.",
+                  "The school painted it's walls. Its playground was also improved.",
+                  "The school painted its walls. It's playground was also improved.",
+                  "The school painted its' walls. Its' playground was also improved."
+                ],
+                "correctAnswer": "The school painted its walls. Its playground was also improved.",
+                "correctFeedback": "Brilliant! Both are possessive — 'the walls belonging to the school' and 'the playground belonging to the school'. No apostrophe needed. ✓",
+                "incorrectFeedback": "Close! The correct version is: **\"The school painted its walls. Its playground was also improved.\"**. Both are possessive — 'the walls belonging to the school' and 'the playground belonging to the school'. No apostrophe needed. Always try replacing with 'it is' to check!"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "it's vs its — you'll never mix them up again!",
+              "body": "You've now got the trick that works every single time. This alone could save you marks in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Replace the word with 'it is'",
+                    "why": "Read the sentence with 'it is' and listen carefully"
+                  },
+                  {
+                    "text": "Step 2: Does 'it is' make sense?",
+                    "why": "If YES → write it's (with apostrophe). Easy!"
+                  },
+                  {
+                    "text": "Step 3: Does 'it is' sound wrong?",
+                    "why": "If NO → write its (no apostrophe). Done!"
+                  },
+                  {
+                    "text": "Example: 'The cat licked ___ paw'",
+                    "why": "'The cat licked it is paw' — that sounds bonkers! So it's **its** (no apostrophe). You've got this! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commas-parenthesis",
+      "name": "Commas for Extra Information",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "commas-parenthesis-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover parenthetical commas (commas in pairs that wrap around extra information) — they're like two hands cupping a bonus detail in the middle of a sentence",
+            "A handy trick: if you can lift the words out and the sentence still makes sense, your commas are in the right place!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know commas can work in pairs?",
+              "body": "Aisha is writing a report about her school for the local newspaper. Look at this sentence:\n\n**\"Our headteacher, Mrs Green, is very kind.\"**\n\nSee those two commas around **\"Mrs Green\"**? They're like a pair of brackets — they wrap around a bonus fact that you could take out and the sentence would still work!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Our headteacher, Mrs Green, is very kind.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The brilliant removal test!",
+              "body": "In Aisha's sentence, **\"Mrs Green\"** is wrapped in commas. Parenthetical commas always come in **pairs** — like bookends! They wrap around extra information that you could remove without breaking the sentence. Here's the clever test:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start: \"Our headteacher, Mrs Green, is very kind.\"",
+                    "why": "Find the words sitting between the two commas"
+                  },
+                  {
+                    "text": "Extra information: \"Mrs Green\"",
+                    "why": "This is a bonus detail — nice to know, but the sentence doesn't need it to work"
+                  },
+                  {
+                    "text": "Remove it: \"Our headteacher is very kind.\"",
+                    "why": "Still makes perfect sense! That proves the commas are in the right place!"
+                  },
+                  {
+                    "text": "Parenthetical commas ALWAYS come in pairs",
+                    "why": "One before and one after — like bookends. Never use just one!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Look at this sentence:\n\n**\"My best friend, Ella, won the science prize.\"**\n\nWhat is the extra information that could be removed?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which part is the extra information that could be removed?",
+                "options": [
+                  "Ella",
+                  "My best friend",
+                  "won the science prize",
+                  "The whole sentence is essential",
+                  "None of it can be removed"
+                ],
+                "correctAnswer": "Ella",
+                "correctFeedback": "Spot on! \"Ella\" is the bonus info. Remove it and you get: \"My best friend won the science prize.\" — still makes perfect sense! You've nailed this! ✓",
+                "incorrectFeedback": "So close! The extra information is **\"Ella\"**. Remove it and you get: \"My best friend won the science prize.\" — the sentence still works perfectly. Try the removal test next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "My best friend, Ella, won the science prize.",
+                "highlightWords": [],
+                "label": "Check the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Paired commas — you've cracked the code!",
+              "body": "Remember: commas for extra information always come in PAIRS — like bookends! Using these correctly makes your writing look really sophisticated:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Parenthetical commas wrap around extra information",
+                    "why": "Like bookends or brackets — one before, one after. They always travel together!"
+                  },
+                  {
+                    "text": "Use the removal test: take out the words between the commas",
+                    "why": "If the sentence still makes sense, your commas are in the right place"
+                  },
+                  {
+                    "text": "ALWAYS use a pair — never just one comma!",
+                    "why": "Forgetting the second comma is the most common mistake — now you won't make it!"
+                  },
+                  {
+                    "text": "Examples: 'My sister, who is ten, loves reading.'",
+                    "why": "Remove 'who is ten' — 'My sister loves reading.' Still works! That's the proof! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "commas-parenthesis-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll spot when parenthetical commas (paired commas around extra information) have gone missing or wandered off",
+            "The golden rule: these commas always travel in pairs — lose one and the whole sentence gets confusing!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One comma is missing its partner!",
+              "body": "Charlie is proofreading his friend's history essay. Something is wrong with the commas here — the pair is incomplete!\n\n**\"Queen Victoria, who ruled for 63 years was very powerful.\"**\n\nCan you spot what's missing?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Queen Victoria, who ruled for 63 years was very powerful.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix!",
+              "body": "Charlie forgot the second comma after the extra information 'who ruled for 63 years'. This is the single most common paired-comma mistake — so knowing it puts you ahead of the game!\n\n**Rule:** Parenthetical commas come in PAIRS — you need one before AND one after the extra information.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"Queen Victoria, who ruled for 63 years was very powerful.\"",
+                    "why": "forgot the second comma after the extra information 'who ruled for 63 years'"
+                  },
+                  {
+                    "text": "RIGHT: \"Queen Victoria, who ruled for 63 years, was very powerful.\"",
+                    "why": "Parenthetical commas come in PAIRS — you need one before AND one after the extra information"
+                  },
+                  {
+                    "text": "Parenthetical commas always come in PAIRS",
+                    "why": "One before the extra info, one after — like bookends. They're lost without each other!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which version has both commas in the right places?\n\n**\"The River Thames which flows through London, is very long.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct version?",
+                "options": [
+                  "The River Thames, which flows through London, is very long.",
+                  "The River Thames which flows through London, is very long.",
+                  "The River Thames which flows through London is very long.",
+                  "The River Thames which flows through London, is very long.",
+                  "The River Thames which flows through London,, is very long."
+                ],
+                "correctAnswer": "The River Thames, which flows through London, is very long.",
+                "correctFeedback": "Well done! You need commas BEFORE and AFTER 'which flows through London' — both are needed, not just one ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"The River Thames, which flows through London, is very long.\"**. You need commas BEFORE and AFTER 'which flows through London' — both are needed, not just one"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The River Thames which flows through London, is very long.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Paired commas — sorted!",
+              "body": "Before you hand in your writing, run through this quick check. It takes seconds and could save you marks:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find any extra information in your sentences",
+                    "why": "Names, descriptions, 'which' or 'who' clauses — these are your clues"
+                  },
+                  {
+                    "text": "Check: does it have a comma BEFORE and AFTER?",
+                    "why": "Both commas are needed — forgetting one is the most common mistake, and now you won't make it!"
+                  },
+                  {
+                    "text": "Do the removal test: take out the words between the commas",
+                    "why": "If the sentence still works, your commas are perfect"
+                  },
+                  {
+                    "text": "My sister, who is ten, loves reading. → My sister loves reading.",
+                    "why": "The removal test proves it! Getting this right makes your writing look really polished ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commas-ambiguity",
+      "name": "Commas That Change Meaning",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "commas-ambiguity-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll see how one tiny comma can completely flip what a sentence means — prepare for some funny examples!",
+            "Why popping a comma after an opening word or phrase stops your reader from getting totally confused"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The comma that saved Grandma's life!",
+              "body": "Daisy is finding funny sentences in her grammar workbook. Brace yourself — this is going to make you laugh!\n\n**\"Let's eat Grandma!\"**\n**\"Let's eat, Grandma!\"**\n\nJust one tiny comma completely changes the meaning. Without it... well, poor Grandma!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Let's eat, Grandma!",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One comma prevents a LOT of confusion!",
+              "body": "Remember **\"Let's eat Grandma!\"** vs **\"Let's eat, Grandma!\"**? When a sentence starts with a time or place phrase, you need a comma after it. Without one, the meaning can get hilariously wrong!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "CONFUSING: \"After eating the dog went for a walk.\"",
+                    "why": "Without the comma, it sounds like someone ate the dog!"
+                  },
+                  {
+                    "text": "CLEAR: \"After eating, the dog went for a walk.\"",
+                    "why": "The comma separates the opener from the main sentence"
+                  },
+                  {
+                    "text": "Rule: put a comma after time/place openers",
+                    "why": "After eating, ... / While painting, ... / Before washing, ..."
+                  },
+                  {
+                    "text": "Also use commas when talking TO someone",
+                    "why": "\"Let's eat, Grandma!\" — the comma shows you're addressing a person"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "This sentence is missing a comma and reads very strangely:\n\n**\"I love cooking my family and my pets.\"**\n\nWhich version fixes the meaning?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version makes the meaning clear?",
+                "options": [
+                  "I love cooking, my family and my pets.",
+                  "I love cooking my family and my pets.",
+                  "I love cooking my family and my pets.,",
+                  ", I love cooking my family and my pets.",
+                  "I love cooking my family and my pets,."
+                ],
+                "correctAnswer": "I love cooking, my family and my pets.",
+                "correctFeedback": "Brilliant! Without the comma, it sounds like you're cooking your family and pets! The comma separates the activity (cooking) from the people you love ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"I love cooking, my family and my pets.\"**. Without the comma, it sounds like you're cooking your family and pets! The comma separates the activity (cooking) from the people you love"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I love cooking my family and my pets.",
+                "highlightWords": [],
+                "label": "Where does the comma go?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Commas that change meaning — you've got the power!",
+              "body": "A tiny comma can make a HUGE difference! Once you know this, you'll start spotting missing commas everywhere — in signs, menus, even texts from your friends:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Always put a comma after time/place openers",
+                    "why": "'After eating, the dog...' NOT 'After eating the dog...' — keep the dog safe!"
+                  },
+                  {
+                    "text": "Use a comma when talking TO someone (direct address)",
+                    "why": "'Let's eat, Grandma!' NOT 'Let's eat Grandma!' — Grandma will thank you"
+                  },
+                  {
+                    "text": "Read your sentence without the comma",
+                    "why": "Does it accidentally say something funny? If so, pop a comma in!"
+                  },
+                  {
+                    "text": "When in doubt, add the comma for clarity",
+                    "why": "It's always better to have a comma than a confused reader. That's a superpower for your writing! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "commas-ambiguity-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll play comma detective — finding the spots where a missing comma turns a normal sentence into something hilarious or baffling",
+            "You'll practise dropping commas into exactly the right place to rescue confusing sentences"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This sentence says something very strange!",
+              "body": "Grace is playing a comma detective game in class. Read this sentence carefully — it says something a bit weird because of a missing comma!\n\n**\"After cleaning the kitchen smelled lovely.\"**\n\nCan you see the accidental funny meaning?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "After cleaning the kitchen smelled lovely.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One little comma fixes everything!",
+              "body": "Grace found that this sentence forgot the comma after the opener 'After cleaning' — without it, it sounds like someone cleaned the kitchen (as an object) and then something smelled lovely. Amazing how one tiny mark can change everything, isn't it?\n\n**Rule:** Always put a comma after an opening time phrase to separate it from the main sentence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "CONFUSING: \"After cleaning the kitchen smelled lovely.\"",
+                    "why": "forgot the comma after the opener 'After cleaning' — without it, it sounds like someone cleaned the kitchen (as an object) and then something smelled lovely"
+                  },
+                  {
+                    "text": "CLEAR: \"After cleaning, the kitchen smelled lovely.\"",
+                    "why": "Always put a comma after an opening time phrase to separate it from the main sentence"
+                  },
+                  {
+                    "text": "A single comma can save the whole sentence",
+                    "why": "Always re-read what you've written — you might be accidentally saying something hilarious!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn to fix it!",
+              "body": "Which version makes the meaning clear?\n\n**\"While she was ironing her cat sat on the sofa.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct version?",
+                "options": [
+                  "While she was ironing, her cat sat on the sofa.",
+                  "While she was ironing her cat sat on the sofa.",
+                  "While she was ironing her cat sat on the sofa.,",
+                  "While she was ironing her cat sat on the sofa,.",
+                  ", While she was ironing her cat sat on the sofa."
+                ],
+                "correctAnswer": "While she was ironing, her cat sat on the sofa.",
+                "correctFeedback": "Well done! Without the comma, it sounds like she was ironing her cat! The comma separates the opening phrase from the main sentence ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"While she was ironing, her cat sat on the sofa.\"**. Without the comma, it sounds like she was ironing her cat! The comma separates the opening phrase from the main sentence"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "While she was ironing her cat sat on the sofa.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comma hero — saving sentences everywhere!",
+              "body": "A missing comma can completely change what your sentence means! Now you know this, you'll never look at sentences the same way again:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "After writing a sentence, re-read it without any commas",
+                    "why": "Does it accidentally say something silly? If you giggle, you need a comma!"
+                  },
+                  {
+                    "text": "Add commas after openers: 'After eating, ...'",
+                    "why": "This separates the opening phrase from the main idea — and saves the dog!"
+                  },
+                  {
+                    "text": "Add commas when addressing people: 'Help me, Mum!'",
+                    "why": "Shows you're talking TO someone, not about them. Important difference!"
+                  },
+                  {
+                    "text": "If a sentence could mean two things, add a comma to make it clear",
+                    "why": "Commas remove confusion and make your meaning crystal clear. That's what great writers do! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ellipsis",
+      "name": "Ellipsis — The Three Dots...",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "ellipsis-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll unlock the three superpowers of the ellipsis (the three dots ...): making a voice trail off, building suspense, and showing words have been left out",
+            "The strict rule that surprises people — an ellipsis is always exactly THREE dots, no more, no less!"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The mysterious three dots...",
+              "body": "Ella is writing a mystery story for the school competition. Ella keeps seeing these three dots everywhere:\n\n**\"She opened the door slowly and saw...\"**\n\nThose three dots are called an **ellipsis** (say: eh-LIP-sis). They're one of the coolest punctuation marks — and they do some really clever things in writing!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I think I might have... oh, never mind.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three dots, three superpowers!",
+              "body": "In Ella's sentence **\"She opened the door slowly and saw...\"**, the three dots (...) are called an **ellipsis**. It's a powerful little mark — and it has three main jobs:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "An ellipsis is always exactly ____ dots",
+                "options": [
+                  "two",
+                  "three",
+                  "four",
+                  "as many as you like"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Exactly three dots (...) — no more, no fewer. You've got it! ✓",
+                "incorrectFeedback": "Nearly! An ellipsis must be exactly THREE dots (...). Two dots or four dots? That's just wrong! Remember: three, always three."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Trailing off: \"I think I might have... oh, never mind.\"",
+                    "why": "The character trails off mid-sentence — they stop themselves from finishing"
+                  },
+                  {
+                    "text": "2. Building suspense: \"She opened the door slowly and saw...\"",
+                    "why": "The three dots build suspense — the reader has to wait to find out what she saw!"
+                  },
+                  {
+                    "text": "3. Missing words: \"To be or not to be... that is the question.\"",
+                    "why": "The ellipsis shows some of Shakespeare's original words have been left out"
+                  },
+                  {
+                    "text": "Always use exactly THREE dots",
+                    "why": "Two dots or four dots are incorrect — it must be three (...)"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is the ellipsis doing in this sentence?\n\n**\"The house was silent. Then, from the attic...\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the ellipsis used for here?",
+                "options": [
+                  "It is building suspense",
+                  "It is showing missing words",
+                  "It is showing a list continues",
+                  "It is replacing a full stop",
+                  "It is a spelling mistake"
+                ],
+                "correctAnswer": "It is building suspense",
+                "correctFeedback": "Spot on! The ellipsis here is building suspense. Can you feel that pause and wonder? That's the power of three dots! ✓",
+                "incorrectFeedback": "So close! The ellipsis in \"The house was silent. Then, from the attic...\" is actually building suspense. Read it aloud and you can feel the dramatic pause it creates!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The house was silent. Then, from the attic...",
+                "highlightWords": [],
+                "label": "Check the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Ellipsis — three dots, three jobs, sorted!",
+              "body": "Remember the three dots (...) and their three superpowers. Using these well will make your creative writing seriously impressive:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Trailing off — when someone stops mid-sentence",
+                    "why": "'I was going to... oh, never mind.' — you can almost hear them change their mind!"
+                  },
+                  {
+                    "text": "Building suspense — creating a cliffhanger or tension",
+                    "why": "'She opened the box and found...' — the reader HAS to keep reading!"
+                  },
+                  {
+                    "text": "Missing words — showing words have been left out",
+                    "why": "'To be or not to be... that is the question.' — neat and tidy"
+                  },
+                  {
+                    "text": "ALWAYS exactly three dots: ...",
+                    "why": "Two dots (..) or four dots (....) are always wrong. Three is the magic number! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "ellipsis-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll catch ellipsis (three dots ...) mistakes that pop up all the time — even in published books!",
+            "The two big blunders: using the wrong number of dots, or sticking an ellipsis where a different punctuation mark should go"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Leo",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something's wrong with these dots!",
+              "body": "Leo is checking punctuation in his story before handing it in. The ellipsis in this sentence has gone wrong — can you spot the problem?\n\n**The cave was dark and cold.... Something moved in the shadows.**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The cave was dark and cold.... Something moved in the shadows.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix!",
+              "body": "Leo used four dots instead of three — an ellipsis is always exactly three dots. Don't worry — dot-counting mistakes are really common!\n\n**Rule:** An ellipsis is always three dots (...), never two or four.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: The cave was dark and cold.... Something moved in the shadows.",
+                    "why": "used four dots instead of three — an ellipsis is always exactly three dots"
+                  },
+                  {
+                    "text": "RIGHT: The cave was dark and cold... Something moved in the shadows.",
+                    "why": "An ellipsis is always three dots (...), never two or four"
+                  },
+                  {
+                    "text": "Three dots. Always three. Exactly three.",
+                    "why": "Count them on your fingers if you need to! It's worth getting right."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which version uses the ellipsis correctly?\n\n**She whispered, \"I think I saw...... a ghost!\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version is correct?",
+                "options": [
+                  "She whispered, \"I think I saw... a ghost!\"",
+                  "She whispered, \"I think I saw...... a ghost!\"",
+                  "She whispered, \"I think I saw..... a ghost!\"",
+                  "She whispered, \"I think I saw.... a ghost!\"",
+                  "She whispered, \"I think I saw.. a ghost!\""
+                ],
+                "correctAnswer": "She whispered, \"I think I saw... a ghost!\"",
+                "correctFeedback": "Well done! Six dots is far too many! An ellipsis is always exactly three dots, no matter how dramatic the pause ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **She whispered, \"I think I saw... a ghost!\"**. Six dots is far too many! An ellipsis is always exactly three dots, no matter how dramatic the pause"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She whispered, \"I think I saw...... a ghost!\"",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Ellipsis — you've mastered the three dots!",
+              "body": "Before you use an ellipsis, run through this checklist. Used well, it makes your writing seriously dramatic:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Always use exactly three dots: ...",
+                    "why": "Not two, not four, not six — three is the magic number!"
+                  },
+                  {
+                    "text": "Use it for trailing off, suspense, or missing words",
+                    "why": "Three uses for three dots — easy to remember!"
+                  },
+                  {
+                    "text": "Don't overuse it — once or twice per paragraph is plenty",
+                    "why": "Too many ellipses make writing feel broken. Less is more!"
+                  },
+                  {
+                    "text": "An ellipsis is a real punctuation mark — treat it with respect!",
+                    "why": "Used well, it creates mystery and drama. That's the kind of writing that impresses examiners! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyphens",
+      "name": "Hyphens in Compound Words",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "hyphens-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll discover when two describing words need a hyphen to team up — like 'well-known' or 'ice-cold' — these are called compound adjectives (two words joined to describe something)",
+            "How hyphens act like tiny bridges joining words together in numbers, prefixes (word beginnings like 're-' or 'pre-'), and compound words"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The tiny line with a big job!",
+              "body": "Aisha is describing characters in her creative writing. Did you know a tiny little line can change how words work together? Look at the difference:\n\n**\"a well-known author\"** (with hyphen)\n**\"the author is well known\"** (no hyphen)\n\nThe hyphen (-) joins two words together when they come BEFORE the noun they describe. It's like a bridge between them!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"a well-known author\" vs \"the author is well known\"",
+                "highlightWords": [],
+                "label": "With or without a hyphen?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Hyphens — the word-joining superpower!",
+              "body": "We saw **\"a well-known author\"** (with hyphen) and **\"the author is well known\"** (without). Hyphens are like tiny bridges that join words together. Here are the rules:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A compound adjective needs a hyphen when it comes ____ the noun",
+                "options": [
+                  "before",
+                  "after",
+                  "anywhere near",
+                  "instead of"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Exactly! \"A well-known author\" needs the hyphen because \"well-known\" comes BEFORE the noun. You've got this! ✓",
+                "incorrectFeedback": "Nearly! Compound adjectives need a hyphen when they come BEFORE the noun, like \"a well-known author\". Before = hyphen!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Compound adjectives BEFORE a noun: \"a well-known author\"",
+                    "why": "Before the noun, the two words act as ONE adjective, so they need a hyphen to join them"
+                  },
+                  {
+                    "text": "Numbers: \"twenty-one\"",
+                    "why": "Numbers from twenty-one to ninety-nine are always hyphenated"
+                  },
+                  {
+                    "text": "Prefixes: \"pre-Victorian\"",
+                    "why": "Prefixes before proper nouns need a hyphen: pre-Victorian, post-Brexit"
+                  },
+                  {
+                    "text": "NO hyphen AFTER the noun: \"the author is well known\"",
+                    "why": "After the noun, no hyphen is needed — the words stand on their own"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which version is correct?\n\n**\"a well known singer\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version is correct?",
+                "options": [
+                  "a well-known singer",
+                  "a well known singer",
+                  "a-well-known-singer",
+                  "awellknownsinger",
+                  "a well — known singer"
+                ],
+                "correctAnswer": "a well-known singer",
+                "correctFeedback": "Spot on! 'well-known' comes before the noun 'singer', so it needs a hyphen to join the two words into one adjective ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"a well-known singer\"**. 'well-known' comes before the noun 'singer', so it needs a hyphen to join the two words into one adjective"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "a well known singer",
+                "highlightWords": [
+                  {
+                    "word": "a well known singer",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What does this mean?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Hyphens — tiny but mighty!",
+              "body": "Hyphens are small but knowing when to use them makes your writing look really polished. Here's your guide:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Compound adjective BEFORE a noun → hyphen",
+                    "why": "'a well-known author' (but 'the author is well known') — position is everything!"
+                  },
+                  {
+                    "text": "Numbers twenty-one to ninety-nine → always hyphenated",
+                    "why": "thirty-five, forty-two, sixty-seven — no exceptions!"
+                  },
+                  {
+                    "text": "Prefixes before proper nouns or dates → hyphen",
+                    "why": "pre-Victorian, post-2020, non-fiction — the hyphen keeps things clear"
+                  },
+                  {
+                    "text": "Compound adjective AFTER a noun → no hyphen",
+                    "why": "'The student is hard working' — no hyphen needed when it comes after. Knowing this is a real flex! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "hyphens-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll spot where hyphens have gone missing or sneaked into the wrong place",
+            "The common hyphen traps in compound adjectives (joined describing words) and numbers — and how to sidestep them"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The hyphens have gone missing!",
+              "body": "Oliver is proofreading his book report. Some hyphens have disappeared from this sentence — can you spot where they should be?\n\n**\"The well known detective solved the mystery in twenty one days.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The well known detective solved the mystery in twenty one days.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's where the hyphens belong!",
+              "body": "Oliver forgot hyphens in 'well-known' (compound adjective before a noun) and 'twenty-one' (compound number). Missing hyphens are one of the sneakiest mistakes — they're so small that people forget them!\n\n**Rule:** Compound adjectives before nouns and numbers from twenty-one to ninety-nine always need hyphens.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"The well known detective solved the mystery in twenty one days.\"",
+                    "why": "forgot hyphens in 'well-known' (compound adjective before a noun) and 'twenty-one' (compound number)"
+                  },
+                  {
+                    "text": "RIGHT: \"The well-known detective solved the mystery in twenty-one days.\"",
+                    "why": "Compound adjectives before nouns and numbers from twenty-one to ninety-nine always need hyphens"
+                  },
+                  {
+                    "text": "Hyphens join words that work together",
+                    "why": "If two words act as ONE adjective before a noun, link them with a hyphen — like a tiny bridge!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you have a go!",
+              "body": "Which version has the hyphens in the right places?\n\n**\"She is a hard working, ten year old girl.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version is correct?",
+                "options": [
+                  "She is a hard-working, ten-year-old girl.",
+                  "She is a hard working, ten year old girl.",
+                  "She-is-a-hard-working,-ten-year-old-girl.",
+                  "She is a hard working, ten year old girl.",
+                  "She is a hard working-, ten year old girl."
+                ],
+                "correctAnswer": "She is a hard-working, ten-year-old girl.",
+                "correctFeedback": "Well done! 'Hard-working' and 'ten-year-old' both come before the noun 'girl', so they need hyphens ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"She is a hard-working, ten-year-old girl.\"**. 'Hard-working' and 'ten-year-old' both come before the noun 'girl', so they need hyphens"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She is a hard working, ten year old girl.",
+                "highlightWords": [],
+                "label": "Fix the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Hyphens — you've cracked the code!",
+              "body": "Check your writing for missing hyphens. Most people don't bother — but getting them right makes your writing look brilliant:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Compound adjective before a noun? → add a hyphen",
+                    "why": "well-known, old-fashioned, hard-working — they're a team!"
+                  },
+                  {
+                    "text": "A number from twenty-one to ninety-nine? → add a hyphen",
+                    "why": "thirty-five, forty-two, sixty-seven — no exceptions!"
+                  },
+                  {
+                    "text": "A prefix like non-, self-, ex-, pre-, post-? → usually needs a hyphen",
+                    "why": "non-fiction, self-confident, ex-champion, pre-Victorian"
+                  },
+                  {
+                    "text": "After the noun? → no hyphen needed",
+                    "why": "'The author is well known' — no hyphen here. Position is everything! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dashes",
+      "name": "Dashes for Emphasis and Interruption",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "dashes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn the dash's secret talent — adding emphasis, afterthoughts, and dramatic surprise to your writing",
+            "The dash (—) vs the hyphen (-): they look similar but do completely different jobs — you'll never mix them up again!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Meet the most dramatic punctuation mark!",
+              "body": "Charlie is studying how authors create dramatic sentences. Look at how dashes create drama:\n\n**\"She opened the box and found — nothing.\"**\n\nThe dash (—) is the show-off of the punctuation world! It's DIFFERENT from a hyphen (-) and it creates **emphasis**, **surprise**, or a **dramatic pause**. Think of it as punctuation with attitude!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The answer — believe it or not — was zero.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three ways dashes make your writing amazing!",
+              "body": "Look at Charlie's sentence: **\"She opened the box and found — nothing.\"**. Dashes (—) are like the special effects of punctuation — they've got three main jobs:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Emphasis in pairs: \"The answer — believe it or not — was zero.\"",
+                    "why": "The dashes add dramatic emphasis — like a spoken aside. They're stronger than commas"
+                  },
+                  {
+                    "text": "2. Dramatic surprise: \"She opened the box and found — nothing.\"",
+                    "why": "The single dash creates a dramatic pause before the surprise ending"
+                  },
+                  {
+                    "text": "3. Vivid description: \"The old house — dark, cold and empty — stood at the end of the lane.\"",
+                    "why": "The dashes work like brackets, adding a vivid description with extra drama"
+                  },
+                  {
+                    "text": "Dashes (—) are NOT hyphens (-)",
+                    "why": "A hyphen joins words (ice-cream). A dash adds drama! They look similar but do completely different jobs."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is the dash doing in this sentence?\n\n**\"He ran to the finish line and won — by just one second!\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the dash used for here?",
+                "options": [
+                  "It is introducing a dramatic surprise",
+                  "It is adding extra information in the middle of a sentence",
+                  "It is joining two words together like a hyphen",
+                  "It is replacing a full stop",
+                  "It is showing missing words like an ellipsis"
+                ],
+                "correctAnswer": "It is introducing a dramatic surprise",
+                "correctFeedback": "Brilliant! The dash here is introducing a dramatic surprise. Can you feel the drama? That's the power of a dash! ✓",
+                "incorrectFeedback": "So close! The dash in this sentence is actually introducing a dramatic surprise. Read it aloud and you'll feel the dramatic pause it creates!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "He ran to the finish line and won — by just one second!",
+                "highlightWords": [],
+                "label": "Check the punctuation:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Dashes — your secret dramatic weapon!",
+              "body": "Dashes are like the special effects of punctuation — they add drama and flair! Using them well makes your creative writing really stand out:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A pair of dashes for emphasis: 'The dog — a huge Great Dane — bounded over.'",
+                    "why": "Like brackets or commas, but with way more drama!"
+                  },
+                  {
+                    "text": "A single dash for surprise: 'She opened the door and saw — nothing.'",
+                    "why": "Creates a pause before the unexpected ending — makes your reader gasp!"
+                  },
+                  {
+                    "text": "Dashes (—) are NOT hyphens (-)",
+                    "why": "Hyphens join words. Dashes add drama. They look similar but are totally different!"
+                  },
+                  {
+                    "text": "Use dashes sparingly for maximum impact",
+                    "why": "One or two per paragraph keeps them powerful — too many and they lose their magic ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "dashes-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "You'll catch the moment a dash and a hyphen have been swapped — it happens more often than you'd think!",
+            "You'll spot sentences where a dash has been used incorrectly and know exactly how to fix them"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Zara",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Dash disaster — can you spot it?",
+              "body": "Zara is comparing dashes and hyphens in a punctuation quiz. Something's gone wrong with the dashes in this sentence — can you figure out what?\n\n**\"The castle - ancient and crumbling - was said to be haunted.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The castle - ancient and crumbling - was said to be haunted.",
+                "highlightWords": [],
+                "label": "Spot the punctuation issue:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the fix!",
+              "body": "Zara's mistake: **used hyphens (-) instead of dashes (—) for emphasis**. Dashes and hyphens look so similar that mixing them up is really common — but now you know the difference!\n\nHyphens (-) join words together (like 'well-known'). Dashes (—) add emphasis or interruption to a sentence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"The castle - ancient and crumbling - was said to be haunted.\"",
+                    "why": "used hyphens (-) instead of dashes (—) for emphasis"
+                  },
+                  {
+                    "text": "RIGHT: \"The castle — ancient and crumbling — was said to be haunted.\"",
+                    "why": "Hyphens (-) join words together (like 'well-known'). Dashes (—) add emphasis or interruption to a sentence"
+                  },
+                  {
+                    "text": "Remember: a dash (—) is NOT a hyphen (-)",
+                    "why": "Dashes add drama. Hyphens join words. They look similar but do completely different jobs!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which version is correct?\n\n**\"The test - believe it or not - was actually easy.\"**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which version is correct?",
+                "options": [
+                  "The test — believe it or not — was actually easy.",
+                  "The test - believe it or not - was actually easy.",
+                  "The test - believe it or not - was actually easy.",
+                  "The test - believe it or not - was actually easy.",
+                  "The test ; believe it or not ; was actually easy."
+                ],
+                "correctAnswer": "The test — believe it or not — was actually easy.",
+                "correctFeedback": "Well done! This needs dashes (—) not hyphens (-), because 'believe it or not' is an emphatic interruption, not a compound word ✓",
+                "incorrectFeedback": "Not quite! The correct version is: **\"The test — believe it or not — was actually easy.\"**. This needs dashes (—) not hyphens (-), because 'believe it or not' is an emphatic interruption, not a compound word"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Dashes — you're a pro now!",
+              "body": "Dashes are powerful — but only when used well! Now you know the rules, you can use them like a real author:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A dash (—) is NOT a hyphen (-)",
+                    "why": "Dashes add drama. Hyphens join words like 'well-known'. Knowing the difference is impressive!"
+                  },
+                  {
+                    "text": "Dashes need spaces around them",
+                    "why": "'found — a puppy' NOT 'found—a puppy' — give them room to breathe!"
+                  },
+                  {
+                    "text": "Use dashes sparingly — one or two per paragraph",
+                    "why": "Too many dashes and they lose their power. Less is more!"
+                  },
+                  {
+                    "text": "Dashes add drama: emphasis, surprise, or interruption",
+                    "why": "They're the strongest way to create a dramatic moment. Use them well and your writing will really stand out ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

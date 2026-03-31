@@ -1,0 +1,197 @@
+{
+  "reviewedAt": "2026-03-30T19:30:00.000Z",
+  "topic": "negativenumbers",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 179,
+    "lessonsReviewed": 16,
+    "issuesFound": 14,
+    "bySeverity": {
+      "critical": 1,
+      "high": 2,
+      "medium": 7,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:52 (29%), D2:95 (53%), D3:32 (18%). D1 is close to the GL target of ~30%, but D2 is significantly overweight (53% vs target ~40%) and D3 is substantially underweight (18% vs target ~30%). The D2 bloat comes from heavy repetition of structurally identical temperature rise/fall and submarine depth problems. Many D1 questions (ordering, comparing, simple subtraction) are appropriately pitched for building confidence. However, the D3 shortfall means top pupils are under-challenged — only 32 questions test multi-step reasoning, sequences with negatives, or compound operations.",
+    "coverageAssessment": "Good breadth across core negative number concepts: ordering/comparing (D1), addition to negatives, subtraction through zero, subtraction from negatives, difference across zero, real-world contexts (money, depth, floors, temperature), midpoint/halfway, and sequences involving negatives. Missing from GL coverage: (1) negative number multiplication/division — no questions at all despite GL testing this at D3 level, (2) negative coordinates on axes — absent entirely, (3) interpreting negative numbers from graphs/charts — zero coverage. These gaps represent genuine GL question types at the harder end. The sequence sub-type (Q126, Q133, Q164-171) partially overlaps with the separate Sequences topic, which is fine for reinforcement but should not substitute for the missing multiplication/division skills.",
+    "teachingEfficacyAssessment": "16 lessons across 8 sub-concepts are well-structured and pedagogically sound. Every lesson follows the hook/teach/interact/consolidate pattern with NumberLine and WorkedExample visuals throughout — highly appropriate for this topic. The 'spot-the-mistake' templates (counting-zero-mistake, adding-neg-mistake, difference-zero-mistake, temperature-mistake) are excellent for addressing common GL traps. However, the 'master-crossing-zero' sub-concept is an orphan — it has 62 mapped questions but NO lessons. This is the single largest teaching gap: children who get 'crossing zero' questions wrong have nowhere to learn the skill. Additionally, the 'difference-across-zero' lesson teaches 'add distances from zero' which works for opposite-side differences but Q55 (difference between -20 and -8) and Q90 (difference between -30 and -12) are same-side differences mapped to this sub-concept — the lesson doesn't cover same-side difference technique.",
+    "topPriorities": [
+      "CRITICAL: Fix Q170 wrong answer — listed as -26 but correct answer is -31",
+      "Create lessons for 'master-crossing-zero' orphan sub-concept (62 questions with no teaching material)",
+      "Increase D3 from 32 to ~50-55 by adding multiplication/division of negatives, coordinate questions, and multi-step compound problems",
+      "Reduce D2 repetition — ~20 near-identical submarine/temperature rise questions could be halved and replaced with more varied problem types",
+      "Add negative multiplication/division questions (e.g. -3 x 4, -12 ÷ 3, -5 x -2) to cover GL D3 content"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-NEG-Q170-001",
+      "itemType": "question",
+      "itemId": "Q170",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Q170 correct answer is wrong — should be -31, not -26",
+      "description": "Sequence: 12, 7, 2, -3, -8, ... (subtract 5 each time). Term 6: -8 - 5 = -13. Term 7: -13 - 5 = -18. Sum of 6th and 7th terms: -13 + (-18) = -31. The question lists correct answer as '-26' (index 1) but -31 (index 0) is actually correct. The explanation text also contains the error: it states 'Sum: -13 + (-18) = -31' which is mathematically correct but then contradicts the marked answer of -26.",
+      "suggestedFix": "Change correct index from 1 to 0. The correct answer is -31. The explanation already shows the correct working (-13 + -18 = -31) so only the correct index needs updating.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-MAPPING-001",
+      "itemType": "mapping",
+      "itemId": "master-crossing-zero",
+      "severity": "high",
+      "category": "orphan-subconcept",
+      "title": "62 questions mapped to 'master-crossing-zero' which has no lessons",
+      "description": "The sub-concept 'master-crossing-zero' appears in the mappings with 62 questions (Q1, Q4, Q12, Q13, Q18, Q21, Q23, Q29, Q32, Q33, Q40, Q41, Q50, and many more) but '[No lesson found]' is shown for all of them. These are questions where the child must add to a negative and cross zero to get a positive result (e.g. -12 + 17 = 5). This is one of the most common GL negative number question patterns and currently has zero teaching support.",
+      "suggestedFix": "Create 2 lessons for 'master-crossing-zero': (1) a step-by-step lesson showing how to bridge through zero when adding a large positive to a negative, using the 'go to zero, then keep going' method; (2) a spot-the-mistake lesson addressing the common error of subtracting instead of adding, or getting the wrong sign. These should follow the existing template patterns with NumberLine visuals.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-COVERAGE-001",
+      "itemType": "topic-coverage",
+      "itemId": "multiplication-division",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "No negative multiplication or division questions despite GL testing this at D3",
+      "description": "GL Assessment includes questions involving multiplication and division with negative numbers at D3 difficulty (e.g. -3 x 4 = -12, -20 ÷ 5 = -4, and the trickier -4 x -3 = 12). The topic has zero questions covering this skill. While this is more of a Year 6/KS3 bridge topic, GL does test simple cases and the current bank misses this entirely.",
+      "suggestedFix": "Add 8-10 questions: 3 at D2 (negative x positive, e.g. -5 x 3), 5 at D3 (negative x negative giving positive, negative ÷ positive, word problems requiring multiplication of negatives). Include real-world contexts like temperature drops over multiple hours.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-DIST-001",
+      "itemType": "difficulty-distribution",
+      "itemId": "overall",
+      "severity": "medium",
+      "category": "difficulty-balance",
+      "title": "D2 overweight at 53% and D3 underweight at 18% vs GL targets",
+      "description": "Current distribution: D1:52 (29%), D2:95 (53%), D3:32 (18%). GL target is approximately 30:40:30. The D2 count of 95 is 13 percentage points above target, while D3 at 32 is 12 percentage points below target. This imbalance means the middle ground is over-served while advanced pupils lack sufficient challenge. The D2 bloat is mainly from repetitive submarine/temperature/bank problems using the same arithmetic pattern (negative + positive or positive - larger positive).",
+      "suggestedFix": "Reclassify 10-15 of the more complex D2 questions as D3 where justified (e.g. Q36, Q89 'closest to zero' questions requiring absolute value thinking, Q177 Ben Nevis altitude problem). Add 15-20 new D3 questions covering multiplication/division, coordinates, and multi-step compound problems. Target: D1 ~52, D2 ~75-80, D3 ~50-55.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q59,Q109",
+      "severity": "medium",
+      "category": "difficulty-miscalibration",
+      "title": "Q59 and Q109 rated D3 but are simple 'furthest from zero' comparisons — should be D2",
+      "description": "Q59 asks 'Which is furthest from zero? -16, 9, -5, 18, -22' and Q109 asks the same type with different numbers. These only require comparing absolute values of 5 given numbers — the same cognitive demand as 'closest to zero' questions (Q19, Q36, Q89) which are rated D2. There is no multi-step reasoning, no computation, and no tricky concept. Rating these D3 inflates the D3 count without providing genuine D3 challenge.",
+      "suggestedFix": "Reclassify Q59 and Q109 from D3 to D2. Replace with genuinely harder D3 questions requiring multi-step negative number reasoning.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-REPEAT-001",
+      "itemType": "question-set",
+      "itemId": "temperature-rise-pattern",
+      "severity": "medium",
+      "category": "excessive-repetition",
+      "title": "~25 near-identical 'temperature rises by X°C' D2 questions with minimal variation",
+      "description": "Questions Q1, Q4, Q23, Q33, Q50, Q60, Q67, Q83, Q95, Q139, and more all follow the exact same pattern: 'Temperature is -N°C. It rises/warms by M°C. What is the new temperature?' The arithmetic is always negative + positive. While some repetition builds fluency, having ~25 questions with the same structure at D2 is excessive. The context varies (cities, countries) but the mathematical demand is identical.",
+      "suggestedFix": "Reduce to ~12 temperature-rise questions at D2. Replace removed questions with more varied D2/D3 types: temperature change over multiple time periods, comparing temperatures across multiple cities, finding which city has a specific temperature after a change.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-REPEAT-002",
+      "itemType": "question-set",
+      "itemId": "submarine-depth-pattern",
+      "severity": "medium",
+      "category": "excessive-repetition",
+      "title": "~15 near-identical submarine/diver depth questions at D2",
+      "description": "Questions Q6, Q16, Q29, Q37, Q58, Q66, Q72, Q79, Q80, Q101, Q102, Q118, and more all follow: 'A submarine/diver is at -N metres. It rises/dives M metres. What is the new depth?' The arithmetic alternates between negative + positive and negative - positive. Context substitutes include whales, dolphins, robots, and potholers, but the mathematical structure is identical each time.",
+      "suggestedFix": "Reduce to ~8 depth questions. Replace with more varied marine/underground problems: multi-stage journeys (dive then rise then dive), comparing depths of two submarines, calculating how far apart two divers are, finding the depth after a fractional change.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-REPEAT-003",
+      "itemType": "question-set",
+      "itemId": "bank-balance-pattern",
+      "severity": "medium",
+      "category": "excessive-repetition",
+      "title": "~12 near-identical 'spends more than they have' bank balance questions",
+      "description": "Questions Q3, Q24, Q38, Q51, Q62, Q65, Q81, Q86, Q99, Q106, Q115, Q150 all follow: 'X has £A. They spend/buy £B (where B > A). What is their balance?' The arithmetic is always positive - larger positive = negative. While this is a valid real-world context, the pattern is over-represented at both D1 and D2.",
+      "suggestedFix": "Reduce to ~6 simple overspend questions. Replace with more varied money problems: multiple transactions, comparing two people's balances, working backwards from a final balance, finding how much more is needed to clear a debt.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-MAPPING-002",
+      "itemType": "mapping",
+      "itemId": "difference-across-zero-same-side",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "Same-side difference questions (Q55, Q90, Q161) mapped to 'difference-across-zero' but lesson only teaches opposite-side technique",
+      "description": "Q55 (difference between -20 and -8 = 12), Q90 (difference between -30 and -12 = 18), and Q161 (difference between -13 and -4 = 9) are all same-side-of-zero differences. They are mapped to 'Finding the Difference Across Zero' but the lesson only teaches the 'add distances from zero' technique, which only works when numbers are on opposite sides. For same-side differences, the correct method is to subtract the smaller absolute value from the larger, or equivalently count the gap. A child following the lesson's taught method on Q55 would calculate 20 + 8 = 28 (wrong).",
+      "suggestedFix": "Either: (1) create a separate sub-concept 'difference-between-two-negatives' with its own lesson explaining the subtraction/counting method, or (2) extend the 'difference-across-zero' lesson to include a second section covering same-side differences with the rule 'same side = subtract, opposite sides = add'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-Q44-001",
+      "itemType": "question",
+      "itemId": "Q44",
+      "severity": "low",
+      "category": "missing-units",
+      "title": "Q44 options lack °C units while question asks about temperature",
+      "description": "Q44 asks 'The temperature in York is 2°C. It drops by 14°C overnight. What is the new temperature?' but the options are '16, 12, -12, -16, 14' without °C units. Most other temperature questions include °C in the options. This inconsistency could momentarily confuse a child, though it does not affect the answer.",
+      "suggestedFix": "Add °C to all options: '16°C, 12°C, -12°C, -16°C, 14°C'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-UNITS-001",
+      "itemType": "question-set",
+      "itemId": "Q44,Q70,Q77,Q92,Q103,Q110",
+      "severity": "low",
+      "category": "missing-units",
+      "title": "Multiple temperature questions have options without °C units",
+      "description": "Questions Q44, Q70, Q77, Q92, Q103, and Q110 all ask about temperature changes but present options as plain numbers (e.g. '-12', '17') rather than with °C. Other temperature questions in the set (Q1, Q4, Q8, Q10, Q23, Q39, Q49, etc.) correctly include °C in options. This inconsistency is a minor quality issue.",
+      "suggestedFix": "Add °C to all options in Q44, Q70, Q77, Q92, Q103, and Q110 for consistency.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-UNITS-002",
+      "itemType": "question-set",
+      "itemId": "Q63,Q65,Q81,Q86,Q99,Q115",
+      "severity": "low",
+      "category": "missing-units",
+      "title": "Multiple money questions have options without £ symbol",
+      "description": "Questions Q63, Q65, Q81, Q86, Q99, and Q115 ask about bank balances or spending but present options as plain numbers (e.g. '-22', '28') rather than with £ or -£ prefix. Other money questions (Q3, Q24, Q62, Q87, Q106, Q107) correctly include £ in options. This inconsistency is minor but worth standardising.",
+      "suggestedFix": "Add £ to all options in the affected questions. Use '-£22' format for negative balances to match the style of Q3, Q24 etc.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-COVERAGE-002",
+      "itemType": "topic-coverage",
+      "itemId": "negative-coordinates",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "No questions on negative coordinates despite GL testing this",
+      "description": "GL Assessment tests negative coordinates in the maths paper — reading and plotting points in all four quadrants (e.g. 'What are the coordinates of point P?' where P is at (-3, 2)). The negative numbers topic has zero coordinate questions. While coordinates could sit in a geometry topic, the negative number skill is the primary challenge and this is a natural home for 5-8 such questions.",
+      "suggestedFix": "Add 5-8 coordinate questions: 2 at D1 (read a point with one negative coordinate), 3 at D2 (read points in third quadrant, find midpoint of two points with negatives), 2 at D3 (reflect a shape across an axis into negative coordinates, find missing vertex of a shape given 3 vertices with negatives).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-NEG-DIFF-003",
+      "itemType": "question-set",
+      "itemId": "D1-temperature-drops",
+      "severity": "low",
+      "category": "difficulty-miscalibration",
+      "title": "Several D1 temperature-drop questions involve larger numbers than typical D1",
+      "description": "Questions Q103 (14 - 42), Q110 (8 - 33), Q92 (5 - 24) are rated D1 but involve subtracting numbers in the 20s-40s from single-digit numbers. While the concept is simple (positive minus larger positive), the arithmetic with larger numbers pushes these towards D2. Compare with Q28 (3 - 11) and Q56 (4 - 19) which are also D1 but use more age-appropriate numbers. The core skill is identical but GL typically uses smaller, friendlier numbers at D1.",
+      "suggestedFix": "Consider reclassifying Q103, Q110, and Q92 to D2, or reducing the numbers to keep them at genuine D1 level (e.g. 14 - 42 could become 4 - 12).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

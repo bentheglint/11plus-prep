@@ -1,0 +1,3383 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "percentages",
+    "displayName": "Percentages",
+    "extractedAt": "2026-03-30T13:05:32.745Z",
+    "questionCount": 177,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 98,
+      "D3": 41
+    },
+    "questionTypes": {
+      "standard": 177
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 25% of £200?",
+      "options": [
+        "£40",
+        "£50",
+        "£60",
+        "£75",
+        "£25"
+      ],
+      "correct": 1,
+      "correctAnswer": "£50",
+      "explanation": "To find 25% of £200, we can calculate 200 ÷ 4 = £50 (because 25% is the same as 1/4). Or multiply: 200 × 0.25 = £50. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shirt costs £40. In a sale, it is reduced by 20%. What is the sale price?",
+      "options": [
+        "£20",
+        "£32",
+        "£35",
+        "£38",
+        "£30"
+      ],
+      "correct": 1,
+      "correctAnswer": "£32",
+      "explanation": "First find 20% of £40: 40 ÷ 5 = £8 (because 20% = 1/5). Then subtract: £40 - £8 = £32. The sale price is £32. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a class of 25 children, 15 are girls. What percentage are girls?",
+      "options": [
+        "50%",
+        "60%",
+        "65%",
+        "70%",
+        "75%"
+      ],
+      "correct": 1,
+      "correctAnswer": "60%",
+      "explanation": "To find the percentage: (15 ÷ 25) × 100 = 0.6 × 100 = 60%. So 60% of the class are girls. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shop offers 10% off a coat costing £450. How much is the discount?",
+      "options": [
+        "£40",
+        "£45",
+        "£50",
+        "£55",
+        "£60"
+      ],
+      "correct": 1,
+      "correctAnswer": "£45",
+      "explanation": "To find 10% of any number, divide by 10. So £450 ÷ 10 = £45. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bicycle was priced at £300. After a 15% discount, what is the new price?",
+      "options": [
+        "£250",
+        "£255",
+        "£265",
+        "£270",
+        "£285"
+      ],
+      "correct": 1,
+      "correctAnswer": "£255",
+      "explanation": "First find 15% of £300: 10% = £30, so 5% = £15, therefore 15% = £45. Then subtract: £300 - £45 = £255. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "There are 86 pupils in Year 5. Half of them walk to school. How many is that? (50% of 86)",
+      "options": [
+        "40",
+        "42",
+        "43",
+        "44",
+        "46"
+      ],
+      "correct": 2,
+      "correctAnswer": "43",
+      "explanation": "50% means half. To find half of 86, divide by 2: 86 ÷ 2 = 43. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop has 80 apples. 35% of them are green. How many green apples are there?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct": 2,
+      "correctAnswer": "28",
+      "explanation": "Find 35% of 80: First find 10% = 8, so 30% = 24. Then 5% = 4. Add them: 24 + 4 = 28 green apples. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which has the greatest value? 30% of 200, 25% of 240, or 20% of 300?",
+      "options": [
+        "30% of 200",
+        "25% of 240",
+        "20% of 300",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "They are all equal",
+      "explanation": "Let's calculate each: 30% of 200 = 60; 25% of 240 = 60; 20% of 300 = 60. They are all equal to 60! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A football team won 18 out of 30 matches. What percentage did they win?",
+      "options": [
+        "50%",
+        "55%",
+        "60%",
+        "65%",
+        "70%"
+      ],
+      "correct": 2,
+      "correctAnswer": "60%",
+      "explanation": "Calculate: (18 ÷ 30) × 100. Simplify 18/30 = 3/5 = 0.6. Then 0.6 × 100 = 60%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool holds 160 litres. It is 75% full. How many litres of water are in the pool?",
+      "options": [
+        "100",
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "correct": 2,
+      "correctAnswer": "120",
+      "explanation": "75% is the same as 3/4. To find 3/4 of 160: 160 ÷ 4 = 40, then 40 × 3 = 120. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A games console costs £240 after a 20% discount. What was the original price?",
+      "options": [
+        "£280",
+        "£288",
+        "£300",
+        "£320",
+        "£360"
+      ],
+      "correct": 2,
+      "correctAnswer": "£300",
+      "explanation": "If £240 is 80% of the original price (100% - 20% = 80%), then 10% = £30 (240 ÷ 8). So 100% = £30 × 10 = £300. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a bag of 60 marbles, 15 are blue. What percentage are NOT blue?",
+      "options": [
+        "25%",
+        "50%",
+        "65%",
+        "75%",
+        "85%"
+      ],
+      "correct": 3,
+      "correctAnswer": "75%",
+      "explanation": "15 out of 60 are blue, so that's 25%. The marbles that are NOT blue = 100% - 25% = 75%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 5% of £840?",
+      "options": [
+        "£40",
+        "£42",
+        "£44",
+        "£46",
+        "£48"
+      ],
+      "correct": 1,
+      "correctAnswer": "£42",
+      "explanation": "To find 5%, first find 10% then divide by 2. 10% of £840 = £84, so 5% = £84 ÷ 2 = £42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A book is reduced from £16 to £12. What is the percentage discount?",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "33%",
+        "40%"
+      ],
+      "correct": 1,
+      "correctAnswer": "25%",
+      "explanation": "The discount is £16 - £12 = £4. Now find what percentage £4 is of £16: (4 ÷ 16) × 100 = 25%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which is larger: 40% of 250 or 45% of 200?",
+      "options": [
+        "40% of 250",
+        "45% of 200",
+        "They are equal",
+        "Cannot determine",
+        "Neither"
+      ],
+      "correct": 0,
+      "correctAnswer": "40% of 250",
+      "explanation": "40% of 250 = 100 (because 10% = 25, so 40% = 100). 45% of 200 = 90 (because 10% = 20, so 45% = 90). So 40% of 250 is larger. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer has 120 sheep. 65% of them are female. How many male sheep does he have?",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "correct": 3,
+      "correctAnswer": "42",
+      "explanation": "If 65% are female, then 35% are male (100% - 65% = 35%). Find 35% of 120: 10% = 12, so 30% = 36, and 5% = 6. Therefore 35% = 36 + 6 = 42 male sheep. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a spelling test, Emma got 0.35 of the questions right. What is her score as a percentage?",
+      "options": [
+        "3.5%",
+        "30.5%",
+        "35%",
+        "350%",
+        "0.35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "35%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.35 × 100 = 35%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cinema has 400 seats. On Friday night, 85% of the seats were filled. How many seats were empty?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct": 2,
+      "correctAnswer": "60",
+      "explanation": "If 85% were filled, then 15% were empty (100% - 85% = 15%). Find 15% of 400: 10% = 40, and 5% = 20, so 15% = 60 empty seats. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 12% of 350?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "correct": 1,
+      "correctAnswer": "42",
+      "explanation": "Find 10% of 350 = 35. Then find 2% = 7 (because 2% is one-fifth of 10%). Add them: 35 + 7 = 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A jacket originally cost £75. After two successive discounts of 10% and then 10%, what is the final price?",
+      "options": [
+        "£60.00",
+        "£60.75",
+        "£61.25",
+        "£61.50",
+        "£67.50"
+      ],
+      "correct": 1,
+      "correctAnswer": "£60.75",
+      "explanation": "First discount: 10% of £75 = £7.50, so price = £67.50. Second discount: 10% of £67.50 = £6.75, so final price = £67.50 - £6.75 = £60.75. ✓ Remember: two 10% discounts don't equal 20%!",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a test, Sarah scored 32 out of 40. What percentage did she score?",
+      "options": [
+        "75%",
+        "78%",
+        "80%",
+        "82%",
+        "85%"
+      ],
+      "correct": 2,
+      "correctAnswer": "80%",
+      "explanation": "Calculate: (32 ÷ 40) × 100. Simplify: 32/40 = 4/5 = 0.8. Then 0.8 × 100 = 80%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these is the smallest? 0.15, 18%, 1/5, 0.2, 16%",
+      "options": [
+        "0.15",
+        "18%",
+        "1/5",
+        "0.2",
+        "16%"
+      ],
+      "correct": 0,
+      "correctAnswer": "0.15",
+      "explanation": "Convert all to decimals: 0.15 stays 0.15; 18% = 0.18; 1/5 = 0.2; 0.2 stays 0.2; 16% = 0.16. The smallest is 0.15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A train ticket costs £45 for adults. Children pay 60% of the adult price. How much does a child ticket cost?",
+      "options": [
+        "£25",
+        "£27",
+        "£29",
+        "£30",
+        "£32"
+      ],
+      "correct": 1,
+      "correctAnswer": "£27",
+      "explanation": "Find 60% of £45. First find 10% = £4.50, so 60% = £4.50 × 6 = £27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop increases all prices by 15%. A TV that cost £400 now costs how much?",
+      "options": [
+        "£450",
+        "£455",
+        "£460",
+        "£465",
+        "£470"
+      ],
+      "correct": 2,
+      "correctAnswer": "£460",
+      "explanation": "Find 15% of £400: 10% = £40, and 5% = £20, so 15% = £60. Add to original: £400 + £60 = £460. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage of 1 metre is 35 centimetres?",
+      "options": [
+        "3.5%",
+        "30%",
+        "35%",
+        "350%",
+        "0.35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "35%",
+      "explanation": "1 metre = 100 cm. So 35 cm out of 100 cm = 35/100 = 35%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a survey of 200 people, 130 said 'yes'. What percentage said 'no'?",
+      "options": [
+        "30%",
+        "35%",
+        "40%",
+        "45%",
+        "50%"
+      ],
+      "correct": 1,
+      "correctAnswer": "35%",
+      "explanation": "If 130 said yes, then 70 said no (200 - 130 = 70). Calculate: (70 ÷ 200) × 100 = 35%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A phone costs £180 after a 25% discount. What was the original price?",
+      "options": [
+        "£220",
+        "£225",
+        "£230",
+        "£240",
+        "£250"
+      ],
+      "correct": 3,
+      "correctAnswer": "£240",
+      "explanation": "£180 is 75% of the original (100% - 25% = 75%). If 75% = £180, then 25% = £60 (180 ÷ 3), so 100% = £60 × 4 = £240. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 45% of 220?",
+      "options": [
+        "95",
+        "99",
+        "103",
+        "107",
+        "110"
+      ],
+      "correct": 1,
+      "correctAnswer": "99",
+      "explanation": "Find 10% of 220 = 22, so 40% = 88. Then 5% = 11. Add them: 88 + 11 = 99. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school has 600 students. 48% are boys. How many are girls?",
+      "options": [
+        "288",
+        "300",
+        "312",
+        "320",
+        "352"
+      ],
+      "correct": 2,
+      "correctAnswer": "312",
+      "explanation": "If 48% are boys, then 52% are girls (100% - 48% = 52%). Find 52% of 600: 50% = 300, and 2% = 12, so 52% = 312 girls. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which has the smallest value? 15% of 300, 18% of 200, or 12% of 400?",
+      "options": [
+        "15% of 300",
+        "18% of 200",
+        "12% of 400",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "18% of 200",
+      "explanation": "Calculate each: 15% of 300 = 45; 18% of 200 = 36; 12% of 400 = 48. The smallest is 18% of 200 = 36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A recipe needs 250g of flour. Tom only wants to make 60% of the recipe. How much flour does he need?",
+      "options": [
+        "120g",
+        "130g",
+        "140g",
+        "150g",
+        "160g"
+      ],
+      "correct": 3,
+      "correctAnswer": "150g",
+      "explanation": "Find 60% of 250g: 10% = 25g, so 60% = 25g × 6 = 150g. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A store sells 180 items in a week. 20% were sold on Saturday. How many items were sold on Saturday?",
+      "options": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "correct": 3,
+      "correctAnswer": "36",
+      "explanation": "Find 20% of 180: 10% of 180 = 18, so 20% = 18 × 2 = 36 items. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 24 out of 96?",
+      "options": [
+        "20%",
+        "22%",
+        "24%",
+        "25%",
+        "30%"
+      ],
+      "correct": 3,
+      "correctAnswer": "25%",
+      "explanation": "Calculate: (24 ÷ 96) × 100. Simplify: 24/96 = 1/4 = 0.25. Then 0.25 × 100 = 25%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A library has 540 books. After buying more books, it has 15% more than before. How many books does it have now?",
+      "options": [
+        "555",
+        "595",
+        "615",
+        "621",
+        "635"
+      ],
+      "correct": 3,
+      "correctAnswer": "621",
+      "explanation": "Find 15% of 540: 10% = 54, and 5% = 27, so 15% = 81. Add to original: 540 + 81 = 621 books. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a fruit bowl with 80 pieces of fruit, 35% are apples and 25% are oranges. How many are neither apples nor oranges?",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "correct": 2,
+      "correctAnswer": "32",
+      "explanation": "Apples and oranges together = 35% + 25% = 60%. So neither = 40% (100% - 60%). Find 40% of 80: 10% = 8, so 40% = 32 pieces of fruit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A farm has 180 animals. 30% of them are sheep. How many sheep are there?",
+      "options": [
+        "48",
+        "51",
+        "52",
+        "54",
+        "56"
+      ],
+      "correct": 3,
+      "correctAnswer": "54",
+      "explanation": "To find 30%, first find 10% then multiply by 3. 10% of 180 = 18, so 30% = 18 × 3 = 54. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A backpack costs £80. During a clearance sale, it is reduced by 35%. What is the sale price?",
+      "options": [
+        "£50",
+        "£52",
+        "£54",
+        "£56",
+        "£58"
+      ],
+      "correct": 1,
+      "correctAnswer": "£52",
+      "explanation": "First find 35% of £80: 10% = £8, so 30% = £24, and 5% = £4. Therefore 35% = £28. Subtract: £80 - £28 = £52. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a box of 64 crayons, 16 are red. What percentage are red?",
+      "options": [
+        "20%",
+        "22%",
+        "25%",
+        "28%",
+        "30%"
+      ],
+      "correct": 2,
+      "correctAnswer": "25%",
+      "explanation": "Calculate: (16 ÷ 64) × 100. Simplify: 16/64 = 1/4 = 0.25. Then 0.25 × 100 = 25%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school trip costs £240. A deposit of 15% is needed to book a place. How much is the deposit?",
+      "options": [
+        "£32",
+        "£36",
+        "£38",
+        "£40",
+        "£42"
+      ],
+      "correct": 1,
+      "correctAnswer": "£36",
+      "explanation": "Find 10% of £240 = £24. Then 5% = £12. Add them: £24 + £12 = £36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A tablet was priced at £68 after a 15% discount. What was the original price?",
+      "options": [
+        "£75",
+        "£76",
+        "£78",
+        "£79",
+        "£80"
+      ],
+      "correct": 4,
+      "correctAnswer": "£80",
+      "explanation": "If £68 is 85% of the original (100% - 15% = 85%), then £68 ÷ 0.85 = £80. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 60% of 350?",
+      "options": [
+        "180",
+        "190",
+        "200",
+        "210",
+        "220"
+      ],
+      "correct": 3,
+      "correctAnswer": "210",
+      "explanation": "60% is 6/10. Calculate: 350 × 0.6 = 210. Or find 10% = 35, then 60% = 35 × 6 = 210. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A garden has 150 plants. 45 are flowers. What percentage are flowers?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (45 ÷ 150) × 100. Simplify: 45/150 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school has 450 pupils. 72% attended the assembly. How many pupils were absent?",
+      "options": [
+        "116",
+        "120",
+        "126",
+        "130",
+        "135"
+      ],
+      "correct": 2,
+      "correctAnswer": "126",
+      "explanation": "If 72% attended, then 28% were absent (100% - 72%). Find 28% of 450: 10% = 45, so 20% = 90, and 8% = 36. Therefore 28% = 126. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 8% of £650?",
+      "options": [
+        "£50",
+        "£52",
+        "£54",
+        "£56",
+        "£58"
+      ],
+      "correct": 1,
+      "correctAnswer": "£52",
+      "explanation": "Find 10% of £650 = £65. Then 8% = £65 × 0.8 = £52. Or: 1% = £6.50, so 8% = £52. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A video game costs £90 after a 40% discount. What was the original price?",
+      "options": [
+        "£120",
+        "£130",
+        "£140",
+        "£150",
+        "£160"
+      ],
+      "correct": 3,
+      "correctAnswer": "£150",
+      "explanation": "£90 is 60% of the original (100% - 40%). If 60% = £90, then 10% = £15, so 100% = £150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A baker uses 0.42 of a bag of flour for a cake. What percentage of the bag has been used?",
+      "options": [
+        "4.2%",
+        "42%",
+        "420%",
+        "0.42%",
+        "4200%"
+      ],
+      "correct": 1,
+      "correctAnswer": "42%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.42 × 100 = 42%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school has 280 students in an assembly. 55% are female. How many are male?",
+      "options": [
+        "120",
+        "122",
+        "126",
+        "130",
+        "134"
+      ],
+      "correct": 2,
+      "correctAnswer": "126",
+      "explanation": "If 55% are female, then 45% are male (100% - 55%). Find 45% of 280: 10% = 28, so 40% = 112, and 5% = 14. Therefore 45% = 126. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A watch costs £120. If the price increases by 25%, what is the new price?",
+      "options": [
+        "£135",
+        "£140",
+        "£145",
+        "£148",
+        "£150"
+      ],
+      "correct": 4,
+      "correctAnswer": "£150",
+      "explanation": "Find 25% of £120 = £30. Add to original: £120 + £30 = £150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a test, Noah scored 18 out of 45. What percentage did he score?",
+      "options": [
+        "35%",
+        "38%",
+        "40%",
+        "42%",
+        "45%"
+      ],
+      "correct": 2,
+      "correctAnswer": "40%",
+      "explanation": "Calculate: (18 ÷ 45) × 100. Simplify: 18/45 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 35% of 420?",
+      "options": [
+        "140",
+        "144",
+        "147",
+        "150",
+        "153"
+      ],
+      "correct": 2,
+      "correctAnswer": "147",
+      "explanation": "Find 10% of 420 = 42, so 30% = 126. Then 5% = 21. Add them: 126 + 21 = 147. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A camera costs £144 after a 20% discount. What was the original price?",
+      "options": [
+        "£160",
+        "£180",
+        "£190",
+        "£200",
+        "£210"
+      ],
+      "correct": 1,
+      "correctAnswer": "£180",
+      "explanation": "£144 is 80% of the original (100% - 20%). If 80% = £144, then 10% = £18, so 100% = £180. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bottle contains 1.5 litres. If 540ml has been drunk, what percentage was drunk?",
+      "options": [
+        "32%",
+        "36%",
+        "40%",
+        "44%",
+        "48%"
+      ],
+      "correct": 1,
+      "correctAnswer": "36%",
+      "explanation": "1.5L = 1500ml. Calculate: (540 ÷ 1500) × 100 = 0.36 × 100 = 36%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A gym membership costs £85. If it increases by 20%, what is the new price?",
+      "options": [
+        "£95",
+        "£98",
+        "£100",
+        "£101",
+        "£102"
+      ],
+      "correct": 4,
+      "correctAnswer": "£102",
+      "explanation": "Find 20% of £85: 10% = £8.50, so 20% = £17. Add: £85 + £17 = £102. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which has the same value? 35% of 160, 40% of 140, or 32% of 175?",
+      "options": [
+        "35% of 160",
+        "40% of 140",
+        "32% of 175",
+        "They are all equal",
+        "None are equal"
+      ],
+      "correct": 3,
+      "correctAnswer": "They are all equal",
+      "explanation": "Calculate each: 35% of 160 = 56; 40% of 140 = 56; 32% of 175 = 56. They are all equal! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ella scored 63 marks out of 90. What percentage did she score?",
+      "options": [
+        "65%",
+        "68%",
+        "69%",
+        "70%",
+        "72%"
+      ],
+      "correct": 3,
+      "correctAnswer": "70%",
+      "explanation": "Calculate: (63 ÷ 90) × 100. Simplify: 63/90 = 7/10 = 0.7. Then 0.7 × 100 = 70%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 12% of 550?",
+      "options": [
+        "60",
+        "63",
+        "65",
+        "66",
+        "68"
+      ],
+      "correct": 3,
+      "correctAnswer": "66",
+      "explanation": "Find 10% of 550 = 55. Then 2% = 11. Add them: 55 + 11 = 66. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a vote, 200 people participated. 65% voted 'yes'. How many voted 'no'?",
+      "options": [
+        "60",
+        "65",
+        "68",
+        "70",
+        "75"
+      ],
+      "correct": 3,
+      "correctAnswer": "70",
+      "explanation": "If 65% voted yes, then 35% voted no (100% - 65%). Find 35% of 200: 10% = 20, so 30% = 60, and 5% = 10. Therefore 35% = 70. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bag contains 800g of rice. If 45% is used, how much remains?",
+      "options": [
+        "420g",
+        "430g",
+        "440g",
+        "450g",
+        "460g"
+      ],
+      "correct": 2,
+      "correctAnswer": "440g",
+      "explanation": "If 45% is used, then 55% remains (100% - 45%). Find 55% of 800g: 10% = 80g, so 50% = 400g, and 5% = 40g. Therefore 55% = 440g. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A pair of headphones costs £156 after a 20% discount. What was the original price?",
+      "options": [
+        "£180",
+        "£195",
+        "£200",
+        "£210",
+        "£220"
+      ],
+      "correct": 1,
+      "correctAnswer": "£195",
+      "explanation": "£156 is 80% of the original (100% - 20%). If 80% = £156, then 10% = £19.50, so 100% = £195. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What percentage is 48 out of 320?",
+      "options": [
+        "15%",
+        "16%",
+        "18%",
+        "20%",
+        "22%"
+      ],
+      "correct": 0,
+      "correctAnswer": "15%",
+      "explanation": "Calculate: (48 ÷ 320) × 100. Simplify: 48/320 = 3/20 = 0.15. Then 0.15 × 100 = 15%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A store offers two successive discounts of 15% and then 10% on an item originally priced at £200. What is the final price?",
+      "options": [
+        "£145",
+        "£150",
+        "£152",
+        "£153",
+        "£155"
+      ],
+      "correct": 3,
+      "correctAnswer": "£153",
+      "explanation": "First discount: £200 × 0.85 = £170. Second discount: £170 × 0.90 = £153. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 18% of 350?",
+      "options": [
+        "60",
+        "61",
+        "63",
+        "65",
+        "67"
+      ],
+      "correct": 2,
+      "correctAnswer": "63",
+      "explanation": "Find 10% of 350 = 35, so 20% = 70. Then 2% = 7. Subtract: 70 - 7 = 63. Or: 10% = 35, 8% = 28, so 18% = 63. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sweet shop has 450 sweets. 38% are chocolate. How many are NOT chocolate?",
+      "options": [
+        "261",
+        "270",
+        "275",
+        "279",
+        "285"
+      ],
+      "correct": 3,
+      "correctAnswer": "279",
+      "explanation": "If 38% are chocolate, then 62% are not (100% - 38%). Find 62% of 450: 10% = 45, so 60% = 270, and 2% = 9. Therefore 62% = 279. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A coat costs £75. If the price increases by 32%, what is the new price?",
+      "options": [
+        "£95",
+        "£99",
+        "£102",
+        "£105",
+        "£108"
+      ],
+      "correct": 1,
+      "correctAnswer": "£99",
+      "explanation": "Find 32% of £75: 10% = £7.50, so 30% = £22.50, and 2% = £1.50. Therefore 32% = £24. Add: £75 + £24 = £99. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Max scored 56 marks out of 140. What percentage did he score?",
+      "options": [
+        "35%",
+        "38%",
+        "39%",
+        "40%",
+        "42%"
+      ],
+      "correct": 3,
+      "correctAnswer": "40%",
+      "explanation": "Calculate: (56 ÷ 140) × 100. Simplify: 56/140 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 22% of 650?",
+      "options": [
+        "143",
+        "145",
+        "148",
+        "150",
+        "153"
+      ],
+      "correct": 0,
+      "correctAnswer": "143",
+      "explanation": "Find 10% of 650 = 65, so 20% = 130. Then 2% = 13. Add them: 130 + 13 = 143. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ava has a 1.8 litre bottle of juice. She drinks 45%. How many millilitres remain?",
+      "options": [
+        "900ml",
+        "990ml",
+        "1000ml",
+        "1080ml",
+        "1100ml"
+      ],
+      "correct": 1,
+      "correctAnswer": "990ml",
+      "explanation": "1.8L = 1800ml. If 45% is drunk, then 55% remains. Find 55% of 1800ml: 10% = 180ml, so 50% = 900ml, and 5% = 90ml. Therefore 55% = 990ml. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A tablet costs £105 after a 30% discount. What was the original price?",
+      "options": [
+        "£130",
+        "£135",
+        "£140",
+        "£145",
+        "£150"
+      ],
+      "correct": 4,
+      "correctAnswer": "£150",
+      "explanation": "£105 is 70% of the original (100% - 30%). If 70% = £105, then 10% = £15, so 100% = £150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these has the smallest value? 28% of 200, 35% of 180, or 24% of 250?",
+      "options": [
+        "28% of 200",
+        "35% of 180",
+        "24% of 250",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "28% of 200",
+      "explanation": "Calculate each: 28% of 200 = 56; 35% of 180 = 63; 24% of 250 = 60. The smallest is 28% of 200 = 56. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What percentage is 27 out of 180?",
+      "options": [
+        "12%",
+        "14%",
+        "15%",
+        "16%",
+        "18%"
+      ],
+      "correct": 2,
+      "correctAnswer": "15%",
+      "explanation": "Calculate: (27 ÷ 180) × 100. Simplify: 27/180 = 3/20 = 0.15. Then 0.15 × 100 = 15%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A college has 750 students. 44% are studying science. How many are NOT studying science?",
+      "options": [
+        "330",
+        "360",
+        "390",
+        "420",
+        "450"
+      ],
+      "correct": 3,
+      "correctAnswer": "420",
+      "explanation": "If 44% study science, then 56% don't (100% - 44%). Find 56% of 750: 10% = 75, so 50% = 375, and 6% = 45. Therefore 56% = 420. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 16% of 875?",
+      "options": [
+        "140",
+        "145",
+        "150",
+        "155",
+        "160"
+      ],
+      "correct": 0,
+      "correctAnswer": "140",
+      "explanation": "Find 10% of 875 = 87.5, so 20% = 175. Then 4% = 35. Subtract: 175 - 35 = 140. Or: 1% = 8.75, so 16% = 140. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A keyboard costs £216 after a 10% discount. What was the original price?",
+      "options": [
+        "£230",
+        "£240",
+        "£250",
+        "£260",
+        "£270"
+      ],
+      "correct": 1,
+      "correctAnswer": "£240",
+      "explanation": "£216 is 90% of the original (100% - 10%). If 90% = £216, then 10% = £24, so 100% = £240. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What percentage is 35cm in 2 metres?",
+      "options": [
+        "15.5%",
+        "16%",
+        "17%",
+        "17.5%",
+        "18%"
+      ],
+      "correct": 3,
+      "correctAnswer": "17.5%",
+      "explanation": "2 metres = 200cm. Calculate: (35 ÷ 200) × 100 = 0.175 × 100 = 17.5%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 85% of 360?",
+      "options": [
+        "296",
+        "300",
+        "306",
+        "310",
+        "316"
+      ],
+      "correct": 2,
+      "correctAnswer": "306",
+      "explanation": "Find 10% of 360 = 36, so 80% = 288. Then 5% = 18. Add them: 288 + 18 = 306. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 72 out of 240?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (72 ÷ 240) × 100. Simplify: 72/240 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A phone bill is £140. If it increases by 18%, what is the new bill?",
+      "options": [
+        "£165.20",
+        "£165.80",
+        "£166.00",
+        "£166.20",
+        "£166.80"
+      ],
+      "correct": 0,
+      "correctAnswer": "£165.20",
+      "explanation": "Find 18% of £140: 10% = £14, so 20% = £28. Then 2% = £2.80. Subtract: £28 - £2.80 = £25.20. Add to original: £140 + £25.20 = £165.20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In an election, 500 people voted. 58% voted for candidate A. How many voted for other candidates?",
+      "options": [
+        "200",
+        "210",
+        "220",
+        "230",
+        "240"
+      ],
+      "correct": 1,
+      "correctAnswer": "210",
+      "explanation": "If 58% voted for A, then 42% voted for others (100% - 58%). Find 42% of 500: 10% = 50, so 40% = 200, and 2% = 10. Therefore 42% = 210. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 26% of 450?",
+      "options": [
+        "108",
+        "112",
+        "115",
+        "117",
+        "120"
+      ],
+      "correct": 3,
+      "correctAnswer": "117",
+      "explanation": "Find 10% of 450 = 45, so 20% = 90. Then 6% = 27. Add them: 90 + 27 = 117. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A games console costs £168 after a 25% discount. What was the original price?",
+      "options": [
+        "£200",
+        "£210",
+        "£224",
+        "£230",
+        "£240"
+      ],
+      "correct": 2,
+      "correctAnswer": "£224",
+      "explanation": "£168 is 75% of the original (100% - 25%). If 75% = £168, then 25% = £56 (168 ÷ 3), so 100% = £56 × 4 = £224. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily uses 35% of a 600g bag of flour. How much flour did she use?",
+      "options": [
+        "190g",
+        "200g",
+        "205g",
+        "210g",
+        "215g"
+      ],
+      "correct": 3,
+      "correctAnswer": "210g",
+      "explanation": "Find 35% of 600g: 10% = 60g, so 30% = 180g, and 5% = 30g. Therefore 35% = 210g. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 54 out of 180?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (54 ÷ 180) × 100. Simplify: 54/180 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which is largest? 42% of 250, 50% of 210, or 48% of 220?",
+      "options": [
+        "42% of 250",
+        "50% of 210",
+        "48% of 220",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "48% of 220",
+      "explanation": "Calculate each: 42% of 250 = 105; 50% of 210 = 105; 48% of 220 = 105.6. The third is largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pair of trainers costs £95 after a 5% discount. What was the original price?",
+      "options": [
+        "£98",
+        "£99",
+        "£99.50",
+        "£100",
+        "£101"
+      ],
+      "correct": 3,
+      "correctAnswer": "£100",
+      "explanation": "£95 is 95% of the original (100% - 5%). If 95% = £95, then 5% = £5, so 100% = £100. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 14% of 725?",
+      "options": [
+        "98",
+        "101.5",
+        "103",
+        "105",
+        "108"
+      ],
+      "correct": 1,
+      "correctAnswer": "101.5",
+      "explanation": "Find 10% of 725 = 72.5. Then 4% = 29. Add them: 72.5 + 29 = 101.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A school has 900 pupils. If 42% passed a swimming test, how many did not pass?",
+      "options": [
+        "502",
+        "510",
+        "516",
+        "522",
+        "530"
+      ],
+      "correct": 3,
+      "correctAnswer": "522",
+      "explanation": "If 42% passed, then 58% did not pass (100% - 42%). Find 58% of 900: 10% = 90, so 50% = 450, and 8% = 72. Therefore 58% = 522. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 96 out of 160?",
+      "options": [
+        "55%",
+        "58%",
+        "60%",
+        "62%",
+        "65%"
+      ],
+      "correct": 2,
+      "correctAnswer": "60%",
+      "explanation": "Calculate: (96 ÷ 160) × 100. Simplify: 96/160 = 3/5 = 0.6. Then 0.6 × 100 = 60%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 38% of 550?",
+      "options": [
+        "205",
+        "209",
+        "213",
+        "217",
+        "221"
+      ],
+      "correct": 1,
+      "correctAnswer": "209",
+      "explanation": "Find 10% of 550 = 55, so 30% = 165. Then 8% = 44. Add them: 165 + 44 = 209. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A dining table costs £135. If the price increases by 24%, what is the new price?",
+      "options": [
+        "£155.20",
+        "£160.40",
+        "£165.00",
+        "£167.40",
+        "£170.00"
+      ],
+      "correct": 3,
+      "correctAnswer": "£167.40",
+      "explanation": "Find 24% of £135: 10% = £13.50, so 20% = £27, and 4% = £5.40. Therefore 24% = £32.40. Add: £135 + £32.40 = £167.40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a football match, a goalkeeper saved 0.68 of the shots on target. What is this as a percentage?",
+      "options": [
+        "68%",
+        "6.8%",
+        "680%",
+        "0.68%",
+        "6800%"
+      ],
+      "correct": 0,
+      "correctAnswer": "68%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.68 × 100 = 68%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sofa costs £252 after a 10% discount. What was the original price?",
+      "options": [
+        "£260",
+        "£270",
+        "£280",
+        "£290",
+        "£300"
+      ],
+      "correct": 2,
+      "correctAnswer": "£280",
+      "explanation": "£252 is 90% of the original (100% - 10%). If 90% = £252, then 10% = £28, so 100% = £280. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A baker uses 28% of a 1.5kg bag of chocolate. How many grams did he use?",
+      "options": [
+        "400g",
+        "410g",
+        "420g",
+        "430g",
+        "440g"
+      ],
+      "correct": 2,
+      "correctAnswer": "420g",
+      "explanation": "1.5kg = 1500g. Find 28% of 1500g: 10% = 150g, so 20% = 300g, and 8% = 120g. Therefore 28% = 420g. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 84 out of 210?",
+      "options": [
+        "35%",
+        "38%",
+        "40%",
+        "42%",
+        "45%"
+      ],
+      "correct": 2,
+      "correctAnswer": "40%",
+      "explanation": "Calculate: (84 ÷ 210) × 100. Simplify: 84/210 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which has the same value? 55% of 180, 60% of 165, or 45% of 220?",
+      "options": [
+        "55% of 180",
+        "60% of 165",
+        "45% of 220",
+        "They are all equal",
+        "None are equal"
+      ],
+      "correct": 3,
+      "correctAnswer": "They are all equal",
+      "explanation": "Calculate each: 55% of 180 = 99; 60% of 165 = 99; 45% of 220 = 99. They are all equal! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 19% of 680?",
+      "options": [
+        "127.2",
+        "129.2",
+        "131.2",
+        "133.2",
+        "135.2"
+      ],
+      "correct": 1,
+      "correctAnswer": "129.2",
+      "explanation": "Find 10% of 680 = 68, so 20% = 136. Then 1% = 6.8. Subtract: 136 - 6.8 = 129.2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A television costs £192 after a 20% discount. What was the original price?",
+      "options": [
+        "£220",
+        "£230",
+        "£235",
+        "£240",
+        "£250"
+      ],
+      "correct": 3,
+      "correctAnswer": "£240",
+      "explanation": "£192 is 80% of the original (100% - 20%). If 80% = £192, then 10% = £24, so 100% = £240. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school has 420 students. 35% are in Year 5. The rest are in Year 6. How many are in Year 6?",
+      "options": [
+        "273",
+        "280",
+        "285",
+        "290",
+        "295"
+      ],
+      "correct": 0,
+      "correctAnswer": "273",
+      "explanation": "If 35% are Year 5, then 65% are Year 6 (100% - 35%). Find 65% of 420: 10% = 42, so 60% = 252, and 5% = 21. Therefore 65% = 273. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 32% of 875?",
+      "options": [
+        "270",
+        "275",
+        "280",
+        "285",
+        "290"
+      ],
+      "correct": 2,
+      "correctAnswer": "280",
+      "explanation": "Find 10% of 875 = 87.5, so 30% = 262.5. Then 2% = 17.5. Add them: 262.5 + 17.5 = 280. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 108 out of 360?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (108 ÷ 360) × 100. Simplify: 108/360 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A haircut costs £88. If the price increases by 15%, what is the new price?",
+      "options": [
+        "£98.20",
+        "£100.00",
+        "£101.20",
+        "£103.00",
+        "£105.00"
+      ],
+      "correct": 2,
+      "correctAnswer": "£101.20",
+      "explanation": "Find 15% of £88: 10% = £8.80, and 5% = £4.40, so 15% = £13.20. Add: £88 + £13.20 = £101.20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A juice carton contains 2.5 litres. If 750ml is poured out, what percentage has been poured out?",
+      "options": [
+        "28%",
+        "30%",
+        "32%",
+        "35%",
+        "40%"
+      ],
+      "correct": 1,
+      "correctAnswer": "30%",
+      "explanation": "2.5 litres = 2,500 ml. Percentage poured out = (750 ÷ 2,500) × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these has the smallest value? 36% of 250, 40% of 250, or 48% of 200?",
+      "options": [
+        "36% of 250",
+        "40% of 250",
+        "48% of 200",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "36% of 250",
+      "explanation": "Calculate each: 36% of 250 = 90; 40% of 250 = 100; 48% of 200 = 96. The smallest is 36% of 250 = 90. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A bicycle costs £117 after a 35% discount. What was the original price?",
+      "options": [
+        "£160",
+        "£170",
+        "£175",
+        "£180",
+        "£190"
+      ],
+      "correct": 3,
+      "correctAnswer": "£180",
+      "explanation": "£117 is 65% of the original (100% - 35%). If 65% = £117, then 5% = £9 (117 ÷ 13), so 100% = £9 × 20 = £180. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 27% of 740?",
+      "options": [
+        "195.6",
+        "197.8",
+        "199.8",
+        "201.8",
+        "203.8"
+      ],
+      "correct": 2,
+      "correctAnswer": "199.8",
+      "explanation": "Find 10% of 740 = 74, so 20% = 148. Then 7% = 51.8. Add them: 148 + 51.8 = 199.8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a survey, 650 people responded. 58% agreed. How many disagreed?",
+      "options": [
+        "263",
+        "268",
+        "273",
+        "278",
+        "283"
+      ],
+      "correct": 2,
+      "correctAnswer": "273",
+      "explanation": "If 58% agreed, then 42% disagreed (100% - 58%). Find 42% of 650: 10% = 65, so 40% = 260, and 2% = 13. Therefore 42% = 273. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 135 out of 450?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (135 ÷ 450) × 100. Simplify: 135/450 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A restaurant bill is £210. If it increases by 16%, what is the new total?",
+      "options": [
+        "£238.60",
+        "£240.60",
+        "£243.60",
+        "£246.00",
+        "£248.60"
+      ],
+      "correct": 2,
+      "correctAnswer": "£243.60",
+      "explanation": "Find 16% of £210: 10% = £21, so 20% = £42. Then 4% = £8.40. Subtract: £42 - £8.40 = £33.60. Add: £210 + £33.60 = £243.60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 46% of 950?",
+      "options": [
+        "427",
+        "432",
+        "437",
+        "442",
+        "447"
+      ],
+      "correct": 2,
+      "correctAnswer": "437",
+      "explanation": "Find 10% of 950 = 95, so 40% = 380. Then 6% = 57. Add them: 380 + 57 = 437. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A monitor costs £234 after a 10% discount. What was the original price?",
+      "options": [
+        "£250",
+        "£255",
+        "£260",
+        "£265",
+        "£270"
+      ],
+      "correct": 2,
+      "correctAnswer": "£260",
+      "explanation": "£234 is 90% of the original (100% - 10%). If 90% = £234, then 10% = £26, so 100% = £260. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A zoo has 800 animals. 62% are mammals. How many are NOT mammals?",
+      "options": [
+        "296",
+        "300",
+        "304",
+        "308",
+        "312"
+      ],
+      "correct": 2,
+      "correctAnswer": "304",
+      "explanation": "If 62% are mammals, then 38% are not (100% - 62%). Find 38% of 800: 10% = 80, so 30% = 240, and 8% = 64. Therefore 38% = 304. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A jacket originally costs £300. After two successive discounts of 20% and then 15%, what is the final price?",
+      "options": [
+        "£195",
+        "£200",
+        "£204",
+        "£210",
+        "£215"
+      ],
+      "correct": 2,
+      "correctAnswer": "£204",
+      "explanation": "First discount: £300 × 0.80 = £240. Second discount: £240 × 0.85 = £204. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 144 out of 480?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (144 ÷ 480) × 100. Simplify: 144/480 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 34% of 850?",
+      "options": [
+        "289",
+        "295",
+        "301",
+        "307",
+        "313"
+      ],
+      "correct": 0,
+      "correctAnswer": "289",
+      "explanation": "Find 10% of 850 = 85, so 30% = 255. Then 4% = 34. Add them: 255 + 34 = 289. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A car costs £161 after a 30% discount. What was the original price?",
+      "options": [
+        "£210",
+        "£220",
+        "£230",
+        "£240",
+        "£250"
+      ],
+      "correct": 2,
+      "correctAnswer": "£230",
+      "explanation": "£161 is 70% of the original (100% - 30%). If 70% = £161, then 10% = £23, so 100% = £230. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool is 0.58 full of water. What is this as a percentage?",
+      "options": [
+        "5.8%",
+        "58%",
+        "580%",
+        "0.58%",
+        "5800%"
+      ],
+      "correct": 1,
+      "correctAnswer": "58%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.58 × 100 = 58%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which is largest? 52% of 250, 65% of 200, or 48% of 275?",
+      "options": [
+        "52% of 250",
+        "65% of 200",
+        "48% of 275",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "48% of 275",
+      "explanation": "Calculate each: 52% of 250 = 130; 65% of 200 = 130; 48% of 275 = 132. The third is largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A concert ticket costs £104. If the price increases by 22%, what is the new price?",
+      "options": [
+        "£122.88",
+        "£124.88",
+        "£126.88",
+        "£128.88",
+        "£130.88"
+      ],
+      "correct": 2,
+      "correctAnswer": "£126.88",
+      "explanation": "Find 22% of £104: 10% = £10.40, so 20% = £20.80, and 2% = £2.08. Therefore 22% = £22.88. Add: £104 + £22.88 = £126.88. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 24% of 625?",
+      "options": [
+        "145",
+        "148",
+        "150",
+        "153",
+        "155"
+      ],
+      "correct": 2,
+      "correctAnswer": "150",
+      "explanation": "Find 10% of 625 = 62.5, so 20% = 125. Then 4% = 25. Add them: 125 + 25 = 150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A park has 560 trees. 45% are oak. How many trees are NOT oak?",
+      "options": [
+        "298",
+        "302",
+        "304",
+        "306",
+        "308"
+      ],
+      "correct": 4,
+      "correctAnswer": "308",
+      "explanation": "If 45% are oak, then 55% are not (100% - 45%). Find 55% of 560: 10% = 56, so 50% = 280, and 5% = 28. Therefore 55% = 308. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 168 out of 560?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (168 ÷ 560) × 100. Simplify: 168/560 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A printer costs £189 after a 30% discount. What was the original price?",
+      "options": [
+        "£250",
+        "£260",
+        "£270",
+        "£280",
+        "£290"
+      ],
+      "correct": 2,
+      "correctAnswer": "£270",
+      "explanation": "£189 is 70% of the original (100% - 30%). If 70% = £189, then 10% = £27, so 100% = £270. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 42% of 725?",
+      "options": [
+        "298.5",
+        "302.5",
+        "304.5",
+        "306.5",
+        "308.5"
+      ],
+      "correct": 2,
+      "correctAnswer": "304.5",
+      "explanation": "Find 10% of 725 = 72.5, so 40% = 290. Then 2% = 14.5. Add them: 290 + 14.5 = 304.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What percentage is 250cm in 4 metres?",
+      "options": [
+        "60%",
+        "61%",
+        "62%",
+        "62.5%",
+        "63%"
+      ],
+      "correct": 3,
+      "correctAnswer": "62.5%",
+      "explanation": "4 metres = 400cm. Calculate: (250 ÷ 400) × 100 = 0.625 × 100 = 62.5%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A membership fee is £95. If the price increases by 28%, what is the new fee?",
+      "options": [
+        "£118.60",
+        "£119.60",
+        "£120.60",
+        "£121.60",
+        "£122.60"
+      ],
+      "correct": 3,
+      "correctAnswer": "£121.60",
+      "explanation": "Find 28% of £95: 10% = £9.50, so 20% = £19, and 8% = £7.60. Therefore 28% = £26.60. Add: £95 + £26.60 = £121.60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 192 out of 640?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (192 ÷ 640) × 100. Simplify: 192/640 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A painting costs £133 after a 5% discount. What was the original price?",
+      "options": [
+        "£135",
+        "£138",
+        "£140",
+        "£142",
+        "£145"
+      ],
+      "correct": 2,
+      "correctAnswer": "£140",
+      "explanation": "£133 is 95% of the original (100% - 5%). If 95% = £133, then 5% = £7, so 100% = £140. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 36% of 825?",
+      "options": [
+        "289",
+        "293",
+        "297",
+        "301",
+        "305"
+      ],
+      "correct": 2,
+      "correctAnswer": "297",
+      "explanation": "Find 10% of 825 = 82.5, so 30% = 247.5. Then 6% = 49.5. Add them: 247.5 + 49.5 = 297. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A library has 900 books. 48% are fiction. How many are non-fiction?",
+      "options": [
+        "452",
+        "460",
+        "464",
+        "468",
+        "472"
+      ],
+      "correct": 3,
+      "correctAnswer": "468",
+      "explanation": "If 48% are fiction, then 52% are non-fiction (100% - 48%). Find 52% of 900: 10% = 90, so 50% = 450, and 2% = 18. Therefore 52% = 468. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these has the smallest value? 44% of 300, 55% of 260, or 52% of 260?",
+      "options": [
+        "44% of 300",
+        "55% of 260",
+        "52% of 260",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "44% of 300",
+      "explanation": "Calculate each: 44% of 300 = 132; 55% of 260 = 143; 52% of 260 = 135.2. The smallest is 44% of 300 = 132. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A desk costs £198 after a 12% discount. What was the original price?",
+      "options": [
+        "£215",
+        "£220",
+        "£225",
+        "£230",
+        "£235"
+      ],
+      "correct": 2,
+      "correctAnswer": "£225",
+      "explanation": "£198 is 88% of the original (100% - 12%). If 88% = £198, then 8% = £18 (198 ÷ 11), so 100% = £18 × 12.5 = £225. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 28% of 675?",
+      "options": [
+        "183",
+        "186",
+        "189",
+        "192",
+        "195"
+      ],
+      "correct": 2,
+      "correctAnswer": "189",
+      "explanation": "Find 10% of 675 = 67.5, so 20% = 135. Then 8% = 54. Add them: 135 + 54 = 189. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What percentage is 216 out of 720?",
+      "options": [
+        "25%",
+        "28%",
+        "30%",
+        "32%",
+        "35%"
+      ],
+      "correct": 2,
+      "correctAnswer": "30%",
+      "explanation": "Calculate: (216 ÷ 720) × 100. Simplify: 216/720 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A holiday costs £155. If the price increases by 26%, what is the new price?",
+      "options": [
+        "£190.30",
+        "£192.30",
+        "£193.30",
+        "£195.30",
+        "£197.30"
+      ],
+      "correct": 3,
+      "correctAnswer": "£195.30",
+      "explanation": "Find 26% of £155: 10% = £15.50, so 20% = £31, and 6% = £9.30. Therefore 26% = £40.30. Add: £155 + £40.30 = £195.30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a class reading challenge, Olivia completed 0.74 of the books on the list. What is this as a percentage?",
+      "options": [
+        "7.4%",
+        "74%",
+        "740%",
+        "0.74%",
+        "7400%"
+      ],
+      "correct": 1,
+      "correctAnswer": "74%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.74 × 100 = 74%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 54% of 950?",
+      "options": [
+        "503",
+        "508",
+        "510",
+        "513",
+        "518"
+      ],
+      "correct": 3,
+      "correctAnswer": "513",
+      "explanation": "Find 10% of 950 = 95, so 50% = 475. Then 4% = 38. Add them: 475 + 38 = 513. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A coat costs £60. In a sale, it is reduced by 10%. What is the sale price?",
+      "options": [
+        "£50",
+        "£52",
+        "£54",
+        "£56",
+        "£58"
+      ],
+      "correct": 2,
+      "correctAnswer": "£54",
+      "explanation": "Find 10% of £60 = £6. Subtract from original: £60 - £6 = £54. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A skateboard costs £45. It is reduced by 20% in a sale. What is the sale price?",
+      "options": [
+        "£32",
+        "£34",
+        "£36",
+        "£38",
+        "£40"
+      ],
+      "correct": 2,
+      "correctAnswer": "£36",
+      "explanation": "Find 20% of £45: 10% = £4.50, so 20% = £9. Subtract: £45 - £9 = £36. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A laptop costs £480. In a clearance sale, it is reduced by 25%. What is the sale price?",
+      "options": [
+        "£340",
+        "£350",
+        "£355",
+        "£360",
+        "£370"
+      ],
+      "correct": 3,
+      "correctAnswer": "£360",
+      "explanation": "Find 25% of £480: 25% = 1/4, so £480 ÷ 4 = £120. Subtract: £480 - £120 = £360. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pair of jeans costs £55. They are reduced by 30% in a sale. What is the sale price?",
+      "options": [
+        "£35.50",
+        "£37.00",
+        "£38.50",
+        "£40.00",
+        "£41.50"
+      ],
+      "correct": 2,
+      "correctAnswer": "£38.50",
+      "explanation": "Find 30% of £55: 10% = £5.50, so 30% = £16.50. Subtract: £55 - £16.50 = £38.50. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A scooter costs £125. The price is reduced by 12% in a sale. What is the sale price?",
+      "options": [
+        "£108",
+        "£110",
+        "£112",
+        "£114",
+        "£116"
+      ],
+      "correct": 1,
+      "correctAnswer": "£110",
+      "explanation": "Find 12% of £125: 10% = £12.50, and 2% = £2.50, so 12% = £15. Subtract: £125 - £15 = £110. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school bag costs £36. In a sale, it is reduced by 15%. What is the sale price?",
+      "options": [
+        "£28.60",
+        "£29.60",
+        "£30.00",
+        "£30.60",
+        "£31.60"
+      ],
+      "correct": 3,
+      "correctAnswer": "£30.60",
+      "explanation": "Find 15% of £36: 10% = £3.60, and 5% = £1.80, so 15% = £5.40. Subtract: £36 - £5.40 = £30.60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A board game costs £28. It is reduced by 25% in a sale. What is the sale price?",
+      "options": [
+        "£19",
+        "£20",
+        "£21",
+        "£22",
+        "£23"
+      ],
+      "correct": 2,
+      "correctAnswer": "£21",
+      "explanation": "Find 25% of £28: 25% = 1/4, so £28 ÷ 4 = £7. Subtract: £28 - £7 = £21. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A dress costs £64. In the January sales, it is reduced by 35%. What is the sale price?",
+      "options": [
+        "£40.60",
+        "£41.00",
+        "£41.60",
+        "£42.00",
+        "£42.60"
+      ],
+      "correct": 2,
+      "correctAnswer": "£41.60",
+      "explanation": "Find 35% of £64: 10% = £6.40, so 30% = £19.20, and 5% = £3.20. Therefore 35% = £22.40. Subtract: £64 - £22.40 = £41.60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A television costs £750. It is first reduced by 20%, then a further 5% off the reduced price. What is the final price?",
+      "options": [
+        "£555",
+        "£560",
+        "£562.50",
+        "£565",
+        "£570"
+      ],
+      "correct": 4,
+      "correctAnswer": "£570",
+      "explanation": "First reduction: 20% of £750 = £150, so price = £600. Second reduction: 5% of £600 = £30, so final price = £600 - £30 = £570. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A toy car costs £18. It is reduced by 50% in a half-price sale. What is the sale price?",
+      "options": [
+        "£7",
+        "£8",
+        "£9",
+        "£10",
+        "£11"
+      ],
+      "correct": 2,
+      "correctAnswer": "£9",
+      "explanation": "50% means half. Half of £18 = £18 ÷ 2 = £9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A football shirt costs £42. It is reduced by 15% in a sale. How much do you save?",
+      "options": [
+        "£5.30",
+        "£5.80",
+        "£6.30",
+        "£6.80",
+        "£7.30"
+      ],
+      "correct": 2,
+      "correctAnswer": "£6.30",
+      "explanation": "Find 15% of £42: 10% = £4.20, and 5% = £2.10, so 15% = £6.30. You save £6.30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A shop reduces all prices by 18%. A jacket originally costs £85. What is the sale price?",
+      "options": [
+        "£68.30",
+        "£69.00",
+        "£69.70",
+        "£70.30",
+        "£71.00"
+      ],
+      "correct": 2,
+      "correctAnswer": "£69.70",
+      "explanation": "Find 18% of £85: 10% = £8.50, and 8% = £6.80, so 18% = £15.30. Subtract: £85 - £15.30 = £69.70. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A book costs £12. It is reduced by 25% in a sale. What is the sale price?",
+      "options": [
+        "£7",
+        "£8",
+        "£9",
+        "£10",
+        "£11"
+      ],
+      "correct": 2,
+      "correctAnswer": "£9",
+      "explanation": "25% = 1/4. One quarter of £12 = £3. Subtract: £12 - £3 = £9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pair of boots costs £90. They are reduced by 22% in a sale. What is the sale price?",
+      "options": [
+        "£68.20",
+        "£69.20",
+        "£70.00",
+        "£70.20",
+        "£71.20"
+      ],
+      "correct": 3,
+      "correctAnswer": "£70.20",
+      "explanation": "Find 22% of £90: 10% = £9, so 20% = £18, and 2% = £1.80. Therefore 22% = £19.80. Subtract: £90 - £19.80 = £70.20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A tablet costs £320. It is reduced by 35% in a closing-down sale. What is the sale price?",
+      "options": [
+        "£200",
+        "£204",
+        "£208",
+        "£212",
+        "£216"
+      ],
+      "correct": 2,
+      "correctAnswer": "£208",
+      "explanation": "Find 35% of £320: 10% = £32, so 30% = £96, and 5% = £16. Therefore 35% = £112. Subtract: £320 - £112 = £208. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A coat costs £74. It is reduced by 40% in a sale. What is the sale price?",
+      "options": [
+        "£42.40",
+        "£43.40",
+        "£44.40",
+        "£45.40",
+        "£46.40"
+      ],
+      "correct": 2,
+      "correctAnswer": "£44.40",
+      "explanation": "Find 40% of £74: 10% = £7.40, so 40% = £29.60. Subtract: £74 - £29.60 = £44.40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A bicycle costs £260. In a summer sale, it is reduced by 15%. What is the sale price?",
+      "options": [
+        "£217",
+        "£219",
+        "£221",
+        "£223",
+        "£225"
+      ],
+      "correct": 2,
+      "correctAnswer": "£221",
+      "explanation": "Find 15% of £260: 10% = £26, and 5% = £13, so 15% = £39. Subtract: £260 - £39 = £221. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A guitar costs £180. It is on sale with 28% off. What is the sale price?",
+      "options": [
+        "£125.60",
+        "£127.60",
+        "£129.60",
+        "£131.60",
+        "£133.60"
+      ],
+      "correct": 2,
+      "correctAnswer": "£129.60",
+      "explanation": "Find 28% of £180: 10% = £18, so 20% = £36, and 8% = £14.40. Therefore 28% = £50.40. Subtract: £180 - £50.40 = £129.60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A train ticket costs £54. If the price increases by 10%, what is the new price?",
+      "options": [
+        "£56.40",
+        "£57.40",
+        "£58.40",
+        "£59.40",
+        "£60.40"
+      ],
+      "correct": 3,
+      "correctAnswer": "£59.40",
+      "explanation": "Find 10% of £54 = £5.40. Add to original: £54 + £5.40 = £59.40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bus fare costs £2.40. If it increases by 25%, what is the new fare?",
+      "options": [
+        "£2.80",
+        "£2.90",
+        "£3.00",
+        "£3.10",
+        "£3.20"
+      ],
+      "correct": 2,
+      "correctAnswer": "£3.00",
+      "explanation": "Find 25% of £2.40: 25% = 1/4, so £2.40 ÷ 4 = £0.60. Add: £2.40 + £0.60 = £3.00. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cinema ticket costs £9.50. If the price increases by 20%, what is the new price?",
+      "options": [
+        "£10.40",
+        "£10.90",
+        "£11.00",
+        "£11.40",
+        "£11.90"
+      ],
+      "correct": 3,
+      "correctAnswer": "£11.40",
+      "explanation": "Find 20% of £9.50: 10% = £0.95, so 20% = £1.90. Add: £9.50 + £1.90 = £11.40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school dinner costs £2.80. If the price increases by 15%, what is the new price?",
+      "options": [
+        "£3.12",
+        "£3.17",
+        "£3.22",
+        "£3.27",
+        "£3.32"
+      ],
+      "correct": 2,
+      "correctAnswer": "£3.22",
+      "explanation": "Find 15% of £2.80: 10% = £0.28, and 5% = £0.14, so 15% = £0.42. Add: £2.80 + £0.42 = £3.22. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A gym membership costs £45 per month. If it increases by 12%, what is the new monthly cost?",
+      "options": [
+        "£49.00",
+        "£49.40",
+        "£50.00",
+        "£50.40",
+        "£51.00"
+      ],
+      "correct": 3,
+      "correctAnswer": "£50.40",
+      "explanation": "Find 12% of £45: 10% = £4.50, and 2% = £0.90, so 12% = £5.40. Add: £45 + £5.40 = £50.40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A magazine costs £4.00. If the price increases by 50%, what is the new price?",
+      "options": [
+        "£5.00",
+        "£5.50",
+        "£6.00",
+        "£6.50",
+        "£7.00"
+      ],
+      "correct": 2,
+      "correctAnswer": "£6.00",
+      "explanation": "50% means half. Half of £4.00 = £2.00. Add: £4.00 + £2.00 = £6.00. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A car insurance premium is £360. If it increases by 8%, what is the new premium?",
+      "options": [
+        "£385.80",
+        "£386.80",
+        "£387.80",
+        "£388.80",
+        "£389.80"
+      ],
+      "correct": 3,
+      "correctAnswer": "£388.80",
+      "explanation": "Find 8% of £360: 10% = £36, so 1% = £3.60, and 8% = £28.80. Add: £360 + £28.80 = £388.80. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A monthly phone contract costs £32. If it increases by 14%, what is the new cost?",
+      "options": [
+        "£35.48",
+        "£36.00",
+        "£36.48",
+        "£37.00",
+        "£37.48"
+      ],
+      "correct": 2,
+      "correctAnswer": "£36.48",
+      "explanation": "Find 14% of £32: 10% = £3.20, and 4% = £1.28, so 14% = £4.48. Add: £32 + £4.48 = £36.48. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which is larger: 0.45 or 40%?",
+      "options": [
+        "0.45",
+        "40%",
+        "They are equal",
+        "Cannot determine",
+        "Neither"
+      ],
+      "correct": 0,
+      "correctAnswer": "0.45",
+      "explanation": "Convert to the same form: 0.45 = 45%, and 40% = 0.40. Since 45% > 40%, 0.45 is larger. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Put these in order from smallest to largest: 3/8, 35%, 0.4",
+      "options": [
+        "35%, 3/8, 0.4",
+        "3/8, 35%, 0.4",
+        "0.4, 35%, 3/8",
+        "35%, 0.4, 3/8",
+        "3/8, 0.4, 35%"
+      ],
+      "correct": 0,
+      "correctAnswer": "35%, 3/8, 0.4",
+      "explanation": "Convert all to decimals: 3/8 = 0.375, 35% = 0.35, 0.4 = 0.4. In order: 0.35, 0.375, 0.4, which is 35%, 3/8, 0.4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these is equal to 1/2? 45%, 50%, 55%, 60%, 65%",
+      "options": [
+        "45%",
+        "50%",
+        "55%",
+        "60%",
+        "65%"
+      ],
+      "correct": 1,
+      "correctAnswer": "50%",
+      "explanation": "1/2 = 0.5 = 50%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which is the odd one out? 0.75, 3/4, 70%, 75%",
+      "options": [
+        "0.75",
+        "3/4",
+        "70%",
+        "75%",
+        "They are all the same"
+      ],
+      "correct": 2,
+      "correctAnswer": "70%",
+      "explanation": "0.75 = 75%, 3/4 = 75%, 75% = 75%. But 70% is different. So 70% is the odd one out. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Put these in order from largest to smallest: 7/20, 0.38, 36%",
+      "options": [
+        "0.38, 36%, 7/20",
+        "0.38, 7/20, 36%",
+        "7/20, 0.38, 36%",
+        "36%, 7/20, 0.38",
+        "7/20, 36%, 0.38"
+      ],
+      "correct": 0,
+      "correctAnswer": "0.38, 36%, 7/20",
+      "explanation": "Convert all to decimals: 7/20 = 0.35, 0.38 stays as 0.38, 36% = 0.36. Largest to smallest: 0.38 > 0.36 > 0.35, so the order is 0.38, 36%, 7/20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a science experiment, a plant grew 0.15 metres. What is this as a percentage of 1 metre?",
+      "options": [
+        "1.5%",
+        "15%",
+        "150%",
+        "0.15%",
+        "1500%"
+      ],
+      "correct": 1,
+      "correctAnswer": "15%",
+      "explanation": "0.15 metres out of 1 metre = 0.15. To convert to a percentage, multiply by 100: 0.15 × 100 = 15%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A jar is 0.85 full of jam. What percentage of the jar is empty?",
+      "options": [
+        "10%",
+        "12%",
+        "15%",
+        "18%",
+        "20%"
+      ],
+      "correct": 2,
+      "correctAnswer": "15%",
+      "explanation": "0.85 = 85% full. So 100% - 85% = 15% is empty. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Convert 0.06 to a percentage.",
+      "options": [
+        "0.6%",
+        "6%",
+        "60%",
+        "0.06%",
+        "600%"
+      ],
+      "correct": 1,
+      "correctAnswer": "6%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.06 × 100 = 6%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A battery is at 0.72 charge. What percentage of charge remains?",
+      "options": [
+        "7.2%",
+        "27%",
+        "28%",
+        "72%",
+        "720%"
+      ],
+      "correct": 3,
+      "correctAnswer": "72%",
+      "explanation": "To convert a decimal to a percentage, multiply by 100. So 0.72 × 100 = 72%. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A shop increases the price of a £60 item by 10%, then increases the new price by another 10%. What is the final price?",
+      "options": [
+        "£72.00",
+        "£72.60",
+        "£73.00",
+        "£73.60",
+        "£74.00"
+      ],
+      "correct": 1,
+      "correctAnswer": "£72.60",
+      "explanation": "First increase: 10% of £60 = £6, so price = £66. Second increase: 10% of £66 = £6.60, so final price = £66 + £6.60 = £72.60. Note: two 10% increases do NOT equal 20%! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A coat costs £200. It is first increased by 25%, then the new price is reduced by 20%. What is the final price?",
+      "options": [
+        "£195",
+        "£200",
+        "£205",
+        "£210",
+        "£215"
+      ],
+      "correct": 1,
+      "correctAnswer": "£200",
+      "explanation": "First: 25% of £200 = £50, so price = £250. Then: 20% of £250 = £50, so final price = £250 - £50 = £200. Back to where it started! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A price increases by 10% and then decreases by 10%. Is the final price higher, lower, or the same as the original?",
+      "options": [
+        "Higher",
+        "Lower",
+        "The same",
+        "Cannot tell",
+        "Depends on the price"
+      ],
+      "correct": 1,
+      "correctAnswer": "Lower",
+      "explanation": "Try £100: increase 10% → £110. Then decrease 10% of £110 = £11, so £110 - £11 = £99. The final price is LOWER because the 10% decrease is applied to a larger amount. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A bicycle costs £180. It is reduced by 15%, then the sale price is reduced by a further 10%. What is the final price?",
+      "options": [
+        "£133.70",
+        "£135.00",
+        "£136.50",
+        "£137.70",
+        "£139.00"
+      ],
+      "correct": 3,
+      "correctAnswer": "£137.70",
+      "explanation": "First reduction: 15% of £180 = £27, so price = £153. Second reduction: 10% of £153 = £15.30, so final price = £153 - £15.30 = £137.70. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school has 400 pupils. 40% are boys. 50% of the girls play netball. How many girls play netball?",
+      "options": [
+        "100",
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "correct": 2,
+      "correctAnswer": "120",
+      "explanation": "60% are girls (100% - 40%). Girls = 60% of 400 = 240. Girls playing netball = 50% of 240 = 120. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A baker makes 240 cakes. 30% are chocolate and the rest are vanilla. He sells 75% of the vanilla cakes. How many vanilla cakes does he sell?",
+      "options": [
+        "120",
+        "124",
+        "126",
+        "130",
+        "132"
+      ],
+      "correct": 2,
+      "correctAnswer": "126",
+      "explanation": "Vanilla cakes = 70% of 240 = 168. Sold = 75% of 168: 168 × 3/4 = 126 vanilla cakes sold. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a school of 500 pupils, 52% are girls. 25% of the girls and 30% of the boys play a musical instrument. How many pupils play a musical instrument?",
+      "options": [
+        "133",
+        "136",
+        "137",
+        "138",
+        "140"
+      ],
+      "correct": 2,
+      "correctAnswer": "137",
+      "explanation": "Girls = 52% of 500 = 260. Boys = 240. Girls playing = 25% of 260 = 65. Boys playing = 30% of 240 = 72. Total = 65 + 72 = 137. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

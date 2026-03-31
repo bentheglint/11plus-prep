@@ -1,0 +1,173 @@
+{
+  "reviewedAt": "2026-03-30T18:00:00.000Z",
+  "topic": "datahandling",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 220,
+    "lessonsReviewed": 20,
+    "issuesFound": 12,
+    "bySeverity": {
+      "critical": 0,
+      "high": 2,
+      "medium": 6,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:103 (47%), D2:64 (29%), D3:53 (24%). D1 is significantly overweight vs GL target (~30%) and D2 is underweight vs GL target (~40%). D3 at 24% is slightly below the ~30% target but the D3 questions are high quality — excellent mix of missing-value-from-mean, pie chart calculations, combined measures, and multi-step reasoning (Q138-Q145, Q200-Q213 are particularly strong). The D1 bloat is caused by highly repetitive mean/mode/median/range questions from Q26-Q125 that cycle through the same patterns with different numbers.",
+    "coverageAssessment": "Excellent breadth of coverage: mean, median (odd and even counts), mode (including bimodal and no-mode), range, bar charts, line graphs, pie charts, two-way tables, timetables, combined measures (mode+range, mode+median), and missing-value-from-mean. The v2 questions (Q126-Q220) add excellent depth: bar chart interpretation with fractions/percentages, two-way table cross-referencing, pie chart multi-step calculations, range manipulation, and sophisticated median/mode reasoning problems. No significant GL topic gaps. Minor gap: no pictogram questions (GL occasionally tests these at primary level, but they are less common).",
+    "teachingEfficacyAssessment": "20 lessons across 10 sub-concepts provide comprehensive teaching coverage. The lesson design is strong — good use of NumberLine, BarModel, BarChart, WorkedExample, and TwoWayTable visual components. The median lessons effectively teach both odd and even-count scenarios. The mode lessons include the excellent 'MOde = MOst comMOn' mnemonic. However, the 'master-mean-average' sub-concept has no lesson content — Q2, Q7, Q22, Q26, Q30 all show '[No lesson found]' with empty learning goals. This is the most fundamental data handling skill (add-and-divide) with no teaching support. The 'combined-averages' sub-concept lesson title mentions 'Mode AND Range Together' but Q24 asks for Mode AND Median — the lesson should cover both combinations.",
+    "topPriorities": [
+      "Create lessons for master-mean-average sub-concept — most fundamental skill has no teaching support",
+      "Reduce D1 count from 103 to ~65-70 by removing repetitive mean/mode/range questions with identical structure",
+      "Add 10-15 D2 questions with genuine reasoning requirements to fill the D2 gap",
+      "Fix combined-averages lesson scope — currently named for mode+range but also maps mode+median questions",
+      "Add 3-5 pictogram reading questions at D1 for completeness"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-DH-DIST-001",
+      "itemType": "difficulty-distribution",
+      "itemId": "d1-overweight",
+      "severity": "high",
+      "category": "difficulty-balance",
+      "title": "D1 severely overweight at 47% vs GL target of ~30%",
+      "description": "103 of 220 questions are D1 (47%), well above the ~30% GL target. The excess comes from highly repetitive calculation questions in the Q26-Q125 range. For example, there are 20+ 'What is the mean of X, Y, Z, W, V?' questions, 15+ 'What is the mode?' questions, and 15+ 'What is the range?' questions, all following identical formats with different numbers. While some repetition builds fluency, this volume crowds out more challenging content.",
+      "suggestedFix": "Remove or reclassify approximately 35-40 of the most repetitive D1 questions. Keep a representative sample of ~8 mean, ~6 mode, ~6 range, ~6 median D1 questions. Replace freed slots with D2 questions requiring multi-step reasoning or interpretation.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-DIST-002",
+      "itemType": "difficulty-distribution",
+      "itemId": "d2-underweight",
+      "severity": "high",
+      "category": "difficulty-balance",
+      "title": "D2 underweight at 29% vs GL target of ~40%",
+      "description": "Only 64 of 220 questions are D2 (29%), below the ~40% GL target. The D2 questions that exist are good quality — even-count medians, combined measures, bar chart interpretation, table cross-referencing. But there aren't enough of them. The gap is most noticeable in graph/chart interpretation where D2 should test multi-step reading (e.g. 'which month showed the biggest increase?', 'what fraction of total does X represent?').",
+      "suggestedFix": "Add 20-25 D2 questions: (1) Multi-step chart interpretation requiring comparison/calculation, (2) Data from frequency tables requiring weighted mean calculation, (3) Two-way table completion (find missing values), (4) Questions requiring children to choose between mean/median/mode as the best average for a given context.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-MAP-001",
+      "itemType": "mapping",
+      "itemId": "master-mean-average",
+      "severity": "medium",
+      "category": "missing-lesson",
+      "title": "master-mean-average sub-concept has no lesson content",
+      "description": "Questions Q2, Q7, Q22, Q26, Q30, Q37, Q42, Q49, Q54, Q60, Q66, Q72, Q77, Q84, Q89, Q96, Q101, Q108, Q113, Q120, Q125 (21 questions) are mapped to 'master-mean-average' which shows '[No lesson found]' and has empty learning goals []. The mean is the most fundamental data handling calculation — add all values, divide by count — and currently has no micro-lesson teaching support.",
+      "suggestedFix": "Create dedicated lessons for this sub-concept with: (1) step-by-step lesson teaching sum ÷ count, (2) spot-the-mistake lesson covering common errors (dividing by wrong count, forgetting a value in the sum). Alternatively, remap these questions to an existing mean-related sub-concept.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-REPEAT-001",
+      "itemType": "question-set",
+      "itemId": "mode-d1-repetitive",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of D1 mode questions with identical structure",
+      "description": "Questions Q27, Q33, Q38, Q43, Q50, Q61, Q68, Q74, Q81, Q93, Q98, Q105, Q116, Q122 all follow the identical pattern: 'What is the mode? X, Y, X, Z, X, W' where X appears 3 times and all others appear once. The only variation is the numbers used. This is 14 structurally identical D1 questions testing the exact same skill.",
+      "suggestedFix": "Keep 4-5 representative mode questions at D1. Replace the rest with mode questions that add variety: data with two modes (bimodal), data with no mode (all unique), mode from a frequency table, mode from a bar chart. Some of these already exist at D2/D3 (Q203, Q204) but D1 needs variety too.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-REPEAT-002",
+      "itemType": "question-set",
+      "itemId": "range-d1-repetitive",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of D1 range questions with identical structure",
+      "description": "Questions Q29, Q32, Q39, Q45, Q51, Q58, Q64, Q70, Q76, Q82, Q88, Q94, Q100, Q106, Q112, Q118, Q124 all follow the identical pattern: 'What is the range? A, B, C, D, E' — a set of 5 numbers requiring highest minus lowest. This is 17 structurally identical D1 questions.",
+      "suggestedFix": "Keep 4-5 representative range questions at D1. Replace the rest with range questions testing slightly different skills: range from ordered data, range from a chart/graph, interpreting what a large/small range means in context.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-REPEAT-003",
+      "itemType": "question-set",
+      "itemId": "mean-d1-repetitive",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition of D1 mean questions with identical structure",
+      "description": "Questions Q26, Q37, Q42, Q49, Q54, Q60, Q66, Q72, Q77, Q84, Q89, Q96, Q101, Q108, Q113, Q120, Q125 all follow the identical pattern: 'What is the mean? X, Y, Z, W, V' — five numbers requiring sum ÷ 5. This is 17 structurally identical D1 questions. The numbers are always in an arithmetic sequence (e.g. 22,26,30,34,38 or 44,52,60,68,76), making them even more formulaic.",
+      "suggestedFix": "Keep 4-5 representative mean questions at D1 with varied number sets (not all arithmetic sequences). Replace the rest with mean questions in context: mean from a table, mean from grouped data, comparing means of two groups.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "combined-averages",
+      "severity": "medium",
+      "category": "lesson-scope",
+      "title": "combined-averages lesson covers mode+range but also maps mode+median questions",
+      "description": "The 'combined-averages' sub-concept is named 'Questions Using Mode AND Range Together' and its learning goals reference mode and range. However, Q24 ('What is the mode and median?') and Q86 ('What is the mode and median?') are also mapped to this sub-concept. The lesson doesn't explicitly teach how to handle mode+median combination questions — only mode+range.",
+      "suggestedFix": "Either: (1) Expand the combined-averages lesson to cover all pairwise combinations (mode+range, mode+median, mean+range, etc.), or (2) Create a separate sub-concept for mode+median questions with its own lesson.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-LESSON-002",
+      "itemType": "lesson",
+      "itemId": "finding-median-steps",
+      "severity": "low",
+      "category": "lesson-quality",
+      "title": "Minor typo in median lesson: '3th' should be '3rd'",
+      "description": "In the finding-median-steps lesson interact screen, the incorrect feedback reads: 'The middle value (3th out of 5) is 6.' The ordinal '3th' should be '3rd'.",
+      "suggestedFix": "Change '3th' to '3rd' in the incorrectFeedback string.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-COVERAGE-001",
+      "itemType": "topic-coverage",
+      "itemId": "pictograms",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No pictogram questions",
+      "description": "GL Assessment occasionally includes pictogram reading questions at primary level (where each symbol represents N items and children must read/calculate values). The question bank has bar charts, line graphs, pie charts, and tables but no pictograms. This is a minor gap as pictograms are less frequently tested than other chart types.",
+      "suggestedFix": "Add 3-5 pictogram questions: 2 at D1 (read value where key is given), 2 at D2 (calculate total, find difference using half-symbol values). Low priority compared to other issues.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-VISUAL-001",
+      "itemType": "question-set",
+      "itemId": "v2-bar-chart-no-images",
+      "severity": "low",
+      "category": "missing-visual",
+      "title": "V2 bar chart questions (Q146-Q161) reference visual components but have no SVG images",
+      "description": "Questions Q146-Q161 all have hasVisualComponent: true and visualComponent: 'BarChart' but image: null. This means the questions rely entirely on the rendered BarChart component for their data. This is actually fine for the app (the component renders the chart), but it differs from earlier questions (Q5, Q15, Q23 etc.) which reference SVG files. The data values are embedded in the explanation text rather than in visual props, so if the component fails to render, the child cannot answer the question.",
+      "suggestedFix": "No action needed if the BarChart component reliably renders. However, consider adding fallback SVG images for robustness, or ensure the visual component data (bar values) is included in the question's visual props for the component to render from.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-VISUAL-002",
+      "itemType": "question-set",
+      "itemId": "v2-pie-chart-no-images",
+      "severity": "low",
+      "category": "missing-visual",
+      "title": "V2 pie chart questions (Q176-Q186) reference visual components but have no SVG images",
+      "description": "Questions Q176-Q186 all have hasVisualComponent: true and visualComponent: 'PieChart' but image: null. Same situation as the bar chart questions — relies on component rendering. The pie chart questions reference fractions and degrees in their explanations, so the visual is essential for answering.",
+      "suggestedFix": "Same as MATHS-DH-VISUAL-001 — ensure reliable component rendering or add fallback SVG files.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-DH-ANSWER-001",
+      "itemType": "question",
+      "itemId": 111,
+      "severity": "medium",
+      "category": "answer-precision",
+      "title": "Q111 pie chart answer uses approximate calculation instead of exact",
+      "description": "Q111: 'If 180 students surveyed, how many chose Maths?' Answer: 55. Explanation: 'Maths = 110° out of 360° ≈ 0.306. So 180 × 0.306 ≈ 55.' The calculation 180 × 110/360 = 55 exactly (180 × 11/36 = 1980/36 = 55). Using '≈' (approximately) in the explanation is misleading when the answer is exact. This could confuse children into thinking approximation is required.",
+      "suggestedFix": "Change the explanation to: 'Maths = 110° out of 360° = 11/36. So 180 × 11/36 = 55 students.' Remove the approximate symbol.",
+      "oracleConfidence": "high",
+      "status": "open"
+    }
+  ]
+}

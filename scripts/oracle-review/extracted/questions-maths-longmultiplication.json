@@ -1,0 +1,4352 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "longmultiplication",
+    "displayName": "Long Multiplication",
+    "extractedAt": "2026-03-30T13:05:32.754Z",
+    "questionCount": 228,
+    "difficultyDistribution": {
+      "D1": 46,
+      "D2": 134,
+      "D3": 48
+    },
+    "questionTypes": {
+      "standard": 228
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school hall has 23 rows of chairs with 14 chairs in each row. How many chairs are there altogether?",
+      "options": [
+        "302",
+        "312",
+        "322",
+        "332",
+        "342"
+      ],
+      "correct": 2,
+      "correctAnswer": "322",
+      "explanation": "23 × 14: (23 × 10 = 230) + (23 × 4 = 92) = 230 + 92 = 322. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer plants 46 rows of apple trees with 27 trees in each row. How many apple trees does he plant?",
+      "options": [
+        "1,142",
+        "1,222",
+        "1,242",
+        "1,342",
+        "1,442"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,242",
+      "explanation": "46 × 27: (46 × 20 = 920) + (46 × 7 = 322) = 920 + 322 = 1,242. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A box contains 36 chocolates. How many chocolates are in 15 boxes?",
+      "options": [
+        "520",
+        "530",
+        "540",
+        "550",
+        "560"
+      ],
+      "correct": 2,
+      "correctAnswer": "540",
+      "explanation": "36 × 15 = 540. Check: 36 × 10 = 360, 36 × 5 = 180, so 360 + 180 = 540 chocolates. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sweet shop orders 58 jars of sweets, with 32 sweets in each jar. How many sweets are ordered in total?",
+      "options": [
+        "1,756",
+        "1,826",
+        "1,856",
+        "1,926",
+        "1,956"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,856",
+      "explanation": "58 × 32: (58 × 30 = 1,740) + (58 × 2 = 116) = 1,740 + 116 = 1,856. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory produces 125 toys every hour. How many toys are made in 24 hours?",
+      "options": [
+        "2,900",
+        "2,950",
+        "3,000",
+        "3,050",
+        "3,100"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,000",
+      "explanation": "125 × 24: (125 × 20 = 2,500) + (125 × 4 = 500) = 2,500 + 500 = 3,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school trip costs £37 per student. If 28 students go, what is the total cost?",
+      "options": [
+        "£1,006",
+        "£1,026",
+        "£1,036",
+        "£1,046",
+        "£1,056"
+      ],
+      "correct": 2,
+      "correctAnswer": "£1,036",
+      "explanation": "37 × 28 = £1,036. Check: 37 × 30 = 1,110, 37 × 2 = 74, so 1,110 - 74 = £1,036. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A gardener plants 74 seeds in each flowerbed. If there are 19 flowerbeds, how many seeds are planted altogether?",
+      "options": [
+        "1,306",
+        "1,356",
+        "1,406",
+        "1,456",
+        "1,506"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,406",
+      "explanation": "74 × 19: (74 × 20 = 1,480) - (74 × 1 = 74) = 1,480 - 74 = 1,406. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school kitchen uses 235 millilitres of milk per pupil at breakfast. How many millilitres are needed for 16 pupils?",
+      "options": [
+        "3,660",
+        "3,710",
+        "3,760",
+        "3,810",
+        "3,860"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,760",
+      "explanation": "235 × 16: (235 × 10 = 2,350) + (235 × 6 = 1,410) = 2,350 + 1,410 = 3,760. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A cinema ticket costs £12. How much do 45 tickets cost?",
+      "options": [
+        "£520",
+        "£530",
+        "£540",
+        "£550",
+        "£560"
+      ],
+      "correct": 2,
+      "correctAnswer": "£540",
+      "explanation": "12 × 45 = £540. Check: 12 × 40 = 480, 12 × 5 = 60, so 480 + 60 = £540. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A PE teacher orders 89 tennis balls for each of 26 classes. How many tennis balls are ordered altogether?",
+      "options": [
+        "2,214",
+        "2,264",
+        "2,314",
+        "2,364",
+        "2,414"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,314",
+      "explanation": "89 × 26: (89 × 20 = 1,780) + (89 × 6 = 534) = 1,780 + 534 = 2,314. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A baker bakes 145 bread rolls each day. How many bread rolls are baked in 32 days?",
+      "options": [
+        "4,540",
+        "4,580",
+        "4,620",
+        "4,640",
+        "4,680"
+      ],
+      "correct": 3,
+      "correctAnswer": "4,640",
+      "explanation": "145 × 32: (145 × 30 = 4,350) + (145 × 2 = 290) = 4,350 + 290 = 4,640. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory produces 126 toys per day. How many toys does it produce in 18 days?",
+      "options": [
+        "2,168",
+        "2,218",
+        "2,268",
+        "2,318",
+        "2,368"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,268",
+      "explanation": "126 × 18 = 2,268. Check: 126 × 20 = 2,520, 126 × 2 = 252, so 2,520 - 252 = 2,268 toys. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A car park has 67 spaces on each floor. If it has 38 floors, how many spaces are there in total?",
+      "options": [
+        "2,446",
+        "2,496",
+        "2,546",
+        "2,596",
+        "2,646"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,546",
+      "explanation": "67 × 38: (67 × 30 = 2,010) + (67 × 8 = 536) = 2,010 + 536 = 2,546. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Each carton holds 218 millilitres of orange juice. How many millilitres are in 25 cartons?",
+      "options": [
+        "5,350",
+        "5,400",
+        "5,450",
+        "5,500",
+        "5,550"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,450",
+      "explanation": "218 × 25: Think of 25 as 100÷4. So 218 × 100 = 21,800, then 21,800 ÷ 4 = 5,450. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A book has 78 pages. Each page has 35 lines. How many lines are in the book?",
+      "options": [
+        "2,630",
+        "2,680",
+        "2,730",
+        "2,780",
+        "2,830"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,730",
+      "explanation": "78 × 35 = 2,730. Check: 78 × 30 = 2,340, 78 × 5 = 390, so 2,340 + 390 = 2,730 lines. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A library receives 156 new books each month. How many new books arrive over 42 months?",
+      "options": [
+        "6,452",
+        "6,502",
+        "6,552",
+        "6,602",
+        "6,652"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,552",
+      "explanation": "156 × 42: (156 × 40 = 6,240) + (156 × 2 = 312) = 6,240 + 312 = 6,552. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sports club has 93 members, and each member pays £47 for a kit. What is the total cost of all the kits?",
+      "options": [
+        "4,271",
+        "4,321",
+        "4,371",
+        "4,421",
+        "4,471"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,371",
+      "explanation": "93 × 47: (93 × 40 = 3,720) + (93 × 7 = 651) = 3,720 + 651 = 4,371. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A train ticket costs £54. How much do 29 tickets cost?",
+      "options": [
+        "£1,466",
+        "£1,516",
+        "£1,566",
+        "£1,616",
+        "£1,666"
+      ],
+      "correct": 2,
+      "correctAnswer": "£1,566",
+      "explanation": "54 × 29 = £1,566. Check: 54 × 30 = 1,620, 54 × 1 = 54, so 1,620 - 54 = £1,566. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A printing press prints 284 posters per hour. How many posters are printed in 36 hours?",
+      "options": [
+        "10,124",
+        "10,224",
+        "10,324",
+        "10,424",
+        "10,524"
+      ],
+      "correct": 1,
+      "correctAnswer": "10,224",
+      "explanation": "284 × 36: (284 × 30 = 8,520) + (284 × 6 = 1,704) = 8,520 + 1,704 = 10,224. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer collects 127 eggs each day. How many eggs does he collect in 48 days?",
+      "options": [
+        "6,046",
+        "6,096",
+        "6,146",
+        "6,196",
+        "6,246"
+      ],
+      "correct": 1,
+      "correctAnswer": "6,096",
+      "explanation": "127 × 48: (127 × 50 = 6,350) - (127 × 2 = 254) = 6,350 - 254 = 6,096. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A café sells 86 cups of coffee per day. How many cups do they sell in 52 days?",
+      "options": [
+        "4,372",
+        "4,422",
+        "4,472",
+        "4,522",
+        "4,572"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,472",
+      "explanation": "86 × 52 = 4,472. Check: 86 × 50 = 4,300, 86 × 2 = 172, so 4,300 + 172 = 4,472 cups. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school tuck shop sells 315 snacks per week. How many snacks are sold over 28 weeks?",
+      "options": [
+        "8,720",
+        "8,770",
+        "8,820",
+        "8,870",
+        "8,920"
+      ],
+      "correct": 2,
+      "correctAnswer": "8,820",
+      "explanation": "315 × 28: (315 × 30 = 9,450) - (315 × 2 = 630) = 9,450 - 630 = 8,820. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity walk has 176 walkers, and each walker raises £35. How much money is raised altogether?",
+      "options": [
+        "6,060",
+        "6,110",
+        "6,160",
+        "6,210",
+        "6,260"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,160",
+      "explanation": "176 × 35: (176 × 30 = 5,280) + (176 × 5 = 880) = 5,280 + 880 = 6,160. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A warehouse ships 247 packages per day. How many packages are shipped in 24 days?",
+      "options": [
+        "5,828",
+        "5,878",
+        "5,928",
+        "5,978",
+        "6,028"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,928",
+      "explanation": "247 × 24 = 5,928. Check: 247 × 20 = 4,940, 247 × 4 = 988, so 4,940 + 988 = 5,928 packages. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A warehouse ships 408 parcels each day. How many parcels are shipped in 37 days?",
+      "options": [
+        "14,996",
+        "15,046",
+        "15,096",
+        "15,146",
+        "15,196"
+      ],
+      "correct": 2,
+      "correctAnswer": "15,096",
+      "explanation": "408 × 37: (408 × 30 = 12,240) + (408 × 7 = 2,856) = 12,240 + 2,856 = 15,096. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A craft club needs 34 beads for each necklace. How many beads are needed to make 18 necklaces?",
+      "options": [
+        "592",
+        "602",
+        "612",
+        "622",
+        "632"
+      ],
+      "correct": 2,
+      "correctAnswer": "612",
+      "explanation": "34 × 18: (34 × 10 = 340) + (34 × 8 = 272) = 340 + 272 = 612. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool sells 52 tickets each session. How many tickets are sold over 29 sessions?",
+      "options": [
+        "1,458",
+        "1,488",
+        "1,498",
+        "1,508",
+        "1,518"
+      ],
+      "correct": 3,
+      "correctAnswer": "1,508",
+      "explanation": "52 × 29: (52 × 30 = 1,560) - (52 × 1 = 52) = 1,560 - 52 = 1,508. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school orders 87 exercise books for each of 23 classes. How many exercise books are ordered in total?",
+      "options": [
+        "1,951",
+        "2,001",
+        "2,051",
+        "2,101",
+        "2,151"
+      ],
+      "correct": 1,
+      "correctAnswer": "2,001",
+      "explanation": "87 × 23: (87 × 20 = 1,740) + (87 × 3 = 261) = 1,740 + 261 = 2,001. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A coach can carry 115 passengers. How many passengers can 34 coaches carry altogether?",
+      "options": [
+        "3,860",
+        "3,885",
+        "3,910",
+        "3,935",
+        "3,960"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,910",
+      "explanation": "115 × 34: (115 × 30 = 3,450) + (115 × 4 = 460) = 3,450 + 460 = 3,910. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop sells 64 items per day. How many items does it sell in 41 days?",
+      "options": [
+        "2,564",
+        "2,594",
+        "2,604",
+        "2,624",
+        "2,654"
+      ],
+      "correct": 3,
+      "correctAnswer": "2,624",
+      "explanation": "64 × 41 = 2,624. Check: 64 × 40 = 2,560, 64 × 1 = 64, so 2,560 + 64 = 2,624 items. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A beekeeper harvests 138 grams of honey from each hive. How many grams does she harvest from 26 hives?",
+      "options": [
+        "3,538",
+        "3,588",
+        "3,638",
+        "3,688",
+        "3,738"
+      ],
+      "correct": 1,
+      "correctAnswer": "3,588",
+      "explanation": "138 × 26: (138 × 20 = 2,760) + (138 × 6 = 828) = 2,760 + 828 = 3,588. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cake stall sells 76 cupcakes each day at a fair. How many cupcakes are sold over 37 days?",
+      "options": [
+        "2,762",
+        "2,792",
+        "2,812",
+        "2,842",
+        "2,872"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,812",
+      "explanation": "76 × 37: (76 × 30 = 2,280) + (76 × 7 = 532) = 2,280 + 532 = 2,812. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A delivery van carries 195 packages on each trip. How many packages are delivered in 22 trips?",
+      "options": [
+        "4,190",
+        "4,230",
+        "4,250",
+        "4,270",
+        "4,290"
+      ],
+      "correct": 4,
+      "correctAnswer": "4,290",
+      "explanation": "195 × 22: (195 × 20 = 3,900) + (195 × 2 = 390) = 3,900 + 390 = 4,290. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pet shop has 49 fish tanks, each containing 58 fish. How many fish are there in total?",
+      "options": [
+        "2,792",
+        "2,822",
+        "2,842",
+        "2,872",
+        "2,902"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,842",
+      "explanation": "49 × 58: (49 × 60 = 2,940) - (49 × 2 = 98) = 2,940 - 98 = 2,842. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A music shop sells 217 guitar picks per week. How many guitar picks are sold in 31 weeks?",
+      "options": [
+        "6,677",
+        "6,727",
+        "6,777",
+        "6,827",
+        "6,877"
+      ],
+      "correct": 1,
+      "correctAnswer": "6,727",
+      "explanation": "217 × 31: (217 × 30 = 6,510) + (217 × 1 = 217) = 6,510 + 217 = 6,727. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A hotel has 83 rooms. Each room costs £46 per night. What is the total revenue for one night?",
+      "options": [
+        "£3,768",
+        "£3,798",
+        "£3,818",
+        "£3,838",
+        "£3,868"
+      ],
+      "correct": 2,
+      "correctAnswer": "£3,818",
+      "explanation": "83 × 46 = £3,818. Check: 83 × 50 = 4,150, 83 × 4 = 332, so 4,150 - 332 = £3,818. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A football stadium sells 164 hot dogs at each match. How many hot dogs are sold over 45 matches?",
+      "options": [
+        "7,330",
+        "7,380",
+        "7,430",
+        "7,480",
+        "7,530"
+      ],
+      "correct": 1,
+      "correctAnswer": "7,380",
+      "explanation": "164 × 45: (164 × 40 = 6,560) + (164 × 5 = 820) = 6,560 + 820 = 7,380. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A Year 5 sponsored read challenge has 91 pupils, each reading 54 pages. How many pages are read altogether?",
+      "options": [
+        "4,864",
+        "4,904",
+        "4,914",
+        "4,954",
+        "5,004"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,914",
+      "explanation": "91 × 54: (91 × 50 = 4,550) + (91 × 4 = 364) = 4,550 + 364 = 4,914. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A tile shop sells 258 tiles per day. How many tiles are sold in 39 days?",
+      "options": [
+        "9,962",
+        "10,012",
+        "10,062",
+        "10,112",
+        "10,162"
+      ],
+      "correct": 2,
+      "correctAnswer": "10,062",
+      "explanation": "258 × 39: (258 × 40 = 10,320) - (258 × 1 = 258) = 10,320 - 258 = 10,062. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A biscuit factory packs 72 biscuits into each tin. How many biscuits are in 68 tins?",
+      "options": [
+        "4,846",
+        "4,876",
+        "4,896",
+        "4,926",
+        "4,956"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,896",
+      "explanation": "72 × 68: (72 × 70 = 5,040) - (72 × 2 = 144) = 5,040 - 144 = 4,896. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory makes 186 products per day. How many products does it make in 33 days?",
+      "options": [
+        "6,088",
+        "6,118",
+        "6,138",
+        "6,168",
+        "6,198"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,138",
+      "explanation": "186 × 33 = 6,138. Check: 186 × 30 = 5,580, 186 × 3 = 558, so 5,580 + 558 = 6,138 products. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A newsagent sells 143 newspapers each week. How many newspapers are sold in 52 weeks?",
+      "options": [
+        "7,386",
+        "7,426",
+        "7,436",
+        "7,476",
+        "7,516"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,436",
+      "explanation": "143 × 52: (143 × 50 = 7,150) + (143 × 2 = 286) = 7,150 + 286 = 7,436. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A fruit picker fills 95 punnets of strawberries each day. How many punnets are filled in 63 days?",
+      "options": [
+        "5,935",
+        "5,975",
+        "5,985",
+        "6,025",
+        "6,075"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,985",
+      "explanation": "95 × 63: (95 × 60 = 5,700) + (95 × 3 = 285) = 5,700 + 285 = 5,985. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A scout group collects 279 items for a food bank each month. How many items are collected in 28 months?",
+      "options": [
+        "7,712",
+        "7,762",
+        "7,812",
+        "7,862",
+        "7,912"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,812",
+      "explanation": "279 × 28: (279 × 30 = 8,370) - (279 × 2 = 558) = 8,370 - 558 = 7,812. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A toy shop sells 56 building sets per week. How many are sold over 74 weeks?",
+      "options": [
+        "4,094",
+        "4,124",
+        "4,144",
+        "4,174",
+        "4,204"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,144",
+      "explanation": "56 × 74: (56 × 70 = 3,920) + (56 × 4 = 224) = 3,920 + 224 = 4,144. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A bakery produces 208 loaves per day. How many loaves does it produce in 46 days?",
+      "options": [
+        "9,518",
+        "9,558",
+        "9,568",
+        "9,608",
+        "9,658"
+      ],
+      "correct": 2,
+      "correctAnswer": "9,568",
+      "explanation": "208 × 46 = 9,568. Check: 208 × 50 = 10,400, 208 × 4 = 832, so 10,400 - 832 = 9,568 loaves. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A zoo feeds 174 grams of food to each penguin daily. How many grams are needed for 35 penguins?",
+      "options": [
+        "6,040",
+        "6,070",
+        "6,090",
+        "6,120",
+        "6,150"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,090",
+      "explanation": "174 × 35: (174 × 30 = 5,220) + (174 × 5 = 870) = 5,220 + 870 = 6,090. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A chocolate factory makes 88 bars every hour. How many bars are made in 49 hours?",
+      "options": [
+        "4,262",
+        "4,292",
+        "4,312",
+        "4,342",
+        "4,392"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,312",
+      "explanation": "88 × 49: (88 × 50 = 4,400) - (88 × 1 = 88) = 4,400 - 88 = 4,312. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school canteen serves 326 lunches each day. How many lunches are served in 27 days?",
+      "options": [
+        "8,702",
+        "8,752",
+        "8,802",
+        "8,852",
+        "8,902"
+      ],
+      "correct": 2,
+      "correctAnswer": "8,802",
+      "explanation": "326 × 27: (326 × 30 = 9,780) - (326 × 3 = 978) = 9,780 - 978 = 8,802. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Each class in a school has 69 reading books. If there are 82 classes, how many reading books are there altogether?",
+      "options": [
+        "5,608",
+        "5,638",
+        "5,658",
+        "5,688",
+        "5,718"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,658",
+      "explanation": "69 × 82: (69 × 80 = 5,520) + (69 × 2 = 138) = 5,520 + 138 = 5,658. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop sells 119 magazines per week. How many magazines does it sell in 38 weeks?",
+      "options": [
+        "4,472",
+        "4,502",
+        "4,522",
+        "4,552",
+        "4,582"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,522",
+      "explanation": "119 × 38 = 4,522. Check: 119 × 40 = 4,760, 119 × 2 = 238, so 4,760 - 238 = 4,522 magazines. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bike hire company has 197 bikes at each of 43 stations. How many bikes does it have in total?",
+      "options": [
+        "8,421",
+        "8,461",
+        "8,471",
+        "8,511",
+        "8,561"
+      ],
+      "correct": 2,
+      "correctAnswer": "8,471",
+      "explanation": "197 × 43: (197 × 40 = 7,880) + (197 × 3 = 591) = 7,880 + 591 = 8,471. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A garden centre sells 84 packets of seeds each week. How many packets are sold in 57 weeks?",
+      "options": [
+        "4,738",
+        "4,768",
+        "4,788",
+        "4,818",
+        "4,848"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,788",
+      "explanation": "84 × 57: (84 × 60 = 5,040) - (84 × 3 = 252) = 5,040 - 252 = 4,788. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A water bottling plant fills 345 bottles per minute. How many bottles are filled in 29 minutes?",
+      "options": [
+        "9,955",
+        "10,005",
+        "10,055",
+        "10,105",
+        "10,155"
+      ],
+      "correct": 1,
+      "correctAnswer": "10,005",
+      "explanation": "345 × 29: (345 × 30 = 10,350) - (345 × 1 = 345) = 10,350 - 345 = 10,005. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An ice cream van sells 73 ice creams at each event. How many ice creams are sold over 91 events?",
+      "options": [
+        "6,593",
+        "6,633",
+        "6,643",
+        "6,683",
+        "6,733"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,643",
+      "explanation": "73 × 91: (73 × 90 = 6,570) + (73 × 1 = 73) = 6,570 + 73 = 6,643. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A gym has 226 members. Each member pays £64 per month. What is the monthly revenue?",
+      "options": [
+        "£14,384",
+        "£14,444",
+        "£14,464",
+        "£14,524",
+        "£14,584"
+      ],
+      "correct": 2,
+      "correctAnswer": "£14,464",
+      "explanation": "226 × 64 = £14,464. Check: 226 × 60 = 13,560, 226 × 4 = 904, so 13,560 + 904 = £14,464. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A supermarket stocks 159 tins of soup on each shelf. How many tins are on 36 shelves?",
+      "options": [
+        "5,674",
+        "5,704",
+        "5,724",
+        "5,754",
+        "5,804"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,724",
+      "explanation": "159 × 36: (159 × 30 = 4,770) + (159 × 6 = 954) = 4,770 + 954 = 5,724. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rugby club has 97 members, and each member pays £66 in annual fees. What is the total amount collected?",
+      "options": [
+        "6,352",
+        "6,382",
+        "6,402",
+        "6,432",
+        "6,462"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,402",
+      "explanation": "97 × 66: (97 × 70 = 6,790) - (97 × 4 = 388) = 6,790 - 388 = 6,402. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A power station generates 382 megawatts each hour. How many megawatts are generated in 24 hours?",
+      "options": [
+        "9,068",
+        "9,118",
+        "9,168",
+        "9,218",
+        "9,268"
+      ],
+      "correct": 2,
+      "correctAnswer": "9,168",
+      "explanation": "382 × 24: (382 × 20 = 7,640) + (382 × 4 = 1,528) = 7,640 + 1,528 = 9,168. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bookshop sells 65 copies of a popular book each week. How many copies are sold in 78 weeks?",
+      "options": [
+        "5,020",
+        "5,050",
+        "5,070",
+        "5,100",
+        "5,130"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,070",
+      "explanation": "65 × 78: (65 × 80 = 5,200) - (65 × 2 = 130) = 5,200 - 130 = 5,070. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A company employs 154 workers. Each worker earns £42 per day. What is the daily wage bill?",
+      "options": [
+        "£6,418",
+        "£6,458",
+        "£6,468",
+        "£6,508",
+        "£6,558"
+      ],
+      "correct": 2,
+      "correctAnswer": "£6,468",
+      "explanation": "154 × 42 = £6,468. Check: 154 × 40 = 6,160, 154 × 2 = 308, so 6,160 + 308 = £6,468. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A post office handles 213 letters each hour. How many letters are handled in 51 hours?",
+      "options": [
+        "10,813",
+        "10,863",
+        "10,913",
+        "10,963",
+        "11,013"
+      ],
+      "correct": 1,
+      "correctAnswer": "10,863",
+      "explanation": "213 × 51: (213 × 50 = 10,650) + (213 × 1 = 213) = 10,650 + 213 = 10,863. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A stationery shop sells 79 pens per day. How many pens are sold over 85 days?",
+      "options": [
+        "6,665",
+        "6,695",
+        "6,715",
+        "6,745",
+        "6,795"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,715",
+      "explanation": "79 × 85: (79 × 80 = 6,320) + (79 × 5 = 395) = 6,320 + 395 = 6,715. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bottled water company fills 418 bottles per batch. How many bottles are filled in 32 batches?",
+      "options": [
+        "13,276",
+        "13,326",
+        "13,376",
+        "13,426",
+        "13,476"
+      ],
+      "correct": 2,
+      "correctAnswer": "13,376",
+      "explanation": "418 × 32: (418 × 30 = 12,540) + (418 × 2 = 836) = 12,540 + 836 = 13,376. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A florist arranges 68 bouquets each week. How many bouquets are arranged in 93 weeks?",
+      "options": [
+        "6,274",
+        "6,304",
+        "6,324",
+        "6,354",
+        "6,404"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,324",
+      "explanation": "68 × 93: (68 × 90 = 6,120) + (68 × 3 = 204) = 6,120 + 204 = 6,324. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A train carries 267 passengers. Each passenger pays £56. What is the total fare collected?",
+      "options": [
+        "£14,902",
+        "£14,952",
+        "£15,002",
+        "£15,052",
+        "£15,102"
+      ],
+      "correct": 1,
+      "correctAnswer": "£14,952",
+      "explanation": "267 × 56 = £14,952. Check: 267 × 50 = 13,350, 267 × 6 = 1,602, so 13,350 + 1,602 = £14,952. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An orchard produces 182 apples from each tree. How many apples come from 47 trees?",
+      "options": [
+        "8,504",
+        "8,534",
+        "8,554",
+        "8,584",
+        "8,634"
+      ],
+      "correct": 2,
+      "correctAnswer": "8,554",
+      "explanation": "182 × 47: (182 × 50 = 9,100) - (182 × 3 = 546) = 9,100 - 546 = 8,554. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sandwich shop makes 96 sandwiches each day. How many sandwiches are made in 72 days?",
+      "options": [
+        "6,862",
+        "6,892",
+        "6,912",
+        "6,942",
+        "6,992"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,912",
+      "explanation": "96 × 72: (96 × 70 = 6,720) + (96 × 2 = 192) = 6,720 + 192 = 6,912. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A lorry transports 453 crates on each journey. How many crates are transported in 26 journeys?",
+      "options": [
+        "11,678",
+        "11,728",
+        "11,778",
+        "11,828",
+        "11,878"
+      ],
+      "correct": 2,
+      "correctAnswer": "11,778",
+      "explanation": "453 × 26: (453 × 20 = 9,060) + (453 × 6 = 2,718) = 9,060 + 2,718 = 11,778. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bowling alley has 81 pairs of shoes. Each pair is used 59 times per year. How many total uses is that?",
+      "options": [
+        "4,729",
+        "4,759",
+        "4,779",
+        "4,809",
+        "4,859"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,779",
+      "explanation": "81 × 59: (81 × 60 = 4,860) - (81 × 1 = 81) = 4,860 - 81 = 4,779. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A warehouse stores 295 boxes. Each box contains 44 items. How many items in total?",
+      "options": [
+        "12,880",
+        "12,930",
+        "12,980",
+        "13,030",
+        "13,080"
+      ],
+      "correct": 2,
+      "correctAnswer": "12,980",
+      "explanation": "295 × 44 = 12,980. Check: 295 × 40 = 11,800, 295 × 4 = 1,180, so 11,800 + 1,180 = 12,980 items. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school photocopier prints 167 worksheets per class. How many worksheets are printed for 39 classes?",
+      "options": [
+        "6,463",
+        "6,493",
+        "6,513",
+        "6,543",
+        "6,593"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,513",
+      "explanation": "167 × 39: (167 × 40 = 6,680) - (167 × 1 = 167) = 6,680 - 167 = 6,513. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A park ranger plants 92 saplings in each area. How many saplings are planted across 67 areas?",
+      "options": [
+        "6,114",
+        "6,144",
+        "6,164",
+        "6,194",
+        "6,244"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,164",
+      "explanation": "92 × 67: (92 × 70 = 6,440) - (92 × 3 = 276) = 6,440 - 276 = 6,164. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A theatre sells 524 programmes at each performance. How many programmes are sold over 28 performances?",
+      "options": [
+        "14,572",
+        "14,622",
+        "14,672",
+        "14,722",
+        "14,772"
+      ],
+      "correct": 2,
+      "correctAnswer": "14,672",
+      "explanation": "524 × 28: (524 × 30 = 15,720) - (524 × 2 = 1,048) = 15,720 - 1,048 = 14,672. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A recycling centre collects 75 bags of cans each day. How many bags are collected in 86 days?",
+      "options": [
+        "6,400",
+        "6,430",
+        "6,450",
+        "6,480",
+        "6,530"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,450",
+      "explanation": "75 × 86: (75 × 80 = 6,000) + (75 × 6 = 450) = 6,000 + 450 = 6,450. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A school orders 336 textbooks. Each textbook costs £38. What is the total cost?",
+      "options": [
+        "£12,668",
+        "£12,718",
+        "£12,768",
+        "£12,818",
+        "£12,868"
+      ],
+      "correct": 2,
+      "correctAnswer": "£12,768",
+      "explanation": "336 × 38 = £12,768. Check: 336 × 40 = 13,440, 336 × 2 = 672, so 13,440 - 672 = £12,768. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A museum welcomes 149 visitors per tour. How many visitors attend 53 tours?",
+      "options": [
+        "7,847",
+        "7,897",
+        "7,947",
+        "7,997",
+        "8,047"
+      ],
+      "correct": 1,
+      "correctAnswer": "7,897",
+      "explanation": "149 × 53: (149 × 50 = 7,450) + (149 × 3 = 447) = 7,450 + 447 = 7,897. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school chess club meets for 86 minutes each session. How many minutes do they play over 75 sessions?",
+      "options": [
+        "6,400",
+        "6,430",
+        "6,450",
+        "6,480",
+        "6,530"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,450",
+      "explanation": "86 × 75: (86 × 80 = 6,880) - (86 × 5 = 430) = 6,880 - 430 = 6,450. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An airport handles 597 passengers each hour. How many passengers pass through in 24 hours?",
+      "options": [
+        "14,228",
+        "14,278",
+        "14,328",
+        "14,378",
+        "14,428"
+      ],
+      "correct": 2,
+      "correctAnswer": "14,328",
+      "explanation": "597 × 24: (597 × 20 = 11,940) + (597 × 4 = 2,388) = 11,940 + 2,388 = 14,328. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A wildlife reserve has 63 enclosures, each with 94 animals. How many animals are in the reserve?",
+      "options": [
+        "5,872",
+        "5,902",
+        "5,922",
+        "5,952",
+        "6,002"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,922",
+      "explanation": "63 × 94: (63 × 100 = 6,300) - (63 × 6 = 378) = 6,300 - 378 = 5,922. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A cinema has 284 seats. Tickets cost £49 each. What is the revenue if all seats are sold?",
+      "options": [
+        "£13,766",
+        "£13,816",
+        "£13,866",
+        "£13,916",
+        "£13,966"
+      ],
+      "correct": 3,
+      "correctAnswer": "£13,916",
+      "explanation": "284 × 49 = £13,916. Check: 284 × 50 = 14,200, 284 × 1 = 284, so 14,200 - 284 = £13,916. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A crisp factory packs 193 bags per hour. How many bags are packed in 62 hours?",
+      "options": [
+        "11,866",
+        "11,916",
+        "11,966",
+        "12,016",
+        "12,066"
+      ],
+      "correct": 2,
+      "correctAnswer": "11,966",
+      "explanation": "193 × 62: (193 × 60 = 11,580) + (193 × 2 = 386) = 11,580 + 386 = 11,966. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A swimming teacher gives 98 lessons each term. How many lessons are given over 81 terms?",
+      "options": [
+        "7,888",
+        "7,918",
+        "7,938",
+        "7,968",
+        "8,018"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,938",
+      "explanation": "98 × 81: (98 × 80 = 7,840) + (98 × 1 = 98) = 7,840 + 98 = 7,938. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A solar panel farm produces 672 kilowatt-hours per day. How many kilowatt-hours are produced in 29 days?",
+      "options": [
+        "19,388",
+        "19,438",
+        "19,488",
+        "19,538",
+        "19,588"
+      ],
+      "correct": 2,
+      "correctAnswer": "19,488",
+      "explanation": "672 × 29: (672 × 30 = 20,160) - (672 × 1 = 672) = 20,160 - 672 = 19,488. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pottery class makes 77 bowls in each session. How many bowls are made in 69 sessions?",
+      "options": [
+        "5,263",
+        "5,293",
+        "5,313",
+        "5,343",
+        "5,393"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,313",
+      "explanation": "77 × 69: (77 × 70 = 5,390) - (77 × 1 = 77) = 5,390 - 77 = 5,313. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A company produces 248 units per hour. How many units does it produce in 56 hours?",
+      "options": [
+        "13,788",
+        "13,838",
+        "13,888",
+        "13,938",
+        "13,988"
+      ],
+      "correct": 2,
+      "correctAnswer": "13,888",
+      "explanation": "248 × 56 = 13,888. Check: 248 × 50 = 12,400, 248 × 6 = 1,488, so 12,400 + 1,488 = 13,888 units. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school orchestra practises for 165 minutes each week. How many minutes do they practise over 48 weeks?",
+      "options": [
+        "7,870",
+        "7,920",
+        "7,970",
+        "8,020",
+        "8,070"
+      ],
+      "correct": 1,
+      "correctAnswer": "7,920",
+      "explanation": "165 × 48: (165 × 50 = 8,250) - (165 × 2 = 330) = 8,250 - 330 = 7,920. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A campsite has 94 pitches, and each pitch holds 73 litres of water in its tank. How many litres are stored in total?",
+      "options": [
+        "6,812",
+        "6,842",
+        "6,862",
+        "6,892",
+        "6,942"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,862",
+      "explanation": "94 × 73: (94 × 70 = 6,580) + (94 × 3 = 282) = 6,580 + 282 = 6,862. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A wind farm generates 738 units of electricity per day. How many units are generated in 31 days?",
+      "options": [
+        "22,778",
+        "22,828",
+        "22,878",
+        "22,928",
+        "22,978"
+      ],
+      "correct": 2,
+      "correctAnswer": "22,878",
+      "explanation": "738 × 31: (738 × 30 = 22,140) + (738 × 1 = 738) = 22,140 + 738 = 22,878. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A knitting group uses 62 balls of wool each month. How many balls are used in 87 months?",
+      "options": [
+        "5,344",
+        "5,374",
+        "5,394",
+        "5,424",
+        "5,474"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,394",
+      "explanation": "62 × 87: (62 × 90 = 5,580) - (62 × 3 = 186) = 5,580 - 186 = 5,394. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A store sells 319 products. Each product generates £65 profit. What is the total profit?",
+      "options": [
+        "£20,635",
+        "£20,685",
+        "£20,735",
+        "£20,785",
+        "£20,835"
+      ],
+      "correct": 2,
+      "correctAnswer": "£20,735",
+      "explanation": "319 × 65 = £20,735. Check: 319 × 60 = 19,140, 319 × 5 = 1,595, so 19,140 + 1,595 = £20,735. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A dairy farm produces 178 litres of milk per cow each week. How many litres do 54 cows produce?",
+      "options": [
+        "9,562",
+        "9,612",
+        "9,662",
+        "9,712",
+        "9,762"
+      ],
+      "correct": 1,
+      "correctAnswer": "9,612",
+      "explanation": "178 × 54: (178 × 50 = 8,900) + (178 × 4 = 712) = 8,900 + 712 = 9,612. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A skateboard park has 89 visitors each day. How many visitors come over 76 days?",
+      "options": [
+        "6,714",
+        "6,744",
+        "6,764",
+        "6,794",
+        "6,844"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,764",
+      "explanation": "89 × 76: (89 × 80 = 7,120) - (89 × 4 = 356) = 7,120 - 356 = 6,764. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A newspaper prints 814 copies per edition. How many copies are printed over 27 editions?",
+      "options": [
+        "21,878",
+        "21,928",
+        "21,978",
+        "22,028",
+        "22,078"
+      ],
+      "correct": 2,
+      "correctAnswer": "21,978",
+      "explanation": "814 × 27: (814 × 30 = 24,420) - (814 × 3 = 2,442) = 24,420 - 2,442 = 21,978. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bird sanctuary rescues 71 birds each month. How many birds are rescued over 92 months?",
+      "options": [
+        "6,482",
+        "6,512",
+        "6,532",
+        "6,562",
+        "6,612"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,532",
+      "explanation": "71 × 92: (71 × 90 = 6,390) + (71 × 2 = 142) = 6,390 + 142 = 6,532. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A farm has 426 chickens. Each chicken lays 58 eggs per year. How many eggs per year?",
+      "options": [
+        "24,608",
+        "24,658",
+        "24,708",
+        "24,758",
+        "24,808"
+      ],
+      "correct": 2,
+      "correctAnswer": "24,708",
+      "explanation": "426 × 58 = 24,708. Check: 426 × 60 = 25,560, 426 × 2 = 852, so 25,560 - 852 = 24,708 eggs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A paintball arena uses 191 paintballs per game. How many paintballs are used in 45 games?",
+      "options": [
+        "8,545",
+        "8,595",
+        "8,645",
+        "8,695",
+        "8,745"
+      ],
+      "correct": 1,
+      "correctAnswer": "8,595",
+      "explanation": "191 × 45: (191 × 40 = 7,640) + (191 × 5 = 955) = 7,640 + 955 = 8,595. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A candle maker produces 83 candles per day. How many candles are produced in 84 days?",
+      "options": [
+        "6,872",
+        "6,922",
+        "6,972",
+        "7,022",
+        "7,072"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,972",
+      "explanation": "83 × 84: (83 × 80 = 6,640) + (83 × 4 = 332) = 6,640 + 332 = 6,972. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A concert hall has 958 seats. If 23 concerts are held with full houses, how many tickets are sold in total?",
+      "options": [
+        "22,034",
+        "22,084",
+        "22,134",
+        "22,184",
+        "22,234"
+      ],
+      "correct": 0,
+      "correctAnswer": "22,034",
+      "explanation": "958 × 23: (958 × 20 = 19,160) + (958 × 3 = 2,874) = 19,160 + 2,874 = 22,034. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity sends 66 parcels each week. How many parcels are sent over 95 weeks?",
+      "options": [
+        "6,220",
+        "6,250",
+        "6,270",
+        "6,300",
+        "6,350"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,270",
+      "explanation": "66 × 95: (66 × 100 = 6,600) - (66 × 5 = 330) = 6,600 - 330 = 6,270. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A library has 543 books. Each book has 74 pages. How many pages in total?",
+      "options": [
+        "40,082",
+        "40,132",
+        "40,182",
+        "40,232",
+        "40,282"
+      ],
+      "correct": 2,
+      "correctAnswer": "40,182",
+      "explanation": "543 × 74 = 40,182. Check: 543 × 70 = 38,010, 543 × 4 = 2,172, so 38,010 + 2,172 = 40,182 pages. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A car factory assembles 206 parts per vehicle. How many parts are needed for 59 vehicles?",
+      "options": [
+        "12,104",
+        "12,154",
+        "12,204",
+        "12,254",
+        "12,304"
+      ],
+      "correct": 1,
+      "correctAnswer": "12,154",
+      "explanation": "206 × 59: (206 × 60 = 12,360) - (206 × 1 = 206) = 12,360 - 206 = 12,154. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cricket club orders 91 balls for each season. How many balls are ordered over 68 seasons?",
+      "options": [
+        "6,138",
+        "6,168",
+        "6,188",
+        "6,218",
+        "6,268"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,188",
+      "explanation": "91 × 68: (91 × 70 = 6,370) - (91 × 2 = 182) = 6,370 - 182 = 6,188. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 869 × 34?",
+      "options": [
+        "29,446",
+        "29,496",
+        "29,546",
+        "29,596",
+        "29,646"
+      ],
+      "correct": 2,
+      "correctAnswer": "29,546",
+      "explanation": "869 × 34: (869 × 30 = 26,070) + (869 × 4 = 3,476) = 26,070 + 3,476 = 29,546. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A dance studio holds 78 classes each term. How many classes are held over 83 terms?",
+      "options": [
+        "6,424",
+        "6,454",
+        "6,474",
+        "6,504",
+        "6,554"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,474",
+      "explanation": "78 × 83: (78 × 80 = 6,240) + (78 × 3 = 234) = 6,240 + 234 = 6,474. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A restaurant serves 397 customers per day. Each customer spends £76. What is the daily revenue?",
+      "options": [
+        "£30,072",
+        "£30,122",
+        "£30,172",
+        "£30,222",
+        "£30,272"
+      ],
+      "correct": 2,
+      "correctAnswer": "£30,172",
+      "explanation": "397 × 76 = £30,172. Check: 397 × 80 = 31,760, 397 × 4 = 1,588, so 31,760 - 1,588 = £30,172. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bread delivery driver drops off 183 loaves at each shop. How many loaves are delivered to 67 shops?",
+      "options": [
+        "12,211",
+        "12,261",
+        "12,311",
+        "12,361",
+        "12,411"
+      ],
+      "correct": 1,
+      "correctAnswer": "12,261",
+      "explanation": "183 × 67: (183 × 70 = 12,810) - (183 × 3 = 549) = 12,810 - 549 = 12,261. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A running track is 99 metres around. If an athlete runs 79 laps, how many metres does she run?",
+      "options": [
+        "7,771",
+        "7,801",
+        "7,821",
+        "7,851",
+        "7,901"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,821",
+      "explanation": "99 × 79: (99 × 80 = 7,920) - (99 × 1 = 99) = 7,920 - 99 = 7,821. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A ferry carries 925 passengers on each crossing. How many passengers does it carry over 38 crossings?",
+      "options": [
+        "35,050",
+        "35,100",
+        "35,150",
+        "35,200",
+        "35,250"
+      ],
+      "correct": 2,
+      "correctAnswer": "35,150",
+      "explanation": "925 × 38: (925 × 40 = 37,000) - (925 × 2 = 1,850) = 37,000 - 1,850 = 35,150. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farm shop sells 85 boxes of eggs each week. How many boxes are sold in 71 weeks?",
+      "options": [
+        "6,005",
+        "6,035",
+        "6,055",
+        "6,085",
+        "6,135"
+      ],
+      "correct": 1,
+      "correctAnswer": "6,035",
+      "explanation": "85 × 71: (85 × 70 = 5,950) + (85 × 1 = 85) = 5,950 + 85 = 6,035. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A publisher prints 614 copies of a book. Each copy has 89 pages. How many total pages?",
+      "options": [
+        "54,546",
+        "54,596",
+        "54,646",
+        "54,696",
+        "54,746"
+      ],
+      "correct": 2,
+      "correctAnswer": "54,646",
+      "explanation": "614 × 89 = 54,646. Check: 614 × 90 = 55,260, 614 × 1 = 614, so 55,260 - 614 = 54,646 pages. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A magazine has 197 pages in each issue. How many pages are in 52 issues?",
+      "options": [
+        "10,194",
+        "10,244",
+        "10,294",
+        "10,344",
+        "10,394"
+      ],
+      "correct": 1,
+      "correctAnswer": "10,244",
+      "explanation": "197 × 52: (197 × 50 = 9,850) + (197 × 2 = 394) = 9,850 + 394 = 10,244. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A gymnastics team scores 82 points per routine. How many points are scored in 96 routines?",
+      "options": [
+        "7,822",
+        "7,852",
+        "7,872",
+        "7,902",
+        "7,952"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,872",
+      "explanation": "82 × 96: (82 × 100 = 8,200) - (82 × 4 = 328) = 8,200 - 328 = 7,872. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A drinks machine dispenses 976 cups per day. How many cups are dispensed in 25 days?",
+      "options": [
+        "24,300",
+        "24,350",
+        "24,400",
+        "24,450",
+        "24,500"
+      ],
+      "correct": 2,
+      "correctAnswer": "24,400",
+      "explanation": "976 × 25: Think of 25 as 100÷4. So 976 × 100 = 97,600, then 97,600 ÷ 4 = 24,400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A train has 74 seats in each carriage. How many seats are in 88 carriages?",
+      "options": [
+        "6,462",
+        "6,492",
+        "6,512",
+        "6,542",
+        "6,592"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,512",
+      "explanation": "74 × 88: (74 × 90 = 6,660) - (74 × 2 = 148) = 6,660 - 148 = 6,512. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A stadium has 738 rows. Each row has 63 seats. How many seats in total?",
+      "options": [
+        "46,394",
+        "46,444",
+        "46,494",
+        "46,544",
+        "46,594"
+      ],
+      "correct": 2,
+      "correctAnswer": "46,494",
+      "explanation": "738 × 63 = 46,494. Check: 738 × 60 = 44,280, 738 × 3 = 2,214, so 44,280 + 2,214 = 46,494 seats. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sports shop sells 209 footballs each month. How many footballs are sold in 46 months?",
+      "options": [
+        "9,564",
+        "9,614",
+        "9,664",
+        "9,714",
+        "9,764"
+      ],
+      "correct": 1,
+      "correctAnswer": "9,614",
+      "explanation": "209 × 46: (209 × 50 = 10,450) - (209 × 4 = 836) = 10,450 - 836 = 9,614. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A holiday park has 93 caravans, and each caravan uses 77 litres of water per day. How many litres are used in total each day?",
+      "options": [
+        "7,111",
+        "7,141",
+        "7,161",
+        "7,191",
+        "7,241"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,161",
+      "explanation": "93 × 77: (93 × 80 = 7,440) - (93 × 3 = 279) = 7,440 - 279 = 7,161. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A juice company produces 847 bottles per hour. How many bottles are produced in 36 hours?",
+      "options": [
+        "30,392",
+        "30,442",
+        "30,492",
+        "30,542",
+        "30,592"
+      ],
+      "correct": 2,
+      "correctAnswer": "30,492",
+      "explanation": "847 × 36: (847 × 40 = 33,880) - (847 × 4 = 3,388) = 33,880 - 3,388 = 30,492. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A market stall sells 67 bags of sweets each Saturday. How many bags are sold over 94 Saturdays?",
+      "options": [
+        "6,248",
+        "6,278",
+        "6,298",
+        "6,328",
+        "6,378"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,298",
+      "explanation": "67 × 94: (67 × 100 = 6,700) - (67 × 6 = 402) = 6,700 - 402 = 6,298. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A delivery company handles 526 packages per day. Each package weighs 84 kg. What is the total weight?",
+      "options": [
+        "44,084 kg",
+        "44,134 kg",
+        "44,184 kg",
+        "44,234 kg",
+        "44,284 kg"
+      ],
+      "correct": 2,
+      "correctAnswer": "44,184 kg",
+      "explanation": "526 × 84 = 44,184 kg. Check: 526 × 80 = 42,080, 526 × 4 = 2,104, so 42,080 + 2,104 = 44,184 kg. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A brickworks makes 175 bricks per hour. How many bricks are made in 69 hours?",
+      "options": [
+        "12,025",
+        "12,075",
+        "12,125",
+        "12,175",
+        "12,225"
+      ],
+      "correct": 1,
+      "correctAnswer": "12,075",
+      "explanation": "175 × 69: (175 × 70 = 12,250) - (175 × 1 = 175) = 12,250 - 175 = 12,075. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A pizza restaurant uses 88 grams of cheese on each pizza. How many grams are used for 62 pizzas?",
+      "options": [
+        "5,396",
+        "5,426",
+        "5,456",
+        "5,486",
+        "5,536"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,456",
+      "explanation": "88 × 62: (88 × 60 = 5,280) + (88 × 2 = 176) = 5,280 + 176 = 5,456. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A logistics company delivers 913 parcels per day. How many parcels are delivered in 43 days?",
+      "options": [
+        "39,159",
+        "39,209",
+        "39,259",
+        "39,309",
+        "39,359"
+      ],
+      "correct": 2,
+      "correctAnswer": "39,259",
+      "explanation": "913 × 43: (913 × 40 = 36,520) + (913 × 3 = 2,739) = 36,520 + 2,739 = 39,259. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A greenhouse grows 69 tomato plants in each row. How many plants are in 85 rows?",
+      "options": [
+        "5,815",
+        "5,845",
+        "5,865",
+        "5,895",
+        "5,945"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,865",
+      "explanation": "69 × 85: (69 × 80 = 5,520) + (69 × 5 = 345) = 5,520 + 345 = 5,865. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A packet of crisps has 24 crisps inside. How many crisps are in 3 packets?",
+      "options": [
+        "62",
+        "68",
+        "72",
+        "76",
+        "82"
+      ],
+      "correct": 2,
+      "correctAnswer": "72",
+      "explanation": "24 × 3 = 72. You can work this out as (20 × 3) + (4 × 3) = 60 + 12 = 72. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "There are 15 marbles in each bag. How many marbles are in 12 bags?",
+      "options": [
+        "160",
+        "170",
+        "180",
+        "190",
+        "200"
+      ],
+      "correct": 2,
+      "correctAnswer": "180",
+      "explanation": "15 × 12 = 180. You can work this out as (15 × 10) + (15 × 2) = 150 + 30 = 180. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A pack of colouring pencils costs £4. How much do 13 packs cost?",
+      "options": [
+        "£48",
+        "£50",
+        "£52",
+        "£54",
+        "£56"
+      ],
+      "correct": 2,
+      "correctAnswer": "£52",
+      "explanation": "4 × 13 = £52. You can work this out as (4 × 10) + (4 × 3) = 40 + 12 = £52. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A minibus has 36 seats. How many seats are on 5 minibuses?",
+      "options": [
+        "160",
+        "170",
+        "175",
+        "180",
+        "190"
+      ],
+      "correct": 3,
+      "correctAnswer": "180",
+      "explanation": "36 × 5 = 180. You can work this out as (30 × 5) + (6 × 5) = 150 + 30 = 180. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Each shelf holds 11 books. How many books are on 14 shelves?",
+      "options": [
+        "144",
+        "148",
+        "152",
+        "154",
+        "158"
+      ],
+      "correct": 3,
+      "correctAnswer": "154",
+      "explanation": "11 × 14 = 154. You can work this out as (11 × 10) + (11 × 4) = 110 + 44 = 154. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A car journey to school takes 20 minutes each way. How many minutes are spent travelling over 18 one-way trips?",
+      "options": [
+        "340",
+        "350",
+        "360",
+        "370",
+        "380"
+      ],
+      "correct": 2,
+      "correctAnswer": "360",
+      "explanation": "20 × 18 = 360. You can work this out as 2 × 18 = 36, then add a zero to get 360. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A baker makes 43 scones each morning. How many scones does he make in 7 mornings?",
+      "options": [
+        "291",
+        "296",
+        "301",
+        "306",
+        "311"
+      ],
+      "correct": 2,
+      "correctAnswer": "301",
+      "explanation": "43 × 7 = 301. You can work this out as (40 × 7) + (3 × 7) = 280 + 21 = 301. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bag of apples costs £3. How much do 25 bags cost?",
+      "options": [
+        "£65",
+        "£70",
+        "£75",
+        "£80",
+        "£85"
+      ],
+      "correct": 2,
+      "correctAnswer": "£75",
+      "explanation": "3 × 25 = £75. You can work this out as 3 × 25 = 75. Or think: 25p × 3 = 75p, so £3 × 25 = £75. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A crayon box holds 16 crayons. How many crayons are in 11 boxes?",
+      "options": [
+        "166",
+        "170",
+        "176",
+        "180",
+        "186"
+      ],
+      "correct": 2,
+      "correctAnswer": "176",
+      "explanation": "16 × 11 = 176. A quick way: 16 × 11 = 16 × 10 + 16 = 160 + 16 = 176. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "There are 12 eggs in a box. How many eggs are in 8 boxes?",
+      "options": [
+        "84",
+        "90",
+        "96",
+        "102",
+        "108"
+      ],
+      "correct": 2,
+      "correctAnswer": "96",
+      "explanation": "12 × 8 = 96. This is a times table fact: 12 × 8 = 96. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A netball team scores 32 goals each match. How many goals do they score in 9 matches?",
+      "options": [
+        "278",
+        "283",
+        "288",
+        "293",
+        "298"
+      ],
+      "correct": 2,
+      "correctAnswer": "288",
+      "explanation": "32 × 9 = 288. You can work this out as (32 × 10) − 32 = 320 − 32 = 288. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A football sticker costs 6p. How much do 45 stickers cost?",
+      "options": [
+        "250p",
+        "260p",
+        "270p",
+        "280p",
+        "290p"
+      ],
+      "correct": 2,
+      "correctAnswer": "270p",
+      "explanation": "6 × 45 = 270p. You can work this out as (6 × 40) + (6 × 5) = 240 + 30 = 270p (or £2.70). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "There are 25 stickers on each sheet. How many stickers are on 16 sheets?",
+      "options": [
+        "375",
+        "390",
+        "400",
+        "410",
+        "425"
+      ],
+      "correct": 2,
+      "correctAnswer": "400",
+      "explanation": "25 × 16 = 400. You can work this out as (25 × 10) + (25 × 6) = 250 + 150 = 400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Each table seats 6 children. How many children can sit at 19 tables?",
+      "options": [
+        "104",
+        "108",
+        "112",
+        "114",
+        "118"
+      ],
+      "correct": 3,
+      "correctAnswer": "114",
+      "explanation": "6 × 19 = 114. You can work this out as (6 × 20) − 6 = 120 − 6 = 114. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A garden has 14 sunflowers in each row. How many sunflowers are in 13 rows?",
+      "options": [
+        "172",
+        "177",
+        "182",
+        "187",
+        "192"
+      ],
+      "correct": 2,
+      "correctAnswer": "182",
+      "explanation": "14 × 13 = 182. You can work this out as (14 × 10) + (14 × 3) = 140 + 42 = 182. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A pencil costs 8p. How much do 35 pencils cost?",
+      "options": [
+        "260p",
+        "270p",
+        "280p",
+        "290p",
+        "300p"
+      ],
+      "correct": 2,
+      "correctAnswer": "280p",
+      "explanation": "8 × 35 = 280p. You can work this out as (8 × 30) + (8 × 5) = 240 + 40 = 280p (or £2.80). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A box of chalk contains 50 sticks. How many sticks of chalk are in 9 boxes?",
+      "options": [
+        "400",
+        "420",
+        "440",
+        "450",
+        "470"
+      ],
+      "correct": 3,
+      "correctAnswer": "450",
+      "explanation": "50 × 9 = 450. You can work this out as 5 × 9 = 45, then add a zero to get 450. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Each row in a classroom has 7 desks. There are 12 rows. How many desks are there?",
+      "options": [
+        "74",
+        "78",
+        "82",
+        "84",
+        "88"
+      ],
+      "correct": 3,
+      "correctAnswer": "84",
+      "explanation": "7 × 12 = 84. This is a times table fact: 7 × 12 = 84. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Estimate the answer to 29 × 11 by rounding both numbers to the nearest 10.",
+      "options": [
+        "200",
+        "300",
+        "400",
+        "500",
+        "600"
+      ],
+      "correct": 1,
+      "correctAnswer": "300",
+      "explanation": "Round 29 to 30 and 11 to 10. 30 × 10 = 300. The exact answer is 319, so 300 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Estimate the answer to 48 × 21 by rounding both numbers to the nearest 10.",
+      "options": [
+        "800",
+        "900",
+        "1,000",
+        "1,100",
+        "1,200"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,000",
+      "explanation": "Round 48 to 50 and 21 to 20. 50 × 20 = 1,000. The exact answer is 1,008, so 1,000 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Estimate the answer to 32 × 19 by rounding both numbers to the nearest 10.",
+      "options": [
+        "400",
+        "500",
+        "600",
+        "700",
+        "800"
+      ],
+      "correct": 2,
+      "correctAnswer": "600",
+      "explanation": "Round 32 to 30 and 19 to 20. 30 × 20 = 600. The exact answer is 608, so 600 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the best estimate for 41 × 29?",
+      "options": [
+        "800",
+        "1,000",
+        "1,200",
+        "1,400",
+        "1,600"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,200",
+      "explanation": "Round 41 to 40 and 29 to 30. 40 × 30 = 1,200. The exact answer is 1,189, so 1,200 is the best estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Estimate the answer to 52 × 9 by rounding to the nearest 10.",
+      "options": [
+        "400",
+        "450",
+        "500",
+        "550",
+        "600"
+      ],
+      "correct": 2,
+      "correctAnswer": "500",
+      "explanation": "Round 52 to 50 and 9 to 10. 50 × 10 = 500. The exact answer is 468, so 500 is a reasonable estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop sells 48 mugs at £19 each. Which is the best estimate of the total?",
+      "options": [
+        "£500",
+        "£750",
+        "£1,000",
+        "£1,250",
+        "£1,500"
+      ],
+      "correct": 2,
+      "correctAnswer": "£1,000",
+      "explanation": "Round 48 to 50 and £19 to £20. 50 × 20 = £1,000. The exact answer is £912, so £1,000 is a reasonable estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Estimate the answer to 197 × 31 by rounding both numbers.",
+      "options": [
+        "4,000",
+        "5,000",
+        "6,000",
+        "7,000",
+        "8,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,000",
+      "explanation": "Round 197 to 200 and 31 to 30. 200 × 30 = 6,000. The exact answer is 6,107, so 6,000 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack estimates 62 × 38 by calculating 60 × 40. What answer does he get?",
+      "options": [
+        "2,000",
+        "2,200",
+        "2,400",
+        "2,600",
+        "2,800"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,400",
+      "explanation": "60 × 40 = 2,400. The exact answer is 2,356, so Jack's estimate of 2,400 is close. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Estimate the answer to 294 × 48 by rounding both numbers.",
+      "options": [
+        "10,000",
+        "12,000",
+        "15,000",
+        "18,000",
+        "20,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "15,000",
+      "explanation": "Round 294 to 300 and 48 to 50. 300 × 50 = 15,000. The exact answer is 14,112, so 15,000 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory makes 312 items per day for 29 days. Which is the best estimate of the total?",
+      "options": [
+        "6,000",
+        "7,500",
+        "9,000",
+        "10,000",
+        "12,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "9,000",
+      "explanation": "Round 312 to 300 and 29 to 30. 300 × 30 = 9,000. The exact answer is 9,048, so 9,000 is the best estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Estimate the answer to 78 × 43 by rounding to the nearest 10.",
+      "options": [
+        "2,400",
+        "2,800",
+        "3,200",
+        "3,600",
+        "4,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,200",
+      "explanation": "Round 78 to 80 and 43 to 40. 80 × 40 = 3,200. The exact answer is 3,354, so 3,200 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie says 49 × 51 is approximately 2,500. Is she correct?",
+      "options": [
+        "No, it is about 2,000",
+        "No, it is about 3,000",
+        "Yes, 2,500 is a good estimate",
+        "No, it is about 2,250",
+        "No, it is about 2,750"
+      ],
+      "correct": 2,
+      "correctAnswer": "Yes, 2,500 is a good estimate",
+      "explanation": "Round 49 to 50 and 51 to 50. 50 × 50 = 2,500. The exact answer is 2,499, so 2,500 is an excellent estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Estimate the answer to 189 × 52 by rounding both numbers.",
+      "options": [
+        "8,000",
+        "9,000",
+        "10,000",
+        "11,000",
+        "12,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "10,000",
+      "explanation": "Round 189 to 200 and 52 to 50. 200 × 50 = 10,000. The exact answer is 9,828, so 10,000 is a good estimate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A school orders 387 textbooks at £28 each. Without calculating exactly, which answer is closest?",
+      "options": [
+        "£8,000",
+        "£9,000",
+        "£10,000",
+        "£11,000",
+        "£12,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "£11,000",
+      "explanation": "Round 387 to 400 and £28 to £30. 400 × 30 = £12,000. But 387 < 400 and 28 < 30, so the real answer is less. The exact answer is £10,836, so £11,000 is closest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The answer to 493 × 68 is between which two values?",
+      "options": [
+        "25,000 and 30,000",
+        "30,000 and 35,000",
+        "35,000 and 40,000",
+        "40,000 and 45,000",
+        "45,000 and 50,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "30,000 and 35,000",
+      "explanation": "Round 493 to 500 and 68 to 70. 500 × 70 = 35,000. The exact answer is 33,524, so it is between 30,000 and 35,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mia rounds both numbers in 347 × 53. She gets 350 × 50 = 17,500. Is her estimate higher or lower than the exact answer?",
+      "options": [
+        "Higher by about 500",
+        "Higher by about 100",
+        "Lower by about 100",
+        "Lower by about 900",
+        "Exactly right"
+      ],
+      "correct": 3,
+      "correctAnswer": "Lower by about 900",
+      "explanation": "Exact: 347 × 53 = 18,391. Mia got 17,500, which is lower by 891. The closest answer is lower by about 900. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A hall has 487 seats. Tickets cost £37 each. The head teacher says the maximum takings are about £18,000. Is this estimate reasonable?",
+      "options": [
+        "No, it should be about £12,000",
+        "No, it should be about £15,000",
+        "Yes, £18,000 is a good estimate",
+        "No, it should be about £20,000",
+        "No, it should be about £22,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "Yes, £18,000 is a good estimate",
+      "explanation": "Round 487 to 500 and £37 to £40. 500 × 40 = £20,000. The exact answer is 487 × 37 = £18,019, so £18,000 is very close and reasonable. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Without calculating, which of these products gives the largest answer?",
+      "options": [
+        "199 × 26",
+        "152 × 34",
+        "98 × 52",
+        "247 × 19",
+        "301 × 16"
+      ],
+      "correct": 0,
+      "correctAnswer": "199 × 26",
+      "explanation": "Estimate each: 200 × 25 = 5,000; 150 × 35 = 5,250; 100 × 50 = 5,000; 250 × 20 = 5,000; 300 × 15 = 4,500. The exact values are 5,174; 5,168; 5,096; 4,693; 4,816. 199 × 26 = 5,174 is the largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 30 × 40?",
+      "options": [
+        "120",
+        "1,200",
+        "12,000",
+        "700",
+        "70"
+      ],
+      "correct": 1,
+      "correctAnswer": "1,200",
+      "explanation": "30 × 40: Think 3 × 4 = 12, then add two zeros = 1,200. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 50 × 20?",
+      "options": [
+        "100",
+        "700",
+        "1,000",
+        "10,000",
+        "500"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,000",
+      "explanation": "50 × 20: Think 5 × 2 = 10, then add two zeros = 1,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 60 × 30?",
+      "options": [
+        "180",
+        "1,800",
+        "18,000",
+        "900",
+        "1,080"
+      ],
+      "correct": 1,
+      "correctAnswer": "1,800",
+      "explanation": "60 × 30: Think 6 × 3 = 18, then add two zeros = 1,800. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bus makes 20 trips a day. Each trip covers 15 miles. How many miles does the bus cover in a day?",
+      "options": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400"
+      ],
+      "correct": 2,
+      "correctAnswer": "300",
+      "explanation": "20 × 15 = 300. Think 2 × 15 = 30, then add one zero = 300. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 70 × 50?",
+      "options": [
+        "350",
+        "3,500",
+        "35,000",
+        "1,200",
+        "12,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "3,500",
+      "explanation": "70 × 50: Think 7 × 5 = 35, then add two zeros = 3,500. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 300 × 40?",
+      "options": [
+        "1,200",
+        "4,200",
+        "12,000",
+        "120,000",
+        "7,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "12,000",
+      "explanation": "300 × 40: Think 3 × 4 = 12, then add three zeros = 12,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school needs 30 boxes of pencils. Each box contains 250 pencils. How many pencils is that?",
+      "options": [
+        "750",
+        "2,500",
+        "5,000",
+        "7,500",
+        "25,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "7,500",
+      "explanation": "30 × 250 = 7,500. Think 3 × 250 = 750, then add one zero = 7,500. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 40 × 600?",
+      "options": [
+        "2,400",
+        "6,400",
+        "24,000",
+        "64,000",
+        "4,600"
+      ],
+      "correct": 2,
+      "correctAnswer": "24,000",
+      "explanation": "40 × 600: Think 4 × 6 = 24, then add three zeros = 24,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer plants 50 rows of carrots with 120 carrots in each row. How many carrots is that?",
+      "options": [
+        "1,700",
+        "3,000",
+        "6,000",
+        "12,000",
+        "60,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,000",
+      "explanation": "50 × 120 = 6,000. Think 5 × 12 = 60, then add two zeros = 6,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 80 × 700?",
+      "options": [
+        "5,600",
+        "7,800",
+        "56,000",
+        "78,000",
+        "15,600"
+      ],
+      "correct": 2,
+      "correctAnswer": "56,000",
+      "explanation": "80 × 700: Think 8 × 7 = 56, then add three zeros = 56,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 200 × 50?",
+      "options": [
+        "1,000",
+        "2,500",
+        "10,000",
+        "25,000",
+        "100,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "10,000",
+      "explanation": "200 × 50: Think 2 × 5 = 10, then add three zeros = 10,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity event has 60 tables. Each table seats 40 people. How many people can be seated?",
+      "options": [
+        "100",
+        "240",
+        "1,000",
+        "2,400",
+        "24,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "2,400",
+      "explanation": "60 × 40 = 2,400. Think 6 × 4 = 24, then add two zeros = 2,400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is 90 × 300?",
+      "options": [
+        "2,700",
+        "9,300",
+        "27,000",
+        "93,000",
+        "270"
+      ],
+      "correct": 2,
+      "correctAnswer": "27,000",
+      "explanation": "90 × 300: Think 9 × 3 = 27, then add three zeros = 27,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 400 × 500?",
+      "options": [
+        "2,000",
+        "20,000",
+        "200,000",
+        "900",
+        "9,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "200,000",
+      "explanation": "400 × 500: Think 4 × 5 = 20, then add four zeros = 200,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A warehouse stores 60 pallets. Each pallet holds 350 boxes. How many boxes in total?",
+      "options": [
+        "2,100",
+        "4,100",
+        "21,000",
+        "41,000",
+        "210,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "21,000",
+      "explanation": "60 × 350 = 21,000. Think 6 × 35 = 210, then add two zeros = 21,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 800 × 90?",
+      "options": [
+        "7,200",
+        "8,900",
+        "72,000",
+        "89,000",
+        "720"
+      ],
+      "correct": 2,
+      "correctAnswer": "72,000",
+      "explanation": "800 × 90: Think 8 × 9 = 72, then add three zeros = 72,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 178,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Work out 23 × 6 by splitting 23 into 20 + 3. What is (20 × 6) + (3 × 6)?",
+      "options": [
+        "118",
+        "128",
+        "138",
+        "148",
+        "158"
+      ],
+      "correct": 2,
+      "correctAnswer": "138",
+      "explanation": "20 × 6 = 120 and 3 × 6 = 18. 120 + 18 = 138. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 179,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "To work out 34 × 5, Olivia splits 34 into 30 + 4. What is her answer?",
+      "options": [
+        "150",
+        "160",
+        "170",
+        "180",
+        "190"
+      ],
+      "correct": 2,
+      "correctAnswer": "170",
+      "explanation": "30 × 5 = 150 and 4 × 5 = 20. 150 + 20 = 170. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 180,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is 42 × 3? Use partitioning: (40 × 3) + (2 × 3).",
+      "options": [
+        "116",
+        "121",
+        "126",
+        "131",
+        "136"
+      ],
+      "correct": 2,
+      "correctAnswer": "126",
+      "explanation": "40 × 3 = 120 and 2 × 3 = 6. 120 + 6 = 126. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 181,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Work out 56 × 4 by partitioning 56 into 50 + 6.",
+      "options": [
+        "204",
+        "214",
+        "224",
+        "234",
+        "244"
+      ],
+      "correct": 2,
+      "correctAnswer": "224",
+      "explanation": "50 × 4 = 200 and 6 × 4 = 24. 200 + 24 = 224. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 182,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Work out 46 × 23 by partitioning 23 into 20 + 3. What is (46 × 20) + (46 × 3)?",
+      "options": [
+        "1,018",
+        "1,038",
+        "1,058",
+        "1,078",
+        "1,098"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,058",
+      "explanation": "46 × 20 = 920 and 46 × 3 = 138. 920 + 138 = 1,058. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 183,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben works out 67 × 14 by splitting 14 into 10 + 4. What answer does he get?",
+      "options": [
+        "918",
+        "928",
+        "938",
+        "948",
+        "958"
+      ],
+      "correct": 2,
+      "correctAnswer": "938",
+      "explanation": "67 × 10 = 670 and 67 × 4 = 268. 670 + 268 = 938. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 184,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use partitioning to work out 83 × 17. Split 17 into 10 + 7.",
+      "options": [
+        "1,381",
+        "1,391",
+        "1,401",
+        "1,411",
+        "1,421"
+      ],
+      "correct": 3,
+      "correctAnswer": "1,411",
+      "explanation": "83 × 10 = 830 and 83 × 7 = 581. 830 + 581 = 1,411. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 185,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Work out 125 × 16 by partitioning 16 into 10 + 6. What is (125 × 10) + (125 × 6)?",
+      "options": [
+        "1,900",
+        "1,950",
+        "2,000",
+        "2,050",
+        "2,100"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,000",
+      "explanation": "125 × 10 = 1,250 and 125 × 6 = 750. 1,250 + 750 = 2,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 186,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Partition 54 × 32 into (54 × 30) + (54 × 2). What is the answer?",
+      "options": [
+        "1,688",
+        "1,708",
+        "1,728",
+        "1,748",
+        "1,768"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,728",
+      "explanation": "54 × 30 = 1,620 and 54 × 2 = 108. 1,620 + 108 = 1,728. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 187,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Work out 73 × 25 by partitioning 25 into 20 + 5.",
+      "options": [
+        "1,775",
+        "1,800",
+        "1,825",
+        "1,850",
+        "1,875"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,825",
+      "explanation": "73 × 20 = 1,460 and 73 × 5 = 365. 1,460 + 365 = 1,825. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 188,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use partitioning to calculate 215 × 14. Split 14 into 10 + 4.",
+      "options": [
+        "2,960",
+        "2,990",
+        "3,010",
+        "3,040",
+        "3,070"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,010",
+      "explanation": "215 × 10 = 2,150 and 215 × 4 = 860. 2,150 + 860 = 3,010. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 189,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Use partitioning to work out 148 × 23. Split 23 into 20 + 3.",
+      "options": [
+        "3,354",
+        "3,384",
+        "3,404",
+        "3,424",
+        "3,454"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,404",
+      "explanation": "148 × 20 = 2,960 and 148 × 3 = 444. 2,960 + 444 = 3,404. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 190,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Amy partitions 256 × 34 into (256 × 30) + (256 × 4). What is the final answer?",
+      "options": [
+        "8,654",
+        "8,684",
+        "8,704",
+        "8,734",
+        "8,764"
+      ],
+      "correct": 2,
+      "correctAnswer": "8,704",
+      "explanation": "256 × 30 = 7,680 and 256 × 4 = 1,024. 7,680 + 1,024 = 8,704. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 191,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Work out 365 × 28 by partitioning: (365 × 20) + (365 × 8).",
+      "options": [
+        "10,170",
+        "10,200",
+        "10,220",
+        "10,250",
+        "10,280"
+      ],
+      "correct": 2,
+      "correctAnswer": "10,220",
+      "explanation": "365 × 20 = 7,300 and 365 × 8 = 2,920. 7,300 + 2,920 = 10,220. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 192,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Partition and calculate: 437 × 15 = (437 × 10) + (437 × 5).",
+      "options": [
+        "6,505",
+        "6,535",
+        "6,555",
+        "6,575",
+        "6,605"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,555",
+      "explanation": "437 × 10 = 4,370 and 437 × 5 = 2,185. 4,370 + 2,185 = 6,555. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 193,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Use a grid to work out 24 × 13. Split into (20 + 4) × (10 + 3). What is the total?",
+      "options": [
+        "292",
+        "302",
+        "312",
+        "322",
+        "332"
+      ],
+      "correct": 2,
+      "correctAnswer": "312",
+      "explanation": "Grid: 20×10=200, 20×3=60, 4×10=40, 4×3=12. Total: 200+60+40+12 = 312. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 194,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Use a grid to work out 35 × 12. Split into (30 + 5) × (10 + 2). What is the total?",
+      "options": [
+        "400",
+        "410",
+        "420",
+        "430",
+        "440"
+      ],
+      "correct": 2,
+      "correctAnswer": "420",
+      "explanation": "Grid: 30×10=300, 30×2=60, 5×10=50, 5×2=10. Total: 300+60+50+10 = 420. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 195,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a grid for 46 × 7, you get 40 × 7 and 6 × 7. What is the total?",
+      "options": [
+        "302",
+        "312",
+        "322",
+        "332",
+        "342"
+      ],
+      "correct": 2,
+      "correctAnswer": "322",
+      "explanation": "Grid: 40×7=280, 6×7=42. Total: 280+42 = 322. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 196,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Use a grid to work out 53 × 8. Split into (50 + 3) × 8.",
+      "options": [
+        "404",
+        "414",
+        "424",
+        "434",
+        "444"
+      ],
+      "correct": 2,
+      "correctAnswer": "424",
+      "explanation": "Grid: 50×8=400, 3×8=24. Total: 400+24 = 424. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 197,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 37 × 24. Split into (30 + 7) × (20 + 4).",
+      "options": [
+        "868",
+        "878",
+        "888",
+        "898",
+        "908"
+      ],
+      "correct": 2,
+      "correctAnswer": "888",
+      "explanation": "Grid: 30×20=600, 30×4=120, 7×20=140, 7×4=28. Total: 600+120+140+28 = 888. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 198,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 56 × 34.",
+      "options": [
+        "1,884",
+        "1,894",
+        "1,904",
+        "1,914",
+        "1,924"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,904",
+      "explanation": "Grid: 50×30=1,500, 50×4=200, 6×30=180, 6×4=24. Total: 1,500+200+180+24 = 1,904. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 199,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 68 × 27.",
+      "options": [
+        "1,816",
+        "1,826",
+        "1,836",
+        "1,846",
+        "1,856"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,836",
+      "explanation": "Grid: 60×20=1,200, 60×7=420, 8×20=160, 8×7=56. Total: 1,200+420+160+56 = 1,836. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 200,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a grid for 45 × 36, what are the four products you need to add?",
+      "options": [
+        "1,200 + 240 + 150 + 30",
+        "1,200 + 180 + 200 + 30",
+        "1,350 + 240 + 150 + 30",
+        "1,200 + 240 + 200 + 30",
+        "1,500 + 180 + 150 + 30"
+      ],
+      "correct": 0,
+      "correctAnswer": "1,200 + 240 + 150 + 30",
+      "explanation": "Grid: (40+5)×(30+6): 40×30=1,200, 40×6=240, 5×30=150, 5×6=30. Total: 1,200+240+150+30 = 1,620. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 201,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 82 × 45.",
+      "options": [
+        "3,670",
+        "3,680",
+        "3,690",
+        "3,700",
+        "3,710"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,690",
+      "explanation": "Grid: 80×40=3,200, 80×5=400, 2×40=80, 2×5=10. Total: 3,200+400+80+10 = 3,690. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 202,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 73 × 52.",
+      "options": [
+        "3,776",
+        "3,786",
+        "3,796",
+        "3,806",
+        "3,816"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,796",
+      "explanation": "Grid: 70×50=3,500, 70×2=140, 3×50=150, 3×2=6. Total: 3,500+140+150+6 = 3,796. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 203,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 64 × 38.",
+      "options": [
+        "2,412",
+        "2,422",
+        "2,432",
+        "2,442",
+        "2,452"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,432",
+      "explanation": "Grid: 60×30=1,800, 60×8=480, 4×30=120, 4×8=32. Total: 1,800+480+120+32 = 2,432. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 204,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 136 × 24.",
+      "options": [
+        "3,224",
+        "3,244",
+        "3,264",
+        "3,284",
+        "3,304"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,264",
+      "explanation": "Grid: 100×20=2,000, 100×4=400, 30×20=600, 30×4=120, 6×20=120, 6×4=24. Total: 2,000+400+600+120+120+24 = 3,264. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 205,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 214 × 35.",
+      "options": [
+        "7,470",
+        "7,480",
+        "7,490",
+        "7,500",
+        "7,510"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,490",
+      "explanation": "Grid: 200×30=6,000, 200×5=1,000, 10×30=300, 10×5=50, 4×30=120, 4×5=20. Total: 6,000+1,000+300+50+120+20 = 7,490. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 206,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 163 × 47.",
+      "options": [
+        "7,641",
+        "7,651",
+        "7,661",
+        "7,671",
+        "7,681"
+      ],
+      "correct": 2,
+      "correctAnswer": "7,661",
+      "explanation": "Grid: 100×40=4,000, 100×7=700, 60×40=2,400, 60×7=420, 3×40=120, 3×7=21. Total: 4,000+700+2,400+420+120+21 = 7,661. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 207,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Use the grid method to work out 248 × 53.",
+      "options": [
+        "13,124",
+        "13,134",
+        "13,144",
+        "13,154",
+        "13,164"
+      ],
+      "correct": 2,
+      "correctAnswer": "13,144",
+      "explanation": "Grid: 200×50=10,000, 200×3=600, 40×50=2,000, 40×3=120, 8×50=400, 8×3=24. Total: 10,000+600+2,000+120+400+24 = 13,144. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 208,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the column method for 47 × 3, what is the answer to the ones row (47 × 3)?",
+      "options": [
+        "121",
+        "131",
+        "141",
+        "151",
+        "161"
+      ],
+      "correct": 2,
+      "correctAnswer": "141",
+      "explanation": "47 × 3: Start from the right. 3 × 7 = 21, write 1 carry 2. 3 × 4 = 12, plus 2 = 14. The ones row is 141. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 209,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the column method for 86 × 4, what is the ones row (86 × 4)?",
+      "options": [
+        "324",
+        "334",
+        "344",
+        "354",
+        "364"
+      ],
+      "correct": 2,
+      "correctAnswer": "344",
+      "explanation": "86 × 4: Start from the right. 4 × 6 = 24, write 4 carry 2. 4 × 8 = 32, plus 2 = 34. The ones row is 344. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 210,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 53 × 27, what is the first partial product (53 × 7)?",
+      "options": [
+        "351",
+        "361",
+        "371",
+        "381",
+        "391"
+      ],
+      "correct": 2,
+      "correctAnswer": "371",
+      "explanation": "53 × 7: Start from the right. 7 × 3 = 21, write 1 carry 2. 7 × 5 = 35, plus 2 = 37. The first partial product is 371. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 211,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 129 × 6, what is the ones row (129 × 6)?",
+      "options": [
+        "754",
+        "764",
+        "774",
+        "784",
+        "794"
+      ],
+      "correct": 2,
+      "correctAnswer": "774",
+      "explanation": "129 × 6: 6 × 9 = 54, write 4 carry 5. 6 × 2 = 12, plus 5 = 17, write 7 carry 1. 6 × 1 = 6, plus 1 = 7. The ones row is 774. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 212,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 245 × 8, what is the ones row (245 × 8)?",
+      "options": [
+        "1,940",
+        "1,950",
+        "1,960",
+        "1,970",
+        "1,980"
+      ],
+      "correct": 2,
+      "correctAnswer": "1,960",
+      "explanation": "245 × 8: 8 × 5 = 40, write 0 carry 4. 8 × 4 = 32, plus 4 = 36, write 6 carry 3. 8 × 2 = 16, plus 3 = 19. The ones row is 1,960. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 213,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the column method for 47 × 23, the tens row is 47 × 20. What is it?",
+      "options": [
+        "920",
+        "930",
+        "940",
+        "950",
+        "960"
+      ],
+      "correct": 2,
+      "correctAnswer": "940",
+      "explanation": "47 × 20 = 940. Think of it as 47 × 2 = 94, then write a 0 to get 940. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 214,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the column method for 86 × 34, the tens row is 86 × 30. What is it?",
+      "options": [
+        "2,560",
+        "2,570",
+        "2,580",
+        "2,590",
+        "2,600"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,580",
+      "explanation": "86 × 30 = 2,580. Think of it as 86 × 3 = 258, then write a 0 to get 2,580. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 215,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 65 × 43, the tens row is 65 × 40. What is it?",
+      "options": [
+        "2,580",
+        "2,590",
+        "2,600",
+        "2,610",
+        "2,620"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,600",
+      "explanation": "65 × 40 = 2,600. Think of it as 65 × 4 = 260, then write a 0 to get 2,600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 216,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 134 × 52, the tens row is 134 × 50. What is it?",
+      "options": [
+        "6,680",
+        "6,690",
+        "6,700",
+        "6,710",
+        "6,720"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,700",
+      "explanation": "134 × 50 = 6,700. Think of it as 134 × 5 = 670, then write a 0 to get 6,700. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 217,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In the column method for 258 × 63, the tens row is 258 × 60. What is it?",
+      "options": [
+        "15,460",
+        "15,470",
+        "15,480",
+        "15,490",
+        "15,500"
+      ],
+      "correct": 2,
+      "correctAnswer": "15,480",
+      "explanation": "258 × 60 = 15,480. Think of it as 258 × 6 = 1,548, then write a 0 to get 15,480. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 218,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the column method for 36 × 24, the ones row is 144 and the tens row is 720. What is the final answer?",
+      "options": [
+        "844",
+        "854",
+        "864",
+        "874",
+        "884"
+      ],
+      "correct": 2,
+      "correctAnswer": "864",
+      "explanation": "Add the two rows: 144 + 720 = 864. So 36 × 24 = 864. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 219,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 58 × 35, the ones row is 290 and the tens row is 1,740. What is the final answer?",
+      "options": [
+        "2,010",
+        "2,020",
+        "2,030",
+        "2,040",
+        "2,050"
+      ],
+      "correct": 2,
+      "correctAnswer": "2,030",
+      "explanation": "Add the two rows: 290 + 1,740 = 2,030. So 58 × 35 = 2,030. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 220,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 74 × 46, the ones row is 444 and the tens row is 2,960. What is the final answer?",
+      "options": [
+        "3,384",
+        "3,394",
+        "3,404",
+        "3,414",
+        "3,424"
+      ],
+      "correct": 2,
+      "correctAnswer": "3,404",
+      "explanation": "Add the two rows: 444 + 2,960 = 3,404. So 74 × 46 = 3,404. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 221,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the column method for 126 × 34, the ones row is 504 and the tens row is 3,780. What is the final answer?",
+      "options": [
+        "4,264",
+        "4,274",
+        "4,284",
+        "4,294",
+        "4,304"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,284",
+      "explanation": "Add the two rows: 504 + 3,780 = 4,284. So 126 × 34 = 4,284. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 222,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In the column method for 215 × 27, the ones row is 1,505 and the tens row is 4,300. What is the final answer?",
+      "options": [
+        "5,785",
+        "5,795",
+        "5,805",
+        "5,815",
+        "5,825"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,805",
+      "explanation": "Add the two rows: 1,505 + 4,300 = 5,805. So 215 × 27 = 5,805. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 223,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A Year 5 class has 47 pupils. Each pupil brings 8 cakes for the bake sale. How many cakes are there altogether?",
+      "options": [
+        "356",
+        "366",
+        "376",
+        "386",
+        "396"
+      ],
+      "correct": 2,
+      "correctAnswer": "376",
+      "explanation": "47 × 8 = 376. Work it out: (40 × 8) + (7 × 8) = 320 + 56 = 376 cakes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 224,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bookshop receives 156 books in each delivery. How many books arrive in 6 deliveries?",
+      "options": [
+        "916",
+        "926",
+        "936",
+        "946",
+        "956"
+      ],
+      "correct": 2,
+      "correctAnswer": "936",
+      "explanation": "156 × 6 = 936. Work it out: (100 × 6) + (50 × 6) + (6 × 6) = 600 + 300 + 36 = 936 books. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 225,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 347 × 56?",
+      "options": [
+        "19,412",
+        "19,422",
+        "19,432",
+        "19,442",
+        "19,452"
+      ],
+      "correct": 2,
+      "correctAnswer": "19,432",
+      "explanation": "347 × 56: (347 × 50 = 17,350) + (347 × 6 = 2,082) = 17,350 + 2,082 = 19,432. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 226,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 589 × 43?",
+      "options": [
+        "25,307",
+        "25,317",
+        "25,327",
+        "25,337",
+        "25,347"
+      ],
+      "correct": 2,
+      "correctAnswer": "25,327",
+      "explanation": "589 × 43: (589 × 40 = 23,560) + (589 × 3 = 1,767) = 23,560 + 1,767 = 25,327. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 227,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 726 × 38?",
+      "options": [
+        "27,568",
+        "27,578",
+        "27,588",
+        "27,598",
+        "27,608"
+      ],
+      "correct": 2,
+      "correctAnswer": "27,588",
+      "explanation": "726 × 38: (726 × 40 = 29,040) - (726 × 2 = 1,452) = 29,040 - 1,452 = 27,588. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 228,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is 463 × 67?",
+      "options": [
+        "31,001",
+        "31,011",
+        "31,021",
+        "31,031",
+        "31,041"
+      ],
+      "correct": 2,
+      "correctAnswer": "31,021",
+      "explanation": "463 × 67: (463 × 70 = 32,410) - (463 × 3 = 1,389) = 32,410 - 1,389 = 31,021. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

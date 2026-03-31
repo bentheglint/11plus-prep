@@ -1,0 +1,172 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "letterMove",
+  "subject": "verbalreasoning",
+  "qualityScore": 4,
+  "summary": {
+    "questionsReviewed": 128,
+    "lessonsReviewed": 11,
+    "issuesFound": 16,
+    "bySeverity": {
+      "critical": 2,
+      "high": 5,
+      "medium": 6,
+      "low": 3
+    },
+    "difficultyAssessment": "Distribution is heavily skewed toward D2: D1:24 (19%), D2:84 (66%), D3:20 (16%). GL target is ~30/40/30. D2 is massively over-represented and D3 is significantly under-represented. Several questions are also mis-rated — e.g. Q22 PLIGHT+OUR is rated D3 but is a simple first-letter removal (should be D1/D2), while Q37-39 (right-to-left with less common resulting words like TERN/SAGE) are rated D3 but some are D2-level.",
+    "coverageAssessment": "The topic covers left-to-right and right-to-left moves, first/middle/last letter positions. However, there is extreme repetition: the same base word pairs (SCOLD, PRICE, STALE, FLAME, STERN) are reused 5-8 times each with different small receiving words. This creates a bank of 128 questions that really only tests ~30 unique word combinations. Coverage of genuinely difficult D3 scenarios (6-7 letter words, non-obvious positions, less common vocabulary) is thin.",
+    "teachingEfficacyAssessment": "Lessons are well-structured with clear progression: first letter -> last letter -> middle letter -> both directions -> multi-word combinations. The 'remove and check' strategy is sound and matches GL exam technique. However, 6 of 9 sub-concepts are orphaned (no questions mapped), and the mapping confidence is artificially 100% high — Q15 (SHORE INK, answer R) is mapped to 'Moving the First Letter' despite R being the middle letter of SHORE. The teaching of right-to-left direction is adequate but could benefit from more explicit worked examples.",
+    "topPriorities": [
+      "Remove or replace 30+ exact and near-duplicate questions to create a genuinely varied question bank",
+      "Fix critical correctness issue: Q105 CARD+CAR creates a circular swap (CARD->CAR, CAR->CARD) which is nonsensical",
+      "Rebalance difficulty distribution — need ~14 more D1 and ~22 more D3 questions, with ~36 fewer D2",
+      "Fix mapping of Q15 and similar questions where the sub-concept assignment is incorrect"
+    ]
+  },
+  "issues": [
+    {
+      "id": "VR-LM-001",
+      "severity": "critical",
+      "type": "duplicate-questions",
+      "title": "Massive question duplication — 30+ questions are exact or near-exact duplicates",
+      "description": "The question bank contains extensive duplication. Exact duplicates include: Q1/Q7 (WHEAT+EAR), Q3/Q12 (BRAID+OWL), Q4/Q9 (PLATE+AN), Q5/Q10 (SPARK+OAK), Q6/Q11 (BLOOM+OAT), Q2/Q13 (SPINE+OAR). Near-duplicates with the same base word pair include: Q31/Q45/Q79 (OAR+SCOLD), Q32/Q46 (AGE+SCOLD), Q33/Q47 (OAK+SCOLD), Q34/Q52/Q81 (AGE+PRICE), Q35/Q53 (LAY+PRICE), Q36/Q54 (ACE+PRICE), Q37/Q59/Q82 (OAR+STALE), Q38/Q60 (AGE+STALE), Q39/Q61 (OAK+STALE), Q40/Q66/Q84 (OWL+FLAME), Q41/Q67/Q85 (ATE+FLAME), Q42/Q68 (ACE+FLAME), Q43/Q73/Q86 (OAR+STERN), Q44/Q74 (AGE+STERN). At least 40 questions should be replaced with unique word pairs.",
+      "affectedItems": ["Q1/Q7", "Q3/Q12", "Q4/Q9", "Q5/Q10", "Q6/Q11", "Q2/Q13", "Q31/Q45/Q79", "Q32/Q46", "Q33/Q47", "Q34/Q52/Q81", "Q35/Q53", "Q36/Q54", "Q37/Q59/Q82", "Q40/Q66/Q84", "Q41/Q67/Q85", "Q43/Q73/Q86"],
+      "recommendation": "Replace duplicates with genuinely unique word pairs. Each question should use a distinct combination of source and receiving words. Good replacements would include: BRIDGE+AIR (B->RIDGE+BAIR? no... try CREEK+OAR->REEK+COAR? no), follow GL patterns with verified word pairs."
+    },
+    {
+      "id": "VR-LM-002",
+      "severity": "critical",
+      "type": "wrong-answer",
+      "title": "Q105 CARD+CAR creates a nonsensical circular swap",
+      "description": "Q105 asks to move a letter from CARD to CAR. The answer given is D: CARD becomes CAR, and CAR becomes CARD. This is logically absurd — it just swaps the words back and forth. The question doesn't test any meaningful skill. Similarly, Q116 (CART+CAT, move R: CART->CAT, CAT->CART) and Q117 (CAST+CAT, move S: CAST->CAT, CAT->CAST) and Q122 (HALT+HAT, move L: HALT->HAT, HAT->HALT) are all circular swaps.",
+      "affectedItems": ["Q105", "Q116", "Q117", "Q122"],
+      "recommendation": "Replace these questions entirely. A letter move should create two genuinely NEW words, not swap the original pair back."
+    },
+    {
+      "id": "VR-LM-003",
+      "severity": "high",
+      "type": "difficulty-distribution",
+      "title": "Extreme difficulty imbalance: 66% D2 vs GL target of 40%",
+      "description": "Current distribution is D1:24 (19%), D2:84 (66%), D3:20 (16%). GL target is approximately D1:30%, D2:40%, D3:30%. D2 is over-represented by 26 percentage points. This means children get insufficient practice at both the easy confidence-building level (D1) and the challenging exam-discriminating level (D3). The D2 block from Q31-Q128 is particularly repetitive with minor variations on the same word combinations.",
+      "affectedItems": ["distribution"],
+      "recommendation": "Target approximately D1:38, D2:52, D3:38 for 128 questions. Add more D1 questions with short common words and obvious first-letter removals. Add more D3 questions with 6-7 letter words, non-obvious letter positions, less common vocabulary, and right-to-left direction."
+    },
+    {
+      "id": "VR-LM-004",
+      "severity": "high",
+      "type": "difficulty-misrating",
+      "title": "Q22 PLIGHT+OUR rated D3 but is a simple first-letter removal",
+      "description": "PLIGHT -> LIGHT is a straightforward first-letter removal. OUR -> POUR is a common word. Both resulting words are high-frequency. This should be D1 or at most D2. The only slightly harder element is PLIGHT being 6 letters, but the P removal is the most obvious move. Per Oracle specs, D3 requires '6-7 letter words, non-obvious letter position, less common vocabulary'.",
+      "affectedItems": ["Q22"],
+      "recommendation": "Re-rate to D1 (or D2 at most). Reserve D3 for questions where the letter position is genuinely non-obvious or the resulting words are uncommon."
+    },
+    {
+      "id": "VR-LM-005",
+      "severity": "high",
+      "type": "mapping-error",
+      "title": "Q15 mapped to 'Moving the First Letter' but answer is middle letter R",
+      "description": "Q15 (SHORE+INK, answer R) is mapped to sub-concept 'remove-first-letter' with high confidence. However, R is not the first letter of SHORE — S is. The R is the 4th letter (middle). This should be mapped to 'remove-middle-letter'. The mapping algorithm appears to have blindly assigned all questions with a remove-from-word-1 pattern to 'first letter' regardless of actual position.",
+      "affectedItems": ["Q15"],
+      "recommendation": "Re-map to 'remove-middle-letter' sub-concept. Audit all other mappings to check position accuracy."
+    },
+    {
+      "id": "VR-LM-006",
+      "severity": "high",
+      "type": "question-variety",
+      "title": "Over-reliance on tiny receiving words (OAR, OAK, AGE, ATE, EAR, OWL)",
+      "description": "A huge proportion of questions use 2-3 letter receiving words like OAR (appears 15+ times), OAK (5+ times), AGE (8+ times), EAR (6+ times), ATE (4+ times), OWL (3+ times). Real GL papers use more varied and longer receiving words. This creates a pattern where children learn 'if the small word starts with a vowel, add a consonant to the front' rather than genuinely developing the remove-and-check skill.",
+      "affectedItems": ["Q1-Q128 broadly"],
+      "recommendation": "Diversify receiving words. Use 4-5 letter words as receivers too. Include examples where the moved letter goes to the middle or end of the receiving word, not just the start."
+    },
+    {
+      "id": "VR-LM-007",
+      "severity": "high",
+      "type": "question-variety",
+      "title": "Repetitive base word reuse — SCOLD appears in 9 questions, FLAME in 8, STALE in 8",
+      "description": "Rather than creating unique word pairs, the bank systematically pairs 4-5 base words (SCOLD, PRICE, FLAME, STALE, STERN, STORE) with many different small receiving words. This produces Q31-51 (SCOLD variants), Q34-58 (PRICE variants), Q59-72 (FLAME/STALE variants). A child seeing SCOLD for the 9th time learns nothing new about letter-move strategy.",
+      "affectedItems": ["Q31-Q51", "Q34-Q58", "Q59-Q72"],
+      "recommendation": "Each question should use a unique source word. There are thousands of valid English words for letter-move puzzles — no need to reuse."
+    },
+    {
+      "id": "VR-LM-008",
+      "severity": "medium",
+      "type": "difficulty-misrating",
+      "title": "Several D3 questions are actually D2 difficulty",
+      "description": "Q37-Q39 and Q43-Q44 are rated D3 but involve straightforward first-letter removals from common 5-letter words (STALE->TALE, STERN->TERN). While TERN is slightly less common, the operation itself is simple. Per Oracle specs, D3 should involve 'non-obvious letter position' or 'right-to-left direction' or 'multiple letters appear to work'. Q37 (OAR+STALE) has the same answer and mechanism as D2 question Q59.",
+      "affectedItems": ["Q37", "Q38", "Q39", "Q43", "Q44"],
+      "recommendation": "Re-rate to D2 or replace with genuinely D3 questions that require middle-letter removal or less common vocabulary."
+    },
+    {
+      "id": "VR-LM-009",
+      "severity": "medium",
+      "type": "explanation-quality",
+      "title": "Tips are repetitive and not difficulty-appropriate",
+      "description": "The same 6-7 tips rotate mechanically across all questions regardless of difficulty: 'Start with consonants at the start and end', 'Try both directions', 'Use the remove and check method', 'Say the new words out loud', 'Check BOTH resulting words', 'Work systematically'. D3 questions should have tips specific to their difficulty (e.g. 'For longer words, try removing letters from the middle' or 'When the first and last letters don't work, the answer is often a less obvious middle letter').",
+      "affectedItems": ["All questions"],
+      "recommendation": "Tailor tips to difficulty level. D1 tips should be basic strategy. D2 tips should address common mistakes. D3 tips should address the specific challenge of that question."
+    },
+    {
+      "id": "VR-LM-010",
+      "severity": "medium",
+      "type": "format-issue",
+      "title": "Question format inconsistency between Q1-Q30 and Q31-Q128",
+      "description": "Q1-Q30 present as 'WORD1  WORD2' (left-to-right). Q31-Q128 present as 'SMALL_WORD BIGGER_WORD' (right-to-left or mixed). Q104-Q128 switch to yet another pattern with shorter words on both sides. This inconsistency creates three different question 'styles' within the same topic, which could confuse students about what the question is asking.",
+      "affectedItems": ["Q31-Q128"],
+      "recommendation": "Standardise the presentation format. If both directions are tested, randomise the word order rather than creating blocks of one direction."
+    },
+    {
+      "id": "VR-LM-011",
+      "severity": "medium",
+      "type": "distractor-quality",
+      "title": "Options are just the individual letters of one word — no GL-style distractors",
+      "description": "Every question lists the 5 letters of one of the two words as the options. This means options never include plausible-but-wrong letters from the other word, or letters that would create one valid word but not two. GL-style distractors should include letters that create a valid word from one side but not both, testing whether children check BOTH resulting words.",
+      "affectedItems": ["All questions"],
+      "recommendation": "Include at least 1-2 distractor letters that partially work (create one valid word but not the other). This tests the critical skill of checking both results."
+    },
+    {
+      "id": "VR-LM-012",
+      "severity": "medium",
+      "type": "teaching-gap",
+      "title": "6 of 9 sub-concepts are orphaned (have lessons but no questions mapped)",
+      "description": "The mapping file shows 6 orphanSubConcepts. This means lessons exist for skills that no questions actually test, or the mapping failed to connect them. Children learn techniques in lessons that they never get to practise in quizzes, reducing teaching efficacy.",
+      "affectedItems": ["orphaned sub-concepts"],
+      "recommendation": "Either map existing questions to these sub-concepts or create new questions that specifically test each lesson's learning goal."
+    },
+    {
+      "id": "VR-LM-013",
+      "severity": "medium",
+      "type": "answer-position",
+      "title": "Answer position distribution may be uneven across the large D2 block",
+      "description": "In the Q31-Q72 block, the correct answer appears to be systematically varied (0,1,2,3,4 cycling) but the letter being moved often stays the same (S for SCOLD, P for PRICE, F/L for FLAME). GL distributes answer positions evenly to prevent pattern-guessing. The mechanical cycling here is transparent.",
+      "affectedItems": ["Q31-Q72"],
+      "recommendation": "When replacing duplicate questions, ensure answer positions are genuinely randomised rather than mechanically cycled."
+    },
+    {
+      "id": "VR-LM-014",
+      "severity": "low",
+      "type": "vocabulary-level",
+      "title": "Some D1 questions use words a 9-year-old might not know (TARE, COWL, SEAR)",
+      "description": "Q19 creates TARE (a weed/weight allowance) which is uncommon for Year 5. Q14 creates COWL (a hood/chimney cap). Q21 creates SEAR (to burn). While these are real words, D1 should use 'high-frequency words' per Oracle specs. A child who doesn't know TARE or COWL may think their answer is wrong even when correct.",
+      "affectedItems": ["Q19", "Q14", "Q21"],
+      "recommendation": "Replace with word pairs producing more common D1 results. E.g. SPEAK+OAR -> PEAK+SOAR (from Oracle example)."
+    },
+    {
+      "id": "VR-LM-015",
+      "severity": "low",
+      "type": "explanation-quality",
+      "title": "Explanations do not define unfamiliar resulting words at D2/D3",
+      "description": "When the letter move creates less common words (TERN, TRIPE, TARE, COWL, SEAR, BOAR), the explanation should briefly define them so children learn vocabulary alongside the technique. Some early questions do this (Q29 explains 'tripe = stomach lining used as food') but most D2/D3 questions do not.",
+      "affectedItems": ["D2 and D3 questions broadly"],
+      "recommendation": "Add brief definitions for any resulting word that a Year 5 child might not know. This is both educationally valuable and builds confidence."
+    },
+    {
+      "id": "VR-LM-016",
+      "severity": "low",
+      "type": "lesson-quality",
+      "title": "Lessons are good but could explicitly teach the right-to-left strategy",
+      "description": "The lessons cover first/last/middle letter removal well, but the right-to-left direction (moving a letter from word 2 to word 1) is only mentioned in passing ('Try both directions'). Given that ~40% of questions use right-to-left movement, a dedicated lesson on this direction would be valuable.",
+      "affectedItems": ["Lessons"],
+      "recommendation": "Consider adding a specific lesson sub-concept for right-to-left moves with worked examples showing why you should try both directions systematically."
+    }
+  ]
+}

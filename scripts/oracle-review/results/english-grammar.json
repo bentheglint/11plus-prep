@@ -1,0 +1,179 @@
+{
+  "reviewedAt": "2026-03-30T22:00:00.000Z",
+  "topic": "grammar",
+  "subject": "english",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 385,
+    "lessonsReviewed": 32,
+    "mappingsReviewed": 385,
+    "issuesFound": 14,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 7, "low": 5 },
+    "difficultyAssessment": "D1:112 (29%), D2:170 (44%), D3:103 (27%) — close to GL target 30:40:30 with D2 slightly over-represented. D1 questions test foundational concepts (subject-verb agreement with obvious plurals, simple past tense, basic pronouns, basic prepositions). D2 covers past perfect, passive voice, modal verbs, conjunctions, comparative/superlative, and dependent prepositions. D3 tests subjunctive mood, inverted conditionals, collective noun agreement, 'the number of' vs 'a number of', formal who/whom, and advanced conjunctive adverbs. Difficulty calibration is strong throughout — each tier genuinely requires a step up in grammatical understanding.",
+    "coverageAssessment": "Excellent breadth across GL-tested grammar categories: subject-verb agreement (~25%), verb tenses (~20%), pronouns (~20%), conjunctions (~10%), prepositions (~10%), modal verbs (~5%), comparatives/superlatives (~5%), active/passive voice (~5%). All major GL grammar question types are represented. The distribution is well balanced with no extreme over- or under-representation. Good coverage of GL traps: collective nouns, indefinite pronouns (each/every/neither), 'should have' vs 'should of', fewer/less, between/among, who/whom. Minor gaps: no questions on standard English vs dialect (e.g. 'them books' vs 'those books'), and no questions on double negatives.",
+    "teachingEfficacyAssessment": "32 lessons across 16 sub-concepts provide thorough coverage. Zero eval failures in the lesson data — all lessons render correctly. The pedagogical approach is strong: subject-verb agreement uses the 'dance partners' metaphor, pronouns use the 'removal trick' (cross out the other person), tenses use the 'time machine' analogy. Each sub-concept has both a step-by-step and a spot-the-mistake lesson template, which is ideal for building both understanding and error-detection skills. All 385 questions are mapped (0 unmapped, 0 orphan sub-concepts) with 355 high-confidence and 30 medium-confidence mappings. The 30 medium-confidence mappings deserve review but are not critical.",
+    "topPriorities": [
+      "Fix near-duplicate question pairs (Q3/Q21, Q4/Q25, Q6/Q27) — identical concepts at same or similar difficulty",
+      "Fix mapping of Q18 ('happily') from Expanded Noun Phrases to correct sub-concept (adverb formation or should-have/common-traps)",
+      "Review the 30 medium-confidence mappings to ensure questions are linked to the most relevant lesson"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "ENG-GRM-DUP-001",
+      "itemType": "question",
+      "itemId": "Q3,Q21",
+      "severity": "high",
+      "category": "duplicate-content",
+      "title": "Q3 and Q21 are near-duplicates testing 'neither...nor'",
+      "description": "Q3 (D2): 'Neither the teacher ___ the pupils knew the answer.' Q21 (D3): 'Neither the teacher ___ the students were happy about the cancelled trip.' Both test exactly the same concept (neither...nor correlative conjunctions) with virtually the same sentence structure and same answer ('nor'). The distractors are identical (or, nor, and, but, with). Q21 is rated D3 but is no harder than Q3 — both have the same pattern and same clear answer. This wastes a question slot and inflates the neither/nor representation.",
+      "suggestedFix": "Remove Q21 or change it to test a genuinely different grammar concept at D3. If neither...nor needs a D3 question, make it test verb agreement with neither...nor (e.g. 'Neither the boys nor the teacher ___ the answer' where the answer depends on which subject is closest to the verb).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-DUP-002",
+      "itemType": "question",
+      "itemId": "Q4,Q25",
+      "severity": "high",
+      "category": "duplicate-content",
+      "title": "Q4 and Q25 are near-duplicates testing subjunctive 'If I were'",
+      "description": "Q4 (D2): 'If I ___ taller, I could reach the top shelf.' Q25 (D2): 'If I ___ you, I would apologise immediately.' Both test the subjunctive 'were' in hypothetical conditionals, both at D2, both with identical options (am, was, were, is, be) and identical answer ('were'). This is unnecessary duplication.",
+      "suggestedFix": "Remove one or change one to test a different subjunctive pattern (e.g. 'I wish I ___ taller' or 'He acts as if he ___ the boss').",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-DUP-003",
+      "itemType": "question",
+      "itemId": "Q6,Q27",
+      "severity": "medium",
+      "category": "duplicate-content",
+      "title": "Q6 and Q27 test same 'intervening phrase' pattern at D3",
+      "description": "Q6 (D3): 'The team, along with their coach, ___ arriving at noon.' Q27 (D3): 'The orchestra, together with the choir, ___ performing at the concert tonight.' Both test subject-verb agreement where an intervening phrase ('along with' / 'together with') does not change the singular subject. Same answer ('is'), same difficulty, same grammatical principle.",
+      "suggestedFix": "Remove one or change one to test a different subject-verb agreement trap (e.g. 'A number of students ___ absent today' where the answer is 'were' — testing 'a number of' = plural).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-MAP-001",
+      "itemType": "mapping",
+      "itemId": "Q18",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "Q18 (adverb 'happily') mapped to 'Expanded Noun Phrases'",
+      "description": "Q18: 'The children played ___ in the garden all afternoon.' (answer: 'happily') is mapped to sub-concept 'expanded-noun-phrases'. This question tests adverb formation (adjective 'happy' -> adverb 'happily'), not noun phrase expansion. The lesson linked ('How adjectives, prepositional phrases, and relative clauses turn a boring noun into a mini movie') is irrelevant to this question.",
+      "suggestedFix": "Remap to a more appropriate sub-concept. If no 'adverb formation' sub-concept exists, consider creating one or mapping to 'should-have' (Common Grammar Traps) as a catch-all for word form questions.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-MAP-002",
+      "itemType": "mapping",
+      "itemId": "Q19",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "Q19 (It's vs Its) mapped to 'Pronouns' but is really about apostrophes/homophones",
+      "description": "Q19: '___ going to rain this afternoon, so bring an umbrella.' (answer: 'It's') is mapped to sub-concept 'pronouns'. While 'its' is technically a pronoun, this question tests the distinction between 'it's' (contraction of 'it is') and 'its' (possessive). The linked lesson about 'Sophie and I' vs 'Sophie and me' is not relevant. This concept is better covered by the punctuation topic's 'it's vs its' lessons.",
+      "suggestedFix": "Consider flagging this as a cross-topic question or creating a dedicated 'homophones and confusable words' sub-concept in grammar that covers it's/its, their/there/they're, your/you're, etc.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-MAP-003",
+      "itemType": "mapping",
+      "itemId": "Q17",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "Q17 (fewer/less) mapped to 'Comparatives and Superlatives' but is about countable vs uncountable",
+      "description": "Q17: 'There are ___ apples in the bowl than there were yesterday.' (answer: 'fewer') is mapped to 'comparative-superlative'. While 'fewer' is technically comparative, the grammar concept being tested is the countable/uncountable distinction (fewer for countable, less for uncountable). The linked lesson about -er/-est vs more/most is not directly relevant.",
+      "suggestedFix": "Remap to 'should-have' (Common Grammar Traps) which already covers fewer/less per its learning goals, or create a dedicated 'countable vs uncountable' sub-concept.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q24",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q24 ('homework needs') rated D3 but is a straightforward singular noun question",
+      "description": "Q24 (D3): 'The homework ___ to be handed in by Friday.' (answer: 'needs'). While 'homework' being uncountable is a valid grammar point, the sentence is straightforward and the answer is obvious to any child who speaks English natively — 'the homework need' sounds clearly wrong. The distractors (need, needs, needing, needed, are needing) include obviously wrong forms. This is more D2 level.",
+      "suggestedFix": "Reclassify as D2, or make it genuinely D3 by adding a more confusing context (e.g. 'The homework assignments ___ to be completed' where 'assignments' might tempt children toward 'need' despite the real subject).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q8",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "Q8 ('which' for things) rated D3 but the who/which distinction is D2",
+      "description": "Q8 (D3): 'The old house, ___ had stood on the hill for centuries, was finally demolished.' (answer: 'which'). The who vs which distinction (who for people, which for things) is a Year 4-5 concept and more appropriately D2. D3 relative pronoun questions should test 'whose' vs 'who's', 'whom' in complex structures, or 'that' vs 'which' in restrictive/non-restrictive contexts.",
+      "suggestedFix": "Reclassify as D2.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q2",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q2 explanation mentions 'fast' as an adjective but the context uses it as an adverb",
+      "description": "Q2: 'She ran ___ than anyone else in the race.' (answer: 'faster'). Explanation says 'we use \"-er\" not \"more\" for short adjectives.' However, in this sentence 'faster' is functioning as an adverb (modifying the verb 'ran'), not an adjective. While the comparative form is the same, the explanation could reinforce a misconception that 'faster' is always an adjective.",
+      "suggestedFix": "Update explanation to: 'When comparing two things, we use the comparative form \"faster\". For short words like \"fast\", we add \"-er\" rather than saying \"more fast\". Here, \"faster\" describes how she ran (an adverb).'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-EXPL-002",
+      "itemType": "question",
+      "itemId": "Q35",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q35 explanation about collective nouns may confuse with Q6's explanation",
+      "description": "Q35 (D2): 'The team ___ celebrating their victory on the pitch.' (answer: 'are'). Q6 (D3): 'The team, along with their coach, ___ arriving at noon.' (answer: 'is'). Both use 'the team' as subject but have opposite answers. Q35's explanation says teams take plural verbs when members act individually ('the clue is the word their'), while Q6 says the subject is singular. While both explanations are technically correct (collective nouns can be singular or plural in British English), having them side by side without explicit acknowledgement of the paradox could confuse learners.",
+      "suggestedFix": "Add a note to Q35's explanation: 'In British English, collective nouns like \"team\" can take either a singular or plural verb. When you think of the group acting as individuals (celebrating, arguing), use a plural verb. When you think of it as a single unit (arriving together), use a singular verb.' This helps the child understand why both patterns exist.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-COV-001",
+      "itemType": "question",
+      "itemId": "N/A",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No questions on standard English vs non-standard dialect",
+      "description": "GL tests sometimes include questions about standard vs non-standard English (e.g. 'We was going' vs 'We were going' in dialect contexts, or 'them books' vs 'those books'). The current question bank does not explicitly test this — while many subject-verb agreement questions implicitly test standard English forms, none frame it as standard vs non-standard.",
+      "suggestedFix": "Consider adding 3-5 questions at D2/D3 that explicitly test standard English awareness: 'Which sentence uses standard English?' with options including common non-standard forms (we was, done it, should of, ain't, them books).",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-COV-002",
+      "itemType": "question",
+      "itemId": "N/A",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No questions testing double negatives",
+      "description": "GL occasionally tests awareness of double negatives ('I haven't got no money' vs 'I haven't got any money'). This is a standard English concept tested at Year 5-6 level. No questions in the current bank address this.",
+      "suggestedFix": "Add 2-3 questions testing double negatives at D2 level, e.g. 'Choose the correct version: I haven't done nothing / I haven't done anything.'",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-GRM-CONF-001",
+      "itemType": "mapping",
+      "itemId": "30 medium-confidence mappings",
+      "severity": "low",
+      "category": "mapping-quality",
+      "title": "30 medium-confidence question-to-lesson mappings need review",
+      "description": "385 questions are mapped with 355 high-confidence and 30 medium-confidence pairings. While medium confidence is not critical, these mappings may link questions to sub-optimal lessons. The 30 medium-confidence mappings should be reviewed to ensure the lesson linked is the most relevant one for each question.",
+      "suggestedFix": "Review the 30 medium-confidence mappings individually and either confirm them as correct or reassign to a more appropriate sub-concept.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

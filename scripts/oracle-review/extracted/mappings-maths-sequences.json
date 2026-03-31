@@ -1,0 +1,2109 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "sequences",
+    "displayName": "Sequences",
+    "extractedAt": "2026-03-30T13:52:00.475Z",
+    "totalQuestions": 152,
+    "mappedQuestions": 152,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 152,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "A baker makes 3 cakes on Monday, 6 on Tuesday, 9 on Wednesday, 12 on Thursday, and 15 on Friday. If the pattern continues, how many cakes will he make",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "Emma writes the sequence: 2, 4, 8, 16, 32, ?. What comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "64",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "A swimming pool is being drained. After 1 minute it has 50 litres, then 45 litres, then 40 litres, then some amount, then 30 litres, then 25 litres. H",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Tom notices the pattern: 1, 4, 9, 16, 25, ?. What is the next number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A bouncy ball is dropped from 100 cm. Each bounce reaches half the height of the last: 100 cm, 50 cm, 25 cm, 12.5 cm. How high will the next bounce re",
+      "questionDifficulty": 1,
+      "correctAnswer": "6.25",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Sophie is counting: 5, 8, 11, 14, 17, ?. What number comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 7,
+      "questionText": "A gardener plants flowers in rows. Row 1 has 7 flowers, row 2 has 14, row 3 has 21, row 4 has 28, and row 5 has 35. What is the rule for the number of",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 7",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 8,
+      "questionText": "Jake creates a sequence: 3, 6, 12, 24, 48, ?. What is the next term?",
+      "questionDifficulty": 2,
+      "correctAnswer": "96",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "A jar of sweets is shared equally into 3 smaller jars each day. The jar starts with 81 sweets, then 27, then 9, then a missing amount, then 1. How man",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Lucy finds the pattern: 2, 5, 11, 23, 47, ?. What comes next?",
+      "questionDifficulty": 3,
+      "correctAnswer": "95",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "A printer prints 4 pages in the first minute, 8 pages after two minutes, 12 pages after three minutes, and so on. How many pages will it have printed ",
+      "questionDifficulty": 2,
+      "correctAnswer": "40",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Ben creates a Fibonacci-style sequence: 1, 1, 2, 3, 5, 8, ?. What comes next?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "What is the nth term rule for the sequence: 5, 10, 15, 20, 25?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Mia notices: 100, 92, 84, 76, 68, ?. What is the next number?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "On a maths challenge card, Priya sees this pattern: 1, 3, 7, 15, 31. What number comes next?",
+      "questionDifficulty": 3,
+      "correctAnswer": "63",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Oliver counts backward: 72, 66, 60, 54, ?. What number comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "What is the 8th term in the sequence: 3, 7, 11, 15, 19, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "31",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Sarah creates a sequence: 5, 15, 45, 135, ?. What is the next term?",
+      "questionDifficulty": 2,
+      "correctAnswer": "405",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "In a number puzzle, the sequence reads 2, 6, 12, 20, ?, 42. What is the missing number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "30",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Charlie finds: 128, 64, 32, 16, 8, ?. What comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Amir saves 7p every day in his piggy bank. After day 1 he has 7p, after day 2 he has 14p, then 21p, 28p, 35p. How much will he have after day 6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "42",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 22,
+      "questionText": "A rumour spreads through a school. On day 1, 5 people know it. On day 2, 10 people know. Then 20, then 40, then 80. If the pattern continues, how many",
+      "questionDifficulty": 2,
+      "correctAnswer": "160",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A water tank starts with 90 litres and loses 9 litres each hour. After 1 hour it has 81 litres, then 72, then 63. How many litres will be left after t",
+      "questionDifficulty": 1,
+      "correctAnswer": "54",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Tiles are arranged in square patterns: 1, 4, 9, 16, 25, 36. How many tiles are needed for the next square pattern?",
+      "questionDifficulty": 2,
+      "correctAnswer": "49",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "A charity target is being halved each round: 200, 100, 50, 25. What is the target for the next round?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12.5",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Chairs are arranged in rows for a school assembly. Row 1 has 4 chairs, row 2 has 9, row 3 has 14, row 4 has 19, and row 5 has 24. How many chairs will",
+      "questionDifficulty": 1,
+      "correctAnswer": "29",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 27,
+      "questionText": "A scientist measures bacteria shrinking by a factor of 10 each day: 1000, 100, 10. How many will there be the next day?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "In a game, your score triples each level: 2, 6, 18, 54. What will your score be at the next level?",
+      "questionDifficulty": 2,
+      "correctAnswer": "162",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "A bouncing ball reaches these heights in cm: 64, 32, 16, 8, 4. How high does it bounce next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Raj spots a Fibonacci pattern on a nature poster: 1, 2, 3, 5, 8. What number comes next in the pattern?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A charity fundraiser starts with 110 balloons. Each hour, 11 balloons are popped. The count goes 110, 99, 88, then a missing number, then 66, then 55.",
+      "questionDifficulty": 1,
+      "correctAnswer": "77",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "A lily pad doubles in size each day. Its area in cm² goes 6, 12, 24, 48, 96. What will its area be the next day?",
+      "questionDifficulty": 1,
+      "correctAnswer": "192",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "A bus picks up 11 passengers at each stop. After stop 1 there are 11 passengers, after stop 2 there are 22, then 33, 44, 55. How many passengers will ",
+      "questionDifficulty": 1,
+      "correctAnswer": "66",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 34,
+      "questionText": "A shop sells boxes of 9 biscuits. If you buy 1 box you get 9 biscuits, 2 boxes gives 18, 3 boxes gives 27, 4 boxes gives 36, and 5 boxes gives 45. Wha",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 9",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 35,
+      "questionText": "A jar of sweets is shared into three equal groups each day: 243, 81, 27, 9. How many sweets are in one group the next day?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "In a sponsored walk, pupils earn 5p for every lap they complete. After 1 lap they earn 5p, after 2 laps 10p, after 3 laps 15p, and so on. How much wil",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A tricky number puzzle shows: 4, 7, 13, 25, 49. What number comes next?",
+      "questionDifficulty": 3,
+      "correctAnswer": "97",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A factory makes 13 toys each hour. After 1 hour they have 13 toys, after 2 hours 26, after 3 hours 39, then a missing amount, then 65, then 78. How ma",
+      "questionDifficulty": 1,
+      "correctAnswer": "52",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 39,
+      "questionText": "A plant grows three times taller each week: 4 cm, 12 cm, 36 cm, 108 cm. How tall will it be next week?",
+      "questionDifficulty": 2,
+      "correctAnswer": "324",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "A train travels 15 miles in the first hour, 30 miles after 2 hours, 45 miles after 3 hours, 60 miles after 4 hours, and 75 miles after 5 hours. How fa",
+      "questionDifficulty": 1,
+      "correctAnswer": "90",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 41,
+      "questionText": "What is the nth term rule for the sequence: 7, 14, 21, 28, 35?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "A shop has 120 Easter eggs. It sells 12 each day. After day 1 there are 108 left, then 96, 84, 72. How many will be left after the next day?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "On a maths challenge card, the sequence reads: 1, 5, 13, 29, 61. What is the next number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "125",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "A computer file is being compressed, halving each time: 512 KB, 256 KB, 128 KB, 64 KB, 32 KB. What size comes next?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "A stack of books grows by 6 each week. After week 1 there are 6 books, week 2 has 12, week 3 has 18, week 4 has 24, and so on. How many books will the",
+      "questionDifficulty": 2,
+      "correctAnswer": "54",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A sunflower is 3 cm tall after week 1, 9 cm after week 2, 15 cm after week 3, and 21 cm after week 4. It keeps growing at the same rate. The height af",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 47,
+      "questionText": "Seeds in a garden triple each week: 7, 21, 63, 189. How many seeds will there be next week?",
+      "questionDifficulty": 2,
+      "correctAnswer": "567",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A running club adds 17 metres to its warm-up jog each week. In week 1 they jog 17 m, week 2 is 34 m, week 3 is 51 m, week 4 is 68 m, and week 5 is 85 ",
+      "questionDifficulty": 1,
+      "correctAnswer": "102",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 49,
+      "questionText": "What comes next in this Fibonacci sequence? 2, 3, 5, 8, 13, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A chain of shops closes branches each year, dividing by 5: 625, 125, 25, ?, 1. What is the missing number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "In a stacking game, each layer adds 19 blocks: 19, 38, 57, 76, 95. How many blocks are in the next layer's total?",
+      "questionDifficulty": 1,
+      "correctAnswer": "114",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 52,
+      "questionText": "A rumour spreads through a school, doubling each day: 10, 20, 40, 80, 160. How many people know after the next day?",
+      "questionDifficulty": 1,
+      "correctAnswer": "320",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Eggs come in boxes of 12. With 1 box you have 12 eggs, with 2 boxes you have 24, then 36, 48, 60. What is the rule for this pattern?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 12",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 54,
+      "questionText": "A balloon loses half its air each hour: 400 ml, 200 ml, 100 ml, 50 ml, 25 ml. How much air is left after the next hour?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12.5",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A colony of bacteria doubles every hour. It starts with 8 bacteria, then grows to 16, 32, 64, 128. How many bacteria will there be after the next hour",
+      "questionDifficulty": 2,
+      "correctAnswer": "256",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A swimming pool is being drained and the readings show: 140, 126, 112, ?, 84, 70. What is the missing reading?",
+      "questionDifficulty": 1,
+      "correctAnswer": "98",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Blocks are stacked into cubes of increasing size: 1, 8, 27, 64, 125. How many blocks are in the next cube?",
+      "questionDifficulty": 3,
+      "correctAnswer": "216",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "What is the 11th term in the sequence: 8, 16, 24, 32, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "88",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A science experiment triples a bacteria count each hour: 9, 27, 81, 243. What is the count after the next hour?",
+      "questionDifficulty": 2,
+      "correctAnswer": "729",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "A sponsored walk raises 23p per lap. After 1 lap the total is 23p, then 46p, 69p, 92p, 115p. How much is raised after the next lap?",
+      "questionDifficulty": 1,
+      "correctAnswer": "138",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 61,
+      "questionText": "Pages are numbered in a puzzle book: 4, 10, 16, 22, ?, 34. What is the missing page number?",
+      "questionDifficulty": 1,
+      "correctAnswer": "28",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 62,
+      "questionText": "A computer file is being compressed, halving each time: 1024 KB, 512 KB, 256 KB, 128 KB, 64 KB. What size comes next?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "What is the nth term rule for the sequence: 4, 8, 12, 16, 20?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "A swimmer counts down laps remaining: 150, 135, 120, 105, 90. How many laps remain next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "75",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "A runner adds 29 metres to her training distance each week: 29, 58, 87, 116, 145. How far will she run in the next week?",
+      "questionDifficulty": 1,
+      "correctAnswer": "174",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 66,
+      "questionText": "What comes next in this Fibonacci sequence? 3, 5, 8, 13, 21, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "34",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "A gardener plants flowers in a pattern: 2, 8, 14, 20, ?, 32. How many flowers go in the missing bed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "26",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 68,
+      "questionText": "A science experiment triples bacteria each hour: 11, 33, 99, 297. How many bacteria are there after the next hour?",
+      "questionDifficulty": 2,
+      "correctAnswer": "891",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "What is the next term? 31, 62, 93, 124, 155, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "186",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 70,
+      "questionText": "A chain letter doubles each day: 14, 28, 56, 112, 224 people have received it. How many will have received it the next day?",
+      "questionDifficulty": 2,
+      "correctAnswer": "448",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "What is the 15th term in the sequence: 3, 6, 9, 12, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "45",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "What comes next? 2187, 729, 243, 81, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "27",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "A water tank is draining and the readings in litres are: 160, 144, 128, ?, 96, 80. What is the missing reading?",
+      "questionDifficulty": 1,
+      "correctAnswer": "112",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "What comes next? 37, 74, 111, 148, 185, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "222",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 75,
+      "questionText": "What is the rule for this sequence? 16, 32, 48, 64, 80",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 16",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 76,
+      "questionText": "A bouncy ball loses half its height with each bounce: 800 cm, 400 cm, 200 cm, 100 cm, 50 cm. How high does it bounce next?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "What is the next term? 13, 39, 117, 351, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1053",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "What is the 13th term in the sequence: 9, 18, 27, 36, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "117",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "What comes next? 41, 82, 123, 164, 205, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "246",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 80,
+      "questionText": "A baker adds 8 more biscuits to each tray: 5, 13, 21, 29, ?, 45. How many biscuits are on the missing tray?",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 81,
+      "questionText": "A colony of ants doubles each week: 16, 32, 64, 128, 256. How many ants will there be the next week?",
+      "questionDifficulty": 2,
+      "correctAnswer": "512",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "What is the nth term rule for the sequence: 10, 20, 30, 40, 50?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "A swimming pool is being drained, losing 18 litres each minute: 180, 162, 144, 126, 108. How many litres are left after the next minute?",
+      "questionDifficulty": 2,
+      "correctAnswer": "90",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "What is the next number? 43, 86, 129, 172, 215, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "258",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 85,
+      "questionText": "What comes next in this Fibonacci sequence? 5, 8, 13, 21, 34, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "55",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Children collect conkers each day in a pattern: 6, 15, 24, 33, ?, 51. How many conkers were collected on the missing day?",
+      "questionDifficulty": 1,
+      "correctAnswer": "42",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 87,
+      "questionText": "What comes next? 6561, 2187, 729, 243, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "81",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "What is the next term? 18, 54, 162, 486, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1458",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "What is the 14th term in the sequence: 11, 22, 33, 44, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "154",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "What comes next? 47, 94, 141, 188, 235, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "282",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 91,
+      "questionText": "A charity countdown timer shows: 190, 171, 152, ?, 114, 95 seconds. What is the missing time?",
+      "questionDifficulty": 2,
+      "correctAnswer": "133",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "What comes next? 1600, 800, 400, 200, 100, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What is the next number? 1, 16, 81, 256, 625, ?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1296",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "What comes next? 53, 106, 159, 212, 265, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "318",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 95,
+      "questionText": "What is the rule for this sequence? 18, 36, 54, 72, 90",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 18",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "What is the 16th term in the sequence: 7, 14, 21, 28, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "112",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "What comes next? 59, 118, 177, 236, 295, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "354",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 98,
+      "questionText": "A postman delivers parcels along a street in a pattern: 7, 18, 29, 40, ?, 62. How many parcels were delivered at the missing house?",
+      "questionDifficulty": 1,
+      "correctAnswer": "51",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 99,
+      "questionText": "What comes next? 20, 60, 180, 540, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1620",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "What is the nth term rule for the sequence: 6, 12, 18, 24, 30?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A shop is counting down its stock each day: 210, 189, 168, 147, 126. How many items will be left the next day?",
+      "questionDifficulty": 2,
+      "correctAnswer": "105",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "What is the next number? 61, 122, 183, 244, 305, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "366",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 103,
+      "questionText": "What comes next in this Fibonacci sequence? 8, 13, 21, 34, 55, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "89",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "What is the missing number? 9, 20, 31, 42, ?, 64",
+      "questionDifficulty": 1,
+      "correctAnswer": "53",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 105,
+      "questionText": "What comes next? 3200, 1600, 800, 400, 200, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "100",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "What is the next term? 25, 75, 225, 675, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2025",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "What is the 17th term in the sequence: 13, 26, 39, 52, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "221",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "What comes next? 67, 134, 201, 268, 335, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "402",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 109,
+      "questionText": "What is the missing number? 220, 198, 176, ?, 132, 110",
+      "questionDifficulty": 2,
+      "correctAnswer": "154",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "What is the rule for this sequence? 20, 40, 60, 80, 100",
+      "questionDifficulty": 1,
+      "correctAnswer": "Add 20",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 111,
+      "questionText": "What comes next? 71, 142, 213, 284, 355, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "426",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 112,
+      "questionText": "What is the next number? 32, 64, 128, 256, 512, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1024",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "What is the nth term rule for the sequence: 15, 30, 45, 60, 75?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15n",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "What comes next? 240, 216, 192, 168, 144, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "120",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "What is the missing number? 10, 23, 36, 49, ?, 75",
+      "questionDifficulty": 1,
+      "correctAnswer": "62",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 116,
+      "questionText": "What comes next? 73, 146, 219, 292, 365, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "438",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 117,
+      "questionText": "What is the 18th term in the sequence: 17, 34, 51, 68, ...?",
+      "questionDifficulty": 2,
+      "correctAnswer": "306",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "What comes next? 6400, 3200, 1600, 800, 400, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "What is the next term? 30, 90, 270, 810, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2430",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "What comes next in this Fibonacci sequence? 13, 21, 34, 55, 89, ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "144",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "The sequence of square numbers is 1, 4, 9, 16, 25, ... What is the 12th square number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "144",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Triangular numbers go 1, 3, 6, 10, 15, 21, ... What is the 10th triangular number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "55",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "In a Fibonacci-style sequence, each term is the sum of the two before it. The sequence starts 2, 5, 7, 12, 19, ... What is the 8th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "81",
+      "subConceptId": "fibonacci-style",
+      "subConceptName": "Fibonacci-Style Sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence where each number is the sum of the two before it",
+        "How this pattern appears in nature"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A sequence follows the rule 'multiply by 2 then subtract 3'. The first term is 5. What is the 6th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "67",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Look at this sequence: 2, 5, 10, 17, 26, 37, ... The differences between terms increase by 2 each time. What is the 9th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "82",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "In a sequence, each term is double the one before. The 6th term is 192. What is the 1st term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "How many terms of the sequence 3, 7, 11, 15, 19, ... are less than 50?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "What is the sum of the first 6 terms of the sequence 5, 9, 13, 17, 21, 25?",
+      "questionDifficulty": 3,
+      "correctAnswer": "90",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "The first term of a sequence is 256 and each term is half the previous term. What is the first term in the sequence that is not a whole number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.5",
+      "subConceptId": "geometric-sequences",
+      "subConceptName": "Sequences That Multiply or Divide",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that multiplies instead of adds",
+        "How to find the multiplier (common ratio)"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "In a sequence, the differences between terms are 1, 2, 4, 8, 16, ... (doubling each time). The first term is 3. What is the 7th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "66",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "The cube numbers are 1, 8, 27, 64, 125, ... What is the sum of the first 5 cube numbers?",
+      "questionDifficulty": 3,
+      "correctAnswer": "225",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "A sequence goes: 0, 3, 8, 15, 24, ... What is the 8th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "63",
+      "subConceptId": "two-step-rules",
+      "subConceptName": "Sequences with Two-Step Rules",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot a sequence that uses multiply then add (or subtract)",
+        "How to work out a two-step rule"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "The sequence 3, 8, 15, 24, 35, ... follows the rule n² + 2n, where n is the position. What is the 10th term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "The 3rd term of an arithmetic sequence is 17 and the 5th term is 31. What is the 1st term?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 135,
+      "questionText": "An arithmetic sequence starts at 8 and increases by 13 each time. What is the 10th term?",
+      "questionDifficulty": 2,
+      "correctAnswer": "125",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 136,
+      "questionText": "The 4th term of an arithmetic sequence is 22 and the 8th term is 46. What is the common difference?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 137,
+      "questionText": "An arithmetic sequence starts at 5 and goes up by 11 each time: 5, 16, 27, 38, ... What is the sum of the first 6 terms?",
+      "questionDifficulty": 3,
+      "correctAnswer": "195",
+      "subConceptId": "master-arithmetic-sequences",
+      "subConceptName": "master-arithmetic-sequences",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 138,
+      "questionText": "A sequence starts at 200 and decreases by 17 each time. How many terms are there before the sequence goes below zero?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A decreasing sequence starts at 500 and subtracts a different amount each time: 500, 475, 445, 410, 370, ... What is the next term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "325",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A tank holds 360 litres. Water drains out: 15 litres in the first minute, 18 litres in the second, 21 litres in the third, and so on (3 more each minu",
+      "questionDifficulty": 3,
+      "correctAnswer": "7",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A shop reduces its prices each week. In week 1 an item costs £84, then £72, then £60, then £48. What will it cost in week 6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£24",
+      "subConceptId": "decreasing-sequences",
+      "subConceptName": "Sequences That Decrease",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise decreasing sequences where the difference is negative",
+        "Why the same method works for both increasing and decreasing"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "The rule for a sequence is 'multiply the position number by 5'. What is the 8th term?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "A sequence follows the rule '3 times the position number plus 1'. The first few terms are 4, 7, 10, 13, ... What is the 6th term?",
+      "questionDifficulty": 1,
+      "correctAnswer": "19",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "The rule for a sequence is '2 times the position number'. Which position gives the term 20?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10th",
+      "subConceptId": "find-nth-term",
+      "subConceptName": "Finding the nth Term",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+        "How to use the rule to find any term (number in the pattern)"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "The square numbers are 1, 4, 9, 16, 25, 36, ... What is the 8th square number?",
+      "questionDifficulty": 1,
+      "correctAnswer": "64",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "The triangular numbers are 1, 3, 6, 10, 15, 21, ... What comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "28",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Which of these is both a square number and a triangular number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "The cube numbers are 1, 8, 27, 64, ... What is the difference between the 4th and 5th cube numbers?",
+      "questionDifficulty": 2,
+      "correctAnswer": "61",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "Sam says 50 is a triangular number. Is he correct? The triangular numbers start: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, 55 is but 50 is not",
+      "subConceptId": "special-sequences",
+      "subConceptName": "Square, Triangular & Cube Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to recognise square, triangular and cube numbers",
+        "Why they are called 'special' sequences"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "Each term in a sequence is the sum of the three terms before it: 1, 1, 2, 4, 7, 13, ... What is the next term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "24",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "A sequence goes: 2, 5, 11, 23, 47, ... Each term is found by doubling and adding 1. What is the next term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "95",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A sequence starts: 1, 2, 6, 24, 120, ... What is the next term?",
+      "questionDifficulty": 3,
+      "correctAnswer": "720",
+      "subConceptId": "continue-sequence",
+      "subConceptName": "Continuing a Sequence Using the Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to continue a sequence forwards",
+        "How to work backwards to find missing earlier terms"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "constant-difference",
+      "name": "Finding the Constant Difference"
+    }
+  ],
+  "subConceptCoverage": {
+    "master-arithmetic-sequences": {
+      "name": "master-arithmetic-sequences",
+      "questionCount": 40,
+      "difficulties": {
+        "D1": 25,
+        "D2": 13,
+        "D3": 2
+      }
+    },
+    "continue-sequence": {
+      "name": "Continuing a Sequence Using the Rule",
+      "questionCount": 27,
+      "difficulties": {
+        "D1": 6,
+        "D2": 18,
+        "D3": 3
+      }
+    },
+    "decreasing-sequences": {
+      "name": "Sequences That Decrease",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 9,
+        "D2": 7,
+        "D3": 2
+      }
+    },
+    "special-sequences": {
+      "name": "Square, Triangular & Cube Numbers",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 2,
+        "D2": 5,
+        "D3": 5
+      }
+    },
+    "geometric-sequences": {
+      "name": "Sequences That Multiply or Divide",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 2,
+        "D2": 11,
+        "D3": 2
+      }
+    },
+    "two-step-rules": {
+      "name": "Sequences with Two-Step Rules",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 9
+      }
+    },
+    "find-nth-term": {
+      "name": "Finding the nth Term",
+      "questionCount": 23,
+      "difficulties": {
+        "D1": 3,
+        "D2": 17,
+        "D3": 3
+      }
+    },
+    "fibonacci-style": {
+      "name": "Fibonacci-Style Sequences",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 0,
+        "D2": 7,
+        "D3": 1
+      }
+    }
+  }
+}

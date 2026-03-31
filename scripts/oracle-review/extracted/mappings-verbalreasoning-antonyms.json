@@ -1,0 +1,1842 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "antonyms",
+    "displayName": "Antonyms",
+    "extractedAt": "2026-03-30T13:52:00.601Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 115,
+      "medium": 10,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "generous + mean",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "expand + shrink",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "temporary + permanent",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "abundant + scarce",
+      "subConceptId": "graded-vs-complementary",
+      "subConceptName": "Graded vs Complementary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+      "lessonLearningGoal": [
+        "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+        "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "arrogant + humble",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "brave + cowardly",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "noisy + silent",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "ancient + modern",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "timid + bold",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "artificial + natural",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "maximum + minimum",
+      "subConceptId": "graded-vs-complementary",
+      "subConceptName": "Graded vs Complementary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+      "lessonLearningGoal": [
+        "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+        "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "compulsory + optional",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "lenient + strict",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "shallow + profound",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "conceal + reveal",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "cruel + kind",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "polite + rude",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "inferior + superior",
+      "subConceptId": "graded-vs-complementary",
+      "subConceptName": "Graded vs Complementary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+      "lessonLearningGoal": [
+        "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+        "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "increase + decrease",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "voluntary + compulsory",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hot + cold",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "light + dark",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "fast + slow",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "big + small",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "loud + quiet",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "happy + sad",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "strong + weak",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "hard + soft",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rough + smooth",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "clean + dirty",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "open + shut",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "early + late",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "full + empty",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "deep + shallow",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "wide + narrow",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rich + poor",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sink + float",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "push + pull",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "thick + thin",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "young + old",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sharp + blunt",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "scared + brave",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "wet + dry",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "up + down",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "cautious + reckless",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "familiar + strange",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "boring + exciting",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "patient + impatient",
+      "subConceptId": "prefix-antonyms",
+      "subConceptName": "Prefix Antonyms (un-, dis-, im-, in-, ir-)",
+      "confidence": "high",
+      "lessonTeachSummary": "The prefix **\"un-\"** means \"not\" or \"the opposite of\". It flips the meaning!",
+      "lessonLearningGoal": [
+        "How to use prefixes like un-, dis-, im-, in- or ir- to create an opposite — it's like having a magic switch!",
+        "How to choose which prefix goes with which word (there's a pattern, and once you spot it, you'll never forget)"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "confident + nervous",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "appear + vanish",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "hostile + friendly",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "genuine + fake",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "visible + hidden",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "increase + decrease",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "accept + reject",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "arrive + depart",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "beautiful + ugly",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "complex + simple",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "rare + common",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "praise + criticise",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "success + failure",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "unite + divide",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "private + public",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "capture + release",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vacant + occupied",
+      "subConceptId": "prefix-antonyms",
+      "subConceptName": "Prefix Antonyms (un-, dis-, im-, in-, ir-)",
+      "confidence": "high",
+      "lessonTeachSummary": "The prefix **\"un-\"** means \"not\" or \"the opposite of\". It flips the meaning!",
+      "lessonLearningGoal": [
+        "How to use prefixes like un-, dis-, im-, in- or ir- to create an opposite — it's like having a magic switch!",
+        "How to choose which prefix goes with which word (there's a pattern, and once you spot it, you'll never forget)"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "tame + wild",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "import + export",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "flexible + rigid",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "attack + defend",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "major + minor",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "interior + exterior",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "borrow + lend",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "destroy + create",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "remember + forget",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "innocent + guilty",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "ascend + descend",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "benevolent + malevolent",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "demolish + construct",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "deliberate + accidental",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "eloquent + inarticulate",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "flourish + wither",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "gregarious + reclusive",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "hostile + amicable",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "frugal + extravagant",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "jovial + morose",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "knowledge + ignorance",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "loyal + treacherous",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "mundane + extraordinary",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "negligent + attentive",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "optimistic + pessimistic",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "profound + superficial",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "reluctant + eager",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tranquil + turbulent",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "vivid + dull",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "primitive + sophisticated",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "candid + secretive",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "transient + enduring",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "prolific + barren",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "industrious + idle",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "obsolete + contemporary",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "give + take",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "inside + outside",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "true + false",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "awake + asleep",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "simple + difficult",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "arrive + depart",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "bright + dim",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "friend + enemy",
+      "subConceptId": "basic-opposites",
+      "subConceptName": "Basic Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reve",
+      "lessonLearningGoal": [
+        "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+        "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "reveal + conceal",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "include + exclude",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "selfish + generous",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "humble + boastful",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "advance + retreat",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "complex + straightforward",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "victory + defeat",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "medium",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "permit + forbid",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "reward + punish",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "junior + senior",
+      "subConceptId": "graded-vs-complementary",
+      "subConceptName": "Graded vs Complementary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+      "lessonLearningGoal": [
+        "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+        "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "obey + disobey",
+      "subConceptId": "emotion-antonyms",
+      "subConceptName": "Opposite Feelings",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+      "lessonLearningGoal": [
+        "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+        "Why matching the intensity matters for emotion antonyms"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "compliment + insult",
+      "subConceptId": "hard-vocab-antonyms",
+      "subConceptName": "Tricky Vocabulary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out wh",
+      "lessonLearningGoal": [
+        "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+        "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "prohibit + allow",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "transparent + opaque",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "hinder + assist",
+      "subConceptId": "verb-antonyms",
+      "subConceptName": "Action Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+      "lessonLearningGoal": [
+        "How to find opposites for action words (verbs) — imagine pressing rewind!",
+        "Why picturing the REVERSE action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "elaborate + plain",
+      "subConceptId": "adjective-antonyms",
+      "subConceptName": "Describing Word Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+      "lessonLearningGoal": [
+        "How to find opposites for describing words (adjectives) — think about what quality is being described",
+        "Why checking WHAT is being described helps you pick the right antonym every time"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Choose one word from each group that are most opposite in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "amateur + professional",
+      "subConceptId": "graded-vs-complementary",
+      "subConceptName": "Graded vs Complementary Opposites",
+      "confidence": "high",
+      "lessonTeachSummary": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+      "lessonLearningGoal": [
+        "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+        "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "different-not-opposite",
+      "name": "Different is NOT Opposite"
+    }
+  ],
+  "subConceptCoverage": {
+    "basic-opposites": {
+      "name": "Basic Opposites",
+      "questionCount": 32,
+      "difficulties": {
+        "D1": 32,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "verb-antonyms": {
+      "name": "Action Word Opposites",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 2,
+        "D2": 14,
+        "D3": 5
+      }
+    },
+    "adjective-antonyms": {
+      "name": "Describing Word Opposites",
+      "questionCount": 39,
+      "difficulties": {
+        "D1": 0,
+        "D2": 30,
+        "D3": 9
+      }
+    },
+    "graded-vs-complementary": {
+      "name": "Graded vs Complementary Opposites",
+      "questionCount": 5,
+      "difficulties": {
+        "D1": 0,
+        "D2": 2,
+        "D3": 3
+      }
+    },
+    "emotion-antonyms": {
+      "name": "Opposite Feelings",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 4,
+        "D2": 4,
+        "D3": 1
+      }
+    },
+    "hard-vocab-antonyms": {
+      "name": "Tricky Vocabulary Opposites",
+      "questionCount": 17,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 17
+      }
+    },
+    "prefix-antonyms": {
+      "name": "Prefix Antonyms (un-, dis-, im-, in-, ir-)",
+      "questionCount": 2,
+      "difficulties": {
+        "D1": 0,
+        "D2": 2,
+        "D3": 0
+      }
+    }
+  }
+}

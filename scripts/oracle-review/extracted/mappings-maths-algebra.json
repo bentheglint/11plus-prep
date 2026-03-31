@@ -1,0 +1,2901 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "algebra",
+    "displayName": "Algebra",
+    "extractedAt": "2026-03-30T13:52:00.406Z",
+    "totalQuestions": 204,
+    "mappedQuestions": 204,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 204,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Emma thinks of a number, adds 7, and gets 15. What number did Emma think of?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Tickets cost £n each plus a £4 booking fee for 3 tickets. If n = 5, what is the total cost? (Work out 3n + 4)",
+      "questionDifficulty": 1,
+      "correctAnswer": "19",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Jack is j years old. His sister Sophie is 3 years younger. Which expression shows Sophie's age?",
+      "questionDifficulty": 1,
+      "correctAnswer": "j - 3",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "A pencil costs p pence. How much do 6 pencils cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6p",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Lily thinks of a number, multiplies it by 4, then adds 5 to get 29. What was Lily's number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "On a quiz card, a = 3 and b = 7. Work out 2a + b.",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Tom is t years old. His dad is 4 times as old. Which expression shows his dad's age?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4t",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "A number machine multiplies by 3 then adds 2. If you put 5 into the machine, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "17",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Charlie saves £c each week. After 8 weeks, how much has he saved?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8c",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "A shop sells pens for £x each. Tom buys 5 and uses a £7 voucher. If x = 4, what does he pay? (Work out 5x - 7)",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Ben is 12 years old. His brother Alex is a years old and is 5 years younger than Ben. What is the value of a?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "A rectangle has length l cm and width 5 cm. What is its perimeter?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2l + 10",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "In a number puzzle, 2x + 6 = 20. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 14,
+      "questionText": "Maya has m marbles. She gives 8 to her friend and has 15 left. How many marbles did Maya start with?",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "A number machine doubles a number then subtracts 3. The output is 13. What was the input?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Mia goes on 4 fairground rides at £y each, then uses a £5 discount voucher. How much does she pay? If y = 6, work out 4y - 5.",
+      "questionDifficulty": 1,
+      "correctAnswer": "19",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Lucy is n years old. Her mum is 28 years older. In 5 years' time, how old will Lucy's mum be?",
+      "questionDifficulty": 2,
+      "correctAnswer": "n + 33",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Oscar buys b books at £4 each. How much does he spend in total?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4b",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Tom thinks of a number n. He multiplies it by 3 and subtracts 4 to get 17. What is n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A cafe sells coffee for £c and tea for £t. James buys 2 coffees and 3 teas. How much does he spend?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2c + 3t",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "If p = 8, what is (p + 4) × 2?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Sarah collects stickers. She has s stickers and buys 12 more. Then she gives away 5. How many does she have now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "s + 7",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "The perimeter of a square is 4s. If the perimeter is 36 cm, what is s?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9 cm",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Ahmed thinks of a number, adds 9, then divides by 3 to get 7. What was Ahmed's number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Noah buys 2 sandwiches at £a each and gets a £b discount voucher. How much does he pay? If a = 5 and b = 3, work out 2a - b.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Grace is g years old. Her grandmother is 60 years older than Grace. Which expression shows her grandmother's age?",
+      "questionDifficulty": 1,
+      "correctAnswer": "g + 60",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "A number machine adds 5 then multiplies by 2. If the output is 24, what was the input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A bag holds x oranges. Five bags plus 3 loose oranges make 28 oranges altogether. How many oranges are in each bag?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 5",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Ruby scores r points in a game. Jake scores twice as many points as Ruby, and then scores 6 bonus points. Which expression shows Jake's total score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2r + 6",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A tablet costs £t. A phone costs £50 more than the tablet. What is the total cost of both items?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2t + 50",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "If m = 7 and n = 4, what is 3m - 2n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Daniel walks w kilometres on Monday. On Tuesday he walks 2 kilometres more than Monday. On Wednesday he walks the same as Tuesday. How far does he wal",
+      "questionDifficulty": 3,
+      "correctAnswer": "3w + 4",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "In a board game, 4y - 7 = 21. What is the value of y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 34,
+      "questionText": "Freya has f football cards. Her brother Harry has 3 times as many cards as Freya, minus 5 cards. Which expression shows how many cards Harry has?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3f - 5",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "A school trip costs £25 per student plus a £60 coach fee to be shared equally. If there are n students, which expression shows the cost per student?",
+      "questionDifficulty": 3,
+      "correctAnswer": "25 + 60/n",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Noah thinks of a number, adds 9, and gets 21. What number did Noah think of?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A baker puts n biscuits in each of 4 bags, then eats 3 himself. If n = 7, how many biscuits are left? (Work out 4n - 3)",
+      "questionDifficulty": 1,
+      "correctAnswer": "25",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Mia thinks of a number x. She multiplies it by 3 and adds 5 to get 26. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "On a quiz card, a = 4 and b = 9. Work out 3a + b.",
+      "questionDifficulty": 1,
+      "correctAnswer": "21",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "In a number game, 5x - 8 = 22. Find the value of x.",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "If p = 8, what is 2p + 7?",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Amelia is 'a' years old (where 'a' stands for her age). Her uncle is 35 years older. Which expression shows her uncle's age?",
+      "questionDifficulty": 1,
+      "correctAnswer": "a + 35",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "A cinema ticket costs £t. How much do 5 tickets cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5t",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "On a classroom puzzle wall, 6x - 10 = 32. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "In a maths relay, m = 6 and n = 5. Work out 2m + 3n.",
+      "questionDifficulty": 2,
+      "correctAnswer": "27",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Isla thinks of a number, multiplies it by 5, then adds 8 to get 43. What was her number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A number machine adds 12 then multiplies by 3. If you put 8 into the machine, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Ethan saves £e each month. After 12 months, how much has he saved?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12e",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "If y = 9, what is 3y - 11?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A rectangle has length 8 cm and width w cm. What is its perimeter?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16 + 2w",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "On a maths challenge card, 4n + 9 = 37. What is the value of n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Olivia has o apples. She eats 6 and has 19 left. How many apples did she start with?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "If x = 10, what is (x - 4) × 3?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A number machine multiplies by 4 then subtracts 7. The output is 25. What was the input?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Harry is h years old. His sister is 4 years younger. In 6 years' time, how old will his sister be?",
+      "questionDifficulty": 3,
+      "correctAnswer": "h + 2",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Jack thinks of a number x. He multiplies it by 7 and subtracts 12 to get 30. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "In a classroom challenge, a = 5 and b = 8. Work out 4a - 2b.",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A shop sells apples for £a and oranges for £r. Mia buys 4 apples and 3 oranges. How much does she spend?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4a + 3r",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "If k = 12, what is k/3 + 7?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Leo runs r kilometres on Saturday. On Sunday he runs 3 kilometres less. How far does he run in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2r - 3",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "In a treasure hunt clue, 8x + 5 = 61. What is the value of x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "The perimeter of a square is 4s. If the perimeter is 48 cm, what is s?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12 cm",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "If p = 11, what is 5p - 18?",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Ava thinks of a number, adds 15, then divides by 4 to get 8. What was her number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "17",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "A tablet costs £c. A laptop costs £200 more than the tablet. What is the total cost of both?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2c + 200",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Solve: 9x - 14 = 40",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 6",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "On a game show, m = 9 and n = 7. What is 5m - 3n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Mason is m years old. His dad is 3 times as old plus 5 years. Which expression shows his dad's age?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3m + 5",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "A number machine subtracts 6 then multiplies by 5. If the output is 35, what was the input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "If z = 14, what is 2z/7 + 9?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A sports coach writes the puzzle 6y + 11 = 47 on the whiteboard. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Zara collects z coins. She loses 8, then finds 15 more. How many does she have now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "z + 7",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "If x = 6, what is 9x - 20?",
+      "questionDifficulty": 1,
+      "correctAnswer": "34",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "A bakery makes b cakes per day. Over 7 days, how many cakes does it make?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7b",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Solve: 5n - 6 = 34",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 76,
+      "questionText": "If a = 10 and b = 6, what is 2a + 4b?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "In a quiz, 10x - 15 = 45. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Lily buys n notebooks at £3 each and 4 pens at £2 each. What does she spend?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3n + 8",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "If p = 15, what is p/5 + 12?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Solve: 7y + 8 = 50",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 6",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 81,
+      "questionText": "Max is m years old. His grandfather is 55 years older. Which expression shows his grandfather's age?",
+      "questionDifficulty": 1,
+      "correctAnswer": "m + 55",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "If x = 8, what is 6x - 19?",
+      "questionDifficulty": 1,
+      "correctAnswer": "29",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Solve: 4x + 13 = 45",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 84,
+      "questionText": "A number machine multiplies by 3 then adds 10. If you put 7 in, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "31",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "A teacher writes a = 12 and b = 9 on the board. Work out 3a - 2b.",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Solve: 8x - 24 = 32",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 87,
+      "questionText": "Ruby scores r points. Jake scores twice as many plus 12. Which shows Jake's score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2r + 12",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "If n = 13, what is 4n - 25?",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Solve: 9x + 7 = 70",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 90,
+      "questionText": "A rectangle has length l and width 7. What is its area?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7l",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "In a maths puzzle, p = 16. What is p/4 + 8?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Solve: 6y - 9 = 39",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 93,
+      "questionText": "Oscar has o sweets. He gives away 12 and has 28 left. How many did he start with?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "If m = 11 and n = 8, what is 4m - 3n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Solve: 5x + 16 = 51",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "A shop sells t-shirts for £t and shorts for £s. James buys 3 t-shirts and 2 shorts. How much does he spend?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3t + 2s",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "If x = 18, what is x/3 + 11?",
+      "questionDifficulty": 1,
+      "correctAnswer": "17",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Solve: 7n - 18 = 38",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 99,
+      "questionText": "Sophie is s years old. Her brother is 5 times as old minus 8 years. Which shows her brother's age?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5s - 8",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "If a = 7 and b = 11, what is 5a + 2b?",
+      "questionDifficulty": 2,
+      "correctAnswer": "57",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Solve: 8x + 9 = 65",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 102,
+      "questionText": "A number machine doubles a number then subtracts 11. Output is 27. What was input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "19",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "If y = 20, what is y/5 + 14?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Solve: 9x - 27 = 45",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 105,
+      "questionText": "Ben runs b kilometres on Monday. On Tuesday he runs 4 km more. Wednesday same as Tuesday. Total for 3 days?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3b + 8",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "If p = 14, what is 3p - 16?",
+      "questionDifficulty": 1,
+      "correctAnswer": "26",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Solve: 6n + 17 = 53",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "A phone costs £p. A case costs £25. What is total for 2 phones and 3 cases?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2p + 75",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "If x = 9, what is 8x - 35?",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Solve: 7y + 15 = 64",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 111,
+      "questionText": "Emma collects e books. She buys 9 more then gives away 4. How many now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "e + 5",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "If a = 15 and b = 6, what is 2a - 3b?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Solve: 10x - 35 = 45",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 8",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "Mia is m years old. Her aunt is 4 times as old plus 6 years. Which shows her aunt's age?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4m + 6",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "If n = 25, what is n/5 + 17?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Solve: 5x + 21 = 56",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 117,
+      "questionText": "A bakery sells c cakes at £5 each and b biscuits at £2 each. Total revenue?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5c + 2b",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "If p = 17, what is 4p - 28?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Solve: 8n - 16 = 56",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 9",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 120,
+      "questionText": "Tom scores t points. Lucy scores 3 times as many minus 10. Which shows Lucy's score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3t - 10",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "If x = 22, what is x/2 + 19?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Solve: 9y + 13 = 76",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 123,
+      "questionText": "A number machine subtracts 8 then multiplies by 6. Output is 48. What was input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "If a = 13 and b = 10, what is 3a + 2b?",
+      "questionDifficulty": 2,
+      "correctAnswer": "59",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Solve: 6x + 19 = 61",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 126,
+      "questionText": "Noah has n stamps. He gets 14 more and now has 52. How many did he start with?",
+      "questionDifficulty": 2,
+      "correctAnswer": "38",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "If m = 19, what is 5m - 42?",
+      "questionDifficulty": 1,
+      "correctAnswer": "53",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Solve: 7x - 21 = 42",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 9",
+      "subConceptId": "master-two-step-equations",
+      "subConceptName": "master-two-step-equations",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 129,
+      "questionText": "A gym membership costs £g per month. Swimming lessons cost £30 per month. Total for 6 months?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6g + 180",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "If y = 24, what is y/6 + 15?",
+      "questionDifficulty": 2,
+      "correctAnswer": "19",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "Solve: 8n + 25 = 73",
+      "questionDifficulty": 2,
+      "correctAnswer": "n = 6",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Olivia is o years old. Her teacher is 32 years older. In 10 years, how old will her teacher be?",
+      "questionDifficulty": 3,
+      "correctAnswer": "o + 42",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "If p = 21, what is 3p - 29?",
+      "questionDifficulty": 2,
+      "correctAnswer": "34",
+      "subConceptId": "substitution",
+      "subConceptName": "Substituting Values",
+      "confidence": "high",
+      "lessonTeachSummary": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+      "lessonLearningGoal": [
+        "How to replace a letter with a number",
+        "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "Solve: 10y - 42 = 58",
+      "questionDifficulty": 2,
+      "correctAnswer": "y = 10",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "A library has l fiction books and 3 times as many non-fiction books. Total books?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4l",
+      "subConceptId": "writing-expressions",
+      "subConceptName": "Writing Expressions from Words",
+      "confidence": "high",
+      "lessonTeachSummary": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**",
+      "lessonLearningGoal": [
+        "How to turn word phrases into algebra",
+        "How to spot the operation (add, subtract, multiply or divide) from the words"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "A number machine multiplies by 5. If you put 7 into the machine, what comes out?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A number machine adds 9. If you put 14 into the machine, what comes out?",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "A number machine subtracts 6. The output is 11. What number was put in?",
+      "questionDifficulty": 1,
+      "correctAnswer": "17",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A number machine divides by 4. The output is 9. What number was put in?",
+      "questionDifficulty": 1,
+      "correctAnswer": "36",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A number machine multiplies by 8. The output is 56. What number was put in?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A number machine adds 15. The output is 42. What number was put in?",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "A number machine multiplies by 4 then adds 3. If you put 6 into the machine, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "27",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "A number machine adds 7 then multiplies by 3. If you put 5 into the machine, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "A number machine multiplies by 3 then subtracts 5. The output is 19. What was the input?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "A number machine adds 4 then multiplies by 5. The output is 50. What was the input?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "A number machine takes an input of 4 and gives an output of 28. Which of these could be the rule?",
+      "questionDifficulty": 2,
+      "correctAnswer": "All of A, B and C",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "A number machine subtracts 3 then multiplies by 4. If you put 9 into the machine, what comes out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "A number machine divides by 2 then adds 8. The output is 14. What was the input?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "A number machine takes an input of 3 and gives an output of 15. It takes an input of 5 and gives an output of 25. What is the rule?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Multiply by 5",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "A number machine multiplies by 2, adds 3, then multiplies by 4. If you put 5 into the machine, what comes out?",
+      "questionDifficulty": 3,
+      "correctAnswer": "52",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "A number machine adds 5, multiplies by 3, then subtracts 9. The output is 18. What was the input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "When you put 2 into a number machine, you get 11. When you put 4 in, you get 19. When you put 7 in, you get 31. What is the rule?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Multiply by 4 then add 3",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "Machine A multiplies by 3. Machine B adds 7. A number goes through Machine A first, then Machine B. The output is 31. What was the original input?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "Machine A adds 2. Machine B multiplies by 6. Sophie puts a number through Machine A, then through Machine B, and gets 42. Oliver puts the same startin",
+      "questionDifficulty": 3,
+      "correctAnswer": "32",
+      "subConceptId": "function-machines",
+      "subConceptName": "Function Machines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use a function machine that applies operations (like +3 or ×2) step by step",
+        "How to work backwards through a function machine"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "Oliver thinks of a number, adds 8, and gets 23. What number did Oliver think of?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "What is the inverse (opposite) of multiplying by 6?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Dividing by 6",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "Ava thinks of a number, subtracts 12, and gets 19. What number did Ava think of?",
+      "questionDifficulty": 1,
+      "correctAnswer": "31",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "What is the inverse (opposite) of subtracting 9?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Adding 9",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "Jack thinks of a number, multiplies it by 7, and gets 63. What number did Jack think of?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "Sophie thinks of a number, multiplies it by 4, then adds 7, and gets 35. What number did Sophie think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "Emma thinks of a number, adds 6, then multiplies by 3, and gets 33. What number did Emma think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "Tom thinks of a number, multiplies it by 5, then subtracts 8, and gets 32. What number did Tom think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "Lily thinks of a number, subtracts 4, then divides by 3, and gets 5. What number did Lily think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "19",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "Harry starts with a number, doubles it, then adds 11, and gets 37. What number did Harry start with?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "Isla thinks of a number, divides it by 2, then adds 9, and gets 17. What number did Isla think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "Noah thinks of a number, adds 3, then multiplies by 6, and gets 54. What number did Noah think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "Amelia thinks of a number, subtracts 7, then multiplies by 4, and gets 36. What number did Amelia think of?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "George thinks of a number, multiplies it by 3, adds 5, then doubles the result, and gets 46. What number did George think of?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "Freya thinks of a number, adds 4, multiplies by 2, then subtracts 6, and gets 22. What number did Freya think of?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "Ethan thinks of a number, doubles it, subtracts 3, then multiplies by 5, and gets 85. What number did Ethan think of?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "Ruby started with a number. She did two operations and ended up with 30. She knows the first operation was multiply by 2. She forgot the second operat",
+      "questionDifficulty": 3,
+      "correctAnswer": "Add 8",
+      "subConceptId": "inverse-operations",
+      "subConceptName": "Inverse Operations",
+      "confidence": "high",
+      "lessonTeachSummary": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+      "lessonLearningGoal": [
+        "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+        "Why using the wrong inverse gives the wrong answer"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "The perimeter of a square is P = 4s, where s is the side length. If s = 7 cm, what is the perimeter?",
+      "questionDifficulty": 1,
+      "correctAnswer": "28 cm",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "The area of a rectangle is A = l × w. If the length is 9 cm and the width is 4 cm, what is the area?",
+      "questionDifficulty": 1,
+      "correctAnswer": "36 cm²",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "A formula for the perimeter of a square is P = 4s. If s = 12 cm, what is P?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48 cm",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "The area of a rectangle is A = l × w. If the length is 6 cm and the width is 8 cm, what is the area?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48 cm²",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "The perimeter of a rectangle is P = 2(l + w). If the length is 10 cm and the width is 6 cm, what is the perimeter?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32 cm",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "A theme park uses the formula C = 5n + 10 to work out the cost in pounds, where n is the number of rides. If Oliver goes on 8 rides, how much does he ",
+      "questionDifficulty": 2,
+      "correctAnswer": "£50",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "A taxi fare is worked out using the formula F = 3m + 4, where m is the number of miles. If the fare is £25, how many miles was the journey?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7 miles",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "The perimeter of a rectangle is P = 2(l + w). If the length is 14 cm and the width is 9 cm, what is the perimeter?",
+      "questionDifficulty": 2,
+      "correctAnswer": "46 cm",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "A swimming pool uses the formula C = 4n + 6 to work out the total cost in pounds for n swimmers. If the total cost is £30, how many swimmers are there",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "A party planner uses the formula C = 8n + 20 to work out the cost in pounds, where n is the number of children. Emma invites 6 friends. What is the to",
+      "questionDifficulty": 2,
+      "correctAnswer": "£68",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "The area of a rectangle is A = l × w. If the area is 56 cm² and the width is 8 cm, what is the length?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7 cm",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "Speed = Distance ÷ Time. Sophie cycles 24 kilometres in 3 hours. What is her speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8 km/h",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "A rectangular garden has a perimeter of P = 2(l + w). If the perimeter is 40 metres and the length is 12 metres, what is the width?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8 m",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "A rectangular room has length 5 metres and width 4 metres. Jack wants to tile the floor with tiles that cost £3 per square metre. First find the area,",
+      "questionDifficulty": 3,
+      "correctAnswer": "£60",
+      "subConceptId": "simple-formulae",
+      "subConceptName": "Using Simple Formulae",
+      "confidence": "high",
+      "lessonTeachSummary": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+      "lessonLearningGoal": [
+        "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+        "How to substitute numbers into a formula"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "What is 3 × (4 + 2)?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "What is (10 - 3) × 4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "28",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "If p = 5, what is 2 × (p + 3)?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "Which is larger: 3 × 4 + 2 or 3 × (4 + 2)?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3 × (4 + 2) is larger",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 190,
+      "questionText": "If a = 3, what is (a + 4) × (a + 1)?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 191,
+      "questionText": "What is (8 + 4) ÷ 3 + 5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 192,
+      "questionText": "If n = 6, what is 3 × (n - 2) + 4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 193,
+      "questionText": "What is 5 + 2 × (9 - 3)?",
+      "questionDifficulty": 2,
+      "correctAnswer": "17",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 194,
+      "questionText": "Where should you put brackets to make this true? 3 + 4 × 2 = 14",
+      "questionDifficulty": 3,
+      "correctAnswer": "(3 + 4) × 2",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "If x = 4, what is (2x + 3) × (x - 1)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "33",
+      "subConceptId": "bidmas-brackets",
+      "subConceptName": "BIDMAS and Brackets",
+      "confidence": "high",
+      "lessonTeachSummary": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addit",
+      "lessonLearningGoal": [
+        "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+        "How to recognise that brackets change which part you do first"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "In algebra, what does 3n mean?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3 × n",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "Simplify 4a + 2a.",
+      "questionDifficulty": 1,
+      "correctAnswer": "6a",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "Which expression means 'add 5 to n, then double the result'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2(n + 5)",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "Simplify 3x + 2y + 5x - y.",
+      "questionDifficulty": 3,
+      "correctAnswer": "8x + y",
+      "subConceptId": "using-letters",
+      "subConceptName": "Using Letters for Unknowns",
+      "confidence": "high",
+      "lessonTeachSummary": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter ",
+      "lessonLearningGoal": [
+        "How to understand that letters stand in for unknown numbers",
+        "How to write simple expressions (calculations with letters and numbers) using letters"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "2n + 4 = 12. What is the value of n?",
+      "questionDifficulty": 1,
+      "correctAnswer": "n = 4",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "3x - 7 = 14. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "x = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "Noah buys 3 identical books and a £2 bookmark. He pays £17 in total. How much does each book cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£5",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "4(x + 3) = 28. What is x?",
+      "questionDifficulty": 3,
+      "correctAnswer": "x = 4",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "Tom and Sophie have the same number of stickers. Tom has 2n + 5 stickers and Sophie has 3n - 2 stickers. What is n?",
+      "questionDifficulty": 3,
+      "correctAnswer": "n = 7",
+      "subConceptId": "two-step-equations",
+      "subConceptName": "Two-Step Equations",
+      "confidence": "high",
+      "lessonTeachSummary": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+      "lessonLearningGoal": [
+        "How to solve equations with two operations (like + and ×)",
+        "How to undo steps in reverse order"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "inverse-operations": {
+      "name": "Inverse Operations",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 8,
+        "D2": 14,
+        "D3": 6
+      }
+    },
+    "substitution": {
+      "name": "Substituting Values",
+      "questionCount": 37,
+      "difficulties": {
+        "D1": 23,
+        "D2": 14,
+        "D3": 0
+      }
+    },
+    "using-letters": {
+      "name": "Using Letters for Unknowns",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 10,
+        "D2": 1,
+        "D3": 1
+      }
+    },
+    "two-step-equations": {
+      "name": "Two-Step Equations",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 1,
+        "D2": 17,
+        "D3": 2
+      }
+    },
+    "function-machines": {
+      "name": "Function Machines",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 6,
+        "D2": 13,
+        "D3": 9
+      }
+    },
+    "writing-expressions": {
+      "name": "Writing Expressions from Words",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 3,
+        "D2": 17,
+        "D3": 9
+      }
+    },
+    "simple-formulae": {
+      "name": "Using Simple Formulae",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 4,
+        "D2": 9,
+        "D3": 5
+      }
+    },
+    "master-two-step-equations": {
+      "name": "master-two-step-equations",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 0,
+        "D2": 20,
+        "D3": 0
+      }
+    },
+    "bidmas-brackets": {
+      "name": "BIDMAS and Brackets",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 3,
+        "D2": 7,
+        "D3": 2
+      }
+    }
+  }
+}

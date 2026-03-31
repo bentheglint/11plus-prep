@@ -1,0 +1,1812 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "speeddistancetime",
+    "displayName": "Speed, Distance, Time",
+    "extractedAt": "2026-03-30T13:52:00.495Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 9,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Emma drives 150 km in 3 hours. What is her average speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "Tom cycles at 20 km/h for 2.5 hours. How far does he travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Sophie travels 240 km at a speed of 80 km/h. How long does the journey take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Jake cycles 12 km in 20 minutes. What is his speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Lucy runs at 8 m/s for 45 seconds. How far does she run?",
+      "questionDifficulty": 1,
+      "correctAnswer": "360 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Ben drives 80 km in 2 hours, then 60 km in 1.5 hours. What is his average speed for the whole journey?",
+      "questionDifficulty": 3,
+      "correctAnswer": "40 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Mia's car travels at 72 km/h. What is this speed in metres per second?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Oliver travels 15 km at 60 km/h. How many minutes does this take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 minutes",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Sarah drives at 50 km/h for 1 hour 30 minutes. How far does she travel?",
+      "questionDifficulty": 2,
+      "correctAnswer": "75 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Charlie drives 20 km in 30 minutes. What is his speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Hannah drives 200 km at 80 km/h. How many minutes does the journey take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "150 minutes",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Ava travels at 45 km/h for 4 hours. How far does she travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "180 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Noah jogs 1500 metres in 5 minutes. What is his speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Ella drives 90 km in 2 hours, then 60 km in 1 hour. What is her average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Max is driving 300 km. He has already driven 180 km in 3 hours. What speed must he average for the remaining journey to complete it in 2 more hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60 km/h",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A family drives 180 km to the seaside in 4 hours. What is their average speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "45 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 17,
+      "questionText": "A family car cruises at 55 km/h along the coast road for 3 hours. How far do they travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "165 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A delivery van travels 300 km at 75 km/h. How long does the journey take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "A cyclist covers 18 km in 30 minutes. What is the speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A runner runs at 10 m/s for 50 seconds. How far does she run?",
+      "questionDifficulty": 1,
+      "correctAnswer": "500 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "A peregrine falcon dives at 90 km/h. What is this speed in metres per second?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "An ambulance races 25 km to the hospital at 100 km/h. How many minutes does the journey take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 minutes",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A driver travels 100 km in 2 hours, then 80 km in 2 hours. What is the average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "A postman cycles 2000 metres delivering letters in 10 minutes. What is his speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "A commuter train travels at 55 km/h for 2 hours 30 minutes from Weymouth to Southampton. How far is the journey?",
+      "questionDifficulty": 2,
+      "correctAnswer": "135 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "A delivery van covers 210 km in 3 hours. What is its speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "70 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 27,
+      "questionText": "A school bus trundles at 48 km/h for 2.5 hours on a geography field trip. How far does it travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A train travels 360 km from London to the Lake District at 90 km/h. How long does the journey take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "A cyclist covers 24 km in 40 minutes. What is the speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "36 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A model rocket flies at 12 m/s for 35 seconds. How far does it travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "420 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A racing car zooms around a track at 108 km/h. What is this speed in metres per second?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "An ambulance races to the hospital 30 km away at 120 km/h. How many minutes does it take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "A car drives 120 km in 2 hours, then 90 km in 1.5 hours. What is the average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Someone jogs 2500 metres in 15 minutes. What is the speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "A plane flies at 650 km/h for 1 hour 30 minutes. How far does it fly?",
+      "questionDifficulty": 2,
+      "correctAnswer": "975 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A coach must cover 270 km in 4.5 hours to arrive on time. What speed does it need to average?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 37,
+      "questionText": "Oliver cycles at 35 km/h for 4 hours during a charity bike ride along the South Coast. How far does he ride?",
+      "questionDifficulty": 1,
+      "correctAnswer": "140 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A lorry drives from London to Leeds, a distance of 420 km, at 70 km/h. How long does the journey take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A car covers 30 km in 25 minutes. What is the speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "A dog chases a ball across a park at 8 m/s for a full 60 seconds. How far does the dog run?",
+      "questionDifficulty": 1,
+      "correctAnswer": "480 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "In a wildlife documentary, a cheetah sprints at 126 km/h. The narrator gives this in m/s. What does she say?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "A Formula 1 car blasts around Silverstone at 160 km/h. How many minutes to cover 40 km?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "A family drives 150 km on the motorway in 3 hours, then 50 km through town in 1 hour. What is their average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Evie cycles 3000 metres around the park in 12 minutes for a fitness challenge. What is her speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "A coastguard helicopter patrols at 180 km/h for 2 hours 15 minutes along the Dorset coast. How far does it fly?",
+      "questionDifficulty": 2,
+      "correctAnswer": "405 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A rescue helicopter needs to reach an island 336 km away in 5.25 hours. What speed must it fly at?",
+      "questionDifficulty": 2,
+      "correctAnswer": "64 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 47,
+      "questionText": "Daisy rides her electric scooter along the seafront at 42 km/h for 3.5 hours. How far does she travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "147 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A family drives 480 km from London to Cornwall for their holiday, cruising at 96 km/h. How long does the drive take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "A motorbike zips along a coastal road, covering 36 km in 20 minutes. Speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "108 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "During Sports Day, Evie sprints at 9 m/s for 40 seconds in the relay. How far does she run?",
+      "questionDifficulty": 1,
+      "correctAnswer": "360 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A peregrine falcon dives at 144 km/h. A scientist records this in metres per second. What is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "An express train races through Dorset at 180 km/h. A bridge is 45 km ahead. How many minutes until it reaches the bridge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "A school coach drives 180 km on the M3 in 2 hours, then crawls 60 km through town in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A park runner completes a 3500 m course through the New Forest in 20 minutes. Speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A ferry from Poole to Cherbourg sails at 25 km/h for 3 hours 12 minutes. How far is the crossing?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A taxi needs to reach the airport 396 km away in 5.5 hours. What speed must the driver average?",
+      "questionDifficulty": 1,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 57,
+      "questionText": "A delivery driver covers 145 km between Bournemouth and Bristol in 2.5 hours. What was her average speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "58 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 58,
+      "questionText": "A family drives 540 km from Manchester to the Scottish Highlands at 108 km/h. How long?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A speedboat races across the bay, covering 42 km in 35 minutes. Speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "A remote-control car whizzes across a car park at 11 m/s. Oliver times it: 30 seconds. How far did it go?",
+      "questionDifficulty": 1,
+      "correctAnswer": "330 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "A tennis serve clocks 162 km/h on the speed gun. What is this in metres per second?",
+      "questionDifficulty": 2,
+      "correctAnswer": "45 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "A pizza delivery driver must cover 50 km at 200 km/h in a game show challenge. How many minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "During a sponsored cycle, Mia rides 200 km on flat roads in 4 hours, then 100 km uphill in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "During cross-country, Ben runs 4000 metres across muddy fields in 16 minutes. Speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "A narrowboat chugs along the canal at 32 km/h for 1 hour 45 minutes. How far does it travel?",
+      "questionDifficulty": 2,
+      "correctAnswer": "56 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A courier van must deliver a parcel 456 km away in exactly 6 hours. What speed is needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "76 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "Gran drives 171 km to visit her grandchildren at a steady 38 km/h. How long does the journey take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4.5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Gran drives 600 km from Edinburgh to Bournemouth, averaging 120 km/h on the motorway. How long is the journey?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "A car drives along the A31 through the New Forest, covering 48 km in 40 minutes. Average speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Lauren jogs around the school field at a steady 7 m/s for 90 seconds. What distance does she cover?",
+      "questionDifficulty": 1,
+      "correctAnswer": "630 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A cricket ball is bowled at 180 km/h. The scoreboard shows the speed in m/s. What does it display?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50 m/s",
+      "subConceptId": "kmh-to-ms",
+      "subConceptName": "Converting km/h to m/s",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to convert (change) km/h to m/s",
+        "Why you multiply by 1000 then divide by 3600"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A helicopter flies 55 km to rescue a stranded walker at 220 km/h. How many minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "A lorry delivers goods: 240 km on the A-road in 4 hours, then 60 km on country lanes in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Lauren power-walks 4500 metres along Bournemouth promenade in 18 minutes. Speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "A cruise ship sails at 28 km/h for 2 hours 30 minutes across the English Channel. How far does it go?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "A relief lorry must reach a flooded village 516 km away in 6.45 hours. What speed is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 77,
+      "questionText": "During a charity bike ride, Maya cycles 77 km in 3.5 hours. What was her average speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 78,
+      "questionText": "A train travels 660 km from London to Edinburgh at 110 km/h. How long is the journey?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A bus travels 54 km from Poole to Dorchester in 45 minutes. Average speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "A park runner jogs at a steady 6 m/s around a loop that takes 120 seconds. How far is the loop?",
+      "questionDifficulty": 1,
+      "correctAnswer": "720 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "A family drives from Bournemouth to London, a distance of 180 km. They leave at 9:00 am and arrive at 11:30 am. What was their average speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "A lifeboat speeds 60 km out to sea at 240 km/h to reach a yacht. How many minutes does it take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "A removal van drives 270 km on the M3 in 3 hours, then 90 km through suburbs in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A mountain biker races 5000 metres down a forest trail in 25 minutes. Speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "A sea kayaker paddles at 8 km/h along the Jurassic Coast for 3 hours 45 minutes. How far does she go?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "An emergency plumber needs to reach a burst pipe 576 km away in 7.2 hours. What speed must he drive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 87,
+      "questionText": "Oliver skateboards 36 km along the seafront at an average speed of 15 km/h. How long does it take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2.4 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A coach takes a school trip 720 km from Bristol to the Highlands at 144 km/h. How long?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "A lorry covers 60 km on the motorway in 50 minutes before hitting roadworks. What was its speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "A model train runs along a track at 5 m/s. It takes 180 seconds to complete the circuit. How long is the track?",
+      "questionDifficulty": 1,
+      "correctAnswer": "900 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Daisy runs 2.4 km to school at 8 km/h. She leaves at 8:20 am. What time does she arrive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8:38 am",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "A police car chases along a motorway at 260 km/h. How many minutes to cover 65 km?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "On holiday, Dad drives 300 km on French motorways in 3 hours, then 120 km on coastal roads in 3 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "70 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "An elderly couple walks 5500 metres around a nature reserve in 50 minutes. Speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6.6 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "A raft drifts down the River Avon at 4 km/h for 4 hours 30 minutes during a charity float. How far?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "A pilot must fly 636 km to a small airfield in 7.95 hours. What speed is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 97,
+      "questionText": "A school minibus drives 77 km from Poole to Salisbury in 1.75 hours. What was its average speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "44 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 98,
+      "questionText": "A lorry drives 780 km from Dover to Glasgow at 130 km/h. How long is the drive?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "A delivery van races 66 km through the countryside in 55 minutes. Speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "A swimmer does laps at 4 m/s. After 150 seconds of continuous swimming, how far has she swum?",
+      "questionDifficulty": 1,
+      "correctAnswer": "600 m",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A coach leaves Bristol at 10:15 am and arrives in Exeter at 12:00 noon, covering 120 km. On the return, traffic slows it to 48 km/h. What time does it",
+      "questionDifficulty": 3,
+      "correctAnswer": "2:30 pm",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "A news helicopter flies 70 km to cover a story at 280 km/h. How many minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "A coach takes a school trip: 330 km on the motorway in 3 hours, then 90 km through the Lake District in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "84 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A charity runner completes 6000 metres of a fun run in 30 minutes. Speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A research submarine cruises at 16 km/h for 3 hours 15 minutes mapping the seabed. How far does it go?",
+      "questionDifficulty": 2,
+      "correctAnswer": "52 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "A lorry driver needs to reach a warehouse 696 km away in 8.7 hours to avoid a late fee. What speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 107,
+      "questionText": "A canal boat travels 58.5 km along the Kennet and Avon Canal at 18 km/h. How long is the journey?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3.25 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "A removal van drives 840 km from London to the Highlands at 105 km/h. How many hours?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "A taxi covers 72 km from the airport to the hotel in exactly one hour. What is its speed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "72 km/h",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 110,
+      "questionText": "Mia races her wheelchair at 3 m/s around a 600 m track. How long does one lap take in seconds?",
+      "questionDifficulty": 1,
+      "correctAnswer": "200 s",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Ben cycles 24 km to his friend's house. After 45 minutes he has cycled 12 km. If he keeps the same speed, what time will he arrive if he left at 2:00 ",
+      "questionDifficulty": 3,
+      "correctAnswer": "3:30 pm",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "An air ambulance flies 75 km to an accident at 300 km/h. How many minutes does the flight take?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "time-in-minutes",
+      "subConceptName": "Converting Decimal Hours to Minutes",
+      "confidence": "high",
+      "lessonTeachSummary": "To convert hours to minutes, **multiply by 60** (because there are 60 minutes in an hour).\n\n**0.75 × 60 = 45 minutes**\n\nThat makes much more sense!",
+      "lessonLearningGoal": [
+        "How to convert (change) a decimal answer back into minutes",
+        "Why 0.25 hours equals 15 minutes"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "A delivery truck drives 360 km on the M1 in 4 hours, then 120 km through town in 2 hours. Average speed?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "A triathlete runs 6500 metres in 26 minutes during the running leg of a race. Speed in km/h?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A hot air balloon drifts over the New Forest at 12 km/h for 4 hours 30 minutes. How far does it travel?",
+      "questionDifficulty": 2,
+      "correctAnswer": "54 km",
+      "subConceptId": "minutes-to-hours",
+      "subConceptName": "Converting Minutes to Hours for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "There are **60 minutes** in an hour. So to convert minutes to hours, divide by 60:\n\n**30 ÷ 60 = 0.5 hours**\n\n**Key conversions to memorise:**\n15 min = 0.25 hrs (¼) | 30 min = 0.5 hrs (½) | 45 min = 0.",
+      "lessonLearningGoal": [
+        "How to convert (change) minutes into hours for speed calculations",
+        "Why 30 minutes is 0.5 hours, not 0.30 hours"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "A train leaves Bournemouth at 9:15 am and arrives in London at 11:15 am. The distance is 160 km. What was the train's average speed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80 km/h",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Mum drives 240 km to visit Auntie. She drives the first 120 km at 60 km/h, then stops for 30 minutes for lunch, then drives the remaining 120 km at 80",
+      "questionDifficulty": 3,
+      "correctAnswer": "68.6 km/h",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "A swimmer completes a 1500 m race in 25 minutes. What is her speed in metres per minute?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60 m/min",
+      "subConceptId": "master-speed-formula",
+      "subConceptName": "master-speed-formula",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 119,
+      "questionText": "Dad is driving 300 km. After 2 hours at 60 km/h, he realises he needs to arrive within the next 1.5 hours. What speed must he average for the rest of ",
+      "questionDifficulty": 3,
+      "correctAnswer": "120 km/h",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "A school bus travels 45 km from the school to a museum. The journey takes 1 hour. On the way back, the bus takes 1.5 hours because of traffic. How muc",
+      "questionDifficulty": 1,
+      "correctAnswer": "15 km/h",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Two friends leave school at the same time. Evie walks home at 5 km/h and arrives in 24 minutes. Lauren cycles at 15 km/h. How many minutes does Lauren",
+      "questionDifficulty": 2,
+      "correctAnswer": "8 minutes",
+      "subConceptId": "word-problems",
+      "subConceptName": "Multi-Step SDT Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to pick out speed, distance, and time from a wordy question",
+        "How to decide which rule to use"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "A ferry crosses a channel that is 30 km wide. It sails at 20 km/h. How long does the crossing take?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1.5 hours",
+      "subConceptId": "calculate-time",
+      "subConceptName": "Time = Distance ÷ Speed",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate time using distance and speed",
+        "Why time equals distance divided by speed"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "A cyclist rides 48 km. For the first 30 km she rides at 20 km/h. For the rest she slows to 12 km/h because of hills. How long does the whole ride take",
+      "questionDifficulty": 3,
+      "correctAnswer": "3 hours",
+      "subConceptId": "average-speed",
+      "subConceptName": "Average Speed for Two-Part Journeys",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate average speed (total distance divided by total time) for a journey with two parts",
+        "Why you must NOT just average the two speeds"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A drone flies 4500 metres in 5 minutes. What is its speed in km/h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "54 km/h",
+      "subConceptId": "metres-to-km",
+      "subConceptName": "Converting Metres to Kilometres for SDT",
+      "confidence": "high",
+      "lessonTeachSummary": "The key fact:\n**1 km = 1000 m**\n\nTo convert metres to km: **divide by 1000**\nTo convert km to metres: **multiply by 1000**\n\n1500 m ÷ 1000 = **1.5 km**",
+      "lessonLearningGoal": [
+        "How to convert (change) metres to kilometres",
+        "When to change the units before calculating speed"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "A snail moves at 0.05 km/h. How far does it travel in 4 hours?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0.2 km",
+      "subConceptId": "calculate-distance",
+      "subConceptName": "Distance = Speed × Time",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate distance using speed and time",
+        "Why distance equals speed multiplied by time"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "sdt-triangle",
+      "name": "The SDT Triangle"
+    }
+  ],
+  "subConceptCoverage": {
+    "master-speed-formula": {
+      "name": "master-speed-formula",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 10,
+        "D2": 6,
+        "D3": 0
+      }
+    },
+    "calculate-distance": {
+      "name": "Distance = Speed × Time",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 18,
+        "D2": 1,
+        "D3": 0
+      }
+    },
+    "calculate-time": {
+      "name": "Time = Distance ÷ Speed",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 15,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "minutes-to-hours": {
+      "name": "Converting Minutes to Hours for SDT",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 0,
+        "D2": 17,
+        "D3": 4
+      }
+    },
+    "average-speed": {
+      "name": "Average Speed for Two-Part Journeys",
+      "questionCount": 14,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 14
+      }
+    },
+    "kmh-to-ms": {
+      "name": "Converting km/h to m/s",
+      "questionCount": 7,
+      "difficulties": {
+        "D1": 0,
+        "D2": 7,
+        "D3": 0
+      }
+    },
+    "time-in-minutes": {
+      "name": "Converting Decimal Hours to Minutes",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 0,
+        "D2": 12,
+        "D3": 0
+      }
+    },
+    "metres-to-km": {
+      "name": "Converting Metres to Kilometres for SDT",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 0,
+        "D2": 7,
+        "D3": 5
+      }
+    },
+    "word-problems": {
+      "name": "Multi-Step SDT Word Problems",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 1,
+        "D2": 5,
+        "D3": 3
+      }
+    }
+  }
+}

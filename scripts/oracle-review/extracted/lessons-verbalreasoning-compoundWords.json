@@ -1,0 +1,2219 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "compoundWords",
+    "displayName": "Compound Words",
+    "extractedAt": "2026-03-30T13:51:13.833Z",
+    "subConceptCount": 11,
+    "lessonCount": 14,
+    "screenCount": 57,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "front-placement",
+      "name": "Front Placement — Word Goes in Front",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "front-placement-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a word that goes IN FRONT of another to make a compound word — like snapping two LEGO bricks together!",
+            "A handy trick called Say It, Spell It that makes testing combinations super quick"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What goes IN FRONT of \"light\"?",
+              "body": "Daisy is working on compound word questions.\n\n**Did you know?** A compound word is just two smaller words stuck together — like \"sunlight\" = sun + light. Your job is to find ONE word that makes **two** real compound words. It's like finding a key that unlocks two doors!\n\nWhich word goes in front of both 'light' and 'burn' to make two compound words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + light = ???",
+                    "why": "Find a word that makes a real compound word with \"light\""
+                  },
+                  {
+                    "text": "? + burn = ???",
+                    "why": "The SAME word must also work with \"burn\""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Say It, Spell It — Front Placement",
+              "body": "Let's find a word that goes in front of **\"light\"** and **\"burn\"**. Here's the trick: try each option **before** the given word and say it in your head. Does it sound like a real word? If it does, you might be on to something!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Say it, check both words, then spell it. ✓",
+                "incorrectFeedback": "Not quite — start by trying options in front, then check BOTH target words."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try: \"sun\" + \"light\" = sunlight",
+                    "why": "Say it — does it sound right? Yes!"
+                  },
+                  {
+                    "text": "Check the second: \"sun\" + \"burn\" = sunburn",
+                    "why": "Both must work — and this one does too!"
+                  },
+                  {
+                    "text": "Spell it: SUNLIGHT — one real word ✓",
+                    "why": "It's one word, correctly spelt"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'bow' and 'drop' to make two compound words?\n\nRemember: the answer must work with **both** words!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'bow' and 'drop' to make two compound words?",
+                "options": [
+                  "rain",
+                  "snow",
+                  "dew",
+                  "tear",
+                  "eye"
+                ],
+                "correctAnswer": "rain",
+                "correctFeedback": "Brilliant! 'Rain' + 'bow' = rainbow, and 'rain' + 'drop' = raindrop. Both are real compound words. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"rain\". 'Rain' + 'bow' = rainbow, and 'rain' + 'drop' = raindrop. Both are real compound words. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + bow = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + drop = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've got the front placement recipe!",
+              "body": "Nice work! Here's your go-to method when the word goes IN FRONT:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Put each option BEFORE the given word",
+                    "why": "Say it in your head — sun+light? moon+light?"
+                  },
+                  {
+                    "text": "2. Check it works with BOTH target words",
+                    "why": "The answer must make TWO real compound words"
+                  },
+                  {
+                    "text": "3. Spell it out to confirm",
+                    "why": "One real word, not two separate words ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "front-placement-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "The sneaky trap where a word works with ONE target but not BOTH",
+            "A quick double-check trick that stops you losing easy marks"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Does \"snow\" work with both words?",
+              "body": "Evie is checking her friend's VR answers.\n\nThe question asks: **Which word goes in front of both 'bow' and 'drop'?**\n\nSomeone chose **\"snow\"** — but hang on, does it actually work with BOTH words? Let's play detective!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "snow + bow = snowbow",
+                    "why": "Is \"snowbow\" a real word?"
+                  },
+                  {
+                    "text": "snow + drop = snowdrop",
+                    "why": "Is \"snowdrop\" a real word?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Watch out — the BOTH-words trap!",
+              "body": "Here's the number one trap in compound word questions: picking a word that only works with ONE of the two targets. Don't fall for it!\n\n'Snowdrop' is real, but 'snowbow' isn't — 'snow' only works with 'drop', not with 'bow'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"snow\" + \"bow\" = snowdrop",
+                    "why": "This one might work..."
+                  },
+                  {
+                    "text": "\"snow\" + \"drop\" = ???",
+                    "why": "'Snowdrop' is real, but 'snowbow' isn't — 'snow' only works with 'drop', not with 'bow'"
+                  },
+                  {
+                    "text": "\"rain\" works with BOTH ✓",
+                    "why": "rain+bow AND rain+drop"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the word that works with BOTH!",
+              "body": "Which word goes in front of both 'light' and 'burn'?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'light' and 'burn'?",
+                "options": [
+                  "sun",
+                  "moon",
+                  "fire",
+                  "day",
+                  "flash"
+                ],
+                "correctAnswer": "sun",
+                "correctFeedback": "Well done! 'Sun' + 'light' = sunlight, and 'sun' + 'burn' = sunburn. Both are real compound words. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"sun\". 'Sun' + 'light' = sunlight, and 'sun' + 'burn' = sunburn. Both are real compound words. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + light = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + burn = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Golden rule: always check BOTH words",
+              "body": "Now you know the most common trap — and you won't fall for it! Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try each option with the FIRST target word",
+                    "why": "Does it make a real compound?"
+                  },
+                  {
+                    "text": "2. Then check the SECOND target word",
+                    "why": "Does the SAME option work here too?"
+                  },
+                  {
+                    "text": "3. Only pick it if BOTH are real compound words",
+                    "why": "One out of two isn't enough! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "back-placement",
+      "name": "Back Placement — Word Goes at the End",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "back-placement-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find a word that slots in AFTER another to complete a compound word",
+            "Using Say It, Spell It to test back-placement combos like a pro"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What goes AFTER \"bed\" and \"class\"?",
+              "body": "Grace is practising back-placement compound words.\n\nThis time, the mystery word goes at the **end** — like the last piece of a jigsaw. Can you find the ONE word that completes **both** compound words?\n\nWhich word goes after both 'bed' and 'class' to make two compound words?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Grace is practising back-placement compound words.\n\nThis time, the mystery word goes at the **end** — like the last piece of a jigsaw. Can you find the ONE word that completes **both** compound words?\n\nWhich word goes after both 'bed' and 'class' to make two compound words?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "b",
+                      "e",
+                      "d"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"bed\" + ? = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "c",
+                      "l",
+                      "a",
+                      "s",
+                      "s"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"class\" + ? = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Say It, Spell It — Back Placement",
+              "body": "Let's find a word that goes after **\"bed\"** and **\"class\"** to make compound words. Try each option **after** the given words — say it in your head and see if it clicks!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Try it after both words, then spell to check. ✓",
+                "incorrectFeedback": "Not quite — start by trying options after the first word, then check the second."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try: \"bed\" + \"room\" = bedroom",
+                    "why": "Say it — sounds like a real word!"
+                  },
+                  {
+                    "text": "Check: \"class\" + \"room\" = classroom",
+                    "why": "Works with the second word too!"
+                  },
+                  {
+                    "text": "Spell both: BEDROOM and CLASSROOM ✓",
+                    "why": "Both are one real word each"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes after both 'tooth' and 'hair' to make two compound words?\n\nRemember: put each option **after** both given words.",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Which word goes after both 'tooth' and 'hair' to make two compound words?\n\nRemember: put each option **after** both given words."
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "t",
+                      "o",
+                      "o",
+                      "t",
+                      "h"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"tooth\" + ? = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "h",
+                      "a",
+                      "i",
+                      "r"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"hair\" + ? = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes after both 'tooth' and 'hair' to make two compound words?",
+                "options": [
+                  "brush",
+                  "paste",
+                  "comb",
+                  "pick",
+                  "clip"
+                ],
+                "correctAnswer": "brush",
+                "correctFeedback": "Brilliant! 'Tooth' + 'brush' = toothbrush, and 'hair' + 'brush' = hairbrush. Both are real compound words. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"brush\". 'Tooth' + 'brush' = toothbrush, and 'hair' + 'brush' = hairbrush. Both are real compound words. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've nailed back placement!",
+              "body": "Brilliant — here's your recipe for when the word goes at the END:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Put each option AFTER the given words",
+                    "why": "bed+room? bed+time? bed+side?"
+                  },
+                  {
+                    "text": "2. Check it works with BOTH given words",
+                    "why": "The answer must complete TWO compound words"
+                  },
+                  {
+                    "text": "3. Spell them out to make sure",
+                    "why": "Real compound words, correctly spelt ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "back-placement-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why back-placement traps are so sneaky — and how to dodge them",
+            "A simple check that stops you picking a word that only fits one pairing"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"paste\" really the answer?",
+              "body": "Daisy is spotting a mistake in her practice answers.\n\nThe question: **Which word goes after both 'tooth' and 'hair'?**\n\nSomeone picked **\"paste\"** — sounds right, doesn't it? But does it actually work with BOTH words? Let's find out!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is spotting a mistake in her practice answers.\n\nThe question: **Which word goes after both 'tooth' and 'hair'?**\n\nSomeone picked **\"paste\"** — sounds right, doesn't it? But does it actually work with BOTH words? Let's find out!"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "t",
+                      "o",
+                      "o",
+                      "t",
+                      "h"
+                    ],
+                    "group2": [
+                      "p",
+                      "a",
+                      "s",
+                      "t",
+                      "e"
+                    ],
+                    "resultWord": "toothpaste",
+                    "label": "tooth + paste = toothpaste"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "h",
+                      "a",
+                      "i",
+                      "r"
+                    ],
+                    "group2": [
+                      "p",
+                      "a",
+                      "s",
+                      "t",
+                      "e"
+                    ],
+                    "resultWord": "hairpaste",
+                    "label": "hair + paste = hairpaste?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "One out of two won't do!",
+              "body": "'Hairpaste' isn't a real word — 'paste' only works with 'tooth'\n\nYou need a word that works with **both** given words — one out of two isn't good enough!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"paste\" works with \"tooth\" but NOT \"hair\"",
+                    "why": "'Hairpaste' isn't a real word — 'paste' only works with 'tooth'"
+                  },
+                  {
+                    "text": "Try \"brush\" instead...",
+                    "why": "\"tooth\" + \"brush\" = real word!"
+                  },
+                  {
+                    "text": "\"hair\" + \"brush\" = also real! ✓",
+                    "why": "Both compound words are real"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the one that works with BOTH!",
+              "body": "Which word goes after both 'foot' and 'basket' to make two compound words?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Which word goes after both 'foot' and 'basket' to make two compound words?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "f",
+                      "o",
+                      "o",
+                      "t"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"foot\" + ? = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "b",
+                      "a",
+                      "s",
+                      "k",
+                      "e",
+                      "t"
+                    ],
+                    "group2": [
+                      "?"
+                    ],
+                    "resultWord": "",
+                    "label": "\"basket\" + ? = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes after both 'foot' and 'basket' to make two compound words?",
+                "options": [
+                  "ball",
+                  "game",
+                  "match",
+                  "field",
+                  "team"
+                ],
+                "correctAnswer": "ball",
+                "correctFeedback": "Well done! 'Foot' + 'ball' = football, and 'basket' + 'ball' = basketball. Both are real compound words. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ball\". 'Foot' + 'ball' = football, and 'basket' + 'ball' = basketball. Both are real compound words. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're a trap-spotter now!",
+              "body": "You've cracked the back-placement trap — here's what to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "toothpaste is real BUT hairpaste is NOT",
+                    "why": "Paste only works with tooth"
+                  },
+                  {
+                    "text": "toothbrush is real AND hairbrush is real",
+                    "why": "Brush works with both!"
+                  },
+                  {
+                    "text": "Always test BOTH pairings before you choose",
+                    "why": "Two real compound words needed ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nature-compounds",
+      "name": "Nature Compound Words",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "nature-compounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why nature words like rain, snow, sun and water are absolute compound word superstars",
+            "How to build a secret weapon — a mental bank of nature compounds you can recall in seconds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How many compounds does \"snow\" make?",
+              "body": "Aisha is learning nature compound words for her VR test.\n\n**Did you know?** Nature words like **sun**, **rain**, **snow** and **water** are compound word superstars! They combine with LOADS of other words — more than almost anything else in English.\n\n**\"snow\"** makes: snowball, snowflake, snowman, snowdrop... and more!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "s",
+                  "n",
+                  "o",
+                  "w"
+                ],
+                "group2": [
+                  "b",
+                  "a",
+                  "l",
+                  "l"
+                ],
+                "resultWord": "snowball",
+                "label": "\"snow\" is a compound superstar!"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Nature words = your secret weapon",
+              "body": "Let's try **\"snow\"** with **\"ball\"** and **\"man\"**. Whenever you see a compound word question, always ask yourself: **could a nature word be the answer?** It's like having a cheat code — sun, rain, snow and water work SO often!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"snow\" + \"ball\" = snowball",
+                    "why": "Say it — sounds right!"
+                  },
+                  {
+                    "text": "\"snow\" + \"man\" = snowman",
+                    "why": "Works with both — that's the one!"
+                  },
+                  {
+                    "text": "\"snow\" also makes: snowman, snowdrop...",
+                    "why": "Nature words are incredibly versatile ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'fall' and 'proof' to make two compound words?\n\nThink: could a nature word work here?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'fall' and 'proof' to make two compound words?",
+                "options": [
+                  "water",
+                  "rain",
+                  "fire",
+                  "sound",
+                  "bullet"
+                ],
+                "correctAnswer": "water",
+                "correctFeedback": "Brilliant! 'Water' + 'fall' = waterfall, and 'water' + 'proof' = waterproof. Water is a great compound-maker! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"water\". 'Water' + 'fall' = waterfall, and 'water' + 'proof' = waterproof. Water is a great compound-maker! ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + fall = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + proof = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your nature compound cheat sheet",
+              "body": "Brilliant work! Keep these nature compound-makers stored in your memory bank:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "SUN: sunlight, sunrise, sunset, sunburn, sunflower",
+                    "why": "Sun goes in front"
+                  },
+                  {
+                    "text": "RAIN: rainbow, raincoat, raindrop, rainfall",
+                    "why": "Rain goes in front"
+                  },
+                  {
+                    "text": "WATER: waterfall, waterproof, watercolour",
+                    "why": "Water is incredibly versatile ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "nature-compounds-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why nature words are brilliant — but they don't work EVERY time",
+            "How to avoid the trap of forcing a nature word where it doesn't belong"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"rain\" always the answer?",
+              "body": "Daisy is spotting nature word traps.\n\nNature words like sun, rain and water make loads of compounds — but here's the catch: they don't work **every** time!\n\nDoes **\"rain\"** really work with both **\"storm\"** and **\"bolt\"**? Let's see...",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is spotting nature word traps.\n\nNature words like sun, rain and water make loads of compounds — but here's the catch: they don't work **every** time!\n\nDoes **\"rain\"** really work with both **\"storm\"** and **\"bolt\"**? Let's see..."
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "r",
+                      "a",
+                      "i",
+                      "n"
+                    ],
+                    "group2": [
+                      "s",
+                      "t",
+                      "o",
+                      "r",
+                      "m"
+                    ],
+                    "resultWord": "rainstorm",
+                    "label": "rain + storm = rainstorm"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "r",
+                      "a",
+                      "i",
+                      "n"
+                    ],
+                    "group2": [
+                      "b",
+                      "o",
+                      "l",
+                      "t"
+                    ],
+                    "resultWord": "rainbolt",
+                    "label": "rain + bolt = rainbolt?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Even superstars have limits!",
+              "body": "Just because a word is a common compound-maker doesn't mean it works everywhere — even superstars have off days!\n\n'Rainbolt' isn't a real word — 'rain' works with 'storm' but not 'bolt'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"rain\" + \"storm\" — maybe",
+                    "why": "It might sound right..."
+                  },
+                  {
+                    "text": "\"rain\" + \"bolt\" — no!",
+                    "why": "'Rainbolt' isn't a real word — 'rain' works with 'storm' but not 'bolt'"
+                  },
+                  {
+                    "text": "\"thunder\" works with BOTH ✓",
+                    "why": "thunder+storm AND thunder+bolt"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'colour' and 'melon'?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'colour' and 'melon'?",
+                "options": [
+                  "water",
+                  "rain",
+                  "sun",
+                  "green",
+                  "fire"
+                ],
+                "correctAnswer": "water",
+                "correctFeedback": "Well done! 'Water' + 'colour' = watercolour, and 'water' + 'melon' = watermelon. Both are real compound words. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"water\". 'Water' + 'colour' = watercolour, and 'water' + 'melon' = watermelon. Both are real compound words. ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + colour = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + melon = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Smart, not automatic!",
+              "body": "Nature words are your best first guess — but you've got this: always double-check!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Nature words are a great FIRST guess",
+                    "why": "Sun, rain, water, snow — try them first"
+                  },
+                  {
+                    "text": "But they don't work with EVERYTHING",
+                    "why": "snowring? rainbolt? Not real!"
+                  },
+                  {
+                    "text": "Always test BOTH pairings before choosing",
+                    "why": "Say it, spell it, check it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-compounds",
+      "name": "Body Part Compound Words",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "body-compounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why body part words like head, hand, foot and eye are brilliant compound builders",
+            "How to build up a mental word bank so you can spot them in a flash"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Compound words with \"hand\"",
+              "body": "Grace is learning body part compound words.\n\n**Did you know?** Body part words are another group of compound word superstars! **\"hand\"** alone makes: handbag, handshake, handwriting, handful.\n\nNext time you see a compound question, check the options — a body part word might be hiding in there!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "h",
+                  "a",
+                  "n",
+                  "d"
+                ],
+                "group2": [
+                  "b",
+                  "a",
+                  "g"
+                ],
+                "resultWord": "handbag",
+                "label": "\"hand\" is a compound builder!"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Body words = compound gold",
+              "body": "Let's try **\"hand\"** with **\"bag\"** and **\"shake\"**. Body words like head, hand, foot and eye pop up all the time in compound word questions. Once you know their families, you'll spot the answer in seconds!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"hand\" + \"bag\" = handbag",
+                    "why": "Say it — yes, that's a real word!"
+                  },
+                  {
+                    "text": "\"hand\" + \"shake\" = handshake",
+                    "why": "Works with both target words!"
+                  },
+                  {
+                    "text": "\"hand\" family: handbag, handshake, handwriting, handful",
+                    "why": "The more you know, the faster you'll spot them ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'brow' and 'lash' to make two compound words?\n\nThink: could a body part word be the answer?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'brow' and 'lash' to make two compound words?",
+                "options": [
+                  "eye",
+                  "fore",
+                  "hair",
+                  "over",
+                  "high"
+                ],
+                "correctAnswer": "eye",
+                "correctFeedback": "Brilliant! 'Eye' + 'brow' = eyebrow, and 'eye' + 'lash' = eyelash. Body words are compound superstars! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"eye\". 'Eye' + 'brow' = eyebrow, and 'eye' + 'lash' = eyelash. Body words are compound superstars! ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + brow = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + lash = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your body word cheat sheet",
+              "body": "Fantastic! Here are the body word families to keep in your back pocket:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "HEAD: headband, headlight, headline, headache",
+                    "why": "Head goes in front"
+                  },
+                  {
+                    "text": "HAND: handbag, handshake, handwriting, handful",
+                    "why": "Hand goes in front"
+                  },
+                  {
+                    "text": "FOOT: football, footprint, footstep, footpath",
+                    "why": "Body words are compound superstars ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-compounds",
+      "name": "Home & Building Compound Words",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "home-compounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why home and building words like door, house and room are great compound builders",
+            "How to spot house and room compound families quickly in the exam"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Compound words with \"door\"",
+              "body": "Daisy is learning home compound words.\n\n**Did you know?** Words about **homes and buildings** are another set of compound word champions! **\"door\"** alone makes: doorbell, doorstep, doorway, doorknob.\n\nLet's learn how to spot these in a flash.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "d",
+                  "o",
+                  "o",
+                  "r"
+                ],
+                "group2": [
+                  "b",
+                  "e",
+                  "l",
+                  "l"
+                ],
+                "resultWord": "doorbell",
+                "label": "\"door\" is a compound builder!"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Home words love making compounds",
+              "body": "Let's try **\"door\"** with **\"bell\"** and **\"step\"**. Home-related words like door, house, room and book are really common in compound word questions — think of all the things you see around the house every day!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"door\" + \"bell\" = doorbell",
+                    "why": "Say it — real word!"
+                  },
+                  {
+                    "text": "\"door\" + \"step\" = doorstep",
+                    "why": "Works with both!"
+                  },
+                  {
+                    "text": "Also: doorway, doorknob",
+                    "why": "The more compounds you know, the faster you are ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'shelf' and 'worm' to make two compound words?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'shelf' and 'worm' to make two compound words?",
+                "options": [
+                  "book",
+                  "inch",
+                  "silk",
+                  "earth",
+                  "glow"
+                ],
+                "correctAnswer": "book",
+                "correctFeedback": "Brilliant! 'Book' + 'shelf' = bookshelf, and 'book' + 'worm' = bookworm. Both use 'book' at the front! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"book\". 'Book' + 'shelf' = bookshelf, and 'book' + 'worm' = bookworm. Both use 'book' at the front! ✓"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "? + shelf = ???",
+                    "why": "Must make a real compound word"
+                  },
+                  {
+                    "text": "? + worm = ???",
+                    "why": "The SAME word must work here too!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your home compound toolkit",
+              "body": "Great job! Here are the home and building families to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "DOOR: doorbell, doorstep, doorway, doorknob",
+                    "why": "Door goes in front"
+                  },
+                  {
+                    "text": "HOUSE: household, housekeeper, housework",
+                    "why": "House goes in front"
+                  },
+                  {
+                    "text": "ROOM: bedroom, classroom, bathroom, mushroom",
+                    "why": "Room usually goes at the end ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-traps",
+      "name": "Common Compound Word Traps",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "common-traps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "The sneaky imposters: words that LOOK like compounds but totally aren't (is 'carpet' really 'car' + 'pet'?!)",
+            "A quick meaning test that tells you if a compound is real or fake"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"carpet\" really a compound word?",
+              "body": "Aisha is learning about fake compound words.\n\nHere's a brain-tickler: some words LOOK like they're made of two smaller words, but they're actually imposters! **\"carpet\"** looks like it could be **\"car\"** + **\"pet\"**.\n\nBut is it really? Let's bust this myth!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "c",
+                  "a",
+                  "r"
+                ],
+                "group2": [
+                  "p",
+                  "e",
+                  "t"
+                ],
+                "resultWord": "carpet",
+                "label": "Is \"carpet\" really \"car\" + \"pet\"?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The meaning test — your fake-detector",
+              "body": "So is **\"carpet\"** a real compound word? Here's the test: a REAL compound word's meaning comes from BOTH its parts. If the meaning doesn't connect to both halves, it's an imposter!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A real compound word gets its meaning from ____ of its parts",
+                "options": [
+                  "both",
+                  "one",
+                  "neither",
+                  "the longest"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! A real compound word's meaning comes from BOTH parts. ✓",
+                "incorrectFeedback": "Not quite — a real compound word's meaning must come from BOTH of its parts!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "FAKE: \"carpet\" ≠ \"car\" + \"pet\"",
+                    "why": "'Carpet' is NOT 'car' + 'pet' — it has nothing to do with cars or pets! It comes from a completely different word origin."
+                  },
+                  {
+                    "text": "REAL: \"carpark\" = \"car\" + \"park\"",
+                    "why": "'Carpark' IS a real compound: 'car' + 'park' — a place where you park cars"
+                  },
+                  {
+                    "text": "Real compounds: meaning comes from BOTH parts",
+                    "why": "A seashell IS a shell from the sea ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which of these is a REAL compound word using 'butter'?\n\nRemember: the meaning must come from BOTH parts!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which of these is a REAL compound word using 'butter'?",
+                "options": [
+                  "buttercup",
+                  "butterfly",
+                  "button",
+                  "butler",
+                  "buttery"
+                ],
+                "correctAnswer": "buttercup",
+                "correctFeedback": "Brilliant! 'Butter' + 'cup' = buttercup — a yellow wildflower. The meaning comes from both parts! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"buttercup\". 'Butter' + 'cup' = buttercup — a yellow wildflower. The meaning comes from both parts! ✓"
+              },
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "b",
+                  "u",
+                  "t",
+                  "t",
+                  "e",
+                  "r"
+                ],
+                "group2": [
+                  "?"
+                ],
+                "resultWord": "",
+                "label": "\"butter\" + ? = real compound:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You can spot the fakes now!",
+              "body": "Well done — you've got the fake-detecting superpower! Here's how it works:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Real: seashell = shell from the sea",
+                    "why": "Meaning comes from BOTH parts"
+                  },
+                  {
+                    "text": "Fake: carpet ≠ car + pet",
+                    "why": "Nothing to do with cars or pets!"
+                  },
+                  {
+                    "text": "The meaning test: do both halves contribute?",
+                    "why": "If not, it just looks like a compound ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-way-links",
+      "name": "Three-Way Compound Links",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "three-way-links-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find ONE word that links with three others — like finding the centre of a web!",
+            "A step-by-step testing method so you never get stuck"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One word, THREE compounds!",
+              "body": "Daisy is finding a word that links three others.\n\nThis one's a bit trickier — you need to find ONE word that makes a compound with **all three** given words. It's like finding the one puzzle piece that connects everything!\n\nWhich word goes with **\"light\"**, **\"rise\"**, AND **\"flower\"**?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Daisy is finding a word that links three others.\n\nThis one's a bit trickier — you need to find ONE word that makes a compound with **all three** given words. It's like finding the one puzzle piece that connects everything!\n\nWhich word goes with **\"light\"**, **\"rise\"**, AND **\"flower\"**?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "l",
+                      "i",
+                      "g",
+                      "h",
+                      "t"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"light\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "r",
+                      "i",
+                      "s",
+                      "e"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"rise\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "f",
+                      "l",
+                      "o",
+                      "w",
+                      "e",
+                      "r"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"flower\" = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Test each option against ALL three",
+              "body": "We need a word that works with **\"light\"**, **\"rise\"**, and **\"flower\"**. Try each option with all three target words — the right answer must make a real compound word with **every single one**. No shortcuts here!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"sun\" + \"light\" = sunlight",
+                    "why": "First target — real word!"
+                  },
+                  {
+                    "text": "\"sun\" + \"rise\" = sunrise",
+                    "why": "Second target — also works!"
+                  },
+                  {
+                    "text": "\"sun\" + \"flower\" = sunflower",
+                    "why": "All three work — that's the answer! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which ONE word makes a compound with all three: 'light', 'rise', and 'flower'?\n\nTest each option against ALL three words!",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Which ONE word makes a compound with all three: 'light', 'rise', and 'flower'?\n\nTest each option against ALL three words!"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "l",
+                      "i",
+                      "g",
+                      "h",
+                      "t"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"light\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "r",
+                      "i",
+                      "s",
+                      "e"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"rise\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "f",
+                      "l",
+                      "o",
+                      "w",
+                      "e",
+                      "r"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"flower\" = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which ONE word makes a compound with all three: 'light', 'rise', and 'flower'?",
+                "options": [
+                  "sun",
+                  "moon",
+                  "star",
+                  "day",
+                  "corn"
+                ],
+                "correctAnswer": "sun",
+                "correctFeedback": "Brilliant! 'Sun' + 'light' = sunlight, 'sun' + 'rise' = sunrise, 'sun' + 'flower' = sunflower. Sun links all three! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"sun\". 'Sun' + 'light' = sunlight, 'sun' + 'rise' = sunrise, 'sun' + 'flower' = sunflower. Sun links all three! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three-way links — you've got this!",
+              "body": "Brilliant work! For three-way compound questions, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Try each option with the FIRST target word",
+                    "why": "Does it make a real compound?"
+                  },
+                  {
+                    "text": "2. If yes, try it with the SECOND and THIRD",
+                    "why": "It must work with ALL of them"
+                  },
+                  {
+                    "text": "3. If any pairing fails, move to the next option",
+                    "why": "Keep going until all three work ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-compounds",
+      "name": "Reverse Compounds — Split the Word",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "reverse-compounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to split a compound word back into its two parts — like cracking a code!",
+            "A split-and-check method that makes reverse questions feel easy"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you split \"playground\"?",
+              "body": "Grace is practising splitting compound words.\n\nHere's a fun twist — sometimes the question works **backwards**! You're given a compound word and you need to crack it apart into its two pieces.\n\nWhere does **\"playground\"** split?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "p",
+                  "l",
+                  "a",
+                  "y",
+                  "g",
+                  "r",
+                  "o",
+                  "u",
+                  "n",
+                  "d"
+                ],
+                "label": "Split \"playground\" into two words:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Split and check — crack it open!",
+              "body": "Let's split the word **\"playground\"**. Your mission: find the exact point where it divides into **two real words**. Both halves must be genuine English words!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A compound word is made of ____ smaller words joined together",
+                "options": [
+                  "two",
+                  "three",
+                  "one",
+                  "four"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! A compound word is two smaller words joined together. ✓",
+                "incorrectFeedback": "Not quite — a compound word is made of TWO smaller words joined together!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"playground\" — where's the split?",
+                    "why": "Look for two real words hiding inside"
+                  },
+                  {
+                    "text": "\"play\" + \"ground\" = playground",
+                    "why": "Both are real words: \"play\" and \"ground\""
+                  },
+                  {
+                    "text": "Meaning: a ground (area) where you play",
+                    "why": "The meaning comes from both parts ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "How does 'playground' split into two words?\n\nRemember: both halves must be real English words!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How does 'playground' split into two words?",
+                "options": [
+                  "play + ground",
+                  "pla + yground",
+                  "plays + round",
+                  "player + ound",
+                  "play + gr + ound"
+                ],
+                "correctAnswer": "play + ground",
+                "correctFeedback": "Brilliant! 'Playground' splits into 'play' + 'ground' — an area (ground) where children play. Both halves are real words! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"play + ground\". 'Playground' splits into 'play' + 'ground' — an area (ground) where children play. Both halves are real words! ✓"
+              },
+              "visualProps": {
+                "mode": "word",
+                "letters": [
+                  "p",
+                  "l",
+                  "a",
+                  "y",
+                  "g",
+                  "r",
+                  "o",
+                  "u",
+                  "n",
+                  "d"
+                ],
+                "label": "Where does \"playground\" split?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Compound splitter — level unlocked!",
+              "body": "You're getting really good at this! To split any compound word:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look for a natural split point",
+                    "why": "Where could two real words be hiding?"
+                  },
+                  {
+                    "text": "2. Check BOTH halves are real words",
+                    "why": "'play' and 'ground' — yes! 'pla' and 'yground' — no!"
+                  },
+                  {
+                    "text": "3. Check the meaning connects both parts",
+                    "why": "A playground IS a ground for playing ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direction-compounds",
+      "name": "Direction & Position Compounds",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "direction-compounds-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why direction words like over, under, out, up and down are compound-making machines",
+            "How knowing these gives you a massive head start in the exam"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Direction words are compound superstars!",
+              "body": "Aisha is learning direction compound words.\n\n**Did you know?** Words like **over, under, out, up, down** are some of the busiest compound-makers in the whole of English! **\"over\"** alone makes: overcoat, overnight, overcome, overlook.\n\nSpotting a direction word in the options? That's often your answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "o",
+                  "v",
+                  "e",
+                  "r"
+                ],
+                "group2": [
+                  "c",
+                  "o",
+                  "a",
+                  "t"
+                ],
+                "resultWord": "overcoat",
+                "label": "\"over\" is a compound superstar!"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Direction words = quick wins",
+              "body": "Let's try **\"over\"** with **\"coat\"** and **\"night\"**. Direction words like over, under, out, up, down and back pop up ALL the time in compound questions. Spot one in the options? Try it first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"over\" + \"coat\" = overcoat",
+                    "why": "Say it — real word!"
+                  },
+                  {
+                    "text": "\"over\" + \"night\" = overnight",
+                    "why": "Works with both!"
+                  },
+                  {
+                    "text": "Also: overcome, overlook",
+                    "why": "Direction words are incredibly versatile ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word goes in front of both 'coat' and 'night' to make two compound words?\n\nCheck the options — is there a direction word?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Which word goes in front of both 'coat' and 'night' to make two compound words?\n\nCheck the options — is there a direction word?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "c",
+                      "o",
+                      "a",
+                      "t"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"coat\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "n",
+                      "i",
+                      "g",
+                      "h",
+                      "t"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"night\" = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'coat' and 'night' to make two compound words?",
+                "options": [
+                  "over",
+                  "under",
+                  "top",
+                  "rain",
+                  "bed"
+                ],
+                "correctAnswer": "over",
+                "correctFeedback": "Brilliant! 'Over' + 'coat' = overcoat, and 'over' + 'night' = overnight. Direction words make great compounds! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"over\". 'Over' + 'coat' = overcoat, and 'over' + 'night' = overnight. Direction words make great compounds! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your direction word power-ups",
+              "body": "Excellent! These direction compound families are your ticket to fast answers:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "OVER: overcoat, overnight, overcome, overlook",
+                    "why": "Over goes in front"
+                  },
+                  {
+                    "text": "UNDER: underground, underwater, understand",
+                    "why": "Under goes in front"
+                  },
+                  {
+                    "text": "OUT: outside, outdoor, outline, outright",
+                    "why": "Direction words are easy wins ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speed-strategy",
+      "name": "Speed Strategy — Quick Compound Solving",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "speed-strategy-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "A speed strategy for compound questions so you can blitz through them in the exam",
+            "Which options to test first — because smart order saves precious seconds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Solve it in seconds!",
+              "body": "Evie is learning to solve compound words quickly.\n\nIn the real exam, every second counts! The secret? Don't test all five options randomly — be smart about which ones you try first.\n\nWhich word goes in front of both 'card' and 'man'?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Evie is learning to solve compound words quickly.\n\nIn the real exam, every second counts! The secret? Don't test all five options randomly — be smart about which ones you try first.\n\nWhich word goes in front of both 'card' and 'man'?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "c",
+                      "a",
+                      "r",
+                      "d"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"card\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "m",
+                      "a",
+                      "n"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"man\" = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The speed strategy — work smart!",
+              "body": "We need a word for **\"card\"** and **\"man\"**. Here's the trick: when time is tight, try the most likely answers first! Common short words (sun, rain, hand, foot, over, under) are right way more often than unusual long words.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Scan for nature/body/direction words",
+                    "why": "These are the most common compound-makers"
+                  },
+                  {
+                    "text": "Step 2: Test the shortest, most common option first",
+                    "why": "Short everyday words are usually right"
+                  },
+                  {
+                    "text": "Step 3: \"post\" + \"card\" = postcard ✓",
+                    "why": "Found it on the first try!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — be quick!",
+              "body": "Which word goes in front of both 'light' and 'shine'?\n\nScan the options — which looks most likely?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Which word goes in front of both 'light' and 'shine'?\n\nScan the options — which looks most likely?"
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "l",
+                      "i",
+                      "g",
+                      "h",
+                      "t"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"light\" = ?"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "LetterTiles",
+                  "props": {
+                    "mode": "compound",
+                    "group1": [
+                      "?"
+                    ],
+                    "group2": [
+                      "s",
+                      "h",
+                      "i",
+                      "n",
+                      "e"
+                    ],
+                    "resultWord": "",
+                    "label": "? + \"shine\" = ?"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word goes in front of both 'light' and 'shine'?",
+                "options": [
+                  "moon",
+                  "star",
+                  "lamp",
+                  "flash",
+                  "glow"
+                ],
+                "correctAnswer": "moon",
+                "correctFeedback": "Brilliant! 'Moon' + 'light' = moonlight, and 'moon' + 'shine' = moonshine. Nature words are common compound-makers! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"moon\". 'Moon' + 'light' = moonlight, and 'moon' + 'shine' = moonshine. Nature words are common compound-makers! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Speed mode — unlocked!",
+              "body": "You've got the speed strategy now! To solve compound words FAST in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Scan for common compound-makers first",
+                    "why": "Nature, body, direction, home words"
+                  },
+                  {
+                    "text": "2. Test the most likely option with BOTH targets",
+                    "why": "Don't check all five — start with the best guess"
+                  },
+                  {
+                    "text": "3. If it works with both, move on!",
+                    "why": "Confidence + speed = more marks ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gl-compound-pairs",
+      "name": "GL Compound Pairs — Pick From Two Groups",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "gl-compound-pairs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to solve the real GL compound word format — picking one word from each of two groups",
+            "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
+            "Why spelling matters more than sound for tricky compounds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Evie's two-group challenge",
+              "body": "Evie is tackling GL compound word questions. This time there are **two groups of words** — pick one from each group to make a single compound word.\n\nGroup A: ( rain   silk   brass )\nGroup B: ( bow   thread   ring )\n\nThat's **9 possible combinations** to check! How do you find the right one quickly?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The 3×3 Grid Method",
+              "body": "Start with the **first word in Group A** and test it with **each word in Group B**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try: rain + thread",
+                    "why": "rathread? Not a word."
+                  },
+                  {
+                    "text": "Try: rain + ring",
+                    "why": "rainring? Not a word."
+                  },
+                  {
+                    "text": "Try: rain + bow",
+                    "why": "rainbow — YES! That's a real word!"
+                  },
+                  {
+                    "text": "✓ Answer: rain + bow = rainbow",
+                    "why": "Start with the first word in Group A and test it with each word in Group B"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Spelling Secret",
+              "body": "For **tricky compounds**, the word you make sounds **completely different** from the two parts.\n\nThe GL test loves this trick! The key is to **spell combinations out** letter by letter, not say them aloud.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "LetterTiles",
+              "interaction": null,
+              "visualProps": {
+                "mode": "compound",
+                "group1": [
+                  "R",
+                  "A",
+                  "I",
+                  "N"
+                ],
+                "group2": [
+                  "B",
+                  "O",
+                  "W"
+                ],
+                "resultWord": "RAINBOW"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find two words, one from each group, that join to make a new word.\n\nGroup A: ( cup   jug   pot )\nGroup B: ( board   handle   lid )",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which combination makes a real compound word?",
+                "options": [
+                  "cup + lid",
+                  "pot + handle",
+                  "jug + board",
+                  "cup + board",
+                  "pot + lid"
+                ],
+                "correctIndex": null
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two-group compound words — sorted!",
+              "body": "You now know how to solve the GL's compound word format! Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Start with Group A, word 1",
+                    "why": "Test it against all 3 Group B words"
+                  },
+                  {
+                    "text": "2. Move to Group A, word 2, then 3",
+                    "why": "Systematically check all 9 combos"
+                  },
+                  {
+                    "text": "3. SPELL it, don't SAY it",
+                    "why": "Hard questions change pronunciation: habit+at = habitat"
+                  },
+                  {
+                    "text": "4. Group A word always goes FIRST",
+                    "why": "Never try Group B word first — the order is fixed"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

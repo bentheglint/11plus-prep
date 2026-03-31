@@ -1,0 +1,3869 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "grammar",
+    "displayName": "Grammar",
+    "extractedAt": "2026-03-30T13:51:13.756Z",
+    "subConceptCount": 16,
+    "lessonCount": 32,
+    "screenCount": 128,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "subject-verb-agreement",
+      "name": "Subject-Verb Agreement",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "subject-verb-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to match singular subjects with singular verbs — and why getting it right makes your writing sound spot on",
+            "How to match plural subjects with plural verbs (it's easier than you think!)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something sounds dodgy here...",
+              "body": "Daisy is writing a report about her school sports day. But read this sentence aloud — does something sound off to you?\n\n\"The dogs was barking loudly in the park.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The dogs was barking loudly in the park.",
+                "highlightWords": [
+                  {
+                    "word": "was",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Does this sound right?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The subject-verb handshake!",
+              "body": "Think of the subject and verb as dance partners — they have to match! In Daisy's sentence, **\"The dogs\"** is the subject. The word **\"was\"** is the wrong partner — it should be **\"were\"**.\nSingular subjects need singular verbs, and plural subjects need plural verbs. Get this right and your writing will sound professional!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Nailed it! Find the subject, check singular or plural, then match the verb. That's the recipe! ✓",
+                "incorrectFeedback": "Almost there! Start by finding the subject, then decide if it's singular or plural, then match the verb. You'll get it!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the subject: \"The dogs\"",
+                    "why": "This is a plural subject"
+                  },
+                  {
+                    "text": "'The dogs' is plural, so we need the plural verb 'were' — not the singular 'was'",
+                    "why": "So: \"The dogs\" → \"were\""
+                  },
+                  {
+                    "text": "✓ \"The dogs were barking loudly in the park.\"",
+                    "why": "Plural subject → plural verb"
+                  },
+                  {
+                    "text": "Tricky: \"Neither the captain nor the goalkeeper was late.\"",
+                    "why": "With 'neither...nor', the verb agrees with the subject closest to it"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "You're up!",
+              "body": "Time to put your new skill to the test — which sentence sounds right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence uses the correct verb?",
+                "options": [
+                  "The cats were sleeping on the sofa.",
+                  "The cats was sleeping on the sofa.",
+                  "Neither the teacher nor the pupils was ready for assembly.",
+                  "The cats was always ready for school.",
+                  "The cats was running in the corridor."
+                ],
+                "correctAnswer": "The cats were sleeping on the sofa.",
+                "correctFeedback": "Brilliant — you've got a great ear for this! 'The cats' is plural, so we need the plural verb 'were' — not the singular 'was'. ✓",
+                "incorrectFeedback": "Not quite — but don't worry, this trips up loads of people! 'The cats' is plural, so we need the plural verb 'were' — not the singular 'was'. The correct sentence is: \"The cats were sleeping on the sofa.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The cats was sleeping on the sofa.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Subject-verb agreement — you've got this!",
+              "body": "Follow these steps to get your verbs right every time — it'll become second nature:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the subject of the sentence",
+                    "why": "Who or what is doing the action?"
+                  },
+                  {
+                    "text": "Step 2: Is it singular or plural?",
+                    "why": "Singular = one (she, the dog, everyone). Plural = more than one (they, the dogs, the children)"
+                  },
+                  {
+                    "text": "Step 3: Match the verb",
+                    "why": "Singular subject → singular verb (is, was, has, doesn't). Plural → plural verb (are, were, have, don't)"
+                  },
+                  {
+                    "text": "Step 4: Check 'neither...nor' carefully",
+                    "why": "The verb agrees with the subject CLOSEST to it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "subject-verb-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot subject-verb disagreement — and why even grown-ups get caught out by this one!",
+            "Why some sneaky subjects trick people into using the wrong verb"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? Even news presenters make this mistake!",
+              "body": "Oliver wrote a paragraph about sports day. But one sentence has a sneaky grammar mistake — can you hear it?\n\n\"The boys in my class was running the relay race.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The boys in my class was running the relay race.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the trap — and how to dodge it!",
+              "body": "Oliver used the singular verb 'was' with the plural subject 'The boys'.\n\n'The boys' is plural, so it needs the plural verb 'were' — don't be tricked by 'in my class' in the middle. Once you spot this pattern, you'll catch it every time!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"The boys in my class was running the relay race.\"",
+                    "why": "used the singular verb 'was' with the plural subject 'The boys'"
+                  },
+                  {
+                    "text": "✓ \"The boys in my class were running the relay race.\"",
+                    "why": "'The boys' is plural, so it needs the plural verb 'were' — don't be tricked by 'in my class' in the middle"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — fix the sentence!",
+              "body": "Can you pick the one that sounds right? Trust your ear!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is grammatically correct?",
+                "options": [
+                  "The girls in our team were winning the race.",
+                  "The girls in our team was winning the race.",
+                  "The team of players were arguing about the rules.",
+                  "Nobody in the class have finished yet.",
+                  "Each of the pupils in the group are ready."
+                ],
+                "correctAnswer": "The girls in our team were winning the race.",
+                "correctFeedback": "Well done — that's a tricky one and you nailed it! 'The girls' is plural, so it needs the plural verb 'were' — don't be tricked by 'in our team' in the middle. ✓",
+                "incorrectFeedback": "Nearly! This one catches out loads of people. 'The girls' is plural, so it needs the plural verb 'were' — don't be tricked by 'in our team' in the middle. The correct sentence is: \"The girls in our team were winning the race.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The girls in our team was winning the race.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're now a subject-verb detective!",
+              "body": "Here's your checklist — keep this in your back pocket for the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the TRUE subject",
+                    "why": "Who or what is the sentence really about? Don't be distracted!"
+                  },
+                  {
+                    "text": "Step 2: Ignore words in between",
+                    "why": "'The box of chocolates WAS heavy' — 'box' is the subject, not 'chocolates'"
+                  },
+                  {
+                    "text": "Step 3: Is the subject singular or plural?",
+                    "why": "One thing = singular. More than one = plural"
+                  },
+                  {
+                    "text": "Step 4: Match the verb",
+                    "why": "Singular: was, is, has, goes. Plural: were, are, have, go"
+                  },
+                  {
+                    "text": "Bonus trap: everyone, nobody, each = always singular",
+                    "why": "Even though they talk about lots of people — sneaky!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb-tenses",
+      "name": "Past, Present, and Future Tenses",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "verb-tenses-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot whether something happened yesterday, is happening now, or will happen tomorrow — just from the verb!",
+            "How to keep your tenses consistent so your writing flows smoothly"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? Verbs are like time machines!",
+              "body": "Grace is writing a diary entry about her school trip. Here's the cool thing — every verb tells us **when** something happens. Change the verb and you travel in time! Let's learn how to spot the **tense** and keep it consistent.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Past: walked | Present: is walking | Future: will walk",
+                "highlightWords": [
+                  {
+                    "word": "walked",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "word": "is walking",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "word": "will walk",
+                    "color": "#f59e0b"
+                  }
+                ],
+                "label": "Three tenses of the same verb:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Watch the verb change shape!",
+              "body": "Look at how the verb **\"walk\"** transforms depending on the tense — same action, different time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Past tense: \"We walked to the museum and looked at the dinosaurs.\"",
+                    "why": "Done and dusted — it happened before now"
+                  },
+                  {
+                    "text": "Present tense: \"We are walking to the museum and looking at the dinosaurs.\"",
+                    "why": "Happening right now, as we speak!"
+                  },
+                  {
+                    "text": "Future tense: \"We will walk to the museum and will look at the dinosaurs.\"",
+                    "why": "Coming soon — look for 'will' as your clue"
+                  },
+                  {
+                    "text": "Keep tenses consistent!",
+                    "why": "Don't mix: \"We walked to the museum and are looking at the dinosaurs.\" ✗ — 'walked' is past tense but 'are looking' is present tense — they don't match"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Can you spot the smooth one?",
+              "body": "One of these sentences keeps its tenses perfectly consistent — which one?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence has consistent tenses?",
+                "options": [
+                  "She painted a picture and hung it on the wall.",
+                  "She painted a picture and hangs it on the wall.",
+                  "The dog chased the ball and catches it near the fence.",
+                  "We arrived at the park and will eat our picnic there.",
+                  "She opened the door and is walking inside slowly."
+                ],
+                "correctAnswer": "She painted a picture and hung it on the wall.",
+                "correctFeedback": "Brilliant — you've got a great ear for this! Both verbs should be past tense: 'painted' and 'hung'. ✓",
+                "incorrectFeedback": "Close! Look for a sentence where ALL the verbs are in the same tense. \"She painted a picture and hung it on the wall.\" — Both verbs should be past tense: 'painted' and 'hung'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "All verbs should be in the SAME tense",
+                "highlightWords": [],
+                "label": "Which sentence is consistent?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tense consistency — you've cracked it!",
+              "body": "Here's your 3-step check — use it every time you write:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find all the verbs in the sentence",
+                    "why": "Look for the 'doing' or 'being' words — there might be more than one!"
+                  },
+                  {
+                    "text": "Step 2: Check — are they all in the same tense?",
+                    "why": "Past (-ed, irregular), present (-s, -ing), future (will)"
+                  },
+                  {
+                    "text": "Step 3: If they don't match, fix them!",
+                    "why": "Change ALL the verbs to the same tense — consistency is king! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "verb-tenses-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when tenses go haywire in a sentence — your secret weapon for the exam!",
+            "Why mixing tenses confuses the reader (and how to fix it in seconds)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Marcus",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can your ear catch the time-travel glitch?",
+              "body": "Marcus wrote a paragraph about his birthday party. But this sentence jumps between time zones! Can you hear the mix-up?\n\n\"We played musical chairs and then everyone is eating cake.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We played musical chairs and then everyone is eating cake.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Caught it! Here's what went wrong.",
+              "body": "Marcus switched from past tense ('played') to present tense ('is eating') mid-sentence.\n\nBoth actions happened at the party, so both verbs should be in the past tense. This is one of the most common mistakes in writing — spotting it is a real superpower!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"We played musical chairs and then everyone is eating cake.\"",
+                    "why": "switched from past tense ('played') to present tense ('is eating') mid-sentence"
+                  },
+                  {
+                    "text": "✓ \"We played musical chairs and then everyone ate cake.\"",
+                    "why": "Both actions happened at the party, so both verbs should be in the past tense"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — fix the time-travel!",
+              "body": "Which sentence stays in the same time zone?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is correct?",
+                "options": [
+                  "The guests arrived early and helped set up the decorations.",
+                  "The guests arrived early and help set up the decorations.",
+                  "The children walked to school and are eating lunch now.",
+                  "She opened the book and reads the first page.",
+                  "They ran outside and is playing in the garden."
+                ],
+                "correctAnswer": "The guests arrived early and helped set up the decorations.",
+                "correctFeedback": "Spot on! You're getting really good at this. Both actions happened at the party, so both verbs should be past tense: 'arrived' and 'helped'. ✓",
+                "incorrectFeedback": "Close! Both actions happened at the party, so both verbs should be past tense: 'arrived' and 'helped'. The correct sentence is: \"The guests arrived early and helped set up the decorations.\". Keep practising — you're nearly there!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The guests arrived early and help set up the decorations.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The golden rule — stay in your time zone!",
+              "body": "Remember these three steps and you'll never mix up tenses again:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Pick your tense and STICK with it",
+                    "why": "If you start in the past, stay in the past — no time-travelling!"
+                  },
+                  {
+                    "text": "Check every verb in the sentence",
+                    "why": "Each one should be in the same tense as the others"
+                  },
+                  {
+                    "text": "Read it aloud — mixed tenses often sound wrong",
+                    "why": "Your ear is your best tool — trust it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregular-past",
+      "name": "Irregular Past Tenses",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "irregular-past-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use irregular past tenses correctly — these rebel verbs don't follow the rules!",
+            "Why 'I have went' is wrong but 'I have gone' is right (and how to never mix them up again)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? These verbs are rebels!",
+              "body": "Holly is writing about what happened at school yesterday. Most verbs just add \"-ed\" for the past tense — easy, right? But some verbs are rebels! They change in unexpected ways. Let's learn when to use **\"went\"** and when to use **\"gone\"**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I have went to the office. — or — I have gone to the office.",
+                "highlightWords": [
+                  {
+                    "word": "went",
+                    "color": "#e74c3c"
+                  },
+                  {
+                    "word": "gone",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One verb, two past forms — here's the trick!",
+              "body": "The verb **\"go\"** has two past forms, and mixing them up is one of the most common mistakes in English. Here's how to get it right every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "\"I have ____\" — which past form of \"go\" goes with \"have\"?",
+                "options": [
+                  "gone",
+                  "went",
+                  "go",
+                  "going"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! With \"have/has/had\", always use \"gone\" — never \"went\". You've got this! ✓",
+                "incorrectFeedback": "Nearly! With \"have/has/had\", you need the past participle \"gone\", not \"went\". Think: helper verb = participle partner."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Simple past: \"went\"",
+                    "why": "Stands on its own like a solo act: \"I went to the office.\""
+                  },
+                  {
+                    "text": "Past participle: \"gone\"",
+                    "why": "Always needs a helper (have/has/had): \"I have gone to the office.\""
+                  },
+                  {
+                    "text": "✗ NEVER say \"I have went to the office.\"",
+                    "why": "\"went\" and \"have\" don't go together — like wearing two left shoes!"
+                  },
+                  {
+                    "text": "✓ Always say \"I have gone to the office.\"",
+                    "why": "\"have\" + \"gone\" is the winning combo"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Time to show off your skills!",
+              "body": "You know the rule — now put it into action!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is grammatically correct?",
+                "options": [
+                  "They have gone to the assembly hall.",
+                  "They have went to the assembly hall.",
+                  "He has went out for break.",
+                  "They has gone it already.",
+                  "We gone there yesterday."
+                ],
+                "correctAnswer": "They have gone to the assembly hall.",
+                "correctFeedback": "Brilliant — you're a natural! With \"have\" you always use \"gone\", not \"went\". ✓",
+                "incorrectFeedback": "Almost! When you see \"have/has/had\", reach for the past participle \"gone\": \"They have gone to the assembly hall.\". You'll nail it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Use \"gone\" with have/has/had",
+                "highlightWords": [
+                  {
+                    "word": "gone",
+                    "color": "#22c55e"
+                  }
+                ],
+                "label": "Remember the rule:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Irregular past tenses — sorted!",
+              "body": "Here's your foolproof method. Learn this and you'll be ahead of most grown-ups!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Is there a helper verb (have, has, had)?",
+                    "why": "Spot it before the verb — it's the clue!"
+                  },
+                  {
+                    "text": "Step 2: If YES → use the past participle",
+                    "why": "have GONE, has DONE, had SEEN — the helper's partner"
+                  },
+                  {
+                    "text": "Step 3: If NO → use the simple past",
+                    "why": "I WENT, she DID, we SAW — flying solo"
+                  },
+                  {
+                    "text": "Key irregular verbs to learn:",
+                    "why": "go→went/gone, do→did/done, see→saw/seen, eat→ate/eaten ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "irregular-past-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot common irregular verb mistakes — the ones that trip up almost everyone!",
+            "Why these errors happen (blame your ears!) and how to dodge them every time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This mistake is EVERYWHERE — can you catch it?",
+              "body": "Tom wrote a letter to his grandparents. You'll hear this mistake on telly, in shops, even from teachers sometimes! Can you spot it?\n\n\"I have went to the park every day this week.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I have went to the park every day this week.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's why it sounds right but isn't!",
+              "body": "Tom used 'went' with 'have' — but 'went' is the simple past, not the past participle.\n\nWith 'have', always use 'gone' (not 'went'): 'I have gone'. People make this mistake because both forms sound like they could work — but only one is correct!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"I have went to the park every day this week.\"",
+                    "why": "used 'went' with 'have' — but 'went' is the simple past, not the past participle"
+                  },
+                  {
+                    "text": "✓ \"I have gone to the park every day this week.\"",
+                    "why": "With 'have', always use 'gone' (not 'went'): 'I have gone'"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — fix the rebel verb!",
+              "body": "Which sentence uses the correct past form? Remember: look for the helper!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is correct?",
+                "options": [
+                  "She has gone to the shops with Mum.",
+                  "She has went to the shops with Mum.",
+                  "They has ate all of the cake at the party.",
+                  "The children have wrote a letter to the headteacher.",
+                  "She has broke the school record in the sprint."
+                ],
+                "correctAnswer": "She has gone to the shops with Mum.",
+                "correctFeedback": "Excellent work! You didn't fall for the trap. With 'has', always use 'gone' (not 'went'): 'She has gone'. ✓",
+                "incorrectFeedback": "Not quite — but don't worry, this catches out grown-ups too! With 'has', always use 'gone' (not 'went'): 'She has gone'. The correct sentence is: \"She has gone to the shops with Mum.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She has went to the shops with Mum.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The big three — learn these and you're golden!",
+              "body": "These are the three most common irregular verb mix-ups. Get these right and you'll be ahead of most adults!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ 'I have went' → ✓ 'I have gone'",
+                    "why": "went flies solo, gone needs a helper (have/has/had)"
+                  },
+                  {
+                    "text": "✗ 'I have did' → ✓ 'I have done'",
+                    "why": "did flies solo, done needs a helper"
+                  },
+                  {
+                    "text": "✗ 'I have saw' → ✓ 'I have seen'",
+                    "why": "saw flies solo, seen needs a helper ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparative-superlative",
+      "name": "Comparatives and Superlatives",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "comparative-superlative-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to form comparatives and superlatives — the words that let you crown a winner!",
+            "When to use 'more' and 'most' instead of '-er' and '-est' (there's a neat trick for this)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "taller or more tall? Only one is right!",
+              "body": "Daisy is comparing three cakes she baked for a competition. When you compare things, you need the right word — but here's the thing: some words use \"-er\" and some use \"more\". Pick the wrong one and it sounds really odd!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "tall → taller → tallest",
+                "highlightWords": [
+                  {
+                    "word": "taller",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Comparing words:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The syllable trick — it works every time!",
+              "body": "We saw **\"tall\"** becoming **\"taller\"** — but how do you know whether to add -er or use \"more\"? Here's the secret: it all comes down to how many syllables the word has!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Short words (1-2 syllables): add -er / -est",
+                    "why": "tall → taller → tallest"
+                  },
+                  {
+                    "text": "Long words (3+ syllables): use more / most",
+                    "why": "beautiful → more beautiful → most beautiful"
+                  },
+                  {
+                    "text": "Irregular words: learn these by heart!",
+                    "why": "good → better → best"
+                  },
+                  {
+                    "text": "✗ NEVER double up: \"more taller\"",
+                    "why": "Using \"more\" AND \"-er\" together is like wearing a belt AND braces — pick one!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try — count those syllables!",
+              "body": "Use the syllable trick to work out which comparison is correct!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is correct?",
+                "options": [
+                  "This is the most beautiful of all three cakes.",
+                  "This is the most beautifulest of all three cakes.",
+                  "This is the beautifulest of all three cakes.",
+                  "This is the more beautiful of all three cakes.",
+                  "This is the taller of all three cakes."
+                ],
+                "correctAnswer": "This is the most beautiful of all three cakes.",
+                "correctFeedback": "Brilliant! You counted the syllables perfectly. \"beautiful\" is a long word (3+ syllables), so we use \"most\": \"most beautiful\". ✓",
+                "incorrectFeedback": "Nearly! Try clapping out the syllables — \"beautiful\" is a long word, so use \"most\" before it: \"the most beautiful of all three\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "beautiful → ? → ?",
+                "highlightWords": [],
+                "label": "Complete the pattern:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comparisons — you've nailed it!",
+              "body": "Here's your 4-step recipe. Getting this right will make your writing sound really polished!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Count the syllables in the word",
+                    "why": "Clap them out: beau-ti-ful = 3, tall = 1 — easy!"
+                  },
+                  {
+                    "text": "Step 2: Short (1-2 syllables) → add -er or -est",
+                    "why": "tall → taller → tallest, happy → happier → happiest"
+                  },
+                  {
+                    "text": "Step 3: Long (3+ syllables) → use more or most",
+                    "why": "beautiful → more beautiful → most beautiful"
+                  },
+                  {
+                    "text": "Step 4: NEVER double up!",
+                    "why": "✗ more taller, most fastest — pick ONE method only. Belt or braces, not both! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "comparative-superlative-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot double comparatives (like 'more bigger') — a mistake you'll hear everywhere once you know it!",
+            "How to fix irregular comparative errors and sound like a grammar pro"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ruby",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? This mistake is in TV adverts all the time!",
+              "body": "Ruby wrote a sentence about her dog. There's a really common grammar blunder hiding here — once you spot it, you'll notice it everywhere!\n\n\"My dog is more bigger than yours.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "My dog is more bigger than yours.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One method only — don't be greedy!",
+              "body": "Ruby used 'more' AND '-er' at the same time — that's a double comparative.\n\n'Big' is a short word, so just add -er: 'bigger'. Never say 'more bigger'.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"My dog is more bigger than yours.\"",
+                    "why": "used 'more' AND '-er' at the same time — that's a double comparative"
+                  },
+                  {
+                    "text": "✓ \"My dog is bigger than yours.\"",
+                    "why": "'Big' is a short word, so just add -er: 'bigger'. Never say 'more bigger'"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — spot the correct one!",
+              "body": "Which sentence avoids the double-up trap?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is grammatically correct?",
+                "options": [
+                  "My cat is smaller than your rabbit.",
+                  "My cat is more smaller than your rabbit.",
+                  "It was the most easiest question on the test.",
+                  "The new painting looked more better than the old one.",
+                  "That was the most worst result of the whole year."
+                ],
+                "correctAnswer": "My cat is smaller than your rabbit.",
+                "correctFeedback": "Excellent! You dodged the trap perfectly. 'Small' is a short word, so just add -er: 'smaller'. Never say 'more smaller'. ✓",
+                "incorrectFeedback": "Nearly! 'Small' is a short word, so just add -er: 'smaller'. Never say 'more smaller'. The correct sentence is: \"My cat is smaller than your rabbit.\". You'll spot it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "My cat is more smaller than your rabbit.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Double-up trap — you'll never fall for it again!",
+              "body": "Here are the three most common comparison mistakes. Knowing these is a superpower for the exam!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ more bigger → ✓ bigger",
+                    "why": "Short word = just add -er. No 'more' needed!"
+                  },
+                  {
+                    "text": "✗ most fastest → ✓ fastest",
+                    "why": "Short word = just add -est. No 'most' needed!"
+                  },
+                  {
+                    "text": "✗ most best → ✓ best",
+                    "why": "Irregular: good → better → best (it's already the top — you can't make it more top!) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "name": "Pronouns — Who, Whom, I, and Me",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "pronouns-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "When to use 'I' and when to use 'me' — there's a brilliant trick for this!",
+            "The removal trick that works every single time (even grown-ups don't know this one)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This one tricks EVERYONE — even teachers!",
+              "body": "Sophie is writing an invitation for her birthday party. Quick — which sounds right: \"Sophie and I\" or \"Sophie and me\"? Most people guess... and get it wrong! But there's a foolproof trick.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"Sophie and me went to the cinema.\" — is this the right pronoun?",
+                "highlightWords": [
+                  {
+                    "word": "Sophie and me went to the cinema.",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Check the pronoun:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The removal trick — your secret weapon!",
+              "body": "Is it **\"Sophie and I\"** or **\"Sophie and me\"**? Here's the magic trick: **cross out the other person's name** and see which sounds right on its own. It works every single time!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Remove, test, put back — that's the trick! You've got this. ✓",
+                "incorrectFeedback": "Almost! Start by crossing out the other person's name, then test which pronoun sounds right on its own. Try again!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Test the subject: remove \"Sophie and\"",
+                    "why": "\"I went to the cinema.\" ✓ sounds right. \"Me went to the cinema.\" ✗ sounds wrong."
+                  },
+                  {
+                    "text": "So: \"Sophie and I went to the cinema.\" ✓",
+                    "why": "\"I\" is correct when it's the SUBJECT (doing the action)"
+                  },
+                  {
+                    "text": "Test the object: remove \"Sophie and\"",
+                    "why": "\"Mum gave the tickets to me.\" ✓ sounds right. \"Mum gave the tickets to I.\" ✗ sounds wrong."
+                  },
+                  {
+                    "text": "So: \"Mum gave the tickets to Sophie and me.\" ✓",
+                    "why": "\"Me\" is correct when it's the OBJECT (receiving the action)"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Time to use your secret weapon!",
+              "body": "Use the removal trick to find the correct sentence — cross out the name and listen!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is correct?",
+                "options": [
+                  "Sophie and I played in the garden.",
+                  "Sophie and me played in the garden.",
+                  "Me and Sophie went to the cinema.",
+                  "Sophie and me was late.",
+                  "Me and Sophie is going now."
+                ],
+                "correctAnswer": "Sophie and I played in the garden.",
+                "correctFeedback": "Brilliant — the removal trick wins again! Remove \"Sophie and\" — you'd say \"I played in the garden.\", not \"Me played in the garden.\". So \"I\" is correct. ✓",
+                "incorrectFeedback": "Nearly! Use the trick: remove \"Sophie and\" — \"I played in the garden.\" sounds right, but \"Me played in the garden.\" sounds wrong. So use \"I\": \"Sophie and I played in the garden.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Subject pronouns: I, you, he, she, it, we, they",
+                "highlightWords": [],
+                "label": "Which pronoun is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "I or me? — never get it wrong again!",
+              "body": "The removal trick is your superpower. Use it every time and you'll always be right:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Remove the other person from the sentence",
+                    "why": "Cross out 'Sophie and' or 'my friend and'"
+                  },
+                  {
+                    "text": "Step 2: Try 'I' — does it sound right?",
+                    "why": "'I went to the shop' ✓ → use 'I' (subject)"
+                  },
+                  {
+                    "text": "Step 3: Try 'me' — does it sound right?",
+                    "why": "'Give it to me' ✓ → use 'me' (object)"
+                  },
+                  {
+                    "text": "Step 4: Put the other person back in",
+                    "why": "'Sophie and I went' or 'Give it to Sophie and me' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "pronouns-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot 'I' used incorrectly as an object — the poshest mistake in English!",
+            "Why people make this mistake (they think 'I' always sounds better) and how to dodge it"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Alfie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? Trying to sound posh can backfire!",
+              "body": "Alfie wrote a thank-you card. This one sounds polite and fancy... but it's actually wrong! Even the Queen's English gets this one muddled.\n\n\"Thank you for inviting Harry and I to your party.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Thank you for inviting Harry and I to your party.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Fancy doesn't always mean right!",
+              "body": "Many people think \"and I\" always sounds better than \"and me\". But Alfie used 'I' as the object — but 'inviting' is done TO someone, so it needs 'me'.\n\nRemove 'Harry and': 'Thank you for inviting me' ✓ not 'Thank you for inviting I' ✗.\n\n**4-step check:**\n1. 'And I' is NOT always correct — it just sounds polite\n2. Subject = I (doing the action): 'My friend and I played football'\n3. Object = me (receiving the action): 'The coach picked my friend and me'\n4. Use the removal trick: remove the other person and listen",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"Thank you for inviting Harry and I to your party.\"",
+                    "why": "used 'I' as the object — but 'inviting' is done TO someone, so it needs 'me'"
+                  },
+                  {
+                    "text": "✓ \"Thank you for inviting Harry and me to your party.\"",
+                    "why": "Remove 'Harry and': 'Thank you for inviting me' ✓ not 'Thank you for inviting I' ✗"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — don't fall for the posh trap!",
+              "body": "Which sentence uses the correct pronoun? Use the removal trick!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is correct?",
+                "options": [
+                  "The teacher gave a prize to Lucy and me.",
+                  "The teacher gave a prize to Lucy and I.",
+                  "The teacher told my friend and I off for being late.",
+                  "Mum took my sister and I to the dentist yesterday.",
+                  "Please pass the book to my brother and I."
+                ],
+                "correctAnswer": "The teacher gave a prize to Lucy and me.",
+                "correctFeedback": "Brilliant — you didn't fall for the posh trap! Remove 'Lucy and': 'The teacher gave a prize to me' ✓ not 'The teacher gave a prize to I' ✗. ✓",
+                "incorrectFeedback": "Almost! This one catches out lots of people. Remove 'Lucy and': 'The teacher gave a prize to me' ✓ not 'The teacher gave a prize to I' ✗. The correct sentence is: \"The teacher gave a prize to Lucy and me.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The teacher gave a prize to Lucy and I.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "'And I' isn't always right — now you know!",
+              "body": "You've learned something most grown-ups don't know. Here's your foolproof method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Remove the other person from the sentence",
+                    "why": "Cross out 'Sarah and' or 'My friend and'"
+                  },
+                  {
+                    "text": "Step 2: Read it with just 'I' or 'me'",
+                    "why": "Does it sound right on its own? Your ear knows!"
+                  },
+                  {
+                    "text": "Example: 'Sarah and ___ went to the park'",
+                    "why": "'I went to the park' sounds right. 'Me went to the park' — nope!"
+                  },
+                  {
+                    "text": "Example: 'Mum gave it to Sarah and ___'",
+                    "why": "'Mum gave it to me' sounds right. 'Mum gave it to I' — definitely not!"
+                  },
+                  {
+                    "text": "Trust your ear — if it sounds wrong, it IS wrong!",
+                    "why": "This trick works every single time. That's a superpower for the exam! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "name": "Conjunctions and Connectives",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "conjunctions-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use coordinating conjunctions (and, but, or) — the glue that holds sentences together!",
+            "How to use subordinating conjunctions (because, although, when) — and why picking the right one changes everything"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mia",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? These little words are the glue of English!",
+              "body": "Mia is writing about her weekend. Without **conjunctions** (joining words like 'and', 'but', 'because'), we'd all talk in tiny, choppy sentences. There are three types — and knowing them makes your writing flow beautifully!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I wanted to go to the park, but it was raining.",
+                "highlightWords": [
+                  {
+                    "word": "but",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the joining word:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three flavours of joining word!",
+              "body": "In Mia's sentence, **\"but\"** is a conjunction. Think of conjunctions as bridges between ideas — and there are three types of bridge:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Coordinating: \"I wanted to go to the park, but it was raining.\"",
+                    "why": "The big three: and, but, or — join two equal ideas like best mates. \"but\" shows a contrast — she wanted to go, but the weather stopped her"
+                  },
+                  {
+                    "text": "Subordinating: \"Although it was raining, I still played outside.\"",
+                    "why": "The explainers: because, although, when, if, while — one idea depends on the other. \"although\" introduces a subordinate clause — the rain didn't stop her"
+                  },
+                  {
+                    "text": "Correlative: \"Neither the rain nor the cold could stop me.\"",
+                    "why": "The duo: either...or, neither...nor, both...and — they always work in PAIRS. \"neither...nor\" links two negatives together"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — pick the right bridge!",
+              "body": "Which conjunction best completes this sentence? Think about what the sentence means!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"I wanted to stay up late, _____ Mum said it was bedtime.\" Which conjunction fits?",
+                "options": [
+                  "but",
+                  "although",
+                  "and",
+                  "or",
+                  "because"
+                ],
+                "correctAnswer": "but",
+                "correctFeedback": "Spot on! \"but\" is the perfect fit — it shows a contrast — she wanted to stay up, but Mum said no. ✓",
+                "incorrectFeedback": "Close! Think about what the sentence is trying to say: \"but\" shows a contrast — she wanted to stay up, but Mum said no. \"I wanted to stay up late, but Mum said it was bedtime.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Think about the MEANING: Contrast = but, Reason = because, Choice = or",
+                "highlightWords": [],
+                "label": "Which conjunction fits?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Conjunctions — the sentence glue you need!",
+              "body": "Knowing your conjunctions will make your writing flow — and that means better marks!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Coordinating: and, but, or",
+                    "why": "The big three — join equal ideas like best mates"
+                  },
+                  {
+                    "text": "Subordinating: because, although, when, if, while",
+                    "why": "One idea depends on the other — the explainers"
+                  },
+                  {
+                    "text": "Correlative: either...or, neither...nor, both...and",
+                    "why": "The dynamic duos — pairs that always work together"
+                  },
+                  {
+                    "text": "Match to meaning: contrast → but, reason → because, choice → or",
+                    "why": "Think about what the sentence means — the meaning picks the conjunction! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "conjunctions-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone's used the wrong conjunction — it changes the whole meaning!",
+            "Why the right conjunction matters: it's like choosing the right key for a lock"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Theo",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Read this — does the meaning feel right?",
+              "body": "Theo wrote about his science experiment. But something's off — the joining word changes the meaning completely!\n\n\"The experiment worked or we followed the instructions carefully.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The experiment worked or we followed the instructions carefully.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "One tiny word, totally different meaning!",
+              "body": "Theo used 'or' (which means a choice) when the sentence needs 'because' (which explains the reason).\n\nWhen you're explaining WHY something happened, use 'because' — not 'or'.\n\n**Quick guide to choosing conjunctions:**\n• Giving a REASON? → because, since, as\n• Showing a CONTRAST? → but, although, however\n• Offering a CHOICE? → or, either...or\n\nAlways read the sentence aloud — does the meaning make sense?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"The experiment worked or we followed the instructions carefully.\"",
+                    "why": "used 'or' (which means a choice) when the sentence needs 'because' (which explains the reason)"
+                  },
+                  {
+                    "text": "✓ \"The experiment worked because we followed the instructions carefully.\"",
+                    "why": "When you're explaining WHY something happened, use 'because' — not 'or'"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — pick the right key!",
+              "body": "Which sentence uses the conjunction that actually makes sense?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence uses the correct conjunction?",
+                "options": [
+                  "She passed the test because she revised every night.",
+                  "She passed the test or she revised every night.",
+                  "She was tired or went to bed early.",
+                  "He smiled because was upset about the result.",
+                  "They ran fast but wanted to win the race."
+                ],
+                "correctAnswer": "She passed the test because she revised every night.",
+                "correctFeedback": "Spot on! You matched the meaning perfectly. When you're explaining WHY something happened, use 'because' — not 'or'. ✓",
+                "incorrectFeedback": "Close! Think about what the sentence is trying to say. When you're explaining WHY something happened, use 'because' — not 'or'. The correct sentence is: \"She passed the test because she revised every night.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She passed the test or she revised every night.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Right conjunction, right meaning — sorted!",
+              "body": "Getting this right will make your writing crystal clear. Here's the method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Work out the relationship",
+                    "why": "Are you giving a reason, showing contrast, or offering a choice?"
+                  },
+                  {
+                    "text": "Step 2: Pick the conjunction",
+                    "why": "Reason → because. Contrast → but. Choice → or. Easy!"
+                  },
+                  {
+                    "text": "Step 3: Read the sentence aloud",
+                    "why": "Does it make sense? If it sounds odd, you've picked the wrong one"
+                  },
+                  {
+                    "text": "Step 4: Check the meaning hasn't changed",
+                    "why": "The conjunction must match what you actually mean — it's the key to the lock! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "active-passive",
+      "name": "Active and Passive Voice",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "active-passive-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell the difference between active and passive voice — it's like flipping a sentence inside out!",
+            "How to convert between active and passive (a skill that comes up loads in the exam)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ellie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same story, two ways to tell it!",
+              "body": "Ellie is writing about what happened during a cooking lesson. Here's something brilliant — these two sentences mean the exact same thing, but they put the spotlight on different characters!\n\n**\"The chef baked the cake.\"** vs **\"The cake was baked by the chef.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Active: The chef baked the cake.",
+                "highlightWords": [
+                  {
+                    "word": "The chef",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Who is doing the action?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Active vs passive — flip the spotlight!",
+              "body": "Look at Ellie's sentences: **\"The chef baked the cake.\"** and **\"The cake was baked by the chef.\"**. In **active voice**, the doer is the star. In **passive voice**, the thing being done to gets the spotlight. Same story, different camera angle!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In passive voice, the ____ receives the action instead of doing it",
+                "options": [
+                  "subject",
+                  "verb",
+                  "conjunction",
+                  "adjective"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! In passive voice, the subject receives the action — it's in the spotlight instead of the doer: \"The cake was baked by the chef.\". ✓",
+                "incorrectFeedback": "Nearly! In passive voice, the SUBJECT receives the action instead of doing it. Think of it as flipping who gets the spotlight."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Active: \"The chef baked the cake.\"",
+                    "why": "the subject (the chef) does the action"
+                  },
+                  {
+                    "text": "Passive: \"The cake was baked by the chef.\"",
+                    "why": "the object (the cake) comes first and has the action done TO it"
+                  },
+                  {
+                    "text": "To make it passive: move the object to the front",
+                    "why": "\"the cake\" becomes the new subject"
+                  },
+                  {
+                    "text": "Add \"was/were\" + \"by\"",
+                    "why": "\"was baked by the chef\""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — spot the passive!",
+              "body": "Which sentence flips the spotlight onto the thing being done to?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is in the passive voice?",
+                "options": [
+                  "The biscuits were decorated by the pupils.",
+                  "The pupils decorated the biscuits.",
+                  "The chef quickly baked the cake.",
+                  "The chef always baked the cake.",
+                  "The chef baked the cake yesterday."
+                ],
+                "correctAnswer": "The biscuits were decorated by the pupils.",
+                "correctFeedback": "Brilliant! You spotted it. \"The biscuits were decorated by the pupils.\" is passive because the object (the biscuits) comes first and has the action done TO it. ✓",
+                "incorrectFeedback": "Close! Look for the magic words \"was/were ... by\" — they're the giveaway for passive voice. The passive version is \"The biscuits were decorated by the pupils.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Look for 'was/were ... by' to spot the passive voice",
+                "highlightWords": [],
+                "label": "Active or passive?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Active and passive — you can flip any sentence!",
+              "body": "This skill comes up all the time in 11+ papers. Here's how to nail it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Active: Subject → Verb → Object",
+                    "why": "'The dog chased the cat' — the dog is the star, doing the chasing"
+                  },
+                  {
+                    "text": "Passive: Object → was/were + verb → by Subject",
+                    "why": "'The cat was chased by the dog' — the cat gets the spotlight instead"
+                  },
+                  {
+                    "text": "Spot passive by looking for 'was/were...by'",
+                    "why": "These magic words are the giveaway: 'was painted by', 'were eaten by' = passive"
+                  },
+                  {
+                    "text": "To convert: swap subject and object, add 'was/were...by'",
+                    "why": "It's like flipping a pancake — same ingredients, different side up! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "active-passive-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone's muddled up active and passive — a common exam question!",
+            "Why getting this right gives you easy marks in comprehension"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Will",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Will got in a muddle — can you help?",
+              "body": "Will was asked to rewrite a sentence in the passive voice. But the answer's gone a bit wonky! Can you see why?\n\n\"The dog was chased the cat.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The dog chased the cat.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the flip gone wrong — and how to fix it!",
+              "body": "**How to convert:** Active → Passive: move the object to the front, add 'was/were + past participle (the -ed or irregular form, like \"broken\" or \"eaten\") + by'. Passive → Active: find the doer (after 'by'), put them first, then verb, then object.\n\nWill kept 'the dog' at the start and just added 'was' — but in passive voice, the OBJECT must come first.\n\nIn passive voice, the thing receiving the action goes first: 'The cat was chased by the dog'. Once you get the hang of this, it's actually quite satisfying!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"The dog was chased the cat.\"",
+                    "why": "kept 'the dog' at the start and just added 'was' — but in passive voice, the OBJECT must come first"
+                  },
+                  {
+                    "text": "✓ \"The cat was chased by the dog.\"",
+                    "why": "In passive voice, the thing receiving the action goes first: 'The cat was chased by the dog'"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — flip the sentence!",
+              "body": "Can you convert this sentence? If it's active, make it passive — if it's passive, make it active. You've got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct conversion?",
+                "options": [
+                  "The story was read by the teacher.",
+                  "The teacher was read the story.",
+                  "The teacher read the story was done.",
+                  "The story was being done.",
+                  "story. the read teacher The."
+                ],
+                "correctAnswer": "The story was read by the teacher.",
+                "correctFeedback": "Nailed it! You flipped it perfectly. In passive voice, the thing receiving the action goes first: 'The story was read by the teacher'. ✓",
+                "incorrectFeedback": "Nearly! In passive voice, the thing receiving the action goes first: 'The story was read by the teacher'. The correct answer is: \"The story was read by the teacher.\". Keep practising — it gets easier every time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The teacher read the story.",
+                "highlightWords": [],
+                "label": "Convert this sentence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Voice flipping — you're a pro now!",
+              "body": "Here's your step-by-step guide for switching between active and passive voice:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Active → Passive: Step 1",
+                    "why": "Move the object to the front of the sentence"
+                  },
+                  {
+                    "text": "Active → Passive: Step 2",
+                    "why": "Add was/were + past participle (the -ed or irregular form) + by"
+                  },
+                  {
+                    "text": "Passive → Active: Step 1",
+                    "why": "Find the doer — they come after 'by'"
+                  },
+                  {
+                    "text": "Passive → Active: Step 2",
+                    "why": "Put the doer first, then the verb, then the object ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "should-have",
+      "name": "Common Grammar Traps",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "should-have-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why 'should of' is wrong — and why your ears have been lying to you!",
+            "The 'fewer vs less' trick that even supermarkets get wrong (seriously!)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lauren",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? Even supermarkets get this wrong!",
+              "body": "Lauren is checking her English homework for common mistakes. You know those signs in shops that say \"10 items or less\"? That's actually WRONG! We're about to learn two grammar traps that catch out almost everyone — and once you know them, you'll spot them everywhere!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"I should of revised more for the test.\" — is this correct?",
+                "highlightWords": [
+                  {
+                    "word": "I should of revised more for the test.",
+                    "color": "#e74c3c"
+                  }
+                ],
+                "label": "Common mistake:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Two traps — and you're about to outsmart them both!",
+              "body": "Lauren wrote **\"I should of revised more for the test.\"** — but that's wrong! The good news? Once you know these two rules, you'll be smarter than most grown-ups:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Trap 1: \"should of\" sounds like \"should've\"",
+                    "why": "Your ears are tricking you! People write \"of\" because it SOUNDS like \"have\" when spoken quickly"
+                  },
+                  {
+                    "text": "✗ \"I should of revised more for the test.\"",
+                    "why": "✓ \"I should have revised more for the test.\" — it's always HAVE, never OF"
+                  },
+                  {
+                    "text": "Trap 2: fewer vs less",
+                    "why": "Fewer = countable things. Less = uncountable things."
+                  },
+                  {
+                    "text": "✗ \"There are less sweets in the bag.\" → ✓ \"There are fewer sweets in the bag.\"",
+                    "why": "'Sweets' are countable (you can count individual sweets), so use 'fewer'"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Can you dodge the trap?",
+              "body": "Don't let your ears fool you — which sentence is actually correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is grammatically correct?",
+                "options": [
+                  "We could have left earlier to catch the bus.",
+                  "We could of left earlier to catch the bus.",
+                  "We could has left earlier to catch the bus.",
+                  "We could had left earlier to catch the bus.",
+                  "We could of had left earlier to catch the bus."
+                ],
+                "correctAnswer": "We could have left earlier to catch the bus.",
+                "correctFeedback": "Brilliant — you didn't fall for it! It's always \"HAVE\" (or \"'ve\"), never \"of\". The word \"of\" is not a verb! ✓",
+                "incorrectFeedback": "Tricky, right? \"Of\" is NEVER correct after should/could/would/might. It's always HAVE: \"We could have left earlier to catch the bus.\". Now you know!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Is it \"We could of left earlier to catch the bus.\" or \"We could have left earlier to catch the bus.\"?",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two traps — and now you can dodge them both!",
+              "body": "You now know more about these two traps than most adults. Here's your cheat sheet:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Trap 1: should/could/would + HAVE",
+                    "why": "Never 'of'! Your ears lie — 'should've' sounds like 'should of', but it's 'should HAVE'"
+                  },
+                  {
+                    "text": "Trap 2: FEWER for countable things",
+                    "why": "Fewer goals, fewer people, fewer biscuits — you can COUNT them"
+                  },
+                  {
+                    "text": "Trap 2: LESS for uncountable things",
+                    "why": "Less water, less time, less noise — you can't COUNT them"
+                  },
+                  {
+                    "text": "Quick test: can you put a number in front?",
+                    "why": "'5 goals' ✓ = fewer. '5 waters' ✗ = less. Easy once you know! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "should-have-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot 'should of' and 'less/fewer' errors hiding in writing — like a grammar detective!",
+            "Why these mistakes are everywhere (and why knowing them gives you an edge)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Chloe",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Double trouble — can you find BOTH mistakes?",
+              "body": "Chloe wrote about a baking competition. There are TWO grammar traps hiding in one sentence. This is like being a detective — can you find them both?\n\n\"I should of added less eggs to the mixture.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I should of added less eggs to the mixture.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Both traps in one go — here's how to fix them!",
+              "body": "Chloe made TWO errors: 'should of' (should be 'should have') AND 'less eggs' (should be 'fewer eggs' because eggs are countable).\n\nAlways 'should have' (not 'of') and 'fewer' for countable things (you can count eggs: 1 egg, 2 eggs).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"I should of added less eggs to the mixture.\"",
+                    "why": "made TWO errors: 'should of' (should be 'should have') AND 'less eggs' (should be 'fewer eggs' because eggs are countable)"
+                  },
+                  {
+                    "text": "✓ \"I should have added fewer eggs to the mixture.\"",
+                    "why": "Always 'should have' (not 'of') and 'fewer' for countable things (you can count eggs: 1 egg, 2 eggs)"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — fix the double trouble!",
+              "body": "Can you find the sentence that fixes BOTH errors? Look carefully!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is fully correct?",
+                "options": [
+                  "We could have used fewer ingredients in the recipe.",
+                  "We could of used less ingredients in the recipe.",
+                  "We could have used less ingredients in the recipe.",
+                  "We could of used fewer ingredients in the recipe.",
+                  "We could of used fewer ingredients in the recipe."
+                ],
+                "correctAnswer": "We could have used fewer ingredients in the recipe.",
+                "correctFeedback": "Amazing — you caught both traps! \"Have\" instead of \"of\", and \"fewer\" instead of \"less\". You're officially smarter than most grown-ups at this! ✓",
+                "incorrectFeedback": "Close, but both traps need fixing! Always 'could have' (not 'of') and 'fewer' for countable things (you can count ingredients: 1 ingredient, 2 ingredients). The fully correct sentence is: \"We could have used fewer ingredients in the recipe.\". You'll get it next time!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We could of used less ingredients in the recipe.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Grammar detective mode — activated!",
+              "body": "Now you know these traps, use them like a proofreading superpower:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Search for 'of' after should/could/would/might",
+                    "why": "Change every 'of' to 'have' — it's ALWAYS wrong. Always!"
+                  },
+                  {
+                    "text": "Search for 'less' — can you count the thing?",
+                    "why": "Less water ✓ but fewer biscuits ✓ — try putting a number in front"
+                  },
+                  {
+                    "text": "Say it aloud: 'should HAVE' not 'should OF'",
+                    "why": "Your ear might trick you, but your brain won't — trust it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clauses-sentence-structure",
+      "name": "Clauses and Sentence Types",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "clauses-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot main clauses and subordinate clauses — think of them as the captain and the sidekick!",
+            "How to tell simple, compound, and complex sentences apart (this comes up loads in the exam!)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? Every sentence has a secret structure!",
+              "body": "Aisha is writing a story about a school trip to the seaside. Some sentences are short and punchy. Others are longer and layered. The difference? It's all about **clauses** — and once you can spot them, you'll see them everywhere!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The children built a sandcastle because the tide was out.",
+                "highlightWords": [
+                  {
+                    "word": "because the tide was out",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the clauses:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The captain and the sidekick!",
+              "body": "Let's look at Aisha's sentence: **\"The children built a sandcastle because the tide was out.\"**. Think of clauses like characters in a story. The **main clause** is the captain — it can stand on its own. The **subordinate clause** is the sidekick — it adds extra detail but can't survive without the captain!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the captain, spot the sidekick, check what it adds, and name the type. You've got it! ✓",
+                "incorrectFeedback": "Almost! Start by finding the main clause (the captain — the part that makes sense alone), then look for the subordinate clause (the sidekick)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Main clause: \"The children built a sandcastle\"",
+                    "why": "The captain — makes complete sense on its own!"
+                  },
+                  {
+                    "text": "Subordinate clause: \"because the tide was out\"",
+                    "why": "The sidekick — can't stand alone, needs the captain"
+                  },
+                  {
+                    "text": "Together: \"The children built a sandcastle because the tide was out.\"",
+                    "why": "Captain + sidekick = a COMPLEX sentence"
+                  },
+                  {
+                    "text": "Relative clause: \"who was wearing a red coat\"",
+                    "why": "A special sidekick that adds detail about \"The girl\" — starts with who, which, that, where, or when"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — what type of sentence is this?",
+              "body": "Use what you've learnt to crack this one!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"The seagull swooped down because it spotted some chips.\" — what type of sentence is this?",
+                "options": [
+                  "Complex sentence",
+                  "Simple sentence",
+                  "Compound sentence",
+                  "It has no main clause — \"because it spotted some chips\" is the only part",
+                  "It has two main clauses joined by \"and\""
+                ],
+                "correctAnswer": "Complex sentence",
+                "correctFeedback": "Brilliant! \"The seagull swooped down\" is the captain and \"because it spotted some chips\" is the sidekick — captain + sidekick = complex! ✓",
+                "incorrectFeedback": "Nearly! \"The seagull swooped down\" is the captain (makes sense alone) and \"because it spotted some chips\" is the sidekick (can't stand alone). Captain + sidekick = complex sentence."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The seagull swooped down because it spotted some chips.",
+                "highlightWords": [],
+                "label": "Main or subordinate clause?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sentence types — sorted!",
+              "body": "This comes up loads in 11+ papers. Here's your foolproof method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the clauses",
+                    "why": "Each clause has a subject and a verb — look for the action!"
+                  },
+                  {
+                    "text": "Step 2: Can each clause stand alone?",
+                    "why": "If yes = captain (main clause). If no = sidekick (subordinate)."
+                  },
+                  {
+                    "text": "Step 3: Count the clauses",
+                    "why": "1 captain = simple. 2 captains (and/but/or) = compound. Captain + sidekick = complex."
+                  },
+                  {
+                    "text": "Bonus: Relative clauses use who, which, that, where, when",
+                    "why": "Special sidekicks that add detail about a noun — easy marks! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "clauses-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to identify sentence types in context — a favourite 11+ question!",
+            "How to spot when a sidekick clause is pretending to be a full sentence (cheeky!)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Hmm... does this sentence feel complete to you?",
+              "body": "Grace wrote a paragraph about her holiday in Wales. Read this out loud — something feels like it's missing:\n\n\"Because it rained all morning.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Because it rained all morning.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The sidekick can't go it alone!",
+              "body": "Grace wrote a subordinate clause as if it were a complete sentence — 'because it rained all morning' can't stand alone.\n\nA subordinate clause needs a main clause to make a complete sentence. Think of it this way: a sidekick without a captain is just someone standing around looking lost!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"Because it rained all morning.\"",
+                    "why": "wrote a subordinate clause as if it were a complete sentence — 'because it rained all morning' can't stand alone"
+                  },
+                  {
+                    "text": "✓ \"We stayed indoors because it rained all morning.\"",
+                    "why": "A subordinate clause needs a main clause to make a complete sentence"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — rescue the fragment!",
+              "body": "Which one is a proper, complete sentence with a captain AND a sidekick?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"Although the sun was shining brightly.\" is a fragment. Which is a complete, correct sentence?",
+                "options": [
+                  "We went to the beach although the sun was shining brightly.",
+                  "Although the sun was shining brightly.",
+                  "While the teacher was writing on the board.",
+                  "Because the class forgot to check their answers.",
+                  "Although everyone tried really hard on the test."
+                ],
+                "correctAnswer": "We went to the beach although the sun was shining brightly.",
+                "correctFeedback": "Spot on! \"We went to the beach although the sun was shining brightly.\" has a captain AND a sidekick — that's a proper complex sentence. ✓",
+                "incorrectFeedback": "Nearly! The other options are all sidekicks pretending to be complete sentences — they need a captain! \"We went to the beach although the sun was shining brightly.\" is correct because it has a main clause."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Although the sun was shining brightly.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "No more sentence fragments — you've got this!",
+              "body": "Here's how to make sure every sentence is complete and ready for the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the sentence aloud",
+                    "why": "Does it feel complete? Does it answer 'what happened?' If not, something's missing!"
+                  },
+                  {
+                    "text": "Watch for danger words at the start",
+                    "why": "because, although, when, while, if, unless — these are sidekick starters!"
+                  },
+                  {
+                    "text": "Add a main clause if needed",
+                    "why": "Every sidekick needs a captain. Tell the reader WHAT happened, not just WHY or WHEN ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modal-verbs",
+      "name": "Modal Verbs — Possibility and Certainty",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "modal-verbs-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise modal verbs — the words that tell you how sure someone is!",
+            "How modal verbs create a scale from 'maybe' all the way to 'definitely' (this is really handy for comprehension)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"Might\", \"should\", \"must\" — spot the difference!",
+              "body": "Daisy is planning what to do at the weekend. Did you know that tiny words like \"might\", \"should\", and \"must\" completely change how sure you sound? These special words are called **modal verbs** — and they're like a volume dial for certainty!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "It might rain on Saturday.",
+                "highlightWords": [
+                  {
+                    "word": "might",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the modal verb:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The certainty dial — from 'maybe' to 'definitely'!",
+              "body": "Daisy used **\"might\"** which means possible but not very likely. **Modal verbs** are like a volume dial — turn it up for more certainty, turn it down for less. Here's the scale:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "On the certainty scale, \"might\" means ____ and \"must\" means definite",
+                "options": [
+                  "unlikely",
+                  "certain",
+                  "recommended",
+                  "impossible"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! \"Might\" is the dial at 1 — just a possibility. \"Must\" cranks it up to 10! ✓",
+                "incorrectFeedback": "Nearly! \"Might\" means something is just possible — the dial is turned way down. The scale goes: might → may → should → will → must."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "might — \"It might rain on Saturday.\"",
+                    "why": "Dial at 1 — just a possibility, who knows?"
+                  },
+                  {
+                    "text": "may — \"We may go to the cinema instead.\"",
+                    "why": "Dial at 3 — possible, it could go either way"
+                  },
+                  {
+                    "text": "should — \"We should bring an umbrella just in case.\"",
+                    "why": "Dial at 5 — likely or recommended, a good idea"
+                  },
+                  {
+                    "text": "will — \"The film will start at three o'clock.\"",
+                    "why": "Dial at 8 — we're pretty confident this is happening"
+                  },
+                  {
+                    "text": "must — \"We must leave by two o'clock to get there on time.\"",
+                    "why": "Dial at 10 — definite, no choice, it's happening!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Crank the dial — which modal fits?",
+              "body": "Which modal verb turns the certainty dial all the way up?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"We _____ leave by two o'clock to get there on time.\" Which modal verb fits best?",
+                "options": [
+                  "must",
+                  "might",
+                  "may",
+                  "should",
+                  "can"
+                ],
+                "correctAnswer": "must",
+                "correctFeedback": "Brilliant! \"Must\" cranks the certainty dial to 10 — it's definite and there's no choice! \"We must leave by two o'clock to get there on time.\" ✓",
+                "incorrectFeedback": "Close! This sentence needs the dial at maximum — \"must\" means it's definite and required: \"We must leave by two o'clock to get there on time.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Modal verbs show how likely something is",
+                "highlightWords": [],
+                "label": "Which modal fits?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Modal verbs — you've mastered the dial!",
+              "body": "Knowing this will help you in comprehension AND in your own writing. Here's the summary:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Modal verbs are the certainty dial",
+                    "why": "might, may, could, should, would, will, shall, can, must — from 'maybe' to 'definitely'"
+                  },
+                  {
+                    "text": "The certainty scale: might → may → should → will → must",
+                    "why": "Turn the dial up or down depending on how sure you are"
+                  },
+                  {
+                    "text": "Modal verbs NEVER change form",
+                    "why": "No 's' (not 'musts'), no 'ed' (not 'shoulded'), no 'ing' (not 'mighting') — they stay the same!"
+                  },
+                  {
+                    "text": "Choose the right modal for your meaning",
+                    "why": "Giving advice? Use 'should'. Giving an order? Use 'must'. Not sure? Use 'might'. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "modal-verbs-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to choose the right modal verb for the context — getting the certainty level spot on!",
+            "Why modal verbs are stubborn and never change form (no 'musts' or 'shoulded'!)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something's off with the certainty dial here...",
+              "body": "Oliver wrote a set of class rules. Read this carefully — the modal verb doesn't match the meaning:\n\n\"You might hand in your homework on time.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "You might hand in your homework on time.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Wrong dial setting — let's fix it!",
+              "body": "Oliver used 'might' (which means 'perhaps') when the sentence needs 'must' (which means 'you have to').\n\nClass rules are definite instructions — use 'must' for things that are required, not 'might' which means it's only a possibility.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"You might hand in your homework on time.\"",
+                    "why": "used 'might' (which means 'perhaps') when the sentence needs 'must' (which means 'you have to')"
+                  },
+                  {
+                    "text": "✓ \"You must hand in your homework on time.\"",
+                    "why": "Class rules are definite instructions — use 'must' for things that are required, not 'might' which means it's only a possibility"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — set the right dial!",
+              "body": "Which sentence uses the correct modal verb? Think about how certain the sentence should be!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"You might listen to the teacher during lessons.\" — which sentence fixes the modal verb?",
+                "options": [
+                  "You must listen to the teacher during lessons.",
+                  "You might listen to the teacher during lessons.",
+                  "She cans play the piano very well.",
+                  "The pupils wills arrive at noon.",
+                  "He musted finish the work on time."
+                ],
+                "correctAnswer": "You must listen to the teacher during lessons.",
+                "correctFeedback": "Spot on! You set the dial perfectly. School rules are definite instructions — use 'must' for things that are required. ✓",
+                "incorrectFeedback": "Nearly! Think about the certainty level. School rules are definite instructions — use 'must' for things that are required. The correct sentence is: \"You must listen to the teacher during lessons.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "You might listen to the teacher during lessons.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Modal verbs — your 3-point checklist!",
+              "body": "Use this checklist every time and you'll never get modal verbs wrong:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Does the modal match the meaning?",
+                    "why": "Check the dial: Definite = must/will. Possible = might/may. Advice = should."
+                  },
+                  {
+                    "text": "Is the next verb in its base form?",
+                    "why": "should GO (not goes), might RAIN (not rains), must EAT (not eats) — always plain!"
+                  },
+                  {
+                    "text": "Has the modal verb changed form?",
+                    "why": "Modal verbs are stubborn — they NEVER change: no 'cans', no 'shoulded', no 'musting' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formal-register",
+      "name": "Formal vs Informal Language",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "formal-register-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell the difference between formal and informal language — like knowing when to wear a suit vs joggers!",
+            "When to use formal or informal writing (getting this right shows the examiner you really understand English)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Imagine sending this to your headteacher...",
+              "body": "Ella needs to write a letter to her headteacher about a school trip. Here's the thing — HOW you write matters just as much as WHAT you write. It's like wearing the right outfit for the occasion! Compare these two:\n\n**Formal:** \"I would like to request permission to organise a trip to the Natural History Museum.\"\n\n**Informal:** \"Can we go on a trip to the museum? It'd be really cool!\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Can we go on a trip to the museum? It'd be really cool!",
+                "highlightWords": [],
+                "label": "Formal or informal?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Suit or joggers? Picking the right register!",
+              "body": "Ella is writing a letter to headteacher, so the **register** (how formal or informal the language is) matters — like choosing the right outfit. Formal is your smart suit — letters, reports, essays. Informal is your comfy joggers — friends, diaries, and dialogue.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Formal avoids contractions",
+                    "why": "\"do not\" instead of \"don't\", \"I am\" instead of \"I'm\" — no squishing words together!"
+                  },
+                  {
+                    "text": "Formal uses sophisticated vocabulary",
+                    "why": "\"purchase\" not \"buy\", \"inform\" not \"tell\" — fancier words for fancier writing"
+                  },
+                  {
+                    "text": "Formal uses passive voice",
+                    "why": "\"The trip has been arranged for Thursday.\" sounds more official than \"Mrs Clark sorted the trip for Thursday.\""
+                  },
+                  {
+                    "text": "Formal avoids slang and exclamation marks",
+                    "why": "No \"cool\", \"awesome\", or \"loads of\" — keep it calm and professional"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Time to dress your words properly!",
+              "body": "Which sentence is wearing the right outfit for a letter to headteacher?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which sentence is most appropriate for a letter to headteacher?",
+                "options": [
+                  "I would like to request permission to organise a trip to the Natural History Museum.",
+                  "Can we go on a trip to the museum? It'd be really cool!",
+                  "Yeah, so basically the whole idea is well good, innit.",
+                  "Loads of people reckon the letter to headteacher was dead good.",
+                  "Gonna need you to sort this out pretty sharpish, cheers."
+                ],
+                "correctAnswer": "I would like to request permission to organise a trip to the Natural History Museum.",
+                "correctFeedback": "Brilliant — perfectly dressed for the occasion! A letter to headteacher needs formal language: no contractions, polite language, full sentences. ✓",
+                "incorrectFeedback": "Not quite! A letter to headteacher needs the smart suit, not joggers. \"I would like to request permission to organise a trip to the Natural History Museum.\" is correct because it uses no contractions, polite language, full sentences."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Formal uses longer words, no slang, passive voice",
+                "highlightWords": [],
+                "label": "Formal or informal?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Formal vs informal — you'll always pick the right outfit now!",
+              "body": "Knowing when to be formal and when to be informal shows the examiner you really understand English:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Who is your audience?",
+                    "why": "Headteacher/stranger = smart suit. Friend/diary = comfy joggers."
+                  },
+                  {
+                    "text": "Formal: no contractions, sophisticated vocabulary",
+                    "why": "'I would like to request' not 'Can I have' — dress it up!"
+                  },
+                  {
+                    "text": "Formal: passive voice sounds more official",
+                    "why": "'The window was broken' not 'Someone broke the window' — more grown-up"
+                  },
+                  {
+                    "text": "Informal: contractions, everyday words, personality",
+                    "why": "Fine for dialogue, texts, and diary entries — relax and be yourself! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "formal-register-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone's wearing a suit jacket with joggers — mixed register!",
+            "How to convert between formal and informal so your tone stays consistent"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Suit jacket... with joggers? Something's off!",
+              "body": "Finn wrote a formal letter to the local council. The tone starts smart but then goes casual — can you spot where it goes wrong?\n\n\"I am writing to complain about the park cos it's a right mess.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I am writing to complain about the park cos it's a right mess.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pick an outfit and stick with it!",
+              "body": "Finn mixed formal and informal language — started formally ('I am writing to complain') but then used slang ('cos', 'a right mess').\n\nKeep the same register throughout — if you start formally, stay formal. Replace slang with proper vocabulary..\n\n**How to keep your tone consistent:**\n1. Decide your register before you start (formal for letters/reports, informal for dialogue/diaries)\n2. Read your writing aloud — if any word sounds out of place, it probably is\n3. Replace slang with formal alternatives ('well good' → 'very effective', 'loads of' → 'a significant number of')\n4. Check contractions in formal writing — expand them: 'don't' → 'do not', 'it's' → 'it is'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"I am writing to complain about the park cos it's a right mess.\"",
+                    "why": "mixed formal and informal language — started formally ('I am writing to complain') but then used slang ('cos', 'a right mess')"
+                  },
+                  {
+                    "text": "✓ \"I am writing to complain about the state of the park, which has not been properly maintained.\"",
+                    "why": "Keep the same register throughout — if you start formally, stay formal. Replace slang with proper vocabulary."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — find the one that matches!",
+              "body": "Which sentence stays in the same outfit all the way through?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"I would like to request a meeting cos I've got loads of ideas.\" — which version is consistently formal?",
+                "options": [
+                  "I would like to request a meeting because I have several suggestions to discuss.",
+                  "I would like to request a meeting cos I've got loads of ideas.",
+                  "The findings were significant and that's well impressive.",
+                  "We request your assistance cos we really need help.",
+                  "The data was collected carefully and it was dead interesting."
+                ],
+                "correctAnswer": "I would like to request a meeting because I have several suggestions to discuss.",
+                "correctFeedback": "Brilliant! \"I would like to request a meeting because I have several suggestions to discuss.\" keeps a smart suit on from start to finish — no slang sneaking in! ✓",
+                "incorrectFeedback": "Nearly! Keep your register consistent — replace 'cos' with 'because', 'loads of ideas' with 'several suggestions', and expand contractions. The correct version is: \"I would like to request a meeting because I have several suggestions to discuss.\". No joggers with a suit jacket!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "I would like to request a meeting cos I've got loads of ideas.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Consistent register — easy marks in the bag!",
+              "body": "Getting this right is a brilliant way to pick up marks. Here's the method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Pick your outfit before you start",
+                    "why": "Decide: smart suit (formal letter/report) or comfy joggers (text/diary)?"
+                  },
+                  {
+                    "text": "Step 2: Stay consistent throughout",
+                    "why": "Don't mix — suit jacket with joggers sounds odd and loses marks!"
+                  },
+                  {
+                    "text": "Step 3: Replace slang in formal writing",
+                    "why": "Swap words like 'kids' → 'children', 'stuff' → 'belongings', 'loads' → 'many'"
+                  },
+                  {
+                    "text": "Step 4: Expand contractions in formal writing",
+                    "why": "Use 'do not' instead of 'don't', 'it is' instead of 'it's' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expanded-noun-phrases",
+      "name": "Expanded Noun Phrases",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "expanded-noun-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to build expanded noun phrases — the secret to making your writing vivid and interesting!",
+            "How adjectives, prepositional phrases, and relative clauses turn a boring noun into a mini movie"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Watch this — from plain to amazing in 3 steps!",
+              "body": "Grace is making her story writing more descriptive. This is like a makeover for your nouns — watch how a plain, boring noun phrase becomes vivid and interesting:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "\"the dog\" → \"the big, scruffy dog\"",
+                "highlightWords": [
+                  {
+                    "word": "the big, scruffy dog",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Expand the noun phrase:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The noun phrase makeover — step by step!",
+              "body": "We turned **\"the dog\"** into **\"the big, scruffy dog\"** — and we can go even further! Think of it as layering: each layer adds more detail, like painting a picture with words:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To expand a noun phrase, add adjectives, a prepositional phrase, or a ____ clause",
+                "options": [
+                  "relative",
+                  "subordinate",
+                  "main",
+                  "passive"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! A relative clause is the final layer — it adds that extra sparkle of detail to the noun phrase. ✓",
+                "incorrectFeedback": "Nearly! A RELATIVE clause (starting with who, which, or that) is the right answer. It's the top layer that adds extra detail about the noun."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with the noun: \"dog\"",
+                    "why": "Layer 1 — the plain base, like a blank canvas"
+                  },
+                  {
+                    "text": "Add adjectives: \"the big, scruffy dog\"",
+                    "why": "Layer 2 — \"big, scruffy\" paint a picture of WHAT the dog is like"
+                  },
+                  {
+                    "text": "Add a prepositional phrase: \"the big, scruffy dog by the gate\"",
+                    "why": "Layer 3 — \"by the gate\" tells us WHERE it is"
+                  },
+                  {
+                    "text": "Add a relative clause: \"the big, scruffy dog by the gate, which wagged its tail excitedly\"",
+                    "why": "Layer 4 — \"which wagged its tail excitedly\" brings it to life!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Can you spot the makeover?",
+              "body": "Find the expanded noun phrase hiding in this sentence!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "In \"The old stone cottage at the end of the lane looked mysterious.\", what is the expanded noun phrase?",
+                "options": [
+                  "The old stone cottage at the end of the lane",
+                  "cottage",
+                  "looked mysterious",
+                  "by the gate",
+                  "which wagged its tail excitedly"
+                ],
+                "correctAnswer": "The old stone cottage at the end of the lane",
+                "correctFeedback": "Brilliant! \"The old stone cottage at the end of the lane\" is the expanded noun phrase — it takes \"cottage\" and layers on detail to paint a vivid picture. ✓",
+                "incorrectFeedback": "Nearly! The expanded noun phrase is \"The old stone cottage at the end of the lane\". Find the noun \"cottage\" first, then gather all the layers of detail around it."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The old stone cottage at the end of the lane looked mysterious.",
+                "highlightWords": [
+                  {
+                    "word": "The old stone cottage at the end of the lane",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Spot the expanded noun phrase:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Noun phrase makeovers — your new skill!",
+              "body": "Using expanded noun phrases makes your writing vivid and interesting — that means better marks! Here's the recipe:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Layer 1: Start with a noun",
+                    "why": "dog, castle, boy, tree — your blank canvas"
+                  },
+                  {
+                    "text": "Layer 2: Add adjectives before the noun",
+                    "why": "the BIG, SCRUFFY dog — what is it like?"
+                  },
+                  {
+                    "text": "Layer 3: Add a prepositional phrase",
+                    "why": "the big, scruffy dog BY THE GATE — where is it?"
+                  },
+                  {
+                    "text": "Layer 4: Add a relative clause (optional)",
+                    "why": "...WHICH WAGGED ITS TAIL — the finishing touch! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "expanded-noun-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot expanded noun phrases in a sentence — a common exam question!",
+            "How to tell noun phrases (about things) from verb phrases (about actions) — they look similar but are totally different"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Oops — Oliver picked the wrong bit!",
+              "body": "Oliver was asked to underline the expanded noun phrase in his test. But Oliver grabbed the wrong part of the sentence! Can you see what went wrong?\n\n\"The old wooden boat sailed across the lake.\"\n\nOliver chose: \"sailed across the lake\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The old wooden boat sailed across the lake.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Start with the noun — everything else follows!",
+              "body": "**4-step method:** 1) Find the main noun (the THING). 2) Gather adjectives before it. 3) Look for a prepositional phrase (a group starting with 'in', 'on', 'with', etc.) after it. 4) Ignore the verb phrase (the ACTION).\n\nOliver underlined the verb phrase ('sailed across the lake') instead of the noun phrase ('The old wooden boat').\n\nAn expanded noun phrase describes a THING (noun) — not an action (verb). 'The old wooden boat' is the noun phrase; 'sailed' is the verb..",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"sailed across the lake\"",
+                    "why": "underlined the verb phrase ('sailed across the lake') instead of the noun phrase ('The old wooden boat')"
+                  },
+                  {
+                    "text": "✓ \"The old wooden boat\"",
+                    "why": "An expanded noun phrase describes a THING (noun) — not an action (verb). 'The old wooden boat' is the noun phrase; 'sailed' is the verb."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — grab the right part!",
+              "body": "Find the noun first, then gather all its layers of detail. Which is the expanded noun phrase?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"The large grey elephant at the zoo trumpeted loudly.\" — what is the expanded noun phrase?",
+                "options": [
+                  "The large grey elephant at the zoo",
+                  "trumpeted loudly",
+                  "elephant",
+                  "trumpeted loudly.",
+                  "The large"
+                ],
+                "correctAnswer": "The large grey elephant at the zoo",
+                "correctFeedback": "Spot on! \"The large grey elephant at the zoo\" is the expanded noun phrase — you grabbed exactly the right bit. Find the noun ('elephant'), then gather adjectives ('large grey') and the prepositional phrase ('at the zoo'). ✓",
+                "incorrectFeedback": "Nearly! Find the noun ('elephant'), then gather adjectives ('large grey') and the prepositional phrase ('at the zoo'). The expanded noun phrase is \"The large grey elephant at the zoo\". Remember: find the noun first, then gather its layers!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The large grey elephant at the zoo trumpeted loudly.",
+                "highlightWords": [],
+                "label": "Spot the expanded noun phrase:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Expanded noun phrases — sorted for the exam!",
+              "body": "This question comes up loads. Here's your 4-step method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the main noun",
+                    "why": "The noun is the THING — a person, place, or object. Start here!"
+                  },
+                  {
+                    "text": "Step 2: Gather the adjectives before it",
+                    "why": "These describe the noun, e.g. 'the tall, ancient oak' — layer 2"
+                  },
+                  {
+                    "text": "Step 3: Check for a prepositional phrase after it",
+                    "why": "e.g. 'the tall, ancient oak by the river' — layer 3 adds location"
+                  },
+                  {
+                    "text": "Step 4: Ignore the verb phrase",
+                    "why": "The verb phrase is the ACTION — don't be distracted by it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perfect-progressive",
+      "name": "Perfect and Progressive Verb Forms",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "perfect-progressive-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to identify the four verb forms — they tell you exactly WHEN and HOW an action happens!",
+            "How to choose the right verb form for the meaning (this is a favourite 11+ question)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did you know? English has FOUR ways to describe actions!",
+              "body": "Daisy is writing about what happened at the school fair. Most languages don't have this many options, but English gives you four special verb forms to say exactly WHEN and HOW something happens. Let's learn them — it's like having four different camera angles!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She has sold twenty cakes. / She is counting the money.",
+                "highlightWords": [],
+                "label": "Perfect or progressive?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Four camera angles — four verb forms!",
+              "body": "Each verb form gives you a different view of the action. Think of them as four camera angles, each showing something different:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Present perfect (has/have + done)",
+                    "why": "Camera 1: started in the past but still matters NOW. \"She has sold twenty cakes.\""
+                  },
+                  {
+                    "text": "Past perfect (had + done)",
+                    "why": "Camera 2: happened BEFORE another past event — the flashback! \"She had sold all the cakes before lunchtime.\""
+                  },
+                  {
+                    "text": "Present progressive (is/are + -ing)",
+                    "why": "Camera 3: happening RIGHT NOW, live action! \"She is counting the money.\""
+                  },
+                  {
+                    "text": "Past progressive (was/were + -ing)",
+                    "why": "Camera 4: WAS happening when something else interrupted. \"She was counting the money when the bell rang.\""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which camera angle is this?",
+              "body": "Can you work out which verb form is being used?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"Daisy has raised fifty pounds for charity.\" — which verb form is used?",
+                "options": [
+                  "present perfect",
+                  "past perfect",
+                  "present progressive",
+                  "past progressive",
+                  "simple past"
+                ],
+                "correctAnswer": "present perfect",
+                "correctFeedback": "Brilliant — you spotted the right camera angle! 'has raised' = has/have + past participle — it started in the past and is relevant now. ✓",
+                "incorrectFeedback": "Close! 'has raised' = has/have + past participle — it started in the past and is relevant now. The answer is present perfect. Keep practising — you'll nail it!"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Daisy has raised fifty pounds for charity.",
+                "highlightWords": [],
+                "label": "Which tense is this?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Four verb forms — you've got them all!",
+              "body": "This comes up in loads of 11+ papers. Here's your quick-reference guide:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Present perfect: has/have + past participle",
+                    "why": "Camera 1: 'She has finished' — started in the past, still matters NOW"
+                  },
+                  {
+                    "text": "Past perfect: had + past participle",
+                    "why": "Camera 2: 'She had finished before tea' — the flashback, before ANOTHER past event"
+                  },
+                  {
+                    "text": "Present progressive: am/is/are + -ing",
+                    "why": "Camera 3: 'She is running' — happening RIGHT NOW, live!"
+                  },
+                  {
+                    "text": "Past progressive: was/were + -ing",
+                    "why": "Camera 4: 'She was running when it rained' — ongoing action interrupted ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "perfect-progressive-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone's used the wrong verb form — like a camera pointing the wrong way!",
+            "How to choose the correct verb form for the context (practice makes perfect with this one)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The wrong camera angle — can you spot it?",
+              "body": "Finn wrote about what happened at the school concert. But the verb form is pointing the wrong way! Can you hear what's off?\n\n\"The choir has sung three songs before the interval started.\"",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The choir has sung three songs before the interval started.",
+                "highlightWords": [],
+                "label": "Can you spot the mistake?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Right camera angle, right picture!",
+              "body": "Finn used the present perfect ('has sung') instead of the past perfect ('had sung') — both events are in the past, so we need 'had' to show which came first.\n\nWhen one past event happened BEFORE another past event, use the past perfect (had + past participle): 'had sung' came before 'started'.\n\n**Quick checks for verb forms:**\n• has/have + past participle (the -ed or irregular form) = present perfect — 'has eaten' connects past to present\n• had + past participle = past perfect — 'had eaten' happened before another past event\n• am/is/are + -ing = present progressive — 'is eating' is happening right now\n• was/were + -ing = past progressive — 'was eating' was ongoing in the past",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "✗ \"The choir has sung three songs before the interval started.\"",
+                    "why": "used the present perfect ('has sung') instead of the past perfect ('had sung') — both events are in the past, so we need 'had' to show which came first"
+                  },
+                  {
+                    "text": "✓ \"The choir had sung three songs before the interval started.\"",
+                    "why": "When one past event happened BEFORE another past event, use the past perfect (had + past participle): 'had sung' came before 'started'"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — pick the right angle!",
+              "body": "Which sentence uses the correct verb form? Think about the timing!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"The band has played two pieces before the audience arrived.\" — which sentence fixes the verb form?",
+                "options": [
+                  "The band had played two pieces before the audience arrived.",
+                  "The band has played two pieces before the audience arrived.",
+                  "The children was ran to the classroom before the bell.",
+                  "The pupils has been playing outside all day.",
+                  "She had ate lunch before the bell rang."
+                ],
+                "correctAnswer": "The band had played two pieces before the audience arrived.",
+                "correctFeedback": "Spot on! You picked the right camera angle. Both events are in the past, so use the past perfect ('had played') to show which came first. ✓",
+                "incorrectFeedback": "Nearly! Think about the timing of the events. Both events are in the past, so use the past perfect ('had played') to show which came first. The correct sentence is: \"The band had played two pieces before the audience arrived.\"."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The band has played two pieces before the audience arrived.",
+                "highlightWords": [],
+                "label": "Which version is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Four verb forms — ready for the exam!",
+              "body": "You've now learnt all four camera angles. Here's your cheat sheet:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "has / have + past participle",
+                    "why": "Present perfect — connects past to now. Camera 1!"
+                  },
+                  {
+                    "text": "had + past participle",
+                    "why": "Past perfect — the flashback, before another past event. Camera 2!"
+                  },
+                  {
+                    "text": "is / are + -ing",
+                    "why": "Present progressive — live action, right now! Camera 3!"
+                  },
+                  {
+                    "text": "was / were + -ing",
+                    "why": "Past progressive — ongoing past action that got interrupted. Camera 4! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard-english",
+      "name": "Standard English — Getting It Right in Writing",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "standard-english-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot things we say every day that are actually wrong in writing",
+            "How to fix the most common writing mistakes so your English sounds polished"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Daisy's writing check",
+              "body": "Daisy is checking her story for mistakes her teacher always marks. Can you spot what's wrong here?\n\n**\"I done my homework before tea.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "I done my homework before tea.",
+                "highlightWords": [
+                  "done"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "What we say vs what we write",
+              "body": "Lots of things we say every day are actually **wrong** in writing. Here are the fixes:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: \"I done my homework before tea.\"",
+                    "why": "This sounds OK when speaking, but it's wrong in writing"
+                  },
+                  {
+                    "text": "Right: \"I did my homework before tea.\"",
+                    "why": "'Done' always needs a helper word before it (like 'has done' or 'had done'). On its own, say **'did'**."
+                  },
+                  {
+                    "text": "Wrong: \"We was going to the park.\"",
+                    "why": "Another very common mistake"
+                  },
+                  {
+                    "text": "Right: \"We were going to the park.\"",
+                    "why": "'Was' is for one person (I was, he was). 'Were' is for more than one (we were, they were)."
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Choose the correct word: 'She ___ her best in the race.'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "done",
+                  "did",
+                  "does",
+                  "doing",
+                  "has do"
+                ],
+                "correctAnswer": "did",
+                "correctFeedback": "Brilliant! 'She did' is correct. Remember: 'done' needs a helper word — you can say 'she has done' but never 'she done' on its own. ✓",
+                "incorrectFeedback": "Not quite! 'She did' is correct. Remember: 'done' needs a helper word — you can say 'she has done' but never 'she done' on its own."
+              },
+              "visualProps": {
+                "sentence": "'She ___ her best in the race.'",
+                "highlightWords": [
+                  "___"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Standard English — sorted!",
+              "body": "Remember these rules when you're writing:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. 'Did' not 'done' on its own",
+                    "why": "'I did it' ✓ — 'I done it' ✗"
+                  },
+                  {
+                    "text": "2. 'Were' not 'was' with we/they",
+                    "why": "'We were' ✓ — 'We was' ✗"
+                  },
+                  {
+                    "text": "3. 'Have' not 'of' after should/could/would",
+                    "why": "'Should have' ✓ — 'Should of' ✗"
+                  },
+                  {
+                    "text": "4. 'I' when doing, 'me' when it's done to you",
+                    "why": "Remove the other person to check which sounds right"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "standard-english-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot common spoken English mistakes hiding in written sentences",
+            "Why some things that sound perfectly normal are actually wrong in writing"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistakes?",
+              "body": "Ella is proofreading her friend's story. This sentence has several things wrong — how many can you find?\n\n**\"Me and Amira gone to the shops and we buyed some sweets.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "Me and Amira gone to the shops and we buyed some sweets."
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here are the mistakes",
+              "body": "Let's fix each one:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mistake 1: 'Me and Amira' should be 'Amira and I'",
+                    "why": ""
+                  },
+                  {
+                    "text": "Mistake 2: 'gone' should be 'went'",
+                    "why": ""
+                  },
+                  {
+                    "text": "Mistake 3: 'buyed' should be 'bought'",
+                    "why": ""
+                  },
+                  {
+                    "text": "Corrected: \"Amira and I went to the shops and we bought some sweets.\"",
+                    "why": "Now it's proper written English!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which sentence is correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "Me and Tom done our homework.",
+                  "Tom and me did our homework.",
+                  "Tom and I did our homework.",
+                  "Me and Tom did our homework.",
+                  "Tom and I done our homework."
+                ],
+                "correctAnswer": "Tom and I did our homework.",
+                "correctFeedback": "Brilliant! 'Tom and I' (not 'me and Tom') because 'I' is doing the action. 'Did' (not 'done') because 'done' needs a helper word. ✓",
+                "incorrectFeedback": "Not quite! 'Tom and I' (not 'me and Tom') because 'I' is doing the action. 'Did' (not 'done') because 'done' needs a helper word."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Me and Tom done our homework.",
+                    "why": ""
+                  },
+                  {
+                    "text": "2. Tom and me did our homework.",
+                    "why": ""
+                  },
+                  {
+                    "text": "3. Tom and I did our homework.",
+                    "why": ""
+                  },
+                  {
+                    "text": "4. Me and Tom did our homework.",
+                    "why": ""
+                  },
+                  {
+                    "text": "5. Tom and I done our homework.",
+                    "why": ""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're a proofreading pro!",
+              "body": "When checking writing, watch out for these sneaky mistakes:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "'Me and...' at the start",
+                    "why": "Change to '... and I' (remove the other person to check)"
+                  },
+                  {
+                    "text": "'Done', 'seen', 'gone' without a helper word",
+                    "why": "Should be 'did', 'saw', 'went' on their own"
+                  },
+                  {
+                    "text": "'Should of', 'could of', 'would of'",
+                    "why": "Always 'should have', 'could have', 'would have'"
+                  },
+                  {
+                    "text": "'Don't' with he/she/it",
+                    "why": "Should be 'doesn't'"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-sva",
+      "name": "Tricky Subject-Verb Agreement",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "advanced-sva-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to choose the right verb when sneaky words try to trick you",
+            "Why 'neither...nor' and 'a number of' follow special rules"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Evie's grammar puzzle",
+              "body": "Evie keeps getting tripped up by sentences with extra words in the middle.\n\nWhich is correct?\n\n**\"The basket of oranges are on the table.\"** or **\"The basket of oranges is on the table.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "The basket of oranges are on the table."
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The trick to getting it right",
+              "body": "Ignore the 'of...' part — find the real subject",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: \"The basket of oranges are on the table.\"",
+                    "why": "This is wrong because..."
+                  },
+                  {
+                    "text": "Right: \"The basket of oranges is on the table.\"",
+                    "why": "Cross out 'of oranges' in your head. What's left? 'The basket ___ on the table.' Basket is one thing, so it's **'is'**."
+                  },
+                  {
+                    "text": "The rule: Ignore the 'of...' part — find the real subject",
+                    "why": "Remember this for the exam!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Choose the correct word: 'The packet of crisps ___ already been opened.'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "have",
+                  "are",
+                  "has",
+                  "were",
+                  "is"
+                ],
+                "correctAnswer": "has",
+                "correctFeedback": "Well done! The subject is 'packet' (one thing), not 'crisps'. Cross out 'of crisps' — 'the packet has been opened'. ✓",
+                "incorrectFeedback": "Not quite! The subject is 'packet' (one thing), not 'crisps'. Cross out 'of crisps' — 'the packet has been opened'."
+              },
+              "visualProps": {
+                "sentence": "'The packet of crisps ___ already been opened.'",
+                "highlightWords": [
+                  "___"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tricky agreement — mastered!",
+              "body": "Three sneaky patterns to watch for:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. 'Of...' phrases: cross them out!",
+                    "why": "'The basket of oranges IS...' — basket is the real subject"
+                  },
+                  {
+                    "text": "2. Neither/nor: match the NEAREST word",
+                    "why": "'Neither the captain nor the players WERE...'"
+                  },
+                  {
+                    "text": "3. Group words: one unit = 'is', acting separately = 'are'",
+                    "why": "'The team IS winning' but 'The jury WERE unable to agree'"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "advanced-sva-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a sentence has the wrong verb because of a tricky subject"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Daisy is proofreading sentences. Something is wrong here:\n\n**\"One of my friends are moving to a new school next term.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "One of my friends are moving to a new school next term."
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": "'Are' should be 'is' — the subject is 'one' (one friend), not 'friends'.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: \"One of my friends are moving to a new school next term.\"",
+                    "why": "'Are' should be 'is' — the subject is 'one' (one friend), not 'friends'."
+                  },
+                  {
+                    "text": "Right: \"One of my friends is moving to a new school next term.\"",
+                    "why": "Now the verb matches the real subject!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which sentence is correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "The box of chocolates were lovely.",
+                  "The box of chocolates was lovely.",
+                  "The box of chocolates are lovely.",
+                  "The box of chocolates have been lovely.",
+                  "The box of chocolates be lovely."
+                ],
+                "correctAnswer": "The box of chocolates was lovely.",
+                "correctFeedback": "Brilliant! The subject is 'box' (one thing). Cross out 'of chocolates' and it's clear: 'the box was lovely'. ✓",
+                "incorrectFeedback": "Not quite! The subject is 'box' (one thing). Cross out 'of chocolates' and it's clear: 'the box was lovely'."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. The box of chocolates were lovely.",
+                    "why": ""
+                  },
+                  {
+                    "text": "2. The box of chocolates was lovely.",
+                    "why": ""
+                  },
+                  {
+                    "text": "3. The box of chocolates are lovely.",
+                    "why": ""
+                  },
+                  {
+                    "text": "4. The box of chocolates have been lovely.",
+                    "why": ""
+                  },
+                  {
+                    "text": "5. The box of chocolates be lovely.",
+                    "why": ""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're a mistake-spotting expert!",
+              "body": "Always check: what is the REAL subject of the sentence?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Cross out 'of...' phrases",
+                    "why": "They hide the real subject"
+                  },
+                  {
+                    "text": "With neither/nor: look at the nearest word",
+                    "why": "The verb matches whichever word is closest"
+                  },
+                  {
+                    "text": "THE number of = one thing. A number of = many",
+                    "why": "This is a favourite exam trick!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "future-perfect",
+      "name": "Future Perfect — Finished Before a Deadline",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "future-perfect-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to talk about things that will be **finished** before a future time",
+            "How to spot the trigger words that tell you this special verb form is needed"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Daisy's future deadline",
+              "body": "Daisy is talking about her 11+ preparation.\n\n**\"By next September, she will have completed all her preparation.\"**\n\nThis sentence talks about something that will be **finished before** a future time.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "By next September, she will have completed all her preparation.",
+                "highlightWords": [
+                  "will",
+                  "have"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "How to build this verb form",
+              "body": "It's actually really simple — just three words put together:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The pattern: will + have + done-word",
+                    "why": "Three parts put together"
+                  },
+                  {
+                    "text": "The trigger: 'By next September'",
+                    "why": "When you see 'by + a future time', that's your clue!"
+                  },
+                  {
+                    "text": "Wrong: \"By next September, she will complete all her preparation.\"",
+                    "why": "'Will complete' just says she'll do it sometime. 'Will have completed' means she'll have **already finished** by that date."
+                  },
+                  {
+                    "text": "Right: \"By next September, she will have completed all her preparation.\"",
+                    "why": "This makes it clear it'll be DONE by the deadline"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Choose the correct form: 'By the end of this term, we ___ all our times tables.'",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "learn",
+                  "learned",
+                  "will learn",
+                  "will have learned",
+                  "are learning"
+                ],
+                "correctAnswer": "will have learned",
+                "correctFeedback": "Amazing! 'Will have learned' tells us the learning will be **finished** before the end of term. The 'by' is the clue! ✓",
+                "incorrectFeedback": "Not quite! 'Will have learned' tells us the learning will be **finished** before the end of term. The 'by' is the clue!"
+              },
+              "visualProps": {
+                "sentence": "'By the end of this term, we ___ all our times tables.'",
+                "highlightWords": [
+                  "___"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Future perfect — nailed it!",
+              "body": "Here's your quick recipe:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Pattern: will + have + done-word",
+                    "why": "e.g. 'will have finished', 'will have completed'"
+                  },
+                  {
+                    "text": "Trigger: 'by + future time'",
+                    "why": "'By Friday', 'By next year', 'By the time...'"
+                  },
+                  {
+                    "text": "It means: completely DONE before the deadline",
+                    "why": "Not just happening — finished!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "future-perfect-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a sentence needs 'will have' instead of just 'will'"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Jake is checking his writing. Something isn't quite right:\n\n**\"By the end of the week, I will finish my project.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "By the end of the week, I will finish my project."
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake",
+              "body": "'Will finish' should be 'will have finished' because 'by the end of the week' tells us there's a deadline.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: \"By the end of the week, I will finish my project.\"",
+                    "why": "'Will finish' should be 'will have finished' because 'by the end of the week' tells us there's a deadline."
+                  },
+                  {
+                    "text": "Right: \"By the end of the week, I will have finished my project.\"",
+                    "why": "Now it's clear the action is finished before the deadline"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which sentence is correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "By June, she will pass all her exams.",
+                  "By June, she will have passed all her exams.",
+                  "By June, she will had passed all her exams.",
+                  "By June, she will has passed all her exams.",
+                  "By June, she will been passed all her exams."
+                ],
+                "correctAnswer": "By June, she will have passed all her exams.",
+                "correctFeedback": "Superstar! 'By June' is the trigger — it tells us the exams need to be DONE by then, so it's 'will have passed'. ✓",
+                "incorrectFeedback": "Nearly there! 'By June' is the trigger — it tells us the exams need to be DONE by then, so it's 'will have passed'."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. By June, she will pass all her exams.",
+                    "why": ""
+                  },
+                  {
+                    "text": "2. By June, she will have passed all her exams.",
+                    "why": ""
+                  },
+                  {
+                    "text": "3. By June, she will had passed all her exams.",
+                    "why": ""
+                  },
+                  {
+                    "text": "4. By June, she will has passed all her exams.",
+                    "why": ""
+                  },
+                  {
+                    "text": "5. By June, she will been passed all her exams.",
+                    "why": ""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Deadline detector — activated!",
+              "body": "Whenever you see 'by + future time', check if you need 'will have':",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Spot the trigger: 'by Friday', 'by next year', 'by the time...'",
+                    "why": "These all mean there's a deadline"
+                  },
+                  {
+                    "text": "Use: will + have + done-word",
+                    "why": "'Will have finished', 'will have completed'"
+                  },
+                  {
+                    "text": "It means: completely DONE before the deadline",
+                    "why": "That's the future perfect!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

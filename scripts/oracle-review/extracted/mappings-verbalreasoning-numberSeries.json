@@ -1,0 +1,1478 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "numberSeries",
+    "displayName": "Number Series",
+    "extractedAt": "2026-03-30T13:52:00.674Z",
+    "totalQuestions": 99,
+    "mappedQuestions": 99,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 99,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "What number comes next in this series? 3, 7, 11, 15, 19, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "What number comes next in this series? 5, 10, 15, 20, 25, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "What number comes next in this series? 100, 90, 80, 70, 60, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "50",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "What number comes next in this series? 4, 8, 12, 16, 20, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "What number comes next in this series? 2, 9, 16, 23, 30, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "What number comes next in this series? 50, 45, 40, 35, 30, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "25",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "What number comes next in this series? 11, 22, 33, 44, 55, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "66",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "What number comes next in this series? 6, 12, 18, 24, 30, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "36",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "What number comes next in this series? 8, 16, 24, 32, 40, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "48",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "What number comes next in this series? 75, 68, 61, 54, 47, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "What number comes next in this series? 13, 26, 39, 52, 65, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "78",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "What number comes next in this series? 9, 18, 27, 36, 45, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "54",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "What number comes next in this series? 200, 180, 160, 140, 120, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "100",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "What number comes next in this series? 15, 30, 45, 60, 75, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "90",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "What number comes next in this series? 3, 6, 9, 12, 15, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "What number comes next in this series? 1, 2, 4, 8, 16, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "32",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "What number comes next in this series? 3, 6, 12, 24, 48, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "96",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "What number comes next in this series? 5, 10, 20, 40, 80, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "160",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "What number comes next in this series? 64, 32, 16, 8, 4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "What number comes next in this series? 128, 64, 32, 16, 8, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "4",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "What number comes next in this series? 7, 14, 21, 28, 35, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "42",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "What number comes next in this series? 12, 24, 36, 48, 60, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "72",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "What number comes next in this series? 16, 32, 48, 64, 80, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "96",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "What number comes next in this series? 25, 50, 75, 100, 125, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "150",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "What number comes next in this series? 14, 28, 42, 56, 70, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "84",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "What number comes next in this series? 2, 5, 3, 6, 4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "What number comes next in this series? 10, 20, 15, 25, 20, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "What number comes next in this series? 1, 10, 2, 20, 3, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "What number comes next in this series? 5, 1, 10, 2, 15, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "What number comes next in this series? 100, 1, 90, 2, 80, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "What number comes next in this series? 7, 9, 12, 16, 21, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "27",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "What number comes next in this series? 5, 10, 17, 26, 37, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "What number comes next in this series? 1, 3, 7, 13, 21, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "31",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "What number comes next in this series? 34, 42, 52, 64, 78, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "94",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "What number comes next in this series? 100, 90, 82, 76, 72, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "70",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "What number comes next in this series? 2, 3, 5, 8, 12, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "17",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "What number comes next in this series? 1, 4, 10, 19, 31, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "46",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "What number comes next in this series? 50, 47, 42, 35, 26, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "What number comes next in this series? 1, 3, 6, 10, 15, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "What number comes next in this series? 4, 7, 12, 19, 28, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "39",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "What number comes next in this series? 1, 4, 9, 16, 25, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "What number comes next in this series? 4, 9, 16, 25, 36, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "49",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "What number comes next in this series? 121, 100, 81, 64, 49, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "What number comes next in this series? 49, 36, 25, 16, 9, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "What number comes next in this series? 16, 25, 36, 49, 64, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "81",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "What number comes next in this series? 1, 1, 2, 3, 5, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "fibonacci-like",
+      "subConceptName": "Fibonacci-Like Series",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **1, 1, 2, 3, 5, 8**, each number is the **sum of the two numbers before it**: 1+1=2. Check every trio!",
+      "lessonLearningGoal": [
+        "How to spot the Fibonacci rule — where each number is the SUM of the two before it",
+        "A powerful trick: if nothing else works, try adding the last two numbers together!"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "What number comes next in this series? 2, 3, 5, 8, 13, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "fibonacci-like",
+      "subConceptName": "Fibonacci-Like Series",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **1, 1, 2, 3, 5, 8**, each number is the **sum of the two numbers before it**: 1+1=2. Check every trio!",
+      "lessonLearningGoal": [
+        "How to spot the Fibonacci rule — where each number is the SUM of the two before it",
+        "A powerful trick: if nothing else works, try adding the last two numbers together!"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "What number comes next in this series? 1, 3, 4, 7, 11, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "fibonacci-like",
+      "subConceptName": "Fibonacci-Like Series",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **1, 1, 2, 3, 5, 8**, each number is the **sum of the two numbers before it**: 1+1=2. Check every trio!",
+      "lessonLearningGoal": [
+        "How to spot the Fibonacci rule — where each number is the SUM of the two before it",
+        "A powerful trick: if nothing else works, try adding the last two numbers together!"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "What number comes next in this series? 2, 2, 4, 6, 10, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "fibonacci-like",
+      "subConceptName": "Fibonacci-Like Series",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **1, 1, 2, 3, 5, 8**, each number is the **sum of the two numbers before it**: 1+1=2. Check every trio!",
+      "lessonLearningGoal": [
+        "How to spot the Fibonacci rule — where each number is the SUM of the two before it",
+        "A powerful trick: if nothing else works, try adding the last two numbers together!"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "What number comes next in this series? 2, 3, 5, 7, 11, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "What number comes next in this series? 11, 13, 17, 19, 23, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "29",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "What number comes next in this series? 7, 11, 13, 17, 19, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "What number comes next in this series? 2, 6, 18, 54, 162, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "486",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "What number comes next in this series? 5, 15, 45, 135, 405, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "1215",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "What number comes next in this series? 1, 4, 16, 64, 256, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "1024",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "What number comes next in this series? 2048, 1024, 512, 256, 128, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "64",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "What number comes next in this series? 34, 45, 56, 67, 78, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "89",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "What number comes next in this series? 58, 127, 196, 265, 334, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "403",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "What number comes next in this series? 901, 800, 699, 598, 497, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "396",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "What number comes next in this series? 543, 432, 321, 210, 99, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "-12",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "What number comes next in this series? 240, 216, 192, 168, 144, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "120",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "What number comes next in this series? 17, 34, 51, 68, 85, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "102",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "What number comes next in this series? 150, 125, 100, 75, 50, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "What number comes next in this series? 23, 46, 69, 92, 115, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "138",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "What number comes next in this series? 31, 37, 41, 47, 51, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "57",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "What number comes next in this series? 10, 13, 11, 14, 12, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "What number comes next in this series? 2, 8, 4, 10, 6, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "What number comes next in this series? 15, 6, 21, 8, 27, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "What number comes next in this series? 3, 6, 10, 15, 21, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "What number comes next in this series? 10, 15, 21, 28, 36, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "45",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "What number comes next in this series? 27, 37, 29, 39, 31, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "41",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "What number comes next in this series? 32, 17, 16, 23, 8, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "29",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "What number comes next in this series? 31, 17, 33, 15, 35, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "What number comes next in this series? 7, 3, 6, 6, 5, 12, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "4",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "What number comes next in this series? 50, 40, 45, 42, 40, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "44",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "What number comes next in this series? 1, 5, 2, 10, 3, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "15",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "What number comes next in this series? 100, 3, 90, 6, 80, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "What number comes next in this series? 2, 100, 4, 80, 6, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "What number comes next in this series? 2, 5, 11, 23, 47, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "95",
+      "subConceptId": "two-step-rule",
+      "subConceptName": "Two-Step Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 7, 15, 31, 63** uses a **two-step rule**: **×2 then +1**. Let's check how the two operations combine!",
+      "lessonLearningGoal": [
+        "How to spot when a series uses TWO operations together (like ×2 then +1) — sneaky!",
+        "Why these patterns look almost like multiplication but are just slightly off"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "What number comes next in this series? 1, 4, 13, 40, 121, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "364",
+      "subConceptId": "two-step-rule",
+      "subConceptName": "Two-Step Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 7, 15, 31, 63** uses a **two-step rule**: **×2 then +1**. Let's check how the two operations combine!",
+      "lessonLearningGoal": [
+        "How to spot when a series uses TWO operations together (like ×2 then +1) — sneaky!",
+        "Why these patterns look almost like multiplication but are just slightly off"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "What number comes next in this series? 3, 7, 15, 31, 63, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "127",
+      "subConceptId": "two-step-rule",
+      "subConceptName": "Two-Step Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 7, 15, 31, 63** uses a **two-step rule**: **×2 then +1**. Let's check how the two operations combine!",
+      "lessonLearningGoal": [
+        "How to spot when a series uses TWO operations together (like ×2 then +1) — sneaky!",
+        "Why these patterns look almost like multiplication but are just slightly off"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "What number comes next in this series? 1, 3, 9, 27, 81, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "243",
+      "subConceptId": "multiply-pattern",
+      "subConceptName": "Multiply Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 9, 27, 81, 243** is growing fast. If the hops keep getting bigger, try **dividing** each number by the previous one. If you always get the same answer, it's a multiply pattern!",
+      "lessonLearningGoal": [
+        "How to spot when numbers are being multiplied, not added — the hops explode!",
+        "The clever trick: dividing each number by the one before it reveals the hidden multiplier"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "What number comes next in this series? 5, 11, 23, 47, 95, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "191",
+      "subConceptId": "two-step-rule",
+      "subConceptName": "Two-Step Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 7, 15, 31, 63** uses a **two-step rule**: **×2 then +1**. Let's check how the two operations combine!",
+      "lessonLearningGoal": [
+        "How to spot when a series uses TWO operations together (like ×2 then +1) — sneaky!",
+        "Why these patterns look almost like multiplication but are just slightly off"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "What number comes next in this series? 1, 8, 27, 64, 125, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "216",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "What number comes next in this series? 8, 27, 64, 125, 216, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "343",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "What number comes next in this series? 27, 64, 125, 216, 343, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "512",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "What number comes next in this series? 13, 19, 31, 55, 103, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "199",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "What number comes next in this series? 5, 7, 11, 19, 35, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "67",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "What number comes next in this series? 100, 96, 88, 72, 40, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "-24",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "What number comes next in this series? 1, 2, 5, 14, 41, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "122",
+      "subConceptId": "two-step-rule",
+      "subConceptName": "Two-Step Rule",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **3, 7, 15, 31, 63** uses a **two-step rule**: **×2 then +1**. Let's check how the two operations combine!",
+      "lessonLearningGoal": [
+        "How to spot when a series uses TWO operations together (like ×2 then +1) — sneaky!",
+        "Why these patterns look almost like multiplication but are just slightly off"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "What number comes next in this series? 3, 5, 9, 17, 33, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "65",
+      "subConceptId": "increasing-hops",
+      "subConceptName": "Increasing Hops",
+      "confidence": "high",
+      "lessonTeachSummary": "In the series **2, 4, 8, 14, 22**, the hops aren't constant — they're **+2, +4, +6, +8**. Look for a pattern **inside** the hops. How much do the hops grow each time?",
+      "lessonLearningGoal": [
+        "How to spot when the gaps themselves are getting bigger — a pattern within the pattern!",
+        "How to find the 'hop of the hops' and use it to crack the code"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "What number comes next in this series? 4, 16, 5, 25, 6, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "36",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What number comes next in this series? 144, 121, 100, 81, 64, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "49",
+      "subConceptId": "square-numbers",
+      "subConceptName": "Square Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **1, 4, 9, 16, 25** is made of square numbers: 1×1, 2×2, 3×3, 4×4, 5×5. Square numbers have a secret: the hops between them are always **odd numbers** that go up by 2!",
+      "lessonLearningGoal": [
+        "How to spot the famous square numbers (1, 4, 9, 16, 25...) — they pop up everywhere!",
+        "A secret shortcut: the hops between square numbers always increase by exactly 2"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "What number comes next in this series? 2, 3, 5, 7, 11, 13, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "17",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "What number comes next in this series? 20, 14, 8, 2, -4, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "-10",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "What number comes next in this series? 11, 13, 17, 19, 23, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "29",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "What number comes next in this series? 12, 21, 13, 31, 14, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "41",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Pattern",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **5, 8, 6, 9, 7** zigzags because the hops alternate: **+3** then **-2**, over and over. Write out the hops to see the two rules!",
+      "lessonLearningGoal": [
+        "How to spot when two rules are taking turns — like a zigzag!",
+        "How writing out the hops instantly reveals the two hidden rules"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "What number comes next in this series? 11, 22, 33, 44, 55, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "66",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "What number comes next in this series? 19, 28, 37, 46, 55, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "64",
+      "subConceptId": "constant-difference",
+      "subConceptName": "Constant Difference",
+      "confidence": "high",
+      "lessonTeachSummary": "The series **4, 11, 18, 25, 32** has the **same hop** between every pair — that's a **constant difference**. Just add that hop one more time!",
+      "lessonLearningGoal": [
+        "How to spot when the same number is added each time — the simplest pattern to crack",
+        "How to use the 'Write the Hops' method to find constant differences quickly"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "decreasing-series",
+      "name": "Decreasing Series"
+    }
+  ],
+  "subConceptCoverage": {
+    "constant-difference": {
+      "name": "Constant Difference",
+      "questionCount": 36,
+      "difficulties": {
+        "D1": 20,
+        "D2": 11,
+        "D3": 5
+      }
+    },
+    "multiply-pattern": {
+      "name": "Multiply Pattern",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 1
+      }
+    },
+    "alternating-pattern": {
+      "name": "Alternating Pattern",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 9
+      }
+    },
+    "increasing-hops": {
+      "name": "Increasing Hops",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 0,
+        "D2": 12,
+        "D3": 4
+      }
+    },
+    "square-numbers": {
+      "name": "Square Numbers",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 0,
+        "D2": 5,
+        "D3": 5
+      }
+    },
+    "fibonacci-like": {
+      "name": "Fibonacci-Like Series",
+      "questionCount": 4,
+      "difficulties": {
+        "D1": 0,
+        "D2": 4,
+        "D3": 0
+      }
+    },
+    "two-step-rule": {
+      "name": "Two-Step Rule",
+      "questionCount": 5,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "missingLettersWords",
+  "subject": "verbalreasoning",
+  "qualityScore": 6,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 11,
+    "issuesFound": 12,
+    "bySeverity": {
+      "critical": 1,
+      "high": 3,
+      "medium": 5,
+      "low": 3
+    },
+    "difficultyAssessment": "Distribution is reasonable: D1:36 (29%), D2:49 (39%), D3:40 (32%), which is close to the GL target of ~30/40/30. D1 could use 1-2 more questions but overall this is well-balanced. Difficulty ratings are broadly accurate — D1 uses common words (CARPET, GARDEN, KITTEN), D2 uses curriculum-level words (PASSAGE, HANDSOME, WILLOW), D3 uses challenging words (CAPTAIN, PARAPET, SPECTACLE).",
+    "coverageAssessment": "Good coverage of the Oracle-specified sub-types: three-letter stolen words in middle position (Q1-Q10), single missing letters (Q11-Q15, Q49-Q73), three-letter words at the start (Q16-Q48 and Q74-Q100), and three-letter words in composite format (Q101-Q125). The single-letter questions nicely differentiate between vowel gaps (D1-D2) and tricky spelling words (D3 like RHYTHM, TWELFTH, SCHEDULE). However, there are no sentence-context questions ('The children GATED' format) which the Oracle lists as a sub-type.",
+    "teachingEfficacyAssessment": "Lessons are well-structured with 8 sub-concepts covering vowel gaps, consonant gaps, middle gaps, start/end gaps, and more. The 'vowel first' strategy and 'consonant skeleton' method are sound teaching approaches. All 125 questions are mapped with high confidence and 0 unmapped. However, 2 sub-concepts are orphaned (lessons without mapped questions). The lesson content uses good visual components (LetterTiles with gap mode) and appropriate interactive exercises.",
+    "topPriorities": [
+      "Fix the critical issue: many 'three-letter options' are not real English words, violating the GL format where stolen letters must form valid words",
+      "Replace the mechanical filler distractors (TIP, MOB, HUB, JAR) that appear as options in 60+ questions",
+      "Add sentence-context sub-type questions to match GL paper format",
+      "Improve explanation tips to be less repetitive and more difficulty-appropriate"
+    ]
+  },
+  "issues": [
+    {
+      "id": "VR-ML-001",
+      "severity": "critical",
+      "type": "format-violation",
+      "title": "Many 'three-letter word' options are NOT real English words, violating GL format",
+      "description": "The Oracle specification states: 'Three consecutive letters removed from a word. Those three letters must form a valid word on their own.' However, across Q16-Q100 (the prefix/suffix format), many correct answers are NOT real English three-letter words: DAR (Q74), MON (Q75), BUL (Q79), HAP (Q80), CUL (Q81), FAC (Q82), FLA (Q83), VIS (Q84), MES (Q85), PRA (Q86), OPE (Q88), CUR (Q91), FRE (Q92), POS (Q93), EFF (Q94), CEL (Q95), BEA (Q96), FRA (Q97), CHA (Q98), JUD (Q99), WAN (Q100), ANC (Q41), SUR (Q42), PER (Q43), SPE (Q46), ADV (Q47), LAN (Q48), DEP (Q45), SIL (Q27), RAB (Q26), PLA (Q23), STO (Q36), PUB (Q37), SEC (Q38), WEA (Q39), VOL (Q40). While some are arguable (PER, PUB, SUM, DIN, TIM are real words), many like DAR, BUL, CUL, FAC, FLA, VIS, MES, FRE, POS, EFF, CEL, BEA, FRA, CHA, JUD, ADV, SPE, DEP, STO, SEC, WEA, ANC, SUR are NOT standard English words. This fundamentally changes the question type from 'find the stolen word' to 'find the missing letters', which is a different (and easier) cognitive task.",
+      "affectedItems": ["Q23", "Q26", "Q27", "Q36-Q48", "Q74-Q100"],
+      "recommendation": "This is a design choice rather than a simple fix. Option A: Restrict to questions where the three letters genuinely form a word (CAR, PET, MAN, KIT, AGE, TEN, APT, APE, PAT, CAP, ILL, BAT, COT, etc.) — this matches the GL 'stolen word' format exactly. Option B: Accept these as a 'missing letters' variant (which is valid) but relabel the questions appropriately and don't claim the letters form a word. The current situation is the worst of both worlds: questions ASK for a 'three-letter word' but many answers are not words."
+    },
+    {
+      "id": "VR-ML-002",
+      "severity": "high",
+      "type": "distractor-quality",
+      "title": "Mechanical filler distractors (TIP, MOB, HUB, JAR) appear across 60+ questions",
+      "description": "Questions Q16-Q100 systematically use the same filler options: TIP, MOB, HUB, JAR appear in almost every question as wrong answers. These are transparently not related to the target word and offer no learning value. A child quickly learns to ignore any option containing TIP, MOB, HUB, or JAR, making the questions trivially easy regardless of the actual word. GL-style distractors should be plausible alternatives that test whether the child can distinguish similar letter combinations.",
+      "affectedItems": ["Q16-Q100"],
+      "recommendation": "Replace filler distractors with plausible alternatives. For Q16 (FORE___=FOREMAN), good distractors would be MAT (FOREMAT?), MAP (FOREMAP?), MEN (FOREMEN — real but different word), MAX (FOREMAX?). Each distractor should at least look like it could complete a word."
+    },
+    {
+      "id": "VR-ML-003",
+      "severity": "high",
+      "type": "question-variety",
+      "title": "Q101-Q125 block has answer always in position 0 (first option)",
+      "description": "Every question from Q101 to Q125 has the correct answer as the first option (correct: 0). This is a massive pattern that makes these questions trivially exploitable. A child who notices this pattern can get 25 questions right by always picking A. GL papers distribute answer positions evenly.",
+      "affectedItems": ["Q101-Q125"],
+      "recommendation": "Randomise the answer position across all 5 positions for Q101-Q125. Each position should appear roughly 5 times across 25 questions."
+    },
+    {
+      "id": "VR-ML-004",
+      "severity": "high",
+      "type": "missing-subtype",
+      "title": "No sentence-context questions despite Oracle listing this as a sub-type",
+      "description": "The Oracle specification lists sub-type 4 as: 'In sentence context: The children GATED → HER (gatHERed)'. This format appears on GL papers but is completely absent from the question bank. Sentence-context questions are harder because children must first identify the complete word from context, then find the three-letter word within it.",
+      "affectedItems": ["topic-wide"],
+      "recommendation": "Add 10-15 sentence-context questions across D2 and D3. Example: 'The ship sailed across the ___(?)___ER.' Answer: HAR (HARBOUR)."
+    },
+    {
+      "id": "VR-ML-005",
+      "severity": "medium",
+      "type": "explanation-quality",
+      "title": "Tips are repetitive and sometimes inappropriate for the question type",
+      "description": "The same 7 tips cycle mechanically regardless of question type or difficulty. Several tips are mismatched: Q11 (B_AUTY, single letter) gets the tip 'Try common three-letter words first' — but it's asking for a single letter. Q16 (FORE_MAN) gets 'Double letters are common traps — NECESSARY has one C and two S's!' — irrelevant to prefix questions. Q50 (H_LP, single letter, D1) gets 'Check BOTH things — the complete word is real AND the stolen letters form a real word' — also irrelevant for single-letter questions.",
+      "affectedItems": ["All questions"],
+      "recommendation": "Match tips to question sub-type. Single-letter questions should get vowel/consonant tips. Three-letter-word questions should get 'sound it out' and 'check both parts' tips. D3 questions should get difficulty-specific tips."
+    },
+    {
+      "id": "VR-ML-006",
+      "severity": "medium",
+      "type": "difficulty-misrating",
+      "title": "Some D1 single-letter questions are too easy even for D1",
+      "description": "Q49-Q55 ask for obvious vowels in extremely common 4-letter words: G_FT (GIFT), H_LP (HELP), G_LD (GOLD), J_MP (JUMP), N_ST (NEST), M_LK (MILK), S_FT (SOFT). These are Years 1-2 words that any child preparing for the 11+ would know instantly. While D1 should be accessible, these are so trivial they offer zero exam preparation value and waste quiz time.",
+      "affectedItems": ["Q49-Q55"],
+      "recommendation": "Keep 2-3 of these as warm-up but replace the rest with D1 questions that at least require a moment's thought — e.g. words with two plausible vowels (G_LD could be GOLD or GILD)."
+    },
+    {
+      "id": "VR-ML-007",
+      "severity": "medium",
+      "type": "question-design",
+      "title": "Q23 answer PLA is not a real English word",
+      "description": "Q23 asks '_ _ _ NET' with answer PLA making PLANET. PLA is not a recognised English word. The question stem says 'Which three-letter word completes this longer word?' but PLA is not a word. This violates the question's own instructions. Other problematic examples: Q26 RAB (RABBIT), Q27 SIL (SILVER).",
+      "affectedItems": ["Q23", "Q26", "Q27"],
+      "recommendation": "Either change the question wording to 'Which three letters complete this longer word?' (removing the 'word' requirement) or replace with questions where the answer IS a real word."
+    },
+    {
+      "id": "VR-ML-008",
+      "severity": "medium",
+      "type": "answer-verification",
+      "title": "Q6 PASSAGE answer SAG — verify SAG is the only valid option",
+      "description": "Q6 asks for PAS___E. The answer is SAG making PASSAGE. However, the question format shows PAS _ _ _ E which could also potentially be PASSIVE (SIV) or PASTIME (TIM). While SAG is correct for PASSAGE, the distractors (SAT, SAD, SAP, SAW) are all quite close and none make real words with the remaining letters, so the question works. No fix needed, but worth noting the importance of thorough option validation.",
+      "affectedItems": ["Q6"],
+      "recommendation": "No action needed — this is well-constructed. Noted as a verification checkpoint only."
+    },
+    {
+      "id": "VR-ML-009",
+      "severity": "medium",
+      "type": "teaching-gap",
+      "title": "No lesson specifically teaching the 'word within a word' recognition skill",
+      "description": "The GL format fundamentally tests whether children can see a real word hidden inside a longer word. The lessons teach vowel/consonant strategies and 'sounding out', but don't explicitly teach children to look for words-within-words as a pattern recognition skill. A lesson on 'word hunting' — finding smaller words inside bigger ones — would directly prepare for this question type.",
+      "affectedItems": ["Lessons"],
+      "recommendation": "Add a lesson sub-concept specifically on 'word hunting' — practising finding hidden words in longer words without the gap format. This builds the core pattern recognition skill."
+    },
+    {
+      "id": "VR-ML-010",
+      "severity": "low",
+      "type": "consistency",
+      "title": "Three different question presentation formats without clear progression",
+      "description": "Questions use three formats: (1) 'CH _ _ _ ER' with underscores (Q1-Q10), (2) '( _ _ _ ) LING' with brackets (Q74-Q100), (3) 'F ( _ _ _ ) YARD' with letter + brackets (Q101-Q125). While variety is fine, the formats aren't clearly explained to children and the switch between them could cause confusion. GL papers use a consistent format throughout.",
+      "affectedItems": ["Q1-Q125"],
+      "recommendation": "Standardise on one format (underscores are closest to GL) or add a brief intro screen when the format changes."
+    },
+    {
+      "id": "VR-ML-011",
+      "severity": "low",
+      "type": "vocabulary-level",
+      "title": "Some D3 explanations could be more educational",
+      "description": "D3 questions use challenging words (PARAPET, SPECTACLE, ANCESTOR, SURRENDER) which are great for vocabulary building. However, explanations could do more to reinforce the vocabulary. Q9 (PARAPET) does explain 'a low wall along the edge of a roof or bridge' which is excellent. But Q41 (ANCESTOR) just says 'a person from whom one is descended' without giving a memorable example, and Q46 (SPECTACLE) gives a generic definition.",
+      "affectedItems": ["D3 questions"],
+      "recommendation": "Add age-appropriate example sentences or memorable context to D3 explanations. E.g. 'ANCESTOR — someone from your family who lived a long time ago, like your great-great-grandparents'."
+    },
+    {
+      "id": "VR-ML-012",
+      "severity": "low",
+      "type": "coverage-gap",
+      "title": "No questions test the 'end position' stolen word format",
+      "description": "The Oracle lists 'Stolen word at end: FORE _ _ _ → MAN (FOREMAN)' as a sub-type. Q16 (FORE___=FOREMAN) does test this. However, most 'end position' questions in Q74-Q100 use the '( _ _ _ ) SUFFIX' format which is really a prefix search (find letters that go BEFORE the suffix). True end-position questions like 'BASKET___' where the answer goes at the end are underrepresented.",
+      "affectedItems": ["Q74-Q100"],
+      "recommendation": "Add questions in the format 'WORD _ _ _' where the three-letter word appears at the end (e.g. 'CHAR _ _ _' → IOT making CHARIOT, where IOT is not a word, so maybe 'KIT _ _ _' → TEN making KITTEN)."
+    }
+  ]
+}

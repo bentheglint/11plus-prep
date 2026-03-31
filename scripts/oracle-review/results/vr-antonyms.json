@@ -1,0 +1,119 @@
+{
+  "reviewedAt": "2026-03-30T18:00:00.000Z",
+  "topic": "antonyms",
+  "subject": "verbalreasoning",
+  "qualityScore": 9,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 10,
+    "mappingsReviewed": 125,
+    "issuesFound": 8,
+    "bySeverity": { "critical": 0, "high": 0, "medium": 4, "low": 4 },
+    "difficultyAssessment": "D1:38 (30%), D2:52 (42%), D3:35 (28%) — very close to the GL target distribution of ~30:40:30. D2 is slightly over by 2% and D3 slightly under by 2%, but within acceptable tolerance. Difficulty calibration is excellent: D1 uses common opposite pairs with concrete nouns as distractors (hot/cold with green/round, big/small with horse/cow), D2 uses curriculum-level vocabulary with synonym-pair traps as distractors (cautious/reckless with determined/stubborn), and D3 uses sophisticated vocabulary with near-synonym distractors (benevolent/malevolent with astute/resourceful). The distractor design at D2/D3 is particularly strong — embedding synonym pairs as traps is exactly what GL does.",
+    "coverageAssessment": "Excellent breadth of antonym types: physical properties (hot/cold, big/small, rough/smooth), emotions (brave/cowardly, happy/sad), actions (expand/shrink, arrive/depart, capture/release), character traits (generous/mean, arrogant/humble, lenient/strict), abstract concepts (temporary/permanent, artificial/natural, compulsory/optional), and sophisticated vocabulary (benevolent/malevolent, gregarious/reclusive, eloquent/inarticulate). Good representation of prefix antonyms (patient/impatient, obey/disobey, increase/decrease). D1 questions effectively use concrete noun pairs as distractors (butter/bread, sock/shoe) which matches GL's 'related but not opposite' trap pattern.",
+    "teachingEfficacyAssessment": "10 lessons across 8 sub-concepts provide strong pedagogical coverage. The 'flip test' (basic-opposites) is a memorable, age-appropriate strategy. Prefix antonym lessons (un-, dis-, im-, in-, ir-) teach a genuinely useful decoding skill with the correct linguistic rules (im- before b/m/p, ir- before r). The 'graded vs complementary' lesson teaches a sophisticated concept (hot-warm-cool-cold scale vs alive/dead binary) that directly helps children avoid the 'related but not opposite' trap. The 'spot-the-mistake' lesson on damp vs wet vs soaked targets a real GL trap. 125/125 questions mapped (115 high confidence, 10 medium). The 10 medium-confidence mappings are all adjective antonyms mapped to 'Describing Word Opposites' which is reasonable.",
+    "topPriorities": [
+      "Fix overlapping word pairs between synonyms and antonyms topics (several words like 'conceal/reveal' appear in both question banks in different roles)",
+      "Consider adding noun antonym pairs which are underrepresented (arrival/departure, presence/absence)",
+      "Review D1 questions 21-44 for over-reliance on concrete noun distractors — could vary distractor strategies more"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-ANT-CROSS-001",
+      "itemType": "question",
+      "itemId": "Q12,Q20",
+      "severity": "medium",
+      "category": "cross-topic-overlap",
+      "title": "Antonym Q12 (compulsory + optional) and Q20 (voluntary + compulsory) test near-identical vocabulary",
+      "description": "Q12 tests compulsory vs optional and Q20 tests voluntary vs compulsory. These two questions use overlapping vocabulary (compulsory appears in both, and voluntary/optional are near-synonyms). A child doing a quiz could see both in one session, which reduces variety. Additionally, the synonyms topic has no equivalent pair, so this vocabulary cluster is over-tested in antonyms.",
+      "suggestedFix": "Replace Q20 with a different antonym pair at D2 level. Consider 'mandatory + voluntary' or 'obligatory + elective' if you want to keep this semantic field, or switch to a completely different D2 pair like 'transparent + opaque' or 'authentic + counterfeit'.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-DUP-001",
+      "itemType": "question",
+      "itemId": "Q56,Q106",
+      "severity": "medium",
+      "category": "duplicate-pair",
+      "title": "arrive + depart tested twice (Q56 and Q106)",
+      "description": "Q56 (D2) and Q106 (D1) both test the antonym pair arrive + depart. While the difficulty levels differ and distractors are different, having the same core answer pair appears twice in a 125-question bank wastes a slot that could test different vocabulary. The explanations are also nearly identical.",
+      "suggestedFix": "Replace one instance. For Q106 (D1), consider a different D1 pair like 'enter + exit', 'start + finish', or 'appear + vanish'. Keep Q56 (D2) as it has better distractor design.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-DIST-001",
+      "itemType": "question",
+      "itemId": "Q21-Q44",
+      "severity": "medium",
+      "category": "distractor-quality",
+      "title": "D1 questions Q21-Q44 over-rely on concrete noun pair distractors",
+      "description": "Nearly all D1 questions from Q21-Q44 use the same distractor pattern: concrete noun pairs that are 'related but not opposite' (butter/bread, sock/shoe, tiger/lion, spoon/fork, cup/bowl, book/page, etc.). While this is a valid GL distractor type, using it for 24 consecutive questions creates monotony. GL varies its D1 distractor strategies: some use related adjectives, some use action verb pairs, some use category members. The child could develop a pattern-matching shortcut ('ignore all nouns, look for the adjective/verb pair') rather than learning vocabulary.",
+      "suggestedFix": "Diversify distractor types across the D1 block. Mix in: (a) adjective distractors from different domains (shiny/bright — not opposite but related), (b) verb pairs (run/walk — related but not opposite), (c) abstract word pairs. Keep some noun pairs but break the pattern.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q105",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q105 (simple + difficult) rated D1 but 'simple' and 'difficult' are not standard D1 antonyms",
+      "description": "Q105 pairs 'simple' with 'difficult' and is rated D1. While both words are common, the more standard antonym of 'simple' is 'complex' or 'complicated', and the more standard antonym of 'difficult' is 'easy'. 'Simple + difficult' works as antonyms but requires a slightly more nuanced understanding (simple means easy, easy is opposite of difficult, therefore simple is opposite of difficult). Direct antonym pairs are expected at D1 (hot/cold, big/small). This is more of a D2-level inference.",
+      "suggestedFix": "Either reclassify as D2, or change the pair to 'easy + difficult' or 'simple + complex' for a more direct D1 antonym relationship.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-COV-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No noun antonym pairs tested",
+      "description": "The entire 125-question bank tests adjective and verb antonyms exclusively. There are no pure noun antonym pairs such as: friend/enemy (Q108 tests this but uses concrete noun distractors), arrival/departure, presence/absence, victory/defeat (Q115 has this), success/failure (Q61). While Q61 and Q115 exist, they are action-oriented. GL does test noun antonyms, particularly abstract noun pairs like knowledge/ignorance (Q86 has this, good), prosperity/poverty, strength/weakness.",
+      "suggestedFix": "Add 3-5 noun antonym pairs at D2/D3: prosperity/poverty, presence/absence, harmony/discord, freedom/captivity, generosity/greed.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q7",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q7 explanation for bright/clever distractor is potentially confusing",
+      "description": "Q7 (noisy + silent) explanation says: 'Bright' and 'clever' are different types of quality — 'bright' here means luminous, 'clever' means intelligent.' However, 'bright' can also mean clever (as in 'a bright student'), so calling them 'different types of quality' could confuse a child who knows both meanings. The explanation inadvertently introduces polysemy without addressing it.",
+      "suggestedFix": "Simplify the explanation: 'Bright' can mean full of light or clever — but neither meaning is the opposite of anything here. 'Heavy' and 'wooden' describe different things, not opposites.'",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-EXPL-002",
+      "itemType": "question",
+      "itemId": "Q21",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q21 explanation says 'round' and 'flat' aren't in standard opposite pairing",
+      "description": "Q21 (hot + cold) explanation says: 'Round' and 'flat' describe shapes but aren't in the standard opposite pairing here.' This is slightly misleading — round and flat CAN be considered opposites in some contexts (round ball vs flat disc). The phrase 'standard opposite pairing here' is vague and doesn't teach the child anything useful about why they aren't the answer.",
+      "suggestedFix": "Clarify: 'Round' describes shape and 'flat' describes height or surface — they don't describe the same quality on opposite ends, so they aren't true antonyms.'",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-ANT-MAP-001",
+      "itemType": "mapping",
+      "itemId": "general",
+      "severity": "low",
+      "category": "mapping-efficacy",
+      "title": "10 questions mapped with medium confidence to broad 'Describing Word Opposites' lesson",
+      "description": "10 questions have medium-confidence mappings, all to the 'adjective-antonyms' sub-concept. This sub-concept maps diverse question types: temporary/permanent, artificial/natural, compulsory/optional, lenient/strict, arrogant/humble. The lesson teaches using 'rough/smooth' as its example (texture-based). A child learning about texture antonyms and then being tested on 'compulsory/optional' or 'lenient/strict' may find the lesson insufficiently specific. The lesson strategy ('check what quality is being described') is sound but could be reinforced with more varied examples.",
+      "suggestedFix": "Consider splitting 'adjective-antonyms' into two sub-concepts: (a) physical property antonyms (rough/smooth, wide/narrow, thick/thin) and (b) abstract quality antonyms (temporary/permanent, compulsory/optional, lenient/strict). Each with its own lesson using relevant examples.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

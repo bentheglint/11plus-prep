@@ -1,0 +1,3364 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "placevalue",
+    "displayName": "Place Value & Rounding",
+    "extractedAt": "2026-03-30T13:05:32.758Z",
+    "questionCount": 176,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 109,
+      "D3": 29
+    },
+    "questionTypes": {
+      "standard": 176
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie's school raised £4,567 for charity. What is the value of the digit 5 in this number?",
+      "options": [
+        "5",
+        "50",
+        "500",
+        "5,000",
+        "50,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "500",
+      "explanation": "In 4,567, the digit 5 is in the hundreds place. So its value is 5 hundreds = 500. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A village fete raised exactly £3,845. The organiser rounds this to the nearest hundred for the newsletter. What amount does she write?",
+      "options": [
+        "£3,000",
+        "£3,800",
+        "£3,850",
+        "£3,900",
+        "£4,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "£3,800",
+      "explanation": "Look at the tens digit: 4. Since 4 is less than 5, round down. £3,845 rounds to £3,800 for the newsletter. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A park ranger counted seven thousand, two hundred and thirty-six trees in a forest. How is this number written in digits?",
+      "options": [
+        "7,236",
+        "7,326",
+        "72,036",
+        "7,206",
+        "70,236"
+      ],
+      "correct": 0,
+      "correctAnswer": "7,236",
+      "explanation": "Seven thousand = 7,000, two hundred = 200, thirty-six = 36. Add them: 7,000 + 200 + 36 = 7,236 trees. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jake scored 28,453 points in a video game. Round this to the nearest thousand.",
+      "options": [
+        "28,000",
+        "28,400",
+        "28,500",
+        "29,000",
+        "30,000"
+      ],
+      "correct": 0,
+      "correctAnswer": "28,000",
+      "explanation": "Look at the hundreds digit: 4. Since 4 is less than 5, round down. 28,453 rounds to 28,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school library has 56,729 books. Which digit is in the tens place of this number?",
+      "options": [
+        "9",
+        "2",
+        "7",
+        "6",
+        "5"
+      ],
+      "correct": 1,
+      "correctAnswer": "2",
+      "explanation": "In 56,729, reading from right to left: 9 is ones, 2 is tens, 7 is hundreds, 6 is thousands, 5 is ten-thousands. The tens digit is 2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bakery sold 4,682 cakes last year. They round this to the nearest ten for their advert. What number do they use?",
+      "options": [
+        "4,600",
+        "4,680",
+        "4,690",
+        "4,700",
+        "5,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "4,680",
+      "explanation": "Look at the ones digit: 2. Since 2 is less than 5, round down. 4,682 rounds to 4,680 for the advert. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Emily's town has a population of 45,638 people. What is this number rounded to the nearest hundred?",
+      "options": [
+        "45,000",
+        "45,600",
+        "45,640",
+        "45,700",
+        "46,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "45,600",
+      "explanation": "Look at the tens digit: 3. Since 3 is less than 5, round down. 45,638 rounds to 45,600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to 50,000? 48,756 / 51,234 / 49,812 / 52,089 / 47,945",
+      "options": [
+        "48,756",
+        "51,234",
+        "49,812",
+        "52,089",
+        "47,945"
+      ],
+      "correct": 2,
+      "correctAnswer": "49,812",
+      "explanation": "Find the difference from 50,000: 48,756 is 1,244 away; 51,234 is 1,234 away; 49,812 is 188 away; 52,089 is 2,089 away; 47,945 is 2,055 away. The closest is 49,812. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity has raised £34,567 so far. After one more donation of £1,000, what is their new total?",
+      "options": [
+        "£34,667",
+        "£35,467",
+        "£35,567",
+        "£44,567",
+        "£34,568"
+      ],
+      "correct": 2,
+      "correctAnswer": "£35,567",
+      "explanation": "Add the £1,000 donation to £34,567. The thousands digit increases by 1: £34,567 + £1,000 = £35,567. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver's dad drove 18,945 miles last year. Round this to the nearest thousand.",
+      "options": [
+        "18,000",
+        "18,900",
+        "19,000",
+        "20,000",
+        "18,950"
+      ],
+      "correct": 2,
+      "correctAnswer": "19,000",
+      "explanation": "Look at the hundreds digit: 9. Since 9 is 5 or more, round up. 18,945 rounds to 19,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A football stadium holds 83,512 fans. What is the value of the digit 3 in this number?",
+      "options": [
+        "3",
+        "30",
+        "300",
+        "3,000",
+        "30,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "3,000",
+      "explanation": "In 83,512, the digit 3 is in the thousands place. Its value is 3 thousands = 3,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four towns have populations of 12,456, 12,564, 12,465 and 12,546. List them in order from smallest to largest.",
+      "options": [
+        "12,456, 12,465, 12,546, 12,564",
+        "12,456, 12,465, 12,564, 12,546",
+        "12,465, 12,456, 12,546, 12,564",
+        "12,564, 12,546, 12,465, 12,456",
+        "12,456, 12,546, 12,465, 12,564"
+      ],
+      "correct": 0,
+      "correctAnswer": "12,456, 12,465, 12,546, 12,564",
+      "explanation": "Compare from left to right. All start with 12,4 or 12,5. Ordering by the remaining digits: 12,456 < 12,465 < 12,546 < 12,564. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An ancient oak tree is ninety-four thousand, six hundred and twenty-three days old. Write this in digits.",
+      "options": [
+        "94,623",
+        "94,263",
+        "946,023",
+        "94,603",
+        "9,623"
+      ],
+      "correct": 0,
+      "correctAnswer": "94,623",
+      "explanation": "Ninety-four thousand = 94,000, six hundred = 600, twenty-three = 23. Total: 94,000 + 600 + 23 = 94,623. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school pedometer recorded 67,849 steps on a trip. What is this rounded to the nearest ten?",
+      "options": [
+        "67,840",
+        "67,850",
+        "67,900",
+        "68,000",
+        "67,800"
+      ],
+      "correct": 1,
+      "correctAnswer": "67,850",
+      "explanation": "Look at the ones digit: 9. Since 9 is 5 or more, round up. 67,849 rounds to 67,850. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A new car costs £23,795. What is this rounded to the nearest hundred?",
+      "options": [
+        "23,000",
+        "23,700",
+        "23,800",
+        "24,000",
+        "23,790"
+      ],
+      "correct": 2,
+      "correctAnswer": "23,800",
+      "explanation": "Look at the tens digit: 9. Since 9 is 5 or more, round up. £23,795 rounds to £23,800. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A swimming pool has had 45,023 visitors this year. If 100 of those visits were counted by mistake, what is the correct number?",
+      "options": [
+        "44,923",
+        "45,013",
+        "44,913",
+        "45,123",
+        "44,023"
+      ],
+      "correct": 0,
+      "correctAnswer": "44,923",
+      "explanation": "Subtract the 100 mistaken visits from 45,023. The hundreds digit decreases by 1: 45,023 - 100 = 44,923. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Noah counted 38,562 bricks in a wall. In which place is the digit 8?",
+      "options": [
+        "Ones",
+        "Tens",
+        "Hundreds",
+        "Thousands",
+        "Ten-thousands"
+      ],
+      "correct": 3,
+      "correctAnswer": "Thousands",
+      "explanation": "In 38,562, reading from right: 2 is ones, 6 is tens, 5 is hundreds, 8 is thousands, 3 is ten-thousands. The 8 is in the thousands place. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A stadium holds 52,487 spectators. Round this to the nearest thousand.",
+      "options": [
+        "50,000",
+        "52,000",
+        "52,500",
+        "53,000",
+        "60,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "52,000",
+      "explanation": "Look at the hundreds digit: 4. Since 4 is less than 5, round down. 52,487 rounds to 52,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number has 7 in the hundreds place? 17,234 / 71,234 / 12,734 / 12,347 / 27,134",
+      "options": [
+        "17,234",
+        "71,234",
+        "12,734",
+        "12,347",
+        "27,134"
+      ],
+      "correct": 2,
+      "correctAnswer": "12,734",
+      "explanation": "Check each number: 17,234 (2 in hundreds); 71,234 (2 in hundreds); 12,734 (7 in hundreds); 12,347 (3 in hundreds); 27,134 (1 in hundreds). Answer: 12,734. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lucy is reading a book with 29,485 words. Round this to the nearest hundred.",
+      "options": [
+        "29,000",
+        "29,400",
+        "29,480",
+        "29,500",
+        "30,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "29,500",
+      "explanation": "Look at the tens digit: 8. Since 8 is 5 or more, round up. 29,485 rounds to 29,500. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the largest 5-digit number you can make using the digits 3, 7, 1, 9, 4 (each used once)?",
+      "options": [
+        "97,431",
+        "97,341",
+        "94,731",
+        "91,743",
+        "43,179"
+      ],
+      "correct": 0,
+      "correctAnswer": "97,431",
+      "explanation": "Put the largest digits in the highest place values: 9 in ten-thousands, 7 in thousands, 4 in hundreds, 3 in tens, 1 in ones = 97,431. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A town has a population of 85,555. The council rounds this to the nearest thousand for a report. What number do they write?",
+      "options": [
+        "85,000",
+        "85,500",
+        "85,600",
+        "86,000",
+        "90,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "86,000",
+      "explanation": "Look at the hundreds digit: 5. Since 5 means round up, the population of 85,555 rounds to 86,000 for the report. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Charlie's school has 1,847 students. The head teacher says there are 'about 2,000' students. To what has the number been rounded?",
+      "options": [
+        "Nearest 10",
+        "Nearest 100",
+        "Nearest 500",
+        "Nearest 1,000",
+        "Nearest 10,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "Nearest 1,000",
+      "explanation": "1,847 rounded to 2,000 is rounding to the nearest thousand. The hundreds digit (8) is 5 or more, so it rounds up. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the number 76,328, what is the sum of the thousands digit and the hundreds digit?",
+      "options": [
+        "6",
+        "9",
+        "10",
+        "11",
+        "15"
+      ],
+      "correct": 1,
+      "correctAnswer": "9",
+      "explanation": "The thousands digit is 6 and the hundreds digit is 3. Sum: 6 + 3 = 9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Amelia's town is exactly halfway between two cities that are 56,000 metres apart. How far is Amelia's town from each city?",
+      "options": [
+        "26,000 m",
+        "28,000 m",
+        "30,000 m",
+        "32,000 m",
+        "34,000 m"
+      ],
+      "correct": 1,
+      "correctAnswer": "28,000 m",
+      "explanation": "Halfway means divide by 2: 56,000 ÷ 2 = 28,000 metres from each city. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A running counter on a website shows 63,418 visitors. What is the value of the digit 4 in this number?",
+      "options": [
+        "4",
+        "40",
+        "400",
+        "4,000",
+        "40,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "400",
+      "explanation": "In 63,418, the digit 4 is in the hundreds place. Its value is 4 hundreds = 400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A primary school collected 5,672 books for a reading challenge. The head teacher rounds this to the nearest hundred. What number does she say?",
+      "options": [
+        "5,600",
+        "5,650",
+        "5,700",
+        "5,800",
+        "6,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "5,700",
+      "explanation": "Look at the tens digit: 7. Since 7 is 5 or more, round up. The total of 5,672 books rounds to 5,700. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Tom's school raised £41,836 for charity. Round this to the nearest thousand.",
+      "options": [
+        "40,000",
+        "41,000",
+        "41,800",
+        "42,000",
+        "45,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "42,000",
+      "explanation": "Look at the hundreds digit: 8. Since 8 is 5 or more, round up. £41,836 rounds to £42,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A city has 52,789 people. If 10,000 new residents move in, what is the new population?",
+      "options": [
+        "52,889",
+        "62,789",
+        "53,789",
+        "52,799",
+        "152,789"
+      ],
+      "correct": 1,
+      "correctAnswer": "62,789",
+      "explanation": "Add the 10,000 new residents to 52,789. The ten-thousands digit increases by 1: 52,789 + 10,000 = 62,789. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sponsored walk raised £7,349. The organiser rounds this to the nearest ten for the poster. What amount does she write?",
+      "options": [
+        "£7,300",
+        "£7,340",
+        "£7,345",
+        "£7,350",
+        "£7,400"
+      ],
+      "correct": 3,
+      "correctAnswer": "£7,350",
+      "explanation": "Look at the ones digit: 9. Since 9 is 5 or more, round up. £7,349 rounds to £7,350 for the poster. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A car's mileage counter shows 98,527 kilometres. What value does the digit 8 represent?",
+      "options": [
+        "8",
+        "80",
+        "800",
+        "8,000",
+        "80,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "8,000",
+      "explanation": "In 98,527, the digit 8 is in the thousands place. Its value is 8 thousands = 8,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A marathon had 36,495 runners. The report rounds this to the nearest hundred. How many runners does it say?",
+      "options": [
+        "36,000",
+        "36,400",
+        "36,500",
+        "36,600",
+        "37,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "36,500",
+      "explanation": "Look at the tens digit: 9. Since 9 is 5 or more, round up. The total of 36,495 runners rounds to 36,500 for the report. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A museum had 73,245 visitors last year. This year they had 1,000 fewer visitors. How many visitors did they have this year?",
+      "options": [
+        "73,145",
+        "72,245",
+        "73,235",
+        "63,245",
+        "72,345"
+      ],
+      "correct": 1,
+      "correctAnswer": "72,245",
+      "explanation": "Subtract 1,000 fewer visitors from 73,245. The thousands digit decreases by 1: 73,245 - 1,000 = 72,245 visitors. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A concert hall holds 89,728 people. Round this to the nearest thousand.",
+      "options": [
+        "80,000",
+        "89,000",
+        "89,700",
+        "89,800",
+        "90,000"
+      ],
+      "correct": 4,
+      "correctAnswer": "90,000",
+      "explanation": "Look at the hundreds digit: 7. Since 7 is 5 or more, round up. 89,728 rounds to 90,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A zoo had 42,615 visitors last year. What is the value of the digit 6 in this number?",
+      "options": [
+        "6",
+        "60",
+        "600",
+        "6,000",
+        "60,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "600",
+      "explanation": "In 42,615, the digit 6 is in the hundreds place. Its value is 6 hundreds = 600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A newspaper reports that fifty-three thousand, eight hundred and forty-two people attended a music festival. How is this number written in digits?",
+      "options": [
+        "53,842",
+        "53,482",
+        "530,842",
+        "53,824",
+        "5,842"
+      ],
+      "correct": 0,
+      "correctAnswer": "53,842",
+      "explanation": "Fifty-three thousand = 53,000, eight hundred = 800, forty-two = 42. Total: 53,842 people attended. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school counted 15,238 reading minutes this term. Round this to the nearest ten.",
+      "options": [
+        "15,200",
+        "15,230",
+        "15,235",
+        "15,240",
+        "15,300"
+      ],
+      "correct": 3,
+      "correctAnswer": "15,240",
+      "explanation": "Look at the ones digit: 8. Since 8 is 5 or more, round up. 15,238 rounds to 15,240. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In which number is the digit 9 in the tens place? 19,456 / 91,456 / 14,956 / 14,596 / 49,156",
+      "options": [
+        "19,456",
+        "91,456",
+        "14,956",
+        "14,596",
+        "49,156"
+      ],
+      "correct": 3,
+      "correctAnswer": "14,596",
+      "explanation": "The tens place is the second digit from the right. Check each number: 19,456 → tens digit is 5; 91,456 → tens digit is 5; 14,956 → tens digit is 5; 14,596 → tens digit is 9; 49,156 → tens digit is 5. So 14,596 has the digit 9 in the tens place. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A library has 67,384 books. Round this to the nearest hundred.",
+      "options": [
+        "67,000",
+        "67,300",
+        "67,380",
+        "67,400",
+        "68,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "67,400",
+      "explanation": "Look at the tens digit: 8. Since 8 is 5 or more, round up. 67,384 rounds to 67,400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A website has had 81,756 visitors this month. If it gets 100 more visitors, what will the new total be?",
+      "options": [
+        "81,766",
+        "81,856",
+        "82,756",
+        "81,757",
+        "91,756"
+      ],
+      "correct": 1,
+      "correctAnswer": "81,856",
+      "explanation": "Add 100 to 81,756. The hundreds digit increases by 1: 81,756 + 100 = 81,856. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "At a football match, the attendance was 24,850. Round this to the nearest thousand.",
+      "options": [
+        "24,000",
+        "24,800",
+        "24,900",
+        "25,000",
+        "30,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "25,000",
+      "explanation": "Look at the hundreds digit: 8. Since 8 is 5 or more, round up. 24,850 rounds to 25,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 71,493, which digit is in the hundreds place?",
+      "options": [
+        "3",
+        "9",
+        "4",
+        "1",
+        "7"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "In 71,493, reading from right: 3 is ones, 9 is tens, 4 is hundreds, 1 is thousands, 7 is ten-thousands. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four schools raised these amounts for charity: £34,567, £34,657, £34,576, and £34,675. Put them in order from largest to smallest.",
+      "options": [
+        "34,675, 34,657, 34,576, 34,567",
+        "34,567, 34,576, 34,657, 34,675",
+        "34,657, 34,675, 34,567, 34,576",
+        "34,675, 34,576, 34,657, 34,567",
+        "34,567, 34,657, 34,675, 34,576"
+      ],
+      "correct": 0,
+      "correctAnswer": "34,675, 34,657, 34,576, 34,567",
+      "explanation": "Comparing: 34,675 > 34,657 > 34,576 > 34,567. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A stadium holds 92,145 people. Round this attendance to the nearest hundred.",
+      "options": [
+        "92,000",
+        "92,100",
+        "92,140",
+        "92,150",
+        "92,200"
+      ],
+      "correct": 1,
+      "correctAnswer": "92,100",
+      "explanation": "Look at the tens digit: 4. Since 4 is less than 5, round down. 92,145 rounds to 92,100. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A town's population is 57,824. What is the value of the digit 7 in this number?",
+      "options": [
+        "7",
+        "70",
+        "700",
+        "7,000",
+        "70,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "7,000",
+      "explanation": "In 57,824, the digit 7 is in the thousands place. Its value is 7,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A plane flew 31,485 miles. Round this to the nearest thousand.",
+      "options": [
+        "30,000",
+        "31,000",
+        "31,400",
+        "31,500",
+        "32,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "31,000",
+      "explanation": "Look at the hundreds digit: 4. Since 4 is less than 5, round down. 31,485 rounds to 31,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A concert venue has 46,320 seats. If 500 seats are set aside for staff, how many seats are left for the public?",
+      "options": [
+        "45,820",
+        "46,220",
+        "45,920",
+        "46,310",
+        "41,320"
+      ],
+      "correct": 0,
+      "correctAnswer": "45,820",
+      "explanation": "Subtract the 500 staff seats from 46,320: 46,320 - 500 = 45,820 seats for the public. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sponsored swim raised £8,765. Round this to the nearest ten.",
+      "options": [
+        "8,700",
+        "8,760",
+        "8,765",
+        "8,770",
+        "8,800"
+      ],
+      "correct": 3,
+      "correctAnswer": "8,770",
+      "explanation": "Look at the ones digit: 5. Since 5 means round up, 8,765 rounds to 8,770. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the number 29,716, what is the sum of the thousands digit and the tens digit?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "10",
+      "explanation": "Thousands digit is 9, tens digit is 1. Sum: 9 + 1 = 10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the largest 4-digit number you can make using 5, 2, 8, 9 (each used once)?",
+      "options": [
+        "9,852",
+        "9,825",
+        "9,582",
+        "9,528",
+        "8,952"
+      ],
+      "correct": 0,
+      "correctAnswer": "9,852",
+      "explanation": "Put largest digits in highest places: 9 in thousands, 8 in hundreds, 5 in tens, 2 in ones = 9,852. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity raises £59,999 at a gala dinner. Round this amount to the nearest thousand.",
+      "options": [
+        "59,000",
+        "59,900",
+        "60,000",
+        "61,000",
+        "50,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "60,000",
+      "explanation": "Look at the hundreds digit: 9. Since 9 is 5 or more, round up. 59,999 rounds to 60,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the number eighty-two thousand, one hundred and fifty-seven in digits?",
+      "options": [
+        "82,157",
+        "82,517",
+        "821,57",
+        "82,175",
+        "8,157"
+      ],
+      "correct": 0,
+      "correctAnswer": "82,157",
+      "explanation": "Eighty-two thousand = 82,000, one hundred = 100, fifty-seven = 57. Total: 82,157. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 65,139, which digit is in the ten-thousands place?",
+      "options": [
+        "9",
+        "3",
+        "1",
+        "5",
+        "6"
+      ],
+      "correct": 4,
+      "correctAnswer": "6",
+      "explanation": "In 65,139, reading from left: 6 is ten-thousands, 5 is thousands, 1 is hundreds, 3 is tens, 9 is ones. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A village post office handled 13,627 letters last month. Round this to the nearest hundred.",
+      "options": [
+        "13,000",
+        "13,600",
+        "13,620",
+        "13,630",
+        "13,700"
+      ],
+      "correct": 1,
+      "correctAnswer": "13,600",
+      "explanation": "Look at the tens digit: 2. Since 2 is less than 5, round down. 13,627 rounds to 13,600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cricket ground has 37,284 seats. If they add 5,000 extra seats, how many seats will there be in total?",
+      "options": [
+        "37,784",
+        "38,284",
+        "42,284",
+        "87,284",
+        "37,289"
+      ],
+      "correct": 2,
+      "correctAnswer": "42,284",
+      "explanation": "Add 5,000 to 37,284: 37,284 + 5,000 = 42,284. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A city's population is 78,456. The mayor says it's 'about 80,000'. To what has it been rounded?",
+      "options": [
+        "Nearest 10",
+        "Nearest 100",
+        "Nearest 1,000",
+        "Nearest 10,000",
+        "Nearest 100,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "Nearest 10,000",
+      "explanation": "To round 78,456 to the nearest 10,000, look at the thousands digit: 8. Since 8 is 5 or more, round up. 78,456 rounds up to 80,000. So the mayor rounded to the nearest 10,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school fun run tracker shows 47,382 steps. Round this to the nearest ten.",
+      "options": [
+        "47,300",
+        "47,380",
+        "47,382",
+        "47,390",
+        "47,400"
+      ],
+      "correct": 1,
+      "correctAnswer": "47,380",
+      "explanation": "Look at the ones digit: 2. Since 2 is less than 5, round down. 47,382 rounds to 47,380. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 5 in 95,143?",
+      "options": [
+        "5",
+        "50",
+        "500",
+        "5,000",
+        "50,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "5,000",
+      "explanation": "In 95,143, the digit 5 is in the thousands place. Its value is 5,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to 70,000? 68,234 / 71,567 / 69,812 / 72,345 / 67,890",
+      "options": [
+        "68,234",
+        "71,567",
+        "69,812",
+        "72,345",
+        "67,890"
+      ],
+      "correct": 2,
+      "correctAnswer": "69,812",
+      "explanation": "Distances from 70,000: 68,234 (1,766); 71,567 (1,567); 69,812 (188); 72,345 (2,345); 67,890 (2,110). Closest is 69,812. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 54,725 to the nearest hundred.",
+      "options": [
+        "54,000",
+        "54,700",
+        "54,720",
+        "54,730",
+        "54,800"
+      ],
+      "correct": 1,
+      "correctAnswer": "54,700",
+      "explanation": "Look at the tens digit: 2. Since 2 is less than 5, round down. 54,725 rounds to 54,700. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity has £83,407 in its fund. After spending £200 on supplies, how much is left?",
+      "options": [
+        "83,207",
+        "83,307",
+        "83,205",
+        "81,407",
+        "83,607"
+      ],
+      "correct": 0,
+      "correctAnswer": "83,207",
+      "explanation": "Subtract 200 from 83,407: 83,407 - 200 = 83,207. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 38,572, what is the value of the digit 3?",
+      "options": [
+        "3",
+        "30",
+        "300",
+        "3,000",
+        "30,000"
+      ],
+      "correct": 4,
+      "correctAnswer": "30,000",
+      "explanation": "In 38,572, the digit 3 is in the ten-thousands place. Its value is 30,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 21,950 to the nearest thousand.",
+      "options": [
+        "21,000",
+        "21,900",
+        "22,000",
+        "23,000",
+        "20,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "22,000",
+      "explanation": "Look at the hundreds digit: 9. Since 9 is 5 or more, round up. 21,950 rounds to 22,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the smallest 5-digit number you can make using 6, 3, 9, 1, 7 (each once)?",
+      "options": [
+        "13,679",
+        "16,379",
+        "17,369",
+        "19,367",
+        "31,679"
+      ],
+      "correct": 0,
+      "correctAnswer": "13,679",
+      "explanation": "Put smallest digits in highest places: 1, 3, 6, 7, 9 = 13,679. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 6,448 to the nearest ten.",
+      "options": [
+        "6,400",
+        "6,440",
+        "6,445",
+        "6,450",
+        "6,500"
+      ],
+      "correct": 3,
+      "correctAnswer": "6,450",
+      "explanation": "Look at the ones digit: 8. Since 8 is 5 or more, round up. 6,448 rounds to 6,450. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 52,894, which digit is in the thousands place?",
+      "options": [
+        "4",
+        "9",
+        "8",
+        "2",
+        "5"
+      ],
+      "correct": 3,
+      "correctAnswer": "2",
+      "explanation": "In 52,894, reading from right: 4 is ones, 9 is tens, 8 is hundreds, 2 is thousands, 5 is ten-thousands. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 99,555 to the nearest hundred.",
+      "options": [
+        "99,500",
+        "99,550",
+        "99,560",
+        "99,600",
+        "100,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "99,600",
+      "explanation": "Look at the tens digit: 5. Since 5 means round up, 99,555 rounds to 99,600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A town has a population of 61,528. If 3,000 people move away, what is the new population?",
+      "options": [
+        "58,528",
+        "61,228",
+        "64,528",
+        "31,528",
+        "61,525"
+      ],
+      "correct": 0,
+      "correctAnswer": "58,528",
+      "explanation": "Subtract 3,000 from 61,528: 61,528 - 3,000 = 58,528. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 9 in 19,627?",
+      "options": [
+        "9",
+        "90",
+        "900",
+        "9,000",
+        "90,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "9,000",
+      "explanation": "In 19,627, the digit 9 is in the thousands place. Its value is 9,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 72,863 to the nearest thousand.",
+      "options": [
+        "72,000",
+        "72,800",
+        "72,900",
+        "73,000",
+        "80,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "73,000",
+      "explanation": "Look at the hundreds digit: 8. Since 8 is 5 or more, round up. 72,863 rounds to 73,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A stadium sold 48,276 tickets. Round to the nearest hundred.",
+      "options": [
+        "48,000",
+        "48,200",
+        "48,270",
+        "48,280",
+        "48,300"
+      ],
+      "correct": 4,
+      "correctAnswer": "48,300",
+      "explanation": "Look at the tens digit: 7. Since 7 is 5 or more, round up. 48,276 rounds to 48,300. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bookshop has sold 25,134 copies of a novel. After a weekend sale they sell 800 more. What is the new total?",
+      "options": [
+        "25,942",
+        "25,934",
+        "26,134",
+        "33,134",
+        "25,142"
+      ],
+      "correct": 1,
+      "correctAnswer": "25,934",
+      "explanation": "Add 800 to 25,134: 25,134 + 800 = 25,934. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the number 74,258, what is the sum of all the digits?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "correct": 2,
+      "correctAnswer": "26",
+      "explanation": "Add all digits: 7 + 4 + 2 + 5 + 8 = 26. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 11,436 to the nearest ten.",
+      "options": [
+        "11,400",
+        "11,430",
+        "11,435",
+        "11,440",
+        "11,500"
+      ],
+      "correct": 3,
+      "correctAnswer": "11,440",
+      "explanation": "Look at the ones digit: 6. Since 6 is 5 or more, round up. 11,436 rounds to 11,440. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 8 in 48,913?",
+      "options": [
+        "8",
+        "80",
+        "800",
+        "8,000",
+        "80,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "8,000",
+      "explanation": "In 48,913, the digit 8 is in the thousands place. Its value is 8,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four schools have these pupil numbers: 56,789 / 56,879 / 56,798 / 56,978. Put them in order from smallest to largest.",
+      "options": [
+        "56,789, 56,798, 56,879, 56,978",
+        "56,789, 56,879, 56,798, 56,978",
+        "56,798, 56,789, 56,879, 56,978",
+        "56,978, 56,879, 56,798, 56,789",
+        "56,789, 56,879, 56,978, 56,798"
+      ],
+      "correct": 0,
+      "correctAnswer": "56,789, 56,798, 56,879, 56,978",
+      "explanation": "Comparing: 56,789 < 56,798 < 56,879 < 56,978. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 64,285 to the nearest hundred.",
+      "options": [
+        "64,000",
+        "64,200",
+        "64,280",
+        "64,290",
+        "64,300"
+      ],
+      "correct": 4,
+      "correctAnswer": "64,300",
+      "explanation": "Look at the tens digit: 8. Since 8 is 5 or more, round up. 64,285 rounds to 64,300. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is 50 less than 91,003?",
+      "options": [
+        "90,953",
+        "91,053",
+        "90,993",
+        "90,903",
+        "90,963"
+      ],
+      "correct": 0,
+      "correctAnswer": "90,953",
+      "explanation": "Subtract 50 from 91,003: 91,003 - 50 = 90,953. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the number thirty-six thousand, seven hundred and four in digits?",
+      "options": [
+        "36,704",
+        "36,740",
+        "367,04",
+        "36,074",
+        "3,674"
+      ],
+      "correct": 0,
+      "correctAnswer": "36,704",
+      "explanation": "Thirty-six thousand = 36,000, seven hundred = 700, four = 4. Total: 36,704. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 87,450 to the nearest thousand.",
+      "options": [
+        "87,000",
+        "87,400",
+        "87,500",
+        "88,000",
+        "90,000"
+      ],
+      "correct": 0,
+      "correctAnswer": "87,000",
+      "explanation": "Look at the hundreds digit: 4. Since 4 is less than 5, round down. 87,450 rounds to 87,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In which number is the digit 4 in the hundreds place? 24,837 / 42,837 / 28,437 / 28,374 / 14,837",
+      "options": [
+        "24,837",
+        "42,837",
+        "28,437",
+        "28,374",
+        "14,837"
+      ],
+      "correct": 2,
+      "correctAnswer": "28,437",
+      "explanation": "Check each: 24,837 (8 in hundreds); 42,837 (8 in hundreds); 28,437 (4 in hundreds). Answer: 28,437. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 2 in 62,815?",
+      "options": [
+        "2",
+        "20",
+        "200",
+        "2,000",
+        "20,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "2,000",
+      "explanation": "In 62,815, the digit 2 is in the thousands place. Its value is 2,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 33,777 to the nearest ten.",
+      "options": [
+        "33,700",
+        "33,770",
+        "33,775",
+        "33,780",
+        "33,800"
+      ],
+      "correct": 3,
+      "correctAnswer": "33,780",
+      "explanation": "Look at the ones digit: 7. Since 7 is 5 or more, round up. 33,777 rounds to 33,780. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A wildlife park has 48,521 annual visitors. After a new exhibit opens, 6,000 extra visitors arrive. What is the new total?",
+      "options": [
+        "48,527",
+        "54,521",
+        "42,521",
+        "108,521",
+        "49,521"
+      ],
+      "correct": 1,
+      "correctAnswer": "54,521",
+      "explanation": "Add 6,000 to 48,521: 48,521 + 6,000 = 54,521. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 19,265 to the nearest hundred.",
+      "options": [
+        "19,000",
+        "19,200",
+        "19,260",
+        "19,270",
+        "19,300"
+      ],
+      "correct": 4,
+      "correctAnswer": "19,300",
+      "explanation": "Look at the tens digit: 6. Since 6 is 5 or more, round up. 19,265 rounds to 19,300. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In the number 85,129, which digit has the smallest value?",
+      "options": [
+        "9",
+        "2",
+        "1",
+        "5",
+        "8"
+      ],
+      "correct": 0,
+      "correctAnswer": "9",
+      "explanation": "Find the value of each digit in 85,129: 8 = 80,000, 5 = 5,000, 1 = 100, 2 = 20, 9 = 9. The digit 9 is in the ones place, so its value is just 9, which is the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the largest number you can make using 4, 0, 7, 2, 9 (each once)?",
+      "options": [
+        "97,420",
+        "97,402",
+        "97,240",
+        "94,720",
+        "92,740"
+      ],
+      "correct": 0,
+      "correctAnswer": "97,420",
+      "explanation": "Put largest digits first: 9, 7, 4, 2, 0 = 97,420. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 56,349 to the nearest thousand.",
+      "options": [
+        "55,000",
+        "56,000",
+        "56,300",
+        "56,400",
+        "57,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "56,000",
+      "explanation": "Look at the hundreds digit: 3. Since 3 is less than 5, round down. 56,349 rounds to 56,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A warehouse holds 72,186 boxes. After a delivery of 400 boxes is sent out, how many remain?",
+      "options": [
+        "71,786",
+        "71,886",
+        "72,586",
+        "68,186",
+        "71,796"
+      ],
+      "correct": 0,
+      "correctAnswer": "71,786",
+      "explanation": "Subtract 400 from 72,186: 72,186 - 400 = 71,786. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 6 in 26,439?",
+      "options": [
+        "6",
+        "60",
+        "600",
+        "6,000",
+        "60,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "6,000",
+      "explanation": "In 26,439, the digit 6 is in the thousands place. Its value is 6,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 44,926 to the nearest ten.",
+      "options": [
+        "44,900",
+        "44,920",
+        "44,925",
+        "44,930",
+        "45,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "44,930",
+      "explanation": "Look at the ones digit: 6. Since 6 is 5 or more, round up. 44,926 rounds to 44,930. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory produced 93,247 items. Round to the nearest hundred.",
+      "options": [
+        "93,000",
+        "93,200",
+        "93,240",
+        "93,250",
+        "93,300"
+      ],
+      "correct": 1,
+      "correctAnswer": "93,200",
+      "explanation": "Look at the tens digit: 4. Since 4 is less than 5, round down. 93,247 rounds to 93,200. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A factory produced 67,835 items last year. This year it produced 2,000 more. What is this year's total?",
+      "options": [
+        "67,855",
+        "69,835",
+        "87,835",
+        "67,837",
+        "65,835"
+      ],
+      "correct": 1,
+      "correctAnswer": "69,835",
+      "explanation": "Add 2,000 to 67,835: 67,835 + 2,000 = 69,835. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In the number 51,628, what is the difference between the largest and smallest digits?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 4,
+      "correctAnswer": "7",
+      "explanation": "Largest digit is 8, smallest is 1. Difference: 8 - 1 = 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 78,165 to the nearest thousand.",
+      "options": [
+        "77,000",
+        "78,000",
+        "78,100",
+        "78,200",
+        "79,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "78,000",
+      "explanation": "Look at the hundreds digit: 1. Since 1 is less than 5, round down. 78,165 rounds to 78,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the number ninety-one thousand, five hundred and eighty-three in digits?",
+      "options": [
+        "91,583",
+        "91,853",
+        "915,83",
+        "91,538",
+        "9,583"
+      ],
+      "correct": 0,
+      "correctAnswer": "91,583",
+      "explanation": "Ninety-one thousand = 91,000, five hundred = 500, eighty-three = 83. Total: 91,583. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 27,554 to the nearest hundred.",
+      "options": [
+        "27,500",
+        "27,550",
+        "27,560",
+        "27,600",
+        "28,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "27,600",
+      "explanation": "Look at the tens digit: 5. Since 5 means round up, 27,554 rounds to 27,600. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A farmer harvests 54,281 apples. After selling 700 at a market, how many does she have left?",
+      "options": [
+        "53,581",
+        "54,981",
+        "54,211",
+        "47,281",
+        "53,681"
+      ],
+      "correct": 0,
+      "correctAnswer": "53,581",
+      "explanation": "Subtract 700 from 54,281: 54,281 - 700 = 53,581. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 39,467, what is the value of the digit 3?",
+      "options": [
+        "3",
+        "30",
+        "300",
+        "3,000",
+        "30,000"
+      ],
+      "correct": 4,
+      "correctAnswer": "30,000",
+      "explanation": "In 39,467, the digit 3 is in the ten-thousands place. Its value is 30,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 65,888 to the nearest ten.",
+      "options": [
+        "65,880",
+        "65,885",
+        "65,888",
+        "65,890",
+        "65,900"
+      ],
+      "correct": 3,
+      "correctAnswer": "65,890",
+      "explanation": "Look at the ones digit: 8. Since 8 is 5 or more, round up. 65,888 rounds to 65,890. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to 90,000? 88,543 / 91,276 / 89,734 / 92,145 / 87,892",
+      "options": [
+        "88,543",
+        "91,276",
+        "89,734",
+        "92,145",
+        "87,892"
+      ],
+      "correct": 2,
+      "correctAnswer": "89,734",
+      "explanation": "Distances: 88,543 (1,457); 91,276 (1,276); 89,734 (266); 92,145 (2,145); 87,892 (2,108). Closest is 89,734. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A concert venue sold 31,647 tickets last season. This season they sold 9,000 more. What is the new total?",
+      "options": [
+        "31,656",
+        "40,647",
+        "121,647",
+        "32,647",
+        "39,647"
+      ],
+      "correct": 1,
+      "correctAnswer": "40,647",
+      "explanation": "Add 9,000 to 31,647: 31,647 + 9,000 = 40,647. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 42,135 to the nearest hundred.",
+      "options": [
+        "42,000",
+        "42,100",
+        "42,130",
+        "42,140",
+        "42,200"
+      ],
+      "correct": 1,
+      "correctAnswer": "42,100",
+      "explanation": "Look at the tens digit: 3. Since 3 is less than 5, round down. 42,135 rounds to 42,100. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 76,954, which digit is in the ones place?",
+      "options": [
+        "4",
+        "5",
+        "9",
+        "6",
+        "7"
+      ],
+      "correct": 0,
+      "correctAnswer": "4",
+      "explanation": "In 76,954, reading from right: 4 is ones, 5 is tens, 9 is hundreds, 6 is thousands, 7 is ten-thousands. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 81,372 to the nearest thousand.",
+      "options": [
+        "80,000",
+        "81,000",
+        "81,300",
+        "81,400",
+        "82,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "81,000",
+      "explanation": "Look at the hundreds digit: 3. Since 3 is less than 5, round down. 81,372 rounds to 81,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the smallest 4-digit number you can make using 8, 5, 2, 0 (each once)?",
+      "options": [
+        "2,058",
+        "2,085",
+        "2,508",
+        "2,580",
+        "5,028"
+      ],
+      "correct": 0,
+      "correctAnswer": "2,058",
+      "explanation": "Put smallest non-zero first (can't start with 0): 2, 0, 5, 8 = 2,058. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is 150 more than 89,675?",
+      "options": [
+        "89,825",
+        "89,785",
+        "91,175",
+        "89,680",
+        "90,175"
+      ],
+      "correct": 0,
+      "correctAnswer": "89,825",
+      "explanation": "Add 150 to 89,675: 89,675 + 150 = 89,825. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 53,692 to the nearest ten.",
+      "options": [
+        "53,600",
+        "53,690",
+        "53,692",
+        "53,700",
+        "54,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "53,690",
+      "explanation": "Look at the ones digit: 2. Since 2 is less than 5, round down. 53,692 rounds to 53,690. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 7 in 17,528?",
+      "options": [
+        "7",
+        "70",
+        "700",
+        "7,000",
+        "70,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "7,000",
+      "explanation": "In 17,528, the digit 7 is in the thousands place. Its value is 7,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 95,217 to the nearest hundred.",
+      "options": [
+        "95,000",
+        "95,200",
+        "95,210",
+        "95,220",
+        "95,300"
+      ],
+      "correct": 1,
+      "correctAnswer": "95,200",
+      "explanation": "Look at the tens digit: 1. Since 1 is less than 5, round down. 95,217 rounds to 95,200. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A council's budget is £82,436. After a cut of £4,000, what is the new budget?",
+      "options": [
+        "78,436",
+        "82,036",
+        "86,436",
+        "42,436",
+        "78,336"
+      ],
+      "correct": 0,
+      "correctAnswer": "78,436",
+      "explanation": "Subtract 4,000 from 82,436: 82,436 - 4,000 = 78,436. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four charities raised these amounts: £67,432 / £67,342 / £67,423 / £67,234. Put them in order from largest to smallest.",
+      "options": [
+        "67,432, 67,423, 67,342, 67,234",
+        "67,234, 67,342, 67,423, 67,432",
+        "67,342, 67,432, 67,234, 67,423",
+        "67,432, 67,342, 67,234, 67,423",
+        "67,423, 67,432, 67,342, 67,234"
+      ],
+      "correct": 0,
+      "correctAnswer": "67,432, 67,423, 67,342, 67,234",
+      "explanation": "Comparing: 67,432 > 67,423 > 67,342 > 67,234. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 14,850 to the nearest thousand.",
+      "options": [
+        "14,000",
+        "14,800",
+        "14,900",
+        "15,000",
+        "20,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "15,000",
+      "explanation": "Look at the hundreds digit: 8. Since 8 is 5 or more, round up. 14,850 rounds to 15,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the number forty-seven thousand, nine hundred and sixty-five in digits?",
+      "options": [
+        "47,965",
+        "47,695",
+        "479,65",
+        "47,956",
+        "4,765"
+      ],
+      "correct": 0,
+      "correctAnswer": "47,965",
+      "explanation": "Forty-seven thousand = 47,000, nine hundred = 900, sixty-five = 65. Total: 47,965. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 68,345, what is the value of the digit 4?",
+      "options": [
+        "4",
+        "40",
+        "400",
+        "4,000",
+        "40,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "40",
+      "explanation": "In 68,345, the digit 4 is in the tens place. Its value is 40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 22,678 to the nearest ten.",
+      "options": [
+        "22,600",
+        "22,670",
+        "22,675",
+        "22,680",
+        "22,700"
+      ],
+      "correct": 3,
+      "correctAnswer": "22,680",
+      "explanation": "Look at the ones digit: 8. Since 8 is 5 or more, round up. 22,678 rounds to 22,680. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is 8,000 more than 55,729?",
+      "options": [
+        "55,737",
+        "63,729",
+        "135,729",
+        "56,729",
+        "61,729"
+      ],
+      "correct": 1,
+      "correctAnswer": "63,729",
+      "explanation": "Add 8,000 to 55,729: 55,729 + 8,000 = 63,729. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 70,425 to the nearest hundred.",
+      "options": [
+        "70,000",
+        "70,400",
+        "70,420",
+        "70,430",
+        "70,500"
+      ],
+      "correct": 1,
+      "correctAnswer": "70,400",
+      "explanation": "Look at the tens digit: 2. Since 2 is less than 5, round down. 70,425 rounds to 70,400. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the largest 3-digit number you can make using 6, 1, 9 (each once)?",
+      "options": [
+        "916",
+        "961",
+        "691",
+        "619",
+        "196"
+      ],
+      "correct": 1,
+      "correctAnswer": "961",
+      "explanation": "Put largest digits first: 9, 6, 1 = 961. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 88,537 to the nearest thousand.",
+      "options": [
+        "88,000",
+        "88,500",
+        "88,600",
+        "89,000",
+        "90,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "89,000",
+      "explanation": "Look at the hundreds digit: 5. Since 5 means round up, 88,537 rounds to 89,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is 250 less than 43,812?",
+      "options": [
+        "43,562",
+        "44,062",
+        "43,602",
+        "41,312",
+        "43,567"
+      ],
+      "correct": 0,
+      "correctAnswer": "43,562",
+      "explanation": "Subtract 250 from 43,812: 43,812 - 250 = 43,562. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In the number 92,476, which digit has the largest value?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "7",
+        "9"
+      ],
+      "correct": 4,
+      "correctAnswer": "9",
+      "explanation": "The digit 9 is in the ten-thousands place (value 90,000), which is largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 35,964 to the nearest ten.",
+      "options": [
+        "35,900",
+        "35,960",
+        "35,964",
+        "35,970",
+        "36,000"
+      ],
+      "correct": 1,
+      "correctAnswer": "35,960",
+      "explanation": "Look at the ones digit: 4. Since 4 is less than 5, round down. 35,964 rounds to 35,960. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the value of the digit 5 in 85,219?",
+      "options": [
+        "5",
+        "50",
+        "500",
+        "5,000",
+        "50,000"
+      ],
+      "correct": 3,
+      "correctAnswer": "5,000",
+      "explanation": "In 85,219, the digit 5 is in the thousands place. Its value is 5,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Round 49,786 to the nearest hundred.",
+      "options": [
+        "49,000",
+        "49,700",
+        "49,780",
+        "49,790",
+        "49,800"
+      ],
+      "correct": 4,
+      "correctAnswer": "49,800",
+      "explanation": "Look at the tens digit: 8. Since 8 is 5 or more, round up. 49,786 rounds to 49,800. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A number rounds to 47,000 to the nearest thousand and to 46,500 to the nearest hundred. What are the possible values of its tens digit?",
+      "options": [
+        "0, 1, 2, 3 or 4 only",
+        "5, 6, 7, 8 or 9 only",
+        "Any digit from 0 to 9",
+        "0 or 5 only",
+        "Only 5"
+      ],
+      "correct": 0,
+      "correctAnswer": "0, 1, 2, 3 or 4 only",
+      "explanation": "Rounding to the nearest thousand gives 47,000, so the number is from 46,500 to 47,499. Rounding to the nearest hundred gives 46,500, so the number is from 46,450 to 46,549. Both conditions together mean the number is from 46,500 to 46,549. The tens digits in this range are 0 (46,500-46,509), 1 (46,510-46,519), 2 (46,520-46,529), 3 (46,530-46,539) and 4 (46,540-46,549). So the tens digit can be 0, 1, 2, 3 or 4 only. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Three different digits are used to make a 3-digit number. When rounded to the nearest 10 it gives 540. When rounded to the nearest 100 it gives 500. What is the largest possible number?",
+      "options": [
+        "538",
+        "539",
+        "541",
+        "543",
+        "544"
+      ],
+      "correct": 3,
+      "correctAnswer": "543",
+      "explanation": "Rounding to the nearest 10 gives 540, so the number is from 535 to 544. Rounding to the nearest 100 gives 500, so the number is from 450 to 549. Both conditions: 535 to 544. The digits must all be different. Working down from the top: 544 has digits 5, 4, 4 which repeat. 543 has digits 5, 4, 3 — all different. So the largest possible number is 543. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Aisha writes a 4-digit number. The thousands digit is twice the hundreds digit. The tens digit is three times the hundreds digit. The ones digit is 1. The number is greater than 6,000. What is the number?",
+      "options": [
+        "4,291",
+        "6,391",
+        "2,131",
+        "8,491",
+        "4,261"
+      ],
+      "correct": 1,
+      "correctAnswer": "6,391",
+      "explanation": "Let the hundreds digit = h. Then thousands = 2h, tens = 3h, and ones = 1. For valid single digits: 2h ≤ 9 gives h ≤ 4, and 3h ≤ 9 gives h ≤ 3. So h can be 1, 2 or 3. If h = 1: the number is 2,131 (less than 6,000). If h = 2: the number is 4,261 (less than 6,000). If h = 3: the number is 6,391 (greater than 6,000). The answer is 6,391. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Emma thinks of a 4-digit number. When she rounds it to the nearest 1,000, she gets 7,000. When she rounds it to the nearest 100, she gets 6,500. What is the smallest number Emma could be thinking of?",
+      "options": [
+        "6,450",
+        "6,480",
+        "6,500",
+        "6,501",
+        "6,550"
+      ],
+      "correct": 2,
+      "correctAnswer": "6,500",
+      "explanation": "Rounding to the nearest 1,000 gives 7,000, so the number is from 6,500 to 7,499. Rounding to the nearest 100 gives 6,500, so the number is from 6,450 to 6,549. Numbers 6,450 to 6,499 have hundreds digit 4, so they round down to 6,000 to the nearest thousand — these don't satisfy the first condition. Numbers 6,500 to 6,549 have hundreds digit 5, so they round up to 7,000 to the nearest thousand. The valid range is 6,500 to 6,549, and the smallest is 6,500. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two different 5-digit numbers both round to 35,000 to the nearest thousand. What is the largest possible difference between them?",
+      "options": [
+        "499",
+        "998",
+        "999",
+        "500",
+        "1,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "999",
+      "explanation": "Numbers that round to 35,000 to the nearest thousand range from 34,500 to 35,499. The smallest is 34,500 and the largest is 35,499. The largest possible difference is 35,499 − 34,500 = 999. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Oliver writes a 5-digit number using each of the digits 1, 2, 3, 4 and 5 exactly once. When rounded to the nearest 1,000 it gives 22,000. What is the largest number Oliver could have written?",
+      "options": [
+        "25,431",
+        "24,531",
+        "23,451",
+        "21,543",
+        "21,534"
+      ],
+      "correct": 3,
+      "correctAnswer": "21,543",
+      "explanation": "Rounding to 22,000 to the nearest thousand means the number is from 21,500 to 22,499. The ten-thousands digit must be 2. The thousands digit cannot also be 2 (each digit used once), so it must be 1, giving 21,___. We need 21,500 or more, so the hundreds digit must be 5. The remaining digits {3, 4} go in the tens and units places. For the largest number: tens = 4, units = 3. The answer is 21,543. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A number rounds to 6,800 to the nearest hundred and to 6,750 to the nearest ten. How many whole numbers satisfy both conditions?",
+      "options": [
+        "5",
+        "10",
+        "50",
+        "100",
+        "0"
+      ],
+      "correct": 0,
+      "correctAnswer": "5",
+      "explanation": "Rounding to the nearest hundred gives 6,800, so the number is from 6,750 to 6,849. Rounding to the nearest ten gives 6,750, so the number is from 6,745 to 6,754. The overlap of these two ranges is 6,750 to 6,754. That gives 5 whole numbers: 6,750, 6,751, 6,752, 6,753 and 6,754. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Priya thinks of a number. 'If I round it to the nearest 10, I get 350. If I round it to the nearest 100, I get 400.' What is the smallest number Priya could be thinking of?",
+      "options": [
+        "345",
+        "348",
+        "350",
+        "351",
+        "354"
+      ],
+      "correct": 2,
+      "correctAnswer": "350",
+      "explanation": "Rounding to the nearest 10 gives 350, so the number is from 345 to 354. Rounding to the nearest 100 gives 400, so the number is from 350 to 449. Both conditions together: 350 to 354. Numbers 345 to 349 have tens digit 4, so they round down to 300 to the nearest 100 — they don't satisfy the second condition. The smallest valid number is 350. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A 5-digit number has the form 5■,■12 where both ■ symbols stand for the same missing digit. The digit sum of the whole number is 20. What is the number?",
+      "options": [
+        "54,412",
+        "55,512",
+        "56,612",
+        "57,712",
+        "58,812"
+      ],
+      "correct": 2,
+      "correctAnswer": "56,612",
+      "explanation": "The number is 5d,d12 where d is the missing digit appearing twice. The digit sum is 5 + d + d + 1 + 2 = 2d + 8. Setting 2d + 8 = 20 gives 2d = 12, so d = 6. The number is 56,612. Check: 5 + 6 + 6 + 1 + 2 = 20 ✓. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "When a 4-digit number is rounded to the nearest 10, the answer is 3,470. When the same number is rounded to the nearest 100, the answer is 3,500. Which of these could be the original number?",
+      "options": [
+        "3,478",
+        "3,474",
+        "3,462",
+        "3,453",
+        "3,481"
+      ],
+      "correct": 1,
+      "correctAnswer": "3,474",
+      "explanation": "Rounding to the nearest 10 gives 3,470, so the number is from 3,465 to 3,474. Rounding to the nearest 100 gives 3,500, so the number is from 3,450 to 3,549. Both conditions: 3,465 to 3,474. Check each option: 3,478 rounds to 3,480 to nearest 10 ✗. 3,474 is in range, rounds to 3,470 (ones 4 < 5, round down) ✓, and rounds to 3,500 (tens 7 ≥ 5, round up) ✓. 3,462 rounds to 3,460 to nearest 10 ✗. 3,453 rounds to 3,450 to nearest 10 ✗. 3,481 rounds to 3,480 to nearest 10 ✗. The answer is 3,474. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A 5-digit number rounds to 50,000 to the nearest ten thousand and to 46,000 to the nearest thousand. What is the largest the number could be?",
+      "options": [
+        "46,489",
+        "46,499",
+        "46,500",
+        "46,999",
+        "49,999"
+      ],
+      "correct": 1,
+      "correctAnswer": "46,499",
+      "explanation": "Rounding to the nearest ten thousand gives 50,000, so the number is from 45,000 to 54,999. Rounding to the nearest thousand gives 46,000, so the number is from 45,500 to 46,499. The overlap is 45,500 to 46,499. The largest number in this range is 46,499. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A 2-digit number has its tens digit exactly 3 more than its ones digit. How many such 2-digit numbers exist?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Let the ones digit = d. The tens digit = d + 3. For valid single digits: d + 3 ≤ 9 gives d ≤ 6, and d ≥ 0. So d can be 0, 1, 2, 3, 4, 5 or 6, giving the numbers 30, 41, 52, 63, 74, 85 and 96. That is 7 numbers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A whole number is greater than 34,500 and less than 35,500. When rounded to the nearest 100, the result ends in 700. What is the largest this number could be?",
+      "options": [
+        "34,749",
+        "35,449",
+        "34,650",
+        "35,749",
+        "34,700"
+      ],
+      "correct": 0,
+      "correctAnswer": "34,749",
+      "explanation": "The number is from 34,501 to 35,499. When rounded to the nearest 100, it must give a result ending in 700. The possible rounded results in this range are 34,500, 34,600, 34,700, ..., 35,400, 35,500. The only one ending in 700 is 34,700. Numbers that round to 34,700 are from 34,650 to 34,749. All of these are within our range. The largest is 34,749. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Sophie writes a 5-digit number where every digit is different. It rounds to 30,000 to the nearest 10,000 and to 28,000 to the nearest 1,000. What is the smallest number Sophie could have written?",
+      "options": [
+        "27,501",
+        "27,503",
+        "27,510",
+        "27,504",
+        "27,530"
+      ],
+      "correct": 0,
+      "correctAnswer": "27,501",
+      "explanation": "Rounding to the nearest 10,000 gives 30,000, so the number is from 25,000 to 34,999. Rounding to the nearest 1,000 gives 28,000, so the number is from 27,500 to 28,499. The overlap is 27,500 to 28,499. All five digits must be different. Starting from the bottom: 27,500 has digits 2, 7, 5, 0, 0 — the zero repeats. 27,501 has digits 2, 7, 5, 0, 1 — all different. Check: 27,501 rounds to 30,000 to the nearest 10,000 (thousands digit 7 ≥ 5) ✓, and to 28,000 to the nearest 1,000 (hundreds digit 5 ≥ 5) ✓. The answer is 27,501. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ryan thinks of a 4-digit number. He says: 'When I round to the nearest 100, I get 4,300. When I round to the nearest 1,000, I get 4,000.' What is the smallest number Ryan could be thinking of?",
+      "options": [
+        "4,245",
+        "4,250",
+        "4,255",
+        "4,260",
+        "4,300"
+      ],
+      "correct": 1,
+      "correctAnswer": "4,250",
+      "explanation": "Rounding to the nearest 100 gives 4,300, so the number is from 4,250 to 4,349. Rounding to the nearest 1,000 gives 4,000, so the number is from 3,500 to 4,499. Both conditions: 4,250 to 4,349. The smallest number in this range is 4,250. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "When 58,■46 is rounded to the nearest thousand, the answer is 59,000. Which digits could ■ be?",
+      "options": [
+        "5, 6, 7, 8 or 9",
+        "Only 5",
+        "6, 7, 8 or 9 only",
+        "Any digit from 0 to 9",
+        "Only 9"
+      ],
+      "correct": 0,
+      "correctAnswer": "5, 6, 7, 8 or 9",
+      "explanation": "The number is 58,_46 where ■ is the hundreds digit. To round up to 59,000 to the nearest thousand, the hundreds digit must be 5 or more. So ■ can be 5, 6, 7, 8 or 9. For example, 58,546 rounds to 59,000 ✓, but 58,446 rounds to 58,000 ✗. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A number rounds to 8,400 to the nearest hundred. Freya says the number is a multiple of 5. Ben says the ones digit is not 0 or 5. Can they both be correct?",
+      "options": [
+        "Yes — there are exactly 10 such numbers",
+        "Yes — there are exactly 20 such numbers",
+        "Yes — there is exactly 1 such number",
+        "No — they cannot both be correct",
+        "Yes — there are exactly 5 such numbers"
+      ],
+      "correct": 3,
+      "correctAnswer": "No — they cannot both be correct",
+      "explanation": "A multiple of 5 always ends in 0 or 5. Ben says the ones digit is not 0 or 5. These two statements directly contradict each other — no number can be a multiple of 5 while also not ending in 0 or 5. So Freya and Ben cannot both be correct. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A 5-digit number has the form 2■,■51 where both ■ symbols stand for the same digit. The number rounds to 30,000 to the nearest ten thousand. What is the largest possible value of the missing digit?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 4,
+      "correctAnswer": "9",
+      "explanation": "The number is 2d,d51 where d is the same digit in both the thousands and hundreds places. For the number to round to 30,000 to the nearest ten thousand, it must be from 25,000 to 34,999. Since it starts with 2, we need 2d,d51 ≥ 25,000, so the thousands digit d must be at least 5. The digit d can be 5, 6, 7, 8 or 9. The largest value is 9, giving the number 29,951. Check: 29,951 rounds to 30,000 ✓. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Liam rounds a number to the nearest 10 and gets 4,500. He rounds the same number to the nearest 100 and also gets 4,500. Which of these could be Liam's number?",
+      "options": [
+        "4,505",
+        "4,549",
+        "4,503",
+        "4,452",
+        "4,510"
+      ],
+      "correct": 2,
+      "correctAnswer": "4,503",
+      "explanation": "Rounding to the nearest 10 gives 4,500, so the number is from 4,495 to 4,504. Rounding to the nearest 100 gives 4,500, so the number is from 4,450 to 4,549. Both conditions: the number must be from 4,495 to 4,504. Check each option: 4,505 rounds to 4,510 to nearest 10 ✗. 4,549 rounds to 4,550 to nearest 10 ✗. 4,503 rounds to 4,500 to nearest 10 ✓, and to 4,500 to nearest 100 ✓ — this works. 4,452 rounds to 4,450 to nearest 10 ✗. 4,510 rounds to 4,510 to nearest 10 ✗. The answer is 4,503. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Jack uses each of the digits 0, 1, 2, 3 and 4 exactly once to make a 5-digit number. What is the smallest number he can make that rounds to 20,000 to the nearest 10,000?",
+      "options": [
+        "10,234",
+        "20,134",
+        "13,024",
+        "14,320",
+        "20,314"
+      ],
+      "correct": 1,
+      "correctAnswer": "20,134",
+      "explanation": "Rounding to 20,000 to the nearest 10,000 means the number is from 15,000 to 24,999. Using digits {0, 1, 2, 3, 4} each once, we need the ten-thousands digit to be at least 1 (cannot start with 0). If ten-thousands = 1: the largest possible number starting with 1 is 14,320, and 14,320 rounds to 10,000 (thousands digit 4 < 5). No arrangement starting with 1 can reach 15,000 since the largest available thousands digit is 4. So ten-thousands must be 2. The smallest number starting with 2 uses the smallest remaining digits in order: 2, 0, 1, 3, 4 giving 20,134. Check: 20,134 rounds to 20,000 ✓. The answer is 20,134. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is the largest? 34,567 / 34,657 / 34,576 / 34,756 / 34,675",
+      "options": [
+        "34,567",
+        "34,657",
+        "34,576",
+        "34,756",
+        "34,675"
+      ],
+      "correct": 3,
+      "correctAnswer": "34,756",
+      "explanation": "All numbers start with 34, so compare the hundreds digit: 5, 6, 5, 7, 6. The largest hundreds digit is 7 in 34,756. So 34,756 is the largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is the smallest? 67,892 / 67,289 / 67,928 / 67,298 / 67,829",
+      "options": [
+        "67,892",
+        "67,289",
+        "67,928",
+        "67,298",
+        "67,829"
+      ],
+      "correct": 1,
+      "correctAnswer": "67,289",
+      "explanation": "All start with 67. Compare hundreds digits: 8, 2, 9, 2, 8. Two numbers have 2 in the hundreds: 67,289 and 67,298. Comparing their tens digits: 8 vs 9. So 67,289 is the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from smallest to largest: 4,321 / 3,421 / 4,231 / 3,412",
+      "options": [
+        "3,412, 3,421, 4,231, 4,321",
+        "3,421, 3,412, 4,231, 4,321",
+        "4,321, 4,231, 3,421, 3,412",
+        "3,412, 4,231, 3,421, 4,321",
+        "3,421, 3,412, 4,321, 4,231"
+      ],
+      "correct": 0,
+      "correctAnswer": "3,412, 3,421, 4,231, 4,321",
+      "explanation": "Compare thousands digits first: 3,412 and 3,421 are both 3-thousands; 4,231 and 4,321 are both 4-thousands. Within the 3-thousands: 3,412 < 3,421. Within the 4-thousands: 4,231 < 4,321. Order: 3,412, 3,421, 4,231, 4,321. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Five children measured their heights in millimetres: Amir 1,423 mm, Beth 1,432 mm, Chloe 1,342 mm, Dan 1,324 mm, Eve 1,243 mm. Who is the tallest?",
+      "options": [
+        "Amir",
+        "Beth",
+        "Chloe",
+        "Dan",
+        "Eve"
+      ],
+      "correct": 1,
+      "correctAnswer": "Beth",
+      "explanation": "All start with 1. Compare hundreds: Amir 4, Beth 4, Chloe 3, Dan 3, Eve 2. Amir and Beth both have 4 in the hundreds. Compare their tens: Amir 2, Beth 3. Beth's 1,432 mm is the tallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A school's fundraising totals over five years were: £23,456, £32,456, £24,356, £23,654, £32,465. Which year raised the least?",
+      "options": [
+        "£23,456",
+        "£32,456",
+        "£24,356",
+        "£23,654",
+        "£32,465"
+      ],
+      "correct": 0,
+      "correctAnswer": "£23,456",
+      "explanation": "Compare ten-thousands: three start with 2 (23,456; 24,356; 23,654) and two with 3 (32,456; 32,465). Among the 23-thousands: 23,456 and 23,654. Compare hundreds: 4 vs 6. So £23,456 is the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Put these distances in order from longest to shortest: 45,123 m, 45,321 m, 45,213 m, 45,132 m",
+      "options": [
+        "45,321, 45,213, 45,132, 45,123",
+        "45,321, 45,213, 45,123, 45,132",
+        "45,123, 45,132, 45,213, 45,321",
+        "45,213, 45,321, 45,132, 45,123",
+        "45,321, 45,132, 45,213, 45,123"
+      ],
+      "correct": 0,
+      "correctAnswer": "45,321, 45,213, 45,132, 45,123",
+      "explanation": "All start with 45. Compare hundreds: 1, 3, 2, 1. Largest is 45,321. Next is 45,213. The two with 1 in hundreds: 45,123 vs 45,132 — compare tens: 2 vs 3, so 45,132 > 45,123. Order: 45,321, 45,213, 45,132, 45,123. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number is exactly halfway between 30,000 and 40,000?",
+      "options": [
+        "34,000",
+        "34,500",
+        "35,000",
+        "35,500",
+        "36,000"
+      ],
+      "correct": 2,
+      "correctAnswer": "35,000",
+      "explanation": "Halfway means find the number exactly in the middle. Add the two numbers and divide by 2: (30,000 + 40,000) ÷ 2 = 70,000 ÷ 2 = 35,000. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to 25,000? 24,123 / 25,876 / 24,891 / 25,432 / 26,012",
+      "options": [
+        "24,123",
+        "25,876",
+        "24,891",
+        "25,432",
+        "26,012"
+      ],
+      "correct": 2,
+      "correctAnswer": "24,891",
+      "explanation": "Find the distance from 25,000: 24,123 is 877 away; 25,876 is 876 away; 24,891 is 109 away; 25,432 is 432 away; 26,012 is 1,012 away. The closest is 24,891 at just 109 away. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A zookeeper records the number of visitors each day: Monday 12,845, Tuesday 12,548, Wednesday 12,854, Thursday 12,458, Friday 12,485. Which day had the most visitors?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "correct": 2,
+      "correctAnswer": "Wednesday",
+      "explanation": "All start with 12. Compare hundreds: 8, 5, 8, 4, 4. Monday (12,845) and Wednesday (12,854) both have 8 in hundreds. Compare their tens: 4 vs 5. Wednesday's 12,854 is the largest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number lies between 56,700 and 56,800?",
+      "options": [
+        "56,690",
+        "56,699",
+        "56,750",
+        "56,801",
+        "56,810"
+      ],
+      "correct": 2,
+      "correctAnswer": "56,750",
+      "explanation": "A number between 56,700 and 56,800 must be greater than 56,700 and less than 56,800. Only 56,750 fits: 56,700 < 56,750 < 56,800. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five numbers all have digits 4, 5, 6, 7 and 8 but in different orders. Marcus says the middle number when arranged smallest to largest must have 6 in the ten-thousands place. Is he correct?",
+      "options": [
+        "Yes — 6 is the middle digit so it goes first",
+        "No — the middle number could start with 5",
+        "No — the middle number could start with 7",
+        "No — you cannot tell without listing all numbers",
+        "Yes — but only if the other digits are in order"
+      ],
+      "correct": 3,
+      "correctAnswer": "No — you cannot tell without listing all numbers",
+      "explanation": "With 5 different arrangements, there are actually many possible arrangements (5! = 120). Without knowing all five specific numbers, you cannot determine which is the middle one. Marcus is wrong — you cannot tell without listing all the numbers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ella writes four 5-digit numbers using the digits 1, 2, 3, 4 and 5 (each used once per number). The difference between her largest and smallest number is 41,976. What are her two numbers?",
+      "options": [
+        "54,321 and 12,345",
+        "53,421 and 12,345",
+        "54,312 and 12,345",
+        "54,321 and 13,245",
+        "54,321 and 12,354"
+      ],
+      "correct": 0,
+      "correctAnswer": "54,321 and 12,345",
+      "explanation": "The largest 5-digit number using 1, 2, 3, 4, 5 is 54,321. The smallest is 12,345. Difference: 54,321 − 12,345 = 41,976. This matches, so the answer is 54,321 and 12,345. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Three numbers are written using the digits of 48,352 rearranged. The three numbers are put in order and the middle one is 53,842. Which of these could be the smallest of the three?",
+      "options": [
+        "84,532",
+        "58,234",
+        "25,348",
+        "53,824",
+        "85,432"
+      ],
+      "correct": 2,
+      "correctAnswer": "25,348",
+      "explanation": "The middle number is 53,842. The smallest must be less than 53,842. Check each option: 84,532 > 53,842 ✗; 58,234 > 53,842 ✗; 25,348 < 53,842 ✓; 53,824 < 53,842 ✓; 85,432 > 53,842 ✗. Both 25,348 and 53,824 are less. But 53,824 is very close to 53,842 — if 53,824 were the smallest, the middle would need to be between it and the largest, which it is (53,842). However, 25,348 also works and uses the digits 2, 5, 3, 4, 8 — which are the same as 4, 8, 3, 5, 2 ✓. The answer is 25,348. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A road sign says the next town is twenty-three thousand, four hundred and fifty-six metres away. Write this distance in digits.",
+      "options": [
+        "23,456",
+        "23,546",
+        "234,56",
+        "23,465",
+        "2,346"
+      ],
+      "correct": 0,
+      "correctAnswer": "23,456",
+      "explanation": "Twenty-three thousand = 23,000, four hundred = 400, fifty-six = 56. Total: 23,000 + 400 + 56 = 23,456 metres. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "How do you write 45,072 in words?",
+      "options": [
+        "Forty-five thousand and seventy-two",
+        "Forty-five thousand, seven hundred and two",
+        "Four thousand, five hundred and seventy-two",
+        "Forty-five thousand, seventy-two hundred",
+        "Forty-five thousand and seven hundred and two"
+      ],
+      "correct": 0,
+      "correctAnswer": "Forty-five thousand and seventy-two",
+      "explanation": "45,072: forty-five thousand (45,000) and seventy-two (72). The zero is in the hundreds place, so there are no hundreds. The answer is forty-five thousand and seventy-two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A museum had sixty-one thousand, three hundred and nine visitors last year. Write this number in digits.",
+      "options": [
+        "61,309",
+        "61,390",
+        "61,039",
+        "613,09",
+        "6,139"
+      ],
+      "correct": 0,
+      "correctAnswer": "61,309",
+      "explanation": "Sixty-one thousand = 61,000, three hundred = 300, nine = 9. Total: 61,000 + 300 + 9 = 61,309. Note the zero in the tens place. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number is written correctly in words? The number is 80,206.",
+      "options": [
+        "Eighty thousand, two hundred and six",
+        "Eight thousand, two hundred and six",
+        "Eighty thousand, two hundred and sixty",
+        "Eighty thousand and two hundred and six",
+        "Eighty-two thousand and six"
+      ],
+      "correct": 0,
+      "correctAnswer": "Eighty thousand, two hundred and six",
+      "explanation": "80,206: eighty thousand (80,000), two hundred (200), and six (6). The zero in the tens place means there are no tens. The correct form is eighty thousand, two hundred and six. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity newsletter says they raised 'forty thousand and fifty pounds'. What is this amount in digits?",
+      "options": [
+        "£40,050",
+        "£40,500",
+        "£45,000",
+        "£4,050",
+        "£40,005"
+      ],
+      "correct": 0,
+      "correctAnswer": "£40,050",
+      "explanation": "Forty thousand = 40,000, and fifty = 50. Total: 40,000 + 50 = 40,050. There are zeros in the hundreds place and the ones place. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben writes 70,308 in words. Which is correct?",
+      "options": [
+        "Seventy thousand, three hundred and eight",
+        "Seven thousand, three hundred and eight",
+        "Seventy thousand, thirty-eight",
+        "Seventy thousand, three hundred and eighty",
+        "Seventy-three thousand and eight"
+      ],
+      "correct": 0,
+      "correctAnswer": "Seventy thousand, three hundred and eight",
+      "explanation": "70,308: seventy thousand (70,000), three hundred (300), and eight (8). The zero in the tens place means there are no tens. The answer is seventy thousand, three hundred and eight. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A number in words is 'ninety thousand and fourteen'. Daisy writes it as 90,140. What mistake did she make?",
+      "options": [
+        "She wrote fourteen as 140 instead of 014",
+        "She put the digits in the wrong order",
+        "She forgot the thousands comma",
+        "She added an extra zero",
+        "She confused ninety with nineteen"
+      ],
+      "correct": 0,
+      "correctAnswer": "She wrote fourteen as 140 instead of 014",
+      "explanation": "Ninety thousand and fourteen = 90,014. Daisy wrote 90,140, treating 'fourteen' as if it were 'one hundred and forty' (140) instead of just 14, which goes in the tens and ones places. The correct number is 90,014. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Two numbers are written in words: 'thirty-four thousand, five hundred and twelve' and 'thirty-four thousand, fifty-two'. What is the difference between them?",
+      "options": [
+        "460",
+        "450",
+        "540",
+        "4,500",
+        "4,460"
+      ],
+      "correct": 0,
+      "correctAnswer": "460",
+      "explanation": "First number: 34,512. Second number: 34,052 (thirty-four thousand, fifty-two — note no hundreds). Difference: 34,512 − 34,052 = 460. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the smallest 3-digit number you can make using the digits 7, 3 and 5 (each used once)?",
+      "options": [
+        "357",
+        "375",
+        "537",
+        "573",
+        "735"
+      ],
+      "correct": 0,
+      "correctAnswer": "357",
+      "explanation": "Put the smallest digit first: 3, then 5, then 7. The smallest 3-digit number is 357. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Using the digits 6, 0, 4 and 8 (each once), what is the largest 4-digit even number you can make?",
+      "options": [
+        "8,640",
+        "8,604",
+        "8,460",
+        "8,406",
+        "6,840"
+      ],
+      "correct": 0,
+      "correctAnswer": "8,640",
+      "explanation": "For an even number, the last digit must be even (0, 4, 6 or 8). To make it as large as possible, put 8 first. Then arrange the rest to be as large as possible while keeping the number even. 8,640 is even and the largest arrangement. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Holly has the digit cards 2, 5, 7, 1 and 9. She makes a 5-digit number that is as close to 50,000 as possible. What number does she make?",
+      "options": [
+        "51,279",
+        "52,179",
+        "49,752",
+        "51,297",
+        "52,197"
+      ],
+      "correct": 0,
+      "correctAnswer": "51,279",
+      "explanation": "The digits available are 2, 5, 7, 1 and 9 — there is no 4 or 0, so we cannot get below 50,000 by starting with a smaller digit. Starting with 5, the next digits should be as small as possible: 1, 2, 7, 9. That gives 51,279 which is 1,279 from 50,000. Any other arrangement starting with 5 is further away. So the answer is 51,279. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Using the digits 3, 0, 8, 5 and 1 (each once), what is the smallest 5-digit number you can make?",
+      "options": [
+        "10,358",
+        "10,385",
+        "10,538",
+        "13,058",
+        "30,158"
+      ],
+      "correct": 0,
+      "correctAnswer": "10,358",
+      "explanation": "A 5-digit number cannot start with 0. The smallest non-zero digit is 1, so put 1 first. Then 0 next, then the remaining digits in order: 3, 5, 8. The smallest number is 10,358. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Priya uses each of the digits 2, 4, 6 and 8 exactly once to make two 2-digit numbers. She wants the largest possible total when she adds them together. What is that total?",
+      "options": [
+        "146",
+        "148",
+        "150",
+        "152",
+        "154"
+      ],
+      "correct": 0,
+      "correctAnswer": "146",
+      "explanation": "To maximise the sum, put the two largest digits in the tens places: 8 and 6. Then put 4 and 2 in the ones places. This gives 84 + 62 = 146 (or 82 + 64 = 146). The largest possible total is 146. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Tom uses each of the digits 1, 3, 5, 7 and 9 once to make one 3-digit and one 2-digit number. He multiplies them together. What is the largest possible product?",
+      "options": [
+        "95 × 731 = 69,445",
+        "97 × 531 = 51,507",
+        "93 × 751 = 69,843",
+        "91 × 753 = 68,523",
+        "95 × 713 = 67,735"
+      ],
+      "correct": 2,
+      "correctAnswer": "93 × 751 = 69,843",
+      "explanation": "To get the largest product, the two-digit number should have the largest possible tens digit. Try 9_ × ___ and 7_ × ___. Checking: 93 × 751 = 69,843; 95 × 731 = 69,445; 91 × 753 = 68,523; 97 × 531 = 51,507. The largest is 93 × 751 = 69,843. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A school hall has 3,456 seats. 100 more chairs are added. How many seats are there now?",
+      "options": [
+        "3,466",
+        "3,556",
+        "4,456",
+        "3,457",
+        "3,356"
+      ],
+      "correct": 1,
+      "correctAnswer": "3,556",
+      "explanation": "Adding 100 increases the hundreds digit by 1: 3,456 + 100 = 3,556. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What number is 1,000 less than 52,347?",
+      "options": [
+        "42,347",
+        "51,347",
+        "52,247",
+        "52,337",
+        "52,346"
+      ],
+      "correct": 1,
+      "correctAnswer": "51,347",
+      "explanation": "Subtracting 1,000 decreases the thousands digit by 1: 52,347 − 1,000 = 51,347. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Start at 67,845. Add 300 and then subtract 2,000. What number do you end up with?",
+      "options": [
+        "66,145",
+        "66,045",
+        "65,845",
+        "66,245",
+        "65,545"
+      ],
+      "correct": 0,
+      "correctAnswer": "66,145",
+      "explanation": "Step 1: 67,845 + 300 = 68,145. Step 2: 68,145 − 2,000 = 66,145. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A number has five digits. When you add 10,000 to it, the ten-thousands digit becomes 6 but no other digit changes. When you subtract 100 from the original number, the hundreds digit becomes 2. What is the original number?",
+      "options": [
+        "53,300",
+        "43,300",
+        "53,200",
+        "53,310",
+        "53,030"
+      ],
+      "correct": 0,
+      "correctAnswer": "53,300",
+      "explanation": "Adding 10,000 changes the ten-thousands digit to 6, meaning it was 5. So the number is 5_,___. No other digit changes, so the thousands digit doesn't carry — meaning it's 0-9 (any). Subtracting 100 makes the hundreds digit 2, meaning the hundreds digit was 3 (since 3 − 1 = 2, no borrowing needed). So the number is 53,_00 or 53,___. Actually, we know ten-thousands = 5 and hundreds = 3. The question says only the ten-thousands digit changes when adding 10,000, so thousands ≤ 8. And only hundreds changes when subtracting 100, so tens and ones stay the same. We need the full number. The simplest answer matching the pattern is 53,300. Check: 53,300 + 10,000 = 63,300 (ten-thousands went from 5 to 6, no other change ✓). 53,300 − 100 = 53,200 (hundreds went from 3 to 2, no other change ✓). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

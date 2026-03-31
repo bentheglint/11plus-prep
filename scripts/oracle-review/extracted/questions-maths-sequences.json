@@ -1,0 +1,2908 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "sequences",
+    "displayName": "Sequences",
+    "extractedAt": "2026-03-30T13:05:32.767Z",
+    "questionCount": 152,
+    "difficultyDistribution": {
+      "D1": 47,
+      "D2": 78,
+      "D3": 27
+    },
+    "questionTypes": {
+      "standard": 152
+    },
+    "visualComponentCount": 7
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A baker makes 3 cakes on Monday, 6 on Tuesday, 9 on Wednesday, 12 on Thursday, and 15 on Friday. If the pattern continues, how many cakes will he make on Saturday?",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "correct": 2,
+      "correctAnswer": "18",
+      "explanation": "The baker makes 3 more cakes each day. 15 + 3 = 18 cakes on Saturday. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma writes the sequence: 2, 4, 8, 16, 32, ?. What comes next?",
+      "options": [
+        "48",
+        "54",
+        "60",
+        "64",
+        "68"
+      ],
+      "correct": 3,
+      "correctAnswer": "64",
+      "explanation": "This sequence doubles each time (multiply by 2). 32 × 2 = 64. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool is being drained. After 1 minute it has 50 litres, then 45 litres, then 40 litres, then some amount, then 30 litres, then 25 litres. How many litres were there at the missing reading?",
+      "options": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ],
+      "correct": 3,
+      "correctAnswer": "35",
+      "explanation": "The pool loses 5 litres each minute. 40 - 5 = 35 litres. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Tom notices the pattern: 1, 4, 9, 16, 25, ?. What is the next number?",
+      "options": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "correct": 3,
+      "correctAnswer": "36",
+      "explanation": "These are square numbers: 1², 2², 3², 4², 5², 6². So 6² = 36. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/square-numbers-q4.svg"
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bouncy ball is dropped from 100 cm. Each bounce reaches half the height of the last: 100 cm, 50 cm, 25 cm, 12.5 cm. How high will the next bounce reach?",
+      "options": [
+        "6",
+        "6.25",
+        "6.5",
+        "7",
+        "7.5"
+      ],
+      "correct": 1,
+      "correctAnswer": "6.25",
+      "explanation": "Each bounce is half the height of the one before. 12.5 ÷ 2 = 6.25 cm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie is counting: 5, 8, 11, 14, 17, ?. What number comes next?",
+      "options": [
+        "18",
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "correct": 2,
+      "correctAnswer": "20",
+      "explanation": "This sequence adds 3 each time. 17 + 3 = 20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A gardener plants flowers in rows. Row 1 has 7 flowers, row 2 has 14, row 3 has 21, row 4 has 28, and row 5 has 35. What is the rule for the number of flowers in each row?",
+      "options": [
+        "Add 5",
+        "Add 6",
+        "Add 7",
+        "Multiply by 2",
+        "Add 8"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 7",
+      "explanation": "Each row has 7 more flowers than the last. The rule is 'add 7'. These are multiples of 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jake creates a sequence: 3, 6, 12, 24, 48, ?. What is the next term?",
+      "options": [
+        "72",
+        "84",
+        "90",
+        "96",
+        "100"
+      ],
+      "correct": 3,
+      "correctAnswer": "96",
+      "explanation": "This sequence doubles each time (multiply by 2). 48 × 2 = 96. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A jar of sweets is shared equally into 3 smaller jars each day. The jar starts with 81 sweets, then 27, then 9, then a missing amount, then 1. How many sweets were in the jar at the missing stage?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "correct": 3,
+      "correctAnswer": "3",
+      "explanation": "The number of sweets is divided by 3 each time. 9 ÷ 3 = 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Lucy finds the pattern: 2, 5, 11, 23, 47, ?. What comes next?",
+      "options": [
+        "89",
+        "91",
+        "93",
+        "95",
+        "97"
+      ],
+      "correct": 3,
+      "correctAnswer": "95",
+      "explanation": "The rule is: double the previous number and add 1. So 47 × 2 = 94, then 94 + 1 = 95. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A printer prints 4 pages in the first minute, 8 pages after two minutes, 12 pages after three minutes, and so on. How many pages will it have printed after 10 minutes?",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "correct": 2,
+      "correctAnswer": "40",
+      "explanation": "The printer prints 4 more pages each minute (multiples of 4). After 10 minutes: 4 × 10 = 40 pages. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben creates a Fibonacci-style sequence: 1, 1, 2, 3, 5, 8, ?. What comes next?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "correct": 2,
+      "correctAnswer": "13",
+      "explanation": "In a Fibonacci sequence, each term is the sum of the previous two terms. 5 + 8 = 13. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 5, 10, 15, 20, 25?",
+      "options": [
+        "n + 5",
+        "5n",
+        "n + 10",
+        "10n",
+        "n × 5 + 5"
+      ],
+      "correct": 1,
+      "correctAnswer": "5n",
+      "explanation": "The sequence is 5, 10, 15, 20, 25... which are multiples of 5. The nth term is 5n (where n = 1, 2, 3, 4, 5...). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia notices: 100, 92, 84, 76, 68, ?. What is the next number?",
+      "options": [
+        "58",
+        "60",
+        "62",
+        "64",
+        "66"
+      ],
+      "correct": 1,
+      "correctAnswer": "60",
+      "explanation": "This sequence subtracts 8 each time. 68 - 8 = 60. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "On a maths challenge card, Priya sees this pattern: 1, 3, 7, 15, 31. What number comes next?",
+      "options": [
+        "47",
+        "55",
+        "59",
+        "63",
+        "67"
+      ],
+      "correct": 3,
+      "correctAnswer": "63",
+      "explanation": "The rule is: double the previous number and add 1. So 31 × 2 = 62, then 62 + 1 = 63. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver counts backward: 72, 66, 60, 54, ?. What number comes next?",
+      "options": [
+        "46",
+        "47",
+        "48",
+        "49",
+        "50"
+      ],
+      "correct": 2,
+      "correctAnswer": "48",
+      "explanation": "This sequence subtracts 6 each time. 54 - 6 = 48. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 8th term in the sequence: 3, 7, 11, 15, 19, ...?",
+      "options": [
+        "29",
+        "31",
+        "33",
+        "35",
+        "37"
+      ],
+      "correct": 1,
+      "correctAnswer": "31",
+      "explanation": "This sequence adds 4 each time. Starting from 3: the pattern is 4n - 1. So the 8th term is (4 × 8) - 1 = 31. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sarah creates a sequence: 5, 15, 45, 135, ?. What is the next term?",
+      "options": [
+        "270",
+        "315",
+        "360",
+        "405",
+        "450"
+      ],
+      "correct": 3,
+      "correctAnswer": "405",
+      "explanation": "This sequence multiplies by 3 each time. 135 × 3 = 405. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a number puzzle, the sequence reads 2, 6, 12, 20, ?, 42. What is the missing number?",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "correct": 1,
+      "correctAnswer": "30",
+      "explanation": "The differences are 4, 6, 8, 10, 12... (increasing by 2 each time). So 20 + 10 = 30. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/rectangular-numbers-q19.svg"
+    },
+    {
+      "id": 20,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Charlie finds: 128, 64, 32, 16, 8, ?. What comes next?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "This sequence halves each time (divide by 2). 8 ÷ 2 = 4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Amir saves 7p every day in his piggy bank. After day 1 he has 7p, after day 2 he has 14p, then 21p, 28p, 35p. How much will he have after day 6?",
+      "options": [
+        "38",
+        "42",
+        "45",
+        "49",
+        "50"
+      ],
+      "correct": 1,
+      "correctAnswer": "42",
+      "explanation": "Amir adds 7p each day. After day 6: 35 + 7 = 42p. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rumour spreads through a school. On day 1, 5 people know it. On day 2, 10 people know. Then 20, then 40, then 80. If the pattern continues, how many people will know the rumour on day 6?",
+      "options": [
+        "100",
+        "120",
+        "140",
+        "160",
+        "180"
+      ],
+      "correct": 3,
+      "correctAnswer": "160",
+      "explanation": "The number of people doubles each day. 80 × 2 = 160 people on day 6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A water tank starts with 90 litres and loses 9 litres each hour. After 1 hour it has 81 litres, then 72, then 63. How many litres will be left after the next hour?",
+      "options": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56"
+      ],
+      "correct": 2,
+      "correctAnswer": "54",
+      "explanation": "The tank loses 9 litres each hour. 63 - 9 = 54 litres. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Tiles are arranged in square patterns: 1, 4, 9, 16, 25, 36. How many tiles are needed for the next square pattern?",
+      "options": [
+        "42",
+        "45",
+        "47",
+        "48",
+        "49"
+      ],
+      "correct": 4,
+      "correctAnswer": "49",
+      "explanation": "These are square numbers: 1², 2², 3², 4², 5², 6², 7². So 7² = 49 tiles. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/square-numbers-q24.svg"
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A charity target is being halved each round: 200, 100, 50, 25. What is the target for the next round?",
+      "options": [
+        "10",
+        "11.5",
+        "12.5",
+        "15",
+        "20"
+      ],
+      "correct": 2,
+      "correctAnswer": "12.5",
+      "explanation": "The target halves each time. 25 ÷ 2 = 12.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Chairs are arranged in rows for a school assembly. Row 1 has 4 chairs, row 2 has 9, row 3 has 14, row 4 has 19, and row 5 has 24. How many chairs will be in row 6?",
+      "options": [
+        "26",
+        "27",
+        "28",
+        "30",
+        "29"
+      ],
+      "correct": 4,
+      "correctAnswer": "29",
+      "explanation": "Each row has 5 more chairs than the last. 24 + 5 = 29 chairs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A scientist measures bacteria shrinking by a factor of 10 each day: 1000, 100, 10. How many will there be the next day?",
+      "options": [
+        "5",
+        "2",
+        "0",
+        "1",
+        "0.1"
+      ],
+      "correct": 3,
+      "correctAnswer": "1",
+      "explanation": "The count divides by 10 each day. 10 ÷ 10 = 1. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a game, your score triples each level: 2, 6, 18, 54. What will your score be at the next level?",
+      "options": [
+        "108",
+        "144",
+        "162",
+        "180",
+        "216"
+      ],
+      "correct": 2,
+      "correctAnswer": "162",
+      "explanation": "The score multiplies by 3 each level. 54 × 3 = 162. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bouncing ball reaches these heights in cm: 64, 32, 16, 8, 4. How high does it bounce next?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0.5",
+        "0"
+      ],
+      "correct": 1,
+      "correctAnswer": "2",
+      "explanation": "The height halves each time. 4 ÷ 2 = 2 cm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Raj spots a Fibonacci pattern on a nature poster: 1, 2, 3, 5, 8. What number comes next in the pattern?",
+      "options": [
+        "10",
+        "11",
+        "13",
+        "15",
+        "16"
+      ],
+      "correct": 2,
+      "correctAnswer": "13",
+      "explanation": "Each term is the sum of the previous two. 5 + 8 = 13. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A charity fundraiser starts with 110 balloons. Each hour, 11 balloons are popped. The count goes 110, 99, 88, then a missing number, then 66, then 55. How many balloons were there at the missing count?",
+      "options": [
+        "75",
+        "76",
+        "77",
+        "78",
+        "79"
+      ],
+      "correct": 2,
+      "correctAnswer": "77",
+      "explanation": "11 balloons are popped each hour. 88 - 11 = 77 balloons. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A lily pad doubles in size each day. Its area in cm² goes 6, 12, 24, 48, 96. What will its area be the next day?",
+      "options": [
+        "144",
+        "168",
+        "180",
+        "192",
+        "204"
+      ],
+      "correct": 3,
+      "correctAnswer": "192",
+      "explanation": "The lily pad doubles each day. 96 × 2 = 192 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A bus picks up 11 passengers at each stop. After stop 1 there are 11 passengers, after stop 2 there are 22, then 33, 44, 55. How many passengers will be on the bus after stop 6?",
+      "options": [
+        "60",
+        "62",
+        "64",
+        "66",
+        "68"
+      ],
+      "correct": 3,
+      "correctAnswer": "66",
+      "explanation": "The bus picks up 11 passengers at each stop. 55 + 11 = 66 passengers. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shop sells boxes of 9 biscuits. If you buy 1 box you get 9 biscuits, 2 boxes gives 18, 3 boxes gives 27, 4 boxes gives 36, and 5 boxes gives 45. What is the rule for this pattern?",
+      "options": [
+        "Add 7",
+        "Add 8",
+        "Add 9",
+        "Multiply by 2",
+        "Add 10"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 9",
+      "explanation": "Each box adds 9 more biscuits. The rule is 'add 9'. These are multiples of 9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A jar of sweets is shared into three equal groups each day: 243, 81, 27, 9. How many sweets are in one group the next day?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "correct": 3,
+      "correctAnswer": "3",
+      "explanation": "This sequence divides by 3 each time. 9 ÷ 3 = 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a sponsored walk, pupils earn 5p for every lap they complete. After 1 lap they earn 5p, after 2 laps 10p, after 3 laps 15p, and so on. How much will a pupil earn after completing 12 laps?",
+      "options": [
+        "55",
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "correct": 1,
+      "correctAnswer": "60",
+      "explanation": "The pupil earns 5p per lap (multiples of 5). After 12 laps: 5 × 12 = 60p. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A tricky number puzzle shows: 4, 7, 13, 25, 49. What number comes next?",
+      "options": [
+        "89",
+        "93",
+        "95",
+        "97",
+        "99"
+      ],
+      "correct": 3,
+      "correctAnswer": "97",
+      "explanation": "The rule is: double the previous number and subtract 1. So 49 × 2 = 98, then 98 - 1 = 97. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A factory makes 13 toys each hour. After 1 hour they have 13 toys, after 2 hours 26, after 3 hours 39, then a missing amount, then 65, then 78. How many toys were made by the missing hour?",
+      "options": [
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "correct": 2,
+      "correctAnswer": "52",
+      "explanation": "The factory makes 13 toys each hour. 39 + 13 = 52 toys. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A plant grows three times taller each week: 4 cm, 12 cm, 36 cm, 108 cm. How tall will it be next week?",
+      "options": [
+        "216",
+        "288",
+        "312",
+        "324",
+        "360"
+      ],
+      "correct": 3,
+      "correctAnswer": "324",
+      "explanation": "This sequence multiplies by 3 each time. 108 × 3 = 324. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A train travels 15 miles in the first hour, 30 miles after 2 hours, 45 miles after 3 hours, 60 miles after 4 hours, and 75 miles after 5 hours. How far will it have travelled after 6 hours?",
+      "options": [
+        "85",
+        "88",
+        "90",
+        "92",
+        "95"
+      ],
+      "correct": 2,
+      "correctAnswer": "90",
+      "explanation": "The train travels 15 miles each hour. After 6 hours: 75 + 15 = 90 miles. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 7, 14, 21, 28, 35?",
+      "options": [
+        "n + 7",
+        "7n",
+        "n + 14",
+        "14n",
+        "7n + 7"
+      ],
+      "correct": 1,
+      "correctAnswer": "7n",
+      "explanation": "The sequence is multiples of 7. The nth term is 7n. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shop has 120 Easter eggs. It sells 12 each day. After day 1 there are 108 left, then 96, 84, 72. How many will be left after the next day?",
+      "options": [
+        "58",
+        "60",
+        "62",
+        "64",
+        "66"
+      ],
+      "correct": 1,
+      "correctAnswer": "60",
+      "explanation": "The shop sells 12 eggs each day. 72 - 12 = 60 eggs left. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "On a maths challenge card, the sequence reads: 1, 5, 13, 29, 61. What is the next number?",
+      "options": [
+        "109",
+        "117",
+        "121",
+        "125",
+        "129"
+      ],
+      "correct": 3,
+      "correctAnswer": "125",
+      "explanation": "Find the differences: 5 - 1 = 4, 13 - 5 = 8, 29 - 13 = 16, 61 - 29 = 32. The differences double each time: 4, 8, 16, 32. The next difference is 64. So 61 + 64 = 125. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A computer file is being compressed, halving each time: 512 KB, 256 KB, 128 KB, 64 KB, 32 KB. What size comes next?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "20",
+        "24"
+      ],
+      "correct": 2,
+      "correctAnswer": "16",
+      "explanation": "The file halves each time. 32 ÷ 2 = 16 KB. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A stack of books grows by 6 each week. After week 1 there are 6 books, week 2 has 12, week 3 has 18, week 4 has 24, and so on. How many books will there be after week 9?",
+      "options": [
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "correct": 3,
+      "correctAnswer": "54",
+      "explanation": "6 books are added each week (multiples of 6). After week 9: 6 × 9 = 54 books. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/growing-stacks-q45.svg"
+    },
+    {
+      "id": 46,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A sunflower is 3 cm tall after week 1, 9 cm after week 2, 15 cm after week 3, and 21 cm after week 4. It keeps growing at the same rate. The height after week 6 is 33 cm. How tall was it after week 5?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "correct": 3,
+      "correctAnswer": "27",
+      "explanation": "The sunflower grows 6 cm each week. 21 + 6 = 27 cm after week 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Seeds in a garden triple each week: 7, 21, 63, 189. How many seeds will there be next week?",
+      "options": [
+        "378",
+        "441",
+        "504",
+        "567",
+        "630"
+      ],
+      "correct": 3,
+      "correctAnswer": "567",
+      "explanation": "This sequence multiplies by 3 each time. 189 × 3 = 567. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A running club adds 17 metres to its warm-up jog each week. In week 1 they jog 17 m, week 2 is 34 m, week 3 is 51 m, week 4 is 68 m, and week 5 is 85 m. How far will they jog in week 6?",
+      "options": [
+        "96",
+        "98",
+        "100",
+        "102",
+        "104"
+      ],
+      "correct": 3,
+      "correctAnswer": "102",
+      "explanation": "The jog increases by 17 metres each week. 85 + 17 = 102 metres in week 6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this Fibonacci sequence? 2, 3, 5, 8, 13, ?",
+      "options": [
+        "18",
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "correct": 3,
+      "correctAnswer": "21",
+      "explanation": "Each term is the sum of the previous two. 8 + 13 = 21. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A chain of shops closes branches each year, dividing by 5: 625, 125, 25, ?, 1. What is the missing number?",
+      "options": [
+        "10",
+        "8",
+        "6",
+        "5",
+        "3"
+      ],
+      "correct": 3,
+      "correctAnswer": "5",
+      "explanation": "This sequence divides by 5 each time. 25 ÷ 5 = 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a stacking game, each layer adds 19 blocks: 19, 38, 57, 76, 95. How many blocks are in the next layer's total?",
+      "options": [
+        "108",
+        "110",
+        "112",
+        "114",
+        "116"
+      ],
+      "correct": 3,
+      "correctAnswer": "114",
+      "explanation": "This sequence adds 19 each time. 95 + 19 = 114. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rumour spreads through a school, doubling each day: 10, 20, 40, 80, 160. How many people know after the next day?",
+      "options": [
+        "240",
+        "280",
+        "300",
+        "320",
+        "360"
+      ],
+      "correct": 3,
+      "correctAnswer": "320",
+      "explanation": "This sequence doubles each time. 160 × 2 = 320. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Eggs come in boxes of 12. With 1 box you have 12 eggs, with 2 boxes you have 24, then 36, 48, 60. What is the rule for this pattern?",
+      "options": [
+        "Add 10",
+        "Add 11",
+        "Add 12",
+        "Multiply by 2",
+        "Add 13"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 12",
+      "explanation": "Each box adds 12 more eggs. The rule is 'add 12'. These are multiples of 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A balloon loses half its air each hour: 400 ml, 200 ml, 100 ml, 50 ml, 25 ml. How much air is left after the next hour?",
+      "options": [
+        "10",
+        "11.5",
+        "12.5",
+        "15",
+        "20"
+      ],
+      "correct": 2,
+      "correctAnswer": "12.5",
+      "explanation": "This sequence halves each time. 25 ÷ 2 = 12.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A colony of bacteria doubles every hour. It starts with 8 bacteria, then grows to 16, 32, 64, 128. How many bacteria will there be after the next hour?",
+      "options": [
+        "192",
+        "224",
+        "240",
+        "256",
+        "288"
+      ],
+      "correct": 3,
+      "correctAnswer": "256",
+      "explanation": "The bacteria double each hour. 128 × 2 = 256 bacteria. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool is being drained and the readings show: 140, 126, 112, ?, 84, 70. What is the missing reading?",
+      "options": [
+        "94",
+        "96",
+        "98",
+        "100",
+        "102"
+      ],
+      "correct": 2,
+      "correctAnswer": "98",
+      "explanation": "This sequence subtracts 14 each time. 112 - 14 = 98. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Blocks are stacked into cubes of increasing size: 1, 8, 27, 64, 125. How many blocks are in the next cube?",
+      "options": [
+        "180",
+        "196",
+        "200",
+        "216",
+        "225"
+      ],
+      "correct": 3,
+      "correctAnswer": "216",
+      "explanation": "These are cube numbers: 1³, 2³, 3³, 4³, 5³, 6³. So 6³ = 216. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/cube-numbers-q57.svg"
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 11th term in the sequence: 8, 16, 24, 32, ...?",
+      "options": [
+        "80",
+        "84",
+        "88",
+        "92",
+        "96"
+      ],
+      "correct": 2,
+      "correctAnswer": "88",
+      "explanation": "This sequence adds 8 each time (multiples of 8). The 11th term is 8 × 11 = 88. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A science experiment triples a bacteria count each hour: 9, 27, 81, 243. What is the count after the next hour?",
+      "options": [
+        "486",
+        "648",
+        "729",
+        "810",
+        "891"
+      ],
+      "correct": 2,
+      "correctAnswer": "729",
+      "explanation": "This sequence multiplies by 3 each time. 243 × 3 = 729. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A sponsored walk raises 23p per lap. After 1 lap the total is 23p, then 46p, 69p, 92p, 115p. How much is raised after the next lap?",
+      "options": [
+        "130",
+        "134",
+        "138",
+        "142",
+        "146"
+      ],
+      "correct": 2,
+      "correctAnswer": "138",
+      "explanation": "This sequence adds 23 each time. 115 + 23 = 138. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Pages are numbered in a puzzle book: 4, 10, 16, 22, ?, 34. What is the missing page number?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct": 2,
+      "correctAnswer": "28",
+      "explanation": "This sequence adds 6 each time. 22 + 6 = 28. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A computer file is being compressed, halving each time: 1024 KB, 512 KB, 256 KB, 128 KB, 64 KB. What size comes next?",
+      "options": [
+        "16",
+        "24",
+        "32",
+        "40",
+        "48"
+      ],
+      "correct": 2,
+      "correctAnswer": "32",
+      "explanation": "This sequence halves each time. 64 ÷ 2 = 32. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 4, 8, 12, 16, 20?",
+      "options": [
+        "n + 4",
+        "4n",
+        "n + 8",
+        "8n",
+        "4n + 4"
+      ],
+      "correct": 1,
+      "correctAnswer": "4n",
+      "explanation": "The sequence is multiples of 4. The nth term is 4n. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimmer counts down laps remaining: 150, 135, 120, 105, 90. How many laps remain next?",
+      "options": [
+        "70",
+        "72",
+        "75",
+        "78",
+        "80"
+      ],
+      "correct": 2,
+      "correctAnswer": "75",
+      "explanation": "This sequence subtracts 15 each time. 90 - 15 = 75. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A runner adds 29 metres to her training distance each week: 29, 58, 87, 116, 145. How far will she run in the next week?",
+      "options": [
+        "168",
+        "170",
+        "172",
+        "174",
+        "176"
+      ],
+      "correct": 3,
+      "correctAnswer": "174",
+      "explanation": "This sequence adds 29 each time. 145 + 29 = 174. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this Fibonacci sequence? 3, 5, 8, 13, 21, ?",
+      "options": [
+        "29",
+        "31",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct": 3,
+      "correctAnswer": "34",
+      "explanation": "Each term is the sum of the previous two. 13 + 21 = 34. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A gardener plants flowers in a pattern: 2, 8, 14, 20, ?, 32. How many flowers go in the missing bed?",
+      "options": [
+        "22",
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correct": 2,
+      "correctAnswer": "26",
+      "explanation": "This sequence adds 6 each time. 20 + 6 = 26. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A science experiment triples bacteria each hour: 11, 33, 99, 297. How many bacteria are there after the next hour?",
+      "options": [
+        "594",
+        "792",
+        "891",
+        "990",
+        "1089"
+      ],
+      "correct": 2,
+      "correctAnswer": "891",
+      "explanation": "This sequence multiplies by 3 each time. 297 × 3 = 891. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next term? 31, 62, 93, 124, 155, ?",
+      "options": [
+        "180",
+        "182",
+        "184",
+        "186",
+        "188"
+      ],
+      "correct": 3,
+      "correctAnswer": "186",
+      "explanation": "This sequence adds 31 each time. 155 + 31 = 186. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A chain letter doubles each day: 14, 28, 56, 112, 224 people have received it. How many will have received it the next day?",
+      "options": [
+        "336",
+        "392",
+        "420",
+        "448",
+        "476"
+      ],
+      "correct": 3,
+      "correctAnswer": "448",
+      "explanation": "This sequence doubles each time. 224 × 2 = 448. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 15th term in the sequence: 3, 6, 9, 12, ...?",
+      "options": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "correct": 3,
+      "correctAnswer": "45",
+      "explanation": "This sequence adds 3 each time (multiples of 3). The 15th term is 3 × 15 = 45. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 2187, 729, 243, 81, ?",
+      "options": [
+        "54",
+        "40",
+        "27",
+        "20",
+        "18"
+      ],
+      "correct": 2,
+      "correctAnswer": "27",
+      "explanation": "This sequence divides by 3 each time. 81 ÷ 3 = 27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A water tank is draining and the readings in litres are: 160, 144, 128, ?, 96, 80. What is the missing reading?",
+      "options": [
+        "108",
+        "110",
+        "112",
+        "114",
+        "116"
+      ],
+      "correct": 2,
+      "correctAnswer": "112",
+      "explanation": "This sequence subtracts 16 each time. 128 - 16 = 112. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 37, 74, 111, 148, 185, ?",
+      "options": [
+        "212",
+        "218",
+        "222",
+        "228",
+        "232"
+      ],
+      "correct": 2,
+      "correctAnswer": "222",
+      "explanation": "This sequence adds 37 each time. 185 + 37 = 222. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the rule for this sequence? 16, 32, 48, 64, 80",
+      "options": [
+        "Add 14",
+        "Add 15",
+        "Add 16",
+        "Multiply by 2",
+        "Add 17"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 16",
+      "explanation": "Each number increases by 16. The rule is 'add 16'. These are multiples of 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A bouncy ball loses half its height with each bounce: 800 cm, 400 cm, 200 cm, 100 cm, 50 cm. How high does it bounce next?",
+      "options": [
+        "20",
+        "22.5",
+        "25",
+        "27.5",
+        "30"
+      ],
+      "correct": 2,
+      "correctAnswer": "25",
+      "explanation": "This sequence halves each time. 50 ÷ 2 = 25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next term? 13, 39, 117, 351, ?",
+      "options": [
+        "702",
+        "936",
+        "1053",
+        "1170",
+        "1287"
+      ],
+      "correct": 2,
+      "correctAnswer": "1053",
+      "explanation": "This sequence multiplies by 3 each time. 351 × 3 = 1053. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 13th term in the sequence: 9, 18, 27, 36, ...?",
+      "options": [
+        "108",
+        "111",
+        "114",
+        "117",
+        "120"
+      ],
+      "correct": 3,
+      "correctAnswer": "117",
+      "explanation": "This sequence adds 9 each time (multiples of 9). The 13th term is 9 × 13 = 117. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 41, 82, 123, 164, 205, ?",
+      "options": [
+        "236",
+        "242",
+        "246",
+        "252",
+        "256"
+      ],
+      "correct": 2,
+      "correctAnswer": "246",
+      "explanation": "This sequence adds 41 each time. 205 + 41 = 246. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A baker adds 8 more biscuits to each tray: 5, 13, 21, 29, ?, 45. How many biscuits are on the missing tray?",
+      "options": [
+        "33",
+        "35",
+        "37",
+        "39",
+        "41"
+      ],
+      "correct": 2,
+      "correctAnswer": "37",
+      "explanation": "This sequence adds 8 each time. 29 + 8 = 37. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A colony of ants doubles each week: 16, 32, 64, 128, 256. How many ants will there be the next week?",
+      "options": [
+        "384",
+        "448",
+        "480",
+        "512",
+        "544"
+      ],
+      "correct": 3,
+      "correctAnswer": "512",
+      "explanation": "This sequence doubles each time. 256 × 2 = 512. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 10, 20, 30, 40, 50?",
+      "options": [
+        "n + 10",
+        "10n",
+        "n + 20",
+        "20n",
+        "10n + 10"
+      ],
+      "correct": 1,
+      "correctAnswer": "10n",
+      "explanation": "The sequence is multiples of 10. The nth term is 10n. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A swimming pool is being drained, losing 18 litres each minute: 180, 162, 144, 126, 108. How many litres are left after the next minute?",
+      "options": [
+        "84",
+        "88",
+        "90",
+        "92",
+        "96"
+      ],
+      "correct": 2,
+      "correctAnswer": "90",
+      "explanation": "This sequence subtracts 18 each time. 108 - 18 = 90. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next number? 43, 86, 129, 172, 215, ?",
+      "options": [
+        "248",
+        "252",
+        "256",
+        "258",
+        "262"
+      ],
+      "correct": 3,
+      "correctAnswer": "258",
+      "explanation": "This sequence adds 43 each time. 215 + 43 = 258. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this Fibonacci sequence? 5, 8, 13, 21, 34, ?",
+      "options": [
+        "47",
+        "51",
+        "53",
+        "55",
+        "57"
+      ],
+      "correct": 3,
+      "correctAnswer": "55",
+      "explanation": "Each term is the sum of the previous two. 21 + 34 = 55. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Children collect conkers each day in a pattern: 6, 15, 24, 33, ?, 51. How many conkers were collected on the missing day?",
+      "options": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct": 2,
+      "correctAnswer": "42",
+      "explanation": "This sequence adds 9 each time. 33 + 9 = 42. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 6561, 2187, 729, 243, ?",
+      "options": [
+        "162",
+        "135",
+        "108",
+        "81",
+        "72"
+      ],
+      "correct": 3,
+      "correctAnswer": "81",
+      "explanation": "This sequence divides by 3 each time. 243 ÷ 3 = 81. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next term? 18, 54, 162, 486, ?",
+      "options": [
+        "972",
+        "1296",
+        "1458",
+        "1620",
+        "1782"
+      ],
+      "correct": 2,
+      "correctAnswer": "1458",
+      "explanation": "This sequence multiplies by 3 each time. 486 × 3 = 1458. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 14th term in the sequence: 11, 22, 33, 44, ...?",
+      "options": [
+        "143",
+        "148",
+        "152",
+        "154",
+        "156"
+      ],
+      "correct": 3,
+      "correctAnswer": "154",
+      "explanation": "This sequence adds 11 each time (multiples of 11). The 14th term is 11 × 14 = 154. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 47, 94, 141, 188, 235, ?",
+      "options": [
+        "272",
+        "276",
+        "280",
+        "282",
+        "286"
+      ],
+      "correct": 3,
+      "correctAnswer": "282",
+      "explanation": "This sequence adds 47 each time. 235 + 47 = 282. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A charity countdown timer shows: 190, 171, 152, ?, 114, 95 seconds. What is the missing time?",
+      "options": [
+        "129",
+        "131",
+        "133",
+        "135",
+        "137"
+      ],
+      "correct": 2,
+      "correctAnswer": "133",
+      "explanation": "This sequence subtracts 19 each time. 152 - 19 = 133. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 1600, 800, 400, 200, 100, ?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55",
+        "60"
+      ],
+      "correct": 2,
+      "correctAnswer": "50",
+      "explanation": "This sequence halves each time. 100 ÷ 2 = 50. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the next number? 1, 16, 81, 256, 625, ?",
+      "options": [
+        "900",
+        "1000",
+        "1080",
+        "1156",
+        "1296"
+      ],
+      "correct": 4,
+      "correctAnswer": "1296",
+      "explanation": "These are fourth powers: 1⁴, 2⁴, 3⁴, 4⁴, 5⁴, 6⁴. So 6⁴ = 1296. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 53, 106, 159, 212, 265, ?",
+      "options": [
+        "308",
+        "312",
+        "316",
+        "318",
+        "322"
+      ],
+      "correct": 3,
+      "correctAnswer": "318",
+      "explanation": "This sequence adds 53 each time. 265 + 53 = 318. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the rule for this sequence? 18, 36, 54, 72, 90",
+      "options": [
+        "Add 16",
+        "Add 17",
+        "Add 18",
+        "Multiply by 2",
+        "Add 19"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 18",
+      "explanation": "Each number increases by 18. The rule is 'add 18'. These are multiples of 18. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 16th term in the sequence: 7, 14, 21, 28, ...?",
+      "options": [
+        "105",
+        "108",
+        "110",
+        "112",
+        "115"
+      ],
+      "correct": 3,
+      "correctAnswer": "112",
+      "explanation": "This sequence adds 7 each time (multiples of 7). The 16th term is 7 × 16 = 112. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 59, 118, 177, 236, 295, ?",
+      "options": [
+        "344",
+        "348",
+        "352",
+        "354",
+        "358"
+      ],
+      "correct": 3,
+      "correctAnswer": "354",
+      "explanation": "This sequence adds 59 each time. 295 + 59 = 354. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A postman delivers parcels along a street in a pattern: 7, 18, 29, 40, ?, 62. How many parcels were delivered at the missing house?",
+      "options": [
+        "47",
+        "49",
+        "51",
+        "53",
+        "55"
+      ],
+      "correct": 2,
+      "correctAnswer": "51",
+      "explanation": "This sequence adds 11 each time. 40 + 11 = 51. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 20, 60, 180, 540, ?",
+      "options": [
+        "1080",
+        "1440",
+        "1620",
+        "1800",
+        "1980"
+      ],
+      "correct": 2,
+      "correctAnswer": "1620",
+      "explanation": "This sequence multiplies by 3 each time. 540 × 3 = 1620. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 6, 12, 18, 24, 30?",
+      "options": [
+        "n + 6",
+        "6n",
+        "n + 12",
+        "12n",
+        "6n + 6"
+      ],
+      "correct": 1,
+      "correctAnswer": "6n",
+      "explanation": "The sequence is multiples of 6. The nth term is 6n. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop is counting down its stock each day: 210, 189, 168, 147, 126. How many items will be left the next day?",
+      "options": [
+        "99",
+        "102",
+        "105",
+        "108",
+        "111"
+      ],
+      "correct": 2,
+      "correctAnswer": "105",
+      "explanation": "This sequence subtracts 21 each time. 126 - 21 = 105. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next number? 61, 122, 183, 244, 305, ?",
+      "options": [
+        "356",
+        "360",
+        "364",
+        "366",
+        "370"
+      ],
+      "correct": 3,
+      "correctAnswer": "366",
+      "explanation": "This sequence adds 61 each time. 305 + 61 = 366. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this Fibonacci sequence? 8, 13, 21, 34, 55, ?",
+      "options": [
+        "76",
+        "81",
+        "84",
+        "89",
+        "92"
+      ],
+      "correct": 3,
+      "correctAnswer": "89",
+      "explanation": "Each term is the sum of the previous two. 34 + 55 = 89. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the missing number? 9, 20, 31, 42, ?, 64",
+      "options": [
+        "49",
+        "51",
+        "53",
+        "55",
+        "57"
+      ],
+      "correct": 2,
+      "correctAnswer": "53",
+      "explanation": "This sequence adds 11 each time. 42 + 11 = 53. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 3200, 1600, 800, 400, 200, ?",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "correct": 2,
+      "correctAnswer": "100",
+      "explanation": "This sequence halves each time. 200 ÷ 2 = 100. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next term? 25, 75, 225, 675, ?",
+      "options": [
+        "1350",
+        "1800",
+        "2025",
+        "2250",
+        "2475"
+      ],
+      "correct": 2,
+      "correctAnswer": "2025",
+      "explanation": "This sequence multiplies by 3 each time. 675 × 3 = 2025. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 17th term in the sequence: 13, 26, 39, 52, ...?",
+      "options": [
+        "208",
+        "213",
+        "218",
+        "221",
+        "226"
+      ],
+      "correct": 3,
+      "correctAnswer": "221",
+      "explanation": "This sequence adds 13 each time (multiples of 13). The 17th term is 13 × 17 = 221. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 67, 134, 201, 268, 335, ?",
+      "options": [
+        "392",
+        "396",
+        "400",
+        "402",
+        "406"
+      ],
+      "correct": 3,
+      "correctAnswer": "402",
+      "explanation": "This sequence adds 67 each time. 335 + 67 = 402. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the missing number? 220, 198, 176, ?, 132, 110",
+      "options": [
+        "150",
+        "152",
+        "154",
+        "156",
+        "158"
+      ],
+      "correct": 2,
+      "correctAnswer": "154",
+      "explanation": "This sequence subtracts 22 each time. 176 - 22 = 154. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the rule for this sequence? 20, 40, 60, 80, 100",
+      "options": [
+        "Add 18",
+        "Add 19",
+        "Add 20",
+        "Multiply by 2",
+        "Add 21"
+      ],
+      "correct": 2,
+      "correctAnswer": "Add 20",
+      "explanation": "Each number increases by 20. The rule is 'add 20'. These are multiples of 20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 71, 142, 213, 284, 355, ?",
+      "options": [
+        "416",
+        "420",
+        "424",
+        "426",
+        "430"
+      ],
+      "correct": 3,
+      "correctAnswer": "426",
+      "explanation": "This sequence adds 71 each time. 355 + 71 = 426. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next number? 32, 64, 128, 256, 512, ?",
+      "options": [
+        "768",
+        "896",
+        "960",
+        "1024",
+        "1088"
+      ],
+      "correct": 3,
+      "correctAnswer": "1024",
+      "explanation": "This sequence doubles each time. 512 × 2 = 1024. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the nth term rule for the sequence: 15, 30, 45, 60, 75?",
+      "options": [
+        "n + 15",
+        "15n",
+        "n + 30",
+        "30n",
+        "15n + 15"
+      ],
+      "correct": 1,
+      "correctAnswer": "15n",
+      "explanation": "The sequence is multiples of 15. The nth term is 15n. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 240, 216, 192, 168, 144, ?",
+      "options": [
+        "114",
+        "118",
+        "120",
+        "124",
+        "128"
+      ],
+      "correct": 2,
+      "correctAnswer": "120",
+      "explanation": "This sequence subtracts 24 each time. 144 - 24 = 120. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the missing number? 10, 23, 36, 49, ?, 75",
+      "options": [
+        "58",
+        "60",
+        "62",
+        "64",
+        "66"
+      ],
+      "correct": 2,
+      "correctAnswer": "62",
+      "explanation": "This sequence adds 13 each time. 49 + 13 = 62. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 73, 146, 219, 292, 365, ?",
+      "options": [
+        "428",
+        "432",
+        "436",
+        "438",
+        "442"
+      ],
+      "correct": 3,
+      "correctAnswer": "438",
+      "explanation": "This sequence adds 73 each time. 365 + 73 = 438. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the 18th term in the sequence: 17, 34, 51, 68, ...?",
+      "options": [
+        "289",
+        "294",
+        "298",
+        "306",
+        "312"
+      ],
+      "correct": 3,
+      "correctAnswer": "306",
+      "explanation": "This sequence adds 17 each time (multiples of 17). The 18th term is 17 × 18 = 306. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? 6400, 3200, 1600, 800, 400, ?",
+      "options": [
+        "160",
+        "180",
+        "200",
+        "220",
+        "240"
+      ],
+      "correct": 2,
+      "correctAnswer": "200",
+      "explanation": "This sequence halves each time. 400 ÷ 2 = 200. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the next term? 30, 90, 270, 810, ?",
+      "options": [
+        "1620",
+        "2160",
+        "2430",
+        "2700",
+        "2970"
+      ],
+      "correct": 2,
+      "correctAnswer": "2430",
+      "explanation": "This sequence multiplies by 3 each time. 810 × 3 = 2430. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this Fibonacci sequence? 13, 21, 34, 55, 89, ?",
+      "options": [
+        "121",
+        "132",
+        "138",
+        "144",
+        "150"
+      ],
+      "correct": 3,
+      "correctAnswer": "144",
+      "explanation": "Each term is the sum of the previous two. 55 + 89 = 144. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The sequence of square numbers is 1, 4, 9, 16, 25, ... What is the 12th square number?",
+      "options": [
+        "121",
+        "132",
+        "144",
+        "156",
+        "169"
+      ],
+      "correct": 2,
+      "correctAnswer": "144",
+      "explanation": "Square numbers are found by squaring the position number. The 12th square number is 12² = 12 × 12 = 144. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Triangular numbers go 1, 3, 6, 10, 15, 21, ... What is the 10th triangular number?",
+      "options": [
+        "45",
+        "50",
+        "55",
+        "60",
+        "66"
+      ],
+      "correct": 2,
+      "correctAnswer": "55",
+      "explanation": "Triangular numbers add one more each time: +2, +3, +4, +5 and so on. The sequence is 1, 3, 6, 10, 15, 21, 28, 36, 45, 55. You can also calculate: 10 × 11 ÷ 2 = 55. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/triangular-numbers-q122.svg"
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a Fibonacci-style sequence, each term is the sum of the two before it. The sequence starts 2, 5, 7, 12, 19, ... What is the 8th term?",
+      "options": [
+        "69",
+        "74",
+        "81",
+        "88",
+        "93"
+      ],
+      "correct": 2,
+      "correctAnswer": "81",
+      "explanation": "Each term = sum of the previous two. The sequence is: 2, 5, 7, 12, 19, 31, 50, 81. The 8th term is 81. Check: 2 + 5 = 7, 5 + 7 = 12, 7 + 12 = 19, 12 + 19 = 31, 19 + 31 = 50, 31 + 50 = 81. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence follows the rule 'multiply by 2 then subtract 3'. The first term is 5. What is the 6th term?",
+      "options": [
+        "59",
+        "63",
+        "67",
+        "71",
+        "75"
+      ],
+      "correct": 2,
+      "correctAnswer": "67",
+      "explanation": "Apply the rule starting from 5. Term 1: 5. Term 2: 5 × 2 − 3 = 7. Term 3: 7 × 2 − 3 = 11. Term 4: 11 × 2 − 3 = 19. Term 5: 19 × 2 − 3 = 35. Term 6: 35 × 2 − 3 = 67. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Look at this sequence: 2, 5, 10, 17, 26, 37, ... The differences between terms increase by 2 each time. What is the 9th term?",
+      "options": [
+        "58",
+        "65",
+        "74",
+        "82",
+        "91"
+      ],
+      "correct": 3,
+      "correctAnswer": "82",
+      "explanation": "The differences are +3, +5, +7, +9, +11, and they keep going up by 2. Continuing: +13 gives 50, +15 gives 65, +17 gives 82. So the 9th term is 82. You can also spot that each term is n² + 1, so the 9th term is 9² + 1 = 82. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "sequences/square-plus-one-q125.svg"
+    },
+    {
+      "id": 126,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a sequence, each term is double the one before. The 6th term is 192. What is the 1st term?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "Work backwards by halving. Term 6: 192. Term 5: 192 ÷ 2 = 96. Term 4: 96 ÷ 2 = 48. Term 3: 48 ÷ 2 = 24. Term 2: 24 ÷ 2 = 12. Term 1: 12 ÷ 2 = 6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "How many terms of the sequence 3, 7, 11, 15, 19, ... are less than 50?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "The sequence adds 4 each time. The nth term is 4n − 1. We need 4n − 1 < 50, so 4n < 51, which means n < 12.75. The largest whole value of n is 12. The 12th term is 4 × 12 − 1 = 47 (which is less than 50). The 13th term would be 51 (not less than 50). So 12 terms are less than 50. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What is the sum of the first 6 terms of the sequence 5, 9, 13, 17, 21, 25?",
+      "options": [
+        "78",
+        "84",
+        "90",
+        "96",
+        "102"
+      ],
+      "correct": 2,
+      "correctAnswer": "90",
+      "explanation": "Add all six terms: 5 + 9 + 13 + 17 + 21 + 25 = 90. You can also pair them: (5 + 25) + (9 + 21) + (13 + 17) = 30 + 30 + 30 = 90. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The first term of a sequence is 256 and each term is half the previous term. What is the first term in the sequence that is not a whole number?",
+      "options": [
+        "0.25",
+        "0.5",
+        "1.5",
+        "2.5",
+        "3.5"
+      ],
+      "correct": 1,
+      "correctAnswer": "0.5",
+      "explanation": "Halving from 256: 256, 128, 64, 32, 16, 8, 4, 2, 1, 0.5. The first term that is not a whole number is 0.5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a sequence, the differences between terms are 1, 2, 4, 8, 16, ... (doubling each time). The first term is 3. What is the 7th term?",
+      "options": [
+        "34",
+        "50",
+        "62",
+        "66",
+        "72"
+      ],
+      "correct": 3,
+      "correctAnswer": "66",
+      "explanation": "Starting at 3, add the doubling differences. Term 1: 3. Term 2: 3 + 1 = 4. Term 3: 4 + 2 = 6. Term 4: 6 + 4 = 10. Term 5: 10 + 8 = 18. Term 6: 18 + 16 = 34. Term 7: 34 + 32 = 66. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The cube numbers are 1, 8, 27, 64, 125, ... What is the sum of the first 5 cube numbers?",
+      "options": [
+        "200",
+        "215",
+        "225",
+        "250",
+        "275"
+      ],
+      "correct": 2,
+      "correctAnswer": "225",
+      "explanation": "The first 5 cube numbers are: 1³ = 1, 2³ = 8, 3³ = 27, 4³ = 64, 5³ = 125. Their sum is 1 + 8 + 27 + 64 + 125 = 225. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence goes: 0, 3, 8, 15, 24, ... What is the 8th term?",
+      "options": [
+        "48",
+        "55",
+        "63",
+        "72",
+        "80"
+      ],
+      "correct": 2,
+      "correctAnswer": "63",
+      "explanation": "The differences are +3, +5, +7, +9, ... (increasing by 2 each time). Continuing: +11 gives 35, +13 gives 48, +15 gives 63. The 8th term is 63. You can also spot that each term is n² − 1: the 8th term is 8² − 1 = 64 − 1 = 63. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The sequence 3, 8, 15, 24, 35, ... follows the rule n² + 2n, where n is the position. What is the 10th term?",
+      "options": [
+        "99",
+        "110",
+        "120",
+        "130",
+        "143"
+      ],
+      "correct": 2,
+      "correctAnswer": "120",
+      "explanation": "Using the rule n² + 2n with n = 10: 10² + 2 × 10 = 100 + 20 = 120. You can check: n = 1 gives 1 + 2 = 3, n = 2 gives 4 + 4 = 8, n = 3 gives 9 + 6 = 15, n = 4 gives 16 + 8 = 24, n = 5 gives 25 + 10 = 35. The pattern works, so the 10th term is 120. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The 3rd term of an arithmetic sequence is 17 and the 5th term is 31. What is the 1st term?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 1,
+      "correctAnswer": "3",
+      "explanation": "From the 3rd to the 5th term is 2 steps. 31 − 17 = 14, so the common difference is 14 ÷ 2 = 7. Working backwards: 3rd term = 17, 2nd term = 17 − 7 = 10, 1st term = 10 − 7 = 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An arithmetic sequence starts at 8 and increases by 13 each time. What is the 10th term?",
+      "options": [
+        "117",
+        "121",
+        "125",
+        "129",
+        "133"
+      ],
+      "correct": 2,
+      "correctAnswer": "125",
+      "explanation": "10th term = 8 + (10 − 1) × 13 = 8 + 9 × 13 = 8 + 117 = 125. You can check: the first few terms are 8, 21, 34, 47, ... each adding 13. The 10th term is 125. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The 4th term of an arithmetic sequence is 22 and the 8th term is 46. What is the common difference?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "6",
+      "explanation": "From the 4th to the 8th term is 4 steps. Difference = (46 − 22) ÷ 4 = 24 ÷ 4 = 6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "An arithmetic sequence starts at 5 and goes up by 11 each time: 5, 16, 27, 38, ... What is the sum of the first 6 terms?",
+      "options": [
+        "180",
+        "185",
+        "190",
+        "195",
+        "200"
+      ],
+      "correct": 3,
+      "correctAnswer": "195",
+      "explanation": "The first 6 terms are: 5, 16, 27, 38, 49, 60. Sum = 5 + 16 + 27 + 38 + 49 + 60 = 195. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sequence starts at 200 and decreases by 17 each time. How many terms are there before the sequence goes below zero?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "200 ÷ 17 = 11.76... The 12th term = 200 − 11 × 17 = 200 − 187 = 13 (still positive). The 13th term = 13 − 17 = −4 (below zero). So there are 12 terms before it goes below zero. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A decreasing sequence starts at 500 and subtracts a different amount each time: 500, 475, 445, 410, 370, ... What is the next term?",
+      "options": [
+        "320",
+        "325",
+        "330",
+        "335",
+        "340"
+      ],
+      "correct": 1,
+      "correctAnswer": "325",
+      "explanation": "Differences: 500 − 475 = 25, 475 − 445 = 30, 445 − 410 = 35, 410 − 370 = 40. The differences increase by 5 each time. Next difference = 45. Next term = 370 − 45 = 325. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A tank holds 360 litres. Water drains out: 15 litres in the first minute, 18 litres in the second, 21 litres in the third, and so on (3 more each minute). After how many minutes will the tank have less than 200 litres?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Water drained each minute: 15, 18, 21, 24, 27, 30, 33, ... After 1 min: 345. After 2: 327. After 3: 306. After 4: 282. After 5: 255. After 6: 225. After 7: 192. After 7 minutes, the tank has 192 litres which is less than 200. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A shop reduces its prices each week. In week 1 an item costs £84, then £72, then £60, then £48. What will it cost in week 6?",
+      "options": [
+        "£12",
+        "£18",
+        "£24",
+        "£30",
+        "£36"
+      ],
+      "correct": 2,
+      "correctAnswer": "£24",
+      "explanation": "The price drops by £12 each week: 84, 72, 60, 48, 36, 24. In week 6 the item costs £24. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The rule for a sequence is 'multiply the position number by 5'. What is the 8th term?",
+      "options": [
+        "35",
+        "38",
+        "40",
+        "42",
+        "45"
+      ],
+      "correct": 2,
+      "correctAnswer": "40",
+      "explanation": "The rule is 5n. The 8th term = 5 × 8 = 40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A sequence follows the rule '3 times the position number plus 1'. The first few terms are 4, 7, 10, 13, ... What is the 6th term?",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "correct": 3,
+      "correctAnswer": "19",
+      "explanation": "The rule is 3n + 1. 6th term = 3 × 6 + 1 = 19. Check: 1st = 4, 2nd = 7, 3rd = 10, 4th = 13, 5th = 16, 6th = 19. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The rule for a sequence is '2 times the position number'. Which position gives the term 20?",
+      "options": [
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th"
+      ],
+      "correct": 2,
+      "correctAnswer": "10th",
+      "explanation": "The rule is 2n. If 2n = 20, then n = 10. The 10th position gives the term 20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The square numbers are 1, 4, 9, 16, 25, 36, ... What is the 8th square number?",
+      "options": [
+        "48",
+        "54",
+        "56",
+        "62",
+        "64"
+      ],
+      "correct": 4,
+      "correctAnswer": "64",
+      "explanation": "Square numbers are 1², 2², 3², ... The 8th square number = 8² = 64. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The triangular numbers are 1, 3, 6, 10, 15, 21, ... What comes next?",
+      "options": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "correct": 3,
+      "correctAnswer": "28",
+      "explanation": "The differences increase by 1 each time: +2, +3, +4, +5, +6, so the next difference is +7. 21 + 7 = 28. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these is both a square number and a triangular number?",
+      "options": [
+        "16",
+        "25",
+        "36",
+        "49",
+        "64"
+      ],
+      "correct": 2,
+      "correctAnswer": "36",
+      "explanation": "Square numbers: 1, 4, 9, 16, 25, 36, 49, 64. Triangular numbers: 1, 3, 6, 10, 15, 21, 28, 36. The number 36 is both a square number (6²) and a triangular number (the 8th triangular number). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The cube numbers are 1, 8, 27, 64, ... What is the difference between the 4th and 5th cube numbers?",
+      "options": [
+        "51",
+        "56",
+        "61",
+        "66",
+        "71"
+      ],
+      "correct": 2,
+      "correctAnswer": "61",
+      "explanation": "4th cube number = 4³ = 64. 5th cube number = 5³ = 125. Difference = 125 − 64 = 61. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sam says 50 is a triangular number. Is he correct? The triangular numbers start: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...",
+      "options": [
+        "Yes, it is the 9th",
+        "Yes, it is the 10th",
+        "No, 45 is but 50 is not",
+        "No, 55 is but 50 is not",
+        "No, 48 is but 50 is not"
+      ],
+      "correct": 3,
+      "correctAnswer": "No, 55 is but 50 is not",
+      "explanation": "The triangular numbers are: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... The 9th is 45 and the 10th is 55. There is no triangular number equal to 50, so Sam is incorrect. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Each term in a sequence is the sum of the three terms before it: 1, 1, 2, 4, 7, 13, ... What is the next term?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct": 2,
+      "correctAnswer": "24",
+      "explanation": "Each term = sum of the three before it. The three terms before the next are 4, 7, and 13. Next term = 4 + 7 + 13 = 24. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence goes: 2, 5, 11, 23, 47, ... Each term is found by doubling and adding 1. What is the next term?",
+      "options": [
+        "85",
+        "89",
+        "93",
+        "95",
+        "97"
+      ],
+      "correct": 3,
+      "correctAnswer": "95",
+      "explanation": "Rule: double then add 1. 47 × 2 + 1 = 95. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence starts: 1, 2, 6, 24, 120, ... What is the next term?",
+      "options": [
+        "240",
+        "480",
+        "600",
+        "720",
+        "840"
+      ],
+      "correct": 3,
+      "correctAnswer": "720",
+      "explanation": "Each term is multiplied by an increasing number: ×2, ×3, ×4, ×5. These are factorial numbers! Next: 120 × 6 = 720. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,3270 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "antonyms",
+    "displayName": "Antonyms",
+    "extractedAt": "2026-03-30T13:05:32.796Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 52,
+      "D3": 35
+    },
+    "questionTypes": {
+      "pick-from-sets": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "generous + mean",
+      "explanation": "'Generous' means willing to give freely, while 'mean' means unwilling to share — direct opposites. 'Spoon' and 'fork' are both cutlery — related, not opposite. 'Table' and 'chair' are both furniture — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "generous",
+        "spoon",
+        "table"
+      ],
+      "setB": [
+        "chair",
+        "mean",
+        "fork"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "expand + shrink",
+      "explanation": "'Expand' means to grow larger, while 'shrink' means to become smaller — direct opposites. 'Create' and 'build' are similar in meaning (synonyms), not opposites. 'Maintain' and 'repair' both involve keeping things working — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "expand",
+        "maintain",
+        "create"
+      ],
+      "setB": [
+        "build",
+        "shrink",
+        "repair"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "temporary + permanent",
+      "explanation": "'Temporary' means lasting a short time, while 'permanent' means lasting forever — direct opposites. 'Regular' and 'common' describe how often something happens — they're similar, not opposite. 'Popular' and 'famous' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "regular",
+        "temporary",
+        "popular"
+      ],
+      "setB": [
+        "permanent",
+        "common",
+        "famous"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "abundant + scarce",
+      "explanation": "'Abundant' means plentiful and in great quantity, while 'scarce' means in very short supply — direct opposites. 'Moderate' and 'adequate' both mean 'enough' — similar, not opposite. 'Sufficient' and 'ample' also mean 'plenty' — near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "moderate",
+        "abundant",
+        "sufficient"
+      ],
+      "setB": [
+        "adequate",
+        "scarce",
+        "ample"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "arrogant + humble",
+      "explanation": "'Arrogant' means having an inflated sense of self-importance, while 'humble' means modest and unassuming — direct opposites. 'Nervous' and 'anxious' mean nearly the same thing (both mean worried), so they can't be opposites. 'Curious' and 'proud' describe different traits but aren't opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nervous",
+        "arrogant",
+        "curious"
+      ],
+      "setB": [
+        "humble",
+        "anxious",
+        "proud"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "brave + cowardly",
+      "explanation": "'Brave' means courageous, while 'cowardly' means lacking courage — direct opposites. 'Tiger' and 'lion' are both big cats — similar, not opposite. 'Doctor' and 'nurse' both work in medicine — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "brave",
+        "doctor",
+        "tiger"
+      ],
+      "setB": [
+        "lion",
+        "cowardly",
+        "nurse"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "noisy + silent",
+      "explanation": "'Noisy' means making a lot of sound, while 'silent' means completely without sound — direct opposites. 'Bright' and 'clever' are different types of quality — 'bright' here means luminous, 'clever' means intelligent. 'Heavy' and 'wooden' describe different physical properties, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bright",
+        "noisy",
+        "heavy"
+      ],
+      "setB": [
+        "wooden",
+        "clever",
+        "silent"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "ancient + modern",
+      "explanation": "'Ancient' means extremely old, while 'modern' means present-day — direct opposites. 'Butter' and 'bread' go together but aren't opposites. 'Sock' and 'shoe' are both worn on feet — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "butter",
+        "ancient",
+        "sock"
+      ],
+      "setB": [
+        "modern",
+        "shoe",
+        "bread"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "timid + bold",
+      "explanation": "'Timid' means shy and lacking confidence, while 'bold' means brave and willing to take risks — direct opposites. 'Gentle' and 'kind' are very similar in meaning (near-synonyms), not opposites. 'Clever' and 'smart' also mean the same thing — another synonym pair, not antonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "timid",
+        "gentle",
+        "clever"
+      ],
+      "setB": [
+        "smart",
+        "bold",
+        "kind"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "artificial + natural",
+      "explanation": "'Artificial' means made by humans, not natural, while 'natural' means existing in nature without human interference — direct opposites. 'Creative' and 'artistic' are similar qualities, not opposites. 'Genuine' means real or authentic — related to 'natural' but not its opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "genuine",
+        "artificial",
+        "creative"
+      ],
+      "setB": [
+        "natural",
+        "artistic",
+        "imaginary"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "maximum + minimum",
+      "explanation": "'Maximum' means the greatest possible amount, while 'minimum' means the smallest possible amount — direct opposites. 'Total' and 'complete' mean similar things (everything included), not opposites. 'Average' and 'partial' are different concepts but not true opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "average",
+        "maximum",
+        "total"
+      ],
+      "setB": [
+        "complete",
+        "minimum",
+        "partial"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "compulsory + optional",
+      "explanation": "'Compulsory' means required by law or rule, while 'optional' means you can choose whether to do it — direct opposites. 'Voluntary' means done by choice, which is similar to 'optional' (synonyms across groups — a trap!). 'Popular' and 'famous' are near-synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "voluntary",
+        "compulsory",
+        "popular"
+      ],
+      "setB": [
+        "common",
+        "optional",
+        "famous"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "lenient + strict",
+      "explanation": "'Lenient' means tolerant and not strict, while 'strict' means demanding exact obedience to rules — direct opposites. 'Sensible' and 'wise' mean similar things — both describe good judgement. 'Cautious' and 'careful' are also near-synonyms. These synonym pairs are traps — they're similar, not opposite! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "lenient",
+        "sensible",
+        "cautious"
+      ],
+      "setB": [
+        "careful",
+        "strict",
+        "wise"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "shallow + profound",
+      "explanation": "'Shallow' means lacking depth of thought or knowledge, while 'profound' means having great depth or insight — direct opposites. 'Verbose' means using too many words and 'tedious' means boring — neither has an opposite in the other group. 'Cryptic' means mysterious and 'enigmatic' means puzzling — they're near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shallow",
+        "verbose",
+        "cryptic"
+      ],
+      "setB": [
+        "enigmatic",
+        "profound",
+        "tedious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "conceal + reveal",
+      "explanation": "'Conceal' means to hide something from view, while 'reveal' means to make something known or visible — direct opposites. 'Protect' and 'guard' are near-synonyms (both mean to keep safe). 'Gather' and 'collect' also mean similar things. These synonym traps test whether you know the difference between 'same' and 'opposite'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "conceal",
+        "protect",
+        "gather"
+      ],
+      "setB": [
+        "collect",
+        "guard",
+        "reveal"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "cruel + kind",
+      "explanation": "'Cruel' means deliberately causing pain, while 'kind' means caring and considerate — direct opposites. 'Proud' and 'idle' are unrelated character traits. 'Lazy' and 'tired' might seem similar but 'lazy' means unwilling to work while 'tired' means needing rest — related but not the same, and neither has an opposite here. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "proud",
+        "cruel",
+        "lazy"
+      ],
+      "setB": [
+        "kind",
+        "idle",
+        "tired"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "polite + rude",
+      "explanation": "'Polite' means having good manners, while 'rude' means lacking respect for others — direct opposites. 'Honest' and 'truthful' are near-synonyms (both mean telling the truth), not opposites. 'Clever' and 'bright' can both mean intelligent — another synonym pair trap. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "polite",
+        "honest",
+        "clever"
+      ],
+      "setB": [
+        "bright",
+        "rude",
+        "truthful"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "inferior + superior",
+      "explanation": "'Inferior' means lower in quality or rank, while 'superior' means higher in quality or rank — direct opposites. 'Equal' and 'alike' both mean the same or similar — they're synonyms, not opposites. 'Similar' and 'average' are unrelated concepts. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "equal",
+        "inferior",
+        "similar"
+      ],
+      "setB": [
+        "superior",
+        "alike",
+        "average"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "increase + decrease",
+      "explanation": "'Increase' means to become greater, while 'decrease' means to become smaller — direct opposites. 'Change' and 'alter' mean the same thing. 'Move' and 'shift' also mean the same thing. When words in different groups mean the same, they're synonyms — the opposite of what you're looking for! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "increase",
+        "change",
+        "move"
+      ],
+      "setB": [
+        "shift",
+        "decrease",
+        "alter"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "voluntary + compulsory",
+      "explanation": "'Voluntary' means done by free choice, while 'compulsory' means required and not optional — direct opposites. 'Planned' and 'organised' are near-synonyms (both describe careful preparation). 'Paid' and 'scheduled' are unrelated. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "paid",
+        "voluntary",
+        "planned"
+      ],
+      "setB": [
+        "compulsory",
+        "organised",
+        "scheduled"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "hot + cold",
+      "explanation": "'Hot' means having a high temperature, while 'cold' means having a low temperature — they sit at opposite ends of the temperature scale. 'Green' and 'bright' are both colours or visual qualities, not opposites. 'Round' and 'flat' describe shapes but aren't in the standard opposite pairing here. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "hot",
+        "green",
+        "round"
+      ],
+      "setB": [
+        "flat",
+        "cold",
+        "bright"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "light + dark",
+      "explanation": "'Light' means bright or full of light, while 'dark' means having no light — direct opposites. 'Swim' and 'float' are related water activities but not opposites. 'Drink' and 'eat' are both about consuming — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "swim",
+        "light",
+        "drink"
+      ],
+      "setB": [
+        "dark",
+        "float",
+        "eat"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "fast + slow",
+      "explanation": "'Fast' means moving with great speed, while 'slow' means not moving quickly — direct opposites. 'Blue' and 'run' are completely unrelated. 'Purple' and 'jump' are also completely unrelated — one is a colour, the other an action. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "blue",
+        "purple",
+        "fast"
+      ],
+      "setB": [
+        "run",
+        "slow",
+        "jump"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "big + small",
+      "explanation": "'Big' means large in size, while 'small' means little — direct opposites. 'Horse' and 'donkey' are both animals you can ride — similar, not opposite. 'Cow' and 'sheep' are both farm animals — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "horse",
+        "cow",
+        "big"
+      ],
+      "setB": [
+        "small",
+        "sheep",
+        "donkey"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "loud + quiet",
+      "explanation": "'Loud' means making a lot of noise, while 'quiet' means making very little noise — direct opposites. 'Chair' and 'table' are both furniture — related, not opposite. 'Apple' and 'pear' are both fruits — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "loud",
+        "chair",
+        "apple"
+      ],
+      "setB": [
+        "table",
+        "pear",
+        "quiet"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "happy + sad",
+      "explanation": "'Happy' means feeling joy, while 'sad' means feeling sorrow — direct opposites. 'Sing' and 'dance' are both performing arts — related activities, not opposites. 'Door' and 'window' are both parts of a building — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sing",
+        "happy",
+        "door"
+      ],
+      "setB": [
+        "window",
+        "sad",
+        "dance"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "strong + weak",
+      "explanation": "'Strong' means having great power, while 'weak' means lacking strength — direct opposites. 'Hammer' and 'nail' go together but aren't opposites. 'Draw' and 'paint' are both art activities — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "draw",
+        "hammer",
+        "strong"
+      ],
+      "setB": [
+        "weak",
+        "nail",
+        "paint"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "hard + soft",
+      "explanation": "'Hard' means firm and solid, while 'soft' means easy to press or bend — direct opposites. 'Tree' and 'leaf' are connected (a leaf grows on a tree) but not opposites. 'River' and 'mountain' are both landscape features — different, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "hard",
+        "tree",
+        "river"
+      ],
+      "setB": [
+        "mountain",
+        "soft",
+        "leaf"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "rough + smooth",
+      "explanation": "'Rough' means having an uneven, bumpy surface, while 'smooth' means having an even, flat surface — direct opposites. 'Spoon' and 'fork' are both cutlery — related, not opposite. 'Clock' and 'time' are connected (a clock tells time) but not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "spoon",
+        "rough",
+        "clock"
+      ],
+      "setB": [
+        "time",
+        "fork",
+        "smooth"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "clean + dirty",
+      "explanation": "'Clean' means free from dirt, while 'dirty' means covered in unwanted marks — direct opposites. 'Bread' and 'butter' go together (related) but aren't opposites. 'Shoe' and 'sock' are both worn on feet — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "clean",
+        "bread",
+        "shoe"
+      ],
+      "setB": [
+        "sock",
+        "dirty",
+        "butter"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "open + shut",
+      "explanation": "'Open' means not closed or sealed, while 'shut' means closed — direct opposites. 'Car' and 'train' are both vehicles — similar, not opposite. 'Boat' and 'plane' are also both vehicles. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "car",
+        "boat",
+        "open"
+      ],
+      "setB": [
+        "shut",
+        "plane",
+        "train"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "early + late",
+      "explanation": "'Early' means before the expected time, while 'late' means after the expected time — direct opposites. 'Paper' and 'pencil' are both stationery — related, not opposite. 'Chalk' and 'board' go together (you write with chalk on a board) — connected, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "early",
+        "paper",
+        "chalk"
+      ],
+      "setB": [
+        "board",
+        "pencil",
+        "late"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "full + empty",
+      "explanation": "'Full' means containing as much as possible, while 'empty' means containing nothing — direct opposites. 'House' and 'roof' are connected (a roof is part of a house). 'Garden' and 'fence' are also connected. Related things aren't opposites! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "house",
+        "full",
+        "garden"
+      ],
+      "setB": [
+        "empty",
+        "fence",
+        "roof"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "deep + shallow",
+      "explanation": "'Deep' means extending far down, while 'shallow' means not very deep — direct opposites. 'Stream' and 'river' are both types of flowing water — similar, not opposite. 'Beach' and 'coast' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "stream",
+        "deep",
+        "beach"
+      ],
+      "setB": [
+        "coast",
+        "shallow",
+        "river"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "wide + narrow",
+      "explanation": "'Wide' means having a great distance from side to side, while 'narrow' means having a small width — direct opposites. 'Red' and 'blue' are both colours — different but not opposite. 'Cat' and 'dog' are both pets — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wide",
+        "red",
+        "cat"
+      ],
+      "setB": [
+        "dog",
+        "narrow",
+        "blue"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "rich + poor",
+      "explanation": "'Rich' means having a lot of money, while 'poor' means having very little money — direct opposites. 'Book' and 'page' are connected (a page is part of a book). 'Milk' and 'water' are both drinks — similar type, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "book",
+        "milk",
+        "rich"
+      ],
+      "setB": [
+        "poor",
+        "water",
+        "page"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "sink + float",
+      "explanation": "'Sink' means to go down below the surface, while 'float' means to stay on top — direct opposites. 'Flower' and 'petal' are connected (a petal is part of a flower). 'Stone' and 'pebble' mean almost the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sink",
+        "flower",
+        "stone"
+      ],
+      "setB": [
+        "pebble",
+        "float",
+        "petal"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "push + pull",
+      "explanation": "'Push' means to move something away from you, while 'pull' means to move something towards you — direct opposites. 'Hand' and 'finger' are connected (fingers are part of a hand). 'Foot' and 'toe' are also connected. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "hand",
+        "push",
+        "foot"
+      ],
+      "setB": [
+        "toe",
+        "finger",
+        "pull"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "thick + thin",
+      "explanation": "'Thick' means having a large distance between sides, while 'thin' means having a small distance — direct opposites. 'Cup' and 'bowl' are both containers — similar, not opposite. 'Plate' and 'saucer' are both flat dishes — near-synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cup",
+        "thick",
+        "plate"
+      ],
+      "setB": [
+        "thin",
+        "bowl",
+        "saucer"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "young + old",
+      "explanation": "'Young' means having lived for a short time, while 'old' means having lived for a long time — direct opposites. 'Nest' and 'egg' are connected (eggs are found in nests). 'Feather' and 'wing' are also connected (wings have feathers). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "young",
+        "nest",
+        "feather"
+      ],
+      "setB": [
+        "wing",
+        "old",
+        "egg"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "sharp + blunt",
+      "explanation": "'Sharp' means having a fine cutting edge, while 'blunt' means not sharp, rounded at the edge — direct opposites. 'Pencil' and 'pen' are both writing tools — similar, not opposite. 'Rubber' and 'ruler' are both stationery items. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pencil",
+        "sharp",
+        "rubber"
+      ],
+      "setB": [
+        "blunt",
+        "ruler",
+        "pen"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "scared + brave",
+      "explanation": "'Scared' means feeling frightened, while 'brave' means ready to face danger without fear — direct opposites. 'Tiger' and 'lion' are both big cats — similar, not opposite. 'Forest' and 'jungle' are both types of woodland — near-synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scared",
+        "tiger",
+        "forest"
+      ],
+      "setB": [
+        "jungle",
+        "lion",
+        "brave"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "wet + dry",
+      "explanation": "'Wet' means covered in water, while 'dry' means free from moisture — direct opposites. 'Tent' and 'camp' are connected (you pitch a tent at camp). 'Map' and 'compass' are both navigation tools — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tent",
+        "map",
+        "wet"
+      ],
+      "setB": [
+        "dry",
+        "compass",
+        "camp"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "up + down",
+      "explanation": "'Up' means towards a higher position, while 'down' means towards a lower position — direct opposites. 'Hedge' and 'fence' are both garden barriers — similar, not opposite. 'Path' and 'gate' are both found in gardens — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "path",
+        "up",
+        "hedge"
+      ],
+      "setB": [
+        "gate",
+        "fence",
+        "down"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "cautious + reckless",
+      "explanation": "'Cautious' means taking care to avoid danger, while 'reckless' means acting without thinking about consequences — direct opposites. 'Determined' and 'stubborn' might seem similar to each other, but neither has a true opposite in the other group. 'Thoughtful' and 'sensible' are positive traits but not opposites of anything here. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cautious",
+        "determined",
+        "thoughtful"
+      ],
+      "setB": [
+        "stubborn",
+        "reckless",
+        "sensible"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "familiar + strange",
+      "explanation": "'Familiar' means well known or easily recognised, while 'strange' means unusual or unfamiliar — direct opposites. 'Determined' and 'persistent' are near-synonyms (both about tenacity), not opposites. 'Rapid' and 'speedy' are also synonyms, not opposites! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "determined",
+        "familiar",
+        "rapid"
+      ],
+      "setB": [
+        "strange",
+        "persistent",
+        "speedy"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "boring + exciting",
+      "explanation": "'Boring' means dull and uninteresting, while 'exciting' means thrilling — direct opposites. 'Gather' and 'collect' mean the same thing — synonyms, not opposites. 'Repair' and 'fix' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "boring",
+        "gather",
+        "repair"
+      ],
+      "setB": [
+        "fix",
+        "exciting",
+        "collect"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "patient + impatient",
+      "explanation": "'Patient' means able to wait calmly, while 'impatient' means unable to wait — direct opposites (the prefix 'im-' reverses the meaning). 'Sensible' and 'wise' both mean having good judgement — synonyms. 'Honest' and 'truthful' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "patient",
+        "sensible",
+        "honest"
+      ],
+      "setB": [
+        "truthful",
+        "wise",
+        "impatient"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "confident + nervous",
+      "explanation": "'Confident' means feeling sure of yourself, while 'nervous' means feeling worried — direct opposites. 'Swift' and 'rapid' both mean fast — synonyms. 'Hungry' and 'starving' both mean wanting food — also synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "swift",
+        "hungry",
+        "confident"
+      ],
+      "setB": [
+        "nervous",
+        "starving",
+        "rapid"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "appear + vanish",
+      "explanation": "'Appear' means to become visible, while 'vanish' means to disappear — direct opposites. 'Careful' and 'cautious' mean the same thing — synonyms. 'Swift' and 'rapid' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "appear",
+        "careful",
+        "swift"
+      ],
+      "setB": [
+        "rapid",
+        "vanish",
+        "cautious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "hostile + friendly",
+      "explanation": "'Hostile' means unfriendly and aggressive, while 'friendly' means kind and welcoming — direct opposites. 'Careful' and 'eager' are both positive traits but not opposites. 'Steady' and 'rapid' describe different paces but aren't true antonyms — 'steady' means constant, 'rapid' means fast. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "careful",
+        "hostile",
+        "steady"
+      ],
+      "setB": [
+        "friendly",
+        "eager",
+        "rapid"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "genuine + fake",
+      "explanation": "'Genuine' means truly what it claims to be (real, authentic), while 'fake' means not real or a copy — direct opposites. 'Colourful' and 'vivid' are near-synonyms (both describe bright, striking appearance) — synonyms, not opposites. 'Vibrant' and 'bright' are also similar — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "colourful",
+        "genuine",
+        "vibrant"
+      ],
+      "setB": [
+        "vivid",
+        "bright",
+        "fake"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "visible + hidden",
+      "explanation": "'Visible' means able to be seen, while 'hidden' means kept out of sight — direct opposites. 'Pleasant' and 'careful' are both positive qualities, not opposites. 'Shiny' and 'bright' are near-synonyms (both relate to light reflecting), not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pleasant",
+        "visible",
+        "shiny"
+      ],
+      "setB": [
+        "hidden",
+        "bright",
+        "careful"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "increase + decrease",
+      "explanation": "'Increase' means to become larger or greater, while 'decrease' means to become smaller or less — direct opposites. 'Collect' and 'build' are both constructive actions but not opposites. 'Repair' and 'improve' both mean making something better — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "increase",
+        "collect",
+        "repair"
+      ],
+      "setB": [
+        "build",
+        "improve",
+        "decrease"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "accept + reject",
+      "explanation": "'Accept' means to agree to receive or take something, while 'reject' means to refuse — direct opposites. 'Travel' and 'wander' are near-synonyms (both involve moving around). 'Observe' and 'explore' are both about discovering — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "travel",
+        "accept",
+        "observe"
+      ],
+      "setB": [
+        "wander",
+        "reject",
+        "explore"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "arrive + depart",
+      "explanation": "'Arrive' means to reach your destination, while 'depart' means to leave a place — direct opposites. 'Wander' and 'travel' are near-synonyms. 'Climb' and 'explore' are both active verbs but not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wander",
+        "arrive",
+        "climb"
+      ],
+      "setB": [
+        "travel",
+        "depart",
+        "explore"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "beautiful + ugly",
+      "explanation": "'Beautiful' means very pleasing to look at, while 'ugly' means unpleasant in appearance — direct opposites. 'Cheerful' and 'pleasant' are near-synonyms (both mean agreeable). 'Determined' and 'steady' are both about persistence — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "beautiful",
+        "cheerful",
+        "determined"
+      ],
+      "setB": [
+        "steady",
+        "pleasant",
+        "ugly"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "complex + simple",
+      "explanation": "'Complex' means made up of many parts and difficult to understand, while 'simple' means easy to understand — direct opposites. 'Gradual' means happening slowly over time, and 'steady' means at a constant pace — related but not opposite. 'Popular' and 'famous' are near-synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "gradual",
+        "complex",
+        "popular"
+      ],
+      "setB": [
+        "famous",
+        "simple",
+        "steady"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "rare + common",
+      "explanation": "'Rare' means not found or seen very often, while 'common' means found frequently — direct opposites. 'Ancient' means very old, and 'famous' means well known — unrelated to each other. 'Pleasant' and 'careful' are both positive adjectives with no opposite relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "rare",
+        "ancient",
+        "pleasant"
+      ],
+      "setB": [
+        "careful",
+        "common",
+        "famous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "praise + criticise",
+      "explanation": "'Praise' means to express approval or admiration, while 'criticise' means to point out faults — direct opposites. 'Demand' and 'request' are near-synonyms (both involve asking for something, though 'demand' is stronger). 'Promise' and 'guarantee' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "praise",
+        "demand",
+        "promise"
+      ],
+      "setB": [
+        "request",
+        "criticise",
+        "guarantee"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "success + failure",
+      "explanation": "'Success' means achieving what you set out to do, while 'failure' means not achieving your goal — direct opposites. 'Victory' and 'prize' are related to winning but not opposites of each other. 'Journey' and 'adventure' are near-synonyms (both involve travelling or experiencing something). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "victory",
+        "success",
+        "journey"
+      ],
+      "setB": [
+        "adventure",
+        "failure",
+        "prize"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "unite + divide",
+      "explanation": "'Unite' means to bring together as one, while 'divide' means to separate into parts — direct opposites. 'Gather' and 'collect' are near-synonyms (both mean bringing things together). 'Search' and 'find' are connected (you search in order to find), but they're not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "gather",
+        "unite",
+        "search"
+      ],
+      "setB": [
+        "find",
+        "divide",
+        "collect"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "private + public",
+      "explanation": "'Private' means for one person or group only, while 'public' means open to everyone — direct opposites. 'Mend' and 'repair' are near-synonyms (both mean fixing something broken). 'Ordinary' and 'usual' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "mend",
+        "private",
+        "ordinary"
+      ],
+      "setB": [
+        "public",
+        "usual",
+        "repair"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "capture + release",
+      "explanation": "'Capture' means to catch and hold, while 'release' means to set free — direct opposites. 'Determined' and 'resolute' mean the same thing. 'Wealthy' and 'rich' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "determined",
+        "capture",
+        "wealthy"
+      ],
+      "setB": [
+        "rich",
+        "resolute",
+        "release"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "vacant + occupied",
+      "explanation": "'Vacant' means not being used, while 'occupied' means being used or filled — direct opposites. 'Gradual' and 'steady' are near-synonyms (both describe a constant pace). 'Empty' and 'hollow' are also similar (both describe having nothing inside). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vacant",
+        "gradual",
+        "empty"
+      ],
+      "setB": [
+        "occupied",
+        "steady",
+        "hollow"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "tame + wild",
+      "explanation": "'Tame' means gentle and used to humans, while 'wild' means living in a natural, untamed state — direct opposites. 'Wealthy' and 'rich' mean the same thing — synonyms. 'Cunning' and 'crafty' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tame",
+        "wealthy",
+        "cunning"
+      ],
+      "setB": [
+        "crafty",
+        "rich",
+        "wild"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "import + export",
+      "explanation": "'Import' means to bring goods into a country, while 'export' means to send goods out — direct opposites. 'Certain' and 'sure' mean the same thing. 'Obvious' and 'clear' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "import",
+        "obvious",
+        "certain"
+      ],
+      "setB": [
+        "sure",
+        "export",
+        "clear"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "flexible + rigid",
+      "explanation": "'Flexible' means able to bend easily, while 'rigid' means stiff and unable to bend — direct opposites. 'Scatter' and 'distribute' are near-synonyms. 'Preserve' and 'conserve' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "flexible",
+        "scatter",
+        "preserve"
+      ],
+      "setB": [
+        "conserve",
+        "rigid",
+        "distribute"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "attack + defend",
+      "explanation": "'Attack' means to act aggressively against, while 'defend' means to protect — direct opposites. 'Wander' and 'roam' are near-synonyms. 'Discover' and 'explore' are also similar (both about finding things). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "discover",
+        "attack",
+        "wander"
+      ],
+      "setB": [
+        "defend",
+        "roam",
+        "explore"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "major + minor",
+      "explanation": "'Major' means important or large, while 'minor' means less important or small — direct opposites. 'Swift' and 'rapid' are near-synonyms (both mean fast). 'Certain' and 'sure' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "major",
+        "swift",
+        "certain"
+      ],
+      "setB": [
+        "sure",
+        "minor",
+        "rapid"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "interior + exterior",
+      "explanation": "'Interior' means the inside, while 'exterior' means the outside — direct opposites. 'Determined' and 'persistent' are near-synonyms. 'Popular' and 'resolute' are unrelated qualities. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "interior",
+        "popular",
+        "determined"
+      ],
+      "setB": [
+        "persistent",
+        "resolute",
+        "exterior"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "borrow + lend",
+      "explanation": "'Borrow' means to take something temporarily, while 'lend' means to give something temporarily — direct opposites. 'Discuss' and 'debate' are near-synonyms (both mean talking about a topic). 'Inspect' and 'examine' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "borrow",
+        "discuss",
+        "inspect"
+      ],
+      "setB": [
+        "examine",
+        "lend",
+        "debate"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "destroy + create",
+      "explanation": "'Destroy' means to completely ruin, while 'create' means to bring into existence — direct opposites. 'Predict' and 'forecast' are near-synonyms (both mean guessing what will happen). 'Sketch' and 'draw' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "destroy",
+        "predict",
+        "sketch"
+      ],
+      "setB": [
+        "draw",
+        "create",
+        "forecast"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "remember + forget",
+      "explanation": "'Remember' means to keep in your mind, while 'forget' means to fail to recall — direct opposites. 'Start' and 'begin' are near-synonyms (both mean commencing). 'Talk' and 'speak' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "remember",
+        "start",
+        "talk"
+      ],
+      "setB": [
+        "speak",
+        "forget",
+        "begin"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "innocent + guilty",
+      "explanation": "'Innocent' means not guilty of wrongdoing, while 'guilty' means having committed an offence — direct opposites. 'Voyage' and 'journey' are near-synonyms. 'Obtain' and 'acquire' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "innocent",
+        "voyage",
+        "obtain"
+      ],
+      "setB": [
+        "journey",
+        "guilty",
+        "acquire"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "ascend + descend",
+      "explanation": "'Ascend' means to go up, while 'descend' means to go down — direct opposites. 'Sprint' and 'dash' are near-synonyms (both mean running very fast). 'Purchase' and 'buy' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ascend",
+        "sprint",
+        "purchase"
+      ],
+      "setB": [
+        "buy",
+        "dash",
+        "descend"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "benevolent + malevolent",
+      "explanation": "'Benevolent' means well-meaning, kind, and charitable (think 'bene' = good), while 'malevolent' means wishing evil or harm to others (think 'mal' = bad) — direct opposites. 'Astute' means sharp-witted and perceptive, and 'resourceful' means good at finding ways to solve problems — both positive traits, but not opposites. 'Tenacious' means holding firmly to something, and 'persistent' means continuing despite difficulty — they're near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "benevolent",
+        "astute",
+        "tenacious"
+      ],
+      "setB": [
+        "resourceful",
+        "malevolent",
+        "persistent"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 78,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "demolish + construct",
+      "explanation": "'Demolish' means to completely destroy a building, while 'construct' means to build — direct opposites. 'Navigate' and 'steer' are near-synonyms. 'Cultivate' and 'nurture' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "navigate",
+        "demolish",
+        "cultivate"
+      ],
+      "setB": [
+        "nurture",
+        "construct",
+        "steer"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "deliberate + accidental",
+      "explanation": "'Deliberate' means done on purpose and with careful thought, while 'accidental' means happening by chance without intention — direct opposites. 'Abstract' means existing as an idea rather than physically, and 'quaint' means attractively unusual in an old-fashioned way — unrelated. 'Ornate' means elaborately decorated, and 'eccentric' means unconventional — different concepts, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "abstract",
+        "deliberate",
+        "ornate"
+      ],
+      "setB": [
+        "quaint",
+        "accidental",
+        "eccentric"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "eloquent + inarticulate",
+      "explanation": "'Eloquent' means fluent and persuasive in speaking, while 'inarticulate' means unable to express ideas clearly — direct opposites. 'Flamboyant' means attracting attention with confidence and style, and 'shrewd' means having sharp judgement — both strong traits but not opposites. 'Assertive' means confidently self-assured, and 'conscientious' means thorough and careful — positive qualities with no opposite relationship. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "eloquent",
+        "flamboyant",
+        "assertive"
+      ],
+      "setB": [
+        "conscientious",
+        "shrewd",
+        "inarticulate"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "flourish + wither",
+      "explanation": "'Flourish' means to grow or develop in a healthy way, while 'wither' means to shrivel, dry up, and decline — direct opposites. 'Contemplate' means to think deeply about something, and 'formulate' means to create or devise — different mental activities, not opposites. 'Accumulate' means to gather together, and 'negotiate' means to discuss terms — completely different verbs. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "contemplate",
+        "flourish",
+        "accumulate"
+      ],
+      "setB": [
+        "formulate",
+        "wither",
+        "negotiate"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "gregarious + reclusive",
+      "explanation": "'Gregarious' means fond of company and sociable, while 'reclusive' means avoiding others and preferring solitude — direct opposites. 'Perceptive' means having keen insight, and 'versatile' means able to adapt to many things — both positive but unrelated. 'Ambitious' means having a strong desire to succeed, and 'competent' means having the ability — different aspects of achievement. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "perceptive",
+        "gregarious",
+        "ambitious"
+      ],
+      "setB": [
+        "versatile",
+        "reclusive",
+        "competent"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "hostile + amicable",
+      "explanation": "'Hostile' means unfriendly and opposed, while 'amicable' means friendly and pleasant — direct opposites. 'Sceptical' means inclined to question or doubt, and 'resilient' means able to recover quickly from difficulties — very different qualities. 'Tenacious' means holding firmly to something, and 'diligent' means showing careful effort — both about persistence, but they're near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "hostile",
+        "sceptical",
+        "tenacious"
+      ],
+      "setB": [
+        "diligent",
+        "resilient",
+        "amicable"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "frugal + extravagant",
+      "explanation": "'Frugal' means careful with money, while 'extravagant' means spending lavishly — direct opposites. 'Scrupulous' and 'meticulous' both mean extremely thorough — synonyms. 'Resilient' and 'robust' both describe toughness — also synonyms. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scrupulous",
+        "frugal",
+        "resilient"
+      ],
+      "setB": [
+        "extravagant",
+        "robust",
+        "meticulous"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "jovial + morose",
+      "explanation": "'Jovial' means cheerful and good-humoured, while 'morose' means gloomy, sulky, and bad-tempered — direct opposites. 'Earnest' means sincere and serious in intention, and 'unconventional' means not following what is traditionally done — very different qualities. 'Pragmatic' means dealing with things practically, and 'meticulous' means showing great attention to detail — both about approach to tasks, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "jovial",
+        "earnest",
+        "pragmatic"
+      ],
+      "setB": [
+        "meticulous",
+        "unconventional",
+        "morose"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "knowledge + ignorance",
+      "explanation": "'Knowledge' means understanding gained through learning, while 'ignorance' means lack of knowledge — direct opposites. 'Voyage' and 'expedition' are near-synonyms (both describe long journeys). 'Pleasant' and 'agreeable' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "knowledge",
+        "voyage",
+        "pleasant"
+      ],
+      "setB": [
+        "agreeable",
+        "ignorance",
+        "expedition"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "loyal + treacherous",
+      "explanation": "'Loyal' means faithful and devoted, while 'treacherous' means guilty of betrayal or deception — direct opposites. 'Prudent' means acting with care and thought for the future, and 'ambitious' means having a strong desire for success — different positive traits. 'Considerate' means thoughtful of others, and 'methodical' means done in a systematic way — unrelated qualities. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "prudent",
+        "loyal",
+        "considerate"
+      ],
+      "setB": [
+        "ambitious",
+        "treacherous",
+        "methodical"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "mundane + extraordinary",
+      "explanation": "'Mundane' means dull, ordinary, and lacking excitement, while 'extraordinary' means very unusual and remarkable — direct opposites. 'Elaborate' means detailed and carefully arranged, and 'ornate' means highly decorated — they're near-synonyms! This tests whether you can spot that similar words aren't opposites. 'Intricate' means very detailed, and 'whimsical' means playfully unusual — different but not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "mundane",
+        "elaborate",
+        "intricate"
+      ],
+      "setB": [
+        "ornate",
+        "whimsical",
+        "extraordinary"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "negligent + attentive",
+      "explanation": "'Negligent' means failing to take proper care, while 'attentive' means paying close attention — direct opposites. 'Eccentric' means unconventional or slightly strange, and 'peculiar' means unusual — they're near-synonyms. 'Abstract' means theoretical rather than physical, and 'unconventional' means not following tradition — both describe being different from the norm, but neither opposes anything in the other group. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "negligent",
+        "eccentric",
+        "abstract"
+      ],
+      "setB": [
+        "unconventional",
+        "peculiar",
+        "attentive"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "optimistic + pessimistic",
+      "explanation": "'Optimistic' means expecting the best possible outcome, while 'pessimistic' means expecting the worst — direct opposites. 'Assertive' means confidently stating your views, and 'perceptive' means quick to notice things — different communication traits. 'Shrewd' means having sharp judgement, and 'astute' means clever and insightful — they're near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "assertive",
+        "optimistic",
+        "shrewd"
+      ],
+      "setB": [
+        "perceptive",
+        "pessimistic",
+        "astute"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "profound + superficial",
+      "explanation": "'Profound' means having great depth of meaning or insight, while 'superficial' means existing only on the surface, lacking depth — direct opposites. 'Enigmatic' means mysterious and difficult to interpret, and 'cryptic' means having a hidden meaning — they're near-synonyms. 'Verbose' means using too many words, and 'tedious' means boring — different negative qualities but not opposites of each other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "profound",
+        "enigmatic",
+        "verbose"
+      ],
+      "setB": [
+        "cryptic",
+        "tedious",
+        "superficial"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "reluctant + eager",
+      "explanation": "'Reluctant' means unwilling and hesitant, while 'eager' means keen and enthusiastic — direct opposites. 'Methodical' means done in a systematic, orderly way, and 'diligent' means hardworking — both positive work traits but not opposites. 'Conscientious' means thorough and careful, and 'versatile' means able to adapt — also positive, unrelated traits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reluctant",
+        "methodical",
+        "conscientious"
+      ],
+      "setB": [
+        "diligent",
+        "versatile",
+        "eager"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "tranquil + turbulent",
+      "explanation": "'Tranquil' means calm, peaceful, and free from disturbance, while 'turbulent' means full of disorder and chaos — direct opposites. 'Flamboyant' means confident and stylish, and 'peculiar' means strange — different qualities. 'Eccentric' means unconventional, and 'ornate' means elaborately decorated — unrelated. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "flamboyant",
+        "tranquil",
+        "eccentric"
+      ],
+      "setB": [
+        "peculiar",
+        "ornate",
+        "turbulent"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "vivid + dull",
+      "explanation": "'Vivid' means producing strong, clear, intensely colourful images, while 'dull' means lacking brightness, interest, or excitement — direct opposites. 'Quaint' means attractively unusual or old-fashioned, and 'enigmatic' means mysterious — different qualities. 'Intricate' means very detailed and complex, and 'elaborate' means carefully arranged with great detail — near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vivid",
+        "quaint",
+        "intricate"
+      ],
+      "setB": [
+        "elaborate",
+        "enigmatic",
+        "dull"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "primitive + sophisticated",
+      "explanation": "'Primitive' means basic and undeveloped, while 'sophisticated' means highly developed and complex — direct opposites. 'Evaluate' and 'assess' are near-synonyms. 'Anticipate' and 'expect' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "primitive",
+        "evaluate",
+        "anticipate"
+      ],
+      "setB": [
+        "expect",
+        "sophisticated",
+        "assess"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "candid + secretive",
+      "explanation": "'Candid' means open and straightforward, while 'secretive' means inclined to hide things — direct opposites. 'Tenacious' and 'persistent' are near-synonyms. 'Resilient' and 'robust' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tenacious",
+        "candid",
+        "resilient"
+      ],
+      "setB": [
+        "robust",
+        "secretive",
+        "persistent"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "transient + enduring",
+      "explanation": "'Transient' means lasting only a short time, while 'enduring' means lasting a long time — direct opposites. 'Whimsical' and 'capricious' are near-synonyms (both mean unpredictable). 'Flamboyant' and 'ostentatious' also mean similar things (both mean showy). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "whimsical",
+        "transient",
+        "flamboyant"
+      ],
+      "setB": [
+        "enduring",
+        "ostentatious",
+        "capricious"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "prolific + barren",
+      "explanation": "'Prolific' means producing a great deal, while 'barren' means producing nothing — direct opposites. 'Dramatic' and 'theatrical' are near-synonyms. 'Poetic' and 'lyrical' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "prolific",
+        "dramatic",
+        "poetic"
+      ],
+      "setB": [
+        "lyrical",
+        "theatrical",
+        "barren"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "industrious + idle",
+      "explanation": "'Industrious' means extremely hardworking, while 'idle' means doing nothing, lazy — direct opposites. 'Sceptical' means inclined to doubt or question things, and 'astute' means clever and sharp in judgement — different intellectual qualities. 'Shrewd' means having sharp practical judgement, and 'perceptive' means quick to notice and understand — near-synonyms, not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "industrious",
+        "sceptical",
+        "shrewd"
+      ],
+      "setB": [
+        "astute",
+        "idle",
+        "perceptive"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "obsolete + contemporary",
+      "explanation": "'Obsolete' means no longer in use, while 'contemporary' means belonging to the present — direct opposites. 'Conscientious' and 'diligent' are near-synonyms. 'Assertive' and 'forthright' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "obsolete",
+        "conscientious",
+        "assertive"
+      ],
+      "setB": [
+        "forthright",
+        "contemporary",
+        "diligent"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "give + take",
+      "explanation": "'Give' means to hand something over, while 'take' means to receive or grab — direct opposites. 'King' and 'queen' are both royalty — related, not opposite. 'Pepper' and 'salt' are both seasonings — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "give",
+        "king",
+        "pepper"
+      ],
+      "setB": [
+        "salt",
+        "take",
+        "queen"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "inside + outside",
+      "explanation": "'Inside' means within an enclosed space, while 'outside' means in the open air — direct opposites. 'Piano' and 'guitar' are both musical instruments — similar, not opposite. 'Hammer' and 'drum' are both things you hit — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "inside",
+        "piano",
+        "hammer"
+      ],
+      "setB": [
+        "drum",
+        "outside",
+        "guitar"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "true + false",
+      "explanation": "'True' means correct and accurate, while 'false' means incorrect — direct opposites. 'Musical' and 'artistic' are near-synonyms (both about creative talent). 'Dramatic' and 'theatrical' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "musical",
+        "dramatic",
+        "true"
+      ],
+      "setB": [
+        "false",
+        "theatrical",
+        "artistic"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "awake + asleep",
+      "explanation": "'Awake' means not sleeping, while 'asleep' means sleeping — direct opposites. 'Talented' and 'resourceful' are both about ability — similar, not opposite. 'Creative' and 'ambitious' are both positive traits — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "awake",
+        "talented",
+        "creative"
+      ],
+      "setB": [
+        "resourceful",
+        "asleep",
+        "ambitious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "simple + difficult",
+      "explanation": "'Simple' means easy to understand, while 'difficult' means hard — direct opposites. 'Gentle' and 'sensible' are both positive character traits, not opposites. 'Thoughtful' and 'stubborn' describe different attitudes — unrelated. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "simple",
+        "gentle",
+        "thoughtful"
+      ],
+      "setB": [
+        "sensible",
+        "stubborn",
+        "difficult"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "arrive + depart",
+      "explanation": "'Arrive' means to reach a destination, while 'depart' means to leave — direct opposites. 'Observe' and 'explore' are both about discovery — related, not opposite. 'Wander' and 'travel' are near-synonyms (both involve moving around). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "arrive",
+        "observe",
+        "wander"
+      ],
+      "setB": [
+        "explore",
+        "travel",
+        "depart"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "bright + dim",
+      "explanation": "'Bright' means giving out strong light, while 'dim' means giving out weak light — direct opposites. 'Pond' and 'lake' are both bodies of water — similar, not opposite. 'Stamp' and 'coin' are both small collectible items — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bright",
+        "pond",
+        "stamp"
+      ],
+      "setB": [
+        "coin",
+        "dim",
+        "lake"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "friend + enemy",
+      "explanation": "'Friend' means someone you trust, while 'enemy' means someone who opposes you — direct opposites. 'Brush' and 'comb' are both for grooming hair — similar, not opposite. 'Glove' and 'mitten' are both worn on hands — related, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "friend",
+        "brush",
+        "glove"
+      ],
+      "setB": [
+        "mitten",
+        "comb",
+        "enemy"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "reveal + conceal",
+      "explanation": "'Reveal' means to make visible, while 'conceal' means to hide — direct opposites. 'Collect' and 'gather' are near-synonyms (both mean bringing things together). 'Praise' and 'admire' are also near-synonyms (both express approval). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reveal",
+        "collect",
+        "praise"
+      ],
+      "setB": [
+        "admire",
+        "conceal",
+        "gather"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "include + exclude",
+      "explanation": "'Include' means to contain in a group, while 'exclude' means to leave out — direct opposites. 'Improve' and 'competent' are both positive — one is a verb, one an adjective, not opposites. 'Versatile' and 'resilient' are both about adaptability — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "improve",
+        "versatile",
+        "include"
+      ],
+      "setB": [
+        "competent",
+        "exclude",
+        "resilient"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "selfish + generous",
+      "explanation": "'Selfish' means caring only about yourself, while 'generous' means willing to give freely — direct opposites. 'Curious' and 'persistent' describe different positive qualities, not opposites. 'Patient' and 'tenacious' are both about endurance — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "curious",
+        "selfish",
+        "patient"
+      ],
+      "setB": [
+        "persistent",
+        "tenacious",
+        "generous"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "humble + boastful",
+      "explanation": "'Humble' means modest and unassuming, while 'boastful' means bragging about yourself — direct opposites. 'Preserve' and 'conserve' are near-synonyms. 'Whimsical' and 'peculiar' are also similar (both mean unusual). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "humble",
+        "whimsical",
+        "preserve"
+      ],
+      "setB": [
+        "conserve",
+        "boastful",
+        "peculiar"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "advance + retreat",
+      "explanation": "'Advance' means to move forward, while 'retreat' means to move back — direct opposites. 'Discover' and 'explore' are near-synonyms (both about finding new things). 'Whisper' and 'murmur' are also near-synonyms (both mean speaking very quietly). These synonym pairs are traps! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "advance",
+        "discover",
+        "whisper"
+      ],
+      "setB": [
+        "explore",
+        "murmur",
+        "retreat"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "complex + straightforward",
+      "explanation": "'Complex' means difficult to understand, while 'straightforward' means easy to understand — direct opposites. 'Ornate' and 'intricate' are near-synonyms. 'Elaborate' and 'detailed' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "complex",
+        "ornate",
+        "elaborate"
+      ],
+      "setB": [
+        "intricate",
+        "detailed",
+        "straightforward"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "victory + defeat",
+      "explanation": "'Victory' means winning, while 'defeat' means losing — direct opposites. 'Shrewd' and 'perceptive' are near-synonyms (both mean having sharp insight). 'Astute' and 'resourceful' are both about being clever — similar, not opposite. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shrewd",
+        "astute",
+        "victory"
+      ],
+      "setB": [
+        "perceptive",
+        "defeat",
+        "resourceful"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "permit + forbid",
+      "explanation": "'Permit' means to allow, while 'forbid' means to refuse to allow — direct opposites. 'Versatile' and 'adaptable' are near-synonyms. 'Ambitious' and 'aspiring' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "permit",
+        "versatile",
+        "ambitious"
+      ],
+      "setB": [
+        "aspiring",
+        "adaptable",
+        "forbid"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "reward + punish",
+      "explanation": "'Reward' means to give something good for effort, while 'punish' means to impose a penalty — direct opposites. 'Capture' and 'seize' are near-synonyms. 'Permit' and 'allow' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reward",
+        "capture",
+        "permit"
+      ],
+      "setB": [
+        "allow",
+        "punish",
+        "seize"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "junior + senior",
+      "explanation": "'Junior' means younger or lower in rank, while 'senior' means older or higher in rank — direct opposites. 'Average' and 'typical' are near-synonyms. 'Annual' and 'yearly' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "junior",
+        "average",
+        "annual"
+      ],
+      "setB": [
+        "yearly",
+        "senior",
+        "typical"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "obey + disobey",
+      "explanation": "'Obey' means to follow instructions, while 'disobey' means to refuse to follow them — direct opposites (the prefix 'dis-' reverses the meaning). 'Scatter' and 'distribute' are near-synonyms (both mean spreading things out). 'Preserve' and 'conserve' also mean the same thing (both mean keeping safe). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "obey",
+        "scatter",
+        "preserve"
+      ],
+      "setB": [
+        "conserve",
+        "disobey",
+        "distribute"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "compliment + insult",
+      "explanation": "'Compliment' means to express praise, while 'insult' means to speak disrespectfully — direct opposites. 'Hesitate' and 'waver' are near-synonyms. 'Versatile' and 'adaptable' also mean the same thing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "compliment",
+        "hesitate",
+        "versatile"
+      ],
+      "setB": [
+        "adaptable",
+        "insult",
+        "waver"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "prohibit + allow",
+      "explanation": "'Prohibit' means to forbid or ban something, while 'allow' means to give permission — direct opposites. 'Examine' and 'inspect' are near-synonyms (both mean to look at closely). 'Encourage' and 'admire' are both positive — related but not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "encourage",
+        "examine",
+        "prohibit"
+      ],
+      "setB": [
+        "inspect",
+        "allow",
+        "admire"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "transparent + opaque",
+      "explanation": "'Transparent' means see-through, while 'opaque' means impossible to see through — direct opposites. 'Essential' means necessary, and 'tenacious' means holding firmly — unrelated. 'Diligent' and 'persistent' are near-synonyms (both about sustained effort). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "transparent",
+        "essential",
+        "diligent"
+      ],
+      "setB": [
+        "tenacious",
+        "persistent",
+        "opaque"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "hinder + assist",
+      "explanation": "'Hinder' means to hold back or obstruct, while 'assist' means to help — direct opposites. 'Simplify' and 'ornate' are unrelated (one is a verb about making things easier, one is an adjective about decoration). 'Elegant' and 'quaint' describe different styles — not opposites. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "simplify",
+        "elegant",
+        "hinder"
+      ],
+      "setB": [
+        "ornate",
+        "assist",
+        "quaint"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "elaborate + plain",
+      "explanation": "'Elaborate' means highly detailed and complex, while 'plain' means simple and undecorated — direct opposites. 'Fragile' means easily broken, and 'astute' means having sharp insight — completely unrelated. 'Shrewd' and 'perceptive' are near-synonyms (both mean having keen judgement). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "elaborate",
+        "fragile",
+        "shrewd"
+      ],
+      "setB": [
+        "astute",
+        "perceptive",
+        "plain"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are most opposite in meaning.",
+      "options": null,
+      "correctAnswer": "amateur + professional",
+      "explanation": "'Amateur' means doing something as a hobby, while 'professional' means doing it as a paid career — direct opposites. 'Pragmatic' and 'practical' are near-synonyms. 'Peculiar' and 'eccentric' also mean similar things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "amateur",
+        "pragmatic",
+        "peculiar"
+      ],
+      "setB": [
+        "eccentric",
+        "professional",
+        "practical"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    }
+  ]
+}

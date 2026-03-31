@@ -1,0 +1,190 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "longmultiplication",
+  "subject": "maths",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 228,
+    "lessonsReviewed": 0,
+    "issuesFound": 14,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 7, "low": 5 },
+    "difficultyAssessment": "Distribution is D1:46(20%) D2:134(59%) D3:48(21%). This is significantly skewed towards D2 compared to the GL target of ~30:40:30. D1 is underrepresented at 20% (target 30%) and D2 is overrepresented at 59% (target 40%). D3 is slightly low at 21% (target 30%). The D1 questions (126-143, 144-148, 162-166, 178-181, 193-196, 208-209, 213-214, 218, 223) are genuinely easy with small numbers. The D2 and D3 boundary is questionable -- many D2 questions involve 3-digit × 2-digit (e.g. Q25: 408 × 37) which should arguably be D3, while some D3 questions (e.g. Q36: 83 × 46) are no harder than typical D2.",
+    "coverageAssessment": "Good coverage of multiplication sub-skills: word problems (Q1-125), estimation (Q144-161), multiplying by multiples of 10 (Q162-177), partitioning method (Q178-192), grid method (Q193-207), column method steps (Q208-222), and mixed practice (Q223-228). However, Q126-143 are basic single-digit or small multiplications (e.g. 24×3, 12×8) that don't truly test long multiplication -- they're times-table or short-multiplication questions. Missing GL-relevant skills: no inverse/missing-number multiplication problems (e.g. '? × 34 = 1,156'), no multi-step problems combining multiplication with other operations, no questions requiring unit conversion after multiplication.",
+    "teachingEfficacyAssessment": "ALL 228 question-to-lesson mappings show '[No lesson found]'. No micro-lessons exist for Long Multiplication. This is a critical gap -- children receive questions without any prior teaching. The mapping to sub-concepts (master-column-method, word-problems, short-multiplication, estimation, multiply-tens, partitioning, grid-method, column-ones, column-tens, column-adding, column-full) is reasonable, but without actual lessons backing them, there is zero teaching efficacy.",
+    "topPriorities": [
+      "1. Create micro-lessons for Long Multiplication -- currently zero lessons exist, so children get no teaching before quizzes",
+      "2. Rebalance difficulty distribution from 20:59:21 towards the GL target of 30:40:30 -- too many D2, not enough D1/D3",
+      "3. Fix inconsistent £ signs in money questions (Q17, Q23, Q58 missing £ in answers despite monetary context)"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-MUL-META-001",
+      "itemType": "meta",
+      "itemId": "all-lessons",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "No micro-lessons exist for Long Multiplication",
+      "description": "All 228 question mappings show '[No lesson found]'. The topic has sub-concepts defined (master-column-method, word-problems, short-multiplication, estimation, multiply-tens, partitioning, grid-method, column-ones, column-tens, column-adding, column-full) but zero actual lessons. Children go straight into quizzes with no teaching.",
+      "suggestedFix": "Build micro-lessons covering the 11 sub-concepts. Priority order: (1) master-column-method (the core skill), (2) partitioning, (3) grid-method, (4) estimation, (5) word-problems, (6) multiply-tens, (7) short-multiplication, then column-method breakdown steps.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-002",
+      "itemType": "meta",
+      "itemId": "difficulty-distribution",
+      "severity": "high",
+      "category": "difficulty-mismatch",
+      "title": "Difficulty distribution skewed: D1:20% D2:59% D3:21% vs target 30:40:30",
+      "description": "46 D1 questions (20%), 134 D2 questions (59%), 48 D3 questions (21%). GL target is approximately 30:40:30. D2 is heavily overrepresented. Many D2 questions involve 3-digit × 2-digit calculations producing 5-digit answers (e.g. Q25: 408×37=15,096; Q64: 418×32=13,376) that are arguably D3 difficulty. Meanwhile some D3 questions (Q36: 83×46; Q46: 208×46) are comparable to standard D2.",
+      "suggestedFix": "Reclassify approximately 25 D2 questions with larger numbers (3-digit × 2-digit producing 10,000+) as D3. Add approximately 20 new D1 questions or reclassify easier D2 questions (2-digit × 2-digit with friendly numbers) as D1. Target: ~68 D1, ~91 D2, ~69 D3.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q017-001",
+      "itemType": "question",
+      "itemId": "Q17",
+      "severity": "medium",
+      "category": "poor-explanation",
+      "title": "Missing £ sign in answer options for money question",
+      "description": "Q17: 'A sports club has 93 members, and each member pays £47 for a kit. What is the total cost of all the kits?' The answer options are plain numbers: 4,271 / 4,321 / 4,371 / 4,421 / 4,471. Since the question explicitly asks about cost in £, the options should include £ signs for consistency and to teach proper mathematical notation. Compare Q6 (£37 × 28) which correctly uses £ in options.",
+      "suggestedFix": "Add £ prefix to all 5 options: £4,271 / £4,321 / £4,371 / £4,421 / £4,471. Update correctAnswer to '£4,371'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q023-001",
+      "itemType": "question",
+      "itemId": "Q23",
+      "severity": "medium",
+      "category": "poor-explanation",
+      "title": "Missing £ sign in answer options for money question",
+      "description": "Q23: 'A charity walk has 176 walkers, and each walker raises £35. How much money is raised altogether?' Options lack £ signs: 6,060 / 6,110 / 6,160 / 6,210 / 6,260. This is inconsistent with other money questions that do include £.",
+      "suggestedFix": "Add £ prefix to all 5 options: £6,060 / £6,110 / £6,160 / £6,210 / £6,260. Update correctAnswer to '£6,160'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q058-001",
+      "itemType": "question",
+      "itemId": "Q58",
+      "severity": "medium",
+      "category": "poor-explanation",
+      "title": "Missing £ sign in answer options for money question",
+      "description": "Q58: 'A rugby club has 97 members, and each member pays £66 in annual fees. What is the total amount collected?' Options lack £ signs: 6,352 / 6,382 / 6,402 / 6,432 / 6,462. Inconsistent with other monetary questions.",
+      "suggestedFix": "Add £ prefix to all 5 options: £6,352 / £6,382 / £6,402 / £6,432 / £6,462. Update correctAnswer to '£6,402'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-003",
+      "itemType": "meta",
+      "itemId": "Q126-Q143",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "18 questions are basic/short multiplication, not long multiplication",
+      "description": "Questions 126-143 involve single-digit multipliers (24×3, 15×12, 4×13, 36×5, 11×14, 20×18, 43×7, 3×25, 16×11, 12×8, 32×9, 6×45, 25×16, 6×19, 14×13, 8×35, 50×9, 7×12). Many of these are times-table facts or simple mental arithmetic, not genuine long multiplication. A child who knows their times tables to 12 can answer most of these without any long multiplication method.",
+      "suggestedFix": "Consider reclassifying these as a 'short multiplication' sub-topic, or replacing some with genuine long multiplication at D1 difficulty (e.g. 23×12, 34×11 -- small 2-digit × 2-digit that require the method but use friendly numbers).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-004",
+      "itemType": "meta",
+      "itemId": "Q1-Q125",
+      "severity": "medium",
+      "category": "poor-distractors",
+      "title": "Distractor pattern is too uniform -- nearly all use evenly spaced intervals",
+      "description": "The vast majority of word problem questions (Q1-Q125) use distractors that are evenly spaced at fixed intervals (typically ±50 or ±25 from the correct answer). For example Q1: 302/312/322/332/342 (interval 10), Q2: 1,142/1,222/1,242/1,342/1,442 (varying but similar). GL Assessment uses more sophisticated distractors based on common calculation errors: carrying errors, forgetting to add zero for tens row, wrong times-table facts, place-value mistakes. Evenly-spaced distractors can be gamed by estimation alone.",
+      "suggestedFix": "For at least 30% of questions, replace generic evenly-spaced distractors with error-based distractors. For example, for 46×27=1,242: include 1,142 (forgetting to carry), 1,382 (wrong times-table 46×7=282 instead of 322), 920 (only computing 46×20), 1,272 (adding tens incorrectly). This better simulates GL paper design.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-005",
+      "itemType": "meta",
+      "itemId": "coverage",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "No inverse/missing-number multiplication questions",
+      "description": "All 228 questions ask children to find the product. GL papers also test inverse multiplication: 'A number multiplied by 34 gives 1,156. What is the number?' or '? × 48 = 3,360'. This is a distinct skill (using division to check/find factors) that appears in GL assessments.",
+      "suggestedFix": "Add 10-15 inverse multiplication questions at D2/D3 difficulty. These test deeper understanding and are commonly seen in GL papers.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q075-Q078-001",
+      "itemType": "question",
+      "itemId": "Q75,Q78",
+      "severity": "low",
+      "category": "poor-distractors",
+      "title": "Two questions have identical answer sets",
+      "description": "Q75 (75×86=6,450) and Q78 (86×75=6,450) have identical options: 6,400/6,430/6,450/6,480/6,530. They also have the same correct answer 6,450 at index 2. The questions use the same two numbers (75 and 86) just in reverse order, making them effectively duplicate questions.",
+      "suggestedFix": "Replace one of these questions with a different multiplication. The commutativity is not being tested here -- both are straightforward word problems.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-006",
+      "itemType": "meta",
+      "itemId": "coverage",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "No multi-step problems combining multiplication with other operations",
+      "description": "GL papers frequently embed multiplication within multi-step problems: 'A school buys 24 boxes of pencils at £3 each and 18 boxes of pens at £5 each. What is the total cost?' None of the 228 questions require a second operation after multiplication.",
+      "suggestedFix": "Add 5-10 multi-step questions at D2/D3 that combine multiplication with addition, subtraction, or comparison. These are common GL formats.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-007",
+      "itemType": "meta",
+      "itemId": "word-problems",
+      "severity": "low",
+      "category": "tone-issue",
+      "title": "Word problem contexts become repetitive and adult-oriented",
+      "description": "Many higher-numbered questions (Q50-Q125) use adult/industrial contexts: warehouse shipping, factory production, power stations, logistics companies, wind farms, solar panels, bottling plants, crisp factories. While these are valid contexts, they're less engaging for a 10-year-old than school, sports, pets, or family scenarios. GL papers tend to use child-relevant contexts.",
+      "suggestedFix": "Replace 15-20 adult/industrial contexts with child-friendly scenarios: birthday parties, school events, pocket money, sports teams, holiday activities, cooking/baking, nature/animals. Keep some variety but ensure at least 60% of contexts are relatable to a 10-year-old.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q126-001",
+      "itemType": "question",
+      "itemId": "Q126",
+      "severity": "low",
+      "category": "difficulty-mismatch",
+      "title": "24 × 3 is times-table level, not long multiplication",
+      "description": "Q126: 'A packet of crisps has 24 crisps inside. How many crisps are in 3 packets?' The answer 72 is a basic times-table fact (24×3). While labelled D1, this doesn't test long multiplication skills at all. Similarly Q135 (12×8=96) and Q143 (7×12=84) are pure times-table recall.",
+      "suggestedFix": "Either reclassify as 'times tables' or replace with a proper D1 long multiplication question like 23×14 or 31×12 that requires the column/grid method but uses small, friendly numbers.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-META-008",
+      "itemType": "meta",
+      "itemId": "Q1-Q125",
+      "severity": "low",
+      "category": "poor-explanation",
+      "title": "Explanations use only one method -- should occasionally show alternatives",
+      "description": "Questions 1-125 all explain using the partitioning/compensation strategy (e.g. '46 × 27: (46 × 20 = 920) + (46 × 7 = 322) = 1,242'). While this is a valid and efficient mental method, GL expects children to know the column method. The explanations never demonstrate the formal column method layout, and never mention checking by estimation. Children may not connect the explanation method to what they're learning in the column-method and grid-method sections (Q193-Q222).",
+      "suggestedFix": "For a subset of questions (especially D1 and early D2), show the column method layout in the explanation, or at least add 'You could also use the column method' as a note. Consider varying explanation methods: some partitioning, some grid, some column.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-MUL-Q108-001",
+      "itemType": "question",
+      "itemId": "Q108",
+      "severity": "low",
+      "category": "tone-issue",
+      "title": "Unrealistic context: 99-metre running track",
+      "description": "Q108: 'A running track is 99 metres around. If an athlete runs 79 laps, how many metres does she run?' A 99-metre track is not a standard track size (standard is 200m or 400m). While the maths is fine, using an unrealistic number may confuse children who know about real running tracks. The 99 was likely chosen for the compensation method (99×79 = 100×79 - 79), but the context is jarring.",
+      "suggestedFix": "Change to a more natural context: 'A corridor is 99 metres long' or 'A garden path is 99 metres'. Alternatively use a realistic track (200m or 400m) with a different number of laps.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

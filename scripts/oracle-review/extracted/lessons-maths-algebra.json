@@ -1,0 +1,2047 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "algebra",
+    "displayName": "Algebra",
+    "extractedAt": "2026-03-30T13:51:13.396Z",
+    "subConceptCount": 8,
+    "lessonCount": 16,
+    "screenCount": 64,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "using-letters",
+      "name": "Using Letters for Unknowns",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "using-letters-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to understand that letters stand in for unknown numbers",
+            "How to write simple expressions (calculations with letters and numbers) using letters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Patel",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is \"n\"?",
+              "body": "Mrs Patel has a bag of sweets. She doesn't know how many are inside. She calls the number of sweets **n**.\n\nA letter is just a placeholder — it stands for a number we **don't know yet**. We use it to write maths even when the number is missing!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "n = the unknown number",
+                    "why": "We don't know it yet — that's OK!"
+                  },
+                  {
+                    "text": "She adds 5 more sweets to the bag",
+                    "why": "Now we can write an expression"
+                  },
+                  {
+                    "text": "Total: n + 5",
+                    "result": "A letter + a number = an expression"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Letters are number placeholders",
+              "body": "The expression **n + 5** (a maths phrase using letters and numbers) means \"take the unknown number (n) and add 5\".\n\nIf we later find out that **n = 8**, we can do **substitution** (replacing a letter with its number) to work it out:\n**8 + 5 = 13**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Expression: n + 5",
+                    "why": "n is the mystery number"
+                  },
+                  {
+                    "text": "If n = 8",
+                    "why": "Now we know the value!"
+                  },
+                  {
+                    "text": "8 + 5 = 13",
+                    "result": "13 sweets"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You know that **n = 12**. Replace the letter with the number, then work it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "If n = 12, what is n + 5?",
+                "options": [
+                  "17",
+                  "16",
+                  "19",
+                  "14",
+                  "21"
+                ],
+                "correctAnswer": "17",
+                "correctFeedback": "Brilliant! Replace n with 12: 12 + 5 = **17**! ✓",
+                "incorrectFeedback": "Not quite! n = 12, so n + 5 = 12 + 5 = **17**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "n + 5",
+                    "why": "Replace n with 12"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Letters = unknown numbers!",
+              "body": "In algebra, a letter is just a **placeholder** for a number we don't know yet.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A letter stands for an unknown number",
+                    "why": "n, x, p — any letter works"
+                  },
+                  {
+                    "text": "An expression uses letters and numbers",
+                    "why": "e.g. n + 5, 3p, x − 2"
+                  },
+                  {
+                    "text": "When you know the value, replace the letter!",
+                    "why": "That's called substitution (replacing a letter with a number) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "using-letters-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why 6p means 6 × p, not 6 + p",
+            "How to avoid the 'letters as labels' trap"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does 6p mean?",
+              "body": "Tom says **6p** means **6 + p**.\n\nIs that right? Let's check!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tom's claim: 6p means 6 + p",
+                    "why": "Is this correct?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "It means MULTIPLY!",
+              "body": "Tom thought 6p means '6 plus p' but it really means '6 times p'.\n\nIn algebra, when a number is written **next to** a letter with no sign, it means **multiplication**.\n\n**6p = 6 × p**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 6p = 6 + p",
+                    "why": "This is the common mistake"
+                  },
+                  {
+                    "text": "RIGHT: 6p = 6 × p",
+                    "result": "Number next to letter = multiply!"
+                  },
+                  {
+                    "text": "If p = 4: 6 × 4 = 24",
+                    "result": "Not 10!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "If the letter = 6, what is 6p?",
+              "body": "Remember: **6p** means **6 × p**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "6p when the letter = 6?",
+                "options": [
+                  "36",
+                  "35",
+                  "38",
+                  "33",
+                  "40"
+                ],
+                "correctAnswer": "36",
+                "correctFeedback": "Superstar! 6p = 6 × 6 = **36**. Number next to letter = multiply! ✓",
+                "incorrectFeedback": "Not quite! 6p means multiply: 6 × 6 = **36**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "6p = 6 × p"
+                  },
+                  {
+                    "text": "The letter = 6"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The golden rule of algebra notation!",
+              "body": "When a number is written right next to a letter, it means **multiply**. Never add!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "6p means 6 × p, NOT 6 + p",
+                    "why": "Number next to letter = multiplication"
+                  },
+                  {
+                    "text": "3n means 3 × n",
+                    "why": "Three lots of n"
+                  },
+                  {
+                    "text": "If you want addition, you write + explicitly",
+                    "why": "e.g. p + 6 means add ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "substitution",
+      "name": "Substituting Values",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "substitution-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to replace a letter with a number",
+            "How to evaluate (work out the value of) an expression after substituting (putting a number in place of the letter)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Clarke",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 3x + 4 when x = 5?",
+              "body": "Mrs Clarke is working out the total cost of concert tickets. The formula (a rule written as a calculation) is **3x + 4**.\n\nWe know **x = 5**. Let's **substitute** — that means replace the letter with the number!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Expression: 3x + 4",
+                    "why": "We know x = 5"
+                  },
+                  {
+                    "text": "Replace the letter with the number",
+                    "why": "This is called substitution (replacing a letter with a number)"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Replace and calculate!",
+              "body": "**Substitution** means replacing a letter with its value. Let's do it!\n**Step 1:** Replace **x** with **5** everywhere you see it.\n**Step 2:** Work out the answer.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Write, replace, calculate. ✓",
+                "incorrectFeedback": "Not quite — first write the expression, then replace the letter, then calculate."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start: 3x + 4",
+                    "why": "x = 5"
+                  },
+                  {
+                    "text": "Replace: 3 × 5 + 4",
+                    "why": "Swap the letter for the number"
+                  },
+                  {
+                    "text": "Calculate: 15 + 4",
+                    "result": "= 19"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **3x + 4** when **x = 7**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "21 + 4 = ?",
+                "options": [
+                  "25",
+                  "24",
+                  "27",
+                  "22",
+                  "29"
+                ],
+                "correctAnswer": "25",
+                "correctFeedback": "Brilliant! 3x + 4 = 3 × 7 + 4 = **25**! ✓",
+                "incorrectFeedback": "Not quite! 3 × 7 + 4 = 21 + 4 = **25**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3x + 4 → 3 × 7 + 4",
+                    "why": "Replace x with 7"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The substitution recipe!",
+              "body": "Substitution is one of the most useful skills in algebra. Just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the letter and its value",
+                    "why": "e.g. x = 5"
+                  },
+                  {
+                    "text": "Step 2: Replace every letter with the number",
+                    "why": "3x + 4 becomes 3 × 5 + 4"
+                  },
+                  {
+                    "text": "Step 3: Calculate the answer",
+                    "why": "15 + 4 = 19 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "substitution-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why 3x means 3 × x, not 3x as a two-digit number",
+            "How to substitute carefully step by step"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Jake got 36. Is that right?",
+              "body": "Jake substituted **x = 4** into **3x + 2** and got **36**.\n\nThat seems too big! What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake: 3x + 2 with x = 4 → 36",
+                    "why": "Is this correct?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "It's multiplication, not a two-digit number!",
+              "body": "Jake read 3x as the number 34 (thirty-four) instead of 3 × 4 = 12, then added 2 to get 36.\n\nRemember: in algebra, a number next to a letter means **multiply**, not \"stick the digits together\"!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"3x\" is NOT a two-digit number",
+                    "why": "Jake read 3x as the number 34 (thirty-four) instead of 3 × 4 = 12, then added 2 to get 36"
+                  },
+                  {
+                    "text": "RIGHT: 3x means 3 × 4",
+                    "result": "= 12"
+                  },
+                  {
+                    "text": "Correct answer: 14",
+                    "result": "Much smaller than 36!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "**4x + 3** when **x = 5**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "4x + 3 when x = 5?",
+                "options": [
+                  "23",
+                  "22",
+                  "25",
+                  "20",
+                  "27"
+                ],
+                "correctAnswer": "23",
+                "correctFeedback": "Spot on! 4x + 3 = **23**. Multiply, don't join! ✓",
+                "incorrectFeedback": "Not quite! The answer is **23**. Remember: the number × the letter's value, then add or subtract."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "4x + 3",
+                    "why": "Remember: multiply, don't join digits!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Number next to letter = MULTIPLY!",
+              "body": "Never read 3x as \"thirty-x\" — it's \"3 times x\"! This is one of the most common algebra mistakes.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3x means 3 × x, NOT '3 joined with x'",
+                    "why": "So if x = 4, it's 3 × 4 = 12"
+                  },
+                  {
+                    "text": "Always write out the multiplication",
+                    "why": "Replace: 3x + 2 → 3 × 4 + 2 → 14"
+                  },
+                  {
+                    "text": "If the answer seems way too big, check this!",
+                    "why": "It's probably a 'joining digits' error ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-step-equations",
+      "name": "Two-Step Equations",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "two-step-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to solve equations with two operations (like + and ×)",
+            "How to undo steps in reverse order"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A sweet shop",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Solve: 2n + 6 = 18",
+              "body": "A sweet shop is selling mystery bags. We need to find **n** in the equation **2n + 6 = 18** (an equation is a maths sentence with an equals sign).\n\nThere are two steps to undo. Let's take them one at a time!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2n + 6 = 18",
+                    "why": "Two steps to undo: × and +"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Undo in reverse order!",
+              "body": "The equation does two things to n: first multiply by 2, then add 6.\n\nTo undo, go **backwards**: undo the addition first, then undo the multiplication.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Undo the addition first, then undo the multiplication. ✓",
+                "incorrectFeedback": "Not quite — always undo the + or − first, then undo the ×."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start: 2n + 6 = 18",
+                    "why": "The equation"
+                  },
+                  {
+                    "text": "Subtract 6 from both sides",
+                    "result": "2n = 18 − 6 = 12"
+                  },
+                  {
+                    "text": "Divide both sides by 2",
+                    "result": "n = 12 ÷ 2 = 6"
+                  },
+                  {
+                    "text": "Check: 2 × 6 + 6 = 18",
+                    "result": "Correct! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Solve **2n + 4 = 14**.\n\nAfter subtracting 4: 2n = 10.\n\nNow divide by 2. What is n?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "10 ÷ 2 = ?",
+                "options": [
+                  "5",
+                  "4",
+                  "7",
+                  "2",
+                  "9"
+                ],
+                "correctAnswer": "5",
+                "correctFeedback": "Brilliant! n = **5**. Check: 2 × 5 + 4 = 14 ✓",
+                "incorrectFeedback": "Not quite! 10 ÷ 2 = **5**. Always divide both sides by the number in front of n."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2n = 10",
+                    "why": "After subtracting 4"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The two-step equation recipe!",
+              "body": "For any equation like **an + b = c**, undo in reverse order:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Undo the + or − (subtract or add)",
+                    "why": "Get rid of the constant first"
+                  },
+                  {
+                    "text": "Step 2: Undo the × (divide)",
+                    "why": "Isolate n on one side"
+                  },
+                  {
+                    "text": "Step 3: CHECK by substituting back!",
+                    "why": "Put your answer back in — it should work ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-step-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why doing the steps in the wrong order gives the wrong answer",
+            "How to spot the 'wrong order' mistake"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Rosie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Rosie got n = 2. Is that right?",
+              "body": "Rosie solved **4n + 5 = 29** and got **n = 2**.\n\nLet's check: 4 × 2 + 5 = 13. That's not 29! Something went wrong.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rosie's answer: n = 2",
+                    "why": "Check: 4 × 2 + 5 = 13 — NOT 29!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Wrong order!",
+              "body": "Rosie divided by 4 first (29 ÷ 4 ≈ 7) then subtracted 5 to get 2 — she did the steps in the wrong order.\n\n**Always undo the + or − FIRST**, then undo the ×.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG order: divide first, then subtract",
+                    "why": "This gives the wrong answer!"
+                  },
+                  {
+                    "text": "RIGHT order: subtract 5 first → 4n = 24",
+                    "result": "29 − 5 = 24"
+                  },
+                  {
+                    "text": "Then divide by 4 → n = 6",
+                    "result": "24 ÷ 4 = 6"
+                  },
+                  {
+                    "text": "Check: 4 × 6 + 5 = 29",
+                    "result": "Correct! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now solve this one correctly!",
+              "body": "Solve **4n + 3 = 35**.\n\nSubtract 3 first, then divide by 4.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "n = 32 ÷ 4 = ?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Spot on! n = **8**. Check: 4 × 8 + 3 = 35 ✓",
+                "incorrectFeedback": "Not quite! 32 ÷ 4 = **8**. Subtract first, then divide."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "4n + 3 = 35"
+                  },
+                  {
+                    "text": "Subtract 3: 4n = 32"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Order matters in equations!",
+              "body": "Think of an equation like getting dressed: you put on socks THEN shoes. To get undressed, you take off shoes FIRST, then socks. Same with equations — **undo in REVERSE order**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The equation DOES: multiply, then add",
+                    "why": "e.g. 4n + 5 = 29"
+                  },
+                  {
+                    "text": "To UNDO: subtract first, then divide",
+                    "why": "Reverse order!"
+                  },
+                  {
+                    "text": "Always CHECK by substituting back",
+                    "why": "If it matches, you're right ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing-expressions",
+      "name": "Writing Expressions from Words",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "writing-expressions-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to turn word phrases into algebra",
+            "How to spot the operation (add, subtract, multiply or divide) from the words"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A teacher",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Words → Algebra!",
+              "body": "A teacher says: \"**double a number and add 5**\".\n\nCan we turn those words into an algebra expression? Let's call the unknown number **n**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"double a number and add 5\"",
+                    "why": "Let the unknown number = n"
+                  },
+                  {
+                    "text": "In algebra: 2n + 5",
+                    "result": "Words become symbols!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spot the key words!",
+              "body": "Look for **clue words** that tell you which calculation to use:\n\n- **\"double\"** or **\"twice\"** → × 2\n- **\"three times\"** → × 3\n- **\"add\"** or **\"plus\"** → +\n- **\"minus\"** or **\"subtract\"** → −\n\nSo \"**double a number and add 5**\" becomes **2n + 5**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"double a number and add 5\"",
+                    "why": "Read the words carefully"
+                  },
+                  {
+                    "text": "→ 2n + 5",
+                    "why": "Turn each word into a symbol"
+                  },
+                  {
+                    "text": "Test with n = 7: 19",
+                    "result": "It works!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "\"double a number and add 5\" with **n = 10**.\n\nThe expression is **2n + 5**. What's the answer?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "2n + 5 when n = 10?",
+                "options": [
+                  "25",
+                  "24",
+                  "27",
+                  "22",
+                  "29"
+                ],
+                "correctAnswer": "25",
+                "correctFeedback": "Brilliant! \"double a number and add 5\" = **2n + 5** = **25** when n = 10! ✓",
+                "incorrectFeedback": "Not quite! 2n + 5 with n = 10 gives **25**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "2n + 5",
+                    "why": "n = 10"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Words to algebra — cheat sheet!",
+              "body": "Here are the key words that tell you which calculation to use:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "ADD: 'more than', 'plus', 'add', 'increase by'",
+                    "why": "n + 5"
+                  },
+                  {
+                    "text": "SUBTRACT: 'less than', 'minus', 'subtract', 'decrease by'",
+                    "why": "n − 3"
+                  },
+                  {
+                    "text": "MULTIPLY: 'times', 'double', 'triple', 'lots of'",
+                    "why": "2n, 3n, 4n"
+                  },
+                  {
+                    "text": "DIVIDE: 'share', 'split', 'half of'",
+                    "why": "n ÷ 2 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "writing-expressions-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid writing the wrong operation (add, subtract, multiply or divide)",
+            "Why reading carefully matters in algebra"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Kai",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"5n\" correct?",
+              "body": "Kai turned \"**5 more than a number**\" into **5n**.\n\nHmm... does that look right? Read the words carefully!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"5 more than a number\" → 5n?",
+                    "why": "Let's check this"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Wrong calculation!",
+              "body": "Kai wrote 5n (5 times n) instead of n + 5 — 'more than' means ADD, not multiply.\n\nThe correct expression is **n + 5**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: 5n",
+                    "why": "Kai wrote 5n (5 times n) instead of n + 5 — 'more than' means ADD, not multiply"
+                  },
+                  {
+                    "text": "RIGHT: n + 5",
+                    "result": "\"5 more than a number\" = n + 5"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which expression is correct?",
+              "body": "\"5 more than a number\" — which expression matches?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "\"5 more than a number\" = ?",
+                "options": [
+                  "n + 5",
+                  "5n",
+                  "n × 5",
+                  "n",
+                  "n + n"
+                ],
+                "correctAnswer": "n + 5",
+                "correctFeedback": "Spot on! \"5 more than a number\" = **n + 5**. Read the key words carefully! ✓",
+                "incorrectFeedback": "Not quite! \"5 more than a number\" = **n + 5**. Kai wrote 5n (5 times n) instead of n + 5 — 'more than' means ADD, not multiply."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"5 more than a number\"",
+                    "why": "Read carefully!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Read the words carefully!",
+              "body": "The most common mistake is mixing up \"more than\" (add) with \"times\" (multiply). Always underline the key word that tells you which calculation to use!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "'more than' / 'added to' = +",
+                    "why": "5 more than n = n + 5"
+                  },
+                  {
+                    "text": "'times' / 'multiplied by' = ×",
+                    "why": "3 times n = 3n"
+                  },
+                  {
+                    "text": "'less than' = − (careful with order!)",
+                    "why": "7 less than n = n − 7 (NOT 7 − n) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "function-machines",
+      "name": "Function Machines",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "function-machines-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to use a function machine that applies operations (like +3 or ×2) step by step",
+            "How to work backwards through a function machine"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do you notice?",
+              "body": "Look at this **function machine**. A number goes in, two steps happen (like +3 or ×2), and a different number comes out!\n\nHow does it work?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "FunctionMachine",
+              "interaction": null,
+              "visualProps": {
+                "input": 5,
+                "output": "?",
+                "operations": [
+                  "× 3",
+                  "+ 4"
+                ],
+                "direction": "forwards"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Follow the steps!",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "A function machine does each step in order. To undo it, you use the **opposite** — for example, the opposite of + is −."
+                },
+                {
+                  "type": "visual",
+                  "component": "FunctionMachine",
+                  "props": {
+                    "input": 5,
+                    "output": 19,
+                    "operations": [
+                      "× 3",
+                      "+ 4"
+                    ],
+                    "midValues": [
+                      15
+                    ],
+                    "direction": "forwards"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Start: 5",
+                        "why": "Input"
+                      },
+                      {
+                        "text": "× 3: 5 → 15",
+                        "result": "15"
+                      },
+                      {
+                        "text": "+ 4: 15 → 19",
+                        "result": "Output: 19"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**8** goes into the machine. First: **× 3** gives **24**. Then: **+ 4**. What's the output?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "FunctionMachine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What comes out?",
+                "options": [
+                  "28",
+                  "27",
+                  "30",
+                  "25",
+                  "32"
+                ],
+                "correctAnswer": "28",
+                "correctFeedback": "Brilliant! 8 → 24 → **28**! ✓",
+                "incorrectFeedback": "Not quite! 24 then + 4 = **28**."
+              },
+              "visualProps": {
+                "input": 8,
+                "output": "?",
+                "operations": [
+                  "× 3",
+                  "+ 4"
+                ],
+                "midValues": [
+                  24
+                ],
+                "direction": "forwards"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Function machines — forwards and backwards!",
+              "body": "Go **forwards** when you know the input and want to find the output. Go **backwards** when you know the output and want to find the input!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "FORWARDS (find the output): follow each step left to right",
+                    "why": "Input → do each step → output"
+                  },
+                  {
+                    "text": "BACKWARDS (find the input): undo each step right to left",
+                    "why": "Output → undo last step → undo first step → input"
+                  },
+                  {
+                    "text": "To undo: + becomes −, × becomes ÷",
+                    "why": "Use the opposite to reverse it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "function-machines-backwards",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to work backwards through a function machine",
+            "How to use opposite operations (like + and −, or × and ÷) to find the input"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The output is 17. What went in?",
+              "body": "Oliver's function machine gives an output of **17**. We know what came OUT, but what went IN? We need to go **backwards**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "FunctionMachine",
+              "interaction": null,
+              "visualProps": {
+                "input": "?",
+                "output": 17,
+                "operations": [
+                  "× 3",
+                  "+ 5"
+                ],
+                "direction": "backwards"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use opposite operations!",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "To go backwards, use the **opposite** of each step in **reverse order**:"
+                },
+                {
+                  "type": "visual",
+                  "component": "FunctionMachine",
+                  "props": {
+                    "input": 4,
+                    "output": 17,
+                    "operations": [
+                      "× 3",
+                      "+ 5"
+                    ],
+                    "midValues": [
+                      12
+                    ],
+                    "direction": "backwards"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Start at the output: 17",
+                        "why": "Work backwards"
+                      },
+                      {
+                        "text": "Undo + 5 → do − 5: 17 → 12",
+                        "result": "12"
+                      },
+                      {
+                        "text": "Undo × 3 → do ÷ 3: 12 → 4",
+                        "result": "Input = 4"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Work backwards through the machine using opposite operations. ✓",
+                "incorrectFeedback": "Not quite — start at the output and undo the LAST step first."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What was the input?",
+              "body": "Working backwards: 23 − 5 → 18, then ÷ 3 → ?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "FunctionMachine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What was the input?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Superstar! The input was **6**. Check: 6 × 3 = 18, then + 5 = 23 ✓",
+                "incorrectFeedback": "Not quite! 18 ÷ 3 = **6**. Check: 6 → 18 → 23."
+              },
+              "visualProps": {
+                "input": "?",
+                "output": 23,
+                "operations": [
+                  "× 3",
+                  "+ 5"
+                ],
+                "midValues": [
+                  18
+                ],
+                "direction": "backwards"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Going backwards = use opposite operations!",
+              "body": "Function machines are like equations — you can run them forwards OR backwards!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Forwards (find the output): follow each step in order",
+                    "why": "input → output"
+                  },
+                  {
+                    "text": "Backwards (find the input): undo each step in reverse order",
+                    "why": "output → undo last → undo first → input"
+                  },
+                  {
+                    "text": "+ ↔ −, × ↔ ÷",
+                    "why": "These are opposite pairs — they undo each other ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simple-formulae",
+      "name": "Using Simple Formulae",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "simple-formulae-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to understand that a formula (a rule written as a calculation) is a way of working things out",
+            "How to substitute numbers into a formula"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A taxi company",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the cost?",
+              "body": "A taxi company charges a fixed £2 booking fee plus £3 per mile.\n\nThe formula is: **Cost = 2 + 3m** (where m = number of miles)\n\nHow much does it cost for **5 miles**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Formula: Cost = 2 + 3m",
+                    "why": "m = number of miles"
+                  },
+                  {
+                    "text": "We need 5 miles",
+                    "why": "So m = 5"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Plug in the number!",
+              "body": "Just replace the letter with the number and calculate:\n\n**Cost = 2 + 3m**\nWith **m = 5**...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Cost = 2 + 3m",
+                    "why": "The formula"
+                  },
+                  {
+                    "text": "Replace m with 5",
+                    "why": "m = 5"
+                  },
+                  {
+                    "text": "3 × 5 = 15",
+                    "why": "3m means 3 × m"
+                  },
+                  {
+                    "text": "Cost = 2 + 15 = 17",
+                    "result": "£17"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Using the formula **Cost = 2 + 3m** (where m = number of miles) with **m = 8**, what's the cost?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Cost when m = 8?",
+                "options": [
+                  "26",
+                  "25",
+                  "28",
+                  "23",
+                  "30"
+                ],
+                "correctAnswer": "26",
+                "correctFeedback": "Brilliant! With 8 miles, the cost is **£26**! ✓",
+                "incorrectFeedback": "Not quite! Substitute m = 8 into Cost = 2 + 3m to get **£26**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Cost = 2 + 3m",
+                    "why": "m = 8"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Formulae are recipes!",
+              "body": "A formula is just a **rule** for calculating. Substitute the values and work it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read the formula and identify the letter",
+                    "why": "What does the letter represent?"
+                  },
+                  {
+                    "text": "Replace the letter with the given number",
+                    "why": "Substitute!"
+                  },
+                  {
+                    "text": "Calculate step by step",
+                    "why": "Remember: multiply before adding ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "simple-formulae-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use a formula to solve a real problem",
+            "How to rearrange a formula to find the unknown"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A plumber",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How much for 3 hours?",
+              "body": "A plumber charges a £20 call-out fee plus £15 per hour.\n\nFormula: **Cost = 20 + 15h**\n\nLet's work out the cost for **3 hours** step by step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Formula: Cost = 20 + 15h",
+                    "why": "h = 3"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Substitute and calculate",
+              "body": "Replace **h** with **3** and work out each part.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Cost = 20 + 15h",
+                    "why": "The formula"
+                  },
+                  {
+                    "text": "h = 3",
+                    "why": "3 hours"
+                  },
+                  {
+                    "text": "Cost = 20 + 15 × 3",
+                    "why": "Substitute"
+                  },
+                  {
+                    "text": "Cost = 20 + 45",
+                    "result": "= £65"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**Cost = 20 + 15h** with **h = 5**.\n\nThe fixed fee is £20. The hourly part is 15 × 5 = 75.\n\nWhat's the total?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "20 + 75 = ?",
+                "options": [
+                  "95",
+                  "94",
+                  "97",
+                  "92",
+                  "99"
+                ],
+                "correctAnswer": "95",
+                "correctFeedback": "Superstar! 20 + 75 = **£95**! ✓",
+                "incorrectFeedback": "Not quite! 20 + 75 = **£95**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "20 + 75 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Using formulae in real life!",
+              "body": "Formulae are everywhere — taxi fares, phone bills, plumber charges. The steps are always the same:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Identify the formula and the letter",
+                    "why": "What does each part mean?"
+                  },
+                  {
+                    "text": "Substitute the known value",
+                    "why": "Replace the letter with the number"
+                  },
+                  {
+                    "text": "Calculate: multiply first, then add",
+                    "why": "Follow the order — × before + ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inverse-operations",
+      "name": "Inverse Operations",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "inverse-ops-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to use inverse operations — opposite calculations that undo each other (like + and −, or × and ÷)",
+            "Why using the wrong inverse gives the wrong answer"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Noah",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Noah got x = 23. What went wrong?",
+              "body": "Noah tried to solve **x + 8 = 15** and got **x = 23**.\n\nThat doesn't check out! Let's see what happened.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Noah: x + 8 = 15 → x = 23",
+                    "why": "Let's check this..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the OPPOSITE!",
+              "body": "Noah added 8 to both sides instead of subtracting — he did the same thing again instead of the opposite.\n\nThe opposite of **+ 8** is **− 8**. To undo something, you always do the **opposite**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: + 8 on both sides",
+                    "why": "Same thing again — doesn't undo!"
+                  },
+                  {
+                    "text": "RIGHT: − 8 on both sides",
+                    "result": "x = 7"
+                  },
+                  {
+                    "text": "Inverse pairs: + ↔ −, × ↔ ÷",
+                    "why": "These undo each other"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now solve this one!",
+              "body": "**x + 6 = 19**. Use the inverse: **− 6** on both sides.\n\nWhat is x?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "x = ?",
+                "options": [
+                  "13",
+                  "12",
+                  "15",
+                  "10",
+                  "17"
+                ],
+                "correctAnswer": "13",
+                "correctFeedback": "Brilliant! x = **13**. The opposite of + 6 is − 6! ✓",
+                "incorrectFeedback": "Not quite! Use − 6 on both sides to get x = **13**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "x + 6 = 19",
+                    "why": "Apply − 6 to both sides"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Opposite pairs!",
+              "body": "To solve an equation, you must do the **opposite** to undo each step. Here are the pairs:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Addition (+) ↔ Subtraction (−)",
+                    "why": "They undo each other"
+                  },
+                  {
+                    "text": "Multiplication (×) ↔ Division (÷)",
+                    "why": "They undo each other"
+                  },
+                  {
+                    "text": "Always do the SAME to BOTH sides",
+                    "why": "Keep the equation balanced ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "inverse-ops-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "Why equations are like a balance",
+            "How to keep an equation balanced by doing the same to both sides"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A balance scale",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "An equation is a balance!",
+              "body": "Think of **x + 4 = 11** as a balance scale. The left side equals the right side — they're **balanced**!\n\nTo find x, we need to get x on its own. But we must keep the balance!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "x + 4 = 11",
+                    "why": "Both sides are equal — balanced!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same to both sides!",
+              "body": "Whatever you do to one side, you **must** do to the other. That keeps it balanced.\n\nTo solve **x + 4 = 11**, do the **opposite** — apply **− 4** to **both** sides:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Whatever you do to one side of an equation, you must do the same to the ____ side",
+                "options": [
+                  "other",
+                  "left",
+                  "top",
+                  "same"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Always do the same to both sides to keep the equation balanced. ✓",
+                "incorrectFeedback": "Not quite — you must do the same thing to the OTHER side to keep it balanced."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "x + 4 = 11",
+                    "why": "The balanced equation"
+                  },
+                  {
+                    "text": "Apply − 4 to BOTH sides",
+                    "why": "Keep the balance!"
+                  },
+                  {
+                    "text": "x = 7",
+                    "result": "Check: 7 → 11 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Solve **x + 6 = 15** by applying **− 6** to both sides.\n\nWhat is x?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "x = ?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Spot on! x = **9**. Balance maintained! ✓",
+                "incorrectFeedback": "Not quite! Apply − 6 to both sides: x = **9**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "x + 6 = 15",
+                    "why": "Apply − 6 to both sides"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Keep the balance!",
+              "body": "An equation is a **balance**. The golden rule: whatever you do to one side, do the same to the other!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "An equation means: left side = right side",
+                    "why": "They're balanced"
+                  },
+                  {
+                    "text": "Do the SAME thing to BOTH sides",
+                    "why": "Add 5 to left? Add 5 to right too!"
+                  },
+                  {
+                    "text": "Use the OPPOSITE to isolate x",
+                    "why": "If it says +5, do −5 to get x on its own ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bidmas-brackets",
+      "name": "BIDMAS and Brackets",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "bidmas-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+            "How to recognise that brackets change which part you do first"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Miss Clarke",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 3 + 4 × 2?",
+              "body": "Miss Clarke says **3 + 4 × 2 = 14**.\n\nBut that's wrong! The correct answer is **11**. Why? Because of a rule called **BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction)**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Miss Clarke: 3 + 4 × 2 = 14",
+                    "why": "Wrong! 😕"
+                  },
+                  {
+                    "text": "Correct: 3 + 4 × 2 = 11",
+                    "why": "Thanks to BIDMAS!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "BIDMAS tells you the order!",
+              "body": "**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addition and subtraction!\n\nSo for **3 + 4 × 2**: multiplication first: 4 × 2 = 8, then 3 + 8 = 11.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In BIDMAS, the B stands for ____ — always do these first",
+                "options": [
+                  "Brackets",
+                  "Both",
+                  "Before",
+                  "Below"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! B = Brackets — always calculate what's inside brackets first. ✓",
+                "incorrectFeedback": "Not quite — B stands for Brackets. Always do brackets first!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "B = Brackets (do these first!)",
+                    "why": "(3 + 4) × 2 = 7 × 2 = 14"
+                  },
+                  {
+                    "text": "I = Indices (powers)",
+                    "why": "2² = 4"
+                  },
+                  {
+                    "text": "DM = Division & Multiplication (left to right)",
+                    "why": "Before + and −"
+                  },
+                  {
+                    "text": "AS = Addition & Subtraction (left to right)",
+                    "why": "These come last"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Apply BIDMAS!",
+              "body": "What is **8 − 3 × 2** using BIDMAS?\n\nRemember: × and ÷ come before + and −!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "8 − 3 × 2 = ?",
+                "options": [
+                  "2",
+                  "1",
+                  "4",
+                  "-1",
+                  "6"
+                ],
+                "correctAnswer": "2",
+                "correctFeedback": "Brilliant! multiplication first: 3 × 2 = 6, then 8 − 6 = 2. BIDMAS in action! ✓",
+                "incorrectFeedback": "Not quite! Remember BIDMAS: multiplication first: 3 × 2 = 6, then 8 − 6 = 2. Answer: **2**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "8 − 3 × 2",
+                    "why": "Use BIDMAS!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "BIDMAS — remember the order!",
+              "body": "BIDMAS keeps everyone's maths consistent. Without it, the same expression could give different answers!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Brackets first — always!",
+                    "why": "Whatever's in brackets gets done first"
+                  },
+                  {
+                    "text": "× and ÷ before + and −",
+                    "why": "This is the bit most people forget!"
+                  },
+                  {
+                    "text": "Left to right when they're at the same level",
+                    "why": "3 × 4 ÷ 2 = 12 ÷ 2 = 6 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "bidmas-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to see that brackets change the answer",
+            "Why missing brackets leads to errors"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Brackets make a difference!",
+              "body": "Tom needed to calculate **(3 + 5) × 2** but wrote it as **3 + 5 × 2** (without brackets).\n\nAre the answers the same?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "With brackets: (3 + 5) × 2 = ?"
+                  },
+                  {
+                    "text": "Without brackets: 3 + 5 × 2 = ?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "NOT the same!",
+              "body": "Tom forgot the brackets and did 5 × 2 first (= 10), then 3 + 10 = 13, instead of (3 + 5) × 2 = 8 × 2 = 16.\n\nBrackets tell you to do that part **first**, before anything else. Without them, BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) applies and the order changes!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "(3 + 5) × 2 = 16",
+                    "why": "Brackets first!"
+                  },
+                  {
+                    "text": "3 + 5 × 2 = 13",
+                    "why": "× before + (BIDMAS)"
+                  },
+                  {
+                    "text": "Different answers!",
+                    "result": "16 is NOT the same as 13"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "Calculate **(4 + 3) × 5** — do the brackets first!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "(4 + 3) × 5 = ?",
+                "options": [
+                  "35",
+                  "34",
+                  "37",
+                  "32",
+                  "39"
+                ],
+                "correctAnswer": "35",
+                "correctFeedback": "Superstar! (4 + 3) × 5 = **35**. Brackets change everything! ✓",
+                "incorrectFeedback": "Not quite! Do the brackets first: (4 + 3) × 5 = **35**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "(4 + 3) × 5",
+                    "why": "Brackets first!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Brackets always come first!",
+              "body": "If you see brackets, do that part FIRST. Brackets override everything else in BIDMAS.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Brackets = do this FIRST",
+                    "why": "Before multiplication, before anything"
+                  },
+                  {
+                    "text": "They change the order completely",
+                    "why": "(3 + 5) × 2 = 16, but 3 + 5 × 2 = 13"
+                  },
+                  {
+                    "text": "Always write brackets when you need them!",
+                    "why": "Don't leave it to chance ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

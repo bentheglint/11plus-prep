@@ -1,0 +1,1289 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "synonyms",
+    "displayName": "Synonyms",
+    "extractedAt": "2026-03-30T13:51:13.798Z",
+    "subConceptCount": 8,
+    "lessonCount": 10,
+    "screenCount": 40,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "common-synonyms",
+      "name": "Common Everyday Synonyms",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "common-synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+            "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What means the same as \"happy\"?",
+              "body": "Daisy is matching words with the same meaning.\n\nDid you know that English has loads of words that mean exactly the same thing? **\"happy\"** means feeling pleased.\n\nCan you spot which other word means exactly the same? Careful though — the 11+ loves sneaking in words that are close but not quite right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "happy — feeling pleased",
+                "highlightWords": [
+                  {
+                    "word": "happy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which word means the same?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Swap Test",
+              "body": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A synonym is a word that means the ____ as another word",
+                "options": [
+                  "same",
+                  "opposite",
+                  "different",
+                  "nothing"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Spot on! Synonyms are words with the same meaning — you've got this! ✓",
+                "incorrectFeedback": "Nearly! Synonyms mean the SAME as each other — think of them as word twins."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"happy\" means: feeling pleased",
+                    "why": "Define the word first"
+                  },
+                  {
+                    "text": "Try the swap: She was happy about her result → She was glad about her result",
+                    "why": "Same meaning? Then it's a synonym!"
+                  },
+                  {
+                    "text": "Watch out for \"excited\"",
+                    "why": "'Excited' means thrilled or buzzing — that's STRONGER than happy, not the same"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word means the **same** as **\"small\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is a synonym of \"small\"?",
+                "options": [
+                  "little",
+                  "tiny",
+                  "short",
+                  "thin",
+                  "narrow"
+                ],
+                "correctAnswer": "little",
+                "correctFeedback": "Brilliant! 'Small' and 'little' both mean not large in size. 'Tiny' is much stronger — it means VERY small. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"little\". 'Small' and 'little' both mean not large in size. 'Tiny' is much stronger — it means VERY small. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "small = not large in size",
+                "highlightWords": [
+                  {
+                    "word": "small",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the exact match:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The Swap Test — your secret weapon!",
+              "body": "You've nailed it! Next time you need a synonym, just follow these three quick steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Define the word in your own words",
+                    "why": "What does it actually mean?"
+                  },
+                  {
+                    "text": "2. Try swapping each option into a sentence",
+                    "why": "Does the sentence still mean the same?"
+                  },
+                  {
+                    "text": "3. Watch out for CLOSE but not SAME",
+                    "why": "A word can be related without being a synonym ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "common-synonyms-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why picking a RELATED word isn't the same as picking a SYNONYM — once you know this trick, you'll dodge a trap that catches loads of people!",
+            "How to spot the sneaky 'close but not quite' options and avoid them like a pro"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"deafening\" really a synonym of \"loud\"?",
+              "body": "Evie is checking her friend's VR homework. The answer given was **\"deafening\"** as a synonym for **\"loud\"** — because loud things are deafening.\n\nHmm, that sounds reasonable... but is it actually right? Let's put on our detective hats and find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "loud — is deafening really a synonym?",
+                "highlightWords": [
+                  {
+                    "word": "loud",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "word": "deafening",
+                    "color": "#dc2626"
+                  }
+                ],
+                "label": "Spot the mistake"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Strength Matters!",
+              "body": "'Deafening' means SO loud it hurts your ears — that's much stronger than just 'loud'\n\nA synonym must be at the **same level of strength**. Words that are STRONGER or WEAKER aren't synonyms — they're just related.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"loud\" = moderate level",
+                    "why": "The original word"
+                  },
+                  {
+                    "text": "\"deafening\" = EXTREME level",
+                    "why": "'Deafening' means SO loud it hurts your ears — that's much stronger than just 'loud'"
+                  },
+                  {
+                    "text": "\"noisy\" = same level ✓",
+                    "why": "'Noisy' means making a lot of sound — same as 'loud'. 'Deafening' is the extreme version."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the TRUE synonym!",
+              "body": "Which word is at the **same level** as **\"wet\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the closest synonym of \"wet\"?",
+                "options": [
+                  "damp",
+                  "soaking",
+                  "flooded",
+                  "dripping",
+                  "soggy"
+                ],
+                "correctAnswer": "damp",
+                "correctFeedback": "Well done! 'Wet' and 'damp' are both at the same moderate level. 'Soaking' means completely drenched — much stronger. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"damp\". 'Wet' and 'damp' are both at the same moderate level. 'Soaking' means completely drenched — much stronger. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "wet — find the same-level match",
+                "highlightWords": [
+                  {
+                    "word": "wet",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Not stronger, not weaker — the SAME:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Same level, same meaning — well done!",
+              "body": "Brilliant work! You've cracked one of the trickiest synonym traps going. Remember this golden rule: a synonym must match BOTH the meaning AND the strength:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "A synonym means the SAME thing",
+                    "why": "Not just related — the same"
+                  },
+                  {
+                    "text": "Check the strength level",
+                    "why": "Is it the same strength? Mild=mild, strong=strong"
+                  },
+                  {
+                    "text": "If it's stronger or weaker, it's NOT a match",
+                    "why": "Nice ≠ wonderful, cold ≠ freezing ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formal-informal",
+      "name": "Formal vs Informal Words",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "formal-informal-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+            "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does \"purchase\" mean?",
+              "body": "Daisy is matching formal words to everyday ones.\n\nDid you know the 11+ is packed with **formal** (posh-sounding) words? But here's the best-kept secret — they almost always have a **dead simple synonym** hiding in the options!\n\n**\"purchase\"** — any ideas what this fancy word means?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "purchase — to get something by paying for it",
+                "highlightWords": [
+                  {
+                    "word": "purchase",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What is the everyday version?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Posh word → simple word",
+              "body": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the pattern, these questions become free marks!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"purchase\" = to get something by paying for it",
+                    "why": "The formal version"
+                  },
+                  {
+                    "text": "\"buy\" = to get something by paying for it",
+                    "why": "The everyday version"
+                  },
+                  {
+                    "text": "Swap test: Mum went to purchase a dress → Mum went to buy a dress",
+                    "why": "Same meaning — they're synonyms! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which everyday word means the same as **\"terminate\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is a synonym of \"terminate\"?",
+                "options": [
+                  "end",
+                  "break",
+                  "pause",
+                  "cancel",
+                  "quit"
+                ],
+                "correctAnswer": "end",
+                "correctFeedback": "Brilliant! 'Terminate' is the formal way of saying 'end'. They both mean to bring something to a finish. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"end\". 'Terminate' is the formal way of saying 'end'. They both mean to bring something to a finish. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "terminate = to bring something to a finish",
+                "highlightWords": [
+                  {
+                    "word": "terminate",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the simple version:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Formal = Everyday — you've cracked the code!",
+              "body": "Here's the thing: loads of 11+ words are just posh versions of words you already know. Once you see the pattern, you'll wonder why they ever looked tricky:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "purchase = buy",
+                    "why": "Formal word → everyday word"
+                  },
+                  {
+                    "text": "commence = begin",
+                    "why": "Same meaning, different style"
+                  },
+                  {
+                    "text": "reside = live  |  assist = help",
+                    "why": "The simple word is always the synonym ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "formal-informal-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to recognise formal-informal synonym pairs — the kind that pop up all the time in the 11+",
+            "How to decode unfamiliar formal words like a word detective (this is a superpower!)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Have you ever heard \"sufficient\"?",
+              "body": "Evie is puzzling over an unfamiliar word.\n\nDid you know that even adults sometimes get tripped up by fancy words? But here's the good news — formal words almost always have a **simple everyday synonym** hiding nearby. You just need to decode it!\n\n**\"sufficient\"** — have a guess at what it means. You might surprise yourself!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "sufficient — can you guess what this means?",
+                "highlightWords": [
+                  {
+                    "word": "sufficient",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the simple synonym"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Become a word detective!",
+              "body": "You might not know **\"sufficient\"** yet — and that's completely fine! Everyone meets new words. The clever bit is knowing how to figure them out. Try these detective tricks:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! That's how to decode formal words. ✓",
+                "incorrectFeedback": "Not quite — start by reading the word, then use sound and word-part clues before picking."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Does it SOUND like a word you know?",
+                    "why": "'Sufficient' sounds a bit like 'it'll suffice' — enough!"
+                  },
+                  {
+                    "text": "Does part of the word give a clue?",
+                    "why": "'Prohibit' has 'hibit' like 'exhibit' — both are about showing/not showing"
+                  },
+                  {
+                    "text": "Answer: \"sufficient\" = \"enough\"",
+                    "why": "as much as is needed"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which simple word means the same as **\"obtain\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is a synonym of \"obtain\"?",
+                "options": [
+                  "get",
+                  "find",
+                  "earn",
+                  "take",
+                  "collect"
+                ],
+                "correctAnswer": "get",
+                "correctFeedback": "Brilliant! 'Obtain' is the formal way of saying 'get'. Both mean to come to have something. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"get\". 'Obtain' is the formal way of saying 'get'. Both mean to come to have something. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "obtain = to come to have something",
+                "highlightWords": [
+                  {
+                    "word": "obtain",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the everyday synonym:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't panic — you can decode it!",
+              "body": "Every single 11+ student sees unfamiliar words — even the ones who get top marks. The difference? They don't panic. They decode:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Does it sound like a word you know?",
+                    "why": "Sound clues work surprisingly often"
+                  },
+                  {
+                    "text": "2. Does part of the word give a hint?",
+                    "why": "Prefixes and roots can unlock meaning"
+                  },
+                  {
+                    "text": "3. Try the options — which one fits?",
+                    "why": "The simple synonym is usually hiding in plain sight ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb-synonyms",
+      "name": "Action Word Synonyms",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "verb-synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+            "Why picturing the action helps you find the match every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's another word for \"destroy\"?",
+              "body": "Grace is matching action words.\n\n**\"destroy\"** is an action word (a verb). Here's a fun way to find its synonym: **picture the action** in your head, like a little film clip. Now, which other word shows the SAME action?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "destroy — to completely wreck or ruin something",
+                "highlightWords": [
+                  {
+                    "word": "destroy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which word shows the SAME action?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Picture the action",
+              "body": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"destroy\" = to completely wreck or ruin something",
+                    "why": "Picture this happening"
+                  },
+                  {
+                    "text": "\"demolish\" = to completely wreck or ruin something",
+                    "why": "Same picture? Same action? It's a synonym!"
+                  },
+                  {
+                    "text": "Swap: They will destroy the old building → They will demolish the old building",
+                    "why": "The meaning hasn't changed ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word shows the **same action** as **\"grab\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is a synonym of \"grab\"?",
+                "options": [
+                  "seize",
+                  "touch",
+                  "hold",
+                  "pull",
+                  "steal"
+                ],
+                "correctAnswer": "seize",
+                "correctFeedback": "Brilliant! 'Grab' and 'seize' both mean to take hold of something quickly and firmly. 'Hold' means to keep in your hand, not the act of grabbing. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"seize\". 'Grab' and 'seize' both mean to take hold of something quickly and firmly. 'Hold' means to keep in your hand, not the act of grabbing. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "grab = to take hold of something quickly",
+                "highlightWords": [
+                  {
+                    "word": "grab",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the matching action:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Picture the action — great strategy!",
+              "body": "You've just picked up a really handy trick for action word synonyms. Keep this in your back pocket:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Picture the action in your head",
+                    "why": "What does it LOOK like?"
+                  },
+                  {
+                    "text": "2. Which option shows the SAME picture?",
+                    "why": "Same action = synonym"
+                  },
+                  {
+                    "text": "3. Beware of related-but-different actions",
+                    "why": "damage ≠ destroy, design ≠ build ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "context-dependent",
+      "name": "Same Word, Different Synonyms",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "context-dependent-steps",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Why the same word can have different synonyms depending on the sentence — this is what makes English so interesting!",
+            "How to use context to pick the right synonym every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two meanings of \"light\"",
+              "body": "Lily noticed the same word used two ways.\n\nDid you know that one little word can mean totally different things depending on how it's used? Check this out — **\"light\"** has TWO meanings:\n• \"The room was filled with light.\"\n• \"The bag felt very light.\"\n\nThe synonym you pick depends on which meaning is being used!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Meaning 1: \"The room was filled with light.\" → synonym: brightness"
+                  },
+                  {
+                    "text": "Meaning 2: \"The bag felt very light.\" → synonym: lightweight"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the sentence first!",
+              "body": "The word **\"light\"** has more than one meaning! Always read the **whole sentence** before picking a synonym — the same word can need completely different synonyms depending on context.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Spot on! Always read the sentence first to find the right meaning. ✓",
+                "incorrectFeedback": "Not quite — read the sentence first, then work out which meaning is being used."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"light\" in sentence: \"The bag felt very light.\"",
+                    "why": "Which meaning is being used here?"
+                  },
+                  {
+                    "text": "Test: The bag felt very light → The bag felt very lightweight",
+                    "why": "Does this swap keep the meaning?"
+                  },
+                  {
+                    "text": "\"lightweight\" is the right synonym for THIS sentence ✓",
+                    "why": "Context decides the synonym"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence **\"That is the right answer.\"**, which word is a synonym of **\"right\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "In \"That is the right answer.\", which is a synonym of \"right\"?",
+                "options": [
+                  "correct",
+                  "proper",
+                  "good",
+                  "straight",
+                  "exact"
+                ],
+                "correctAnswer": "correct",
+                "correctFeedback": "Brilliant! Here 'right' means not wrong — so 'correct' is the synonym. If it meant a direction, the synonym would be different. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"correct\". Here 'right' means not wrong — so 'correct' is the synonym. If it meant a direction, the synonym would be different. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "That is the right answer.",
+                "highlightWords": [
+                  {
+                    "word": "right",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym in context:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Context is king!",
+              "body": "Brilliant work! You've spotted something really cool about English — the same word can need different synonyms. Here's how to handle it every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Read the WHOLE sentence first",
+                    "why": "The sentence tells you which meaning is being used"
+                  },
+                  {
+                    "text": "2. Decide which meaning fits this context",
+                    "why": "Light = not heavy? Or light = brightness?"
+                  },
+                  {
+                    "text": "3. Pick the synonym for THAT meaning",
+                    "why": "Different meanings need different synonyms ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emotion-synonyms",
+      "name": "Feelings & Emotions",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "emotion-synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+            "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How \"scared\" are you?",
+              "body": "Ella is matching emotion words.\n\nDid you know emotion words come in different **strength levels**, almost like turning up a volume dial?\n• Mild: \"nervous\"\n• Medium/Strong: **\"scared\"**\n• Extreme: \"terrified\"\n\nTo find the synonym, you need one at the **same level** on the dial!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mild: \"nervous\""
+                  },
+                  {
+                    "text": "Match: \"scared\" = \"frightened\" (medium)"
+                  },
+                  {
+                    "text": "Extreme: \"terrified\""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Match the strength",
+              "body": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Low: \"nervous\" — too mild",
+                    "why": "This is weaker than our word"
+                  },
+                  {
+                    "text": "Match: \"scared\" ↔ \"frightened\" ✓",
+                    "why": "Same strength level!"
+                  },
+                  {
+                    "text": "High: \"terrified\" — too extreme",
+                    "why": "This is stronger than our word"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word matches the **same strength** as **\"angry\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the closest synonym of \"angry\"?",
+                "options": [
+                  "cross",
+                  "furious",
+                  "raging",
+                  "upset",
+                  "grumpy"
+                ],
+                "correctAnswer": "cross",
+                "correctFeedback": "Well done! 'Angry' and 'cross' are both at the same moderate level. 'Furious' means extremely angry — too strong to be a synonym. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"cross\". 'Angry' and 'cross' are both at the same moderate level. 'Furious' means extremely angry — too strong to be a synonym. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "angry — find the same-strength match",
+                "highlightWords": [
+                  {
+                    "word": "angry",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Match the intensity level:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Emotion synonym scale — nice one!",
+              "body": "You've cracked it! Emotions come in levels, just like volume on a speaker. Match the level and you've got your synonym:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "nervous → scared → terrified",
+                    "why": "Fear: mild → medium → extreme"
+                  },
+                  {
+                    "text": "annoyed → angry → furious",
+                    "why": "Anger: mild → medium → extreme"
+                  },
+                  {
+                    "text": "pleased → joyful → ecstatic",
+                    "why": "Happiness: mild → strong → extreme ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abstract-synonyms",
+      "name": "Big Ideas — Abstract Synonyms",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "abstract-synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find synonyms for abstract concepts (ideas you can't touch) — these words describe the big ideas in life!",
+            "Why defining the concept in your own words first is the key to matching"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Maisie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does \"courage\" mean?",
+              "body": "Maisie is matching big idea words.\n\nSome words describe **big ideas** you can't see or touch — things like courage, freedom, and grief. These are called **abstract** words, and they sound trickier than they actually are.\n\nThe trick? **Say what it means in your own words first**, then look for the match.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "courage — the quality of being brave when facing danger",
+                "highlightWords": [
+                  {
+                    "word": "courage",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the matching synonym"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Define first, then match",
+              "body": "**\"courage\"** means the quality of being brave when facing danger — it's an abstract word (an idea you can't see or touch). Abstract words can feel tricky, but if you can **explain what they mean**, you can find the match.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"courage\" means: the quality of being brave when facing danger",
+                    "why": "Define it in your own words"
+                  },
+                  {
+                    "text": "\"bravery\" means: the quality of being brave when facing danger",
+                    "why": "Same definition? It's a synonym!"
+                  },
+                  {
+                    "text": "Other options are RELATED but not the same",
+                    "why": "Fear relates to danger but isn't the same thing"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word is a synonym of **\"joy\"**?\n\n\"joy\" means: a feeling of great happiness",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is a synonym of \"joy\"?",
+                "options": [
+                  "delight",
+                  "fun",
+                  "luck",
+                  "comfort",
+                  "peace"
+                ],
+                "correctAnswer": "delight",
+                "correctFeedback": "Brilliant! 'Joy' and 'delight' both mean a feeling of great happiness. 'Fun' means enjoyment from an activity, which is different. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"delight\". 'Joy' and 'delight' both mean a feeling of great happiness. 'Fun' means enjoyment from an activity, which is different. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "joy = a feeling of great happiness",
+                "highlightWords": [
+                  {
+                    "word": "joy",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Abstract synonyms — you've got the recipe!",
+              "body": "Great work tackling those big ideas! You've shown that abstract words aren't as scary as they look. Here's your recipe to use any time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Explain what the word means",
+                    "why": "Can you describe the idea?"
+                  },
+                  {
+                    "text": "2. Find the option with the SAME definition",
+                    "why": "Same idea = synonym"
+                  },
+                  {
+                    "text": "3. Beware of RELATED concepts",
+                    "why": "Danger ≠ fear, freedom ≠ choice ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hard-vocabulary",
+      "name": "Tricky Vocabulary Pairs",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "hard-vocabulary-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+            "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What on earth does \"diligent\" mean?",
+              "body": "Evie is tackling harder synonym pairs.\n\nDon't worry if **\"diligent\"** looks like a word from another planet! Loads of 11+ words look harder than they are. Here's a clue: Both words describe someone who puts in lots of effort\n\nCan you figure out which option matches? Give it a go!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "diligent — can you work out what this means?",
+                "highlightWords": [
+                  {
+                    "word": "diligent",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use elimination!",
+              "body": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"diligent\" means: working hard and carefully",
+                    "why": "If you know it, great! If not, use the hint"
+                  },
+                  {
+                    "text": "Eliminate options that clearly don't fit",
+                    "why": "Cross out words that mean something completely different"
+                  },
+                  {
+                    "text": "\"industrious\" is the match ✓",
+                    "why": "Both mean: working hard and carefully"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word means the same as **\"diligent\"**?\n\nHint: Both words describe someone who puts in lots of effort",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is a synonym of \"diligent\"?",
+                "options": [
+                  "industrious",
+                  "intelligent",
+                  "patient",
+                  "obedient",
+                  "talented"
+                ],
+                "correctAnswer": "industrious",
+                "correctFeedback": "Brilliant! 'Diligent' and 'industrious' both mean hardworking and careful. 'Intelligent' means clever, which is different. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"industrious\". 'Diligent' and 'industrious' both mean hardworking and careful. 'Intelligent' means clever, which is different. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "diligent = working hard and carefully",
+                "highlightWords": [
+                  {
+                    "word": "diligent",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Hard words — don't panic, you've got this!",
+              "body": "Remember: even the trickiest words usually have a simple synonym hiding in the options:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Don't panic — hard words often have simple synonyms",
+                    "why": "benevolent = kind, affluent = wealthy"
+                  },
+                  {
+                    "text": "2. Eliminate what you KNOW is wrong",
+                    "why": "Cross out options that clearly don't fit"
+                  },
+                  {
+                    "text": "3. Of what's left, pick the closest meaning",
+                    "why": "Trust your instinct — you know more than you think! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjective-synonyms",
+      "name": "Describing Word Synonyms",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "adjective-synonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find synonyms for describing words (adjectives) — what quality is being described?",
+            "Why checking what is being described helps find the match every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does \"enormous\" describe?",
+              "body": "Daisy is matching describing words.\n\n**\"The enormous building towered over the town.\"**\n\nHere's a neat question: what **quality** is **\"enormous\"** actually describing about a building? Figure that out, and the synonym practically jumps out at you!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The enormous building towered over the town.",
+                "highlightWords": [
+                  {
+                    "word": "enormous",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which word means the same?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same quality, different word",
+              "body": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"enormous\" describes a quality of a building",
+                    "why": "What feature is being highlighted?"
+                  },
+                  {
+                    "text": "\"huge\" describes the SAME quality",
+                    "why": "Both words point to the same feature"
+                  },
+                  {
+                    "text": "Other options describe DIFFERENT qualities",
+                    "why": "Size ≠ height, age ≠ condition ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**\"The enormous building towered over the town.\"**\n\nWhich word means the same as **\"enormous\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is a synonym of \"enormous\"?",
+                "options": [
+                  "huge",
+                  "tall",
+                  "wide",
+                  "grand",
+                  "impressive"
+                ],
+                "correctAnswer": "huge",
+                "correctFeedback": "Brilliant! 'Enormous' and 'huge' both mean very big. 'Tall' only describes height, not overall size. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"huge\". 'Enormous' and 'huge' both mean very big. 'Tall' only describes height, not overall size. ✓"
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The enormous building towered over the town.",
+                "highlightWords": [
+                  {
+                    "word": "enormous",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the synonym in context:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Describing word synonyms — brilliant!",
+              "body": "You're getting really good at this! For describing word synonyms, keep these steps handy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. What quality is the word describing?",
+                    "why": "Size? Speed? Age? Temperature?"
+                  },
+                  {
+                    "text": "2. Find the option that describes the SAME quality",
+                    "why": "Both words must point to the same feature"
+                  },
+                  {
+                    "text": "3. Reject words that describe different features",
+                    "why": "Big ≠ tall, old ≠ ruined, fast ≠ rough ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1884 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterSums",
+    "displayName": "Letter Sums",
+    "extractedAt": "2026-03-30T13:52:00.679Z",
+    "totalQuestions": 128,
+    "mappedQuestions": 128,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 128,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word CAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word BED?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word AGE?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "If A=1, B=2, C=3... which of these words has the highest total value?",
+      "questionDifficulty": 2,
+      "correctAnswer": "COW",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word ICE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "17",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "If A=2, B=4, C=6, D=8, what does BAD = ?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "convert-back",
+      "subConceptName": "Converting Numbers Back to Letters",
+      "confidence": "high",
+      "lessonTeachSummary": "For **F + D**, we first calculate the number, then convert it back to a letter. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to convert back.\n\nFind the nearest EJOTY letter and count up or down.",
+      "lessonLearningGoal": [
+        "How to turn your number answer back into a letter — the final piece of the puzzle!",
+        "How EJOTY makes finding any letter from its number super quick"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "If A=3, B=5, C=7, what is the value of A + B + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word DOG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "26",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word PIG?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "If A=1, B=2, C=3... which of these words has the lowest total value?",
+      "questionDifficulty": 2,
+      "correctAnswer": "BAD",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "If A=5, B=10, C=15, what is the value of A + B − C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "If A=4, B=7, C=2, what is A × B − C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "26",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word FACE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "15",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "If A=3, B=6, C=9, what is the value of (B × C) ÷ A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word SUN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "54",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word HAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "29",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word CUP?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word BOX?",
+      "questionDifficulty": 1,
+      "correctAnswer": "41",
+      "subConceptId": "multiply-operations",
+      "subConceptName": "Letter Sums with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **C × D**. Multiplication letter sums follow the same rule: **swap and calculate, left to right**.\n\nImportant: normal maths uses **BODMAS** (Brackets, Orders, Division, Multiplication, Add",
+      "lessonLearningGoal": [
+        "How to handle multiplication in letter sums — times tables to the rescue!",
+        "How the left-to-right rule works with × signs too"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word JAM?",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word FIG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word PEN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word FISH?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word CAKE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word JUMP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word KING?",
+      "questionDifficulty": 2,
+      "correctAnswer": "41",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word DRUM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "56",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word LIME?",
+      "questionDifficulty": 2,
+      "correctAnswer": "39",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "If A=1, B=2, C=3... which of these words has the highest total value?",
+      "questionDifficulty": 2,
+      "correctAnswer": "PIKE",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "If A=1, B=2, C=3... which of these tree names has the lowest total value?",
+      "questionDifficulty": 2,
+      "correctAnswer": "OAK",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word BRAVE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word LIGHT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "56",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word STONE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "73",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word CLOUD?",
+      "questionDifficulty": 3,
+      "correctAnswer": "55",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word RIVER?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "If A=1, B=2, C=3... which of these words has the highest total value?",
+      "questionDifficulty": 3,
+      "correctAnswer": "SPARK",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word RUN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "53",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word DEN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word NEST?",
+      "questionDifficulty": 2,
+      "correctAnswer": "58",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word WOLF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "56",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word QUEEN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "62",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "If A=1, B=2, C=3... which of these words has the highest total value?",
+      "questionDifficulty": 2,
+      "correctAnswer": "NOTE",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word FROST?",
+      "questionDifficulty": 3,
+      "correctAnswer": "78",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "If A=1, B=2, C=3... what is the total value of the word MAP?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "If A=1, B=2, C=3... how much more is the word STOP worth than the word STEP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "If A=3 and B=8, what is the value of A + B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "If A=2, B=5 and C=9, what is the value of A + B + C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "If A=6 and B=4, what is the value of A × B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "multiply-operations",
+      "subConceptName": "Letter Sums with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **C × D**. Multiplication letter sums follow the same rule: **swap and calculate, left to right**.\n\nImportant: normal maths uses **BODMAS** (Brackets, Orders, Division, Multiplication, Add",
+      "lessonLearningGoal": [
+        "How to handle multiplication in letter sums — times tables to the rescue!",
+        "How the left-to-right rule works with × signs too"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "If A=8, B=3 and C=5, what is the value of A + B − C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "If A=5, B=6 and C=3, what is the value of A × B + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "33",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "If A=9, B=4 and C=6, what is the value of A × B − C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "If A=7, B=3 and C=2, what is the value of (A − B) × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "If A=8 and B=2, what is the value of A ÷ B + 5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "If A=4, B=11 and C=3, what is the value of B − A + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "If A=6 and B=5, what is the value of A × B − A?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "If A=3, B=5 and C=2, what is the value of A × (B + C)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "21",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "If A=2, B=4, C=6 and D=3, what is the value of A × B + C ÷ D?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "If A=2, B=3 and C=10, what is the value of C − A × B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "If A=12, B=4 and C=7, what is the value of A ÷ B + C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "If A=7 and B=9, what is the value of 2 × A + B?",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "If A=1, B=4, C=8 and D=5, what is the value of (A + B) × (C − D)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "15",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "If A=10, B=3 and C=2, what is the value of A − B × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "If A=4, B=2 and C=8, what is the value of (C + A) ÷ B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "If A=5 and B=7, what is the value of A × A − B?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "If A=3, B=2, C=5 and D=4, what is the value of A × C − B × D?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "If A=12 and B=5, what is the value of A − B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "If A=4 and B=3, what is the value of B × B + A?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "If A=10, B=6 and C=2, what is the value of (A − B) × (A − C)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "32",
+      "subConceptId": "multiply-operations",
+      "subConceptName": "Letter Sums with Multiplication",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **C × D**. Multiplication letter sums follow the same rule: **swap and calculate, left to right**.\n\nImportant: normal maths uses **BODMAS** (Brackets, Orders, Division, Multiplication, Add",
+      "lessonLearningGoal": [
+        "How to handle multiplication in letter sums — times tables to the rescue!",
+        "How the left-to-right rule works with × signs too"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "If A=8, B=3 and C=1, what is the value of A − B − C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "If A=3, B=8 and C=3, what is the value of B × C ÷ A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "If A=4 and B=6, what is the value of A + B + A?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "If A=5, B=2 and C=4, what is the value of A × B + A × C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "30",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "If A=9 and B=2, what is the value of A × B + B?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "If A=6, B=2 and C=5, what is the value of (A + C) × B − C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "17",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "If A=7, B=4 and C=3, what is the value of A + B × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "19",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "The same number fills both gaps. What is it? 2 × ___ + ___ = 27",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "If A = 2, B = 5 and C = 3, what is the value of A + B + C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "If A = 6 and B = 9, what is the value of B − A?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "If A = 4 and B = 7, what is the value of A + A + B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "If A = 3, B = 8 and C = 1, what is the value of B − A − C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "If A = 5, B = 10 and C = 2, what is the value of B − A + C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "If A = 3, B = 7 and C = 4, what is the value of B × C + A?",
+      "questionDifficulty": 2,
+      "correctAnswer": "31",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "If A = 8, B = 2 and C = 5, what is the value of A ÷ B + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "If A = 6, B = 3 and C = 9, what is the value of C − A × B?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-9",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "If A = 5 and B = 4, what is the value of A × B − B?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "If A = 11 and B = 3, what is the value of A × B − A?",
+      "questionDifficulty": 2,
+      "correctAnswer": "22",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "If A = 9, B = 4 and C = 2, what is the value of A − B × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "If A = 15, B = 5 and C = 8, what is the value of A ÷ B + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "If A = 3, B = 5, C = 2 and D = 4, what is the value of A × B − C × D?",
+      "questionDifficulty": 3,
+      "correctAnswer": "7",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "If A = 4, B = 6 and C = 2, what is the value of (A + B) × (B − C)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "40",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "If A = 2, B = 3, C = 6 and D = 4, what is the value of C × D ÷ A + B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "15",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "If A = 5, B = 8 and C = 3, what is the value of B × B − A × C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "49",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "If A = 7, B = 2, C = 3 and D = 5, what is the value of (A − B) × C + D?",
+      "questionDifficulty": 3,
+      "correctAnswer": "20",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "If A = 2, B = 9, C = 4 and D = 3, what is the value of B × C ÷ D + A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "14",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "If A=1, B=2, C=3... which two words have the same total value? ACE, DAD, BIG, HEN, FIG",
+      "questionDifficulty": 2,
+      "correctAnswer": "ACE and DAD",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "If A=1, B=2, C=3... which two words have the same total value? STONE, PLANE, MOUSE, TRAIN, TIGER",
+      "questionDifficulty": 3,
+      "correctAnswer": "STONE and MOUSE",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "If A=1, B=2, C=3... what is the difference in value between CAT and DOG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "simple-subtraction",
+      "subConceptName": "Subtracting Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **J - C**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to find the numbers quickly, then subtract left to right.",
+      "lessonLearningGoal": [
+        "How to subtract letter values — same idea, just take away instead of add!",
+        "How to work left to right with subtraction (the same golden rule)"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "If A=1, B=2, C=3... what is the difference in value between FISH and BIRD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "simple-subtraction",
+      "subConceptName": "Subtracting Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **J - C**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to find the numbers quickly, then subtract left to right.",
+      "lessonLearningGoal": [
+        "How to subtract letter values — same idea, just take away instead of add!",
+        "How to work left to right with subtraction (the same golden rule)"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "If A=1, B=2, C=3... what is the difference in value between HOME and LAND?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "simple-subtraction",
+      "subConceptName": "Subtracting Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **J - C**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to find the numbers quickly, then subtract left to right.",
+      "lessonLearningGoal": [
+        "How to subtract letter values — same idea, just take away instead of add!",
+        "How to work left to right with subtraction (the same golden rule)"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "If A=1, B=2, C=3... what is the difference in value between SMILE and FROWN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "simple-subtraction",
+      "subConceptName": "Subtracting Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **J - C**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to find the numbers quickly, then subtract left to right.",
+      "lessonLearningGoal": [
+        "How to subtract letter values — same idea, just take away instead of add!",
+        "How to work left to right with subtraction (the same golden rule)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "If A=1, B=2, C=3... what is the difference in value between TIGER and MOUSE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "14",
+      "subConceptId": "simple-subtraction",
+      "subConceptName": "Subtracting Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **J - C**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to find the numbers quickly, then subtract left to right.",
+      "lessonLearningGoal": [
+        "How to subtract letter values — same idea, just take away instead of add!",
+        "How to work left to right with subtraction (the same golden rule)"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "If A=1, B=2, C=3... what is E - B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "If A=1, B=2, C=3... what is H - C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "If A=1, B=2, C=3... what is G - D?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "If A=1, B=2, C=3... what is M - F?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "If A=1, B=2, C=3... what is P - H?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "If A=1, B=2, C=3... what is T - K?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "If A=1, B=2, C=3... which word has the highest total value? SUN, RAIN, SNOW, WIND, HAIL",
+      "questionDifficulty": 2,
+      "correctAnswer": "SNOW",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "If A=1, B=2, C=3... which word has the highest total value? GRAPE, LEMON, PEACH, MANGO, PLUM",
+      "questionDifficulty": 3,
+      "correctAnswer": "PLUM",
+      "subConceptId": "larger-numbers",
+      "subConceptName": "Working with Bigger Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "For **W + X**, we're working with big letter values. The method is exactly the same — just take extra care with the arithmetic because the numbers are larger!\n\nUse **T=20** and **Y=25** as your anchor",
+      "lessonLearningGoal": [
+        "How to handle the bigger numbers that come with letters near the end of the alphabet",
+        "How to stay accurate when the numbers get larger — slow and steady!"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "If A=1, B=2, C=3... what is the total value of RHYTHM?",
+      "questionDifficulty": 3,
+      "correctAnswer": "92",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "If A=1, B=2, C=3... what is the total value of WIZARD?",
+      "questionDifficulty": 3,
+      "correctAnswer": "81",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "If A=1, B=2, C=3... what is the total value of MONEY?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72",
+      "subConceptId": "simple-addition",
+      "subConceptName": "Adding Letter Values",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's solve **B + A + G**. Use EJOTY (E=5, J=10, O=15, T=20, Y=25) to quickly find letter positions.\n\nThen add **left to right**, one step at a time.",
+      "lessonLearningGoal": [
+        "How to add letter values together — it's like cracking a number code!",
+        "How to swap letters for numbers and add them up left to right"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "If A=1, B=2, C=3... what is C × D?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "If A=1, B=2, C=3... what is E × C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "If A=1, B=2, C=3... what is B × F?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "If A=1, B=2, C=3... what is D × E - C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "17",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "If A=1, B=2, C=3... what is G × B + D?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "If A=1, B=2, C=3... what is F × C - E?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "If A=1, B=2, C=3... what is H × B - C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "If A=1, B=2, C=3... what is E × D + B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "22",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "If A=1, B=2, C=3... what is C × C × B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "mixed-operations",
+      "subConceptName": "Mixed Addition and Subtraction",
+      "confidence": "high",
+      "lessonTeachSummary": "For **H + C - E**, there's both + and - mixed together. **Do the first operation, get a result, then move to the next**. Always left to right!",
+      "lessonLearningGoal": [
+        "How to handle letter sums that mix + and - signs together",
+        "Why going strictly left to right, one step at a time, keeps you on track"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "If A=1, B=2, C=3... what is F + G - D?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "If A=1, B=2, C=3... what is J - E + C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "If A=1, B=2, C=3... what is H + D - F?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "If A=1, B=2, C=3... what is K - G + E?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "If A=1, B=2, C=3... what is T - J + E - B?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "If A=1, B=2, C=3... what is M + H - K + C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "If A=1, B=2, C=3... what is O - F + D - A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "left-to-right-rule",
+      "subConceptName": "Left to Right — NOT BODMAS!",
+      "confidence": "high",
+      "lessonTeachSummary": "Someone said **B + C × D = 14** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, ",
+      "lessonLearningGoal": [
+        "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
+        "How to avoid the number one trap in letter sum questions"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "ejoty-shortcuts",
+      "name": "EJOTY — Quick Letter Positioning"
+    }
+  ],
+  "subConceptCoverage": {
+    "simple-addition": {
+      "name": "Adding Letter Values",
+      "questionCount": 47,
+      "difficulties": {
+        "D1": 19,
+        "D2": 18,
+        "D3": 10
+      }
+    },
+    "larger-numbers": {
+      "name": "Working with Bigger Letter Values",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 0,
+        "D2": 5,
+        "D3": 3
+      }
+    },
+    "mixed-operations": {
+      "name": "Mixed Addition and Subtraction",
+      "questionCount": 54,
+      "difficulties": {
+        "D1": 4,
+        "D2": 25,
+        "D3": 25
+      }
+    },
+    "convert-back": {
+      "name": "Converting Numbers Back to Letters",
+      "questionCount": 1,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 0
+      }
+    },
+    "left-to-right-rule": {
+      "name": "Left to Right — NOT BODMAS!",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 2,
+        "D2": 5,
+        "D3": 3
+      }
+    },
+    "multiply-operations": {
+      "name": "Letter Sums with Multiplication",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 2,
+        "D2": 0,
+        "D3": 1
+      }
+    },
+    "simple-subtraction": {
+      "name": "Subtracting Letter Values",
+      "questionCount": 5,
+      "difficulties": {
+        "D1": 1,
+        "D2": 2,
+        "D3": 2
+      }
+    }
+  }
+}

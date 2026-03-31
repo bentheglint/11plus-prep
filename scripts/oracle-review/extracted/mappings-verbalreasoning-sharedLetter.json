@@ -1,0 +1,1822 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "sharedLetter",
+    "displayName": "Shared Letter",
+    "extractedAt": "2026-03-30T13:52:00.640Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 5,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCA ( ? ) EN\nBU ( ? ) ANK",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBU ( ? ) UN\nHA ( ? ) AND",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHO ( ? ) EN\nSTO ( ? ) ARK",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBA ( ? ) OG\nBE ( ? ) ARK",
+      "questionDifficulty": 1,
+      "correctAnswer": "D",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Find the letter that completes both pairs of words:\n\nWI ( ? ) OT\nPI ( ? ) EST",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCA ( ? ) UN\nFA ( ? ) OAD",
+      "questionDifficulty": 1,
+      "correctAnswer": "R",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCU ( ? ) AP\nFA ( ? ) ALL",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGA ( ? ) IT\nHI ( ? ) ING",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCU ( ? ) IG\nDI ( ? ) LAN",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBI ( ? ) UT\nTI ( ? ) AME",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCA ( ? ) IG\nRI ( ? ) ONE",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Find the letter that completes both pairs of words:\n\nOW ( ? ) AP\nAL ( ? ) ONG",
+      "questionDifficulty": 1,
+      "correctAnswer": "L",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Find the letter that completes both pairs of words:\n\nME ( ? ) OP\nSE ( ? ) AIL",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTA ( ? ) AN\nCA ( ? ) INE",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Find the letter that completes both pairs of words:\n\nRA ( ? ) EW\nFA ( ? ) AIL",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Find the letter that completes both pairs of words:\n\nAD ( ? ) IG\nOD ( ? ) OOR",
+      "questionDifficulty": 1,
+      "correctAnswer": "D",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTU ( ? ) AT\nJO ( ? ) ALL",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHE ( ? ) UG\nFO ( ? ) AIN",
+      "questionDifficulty": 1,
+      "correctAnswer": "R",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHA ( ? ) IP\nRE ( ? ) USK",
+      "questionDifficulty": 1,
+      "correctAnswer": "D",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGO ( ? ) EN\nNO ( ? ) RIP",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBA ( ? ) IN\nHA ( ? ) URN",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBI ( ? ) IP\nSI ( ? ) ALK",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPE ( ? ) AN\nNE ( ? ) EAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMA ( ? ) AR\nSA ( ? ) OAD",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTE ( ? ) ET\nPE ( ? ) INE",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Find the letter that completes both pairs of words:\n\nOI ( ? ) ET\nTAL ( ? ) AKE",
+      "questionDifficulty": 1,
+      "correctAnswer": "L",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTI ( ? ) OT\nHI ( ? ) OKE",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Find the letter that completes both pairs of words:\n\nLO ( ? ) UB\nDO ( ? ) AKE",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDA ( ? ) OP\nHI ( ? ) ILL",
+      "questionDifficulty": 1,
+      "correctAnswer": "M",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPI ( ? ) AP\nDI ( ? ) ATE",
+      "questionDifficulty": 1,
+      "correctAnswer": "G",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBO ( ? ) ET\nCO ( ? ) ILL",
+      "questionDifficulty": 1,
+      "correctAnswer": "W",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHU ( ? ) AP\nBI ( ? ) OLD",
+      "questionDifficulty": 1,
+      "correctAnswer": "G",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHE ( ? ) AP\nPE ( ? ) ICE",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Find the letter that completes both pairs of words:\n\nJA ( ? ) AN\nGU ( ? ) OON",
+      "questionDifficulty": 1,
+      "correctAnswer": "M",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSO ( ? ) ET\nRI ( ? ) ANK",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPE ( ? ) UN\nJO ( ? ) IRL",
+      "questionDifficulty": 1,
+      "correctAnswer": "G",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Find the letter that completes both pairs of words:\n\nRA ( ? ) AME\nBU ( ? ) IVE",
+      "questionDifficulty": 1,
+      "correctAnswer": "G",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Find the letter that completes both pairs of words:\n\nNO ( ? ) AS\nSE ( ? ) ING",
+      "questionDifficulty": 1,
+      "correctAnswer": "W",
+      "subConceptId": "consonant-shared",
+      "subConceptName": "When the Shared Letter Is a Consonant",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **CU(?)AP and FA(?)ALL**. You definitely don't need to try all 21 consonants! Find the restrictive word (the pair where fewest letters work) — it usually narrows things down to just 2 or 3 opt",
+      "lessonLearningGoal": [
+        "Track down a shared consonant hiding between word pairs",
+        "Why the restrictive-word trick is your best friend with consonants"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMEA ( ? ) ABLE\nCOS ( ? ) ENNIS",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) END\nSWI ( ? ) ASK",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCLU ( ? ) ELL\nGRA ( ? ) IRD",
+      "questionDifficulty": 2,
+      "correctAnswer": "B",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTA ( ? ) ING\nFEA ( ? ) OOF",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Find the letter that completes both pairs of words:\n\nLOS ( ? ) ENT\nDUS ( ? ) RAM",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPLA ( ? ) AME\nTHI ( ? ) ECK",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Find the letter that completes both pairs of words:\n\nHEL ( ? ) INK\nDRI ( ? ) OLE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGRI ( ? ) EAR\nCOR ( ? ) OSE",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDRU ( ? ) ILK\nPRA ( ? ) INE",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Find the letter that completes both pairs of words:\n\nNAI ( ? ) AMP\nGIR ( ? ) ONG",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDEA ( ? ) ICE\nPOU ( ? ) AIN",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSHI ( ? ) OLE\nCHO ( ? ) LUG",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPAR ( ? ) ALK\nSAL ( ? ) OLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBEL ( ? ) UCK\nTAL ( ? ) ION",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Find the letter that completes both pairs of words:\n\nFAS ( ? ) ENT\nBES ( ? ) OAD",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCLA ( ? ) EAR\nSNA ( ? ) EST",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Find the letter that completes both pairs of words:\n\nFIS ( ? ) AND\nPUS ( ? ) ELP",
+      "questionDifficulty": 2,
+      "correctAnswer": "H",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGRA ( ? ) AND\nLIM ( ? ) IKE",
+      "questionDifficulty": 2,
+      "correctAnswer": "B",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSCA ( ? ) ING\nSTI ( ? ) OPE",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Find the letter that completes both pairs of words:\n\nWHE ( ? ) AME\nBOR ( ? ) ICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSKI ( ? ) OND\nBUM ( ? ) AGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Find the letter that completes both pairs of words:\n\nWIS ( ? ) OLE\nCRAS ( ? ) ILL",
+      "questionDifficulty": 2,
+      "correctAnswer": "H",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGLA ( ? ) ONE\nMIL ( ? ) AMP",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTOO ( ? ) END\nPOO ( ? ) AND",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSHU ( ? ) ALL\nWHEA ( ? ) ICK",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSKI ( ? ) AIL\nCOI ( ? ) INE",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTA ( ? ) ITE\nHER ( ? ) ATH",
+      "questionDifficulty": 2,
+      "correctAnswer": "B",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDES ( ? ) ING\nRIS ( ? ) ITE",
+      "questionDifficulty": 2,
+      "correctAnswer": "K",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTOR ( ? ) ICE\nWAR ( ? ) IST",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPATC ( ? ) ILL\nTEAC ( ? ) ALF",
+      "questionDifficulty": 2,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTO ( ? ) INT\nTRA ( ? ) AIR",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSAN ( ? ) ARE\nFIN ( ? ) EAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMAR ( ? ) EEP\nDAR ( ? ) NEE",
+      "questionDifficulty": 2,
+      "correctAnswer": "K",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSEE ( ? ) UCH\nCAL ( ? ) ILL",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCLA ( ? ) ELT\nTRI ( ? ) OON",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSLA ( ? ) OLD\nCRI ( ? ) ACK",
+      "questionDifficulty": 2,
+      "correctAnswer": "B",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSHO ( ? ) INK\nGRE ( ? ) ARM",
+      "questionDifficulty": 2,
+      "correctAnswer": "W",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBUS ( ? ) ANG\nPAT ( ? ) OST",
+      "questionDifficulty": 2,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) OLE\nWOR ( ? ) AST",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTRI ( ? ) INE\nSLA ( ? ) ICK",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPEE ( ? ) IME\nFOO ( ? ) IFT",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPAI ( ? ) INE\nBAR ( ? ) EST",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGOA ( ? ) AMP\nCUR ( ? ) IST",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) ACK\nGRI ( ? ) OND",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBREA ( ? ) ISH\nMAI ( ? ) ULL",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTI ( ? ) ULE\nFLOO ( ? ) EST",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) ING\nMIS ( ? ) AFE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDRA ( ? ) EST\nFLO ( ? ) ORD",
+      "questionDifficulty": 2,
+      "correctAnswer": "W",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSPA ( ? ) OTE\nIRO ( ? ) OON",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "two-word-pairs",
+      "subConceptName": "Two Word Pairs — The Standard Format",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **CA(?)EN and BU(?)ANK** together. This 3-step method makes it really straightforward:",
+      "lessonLearningGoal": [
+        "Solve the most common shared-letter format quickly and confidently",
+        "Find the one letter that completes BOTH word pairs"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Find the letter that completes both pairs of words:\n\nFLAS ( ? ) AND\nBUNC ( ? ) IRE",
+      "questionDifficulty": 2,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Find the letter that completes both pairs of words:\n\nORBI ( ? ) RADE\nCHAR ( ? ) IGER",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSTUM ( ? ) EARL\nEQUI ( ? ) ATCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "P",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCLIM ( ? ) READ\nDISTUR ( ? ) LANK",
+      "questionDifficulty": 3,
+      "correctAnswer": "B",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPLASTE ( ? ) OBIN\nSHIVE ( ? ) EBEL",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Find the letter that completes both pairs of words:\n\nINSEC ( ? ) OTAL\nADOP ( ? ) RICK",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Find the letter that completes both pairs of words:\n\nALAR ( ? ) USIC\nCHAR ( ? ) EDAL",
+      "questionDifficulty": 3,
+      "correctAnswer": "M",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Find the letter that completes both pairs of words:\n\nABSOR ( ? ) ENCH\nSUPER ( ? ) RAIN",
+      "questionDifficulty": 3,
+      "correctAnswer": "B",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Find the letter that completes both pairs of words:\n\nFINIS ( ? ) EART\nPUNIS ( ? ) ORSE",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Find the letter that completes both pairs of words:\n\nENRIC ( ? ) ABIT\nSKETC ( ? ) APPY",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPERSO ( ? ) OVEL\nDRAGO ( ? ) ERVE",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTABLE ( ? ) WIST\nPERMI ( ? ) OWER",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCOUNCI ( ? ) OTUS\nPENCI ( ? ) UNCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Find the letter that completes both pairs of words:\n\nPARCE ( ? ) EMON\nCANCE ( ? ) IGHT",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Find the letter that completes both pairs of words:\n\nWONDE ( ? ) OUND\nFINGE ( ? ) IVER",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Find the letter that completes both pairs of words:\n\nRAPI ( ? ) RESS\nSTUPI ( ? ) RAIN",
+      "questionDifficulty": 3,
+      "correctAnswer": "D",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Find the letter that completes both pairs of words:\n\nGALLO ( ? ) APER\nBISHO ( ? ) LACE",
+      "questionDifficulty": 3,
+      "correctAnswer": "P",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBUTTO ( ? ) URSE\nKITTE ( ? ) ORTH",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSCRIP ( ? ) ASTE\nACCEP ( ? ) RAIL",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMUSEU ( ? ) EDAL\nBOTTO ( ? ) ARCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "M",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCHERU ( ? ) RING\nPREFA ( ? ) OAST",
+      "questionDifficulty": 3,
+      "correctAnswer": "B",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Find the letter that completes both pairs of words:\n\nANCHO ( ? ) ULER\nWHISPE ( ? ) OAST",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Find the letter that completes both pairs of words:\n\nBLANKE ( ? ) WICE\nBASKE ( ? ) RUTH",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCHANNE ( ? ) IVER\nPANE ( ? ) UNCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Find the letter that completes both pairs of words:\n\nLESSO ( ? ) OBLE\nRIBBO ( ? ) IGHT",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDIREC ( ? ) RUST\nEXPEC ( ? ) ABLE",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Find the letter that completes both pairs of words:\n\nSYMBO ( ? ) ATER\nTRAVE ( ? ) EARN",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Find the letter that completes both pairs of words:\n\nRANDO ( ? ) OTOR\nPHANTO ( ? ) INT",
+      "questionDifficulty": 3,
+      "correctAnswer": "M",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMETHO ( ? ) ANCE\nLIZAR ( ? ) UST",
+      "questionDifficulty": 3,
+      "correctAnswer": "D",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Find the letter that completes both pairs of words:\n\nELASTI ( ? ) LOUD\nFABRI ( ? ) RANE",
+      "questionDifficulty": 3,
+      "correctAnswer": "C",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCHISE ( ? ) OGIC\nREBE ( ? ) OWER",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCOLLEC ( ? ) OOTH\nSUSPEC ( ? ) RIBE",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Find the letter that completes both pairs of words:\n\nKITCHE ( ? ) EVER\nBROKE ( ? ) INTH",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Find the letter that completes both pairs of words:\n\nCHAPTE ( ? ) IFLE\nMONSTE ( ? ) IDGE",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Find the letter that completes both pairs of words:\n\nNEGLEC ( ? ) EETH\nIMPAC ( ? ) ORCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "T",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Find the letter that completes both pairs of words:\n\nMAJESTI ( ? ) AMEL\nCLASSI ( ? ) ATCH",
+      "questionDifficulty": 3,
+      "correctAnswer": "C",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Find the letter that completes both pairs of words:\n\nTRIUMP ( ? ) OUSE\nMAMMOT ( ? ) EDGE",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Find the letter that completes both pairs of words:\n\nDIAMON ( ? ) RUM\nCUSTAR ( ? ) RIFT",
+      "questionDifficulty": 3,
+      "correctAnswer": "D",
+      "subConceptId": "restrictive-word-strategy",
+      "subConceptName": "Spotting the Restrictive Word",
+      "confidence": "high",
+      "lessonTeachSummary": "In **STA(?)ING and FEA(?)OOF**, look for unusual patterns — double letters, rare letter combos, or long words with few completions. These are your tell-tale signs!",
+      "lessonLearningGoal": [
+        "Quickly spot which word pair narrows down your options the most",
+        "Learn why unusual letter patterns are your best clue — they're the most restrictive"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "vowel-shared",
+      "name": "When the Shared Letter Is a Vowel"
+    },
+    {
+      "id": "three-word-pairs",
+      "name": "Three Word Pairs — Harder Questions"
+    },
+    {
+      "id": "common-letter-positions",
+      "name": "Where Does the Letter Sit?"
+    },
+    {
+      "id": "process-of-elimination",
+      "name": "Ruling Out Letters Systematically"
+    },
+    {
+      "id": "tricky-pairs",
+      "name": "Tricky Pairs — When Multiple Letters Seem to Work"
+    }
+  ],
+  "subConceptCoverage": {
+    "consonant-shared": {
+      "name": "When the Shared Letter Is a Consonant",
+      "questionCount": 38,
+      "difficulties": {
+        "D1": 38,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "two-word-pairs": {
+      "name": "Two Word Pairs — The Standard Format",
+      "questionCount": 42,
+      "difficulties": {
+        "D1": 0,
+        "D2": 42,
+        "D3": 0
+      }
+    },
+    "restrictive-word-strategy": {
+      "name": "Spotting the Restrictive Word",
+      "questionCount": 45,
+      "difficulties": {
+        "D1": 0,
+        "D2": 8,
+        "D3": 37
+      }
+    }
+  }
+}

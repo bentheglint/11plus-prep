@@ -1,0 +1,172 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "speeddistancetime",
+  "subject": "maths",
+  "qualityScore": 6,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 18,
+    "issuesFound": 12,
+    "bySeverity": {
+      "critical": 3,
+      "high": 3,
+      "medium": 4,
+      "low": 2
+    },
+    "difficultyAssessment": "Distribution is D1:44(35%) D2:55(44%) D3:26(21%). D1 is slightly over-represented and D3 is under-represented versus the ideal 30:40:30 split. Several D1 questions involve non-trivial decimal division (Q36, Q47, Q56, Q57, Q87, Q97, Q107) which would be more appropriate at D2. The D3 category is almost entirely average-speed questions (14 of 26) — very narrow coverage of hard skills.",
+    "coverageAssessment": "Good spread across 9 sub-concepts: core formulas (calculate-distance, calculate-time, master-speed-formula), unit conversion (minutes-to-hours, metres-to-km, kmh-to-ms, time-in-minutes), average speed, and word problems. However, the time-in-minutes sub-concept has zero answer variety — all 12 questions have the answer 15 minutes. Missing: m/s to km/h reverse conversion, timetable/schedule questions, speed comparison questions. The SDT Triangle sub-concept has lessons but no questions mapped to it (orphan).",
+    "teachingEfficacyAssessment": "Lessons are well-structured with clear 4-screen flows (hook-teach-interact-consolidate). Good use of SDTTriangle, WorkedExample, and NumberLine visual components. The spot-the-mistake templates effectively target common errors (0.30 hours trap, averaging speeds trap, unit mismatch). However, the master-speed-formula sub-concept has 16 questions but NO lessons — these questions map to a concept that was never taught. The sdt-triangle sub-concept has 2 lessons but no questions use it. Several lesson teach screens are null (content not extracted), making full efficacy assessment incomplete.",
+    "topPriorities": [
+      "Fix 3 wrong answers: Q25 (137.5 not 135), Q54 (10.5 not 10), Q114 (15 not 16)",
+      "Create lessons for master-speed-formula or merge its 16 questions into existing speed sub-concepts",
+      "Add answer variety to time-in-minutes questions — all 12 give answer 15 minutes",
+      "Re-rate several D1 questions that require decimal division as D2"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-SDT-Q025-001",
+      "itemType": "question",
+      "itemId": "Q25",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Correct answer is 137.5 km, not 135 km",
+      "description": "Q25: 'A commuter train travels at 55 km/h for 2 hours 30 minutes from Weymouth to Southampton.' Distance = 55 x 2.5 = 137.5 km. The explanation itself states '= 137.5 km' but the correctAnswer field says '135 km' (option index 3). Option index 4 is '137.5 km' which is the actual correct answer. The correct index should be 4, not 3.",
+      "suggestedFix": "Change correct from 3 to 4 so correctAnswer becomes '137.5 km'. Update correctAnswer field to match.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-Q054-001",
+      "itemType": "question",
+      "itemId": "Q54",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Correct answer is 10.5 km/h, not 10 km/h",
+      "description": "Q54: 'A park runner completes a 3500 m course through the New Forest in 20 minutes.' 3500m = 3.5 km, 20 min = 1/3 hour. Speed = 3.5 / (1/3) = 3.5 x 3 = 10.5 km/h. The explanation says '= 10.5 km/h' but the correctAnswer is '10 km/h' (option index 2). The correct answer 10.5 km/h is option index 3. The explanation contradicts the marked answer.",
+      "suggestedFix": "Change correct from 2 to 3 so correctAnswer becomes '10.5 km/h'. Update correctAnswer field to '10.5 km/h'.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-Q114-001",
+      "itemType": "question",
+      "itemId": "Q114",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Correct answer is 15 km/h, not 16 km/h — explanation also wrong",
+      "description": "Q114: 'A triathlete runs 6500 metres in 26 minutes.' 6500m = 6.5 km, 26 min = 13/30 hours. Speed = 6.5 / (13/30) = 6.5 x 30/13 = 195/13 = 15 km/h. The explanation says '= 15 km/h' but the correctAnswer is '16 km/h' (option index 3). The calculation in the explanation is also wrong: it states 'Speed = 6.5 / (13/30) = 15 km/h' which is correct maths, but then marks '16 km/h' as the answer. Correct index should be 2 (15 km/h).",
+      "suggestedFix": "Change correct from 3 to 2 so correctAnswer becomes '15 km/h'. Update correctAnswer field to '15 km/h'.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-MAP-001",
+      "itemType": "mapping",
+      "itemId": "Q110",
+      "severity": "high",
+      "category": "wrong-mapping",
+      "title": "Q110 mapped to calculate-distance but asks for time",
+      "description": "Q110: 'Mia races her wheelchair at 3 m/s around a 600 m track. How long does one lap take in seconds?' This question asks for TIME (Time = Distance / Speed = 600 / 3 = 200 seconds), but is mapped to the 'calculate-distance' sub-concept. It should be mapped to 'calculate-time'.",
+      "suggestedFix": "Change subConceptId from 'calculate-distance' to 'calculate-time' in the question-lesson mapping.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-LESSON-001",
+      "itemType": "mapping",
+      "itemId": "master-speed-formula",
+      "severity": "high",
+      "category": "missing-lesson",
+      "title": "16 questions mapped to master-speed-formula but no lessons exist",
+      "description": "The 'master-speed-formula' sub-concept has 16 questions mapped to it (Q1, Q16, Q26, Q36, Q46, Q56, Q57, Q66, Q76, Q77, Q86, Q96, Q97, Q106, Q109, Q118) but all show '[No lesson found]'. These are basic Speed = Distance / Time questions. Children get no teaching before attempting these questions in Focused Learning mode.",
+      "suggestedFix": "Either create a lesson for master-speed-formula (Speed = Distance / Time, step-by-step), or remap these 16 questions to the existing 'calculate-time' or 'calculate-distance' sub-concepts as appropriate, since the formula is the same rearranged.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-LESSON-002",
+      "itemType": "mapping",
+      "itemId": "sdt-triangle",
+      "severity": "high",
+      "category": "orphan-lesson",
+      "title": "SDT Triangle sub-concept has 2 lessons but 0 questions",
+      "description": "The 'sdt-triangle' sub-concept has 2 well-designed lessons (visual-discovery and key-fact templates using the SDTTriangle visual component) but no questions are mapped to it. The lessons teach how to use the triangle to choose the right formula — this is a valuable supporting concept, but orphaned from the question bank. In Focused Learning mode, these lessons will never be shown because no questions trigger them.",
+      "suggestedFix": "Map some of the 'master-speed-formula' questions to 'sdt-triangle' instead, or create a few questions that specifically test triangle usage (e.g., 'Which formula do you get when you cover D?'). Alternatively, merge the SDT triangle lessons into the calculate-speed/distance/time sub-concepts as introductory lessons.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-Q-PATTERN-001",
+      "itemType": "question",
+      "itemId": "time-in-minutes-all",
+      "severity": "medium",
+      "category": "answer-repetition",
+      "title": "All 12 time-in-minutes questions have the same answer: 15 minutes",
+      "description": "Every question in the time-in-minutes sub-concept (Q8, Q22, Q32, Q42, Q52, Q62, Q72, Q82, Q92, Q102, Q112) produces the answer 15 minutes via the same pattern: distance/speed = 1/4 hour = 15 minutes. This is extremely repetitive. A child who spots the pattern can answer without understanding the concept. Options are also nearly identical across questions (12, 13, 14, 15, 16).",
+      "suggestedFix": "Vary the answers: include questions giving 20 minutes (1/3 hour), 30 minutes (1/2 hour), 45 minutes (3/4 hour), 12 minutes (1/5 hour), and 10 minutes (1/6 hour). Change the speed/distance pairs to produce different fractional hours.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-DIFF-001",
+      "itemType": "question",
+      "itemId": "multiple-D1",
+      "severity": "medium",
+      "category": "difficulty-rating",
+      "title": "Several D1 questions require non-trivial decimal division — should be D2",
+      "description": "These D1 questions involve dividing by decimals or non-round numbers, which is harder than straightforward whole-number division: Q36 (270/4.5), Q47 (42x3.5), Q56 (396/5.5), Q57 (145/2.5), Q87 (36/15=2.4), Q97 (77/1.75), Q107 (58.5/18=3.25). For a 9-year-old, dividing 77 by 1.75 or 58.5 by 18 is not D1-level arithmetic. Q27 (48x2.5) is borderline but acceptable at D1.",
+      "suggestedFix": "Re-rate Q56, Q57, Q87, Q97, and Q107 as D2. Q36 and Q47 are borderline — consider D2 for consistency. Replace with simpler whole-number calculations for D1 (e.g., 200 km at 50 km/h = 4 hours).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-DIFF-002",
+      "itemType": "question",
+      "itemId": "D3-distribution",
+      "severity": "medium",
+      "category": "difficulty-distribution",
+      "title": "D3 questions over-concentrate on average speed — 14 of 26 D3 questions",
+      "description": "Of 26 D3 questions, 14 are average-speed (two-part journey), 5 are metres-to-km with minutes-to-hours double conversion, 4 are minutes-to-hours with awkward fractions, and 3 are word problems. The average-speed pattern at D3 is highly repetitive: always 'drove X km in Y hours, then Z km in W hours'. No D3 questions test reverse unit conversion, back-calculation of missing values, or more complex multi-step reasoning.",
+      "suggestedFix": "Replace some average-speed D3 questions with: (a) multi-step problems requiring back-calculation, (b) questions where time must be calculated from clock times with awkward differences (e.g., 10:20 to 12:05), (c) problems with a rest stop to exclude from total time, (d) comparison questions ('who was faster?').",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-Q-PATTERN-002",
+      "itemType": "question",
+      "itemId": "kmh-to-ms-all",
+      "severity": "medium",
+      "category": "answer-repetition",
+      "title": "km/h to m/s questions all use multiples of 18 — predictable pattern",
+      "description": "All 7 km/h-to-m/s conversion questions use speeds that are exact multiples of 3.6 (72, 90, 108, 126, 144, 162, 180 — all multiples of 18). This means every answer is a clean whole number. No question tests what happens with non-multiples (e.g., 100 km/h = 27.78 m/s) or requires rounding, which GL does test. The pattern is too clean and predictable.",
+      "suggestedFix": "Add 2-3 questions using non-multiple speeds (e.g., 100 km/h, 80 km/h, 50 km/h) where the answer requires rounding. Keep some clean multiples for D1/D2 but include messy conversions at D3.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-Q025-002",
+      "itemType": "question",
+      "itemId": "Q25",
+      "severity": "low",
+      "category": "explanation-mismatch",
+      "title": "Q25 explanation gives correct calculation but points to wrong option",
+      "description": "The explanation for Q25 correctly states 'Distance = 55 x 2.5 = 137.5 km' but this contradicts the correctAnswer of '135 km'. This means children who get the question wrong and read the explanation will learn the right method but see it doesn't match the 'correct' answer, causing confusion. This is a secondary consequence of the wrong-answer issue in MATHS-SDT-Q025-001.",
+      "suggestedFix": "Will be resolved when MATHS-SDT-Q025-001 is fixed by changing correct index to 4.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-SDT-TONE-001",
+      "itemType": "lesson",
+      "itemId": "calculate-distance-curiosity",
+      "severity": "low",
+      "category": "unit-consistency",
+      "title": "Lesson uses mph (miles per hour) but questions use km/h",
+      "description": "The 'calculate-distance-curiosity' lesson uses miles and mph ('Sophie is on a road trip... 50 mph for 3 hours... 160 miles'). All 125 quiz questions use km/h and metres. This mismatch could confuse the child — they learn with mph in the lesson then immediately face km/h in the quiz. The calculate-time lessons and average-speed lessons also use mph/miles in their examples.",
+      "suggestedFix": "Update lesson variable sets to use km/h and km to match the questions. Keep the same numbers where possible (e.g., change 50 mph to 50 km/h). Alternatively, add a note explaining both units are used in GL tests, but consistency within the flow is better for a 9-year-old.",
+      "oracleConfidence": "high",
+      "status": "open"
+    }
+  ]
+}

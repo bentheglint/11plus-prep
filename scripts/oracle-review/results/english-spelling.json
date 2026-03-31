@@ -1,0 +1,191 @@
+{
+  "reviewedAt": "2026-03-30T21:00:00.000Z",
+  "topic": "spelling",
+  "subject": "english",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 420,
+    "lessonsReviewed": 28,
+    "mappingsReviewed": 420,
+    "issuesFound": 14,
+    "bySeverity": { "critical": 0, "high": 3, "medium": 6, "low": 5 },
+    "difficultyAssessment": "D1:121 (29%), D2:165 (39%), D3:134 (32%) — strong match to GL target distribution of ~30:40:30. D1 questions use common homophone errors (their/there/they're, here/hear, to/too/two) and simple misspellings (lovley, untill, freinds) that a regular reader would spot immediately. D2 questions feature Year 5-6 curriculum words with plausible misspellings (intresting, embarassing, definately, seperate) and context-dependent homophones (affect/effect, practice/practise, whether/weather). D3 questions use sophisticated vocabulary (accommodation, conscientious, archaeological, superintendent) with subtle single-letter errors, plus well-constructed 'no mistake' questions with tricky-looking correct words. The difficulty progression is well-calibrated to GL standards.",
+    "coverageAssessment": "420 error-spotting questions cover all 9 GL spelling categories identified in the Oracle specification. Category coverage: Homophones (~25% of questions — their/there, here/hear, to/too, weather/whether, passed/past, its/it's, your/you're, affect/effect, practice/practise, principal/principle, stationary/stationery, aloud/allowed, whose/who's, threw/through, wood/would, our/hour, new/knew, wear/where). Suffixes (~15% — -tion/-sion/-cian, -ible/-able, -ence/-ance). Silent letters (~8% — kn-, wr-, mb). Double letters (~12% — accommodate, committee, embarrass, recommend, succeed, occasionally, immediately, necessary). i before e (~5% — friends, receive, believe). Commonly misspelled words (~15% — separate, definitely, fascinating, government, parliament, thorough). The 'no mistake' questions appear at roughly 15-18% across all difficulties, matching the Oracle's 15-20% target. Answer position distribution appears even across A-D with no detectable bias. Homophones may be slightly over-represented relative to the GL ~20% target.",
+    "teachingEfficacyAssessment": "28 lessons across 14 sub-concepts provide comprehensive coverage of all major spelling patterns. Each sub-concept has 2 lessons — one step-by-step method and one spot-the-mistake variant, which is pedagogically excellent (learn the rule, then apply it to error-spotting). Standout lessons: the homophones lessons teach the 'meaning test' strategy (ask 'what does this word MEAN here?') which is the single most effective homophone strategy. The double-letters lesson teaches the short-vowel doubling rule. The silent-letters lessons use the 'say the silent letter in your head' memory technique (k-nife, w-rite, clim-b). The i-before-e lesson correctly addresses the 'except after c' rule and its exceptions. All 420 questions are mapped (0 unmapped), with 257 high-confidence and 163 medium-confidence mappings. The medium-confidence mappings are concentrated in the 'spelling-demons' sub-concept, which acts as a catch-all for words that don't fit neatly into one rule category — this is appropriate since these words genuinely need to be memorised rather than rule-derived.",
+    "topPriorities": [
+      "Fix the double-letters lesson hook screen which renders 'undefined' in the SentenceDisplay visual — the highlightWords array has entries without 'word' properties",
+      "Review Q39 (practice/practise) — the question is valid but the explanation could confuse by not explicitly stating the UK-specific nature of the c/s distinction",
+      "Add more 'no mistake' questions at D1 level — currently most appear at D2/D3, but GL uses some at D1 to build the 'don't assume there's always an error' habit early"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "ENG-SPL-VIS-001",
+      "itemType": "lesson",
+      "itemId": "double-letters-steps",
+      "severity": "high",
+      "category": "visual-rendering",
+      "title": "Double-letters hook screen renders 'undefined' in SentenceDisplay",
+      "description": "The double-letters-steps lesson hook screen uses SentenceDisplay with mode 'highlight' and text 'undefined  or  undefined?'. The highlightWords array contains two entries that have 'color' properties but no 'word' properties: [{\"color\": \"#e74c3c\"}, {\"color\": \"#22c55e\"}]. This means the visual will display the literal text 'undefined or undefined?' instead of showing the two spelling options (e.g., 'running or runing?'). The lesson content in the body text ('Is it \"running\" or \"runing\"?') covers the same ground, but the visual is broken.",
+      "suggestedFix": "Add 'word' properties to the highlightWords array: [{\"word\": \"runing\", \"color\": \"#e74c3c\"}, {\"word\": \"running\", \"color\": \"#22c55e\"}]. Update the text property to 'runing  or  running?'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-FORMAT-001",
+      "itemType": "question",
+      "itemId": "ALL",
+      "severity": "high",
+      "category": "format-consistency",
+      "title": "Options say 'Section A-D' but correctAnswer says 'Segment A-D'",
+      "description": "All 420 questions have options labelled 'Section A', 'Section B', 'Section C', 'Section D', 'No mistake' but the correctAnswer field uses 'Segment A', 'Segment B', etc. This terminology inconsistency could cause issues if the app renders the correctAnswer text directly (e.g., in a results summary or explanation prefix). The child sees 'Section C' but the data says 'Segment C'. While 'correct' field (0-indexed integer) is the authoritative answer, the text mismatch is a data quality issue.",
+      "suggestedFix": "Standardise on one term throughout. Since GL uses 'Section', change all correctAnswer values from 'Segment X' to 'Section X' (or vice versa — pick one and be consistent).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-ACC-001",
+      "itemType": "question",
+      "itemId": "Q2",
+      "severity": "high",
+      "category": "explanation-accuracy",
+      "title": "Q2 explanation incorrectly describes the spelling rule for 'lovely'",
+      "description": "Q2 explanation states: 'When adding '-ly' to 'love', we drop the 'e' and add '-ly': love -> lovely.' This rule description is incorrect. When adding '-ly' to 'love', we do NOT drop the 'e' — 'lovely' retains the 'e' from 'love' (love + ly = lovely). The rule about dropping 'e' applies when adding vowel suffixes (love + ing = loving), not consonant suffixes. The '-ly' suffix starts with a consonant, so the 'e' is kept. The correct spelling 'lovely' is right, but the stated rule is wrong and could teach the child an incorrect principle.",
+      "suggestedFix": "Change the explanation to: ''lovley' should be 'lovely'. When adding '-ly' to a word ending in 'e', we usually keep the 'e': love + ly = lovely. The common mistake is rearranging the 'e' and 'l'. Say the word slowly: love-ly.'",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q25",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q25 (hight/high) rated D1 but 'hight' is not a realistic misspelling",
+      "description": "Q25 presents 'hight street' where the answer is that 'hight' should be 'high'. However, 'hight' is not a common or realistic misspelling of 'high'. Children do not typically add a 't' to 'high'. GL error-spotting questions at all difficulty levels require the misspelling to be a genuine, commonly-made error. This misspelling feels artificial — it would be more natural as a homophone error (e.g., 'hire street' or misusing 'height' in the wrong context).",
+      "suggestedFix": "Replace with a more realistic D1 error. Options: (a) use a genuine homophone error like 'buy/by' or 'no/know', (b) use a common simple misspelling like 'wen' for 'when' or 'sed' for 'said'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q86",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q86 (Altho/Although) rated D1 but tests an unusual truncation error",
+      "description": "Q86 presents 'Altho it was raining' where 'Altho' should be 'Although'. While 'although' is a common word, the error 'Altho' is more of an abbreviation/text-speak truncation than a genuine misspelling a 9-year-old would make in a written exam. Children are more likely to write 'allthough' or 'althow' than simply truncate the word. At D1, errors should be ones that children commonly make.",
+      "suggestedFix": "Replace with a more realistic misspelling like 'allthough' or 'althoe', or swap the whole question for a different D1 error.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-DIST-001",
+      "itemType": "question",
+      "itemId": "Q5,Q20,Q26,Q44,Q47,Q81,Q99",
+      "severity": "medium",
+      "category": "no-mistake-distribution",
+      "title": "'No mistake' questions are unevenly distributed across difficulty levels",
+      "description": "Reviewing a sample of 'no mistake' questions: Q5 (D2), Q20 (D2), Q26 (D3), Q44 (D2), Q47 (D1), Q81 (D3), Q99 (D1), Q306 (D3). The Oracle specification states 'no mistake' should be 15-20% of total and 'more common at D2/D3' with 'rare at D1'. There appear to be a few D1 'no mistake' questions (Q47, Q99), which is acceptable in small numbers. However, the D1 'no mistake' questions use relatively simple correctly-spelled words (Q47: practice, Wednesday; Q99: colourful, gracefully, butterfly) that don't create enough doubt. GL D1 'no mistake' questions still include at least one word that LOOKS tricky (e.g., 'beautiful' or 'because') to create a moment of hesitation.",
+      "suggestedFix": "Review D1 'no mistake' questions and ensure each contains at least one correctly-spelled word that children commonly doubt (e.g., because, beautiful, Wednesday (which Q47 does include), different, friends). Q99's words (colourful, gracefully) are good. The distribution overall appears reasonable.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-HOMO-001",
+      "itemType": "question",
+      "itemId": "Q11-Q14,Q28,Q30-Q36,Q42-Q43,Q46,Q85-Q86",
+      "severity": "medium",
+      "category": "category-weighting",
+      "title": "Homophones may be over-represented relative to GL weighting",
+      "description": "Homophones appear to represent approximately 25-28% of questions based on sampling, while the Oracle specification targets ~20%. The first 50 questions alone contain roughly 15 homophone questions (30%). This is a minor over-representation. GL tests homophones at ~20% and balances with other categories like suffixes, prefixes, and Latin/Greek roots. The homophone questions themselves are high quality — they cover the full range (their/there/they're, here/hear, to/too/two, weather/whether, passed/past, its/it's, your/you're, affect/effect, practice/practise, principal/principle, stationary/stationery, aloud/allowed, whose/who's, threw/through, wood/would, our/hour, new/knew, wear/where, compliment/complement).",
+      "suggestedFix": "If exact GL weighting is desired, reduce homophones by ~5-8% and increase suffixes (-tion/-sion/-cian, -ible/-able) and prefix questions to compensate. However, this is a minor calibration issue and homophones are genuinely the most commonly tested GL spelling category.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-HOMO-002",
+      "itemType": "question",
+      "itemId": "Q32",
+      "severity": "medium",
+      "category": "answer-accuracy",
+      "title": "Q32 explanation for its/it's is slightly misleading",
+      "description": "Q32 presents 'when it's owner came home' where 'it's' should be 'its'. The explanation says: \"'Its' shows possession (the dog's owner). 'It's' is short for 'it is' or 'it has'.\" The parenthetical '(the dog's owner)' is confusing because it introduces the apostrophe-s possessive pattern from nouns (dog's) in the same breath as explaining that 'its' (possessive) does NOT have an apostrophe. A child might think: 'But dog's has an apostrophe for possession, so why doesn't its?' The explanation should address this directly as it is the exact trap GL exploits.",
+      "suggestedFix": "Revise explanation to: \"'it's' should be 'its'. This is the trickiest one! 'Its' means belonging to it (no apostrophe needed). 'It's' always means 'it is' or 'it has'. Unlike 'dog's' or 'Sarah's', the possessive 'its' breaks the normal apostrophe rule. Remember: if you can replace it with 'it is', use 'it's'. If not, use 'its'.\"",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q93",
+      "severity": "low",
+      "category": "explanation-accuracy",
+      "title": "Q93 explanation for 'occasionally' says double 'c' and double 'l' but the word has single 'l'",
+      "description": "Q93 explanation states: \"'ocasionally' should be 'occasionally'. It needs double 'c' and double 'l': oc-CA-sion-al-ly.\" The word 'occasionally' has double 'c' and double 'l' when you look at the full word (occasional + ly = occasionally), so the final word does have 'll'. However, the syllable breakdown 'oc-CA-sion-al-ly' suggests the double 'l' is in '-al-ly' which is actually the '-ally' suffix. The explanation is technically correct but the emphasis on 'double l' could be misleading since children might think there's a double 'l' in the root word rather than it being formed by 'al' + 'ly'.",
+      "suggestedFix": "Clarify: \"'ocasionally' should be 'occasionally'. It needs double 'c': oc-CA-sion-ally. The root is 'occasion' (double c), then add '-ally'.\"",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-EXPL-002",
+      "itemType": "question",
+      "itemId": "Q33",
+      "severity": "low",
+      "category": "segment-formatting",
+      "title": "Q33 has a long Segment D that may display poorly",
+      "description": "Q33's Segment D is 'we have planned for you're birthday.' — this is noticeably longer than the other segments ('She said that', 'you are going to', 'love the surprise'). In GL format, segments are roughly equal in length so no segment stands out visually. A very long segment might draw the child's eye and bias them toward selecting it (or away from it). The error IS in this segment, so the length could make it either too obvious or create visual imbalance.",
+      "suggestedFix": "Consider restructuring the sentence to balance segment lengths, e.g.: Segment A: 'She said you are', B: 'going to love', C: 'the surprise we planned', D: 'for you're birthday.'",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-EXPL-003",
+      "itemType": "question",
+      "itemId": "Q39",
+      "severity": "low",
+      "category": "explanation-clarity",
+      "title": "Q39 practice/practise explanation should emphasise UK-specific rule",
+      "description": "Q39 tests the practice/practise distinction: 'needs more practise' should be 'needs more practice' (noun). The explanation correctly states the rule but does not mention this is a UK English distinction. In American English, 'practice' is used for both noun and verb. Since this is a GL Assessment (UK exam), the British rule applies, but children who encounter American-spelling resources may be confused. The explanation should reinforce that this is a British English convention.",
+      "suggestedFix": "Add a brief note: 'In British English, practice (with a c) is the noun and practise (with an s) is the verb. This is a favourite GL exam question!'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-EXPL-004",
+      "itemType": "question",
+      "itemId": "Q41",
+      "severity": "low",
+      "category": "content-accuracy",
+      "title": "Q41 tests 'principal' but uses 'principle of the school' which is grammatically odd",
+      "description": "Q41 has the sentence 'The principle of the school gave a speech at the end of term assembly.' The explanation says 'principle' should be 'principal'. While the homophone distinction is correct, British schools typically use 'headteacher' or 'head teacher', not 'principal'. 'Principal' is more common in American English, Scottish schools, and some academies. A child in the GL catchment (Dorset) would more likely encounter 'headteacher'. The sentence would work better with a context where 'principal' is more natural (e.g., 'the principal dancer', 'the principal reason').",
+      "suggestedFix": "Consider revising to a more natural British context: 'The principle reason for the delay was the heavy snow.' This tests the same homophone but uses 'principal' as an adjective meaning 'main', which is more commonly tested in GL.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-MAP-001",
+      "itemType": "mapping",
+      "itemId": "Q1,Q4,Q5,Q10",
+      "severity": "low",
+      "category": "mapping-specificity",
+      "title": "Several questions mapped to 'spelling-demons' catch-all when a more specific sub-concept exists",
+      "description": "Q1 tests 'untill' (common misspelling) and is mapped to 'spelling-demons'. Q4 tests 'becuase' (also mapped to spelling-demons). Q5 is a 'no mistake' question mapped to spelling-demons. While these words are genuine 'demons' (words that must be memorised), Q1 could arguably map to 'double-letters' (until has only one 'l', not double) and Q4 could map to 'silent-letters' or 'unstressed syllables'. The spelling-demons sub-concept acts as a catch-all for words that don't fit a specific rule, which is appropriate in principle but results in a large bucket (163 medium-confidence mappings) that reduces the precision of lesson targeting.",
+      "suggestedFix": "This is a design trade-off — some words genuinely don't fit a single rule. The medium-confidence rating appropriately flags this. No change strictly needed, but the teaching efficacy for 'spelling-demons' could be improved by adding sub-categories within the lessons (e.g., 'words with tricky vowel sounds', 'words with silent letters in unusual positions').",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "ENG-SPL-TONE-001",
+      "itemType": "question",
+      "itemId": "ALL",
+      "severity": "low",
+      "category": "explanation-variety",
+      "title": "Explanation closing phrases are repetitive across questions",
+      "description": "The explanations cycle through a small set of closing phrases: 'Look out for this one in the exam!', 'This one catches loads of people — now you know!', 'You'll have an advantage if you remember this one!', 'Sound it out carefully — the spelling matches the sounds.', 'Try writing it both ways and see which looks right.', 'Picture the word in your mind — visual memory helps.', 'Break it into chunks to spot the tricky bit.', 'This is a common exam word — worth practising!', 'If unsure, try covering the options and spelling it yourself first.' These appear to be templated and repeat roughly every 8-10 questions. While each is individually helpful, the repetition becomes noticeable when a child does many questions in sequence.",
+      "suggestedFix": "Low priority. The tips are genuinely useful and variety exists. If desired, expand the pool of closing tips or make them more specific to the error type rather than generic.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

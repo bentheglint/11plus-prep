@@ -1,0 +1,233 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "hiddenWords",
+  "subject": "verbalreasoning",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 155,
+    "lessonsReviewed": 10,
+    "issuesFound": 17,
+    "bySeverity": {
+      "critical": 2,
+      "high": 4,
+      "medium": 7,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:52(33.5%), D2:52(33.5%), D3:51(32.9%) — very even but should aim for GL's ~30/40/30 split. D2 is underrepresented by about 10 questions. All 155 questions are 4-letter words at D1 and D2 levels apart from the 3-letter (Q126-139) and 5-letter (Q141-155) blocks which are correctly restricted to D1 and D3 respectively.",
+    "coverageAssessment": "Good coverage of split types but heavily skewed: 95 questions mapped to 1+3 split, 45 to 2+2, and only 15 to 3+1. Oracle says 2+2 is the most common GL split type, so the balance is inverted. 3-letter words (14 questions) and 5-letter words (15 questions) present. No questions test within-word hiding or backwards reading, despite lessons existing for both. 6 duplicate hidden words found across question pairs.",
+    "teachingEfficacyAssessment": "Lessons are well-structured with clear progression: 3 core split types (3+1, 2+2, 1+3), plus supporting concepts (clue-first strategy, 3-letter, 5-letter, backwards, within-word, double-meaning). The SlidingWindow and LetterTiles visuals are excellent for this topic. However, 6 of 9 sub-concepts are orphaned (no questions mapped to them), meaning children learn skills like backwards reading and within-word detection but never practise them in quizzes. The 3 mapped sub-concepts directly serve the question bank well.",
+    "topPriorities": [
+      "Fix Q138 — hidden word CAL is not a real English word (should be CALF or question needs redesigning)",
+      "Fix Q3 and Q40 — garbled/self-correcting explanation text visible to children",
+      "Add more 2+2 split questions and reduce 1+3 dominance to match GL weighting",
+      "Eliminate 6 duplicate hidden words (LAMP, BAND, PLEA, SAGE, VEIL, TALL appear twice each)",
+      "Create questions for orphaned sub-concepts (backwards, within-word) or remove those lessons"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-HW-Q138-001",
+      "itemType": "question",
+      "itemId": "Q138",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Hidden word CAL is not a real English word",
+      "description": "Q138 asks for 'a 3-letter word meaning a baby cow' with answer 'basic + alphabet' giving CAL. A baby cow is a CALF (4 letters), not CAL. CAL is not a standard English word. The question is unsolvable as written — no valid 3-letter word meaning 'baby cow' is hidden in the given options.",
+      "suggestedFix": "Replace the question entirely. Either change the clue to match a real 3-letter word hidden across 'basic + alphabet' (CAL is not valid), or redesign with a different word pair that yields a real 3-letter word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q003-001",
+      "itemType": "question",
+      "itemId": "Q3",
+      "severity": "critical",
+      "category": "explanation-error",
+      "title": "Self-correcting explanation text shown to children",
+      "description": "Q3 explanation reads: \"Take the last two letters of 'beach' (CH) and the first two of 'and' (AN) — wait, that gives CHAN. Actually, take the last one letter of 'beach' (H) and the first three of 'and' (AND) = HAND.\" This internal reasoning/self-correction should never be visible to a child. It models confusion rather than clarity.",
+      "suggestedFix": "Replace explanation with: \"The word HAND is hidden across 'beacH' and 'AND'. Take the last 1 letter of 'beach' (H) and all 3 letters of 'and' (AND) = HAND. ✓\"",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q040-001",
+      "itemType": "question",
+      "itemId": "Q40",
+      "severity": "high",
+      "category": "explanation-error",
+      "title": "Garbled leftover text in explanation",
+      "description": "Q40 explanation contains editing artifacts: \"...= BONE. the first three of 'onset' (ONE) — wait, 'onset' starts O-N-S, not O-N-E. ✓\" This is leftover text from a previous draft that was not cleaned up. Confusing for children.",
+      "suggestedFix": "Replace explanation with: \"The word BONE is hidden across 'cluB' and 'ONE'. Take the last 1 letter of 'club' (B) and all 3 letters of 'one' (ONE) = BONE. ✓\"",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q059-001",
+      "itemType": "question",
+      "itemId": "Q59",
+      "severity": "high",
+      "category": "explanation-error",
+      "title": "Typo in explanation — 'wandD'",
+      "description": "Q59 explanation reads: \"The word DENT is hidden across 'wandD' — take the last letter of 'wand' (D)...\" The 'wandD' is a typo (double D). Minor but unprofessional for a child-facing product.",
+      "suggestedFix": "Replace with: \"The word DENT is hidden across 'wanD' and 'ENTry'. Take the last 1 letter of 'wand' (D) and the first 3 of 'entry' (ENT) = DENT. ✓\"",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q145-001",
+      "itemType": "question",
+      "itemId": "Q145",
+      "severity": "high",
+      "category": "inaccurate-clue",
+      "title": "Clue says 'a yellow fruit' but answer is MELON",
+      "description": "Q145 asks for 'a 5-letter word meaning a yellow fruit' with answer MELON. Melons are typically green-skinned (honeydew, watermelon) or orange-skinned (cantaloupe). A lemon is the classic 'yellow fruit'. While some melon varieties have yellow flesh, the clue is misleading for a 9-year-old. The hidden word is correct (caMEL + ON = MELON) but the clue definition is poor.",
+      "suggestedFix": "Change clue to 'a large round fruit' or 'a juicy fruit with seeds' — more accurate descriptions of a melon that avoid colour confusion.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q150-001",
+      "itemType": "question",
+      "itemId": "Q150",
+      "severity": "high",
+      "category": "inaccurate-clue",
+      "title": "Clue 'soft and smooth' is a poor definition for CREAM",
+      "description": "Q150 asks for 'a 5-letter word meaning soft and smooth' with answer CREAM. CREAM is primarily a noun (dairy product, cosmetic, or colour). 'Soft and smooth' is more an adjective phrase — 'creamy' would fit, but CREAM itself does not mean 'soft and smooth'. A 9-year-old would struggle to make this connection.",
+      "suggestedFix": "Change clue to 'a thick white dairy product' or 'something you put on top of a dessert' — concrete noun definitions that match how children understand the word.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-001",
+      "itemType": "question",
+      "itemId": "Q23,Q101",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: LAMP appears in both Q23 and Q101 with same word pair",
+      "description": "Q23 and Q101 both hide LAMP across 'school + ample'. Q23 clue: 'a device that gives light'. Q101 clue: 'a light you can carry'. Same hidden word, same word pair, near-identical clue. This is a wasted question slot.",
+      "suggestedFix": "Remove Q101 and replace with a new question using a different hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-002",
+      "itemType": "question",
+      "itemId": "Q31,Q111",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: BAND appears in both Q31 and Q111",
+      "description": "Q31 hides BAND across 'climb + android'. Q111 hides BAND across 'club + Andrew'. Same hidden word with very similar word pairs (both use B from last word + AND from next). Both have identical clue 'a group of musicians'.",
+      "suggestedFix": "Remove one and replace with a different hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-003",
+      "itemType": "question",
+      "itemId": "Q82,Q119",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: PLEA appears in both Q82 and Q119",
+      "description": "Q82 hides PLEA across 'steeple + afoot' (D3). Q119 hides PLEA across 'stop + leaving' (D3). Same hidden word, same difficulty, similar clue ('an urgent request or appeal' vs 'an urgent request'). Both D3.",
+      "suggestedFix": "Remove one and replace with a different D3 hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-004",
+      "itemType": "question",
+      "itemId": "Q84,Q121",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: SAGE appears in both Q84 and Q121",
+      "description": "Q84 hides SAGE across 'mesa + get' (D3). Q121 hides SAGE across 'bus + agent' (D3). Same hidden word, both D3. Clues: 'a wise person, or an aromatic herb' vs 'a very wise person'.",
+      "suggestedFix": "Remove one and replace with a different D3 hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-005",
+      "itemType": "question",
+      "itemId": "Q76,Q124",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: VEIL appears in both Q76 and Q124",
+      "description": "Q76 hides VEIL across 'grave + illness' (D2). Q124 hides VEIL across 'dove + illustrated' (D3). Same hidden word, similar clues ('a piece of cloth worn to cover the face' vs 'a thin covering for the face').",
+      "suggestedFix": "Remove one and replace with a different hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DUP-006",
+      "itemType": "question",
+      "itemId": "Q18,Q103",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Duplicate: TALL appears in both Q18 and Q103",
+      "description": "Q18 hides TALL across 'great + allies' (D3). Q103 hides TALL across 'boat + allowed' (D1). Same hidden word and identical clue 'high in height'. At least they test different difficulties, but the repetition is unnecessary.",
+      "suggestedFix": "Remove one (preferably Q103 as a D1 TALL is very similar in approach) and replace with a different hidden word.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DIST-001",
+      "itemType": "topic",
+      "itemId": "hiddenWords",
+      "severity": "medium",
+      "category": "distribution",
+      "title": "Split type distribution inverted vs GL weighting",
+      "description": "95 questions are 1+3 splits (61%), 45 are 2+2 splits (29%), and 15 are 3+1 splits (10%). The Oracle states that 2+2 is the most common GL split type, yet it only accounts for 29% of questions. The 1+3 split dominates at 61%, which does not reflect actual GL exam weighting. Children will over-practise 1+3 and under-practise the most common split type.",
+      "suggestedFix": "Rebalance to approximately 2+2: 50%, 1+3: 30%, 3+1: 20%. This means converting or replacing ~30 questions from 1+3 to 2+2 split types, and adding ~15 more 3+1 splits.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-ORPHAN-001",
+      "itemType": "mapping",
+      "itemId": "orphan-sub-concepts",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "6 lesson sub-concepts have no questions mapped to them",
+      "description": "The sub-concepts 'within-word', 'clue-first', 'three-letter-hidden', 'five-letter-hidden', 'backwards-hidden', and 'double-meaning' are all orphaned — they have lessons teaching these skills but zero quiz questions testing them. Children learn about backwards reading and within-word finding but never practise these in the actual quiz. Note: 'clue-first' is a strategy sub-concept (no questions needed), but the others should have questions if they're taught.",
+      "suggestedFix": "For 'three-letter-hidden' and 'five-letter-hidden': these ARE covered by existing questions (Q126-139 for 3-letter, Q141-155 for 5-letter) — the mapping just categorises them by split type rather than word length. Consider adding a secondary tag. For 'backwards-hidden' and 'within-word': either create dedicated questions or mark these lessons as strategy-only (no direct question practice expected). For 'double-meaning': same treatment.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-DIFF-001",
+      "itemType": "topic",
+      "itemId": "hiddenWords",
+      "severity": "low",
+      "category": "difficulty-distribution",
+      "title": "D2 questions underrepresented vs GL target",
+      "description": "Current distribution is D1:52(33.5%), D2:52(33.5%), D3:51(32.9%). GL targets approximately D1:30%, D2:40%, D3:30%. D2 is about 10 questions short of the ideal 62 questions (40% of 155). The even three-way split doesn't reflect GL's emphasis on medium-difficulty questions.",
+      "suggestedFix": "When replacing duplicates or rebalancing splits, aim to add the new questions at D2 difficulty. Target: D1:~47, D2:~62, D3:~46.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-Q166-001",
+      "itemType": "question",
+      "itemId": "Q166",
+      "severity": "low",
+      "category": "duplicate",
+      "title": "DENT appears in both Q59 and Q166",
+      "description": "Q59 hides DENT across 'wand + entry' (D2). Q166 hides DENT across 'garden + tools' (D2). Same hidden word, same difficulty. Not as egregious as other duplicates because the word pairs and split types differ (1+3 vs 3+1).",
+      "suggestedFix": "Lower priority than other duplicates since the split types differ, providing different practice. Consider replacing one if reducing total duplicates.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-HW-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "within-word-steps",
+      "severity": "low",
+      "category": "format-mismatch",
+      "title": "Within-word lesson contradicts question format",
+      "description": "The 'Hidden Inside One Word' lesson teaches children to find words hidden entirely within a single word (e.g., LANE inside 'planet'). However, all 155 questions use the 'select-two' format requiring children to pick TWO words. A within-word answer would only need ONE word selected. This creates a disconnect between what is taught and what is tested.",
+      "suggestedFix": "Either: (a) add a question variant that allows single-word selection for within-word hiding, or (b) reframe the lesson as a supporting strategy ('check inside single words too — but in the exam, the answer always spans two words') to avoid confusion.",
+      "oracleConfidence": "high",
+      "status": "open"
+    }
+  ]
+}

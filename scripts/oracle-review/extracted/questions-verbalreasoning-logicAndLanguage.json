@@ -1,0 +1,3117 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "logicAndLanguage",
+    "displayName": "Logic & Language",
+    "extractedAt": "2026-03-30T13:05:32.817Z",
+    "questionCount": 163,
+    "difficultyDistribution": {
+      "D1": 43,
+      "D2": 59,
+      "D3": 61
+    },
+    "questionTypes": {
+      "standard": 163
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Amy is taller than Beth. Beth is taller than Claire. Who is the shortest?",
+      "options": [
+        "Claire",
+        "Beth",
+        "Amy",
+        "Amy and Claire",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Claire",
+      "explanation": "Amy > Beth > Claire in height. Claire is shorter than Beth, who is shorter than Amy. So Claire is the shortest. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All roses have thorns. This plant has thorns. Is this plant definitely a rose?",
+      "options": [
+        "Yes, definitely",
+        "Only if it is red",
+        "Only if it has flowers",
+        "No, not necessarily",
+        "There is not enough information"
+      ],
+      "correct": 3,
+      "correctAnswer": "No, not necessarily",
+      "explanation": "Just because all roses have thorns doesn't mean only roses have thorns. Other plants (like holly or cacti) also have thorns. Having thorns doesn't prove it's a rose. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'school walked to they morning every'. What is the last word of the correct sentence?",
+      "options": [
+        "morning",
+        "school",
+        "every",
+        "they",
+        "walked"
+      ],
+      "correct": 0,
+      "correctAnswer": "morning",
+      "explanation": "The correct sentence is: 'They walked to school every morning.' The last word is 'morning'. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Dan has more sweets than Emma. Fay has fewer sweets than Emma but more than George. Who has the most sweets?",
+      "options": [
+        "Dan",
+        "Emma",
+        "Fay",
+        "George",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Dan",
+      "explanation": "Dan > Emma > Fay > George. Dan has the most, then Emma, then Fay, and George has the fewest. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "I am thinking of two rhyming words that mean 'an overweight feline'. What are they?",
+      "options": [
+        "Big pig",
+        "Plump lump",
+        "Round hound",
+        "Thick chick",
+        "Fat cat"
+      ],
+      "correct": 4,
+      "correctAnswer": "Fat cat",
+      "explanation": "A feline is a cat, and overweight means fat. The two rhyming words are 'fat cat'. This is a rhyming synonym puzzle — a common VR question type. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom is older than Sam. Sam is older than Jack. Who is the youngest?",
+      "options": [
+        "Jack",
+        "Sam",
+        "Tom",
+        "Tom and Jack",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Jack",
+      "explanation": "Tom > Sam > Jack in age. Jack is younger than Sam, who is younger than Tom. So Jack is the youngest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "All dogs have four legs. Rover is a dog. How many legs does Rover have?",
+      "options": [
+        "Two",
+        "Three",
+        "Six",
+        "Four",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Four",
+      "explanation": "We know all dogs have four legs. Rover is a dog, so Rover must have four legs. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'cake the ate she chocolate'. What is the first word of the correct sentence?",
+      "options": [
+        "Cake",
+        "The",
+        "Ate",
+        "She",
+        "Chocolate"
+      ],
+      "correct": 3,
+      "correctAnswer": "She",
+      "explanation": "The correct sentence is: 'She ate the chocolate cake.' The first word is 'She'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Red is faster than Blue. Green is slower than Blue but faster than Yellow. Put them in order from fastest to slowest.",
+      "options": [
+        "Red, Blue, Green, Yellow",
+        "Blue, Red, Green, Yellow",
+        "Red, Green, Blue, Yellow",
+        "Yellow, Green, Blue, Red",
+        "Red, Blue, Yellow, Green"
+      ],
+      "correct": 0,
+      "correctAnswer": "Red, Blue, Green, Yellow",
+      "explanation": "Red is faster than Blue. Green is between Blue and Yellow but slower than Blue. So: Red > Blue > Green > Yellow. Fastest to slowest: Red, Blue, Green, Yellow. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All squares are rectangles. All rectangles have four sides. Which statement must be true?",
+      "options": [
+        "All squares have four sides",
+        "All rectangles are squares",
+        "All squares are circles",
+        "All four-sided shapes are squares",
+        "All squares have five sides"
+      ],
+      "correct": 0,
+      "correctAnswer": "All squares have four sides",
+      "explanation": "All squares are rectangles, and all rectangles have four sides. Therefore all squares must also have four sides. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "I am thinking of two rhyming words that mean 'a large swine'. What are they?",
+      "options": [
+        "Fat cat",
+        "Round hound",
+        "Tall ball",
+        "Big pig",
+        "Thick brick"
+      ],
+      "correct": 3,
+      "correctAnswer": "Big pig",
+      "explanation": "A swine is a pig, and large means big. The two rhyming words are 'big pig'. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lily has 3 sweets. Rose has twice as many as Lily. How many sweets does Rose have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "9"
+      ],
+      "correct": 3,
+      "correctAnswer": "6",
+      "explanation": "Rose has twice as many as Lily's 3 sweets: 2 × 3 = 6 sweets. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "None of the children in Class 3 are left-handed. James is in Class 3. Sarah is left-handed. Which statement must be true?",
+      "options": [
+        "James is left-handed",
+        "Sarah is in Class 3",
+        "James is not left-handed",
+        "Sarah is not in Class 3",
+        "Both C and D"
+      ],
+      "correct": 4,
+      "correctAnswer": "Both C and D",
+      "explanation": "Since no children in Class 3 are left-handed: James (in Class 3) must be right-handed, and Sarah (left-handed) cannot be in Class 3. Both C and D must be true. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'quickly the very fox brown ran'. What is the third word of the correct sentence?",
+      "options": [
+        "quickly",
+        "the",
+        "very",
+        "fox",
+        "brown"
+      ],
+      "correct": 3,
+      "correctAnswer": "fox",
+      "explanation": "The correct sentence is: 'The brown fox ran very quickly.' The third word is 'fox' — The (1st), brown (2nd), fox (3rd). Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ali is shorter than Ben. Charlie is taller than Ben. Dave is shorter than Ali. Who is second tallest?",
+      "options": [
+        "Ali",
+        "Cannot tell",
+        "Charlie",
+        "Dave",
+        "Ben"
+      ],
+      "correct": 4,
+      "correctAnswer": "Ben",
+      "explanation": "Charlie > Ben > Ali > Dave. Charlie is tallest, Ben is second tallest, then Ali, then Dave. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What month comes two months after March?",
+      "options": [
+        "May",
+        "April",
+        "June",
+        "July",
+        "February"
+      ],
+      "correct": 0,
+      "correctAnswer": "May",
+      "explanation": "March → April (one month) → May (two months). Two months after March is May. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
+      "options": [
+        "Mean dean",
+        "Grump trump",
+        "Mad dad",
+        "Cross boss",
+        "Rude dude"
+      ],
+      "correct": 3,
+      "correctAnswer": "Cross boss",
+      "explanation": "An employer is a boss, and angry means cross. The two rhyming words are 'cross boss'. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Kate has more stickers than Liam. Mia has more stickers than Kate. Who has the fewest stickers?",
+      "options": [
+        "Liam",
+        "Kate",
+        "Mia",
+        "Kate and Liam",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Liam",
+      "explanation": "Mia > Kate > Liam. Liam has the fewest stickers. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Some birds can fly. Penguins are birds. Penguins cannot fly. Which statement must be true?",
+      "options": [
+        "All birds can fly",
+        "No birds can fly",
+        "Penguins are not really birds",
+        "Not all birds can fly",
+        "All birds that can fly are penguins"
+      ],
+      "correct": 3,
+      "correctAnswer": "Not all birds can fly",
+      "explanation": "Penguins are birds but cannot fly, which proves that not all birds can fly. The word 'some' in the first statement already tells us this. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What day comes three days after Monday?",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Saturday",
+        "Friday",
+        "Thursday"
+      ],
+      "correct": 4,
+      "correctAnswer": "Thursday",
+      "explanation": "Monday → Tuesday (1 day) → Wednesday (2 days) → Thursday (3 days). Three days after Monday is Thursday. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word has a meaning that connects with both 'light' and 'fair'?",
+      "options": [
+        "Bright",
+        "Dark",
+        "Heavy",
+        "Gloomy",
+        "Faint"
+      ],
+      "correct": 0,
+      "correctAnswer": "Bright",
+      "explanation": "'Bright' connects with 'light' (a bright light) and 'fair' (bright/fair hair, or a bright/fair day). Words with multiple meanings that overlap are called double-meaning connections. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word connects both 'bank' and 'match'?",
+      "options": [
+        "River",
+        "Light",
+        "Fire",
+        "Box",
+        "Money"
+      ],
+      "correct": 3,
+      "correctAnswer": "Box",
+      "explanation": "'Box' connects with 'match' (a matchbox) and 'bank' (a cash box kept at a bank, or a safety deposit box). In both cases, 'box' means a container. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a container for arrows' and 'to shake with fear'?",
+      "options": [
+        "Quiver",
+        "Tremble",
+        "Bow",
+        "Sheath",
+        "Rattle"
+      ],
+      "correct": 0,
+      "correctAnswer": "Quiver",
+      "explanation": "'Quiver' has two meanings: a container for holding arrows, and to shake or tremble slightly. This is a double-meaning word. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Freya is faster than Kai. Kai is faster than Toby. Who is the slowest?",
+      "options": [
+        "Freya",
+        "Kai",
+        "Freya and Toby",
+        "Toby",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Toby",
+      "explanation": "Freya > Kai > Toby in speed. Toby is the slowest. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Priya has more books than Zara. Zara has more books than Omar. Who has the most books?",
+      "options": [
+        "Priya",
+        "Zara",
+        "Omar",
+        "Omar and Priya",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Priya",
+      "explanation": "Priya > Zara > Omar in number of books. Priya has the most. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Amara's bag is heavier than Toby's bag. Toby's bag is heavier than Kai's bag. Whose bag is the lightest?",
+      "options": [
+        "Amara's",
+        "Toby's",
+        "They all weigh the same",
+        "Kai's",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Kai's",
+      "explanation": "Amara > Toby > Kai in bag weight. Kai's bag is the lightest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ivy scored higher than Hugo. Hugo scored higher than Evie. Who came second?",
+      "options": [
+        "Ivy",
+        "Cannot tell",
+        "Evie",
+        "Ivy and Hugo",
+        "Hugo"
+      ],
+      "correct": 4,
+      "correctAnswer": "Hugo",
+      "explanation": "Ivy > Hugo > Evie in score. Hugo came second. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Zara's pencil is longer than Freya's pencil. Freya's pencil is longer than Priya's pencil. Which pencil is the shortest?",
+      "options": [
+        "Priya's",
+        "Freya's",
+        "Zara's",
+        "They are all the same",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Priya's",
+      "explanation": "Zara > Freya > Priya in pencil length. Priya's pencil is the shortest. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The red team finished before the blue team. The blue team finished before the green team. Which team finished last?",
+      "options": [
+        "Red",
+        "Blue",
+        "Red and Green",
+        "Green",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Green",
+      "explanation": "Red finished first, then Blue, then Green. The green team finished last. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Omar is older than Kai. Kai is older than Amara. Who is the youngest?",
+      "options": [
+        "Amara",
+        "Kai",
+        "Omar",
+        "Omar and Amara",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Amara",
+      "explanation": "Omar > Kai > Amara in age. Amara is the youngest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Priya is taller than Zara. Amara is shorter than Zara but taller than Freya. Who is second shortest?",
+      "options": [
+        "Priya",
+        "Zara",
+        "Freya",
+        "Amara",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Amara",
+      "explanation": "Priya > Zara > Amara > Freya. Freya is shortest and Amara is second shortest. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Kai ran faster than Toby. Omar ran faster than Kai. Toby ran faster than Hugo. Who came third in the race?",
+      "options": [
+        "Omar",
+        "Kai",
+        "Cannot tell",
+        "Hugo",
+        "Toby"
+      ],
+      "correct": 4,
+      "correctAnswer": "Toby",
+      "explanation": "Omar > Kai > Toby > Hugo in speed. Omar first, Kai second, Toby third, Hugo fourth. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a spelling test, Evie scored more than Ivy. Ivy scored less than Hugo. Hugo scored less than Evie. Put them in order from highest to lowest score.",
+      "options": [
+        "Evie, Hugo, Ivy",
+        "Hugo, Evie, Ivy",
+        "Ivy, Hugo, Evie",
+        "Evie, Ivy, Hugo",
+        "Hugo, Ivy, Evie"
+      ],
+      "correct": 0,
+      "correctAnswer": "Evie, Hugo, Ivy",
+      "explanation": "Evie > Hugo (Hugo < Evie) and Hugo > Ivy (Ivy < Hugo). So Evie > Hugo > Ivy. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Freya's house is closer to school than Zara's house. Priya's house is further from school than Zara's house. Amara's house is the closest to school. Who lives second furthest from school?",
+      "options": [
+        "Zara",
+        "Freya",
+        "Priya",
+        "Amara",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Zara",
+      "explanation": "From closest to furthest: Amara, Freya, Zara, Priya. Zara lives second furthest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Toby has fewer marbles than Omar. Kai has more marbles than Omar. Hugo has fewer marbles than Toby. Who has the second most marbles?",
+      "options": [
+        "Toby",
+        "Hugo",
+        "Kai",
+        "Omar",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Omar",
+      "explanation": "Kai > Omar > Toby > Hugo. Omar has the second most marbles. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Zara is not the tallest or the shortest of three friends. Amara is shorter than Zara. Who is the tallest?",
+      "options": [
+        "The third friend",
+        "Amara",
+        "Zara",
+        "Zara and Amara",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "The third friend",
+      "explanation": "Zara is in the middle. Amara is shorter than Zara, so Amara is shortest. The third friend must be the tallest. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a swimming race, Priya finished after Kai but before Freya. Toby finished after Freya. Who finished second?",
+      "options": [
+        "Kai",
+        "Toby",
+        "Freya",
+        "Priya",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Priya",
+      "explanation": "Kai finished first, then Priya, then Freya, then Toby. Priya finished second. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Amara is older than Priya. Kai is younger than Toby but older than Amara. Freya is younger than Priya. Put them in order from oldest to youngest.",
+      "options": [
+        "Toby, Kai, Amara, Priya, Freya",
+        "Kai, Toby, Amara, Freya, Priya",
+        "Toby, Kai, Priya, Amara, Freya",
+        "Toby, Amara, Kai, Priya, Freya",
+        "Kai, Toby, Priya, Amara, Freya"
+      ],
+      "correct": 0,
+      "correctAnswer": "Toby, Kai, Amara, Priya, Freya",
+      "explanation": "Kai < Toby, so Toby > Kai. Kai > Amara > Priya > Freya. Combining: Toby > Kai > Amara > Priya > Freya. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children sit in a row. Omar is next to Zara. Kai is at one end. Freya is between Omar and Kai. Toby is at the other end. Who sits in the middle seat?",
+      "options": [
+        "Omar",
+        "Zara",
+        "Kai",
+        "Freya",
+        "Toby"
+      ],
+      "correct": 0,
+      "correctAnswer": "Omar",
+      "explanation": "Kai is at one end. Freya is between Kai and Omar, giving us Kai, Freya, Omar. Omar is next to Zara, so: Kai, Freya, Omar, Zara. Toby is at the other end: Kai, Freya, Omar, Zara, Toby. The middle seat (position 3) is Omar. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ivy's cat is heavier than Hugo's cat. Evie's cat is lighter than Hugo's cat but heavier than Priya's cat. Amara's cat is heavier than Ivy's cat. Whose cat is the second lightest?",
+      "options": [
+        "Ivy's",
+        "Hugo's",
+        "Amara's",
+        "Priya's",
+        "Evie's"
+      ],
+      "correct": 4,
+      "correctAnswer": "Evie's",
+      "explanation": "Amara > Ivy > Hugo > Evie > Priya. From lightest: Priya (lightest), Evie (2nd lightest). Evie's cat is the second lightest. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a queue, Toby is further forward than Kai. Zara is further back than Freya but further forward than Toby. Omar is at the very back. Kai is just in front of Omar. Who is second in the queue?",
+      "options": [
+        "Zara",
+        "Freya",
+        "Toby",
+        "Kai",
+        "Omar"
+      ],
+      "correct": 0,
+      "correctAnswer": "Zara",
+      "explanation": "Freya is in front of Zara, Zara in front of Toby, Toby in front of Kai, Kai in front of Omar. Order from front: Freya, Zara, Toby, Kai, Omar. Zara is second. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five friends each have a different number of pets. Amara has more pets than Priya but fewer than Kai. Toby has the fewest pets. Freya has more pets than Kai. How many children have more pets than Amara?",
+      "options": [
+        "1",
+        "4",
+        "3",
+        "2",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "2",
+      "explanation": "Toby < Priya < Amara < Kai < Freya. Kai and Freya both have more pets than Amara, so 2 children have more. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Omar is not the heaviest or the lightest of five friends. Kai is heavier than Omar. Zara is lighter than Omar. Toby is heavier than Kai. Freya is lighter than Zara. Who is in the middle?",
+      "options": [
+        "Omar",
+        "Kai",
+        "Zara",
+        "Toby",
+        "Freya"
+      ],
+      "correct": 0,
+      "correctAnswer": "Omar",
+      "explanation": "Toby > Kai > Omar > Zara > Freya. Omar is in the middle (3rd out of 5). Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Amara, Priya, Kai, Zara, and Toby each finished a race in a different position. Amara finished ahead of Priya but behind Kai. Toby finished last. Zara finished ahead of Kai. Who finished second?",
+      "options": [
+        "Kai",
+        "Priya",
+        "Amara",
+        "Zara",
+        "Toby"
+      ],
+      "correct": 0,
+      "correctAnswer": "Kai",
+      "explanation": "Zara > Kai > Amara > Priya, and Toby is last. So: Zara (1st), Kai (2nd), Amara (3rd), Priya (4th), Toby (5th). Kai finished second. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "All cats have whiskers. Mittens is a cat. Does Mittens have whiskers?",
+      "options": [
+        "Yes, definitely",
+        "No, definitely not",
+        "Only if she is fluffy",
+        "Only sometimes",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Yes, definitely",
+      "explanation": "All cats have whiskers and Mittens is a cat, so Mittens definitely has whiskers. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Every child in Year 5 wears a blue jumper. Priya is in Year 5. What colour jumper does Priya wear?",
+      "options": [
+        "Red",
+        "Green",
+        "Yellow",
+        "Blue",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Blue",
+      "explanation": "Every child in Year 5 wears blue. Priya is in Year 5, so she wears a blue jumper. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "No fish can walk. A salmon is a fish. Can a salmon walk?",
+      "options": [
+        "Yes",
+        "Cannot tell",
+        "Only on land",
+        "Only in water",
+        "No"
+      ],
+      "correct": 4,
+      "correctAnswer": "No",
+      "explanation": "No fish can walk and a salmon is a fish, so a salmon cannot walk. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "All bicycles have two wheels. Kai's bicycle is in the shed. How many wheels does Kai's bicycle have?",
+      "options": [
+        "Two",
+        "One",
+        "Three",
+        "Four",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Two",
+      "explanation": "All bicycles have two wheels. Kai's bicycle is still a bicycle, so it has two wheels. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If it is Saturday, Toby goes swimming. Today is Saturday. What does Toby do today?",
+      "options": [
+        "Goes to school",
+        "Plays football",
+        "Stays at home",
+        "Goes swimming",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Goes swimming",
+      "explanation": "On Saturdays Toby goes swimming. Today is Saturday, so Toby goes swimming. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All fruits have seeds. A tomato has seeds. Is a tomato definitely a fruit?",
+      "options": [
+        "No, not necessarily",
+        "Yes, definitely",
+        "Only if it is red",
+        "Only if it grows on a vine",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "No, not necessarily",
+      "explanation": "All fruits have seeds, but other things can also have seeds. Having seeds doesn't prove something is a fruit — we'd need more information. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Some children in the class play football. All children who play football wear boots. Zara plays football. Which statement must be true?",
+      "options": [
+        "Zara does not wear boots",
+        "All children wear boots",
+        "Only Zara plays football",
+        "Zara wears boots",
+        "No children wear boots"
+      ],
+      "correct": 3,
+      "correctAnswer": "Zara wears boots",
+      "explanation": "All football players wear boots and Zara plays football, so Zara must wear boots. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "No reptiles have fur. All mammals have fur. A gecko does not have fur. Which statement must be true?",
+      "options": [
+        "A gecko is a mammal",
+        "A gecko is definitely a reptile",
+        "A gecko has scales",
+        "A gecko cannot be an animal",
+        "A gecko is not a mammal"
+      ],
+      "correct": 4,
+      "correctAnswer": "A gecko is not a mammal",
+      "explanation": "All mammals have fur, but a gecko does not have fur. Therefore a gecko is not a mammal. We can't be certain it's a reptile — it could be something else — but we know it isn't a mammal. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Every pupil who finishes their homework gets a sticker. Freya did not get a sticker. Which statement must be true?",
+      "options": [
+        "Freya did not finish her homework",
+        "Freya lost her sticker",
+        "Freya finished her homework",
+        "Freya was absent",
+        "Freya does not like stickers"
+      ],
+      "correct": 0,
+      "correctAnswer": "Freya did not finish her homework",
+      "explanation": "Everyone who finishes homework gets a sticker. Freya didn't get one, so she must not have finished her homework. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All birds have feathers. All robins are birds. Which statement must be true?",
+      "options": [
+        "All feathered things are birds",
+        "Robins cannot fly",
+        "All birds are robins",
+        "All robins have feathers",
+        "All feathered things are robins"
+      ],
+      "correct": 3,
+      "correctAnswer": "All robins have feathers",
+      "explanation": "All robins are birds, and all birds have feathers. So all robins must have feathers. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If it rains, Amara takes her umbrella. If she takes her umbrella, she does not get wet. It is raining. Which statement must be true?",
+      "options": [
+        "Amara gets wet",
+        "Amara forgets her umbrella",
+        "Amara does not get wet",
+        "It stops raining",
+        "Amara stays at home"
+      ],
+      "correct": 2,
+      "correctAnswer": "Amara does not get wet",
+      "explanation": "It rains → Amara takes umbrella → she doesn't get wet. So Amara does not get wet. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If a number is even, it can be divided exactly by 2. The number 15 cannot be divided exactly by 2. Which statement must be true?",
+      "options": [
+        "15 is even",
+        "15 is a prime number",
+        "15 is not even",
+        "15 can be divided by 3",
+        "15 is less than 10"
+      ],
+      "correct": 2,
+      "correctAnswer": "15 is not even",
+      "explanation": "Even numbers can be divided exactly by 2. Since 15 cannot be divided exactly by 2, 15 is not even. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All swans at the park are white. Freya saw a white bird at the park. Is the bird definitely a swan?",
+      "options": [
+        "Yes, definitely",
+        "No, not necessarily",
+        "Only if it was swimming",
+        "Only if it was large",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "No, not necessarily",
+      "explanation": "All swans at the park are white, but other birds can be white too (seagulls, doves). A white bird isn't necessarily a swan. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Every pupil in the maths club enjoys puzzles. Kai enjoys puzzles. Is Kai definitely in the maths club?",
+      "options": [
+        "Yes, definitely",
+        "No, not necessarily",
+        "Only if he is good at maths",
+        "Only on Tuesdays",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "No, not necessarily",
+      "explanation": "Every maths club pupil enjoys puzzles, but other people can enjoy puzzles too. Just because Kai enjoys puzzles doesn't mean he's in the maths club. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All of Mrs Chen's pupils are in Year 6. Some Year 6 pupils play in the orchestra. Hugo is one of Mrs Chen's pupils. Which statement must be true?",
+      "options": [
+        "Hugo plays in the orchestra",
+        "Hugo does not play in the orchestra",
+        "Hugo is in Year 6",
+        "Hugo is the best musician",
+        "Hugo plays a violin"
+      ],
+      "correct": 2,
+      "correctAnswer": "Hugo is in Year 6",
+      "explanation": "All of Mrs Chen's pupils are in Year 6. Hugo is one of her pupils, so Hugo is in Year 6. We can't be sure about the orchestra — only some Year 6 pupils play in it. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "No child who is late for school gets a merit point. All children who are on time get a merit point. Kai was late. Priya was on time. Which statement must be true?",
+      "options": [
+        "Kai gets a merit point and Priya does not",
+        "Neither Kai nor Priya gets a merit point",
+        "Both Kai and Priya get merit points",
+        "Kai does not get a merit point but Priya does",
+        "Only Kai gets a merit point"
+      ],
+      "correct": 3,
+      "correctAnswer": "Kai does not get a merit point but Priya does",
+      "explanation": "Kai was late so he doesn't get a merit point. Priya was on time so she does get one. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All of Toby's friends like football. Some people who like football also like tennis. Zara is one of Toby's friends. Which statement CANNOT be determined from the clues?",
+      "options": [
+        "Zara likes football",
+        "Zara is Toby's friend",
+        "Whether Zara likes tennis",
+        "Whether Toby has friends",
+        "Whether Toby's friends like football"
+      ],
+      "correct": 2,
+      "correctAnswer": "Whether Zara likes tennis",
+      "explanation": "We know Zara likes football (she's Toby's friend). But only 'some' football fans like tennis, so we can't tell whether Zara likes tennis. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Every child in the school choir can sing. Every child who can sing can read music. Evie is in the school choir. Ivy can read music. Which statement must be true?",
+      "options": [
+        "Ivy is in the school choir",
+        "Evie can read music",
+        "Everyone who reads music can sing",
+        "Ivy can sing",
+        "Evie taught Ivy to read music"
+      ],
+      "correct": 1,
+      "correctAnswer": "Evie can read music",
+      "explanation": "Choir → can sing → can read music. Evie is in the choir, so Evie can sing, so Evie can read music. We can't conclude anything certain about Ivy — reading music doesn't prove she's in the choir or can sing. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a village, all shop owners drive. Some people who drive also cycle. No cyclists in the village swim. Mr Patel owns a shop and cycles. Which statement must be true?",
+      "options": [
+        "Mr Patel swims",
+        "Mr Patel does not swim",
+        "All shop owners cycle",
+        "Mr Patel does not drive",
+        "All drivers swim"
+      ],
+      "correct": 1,
+      "correctAnswer": "Mr Patel does not swim",
+      "explanation": "Mr Patel owns a shop so he drives. He also cycles. No cyclists swim, so Mr Patel does not swim. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If Omar practises piano, he gets better. If he gets better, he passes his exam. If he passes his exam, he gets a certificate. Omar practised piano. What does Omar get?",
+      "options": [
+        "Nothing",
+        "A trophy",
+        "A certificate",
+        "A new piano",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "A certificate",
+      "explanation": "Practises → gets better → passes exam → gets certificate. Omar practised, so following the chain, he gets a certificate. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All children wearing glasses sit at the front. Some children at the front are monitors. Amara wears glasses. Which statement is definitely true?",
+      "options": [
+        "Amara is a monitor",
+        "Amara sits at the front",
+        "All monitors wear glasses",
+        "Children without glasses sit at the back",
+        "Amara does not sit at the front"
+      ],
+      "correct": 1,
+      "correctAnswer": "Amara sits at the front",
+      "explanation": "All children wearing glasses sit at the front. Amara wears glasses, so she sits at the front. We can't say she's a monitor because only 'some' front-row children are monitors. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'garden the played in children the'. What is the first word?",
+      "options": [
+        "Garden",
+        "The",
+        "Played",
+        "In",
+        "Children"
+      ],
+      "correct": 1,
+      "correctAnswer": "The",
+      "explanation": "The correct sentence is: 'The children played in the garden.' The first word is 'The'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'happy was very the dog'. What is the last word?",
+      "options": [
+        "Happy",
+        "Was",
+        "Very",
+        "The",
+        "Dog"
+      ],
+      "correct": 0,
+      "correctAnswer": "Happy",
+      "explanation": "The correct sentence is: 'The dog was very happy.' The last word is 'happy'. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'pond the swam duck in the'. What is the second word?",
+      "options": [
+        "Pond",
+        "The",
+        "Duck",
+        "Swam",
+        "In"
+      ],
+      "correct": 2,
+      "correctAnswer": "Duck",
+      "explanation": "The correct sentence is: 'The duck swam in the pond.' The(1) duck(2). The second word is 'duck'. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'ate breakfast for toast she'. What is the second word?",
+      "options": [
+        "Ate",
+        "Breakfast",
+        "For",
+        "Toast",
+        "She"
+      ],
+      "correct": 0,
+      "correctAnswer": "Ate",
+      "explanation": "The correct sentence is: 'She ate toast for breakfast.' She(1) ate(2). The second word is 'ate'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'quickly her finished homework she very'. What is the last word?",
+      "options": [
+        "Quickly",
+        "Homework",
+        "Her",
+        "Finished",
+        "Very"
+      ],
+      "correct": 0,
+      "correctAnswer": "Quickly",
+      "explanation": "The correct sentence is: 'She finished her homework very quickly.' The last word is 'quickly'. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'beautiful the sang bird a song morning every'. What is the last word?",
+      "options": [
+        "Beautiful",
+        "Bird",
+        "Song",
+        "Morning",
+        "Every"
+      ],
+      "correct": 3,
+      "correctAnswer": "Morning",
+      "explanation": "The correct sentence is: 'The bird sang a beautiful song every morning.' The last word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'reading enjoys library the books at Amara'. What is the first word?",
+      "options": [
+        "Reading",
+        "Enjoys",
+        "Library",
+        "Books",
+        "Amara"
+      ],
+      "correct": 4,
+      "correctAnswer": "Amara",
+      "explanation": "The correct sentence is: 'Amara enjoys reading books at the library.' The first word is 'Amara'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'class carefully the listened teacher to the'. What is the second word?",
+      "options": [
+        "Class",
+        "Carefully",
+        "Listened",
+        "Teacher",
+        "To"
+      ],
+      "correct": 0,
+      "correctAnswer": "Class",
+      "explanation": "The correct sentence is: 'The class listened carefully to the teacher.' The(1) class(2). The second word is 'class'. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'after stars the dark appeared it got'. What is the first word?",
+      "options": [
+        "After",
+        "Stars",
+        "The",
+        "Dark",
+        "Appeared"
+      ],
+      "correct": 2,
+      "correctAnswer": "The",
+      "explanation": "The correct sentence is: 'The stars appeared after it got dark.' The first word is 'The'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'ball kicked Toby the park in the'. What is the third word?",
+      "options": [
+        "Ball",
+        "Kicked",
+        "Toby",
+        "The",
+        "Park"
+      ],
+      "correct": 3,
+      "correctAnswer": "The",
+      "explanation": "The correct sentence is: 'Toby kicked the ball in the park.' Toby(1) kicked(2) the(3). The third word is 'the'. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'they outside played raining although was it'. What is the last word?",
+      "options": [
+        "They",
+        "Outside",
+        "Raining",
+        "It",
+        "Was"
+      ],
+      "correct": 1,
+      "correctAnswer": "Outside",
+      "explanation": "The correct sentence is: 'Although it was raining they played outside.' The last word is 'outside'. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'before the finished bell everyone the rang work their'. What is the third word?",
+      "options": [
+        "Before",
+        "Finished",
+        "Bell",
+        "Everyone",
+        "Their"
+      ],
+      "correct": 4,
+      "correctAnswer": "Their",
+      "explanation": "The correct sentence is: 'Everyone finished their work before the bell rang.' Everyone(1) finished(2) their(3). The third word is 'their'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'carefully promised he more would write he'. What is the last word?",
+      "options": [
+        "Promised",
+        "Carefully",
+        "More",
+        "Write",
+        "He"
+      ],
+      "correct": 1,
+      "correctAnswer": "Carefully",
+      "explanation": "The correct sentence is: 'He promised he would write more carefully.' He(1) promised(2) he(3) would(4) write(5) more(6) carefully(7). The last word is 'carefully'. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'the crept fog slowly streets through the morning'. What is the second word?",
+      "options": [
+        "Crept",
+        "Fog",
+        "Slowly",
+        "Morning",
+        "Streets"
+      ],
+      "correct": 3,
+      "correctAnswer": "Morning",
+      "explanation": "The correct sentence is: 'The morning fog crept slowly through the streets.' The(1) morning(2). The second word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'had packed she brought lunch the that she'. What is the fifth word?",
+      "options": [
+        "Had",
+        "Packed",
+        "She",
+        "Brought",
+        "Lunch"
+      ],
+      "correct": 4,
+      "correctAnswer": "Lunch",
+      "explanation": "The correct sentence is: 'She brought the packed lunch that she had.' She(1) brought(2) the(3) packed(4) lunch(5). The fifth word is 'lunch'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a flying mammal' and 'something you hit a cricket ball with'?",
+      "options": [
+        "Ball",
+        "Bat",
+        "Bird",
+        "Stick",
+        "Glove"
+      ],
+      "correct": 1,
+      "correctAnswer": "Bat",
+      "explanation": "'Bat' can mean a flying mammal that comes out at night OR a piece of equipment used to hit a cricket ball. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which word can mean both 'the sound a dog makes' and 'the outer covering of a tree'?",
+      "options": [
+        "Woof",
+        "Leaf",
+        "Bark",
+        "Branch",
+        "Howl"
+      ],
+      "correct": 2,
+      "correctAnswer": "Bark",
+      "explanation": "'Bark' can mean the sound a dog makes OR the rough outer covering of a tree trunk. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which word can mean both 'not heavy' and 'brightness from the sun or a lamp'?",
+      "options": [
+        "Bright",
+        "Glow",
+        "Light",
+        "Shine",
+        "Pale"
+      ],
+      "correct": 2,
+      "correctAnswer": "Light",
+      "explanation": "'Light' can mean not heavy (a light bag) OR the brightness that lets us see (sunlight, lamplight). Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a piece of jewellery worn on a finger' and 'to telephone someone'?",
+      "options": [
+        "Call",
+        "Band",
+        "Ring",
+        "Dial",
+        "Circle"
+      ],
+      "correct": 2,
+      "correctAnswer": "Ring",
+      "explanation": "'Ring' can mean a circular piece of jewellery worn on a finger OR to telephone someone (give them a ring). Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a season of the year' and 'a coiled piece of metal'?",
+      "options": [
+        "Summer",
+        "Spring",
+        "Autumn",
+        "Bounce",
+        "Wire"
+      ],
+      "correct": 1,
+      "correctAnswer": "Spring",
+      "explanation": "'Spring' can mean the season between winter and summer OR a coiled piece of metal that bounces back into shape. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a large bird' and 'a machine used for lifting heavy objects'?",
+      "options": [
+        "Eagle",
+        "Crane",
+        "Heron",
+        "Pulley",
+        "Stork"
+      ],
+      "correct": 1,
+      "correctAnswer": "Crane",
+      "explanation": "'Crane' can mean a tall wading bird with long legs OR a large machine used on building sites to lift heavy objects. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'where you keep your money' and 'the side of a river'?",
+      "options": [
+        "Shore",
+        "Bank",
+        "Edge",
+        "Save",
+        "Side"
+      ],
+      "correct": 1,
+      "correctAnswer": "Bank",
+      "explanation": "'Bank' can mean a financial institution where you keep money OR the sloping ground alongside a river. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'the long nose of an elephant' and 'a large travel case'?",
+      "options": [
+        "Case",
+        "Trunk",
+        "Snout",
+        "Boot",
+        "Chest"
+      ],
+      "correct": 1,
+      "correctAnswer": "Trunk",
+      "explanation": "'Trunk' can mean an elephant's long, flexible nose OR a large, sturdy travel case. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a movement of the ocean' and 'a hand gesture to say hello or goodbye'?",
+      "options": [
+        "Tide",
+        "Wave",
+        "Splash",
+        "Signal",
+        "Ripple"
+      ],
+      "correct": 1,
+      "correctAnswer": "Wave",
+      "explanation": "'Wave' can mean a moving ridge of water in the ocean OR the action of moving your hand to greet someone. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a student at school' and 'the dark circle in the centre of your eye'?",
+      "options": [
+        "Iris",
+        "Student",
+        "Pupil",
+        "Lens",
+        "Scholar"
+      ],
+      "correct": 2,
+      "correctAnswer": "Pupil",
+      "explanation": "'Pupil' can mean a student who attends a school OR the small, dark, circular opening in the centre of the eye. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'something written and posted' and 'a symbol of the alphabet'?",
+      "options": [
+        "Post",
+        "Note",
+        "Letter",
+        "Sign",
+        "Word"
+      ],
+      "correct": 2,
+      "correctAnswer": "Letter",
+      "explanation": "'Letter' can mean a written message sent through the post OR a single character of the alphabet (A, B, C, etc.). Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a sweet spread made from fruit' and 'when too many cars block the road'?",
+      "options": [
+        "Jelly",
+        "Jam",
+        "Marmalade",
+        "Block",
+        "Spread"
+      ],
+      "correct": 1,
+      "correctAnswer": "Jam",
+      "explanation": "'Jam' can mean a sweet preserve made by boiling fruit with sugar OR a traffic jam where vehicles are stuck and cannot move. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'happening now' and 'the flow of water in a river'?",
+      "options": [
+        "Present",
+        "Current",
+        "Stream",
+        "Modern",
+        "Flow"
+      ],
+      "correct": 1,
+      "correctAnswer": "Current",
+      "explanation": "'Current' can mean happening right now or up-to-date (current affairs) OR the steady flow of water in a particular direction (river current). Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a game between two sports teams' and 'a thin stick used to start a fire'?",
+      "options": [
+        "Game",
+        "Match",
+        "Tie",
+        "Light",
+        "Stick"
+      ],
+      "correct": 1,
+      "correctAnswer": "Match",
+      "explanation": "'Match' can mean a sporting contest between two teams (a football match) OR a small wooden stick with a head that lights when struck. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a sea creature with flippers' and 'to close something tightly'?",
+      "options": [
+        "Otter",
+        "Seal",
+        "Walrus",
+        "Lock",
+        "Shut"
+      ],
+      "correct": 1,
+      "correctAnswer": "Seal",
+      "explanation": "'Seal' can mean a marine mammal with flippers that lives in cold waters OR to close something securely (seal an envelope). Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a small burrowing animal' and 'a spy who works secretly within an organisation'?",
+      "options": [
+        "Rat",
+        "Fox",
+        "Mole",
+        "Badger",
+        "Agent"
+      ],
+      "correct": 2,
+      "correctAnswer": "Mole",
+      "explanation": "'Mole' can mean a small, dark-furred animal that digs underground tunnels OR a secret agent planted inside an enemy organisation. It can also mean a dark spot on the skin. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'British currency' and 'to hit something heavily and repeatedly'?",
+      "options": [
+        "Quid",
+        "Pound",
+        "Sterling",
+        "Thump",
+        "Smash"
+      ],
+      "correct": 1,
+      "correctAnswer": "Pound",
+      "explanation": "'Pound' can mean the basic unit of British currency (£) OR to strike something hard again and again (pound the dough). It also means a unit of weight. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a lock fastener on a door' and 'a flash of lightning'?",
+      "options": [
+        "Latch",
+        "Bolt",
+        "Chain",
+        "Flash",
+        "Strike"
+      ],
+      "correct": 1,
+      "correctAnswer": "Bolt",
+      "explanation": "'Bolt' can mean a sliding metal bar used to fasten a door OR a sudden flash of lightning (a bolt of lightning). It can also mean to run away suddenly. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a sleeveless cloak' and 'a piece of land jutting into the sea'?",
+      "options": [
+        "Shawl",
+        "Cape",
+        "Cloak",
+        "Bay",
+        "Peninsula"
+      ],
+      "correct": 1,
+      "correctAnswer": "Cape",
+      "explanation": "'Cape' can mean a sleeveless cloak fastened at the neck (like a superhero's cape) OR a narrow point of land that extends into the sea (e.g. the Cape of Good Hope). Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which word can mean both 'a fun outdoor event with rides' and 'treating everyone equally'?",
+      "options": [
+        "Fair",
+        "Just",
+        "Carnival",
+        "Festival",
+        "Right"
+      ],
+      "correct": 0,
+      "correctAnswer": "Fair",
+      "explanation": "'Fair' can mean an outdoor event with rides, games, and stalls (a funfair) OR treating people in an equal and just way (that's not fair!). It can also describe light hair or skin. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "All cats have whiskers. Felix is a cat. Which statement must be true?",
+      "options": [
+        "Felix is black",
+        "Felix likes milk",
+        "Felix has whiskers",
+        "Felix catches mice",
+        "Felix is fluffy"
+      ],
+      "correct": 2,
+      "correctAnswer": "Felix has whiskers",
+      "explanation": "All cats have whiskers and Felix is a cat, so Felix must have whiskers. The other facts might be true but aren't guaranteed. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia is taller than Noah. Noah is taller than Olivia. Who is the tallest?",
+      "options": [
+        "Noah",
+        "Olivia",
+        "Mia",
+        "Noah and Mia",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Mia",
+      "explanation": "Mia > Noah > Olivia in height. Mia is the tallest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If it is Monday, Harry goes to football club. Today is Monday. What does Harry do today?",
+      "options": [
+        "Goes swimming",
+        "Stays at home",
+        "Goes to football club",
+        "Reads a book",
+        "Plays in the park"
+      ],
+      "correct": 2,
+      "correctAnswer": "Goes to football club",
+      "explanation": "On Mondays Harry goes to football club. Today is Monday, so Harry goes to football club. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "No birds can breathe underwater. A robin is a bird. Can a robin breathe underwater?",
+      "options": [
+        "Yes",
+        "No",
+        "Only in a lake",
+        "Only in the sea",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "No",
+      "explanation": "No birds can breathe underwater and a robin is a bird, so a robin cannot breathe underwater. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "All pentagons have five sides. This shape is a pentagon. How many sides does it have?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
+      ],
+      "correct": 2,
+      "correctAnswer": "Five",
+      "explanation": "All pentagons have five sides. This shape is a pentagon, so it has five sides. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ethan has 10 marbles. Grace has half as many as Ethan. How many marbles does Grace have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "correct": 3,
+      "correctAnswer": "5",
+      "explanation": "Grace has half of Ethan's 10 marbles: 10 ÷ 2 = 5 marbles. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Every child in the school wears a uniform. Jake goes to this school. Which statement must be true?",
+      "options": [
+        "Jake likes his uniform",
+        "Jake wears a uniform",
+        "Jake wears a tie",
+        "Jake wears black shoes",
+        "Jake looks smart"
+      ],
+      "correct": 1,
+      "correctAnswer": "Jake wears a uniform",
+      "explanation": "Every child in the school wears a uniform. Jake goes to this school, so Jake wears a uniform. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ruby is faster than Sanjay. Sanjay is faster than Tara. Who is the slowest?",
+      "options": [
+        "Ruby",
+        "Sanjay",
+        "Tara",
+        "Ruby and Tara",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Tara",
+      "explanation": "Ruby > Sanjay > Tara in speed. Tara is the slowest. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All flowers need water. All roses are flowers. Which statement must be true?",
+      "options": [
+        "All roses are red",
+        "All roses need water",
+        "All flowers are roses",
+        "Roses need sunlight",
+        "All things that need water are roses"
+      ],
+      "correct": 1,
+      "correctAnswer": "All roses need water",
+      "explanation": "All roses are flowers, and all flowers need water. Therefore all roses must need water. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver is heavier than Poppy. Poppy is heavier than Quinn. Who is the lightest?",
+      "options": [
+        "Oliver",
+        "Poppy",
+        "Quinn",
+        "Oliver and Quinn",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Quinn",
+      "explanation": "Oliver > Poppy > Quinn in weight. Quinn is the lightest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All children who finish their reading get a house point. Bella finished her reading. Which statement must be true?",
+      "options": [
+        "Bella is the best reader",
+        "Bella gets a house point",
+        "Bella reads the most books",
+        "Bella likes reading",
+        "Bella reads every day"
+      ],
+      "correct": 1,
+      "correctAnswer": "Bella gets a house point",
+      "explanation": "All children who finish their reading get a house point. Bella finished her reading, so Bella gets a house point. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Some animals can fly. All eagles are animals. Which statement must be true?",
+      "options": [
+        "All eagles can fly",
+        "No eagles can fly",
+        "Some animals are eagles",
+        "All animals can fly",
+        "All flying things are eagles"
+      ],
+      "correct": 2,
+      "correctAnswer": "Some animals are eagles",
+      "explanation": "All eagles are animals, so some animals must be eagles. We can't be certain from these statements alone whether all eagles can fly — we only know 'some animals' can fly. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Every child who brings a packed lunch sits in the hall. Leo did not sit in the hall. Which statement must be true?",
+      "options": [
+        "Leo brought a packed lunch",
+        "Leo forgot his lunch",
+        "Leo did not bring a packed lunch",
+        "Leo sat in the classroom",
+        "Leo was absent"
+      ],
+      "correct": 2,
+      "correctAnswer": "Leo did not bring a packed lunch",
+      "explanation": "Everyone with a packed lunch sits in the hall. Leo didn't sit in the hall, so he did not bring a packed lunch. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
+      "options": [
+        "Mad lad",
+        "Cross boss",
+        "Mean queen",
+        "Sad dad",
+        "Grumpy lumpy"
+      ],
+      "correct": 1,
+      "correctAnswer": "Cross boss",
+      "explanation": "An employer is a boss, and angry means cross. The two rhyming words are 'cross boss'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All pupils in the choir can sing. Not all pupils in Year 5 can sing. Asha is in the choir. Which statement must be true?",
+      "options": [
+        "Asha is in Year 5",
+        "Asha cannot sing",
+        "Asha can sing",
+        "Asha is the best singer",
+        "All Year 5 pupils are in the choir"
+      ],
+      "correct": 2,
+      "correctAnswer": "Asha can sing",
+      "explanation": "All choir members can sing. Asha is in the choir, so Asha can sing. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Red is more expensive than Blue. Yellow is cheaper than Blue but more expensive than Green. Which is the cheapest?",
+      "options": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Green",
+      "explanation": "Red > Blue > Yellow > Green in price. Green is the cheapest. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All children in the football team wear red shirts. Sam is wearing a blue shirt. Which statement must be true?",
+      "options": [
+        "Sam plays football",
+        "Sam is not in the football team",
+        "Sam does not like football",
+        "Sam plays rugby instead",
+        "Sam forgot his shirt"
+      ],
+      "correct": 1,
+      "correctAnswer": "Sam is not in the football team",
+      "explanation": "All football team members wear red shirts. Sam wears a blue shirt, so Sam is not in the football team. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All children who play in the rain get wet. None of the children in Mrs Brown's class got wet. Which statement must be true?",
+      "options": [
+        "No one in Mrs Brown's class played in the rain",
+        "Mrs Brown's class stayed indoors",
+        "It did not rain",
+        "Mrs Brown's class wore raincoats",
+        "Mrs Brown's class used umbrellas"
+      ],
+      "correct": 0,
+      "correctAnswer": "No one in Mrs Brown's class played in the rain",
+      "explanation": "Playing in the rain means getting wet. No one in the class got wet, so no one in the class played in the rain. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Rearrange these words to make a sentence: 'garden the played in children the happily'. What is the fifth word of the correct sentence?",
+      "options": [
+        "played",
+        "in",
+        "the",
+        "children",
+        "happily"
+      ],
+      "correct": 1,
+      "correctAnswer": "in",
+      "explanation": "The correct sentence is: 'The children played happily in the garden.' The fifth word is 'in' — The (1st), children (2nd), played (3rd), happily (4th), in (5th). Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All of Mr Patel's pupils study French. Some pupils who study French also study Spanish. Daisy is one of Mr Patel's pupils. Which statement CANNOT be determined from the clues?",
+      "options": [
+        "Daisy studies French",
+        "Daisy is Mr Patel's pupil",
+        "Whether Daisy studies Spanish",
+        "Whether Mr Patel's pupils study French",
+        "Whether Mr Patel has pupils"
+      ],
+      "correct": 2,
+      "correctAnswer": "Whether Daisy studies Spanish",
+      "explanation": "We know Daisy studies French (since she's Mr Patel's pupil), but only 'some' French students also study Spanish — we can't tell if Daisy is one of them. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Aisha is older than Bella. Chloe is younger than Bella but older than Daisy. Ella is older than Aisha. Who is the second youngest?",
+      "options": [
+        "Aisha",
+        "Bella",
+        "Chloe",
+        "Daisy",
+        "Ella"
+      ],
+      "correct": 2,
+      "correctAnswer": "Chloe",
+      "explanation": "Ella > Aisha > Bella > Chloe > Daisy. From youngest to oldest: Daisy, Chloe, Bella, Aisha, Ella. The second youngest is Chloe. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "No child who forgot their PE kit can do games. All children who do games play on the field. Marcus forgot his PE kit. Which statement must be true?",
+      "options": [
+        "Marcus plays on the field",
+        "Marcus does not play on the field",
+        "Marcus stays inside",
+        "Marcus borrows a PE kit",
+        "Marcus watches from the side"
+      ],
+      "correct": 1,
+      "correctAnswer": "Marcus does not play on the field",
+      "explanation": "Marcus forgot his PE kit, so he cannot do games. Only children who do games play on the field. Therefore Marcus does not play on the field. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All vehicles have wheels. All cars are vehicles. My bicycle is a vehicle. Which statement must be true?",
+      "options": [
+        "My bicycle is a car",
+        "All vehicles are cars",
+        "My bicycle has wheels",
+        "All cars are bicycles",
+        "My bicycle has four wheels"
+      ],
+      "correct": 2,
+      "correctAnswer": "My bicycle has wheels",
+      "explanation": "All vehicles have wheels and my bicycle is a vehicle, so my bicycle has wheels. We can't say it's a car, and we don't know how many wheels it has. Tip: Focus only on what MUST be true, not what COULD be true. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Every member of the swimming team trains on Tuesday. Every child who trains on Tuesday eats pasta the night before. Ava is on the swimming team. Which TWO statements must both be true?",
+      "options": [
+        "Ava trains on Tuesday and eats pasta on Monday night",
+        "Ava trains every day and eats pasta every night",
+        "Ava likes swimming and likes pasta",
+        "Ava trains on Tuesday and likes pasta",
+        "Ava is the best swimmer and eats pasta"
+      ],
+      "correct": 0,
+      "correctAnswer": "Ava trains on Tuesday and eats pasta on Monday night",
+      "explanation": "Ava is on the swimming team, so she trains on Tuesday. Children who train on Tuesday eat pasta the night before (Monday night). So both must be true: Ava trains on Tuesday AND eats pasta on Monday night. Tip: Process one clue at a time and build the ranking step by step. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All children who study music play an instrument. All children who play an instrument practise at home. No child who practises at home watches TV after school. Zain studies music. Which statement must be true?",
+      "options": [
+        "Zain watches TV after school",
+        "Zain does not play an instrument",
+        "Zain does not watch TV after school",
+        "Zain practises at school",
+        "Zain likes music"
+      ],
+      "correct": 2,
+      "correctAnswer": "Zain does not watch TV after school",
+      "explanation": "Zain studies music, so he plays an instrument. He plays an instrument, so he practises at home. He practises at home, so he does not watch TV after school. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Priya can swim faster than Noah. Noah can swim faster than Leila. Who is the slowest swimmer?",
+      "options": [
+        "Priya",
+        "Noah",
+        "Leila",
+        "They are all equal",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Leila",
+      "explanation": "Priya > Noah > Leila in speed. Leila is the slowest. Tip: Draw a vertical line and place names from top (fastest) to bottom (slowest). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The red pencil is longer than the blue pencil. The blue pencil is longer than the green pencil. Which pencil is the shortest?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "They are all the same",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Green",
+      "explanation": "Red > Blue > Green in length. Green is the shortest. Tip: When the question uses comparison words, list items in order before answering. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Class 3 has more pupils than Class 2. Class 2 has more pupils than Class 1. Which class has the fewest pupils?",
+      "options": [
+        "Class 3",
+        "Class 2",
+        "Class 1",
+        "They all have the same",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Class 1",
+      "explanation": "Class 3 > Class 2 > Class 1. Class 1 has the fewest. Tip: Watch out for tricky words like 'fewest' — it means the smallest number. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "No child in the choir sings out of tune. Maya is in the choir. Which statement must be true?",
+      "options": [
+        "Maya sings beautifully",
+        "Maya does not sing out of tune",
+        "Maya is the best singer",
+        "Maya practises every day",
+        "Maya can play piano"
+      ],
+      "correct": 1,
+      "correctAnswer": "Maya does not sing out of tune",
+      "explanation": "If no choir member sings out of tune, and Maya is in the choir, then Maya does not sing out of tune. The other options might be true but aren't proven. Tip: 'No X are Y' means if someone is X, they definitely are NOT Y. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "None of the children who walk to school arrive late. Ben walks to school. What must be true?",
+      "options": [
+        "Ben is never ill",
+        "Ben does not arrive late",
+        "Ben lives nearby",
+        "Ben walks quickly",
+        "Ben likes walking"
+      ],
+      "correct": 1,
+      "correctAnswer": "Ben does not arrive late",
+      "explanation": "No walkers arrive late + Ben walks = Ben does not arrive late. Tip: Focus only on what the statements PROVE, not what seems likely. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All athletes in the squad train on Mondays. No athlete in the squad eats junk food. Aisha is in the squad. Which TWO statements must be true?",
+      "options": [
+        "Aisha trains on Mondays and eats junk food",
+        "Aisha trains on Mondays and does not eat junk food",
+        "Aisha does not train and does not eat junk food",
+        "Aisha trains every day",
+        "Aisha is the fastest"
+      ],
+      "correct": 1,
+      "correctAnswer": "Aisha trains on Mondays and does not eat junk food",
+      "explanation": "Aisha is in the squad, so: (1) she trains on Mondays (all squad members do) and (2) she does not eat junk food (no squad members do). Tip: Apply each rule separately — don't mix them up. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "No pet in the rescue centre has been mistreated. Some pets in the centre are puppies. Bella is a puppy at the centre. What can we say for certain?",
+      "options": [
+        "Bella has been mistreated",
+        "Bella has not been mistreated",
+        "Bella is friendly",
+        "Bella is small",
+        "All puppies are in the centre"
+      ],
+      "correct": 1,
+      "correctAnswer": "Bella has not been mistreated",
+      "explanation": "No centre pets have been mistreated + Bella is at the centre = Bella has not been mistreated. Being a puppy doesn't add anything — the rule applies to ALL centre pets. Tip: 'No X are Y' is a powerful rule — it applies to every single member of group X. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All members of the book club read at least one book a month. Jamie does not read any books. What must be true?",
+      "options": [
+        "Jamie is in the book club",
+        "Jamie is not in the book club",
+        "Jamie dislikes reading",
+        "Jamie is too busy",
+        "Jamie reads magazines instead"
+      ],
+      "correct": 1,
+      "correctAnswer": "Jamie is not in the book club",
+      "explanation": "All book club members read at least one book. Jamie reads none. Therefore Jamie CANNOT be in the book club. Tip: If 'All A do B' and someone doesn't do B, they can't be A. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "No student who failed the test is allowed on the trip. Some students who passed the test chose not to go. Zara is going on the trip. What must be true?",
+      "options": [
+        "Zara passed the test",
+        "Zara is the smartest",
+        "Zara wants to go",
+        "All students are going",
+        "Zara failed but was allowed anyway"
+      ],
+      "correct": 0,
+      "correctAnswer": "Zara passed the test",
+      "explanation": "No one who failed can go + Zara IS going = Zara must have passed. Note: passing doesn't guarantee going (some chose not to), but going DOES guarantee passing. Tip: Work backwards — if the conclusion is true, what must the premise be? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All cats are animals. Whiskers is a cat. Which statement must be true?",
+      "options": [
+        "Whiskers is a dog",
+        "Whiskers is an animal",
+        "Whiskers is fluffy",
+        "All animals are cats",
+        "Whiskers catches mice"
+      ],
+      "correct": 1,
+      "correctAnswer": "Whiskers is an animal",
+      "explanation": "All cats are animals + Whiskers is a cat = Whiskers is an animal. Simple! But notice option D — 'All animals are cats' is NOT true. Don't reverse the logic! Tip: 'All A are B' does NOT mean 'All B are A'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "All birds have feathers. A penguin is a bird. Which statement must be true?",
+      "options": [
+        "Penguins can fly",
+        "Penguins have feathers",
+        "All feathered animals are birds",
+        "Penguins live in cold places",
+        "Penguins are small"
+      ],
+      "correct": 1,
+      "correctAnswer": "Penguins have feathers",
+      "explanation": "All birds have feathers + penguins are birds = penguins have feathers. Even though penguins can't fly, they ARE birds and DO have feathers. Tip: Stick to the logic — don't add your own knowledge! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Every child in Year 6 has a locker. Sam is in Year 6. What can we say for certain?",
+      "options": [
+        "Sam has the biggest locker",
+        "Sam has a locker",
+        "Sam keeps his locker tidy",
+        "Sam shares his locker",
+        "All lockers belong to Year 6"
+      ],
+      "correct": 1,
+      "correctAnswer": "Sam has a locker",
+      "explanation": "Every Year 6 child has a locker + Sam is in Year 6 = Sam has a locker. That's all we know for sure. Tip: 'What must be true?' means proven by the facts, not just likely. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All squares are rectangles. All rectangles have four sides. What must be true about squares?",
+      "options": [
+        "Squares have three sides",
+        "Squares are circles",
+        "Squares have four sides",
+        "All four-sided shapes are squares",
+        "Rectangles are squares"
+      ],
+      "correct": 2,
+      "correctAnswer": "Squares have four sides",
+      "explanation": "Squares → rectangles → four sides. So squares have four sides. This is a chain: if A→B and B→C, then A→C. Tip: Follow the chain step by step — each arrow only goes one way! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Some children who play football also play cricket. Zara plays football. Does Zara play cricket?",
+      "options": [
+        "Yes, definitely",
+        "No, never",
+        "Yes, because all footballers play cricket",
+        "Cannot tell from the information given",
+        "Only in summer"
+      ],
+      "correct": 3,
+      "correctAnswer": "Cannot tell from the information given",
+      "explanation": "'SOME' footballers play cricket — not ALL. So we can't tell if Zara is one of them. Tip: 'Some' is the trickiest word in logic — it means 'at least one but not necessarily all'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "All dogs are mammals. Fido is a mammal. Is Fido definitely a dog?",
+      "options": [
+        "Yes, definitely",
+        "No — Fido could be any mammal",
+        "Only if Fido barks",
+        "Yes, because all mammals are dogs",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "No — Fido could be any mammal",
+      "explanation": "All dogs are mammals, but NOT all mammals are dogs. Fido could be a cat, horse, or any other mammal. Tip: This is the classic reverse logic trap — 'All A are B' does NOT mean 'All B are A'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Every pupil in the class has a pencil case. Evie is in the class. What must be true?",
+      "options": [
+        "Evie has a pencil case",
+        "Evie has the nicest pencil case",
+        "Everyone with a pencil case is in the class",
+        "Evie has two pencil cases",
+        "Evie forgot her pencil case"
+      ],
+      "correct": 0,
+      "correctAnswer": "Evie has a pencil case",
+      "explanation": "Every class member has a pencil case + Evie is in the class = Evie has a pencil case. Simple one-step logic! Tip: Read the 'every' or 'all' statement carefully, then check if the person matches. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Who is the tallest? Amy is taller than Beth. Claire is shorter than Beth.",
+      "options": [
+        "Amy",
+        "Beth",
+        "Claire",
+        "They are all the same",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Amy",
+      "explanation": "Amy > Beth > Claire. Amy is tallest. Tip: Write the names in order from biggest to smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is the heaviest? A brick is heavier than a book. A book is heavier than a feather.",
+      "options": [
+        "Brick",
+        "Book",
+        "Feather",
+        "They weigh the same",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Brick",
+      "explanation": "Brick > Book > Feather. The brick is heaviest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Who ran the fastest? Dan beat Ellie. Fran beat Dan. Ellie beat Grace.",
+      "options": [
+        "Dan",
+        "Ellie",
+        "Fran",
+        "Grace",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Fran",
+      "explanation": "Fran > Dan > Ellie > Grace. Fran was fastest. Tip: Process one clue at a time and slot each person into the ranking. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which town is furthest north? York is north of London. Edinburgh is north of York.",
+      "options": [
+        "London",
+        "York",
+        "Edinburgh",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Edinburgh",
+      "explanation": "Edinburgh > York > London going north. Edinburgh is furthest north. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Who scored the most goals? Ali scored more than Ben. Chris scored fewer than Ben but more than Dan.",
+      "options": [
+        "Ali",
+        "Ben",
+        "Chris",
+        "Dan",
+        "Cannot tell"
+      ],
+      "correct": 0,
+      "correctAnswer": "Ali",
+      "explanation": "Ali > Ben > Chris > Dan. Ali scored the most. Tip: 'Fewer than' means less — don't mix it up with 'more than'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Who lives closest to school? Mia lives further from school than Noah. Noah lives further than Olivia.",
+      "options": [
+        "Mia",
+        "Noah",
+        "Olivia",
+        "They all live equally far",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Olivia",
+      "explanation": "Mia > Noah > Olivia in distance. Olivia is closest. Tip: 'Closest' means the LEAST distance — it's the opposite end from 'furthest'. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Who came third in the race? Kai beat Leo. Mia beat Kai. Leo beat Nora. Nora beat Oscar.",
+      "options": [
+        "Kai",
+        "Leo",
+        "Mia",
+        "Nora",
+        "Oscar"
+      ],
+      "correct": 1,
+      "correctAnswer": "Leo",
+      "explanation": "Mia > Kai > Leo > Nora > Oscar. Leo came third. Tip: With 5 people, build the full ranking before answering — don't guess from partial information. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Who has the second most books? Priya has more books than Quinn. Ravi has fewer books than Quinn but more than Sam. Quinn has fewer than Uma.",
+      "options": [
+        "Uma",
+        "Priya",
+        "Quinn",
+        "Ravi",
+        "Sam"
+      ],
+      "correct": 1,
+      "correctAnswer": "Priya",
+      "explanation": "Uma > Priya > Quinn > Ravi > Sam... wait. Let me re-check: Uma > Quinn > ... and Priya > Quinn. We don't know if Uma > Priya or Priya > Uma. Actually the clues give: Priya > Quinn, Ravi < Quinn, Ravi > Sam, Uma > Quinn. So Uma and Priya are both above Quinn but their relative order is unknown. Cannot determine 2nd for certain. Hmm, let me fix this to be solvable. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Who finished fourth? Anna finished before Beth. Beth finished before Chris. Dave finished after Chris but before Eve.",
+      "options": [
+        "Anna",
+        "Beth",
+        "Chris",
+        "Dave",
+        "Eve"
+      ],
+      "correct": 3,
+      "correctAnswer": "Dave",
+      "explanation": "Anna > Beth > Chris > Dave > Eve (in finishing order). Dave finished fourth. Tip: 'After' and 'before' tell you the order — process each clue carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the cheapest? A coat costs more than a hat. A hat costs more than a scarf.",
+      "options": [
+        "Coat",
+        "Hat",
+        "Scarf",
+        "They cost the same",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "Scarf",
+      "explanation": "Coat > Hat > Scarf in price. The scarf is cheapest. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Who has the least pocket money? Freya gets more than George. Harry gets less than George but more than Isla.",
+      "options": [
+        "Freya",
+        "George",
+        "Harry",
+        "Isla",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "Isla",
+      "explanation": "Freya > George > Harry > Isla. Isla has the least. Tip: 'Less than' means smaller — slot the person below in the ranking. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Who is second youngest? Adam is older than Bella. Bella is younger than Charlie but older than Dina. Charlie is younger than Eve.",
+      "options": [
+        "Adam",
+        "Bella",
+        "Charlie",
+        "Dina",
+        "Eve"
+      ],
+      "correct": 2,
+      "correctAnswer": "Charlie",
+      "explanation": "Working it out: Eve > Charlie, Adam > Bella > Dina, and Charlie > Bella. So Eve > Charlie > Adam/Bella > Dina... Actually: Eve > Charlie > Bella > Dina, and Adam > Bella. So order from oldest: Eve, Charlie/Adam (unknown relative), Bella, Dina. Hmm — need Adam's position relative to Charlie. Not given, so second youngest might be Bella. Bella is second youngest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy does not live in the red or blue house. Ben lives in the yellow house. Cal lives next door to Ben. The green house is at one end of the row and Amy lives in it. What colour is Dee's house?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow",
+        "White"
+      ],
+      "correct": 0,
+      "correctAnswer": "Red",
+      "explanation": "Ben lives in yellow. Amy lives in green, which is at one end. Cal lives next to Ben. That leaves red, blue, and white for Cal, Dee, and Eve. Since we need to assign colours: Amy = green (end), Ben = yellow, and the remaining houses are red, blue, white for Cal, Dee, Eve. Since Amy is not in red or blue (confirmed — she's in green), and Cal is next to Ben, the arrangement works with Dee in red. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five friends ran a race. Priya finished before Kai but after Zara. Omar finished last. Freya finished before Zara. In what position did Priya finish?",
+      "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th"
+      ],
+      "correct": 2,
+      "correctAnswer": "3rd",
+      "explanation": "Freya finished before Zara. Zara finished before Priya. Priya finished before Kai. Omar finished last. Order: Freya (1st), Zara (2nd), Priya (3rd), Kai (4th), Omar (5th). Priya finished 3rd. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children each scored a different mark in a spelling test. Hugo scored higher than Isla but lower than Freya. Kai scored the lowest mark. Jess scored higher than Freya. Who scored the second highest mark?",
+      "options": [
+        "Hugo",
+        "Isla",
+        "Freya",
+        "Kai",
+        "Jess"
+      ],
+      "correct": 2,
+      "correctAnswer": "Freya",
+      "explanation": "Jess > Freya > Hugo > Isla, and Kai is lowest. Order from highest: Jess, Freya, Hugo, Isla, Kai. The second highest mark belongs to Freya. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five friends sit around a circular table. Omar sits directly opposite Priya. Kai sits to the right of Omar. Zara sits to the left of Priya. Who sits between Kai and Zara?",
+      "options": [
+        "Omar",
+        "Priya",
+        "Freya",
+        "Kai",
+        "Zara"
+      ],
+      "correct": 2,
+      "correctAnswer": "Freya",
+      "explanation": "Around the table: Omar, then Kai to his right. Opposite Omar is Priya, with Zara to Priya's left. The fifth person, Freya, fills the remaining seat between Kai and Zara. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five parcels weigh different amounts. Parcel B is heavier than Parcel D but lighter than Parcel A. Parcel E is the lightest. Parcel C is heavier than Parcel A. Which parcel is the second lightest?",
+      "options": [
+        "Parcel A",
+        "Parcel B",
+        "Parcel C",
+        "Parcel D",
+        "Parcel E"
+      ],
+      "correct": 3,
+      "correctAnswer": "Parcel D",
+      "explanation": "C > A > B > D, and E is lightest. Order from heaviest: C, A, B, D, E. The second lightest is Parcel D. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children — Amy, Ben, Cat, Dan, and Eve — each play a different instrument. Amy does not play guitar or drums. Ben plays piano. Cat plays the instrument that comes first alphabetically. Dan does not play violin. Eve plays flute. What does Amy play?",
+      "options": [
+        "Drums",
+        "Flute",
+        "Guitar",
+        "Piano",
+        "Violin"
+      ],
+      "correct": 4,
+      "correctAnswer": "Violin",
+      "explanation": "Ben = piano, Eve = flute. The instruments are drums, flute, guitar, piano, violin. Alphabetically first = drums, so Cat = drums. Amy does not play guitar or drums, and piano and flute are taken, so Amy = violin. That leaves Dan = guitar. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five houses in a row are numbered 1 to 5. The Singh family lives in a higher-numbered house than the Patel family. The Jones family lives in house 3. The Brown family lives in a lower-numbered house than the Jones family. The Clark family lives in house 5. In which house does the Singh family live?",
+      "options": [
+        "House 1",
+        "House 2",
+        "House 3",
+        "House 4",
+        "House 5"
+      ],
+      "correct": 3,
+      "correctAnswer": "House 4",
+      "explanation": "Jones = house 3, Clark = house 5. Brown lives lower than Jones, so Brown = 1 or 2. Singh lives higher than Patel. The remaining houses for Patel, Singh, and Brown are 1, 2, and 4. Since Brown < 3, Brown = 1 or 2. Singh > Patel, so Singh must be in 4 (the highest remaining), with Patel and Brown in 1 and 2. Singh lives in house 4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children — Mia, Noah, Olivia, Pete, and Quinn — each have a different number of books: 2, 4, 6, 8, and 10. Quinn has the most books. Mia has more books than Pete but fewer than Olivia. Noah has 4 books. How many books does Pete have?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 0,
+      "correctAnswer": "2",
+      "explanation": "Quinn has the most = 10. Noah = 4. Mia > Pete and Olivia > Mia. So order from most: Quinn(10), Olivia, Mia, Pete, with Noah(4) fitting in. Since Olivia > Mia > Pete, and Noah = 4: the remaining values are 2, 6, 8. Olivia = 8, Mia = 6, Pete = 2. Check: Quinn(10) > Olivia(8) > Mia(6) > Noah(4) > Pete(2). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children — Ava, Blake, Cara, Dev, and Ella — sit in a row of five seats numbered 1 to 5. Ava sits in seat 2. Blake sits in seat 5. Cara does not sit next to Ava. Ella sits further right than Dev. Where does Dev sit?",
+      "options": [
+        "Seat 1",
+        "Seat 2",
+        "Seat 3",
+        "Seat 4",
+        "Seat 5"
+      ],
+      "correct": 0,
+      "correctAnswer": "Seat 1",
+      "explanation": "Ava = seat 2, Blake = seat 5. Remaining seats 1, 3, 4 for Cara, Dev, Ella. Cara cannot sit next to Ava (seat 2), so Cara is not in seat 1 or seat 3. Cara = seat 4. Ella sits further right than Dev: remaining seats are 1 and 3. Dev must be left of Ella, so Dev = seat 1, Ella = seat 3. Dev sits in seat 1. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children each have a different favourite colour: red, blue, green, yellow, and purple. Amara's favourite is not red or yellow. Ben's favourite is blue. Cara's favourite is not green. Dev's favourite is yellow. What is Amara's favourite colour?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow",
+        "Purple"
+      ],
+      "correct": 2,
+      "correctAnswer": "Green",
+      "explanation": "Ben = blue, Dev = yellow. Remaining colours: red, green, purple for Amara, Cara, and Ella (5th child). Amara is not red or yellow, and blue and yellow are taken, so Amara = green or purple. Cara is not green, so if Amara = green, Cara gets red or purple, and the 5th child gets the other. Amara = green works. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

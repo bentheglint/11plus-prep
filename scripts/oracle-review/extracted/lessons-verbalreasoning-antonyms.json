@@ -1,0 +1,1258 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "antonyms",
+    "displayName": "Antonyms",
+    "extractedAt": "2026-03-30T13:51:13.806Z",
+    "subConceptCount": 8,
+    "lessonCount": 10,
+    "screenCount": 40,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "basic-opposites",
+      "name": "Basic Opposites",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "basic-opposites-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot simple opposite pairs quickly — you'll be a pro at this!",
+            "How to use the flip test — if the meaning reverses completely, it's an antonym (a word that means the opposite). This trick works every time!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the opposite of \"hot\"?",
+              "body": "Daisy is matching words with opposite meanings.\n\nDid you know that almost every word has an exact mirror image — a word that means the complete opposite? **\"hot\"** means having a high temperature.\n\nCan you spot which word flips it around completely? Careful — the 11+ loves sneaking in words that are close but not quite right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "hot"
+                ],
+                "pair2word": "hot",
+                "answer": null,
+                "label": "What is the exact OPPOSITE?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Flip Test",
+              "body": "Here's a brilliant trick you'll use again and again! Put **\"hot\"** in a sentence, then swap it for **\"cold\"** — if the meaning **completely flips**, you've found the antonym. It's like pressing a reverse button!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "An antonym is a word that means the ____ of another word",
+                "options": [
+                  "opposite",
+                  "same",
+                  "similar",
+                  "nothing"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Spot on! Antonyms are words with opposite meanings — you've got this! ✓",
+                "incorrectFeedback": "Nearly! Antonyms mean the OPPOSITE of each other — think of them as mirror images."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"hot\" means: having a high temperature",
+                    "why": "Start with the meaning"
+                  },
+                  {
+                    "text": "Flip it: The soup was **hot** → flip it → The soup was **cold**",
+                    "why": "The meaning has reversed completely!"
+                  },
+                  {
+                    "text": "Watch out for \"warm\"",
+                    "why": "'Warm' is a LESSER version of hot — it's on the same side, not the opposite side"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word means the **opposite** of **\"dark\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is an antonym of \"dark\"?",
+                "options": [
+                  "bright",
+                  "dim",
+                  "pale",
+                  "white",
+                  "clear"
+                ],
+                "correctAnswer": "bright",
+                "correctFeedback": "Brilliant! 'Dark' means having little light and 'bright' means having lots of light — they are exact opposites. 'Dim' is a lesser version of dark, not the opposite. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"bright\". 'Dark' means having little light and 'bright' means having lots of light — they are exact opposites. 'Dim' is a lesser version of dark, not the opposite. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "dark"
+                ],
+                "pair2word": "dark",
+                "answer": null,
+                "relationship": "having very little light",
+                "label": "Find the OPPOSITE"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The Flip Test — your secret weapon!",
+              "body": "You've got a proper superpower now! Next time you need to find an antonym, just follow these three steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Define the word in your own words",
+                    "why": "What does it actually mean?"
+                  },
+                  {
+                    "text": "2. Flip the meaning — what's the exact opposite?",
+                    "why": "High → low, fast → slow, big → small"
+                  },
+                  {
+                    "text": "3. Watch out for RELATED words that aren't opposites",
+                    "why": "Hot ≠ warm, fast ≠ stopped ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "basic-opposites-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why picking a DIFFERENT word isn't the same as picking an OPPOSITE — this catches loads of people out!",
+            "How to dodge the sneaky 'wrong direction' trap"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"damp\" really the opposite of \"dry\"?",
+              "body": "Evie is checking her friend's VR homework. The answer given was **\"damp\"** as the opposite of **\"dry\"** — because dry things aren't damp.\n\nHmm, that sounds reasonable at first... but is it actually right? Let's play detective and find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Word: \"dry\""
+                  },
+                  {
+                    "text": "Answer chosen: \"damp\" — correct or not?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Different is NOT the same as Opposite!",
+              "body": "'Damp' means slightly moist — it's not the full opposite of 'dry'\n\nThis is one of the trickiest traps in the 11+! An antonym must **flip the meaning completely**. Words that are just DIFFERENT or RELATED don't count — they must be on the exact opposite end.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"dry\" — the original word",
+                    "why": "What does it mean?"
+                  },
+                  {
+                    "text": "\"damp\" — related but NOT opposite",
+                    "why": "'Damp' means slightly moist — it's not the full opposite of 'dry'"
+                  },
+                  {
+                    "text": "\"wet\" — the TRUE opposite ✓",
+                    "why": "'Wet' is the true opposite of 'dry'. 'Damp' is only slightly moist — it's halfway, not the full flip."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the TRUE opposite!",
+              "body": "Which word is the **exact opposite** of **\"hard\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the true antonym of \"hard\"?",
+                "options": [
+                  "soft",
+                  "gentle",
+                  "weak",
+                  "floppy",
+                  "bendy"
+                ],
+                "correctAnswer": "soft",
+                "correctFeedback": "Well done! 'Soft' is the true opposite of 'hard'. Both describe the same quality — firmness. 'Gentle' describes behaviour, not texture. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"soft\". 'Soft' is the true opposite of 'hard'. Both describe the same quality — firmness. 'Gentle' describes behaviour, not texture."
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "hard"
+                ],
+                "pair2word": "hard",
+                "answer": null,
+                "label": "Not just different — OPPOSITE"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Opposite, not just different — remember this!",
+              "body": "Fantastic work! You're building a really useful skill here. Keep this in mind and you'll dodge a trap that catches loads of people:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "An antonym reverses the meaning entirely",
+                    "why": "Not just related — the exact reverse"
+                  },
+                  {
+                    "text": "Check the SAME quality is being flipped",
+                    "why": "Width ↔ width, sound ↔ sound, price ↔ price"
+                  },
+                  {
+                    "text": "If it's just DIFFERENT, it's NOT an antonym",
+                    "why": "Narrow ≠ long, noisy ≠ peaceful ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prefix-antonyms",
+      "name": "Prefix Antonyms (un-, dis-, im-, in-, ir-)",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "prefix-antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use prefixes like un-, dis-, im-, in- or ir- to create an opposite — it's like having a magic switch!",
+            "How to choose which prefix goes with which word (there's a pattern, and once you spot it, you'll never forget)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What happens when you add \"un-\" to \"happy\"?",
+              "body": "Daisy is learning how prefixes create opposites.\n\nDid you know you can turn a word into its opposite just by sticking a tiny **prefix** (a few letters) on the front? It's like having a magic undo button for words!\n\n**\"happy\"** means feeling pleased and content. What happens when you stick **\"un-\"** on the front?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"happy\" = feeling pleased and content"
+                  },
+                  {
+                    "text": "Add \"un-\" → \"unhappy\" = ???"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The \"un-\" prefix",
+              "body": "The prefix **\"un-\"** means \"not\" or \"the opposite of\". It flips the meaning!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"happy\" = feeling pleased and content",
+                    "why": "The original word"
+                  },
+                  {
+                    "text": "\"un-\" + \"happy\" = \"unhappy\"",
+                    "why": "not feeling pleased; sad"
+                  },
+                  {
+                    "text": "More examples: kind → unkind, fair → unfair, lucky → unlucky",
+                    "why": "The \"un-\" prefix always means \"not\" or \"opposite\""
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word is the **opposite** of **\"tidy\"**? Think about which prefix to use!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word is an antonym of \"tidy\"?",
+                "options": [
+                  "untidy",
+                  "messy",
+                  "cluttered",
+                  "dirty",
+                  "chaotic"
+                ],
+                "correctAnswer": "untidy",
+                "correctFeedback": "Brilliant! Adding 'un-' to 'tidy' creates 'untidy' — the direct prefix opposite. 'Messy' means the same thing but isn't formed from the word 'tidy'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"untidy\". Adding 'un-' to 'tidy' creates 'untidy' — the direct prefix opposite. 'Messy' means the same thing but isn't formed from the word 'tidy'. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "tidy"
+                ],
+                "pair2word": "tidy",
+                "answer": null,
+                "label": "Find the prefix OPPOSITE"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prefix power — your toolkit!",
+              "body": "You've just unlocked a proper superpower! Once you know these prefixes, you can crack loads of antonym questions in seconds. They all mean \"not\" or \"opposite\":",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "un- : unhappy, unkind, unfair, unlucky",
+                    "why": "The most common 'opposite' prefix"
+                  },
+                  {
+                    "text": "dis- : disagree, disappear, disobey",
+                    "why": "Often used with verbs"
+                  },
+                  {
+                    "text": "im-/in-/ir- : impossible, invisible, irregular",
+                    "why": "im- before b/m/p, ir- before r ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "prefix-antonyms-tricky",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to choose which prefix matches which word in tricky cases — even grown-ups get these muddled!",
+            "Why you can't just stick any prefix on any word (English has some sneaky rules here)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why not \"unvisible\"?",
+              "body": "Evie is wondering why we say 'impossible' not 'unpossible'.\n\nThe opposite of **\"visible\"** is **\"invisible\"** — but why do we use **\"in-\"** and not **\"un-\"**?\n\nBelieve it or not, English has secret rules about which prefix goes with which word — and you're about to crack the code!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"unvisible\" ✗ — this isn't a real word!"
+                  },
+                  {
+                    "text": "\"invisible\" ✓ — this IS the correct opposite"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Matching the right prefix",
+              "body": "Words starting with 'v' usually take 'in-'. Here's the good news — there's a pattern, and once you know it, these questions become much easier!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"visible\" starts with \"v\"",
+                    "why": "Words starting with 'v' usually take 'in-'"
+                  },
+                  {
+                    "text": "The correct prefix is \"in-\"",
+                    "why": "\"in-\" + \"visible\" = \"invisible\""
+                  },
+                  {
+                    "text": "\"unvisible\" is NOT a real English word",
+                    "why": "Using the wrong prefix creates a non-word!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which is the correct opposite of **\"mature\"**? Watch out for wrong prefixes!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the correct antonym of \"mature\"?",
+                "options": [
+                  "immature",
+                  "unmature",
+                  "inmature",
+                  "childish",
+                  "silly"
+                ],
+                "correctAnswer": "immature",
+                "correctFeedback": "Well done! 'Mature' takes the prefix 'im-' because it starts with 'm'. We don't say 'unmature' — 'immature' is the correct form. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"immature\". 'Mature' takes the prefix 'im-' because it starts with 'm'. We don't say 'unmature' — 'immature' is the correct form. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "mature"
+                ],
+                "pair2word": "mature",
+                "answer": null,
+                "label": "Which prefix makes the OPPOSITE?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prefix matching rules — your cheat sheet!",
+              "body": "Well done! Here's a handy cheat sheet you can keep in your head — knowing this puts you ahead of most people:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "im- before b, m, p: impossible, immature, imbalance",
+                    "why": "The 'm' in 'im-' matches these starting sounds"
+                  },
+                  {
+                    "text": "ir- before r: irregular, irresponsible, irrelevant",
+                    "why": "The 'r' in 'ir-' matches the starting 'r'"
+                  },
+                  {
+                    "text": "in- or dis- for most others: invisible, dishonest",
+                    "why": "Learn the common ones and you'll spot them in tests ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb-antonyms",
+      "name": "Action Word Opposites",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "verb-antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find opposites for action words (verbs) — imagine pressing rewind!",
+            "Why picturing the REVERSE action helps you find the match every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Isla",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the reverse of \"expand\"?",
+              "body": "Isla is matching opposite action words.\n\n**\"expand\"** is an action word (a verb). It means: to grow larger or spread out.\n\nHere's a really fun way to think about it: imagine watching the action on video and pressing **rewind** — what word describes what you'd see playing backwards?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "expand"
+                ],
+                "pair2word": "expand",
+                "answer": null,
+                "label": "What is the REVERSE action?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Reverse the action!",
+              "body": "Think about **\"expand\"** — it means to grow larger or spread out. Now imagine you're watching a video of that action and you press REWIND. What does the reversed action look like? That's your antonym!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Picture, reverse, then match. ✓",
+                "incorrectFeedback": "Not quite — start by reading the word, then picture it, reverse it, and match."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"expand\" = to grow larger or spread out",
+                    "why": "Picture this action happening"
+                  },
+                  {
+                    "text": "Now REVERSE it: to shrink or become smaller",
+                    "why": "What does the opposite look like?"
+                  },
+                  {
+                    "text": "\"contract\" = the reverse action ✓",
+                    "why": "The balloon will **expand** → reverse → The balloon will **contract**"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word shows the **opposite action** to **\"create\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is an antonym of \"create\"?",
+                "options": [
+                  "destroy",
+                  "break",
+                  "lose",
+                  "forget",
+                  "remove"
+                ],
+                "correctAnswer": "destroy",
+                "correctFeedback": "Brilliant! 'Create' means to bring into existence and 'destroy' means to put an end to existence — they are exact opposite actions. 'Break' means to damage, not to completely undo creation. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"destroy\". 'Create' means to bring into existence and 'destroy' means to put an end to existence — they are exact opposite actions. 'Break' means to damage, not to completely undo creation. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "create"
+                ],
+                "pair2word": "create",
+                "answer": null,
+                "relationship": "to make or bring something into existence",
+                "label": "Find the REVERSE action"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reverse the action — nailed it!",
+              "body": "You've picked up a brilliant strategy here. The rewind trick works for any action word antonym:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Picture the action happening",
+                    "why": "What does it look like?"
+                  },
+                  {
+                    "text": "2. Now imagine it in REVERSE",
+                    "why": "Up → down, in → out, grow → shrink"
+                  },
+                  {
+                    "text": "3. Pick the word that matches the reversed picture",
+                    "why": "expand ↔ contract, arrive ↔ depart ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graded-vs-complementary",
+      "name": "Graded vs Complementary Opposites",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "graded-complementary-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell the difference between graded antonyms (opposites with levels in between, like hot-warm-cool-cold) and complementary antonyms (opposites with nothing in between, like alive/dead) — this is fascinating stuff!",
+            "Why graded antonyms have 'in-between' steps but complementary ones don't — once you see it, you can't unsee it"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"hot\" and \"cold\" — what type of opposite?",
+              "body": "Daisy is discovering that some opposites have a scale.\n\nDid you know there are actually **two types** of opposite? Most people have no idea about this — so knowing it gives you a real edge!\n\n• **Graded** — opposites with steps in between (hot → warm → cool → cold)\n• **Complementary** — either/or with NO middle (alive or dead)\n\nWhich type are **\"hot\"** and **\"cold\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "hot"
+                ],
+                "pair2word": "hot",
+                "answer": "cold",
+                "label": "Graded or complementary?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Two types of opposite",
+              "body": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"hot\" ↔ \"cold\" = graded",
+                    "why": "'Hot' and 'cold' are GRADED antonyms — there are steps in between (warm, cool). You can be a bit hot or very hot."
+                  },
+                  {
+                    "text": "Scale: boiling → hot → warm → cool → cold → freezing",
+                    "why": "See all the steps in between!"
+                  },
+                  {
+                    "text": "Compare: \"alive / dead\" = complementary",
+                    "why": "You can't be 'a bit alive' — you're either alive or dead!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Are **\"happy\"** and **\"sad\"** graded or complementary antonyms?\n\nThink: is there anything in between?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of antonym pair is \"happy\" and \"sad\"?",
+                "options": [
+                  "graded",
+                  "complementary",
+                  "prefix",
+                  "synonym",
+                  "related"
+                ],
+                "correctAnswer": "graded",
+                "correctFeedback": "Well done! 'Happy' and 'sad' are graded antonyms — there are levels in between like content, pleased, disappointed. You can be a bit happy or very happy. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"graded\". 'Happy' and 'sad' are graded antonyms — there are levels in between like content, pleased, disappointed. You can be a bit happy or very happy. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "happy"
+                ],
+                "pair2word": "happy",
+                "answer": "sad",
+                "label": "Graded or complementary?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Graded vs complementary — well done!",
+              "body": "How cool is this? You now know something that most grown-ups don't — there are actually two types of antonym:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Graded: hot/cold, tall/short, fast/slow",
+                    "why": "A scale with steps in between"
+                  },
+                  {
+                    "text": "Complementary: alive/dead, true/false, pass/fail",
+                    "why": "Either/or — no middle ground"
+                  },
+                  {
+                    "text": "Both are valid antonyms — knowing the type helps you pick!",
+                    "why": "Ask: is there a middle? ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "different-not-opposite",
+      "name": "Different is NOT Opposite",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "different-not-opposite-steps",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why picking a DIFFERENT word is the most common antonym trap — knowing this gives you a huge advantage!",
+            "How to check if a word is truly opposite or just unrelated"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"poor\" really the opposite of \"generous\"?",
+              "body": "Lily is spotting the most common antonym mistake. Someone picked **\"poor\"** as the opposite of **\"generous\"** — because generous people give money and poor people don't have money.\n\nThis is the **number one trap** in the whole 11+ antonym section — and the brilliant news is, once you know about it, you'll never fall for it again!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Word: \"generous\""
+                  },
+                  {
+                    "text": "Answer chosen: \"poor\" — is this REALLY the opposite?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same quality, opposite end!",
+              "body": "'Poor' means having little money — but that's not the opposite of generous. A poor person can still be generous!\n\nThis is the golden rule: an antonym must flip the **SAME quality**. If the original word is about generosity, the opposite must also be about generosity — not about something else entirely!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"generous\" is about one quality",
+                    "why": "Identify WHAT the word describes"
+                  },
+                  {
+                    "text": "\"poor\" is about a DIFFERENT quality",
+                    "why": "'Poor' means having little money — but that's not the opposite of generous. A poor person can still be generous!"
+                  },
+                  {
+                    "text": "\"selfish\" flips the SAME quality ✓",
+                    "why": "'Selfish' means unwilling to share — the exact opposite of 'generous' (willing to give freely). 'Poor' is about wealth, not character."
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Find the TRUE opposite!",
+              "body": "Which word is the **true opposite** of **\"polite\"**?\n\nRemember: it must flip the SAME quality!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the true antonym of \"polite\"?",
+                "options": [
+                  "rude",
+                  "shy",
+                  "quiet",
+                  "clumsy",
+                  "boring"
+                ],
+                "correctAnswer": "rude",
+                "correctFeedback": "Well done! 'Rude' is the true opposite of 'polite' — both describe manners. 'Shy' describes personality, not behaviour towards others. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"rude\". 'Rude' is the true opposite of 'polite' — both describe manners. 'Shy' describes personality, not behaviour towards others."
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "polite"
+                ],
+                "pair2word": "polite",
+                "answer": null,
+                "label": "Flip the SAME quality"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The golden rule of antonyms",
+              "body": "This is one of the most useful things you'll learn for the 11+. Remember this one rule and you'll ace antonym questions every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. What quality does the word describe?",
+                    "why": "Generosity? Courage? Intelligence? Age?"
+                  },
+                  {
+                    "text": "2. The antonym must describe THAT SAME quality",
+                    "why": "Generous → selfish (both about sharing)"
+                  },
+                  {
+                    "text": "3. A DIFFERENT quality is NOT an antonym",
+                    "why": "Generous ≠ poor, brave ≠ weak ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emotion-antonyms",
+      "name": "Opposite Feelings",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "emotion-antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find opposite emotions at the same intensity level — like turning a dial, not smashing a button!",
+            "Why matching the intensity matters for emotion antonyms"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the opposite of feeling \"brave\"?",
+              "body": "Daisy is matching opposite emotions.\n\n**\"brave\"** means having courage and not showing fear.\n\nHere's the thing about feelings — the opposite must flip the emotion **at the same level of intensity**. Think of it like a seesaw — both sides need to be the same height for it to balance!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "brave"
+                ],
+                "pair2word": "brave",
+                "answer": null,
+                "relationship": "having courage and not showing fear (medium-strong)",
+                "label": "What is the OPPOSITE feeling?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Flip the feeling, match the level",
+              "body": "**\"brave\"** means having courage and not showing fear. The opposite emotion must be about the **same thing** (e.g. courage, patience, happiness) and at the **same intensity** (medium-strong).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"brave\" = having courage and not showing fear",
+                    "why": "The original feeling"
+                  },
+                  {
+                    "text": "\"cowardly\" = lacking courage and giving in to fear",
+                    "why": "Same quality, opposite direction ✓"
+                  },
+                  {
+                    "text": "Not \"terrified\"",
+                    "why": "'Terrified' is an emotion (extreme fear), but 'brave' is a character trait — they're not the same type"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word is the **opposite** of **\"generous\"**? Remember to match the intensity!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is an antonym of \"generous\"?",
+                "options": [
+                  "selfish",
+                  "greedy",
+                  "poor",
+                  "stingy",
+                  "mean"
+                ],
+                "correctAnswer": "selfish",
+                "correctFeedback": "Brilliant! 'Generous' means willing to share and 'selfish' means unwilling to share — they are direct opposites about the same quality at a similar intensity. 'Greedy' is about wanting more, not about refusing to share. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"selfish\". 'Generous' means willing to share and 'selfish' means unwilling to share — they are direct opposites about the same quality at a similar intensity. 'Greedy' is about wanting more, not about refusing to share. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "generous"
+                ],
+                "pair2word": "generous",
+                "answer": null,
+                "relationship": "willing to give and share freely (moderate)",
+                "label": "Find the OPPOSITE feeling"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Opposite feelings — same strength",
+              "body": "Brilliant work! You've got a great eye for matching intensity. For emotion antonyms, keep this seesaw idea in mind:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "brave ↔ cowardly (courage)",
+                    "why": "Both moderate — about having or lacking courage"
+                  },
+                  {
+                    "text": "cheerful ↔ miserable (happiness)",
+                    "why": "Both moderate-strong — about mood"
+                  },
+                  {
+                    "text": "Don't pick too-extreme words!",
+                    "why": "Confident ≠ terrified, cheerful ≠ devastated ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hard-vocab-antonyms",
+      "name": "Tricky Vocabulary Opposites",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "hard-vocab-antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise advanced antonym pairs that appear in the 11+ — these are the ones that separate good scores from great ones!",
+            "How to use elimination and word roots to work out unfamiliar pairs (you'll feel like a word detective)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the opposite of \"benevolent\"?",
+              "body": "Evie is tackling advanced antonym pairs.\n\nDon't let **\"benevolent\"** intimidate you — it just means: well-meaning and kind\n\nHere's a clue to get you going: 'Bene-' means good (like 'benefit') and 'male-' means bad (like 'malicious')\n\nCan you work out which option is the true opposite? You've absolutely got this!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "benevolent"
+                ],
+                "pair2word": "benevolent",
+                "answer": null,
+                "relationship": "well-meaning and kind",
+                "label": "Find the OPPOSITE"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use roots and elimination!",
+              "body": "**\"benevolent\"** means well-meaning and kind. Even when the words look scary, you have two brilliant strategies: **word roots** (prefixes/suffixes that give clues) and **elimination** (crossing out what you KNOW is wrong).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Spot on! Define, flip, then match — that's the recipe. ✓",
+                "incorrectFeedback": "Not quite — first define the word, then flip its meaning, then find the match."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"benevolent\" means: well-meaning and kind",
+                    "why": "Define it clearly first"
+                  },
+                  {
+                    "text": "Flip it: wishing harm on others; evil-intentioned",
+                    "why": "What does the opposite look like?"
+                  },
+                  {
+                    "text": "\"malevolent\" = wishing harm on others; evil-intentioned ✓",
+                    "why": "The direct opposite"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word is the **opposite** of **\"transparent\"**?\n\nHint: 'Trans-' means across/through — what means you CANNOT see through?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is an antonym of \"transparent\"?",
+                "options": [
+                  "opaque",
+                  "dark",
+                  "thick",
+                  "hidden",
+                  "cloudy"
+                ],
+                "correctAnswer": "opaque",
+                "correctFeedback": "Brilliant! 'Transparent' means see-through and 'opaque' means impossible to see through — they are exact opposites. 'Dark' is about light levels, not visibility through a material. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"opaque\". 'Transparent' means see-through and 'opaque' means impossible to see through — they are exact opposites. 'Dark' is about light levels, not visibility through a material. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "transparent"
+                ],
+                "pair2word": "transparent",
+                "answer": null,
+                "relationship": "easy to see through; clear and open",
+                "label": "Find the OPPOSITE"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Advanced antonyms — you're ready for these!",
+              "body": "Look at you tackling the tough ones! When you come across hard vocabulary in the exam, you now have a proper game plan:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Look for root word clues",
+                    "why": "bene- = good, male- = bad, temp- = time"
+                  },
+                  {
+                    "text": "2. Define the word, then flip it",
+                    "why": "Plentiful → in short supply = scarce"
+                  },
+                  {
+                    "text": "3. Eliminate options that are DIFFERENT, not opposite",
+                    "why": "Abundant ≠ empty, artificial ≠ pure ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjective-antonyms",
+      "name": "Describing Word Opposites",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "adjective-antonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find opposites for describing words (adjectives) — think about what quality is being described",
+            "Why checking WHAT is being described helps you pick the right antonym every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the opposite of \"rough\"?",
+              "body": "Daisy is matching opposite describing words.\n\n**\"The wall had a rough surface.\"**\n\nHere's the key question: what **quality** is **\"rough\"** describing about a surface? It's the **texture**. To find the opposite, you need a word that flips THAT exact quality on its head.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "rough"
+                ],
+                "pair2word": "rough",
+                "answer": null,
+                "relationship": "Describes: texture",
+                "label": "Find the OPPOSITE quality"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same quality, opposite direction",
+              "body": "**\"rough\"** describes the **texture** of a surface. An adjective antonym must describe the **same quality** but in the **opposite direction**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"rough\" describes texture of a surface",
+                    "why": "What quality is being described?"
+                  },
+                  {
+                    "text": "\"smooth\" describes the OPPOSITE texture",
+                    "why": "Same quality, flipped to the other end"
+                  },
+                  {
+                    "text": "Other options describe DIFFERENT qualities",
+                    "why": "Depth ≠ width, texture ≠ hardness ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**\"They walked along a narrow path through the woods.\"**\n\nWhich word is the **opposite** of **\"narrow\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AnalogyDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is an antonym of \"narrow\"?",
+                "options": [
+                  "wide",
+                  "long",
+                  "big",
+                  "open",
+                  "broad"
+                ],
+                "correctAnswer": "wide",
+                "correctFeedback": "Brilliant! 'Narrow' and 'wide' are opposites describing WIDTH. 'Long' describes length, which is a completely different measurement. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"wide\". 'Narrow' and 'wide' are opposites describing WIDTH. 'Long' describes length, which is a completely different measurement. ✓"
+              },
+              "visualProps": {
+                "mode": "antonym",
+                "pair1": [
+                  "narrow"
+                ],
+                "pair2word": "narrow",
+                "answer": null,
+                "relationship": "Describes: width",
+                "label": "Find the OPPOSITE quality"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Describing word antonyms — great work!",
+              "body": "You're getting really good at this! The trick with describing words is always the same — find the quality, then flip it. Here's your recipe:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. What quality is the word describing?",
+                    "why": "Texture? Depth? Age? Clarity?"
+                  },
+                  {
+                    "text": "2. Find the option that flips THAT quality",
+                    "why": "Rough → smooth (texture), deep → shallow (depth)"
+                  },
+                  {
+                    "text": "3. Reject words that describe different qualities",
+                    "why": "Deep ≠ narrow, rough ≠ soft ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

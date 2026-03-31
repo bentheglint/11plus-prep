@@ -1,0 +1,193 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "primenumbers",
+  "subject": "maths",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 195,
+    "lessonsReviewed": 0,
+    "issuesFound": 14,
+    "bySeverity": { "critical": 1, "high": 3, "medium": 6, "low": 4 },
+    "difficultyAssessment": "Distribution is 36:43:21 (D1:D2:D3) against a target of ~30:40:30. D3 is significantly under-represented at 20.5% vs the target 30%. D1 is slightly over at 36.4%. The identifying-primes sub-concept is extremely D1-heavy (25 of 30 questions are D1), lacking harder prime-identification challenges. Consider converting some D1 identifying-primes to D2/D3 and adding more D3 questions across HCF/LCM and prime factorisation.",
+    "coverageAssessment": "Good breadth across 8 sub-concepts: identifying-primes (30), counting-factors (25), common-factors-hcf (25), hcf-lcm-word-problems (25), common-multiples-lcm (25), prime-factorisation (25), master-finding-factors (20), factor-pairs (20). All key GL-tested skills are represented. Missing: divisibility rules as a sub-concept, square numbers/perfect squares as factors. Some sub-concepts are over-represented relative to GL weighting (factor-pairs gets 20 questions but is a simpler skill).",
+    "teachingEfficacyAssessment": "ALL 195 questions map to '[No lesson found]' — there are zero micro-lessons for any Prime Numbers & Factors sub-concept. This is a significant teaching gap. Students encountering these questions in Focused Learning mode will have no lesson content before attempting them. Priority lesson creation needed for: identifying-primes, finding-factors, HCF, LCM, prime-factorisation.",
+    "topPriorities": [
+      "CRITICAL: Fix Q127 wrong answer (says 16 primes 1-50, actually 15 — explanation contradicts answer)",
+      "HIGH: Fix Q91 duplicate options (2 x 3^3 and 3^3 x 2 are identical expressions)",
+      "HIGH: Remove or differentiate Q4/Q89 duplicate pair (identical options, same answer, same difficulty)",
+      "HIGH: Remove or differentiate Q38/Q133 duplicate pair (both ask factors of 48, same answer)",
+      "MEDIUM: Create micro-lessons for all 8 sub-concepts (currently 0% lesson coverage)",
+      "MEDIUM: Add more D3 questions to reach target 30% (currently 20.5%)"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-PRM-Q127-001",
+      "itemType": "question",
+      "itemId": "Q127",
+      "severity": "critical",
+      "category": "wrong-answer",
+      "title": "Answer says 16 but correct answer is 15 — explanation contradicts itself",
+      "description": "Q127 asks 'How many numbers from 1 to 50 have exactly two factors?' The correct answer is marked as 16, but the explanation lists only 15 primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. That is indeed all primes from 1 to 50 — exactly 15, not 16. The explanation directly contradicts the marked answer.",
+      "suggestedFix": "Change correct answer from 16 (index 4) to 15 (index 3). Update explanation to say 'That's 15 primes.'",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q091-001",
+      "itemType": "question",
+      "itemId": "Q91",
+      "severity": "high",
+      "category": "duplicate-options",
+      "title": "Two options are mathematically identical: '2 x 3^3' and '3^3 x 2'",
+      "description": "Q91 asks for the prime factorisation of 54. Options include '2 x 3^3' (index 1, correct) and '3^3 x 2' (index 3). These are the same expression — multiplication is commutative. A child selecting either would be correct. This creates confusion and undermines trust in the question bank.",
+      "suggestedFix": "Replace option '3^3 x 2' (index 3) with a different distractor, e.g. '2 x 3 x 9' or '2^2 x 3^2'.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q004-Q089-001",
+      "itemType": "question",
+      "itemId": "Q4, Q89",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Near-exact duplicate: Q4 and Q89 both ask 'smallest prime number' with identical options",
+      "description": "Q4 ('What is the smallest prime number?') and Q89 ('Which is the smallest prime number?') have identical options [0, 1, 2, 3, 5], the same correct answer (2), and the same difficulty (D1). They are functionally identical questions. A child could encounter both in the same practice session.",
+      "suggestedFix": "Remove Q89 or replace it with a different question, e.g. 'Which of these numbers is both prime and even?' or a question about twin primes.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q038-Q133-001",
+      "itemType": "question",
+      "itemId": "Q38, Q133",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Near-duplicate: Q38 and Q133 both ask how many factors 48 has",
+      "description": "Q38 ('Mrs Jones asks her class to find all the ways 48 chairs can be arranged in equal rows. How many different factors does 48 have?', D1) and Q133 ('For a maths competition, James must find how many factors 48 has. What is the correct answer?', D2) test identical maths with the same answer (10). The only difference is context wrapper and difficulty rating. Q133 is rated D2 but is no harder than Q38 at D1 — both require listing factors of 48.",
+      "suggestedFix": "Remove Q133 or change the number to a different value (e.g. 56 or 80). If keeping both, adjust difficulty so the harder one uses a larger or less familiar number.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-DIST-001",
+      "itemType": "distribution",
+      "itemId": "topic-level",
+      "severity": "medium",
+      "category": "difficulty-distribution",
+      "title": "D3 under-represented at 20.5% (target ~30%)",
+      "description": "The difficulty distribution is D1:71 (36.4%), D2:84 (43.1%), D3:40 (20.5%). D3 is 10 percentage points below the GL target of ~30%. This means students get insufficient practice at the hardest level. Areas most lacking D3: identifying-primes (only 3 D3 out of 30), counting-factors (only 3 D3 out of 25), factor-pairs (only 3 D3 out of 20).",
+      "suggestedFix": "Add approximately 18-20 new D3 questions or upgrade some D2 questions. Focus on: primes > 100 identification, factor counting for numbers > 100, multi-number HCF/LCM, HCF x LCM = product problems, and prime factorisation of larger numbers (200+).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-PRIMES-D1-001",
+      "itemType": "distribution",
+      "itemId": "identifying-primes",
+      "severity": "medium",
+      "category": "difficulty-distribution",
+      "title": "Identifying-primes sub-concept is 83% D1 — lacks challenge progression",
+      "description": "25 of 30 identifying-primes questions are D1, with only 2 at D2 and 3 at D3. This means children master this skill at the easiest level but never face harder variants like: primes in ranges above 100, Goldbach-style decomposition, twin primes, or questions requiring elimination of multiple composite traps.",
+      "suggestedFix": "Rebalance to ~9 D1, ~12 D2, ~9 D3. Add D2/D3 prime identification questions with larger numbers, multi-step reasoning, and questions like 'How many primes between 80 and 120?' or 'Which two primes sum to 100?'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-LESSONS-001",
+      "itemType": "mapping",
+      "itemId": "all-subconcepts",
+      "severity": "medium",
+      "category": "missing-lessons",
+      "title": "Zero micro-lessons exist for any of the 8 sub-concepts",
+      "description": "All 195 question mappings show '[No lesson found]'. The 8 sub-concepts (identifying-primes, counting-factors, master-finding-factors, common-factors-hcf, hcf-lcm-word-problems, common-multiples-lcm, factor-pairs, prime-factorisation) have no teaching content. In Focused Learning mode, students jump straight into questions with no lesson preparation.",
+      "suggestedFix": "Create micro-lessons for all 8 sub-concepts following the PLAYBOOK. Priority order: identifying-primes (foundational), finding-factors, prime-factorisation, HCF, LCM, factor-pairs, word-problems.",
+      "oracleConfidence": "certain",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-HANDHOLD-001",
+      "itemType": "question",
+      "itemId": "multiple (55 questions)",
+      "severity": "medium",
+      "category": "excessive-scaffolding",
+      "title": "55 questions name the HCF/LCM method directly in the question text",
+      "description": "55 out of 195 questions (28%) explicitly name 'Highest Common Factor (HCF)' or 'Lowest Common Multiple (LCM)' in the question text, sometimes even saying 'Find the HCF/LCM of X and Y'. In a GL exam, the child must recognise which method to apply from the word problem context — they are never told 'Find the HCF'. This over-scaffolding reduces the diagnostic value of these questions and inflates apparent mastery. Examples: Q8, Q10, Q11, Q17, Q119, Q120, etc.",
+      "suggestedFix": "For D2 and D3 questions, remove the explicit HCF/LCM naming from the question text. Keep it only for D1 introductory questions where learning the term is the goal. Word problems should describe the scenario and let the child determine which operation is needed.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q026-Q083-001",
+      "itemType": "question",
+      "itemId": "Q26, Q83",
+      "severity": "medium",
+      "category": "near-duplicate",
+      "title": "Q26 and Q83 both resolve to 59 as prime between 50-60",
+      "description": "Q26 ('Which of these is a prime number?' with options 51,52,55,57,59) and Q83 ('Which of these is a prime number between 50 and 60?' with options 51,54,55,57,59) both have the same answer (59) and very similar option sets. They test the same skill at the same difficulty (D1) with minimal differentiation.",
+      "suggestedFix": "Change one to use a different range (e.g. 60-70 or 90-100) to provide broader coverage of prime identification.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q063-Q068-001",
+      "itemType": "question",
+      "itemId": "Q63, Q68",
+      "severity": "low",
+      "category": "near-duplicate",
+      "title": "Q63 and Q68 both resolve to 83 as the prime answer around 80",
+      "description": "Q63 ('Only one of these numbers is prime. Which one?' with options 81,83,85,87,91) and Q68 ('Which is the smallest prime number greater than 80?' with options 81,82,83,84,85) both answer 83. While the question framing differs, the core skill tested is identical and both are D1/D1 (Q63 is D1, Q68 is D1).",
+      "suggestedFix": "Minor issue — the questions have different framings. Consider changing Q63 to use numbers in a different range.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q022-001",
+      "itemType": "question",
+      "itemId": "Q22",
+      "severity": "low",
+      "category": "misleading-context",
+      "title": "Question context ('split into two equal teams') doesn't match factor pairs concept",
+      "description": "Q22 says 'A PE teacher wants to split 28 pupils into two equal teams in every possible way. How many different factor pairs does 28 have?' The context implies splitting into exactly 2 teams (which gives only one answer: 14 per team). But the question actually asks about factor pairs, which includes splits like (1,28) and (4,7) that aren't 'two teams'. The context misleads rather than helps.",
+      "suggestedFix": "Change the context to something like 'A PE teacher wants to arrange 28 pupils into equal groups. How many different factor pairs does 28 have?'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q004-Q115-001",
+      "itemType": "question",
+      "itemId": "Q4, Q115",
+      "severity": "low",
+      "category": "overlap",
+      "title": "Q4, Q89, and Q115 all test the fact that 2 is the smallest/only even prime",
+      "description": "Three questions test very similar knowledge: Q4 (smallest prime = 2), Q89 (smallest prime = 2, near-duplicate of Q4), Q115 (only even prime = 2). While Q115 tests a slightly different angle, having three questions that all resolve to '2 is special' uses question slots that could test more diverse skills.",
+      "suggestedFix": "After removing Q89 (duplicate), Q4 and Q115 provide sufficient coverage of the '2 is special' concept. No further action needed beyond Q89 removal.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-TONE-001",
+      "itemType": "question",
+      "itemId": "topic-wide",
+      "severity": "low",
+      "category": "tone-warmth",
+      "title": "Explanations are clear and warm but some are overly terse at higher difficulties",
+      "description": "D1 explanations do an excellent job of explaining concepts warmly (e.g. Q4: 'It's the only even prime number!'). However, some D3 explanations are very brief (e.g. Q157: 'For any two numbers: HCF x LCM = Product. So 9 x 63 = 567.') without explaining WHY the HCF x LCM rule works or giving the child a way to verify. For a 9-year-old, the D3 explanations could benefit from one more sentence of context.",
+      "suggestedFix": "Add a brief verification step to D3 explanations, e.g. 'You can check: the two numbers could be 9 and 63 (or 27 and 21), and 9 x 63 = 567.'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PRM-Q131-001",
+      "itemType": "question",
+      "itemId": "Q131",
+      "severity": "low",
+      "category": "difficulty-rating",
+      "title": "Q131 rated D3 but is straightforward factor counting",
+      "description": "Q131 asks 'Which of these numbers has exactly 8 factors?' with options 16, 18, 20, 24, 25. While it requires checking multiple numbers, listing factors of small 2-digit numbers is a D2 skill. The question doesn't involve any multi-step reasoning, unfamiliar numbers, or HCF/LCM application that would make it D3.",
+      "suggestedFix": "Either downgrade to D2, or increase complexity by using larger numbers (e.g. 72, 80, 90, 96, 100) to make it genuinely D3.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "reviewedAt": "2026-03-30T19:00:00.000Z",
+  "topic": "compoundWords",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 145,
+    "lessonsReviewed": 14,
+    "mappingsReviewed": 165,
+    "issuesFound": 10,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 5, "low": 3 },
+    "difficultyAssessment": "D1:52 (36%), D2:65 (45%), D3:28 (19%). D1 is over-represented (36% vs GL target ~30%) and D3 is significantly under-represented (19% vs ~30%). The D2 bucket is slightly inflated at 45% vs target 40%. Several D1 questions (Q1, Q11, Q17, Q24, Q25, Q26) are very straightforward single-word-family questions (sun+light, sea+side, tooth+brush) that are appropriate for D1 but there are too many. Some D2 questions involving directional prefixes (Q47 break+through/down, Q48 cross+road/word) could reasonably be D3 given the less obvious compound formations. Overall needs rebalancing — convert ~8 D1 to D2 and promote ~10 D2 to D3.",
+    "coverageAssessment": "Strong coverage across compound word types. Three question formats: standard (100), select-two (25), and pick-from-sets (20). Standard questions cover front-placement and back-placement well. Nature compounds (sun, rain, snow, water, star) are heavily represented — at least 15 questions. Body part compounds (hand, foot, tooth, eye, head) well covered with ~12 questions. Direction/position compounds (over, under, out, back, down) adequately tested with ~10 questions. Home/building compounds (house, door, bed, room) present with ~8 questions. Abstract/sophisticated compounds (brainstorm, counterpart, steadfast, forethought) appear at D3. Good progression from concrete everyday compounds at D1 to abstract/unusual compounds at D3. No GL compound word format is missing.",
+    "teachingEfficacyAssessment": "11 sub-concepts with 14 lessons providing 57 screens is solid for a topic of this size. Core concepts (front-placement, back-placement) have both step-by-step and spot-the-mistake lesson variants, which is excellent pedagogy. Thematic groupings (nature, body, home, direction compounds) help build mental word banks. The 'Say It, Spell It' method is taught clearly and consistently. 2 orphan sub-concepts exist in the mappings but 163 of 165 mappings are high-confidence. The mapping count (165) exceeds question count (145) because some questions map to multiple sub-concepts, which is appropriate. Teaching tone is warm, age-appropriate, and uses good analogies (LEGO bricks, keys unlocking doors).",
+    "topPriorities": [
+      "Rebalance difficulty distribution: D3 at 19% is well below GL target of ~30%. Promote harder D2 questions and reduce D1 count.",
+      "Deduplicate near-identical questions: Q7/Q64 (house+wife/hold), Q1/Q11 (sun compound overlaps), Q16/Q46 (land+lord overlap).",
+      "Fix Q9 explanation which states 'Day works with every (everyday) but not any' — 'anyday' is not standard but the logic explanation could be clearer."
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-CW-DUP-001",
+      "itemType": "question",
+      "itemId": "Q7,Q64",
+      "severity": "high",
+      "category": "duplicate",
+      "title": "Q7 and Q64 are exact duplicates: house + wife/hold",
+      "description": "Q7 asks 'Which word can go in front of both work and wife?' (answer: House). Q64 asks 'Which word can go in front of both wife and hold?' (answer: House). Both test the same word (house) with the same compound (housewife). Q64 also duplicates Q15 which tests house+keeper/hold. The child encounters essentially the same insight three times. This is wasted question slots that could test different compound families.",
+      "suggestedFix": "Remove Q64 and replace with a question testing a different compound word family not currently covered, such as grand+mother/father/parent, or life+guard/time/style.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-DUP-002",
+      "itemType": "question",
+      "itemId": "Q1,Q11",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Q1 and Q11 both test 'sun' as the answer with overlapping target words",
+      "description": "Q1: 'sun + light/rise' (D1). Q11: 'sun + rise/set' (D1). Both share 'sunrise' as one of the two compound words being tested, and both have 'Sun' as the answer. At the same difficulty level, these are near-duplicates. Q17 (sun+light/star+light) also overlaps with Q1 on 'sunlight'.",
+      "suggestedFix": "Change Q11 to test a different word entirely. Consider 'moon + light/shine' or 'day + light/dream' to maintain the celestial theme without duplicating.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-DIFF-001",
+      "itemType": "question",
+      "itemId": "multiple",
+      "severity": "high",
+      "category": "difficulty-mismatch",
+      "title": "D3 severely under-represented at 19% vs GL target ~30%",
+      "description": "Only 28 of 145 questions (19%) are rated D3. GL targets approximately 30% at each of D1 and D3 with 40% at D2. To match GL distribution, D3 should have ~44 questions. Meanwhile D1 has 52 questions (36%), 8-9 more than the ~43 target. Some current D2 questions test sophisticated or unusual compounds that warrant D3: Q47 (break+through/down), Q48 (cross+road/word), Q52 (water+colour/mark), Q53 (thunder+bolt/storm). These could be promoted to D3 to improve the distribution.",
+      "suggestedFix": "Promote approximately 10 D2 questions with less common compounds to D3. Demote approximately 8 D1 questions to ensure D1 stays at ~30%. Target distribution: D1:43, D2:58, D3:44.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-ANS-001",
+      "itemType": "question",
+      "itemId": "Q9",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Q9 explanation contains misleading distractor reasoning",
+      "description": "Q9 explanation states: 'Day works with every (everyday) but not any.' However, 'Place' (option A) also arguably works: 'anyplace' and 'everyplace' are both valid English words (especially in American English). The question is still correct as 'Where' is the best British English answer, but the explanation doesn't address why 'Place' was rejected. In a GL context focusing on British English, 'anywhere/everywhere' are more standard than 'anyplace/everyplace', but this should be acknowledged.",
+      "suggestedFix": "Update the explanation to note: 'While anyplace exists in American English, anywhere and everywhere are the standard British compound words tested in GL exams. Place does not form as natural a compound in British English.'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-TONE-001",
+      "itemType": "question",
+      "itemId": "Q20",
+      "severity": "low",
+      "category": "formatting",
+      "title": "Q20 options use lowercase while all other questions use Title Case",
+      "description": "Q20 options are: 'bin', 'paper', 'board', 'room', 'box' (all lowercase). Every other standard question uses Title Case options: 'Bin', 'Paper', 'Board', 'Room', 'Box'. This inconsistency could confuse a child or look unprofessional.",
+      "suggestedFix": "Change Q20 options to Title Case to match the rest of the question bank.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-DUP-003",
+      "itemType": "question",
+      "itemId": "Q16,Q46",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Q16 and Q46 both test 'land' with 'landlord' as a shared compound",
+      "description": "Q16: 'land + scape/lord' (D3). Q46: 'land + lord/mark' (D2). Both share 'landlord' as one of the two target compounds and both have 'Land' as the answer. Q121 in the pick-from-sets section also tests 'land + lord'. This is excessive repetition of the same word family.",
+      "suggestedFix": "Change Q46 to test a different compound word. Keep Q16 (D3) as the definitive 'land' question and replace Q46 with a different D2 compound.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-DIST-001",
+      "itemType": "question",
+      "itemId": "Q101-Q125",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "Select-two questions lack D3 representation",
+      "description": "Of the 25 select-two questions (Q101-Q125), difficulty distribution is D1:10 (40%), D2:10 (40%), D3:5 (20%). D3 is under-represented even more severely in this format than in the standard format. The 5 D3 select-two questions (Q120-Q125) all feature reasonably common compounds (blacksmith, landlord, withdraw, upstream). For D3, these should include more obscure compounds where multiple pairs look plausible.",
+      "suggestedFix": "Add 3-4 more D3 select-two questions with less obvious compounds (e.g., forethought, masterpiece, counterpart) where multiple word pairs are plausible distractors.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-DIST-002",
+      "itemType": "question",
+      "itemId": "Q126-Q145",
+      "severity": "low",
+      "category": "coverage-gap",
+      "title": "Pick-from-sets correct pair is always position [0,0]",
+      "description": "All 20 pick-from-sets questions (Q126-Q145) have the correct answer at position [0,0] — the first word from set A and the first word from set B. This creates a positional bias: a test-wise child could simply try the first word from each set every time. GL randomises answer positions to prevent this.",
+      "suggestedFix": "Redistribute correct pairs across positions. Aim for roughly even distribution: some [0,1], [1,0], [2,2], [0,2] etc. Ensure the correct word appears in different positions within each set.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-MAP-001",
+      "itemType": "mapping",
+      "itemId": "orphan-subconcepts",
+      "severity": "medium",
+      "category": "mapping-efficacy",
+      "title": "2 orphan sub-concepts have lessons but may lack sufficient question coverage",
+      "description": "The mappings metadata shows 2 orphan sub-concepts. While 163 of 165 mappings are high-confidence (excellent), the 2 orphan sub-concepts may represent lesson content that doesn't have enough questions mapped to justify their existence, or questions that could benefit from these lessons but aren't linked.",
+      "suggestedFix": "Review the 2 orphan sub-concepts. If they represent valid compound word categories, create questions to fill the gap. If they overlap with existing sub-concepts, merge them.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-CW-EXP-001",
+      "itemType": "question",
+      "itemId": "Q81",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q81 explanation calls 'stock market' a compound word but it's typically two words",
+      "description": "Q81 tests 'stock + market/pile'. The explanation says 'Stock + market = stock market' and calls it a compound word. However, 'stock market' is conventionally written as two separate words, not as one compound word (unlike 'stockpile' which is one word). While it is a two-word compound in linguistic terms, this is inconsistent with the rest of the question bank which focuses on single-word compounds (sunlight, rainbow, etc.). A 9-year-old may be confused by this inconsistency.",
+      "suggestedFix": "Replace 'market' with a word that forms a single-word compound with 'stock': e.g., 'stockroom' (stock+room) or keep 'stockpile' but pair it with a different compound. Alternatively, change the question entirely.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

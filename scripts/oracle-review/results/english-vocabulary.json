@@ -1,0 +1,172 @@
+{
+  "reviewedAt": "2026-03-30T16:30:00.000Z",
+  "topic": "vocabulary",
+  "subject": "english",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 453,
+    "lessonsReviewed": 18,
+    "issuesFound": 18,
+    "bySeverity": {
+      "critical": 0,
+      "high": 3,
+      "medium": 8,
+      "low": 7
+    },
+    "difficultyAssessment": "Distribution is solid at D1:135(30%), D2:180(40%), D3:138(30%) — matches GL targets exactly. D1 words are genuinely common (furious, enormous, ancient). D2 words are appropriate curriculum-level (reluctant, stern, obsolete). D3 words push into sophisticated territory (sycophantic, acquiesce, ephemeral) — some of these are beyond typical GL difficulty but useful for stretch. Word frequency broadly aligns with difficulty tiers.",
+    "coverageAssessment": "Excellent breadth across all GL vocabulary question types: synonyms (~35%), antonyms (~25%), word-in-context (~20%), prefix/suffix/root knowledge (~10%), polysemy/multiple meanings (~5%), formal vs informal register (~5%). The Oracle spec identifies ~30-35% synonyms and ~10-15% antonyms for GL; this bank slightly over-indexes on antonyms relative to GL weighting. Missing: passage-based vocabulary-in-context (comprehension format) and cloze gap-fill, which together make up ~35-45% of GL vocabulary testing. This is understandable as those formats need passages.",
+    "teachingEfficacyAssessment": "Strong lesson coverage with 9 sub-concepts and 18 lessons across synonyms, antonyms, context clues, word strength/gradation, formal register, multiple meanings, prefixes/suffixes, and root words. All 453 questions mapped at high confidence. The teach screens use effective methods — substitution testing for synonyms, flip technique for antonyms, context clue scanning. The lessons build genuine exam skills rather than just testing knowledge.",
+    "topPriorities": [
+      "Fix duplicate questions (Q1/Q32 furious, Q2/Q31 enormous, Q21/Q80 ambiguous, Q81/Q330 clandestine) — child sees identical content",
+      "Fix Q368 which has a flawed premise — 'pot' is not the past tense of 'plant'",
+      "Reassess difficulty on some D2 words that should be D1 (cautious, reluctant) and D1 words that should be D2 (deceitful, contradict)",
+      "Add more GL-format variety: cloze gap-fill and passage-based context questions"
+    ]
+  },
+  "issues": [
+    {
+      "id": "ENG-VOC-001",
+      "severity": "high",
+      "type": "duplicate",
+      "questionIds": [1, 32],
+      "description": "Duplicate question: Q1 and Q32 both ask 'Which word is closest in meaning to furious?' with identical correct answer 'Angry'/'Very angry'. Same word, same concept, different distractors but effectively identical. Child encounters the same test twice.",
+      "recommendation": "Remove Q32 or replace with a different synonym question. There are 453 questions so removing one duplicate causes no coverage gap."
+    },
+    {
+      "id": "ENG-VOC-002",
+      "severity": "high",
+      "type": "duplicate",
+      "questionIds": [2, 31],
+      "description": "Duplicate question: Q2 and Q31 both ask 'Which word is closest in meaning to enormous?' with answers 'Vast' and 'Very large'. Same word tested twice.",
+      "recommendation": "Remove Q31 or replace with a different synonym (e.g., immense, colossal, gigantic as target words instead)."
+    },
+    {
+      "id": "ENG-VOC-003",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [21, 80],
+      "description": "Duplicate question: Q21 and Q80 both test the meaning of 'ambiguous' with nearly identical answer 'Open to more than one interpretation'/'Open to more than one meaning'. Q21 is D3 and Q80 is D3.",
+      "recommendation": "Remove one or change one to test 'ambiguous' in a different format (e.g., in-context sentence)."
+    },
+    {
+      "id": "ENG-VOC-004",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [81, 330],
+      "description": "Duplicate question: Q81 and Q330 both test the meaning of 'clandestine' with identical answer 'Kept secret or hidden'. Both D3.",
+      "recommendation": "Remove Q330 or replace with a different D3 word."
+    },
+    {
+      "id": "ENG-VOC-005",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [25, 54],
+      "description": "Near-duplicate: Q25 (D3) and Q54 (D2) both test 'benevolent' — Q25 answer 'Well-meaning and kindly', Q54 answer 'Kind and generous'. Same word at two different difficulty levels with no meaningful differentiation.",
+      "recommendation": "Keep one (D2 is more appropriate for this word). Replace the other with a different word."
+    },
+    {
+      "id": "ENG-VOC-006",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [52, 182],
+      "description": "Near-duplicate: Q52 (D2) and Q182 (D2) both test 'absurd' as a synonym. Q52 answer 'Completely ridiculous', Q182 answer 'Ridiculous'.",
+      "recommendation": "Remove one or change one to an antonym or in-context format."
+    },
+    {
+      "id": "ENG-VOC-007",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [18, 59],
+      "description": "Near-duplicate: Q18 (D2) and Q59 (D2) both test the meaning of 'persistent'. Q18 format is 'What does persistent mean?' and Q59 is 'Which word is closest in meaning to persistent?' — same concept, same answer.",
+      "recommendation": "Remove one or change format significantly (e.g., test in an antonym question instead)."
+    },
+    {
+      "id": "ENG-VOC-008",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [55, 254],
+      "description": "Near-duplicate: Q55 (D2) and Q254 (D2) both test 'diligent'. Q55 answer 'Hardworking and careful', Q254 answer 'Hardworking and showing careful effort'.",
+      "recommendation": "Remove one or change to a different format."
+    },
+    {
+      "id": "ENG-VOC-009",
+      "severity": "medium",
+      "type": "duplicate",
+      "questionIds": [79, 272],
+      "description": "Near-duplicate: Q79 (D2) and Q272 (D3) both test the antonym of 'eloquent' with identical answer 'Inarticulate'.",
+      "recommendation": "Remove one. Keep Q272 at D3 as the concept fits better there."
+    },
+    {
+      "id": "ENG-VOC-010",
+      "severity": "high",
+      "type": "incorrect-content",
+      "questionIds": [368],
+      "description": "Q368 asks 'Which word can mean BOTH a container for flowers AND the past tense of plant?' with answer 'Pot'. The premise is flawed — 'pot' is NOT the past tense of 'plant'. The past tense of 'plant' is 'planted'. The question's own explanation acknowledges this uncertainty: 'But actually, none of these perfectly fit'. A question that admits none of its options are correct is problematic.",
+      "recommendation": "Rewrite to use a genuine double-meaning word. For example: 'Which word can mean BOTH a container for cooking AND to place a plant in soil?' (answer: pot). Or replace entirely with a cleaner homonym example."
+    },
+    {
+      "id": "ENG-VOC-011",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [13],
+      "description": "Q13 tests 'cautious' at D1. Per Oracle specs, D1 should be 'common, high-frequency words learned by Year 4 or earlier'. 'Cautious' is a Year 5-6 curriculum word that requires understanding nuance. It fits D2 better.",
+      "recommendation": "Move to D2. Replace with a clearer D1 word like 'brave', 'strong', or 'happy'."
+    },
+    {
+      "id": "ENG-VOC-012",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [45],
+      "description": "Q45 tests the antonym of 'honest' at D1 with answer 'deceitful'. While 'honest' is D1, 'deceitful' as the answer requires D2 vocabulary knowledge. A 9-year-old at D1 level might not know 'deceitful' but would know 'dishonest'.",
+      "recommendation": "Either move to D2 or change the answer option to 'dishonest' (which uses the familiar un-/dis- prefix pattern children learn early)."
+    },
+    {
+      "id": "ENG-VOC-013",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [141],
+      "description": "Q141 tests 'contradict' at D1. 'Contradict' is a Year 5-6 curriculum word with a Latin root. It is more appropriate for D2.",
+      "recommendation": "Move to D2."
+    },
+    {
+      "id": "ENG-VOC-014",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [4, 157],
+      "description": "Q4 tests 'reluctant' at D2 and Q157 tests 'reluctant' at D1. The Oracle spec explicitly lists 'reluctant' as a D2 example word. Q157 at D1 is miscalibrated.",
+      "recommendation": "Move Q157 to D2. This is also a near-duplicate of Q4 and Q260."
+    },
+    {
+      "id": "ENG-VOC-015",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [3],
+      "description": "Q3 tests the antonym of 'courageous' at D2. The word 'courageous' itself is D1 vocabulary (Oracle spec lists it under D1 examples). This should be D1.",
+      "recommendation": "Move to D1."
+    },
+    {
+      "id": "ENG-VOC-016",
+      "severity": "medium",
+      "type": "distractor-quality",
+      "questionIds": [97],
+      "description": "Q97 asks for the antonym of 'tenacious' with answer 'Giving up easily'. This answer is a phrase, not a single word. GL format typically expects single-word options. All other options (Strong, Determined, Stubborn, Brave) are synonyms or near-synonyms of tenacious, making process of elimination trivially easy — the child just picks the only option that isn't positive.",
+      "recommendation": "Replace 'Giving up easily' with a single-word antonym like 'feeble' or 'yielding'. Add at least one plausible wrong antonym (e.g., 'gentle' or 'timid')."
+    },
+    {
+      "id": "ENG-VOC-017",
+      "severity": "low",
+      "type": "explanation-quality",
+      "questionIds": [],
+      "description": "Many explanations end with generic exam tips that rotate between a small set: 'A great word to use in your own writing!', 'Try using this word in a sentence today to make it stick.', 'Building a strong vocabulary is one of the best exam skills.', 'This type of question comes up regularly in GL papers.' These are fine individually but become repetitive across 453 questions. They add no question-specific value.",
+      "recommendation": "Not urgent — these don't affect learning. But if explanations are ever refreshed, replace generic tips with word-specific mnemonics, etymology notes, or common usage examples."
+    },
+    {
+      "id": "ENG-VOC-018",
+      "severity": "low",
+      "type": "coverage-gap",
+      "questionIds": [],
+      "description": "No figurative language vocabulary questions (simile, metaphor, personification, idiom interpretation). The Oracle spec notes ~5% of GL vocabulary testing covers figurative language in comprehension contexts. These are covered in Word Class/Grammar instead, but some crossover in the vocabulary topic would strengthen preparation.",
+      "recommendation": "Low priority — covered elsewhere. If expanding, add 10-15 questions on idiom meanings (e.g., 'What does raining cats and dogs mean?') and figurative vs literal interpretation."
+    }
+  ]
+}

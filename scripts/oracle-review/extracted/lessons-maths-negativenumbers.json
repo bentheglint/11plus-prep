@@ -1,0 +1,2687 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "negativenumbers",
+    "displayName": "Negative Numbers",
+    "extractedAt": "2026-03-30T13:51:13.542Z",
+    "subConceptCount": 8,
+    "lessonCount": 16,
+    "screenCount": 64,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "understanding-negatives",
+      "name": "What Negative Numbers Mean",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "understanding-neg-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to understand what a negative number represents in real life",
+            "How to see that negative numbers sit below zero on a number line"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does -5 mean?",
+              "body": "Aisha is checking the temperature outside on a freezing morning in Scotland. The display shows **-5°C**.\n\nBut what does that little minus sign mean? Can a number really be **less than zero**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -8,
+                "max": 5,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Below zero!",
+              "body": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The further left, the smaller the number!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A negative number is a number less than ____",
+                "options": [
+                  "zero",
+                  "one",
+                  "ten",
+                  "two"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Negative numbers are less than zero — they sit to the left on the number line. ✓",
+                "incorrectFeedback": "Not quite — negative numbers are less than zero."
+              },
+              "visualProps": {
+                "min": -8,
+                "max": 5,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -8,
+                  0
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Where is it on the number line?",
+              "body": "-5 is on which side of zero?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Where is -5 on the number line?",
+                "options": [
+                  "To the LEFT of zero",
+                  "To the RIGHT of zero",
+                  "At zero",
+                  "It doesn't go on a number line",
+                  "Above zero"
+                ],
+                "correctAnswer": "To the LEFT of zero",
+                "correctFeedback": "Exactly! Negative numbers always sit to the **left** of zero on a number line. -5 means 5 degrees below freezing! ✓",
+                "incorrectFeedback": "Not quite! Negative numbers go to the **left** of zero. Positive numbers go to the right. -5 is to the left."
+              },
+              "visualProps": {
+                "min": -8,
+                "max": 5,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Negatives are below zero!",
+              "body": "Negative numbers are just numbers **below zero**. They appear everywhere in real life!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Negative numbers are LESS than zero",
+                    "why": "The minus sign tells you it's below zero"
+                  },
+                  {
+                    "text": "They go to the LEFT on a number line",
+                    "why": "Further left = smaller number"
+                  },
+                  {
+                    "text": "Real-life examples: temperature, debt, depth, underground floors",
+                    "why": "You'll see them everywhere once you start looking! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "understanding-neg-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that the number line extends below zero",
+            "How to read negative numbers from a number line"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do you notice?",
+              "body": "Look at the number line below. Some numbers have a minus sign and some don't. What do you notice about where each group sits?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 7,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -1,
+                    "label": "-1",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Two sides of zero",
+              "body": "The number line has **two sides**:\n\n- **Left of zero** → negative numbers (with a minus sign)\n- **Right of zero** → positive numbers\n- **Zero** is right in the middle — it's neither positive nor negative!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 7,
+                "points": [
+                  {
+                    "value": 0,
+                    "label": "ZERO",
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": -5,
+                    "label": "Negatives ←",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 6,
+                    "label": "→ Positives",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which are negative?",
+              "body": "How many of these numbers are **negative**: -4, -1, 2, 5?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many of these numbers are negative?",
+                "options": [
+                  "2",
+                  "1",
+                  "4",
+                  "-1",
+                  "6"
+                ],
+                "correctAnswer": "2",
+                "correctFeedback": "Spot on! **2** of those numbers are negative — they're the ones with a minus sign, sitting left of zero! ✓",
+                "incorrectFeedback": "Not quite! Count the ones with a minus sign (left of zero). There are **2** negative numbers."
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 7,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -1,
+                    "label": "-1",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The number line goes both ways!",
+              "body": "The number line doesn't stop at zero — it keeps going left into the negatives. The further left, the smaller the number!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Left of zero = NEGATIVE numbers",
+                    "why": "They have a minus sign: -1, -2, -3..."
+                  },
+                  {
+                    "text": "Right of zero = POSITIVE numbers",
+                    "why": "These are the numbers you already know: 1, 2, 3..."
+                  },
+                  {
+                    "text": "Zero is in the middle",
+                    "why": "It's the dividing line between positive and negative ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counting-through-zero",
+      "name": "Counting Through Zero",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "counting-zero-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to count forwards through zero from a negative number",
+            "How to count backwards through zero into negatives"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lauren",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Count forwards from -3",
+              "body": "Lauren starts at **-3** and counts **7 steps forwards**.\n\nWhat number will Lauren land on? We'll need to count **through zero**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -5,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "Start: -3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count step by step",
+              "body": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -5,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -2,
+                    "label": "-2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": -1,
+                    "label": "-1",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": 1,
+                    "label": "1",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 4,
+                    "label": "4",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -3,
+                    "to": 4,
+                    "label": "+7"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -3,
+                  4
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Start at **-2**. Count **6 steps forwards**.\n\nWhat number do you land on?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Start at -2, count 6 forwards. Where do you land?",
+                "options": [
+                  "4",
+                  "3",
+                  "6",
+                  "1",
+                  "8"
+                ],
+                "correctAnswer": "4",
+                "correctFeedback": "Brilliant! -2 + 6 = **4**. You counted straight through zero! ✓",
+                "incorrectFeedback": "Not quite! Count from -2: -2, -1, 0, 1, 2, 3, 4. You land on **4**."
+              },
+              "visualProps": {
+                "min": -4,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -2,
+                    "label": "-2",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Zero is just a stepping stone!",
+              "body": "When counting through zero, just keep going — zero is just another number in the sequence!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Counting forwards: ..., -2, -1, 0, 1, 2, ...",
+                    "why": "The numbers keep going up"
+                  },
+                  {
+                    "text": "Counting backwards: ..., 2, 1, 0, -1, -2, ...",
+                    "why": "The numbers keep going down"
+                  },
+                  {
+                    "text": "Zero is NOT a wall!",
+                    "why": "Don't stop or skip at zero — just count through it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "counting-zero-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why you must not skip zero when counting",
+            "How to spot counting errors across zero"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mia",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Mia count correctly?",
+              "body": "Mia started at **-2** and counted **5 steps forwards**.\n\nMia says the answer is **4**.\n\nBut look at the sequence: -2, -1, 1, 2, 3, 4. Can you spot what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -4,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -2,
+                    "label": "Start: -2",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 4,
+                    "label": "Mia: 4?",
+                    "color": "#f87171"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Zero counts as a number!",
+              "body": "Mia skipped zero when counting, jumping from -1 straight to 1! Zero is a real number — you must count it as one of your steps. Tap to see the correct sequence on the number line.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "min": -4,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -2,
+                    "label": "-2",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#fbbf24"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -2,
+                    "to": 3,
+                    "label": "+5"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -2,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try a different one!",
+              "body": "Start at **-3**, count **6 forwards** (don't skip zero!).\n\nWhere do you land?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Start at -3, count 6 forwards. Where?",
+                "options": [
+                  "3",
+                  "2",
+                  "5",
+                  "0",
+                  "7"
+                ],
+                "correctAnswer": "3",
+                "correctFeedback": "Superstar! The answer is **3**. Zero counts as a step! ✓",
+                "incorrectFeedback": "Not quite! Count carefully: -3, -2, -1, 0, 1, 2, 3. The answer is **3**."
+              },
+              "visualProps": {
+                "min": -5,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't skip zero!",
+              "body": "The most common mistake when counting through zero is **skipping it**. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Zero IS a number — it counts as a step",
+                    "why": "..., -2, -1, 0, 1, 2, ..."
+                  },
+                  {
+                    "text": "Don't jump from -1 to 1",
+                    "why": "That skips a step and makes your answer wrong by 1"
+                  },
+                  {
+                    "text": "Count on your fingers if you need to!",
+                    "why": "There's no shame in checking carefully ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adding-to-negatives",
+      "name": "Adding to Negative Numbers",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "adding-neg-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to add a positive number to a negative number",
+            "Why adding moves you to the RIGHT on a number line"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A thermometer",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is -8 + 5?",
+              "body": "A thermometer in a freezer reads -8°C. Someone opens the door and it warms up by 5°C.\n\nWe need to work out **-8 + 5**. Adding a positive number moves us to the **right** on the number line!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -10,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -8,
+                    "label": "-8",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Move right on the number line",
+              "body": "Start at **-8** and jump **5** places to the right.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -10,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -8,
+                    "label": "-8",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -3,
+                    "label": "-3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -8,
+                    "to": -3,
+                    "label": "+5"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -8,
+                  -3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Start at **-6**. Add **4**.\n\nWhat do you get?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "-6 + 4 = ?",
+                "options": [
+                  "-2",
+                  "-3",
+                  "0",
+                  "-5",
+                  "2"
+                ],
+                "correctAnswer": "-2",
+                "correctFeedback": "Brilliant! -6 + 4 = **-2**. You moved right on the number line! ✓",
+                "incorrectFeedback": "Not quite! Start at -6 and count 4 to the right: the answer is **-2**."
+              },
+              "visualProps": {
+                "min": -8,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -6,
+                    "label": "-6",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -6,
+                    "to": -2,
+                    "label": "+4"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Adding makes you move RIGHT!",
+              "body": "When you **add a positive** number, you always move to the **right** on the number line — even if you start in the negatives!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Adding a positive = move RIGHT",
+                    "why": "Even from a negative starting point"
+                  },
+                  {
+                    "text": "You might stay negative",
+                    "why": "e.g. -8 + 5 = -3 (still negative)"
+                  },
+                  {
+                    "text": "Or you might cross zero",
+                    "why": "e.g. -3 + 5 = 2 (now positive!) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "adding-neg-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why -5 + 8 is NOT the same as 5 + 8",
+            "How to avoid ignoring the negative sign"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Tom says -5 + 8 = 13",
+              "body": "Tom worked out **-5 + 8** and got **13**.\n\nThat seems too big! Can you see what went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -7,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "Start: -5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Don't ignore the minus sign!",
+              "body": "Tom ignored the minus sign and did 5 + 8 = 13 instead of -5 + 8 = 3. The minus sign changes your starting point completely! Tap to see where you really end up on the number line.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -7,
+                "max": 6,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -5,
+                    "to": 3,
+                    "label": "+8"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -5,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "What is **-7 + 9**? Remember — don't ignore the minus sign!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "-7 + 9 = ?",
+                "options": [
+                  "2",
+                  "1",
+                  "4",
+                  "-1",
+                  "6"
+                ],
+                "correctAnswer": "2",
+                "correctFeedback": "Superstar! -7 + 9 = **2**. The minus sign matters! ✓",
+                "incorrectFeedback": "Not quite! Start at -7 (not 7!) and add 9. Answer: **2**."
+              },
+              "visualProps": {
+                "min": -9,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -7,
+                    "label": "-7",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -7,
+                    "to": 2,
+                    "label": "+9"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The minus sign MATTERS!",
+              "body": "Never ignore a minus sign. **-5 + 8** is completely different from **5 + 8**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Always look at WHERE you start",
+                    "why": "-5 starts way left of zero, not at 5"
+                  },
+                  {
+                    "text": "Add by moving RIGHT from the start",
+                    "why": "-5 + 8: start at -5, jump 8 right = 3"
+                  },
+                  {
+                    "text": "Use the number line if unsure",
+                    "why": "Point to your start, count the jumps ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subtracting-into-negatives",
+      "name": "Subtracting Below Zero",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "subtracting-neg-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to subtract when the answer goes below zero",
+            "Why subtracting moves you LEFT on the number line"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A pond",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 3 − 8?",
+              "body": "A pond is at 3°C on a winter evening. Overnight the temperature drops by 8°C.\n\nWe need **3 − 8**. But 8 is bigger than 3! Does that mean the answer is negative?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -7,
+                "max": 5,
+                "points": [
+                  {
+                    "value": 3,
+                    "label": "Start: 3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Go through zero!",
+              "body": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Go to zero first, then keep going into the negatives. ✓",
+                "incorrectFeedback": "Not quite — first go down to zero, then subtract what's left."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start at 3",
+                    "why": "Our starting point"
+                  },
+                  {
+                    "text": "Jump left 3 to reach zero",
+                    "result": "Used 3 of our 8"
+                  },
+                  {
+                    "text": "Still have 5 left to subtract",
+                    "result": "0 − 5 = -5"
+                  },
+                  {
+                    "text": "3 − 8 = -5",
+                    "result": "-5°C"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**2 − 6** = ?\n\nYou know it goes below zero. How far below?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "2 − 6 = ?",
+                "options": [
+                  "-4",
+                  "-5",
+                  "-2",
+                  "-7",
+                  "0"
+                ],
+                "correctAnswer": "-4",
+                "correctFeedback": "Brilliant! 2 − 6 = **-4**. You went through zero and kept going! ✓",
+                "incorrectFeedback": "Not quite! From 2, it's 2 to zero, then 4 more: **-4**."
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 4,
+                "points": [
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 2,
+                    "to": -4,
+                    "label": "−6"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Subtracting below zero!",
+              "body": "If you subtract more than you have, the answer goes **negative**. Just keep counting left on the number line!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Subtracting = moving LEFT",
+                    "why": "Even past zero"
+                  },
+                  {
+                    "text": "Go to zero first",
+                    "why": "Work out how much you've used"
+                  },
+                  {
+                    "text": "Keep going left with what's left",
+                    "why": "That gives you the negative answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "subtracting-neg-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "When to expect a negative answer from subtraction in real life",
+            "How to tell if an answer will be negative before calculating"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Chloe",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Will the answer be negative?",
+              "body": "Chloe is checking her pocket money. She has £5 but wants to buy a book costing £9.\n\n**5 − 9** = ?\n\nWe're taking away MORE than we started with. What happens?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 7,
+                "points": [
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You go below zero!",
+              "body": "We need **5 − 9**. Since 9 is **more** than 5, the answer will be **negative** — we go below zero!\n\n**3 rules for subtraction:**\n- Subtract **MORE** than you start with → answer is **NEGATIVE** (e.g. 3 − 8 = −5)\n- Subtract **LESS** than you start with → answer is **POSITIVE** (e.g. 8 − 3 = 5)\n- Subtract the **SAME** amount → answer is **ZERO** (e.g. 5 − 5 = 0)\n\nTap to see this on the number line.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 7,
+                "points": [
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 5,
+                    "to": -4,
+                    "label": "−9"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  5
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try this one!",
+              "body": "**3 − 8** = ?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "3 − 8 = ?",
+                "options": [
+                  "-5",
+                  "-6",
+                  "-3",
+                  "-8",
+                  "-1"
+                ],
+                "correctAnswer": "-5",
+                "correctFeedback": "Spot on! 3 − 8 = **-5**. Below zero! ✓",
+                "incorrectFeedback": "Not quite! 3 − 8 = **-5**. You go below zero when subtracting a bigger number."
+              },
+              "visualProps": {
+                "min": -7,
+                "max": 5,
+                "points": [
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 3,
+                    "to": -5,
+                    "label": "−8"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Quick check: will it be negative?",
+              "body": "Remember the 3 rules: subtract more → negative, subtract less → positive, subtract the same → zero. Check the sign before you calculate! ✓",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 6,
+                "points": [
+                  {
+                    "value": 4,
+                    "label": "Start: 4",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": -3,
+                    "label": "4 − 7 = −3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": 4,
+                    "to": -3,
+                    "label": "−7"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -3,
+                  4
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "difference-across-zero",
+      "name": "Finding the Difference Across Zero",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "difference-zero-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the difference between a negative and a positive number",
+            "Why you add the distances from zero"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A weather chart",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the difference between -4 and 3?",
+              "body": "A weather chart showing the coldest and warmest temperatures in a week. The two values are **-4°C** and **3°C**.\n\nWhat's the **difference** between them? It's not as simple as subtracting!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Add the distances from zero!",
+              "body": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find each distance from zero, then add them together. ✓",
+                "incorrectFeedback": "Not quite — find each number's distance from zero, then add them."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "-4 is 4 away from zero",
+                    "why": "Distance to the left"
+                  },
+                  {
+                    "text": "3 is 3 away from zero",
+                    "why": "Distance to the right"
+                  },
+                  {
+                    "text": "Difference: 4 + 3 = 7",
+                    "result": "The difference is 7°C"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What's the difference between **-5** and **2**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Difference between -5 and 2?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Brilliant! 5 + 2 = **7**. Add the distances from zero! ✓",
+                "incorrectFeedback": "Not quite! -5 is 5 from zero, 2 is 2 from zero. Total: **7**."
+              },
+              "visualProps": {
+                "min": -7,
+                "max": 4,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -5,
+                    "to": 0,
+                    "label": "5"
+                  },
+                  {
+                    "from": 0,
+                    "to": 2,
+                    "label": "2"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -5,
+                  2
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The difference trick!",
+              "body": "When finding the difference between a negative and a positive number:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find how far the negative number is from zero",
+                    "why": "Ignore the minus sign"
+                  },
+                  {
+                    "text": "Find how far the positive number is from zero",
+                    "why": "Just the number itself"
+                  },
+                  {
+                    "text": "ADD the two distances",
+                    "why": "Because they're on opposite sides of zero ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "difference-zero-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why subtracting the numbers gives the wrong answer for differences across zero",
+            "How to avoid the difference trap"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ethan",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is the difference really 1?",
+              "body": "Ethan says the difference between **-4** and **3** is **1**.\n\nLook at the number line — does 1 seem right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count the gap!",
+              "body": "Ethan subtracted 3 from 4 to get 1, instead of adding 4 + 3 = 7. When the numbers are on **opposite sides** of zero, subtracting gives the wrong answer. Tap to see the number line proof!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -4,
+                    "to": 0,
+                    "label": "4"
+                  },
+                  {
+                    "from": 0,
+                    "to": 3,
+                    "label": "3"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try a different pair!",
+              "body": "What's the difference between **-3** and **5**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Difference between -3 and 5?",
+                "options": [
+                  "8",
+                  "7",
+                  "10",
+                  "5",
+                  "12"
+                ],
+                "correctAnswer": "8",
+                "correctFeedback": "Spot on! 3 + 5 = **8**. ADD across zero! ✓",
+                "incorrectFeedback": "Not quite! Add the distances: 3 + 5 = **8**."
+              },
+              "visualProps": {
+                "min": -5,
+                "max": 7,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -3,
+                    "to": 0,
+                    "label": "3"
+                  },
+                  {
+                    "from": 0,
+                    "to": 5,
+                    "label": "5"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Across zero = ADD!",
+              "body": "Remember this simple rule:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Both on the SAME side of zero → SUBTRACT",
+                    "why": "e.g. difference between 3 and 7 = 4"
+                  },
+                  {
+                    "text": "On OPPOSITE sides of zero → ADD",
+                    "why": "e.g. difference between -4 and 3 = 4 + 3 = 7"
+                  },
+                  {
+                    "text": "Think: how many jumps on the number line?",
+                    "why": "Count the gaps — that's the difference ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "temperature-problems",
+      "name": "Temperature Rise and Fall",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "temperature-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to solve temperature rise and fall problems",
+            "How to use a number line for temperature changes"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Edinburgh",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Edinburgh: -3°C then it rises by 8°C",
+              "body": "The temperature in **Edinburgh** is **-3°C** at dawn. During the day it rises by **8°C**.\n\nWhat is the new temperature?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 8,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Temperature rises!",
+              "body": "**Rises** means it gets **warmer** — move **right** on the number line.\n\n**-3 + 8 = 5°C**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 8,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5°C",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -3,
+                    "to": 5,
+                    "label": "+8"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -3,
+                  5
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "It's **-5°C** and the temperature rises by **7°C**.\n\nWhat is the new temperature?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "New temperature?",
+                "options": [
+                  "2",
+                  "1",
+                  "4",
+                  "-1",
+                  "6"
+                ],
+                "correctAnswer": "2",
+                "correctFeedback": "Superstar! The new temperature is **2°C**! ✓",
+                "incorrectFeedback": "Not quite! -5 + 7 = **2°C**."
+              },
+              "visualProps": {
+                "min": -7,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -5,
+                    "to": 2,
+                    "label": "+7"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Temperature word clues!",
+              "body": "Look for these key words in temperature problems:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rises / warms up / increases = ADD (move right)",
+                    "why": "Getting warmer!"
+                  },
+                  {
+                    "text": "Drops / falls / decreases = SUBTRACT (move left)",
+                    "why": "Getting colder!"
+                  },
+                  {
+                    "text": "Draw a number line if you're unsure",
+                    "why": "It makes the direction really clear ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "temperature-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid errors with temperature differences",
+            "Why crossing zero needs extra care"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Noah",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is the temperature change really 1°C?",
+              "body": "Noah says the difference between **-4°C** and **3°C** is **1°C**.\n\nLook at the number line. Does that look right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3°C",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "They cross zero — ADD!",
+              "body": "Noah subtracted 3 from 4 to get 1, but the temperatures are on opposite sides of zero so you need to ADD: 4 + 3 = 7. When temperatures cross zero, you need to count the **total gap** on the number line. Tap to see the correct approach.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3°C",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -4,
+                    "to": 0,
+                    "label": "4"
+                  },
+                  {
+                    "from": 0,
+                    "to": 3,
+                    "label": "3"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -4,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct difference?",
+              "body": "How many degrees between **-4°C** and **3°C**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Difference = 4 + 3 = ?",
+                "options": [
+                  "7",
+                  "6",
+                  "9",
+                  "4",
+                  "11"
+                ],
+                "correctAnswer": "7",
+                "correctFeedback": "Brilliant! 4 + 3 = **7°C**. Add across zero! ✓",
+                "incorrectFeedback": "Not quite! 4 + 3 = **7°C**."
+              },
+              "visualProps": {
+                "min": -6,
+                "max": 5,
+                "points": [
+                  {
+                    "value": -4,
+                    "label": "-4°C",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3°C",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0°C",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -4,
+                    "to": 0,
+                    "label": "4"
+                  },
+                  {
+                    "from": 0,
+                    "to": 3,
+                    "label": "3"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Temperature difference = add across zero!",
+              "body": "When temperatures cross zero, always ADD the two distances from zero to find the difference.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find how far the cold temperature is from 0°C",
+                    "why": "e.g. -4°C is 4 away from zero"
+                  },
+                  {
+                    "text": "Find how far the warm temperature is from 0°C",
+                    "why": "e.g. 3°C is 3 away from zero"
+                  },
+                  {
+                    "text": "ADD them together",
+                    "why": "4 + 3 = 7°C difference ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-world-contexts",
+      "name": "Negatives in Real Life",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "real-world-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to recognise negative numbers in money, depth, and floors",
+            "How to solve real-life problems using negatives"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mum",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Negatives in bank account!",
+              "body": "Mum is checking her bank account. She's overdrawn by £50, then gets paid £120.\n\nStarting at **-50** and changing by **+120**. Where do we end up?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -60,
+                "max": 80,
+                "points": [
+                  {
+                    "value": -50,
+                    "label": "-50",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 20,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same maths, different context!",
+              "body": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "min": -60,
+                "max": 80,
+                "points": [
+                  {
+                    "value": -50,
+                    "label": "-50",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 70,
+                    "label": "70",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -50,
+                    "to": 70,
+                    "label": "+120"
+                  }
+                ],
+                "tickInterval": 20,
+                "showLabels": true,
+                "highlight": [
+                  -50,
+                  70
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Back to bank account: start at **-30**, add **75**. What do you get?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "-30 + 75 = ?",
+                "options": [
+                  "45",
+                  "44",
+                  "47",
+                  "42",
+                  "49"
+                ],
+                "correctAnswer": "45",
+                "correctFeedback": "Brilliant! -30 + 75 = **45**. Negatives in bank account — no problem! ✓",
+                "incorrectFeedback": "Not quite! -30 + 75 = **45**. Add by moving towards zero and beyond."
+              },
+              "visualProps": {
+                "min": -40,
+                "max": 50,
+                "points": [
+                  {
+                    "value": -30,
+                    "label": "-30",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 10,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Negatives are everywhere!",
+              "body": "Negative numbers pop up in lots of real-life situations. The maths is always the same — you just need to spot the context!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Money: overdrawn = negative balance",
+                    "why": "-£50 means you owe £50"
+                  },
+                  {
+                    "text": "Depth: below sea level = negative",
+                    "why": "-40m means 40m underwater"
+                  },
+                  {
+                    "text": "Buildings: basement floors = negative",
+                    "why": "Floor -2 is 2 floors underground ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "real-world-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to read number lines that represent different real-world contexts",
+            "How to interpret negative values in context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A lift",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A lift: what do the numbers mean?",
+              "body": "Look at this number line for **floor numbers**. Zero means **ground floor**. Numbers to the left mean **basements**. Numbers to the right mean **upper floors**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -3,
+                "max": 4,
+                "points": [
+                  {
+                    "value": -2,
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -1,
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": 1,
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 2,
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 3,
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Context gives meaning!",
+              "body": "The same number line works for all these contexts. **Zero** is always the **dividing point**.\n\n- **Left of zero** (negative) = basements\n- **Right of zero** (positive) = upper floors",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Zero = Ground floor",
+                    "why": "The reference point"
+                  },
+                  {
+                    "text": "Negative = Basements",
+                    "why": "Below / less than the reference"
+                  },
+                  {
+                    "text": "Positive = Upper floors",
+                    "why": "Above / more than the reference"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which floor is 3 below ground?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which floor is 3 below ground?",
+                "options": [
+                  "-3",
+                  "-2",
+                  "0",
+                  "3",
+                  "1"
+                ],
+                "correctAnswer": "-3",
+                "correctFeedback": "Spot on! Basements means negative numbers. The answer is **-3**! ✓",
+                "incorrectFeedback": "Not quite! Below the reference point = negative. The answer is **-3**."
+              },
+              "visualProps": {
+                "min": -3,
+                "max": 4,
+                "points": [
+                  {
+                    "value": -2,
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -1,
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "color": "#9ca3af"
+                  },
+                  {
+                    "value": 1,
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 2,
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 3,
+                    "color": "#22c55e"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Same maths, different stories!",
+              "body": "Negative numbers work the same way in every context. Just remember what zero means!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Temperature: 0°C = freezing point",
+                    "why": "Below freezing = negative"
+                  },
+                  {
+                    "text": "Money: £0 = no money, no debt",
+                    "why": "In debt = negative"
+                  },
+                  {
+                    "text": "Buildings: Floor 0 = ground level",
+                    "why": "Basements = negative floors ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negative-subtract-negative",
+      "name": "Subtracting from a Negative",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "neg-sub-neg-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to subtract a positive number from a negative number",
+            "Why subtracting makes a negative number even more negative"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A freezer",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "-5 − 3 = ?",
+              "body": "A freezer is at -5°C. The temperature drops by another 3°C.\n\nWe need **-5 − 3**. We're already negative and subtracting MORE. Which direction do we go?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -10,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 2,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Even further left!",
+              "body": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Subtracting from a negative makes it even more negative. ✓",
+                "incorrectFeedback": "Not quite — start at the negative number, then move further left."
+              },
+              "visualProps": {
+                "min": -10,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -8,
+                    "label": "-8",
+                    "color": "#f87171"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -5,
+                    "to": -8,
+                    "label": "−3"
+                  }
+                ],
+                "tickInterval": 2,
+                "showLabels": true,
+                "highlight": [
+                  -8,
+                  -5
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**-7 − 4** = ?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "-7 − 4 = ?",
+                "options": [
+                  "-11",
+                  "-12",
+                  "-9",
+                  "-14",
+                  "-7"
+                ],
+                "correctAnswer": "-11",
+                "correctFeedback": "Brilliant! -7 − 4 = **-11**. Even further into the negatives! ✓",
+                "incorrectFeedback": "Not quite! Start at -7, move 4 left: **-11**."
+              },
+              "visualProps": {
+                "min": -13,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -7,
+                    "label": "-7",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 2,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Subtracting from a negative!",
+              "body": "When you subtract from a negative number, the answer gets **even more negative** — you move further from zero.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Subtracting = moving LEFT on the number line",
+                    "why": "Always, no matter where you start"
+                  },
+                  {
+                    "text": "Negative − positive = more negative",
+                    "why": "-5 − 3 = -8 (further from zero)"
+                  },
+                  {
+                    "text": "Think of it as going deeper",
+                    "why": "Deeper underwater, colder temperature, more debt ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "neg-sub-neg-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why negative − positive does NOT give a positive answer",
+            "How to avoid sign errors when subtracting from negatives"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Kai",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Kai says -3 − 4 = 1",
+              "body": "Kai worked out **-3 − 4** and got **1**.\n\nBut we're subtracting from a negative. Should the answer be more negative or less negative?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": -9,
+                "max": 3,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "Start: -3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 1,
+                    "label": "Kai: 1?",
+                    "color": "#f87171"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "It should be MORE negative!",
+              "body": "Kai did 4 − 3 = 1, ignoring the minus sign on the -3.\n\nWhen you subtract from a negative, you go **further left** — the answer is MORE negative, not less!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When you subtract from a negative number, the answer gets ____ negative",
+                "options": [
+                  "more",
+                  "less",
+                  "equally",
+                  "not"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Subtracting moves you further left — more negative, further from zero. ✓",
+                "incorrectFeedback": "Not quite — subtracting from a negative makes it MORE negative, not less."
+              },
+              "visualProps": {
+                "min": -9,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -3,
+                    "label": "-3",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": -7,
+                    "label": "-7 ✓",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [
+                  {
+                    "from": -3,
+                    "to": -7,
+                    "label": "−4"
+                  }
+                ],
+                "tickInterval": 1,
+                "showLabels": true,
+                "highlight": [
+                  -7,
+                  -3
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "**-5 − 6** = ?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "-5 − 6 = ?",
+                "options": [
+                  "-11",
+                  "-12",
+                  "-9",
+                  "-14",
+                  "-7"
+                ],
+                "correctAnswer": "-11",
+                "correctFeedback": "Superstar! -5 − 6 = **-11**. More negative, not less! ✓",
+                "incorrectFeedback": "Not quite! Start at -5, move 6 left: **-11**."
+              },
+              "visualProps": {
+                "min": -13,
+                "max": 2,
+                "points": [
+                  {
+                    "value": -5,
+                    "label": "-5",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "value": 0,
+                    "label": "0",
+                    "color": "#9ca3af"
+                  }
+                ],
+                "jumps": [],
+                "tickInterval": 1,
+                "showLabels": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't flip the sign!",
+              "body": "The biggest trap: thinking a negative minus a positive gives something closer to zero. It doesn't — it goes further away!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Negative − positive = EVEN MORE NEGATIVE",
+                    "why": "-3 − 4 = -7, not +1"
+                  },
+                  {
+                    "text": "Think of it as adding the numbers, then making negative",
+                    "why": "3 + 4 = 7, so the answer is -7"
+                  },
+                  {
+                    "text": "Use the number line to check",
+                    "why": "Start at -3, jump 4 to the left = -7 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1562 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "numberWordCodes",
+    "displayName": "Number Word Codes",
+    "extractedAt": "2026-03-30T13:51:13.917Z",
+    "subConceptCount": 8,
+    "lessonCount": 10,
+    "screenCount": 40,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "build-the-table",
+      "name": "Build the Mapping Table",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "build-the-table-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to crack any code by mapping each letter to its number",
+            "Why writing out the full table is your secret weapon against mistakes"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you crack the secret code?",
+              "body": "Daisy is building her first mapping table.\n\nHere are two coded (changed using a rule) words:\n\n**SPOT = 1234**\n**TOPS = 4321**\n\nEach letter maps to exactly one number. Can you figure out what **POST** would be? Let's find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "SPOT",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TOPS",
+                      "4321"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "POST",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Write out every pair",
+              "body": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Line up, check, then decode — that's the recipe. ✓",
+                "incorrectFeedback": "Not quite — always line up first, then check, then decode!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Line up SPOT with 1234",
+                    "why": "S=1, P=2, O=3, T=4"
+                  },
+                  {
+                    "text": "Check with TOPS = 4321",
+                    "why": "Every letter should match — if not, re-check!"
+                  },
+                  {
+                    "text": "Now decode: POST = 2314",
+                    "why": "Replace each letter using your table"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — build the table!",
+              "body": "**SPOT = 1234**\n**TOPS = 4321**\n\nWhat is the code for **POTS**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for POTS?",
+                "options": [
+                  "2341",
+                  "2314",
+                  "2431",
+                  "4321",
+                  "1234"
+                ],
+                "correctAnswer": "2341",
+                "correctFeedback": "Brilliant! Using the same table: S=1, P=2, O=3, T=4. POTS = P(2) O(3) T(4) S(1) = 2341. ✓",
+                "incorrectFeedback": "Not quite! The answer is 2341. Using the same table: S=1, P=2, O=3, T=4. POTS = P(2) O(3) T(4) S(1) = 2341. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "SPOT",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TOPS",
+                      "4321"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "POTS",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've got the recipe!",
+              "body": "Every time you see word-code pairs, follow these three steps and you'll nail it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Write each letter underneath its number",
+                    "why": "Line them up carefully — position matters!"
+                  },
+                  {
+                    "text": "2. Check your table against the second word",
+                    "why": "If anything doesn't match, fix it before moving on"
+                  },
+                  {
+                    "text": "3. Replace each letter in the target word",
+                    "why": "One letter at a time, using your table ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "build-the-table-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why rushing is the number one reason people lose marks on these questions",
+            "How checking each letter one by one keeps you safe from silly mistakes"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the mistake in \"1234\"!",
+              "body": "Evie is checking her friend's code work.\n\nThe word-code pairs are:\n**MADE = 1234**\n**DAME = 3214**\n\nThe answer given for **MEAD** was **1234**. But that's wrong! Can you spot why?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "MADE",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DAME",
+                      "3214"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MEAD",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Where did it go wrong?",
+              "body": "That's just MADE again! The friend mixed up the letter order — MEAD has a different order from MADE\n\nThe fix: **go letter by letter** through your table. Never guess or rush!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Mapping: M=1, A=2, D=3, E=4",
+                    "why": "Build the table first"
+                  },
+                  {
+                    "text": "Wrong: MEAD = 1234",
+                    "why": "That's just MADE again! The friend mixed up the letter order — MEAD has a different order from MADE"
+                  },
+                  {
+                    "text": "Right: MEAD = 1423 ✓",
+                    "why": "Go letter by letter through the word"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct code?",
+              "body": "**MADE = 1234**\n**DAME = 3214**\n\nWhat is the **correct** code for **EDAM**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct code for EDAM?",
+                "options": [
+                  "4321",
+                  "4312",
+                  "4231",
+                  "3421",
+                  "4213"
+                ],
+                "correctAnswer": "4321",
+                "correctFeedback": "Well done! M=1, A=2, D=3, E=4. EDAM = E(4) D(3) A(2) M(1) = 4321. ✓",
+                "incorrectFeedback": "Not quite! The answer is 4321. M=1, A=2, D=3, E=4. EDAM = E(4) D(3) A(2) M(1) = 4321. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "MADE",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DAME",
+                      "3214"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "EDAM",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Stay sharp — avoid these traps!",
+              "body": "Now you know the common mistakes, you can dodge them every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Go letter by letter — don't rush",
+                    "why": "MEAD ≠ MADE — the order matters!"
+                  },
+                  {
+                    "text": "2. Check your table against BOTH words",
+                    "why": "If it doesn't match, fix it before decoding"
+                  },
+                  {
+                    "text": "3. Spell the target word carefully",
+                    "why": "Write it out, then replace each letter one at a time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeated-letters",
+      "name": "Repeated Letter Anchors",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "repeated-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How repeated letters give you a brilliant shortcut to crack codes faster",
+            "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot the sneaky repeated letter!",
+              "body": "Daisy is spotting repeated letters to crack codes faster.\n\n**MOON = 1223**\n**NOON = 3223**\n\n**Did you know?** When a letter appears twice in a word, its matching number also appears twice in the code. That's your shortcut! Can you spot that **O** appears **twice**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "MOON",
+                      "1223"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "NOON",
+                      "3223"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MONO",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Repeated letters = instant anchors",
+              "body": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. This gives you an instant anchor to start building your table!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A repeated letter gives you an instant ____ to start building your mapping table",
+                "options": [
+                  "anchor",
+                  "shortcut",
+                  "answer",
+                  "guess"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! A repeated letter is an anchor — it locks in one mapping immediately. ✓",
+                "incorrectFeedback": "Not quite — a repeated letter is called an anchor because it fixes one mapping straight away!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"O\" appears twice → find 2 appearing twice",
+                    "why": "O=2 — that's your anchor!"
+                  },
+                  {
+                    "text": "Fill in the rest: M=1, O=2, N=3",
+                    "why": "Now the other letters fall into place"
+                  },
+                  {
+                    "text": "Decode: MONO = 1232",
+                    "why": "Replace each letter using the table ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — use the anchor!",
+              "body": "**MOON = 1223**\n**NOON = 3223**\n\nUse the repeated **O** to crack the code. What is **MONO**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for MONO?",
+                "options": [
+                  "1232",
+                  "1223",
+                  "1322",
+                  "2132",
+                  "3212"
+                ],
+                "correctAnswer": "1232",
+                "correctFeedback": "Brilliant! O appears twice in MOON — and 2 appears twice in 1223. So O=2. From position: M=1, N=3. MONO = M(1) O(2) N(3) O(2) = 1232. ✓",
+                "incorrectFeedback": "Not quite! The answer is 1232. O appears twice in MOON — and 2 appears twice in 1223. So O=2. From position: M=1, N=3. MONO = M(1) O(2) N(3) O(2) = 1232. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "MOON",
+                      "1223"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "NOON",
+                      "3223"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MONO",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Repeated letters — your superpower!",
+              "body": "Top coders always scan for repeated letters first. Once you spot one, the rest of the puzzle falls into place:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Scan both the word AND the code for repeats",
+                    "why": "MOON has two O's; 1223 has two 2's"
+                  },
+                  {
+                    "text": "2. Match the repeated letter to the repeated number",
+                    "why": "That's your anchor — the first pair you know for sure"
+                  },
+                  {
+                    "text": "3. Fill in the rest from there",
+                    "why": "One anchor makes the whole table easier ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-decode",
+      "name": "Reverse Decode — Number to Word",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "reverse-decode-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to work backwards from a mystery number code to uncover the hidden word",
+            "How to flip your mapping table around so numbers point back to letters"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What word is hiding in 321?",
+              "body": "Ella is decoding a mystery number back into a word.\n\n**BAD = 123**\n\nHere's a fun twist — this time you're going **backwards**! You know the code **321**, but what word is hiding inside it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "BAD",
+                      "123"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DAB",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Build the table, then read it backwards",
+              "body": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Build, flip, replace — that's how you reverse decode. ✓",
+                "incorrectFeedback": "Not quite — build the table first, then flip it, then replace each digit!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Build the table: B=1, A=2, D=3",
+                    "why": "Same table-building step as always"
+                  },
+                  {
+                    "text": "Now flip it: 1→B, 2→A, 3→D",
+                    "why": "Number → letter instead of letter → number"
+                  },
+                  {
+                    "text": "321 = DAB",
+                    "why": "Replace each digit with its letter ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — decode the number!",
+              "body": "**GOD = 437**\n\nWhat word does **734** stand for?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What word does 734 stand for?",
+                "options": [
+                  "DOG",
+                  "GOD",
+                  "OGD",
+                  "DGO",
+                  "GDO"
+                ],
+                "correctAnswer": "DOG",
+                "correctFeedback": "Brilliant! From GOD=437: G=4, O=3, D=7. Reverse: 7=D, 3=O, 4=G. So 734 = DOG. ✓",
+                "incorrectFeedback": "Not quite! The answer is DOG. From GOD=437: G=4, O=3, D=7. Reverse: 7=D, 3=O, 4=G. So 734 = DOG. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "GOD",
+                      "437"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "???",
+                      "734"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reverse decode — you've got this!",
+              "body": "When the question gives you a number and asks for the word, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Build the mapping table as normal",
+                    "why": "Letter → number from the given word-code pair"
+                  },
+                  {
+                    "text": "2. Flip it: number → letter",
+                    "why": "1→C, 2→A, 3→R, 4→E (for example)"
+                  },
+                  {
+                    "text": "3. Replace each digit in the code with its letter",
+                    "why": "Spell out the word one letter at a time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared-letters",
+      "name": "Shared Letters — Cross-Reference",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "shared-letters-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How two words that share letters give you a powerful way to double-check your work",
+            "How shared letters between word pairs help you discover new mappings with confidence"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do these words have in common?",
+              "body": "Daisy is cross-referencing shared letters between two words.\n\n**CART = 1234**\n**CARD = 1235**\n\nSpot it? These words share the letters **C, A, R**! When two words share letters, those letters have the **same numbers** in both codes. That's like having a built-in answer checker!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "CART",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CARD",
+                      "1235"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DART",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Shared letters confirm your table",
+              "body": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D**) that's different",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Shared: C, A, R — same numbers in both codes",
+                    "why": "These are confirmed"
+                  },
+                  {
+                    "text": "New letter: D=5",
+                    "why": "The only letter that changed → the only number that changed"
+                  },
+                  {
+                    "text": "Decode: DART = 5234",
+                    "why": "Now you have all the letters you need ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — cross-reference!",
+              "body": "**CART = 1234**\n**CARD = 1235**\n\nWhat is the code for **DART**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for DART?",
+                "options": [
+                  "5234",
+                  "5324",
+                  "5243",
+                  "3254",
+                  "5342"
+                ],
+                "correctAnswer": "5234",
+                "correctFeedback": "Brilliant! CART and CARD share C=1, A=2, R=3. CART has T=4; CARD has D=5 (the only different letter/number). DART = D(5) A(2) R(3) T(4) = 5234. ✓",
+                "incorrectFeedback": "Not quite! The answer is 5234. CART and CARD share C=1, A=2, R=3. CART has T=4; CARD has D=5 (the only different letter/number). DART = D(5) A(2) R(3) T(4) = 5234. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "CART",
+                      "1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CARD",
+                      "1235"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DART",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Cross-referencing — a pro move!",
+              "body": "When two words share letters, you've got a really handy trick:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Spot the letters that appear in BOTH words",
+                    "why": "CART and CARD share C, A, R"
+                  },
+                  {
+                    "text": "2. Check their numbers match in both codes",
+                    "why": "Same letter = same number — if not, re-check!"
+                  },
+                  {
+                    "text": "3. The different letter gets the different number",
+                    "why": "Only one letter changed, so only one number changed ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-letter-codes",
+      "name": "Four-Letter Word Codes",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "four-letter-codes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to handle 4-letter word codes like a pro",
+            "How to use the table method to crack any 4-letter word code quickly"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Crack the 4-letter code!",
+              "body": "Daisy is working with 4-letter word codes.\n\n**TRAM = 8524**\n\nFour letters, four pairs to track — but you've already done this with 3 letters, so you've got this! Can you decode **MART**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "TRAM",
+                      "8524"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MART",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "4 letters, 4 pairs",
+              "body": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "TRAM = 8524",
+                    "why": "T=8, R=5, A=2, M=4"
+                  },
+                  {
+                    "text": "Now decode MART letter by letter",
+                    "why": "M(4) A(2) R(5) T(8)"
+                  },
+                  {
+                    "text": "MART = 4258 ✓",
+                    "why": "Four pairs, four digits — done!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "**TRAM = 8524**\n\nWhat is the code for **MART**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for MART?",
+                "options": [
+                  "4258",
+                  "4528",
+                  "4852",
+                  "2458",
+                  "4285"
+                ],
+                "correctAnswer": "4258",
+                "correctFeedback": "Brilliant! From TRAM=8524: T=8, R=5, A=2, M=4. MART = M(4) A(2) R(5) T(8) = 4258. ✓",
+                "incorrectFeedback": "Not quite! The answer is 4258. From TRAM=8524: T=8, R=5, A=2, M=4. MART = M(4) A(2) R(5) T(8) = 4258. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "TRAM",
+                      "8524"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "MART",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "4-letter codes — easy when you're organised!",
+              "body": "Keep it neat and you'll breeze through 4-letter codes:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Write the word out: T R A M",
+                    "why": "Leave space between letters"
+                  },
+                  {
+                    "text": "2. Write the code below: 8 5 2 4",
+                    "why": "Each number goes under its letter"
+                  },
+                  {
+                    "text": "3. Read off the target word using your pairs",
+                    "why": "MART → M(4) A(2) R(5) T(8) = 4258 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "five-letter-codes",
+      "name": "Five-Letter Word Codes",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "five-letter-codes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to handle the longest word codes without breaking a sweat",
+            "Why staying organised is your biggest advantage with longer words"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Ready for the 5-letter challenge?",
+              "body": "Daisy is tackling 5-letter codes for the first time.\n\n**PLATE = 65289**\n**PETAL = 69825**\n\n5 letters means 5 pairs — but the method is exactly the same! If you can do 4, you can definitely do 5. Let's go!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "PLATE",
+                      "65289"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "PETAL",
+                      "69825"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "LEAPT",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "5 letters — stay organised!",
+              "body": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Map all 5: P=6, L=5, A=2, T=8, E=9",
+                    "why": "Write every single pair"
+                  },
+                  {
+                    "text": "Check with second word: PETAL=69825",
+                    "why": "All 5 should match — if not, fix your table"
+                  },
+                  {
+                    "text": "Decode: LEAPT = 59268",
+                    "why": "Replace letter by letter, left to right ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — 5-letter challenge!",
+              "body": "**PLATE = 65289**\n**PETAL = 69825**\n\nWhat is the code for **LEAPT**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for LEAPT?",
+                "options": [
+                  "59268",
+                  "59286",
+                  "59628",
+                  "52968",
+                  "59826"
+                ],
+                "correctAnswer": "59268",
+                "correctFeedback": "Brilliant! From PLATE=65289: P=6, L=5, A=2, T=8, E=9. Check PETAL=69825: P(6) E(9) T(8) A(2) L(5) — confirmed! LEAPT = L(5) E(9) A(2) P(6) T(8) = 59268. ✓",
+                "incorrectFeedback": "Not quite! The answer is 59268. From PLATE=65289: P=6, L=5, A=2, T=8, E=9. Check PETAL=69825: P(6) E(9) T(8) A(2) L(5) — confirmed! LEAPT = L(5) E(9) A(2) P(6) T(8) = 59268. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "PLATE",
+                      "65289"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "PETAL",
+                      "69825"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "LEAPT",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "5-letter codes — you've conquered them!",
+              "body": "These are the toughest codes you'll see, and you now know exactly how to beat them:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Write ALL 5 pairs in your table",
+                    "why": "Don't try to remember them — write them down!"
+                  },
+                  {
+                    "text": "2. Use the second word to double-check",
+                    "why": "If one pair doesn't match, fix it immediately"
+                  },
+                  {
+                    "text": "3. Decode left to right, one letter at a time",
+                    "why": "No shortcuts — patience wins ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anagram-codes",
+      "name": "Anagram Codes — Same Letters, Different Order",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "anagram-codes-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How anagram words (same letters, different order) always use the same digits reshuffled",
+            "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same letters, same digits — cool, right?",
+              "body": "Daisy is spotting anagram patterns in codes.\n\n**STOP = 4826**\n**TOPS = 8264**\n\n**Did you know?** These words are **anagrams** — they use the **same letters** shuffled into a different order. And here's the brilliant part: their codes use the **same digits** shuffled too!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STOP",
+                      "4826"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TOPS",
+                      "8264"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "POST",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Anagram shortcut",
+              "body": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the anagrams!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Build the table from STOP: S=4, T=8, O=2, P=6",
+                    "why": "One table works for all the anagrams"
+                  },
+                  {
+                    "text": "TOPS uses the same digits: 8264",
+                    "why": "Same letters → same digits, just shuffled"
+                  },
+                  {
+                    "text": "POST = 6248",
+                    "why": "Apply the same table to any anagram ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — decode the anagram!",
+              "body": "**STOP = 4826**\n**TOPS = 8264**\n\nWhat is the code for **POST**?\n\n(Hint: it uses the same digits as the other words!)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for POST?",
+                "options": [
+                  "6248",
+                  "6284",
+                  "6428",
+                  "6842",
+                  "6482"
+                ],
+                "correctAnswer": "6248",
+                "correctFeedback": "Brilliant! STOP, TOPS, POTS, POST — all anagrams using S=4, T=8, O=2, P=6. They all use the same digits (2,4,6,8) in different orders. POST = P(6) O(2) S(4) T(8) = 6248. ✓",
+                "incorrectFeedback": "Not quite! The answer is 6248. STOP, TOPS, POTS, POST — all anagrams using S=4, T=8, O=2, P=6. They all use the same digits (2,4,6,8) in different orders. POST = P(6) O(2) S(4) T(8) = 6248. ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "STOP",
+                      "4826"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TOPS",
+                      "8264"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "POST",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Anagram codes — a brilliant shortcut!",
+              "body": "Remember this trick and you'll save loads of time in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Same letters → same digits",
+                    "why": "STOP/TOPS/POTS/POST all use 2, 4, 6, 8"
+                  },
+                  {
+                    "text": "Different order → different arrangement",
+                    "why": "The digits rearrange just like the letters do"
+                  },
+                  {
+                    "text": "One table decodes ALL the anagrams",
+                    "why": "Build it once, use it for every version ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elimination-method",
+      "name": "Elimination — Narrow It Down",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "elimination-method-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use elimination to find the right answer when all the options look similar",
+            "How to knock out wrong answers one by one like a detective"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Too many options? Time to eliminate!",
+              "body": "Daisy is using elimination to find the right answer.\n\n**PART = 6238**\n\nWhat is the code for **TRAP**?\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nThey all look really similar! But don't panic — there's a smart way to do this. Instead of guessing, **cross out** the wrong ones step by step.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "PART",
+                      "6238"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TRAP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check one position at a time",
+              "body": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cross it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "T=8, so the code MUST start with 8 → eliminates 3826",
+                    "why": "Cross it out!"
+                  },
+                  {
+                    "text": "R=3, so the second digit MUST be 3 → eliminates 8236 and 8632",
+                    "why": "Cross it out!"
+                  },
+                  {
+                    "text": "A=2, P=6, so it ends in 26 → eliminates 8362",
+                    "why": "Cross it out!"
+                  },
+                  {
+                    "text": "TRAP = 8326 ✓",
+                    "why": "Last one standing!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — eliminate!",
+              "body": "**PART = 6238**\n\nWhat is the correct answer for **TRAP**?\n\nUse elimination — check each position!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct code/word for TRAP?",
+                "options": [
+                  "8326",
+                  "8362",
+                  "8236",
+                  "8632",
+                  "3826"
+                ],
+                "correctAnswer": "8326",
+                "correctFeedback": "Brilliant! P=6, A=2, R=3, T=8. TRAP starts with T→8, then R→3, then A→2, then P→6. So TRAP = 8326. Check each position to eliminate wrong answers! ✓",
+                "incorrectFeedback": "Not quite! The answer is 8326. P=6, A=2, R=3, T=8. TRAP starts with T→8, then R→3, then A→2, then P→6. So TRAP = 8326. Check each position to eliminate wrong answers! ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "PART",
+                      "6238"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "TRAP",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Elimination — your safety net!",
+              "body": "When answers look similar, elimination has your back:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check the FIRST digit/letter",
+                    "why": "This alone often eliminates 2-3 options"
+                  },
+                  {
+                    "text": "2. Check the SECOND digit/letter",
+                    "why": "Usually narrows it to 1-2 options"
+                  },
+                  {
+                    "text": "3. Verify the full code matches",
+                    "why": "The last one standing is your answer ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "elimination-method-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to stay cool and use elimination even on the trickiest code questions",
+            "Why you should never panic when answers look almost identical"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "They all look so similar... but you can do this!",
+              "body": "Evie is facing five very similar-looking options.\n\n**GUST = 8694**\n\nWhat is the code for **GUTS**?\n\nOptions: **8649**  |  **8694**  |  **8469**  |  **8496**  |  **8946**\n\nThey look nearly identical, but stay calm! Check **one position at a time** and the wrong ones will fall away.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": null,
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "GUST",
+                      "8694"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "GUTS",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Position by position",
+              "body": "From **GUST = 8694**, we need to decode **GUTS**.\n\nOptions: **8649**  |  **8694**  |  **8469**  |  **8496**  |  **8946**\n\nWhen options look nearly identical, go through **position by position**. Each check eliminates more wrong answers!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "All start with 8 (G=8) — so check the second digit",
+                    "why": "Eliminate!"
+                  },
+                  {
+                    "text": "U=6, so second digit is 6 → eliminates 8469, 8496, 8946",
+                    "why": "Eliminate!"
+                  },
+                  {
+                    "text": "T=4, S=9: ends in 49 → eliminates 8694 (that's GUST again!)",
+                    "why": "Eliminate!"
+                  },
+                  {
+                    "text": "GUTS = 8649 ✓",
+                    "why": "Found it!"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — eliminate step by step!",
+              "body": "**GUST = 8694**\n\nWhat is the code for **GUTS**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "CodeTable",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the code for GUTS?",
+                "options": [
+                  "8649",
+                  "8694",
+                  "8469",
+                  "8496",
+                  "8946"
+                ],
+                "correctAnswer": "8649",
+                "correctFeedback": "Brilliant! G=8, U=6, S=9, T=4. GUTS = G(8) U(6) T(4) S(9) = 8649. Watch out — 8694 is GUST, not GUTS! ✓",
+                "incorrectFeedback": "Not quite! The answer is 8649. G=8, U=6, S=9, T=4. GUTS = G(8) U(6) T(4) S(9) = 8649. Watch out — 8694 is GUST, not GUTS! ✓"
+              },
+              "visualProps": {
+                "headers": [
+                  "Word",
+                  "Code"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "GUST",
+                      "8694"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "GUTS",
+                      "???"
+                    ],
+                    "highlight": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Smart coders don't guess — they eliminate!",
+              "body": "When options look nearly the same, here's your winning strategy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check position 1 across all options",
+                    "why": "Usually the same — move to position 2"
+                  },
+                  {
+                    "text": "2. Check position 2 — this often eliminates half",
+                    "why": "One wrong digit = one wrong answer"
+                  },
+                  {
+                    "text": "3. Keep going until only ONE option fits",
+                    "why": "Systematic elimination beats guessing every time ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

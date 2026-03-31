@@ -1,0 +1,143 @@
+{
+  "reviewedAt": "2026-03-30T18:30:00.000Z",
+  "topic": "oddTwoOut",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 8,
+    "mappingsReviewed": 125,
+    "issuesFound": 10,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 5, "low": 3 },
+    "difficultyAssessment": "D1:D2:D3 distribution is 38:51:36 (30%:41%:29%) — very close to GL target of ~30:40:30. This is excellent calibration. D1 questions use obvious concrete categories (fruits vs vegetables, days vs months). D2 questions require more nuanced sub-categorisation (woodwind vs brass, freshwater fish vs garden birds). D3 questions test advanced vocabulary and cross-domain knowledge (igneous/sedimentary/metamorphic vs clay/chalk, soprano/tenor/alto vs crotchet/quaver). The difficulty progression is well-judged.",
+    "coverageAssessment": "Excellent breadth across category types: concrete nouns (animals, foods, instruments), abstract concepts (emotions, literary terms, scientific processes), functional groupings (purpose-based), material-based, and sub-category splits. The topic bank draws from science (rock types, body systems, energy types), geography (landforms, water features), music (instruments, voice types, note values), English (figures of speech, word classes, text structures), and general knowledge. Good mix of UK-relevant content (draughts, cheddar, brie, British geography). No significant coverage gaps.",
+    "teachingEfficacyAssessment": "8 sub-concepts with 8 lessons (32 screens) provide well-structured progression: concrete-categories (core), abstract-categories (core), function-categories (core), material-categories (supporting), category-within-category (supporting), look-for-three (supporting), hard-vocabulary (other), and red-herring-words (other). The 'Find Three' strategy lesson is pedagogically excellent — teaching children to find the group of 3 rather than hunting for the odd 2 is the key exam technique. All 125 questions mapped at high confidence. One orphan sub-concept noted. Lesson tone is warm, age-appropriate, and encouraging.",
+    "topPriorities": [
+      "Fix Q1 correctPair indices — bat is at index 2 and penguin at index 3, but correctPair shows [2,3] which is correct for the options array. However, the explanation says bat is not a bird and penguin can't fly, making the grouping 'common flying birds' debatable since eagles also eat prey rather than seeds",
+      "Address duplicate question pair Q36/Q101 (football, cricket, rugby vs painting, sculpture) and Q28/Q104 (days vs months) — near-identical questions reduce effective bank size",
+      "Diversify the repetitive tip text — only 10 tips are rotated across all 125 questions, and some tips appear on questions where they are irrelevant (e.g. 'Watch for double meanings' on straightforward category questions)"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-OTO-DUP-001",
+      "itemType": "question",
+      "itemId": "Q36,Q101",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Near-duplicate questions: both test sports vs art forms",
+      "description": "Q36 (football, rugby, painting, cricket, sculpture) and Q101 (football, cricket, painting, rugby, sculpture) use the same 5 words with only the order changed. Both have the same answer (painting + sculpture) and the same group-of-3 (team sports). This wastes a question slot. A child encountering both will get zero additional practice value.",
+      "suggestedFix": "Replace Q101 with a new D1 question using a different pair of domains — e.g. vegetables vs kitchen utensils, or sea creatures vs land mammals.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-DUP-002",
+      "itemType": "question",
+      "itemId": "Q28,Q104",
+      "severity": "high",
+      "category": "duplicate-question",
+      "title": "Near-duplicate questions: both test days of the week vs months",
+      "description": "Q28 (Monday, March, Friday, August, Wednesday) and Q104 (January, Monday, March, Friday, April) both test the same concept — days of the week vs months. Same grouping logic, same difficulty. Q104 just swaps which are the majority group. This is functionally the same question.",
+      "suggestedFix": "Replace one with a fresh D1 question using different time-related categories — e.g. seasons vs compass directions, or AM/PM times vs calendar events.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-DUP-003",
+      "itemType": "question",
+      "itemId": "Q20,Q119",
+      "severity": "medium",
+      "category": "duplicate-question",
+      "title": "Duplicate concept: both test 'sonnet + limerick' as odd pair (poetry types vs other domain)",
+      "description": "Q20 (democracy, sonnet, republic, monarchy, limerick — answer: sonnet + limerick) and Q119 (allegro, sonnet, tempo, limerick, crescendo — answer: sonnet + limerick) both have the identical odd pair of 'sonnet + limerick'. While the group-of-3 differs (government types vs musical terms), a child seeing the same answer pair twice reduces the challenge and variety.",
+      "suggestedFix": "Change Q119's odd pair to different poem types (e.g. haiku + ballad) or change the domain entirely.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q2",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Weak grouping explanation for Q2 — 'furniture you sit at or on' excludes wardrobe but not lamp",
+      "description": "Q2 options: table, chair, lamp, sofa, wardrobe. Answer: lamp + wardrobe. Explanation says 'Table, chair, and sofa are all furniture you sit at or on.' But a wardrobe is also furniture — the distinguishing feature is specifically that table/chair/sofa are seating-related furniture. The explanation should make this distinction sharper, as 'furniture you sit at or on' is the correct sub-category, but the phrasing could confuse a child who thinks 'but wardrobe is furniture too'.",
+      "suggestedFix": "Revise explanation to: 'Table, chair, and sofa are all pieces of furniture designed for sitting. A lamp gives light and a wardrobe stores clothes — neither is for sitting on or at.'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-DIFF-001",
+      "itemType": "question",
+      "itemId": "Q1",
+      "severity": "medium",
+      "category": "difficulty-calibration",
+      "title": "Q1 rated D2 but involves sub-category reasoning that could be D2 or D3",
+      "description": "Q1 (eagle, sparrow, bat, penguin, robin) is rated D2. The grouping of 'common flying birds' requires knowing that (a) a bat is a mammal, not a bird, and (b) a penguin is a bird that cannot fly. This double-layer reasoning (taxonomy + capability) is more complex than typical D2 category splits. Consider whether this belongs at D3, or at minimum acknowledge that the sub-category reasoning makes this harder than a straightforward split.",
+      "suggestedFix": "This is a judgement call — the question is well-designed. If keeping at D2, ensure the lesson mapping acknowledges the sub-category complexity. The current mapping to 'red-herring-words' is reasonable but 'category-within-category' might be a better fit.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q9",
+      "severity": "low",
+      "category": "difficulty-calibration",
+      "title": "Q9 (oak/daisy/willow/beech/tulip) rated D2 but is straightforward D1",
+      "description": "Q9 asks to distinguish trees (oak, willow, beech) from flowers (daisy, tulip). Most 9-year-olds can instantly distinguish trees from flowers. This is a concrete, obvious category split more suited to D1 than D2.",
+      "suggestedFix": "Reclassify from D2 to D1. This is a typical 'plants' sub-category question that children encounter in Year 3-4 science.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-EXPL-002",
+      "itemType": "question",
+      "itemId": "Q40",
+      "severity": "medium",
+      "category": "answer-accuracy",
+      "title": "Q40 explanation says caterpillar is an insect — technically debatable for a caterpillar",
+      "description": "Q40 (caterpillar, frog, butterfly, toad, bee). Answer: frog + toad. Explanation: 'Caterpillar, butterfly, and bee are all insects.' A caterpillar is the larval stage of a butterfly (a lepidopteran), so calling it an 'insect' is taxonomically correct (it is an insect larva). However, the grouping works perfectly and the answer is unambiguously correct. This is a minor pedantic point but worth noting for scientific accuracy.",
+      "suggestedFix": "No change needed to the answer. Optionally refine explanation to 'Caterpillar, butterfly, and bee are all insects (a caterpillar is a butterfly larva)' for extra educational value.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-TIPS-001",
+      "itemType": "question",
+      "itemId": "multiple",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Only 10 tip texts rotated across all 125 questions, some contextually mismatched",
+      "description": "All 125 questions use one of exactly 10 tip strings, rotated in sequence regardless of question content. For example, 'Watch for double meanings' appears on Q6 (instruments vs art supplies), Q14 (length vs weight units), Q22 (furniture vs clothing), Q30 (buildings vs transport) — none of which involve double meanings. Similarly, 'Tip: The two odd words do NOT need to relate to each other' appears on questions where the two odd words DO relate (e.g. Q11 cotton + silk, both fabrics). Tips should be either contextually relevant or omitted.",
+      "suggestedFix": "Either (a) assign tips based on question characteristics (use 'Watch for double meanings' only when a word genuinely has multiple meanings, use 'sub-category' tip when all 5 seem related), or (b) use a smaller set of universally applicable tips and remove contextually misleading ones.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-EXPL-003",
+      "itemType": "question",
+      "itemId": "Q10,Q26,Q50,Q82",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Double full stop in some tip text",
+      "description": "Several questions have tip text ending with a double full stop: 'Tip: Name the link specifically. 'All trees' is better than 'all nature things'..' — note the two dots at the end. This appears on Q10, Q18, Q26, Q34, Q42, Q50, Q58, Q66, Q74, Q82, Q90 and more (every 8th question using this tip rotation).",
+      "suggestedFix": "Remove the trailing extra full stop from the tip text. Change '..' to '.'.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-OTO-MAP-001",
+      "itemType": "mapping",
+      "itemId": "orphan-red-herring-words",
+      "severity": "low",
+      "category": "mapping-efficacy",
+      "title": "1 orphan sub-concept noted in mapping metadata",
+      "description": "The mapping metadata reports 1 orphan sub-concept. The 'red-herring-words' sub-concept has a lesson but some questions mapped to it (e.g. Q1) might be better served by 'category-within-category'. The lesson teaches avoiding first-instinct traps, which is valuable, but the mapping could be more precise for questions that specifically test sub-category reasoning vs distractor avoidance.",
+      "suggestedFix": "Review the ~15 questions mapped to 'red-herring-words' and consider whether any are better mapped to 'category-within-category' or 'abstract-categories' for more targeted lesson delivery.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,1842 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "synonyms",
+    "displayName": "Synonyms",
+    "extractedAt": "2026-03-30T13:52:00.595Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "begin + start",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "peculiar + strange",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "conceal + hide",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "diligent + hardworking",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tranquil + peaceful",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "wealthy + rich",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "timid + shy",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "joyful + happy",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "thrifty + economical",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "obstinate + stubborn",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vacant + empty",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "flourish + thrive",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "laborious + arduous",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "elated + overjoyed",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "meticulous + thorough",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "angry + cross",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "annual + yearly",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "novice + beginner",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "terrified + scared",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "demonstrate + show",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "loud + noisy",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "fast + quick",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "big + large",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "small + little",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "sad + unhappy",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "pretty + beautiful",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "clever + smart",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "rude + impolite",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "silent + quiet",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "shut + close",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "reply + answer",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "lucky + fortunate",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "choose + select",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "grab + seize",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "laugh + giggle",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "destroy + demolish",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "mend + repair",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "shout + yell",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "scatter + spread",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "ancient + old",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "ill + sick",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "gift + present",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "error + mistake",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "centre + middle",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "cautious + careful",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "generous + charitable",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "headstrong + resolute",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "deserted + abandoned",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "bashful + reserved",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "purchase + buy",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "genuine + authentic",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "abundant + plentiful",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "hostile + unfriendly",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "reluctant + unwilling",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "praise + commend",
+      "subConceptId": "abstract-synonyms",
+      "subConceptName": "Big Ideas — Abstract Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"courage\"** means the quality of being brave when facing danger — it's an abstract word (an idea you can't see or touch). Abstract words can feel tricky, but if you can **explain what they mean**, y",
+      "lessonLearningGoal": [
+        "How to find synonyms for abstract concepts (ideas you can't touch) — these words describe the big ideas in life!",
+        "Why defining the concept in your own words first is the key to matching"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "decrease + reduce",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "arrive + reach",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "defend + protect",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "accept + agree",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "unite + combine",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "solemn + serious",
+      "subConceptId": "formal-informal",
+      "subConceptName": "Formal vs Informal Words",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"purchase\"** is just a fancy way of saying **\"buy\"**. Loads of 11+ synonym questions pair a **formal word** with its **everyday twin** — they mean exactly the same thing. Once you spot the ",
+      "lessonLearningGoal": [
+        "How to recognise that formal and informal words can be synonyms — every posh word has a simple twin hiding in plain sight!",
+        "Why the 11+ loves pairing a fancy word with a simple one (and how to crack it every time)"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vast + immense",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vivid + bright",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "polite + courteous",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "sturdy + robust",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "arrogant + conceited",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vanish + disappear",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "eager + keen",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "honest + truthful",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "dull + boring",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "vague + unclear",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "glimpse + glance",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "temporary + brief",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "grasp + grip",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "triumph + victory",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "soggy + damp",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "serene + calm",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "persistent + determined",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "irritate + annoy",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "bewildered + confused",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "nimble + agile",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "prosperous + affluent",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "malevolent + wicked",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "gregarious + sociable",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "shrewd + astute",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "inevitable + unavoidable",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "scrupulous + painstaking",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "negligent + careless",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "obscure + vague",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "resilient + tough",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "scrutinise + examine",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "tenacious + dogged",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "clandestine + secret",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "sublime + magnificent",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "valiant + heroic",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "sparse + meagre",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "absolve + forgive",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "compel + force",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "deteriorate + decline",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "provoke + aggravate",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "afraid + frightened",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "tidy + neat",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "glad + pleased",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "keep + hold",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "below + under",
+      "subConceptId": "emotion-synonyms",
+      "subConceptName": "Feelings & Emotions",
+      "confidence": "high",
+      "lessonTeachSummary": "The word **\"scared\"** is a medium-level emotion. Its synonym must be at the **same strength** — think of it like a volume dial:",
+      "lessonLearningGoal": [
+        "How to match emotion words at the same strength level — think of emotions like a volume dial!",
+        "How to tell the difference between similar emotions (angry vs annoyed vs furious) — this is trickier than it sounds!"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "leap + jump",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "thin + slim",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 1,
+      "correctAnswer": "damp + wet",
+      "subConceptId": "common-synonyms",
+      "subConceptName": "Common Everyday Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Here's a brilliant trick you can use anywhere! Pop **\"happy\"** and **\"glad\"** into the same sentence — if the meaning stays **exactly** the same, they're synonyms. Easy!",
+      "lessonLearningGoal": [
+        "How to spot everyday synonym (words that mean the same thing) pairs — you already know more of these than you realise!",
+        "How to use the swap test — pop a word into a sentence, swap it out, and if the meaning stays the same, you've found a synonym. This trick is golden!"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "odour + smell",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "voyage + journey",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "assist + help",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "weary + exhausted",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "stumble + trip",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "scarce + rare",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "permit + allow",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "restore + renovate",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "cunning + sly",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 2,
+      "correctAnswer": "ancient + prehistoric",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "prudent + wary",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "conquest + achievement",
+      "subConceptId": "abstract-synonyms",
+      "subConceptName": "Big Ideas — Abstract Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"courage\"** means the quality of being brave when facing danger — it's an abstract word (an idea you can't see or touch). Abstract words can feel tricky, but if you can **explain what they mean**, y",
+      "lessonLearningGoal": [
+        "How to find synonyms for abstract concepts (ideas you can't touch) — these words describe the big ideas in life!",
+        "Why defining the concept in your own words first is the key to matching"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "diminish + dwindle",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "absurd + ridiculous",
+      "subConceptId": "adjective-synonyms",
+      "subConceptName": "Describing Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"enormous\"** describes the a building's quality. A describing-word synonym must describe the **same quality** — size with size, speed with speed, age with age.",
+      "lessonLearningGoal": [
+        "How to find synonyms for describing words (adjectives) — what quality is being described?",
+        "Why checking what is being described helps find the match every time"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "absorb + assimilate",
+      "subConceptId": "verb-synonyms",
+      "subConceptName": "Action Word Synonyms",
+      "confidence": "high",
+      "lessonTeachSummary": "Think about the word **\"destroy\"** — it means to completely wreck or ruin something. Now imagine someone doing the action. Does **\"demolish\"** show the EXACT same picture?",
+      "lessonLearningGoal": [
+        "How to find synonyms for action words (verbs) — imagine the action like a video in your head!",
+        "Why picturing the action helps you find the match every time"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "lithe + supple",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Choose one word from each group that are closest in meaning.",
+      "questionDifficulty": 3,
+      "correctAnswer": "obsolete + outdated",
+      "subConceptId": "hard-vocabulary",
+      "subConceptName": "Tricky Vocabulary Pairs",
+      "confidence": "high",
+      "lessonTeachSummary": "**\"diligent\"** means working hard and carefully. When you see a hard word, **cross out options you KNOW are wrong** — this narrows it down fast.",
+      "lessonLearningGoal": [
+        "How to recognise harder synonym pairs that appear in the 11+ — these are the ones that earn top marks!",
+        "How to use elimination when you're not sure of a word (this strategy is a lifesaver)"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "context-dependent",
+      "name": "Same Word, Different Synonyms"
+    }
+  ],
+  "subConceptCoverage": {
+    "verb-synonyms": {
+      "name": "Action Word Synonyms",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 6,
+        "D2": 21,
+        "D3": 1
+      }
+    },
+    "formal-informal": {
+      "name": "Formal vs Informal Words",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 0,
+        "D2": 3,
+        "D3": 3
+      }
+    },
+    "common-synonyms": {
+      "name": "Common Everyday Synonyms",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 23,
+        "D2": 1,
+        "D3": 1
+      }
+    },
+    "emotion-synonyms": {
+      "name": "Feelings & Emotions",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 9,
+        "D2": 1,
+        "D3": 0
+      }
+    },
+    "adjective-synonyms": {
+      "name": "Describing Word Synonyms",
+      "questionCount": 27,
+      "difficulties": {
+        "D1": 0,
+        "D2": 23,
+        "D3": 4
+      }
+    },
+    "hard-vocabulary": {
+      "name": "Tricky Vocabulary Pairs",
+      "questionCount": 27,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 27
+      }
+    },
+    "abstract-synonyms": {
+      "name": "Big Ideas — Abstract Synonyms",
+      "questionCount": 2,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "numberWordCodes",
+    "displayName": "Number Word Codes",
+    "extractedAt": "2026-03-30T13:05:32.812Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 40,
+      "D2": 49,
+      "D3": 36
+    },
+    "questionTypes": {
+      "standard": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If SPOT = 1234 and TOPS = 4321, what number is the letter O?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "3",
+      "explanation": "From SPOT=1234: S=1, P=2, O=3, T=4. We can check with TOPS=4321: T=4✓, O=3✓, P=2✓, S=1✓. The letter O = 3. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If LAMP is coded as 5436 and PALM is coded as 6453, what is the code for MAP?",
+      "options": [
+        "345",
+        "436",
+        "346",
+        "356",
+        "364"
+      ],
+      "correct": 2,
+      "correctAnswer": "346",
+      "explanation": "From LAMP=5436: L=5, A=4, M=3, P=6. From PALM=6453: P=6✓, A=4✓, L=5✓, M=3✓. So MAP = M(3) A(4) P(6) = 346. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If in a code, DOG = 475 and GOD = 574, what is the code for ODD?",
+      "options": [
+        "774",
+        "744",
+        "747",
+        "754",
+        "474"
+      ],
+      "correct": 1,
+      "correctAnswer": "744",
+      "explanation": "From DOG=475: D=4, O=7, G=5. From GOD=574: G=5✓, O=7✓, D=4✓. So ODD = O(7) D(4) D(4) = 744. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If BANK = 2134 and KNAB = 4312, what is the code for NAB?",
+      "options": [
+        "123",
+        "132",
+        "321",
+        "213",
+        "312"
+      ],
+      "correct": 4,
+      "correctAnswer": "312",
+      "explanation": "From BANK=2134: B=2, A=1, N=3, K=4. Check with KNAB=4312: K=4✓, N=3✓, A=1✓, B=2✓. So NAB = N(3) A(1) B(2) = 312. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If CAR = 312 and ARC = 123, what letter does the number 3 represent?",
+      "options": [
+        "S",
+        "A",
+        "R",
+        "C",
+        "Cannot tell"
+      ],
+      "correct": 3,
+      "correctAnswer": "C",
+      "explanation": "From CAR=312: C=3, A=1, R=2. From ARC=123: A=1✓, R=2✓, C=3✓. The number 3 represents the letter C. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If SUN = 123, what is the code for NUS?",
+      "options": [
+        "132",
+        "231",
+        "312",
+        "213",
+        "321"
+      ],
+      "correct": 4,
+      "correctAnswer": "321",
+      "explanation": "From SUN=123: S=1, U=2, N=3. NUS = N(3) U(2) S(1) = 321. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If CUP = 123, what number represents the letter U?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "2",
+      "explanation": "From CUP=123: C=1, U=2, P=3. The letter U is represented by the number 2. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If BIRD = 1234, what is the code for RIB?",
+      "options": [
+        "312",
+        "321",
+        "231",
+        "123",
+        "213"
+      ],
+      "correct": 1,
+      "correctAnswer": "321",
+      "explanation": "From BIRD=1234: B=1, I=2, R=3, D=4. RIB = R(3) I(2) B(1) = 321. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If STAR = 1234, what is the code for RATS?",
+      "options": [
+        "3412",
+        "4312",
+        "3421",
+        "4231",
+        "4321"
+      ],
+      "correct": 4,
+      "correctAnswer": "4321",
+      "explanation": "From STAR=1234: S=1, T=2, A=3, R=4. RATS = R(4) A(3) T(2) S(1) = 4321. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If FISH = 1234, what is the code for HIS?",
+      "options": [
+        "342",
+        "432",
+        "243",
+        "234",
+        "423"
+      ],
+      "correct": 4,
+      "correctAnswer": "423",
+      "explanation": "From FISH=1234: F=1, I=2, S=3, H=4. HIS = H(4) I(2) S(3) = 423. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If CLAP = 1234, what is the code for CALL?",
+      "options": [
+        "1332",
+        "1232",
+        "1223",
+        "1322",
+        "1233"
+      ],
+      "correct": 3,
+      "correctAnswer": "1322",
+      "explanation": "From CLAP=1234: C=1, L=2, A=3, P=4. CALL = C(1) A(3) L(2) L(2) = 1322. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If TIGER = 12345, what is the code for GRIT?",
+      "options": [
+        "3215",
+        "3512",
+        "3251",
+        "5321",
+        "3521"
+      ],
+      "correct": 4,
+      "correctAnswer": "3521",
+      "explanation": "From TIGER=12345: T=1, I=2, G=3, E=4, R=5. GRIT = G(3) R(5) I(2) T(1) = 3521. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If MANGO = 12345, what number represents the letter G?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 3,
+      "correctAnswer": "4",
+      "explanation": "From MANGO=12345: M=1, A=2, N=3, G=4, O=5. The letter G is represented by the number 4. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If LEMON = 12345, what is the code for MELON?",
+      "options": [
+        "31245",
+        "32145",
+        "32154",
+        "23145",
+        "31254"
+      ],
+      "correct": 1,
+      "correctAnswer": "32145",
+      "explanation": "From LEMON=12345: L=1, E=2, M=3, O=4, N=5. MELON = M(3) E(2) L(1) O(4) N(5) = 32145. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If PLATE = 12345, what is the code for TAPE?",
+      "options": [
+        "4513",
+        "4351",
+        "4135",
+        "3415",
+        "4315"
+      ],
+      "correct": 4,
+      "correctAnswer": "4315",
+      "explanation": "From PLATE=12345: P=1, L=2, A=3, T=4, E=5. TAPE = T(4) A(3) P(1) E(5) = 4315. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If BIG = 123, what is the code for GIB?",
+      "options": [
+        "132",
+        "312",
+        "231",
+        "213",
+        "321"
+      ],
+      "correct": 4,
+      "correctAnswer": "321",
+      "explanation": "From BIG=123: B=1, I=2, G=3. GIB = G(3) I(2) B(1) = 321. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If TRAIN = 12345, what is the code for RAIN?",
+      "options": [
+        "3245",
+        "1234",
+        "2354",
+        "2345",
+        "2435"
+      ],
+      "correct": 3,
+      "correctAnswer": "2345",
+      "explanation": "From TRAIN=12345: T=1, R=2, A=3, I=4, N=5. RAIN = R(2) A(3) I(4) N(5) = 2345. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "If DESK = 1234, what number represents the letter S?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "3",
+      "explanation": "From DESK=1234: D=1, E=2, S=3, K=4. The letter S is represented by the number 3. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "If PLANE = 12345, what is the code for PANEL?",
+      "options": [
+        "13245",
+        "13425",
+        "13254",
+        "13524",
+        "13452"
+      ],
+      "correct": 4,
+      "correctAnswer": "13452",
+      "explanation": "From PLANE=12345: P=1, L=2, A=3, N=4, E=5. PANEL = P(1) A(3) N(4) E(5) L(2) = 13452. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "If FLAME = 12345, what is the code for MALE?",
+      "options": [
+        "4352",
+        "4325",
+        "4235",
+        "4253",
+        "4532"
+      ],
+      "correct": 1,
+      "correctAnswer": "4325",
+      "explanation": "From FLAME=12345: F=1, L=2, A=3, M=4, E=5. MALE = M(4) A(3) L(2) E(5) = 4325. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, CAT = 123. What is the code for ACT?",
+      "options": [
+        "312",
+        "321",
+        "231",
+        "132",
+        "213"
+      ],
+      "correct": 4,
+      "correctAnswer": "213",
+      "explanation": "From CAT = 123: C=1, A=2, T=3. ACT = A(2) C(1) T(3) = 213. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, DOG = 214. What is the code for GOD?",
+      "options": [
+        "142",
+        "241",
+        "412",
+        "421",
+        "124"
+      ],
+      "correct": 2,
+      "correctAnswer": "412",
+      "explanation": "From DOG = 214: D=2, O=1, G=4. GOD = G(4) O(1) D(2) = 412. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, PEN = 531. What is the code for NEP?",
+      "options": [
+        "315",
+        "153",
+        "135",
+        "351",
+        "513"
+      ],
+      "correct": 2,
+      "correctAnswer": "135",
+      "explanation": "From PEN = 531: P=5, E=3, N=1. NEP = N(1) E(3) P(5) = 135. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, BUS = 743. What is the code for SUB?",
+      "options": [
+        "374",
+        "347",
+        "473",
+        "437",
+        "734"
+      ],
+      "correct": 1,
+      "correctAnswer": "347",
+      "explanation": "From BUS = 743: B=7, U=4, S=3. SUB = S(3) U(4) B(7) = 347. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, TAP = 926. What is the code for PAT?",
+      "options": [
+        "269",
+        "692",
+        "296",
+        "629",
+        "962"
+      ],
+      "correct": 3,
+      "correctAnswer": "629",
+      "explanation": "From TAP = 926: T=9, A=2, P=6. PAT = P(6) A(2) T(9) = 629. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, MOP = 815. What is the code for POM?",
+      "options": [
+        "158",
+        "581",
+        "185",
+        "518",
+        "851"
+      ],
+      "correct": 3,
+      "correctAnswer": "518",
+      "explanation": "From MOP = 815: M=8, O=1, P=5. POM = P(5) O(1) M(8) = 518. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, RUN = 341. What is the code for NUR?",
+      "options": [
+        "431",
+        "314",
+        "143",
+        "413",
+        "134"
+      ],
+      "correct": 2,
+      "correctAnswer": "143",
+      "explanation": "From RUN = 341: R=3, U=4, N=1. NUR = N(1) U(4) R(3) = 143. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, LEG = 538. What is the code for GEL?",
+      "options": [
+        "358",
+        "853",
+        "583",
+        "835",
+        "385"
+      ],
+      "correct": 3,
+      "correctAnswer": "835",
+      "explanation": "From LEG = 538: L=5, E=3, G=8. GEL = G(8) E(3) L(5) = 835. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, BAD = 123. What word does 321 stand for?",
+      "options": [
+        "ABD",
+        "DAB",
+        "DBA",
+        "ADB",
+        "BDA"
+      ],
+      "correct": 1,
+      "correctAnswer": "DAB",
+      "explanation": "From BAD = 123: B=1, A=2, D=3. So 321 = D(3) A(2) B(1) = DAB. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, TOP = 415. What word does 541 stand for?",
+      "options": [
+        "OTP",
+        "TPO",
+        "POT",
+        "OPT",
+        "PTO"
+      ],
+      "correct": 2,
+      "correctAnswer": "POT",
+      "explanation": "From TOP = 415: T=4, O=1, P=5. So 5=P, 4=T, 1=O → 541 = POT. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, WAR = 192. What word does 291 stand for?",
+      "options": [
+        "RWA",
+        "AWR",
+        "WRA",
+        "RAW",
+        "ARW"
+      ],
+      "correct": 3,
+      "correctAnswer": "RAW",
+      "explanation": "From WAR = 192: W=1, A=9, R=2. So 2=R, 9=A, 1=W → 291 = RAW. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, SIT = 893. What word does 398 stand for?",
+      "options": [
+        "STI",
+        "ITS",
+        "TSI",
+        "IST",
+        "TIS"
+      ],
+      "correct": 4,
+      "correctAnswer": "TIS",
+      "explanation": "From SIT = 893: S=8, I=9, T=3. So 3=T, 9=I, 8=S → 398 = TIS. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, SUN = 524. What number represents the letter U?",
+      "options": [
+        "5",
+        "4",
+        "2",
+        "1",
+        "3"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "From SUN = 524: S=5, U=2, N=4. The letter U is represented by 2. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, JAM = 316. What number represents the letter A?",
+      "options": [
+        "3",
+        "6",
+        "4",
+        "1",
+        "2"
+      ],
+      "correct": 3,
+      "correctAnswer": "1",
+      "explanation": "From JAM = 316: J=3, A=1, M=6. The letter A is represented by 1. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, BIG = 978. What number represents the letter G?",
+      "options": [
+        "9",
+        "7",
+        "6",
+        "8",
+        "5"
+      ],
+      "correct": 3,
+      "correctAnswer": "8",
+      "explanation": "From BIG = 978: B=9, I=7, G=8. The letter G is represented by 8. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, FAN = 263. What number represents the letter F?",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "1",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "From FAN = 263: F=2, A=6, N=3. The letter F is represented by 2. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, NET = 152 and TEN = 251. What letter does 5 represent?",
+      "options": [
+        "N",
+        "T",
+        "E",
+        "A",
+        "I"
+      ],
+      "correct": 2,
+      "correctAnswer": "E",
+      "explanation": "From NET = 152: N=1, E=5, T=2. Check: TEN = T(2) E(5) N(1) = 251. Correct! So 5 represents E. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, POT = 617 and TOP = 716. Which number represents T?",
+      "options": [
+        "6",
+        "1",
+        "3",
+        "7",
+        "5"
+      ],
+      "correct": 3,
+      "correctAnswer": "7",
+      "explanation": "From POT = 617: P=6, O=1, T=7. Check: TOP = T(7) O(1) P(6) = 716. Correct! So T is represented by 7. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, RED = 835. What is the code for DER?",
+      "options": [
+        "385",
+        "583",
+        "538",
+        "358",
+        "853"
+      ],
+      "correct": 2,
+      "correctAnswer": "538",
+      "explanation": "From RED = 835: R=8, E=3, D=5. DER = D(5) E(3) R(8) = 538. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, HAM = 694. What is the code for MAH?",
+      "options": [
+        "946",
+        "469",
+        "496",
+        "964",
+        "649"
+      ],
+      "correct": 2,
+      "correctAnswer": "496",
+      "explanation": "From HAM = 694: H=6, A=9, M=4. MAH = M(4) A(9) H(6) = 496. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, OWL = 647. What is the code for LOW?",
+      "options": [
+        "476",
+        "746",
+        "764",
+        "674",
+        "467"
+      ],
+      "correct": 2,
+      "correctAnswer": "764",
+      "explanation": "From OWL = 647: O=6, W=4, L=7. LOW = L(7) O(6) W(4) = 764. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, DIP = 285. What is the code for PID?",
+      "options": [
+        "258",
+        "528",
+        "852",
+        "582",
+        "825"
+      ],
+      "correct": 3,
+      "correctAnswer": "582",
+      "explanation": "From DIP = 285: D=2, I=8, P=5. PID = P(5) I(8) D(2) = 582. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, GAP = 319. What is the code for PAG?",
+      "options": [
+        "193",
+        "391",
+        "931",
+        "913",
+        "139"
+      ],
+      "correct": 3,
+      "correctAnswer": "913",
+      "explanation": "From GAP = 319: G=3, A=1, P=9. PAG = P(9) A(1) G(3) = 913. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, CUB = 847. What is the code for BUC?",
+      "options": [
+        "478",
+        "487",
+        "874",
+        "784",
+        "748"
+      ],
+      "correct": 4,
+      "correctAnswer": "748",
+      "explanation": "From CUB = 847: C=8, U=4, B=7. BUC = B(7) U(4) C(8) = 748. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, LAMP = 5268. What is the code for PALM?",
+      "options": [
+        "6285",
+        "8625",
+        "8256",
+        "2856",
+        "8526"
+      ],
+      "correct": 2,
+      "correctAnswer": "8256",
+      "explanation": "From LAMP = 5268: L=5, A=2, M=6, P=8. PALM = P(8) A(2) L(5) M(6) = 8256. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, ROAD = 3125. What is the code for DORA?",
+      "options": [
+        "5312",
+        "5132",
+        "5213",
+        "1532",
+        "2531"
+      ],
+      "correct": 1,
+      "correctAnswer": "5132",
+      "explanation": "From ROAD = 3125: R=3, O=1, A=2, D=5. DORA = D(5) O(1) R(3) A(2) = 5132. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, PEAR = 6123. What is the code for REAP?",
+      "options": [
+        "3216",
+        "3162",
+        "1326",
+        "3126",
+        "2316"
+      ],
+      "correct": 3,
+      "correctAnswer": "3126",
+      "explanation": "From PEAR = 6123: P=6, E=1, A=2, R=3. REAP = R(3) E(1) A(2) P(6) = 3126. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, SLIM = 1578. What is the code for MILS?",
+      "options": [
+        "7851",
+        "8571",
+        "8751",
+        "8175",
+        "5871"
+      ],
+      "correct": 2,
+      "correctAnswer": "8751",
+      "explanation": "From SLIM = 1578: S=1, L=5, I=7, M=8. MILS = M(8) I(7) L(5) S(1) = 8751. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, FROG = 2945. What is the code for GORF?",
+      "options": [
+        "5924",
+        "5942",
+        "5492",
+        "4952",
+        "9542"
+      ],
+      "correct": 2,
+      "correctAnswer": "5492",
+      "explanation": "From FROG = 2945: F=2, R=9, O=4, G=5. GORF = G(5) O(4) R(9) F(2) = 5492. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, TRAM = 8524. What is the code for MART?",
+      "options": [
+        "4528",
+        "4852",
+        "2458",
+        "4258",
+        "4285"
+      ],
+      "correct": 3,
+      "correctAnswer": "4258",
+      "explanation": "From TRAM = 8524: T=8, R=5, A=2, M=4. MART = M(4) A(2) R(5) T(8) = 4258. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, WINE = 3297. What is the code for WEIN?",
+      "options": [
+        "3972",
+        "3279",
+        "3927",
+        "3729",
+        "3792"
+      ],
+      "correct": 3,
+      "correctAnswer": "3729",
+      "explanation": "From WINE = 3297: W=3, I=2, N=9, E=7. WEIN = W(3) E(7) I(2) N(9) = 3729. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, GALE = 8279. What is the code for LAGE?",
+      "options": [
+        "7298",
+        "7928",
+        "7289",
+        "2789",
+        "9278"
+      ],
+      "correct": 2,
+      "correctAnswer": "7289",
+      "explanation": "From GALE = 8279: G=8, A=2, L=7, E=9. LAGE = L(7) A(2) G(8) E(9) = 7289. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, BOLT = 1352. What is the code for BLOT?",
+      "options": [
+        "1523",
+        "1352",
+        "1532",
+        "5132",
+        "1253"
+      ],
+      "correct": 2,
+      "correctAnswer": "1532",
+      "explanation": "From BOLT = 1352: B=1, O=3, L=5, T=2. BLOT = B(1) L(5) O(3) T(2) = 1532. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, DESK = 4791. What is the code for SKED?",
+      "options": [
+        "9147",
+        "9714",
+        "1974",
+        "9174",
+        "1794"
+      ],
+      "correct": 3,
+      "correctAnswer": "9174",
+      "explanation": "From DESK = 4791: D=4, E=7, S=9, K=1. SKED = S(9) K(1) E(7) D(4) = 9174. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, SNAP = 4819. What is the code for PANS?",
+      "options": [
+        "9418",
+        "9814",
+        "9148",
+        "9184",
+        "1984"
+      ],
+      "correct": 3,
+      "correctAnswer": "9184",
+      "explanation": "From SNAP = 4819: S=4, N=8, A=1, P=9. PANS = P(9) A(1) N(8) S(4) = 9184. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, ITEM = 2896. What word does 6289 stand for?",
+      "options": [
+        "EMIT",
+        "TIME",
+        "MITE",
+        "MEIT",
+        "TIEM"
+      ],
+      "correct": 2,
+      "correctAnswer": "MITE",
+      "explanation": "From ITEM = 2896: I=2, T=8, E=9, M=6. So 6=M, 2=I, 8=T, 9=E → 6289 = MITE. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, LAME = 5268. What word does 6258 stand for?",
+      "options": [
+        "MEAL",
+        "MALE",
+        "EMAL",
+        "LEAM",
+        "ALEM"
+      ],
+      "correct": 1,
+      "correctAnswer": "MALE",
+      "explanation": "From LAME = 5268: L=5, A=2, M=6, E=8. So 6=M, 2=A, 5=L, 8=E → 6258 = MALE. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, EAST = 7218. What word does 8721 stand for?",
+      "options": [
+        "SEAT",
+        "SATE",
+        "TEAS",
+        "ETAS",
+        "ATES"
+      ],
+      "correct": 2,
+      "correctAnswer": "TEAS",
+      "explanation": "From EAST = 7218: E=7, A=2, S=1, T=8. So 8=T, 7=E, 2=A, 1=S → 8721 = TEAS. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, POTS = 6421. What word does 1246 stand for?",
+      "options": [
+        "TOPS",
+        "STOP",
+        "SPOT",
+        "OPTS",
+        "POST"
+      ],
+      "correct": 1,
+      "correctAnswer": "STOP",
+      "explanation": "From POTS = 6421: P=6, O=4, T=2, S=1. So 1=S, 2=T, 4=O, 6=P → 1246 = STOP. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, PART = 6238. What word does 8326 stand for?",
+      "options": [
+        "RAPT",
+        "TRAP",
+        "TARP",
+        "PRAT",
+        "RATA"
+      ],
+      "correct": 1,
+      "correctAnswer": "TRAP",
+      "explanation": "From PART = 6238: P=6, A=2, R=3, T=8. So 8=T, 3=R, 2=A, 6=P → 8326 = TRAP. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, CAST = 1238. What word does 3128 stand for?",
+      "options": [
+        "SATC",
+        "TACS",
+        "ACTS",
+        "CATS",
+        "SCAT"
+      ],
+      "correct": 4,
+      "correctAnswer": "SCAT",
+      "explanation": "From CAST = 1238: C=1, A=2, S=3, T=8. So 3=S, 1=C, 2=A, 8=T → 3128 = SCAT. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, PINS = 6281. What word does 1826 stand for?",
+      "options": [
+        "NIPS",
+        "SPIN",
+        "SNIP",
+        "PSIN",
+        "INSP"
+      ],
+      "correct": 2,
+      "correctAnswer": "SNIP",
+      "explanation": "From PINS = 6281: P=6, I=2, N=8, S=1. So 1=S, 8=N, 2=I, 6=P → 1826 = SNIP. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, STAR = 4825. What number represents the letter A?",
+      "options": [
+        "4",
+        "8",
+        "2",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "correctAnswer": "2",
+      "explanation": "From STAR = 4825: S=4, T=8, A=2, R=5. The letter A is represented by 2. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, DRUM = 5168. What number represents the letter U?",
+      "options": [
+        "5",
+        "1",
+        "8",
+        "6",
+        "3"
+      ],
+      "correct": 3,
+      "correctAnswer": "6",
+      "explanation": "From DRUM = 5168: D=5, R=1, U=6, M=8. The letter U is represented by 6. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, HELP = 6258. What number represents the letter L?",
+      "options": [
+        "6",
+        "2",
+        "8",
+        "5",
+        "3"
+      ],
+      "correct": 3,
+      "correctAnswer": "5",
+      "explanation": "From HELP = 6258: H=6, E=2, L=5, P=8. The letter L is represented by 5. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, CLAP = 9528. What number represents the letter P?",
+      "options": [
+        "9",
+        "5",
+        "2",
+        "8",
+        "6"
+      ],
+      "correct": 3,
+      "correctAnswer": "8",
+      "explanation": "From CLAP = 9528: C=9, L=5, A=2, P=8. The letter P is represented by 8. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, FIST = 2948. What number represents the letter I?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "9",
+        "6"
+      ],
+      "correct": 3,
+      "correctAnswer": "9",
+      "explanation": "From FIST = 2948: F=2, I=9, S=4, T=8. The letter I is represented by 9. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, PEAR = 6123 and REAP = 3126. What letter does 2 represent?",
+      "options": [
+        "P",
+        "E",
+        "R",
+        "A",
+        "S"
+      ],
+      "correct": 3,
+      "correctAnswer": "A",
+      "explanation": "From PEAR = 6123: P=6, E=1, A=2, R=3. Check REAP: R(3) E(1) A(2) P(6) = 3126. Consistent! So 2 represents A. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, LATE = 5289 and TALE = 8259. What letter does 9 represent?",
+      "options": [
+        "L",
+        "A",
+        "T",
+        "E",
+        "S"
+      ],
+      "correct": 3,
+      "correctAnswer": "E",
+      "explanation": "From LATE = 5289: L=5, A=2, T=8, E=9. Check TALE: T(8) A(2) L(5) E(9) = 8259. Consistent! So 9 represents E. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, MEAT = 6728 and TEAM = 8726. What is the code for TAME?",
+      "options": [
+        "8276",
+        "8672",
+        "8627",
+        "8267",
+        "8762"
+      ],
+      "correct": 3,
+      "correctAnswer": "8267",
+      "explanation": "From MEAT = 6728: M=6, E=7, A=2, T=8. Check TEAM: T(8) E(7) A(2) M(6) = 8726. Consistent! TAME = T(8) A(2) M(6) E(7) = 8267. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, ROPE = 3169 and PORE = 6139. What is the code for REPO?",
+      "options": [
+        "3916",
+        "3691",
+        "3961",
+        "9361",
+        "6391"
+      ],
+      "correct": 2,
+      "correctAnswer": "3961",
+      "explanation": "From ROPE = 3169: R=3, O=1, P=6, E=9. Check PORE: P(6) O(1) R(3) E(9) = 6139. Consistent! REPO = R(3) E(9) P(6) O(1) = 3961. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, NAIL = 1235 and LAIN = 5231. What letter does 3 represent?",
+      "options": [
+        "N",
+        "A",
+        "I",
+        "L",
+        "E"
+      ],
+      "correct": 2,
+      "correctAnswer": "I",
+      "explanation": "From NAIL = 1235: N=1, A=2, I=3, L=5. Check LAIN: L(5) A(2) I(3) N(1) = 5231. Consistent! So 3 represents I. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, GUST = 8694. What is the code for GUTS?",
+      "options": [
+        "8694",
+        "8469",
+        "8649",
+        "8496",
+        "8946"
+      ],
+      "correct": 2,
+      "correctAnswer": "8649",
+      "explanation": "From GUST = 8694: G=8, U=6, S=9, T=4. GUTS = G(8) U(6) T(4) S(9) = 8649. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, WAND = 3215. What is the code for DAWN?",
+      "options": [
+        "5213",
+        "5231",
+        "5321",
+        "2531",
+        "5123"
+      ],
+      "correct": 1,
+      "correctAnswer": "5231",
+      "explanation": "From WAND = 3215: W=3, A=2, N=1, D=5. DAWN = D(5) A(2) W(3) N(1) = 5231. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, CARE = 1234. What word does 3214 stand for?",
+      "options": [
+        "ACRE",
+        "RACE",
+        "ARCE",
+        "ECAR",
+        "RECA"
+      ],
+      "correct": 1,
+      "correctAnswer": "RACE",
+      "explanation": "From CARE = 1234: C=1, A=2, R=3, E=4. So 3=R, 2=A, 1=C, 4=E → 3214 = RACE. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, DIET = 5928. What word does 8925 stand for?",
+      "options": [
+        "TDIE",
+        "TIDE",
+        "EDIT",
+        "DEIT",
+        "TIED"
+      ],
+      "correct": 4,
+      "correctAnswer": "TIED",
+      "explanation": "From DIET = 5928: D=5, I=9, E=2, T=8. So 8=T, 9=I, 2=E, 5=D → 8925 = TIED. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, CART = 1234 and CARD = 1235. What is the code for DART?",
+      "options": [
+        "5342",
+        "5324",
+        "5243",
+        "3254",
+        "5234"
+      ],
+      "correct": 4,
+      "correctAnswer": "5234",
+      "explanation": "From CART = 1234: C=1, A=2, R=3, T=4. From CARD = 1235: D=5 (C=1, A=2, R=3 are consistent). DART = D(5) A(2) R(3) T(4) = 5234. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, LAND = 5162 and SAND = 3162. What is the code for ANDS?",
+      "options": [
+        "1263",
+        "1623",
+        "6123",
+        "1632",
+        "2163"
+      ],
+      "correct": 1,
+      "correctAnswer": "1623",
+      "explanation": "From LAND = 5162: L=5, A=1, N=6, D=2. From SAND = 3162: S=3 (A=1, N=6, D=2 consistent). ANDS = A(1) N(6) D(2) S(3) = 1623. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, BONE = 1329 and TONE = 4329. What is the code for NOTE?",
+      "options": [
+        "2439",
+        "2394",
+        "2934",
+        "2349",
+        "2493"
+      ],
+      "correct": 3,
+      "correctAnswer": "2349",
+      "explanation": "From BONE = 1329: B=1, O=3, N=2, E=9. From TONE = 4329: T=4 (O=3, N=2, E=9 consistent). NOTE = N(2) O(3) T(4) E(9) = 2349. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, MADE = 6127 and DAME = 2167. What is the code for MEAD?",
+      "options": [
+        "6721",
+        "6172",
+        "6217",
+        "6712",
+        "6127"
+      ],
+      "correct": 3,
+      "correctAnswer": "6712",
+      "explanation": "From MADE = 6127: M=6, A=1, D=2, E=7. Check DAME: D(2) A(1) M(6) E(7) = 2167. Consistent! MEAD = M(6) E(7) A(1) D(2) = 6712. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, PLAN = 6521 and PANE = 6217. What is the code for LEAN?",
+      "options": [
+        "5271",
+        "5712",
+        "5217",
+        "5721",
+        "7521"
+      ],
+      "correct": 3,
+      "correctAnswer": "5721",
+      "explanation": "From PLAN = 6521: P=6, L=5, A=2, N=1. From PANE = 6217: E=7 (P=6, A=2, N=1 consistent). LEAN = L(5) E(7) A(2) N(1) = 5721. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, SHIP = 3628 and WHIP = 9628. What is the code for WISH?",
+      "options": [
+        "9326",
+        "9263",
+        "9362",
+        "9632",
+        "9236"
+      ],
+      "correct": 4,
+      "correctAnswer": "9236",
+      "explanation": "From SHIP = 3628: S=3, H=6, I=2, P=8. From WHIP = 9628: W=9 (H=6, I=2, P=8 consistent). WISH = W(9) I(2) S(3) H(6) = 9236. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, MIST = 6248 and FIST = 5248. What is the code for FITS?",
+      "options": [
+        "5248",
+        "5842",
+        "5428",
+        "5284",
+        "5824"
+      ],
+      "correct": 3,
+      "correctAnswer": "5284",
+      "explanation": "From MIST = 6248: M=6, I=2, S=4, T=8. From FIST = 5248: F=5 (I=2, S=4, T=8 consistent). FITS = F(5) I(2) T(8) S(4) = 5284. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, MEAL = 6925 and LAME = 5269. What word does 6259 stand for?",
+      "options": [
+        "ALEM",
+        "LEAM",
+        "EMAL",
+        "MALE",
+        "MLAE"
+      ],
+      "correct": 3,
+      "correctAnswer": "MALE",
+      "explanation": "From MEAL = 6925: M=6, E=9, A=2, L=5. Check LAME: L(5) A(2) M(6) E(9) = 5269. Consistent! So 6=M, 2=A, 5=L, 9=E → 6259 = MALE. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, LION = 5241 and LOIN = 5421. What word does 5214 stand for?",
+      "options": [
+        "LINO",
+        "LOIN",
+        "LION",
+        "NOLI",
+        "INOL"
+      ],
+      "correct": 0,
+      "correctAnswer": "LINO",
+      "explanation": "From LION = 5241: L=5, I=2, O=4, N=1. Check LOIN: L(5) O(4) I(2) N(1) = 5421. Consistent! So 5=L, 2=I, 1=N, 4=O → 5214 = LINO. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, LATE = 5289 and TALE = 8259. What word does 8925 stand for?",
+      "options": [
+        "TEAL",
+        "ETAL",
+        "TALE",
+        "LATE",
+        "LEAT"
+      ],
+      "correct": 0,
+      "correctAnswer": "TEAL",
+      "explanation": "From LATE = 5289: L=5, A=2, T=8, E=9. Check TALE: T(8) A(2) L(5) E(9) = 8259. Consistent! So 8=T, 9=E, 2=A, 5=L → 8925 = TEAL. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, STOP = 4826 and TOPS = 8264. What word does 6284 stand for?",
+      "options": [
+        "SPOT",
+        "POST",
+        "POTS",
+        "OPTS",
+        "TPOS"
+      ],
+      "correct": 2,
+      "correctAnswer": "POTS",
+      "explanation": "From STOP = 4826: S=4, T=8, O=2, P=6. Check TOPS: T(8) O(2) P(6) S(4) = 8264. Consistent! So 6=P, 2=O, 8=T, 4=S → 6284 = POTS. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, CARE = 1234 and RACE = 3214. What word does 2134 stand for?",
+      "options": [
+        "ARCE",
+        "ACRE",
+        "ECAR",
+        "RECA",
+        "CRAE"
+      ],
+      "correct": 1,
+      "correctAnswer": "ACRE",
+      "explanation": "From CARE = 1234: C=1, A=2, R=3, E=4. Check RACE: R(3) A(2) C(1) E(4) = 3214. Consistent! So 2=A, 1=C, 3=R, 4=E → 2134 = ACRE. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, GOAT = 8124 and BOAT = 7124. What number represents the letter O?",
+      "options": [
+        "8",
+        "7",
+        "1",
+        "2",
+        "4"
+      ],
+      "correct": 2,
+      "correctAnswer": "1",
+      "explanation": "Comparing GOAT = 8124 and BOAT = 7124: the first letters differ (G vs B → 8 vs 7), so O=1, A=2, T=4. The letter O is represented by 1. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, FAST = 2148 and LAST = 5148. What number represents the letter S?",
+      "options": [
+        "2",
+        "1",
+        "4",
+        "8",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "Comparing FAST = 2148 and LAST = 5148: the first letters differ (F vs L → 2 vs 5), so A=1, S=4, T=8. The letter S is represented by 4. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, MINT = 6217 and HINT = 3217. What number represents the letter N?",
+      "options": [
+        "6",
+        "2",
+        "1",
+        "7",
+        "3"
+      ],
+      "correct": 2,
+      "correctAnswer": "1",
+      "explanation": "Comparing MINT = 6217 and HINT = 3217: the first letters differ (M vs H → 6 vs 3), so I=2, N=1, T=7. The letter N is represented by 1. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, BEAR = 1923 and DEAR = 5923. What number represents the letter R?",
+      "options": [
+        "1",
+        "9",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 3,
+      "correctAnswer": "3",
+      "explanation": "Comparing BEAR = 1923 and DEAR = 5923: the first letters differ (B vs D → 1 vs 5), so E=9, A=2, R=3. The letter R is represented by 3. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, BAND = 1245 and BEND = 1945. Which letter does 2 represent?",
+      "options": [
+        "B",
+        "A",
+        "N",
+        "D",
+        "E"
+      ],
+      "correct": 1,
+      "correctAnswer": "A",
+      "explanation": "Comparing BAND = 1245 and BEND = 1945: B=1 and ND=45 are the same in both. The second letter changes (A vs E → 2 vs 9). So 2 represents A. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, COLD = 9152 and BOLD = 7152. Which letter does 9 represent?",
+      "options": [
+        "O",
+        "L",
+        "D",
+        "B",
+        "C"
+      ],
+      "correct": 4,
+      "correctAnswer": "C",
+      "explanation": "Comparing COLD = 9152 and BOLD = 7152: the first letters differ (C vs B → 9 vs 7), so O=1, L=5, D=2. The number 9 represents C. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, ROPE = 3164 and ROBE = 3184. What is the code for BORE?",
+      "options": [
+        "8314",
+        "8134",
+        "8143",
+        "8341",
+        "8413"
+      ],
+      "correct": 1,
+      "correctAnswer": "8134",
+      "explanation": "From ROPE = 3164: R=3, O=1, P=6, E=4. From ROBE = 3184: B=8 (R=3, O=1, E=4 consistent). BORE = B(8) O(1) R(3) E(4) = 8134. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, PLATE = 65289 and PETAL = 69825. What is the code for LEAPT?",
+      "options": [
+        "59286",
+        "59268",
+        "59628",
+        "52968",
+        "59826"
+      ],
+      "correct": 1,
+      "correctAnswer": "59268",
+      "explanation": "From PLATE = 65289: P=6, L=5, A=2, T=8, E=9. Check PETAL: P(6) E(9) T(8) A(2) L(5) = 69825. Consistent! LEAPT = L(5) E(9) A(2) P(6) T(8) = 59268. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, STARE = 18234 and RATES = 32841. What is the code for TEARS?",
+      "options": [
+        "84213",
+        "84231",
+        "84321",
+        "82431",
+        "84132"
+      ],
+      "correct": 1,
+      "correctAnswer": "84231",
+      "explanation": "From STARE = 18234: S=1, T=8, A=2, R=3, E=4. Check RATES: R(3) A(2) T(8) E(4) S(1) = 32841. Consistent! TEARS = T(8) E(4) A(2) R(3) S(1) = 84231. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, CRATE = 13289 and TRACE = 83219. What word does 12893 stand for?",
+      "options": [
+        "CATER",
+        "REACT",
+        "CARTE",
+        "RECTA",
+        "ARECT"
+      ],
+      "correct": 0,
+      "correctAnswer": "CATER",
+      "explanation": "From CRATE = 13289: C=1, R=3, A=2, T=8, E=9. Check TRACE: T(8) R(3) A(2) C(1) E(9) = 83219. Consistent! So 1=C, 2=A, 8=T, 9=E, 3=R → 12893 = CATER. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, STEAM = 18926 and MEATS = 69281. What is the code for MATES?",
+      "options": [
+        "62981",
+        "62891",
+        "62819",
+        "62918",
+        "62198"
+      ],
+      "correct": 1,
+      "correctAnswer": "62891",
+      "explanation": "From STEAM = 18926: S=1, T=8, E=9, A=2, M=6. Check MEATS: M(6) E(9) A(2) T(8) S(1) = 69281. Consistent! MATES = M(6) A(2) T(8) E(9) S(1) = 62891. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, PARSE = 62349 and SPARE = 46239. What word does 69234 stand for?",
+      "options": [
+        "SPEAR",
+        "PEARS",
+        "REAPS",
+        "RAPES",
+        "APERS"
+      ],
+      "correct": 1,
+      "correctAnswer": "PEARS",
+      "explanation": "From PARSE = 62349: P=6, A=2, R=3, S=4, E=9. Check SPARE: S(4) P(6) A(2) R(3) E(9) = 46239. Consistent! So 6=P, 9=E, 2=A, 3=R, 4=S → 69234 = PEARS. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, HOP = 123. What is the code for POH?",
+      "options": [
+        "321",
+        "312",
+        "231",
+        "213",
+        "132"
+      ],
+      "correct": 0,
+      "correctAnswer": "321",
+      "explanation": "From HOP = 123: H=1, O=2, P=3. POH = P(3) O(2) H(1) = 321. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, WEB = 456. What number represents the letter E?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "Cannot tell"
+      ],
+      "correct": 1,
+      "correctAnswer": "5",
+      "explanation": "From WEB = 456: W=4, E=5, B=6. The letter E is represented by 5. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, FOX = 738. What is the code for OXF?",
+      "options": [
+        "387",
+        "378",
+        "873",
+        "837",
+        "783"
+      ],
+      "correct": 0,
+      "correctAnswer": "387",
+      "explanation": "From FOX = 738: F=7, O=3, X=8. OXF = O(3) X(8) F(7) = 387. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, VAN = 591. What word does 195 stand for?",
+      "options": [
+        "NAV",
+        "NVA",
+        "ANV",
+        "AVN",
+        "VNA"
+      ],
+      "correct": 0,
+      "correctAnswer": "NAV",
+      "explanation": "From VAN = 591: V=5, A=9, N=1. So 1=N, 9=A, 5=V → 195 = NAV. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, SAW = 624. What is the code for WAS?",
+      "options": [
+        "462",
+        "426",
+        "246",
+        "264",
+        "642"
+      ],
+      "correct": 1,
+      "correctAnswer": "426",
+      "explanation": "From SAW = 624: S=6, A=2, W=4. WAS = W(4) A(2) S(6) = 426. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, CUB = 371. What number represents the letter C?",
+      "options": [
+        "1",
+        "7",
+        "3",
+        "2",
+        "Cannot tell"
+      ],
+      "correct": 2,
+      "correctAnswer": "3",
+      "explanation": "From CUB = 371: C=3, U=7, B=1. The letter C is represented by 3. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, TIN = 825 and NIT = 528. What is the code for IN?",
+      "options": [
+        "25",
+        "52",
+        "28",
+        "82",
+        "58"
+      ],
+      "correct": 0,
+      "correctAnswer": "25",
+      "explanation": "From TIN = 825: T=8, I=2, N=5. Check NIT: N(5) I(2) T(8) = 528. Consistent! IN = I(2) N(5) = 25. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "In a code, GUM = 943. What is the code for MUG?",
+      "options": [
+        "349",
+        "394",
+        "493",
+        "439",
+        "934"
+      ],
+      "correct": 0,
+      "correctAnswer": "349",
+      "explanation": "From GUM = 943: G=9, U=4, M=3. MUG = M(3) U(4) G(9) = 349. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, FORK = 1234. What is the code for ROOF?",
+      "options": [
+        "3221",
+        "3212",
+        "3122",
+        "2312",
+        "2321"
+      ],
+      "correct": 0,
+      "correctAnswer": "3221",
+      "explanation": "From FORK = 1234: F=1, O=2, R=3, K=4. ROOF = R(3) O(2) O(2) F(1) = 3221. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, BELT = 3958. What is the code for TELL?",
+      "options": [
+        "8955",
+        "8599",
+        "8959",
+        "8995",
+        "8595"
+      ],
+      "correct": 0,
+      "correctAnswer": "8955",
+      "explanation": "From BELT = 3958: B=3, E=9, L=5, T=8. TELL = T(8) E(9) L(5) L(5) = 8955. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, DRUM = 2746. What is the code for MUDD?",
+      "options": [
+        "6422",
+        "6424",
+        "6442",
+        "6244",
+        "6242"
+      ],
+      "correct": 0,
+      "correctAnswer": "6422",
+      "explanation": "From DRUM = 2746: D=2, R=7, U=4, M=6. MUDD = M(6) U(4) D(2) D(2) = 6422. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, TWIG = 8614. What is the code for WIT?",
+      "options": [
+        "618",
+        "681",
+        "168",
+        "186",
+        "816"
+      ],
+      "correct": 0,
+      "correctAnswer": "618",
+      "explanation": "From TWIG = 8614: T=8, W=6, I=1, G=4. WIT = W(6) I(1) T(8) = 618. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, SNAP = 1234. What is the code for PANS?",
+      "options": [
+        "4321",
+        "4231",
+        "4213",
+        "4312",
+        "4132"
+      ],
+      "correct": 0,
+      "correctAnswer": "4321",
+      "explanation": "From SNAP = 1234: S=1, N=2, A=3, P=4. PANS = P(4) A(3) N(2) S(1) = 4321. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, PLOD = 4927. What word does 7294 stand for?",
+      "options": [
+        "DOLP",
+        "DPOL",
+        "DOPL",
+        "DLOP",
+        "DOPLL"
+      ],
+      "correct": 0,
+      "correctAnswer": "DOLP",
+      "explanation": "From PLOD = 4927: P=4, L=9, O=2, D=7. So 7=D, 2=O, 9=L, 4=P → 7294 = DOLP. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, CUBE = 1534. What is the code for BUC?",
+      "options": [
+        "351",
+        "315",
+        "531",
+        "513",
+        "153"
+      ],
+      "correct": 0,
+      "correctAnswer": "351",
+      "explanation": "From CUBE = 1534: C=1, U=5, B=3, E=4. BUC = B(3) U(5) C(1) = 351. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, LAKE = 5263. What is the code for KALE?",
+      "options": [
+        "6253",
+        "6235",
+        "6523",
+        "6532",
+        "6352"
+      ],
+      "correct": 0,
+      "correctAnswer": "6253",
+      "explanation": "From LAKE = 5263: L=5, A=2, K=6, E=3. KALE = K(6) A(2) L(5) E(3) = 6253. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, FROG = 2738 and GORF = 8372. What is the code for GOOF?",
+      "options": [
+        "8332",
+        "8323",
+        "8233",
+        "3832",
+        "3382"
+      ],
+      "correct": 0,
+      "correctAnswer": "8332",
+      "explanation": "From FROG = 2738: F=2, R=7, O=3, G=8. Check GORF: G(8) O(3) R(7) F(2) = 8372. Consistent! GOOF = G(8) O(3) O(3) F(2) = 8332. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a code, WIND = 4152. What is the code for WINN?",
+      "options": [
+        "4155",
+        "4515",
+        "4551",
+        "4511",
+        "4115"
+      ],
+      "correct": 0,
+      "correctAnswer": "4155",
+      "explanation": "From WIND = 4152: W=4, I=1, N=5, D=2. WINN = W(4) I(1) N(5) N(5) = 4155. Tip: Check your answer by substituting back — does every letter match its number? ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, GRAPE = 12345. What is the code for REAP?",
+      "options": [
+        "2534",
+        "2543",
+        "2345",
+        "2435",
+        "2354"
+      ],
+      "correct": 0,
+      "correctAnswer": "2534",
+      "explanation": "From GRAPE = 12345: G=1, R=2, A=3, P=4, E=5. REAP = R(2) E(5) A(3) P(4) = 2534. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, BLAZE = 12345. What is the code for ABLE?",
+      "options": [
+        "3125",
+        "3215",
+        "3152",
+        "3251",
+        "3512"
+      ],
+      "correct": 0,
+      "correctAnswer": "3125",
+      "explanation": "From BLAZE = 12345: B=1, L=2, A=3, Z=4, E=5. ABLE = A(3) B(1) L(2) E(5) = 3125. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, FROST = 12345. What is the code for ROOTS?",
+      "options": [
+        "23345",
+        "23354",
+        "23435",
+        "23543",
+        "23534"
+      ],
+      "correct": 1,
+      "correctAnswer": "23354",
+      "explanation": "From FROST = 12345: F=1, R=2, O=3, S=4, T=5. ROOTS = R(2) O(3) O(3) T(5) S(4) = 23354. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, SHAVE = 15384. What is the code for VASE?",
+      "options": [
+        "8314",
+        "8341",
+        "8134",
+        "8143",
+        "8413"
+      ],
+      "correct": 0,
+      "correctAnswer": "8314",
+      "explanation": "From SHAVE = 15384: S=1, H=5, A=3, V=8, E=4. VASE = V(8) A(3) S(1) E(4) = 8314. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, TIGER = 12345. What is the code for GREET?",
+      "options": [
+        "35441",
+        "35414",
+        "35144",
+        "35411",
+        "34541"
+      ],
+      "correct": 0,
+      "correctAnswer": "35441",
+      "explanation": "From TIGER = 12345: T=1, I=2, G=3, E=4, R=5. GREET = G(3) R(5) E(4) E(4) T(1) = 35441. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, CANOE = 13526. What is the code for ACNE?",
+      "options": [
+        "3156",
+        "3165",
+        "3516",
+        "3561",
+        "3615"
+      ],
+      "correct": 0,
+      "correctAnswer": "3156",
+      "explanation": "From CANOE = 13526: C=1, A=3, N=5, O=2, E=6. ACNE = A(3) C(1) N(5) E(6) = 3156. Tip: You don't need to decode every letter — just the ones in your target word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a code, BROAD = 42635 and BOARD = 46325. What is the code for ROAD?",
+      "options": [
+        "2635",
+        "2653",
+        "2365",
+        "2356",
+        "2563"
+      ],
+      "correct": 0,
+      "correctAnswer": "2635",
+      "explanation": "From BROAD = 42635: B=4, R=2, O=6, A=3, D=5. Check BOARD: B(4) O(6) A(3) R(2) D(5) = 46325. Consistent! ROAD = R(2) O(6) A(3) D(5) = 2635. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

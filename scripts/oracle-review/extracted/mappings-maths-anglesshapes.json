@@ -1,0 +1,3219 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "anglesshapes",
+    "displayName": "Angles & Shapes",
+    "extractedAt": "2026-03-30T13:52:00.467Z",
+    "totalQuestions": 225,
+    "mappedQuestions": 225,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 11,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 224,
+      "medium": 1,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Two angles on a straight line measure 115° and x°. What is the value of x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "65°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Emma draws three angles around a point. Two angles are 100° and 130°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "130°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "A triangle has angles of 70° and 55°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "55°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 4,
+      "questionText": "Jake measures an angle and finds it is 135°. What type of angle is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Obtuse",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "An equilateral triangle has all three sides equal. What is each angle in an equilateral triangle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 6,
+      "questionText": "Sophie is building a rectangular frame. What is the sum of all four angles in a rectangle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "360°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Two angles in a triangle are 45° and 90°. What type of triangle is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Right-angled",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Tom draws an isosceles triangle with two equal angles of 65° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "80°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Lucy draws a quadrilateral with angles 80°, 100°, and 95°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "85°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "An angle measures 220°. What type of angle is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Reflex",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Ben measures angles on a straight line. One angle is 3x° and the other is 2x°. What is the value of x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "A triangle has two angles that are each x°, and a third angle of 80°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Oliver draws two parallel lines crossed by a third line. An angle on one side is 65°. What is the corresponding angle on the other parallel line?",
+      "questionDifficulty": 3,
+      "correctAnswer": "65°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Mia finds that an exterior angle of a triangle is 120°. The two interior opposite angles are 70° and y°. What is y?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A regular pentagon has 5 equal sides and 5 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "108°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Sarah draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 110°. What is the alternate angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "110°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "A triangle has angles of 2x°, 3x°, and 4x°. What is the value of x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Charlie draws a right-angled triangle with one other angle of 35°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "55°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "A regular hexagon has 6 equal sides and 6 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Two angles on a straight line are 128° and x°. What is the value of x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "52°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Emma draws a triangle with angles 48°, 67°, and y°. What is y?",
+      "questionDifficulty": 1,
+      "correctAnswer": "65°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 25,
+      "questionText": "A triangle has angles of 95°, 42°, and z°. What is z?",
+      "questionDifficulty": 1,
+      "correctAnswer": "43°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 26,
+      "questionText": "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
+      "questionDifficulty": 1,
+      "correctAnswer": "75°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Tom draws an isosceles triangle with two equal angles of 72° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Three angles meet around a point: 115°, 130°, and p°. What is p?",
+      "questionDifficulty": 1,
+      "correctAnswer": "115°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Sophie has angles on a straight line measuring 4x° and 5x°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "An isosceles triangle has a base angle of 58°. What is the angle at the top?",
+      "questionDifficulty": 2,
+      "correctAnswer": "64°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Jake measures a right-angled triangle with one angle of 38°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "52°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "A regular octagon has 8 equal sides and 8 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "135°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Lucy calculates that three angles around a point are 90°, 145°, and 75°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "A right-angled triangle has another angle of 61°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "29°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Ben measures parallel lines crossed by a transversal. One angle is 118°. What is the corresponding angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "118°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A triangle has angles measuring 3y°, 4y°, and 5y°. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "An exterior angle of a triangle measures 135°. Two interior opposite angles are 68° and m°. What is m?",
+      "questionDifficulty": 3,
+      "correctAnswer": "67°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
+      "questionDifficulty": 1,
+      "correctAnswer": "84°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Two angles on a straight line are in the ratio 2:7. What is the smaller angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "40°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "An isosceles triangle has two equal angles of 68° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Charlie finds a triangle with angles 5a°, 6a°, and 7a°. What is a?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Parallel lines are cut by a transversal. An angle measures 73°. What is the alternate interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "73°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
+      "questionDifficulty": 1,
+      "correctAnswer": "92°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Two angles on a straight line measure 7c° and 11c°. What is c?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "A regular heptagon has 7 equal sides and 7 equal angles. What is each interior angle? (Round to 1 decimal place)",
+      "questionDifficulty": 3,
+      "correctAnswer": "128.6°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "An exterior angle of a triangle is 148°. The two opposite interior angles are 79° and d°. What is d?",
+      "questionDifficulty": 3,
+      "correctAnswer": "69°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A trapezium has angles 105°, 75°, 105°, and e°. What is e?",
+      "questionDifficulty": 1,
+      "correctAnswer": "75°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A regular nonagon has 9 equal sides and 9 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "140°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "41°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "An isosceles triangle has an exterior angle of 132°. The two base angles are equal. What is each base angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "66°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "medium",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Angles on a straight line are 3f° and 2f°. What is f?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "A triangle has angles g°, 2g°, and 3g°. What is g?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "An isosceles triangle has two equal angles of 76° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A regular decagon has 10 equal sides and 10 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "144°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "A right-angled triangle has another angle of 26°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "64°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
+      "questionDifficulty": 1,
+      "correctAnswer": "112°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Two parallel lines are crossed by a transversal. One angle measures 124°. What is the corresponding angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "124°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Two angles on a straight line are 9j° and 6j°. What is j?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "An isosceles triangle has a base angle of 47°. What is the top angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "86°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "An exterior angle of a triangle is 156°. The two opposite interior angles are 88° and k°. What is k?",
+      "questionDifficulty": 3,
+      "correctAnswer": "68°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "A triangle has angles 2p°, 3p°, and 4p°. What is p?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
+      "questionDifficulty": 1,
+      "correctAnswer": "85°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Two angles on a straight line are 5r° and 7r°. What is r?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "A right-angled triangle has another angle of 49°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "41°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "An isosceles triangle has two equal angles of 81° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A regular dodecagon has 12 equal sides and 12 equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "150°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
+      "questionDifficulty": 1,
+      "correctAnswer": "86°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 67°. What is the alternate interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "67°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "An isosceles triangle has two equal angles of 54° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "A triangle has angles 4t°, 5t°, and 6t°. What is t?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A triangle has angles measuring 7u°, 8u°, and 3u°. What is u?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Angles on a straight line are 8v° and 10v°. What is v?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "An exterior angle of a triangle is 162°. The two opposite interior angles are 95° and w°. What is w?",
+      "questionDifficulty": 3,
+      "correctAnswer": "67°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "64°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "A right-angled triangle has another angle of 57°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "33°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "A kite has angles 72°, 108°, 72°, and z°. What is z?",
+      "questionDifficulty": 1,
+      "correctAnswer": "108°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Two angles on a straight line are 6x° and 12x°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "An isosceles triangle has a base angle of 39°. What is the top angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "102°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A triangle has angles 6y°, 7y°, and 5y°. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Parallel lines are crossed by a transversal. One angle is 139°. What is the corresponding angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "139°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
+      "questionDifficulty": 1,
+      "correctAnswer": "77°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "An isosceles triangle has two equal angles of 63° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "54°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "A regular 15-sided polygon (pentadecagon) has equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "156°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Two angles on a straight line are 11c° and 7c°. What is c?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "A triangle has angles 92°, 53°, and d°. What is d?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 86,
+      "questionText": "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
+      "questionDifficulty": 1,
+      "correctAnswer": "88°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "An exterior angle of a triangle is 141°. The two opposite interior angles are 76° and f°. What is f?",
+      "questionDifficulty": 3,
+      "correctAnswer": "65°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A right-angled triangle has another angle of 44°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "46°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Angles on a straight line are 13g° and 5g°. What is g?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "An isosceles triangle has two equal angles of 77° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "26°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A triangle has angles 8h°, 9h°, and h°. What is h?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "53°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 82°. What is the alternate interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "82°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "A triangle has angles 9j°, 6j°, and 3j°. What is j?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
+      "questionDifficulty": 1,
+      "correctAnswer": "115°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "A triangle has angles 86°, 58°, and m°. What is m?",
+      "questionDifficulty": 1,
+      "correctAnswer": "36°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 97,
+      "questionText": "A right-angled triangle has another angle of 31°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "59°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Two angles on a straight line are 14n° and 4n°. What is n?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "An isosceles triangle has a base angle of 52°. What is the top angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "76°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "An exterior angle of a triangle is 128°. The two opposite interior angles are 64° and p°. What is p?",
+      "questionDifficulty": 3,
+      "correctAnswer": "64°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
+      "questionDifficulty": 1,
+      "correctAnswer": "76°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "An isosceles triangle has two equal angles of 59° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "62°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Angles on a straight line are 15r° and 3r°. What is r?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A regular 20-sided polygon (icosagon) has equal angles. What is each interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "162°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A trapezium has angles 98°, 82°, 98°, and s°. What is s?",
+      "questionDifficulty": 1,
+      "correctAnswer": "82°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Parallel lines are crossed by a transversal. One angle is 146°. What is the corresponding angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "146°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "A triangle has angles 10t°, 5t°, and 3t°. What is t?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "An isosceles triangle has a base angle of 43°. What is the top angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "94°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "A right-angled triangle has another angle of 52°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "38°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Two angles on a straight line are 16u° and 2u°. What is u?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "An exterior angle of a triangle is 150°. The two opposite interior angles are 82° and v°. What is v?",
+      "questionDifficulty": 3,
+      "correctAnswer": "68°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A triangle has angles 11w°, 4w°, and 3w°. What is w?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "A triangle has angles 78°, 64°, and x°. What is x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "38°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "45°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
+      "questionDifficulty": 1,
+      "correctAnswer": "106°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Angles on a straight line are 17z° and z°. What is z?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "An isosceles triangle has two equal angles of 70° each. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "An isosceles triangle has a base angle of 36°. What is the top angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "108°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 93°. What is the alternate interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "93°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "A right-angled triangle has another angle of 68°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
+      "questionDifficulty": 1,
+      "correctAnswer": "67°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Two angles on a straight line are in the ratio 5:13. What is the smaller angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "What do angles on a straight line add up to?",
+      "questionDifficulty": 1,
+      "correctAnswer": "180°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Two angles are on a straight line. One angle is 115°. What is the other angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "65°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Two angles sit on a straight line. One angle is 72°. What is the other angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "108°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "An angle of 90° sits on a straight line with another angle. What is the other angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "90°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "Two angles are formed on a straight line. One is 143°. What is the other?",
+      "questionDifficulty": 1,
+      "correctAnswer": "37°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Oliver draws a straight line and marks an angle of 58° on one side. What is the angle on the other side?",
+      "questionDifficulty": 1,
+      "correctAnswer": "122°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "Emma measures one of two angles on a straight line and gets 165°. What is the other angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "Two angles on a straight line are equal. What is each angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "90°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "Three angles on a straight line are 54°, 68°, and x°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "58°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Three angles sit on a straight line. Two of them are 37° and 85°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "58°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "Two straight lines cross each other. One of the angles formed is 125°. What is the angle vertically opposite to it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "125°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "Two straight lines cross. One angle is 70°. What is the angle next to it on the straight line?",
+      "questionDifficulty": 2,
+      "correctAnswer": "110°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "65°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "Two angles on a straight line are in the ratio 1:3. What is the larger angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "135°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "Jack draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Three equal angles sit on a straight line. What is each angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "Four angles on a straight line are 28°, 47°, 63°, and w°. What is w?",
+      "questionDifficulty": 3,
+      "correctAnswer": "42°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A door is open, making an angle of 65° with the wall. What is the angle between the door and the wall on the other side?",
+      "questionDifficulty": 3,
+      "correctAnswer": "115°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "Angle a is on a straight line with 130°. Angle b is vertically opposite to angle a. What is b?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Four angles on a straight line are 15°, 35°, x°, and 55°. What is x?",
+      "questionDifficulty": 3,
+      "correctAnswer": "75°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "Lily has two angles on a straight line. One angle is 3 times the size of the other. What is the smaller angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
+      "questionDifficulty": 3,
+      "correctAnswer": "112°",
+      "subConceptId": "straight-line",
+      "subConceptName": "Angles on a Straight Line = 180°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle on a straight line",
+        "Why angles on a straight line always add up to 180°"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "An angle measures 47°. What type of angle is it?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Acute",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "An angle measures 135°. What type of angle is it?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Obtuse",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Which of these is a right angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "90°",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "Sophie measures an angle of 180°. What type of angle is this?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Straight",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "An angle measures 82°. What type of angle is it?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Acute",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "Harry measures an angle of 163°. What type of angle is it?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Obtuse",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "An angle is greater than 180° but less than 360°. What type of angle is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Reflex",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "Lily says an angle of 200° is obtuse. Is she correct?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, it is a reflex angle",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "Oliver draws a triangle. Two of its angles are 50° and 60°. What type of angle is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Acute",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "Which of these angles is reflex?",
+      "questionDifficulty": 2,
+      "correctAnswer": "181°",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "Jack draws a triangle with angles 25° and 35°. What type of angle is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Obtuse",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "A clock shows 4 o'clock. What type of angle is formed between the hour hand and the minute hand?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Obtuse",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "The minute hand of a clock turns from 12 to 9. How many degrees does it turn through, and what type of angle is this?",
+      "questionDifficulty": 3,
+      "correctAnswer": "270° — a reflex angle",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "An obtuse angle is exactly 3 times the size of a 40° angle. What is the obtuse angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120°",
+      "subConceptId": "angle-types",
+      "subConceptName": "Recognising Angle Types",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to tell the difference between acute (less than 90°), right, obtuse (between 90° and 180°), straight, and reflex (more than 180°) angles",
+        "Why the size of an angle matters, not the length of the lines"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "A triangle has angles of 60° and 80°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 160,
+      "questionText": "A triangle has angles of 50° and 90°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 161,
+      "questionText": "A triangle has angles of 75° and 65°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 162,
+      "questionText": "A triangle has angles of 45° and 85°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 163,
+      "questionText": "A triangle has angles of 38° and 72°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "70°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 164,
+      "questionText": "Emma draws a triangle with angles 35° and 110°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 165,
+      "questionText": "Oliver draws a triangle. One angle is 28° and another is 124°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 166,
+      "questionText": "Lily measures two angles in a triangle as 56° and 97°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "27°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 167,
+      "questionText": "Sophie draws a triangle where one angle is twice another. The two angles are 46° and 92°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 168,
+      "questionText": "Jack draws a triangle with angles of 15° and 135°. What type of triangle is this, and what is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Obtuse, 30°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 169,
+      "questionText": "In triangle ABC, angle A is twice angle B. Angle C is 36°. What is angle A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "96°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 170,
+      "questionText": "In triangle PQR, angle P = angle Q. Angle R is 50°. What is angle P?",
+      "questionDifficulty": 3,
+      "correctAnswer": "65°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 171,
+      "questionText": "In a triangle, one angle is three times the smallest angle, and the third angle is 60°. The smallest angle is x°. What is the largest angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "90°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 172,
+      "questionText": "In a triangle, two angles are equal and the third angle is 30° more than each of the equal angles. What are the equal angles?",
+      "questionDifficulty": 3,
+      "correctAnswer": "50°",
+      "subConceptId": "master-missing-angle-triangle",
+      "subConceptName": "master-missing-angle-triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 173,
+      "questionText": "Four angles meet at a point. Three of them are 78°, 112°, and 95°. What is the fourth angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "75°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "Three angles meet at a point. Two of them are 148° and 97°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "115°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "Five angles meet at a point. Four of them are 65°, 82°, 74°, and 91°. What is the fifth angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "48°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "Four angles around a point are 118°, 76°, 83°, and x°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "83°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "Three roads meet at a roundabout. The angles between them are 156°, 98°, and y°. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "106°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "Four angles meet at a point. Three of them are 64°, 128°, and 96°. What is the fourth angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "Three equal angles and one angle of 90° meet at a point. What is each equal angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "90°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "The minute hand of a clock points at 12. It turns clockwise to point at 8. What angle has it turned through?",
+      "questionDifficulty": 3,
+      "correctAnswer": "240°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "Two angles around a point are equal, and two other angles are 70° and 130°. What is each equal angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "The minute hand of a clock points at 12. It turns clockwise to point at 5. What angle has it turned through?",
+      "questionDifficulty": 3,
+      "correctAnswer": "150°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "Four equal angles meet at a point, but one of them is then split into two parts: 50° and the rest. What is 'the rest'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "40°",
+      "subConceptId": "around-a-point",
+      "subConceptName": "Angles Around a Point = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle around a point",
+        "Why angles around a point always add up to 360°"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "An irregular quadrilateral has angles of 115°, 82°, and 74°. What is the fourth angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "89°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "A parallelogram has one angle of 65°. What is the angle directly opposite to it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "65°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "A parallelogram has one angle of 72°. What is the angle next to it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "108°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "A quadrilateral has angles of 93°, 107°, and 68°. What is the fourth angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "92°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "A trapezium has two parallel sides. One angle is 58°. The angle on the same side (co-interior) must add up to 180°. What is that co-interior angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "122°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "Three angles of a quadrilateral are 80°, 100°, and 95°. What is the fourth angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "85°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 190,
+      "questionText": "A kite has two pairs of equal adjacent angles. One pair of equal angles is 110° each. What is each angle in the other pair?",
+      "questionDifficulty": 3,
+      "correctAnswer": "70°",
+      "subConceptId": "quadrilateral-angles",
+      "subConceptName": "Angles in a Quadrilateral = 360°",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing angle in a quadrilateral (a four-sided shape)",
+        "Why the four angles in any quadrilateral add up to 360°"
+      ]
+    },
+    {
+      "questionId": 191,
+      "questionText": "A pentagon has angles of 108°, 112°, 95°, 120° and x°. What is x?",
+      "questionDifficulty": 2,
+      "correctAnswer": "105°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 192,
+      "questionText": "Grace draws a pentagon with angles 98°, 124°, 106°, 110° and y°. What is y?",
+      "questionDifficulty": 2,
+      "correctAnswer": "102°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 193,
+      "questionText": "A hexagon has angles of 130°, 110°, 125°, 115°, 140° and z°. What is z?",
+      "questionDifficulty": 2,
+      "correctAnswer": "100°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 194,
+      "questionText": "A hexagon has angles of 100°, 135°, 120°, 115°, 130° and a°. What is a?",
+      "questionDifficulty": 2,
+      "correctAnswer": "120°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "A pentagon has angles 100°, 110°, 120°, 130° and x°. Find x.",
+      "questionDifficulty": 3,
+      "correctAnswer": "80°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "A heptagon (7-sided shape) has six angles of 115°, 130°, 140°, 125°, 135° and 120°. What is the seventh angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "135°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "Oliver draws a heptagon (7 sides). Six of the angles are 128°, 132°, 119°, 145°, 126° and 110°. What is the seventh angle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "140°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "A pentagon has three angles of 108° each. The other two angles are equal. What is each of the equal angles?",
+      "questionDifficulty": 3,
+      "correctAnswer": "108°",
+      "subConceptId": "irregular-polygon-angle",
+      "subConceptName": "Finding a Missing Angle in an Irregular Polygon",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the sum of interior angles (inside angles) using (n - 2) × 180°",
+        "How to subtract the known angles to find a missing angle"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "What is each interior angle of a regular hexagon?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "How many degrees is each interior angle of a regular pentagon?",
+      "questionDifficulty": 1,
+      "correctAnswer": "108°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "What is the sum of the interior angles in any triangle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "180°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "What is the sum of the interior angles in any quadrilateral?",
+      "questionDifficulty": 1,
+      "correctAnswer": "360°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "A regular polygon has interior angles of 120° each. How many sides does it have?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "What is the sum of the interior angles of a hexagon?",
+      "questionDifficulty": 2,
+      "correctAnswer": "720°",
+      "subConceptId": "polygon-angles",
+      "subConceptName": "Interior Angles of Regular Polygons",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the sum of interior angles (inside angles) using (n - 2) x 180°",
+        "How to find one angle in a regular polygon (a shape where all sides and angles are equal)"
+      ]
+    },
+    {
+      "questionId": 205,
+      "questionText": "A right-angled triangle sits on a straight line. The right angle is at the bottom-left corner. The angle at the top of the triangle is 35°. What is th",
+      "questionDifficulty": 2,
+      "correctAnswer": "125°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 206,
+      "questionText": "In a right-angled triangle, one of the other angles is 28°. What is the third angle?",
+      "questionDifficulty": 2,
+      "correctAnswer": "62°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 207,
+      "questionText": "Sophie draws a right-angled triangle on a straight line. The angle at the top of the triangle is 50°. What is the angle between the sloping side of th",
+      "questionDifficulty": 2,
+      "correctAnswer": "140°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 208,
+      "questionText": "In a right-angled triangle, one angle is twice the size of the other non-right angle. What are the two smaller angles?",
+      "questionDifficulty": 3,
+      "correctAnswer": "30° and 60°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 209,
+      "questionText": "In a right-angled triangle, one angle is three times the size of the other non-right angle. What is the smallest angle in the triangle?",
+      "questionDifficulty": 3,
+      "correctAnswer": "22.5°",
+      "subConceptId": "right-angled-triangle",
+      "subConceptName": "Missing Angle in a Right-Angled Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to use the right angle (90°) as a known angle",
+        "Why the other two angles in a right-angled triangle add up to 90°"
+      ]
+    },
+    {
+      "questionId": 210,
+      "questionText": "An isosceles triangle has two equal angles of 70°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 211,
+      "questionText": "An isosceles triangle has two equal angles of 50°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "80°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 212,
+      "questionText": "An isosceles triangle has two equal angles of 55°. What is the third angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "70°",
+      "subConceptId": "isosceles-triangle",
+      "subConceptName": "Isosceles Triangle — Two Equal Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot an isosceles triangle (a triangle with two equal sides) from the tick marks",
+        "Why two equal sides means two equal angles"
+      ]
+    },
+    {
+      "questionId": 213,
+      "questionText": "The interior angle of a triangle at one vertex is 60°. What is the exterior angle at that vertex?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 214,
+      "questionText": "The interior angle of a triangle at one vertex is 75°. What is the exterior angle at that vertex?",
+      "questionDifficulty": 1,
+      "correctAnswer": "105°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 215,
+      "questionText": "The exterior angle of a triangle is 110°. The two non-adjacent interior angles are equal. What is each one?",
+      "questionDifficulty": 2,
+      "correctAnswer": "55°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 216,
+      "questionText": "The exterior angle of a triangle is 124°. The two non-adjacent interior angles are equal. What is each one?",
+      "questionDifficulty": 2,
+      "correctAnswer": "62°",
+      "subConceptId": "exterior-angles",
+      "subConceptName": "Exterior Angle of a Triangle",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to see that the exterior angle (the angle outside the shape) equals the two opposite interior angles (inside angles)",
+        "Why this shortcut works every time"
+      ]
+    },
+    {
+      "questionId": 217,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 70°. What is the corresponding angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "70°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 218,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 115°. What is the alternate angle?",
+      "questionDifficulty": 1,
+      "correctAnswer": "115°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 219,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 48°. What is the corresponding angle on the other parallel line?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 220,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 55°. Co-interior angles (same side of the transversal, between the parallel lines) add up to",
+      "questionDifficulty": 2,
+      "correctAnswer": "125°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 221,
+      "questionText": "Two parallel lines are cut by a transversal. One angle is 68°. What is the co-interior angle on the same side?",
+      "questionDifficulty": 2,
+      "correctAnswer": "112°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 222,
+      "questionText": "Two parallel lines are cut by a transversal forming an angle of 72°. What are the two different angle sizes formed at each intersection?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72° and 108°",
+      "subConceptId": "parallel-lines",
+      "subConceptName": "Angles with Parallel Lines",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to spot corresponding angles (in matching positions) and alternate angles (in Z-shapes) with parallel lines (lines that never meet)",
+        "Why these angles are equal when lines are parallel"
+      ]
+    },
+    {
+      "questionId": 223,
+      "questionText": "Two angles on a straight line are x° and 130°. What is x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 224,
+      "questionText": "Two angles on a straight line are x° and 95°. What is x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "85°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    },
+    {
+      "questionId": 225,
+      "questionText": "Angles around a point are x°, 100° and 150°. What is x?",
+      "questionDifficulty": 1,
+      "correctAnswer": "110°",
+      "subConceptId": "algebraic-angles",
+      "subConceptName": "Using Algebra to Find Angles",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to set up an equation when angles are given as expressions like 2x or 3x + 10",
+        "Why you must substitute back to find the actual angle, not just x"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "straight-line": {
+      "name": "Angles on a Straight Line = 180°",
+      "questionCount": 24,
+      "difficulties": {
+        "D1": 10,
+        "D2": 8,
+        "D3": 6
+      }
+    },
+    "around-a-point": {
+      "name": "Angles Around a Point = 360°",
+      "questionCount": 24,
+      "difficulties": {
+        "D1": 13,
+        "D2": 6,
+        "D3": 5
+      }
+    },
+    "master-missing-angle-triangle": {
+      "name": "master-missing-angle-triangle",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 12,
+        "D2": 5,
+        "D3": 4
+      }
+    },
+    "angle-types": {
+      "name": "Recognising Angle Types",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 8,
+        "D2": 5,
+        "D3": 3
+      }
+    },
+    "quadrilateral-angles": {
+      "name": "Angles in a Quadrilateral = 360°",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 13,
+        "D2": 4,
+        "D3": 3
+      }
+    },
+    "right-angled-triangle": {
+      "name": "Missing Angle in a Right-Angled Triangle",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 11,
+        "D2": 3,
+        "D3": 2
+      }
+    },
+    "isosceles-triangle": {
+      "name": "Isosceles Triangle — Two Equal Angles",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 3,
+        "D2": 16,
+        "D3": 1
+      }
+    },
+    "algebraic-angles": {
+      "name": "Using Algebra to Find Angles",
+      "questionCount": 33,
+      "difficulties": {
+        "D1": 3,
+        "D2": 28,
+        "D3": 2
+      }
+    },
+    "parallel-lines": {
+      "name": "Angles with Parallel Lines",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 3,
+        "D2": 3,
+        "D3": 10
+      }
+    },
+    "exterior-angles": {
+      "name": "Exterior Angle of a Triangle",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 2,
+        "D2": 2,
+        "D3": 8
+      }
+    },
+    "polygon-angles": {
+      "name": "Interior Angles of Regular Polygons",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 4,
+        "D2": 2,
+        "D3": 9
+      }
+    },
+    "irregular-polygon-angle": {
+      "name": "Finding a Missing Angle in an Irregular Polygon",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 0,
+        "D2": 4,
+        "D3": 4
+      }
+    }
+  }
+}

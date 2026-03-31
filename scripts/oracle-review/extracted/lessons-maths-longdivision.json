@@ -1,0 +1,1832 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "longdivision",
+    "displayName": "Long Division",
+    "extractedAt": "2026-03-30T13:51:13.305Z",
+    "subConceptCount": 6,
+    "lessonCount": 12,
+    "screenCount": 48,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "sharing-equally",
+      "name": "Division as Sharing Equally",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "sharing-equally-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to understand that sharing equally is the same as dividing",
+            "Why division undoes multiplication"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you share 24 sweets equally?",
+              "body": "Charlie is sharing sweets at a party. There are **24 sweets** and **6 groups**. How many does each group get?\nSharing equally IS dividing! Let's see why...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 6,
+                "dividend": 24,
+                "steps": [
+                  {
+                    "digit": "2",
+                    "result": "0",
+                    "remainder": 2,
+                    "carry": true
+                  },
+                  {
+                    "digit": "4",
+                    "result": "4",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Sharing = Dividing",
+              "body": "Sharing equally and dividing are the **same thing** — and you can always check your answer by multiplying back. Tap to see why!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "24 ÷ 6",
+                    "why": "How many in each group?",
+                    "result": "= 4"
+                  },
+                  {
+                    "text": "Check: 6 × 4",
+                    "why": "Multiplication is the reverse!",
+                    "result": "= 24 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Charlie now has **30 sweets** to share equally between **5 groups**. How many does each group get?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 30 ÷ 5?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Brilliant! 30 ÷ 5 = **6**. Each group gets **6 sweets**! ✓",
+                "incorrectFeedback": "Not quite! 30 ÷ 5 = **6**. Think: 5 × what = 30?"
+              },
+              "visualProps": {
+                "divisor": 5,
+                "dividend": 30,
+                "steps": [
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "0",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sharing and dividing — the same thing!",
+              "body": "Whenever you share things equally, you're **dividing**. And you can always **check with multiplication** — it's the reverse!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sharing equally = dividing",
+                    "why": "Total ÷ number of groups = amount in each group"
+                  },
+                  {
+                    "text": "Division is the opposite of multiplication",
+                    "why": "If 6 × 4 = 24, then 24 ÷ 6 = 4"
+                  },
+                  {
+                    "text": "Always check by multiplying back!",
+                    "why": "Groups × each = total. If it matches, you're right! ✓"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "sharing-equally-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to understand that sharing equally is the same as dividing",
+            "Why you must check division with multiplication"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Evie's mistake?",
+              "body": "Evie is sharing biscuits at a bake sale. There are **36 biscuits** shared between **9 groups**.\nEvie says each group gets **6**. Something's not right...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 9,
+                "dividend": 36,
+                "steps": [
+                  {
+                    "digit": "3",
+                    "result": "6",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "6",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check with multiplication!",
+              "body": "The quickest way to catch a division mistake is to **multiply back**. If the answer is right, you should get the original total. Tap to see what happens!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check: 9 × 6 = 54",
+                    "why": "This doesn't equal 36 — wrong!",
+                    "result": "✗"
+                  },
+                  {
+                    "text": "Correct: 9 × 4 = 36",
+                    "why": "This matches!",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try a different one!",
+              "body": "28 biscuits shared equally between 7 groups. How many in each group?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 28 ÷ 7?",
+                "options": [
+                  "4",
+                  "3",
+                  "6",
+                  "1",
+                  "8"
+                ],
+                "correctAnswer": "4",
+                "correctFeedback": "Well done! 28 ÷ 7 = **4**. Check: 7 × 4 = 28 ✓",
+                "incorrectFeedback": "Not quite! 28 ÷ 7 = **4**. Remember: 7 × 4 = 28."
+              },
+              "visualProps": {
+                "divisor": 7,
+                "dividend": 28,
+                "steps": [
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "8",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Always check your division!",
+              "body": "The best way to avoid mistakes in division is to **check with multiplication**. If groups × each = total, you're right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Work out the division",
+                    "why": "Total ÷ groups = each"
+                  },
+                  {
+                    "text": "Check by multiplying back",
+                    "why": "Groups × your answer should equal the total"
+                  },
+                  {
+                    "text": "If it doesn't match, try again!",
+                    "why": "A quick check catches silly mistakes every time. ✓"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short-division-remainders",
+      "name": "Short Division with Remainders",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "short-division-remainders-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to handle remainders in the bus stop method",
+            "How to write the remainder (the amount left over after dividing) at the end of your answer"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Miss Carter",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "157 ÷ 4 — will it divide exactly?",
+              "body": "Miss Carter is sharing coloured pencils between tables. There are **157 pencils** to share between **4** groups.\nSometimes numbers don't divide perfectly — there's a bit **left over**. That's called a remainder (the amount left over after dividing). Let's work through it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 4,
+                "dividend": 157,
+                "steps": [
+                  {
+                    "digit": "1",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "5",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "7",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Follow the bus stop method",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Let's work through **157 ÷ 4** digit by digit. The **divisor** (the number you divide by) is **4**. We carry any remainder to the next column."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 4,
+                    "dividend": 157,
+                    "steps": [
+                      {
+                        "digit": "1",
+                        "result": "0",
+                        "remainder": 1,
+                        "carry": true
+                      }
+                    ],
+                    "showAnswer": true,
+                    "highlightStep": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**Step 1:** 4 doesn't go into 1 — write 0 above and carry 1."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 4,
+                    "dividend": 157,
+                    "steps": [
+                      {
+                        "digit": "1",
+                        "result": "0",
+                        "remainder": 1,
+                        "carry": true
+                      },
+                      {
+                        "digit": "5",
+                        "result": "3",
+                        "remainder": 3,
+                        "carry": true
+                      }
+                    ],
+                    "showAnswer": true,
+                    "highlightStep": 1
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**Step 2:** The carried 1 makes it **15**.\n15 ÷ 4 = 3 remainder 3. Write 3 above."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 4,
+                    "dividend": 157,
+                    "steps": [
+                      {
+                        "digit": "1",
+                        "result": "0",
+                        "remainder": 1,
+                        "carry": true
+                      },
+                      {
+                        "digit": "5",
+                        "result": "3",
+                        "remainder": 3,
+                        "carry": true
+                      },
+                      {
+                        "digit": "7",
+                        "result": "9",
+                        "remainder": 1,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true,
+                    "highlightStep": 2
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**Step 3:** The carried 3 makes it **37**.\n37 ÷ 4 = 9 remainder 1. That's our final remainder!\n\n**Answer: 39 remainder 1** ✓"
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **215 ÷ 4**? Use the bus stop method to work it out.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 215 ÷ 4?",
+                "options": [
+                  "53 remainder 3",
+                  "54 remainder 3",
+                  "52 remainder 4",
+                  "53 remainder 4",
+                  "54 remainder 2"
+                ],
+                "correctAnswer": "53 remainder 3",
+                "correctFeedback": "Spot on! **215 ÷ 4 = 53 remainder 3**. Each group gets **53 pencils** with **3** left over! ✓",
+                "incorrectFeedback": "Not quite! 215 ÷ 4 = **53 remainder 3**. Try going digit by digit using the bus stop method."
+              },
+              "visualProps": {
+                "divisor": 4,
+                "dividend": 215,
+                "steps": [
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "1",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "5",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remainders — the leftovers!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "short-division-remainders-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when a remainder is too big",
+            "Why the remainder must be smaller than the divisor (the number you divide by)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Luca",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Luca's mistake?",
+              "body": "Luca is dividing counters between groups in maths class.\nLuca says: **197 ÷ 6 = 31 r11**.\nLook at that remainder (what is left over after dividing)... does something seem wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 6,
+                "dividend": 197,
+                "steps": [
+                  {
+                    "digit": "1",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "9",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "7",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The remainder must be smaller than the divisor!",
+              "body": "Luca stopped one step early and got a remainder of 11, which is bigger than 6. Here is the **golden rule**: the remainder must always be less than the **divisor** (the number you're dividing by). Tap to compare the wrong and right answers.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 31 r11",
+                    "why": "11 is bigger than 6 — keep dividing!",
+                    "result": "✗"
+                  },
+                  {
+                    "text": "Right: 32 r5",
+                    "why": "5 is less than 6 — that's correct!",
+                    "result": "✓"
+                  },
+                  {
+                    "text": "Check: 6 × 32 + 5 = 197",
+                    "why": "Multiply back and add the remainder to check",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try a different one!",
+              "body": "What is **233 ÷ 6**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 233 ÷ 6?",
+                "options": [
+                  "38 remainder 5",
+                  "39 remainder 5",
+                  "37 remainder 6",
+                  "38 remainder 6",
+                  "39 remainder 4"
+                ],
+                "correctAnswer": "38 remainder 5",
+                "correctFeedback": "Well done! **233 ÷ 6 = 38 remainder 5**. The remainder 5 is less than 6 — perfect! ✓",
+                "incorrectFeedback": "Not quite! 233 ÷ 6 = **38 remainder 5**. Check: 6 × 38 + 5 = 233."
+              },
+              "visualProps": {
+                "divisor": 6,
+                "dividend": 233,
+                "steps": [
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The remainder rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "long-division-method",
+      "name": "Dividing by a 2-digit Number",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "long-division-method-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to divide by a 2-digit number using long division",
+            "How to estimate, multiply, subtract, and move to the next number"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Barnes",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "432 ÷ 18 — dividing by a bigger number!",
+              "body": "Mrs Barnes is sharing out books for the school library. There are **432 books** — that's the dividend (the number being divided) — split into groups of **18** — that's the divisor (the number you divide by).\nWhen we divide by a **2-digit number**, we use **long division**. It's like the bus stop method, but with an extra step — subtracting and moving to the next number!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 18,
+                "dividend": 432,
+                "steps": [
+                  {
+                    "digit": "4",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Long division — step by step",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Let's work through **432 ÷ 18** step by step. The **divisor** (the number you divide by) is **18**. Any leftover at the end is the **remainder** (what's left over after dividing)."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 18,
+                    "dividend": 432,
+                    "steps": [
+                      {
+                        "digit": "4",
+                        "result": "?",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "3",
+                        "result": "?",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "2",
+                        "result": "?",
+                        "remainder": 0,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": false
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**1. ESTIMATE:** Look at the first two digits: **43**. How many 18s fit? **2** (because 18 × 2 = 36)."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 18,
+                    "dividend": 432,
+                    "steps": [
+                      {
+                        "digit": "4",
+                        "result": " ",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "3",
+                        "result": "2",
+                        "remainder": 7,
+                        "carry": true
+                      },
+                      {
+                        "digit": "2",
+                        "result": "?",
+                        "remainder": 0,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true,
+                    "highlightStep": 1
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**2. SUBTRACT:** 43 − 36 = **7**. This is what's left over."
+                },
+                {
+                  "type": "text",
+                  "content": "**3. MOVE TO THE NEXT NUMBER:** Put the next digit next to 7 to get **72**."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 18,
+                    "dividend": 432,
+                    "steps": [
+                      {
+                        "digit": "4",
+                        "result": " ",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "3",
+                        "result": "2",
+                        "remainder": 7,
+                        "carry": true
+                      },
+                      {
+                        "digit": "2",
+                        "result": "4",
+                        "remainder": 0,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true,
+                    "highlightStep": 2
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**4. REPEAT:** How many 18s fit into 72? **4** (because 18 × 4 = 72). Subtract: 72 − 72 = 0."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 18,
+                    "dividend": 432,
+                    "steps": [
+                      {
+                        "digit": "4",
+                        "result": " ",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "3",
+                        "result": "2",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "2",
+                        "result": "4",
+                        "remainder": 0,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "**Answer: 24** ✓"
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **378 ÷ 18**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 378 ÷ 18?",
+                "options": [
+                  "21",
+                  "20",
+                  "23",
+                  "18",
+                  "25"
+                ],
+                "correctAnswer": "21",
+                "correctFeedback": "Brilliant! **378 ÷ 18 = 21**. You've cracked long division! ✓",
+                "incorrectFeedback": "Not quite! 378 ÷ 18 = **21**. Try estimating: how many 18s fit into the first two digits?"
+              },
+              "visualProps": {
+                "divisor": 18,
+                "dividend": 378,
+                "steps": [
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "7",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "8",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Long division — four steps!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "long-division-method-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot misaligned digits in long division",
+            "Why the answer number must go above the right column"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Jake's mistake?",
+              "body": "Jake is working out how many bags of crisps to order.\nJake says: **468 ÷ 12 = 93**.\nDoes that look right to you?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": null,
+              "visualProps": {
+                "divisor": 12,
+                "dividend": 468,
+                "steps": [
+                  {
+                    "digit": "4",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "6",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "8",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Watch where you write each number!",
+              "body": "Jake wrote the answer digits in the wrong columns — 9 in the tens and 3 in the ones, instead of 3 in the tens and 9 in the ones. Keeping your columns lined up is everything! Tap to see the wrong and right answers.",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Jake wrote **93** but the correct answer is **39**."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 12,
+                    "dividend": 468,
+                    "steps": [
+                      {
+                        "digit": "4",
+                        "result": "0",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "6",
+                        "result": "3",
+                        "remainder": 0,
+                        "carry": false
+                      },
+                      {
+                        "digit": "8",
+                        "result": "9",
+                        "remainder": 0,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "✗ Wrong: 93",
+                        "why": "wrote the answer digits in the wrong columns — 9 in the tens and 3 in the ones, instead of 3 in the tens and 9 in the ones"
+                      },
+                      {
+                        "text": "✓ Right: 39",
+                        "why": "Check: 12 × 39 = 468",
+                        "result": "✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try a different one!",
+              "body": "What is **348 ÷ 12**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 348 ÷ 12?",
+                "options": [
+                  "29",
+                  "28",
+                  "31",
+                  "26",
+                  "33"
+                ],
+                "correctAnswer": "29",
+                "correctFeedback": "Well done! **348 ÷ 12 = 29**. You kept those numbers in the right place! ✓",
+                "incorrectFeedback": "Not quite! 348 ÷ 12 = **29**. Remember to line up each number carefully!"
+              },
+              "visualProps": {
+                "divisor": 12,
+                "dividend": 348,
+                "steps": [
+                  {
+                    "digit": "3",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "4",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "8",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Keep those numbers lined up!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interpreting-remainders",
+      "name": "What To Do With Remainders",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "interpreting-remainders-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to decide whether to round up, round down, or give the remainder as a fraction",
+            "Why the context of a word problem changes what you do with the remainder"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Ahmed",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do you do with the leftovers?",
+              "body": "Mrs Ahmed is booking coaches for a school trip. There are **157 children** and groups of **48**.\n157 ÷ 48 = 3 remainder (what's left over) 13.\nBut what does the remainder **mean** in real life? Do you round up, round down, or use a fraction?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "157 ÷ 48 = 3 r13",
+                    "why": "But the answer to the real question isn't just 3..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "What do you do with remainder 13?",
+              "body": null,
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "**157 ÷ 48 = 3 remainder 13**\n\nGetting the maths right is only half the job — you also need to decide what the remainder **means** in real life."
+                },
+                {
+                  "type": "visual",
+                  "component": "BusStopDiagram",
+                  "props": {
+                    "divisor": 48,
+                    "dividend": 157,
+                    "steps": [
+                      {
+                        "digit": "1",
+                        "result": "0",
+                        "remainder": 1,
+                        "carry": true
+                      },
+                      {
+                        "digit": "5",
+                        "result": "0",
+                        "remainder": 15,
+                        "carry": true
+                      },
+                      {
+                        "digit": "7",
+                        "result": "3",
+                        "remainder": 13,
+                        "carry": false
+                      }
+                    ],
+                    "showAnswer": true
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "There are **three** things you can do with a remainder:"
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Round UP — need an extra group",
+                        "why": "E.g. coaches for a trip — you can't leave anyone behind!"
+                      },
+                      {
+                        "text": "Round DOWN — can't use the leftovers",
+                        "why": "E.g. cutting ribbon — the leftover bit is too short"
+                      },
+                      {
+                        "text": "Give as a fraction — share the remainder",
+                        "why": "E.g. sharing pizzas — cut the last one up!"
+                      }
+                    ],
+                    "allRevealed": false
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "In this problem, we **round up** because you need an extra coach for the remaining 13 children — you can't leave them behind!\n\nAnswer: **4 coaches** ✓"
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Think about the context!",
+              "body": "Mrs Ahmed is booking minibuses for a swimming gala. There are **95 pupils** and each group holds **20**. How many minibuses are needed?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many minibuses?",
+                "options": [
+                  "5",
+                  "4",
+                  "7",
+                  "2",
+                  "9"
+                ],
+                "correctAnswer": "5",
+                "correctFeedback": "Brilliant! The answer is **5 minibuses**. You worked out you need to **round up** because you need an extra minibus for the remaining 15 pupils — you can't leave them behind! ✓",
+                "incorrectFeedback": "Not quite! Think about it: you need an extra minibus for the remaining 15 pupils — you can't leave them behind! So the answer is **5 minibuses**."
+              },
+              "visualProps": {
+                "divisor": 20,
+                "dividend": 95,
+                "steps": [
+                  {
+                    "digit": "9",
+                    "result": "0",
+                    "remainder": 9,
+                    "carry": true
+                  },
+                  {
+                    "digit": "5",
+                    "result": "4",
+                    "remainder": 15,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Read the question — then decide!",
+              "body": "The maths gives you an answer and a remainder. But what do you do with it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Do the division — find the answer and remainder",
+                    "why": "The maths part comes first"
+                  },
+                  {
+                    "text": "Step 2: Re-read the question carefully",
+                    "why": "The question tells you what to do with the remainder"
+                  },
+                  {
+                    "text": "Step 3: Round UP for people problems",
+                    "why": "Coaches, tables, minibuses — everyone needs a seat!"
+                  },
+                  {
+                    "text": "Step 4: Round DOWN for 'full' or 'complete' problems",
+                    "why": "Full shelves, complete boxes — no room for leftovers"
+                  },
+                  {
+                    "text": "Step 5: Give as a fraction for sharing problems",
+                    "why": "Pizzas, cakes — you can split the leftovers! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "interpreting-remainders-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone interprets a remainder incorrectly",
+            "When to round up vs round down in division word problems"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Freya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Freya get this right?",
+              "body": "Freya is working out how many minibuses are needed for a choir trip.\n85 ÷ 15 = 5 r10. The r means remainder (the amount left over after dividing).\nFreya says the answer is **5 minibuses**. Is that correct?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Freya's answer: 5 minibuses",
+                    "why": "Think carefully about what happens to the remainder..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the question carefully!",
+              "body": "Freya said 5 minibuses, but that only fits 75 people — the other 10 singers would be left behind! You need to round up to 6.. The key is thinking about what happens to the **remainder** (the amount left over after dividing) in the real world. Tap to see the correct reasoning.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "85 ÷ 15 = 5 r10",
+                    "why": "The maths is right",
+                    "result": "✓"
+                  },
+                  {
+                    "text": "Freya said: 5",
+                    "why": "But the interpretation is wrong!",
+                    "result": "✗"
+                  },
+                  {
+                    "text": "Correct answer: 6 minibuses",
+                    "why": "Think: what happens to the leftover 10 singers?",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn with a new problem!",
+              "body": "Freya is working out how many boats are needed for a river trip. There are **70 children** and each group holds **12**. How many boats?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many boats?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Well done! **6 boats** is correct. You thought about what happens to the remainder! ✓",
+                "incorrectFeedback": "Not quite! The answer is **6 boats**. Remember: think about whether the leftover 10 children need to be accounted for!"
+              },
+              "visualProps": {
+                "divisor": 12,
+                "dividend": 70,
+                "steps": [
+                  {
+                    "digit": "7",
+                    "result": "0",
+                    "remainder": 7,
+                    "carry": true
+                  },
+                  {
+                    "digit": "0",
+                    "result": "5",
+                    "remainder": 10,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remainders in real life!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estimation-checking",
+      "name": "Estimating Before Dividing, Checking with Multiplication",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "estimation-checking-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to estimate (make a rough guess at) a division answer by rounding",
+            "How to check your answer using multiplication"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Emily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Estimate first, check after!",
+              "body": "Emily is estimating how many bags of sweets to buy for a party. Before doing the full division of **372 ÷ 6**, a quick estimate helps you know roughly what to expect!\n**How to estimate:** Round to a nearby number that divides easily. This stops silly mistakes before they happen.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": null,
+              "visualProps": {
+                "min": 300,
+                "max": 440,
+                "tickInterval": 20,
+                "points": [
+                  {
+                    "value": 360,
+                    "color": "#22c55e",
+                    "label": "≈360"
+                  },
+                  {
+                    "value": 372,
+                    "color": "#3b82f6",
+                    "label": "372"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Round the dividend to a friendly number",
+              "body": "The trick is to round the dividend (the number being divided — here it's **372**) to a **friendly number** that the **divisor** (the number you divide by — here it's **6**) goes into easily. After dividing, check by multiplying back — any **remainder** (the amount left over) gets added on. Tap to see the method!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Estimate: 360 ÷ 6",
+                    "why": "Round 372 to 360",
+                    "result": "≈ 60"
+                  },
+                  {
+                    "text": "Exact: 372 ÷ 6",
+                    "why": "Now do the full calculation",
+                    "result": "= 62"
+                  },
+                  {
+                    "text": "Check: 6 × 62",
+                    "why": "Multiply back to verify",
+                    "result": "= 372 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's a good estimate?",
+              "body": "Before dividing **372 ÷ 6**, what's a good estimate?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "NumberLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Approximately what is 372 ÷ 6?",
+                "options": [
+                  "60",
+                  "59",
+                  "62",
+                  "57",
+                  "64"
+                ],
+                "correctAnswer": "60",
+                "correctFeedback": "Great estimate! 360 ÷ 6 = about **60**. The exact answer is 62 — nice and close! ✓",
+                "incorrectFeedback": "Not quite! Round 372 to 360. Then 360 ÷ 6 = **60**. That's a good estimate!"
+              },
+              "visualProps": {
+                "min": 300,
+                "max": 440,
+                "tickInterval": 20,
+                "points": [
+                  {
+                    "value": 360,
+                    "color": "#22c55e",
+                    "label": "≈360"
+                  },
+                  {
+                    "value": 372,
+                    "color": "#3b82f6",
+                    "label": "372"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Estimate and check — your safety net!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "estimation-checking-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to use estimating to avoid big mistakes",
+            "When your answer should be close to your estimate"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Does 305 seem right?",
+              "body": "Grace is working out how many packets of seeds to buy. Grace calculated **315 ÷ 9 = 305**.\nBut wait — a quick estimate would have caught this mistake instantly! Let's see how...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Grace's answer: 305",
+                    "why": "Does this seem reasonable?"
+                  },
+                  {
+                    "text": "Quick estimate: 270 ÷ 9 ≈ 30",
+                    "why": "305 is way off from 30!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Estimating catches big mistakes!",
+              "body": "A 10-second estimate catches big mistakes instantly! Tap to see how.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Round 315 to 270",
+                    "why": "270 divides easily by 9"
+                  },
+                  {
+                    "text": "Estimate: 270 ÷ 9 = 30",
+                    "why": "So the real answer should be close to 30"
+                  },
+                  {
+                    "text": "✗ Grace's answer: 305",
+                    "why": "305 is nowhere near 30 — something went wrong!"
+                  },
+                  {
+                    "text": "✓ Correct answer: 35",
+                    "result": "Close to our estimate of 30 ✓"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now try a different one!",
+              "body": "What is **378 ÷ 9**? (Hint: estimate first — it should be close to 40!)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 378 ÷ 9?",
+                "options": [
+                  "42",
+                  "41",
+                  "44",
+                  "39",
+                  "46"
+                ],
+                "correctAnswer": "42",
+                "correctFeedback": "Well done! **378 ÷ 9 = 42**. Close to our estimate of 40 — makes sense! ✓",
+                "incorrectFeedback": "Not quite! 378 ÷ 9 = **42**. It's close to our estimate of 40, as expected."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Estimate: ≈ 40",
+                    "why": "The answer should be close to this!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Estimate first — always!",
+              "body": "A quick estimate takes 10 seconds and can save you from big mistakes:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Round to a friendly number and divide",
+                    "why": "This gives you a rough answer in seconds."
+                  },
+                  {
+                    "text": "Do the real division",
+                    "why": "Use the bus stop or long division method."
+                  },
+                  {
+                    "text": "Compare your answer to the estimate",
+                    "why": "If they're close, you're probably right. If not — check again! ✓"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dividing-word-problems",
+      "name": "Division Word Problems",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "dividing-word-problems-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot when a word problem needs division",
+            "How to pick out the right numbers from a word problem"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Chen",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What type of calculation is hiding here?",
+              "body": "A school has 384 pupils. They are split into 8 equal houses for sports day.\nHow many pupils are in each house?\n\nThe word \"**equal**\" or \"**each**\" in a problem is often a clue that you need to **divide**. Can you spot the two key numbers?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Clue words: \"split into equal groups\"",
+                    "why": "These words tell us it's a division problem!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pick out the numbers!",
+              "body": "The secret to word problems is finding the **total** and the **group size** hiding in the text. Tap to see how to pick them out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Total: 384",
+                    "why": "This is the big number being shared or split"
+                  },
+                  {
+                    "text": "Divisor (the number you divide by): 8",
+                    "why": "This is how many groups (or the size of each group)"
+                  },
+                  {
+                    "text": "384 ÷ 8 = 48",
+                    "why": "That's our answer!",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Can you solve this one?",
+              "body": "A school has 216 pupils. They are divided into 6 equal teams for a quiz.\nHow many pupils are in each team?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 216 ÷ 6?",
+                "options": [
+                  "36",
+                  "35",
+                  "38",
+                  "33",
+                  "40"
+                ],
+                "correctAnswer": "36",
+                "correctFeedback": "Brilliant! **216 ÷ 6 = 36**. You spotted it was a division problem and picked out the right numbers! ✓",
+                "incorrectFeedback": "Not quite! 216 ÷ 6 = **36**. Look for the total and the group size — then divide!"
+              },
+              "visualProps": {
+                "divisor": 6,
+                "dividend": 216,
+                "steps": [
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "1",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "6",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Spotting division in word problems!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "dividing-word-problems-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid dividing the wrong way round",
+            "Why the bigger number usually goes first in division"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Sam",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Sam set up the division wrong!",
+              "body": "A farmer has 156 eggs. He puts them into boxes of 12.\nHow many boxes does he need?\nSam wrote: **12 ÷ 156**. But that gives 0 point something! What went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sam wrote: 12 ÷ 156",
+                    "why": "That's the wrong way round!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The total always goes FIRST!",
+              "body": "Sam divided the small number by the big number (12 ÷ 156) instead of the big number by the small number (156 ÷ 12). In division, the **total** always goes first, and the **divisor** (the number you divide by) goes second. Tap to compare the wrong and right setups.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 12 ÷ 156",
+                    "why": "Small ÷ big doesn't make sense here!",
+                    "result": "✗"
+                  },
+                  {
+                    "text": "Correct: 156 ÷ 12 = 13",
+                    "why": "Total ÷ group size = number of groups",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A shop has 192 bottles of juice. They go into packs of 8.\nHow many packs are there?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BusStopDiagram",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 192 ÷ 8?",
+                "options": [
+                  "24",
+                  "23",
+                  "26",
+                  "21",
+                  "28"
+                ],
+                "correctAnswer": "24",
+                "correctFeedback": "Well done! **192 ÷ 8 = 24**. You got the numbers the right way round! ✓",
+                "incorrectFeedback": "Not quite! 192 ÷ 8 = **24**. Remember: the total goes first!"
+              },
+              "visualProps": {
+                "divisor": 8,
+                "dividend": 192,
+                "steps": [
+                  {
+                    "digit": "1",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "9",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  },
+                  {
+                    "digit": "2",
+                    "result": "?",
+                    "remainder": 0,
+                    "carry": false
+                  }
+                ],
+                "showAnswer": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Which number goes first?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

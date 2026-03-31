@@ -1,0 +1,1425 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "logicAndLanguage",
+    "displayName": "Logic & Language",
+    "extractedAt": "2026-03-30T13:51:13.962Z",
+    "subConceptCount": 9,
+    "lessonCount": 15,
+    "screenCount": 60,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "three-person-ordering",
+      "name": "Ordering 3 People",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "three-person-ordering-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to put 3 people in order using clues — like solving a mini detective puzzle!",
+            "How to use the Think It Through method: read, draw, answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you crack the order?",
+              "body": "Aisha is working out who is tallest in her group.\n\nHere are your clues:\n• Daisy is taller than Evie.\n• Evie is taller than Freya.\n\n**Who is the shortest?**\n\nWith 3 people, all you need to do is put them in a line from top to bottom. Let's figure it out!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Find the link name",
+              "body": "The secret to ordering is finding the **link name** — the person who appears in BOTH clues. They go in the middle!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Read, draw, answer — the Think It Through method. ✓",
+                "incorrectFeedback": "Not quite — always read ALL clues first, then draw, then answer!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Use the 3 steps: **Read all clues → Draw the order → Answer from your diagram**\n\n• Sophie is taller than Liam.\n• Liam is taller than Ruby.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the tallest?",
+                "options": [
+                  "Sophie",
+                  "Liam",
+                  "Ruby",
+                  "Sophie and Liam",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Sophie",
+                "correctFeedback": "Brilliant! Sophie > Liam > Ruby in height. Sophie is at the top of the order, so she is the tallest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Sophie\". Sophie > Liam > Ruby in height. Sophie is at the top of the order, so she is the tallest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "3-person ordering — nailed it!",
+              "body": "You've cracked the method for ordering 3 people:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "three-person-ordering-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the sneaky trap of reading clues backwards",
+            "Why 'A is taller than B' always means A goes ABOVE B — not the other way round!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"Holly\" really the answer?",
+              "body": "Evie is checking her practice test answers.\n\nClues:\n• Ivy is taller than Grace.\n• Grace is taller than Holly.\n\n**Who is the tallest?**\n\nSomeone answered **\"Holly\"** — because Holly was mentioned last, so she must be tallest.\n\nBut is that right?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Read the clue words!",
+              "body": "Being mentioned last doesn't mean tallest! You need to read what the clues actually say.\n\nThe position a name appears in the sentence does NOT tell you its position in the order. You must read the **clue words** — \"taller than\", \"older than\", \"more than\".",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — get it right!",
+              "body": "• Lottie is heavier than Max.\n• Max is heavier than Ava.\n\n**Who is the lightest?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the lightest?",
+                "options": [
+                  "Lottie",
+                  "Max",
+                  "Ava",
+                  "Lottie and Ava",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Ava",
+                "correctFeedback": "Well done! Lottie > Max > Ava in weight. Ava is at the bottom, so she is the lightest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Ava\". Lottie > Max > Ava in weight. Ava is at the bottom, so she is the lightest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You won't get caught out now!",
+              "body": "Now you know the trap, you'll dodge it every time:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-person-ordering",
+      "name": "Ordering 4 People",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "four-person-ordering-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to order 4 people — same method, just one more clue to work with!",
+            "How to spot the 'link name' that connects two clues into one chain"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you order all 4?",
+              "body": "Aisha is sorting four runners by speed.\n\nFour people means more clues — but the method is the same one you already know! The trick is to find the name that appears in TWO clues. That's your link.\n\n• Hugo is faster than Priya.\n• Toby is faster than Hugo.\n• Priya is faster than Kai.\n\n**Who came third in the race?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Connect the chains",
+              "body": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Put them in order, then answer:\n\n• Mia is taller than Alfie.\n• Alfie is taller than Chloe.\n• Luca is taller than Mia.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the shortest?",
+                "options": [
+                  "Luca",
+                  "Mia",
+                  "Alfie",
+                  "Chloe",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Chloe",
+                "correctFeedback": "Brilliant! Luca > Mia > Alfie > Chloe. Chloe is at the bottom, so she is the shortest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Chloe\". Luca > Mia > Alfie > Chloe. Chloe is at the bottom, so she is the shortest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "4 people — same skill, bigger chain!",
+              "body": "Brilliant work! For 4 people, just extend your chain by one more name:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "four-person-ordering-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to stay cool when clues arrive in a jumbled-up order",
+            "Why reading ALL clues before you start drawing is the key to getting it right"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The clues are jumbled — can you still solve it?",
+              "body": "Evie is solving a puzzle where the clues come in a tricky order.\n\nSometimes the clues don't arrive in a helpful order. That's why you must read ALL clues first!\n\n• Kai is shorter than Toby.\n• Freya is taller than Toby.\n• Amara is shorter than Kai.\n\n**Who is the tallest?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Read ALL clues first!",
+              "body": "We need to order **Kai, Toby, Freya, Amara** — but the clues come in a tricky order. Don't start drawing after the first clue. Read them all, THEN build the chain:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — a new puzzle!",
+              "body": "Read all the clues first, then build the chain:\n\n• Ruby runs faster than Zara.\n• Zara runs faster than Isla.\n• Oscar runs faster than Ruby.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the slowest?",
+                "options": [
+                  "Ruby",
+                  "Zara",
+                  "Isla",
+                  "Oscar",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Isla",
+                "correctFeedback": "Brilliant! Oscar > Ruby > Zara > Isla. Isla is at the bottom, so she is the slowest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Isla\". Oscar > Ruby > Zara > Isla. Isla is at the bottom, so she is the slowest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Jumbled clues? No problem!",
+              "body": "Even when clues come in a confusing order, you know exactly what to do:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-false-statements",
+      "name": "True, False or Uncertain?",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "true-false-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+            "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is it DEFINITELY true?",
+              "body": "Aisha is working through true/false logic puzzles.\n\nThese questions are all about spotting one tiny word that changes everything. Is something DEFINITELY true, or only MAYBE true?\n\n• All dogs have four legs.\n• Rover is a dog.\n\n**Does Rover have four legs?**\n\nThe secret? Watch for these key words: **all**, **some**, **none**.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "All, Some, or None?",
+              "body": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true, maybe not\n• **None** = zero → definitely false",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "The three key words that change the logic are: all, ____, and none",
+                "options": [
+                  "some",
+                  "many",
+                  "few",
+                  "most"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! \"All\" = definitely true, \"some\" = maybe, \"none\" = definitely false. ✓",
+                "incorrectFeedback": "Not quite — the three key words are all, some, and none!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Clues: All dogs have four legs. Rover is a dog.",
+                    "why": "Spot the key word: all, some, or none?"
+                  },
+                  {
+                    "text": "Logic: All dogs → four legs. Rover is a dog → Rover has four legs.",
+                    "why": "Draw the logic with arrows"
+                  },
+                  {
+                    "text": "Answer: Does Rover have four legs? → Yes, definitely",
+                    "why": "The key word tells you if it's definite or not ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Spot the key word, then decide:\n\n• All cats have whiskers.\n• Mittens is a cat.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Does Mittens have whiskers?",
+                "options": [
+                  "Yes, definitely",
+                  "No, definitely not",
+                  "Maybe",
+                  "Only if she's old",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Yes, definitely",
+                "correctFeedback": "Brilliant! ALL cats have whiskers. Mittens IS a cat. So Mittens DEFINITELY has whiskers. 'All' means every single one! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Yes, definitely\". ALL cats have whiskers. Mittens IS a cat. So Mittens DEFINITELY has whiskers. 'All' means every single one! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three words that change everything!",
+              "body": "Remember these three words and you'll ace every logic question:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "ALL → definitely true for everyone",
+                    "why": "All dogs have legs → every dog has legs"
+                  },
+                  {
+                    "text": "SOME → maybe true, maybe not",
+                    "why": "Some children like maths → you can't be sure about one child"
+                  },
+                  {
+                    "text": "NONE → definitely false for everyone",
+                    "why": "No fish can walk → no fish at all can walk ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "true-false-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why 'All X are Y' does NOT mean 'All Y are X' — this trips up loads of people!",
+            "How to spot and dodge the backwards logic trap"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"Yes, definitely\" really right?",
+              "body": "Evie is checking a tricky logic answer.\n\n• All roses have thorns.\n• This plant has thorns.\n\n**Is this plant definitely a rose?**\n\nSomeone answered **\"Yes, definitely\"** — because it has thorns and all roses have thorns.\n\nCan you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The backwards logic trap!",
+              "body": "\"All X are Y\" does NOT mean \"All Y are X\"!\n\nJust because ALL roses have thorns doesn't mean ONLY roses have thorns! Cacti and holly have thorns too.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The clue says: All roses have thorns.",
+                    "why": "This tells us about X → Y"
+                  },
+                  {
+                    "text": "But we're told: This plant has thorns.",
+                    "why": "We only know about Y, not X"
+                  },
+                  {
+                    "text": "The answer is: No, not necessarily",
+                    "why": "Just because ALL roses have thorns doesn't mean ONLY roses have thorns! Cacti and holly have thorns too. ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — spot the trap!",
+              "body": "• All penguins can swim.\n• This animal can swim.\n\n**Is this animal definitely a penguin?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is this animal definitely a penguin?",
+                "options": [
+                  "Yes, definitely",
+                  "No, not necessarily",
+                  "Only if it's black and white",
+                  "Only if it lives in the cold",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "No, not necessarily",
+                "correctFeedback": "Well done! All penguins can swim, but lots of OTHER animals can swim too — fish, seals, dogs. Swimming doesn't prove it's a penguin. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"No, not necessarily\". All penguins can swim, but lots of OTHER animals can swim too — fish, seals, dogs. Swimming doesn't prove it's a penguin. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The backwards trap — you'll never fall for it!",
+              "body": "This golden rule will save you marks in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "All X are Y ≠ All Y are X",
+                    "why": "All cats have tails, but not all tailed animals are cats"
+                  },
+                  {
+                    "text": "If A → B, that doesn't mean B → A",
+                    "why": "Rain makes ground wet, but wet ground doesn't prove rain"
+                  },
+                  {
+                    "text": "Ask: could something ELSE cause this?",
+                    "why": "If yes, the answer is 'not necessarily' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparative-language",
+      "name": "Understanding Comparison Words",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "comparative-language-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+            "Why understanding these words is like having a compass that always points the right way"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What do the comparison words tell you?",
+              "body": "Aisha is learning what comparison words tell you.\n\n**Did you know?** Comparison words are like arrows — they point you to who goes where! Words like \"taller than\" and \"more\" point UP. Words like \"shorter than\" and \"fewer\" point DOWN.\n\n• Kai is heavier than Toby.\n• Freya is lighter than Toby.\n\n**Who is the lightest?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Comparison word decoder",
+              "body": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Less / shorter / lighter / younger / slower / after** → goes BELOW",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Find the comparison words, decide direction, then draw. ✓",
+                "incorrectFeedback": "Not quite — first find the comparison words, then decide up or down, then draw!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Decode the comparison words:\n\n• Sam is shorter than Beth.\n• Beth is shorter than Jude.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the tallest?",
+                "options": [
+                  "Sam",
+                  "Beth",
+                  "Jude",
+                  "They are the same height",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Jude",
+                "correctFeedback": "Brilliant! 'Shorter than' means goes BELOW. Sam < Beth < Jude, so Jude > Beth > Sam. Jude is the tallest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Jude\". 'Shorter than' means goes BELOW. Sam < Beth < Jude, so Jude > Beth > Sam. Jude is the tallest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Your comparison word cheat sheet!",
+              "body": "Learn these pairs and you'll never get tripped up:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superlative-questions",
+      "name": "Who Is Tallest / Shortest / Oldest?",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "superlative-questions-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+            "Why building the FULL order first means you'll always pick the right answer"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Who is the tallest?",
+              "body": "Aisha is finding the tallest from her ordering diagram.\n\nSuperlative questions ask for the **most** or **least** — the person at the very TOP or very BOTTOM of the order.\n\n• Evie is taller than Hugo.\n• Hugo is taller than Grace.\n• Grace is taller than Ravi.\n\nBuild the full order first, THEN look at the ends!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Build the order, then check the ends",
+              "body": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Build the full order, then find the answer:\n\n• Seb has more goals than Tilly.\n• Tilly has more goals than Noor.\n• Noor has more goals than Arlo.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who has scored the most goals?",
+                "options": [
+                  "Seb",
+                  "Tilly",
+                  "Noor",
+                  "Arlo",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Seb",
+                "correctFeedback": "Brilliant! Seb > Tilly > Noor > Arlo. Seb is at the very top, so he has scored the most goals. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Seb\". Seb > Tilly > Noor > Arlo. Seb is at the very top, so he has scored the most goals. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Superlatives — just check the ends!",
+              "body": "For \"who is the tallest / shortest / most / least?\" questions, the answer is always at one end of your chain:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentence-rearrangement",
+      "name": "Rearranging Jumbled Sentences",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "sentence-rearrangement-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to unscramble jumbled words into a sentence that makes sense",
+            "How to spot the starting word and build the sentence piece by piece"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you unscramble the sentence?",
+              "body": "Aisha is unscrambling a jumbled sentence.\n\nJumbled words: 'park the played in children the'\n\nThe trick is to find the word that makes sense at the START, then build the sentence piece by piece.\n\n**What is the last word of the correct sentence?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jumbled words: 'park the played in children the'"
+                  },
+                  {
+                    "text": "Find the starting word, then build outward"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Start with the subject!",
+              "body": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are they doing?\n3. **Add the rest** — where, when, how?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To unscramble a sentence, first find the ____ — who or what the sentence is about",
+                "options": [
+                  "subject",
+                  "verb",
+                  "adjective",
+                  "ending"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The subject (who/what) usually starts the sentence — find it first. ✓",
+                "incorrectFeedback": "Not quite — always find the subject first: who or what is the sentence about?"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the subject (who/what)",
+                    "why": "\"The\" starts the sentence"
+                  },
+                  {
+                    "text": "Find the verb (what happens)",
+                    "why": "Look for the action word — what is the subject doing?"
+                  },
+                  {
+                    "text": "Build the sentence: \"The children played in the park.\"",
+                    "why": "What is the last word of the correct sentence? → park ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Jumbled words: 'shop the walked to girls the'\n\nRearrange the words, then answer:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the last word of the correct sentence?",
+                "options": [
+                  "shop",
+                  "girls",
+                  "walked",
+                  "the",
+                  "to"
+                ],
+                "correctAnswer": "shop",
+                "correctFeedback": "Brilliant! The correct sentence is 'The girls walked to the shop.' The last word is 'shop'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"shop\". The correct sentence is 'The girls walked to the shop.' The last word is 'shop'. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Sentence unscrambling — sorted!",
+              "body": "Three steps and you'll crack any jumbled sentence:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Find the subject — who or what is it about?",
+                    "why": "This is usually the first word"
+                  },
+                  {
+                    "text": "2. Find the verb — what are they doing?",
+                    "why": "This usually comes second or third"
+                  },
+                  {
+                    "text": "3. Fill in the rest and check it sounds right",
+                    "why": "Read it aloud — does it make sense? ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "sentence-rearrangement-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to tackle longer jumbled sentences without getting tangled up",
+            "A top tip: reading your rebuilt sentence aloud catches mistakes your eyes miss!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you build this sentence?",
+              "body": "Evie is tackling a trickier sentence puzzle.\n\nJumbled words: 'to walked every school they morning'\n\nLonger sentences need the same method — find the subject, then the verb, then fill in the rest.\n\n**What is the last word of the correct sentence?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jumbled words: 'to walked every school they morning'"
+                  },
+                  {
+                    "text": "Subject → Verb → Rest"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read it aloud!",
+              "body": "The jumbled words make: **\"They walked to school every morning.\"**\n\nOnce you've built a sentence, **read it aloud** (or in your head). Does it sound natural? If something feels wrong, try swapping words around.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find subject and verb first",
+                    "why": "Who does what?"
+                  },
+                  {
+                    "text": "Build the sentence: \"They walked to school every morning.\"",
+                    "why": "Add the remaining words where they sound natural"
+                  },
+                  {
+                    "text": "Read aloud and check",
+                    "why": "What is the last word of the correct sentence? → morning ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — a new sentence!",
+              "body": "Jumbled words: 'library quietly the read in children the'\n\nBuild the sentence, then answer:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the fourth word of the correct sentence?",
+                "options": [
+                  "read",
+                  "quietly",
+                  "children",
+                  "library",
+                  "the"
+                ],
+                "correctAnswer": "quietly",
+                "correctFeedback": "Brilliant! The correct sentence is 'The children read quietly in the library.' The fourth word is 'quietly' — The (1st), children (2nd), read (3rd), quietly (4th). ✓",
+                "incorrectFeedback": "Not quite! The answer is \"quietly\". The correct sentence is 'The children read quietly in the library.' The fourth word is 'quietly' — The (1st), children (2nd), read (3rd), quietly (4th). ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Longer sentences? Same trick!",
+              "body": "Even longer sentences follow the same pattern. You've got this:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Subject first (who/what)",
+                    "why": "The, A, She, He, They — often starts the sentence"
+                  },
+                  {
+                    "text": "2. Verb next (what they do)",
+                    "why": "ran, played, walked, sang"
+                  },
+                  {
+                    "text": "3. Read it aloud — does it sound right?",
+                    "why": "Your ear catches mistakes your eyes miss ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "syllogisms",
+      "name": "If All X Are Y...",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "syllogisms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to follow logical chains where one fact leads to another — like falling dominoes!",
+            "How to draw an arrow chain to make the logic crystal clear"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you follow the chain?",
+              "body": "Aisha is working through a chain of logic.\n\nA **syllogism** is a logic chain:\n• If ALL X are Y...\n• And Z is an X...\n• Then Z must also be Y!\n\n• All mammals are warm-blooded.\n• A dog is a mammal.\n\n**Is a dog warm-blooded?**",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Draw the arrow chain",
+              "body": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — a new chain!",
+              "body": "Follow the arrow chain:\n\n• All birds have feathers.\n• A robin is a bird.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Does a robin have feathers?",
+                "options": [
+                  "Yes, definitely",
+                  "No",
+                  "Only in winter",
+                  "Only some robins",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Yes, definitely",
+                "correctFeedback": "Brilliant! All birds have feathers. A robin is a bird. So a robin definitely has feathers. Follow the chain: robin → bird → feathers. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Yes, definitely\". All birds have feathers. A robin is a bird. So a robin definitely has feathers. Follow the chain: robin → bird → feathers. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Syllogisms — follow the arrows!",
+              "body": "These logic chains are like dominoes — once you push the first one, they all fall in order:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Find the GENERAL rule (All X are Y)",
+                    "why": "This is the starting link of the chain"
+                  },
+                  {
+                    "text": "2. Find the SPECIFIC fact (Z is an X)",
+                    "why": "This connects to the rule"
+                  },
+                  {
+                    "text": "3. Follow the chain: Z → X → Y",
+                    "why": "Each arrow passes the truth along ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negation-traps",
+      "name": "Negation Traps — Not Tallest ≠ Shortest",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "negation-traps-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+            "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Does \"not the tallest\" mean \"the shortest\"?",
+              "body": "Aisha is learning about negation traps.\n\n• Kai is not the tallest of three friends.\n• Freya is shorter than Kai.\n\n**Is Kai definitely the shortest?**\n\n\"Not the tallest\" is a **negation** — it tells you what something ISN'T, not what it IS. Be careful!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Not tallest ≠ shortest!",
+              "body": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someone BELOW them in the order?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"Not the tallest\" means: at least one person is taller",
+                    "why": "It rules out the TOP position only"
+                  },
+                  {
+                    "text": "Check: is there anyone below? Freya is shorter than Kai.",
+                    "why": "If yes, they're in the MIDDLE, not at the bottom"
+                  },
+                  {
+                    "text": "Order: Tallest → Third friend → Kai → Freya → Shortest",
+                    "why": "Is Kai definitely the shortest? → No — Kai is in the middle ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn — watch for the trap!",
+              "body": "• Lily is not the fastest of three runners.\n• Lily is faster than Max.\n\nRemember: \"not the tallest\" does NOT automatically mean \"the shortest\"!",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is Lily the slowest?",
+                "options": [
+                  "Yes, definitely",
+                  "No — Lily is in the middle",
+                  "Yes — not fastest means slowest",
+                  "Cannot tell",
+                  "Lily could be anywhere"
+                ],
+                "correctAnswer": "No — Lily is in the middle",
+                "correctFeedback": "Brilliant! Lily is not the fastest, but she IS faster than Max. So Lily is in the MIDDLE. 'Not the fastest' doesn't mean 'the slowest'! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"No — Lily is in the middle\". Lily is not the fastest, but she IS faster than Max. So Lily is in the MIDDLE. 'Not the fastest' doesn't mean 'the slowest'! ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Negation traps — you're too smart for those!",
+              "body": "Now you know the trick, you'll never fall for \"not = opposite\" again:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"Not the tallest\" just means someone is taller",
+                    "why": "It does NOT mean shortest"
+                  },
+                  {
+                    "text": "\"Not first\" just means someone finished before them",
+                    "why": "It does NOT mean last"
+                  },
+                  {
+                    "text": "Always draw the FULL order to find their actual position",
+                    "why": "Use all the clues, not just the negation ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "negation-traps-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot when someone else has fallen for the negation trap",
+            "Why drawing the full order is your best protection against this mistake"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did they fall for the negation trap?",
+              "body": "Evie is checking a friend's logic homework.\n\n• Toby is not the fastest of three runners.\n• Toby is faster than Grace.\n\n**Who is the slowest?**\n\nSomeone answered **\"Toby\"** — because 'not the fastest' means he must be slowest.\n\nIs that right?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Draw the order to avoid the trap!",
+              "body": "Toby is faster than Grace, so Grace is slowest! 'Not the fastest' just means he's not in first place.\n\nThe best way to avoid negation traps is to **draw the full order**. Then you can SEE where everyone belongs.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Clue: Toby is not the fastest of three runners.",
+                    "why": "This tells us their position is NOT at the top"
+                  },
+                  {
+                    "text": "Clue: Toby is faster than Grace.",
+                    "why": "This tells us someone is BELOW them"
+                  },
+                  {
+                    "text": "Draw: Fastest → Third runner → Toby → Grace → Slowest",
+                    "why": "Toby is faster than Grace, so Grace is slowest! 'Not the fastest' just means he's not in first place. ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Don't fall for the trap! Draw the order:\n\n• Mia is not the tallest of three girls.\n• Mia is taller than Poppy.",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who is the shortest?",
+                "options": [
+                  "Mia",
+                  "Poppy",
+                  "The third girl",
+                  "Mia and Poppy",
+                  "Cannot tell"
+                ],
+                "correctAnswer": "Poppy",
+                "correctFeedback": "Well done! Mia isn't the tallest, but she IS taller than Poppy. So Poppy is the shortest. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Poppy\". Mia isn't the tallest, but she IS taller than Poppy. So Poppy is the shortest. ✓"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Negation trap? Not a chance!",
+              "body": "You've mastered this. Every time you see \"not\" or \"isn't\", just remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. DON'T assume the opposite extreme",
+                    "why": "Not tallest ≠ shortest, not first ≠ last"
+                  },
+                  {
+                    "text": "2. Draw the full order using ALL clues",
+                    "why": "The diagram shows you their actual position"
+                  },
+                  {
+                    "text": "3. There are usually positions in between!",
+                    "why": "With 3+ people, the middle exists ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homonyms",
+      "name": "Words with Multiple Meanings",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "homonyms-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+            "You'll master using the sentence context to choose the right meaning every time"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which \"bank\" is it?",
+              "body": "Daisy reads this sentence in her comprehension passage:\n\n**\"We sat on the bank of the river and watched the ducks.\"**\n\nDid you know? The word **\"bank\"** has more than one meaning! Words like this are called **homonyms** — same spelling, completely different meanings. English is full of them!\n\n**Meaning 1:** a place where you keep money\n**Meaning 2:** the side of a river\n\nWhich meaning is being used here? The sentence holds the answer!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We sat on the bank of the river and watched the ducks.",
+                "highlightWords": [
+                  {
+                    "word": "bank",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"bank\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The sentence always gives it away!",
+              "body": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you which meaning is being used. Look for **clue words** that match one meaning but not the other — they're your best friends here!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"We sat on the bank of the river and watched the ducks.\"",
+                    "why": "Focus on the word \"bank\""
+                  },
+                  {
+                    "text": "Find the clue words: \"river, sat on, watched the ducks\"",
+                    "why": "These words narrow it down"
+                  },
+                  {
+                    "text": "Do the clues match \"a place where you keep money\"?",
+                    "why": "Test the first meaning against the clues"
+                  },
+                  {
+                    "text": "\"bank\" here means \"the side of a river\" ✓",
+                    "why": "The clues 'river' and 'watched the ducks' tell us this bank is the sloping ground beside water, not a building for money"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Now you try — which meaning of **\"bank\"** is being used here? Hunt for those clue words!\n\n**\"Mum went to the bank to pay in a cheque this morning.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which meaning of \"bank\" is used here?",
+                "options": [
+                  "a place where you keep money",
+                  "the side of a river",
+                  "a type of seat",
+                  "a steep hill",
+                  "a row of switches"
+                ],
+                "correctAnswer": "a place where you keep money",
+                "correctFeedback": "Brilliant! The clues 'pay in' and 'cheque' tell us this bank is a financial building where you manage money, not the side of a river. The clue words gave it away! ✓",
+                "incorrectFeedback": "Not quite — this one's tricky! The clues 'pay in' and 'cheque' tell us this bank is a financial building where you manage money, not the side of a river. Look at the words around the homonym next time."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Mum went to the bank to pay in a cheque this morning.",
+                "highlightWords": [
+                  {
+                    "word": "bank",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the answer for \"bank\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Homonyms — same word, different meaning!",
+              "body": "You've got this! Here's how to crack homonyms every time they pop up in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Spot that the word has more than one meaning",
+                    "why": "Common homonyms: bank, bat, light, ring, match, fair — they come up loads!"
+                  },
+                  {
+                    "text": "Step 2: Read the whole sentence carefully",
+                    "why": "The context always gives the game away"
+                  },
+                  {
+                    "text": "Step 3: Find clue words that match ONE meaning",
+                    "why": "River → bank of a river, not a money bank — the clues point the way"
+                  },
+                  {
+                    "text": "Step 4: Pick the meaning that fits the clues",
+                    "why": "If all the clues match, you've cracked it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "homonyms-matching",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "You'll discover that the same word can actually be used as different word classes (noun, verb, adjective) — words are shapeshifters!",
+            "You'll get really good at matching the right definition to the right context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "\"match\" strikes again!",
+              "body": "Here's a fun one! Grace discovers that the word **\"match\"** has completely different meanings depending on how it's used:\n\n**Sentence 1:** \"Evie struck a match to light the birthday candles.\" — here it means **a small stick used to start a fire**\n\n**Sentence 2:** \"Does this hat match my scarf?\" — here it means something totally different!\n\nHomonyms are words that are **spelled the same** but have **different meanings**. The sentence around the word is always the key to cracking which one it is.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "highlightWords": [
+                  {
+                    "word": "match",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Target word: \"match\""
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Same spelling, different meaning!",
+              "body": "Remember **\"match\"** from the previous screen? It's a homonym (a word spelled the same but with different meanings). Here's the pro tip: **ignore** what you think the word means and focus on what the **sentence** tells you. The words around it always give the answer away — you just have to look!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Read: \"Does this hat match my scarf?\"",
+                    "why": "What is \"match\" doing in this sentence?"
+                  },
+                  {
+                    "text": "It can't mean \"a small stick used to start a fire\"",
+                    "why": "That doesn't fit this sentence at all"
+                  },
+                  {
+                    "text": "It can't mean \"a sports game\" either",
+                    "why": "That's another meaning but still doesn't fit here"
+                  },
+                  {
+                    "text": "\"match\" here means \"to go well together\" ✓",
+                    "why": "This is the only meaning that makes the sentence work"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "You've got this! What does **\"match\"** mean in this sentence? Look at the context!\n\n**\"We watched an exciting match between the two school football teams.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"match\" mean in this sentence?",
+                "options": [
+                  "a sports game",
+                  "to go well together",
+                  "a small fire stick",
+                  "to compete against",
+                  "to be equal to"
+                ],
+                "correctAnswer": "a sports game",
+                "correctFeedback": "Well done! 'Watched' and 'between two teams' tell us this match is a sports game — a competitive event, not about colours or fire. You read the context perfectly! ✓",
+                "incorrectFeedback": "Not quite — but homonyms are properly tricky! 'Watched' and 'between two teams' tell us this match is a sports game — a competitive event, not about colours or fire. The context clues will get you there next time."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "We watched an exciting match between the two school football teams.",
+                "highlightWords": [
+                  {
+                    "word": "match",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Find the meaning of \"match\":"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Homonyms — don't be tricked!",
+              "body": "In the exam, homonyms pop up everywhere — but now you know how to handle them like a pro:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Notice that the word has multiple meanings",
+                    "why": "If you know two meanings, the exam could use either one — stay alert!"
+                  },
+                  {
+                    "text": "Step 2: Read the WHOLE sentence, not just the word",
+                    "why": "The sentence always tells you which meaning is right"
+                  },
+                  {
+                    "text": "Step 3: Try each meaning in the sentence",
+                    "why": "Only one will make sense — the others will sound completely off"
+                  },
+                  {
+                    "text": "Step 4: Pick the meaning that fits perfectly",
+                    "why": "Context is king — and now you rule it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

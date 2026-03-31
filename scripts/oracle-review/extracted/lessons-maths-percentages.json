@@ -1,0 +1,3208 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "percentages",
+    "displayName": "Percentages",
+    "extractedAt": "2026-03-30T13:51:13.259Z",
+    "subConceptCount": 13,
+    "lessonCount": 26,
+    "screenCount": 104,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "percent-means-per-hundred",
+      "name": "Percent Means Per Hundred",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percent-per-hundred-discovery",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to understand what the % symbol means",
+            "Why 50% is the same as half"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does 50% actually mean?",
+              "body": "Aisha is counting coloured squares on a 100-square grid. Out of **100** squares, **50** are coloured in.\n\nThat's **50%** — but where does the word \"percent\" come from?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 50,
+                    "label": "50 coloured",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 50,
+                    "label": "50 empty",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "100 squares total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Per cent = per hundred!",
+              "body": "The word **percent** comes from Latin: **per centum**, meaning **\"out of one hundred\"**. Tap each step to see how a percentage becomes a fraction!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "\"Per cent\" comes from Latin meaning \"out of ____\"",
+                "options": [
+                  "ten",
+                  "hundred",
+                  "thousand",
+                  "fifty"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! \"Cent\" means hundred — like century or centimetre. ✓",
+                "incorrectFeedback": "Not quite — \"cent\" means hundred, like century!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "50% means \"50 out of 100\"",
+                    "why": "Per cent = per hundred"
+                  },
+                  {
+                    "text": "As a fraction: 50/100",
+                    "why": "The percentage goes over 100"
+                  },
+                  {
+                    "text": "Simplified: 1/2 = half",
+                    "result": "50% = half ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "If 30 squares out of 100 are coloured, what percentage is that?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "30 out of 100 = what percentage?",
+                "options": [
+                  "30",
+                  "29",
+                  "32",
+                  "27",
+                  "34"
+                ],
+                "correctAnswer": "30",
+                "correctFeedback": "Yes! 30 out of 100 = **30%**. \"Per cent\" literally means \"out of 100\"! ✓",
+                "incorrectFeedback": "Not quite! The number out of 100 IS the percentage. 30 out of 100 = **30%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 30,
+                    "label": "?%",
+                    "color": "#fbbf24"
+                  },
+                  {
+                    "value": 70,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "100 squares total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Percent = out of 100",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percent-per-hundred-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to apply the 'out of 100' idea to real-life situations",
+            "When to watch out for confusing a percentage with a fraction"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does 80% really mean?",
+              "body": "Oliver is scoring on a test with 100 questions. **80** out of **100** — that's **80%**.\n\nBut why do we use 100? Let's find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "80%",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "100% = the whole thing",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Key fact: % always means out of 100",
+              "body": "Using 100 as a common base makes comparing amounts easy. Is 3/7 bigger than 5/12? Hard to tell! But 43% vs 42%? Easy! Tap to see how this works.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "80% = 80 out of 100",
+                    "why": "The % symbol means 'per hundred'"
+                  },
+                  {
+                    "text": "As a fraction: 80/100",
+                    "why": "Divide top and bottom by 20: 80 ÷ 20 = 4, 100 ÷ 20 = 5",
+                    "result": "4/5 (four fifths)"
+                  },
+                  {
+                    "text": "100 is a handy base for comparing",
+                    "why": "Everything over the same denominator (bottom number) ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Quick check!",
+              "body": "What fraction is the same as **40%**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "40% is the same as which fraction?",
+                "options": [
+                  "2/5",
+                  "40/10",
+                  "1/40",
+                  "100/40",
+                  "40/1000"
+                ],
+                "correctAnswer": "2/5",
+                "correctFeedback": "Spot on! 40% = 40/100 = **2/5** (two fifths). ✓",
+                "incorrectFeedback": "Not quite! 40% means 40 out of 100 = 40/100 = **2/5**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 40,
+                    "label": "40%",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 60,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember: per cent = per hundred",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-percentages",
+      "name": "Key Percentage Equivalences",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "common-percentages-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to recall which fractions match the most useful percentages",
+            "How to quickly recall 50%, 25%, 10%, 75%, 20%"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lauren",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The 50% shortcut!",
+              "body": "Lauren is learning quick tricks for her 11+ exam. She needs **50%** of **80**.\n\nGood news: **50%** = **1/2** = half. So just **divide by 2**!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 50,
+                    "label": "50% = 1/2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 50,
+                    "label": "50%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "50% of 80 = ?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The five percentages to memorise",
+              "body": "You saw that **50%** of **80** = 80 ÷ 2 = **40**. That works because 50% = 1/2. There are **five** key percentages like this — memorise them and you'll be much faster! Tap to reveal each one.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "50% = 1/2",
+                    "why": "Divide by 2 (halve it)",
+                    "result": "50% of 80 = 40"
+                  },
+                  {
+                    "text": "25% = 1/4",
+                    "why": "Divide by 4 (quarter it)",
+                    "result": "25% of 80 = 20"
+                  },
+                  {
+                    "text": "75% = 3/4",
+                    "why": "Find 25% then multiply by 3",
+                    "result": "75% of 80 = 60"
+                  },
+                  {
+                    "text": "10% = 1/10",
+                    "why": "Divide by 10",
+                    "result": "10% of 80 = 8"
+                  },
+                  {
+                    "text": "20% = 1/5",
+                    "why": "Divide by 5 (or double 10%)",
+                    "result": "20% of 80 = 16"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Use the shortcut!",
+              "body": "**50%** of **120** = **1/2** of 120.\n\nThat means: 120 ÷ 2 = ?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 50% of 120?",
+                "options": [
+                  "60",
+                  "59",
+                  "62",
+                  "57",
+                  "64"
+                ],
+                "correctAnswer": "60",
+                "correctFeedback": "Brilliant! 50% = 1/2, so 120 ÷ 2 = **60**! ✓",
+                "incorrectFeedback": "Not quite! 50% = 1/2, so divide by 2: 120 ÷ 2 = **60**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 50,
+                    "label": "50%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 50,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "120 total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Five percentages to know by heart!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "common-percentages-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid mixing up common percentage-fraction pairs",
+            "When to watch out for confusing 25% with 20% or 75% with 50%"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Jake get 25% of 80 right?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake!",
+              "body": "Jake confused 25% with 10% — he divided by 10 instead of by 4. The most common error is confusing which fraction goes with which percentage. Tap to see where it went wrong!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: Jake divided 80 by 10 instead of 4",
+                    "why": "Got 8 — incorrect!"
+                  },
+                  {
+                    "text": "25% = 1/4",
+                    "why": "This is the correct equivalence"
+                  },
+                  {
+                    "text": "1/4 of 80 = 20",
+                    "result": "The correct answer is 20 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "Now you know the mistake, what is **10%** of **60** really?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 10% of 60?",
+                "options": [
+                  "6",
+                  "5",
+                  "8",
+                  "3",
+                  "10"
+                ],
+                "correctAnswer": "6",
+                "correctFeedback": "Yes! 10% = 1/10, so 1/10 of 60 = **6**. ✓",
+                "incorrectFeedback": "Not quite! 10% = 1/10. 1/10 of 60 = **6**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 10,
+                    "label": "10%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 90,
+                    "label": "90%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "Total: 60",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't mix up your percentages!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-10-percent",
+      "name": "Finding 10% by Dividing by 10",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "finding-10-percent-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find 10% of any number by dividing by 10",
+            "Why 10% is the building block for all other percentages"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Mrs Patel",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 10% of £60?",
+              "body": "Mrs Patel works out the 10% service charge on a restaurant bill of **£60**.\n\nFinding **10%** is one of the most useful skills in maths. And it's surprisingly easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "10%",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "£60 split into 10 equal parts",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Just divide by 10!",
+              "body": "Finding 10% is the single most useful percentage trick — and it is surprisingly simple. Tap each step to learn the method!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To find 10% of any number, divide by ____",
+                "options": [
+                  "2",
+                  "5",
+                  "10",
+                  "100"
+                ],
+                "correctIndex": "2",
+                "correctFeedback": "Yes! 10% = 1/10, so just divide by 10. ✓",
+                "incorrectFeedback": "Not quite — 10% is the same as 1/10, so you divide by 10."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% means 10 out of 100",
+                    "why": "Which simplifies to 1/10"
+                  },
+                  {
+                    "text": "To find 1/10, divide by 10",
+                    "why": "Move every digit one place to the right"
+                  },
+                  {
+                    "text": "£60 ÷ 10 = £6",
+                    "result": "10% of £60 = £6 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **10%** of **£90**?\n\nRemember: just divide by 10!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 10% of £90?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Brilliant! £90 ÷ 10 = **£9**. Easy when you know the trick! ✓",
+                "incorrectFeedback": "Not quite! To find 10%, divide by 10: £90 ÷ 10 = **£9**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 10,
+                    "label": "10%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 90,
+                    "label": "90%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "£90",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding 10% — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "finding-10-percent-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply the divide-by-10 shortcut to real-life percentage problems",
+            "When to watch out for dividing by the wrong number to find 10%"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A pizza restaurant",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "The one trick that unlocks ALL percentages!",
+              "body": "A pizza restaurant adds a 10% tip to every bill automatically: **£80**.\n\nWhat if we told you there's **one simple trick** that lets you find lots of different percentages? It all starts with 10%...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "?",
+                    "color": "#fbbf24",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "£80 — what is one piece worth?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Divide by 10 — that's it!",
+              "body": "**10%** equals one tenth — and finding a tenth is the easiest division there is. Once you know this trick, you can build up to almost any percentage. Tap to see it in action!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% of £80",
+                    "why": "£80 ÷ 10",
+                    "result": "= £8"
+                  },
+                  {
+                    "text": "20% = two lots of 10%",
+                    "why": "£8 × 2",
+                    "result": "= £16"
+                  },
+                  {
+                    "text": "5% = half of 10%",
+                    "why": "£8 ÷ 2",
+                    "result": "= £4"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Try it yourself!",
+              "body": "What is **10%** of **£110**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "10% of £110 = ?",
+                "options": [
+                  "11",
+                  "10",
+                  "13",
+                  "8",
+                  "15"
+                ],
+                "correctAnswer": "11",
+                "correctFeedback": "Yes! £110 ÷ 10 = **£11**. You've unlocked the master building block! ✓",
+                "incorrectFeedback": "Not quite! Divide by 10: £110 ÷ 10 = **£11**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 10,
+                    "label": "10%?",
+                    "color": "#fbbf24"
+                  },
+                  {
+                    "value": 90,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "£110",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "10% is the master building block!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "building-percentages",
+      "name": "Building Percentages from 10% and 1%",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "building-percentages-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to build lots of different percentages from 10% and 1% blocks",
+            "How to find 5% (half of 10%) and 1% (divide by 100)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How do you find 35%?",
+              "body": "Aisha works out a 35% discount on a coat costing **£200**.\n\nYou might not know 35% straight away, but you DO know how to find 10%. Let's build up from there!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 35,
+                    "label": "35%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 65,
+                    "label": "65%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "£200",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Build 35% from blocks",
+              "body": "Any percentage can be built from just three building blocks: **10%**, **5%**, and **1%**. Tap to see how they combine to make 35%.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% of £200 = £20",
+                    "why": "£200 ÷ 10"
+                  },
+                  {
+                    "text": "5% = £10",
+                    "why": "Half of £20"
+                  },
+                  {
+                    "text": "1% = £2",
+                    "why": "£200 ÷ 100"
+                  },
+                  {
+                    "text": "35% = 3 lots of 10% + one 5%",
+                    "why": "3 × 20 + 10",
+                    "result": "= £70 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **25%** of **£300**?\n\n10% = £30, 5% = £15, 1% = £3. Build it up!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is 25% of £300?",
+                "options": [
+                  "75",
+                  "74",
+                  "77",
+                  "72",
+                  "79"
+                ],
+                "correctAnswer": "75",
+                "correctFeedback": "Brilliant! 25% = 2 lots of 10% + one 5% = 2 × 30 + 15 = **£75**. ✓",
+                "incorrectFeedback": "Not quite! 25% = 2 lots of 10% + one 5%. That's 2 × 30 + 15 = **£75**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 1,
+                    "label": "£30",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#c084fc",
+                    "empty": false
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  },
+                  {
+                    "value": 1,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "Build up to 25%",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Building lots of different percentages — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "building-percentages-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid errors when combining 10% and 1% blocks",
+            "When to watch out for using the wrong building blocks for a percentage"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Jake's error?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Here's what went wrong!",
+              "body": "Jake found 1% instead of 10% — he divided by 100 instead of by 10, then multiplied by 3. The building blocks must be found correctly first — one wrong block throws off the entire calculation. Tap to see the right way.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the building blocks first, then combine. ✓",
+                "incorrectFeedback": "Not quite — always start with 10%, then build 5% and 1% from it."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% of 300 = 30",
+                    "why": "300 ÷ 10"
+                  },
+                  {
+                    "text": "5% = 15",
+                    "why": "Half of 30"
+                  },
+                  {
+                    "text": "1% = 3",
+                    "why": "300 ÷ 100"
+                  },
+                  {
+                    "text": "Correct answer: 90",
+                    "result": "30% of 300 = 90 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct answer?",
+              "body": "What is **20%** of **200**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "20% of 200 = ?",
+                "options": [
+                  "40",
+                  "39",
+                  "42",
+                  "37",
+                  "44"
+                ],
+                "correctAnswer": "40",
+                "correctFeedback": "Spot on! 20% of 200 = **40**. Build from 10%, not from shortcuts that don't work! ✓",
+                "incorrectFeedback": "Not quite! 10% = 20. Build up: **40**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 20,
+                    "label": "20%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 80,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "Total: 200",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Common building-block mistakes",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "express-as-percentage",
+      "name": "Expressing One Number as a Percentage of Another",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "express-as-percentage-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to express one number as a percentage of another",
+            "Why you divide and then multiply by 100"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Priya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "18 out of 25 — what percentage?",
+              "body": "Priya scored 18 out of 25 on her spelling test. That's **18** out of **25**.\n\nBut what percentage is that? There's a simple rule to find out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 18,
+                    "label": "18",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 7,
+                    "label": "7",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "18 out of 25 = ?%",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Divide, then multiply by 100",
+              "body": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Divide part by whole, then multiply by 100. ✓",
+                "incorrectFeedback": "Not quite — first divide the part by the whole, then multiply by 100."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Write the fraction: part ÷ whole",
+                    "why": "18 ÷ 25",
+                    "result": "= 0.72"
+                  },
+                  {
+                    "text": "Multiply by 100",
+                    "why": "0.72 × 100",
+                    "result": "= 72%"
+                  },
+                  {
+                    "text": "18 out of 25 = 72%",
+                    "result": "Done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **14** out of **20** as a percentage?\n\nDivide 14 by 20, then multiply by 100.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "14 out of 20 = ?%",
+                "options": [
+                  "70",
+                  "69",
+                  "72",
+                  "67",
+                  "74"
+                ],
+                "correctAnswer": "70",
+                "correctFeedback": "Brilliant! (14 ÷ 20) × 100 = **70%**. ✓",
+                "incorrectFeedback": "Not quite! (14 ÷ 20) × 100 = 0.7 × 100 = **70%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 14,
+                    "label": "14",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 6,
+                    "label": "6",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "20 total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Expressing as a percentage — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "express-as-percentage-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid dividing the numbers the wrong way round",
+            "When to watch out for forgetting to multiply by 100 at the end"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot Jake's error?",
+              "body": "Jake tried to express **15** out of **60** as a percentage.\n\nJake's working: 60 ÷ 15 = 4, then 4 × 100 = 400%\n\nWhat went wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake's working: 60 ÷ 15 = 4, then 4 × 100 = 400%",
+                    "why": "Is this right?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the correct method!",
+              "body": "Jake divided the wrong way round (60 ÷ 15 = 4, then 4 × 100 = 400%). The correct method is always **(part / whole) x 100** — and the order matters! Tap to see it done right.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Part ÷ whole: 15 ÷ 60",
+                    "result": "= 0.25"
+                  },
+                  {
+                    "text": "Multiply by 100",
+                    "result": "0.25 × 100 = 25%"
+                  },
+                  {
+                    "text": "15 out of 60 = 25%",
+                    "result": "Correct! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Now you try!",
+              "body": "What is **8** out of **40** as a percentage?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "8 out of 40 as a percentage?",
+                "options": [
+                  "20",
+                  "19",
+                  "22",
+                  "17",
+                  "24"
+                ],
+                "correctAnswer": "20",
+                "correctFeedback": "Spot on! (8 ÷ 40) × 100 = **20%**. ✓",
+                "incorrectFeedback": "Not quite! (8 ÷ 40) × 100 = **20%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 8,
+                    "label": "8",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 32,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "40 total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Avoid these common traps!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "percentage-increase",
+      "name": "Percentage Increase",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percentage-increase-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate a price after a percentage increase",
+            "Why you find the percentage first, then add"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A toy shop",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "20% increase on £30",
+              "body": "A toy shop increases prices by 20% after Christmas. A board game was **£30**.\n\nWhat's the new price after a **20% increase**? Let's work it out step by step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 100,
+                    "label": "Original: £30",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "+20%",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "Original + increase = new price",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the %, then add it on!",
+              "body": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it gets bigger\n3. **Check:** your answer should be MORE than you started with\n\nTap to see each step!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find 20% of £30",
+                    "why": "10% = £3, so 20% = £6",
+                    "result": "Increase = £6"
+                  },
+                  {
+                    "text": "Add to the original",
+                    "why": "£30 + £6",
+                    "result": "New price = £36 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **£50** after a **20% increase**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "£50 increased by 20% = ?",
+                "options": [
+                  "60",
+                  "59",
+                  "62",
+                  "57",
+                  "64"
+                ],
+                "correctAnswer": "60",
+                "correctFeedback": "Brilliant! 20% of £50 = £10. Add it on: £50 + £10 = **£60**. ✓",
+                "incorrectFeedback": "Not quite! 20% = £10. Then add: £50 + £10 = **£60**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 100,
+                    "label": "£50",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "+20%?",
+                    "color": "#34d399"
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Percentage increase — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percentage-increase-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply percentage increase to real shopping and money problems",
+            "When to watch out for adding the percentage to the wrong amount"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A museum",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Up by 30%!",
+              "body": "A museum had 500 visitors last month. This month, visitors went up by 30%. How many visitors this month?\n\nA percentage increase means the amount gets **bigger**. But by how much exactly?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 500,
+                    "label": "500",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 150,
+                    "label": "+30%",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "Original + increase = ?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find it, then add it!",
+              "body": "Start by finding **10%** as your building block, then build up to 30%. Once you have the increase, just add it on. Tap to follow along!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the percentage, then add it on. ✓",
+                "incorrectFeedback": "Not quite — first find the percentage amount, then add it to the original."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% of 500 = 50",
+                    "why": "500 ÷ 10"
+                  },
+                  {
+                    "text": "30% of 500 = 150",
+                    "why": "Build from 10%"
+                  },
+                  {
+                    "text": "500 + 150 = 650",
+                    "result": "New total = 650 visitors ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is 400 increased by 20%?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "400 increased by 20% = ?",
+                "options": [
+                  "480",
+                  "479",
+                  "482",
+                  "477",
+                  "484"
+                ],
+                "correctAnswer": "480",
+                "correctFeedback": "Yes! 20% of 400 = 80. Then 400 + 80 = **480**. ✓",
+                "incorrectFeedback": "Not quite! 20% of 400 = 80. Add it on: 400 + 80 = **480**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 400,
+                    "label": "400",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 80,
+                    "label": "?",
+                    "color": "#34d399"
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember: increase = find %, then add!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "percentage-decrease",
+      "name": "Percentage Decrease and Discounts",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percentage-decrease-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to calculate a sale price after a percentage discount",
+            "Why you find the percentage first, then subtract"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lauren",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "20% off £60!",
+              "body": "Lauren spots trainers in a sale with 20% off. They were **£60**.\n\nWhat's the sale price after **20% off**? Let's work it out!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "You pay: ?",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20% off",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "Original: £60",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the %, then take it away!",
+              "body": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the original — decrease means it gets smaller\n3. **Check:** your answer should be LESS than you started with\n\nTap to see each step of the discount!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "For a percentage decrease, find the percentage then ____ it from the original",
+                "options": [
+                  "add",
+                  "subtract",
+                  "multiply",
+                  "divide"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Decrease means subtract — the answer should be less than the original. ✓",
+                "incorrectFeedback": "Not quite — decrease means it gets smaller, so you subtract."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find 20% of £60",
+                    "why": "10% = £6, build up to 20%",
+                    "result": "Discount = £12"
+                  },
+                  {
+                    "text": "Subtract from the original",
+                    "why": "£60 - £12",
+                    "result": "Sale price = £48 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **£90** after **20% off**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "£90 with 20% off = ?",
+                "options": [
+                  "72",
+                  "71",
+                  "74",
+                  "69",
+                  "76"
+                ],
+                "correctAnswer": "72",
+                "correctFeedback": "Brilliant! 20% of £90 = £18. Take it away: £90 - £18 = **£72**. ✓",
+                "incorrectFeedback": "Not quite! 20% = £18. Then £90 - £18 = **£72**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "You pay",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "-20%",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "£90",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Percentage decrease — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percentage-decrease-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to apply percentage discount calculations to real sale prices",
+            "When to watch out for subtracting the percentage instead of the amount"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A school",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Down by 15%!",
+              "body": "A school had 400 pupils, but numbers dropped by 15%. How many now?\n\nA percentage decrease means the amount gets **smaller**. But how much smaller?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 85,
+                    "label": "Remaining",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 15,
+                    "label": "-15%",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "Started with 400 pupils",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find it, then take it away!",
+              "body": "Build up to **15%** using the 10% building block, then take it away from the original. Tap to follow the working!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10% of 400 = 40",
+                    "why": "400 ÷ 10"
+                  },
+                  {
+                    "text": "15% of 400 = 60",
+                    "why": "Build from 10%"
+                  },
+                  {
+                    "text": "400 - 60 = 340",
+                    "result": "New total = 340 pupils ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is 300 decreased by 20%?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "300 decreased by 20% = ?",
+                "options": [
+                  "240",
+                  "239",
+                  "242",
+                  "237",
+                  "244"
+                ],
+                "correctAnswer": "240",
+                "correctFeedback": "Yes! 20% of 300 = 60. Then 300 - 60 = **240**. ✓",
+                "incorrectFeedback": "Not quite! 20% = 60. Subtract: 300 - 60 = **240**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "?",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "-20%",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "300 pupils",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember: decrease = find %, then subtract!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "percent-to-fraction",
+      "name": "Converting Percentages to Fractions",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percent-to-fraction-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to write a percentage as a fraction over 100",
+            "How to simplify the fraction"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is 40% as a fraction?",
+              "body": "Aisha needs to write **40%** as a fraction. Remember: percent means \"out of 100\" — so that gives us our starting point!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 40,
+                    "label": "40%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 60,
+                    "label": "60%",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "100%",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Put it over 100, then simplify!",
+              "body": "Since percent means \"out of 100\", any percentage instantly becomes a fraction — then you just simplify. Tap to see the two-step process!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Put over 100, find the highest common factor, then simplify. ✓",
+                "incorrectFeedback": "Not quite — first write it over 100, then simplify using the highest common factor."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Write as a fraction: 40/100",
+                    "why": "% means out of 100"
+                  },
+                  {
+                    "text": "Find the highest common factor (the biggest number that divides into both) of 40 and 100",
+                    "result": "Highest common factor = 20"
+                  },
+                  {
+                    "text": "Divide top and bottom by 20",
+                    "why": "40÷20 = 2, 100÷20 = 5",
+                    "result": "40% = 2/5 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Write **20%** as a fraction in its simplest form.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "20% as a simplified fraction?",
+                "options": [
+                  "1/5",
+                  "20/100",
+                  "5/1",
+                  "1/6",
+                  "2/5"
+                ],
+                "correctAnswer": "1/5",
+                "correctFeedback": "Brilliant! 20% = 20/100. Simplify by dividing both by 20: **1/5**. ✓",
+                "incorrectFeedback": "Not quite! 20% = 20/100. Divide both by 20 to get **1/5**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 20,
+                    "label": "20%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 80,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "20% = 20/100 = ?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "% to fraction — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percent-to-fraction-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to apply percentage-to-fraction conversion in exam questions",
+            "When to watch out for not simplifying the fraction fully"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oliver",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Quick convert: 35% to a fraction!",
+              "body": "Oliver needs to convert (change) **35%** to a fraction.\n\nThe key fact: **percent means out of 100**, so you already know the bottom number (denominator)!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 35,
+                    "label": "35%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 65,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "35% = ? as a fraction",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Key fact: just put it over 100!",
+              "body": "The percentage becomes the **numerator** (top number) and 100 is the **denominator** (bottom number).\nThen simplify by dividing both by the **highest common factor** (the biggest number that goes into both).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "35% = 35/100",
+                    "why": "Put the % number over 100"
+                  },
+                  {
+                    "text": "Simplify: ÷5 on top and bottom",
+                    "result": "= 7/20 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **45%** as a fraction in simplest form?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "45% = which fraction?",
+                "options": [
+                  "9/20",
+                  "45/100",
+                  "20/9",
+                  "9/19",
+                  "10/20"
+                ],
+                "correctAnswer": "9/20",
+                "correctFeedback": "Spot on! 45% = 45/100, simplified to **9/20**. ✓",
+                "incorrectFeedback": "Not quite! 45% = 45/100. Divide both by 5: **9/20**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 45,
+                    "label": "45%",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 55,
+                    "label": "",
+                    "color": "#e5e7eb",
+                    "empty": true
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Remember the two steps!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "percent-to-decimal",
+      "name": "Converting Between Percentages and Decimals",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percent-to-decimal-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to convert (change) a percentage to a decimal by dividing by 100",
+            "Why 5% = 0.05, not 0.5"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Priya",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "35% as a decimal?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Key fact: % to decimal = divide by 100",
+              "body": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To convert a percentage to a decimal, divide by ____",
+                "options": [
+                  "10",
+                  "50",
+                  "100",
+                  "1000"
+                ],
+                "correctIndex": "2",
+                "correctFeedback": "Yes! Divide by 100 — move the decimal point 2 places left. ✓",
+                "incorrectFeedback": "Not quite — \"per cent\" means \"per hundred\", so divide by 100."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "35% ÷ 100 = 0.35",
+                    "why": "Move decimal point 2 places left",
+                    "result": "35% = 0.35"
+                  },
+                  {
+                    "text": "Check: 0.35 × 100 = 35%",
+                    "why": "Multiply by 100 to go back",
+                    "result": "It works! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is **45%** as a decimal?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "45% as a decimal = ?",
+                "options": [
+                  "0.45",
+                  "4.5",
+                  "0.045",
+                  "45"
+                ],
+                "correctAnswer": "0.45",
+                "correctFeedback": "Yes! 45% ÷ 100 = **0.45**. Two places to the left! ✓",
+                "incorrectFeedback": "Not quite! Divide by 100: 45 ÷ 100 = **0.45**. Move the decimal point two places left."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 45,
+                    "label": "45%",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "value": 55,
+                    "label": "55%",
+                    "color": "#E8E5FF",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "45% = 0.45"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The conversion rules!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percent-to-decimal-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid moving the decimal point the wrong number of places",
+            "When to watch out for the 5% = 0.5 trap"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Jake says 5% = 0.5",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake!",
+              "body": "Jake only moved the decimal one place instead of two — he divided by 10 instead of 100. Remember: converting to a decimal means dividing by **100**, not 10 — that is **two** places, not one! Tap to compare.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 5% = 0.5",
+                    "why": "Jake only moved the decimal one place instead of two — he divided by 10 instead of 100"
+                  },
+                  {
+                    "text": "Correct: 5 ÷ 100 = 0.05",
+                    "result": "5% = 0.05 ✓"
+                  },
+                  {
+                    "text": "Check: 0.05 × 100 = 5%",
+                    "why": "Multiply back to verify"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct decimal?",
+              "body": "What is **3%** as a decimal?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "3% = which decimal?",
+                "options": [
+                  "0.03",
+                  "0.3",
+                  "0.3",
+                  "0.003",
+                  "3"
+                ],
+                "correctAnswer": "0.03",
+                "correctFeedback": "Spot on! 3% ÷ 100 = **0.03**. Two places left! ✓",
+                "incorrectFeedback": "Not quite! 3 ÷ 100 = **0.03**. Remember: TWO places to the left."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 3,
+                    "label": "3%",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "value": 97,
+                    "label": "",
+                    "color": "#E8E5FF",
+                    "empty": true
+                  }
+                ],
+                "totalLabel": "3% ÷ 100 = ?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The decimal point trap!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparing-fdp",
+      "name": "Comparing Fractions, Decimals and Percentages",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "comparing-fdp-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+            "How to decide which form is easiest to change to"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which is biggest?",
+              "body": "Aisha is comparing test scores: she got 3/5, Ben got 0.55, and Chloe got 65%.\n\nA fraction, a decimal and a percentage — how do you compare them? **Convert them all to the same type!**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 60,
+                    "label": "3/5",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 55,
+                    "label": "0.55",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 65,
+                    "label": "65%",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "Which is the largest?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Convert everything to percentages!",
+              "body": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "3/5 = 60%",
+                    "why": "Fraction: divide top by bottom, then × 100"
+                  },
+                  {
+                    "text": "0.55 = 55%",
+                    "why": "Decimal: multiply by 100"
+                  },
+                  {
+                    "text": "65% = 65%",
+                    "why": "Already a percentage!"
+                  },
+                  {
+                    "text": "Order: Ben (55%), Aisha (60%), Chloe (65%)",
+                    "result": "Largest: 65% ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which is the largest?",
+              "body": "1/2, 0.45, and 55% — convert them all to percentages. Which is the **largest**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the largest: 1/2, 0.45, or 55%?",
+                "options": [
+                  "55%",
+                  "1/2",
+                  "0.45",
+                  "They're all equal",
+                  "Can't tell"
+                ],
+                "correctAnswer": "55%",
+                "correctFeedback": "Yes! Converting to percentages: 50%, 45%, 55%. The largest is **55%** (55%). ✓",
+                "incorrectFeedback": "Not quite! Convert all to %: 1/2=50%, 0.45=45%, 55%=55%. Largest is **55%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 50,
+                    "label": "1/2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 45,
+                    "label": "0.45",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 55,
+                    "label": "55%",
+                    "color": "#34d399"
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Comparing FDP — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "comparing-fdp-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to apply fraction-decimal-percentage conversion to comparison questions",
+            "When to watch out for comparing values that are in different forms"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Three types, one comparison!",
+              "body": "Ben is choosing the best deal on chocolate: bar A is 1/2 cocoa, bar B is 0.45 cocoa, bar C is 55% cocoa.\n\nThey're all written differently — but which is the **smallest**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 50,
+                    "label": "1/2",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 45,
+                    "label": "0.45",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 55,
+                    "label": "55%",
+                    "color": "#fbbf24"
+                  }
+                ],
+                "totalLabel": "Which bar is shortest?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Convert to see the truth!",
+              "body": "Look at the bar model — you can already see which is smallest! But to prove it, convert:\n\n- 1/2 = **50%**\n- 0.45 = **45%**\n- 55% = **55%**\n\nThe smallest is **0.45** (45%).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1/2 = 50%",
+                    "result": "50%"
+                  },
+                  {
+                    "text": "0.45 = 45%",
+                    "result": "45%"
+                  },
+                  {
+                    "text": "55% = 55%",
+                    "result": "55%"
+                  },
+                  {
+                    "text": "Smallest: 0.45 = 45%",
+                    "result": "✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Spot the smallest!",
+              "body": "Which is the **smallest**: 1/4, 0.3, or 20%?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is smallest: 1/4, 0.3, or 20%?",
+                "options": [
+                  "20%",
+                  "1/4",
+                  "0.3",
+                  "They're all equal",
+                  "Can't compare them"
+                ],
+                "correctAnswer": "20%",
+                "correctFeedback": "Yes! Converting to %: 25%, 30%, 20%. Smallest is **20%** (20%). ✓",
+                "incorrectFeedback": "Not quite! Convert: 1/4=25%, 0.3=30%, 20%=20%. Smallest = **20%**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 25,
+                    "label": "1/4",
+                    "color": "#c084fc"
+                  },
+                  {
+                    "value": 30,
+                    "label": "0.3",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20%",
+                    "color": "#fbbf24"
+                  }
+                ],
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Converting makes comparing easy!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-percentage",
+      "name": "Reverse Percentages",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reverse-percentage-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the original price when you know the discounted price",
+            "Why you work out what percentage the given amount represents"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lauren",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What was the original price?",
+              "body": "Lauren bought a coat in a 20% off sale for £**48**.\n\nThe sale was **20% off**. What was the **original** price before the sale?\n\nThis is a **reverse percentage** question — we work backwards!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "£48 (80%)",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20% off",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "Original price = ? (100%)",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Work out what % you have, then scale to 100%",
+              "body": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "20% off means you paid 80%",
+                    "why": "100% - 20% = 80%"
+                  },
+                  {
+                    "text": "80% = £48",
+                    "why": "This is what we know"
+                  },
+                  {
+                    "text": "1% = £48 ÷ 80 = £0.6",
+                    "why": "Divide to find one percent"
+                  },
+                  {
+                    "text": "100% = £0.6 × 100 = £60",
+                    "result": "Original price = £60 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "After **20% off**, the price is **£56**. What was the original price?\n\nRemember: £56 = 80%. Find 1%, then 100%.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Original price before 20% off?",
+                "options": [
+                  "70",
+                  "69",
+                  "72",
+                  "67",
+                  "74"
+                ],
+                "correctAnswer": "70",
+                "correctFeedback": "Brilliant! £56 = 80%, so 1% = £0.7, and 100% = **£70**. ✓",
+                "incorrectFeedback": "Not quite! £56 is 80% of the original. £56 ÷ 80 × 100 = **£70**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "£56",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20% off",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "100% = ?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Reverse percentage — the recipe",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "reverse-percentage-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid taking a percentage of the discounted price instead of the original",
+            "When to watch out for the reverse percentage trap in exam questions"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Jake's reverse percentage trap!",
+              "body": "Jake paid **£240** after **20% off**. He worked out the original price like this:\n\n£240 + 20% of £240 = £240 + £48 = £288\n\nBut something's wrong...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake's answer: £288",
+                    "why": "Is this correct?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The classic reverse percentage trap!",
+              "body": "Jake found 20% of £240 (£48) and added it back on — but £240 is NOT 100%, it's 80%!\n\nThe correct way: £240 = **80%**.\n\n1% = £240 ÷ 80 = £3\n100% = £3 × 100 = **£300**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 20% of £240 added back",
+                    "why": "£240 is NOT 100% — it's 80%!"
+                  },
+                  {
+                    "text": "Correct: £240 = 80%",
+                    "why": "100% - 20% = 80%"
+                  },
+                  {
+                    "text": "1% = £3",
+                    "why": "£240 ÷ 80"
+                  },
+                  {
+                    "text": "100% = £300",
+                    "result": "Original = £300 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct original?",
+              "body": "After **20% off**, the price is **£320**. What was the original price?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Original price before 20% off?",
+                "options": [
+                  "400",
+                  "399",
+                  "402",
+                  "397",
+                  "404"
+                ],
+                "correctAnswer": "400",
+                "correctFeedback": "Spot on! £320 = 80%, so original = **£400**. Don't fall for the trap! ✓",
+                "incorrectFeedback": "Not quite! £320 is 80% of the original. £320 ÷ 80 × 100 = **£400**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "£320",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20% off",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "100% = ?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Don't use the sale price as 100%!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "successive-percentages",
+      "name": "Successive Percentage Changes",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "successive-percentages-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Why two 10% discounts don't equal a 20% discount",
+            "How to apply percentage changes one step at a time"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "A clothes shop",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "10% off + 10% off = 20% off... right?",
+              "body": "A clothes shop offers 10% off, then another 10% off the sale price. A jacket is **£100**.\n\nYou might think 10% off then 10% off is the same as **20% off**. But it's NOT! Let's see why...",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": null,
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 81,
+                    "label": "£81?",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 19,
+                    "label": "Saved",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "£100 original",
+                "showValues": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Apply each discount one at a time!",
+              "body": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start: £100",
+                    "why": "Original price"
+                  },
+                  {
+                    "text": "10% off: £100 - £10",
+                    "result": "= £90"
+                  },
+                  {
+                    "text": "10% off £90: £90 - £9",
+                    "result": "= £81"
+                  },
+                  {
+                    "text": "Total saving: £19 (= 19%, not 20%)",
+                    "result": "Final price: £81 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the final price?",
+              "body": "**£200** with **20% off**, then **10% off** the sale price. What do you actually pay?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "£200 after 20% off then 10% off?",
+                "options": [
+                  "144",
+                  "143",
+                  "146",
+                  "141",
+                  "148"
+                ],
+                "correctAnswer": "144",
+                "correctFeedback": "Yes! 20% off = £160. Then 10% off that = **£144**. NOT the same as 30% off! ✓",
+                "incorrectFeedback": "Not quite! First: 20% off £200 = £160. Then: 10% off £160 = **£144**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 144,
+                    "label": "You pay",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 16,
+                    "label": "2nd 10%",
+                    "color": "#fbbf24"
+                  },
+                  {
+                    "value": 40,
+                    "label": "1st 20%",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "£200",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You can't just add percentages!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "successive-percentages-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the trap of adding successive percentages together",
+            "When to watch out for applying the second percentage to the wrong amount"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Jake just added the percentages!",
+              "body": "A shop gives **10% off**, then another **10% off** the sale price. The item costs **£200**.\n\nJake's working: 10% + 10% = 20%, so 20% of £200 = £40 off, final = £160\n\nIs that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake's answer: £160",
+                    "why": "Can you spot the mistake?"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "You can't just add the percentages!",
+              "body": "Jake added 10% + 10% = 20% and took 20% off £200 in one go. But the second discount applies to the **reduced price**, not the original!\n\n**Step 1:** 10% off £200 = £180\n**Step 2:** 10% off £180 = £162",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: 10% + 10% = 20% off £200",
+                    "why": "Gives £160 — incorrect!"
+                  },
+                  {
+                    "text": "Step 1: 10% off £200",
+                    "result": "= £180"
+                  },
+                  {
+                    "text": "Step 2: 10% off £180",
+                    "result": "= £162"
+                  },
+                  {
+                    "text": "Correct answer: £162",
+                    "result": "(not £160) ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct final price?",
+              "body": "£300 with 10% off, then 10% off the sale price. What do you pay?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "£300 after 10% off then 10% off?",
+                "options": [
+                  "243",
+                  "242",
+                  "245",
+                  "240",
+                  "247"
+                ],
+                "correctAnswer": "243",
+                "correctFeedback": "Brilliant! 10% off = £270, then 10% off that = **£243**. ✓",
+                "incorrectFeedback": "Not quite! Step 1: £270. Step 2: 10% off £270 = **£243**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 243,
+                    "label": "You pay",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 57,
+                    "label": "Total saving",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "£300 original",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Never add successive percentages!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "percentage-word-problems",
+      "name": "Percentage Word Problems",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "percentage-word-problems-curiosity",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+            "How to check your answer makes sense in context"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What type of percentage question is this?",
+              "body": "A clothes shop has a sale with 30% off everything. Aisha buys a dress that was £60 and a scarf that was £20. How much does she spend in total?\n\nBefore you start calculating, ask: **what kind of percentage problem is this?** Is it finding a %, increase, decrease, or comparing?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Question type: Percentage decrease (discount)",
+                    "why": "Read the question carefully to identify the type"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Solve it step by step!",
+              "body": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Add the original prices: £60 + £20",
+                    "result": "= £80"
+                  },
+                  {
+                    "text": "Find 30% of £80",
+                    "result": "= £24"
+                  },
+                  {
+                    "text": "Subtract: £80 - £24",
+                    "result": "= £56 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the answer?",
+              "body": "A different shop has 20% off everything. You buy items totalling £100. What do you pay?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Total sale spend after 20% off?",
+                "options": [
+                  "80",
+                  "79",
+                  "82",
+                  "77",
+                  "84"
+                ],
+                "correctAnswer": "80",
+                "correctFeedback": "Yes! 20% of £100 = £20. You pay £100 - £20 = **£80**. ✓",
+                "incorrectFeedback": "Not quite! Total = £100. 20% off = £20. Answer: **£80**."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 80,
+                    "label": "You pay: ?",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 20,
+                    "label": "20% off",
+                    "color": "#f87171"
+                  }
+                ],
+                "totalLabel": "£100 total",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tackling percentage word problems",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "percentage-word-problems-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid confusing increase, decrease, and simple percentage questions",
+            "When to watch out for answers that are bigger or smaller than they should be"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Did Jake answer the question?",
+              "body": "A shop has 20% off. Jake buys a £45 jumper.\n\nJake's working: 20% of £45 = £9. Answer: £9\n\nJake did some correct maths, but didn't actually answer the question! Can you see why?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake's answer: 9",
+                    "why": "Something's missing..."
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read the question again!",
+              "body": "Jake found 20% correctly (£9) but forgot to subtract it from £45 — he gave the discount amount, not the sale price.\n\nThe key: always re-read the question at the end. **What is it actually asking for?** The discount or the price? The increase or the new total? A raw score or a percentage?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Jake found the right number...",
+                    "why": "9 is a correct intermediate step"
+                  },
+                  {
+                    "text": "...but didn't finish!",
+                    "why": "Jake found 20% correctly (£9) but forgot to subtract it from £45 — he gave the discount amount, not the sale price"
+                  },
+                  {
+                    "text": "Correct answer: 36",
+                    "result": "Always check you've answered what was asked ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the actual answer?",
+              "body": "A shop has 30% off. You buy an item costing £70. What do you pay?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "BarModel",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the correct final answer?",
+                "options": [
+                  "49",
+                  "48",
+                  "51",
+                  "46",
+                  "53"
+                ],
+                "correctAnswer": "49",
+                "correctFeedback": "Spot on! The answer is **49**. Always finish the question — don't stop halfway! ✓",
+                "incorrectFeedback": "Not quite! The final answer is **49**. Remember to complete all the steps."
+              },
+              "visualProps": {
+                "segments": [
+                  {
+                    "value": 70,
+                    "label": "Main part",
+                    "color": "#818cf8"
+                  },
+                  {
+                    "value": 30,
+                    "label": "30%",
+                    "color": "#34d399"
+                  }
+                ],
+                "totalLabel": "What's the final amount?",
+                "showValues": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Always answer what's asked!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

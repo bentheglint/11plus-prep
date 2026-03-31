@@ -1,0 +1,167 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "logicAndLanguage",
+  "subject": "verbalreasoning",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 163,
+    "lessonsReviewed": 11,
+    "mappingsReviewed": 163,
+    "issuesFound": 12,
+    "bySeverity": { "critical": 0, "high": 3, "medium": 5, "low": 4 },
+    "difficultyAssessment": "D1:43 (26%), D2:59 (36%), D3:61 (37%) — D1 is 4% below target and D3 is 7% above. The topic skews harder than GL's ~30:40:30 target. This is concerning because Logic & Language is already one of the hardest VR topics for 9-year-olds — having nearly 40% at D3 could be demoralising. Within tiers, calibration is generally correct: D1 uses 3-person ordering with extreme positions (tallest/shortest) and simple syllogisms. D2 uses 4-person ordering, reverse syllogisms, and basic deduction chains. D3 uses 5-person ordering, multi-step deduction, negation, and logic grids. However, some D1 questions (e.g., Q12 'twice as many') test arithmetic rather than logic.",
+    "coverageAssessment": "Good coverage of the Oracle's sub-types: ordering (3-person, 4-person, 5-person) is the dominant category (~40%), syllogisms (~20%), sentence rearrangement (~8%), rhyming synonym puzzles (~5%), double-meaning/homonyms (~8%), calendar/sequence questions (~5%), and deduction chains (~14%). Missing from Oracle spec: 'Logic grid / Explore the Facts' (multiple people x attributes cross-reference), 'cannot be determined' as a valid answer type (present but rare), and formal negation deduction ('None of X are Y' combined with other facts). The rhyming synonym puzzle sub-type ('fat cat', 'big pig', 'cross boss') is a genuine GL format but is over-represented relative to its exam frequency — GL uses maybe 1-2 per paper, not the 8+ in this bank.",
+    "teachingEfficacyAssessment": "9 sub-concepts with 11 lessons cover the major logic skills. The ordering lessons (3-person, 4-person, superlative) teach the correct 'draw a vertical line' strategy. The syllogism lesson correctly teaches 'All A are B does NOT mean All B are A' — the single most important concept. The 'True, False or Uncertain' lesson addresses the 'all/some/none' distinction well. 153/163 questions mapped (10 unmapped), with 133 high and 20 medium confidence. The 10 unmapped questions need attention — they likely represent question types that don't fit existing sub-concepts (calendar questions, arithmetic-logic hybrids, or less common formats). The homonyms lesson mapping to rhyming synonym puzzles (Q5 'fat cat', Q11 'big pig') is a poor fit — these are not homonym questions, they are a distinct GL sub-type.",
+    "topPriorities": [
+      "Fix the rhyming synonym puzzle mapping — these are mapped to 'homonyms' but are a different question type entirely",
+      "Reduce D3 percentage from 37% to ~30% by downgrading or replacing some questions",
+      "Map the 10 unmapped questions or create appropriate sub-concepts for them"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-LL-MAP-001",
+      "itemType": "mapping",
+      "itemId": "Q5,Q11,Q17",
+      "severity": "high",
+      "category": "mapping-mismatch",
+      "title": "Rhyming synonym puzzles incorrectly mapped to 'Words with Multiple Meanings'",
+      "description": "Q5 ('overweight feline' = Fat cat), Q11 ('large swine' = Big pig), Q17 ('angry employer' = Cross boss) are rhyming synonym puzzles — a distinct GL question type where the child must find two rhyming words that match a definition. These are mapped to the 'homonyms' sub-concept ('Words with Multiple Meanings'), which teaches about words like 'bank' having two meanings. The lesson content (about recognising multiple definitions from context) has nothing to do with solving rhyming synonym puzzles. A child who studies the homonyms lesson will not learn how to solve these questions.",
+      "suggestedFix": "Create a new sub-concept 'Rhyming Synonym Puzzles' with a lesson teaching the strategy: (1) identify the definition words, (2) find a synonym for each, (3) check the synonyms rhyme. Map Q5, Q11, Q17, and any other rhyming pair questions to this new sub-concept.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-MAP-002",
+      "itemType": "mapping",
+      "itemId": "Q6",
+      "severity": "high",
+      "category": "mapping-mismatch",
+      "title": "Q6 (3-person ordering) mapped to 'Ordering 4 People'",
+      "description": "Q6: 'Tom is older than Sam. Sam is older than Jack. Who is the youngest?' involves only 3 people but is mapped to the 'four-person-ordering' sub-concept. The lesson for 4-person ordering teaches about finding the 'link name' that connects two clues — unnecessary for 3-person problems where the connection is always obvious. This should be mapped to a 3-person ordering sub-concept or the 'superlative-questions' sub-concept.",
+      "suggestedFix": "Remap Q6 to 'superlative-questions' (Who Is Tallest / Shortest / Oldest?) which is the correct sub-concept for 3-person extreme-position questions.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-UNMAP-001",
+      "itemType": "mapping",
+      "itemId": "10 unmapped questions",
+      "severity": "high",
+      "category": "unmapped-questions",
+      "title": "10 questions have no lesson mapping",
+      "description": "The mapping meta shows 10 unmapped questions out of 163. These questions are likely calendar/sequence questions (Q16 'What month comes two months after March?', Q20 'What day comes three days after Monday?'), arithmetic-logic hybrids (Q12 'Rose has twice as many as Lily'), or unusual question formats that don't fit existing sub-concepts. Unmapped questions mean the child gets no micro-lesson preparation before encountering them.",
+      "suggestedFix": "Identify the 10 unmapped questions and either: (a) create new sub-concepts for genuine gaps (calendar reasoning, arithmetic-logic), or (b) map them to the closest existing sub-concept with a note about the imperfect fit.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-DIFF-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "medium",
+      "category": "difficulty-distribution",
+      "title": "D3 over-represented at 37% (target 30%)",
+      "description": "61 of 163 questions (37%) are D3, which is 7% above the GL target of ~30%. Logic & Language is already conceptually challenging — over-weighting D3 means children spend disproportionate time on the hardest questions. The extra 12 D3 questions (61 vs target ~49) should be redistributed: some downgraded to D2, others genuinely belonging at D3.",
+      "suggestedFix": "Review D3 questions and downgrade the following candidates to D2: (a) Q4 (4-person ordering with extreme position — standard D2), (b) Q5 (rhyming synonym 'fat cat' — common vocabulary, not D3 complexity), (c) Q14 (sentence rearrangement with 6 words — D2 per Oracle spec), (d) Q17 (rhyming synonym 'cross boss' — could be D2). Target reducing D3 to ~50 questions.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q4",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q4 rated D3 but is straightforward 4-person ordering",
+      "description": "Q4: 'Dan has more sweets than Emma. Fay has fewer sweets than Emma but more than George. Who has the most sweets?' This creates the chain Dan > Emma > Fay > George and asks for the extreme position (most). Per the Oracle spec, 4-person ordering is D2, and asking for the extreme position (rather than middle) makes it easier. A true D3 ordering question would have 5 people or ask for a non-extreme position.",
+      "suggestedFix": "Downgrade to D2.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-DIFF-003",
+      "itemType": "question",
+      "itemId": "Q5",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q5 'fat cat' rhyming puzzle rated D3 but uses very common vocabulary",
+      "description": "Q5: 'overweight feline = fat cat' is rated D3. Both 'fat' and 'cat' are Year 2-3 vocabulary. 'Feline' is the only challenging word, and it's very commonly known. The Oracle spec places common homonyms at D1 and less common ones at D2. While rhyming synonyms aren't exactly homonyms, the difficulty principle applies — common vocabulary should be D1/D2.",
+      "suggestedFix": "Downgrade to D2. Reserve D3 for rhyming synonym puzzles using sophisticated vocabulary (e.g., 'a petite dwelling' = small hall, 'an angry employer' = cross boss).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-SCOPE-001",
+      "itemType": "question",
+      "itemId": "Q12,Q16,Q20",
+      "severity": "medium",
+      "category": "scope-creep",
+      "title": "Some questions test arithmetic/calendar knowledge rather than logic",
+      "description": "Q12 ('Rose has twice as many as Lily' — tests multiplication), Q16 ('What month comes two months after March?' — tests calendar knowledge), Q20 ('What day comes three days after Monday?' — tests day-of-week knowledge). These test factual/arithmetic knowledge rather than the logical reasoning skills that define the Logic & Language category. GL's Logic & Language section specifically tests deduction, ordering, syllogisms, and language-based reasoning.",
+      "suggestedFix": "Either: (a) move these to a more appropriate topic (calendar questions could be in a general knowledge section), or (b) reframe to include genuine logical reasoning (e.g., 'If Monday is a school day and Freya has swimming every other school day starting Monday, does she swim on Wednesday?' — combines calendar with logic).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-TIP-001",
+      "itemType": "question",
+      "itemId": "Q1-Q30",
+      "severity": "medium",
+      "category": "misleading-tip",
+      "title": "Tips from wrong question types appear on unrelated questions",
+      "description": "Ordering questions get syllogism tips and vice versa. For example, Q7 (syllogism: 'All dogs have four legs') gets the tip 'Watch out for direction words — fewer is opposite to more!' which is an ordering tip. Q11 (rhyming synonym puzzle) gets 'Focus only on what MUST be true' which is a syllogism tip. Q8 (sentence rearrangement) gets 'For 4-5 person rankings, write ALL names before picking your answer' — completely irrelevant to sentence unscrambling.",
+      "suggestedFix": "Assign tips from pools specific to the question sub-type: ordering tips for ordering questions, syllogism tips for syllogism questions, sentence tips for sentence rearrangement questions, etc.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-EXPL-001",
+      "itemType": "question",
+      "itemId": "Q22",
+      "severity": "low",
+      "category": "explanation-quality",
+      "title": "Q22 'box' connecting 'bank' and 'match' has a weak explanation",
+      "description": "Q22: 'Which word connects both bank and match?' Answer: Box. The explanation says 'Box connects with match (a matchbox) and bank (a cash box kept at a bank, or a safety deposit box).' The bank-box connection is tenuous — 'cash box' and 'safety deposit box' are not natural collocations of 'bank + box'. A stronger connection would be 'money box' (piggy bank). The GL format for double-meaning questions typically requires clear, unambiguous connections.",
+      "suggestedFix": "Either strengthen the explanation to use 'money box' as the bank connection, or replace the question with a clearer double-meaning word. For example: 'Which word connects park and pupil?' → Bright (bright park, bright pupil).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-GAP-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "No logic grid / Explore the Facts questions",
+      "description": "The Oracle spec lists 'Logic grid / Explore the Facts — multiple people + attributes, cross-reference to deduce' as a D3 sub-type. This is completely absent from the question bank. GL regularly includes 1-2 logic grid questions per paper where children must match 3-4 people to 3-4 attributes using elimination. These are high-value D3 questions.",
+      "suggestedFix": "Add 5-8 logic grid questions at D3. Example: 'Ali, Ben, and Cara each like a different colour (red, blue, green) and a different sport (football, tennis, swimming). Ali likes red. The swimmer likes blue. Ben plays tennis. Which sport does Cara do?'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-GAP-002",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "'Cannot tell' is rarely the correct answer",
+      "description": "The Oracle spec emphasises that 'Cannot tell' / 'Cannot be determined' should be a valid correct answer for some questions, testing whether children understand the difference between 'could be true' and 'must be true'. While 'Cannot tell' appears as an option in many questions, it is almost never the correct answer in this bank. GL specifically tests this as a trap — children who feel they must commit to an answer get caught.",
+      "suggestedFix": "Add 5-8 questions where 'Cannot tell' IS the correct answer. Example: 'Some children like swimming. Kai is a child. Does Kai like swimming? Cannot tell — some does not mean all.' These should be D2/D3.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LL-VAR-001",
+      "itemType": "question",
+      "itemId": "Q1,Q6,Q24-Q30",
+      "severity": "low",
+      "category": "variety",
+      "title": "D1 over-relies on 3-person ordering with identical structure",
+      "description": "The D1 block contains many 3-person ordering questions with near-identical structure: 'X is [comparison] than Y. Y is [comparison] than Z. Who is the [superlative]?' While the names, attributes, and comparison words vary, the structural template is identical across ~15 questions. A child quickly learns the pattern ('always pick the person mentioned last in the final clue') rather than developing genuine ordering skills.",
+      "suggestedFix": "Vary D1 question structures more: include some where clues are in reverse order (bottom-up), some where the comparison direction changes ('Z is shorter than Y'), and some where two separate facts need combining rather than following a chain. Also intersperse D1 syllogisms and sentence rearrangement questions.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

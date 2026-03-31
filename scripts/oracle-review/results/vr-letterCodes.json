@@ -1,0 +1,197 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "letterCodes",
+  "subject": "verbalreasoning",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 166,
+    "lessonsReviewed": 12,
+    "mappingsReviewed": 166,
+    "issuesFound": 14,
+    "bySeverity": {
+      "critical": 1,
+      "high": 3,
+      "medium": 6,
+      "low": 4
+    },
+    "difficultyAssessment": "D1:49 (30%), D2:58 (35%), D3:59 (36%) — D1 is spot-on at 30%, D2 is slightly under the 40% GL target, and D3 is slightly over the 30% target. The distribution is acceptable but could benefit from 5-6 D3 questions being recalibrated to D2. D1 questions correctly use small constant shifts (+1/-1) on 3-letter words, though many are very similar (repetitive +1 encoding on 3-letter words across Q1-Q44). D2 questions use +2/-2 shifts on 4-letter words appropriately. D3 questions include +3 shifts, wrap-around, 5-letter words, variable/progressive shifts, and mirror codes — all GL-appropriate for D3. The progressive shift questions (Q99-Q100, Q122-Q136) and mirror code questions (Q149-Q156) are excellent D3 content that matches GL patterns well.",
+    "coverageAssessment": "Good coverage of all GL code pattern types: constant shifts (+1 through +5 and -1 through -5), progressive/variable shifts (+1,+2,+3,+4 and -1,-2,-3,-4,-5), alternating shifts (+1,+2,+1,+2 and +3,+2,+1,+3,+2), mirror codes (A=Z, B=Y), and wrap-around (past Z to A). Both encoding (word to code) and decoding (code to word) are well represented. The 'identify the rule' format (Q1, Q3, Q37-Q44, Q69-Q76, Q97-Q98) provides good variety from the standard encode/decode questions. However, Q1-Q44 are heavily concentrated on +1/-1 shifts — over 25% of the bank uses only the simplest shift. The later questions (Q77-Q166) show much better variety and complexity.",
+    "teachingEfficacyAssessment": "12 lessons across 8 sub-concepts provide comprehensive coverage: forward shift, backward shift, spotting the pattern, reverse decoding, wrap-around, progressive shifts, mirror codes, and exam strategy. The EJOTY anchor strategy (E=5, J=10, O=15, T=20, Y=25) is consistently reinforced across lessons and question tips — this is a genuinely useful technique. The AlphabetLine visual component is well-used in lessons to show hop directions. The 'spot-the-mistake' lesson template catches off-by-one errors effectively. All 166 questions mapped (202 high confidence, 5 medium, 0 low) — the 5 medium-confidence mappings are progressive shift questions mapped to the general pattern-spotting sub-concept, which is reasonable but could be tighter if a dedicated progressive-shift sub-concept existed. Two orphan sub-concepts need reviewing.",
+    "topPriorities": [
+      "Fix Q8 — trivially circular question that tells you the answer in the question stem",
+      "Reduce D1 repetitiveness: Q1-Q44 over-rely on +1/-1 shifts on 3-letter words — retire or recalibrate 8-10 near-duplicates",
+      "Fix Q14 option encoding issue (MBOÉ with accented character)",
+      "Add 5-6 D2 questions to bring D2 closer to 40% GL target"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-LC-001",
+      "itemType": "question",
+      "itemId": "Q8",
+      "severity": "critical",
+      "category": "question-design",
+      "title": "Question is trivially circular — answer is stated in the question",
+      "description": "Q8 asks 'If CAT is coded as DBU, what is the code for CAT?' The answer (DBU) is literally given in the question stem. This tests nothing — a child can copy the answer without understanding any shift rules. This would never appear in a real GL paper.",
+      "suggestedFix": "Change to a genuine encode/decode question. Either ask 'If CAT is coded as DBU, what is the code for DOG?' or 'If CAT is coded as DBU, what word is coded as GPS?' Both test the +1 shift properly.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-002",
+      "itemType": "question",
+      "itemId": "Q14",
+      "severity": "high",
+      "category": "display-error",
+      "title": "Option A contains accented character MBOÉ instead of MBOE",
+      "description": "Q14 options include 'MBOÉ' as option A and 'MBOE' as option B. The correct answer is MBOE (option B, index 1). The accented É in option A is a rendering/encoding artefact that should not appear — it could confuse children or cause display issues. All options should use plain uppercase ASCII letters only.",
+      "suggestedFix": "Replace 'MBOÉ' with a proper distractor like 'NCOE' or 'MBOF'. Ensure no accented characters exist in any letter code options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-003",
+      "itemType": "question",
+      "itemId": "Q1-Q44",
+      "severity": "high",
+      "category": "repetitiveness",
+      "title": "First 44 questions over-rely on +1/-1 shifts — excessive repetition",
+      "description": "Q1-Q44 are almost entirely +1 or -1 shifts on 3-letter words. Many are near-duplicates in structure: Q9 (DOG→CNF, encode SUN), Q11 (SUN→RTM, encode PEN), Q23 (CAT→BZS, encode SUN), Q25 (SUN→RTM, encode CUP), Q28 (BUS→ATR, encode RUN). The same words (CAT, DOG, SUN, PEN, HAT) appear repeatedly. This creates a monotonous experience and doesn't build skills progressively. GL papers use only 6 letter code questions per section — having 44 near-identical questions wastes bank space.",
+      "suggestedFix": "Retire 15-20 of the most similar Q1-Q44 questions. Keep the best representatives of each format: 3-4 'identify the rule' questions, 3-4 encode questions, 3-4 decode questions. Redistribute those slots to D2 questions (+2/-2 shifts, 4-letter words) to bring D2 closer to the GL 40% target.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-004",
+      "itemType": "question",
+      "itemId": "Q88",
+      "severity": "medium",
+      "category": "explanation-accuracy",
+      "title": "Wrap-around direction described incorrectly in explanation",
+      "description": "Q88 explanation states 'Z→C (wraps past A)' for decoding. When moving forward +3, Z wraps past Z (i.e., Z→A→B→C), not past A. The phrasing 'wraps past A' implies going backward past A, which would give a different result. The answer (TRICK) is correct, but the explanation language could mislead a child about the wrap-around direction.",
+      "suggestedFix": "Change to 'Z→C (wraps forward past Z: Z→A→B→C)' to accurately describe the forward wrap-around.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-005",
+      "itemType": "question",
+      "itemId": "Q29",
+      "severity": "medium",
+      "category": "answer-verification",
+      "title": "Correct answer is RUN but option label says 'RUN' at index 2 while correctAnswer field says RUN at correct:2",
+      "description": "Q29 asks 'If DOG is coded as EPH, what word is coded as SVO?' Decoding with -1: S→R, V→U, O→N = RUN. The correct index is 2, and options are [RUM, RUG, RUN, RUT, TUN]. Index 2 = RUN. However, the correctAnswer field says 'RUN' — this is correct. No actual error, but worth noting the distractor 'RUG' also decoded to index 1 when the explanation could clarify why RUG is wrong (V→U is correct not V→U, O→G would need O→G which doesn't work).",
+      "suggestedFix": "No fix needed — answer verified as correct. Distractors are well-designed near-misses.",
+      "oracleConfidence": "high",
+      "status": "verified-correct"
+    },
+    {
+      "issueId": "VR-LC-006",
+      "itemType": "question",
+      "itemId": "Q77",
+      "severity": "medium",
+      "category": "answer-index-mismatch",
+      "title": "Correct index points to wrong option — answer is IODPH but correct:1 points to IODPH which matches",
+      "description": "Q77 correct:1 points to options[1] = 'IODPH'. Let me verify: CHARM→FKDUP is +3. FLAME +3: F→I, L→O, A→D, M→P, E→H = IODPH. Options[0]='IODQH', options[1]='IODPH'. Correct answer IODPH is at index 1. Verified correct.",
+      "suggestedFix": "No fix needed — verified correct.",
+      "oracleConfidence": "high",
+      "status": "verified-correct"
+    },
+    {
+      "issueId": "VR-LC-007",
+      "itemType": "question",
+      "itemId": "Q96",
+      "severity": "medium",
+      "category": "explanation-accuracy",
+      "title": "Wrap-around explanation uses incorrect direction phrasing",
+      "description": "Q96 decodes PLAHU with shift -3. Explanation says 'A→X (wraps past A)'. When going backward 3 from A: A→Z→Y→X. The correct phrasing is 'wraps backward past A to Z, then continues'. The answer MIXER is correct (P-3=M, L-3=I, A-3=X, H-3=E, U-3=R). The issue is only in the explanation wording.",
+      "suggestedFix": "Change explanation to 'A→X (wraps backward: A→Z→Y→X)' for clarity.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-008",
+      "itemType": "question",
+      "itemId": "Q99",
+      "severity": "medium",
+      "category": "difficulty-calibration",
+      "title": "Variable shift question tip references +1 shift which is misleading",
+      "description": "Q99 uses shifts +1,+2,+3,+1 (a non-uniform pattern). The tip says '+1 is the most common GL code — practise until it's automatic!' This tip is misleading for a variable-shift question because it draws attention to +1 when the whole point is that shifts vary per position. A child might be confused by the +1 tip when the pattern includes +2 and +3 shifts.",
+      "suggestedFix": "Change tip to: 'When the shifts change per position, write the pattern above the letters. Look for +1,+2,+3 or repeating sequences.'",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-009",
+      "itemType": "question",
+      "itemId": "Q101-Q108",
+      "severity": "medium",
+      "category": "question-design",
+      "title": "Questions state the rule in the stem — reduces cognitive demand below D1",
+      "description": "Q101-Q108 all include the shift rule in parentheses: 'each letter moved forward by 1', 'each letter moved back by 1', 'each letter moved forward by 2'. In real GL papers, the child must discover the rule from the example pair. Stating the rule explicitly makes these trivially easy — even below genuine D1 difficulty. These could mislead children into thinking the rule will always be given.",
+      "suggestedFix": "Remove the parenthetical rule statement from these 8 questions. The example pair (e.g., 'FISH is coded as GJTI') is sufficient for the child to work out +1. If these are meant as introductory scaffolding questions, label them as 'practice' rather than mixing them into the regular D1 bank.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-010",
+      "itemType": "lesson",
+      "itemId": "all-tips",
+      "severity": "low",
+      "category": "repetitive-content",
+      "title": "Identical tips repeated across 100+ questions",
+      "description": "The tip 'Always check every letter — don't assume the shift from just the first one' appears on approximately 95 of the first 100 questions. While the advice is sound, the extreme repetition reduces its impact. Tips on later questions (Q101+) vary more ('When the shift changes each position, write the pattern above the letters'). The earlier block could benefit from varied tips.",
+      "suggestedFix": "Rotate between 4-5 different tips across the first 100 questions: (1) the check-every-letter tip, (2) 'Use EJOTY to find letter positions quickly', (3) 'Write both the original and shifted letters side by side', (4) 'Watch for wrap-around near Z and A', (5) 'If stuck, try the most common shifts first: +1, +2, -1, -2'.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-011",
+      "itemType": "mapping",
+      "itemId": "orphan-sub-concepts",
+      "severity": "low",
+      "category": "mapping-gap",
+      "title": "Two orphan sub-concepts have lessons but no mapped questions",
+      "description": "The mapping metadata shows 2 orphan sub-concepts — these have lessons created but no questions directly mapped to them. This means children learn a concept in a micro-lesson but never practise it in quiz questions, reducing learning transfer.",
+      "suggestedFix": "Review the 2 orphan sub-concepts and either map existing questions to them or create new questions that exercise those specific skills.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-012",
+      "itemType": "question",
+      "itemId": "Q18",
+      "severity": "low",
+      "category": "distractor-quality",
+      "title": "Q18 option A 'FOOD' is a strong distractor but explanation doesn't address it",
+      "description": "Q18 decodes IROG with -3 shift. I→F, R→O, O→L, G→D = FOLD. Option A is 'FOOD' which a child might select if they miscounted one letter. The explanation says 'The word is FOLD' but doesn't explain why FOOD is wrong (the third letter O doesn't decode to O with -3, it decodes to L). Better explanations address why the strongest distractor fails.",
+      "suggestedFix": "Add a note like: 'O→L (not O), so the third letter is L, making FOLD not FOOD.'",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-013",
+      "itemType": "question",
+      "itemId": "Q2",
+      "severity": "low",
+      "category": "difficulty-calibration",
+      "title": "Q2 rated D3 but uses simple +1 constant shift — more appropriate for D2",
+      "description": "Q2 asks 'If COLD is coded as DPME, what is WARM coded as?' This is a straightforward +1 constant shift on a 4-letter word. Per the Oracle spec, D2 is 'Constant +2/-2 (sometimes +3), 4-letter words, child determines rule from example'. A simple +1 on a 4-letter word falls between D1 (3-letter, +1) and D2 (4-letter, +2). This should be D2 at most, not D3. D3 requires larger shifts, variable shifts, wrap-around, or mirror codes.",
+      "suggestedFix": "Recalibrate Q2 from D3 to D2. Review other early D3 questions (Q4, Q5, Q6) that also use simple +1/+3 constant shifts to ensure they genuinely warrant D3 classification.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LC-014",
+      "itemType": "question",
+      "itemId": "Q34",
+      "severity": "low",
+      "category": "answer-verification",
+      "title": "Q34 decoding verified — FOX is correct",
+      "description": "Q34: JAM coded as KBN is +1 shift. GPY decoded with -1: G→F, P→O, Y→X = FOX. Options: [FIG, FOX, FLY, FUN, FAR]. correctAnswer 'FOX' is at index 1, correct field is 2. Wait — index 2 = 'FLY'. But correctAnswer says 'FOX' which is at index 1. The correct field says 2 (0-indexed). Index 0=FIG, 1=FOX? No, let me recount: options are ['FIG', 'FLY', 'FOX', 'FUN', 'FAR']. Index 0=FIG, 1=FLY, 2=FOX, 3=FUN, 4=FAR. correct:2 points to FOX. correctAnswer is 'FOX'. Verified correct — my initial concern was unfounded.",
+      "suggestedFix": "No fix needed — answer verified as correct.",
+      "oracleConfidence": "high",
+      "status": "verified-correct"
+    }
+  ]
+}

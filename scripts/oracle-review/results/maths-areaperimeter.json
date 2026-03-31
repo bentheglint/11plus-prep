@@ -1,0 +1,167 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "areaperimeter",
+  "subject": "maths",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 209,
+    "lessonsReviewed": 18,
+    "issuesFound": 12,
+    "bySeverity": { "critical": 0, "high": 2, "medium": 5, "low": 5 },
+    "difficultyAssessment": "Distribution is D1:85 (40.7%), D2:91 (43.5%), D3:33 (15.8%). D1 and D2 are close to GL targets but D3 is significantly underweight at 15.8% vs the ~30% target. This means the question bank skews easier than a GL paper would. Many D1 questions (e.g. Q131-138 compound shape additions, Q198-209 simple missing-side/perimeter from area) could have been rated D2, and several D2 questions (e.g. Q9 tiling with 1m tiles, Q50 same pattern) are arguably D1 since they just require a single multiplication. Conversely, some D1 questions requiring larger multiplications (Q44: 25x16=400, Q55: 18x18=324, Q63: 45x32=1440, Q76: 28x18=504) are correctly rated since the formula is straightforward even if the arithmetic is harder.",
+    "coverageAssessment": "Excellent breadth across the Area & Perimeter curriculum. The 9 sub-concepts cover: perimeter of rectangles/squares, missing side from perimeter, missing side from area, area vs perimeter relationship, compound shapes (L-shapes, T-shapes, plus-signs), paths and borders, unit conversion, triangle area, and parallelogram area. Notable gaps: no trapezium area questions (which GL does test at KS2), no circle/semicircle questions (less likely at GL 11+ but possible), and no irregular polygon perimeter questions. The late-added questions (Q131-209) significantly improve coverage with compound shapes, triangles, parallelograms, paths/borders, and unit conversion blocks.",
+    "teachingEfficacyAssessment": "Lessons are well-structured with consistent 4-screen flow (hook/teach/interact/consolidate). Strong use of visual components (RectangleDiagram, LShapeDiagram, TriangleAreaDiagram, ParallelogramDiagram, PathBorderDiagram). However, the sub-concept 'master-area-rectangles' has NO lesson content — 42 questions map to it with '[No lesson found]'. This is the single biggest teaching gap: basic rectangle/square area calculation has no dedicated lesson. Students get questions on L x W without any preceding instruction. All other sub-concepts have 2 lessons each with good variety (step-by-step + spot-the-mistake or curiosity-hook + step-by-step).",
+    "topPriorities": [
+      "Create lessons for 'master-area-rectangles' sub-concept — 42 questions have no teaching support",
+      "Increase D3 question count from 33 to ~63 to reach 30% target",
+      "Q24 and Q68 are duplicate questions (identical algebraic P²/16 problem)",
+      "Fix distractor 'square metres' in perimeter Q126 option E"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-AP-MASTER-001",
+      "itemType": "mapping",
+      "itemId": "master-area-rectangles",
+      "severity": "high",
+      "category": "teaching-gap",
+      "title": "42 questions mapped to sub-concept with no lesson",
+      "description": "The sub-concept 'master-area-rectangles' has 42 questions mapped to it (Q2, Q4, Q7, Q9, Q15, Q17, Q26, Q32, Q33, Q39, Q44, Q50, Q54, Q55, Q57, Q63, Q65, Q66, Q69, Q76, Q81, Q83, Q85, Q87, Q91, Q99, Q101, Q105, Q107, Q110, Q117, Q122, Q129, and more). Every single one shows '[No lesson found]' in the mapping. This means a student entering Focused Learning for basic area of rectangles/squares will never see a teaching lesson before being tested. This is the largest teaching gap in the topic.",
+      "suggestedFix": "Create 2 lessons for 'master-area-rectangles': a step-by-step lesson teaching Area = length x width with worked examples, and a spot-the-mistake lesson addressing the common error of confusing area with perimeter (adding instead of multiplying). Use RectangleDiagram visual component.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-DIST-001",
+      "itemType": "question-bank",
+      "itemId": "difficulty-distribution",
+      "severity": "high",
+      "category": "difficulty-distribution",
+      "title": "D3 questions significantly underweight (15.8% vs 30% target)",
+      "description": "Current distribution is D1:85 (40.7%), D2:91 (43.5%), D3:33 (15.8%). The GL target is approximately 30:40:30. D3 is almost half what it should be. This means students are not being sufficiently challenged at the higher end and may be underprepared for the harder questions on the actual GL paper. Areas where D3 could be expanded: algebraic dimensions with more complex expressions, multi-step path/border problems with non-integer widths, problems requiring unit conversion mid-calculation, questions where area and perimeter are combined in the same problem, and problems involving scaling/enlargement of shapes.",
+      "suggestedFix": "Add approximately 30 new D3 questions across these categories: algebraic area/perimeter (10), complex path/border calculations (5), multi-step combined area+perimeter problems (5), scaling and proportion with area (5), real-world cost/coverage problems with rounding (5). This would bring D3 to ~30%.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q024-001",
+      "itemType": "question",
+      "itemId": "Q24",
+      "severity": "medium",
+      "category": "duplicate",
+      "title": "Q24 and Q68 are identical questions",
+      "description": "Q24: 'A square has a perimeter of P cm. What is its area in terms of P?' with answer P²/16. Q68: 'A square has a perimeter of P metres. What is its area in terms of P?' with answer P²/16. These are the same question with the same options in the same order, differing only in the unit (cm vs metres) which is irrelevant since the answer is in terms of P. Both are rated D3. A student seeing both would recognise it immediately.",
+      "suggestedFix": "Replace Q68 with a different algebraic question, e.g. 'A rectangle has a perimeter of P cm and a width of 5 cm. What is its area in terms of P?' (Answer: 5(P/2 - 5) = 5P/2 - 25). Or change to: 'A square has an area of A cm². What is its perimeter in terms of A?' (Answer: 4 x sqrt(A)).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q126-001",
+      "itemType": "question",
+      "itemId": "Q126",
+      "severity": "medium",
+      "category": "distractor-quality",
+      "title": "Option E uses wrong units (square metres for a perimeter question)",
+      "description": "Q126 asks for the perimeter of a rectangle 6x as long as wide (width 5m). Options are: 35m, 55m, 70m, 105m, '150 square metres'. Option E gives the area (30 x 5 = 150) with 'square metres' unit. While this is a plausible distractor trapping the area/perimeter confusion, using 'square metres' in a perimeter question is inconsistent with the other options which all use 'metres'. A child who knows perimeter is measured in linear units can eliminate it immediately without calculating, which defeats the purpose of the distractor.",
+      "suggestedFix": "Change option E to '150 metres' (keeps the area-confusion trap but with consistent units, so the child must actually think about which calculation is correct rather than eliminating on units alone). Alternatively, change to '140 metres' as a plausible arithmetic error.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q116-001",
+      "itemType": "question",
+      "itemId": "Q116",
+      "severity": "medium",
+      "category": "distractor-quality",
+      "title": "Option E uses wrong units (square metres for a perimeter question)",
+      "description": "Q116 asks for perimeter of a rectangle with algebraic dimensions (6w by 8w, w=2). Options include '192 square metres' as option E. This is the same issue as Q126 — mixing square unit into a perimeter question allows elimination by unit inspection alone.",
+      "suggestedFix": "Change '192 square metres' to '192 metres' to maintain consistent units across all options.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q005-001",
+      "itemType": "question",
+      "itemId": "Q5",
+      "severity": "medium",
+      "category": "ambiguity",
+      "title": "Comparing area and perimeter with different units is conceptually questionable",
+      "description": "Q5 asks 'What is the difference between its perimeter and its area?' for a 9x4 rectangle. The answer is 36 - 26 = 10. The explanation notes 'we're comparing numbers, not units.' While mathematically valid, this is conceptually problematic — you are subtracting cm from cm², which has no physical meaning. Q43, Q97, Q184, Q187, Q188 all have the same pattern. GL Assessment does occasionally use these 'compare the numbers' questions, but the explanation should be clearer about why this works (pure number comparison) so children don't think subtracting area from perimeter is meaningful in real life.",
+      "suggestedFix": "No change to the questions themselves (GL does test this pattern), but improve explanations to explicitly state: 'We compare the numerical values only — area and perimeter use different units so this is a number comparison, not a measurement comparison.' The current explanation on Q5 does note this but later questions (Q43, Q184, Q187, Q188) do not.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q009-001",
+      "itemType": "question",
+      "itemId": "Q9",
+      "severity": "low",
+      "category": "difficulty-rating",
+      "title": "Q9 rated D2 but is effectively D1 complexity",
+      "description": "Q9: 'Oliver is tiling his bathroom floor which is 3m long and 2m wide. Each tile covers 1 square metre. How many tiles does he need?' This is simply 3 x 2 = 6. The tile covering 1m² adds no complexity — it's a direct area calculation. Rated D2 but the cognitive demand is identical to D1 rectangle area questions.",
+      "suggestedFix": "Either downgrade to D1, or make it genuinely D2 by using a non-unit tile size (e.g. 'Each tile covers 0.5 square metres. How many tiles does he need?' Answer: 12).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q050-001",
+      "itemType": "question",
+      "itemId": "Q50",
+      "severity": "low",
+      "category": "difficulty-rating",
+      "title": "Q50 rated D2 but is effectively D1 complexity",
+      "description": "Q50: 'Harper is tiling a rectangular floor that is 7m long and 5m wide. Each tile covers 1 square metre. How many tiles are needed?' Answer: 35. Same issue as Q9 — tiling with 1m² tiles is simply calculating area, which is D1.",
+      "suggestedFix": "Downgrade to D1 or increase complexity by using non-unit tiles.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q186-001",
+      "itemType": "question",
+      "itemId": "Q186",
+      "severity": "low",
+      "category": "difficulty-rating",
+      "title": "Q186 rated D1 but involves perimeter-to-area conversion (D2 skill)",
+      "description": "Q186: 'A square has a perimeter of 20 cm. What is its area?' requires two steps: find side (20/4=5), then square it (25). This is the same multi-step process as Q42, Q48, Q58 etc., all rated D2. Q186 should be D2 for consistency.",
+      "suggestedFix": "Upgrade Q186 from D1 to D2 to match the rating of identical question patterns in the bank.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q198-001",
+      "itemType": "question",
+      "itemId": "Q198-Q209",
+      "severity": "low",
+      "category": "difficulty-rating",
+      "title": "Q198-Q209 all rated D1 but some involve multi-step inverse operations",
+      "description": "Questions Q198-Q209 are all rated D1. Q198 (area 24, length 6, find width = 4) and similar missing-side-from-area questions are simple division. Q205-Q209 (perimeter given, find missing side) require halving the perimeter then subtracting — a two-step process typically rated D2 elsewhere in the bank (Q8, Q34, Q38 etc.). However, the numbers used are deliberately small and simple (perimeter 18/20/22/24/26), making them accessible at D1. This is borderline — the small numbers justify D1 but the pattern is D2 elsewhere.",
+      "suggestedFix": "Consider upgrading Q205-Q209 to D2 for consistency with the rest of the bank where perimeter-to-missing-side is always D2. Or keep as D1 but note these are 'easy D2' bridging questions. No urgent action needed.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "area-vs-perimeter",
+      "severity": "low",
+      "category": "lesson-scope",
+      "title": "area-vs-perimeter lesson doesn't cover numeric comparison questions",
+      "description": "The 'area-vs-perimeter' sub-concept lesson teaches that same area doesn't mean same perimeter, and vice versa. But several questions mapped to this sub-concept actually ask for the numeric difference or sum of area and perimeter (Q5, Q43, Q97, Q184, Q187, Q188). The lesson doesn't teach this 'compare the numbers' skill — it teaches the conceptual difference. The mapping is reasonable (they are area-vs-perimeter questions) but the lesson doesn't prepare students for the specific calculation pattern.",
+      "suggestedFix": "Add a worked example to the consolidate screen showing a 'find the difference between area and perimeter' calculation, clarifying that you compare the numbers only. Or create a separate sub-concept for 'numeric comparison of area and perimeter'.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-AP-Q147-001",
+      "itemType": "question",
+      "itemId": "Q147",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "L-shape perimeter questions mapped to area lesson",
+      "description": "Q147 and Q148 ask for the perimeter of an L-shape, but are mapped to 'compound-shapes' sub-concept whose lessons only teach area (splitting into rectangles and adding areas). The perimeter of an L-shape requires tracing around the outside and counting all 6 edges — a fundamentally different skill from area calculation. Students who get these questions after the compound shapes lesson may be confused because the lesson never mentions perimeter at all.",
+      "suggestedFix": "Either: (a) create a separate sub-concept 'compound-shape-perimeter' with a lesson teaching how to trace around an L-shape counting all 6 sides, or (b) add perimeter content to the existing compound-shapes lesson consolidation screen. Option (a) is preferred for cleaner mapping.",
+      "oracleConfidence": "high",
+      "status": "open"
+    }
+  ]
+}

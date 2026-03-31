@@ -1,0 +1,3991 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "areaperimeter",
+    "displayName": "Area & Perimeter",
+    "extractedAt": "2026-03-30T13:05:32.762Z",
+    "questionCount": 209,
+    "difficultyDistribution": {
+      "D1": 85,
+      "D2": 91,
+      "D3": 33
+    },
+    "questionTypes": {
+      "standard": 209
+    },
+    "visualComponentCount": 187
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emily's rectangular garden is 8 metres long and 5 metres wide. What is the perimeter of her garden?",
+      "options": [
+        "13 metres",
+        "18 metres",
+        "26 metres",
+        "40 metres",
+        "21 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "26 metres",
+      "explanation": "To find the perimeter of a rectangle, add all four sides together. The formula is: Perimeter = 2 × (length + width). So: 2 × (8 + 5) = 2 × 13 = 26 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q1.svg"
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular swimming pool is 12 metres long and 6 metres wide. What is its area?",
+      "options": [
+        "18 square metres",
+        "36 square metres",
+        "72 square metres",
+        "24 square metres",
+        "48 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "72 square metres",
+      "explanation": "To find the area of a rectangle, multiply length by width. Area = length × width = 12 × 6 = 72 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q2.svg"
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jake is building a fence around his square vegetable patch. Each side is 7 metres long. How much fencing does he need?",
+      "options": [
+        "14 metres",
+        "21 metres",
+        "28 metres",
+        "49 metres",
+        "35 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "28 metres",
+      "explanation": "A square has 4 equal sides. To find the perimeter, multiply the side length by 4. Perimeter = 4 × 7 = 28 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q3.svg"
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie's bedroom floor is 5 metres long and 4 metres wide. She wants to carpet the entire floor. What area of carpet does she need?",
+      "options": [
+        "9 square metres",
+        "18 square metres",
+        "20 square metres",
+        "10 square metres",
+        "40 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "20 square metres",
+      "explanation": "Area = length × width = 5 × 4 = 20 square metres of carpet needed. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q4.svg"
+    },
+    {
+      "id": 5,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a length of 9 cm and a width of 4 cm. What is the difference between its perimeter and its area?",
+      "options": [
+        "10",
+        "5",
+        "26",
+        "13",
+        "36"
+      ],
+      "correct": 0,
+      "correctAnswer": "10",
+      "explanation": "First find the perimeter: 2 × (9 + 4) = 2 × 13 = 26 cm. Then find the area: 9 × 4 = 36 cm². The difference is 36 - 26 = 10. Note: we're comparing numbers, not units. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom's rectangular football pitch is 90 metres long and 60 metres wide. What is its perimeter?",
+      "options": [
+        "150 metres",
+        "300 metres",
+        "5400 metres",
+        "180 metres",
+        "240 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "300 metres",
+      "explanation": "Perimeter = 2 × (length + width) = 2 × (90 + 60) = 2 × 150 = 300 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy has a square picture frame where each side measures 15 cm. What is the area of the picture inside?",
+      "options": [
+        "60 square cm",
+        "30 square cm",
+        "225 square cm",
+        "150 square cm",
+        "120 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "225 square cm",
+      "explanation": "For a square, area = side × side = 15 × 15 = 225 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 24 cm. Its length is 8 cm. What is its width?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "6 cm",
+        "8 cm",
+        "16 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "4 cm",
+      "explanation": "Perimeter = 2 × (length + width), so 24 = 2 × (8 + width). Divide both sides by 2: 12 = 8 + width. Therefore width = 12 - 8 = 4 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q8.svg"
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver is tiling his bathroom floor which is 3 metres long and 2 metres wide. Each tile covers 1 square metre. How many tiles does he need?",
+      "options": [
+        "5 tiles",
+        "6 tiles",
+        "10 tiles",
+        "12 tiles",
+        "15 tiles"
+      ],
+      "correct": 1,
+      "correctAnswer": "6 tiles",
+      "explanation": "Area of bathroom = 3 × 2 = 6 square metres. Each tile covers 1 square metre, so he needs 6 tiles. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Emma's rectangular garden has an area of 48 square metres and a width of 6 metres. What is the length?",
+      "options": [
+        "6 metres",
+        "8 metres",
+        "12 metres",
+        "42 metres",
+        "54 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "8 metres",
+      "explanation": "Area = length × width, so 48 = length × 6. To find length, divide: 48 ÷ 6 = 8 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q10.svg"
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square playground has a perimeter of 40 metres. What is the length of each side?",
+      "options": [
+        "4 metres",
+        "8 metres",
+        "10 metres",
+        "20 metres",
+        "160 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "10 metres",
+      "explanation": "A square has 4 equal sides. Perimeter = 4 × side length, so 40 = 4 × side. Divide: 40 ÷ 4 = 10 metres per side. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q11.svg"
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben's rectangular desk is 120 cm long and 80 cm wide. What is its area in square metres?",
+      "options": [
+        "0.96 square metres",
+        "2 square metres",
+        "9600 square metres",
+        "4 square metres",
+        "200 square metres"
+      ],
+      "correct": 0,
+      "correctAnswer": "0.96 square metres",
+      "explanation": "First convert to metres: 120 cm = 1.2 m and 80 cm = 0.8 m. Area = 1.2 × 0.8 = 0.96 square metres. Or: area in cm² = 120 × 80 = 9600 cm², then divide by 10,000 to get m²: 9600 ÷ 10,000 = 0.96 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sarah needs to put a border around her rectangular poster that is 40 cm long and 30 cm wide. What length of border does she need?",
+      "options": [
+        "70 cm",
+        "140 cm",
+        "1200 cm",
+        "100 cm",
+        "120 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "140 cm",
+      "explanation": "The border goes around the perimeter. Perimeter = 2 × (40 + 30) = 2 × 70 = 140 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square garden has an area of 64 square metres. What is its perimeter?",
+      "options": [
+        "8 metres",
+        "16 metres",
+        "32 metres",
+        "64 metres",
+        "256 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "32 metres",
+      "explanation": "If area = 64 m², and area of a square = side × side, then side × side = 64. So side = 8 m (because 8 × 8 = 64). Perimeter = 4 × 8 = 32 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q14.svg"
+    },
+    {
+      "id": 15,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Max's rectangular bedroom is twice as long as it is wide. If the width is 4 metres, what is the area?",
+      "options": [
+        "8 square metres",
+        "16 square metres",
+        "24 square metres",
+        "32 square metres",
+        "12 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "32 square metres",
+      "explanation": "Width = 4 metres, and length is twice the width, so length = 2 × 4 = 8 metres. Area = 8 × 4 = 32 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q15.svg"
+    },
+    {
+      "id": 16,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped room is made of two rectangles. The first rectangle is 6m by 4m. The second rectangle is 4m by 3m. What is the total area?",
+      "options": [
+        "24 square metres",
+        "36 square metres",
+        "13 square metres",
+        "48 square metres",
+        "30 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "36 square metres",
+      "explanation": "Find the area of each rectangle separately, then add them. First rectangle: 6 × 4 = 24 m². Second rectangle: 4 × 3 = 12 m². Total area: 24 + 12 = 36 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": "area-perimeter/l-shape-q16.svg"
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Charlie is painting a rectangular wall that is 5 metres high and 8 metres wide. Paint covers 10 square metres per tin. How many tins does he need?",
+      "options": [
+        "3 tins",
+        "4 tins",
+        "5 tins",
+        "13 tins",
+        "40 tins"
+      ],
+      "correct": 1,
+      "correctAnswer": "4 tins",
+      "explanation": "Area of wall = 5 × 8 = 40 square metres. Each tin covers 10 m², so number of tins = 40 ÷ 10 = 4 tins. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a length of 12 cm and a perimeter of 32 cm. What is its area?",
+      "options": [
+        "20 square cm",
+        "44 square cm",
+        "48 square cm",
+        "96 square cm",
+        "384 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "48 square cm",
+      "explanation": "Perimeter = 2 × (length + width), so 32 = 2 × (12 + width). Therefore 16 = 12 + width, so width = 4 cm. Area = 12 × 4 = 48 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q18.svg"
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia's rectangular garden path is 15 metres long and 2 metres wide. She wants to put stones along both long sides and both short sides. What total length of stones does she need?",
+      "options": [
+        "17 metres",
+        "30 metres",
+        "34 metres",
+        "68 metres",
+        "60 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "34 metres",
+      "explanation": "This is asking for the perimeter. Perimeter = 2 × (15 + 2) = 2 × 17 = 34 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square field has a perimeter of 200 metres. A farmer wants to plant grass on the entire field. What area needs to be planted?",
+      "options": [
+        "50 square metres",
+        "800 square metres",
+        "2500 square metres",
+        "10,000 square metres",
+        "40,000 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "2500 square metres",
+      "explanation": "Perimeter = 4 × side, so 200 = 4 × side. Side = 200 ÷ 4 = 50 metres. Area = 50 × 50 = 2500 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has width w cm and length (w + 5) cm. If w = 7, what is the perimeter?",
+      "options": [
+        "19 cm",
+        "26 cm",
+        "38 cm",
+        "84 cm",
+        "12 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "38 cm",
+      "explanation": "If w = 7, then width = 7 cm and length = 7 + 5 = 12 cm. Perimeter = 2 × (7 + 12) = 2 × 19 = 38 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Hannah has two rectangular flower beds. The first is 5m by 3m, and the second is 4m by 4m. Which has the greater area and by how much?",
+      "options": [
+        "First bed by 1 square metre",
+        "Second bed by 1 square metre",
+        "They are equal",
+        "First bed by 2 square metres",
+        "Second bed by 2 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "Second bed by 1 square metre",
+      "explanation": "First bed area: 5 × 3 = 15 m². Second bed area: 4 × 4 = 16 m². The second bed has greater area by 16 - 15 = 1 square metre. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/flowerbeds-q22.svg"
+    },
+    {
+      "id": 23,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular field is 30 metres long and 20 metres wide. A path 2 metres wide runs all the way around the inside edge. What is the area of the path?",
+      "options": [
+        "100 square metres",
+        "184 square metres",
+        "416 square metres",
+        "600 square metres",
+        "520 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "184 square metres",
+      "explanation": "Total field area: 30 × 20 = 600 m². The path is 2m wide all around, so the inner rectangle (grass area) is (30 - 4) by (20 - 4) = 26 by 16. Inner area: 26 × 16 = 416 m². Path area = 600 - 416 = 184 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/path-q23.svg"
+    },
+    {
+      "id": 24,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A square has a perimeter of P cm. What is its area in terms of P?",
+      "options": [
+        "P² ÷ 4",
+        "P² ÷ 16",
+        "P ÷ 4",
+        "4P",
+        "P²"
+      ],
+      "correct": 1,
+      "correctAnswer": "P² ÷ 16",
+      "explanation": "Perimeter of square = 4 × side, so side = P ÷ 4. Area = side × side = (P ÷ 4) × (P ÷ 4) = P² ÷ 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "James has a rectangular lawn that is 20m by 15m. He wants to create a flower border 1 metre wide all around the inside. What is the area of the flower border?",
+      "options": [
+        "35 square metres",
+        "66 square metres",
+        "70 square metres",
+        "300 square metres",
+        "234 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "66 square metres",
+      "explanation": "Total lawn area: 20 × 15 = 300 m². After removing 1m border all around, inner lawn is (20 - 2) by (15 - 2) = 18 by 13. Inner area: 18 × 13 = 234 m². Border area = 300 - 234 = 66 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/border-q25.svg"
+    },
+    {
+      "id": 26,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has dimensions 2x cm by 3x cm. If x = 4, what is the area?",
+      "options": [
+        "24 square cm",
+        "40 square cm",
+        "48 square cm",
+        "96 square cm",
+        "5x square cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "96 square cm",
+      "explanation": "If x = 4, then dimensions are 2 × 4 = 8 cm and 3 × 4 = 12 cm. Area = 8 × 12 = 96 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q26.svg"
+    },
+    {
+      "id": 27,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these rectangles has a different area from the others?",
+      "options": [
+        "9 cm by 4 cm",
+        "12 cm by 3 cm",
+        "18 cm by 2 cm",
+        "8 cm by 5 cm",
+        "6 cm by 6 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "8 cm by 5 cm",
+      "explanation": "Calculate each area: 9 × 4 = 36 cm², 12 × 3 = 36 cm², 18 × 2 = 36 cm², 8 × 5 = 40 cm², 6 × 6 = 36 cm². The rectangle that is 8 cm by 5 cm has a different area (40 cm²) from the others (36 cm²). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/rectangles-q27.svg"
+    },
+    {
+      "id": 28,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular swimming pool has a length of (2y + 3) metres and a width of y metres. If y = 5, what is the perimeter?",
+      "options": [
+        "13 metres",
+        "26 metres",
+        "36 metres",
+        "40 metres",
+        "65 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "36 metres",
+      "explanation": "If y = 5, then length = (2 × 5) + 3 = 13 metres and width = 5 metres. Perimeter = 2 × (13 + 5) = 2 × 18 = 36 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A compound shape is made from a rectangle 10cm by 6cm with a square of side 3cm cut from one corner. What is the remaining area?",
+      "options": [
+        "51 square cm",
+        "60 square cm",
+        "69 square cm",
+        "9 square cm",
+        "54 square cm"
+      ],
+      "correct": 0,
+      "correctAnswer": "51 square cm",
+      "explanation": "Rectangle area: 10 × 6 = 60 cm². Square cut out: 3 × 3 = 9 cm². Remaining area: 60 - 9 = 51 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/cutout-q29.svg"
+    },
+    {
+      "id": 30,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 48 cm. Its length is three times its width. What is the area?",
+      "options": [
+        "16 square cm",
+        "36 square cm",
+        "54 square cm",
+        "81 square cm",
+        "108 square cm"
+      ],
+      "correct": 4,
+      "correctAnswer": "108 square cm",
+      "explanation": "Let width = w, then length = 3w. Perimeter = 2 × (w + 3w) = 2 × 4w = 8w. So 48 = 8w, which means w = 6 cm. Length = 3 × 6 = 18 cm. Area = 6 × 18 = 108 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular classroom is 10 metres long and 7 metres wide. What is the perimeter?",
+      "options": [
+        "17 metres",
+        "34 metres",
+        "70 metres",
+        "140 metres",
+        "24 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "34 metres",
+      "explanation": "Perimeter = 2 × (length + width) = 2 × (10 + 7) = 2 × 17 = 34 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q31.svg"
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square park has sides of 9 metres. What is its area?",
+      "options": [
+        "18 square metres",
+        "36 square metres",
+        "81 square metres",
+        "27 square metres",
+        "45 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "81 square metres",
+      "explanation": "Area of a square = side × side = 9 × 9 = 81 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q32.svg"
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Noah's rectangular driveway is 15 metres long and 8 metres wide. What is its area?",
+      "options": [
+        "23 square metres",
+        "46 square metres",
+        "92 square metres",
+        "120 square metres",
+        "60 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "120 square metres",
+      "explanation": "Area = length × width = 15 × 8 = 120 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q33.svg"
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square field has a perimeter of 60 metres. What is the length of each side?",
+      "options": [
+        "10 metres",
+        "12 metres",
+        "14 metres",
+        "15 metres",
+        "20 metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "15 metres",
+      "explanation": "Perimeter = 4 × side, so 60 = 4 × side. Side = 60 ÷ 4 = 15 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q34.svg"
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangular rug has an area of 56 square metres and a width of 7 metres. What is its length?",
+      "options": [
+        "6 metres",
+        "7 metres",
+        "8 metres",
+        "14 metres",
+        "49 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 metres",
+      "explanation": "Area = length × width, so 56 = length × 7. Length = 56 ÷ 7 = 8 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q35.svg"
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square patio has an area of 100 square metres. What is its perimeter?",
+      "options": [
+        "10 metres",
+        "20 metres",
+        "25 metres",
+        "30 metres",
+        "40 metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "40 metres",
+      "explanation": "If area = 100, then side × side = 100, so side = 10m. Perimeter = 4 × 10 = 40 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q36.svg"
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lily's rectangular book is 18 cm long and 6 cm wide. What is its perimeter?",
+      "options": [
+        "24 cm",
+        "36 cm",
+        "48 cm",
+        "108 cm",
+        "30 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "48 cm",
+      "explanation": "Perimeter = 2 × (18 + 6) = 2 × 24 = 48 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 50 cm and a length of 15 cm. What is its width?",
+      "options": [
+        "5 cm",
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "20 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "10 cm",
+      "explanation": "Perimeter = 2 × (length + width), so 50 = 2 × (15 + width). Therefore 25 = 15 + width, so width = 10 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q38.svg"
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular tennis court is 20 metres long and 12 metres wide. What is its area?",
+      "options": [
+        "32 square metres",
+        "64 square metres",
+        "160 square metres",
+        "200 square metres",
+        "240 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "240 square metres",
+      "explanation": "Area = length × width = 20 × 12 = 240 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q39.svg"
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square tile has sides of 11 cm. What is its perimeter?",
+      "options": [
+        "22 cm",
+        "44 cm",
+        "121 cm",
+        "33 cm",
+        "55 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "44 cm",
+      "explanation": "Perimeter = 4 × side = 4 × 11 = 44 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver is fencing a rectangular garden that is 14 metres long and 9 metres wide. How much fencing does he need?",
+      "options": [
+        "23 metres",
+        "46 metres",
+        "126 metres",
+        "63 metres",
+        "92 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "46 metres",
+      "explanation": "Perimeter = 2 × (14 + 9) = 2 × 23 = 46 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q41.svg"
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square room has a perimeter of 32 metres. What is its area?",
+      "options": [
+        "8 square metres",
+        "16 square metres",
+        "32 square metres",
+        "64 square metres",
+        "128 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "64 square metres",
+      "explanation": "Perimeter = 4 × side, so side = 32 ÷ 4 = 8m. Area = 8 × 8 = 64 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q42.svg"
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a length of 13 cm and a width of 5 cm. What is the difference between its perimeter and its area?",
+      "options": [
+        "1",
+        "29",
+        "36",
+        "65",
+        "8"
+      ],
+      "correct": 1,
+      "correctAnswer": "29",
+      "explanation": "Perimeter = 2 × (13 + 5) = 36 cm. Area = 13 × 5 = 65 cm². Difference = 65 - 36 = 29. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ava's rectangular poster is 25 cm long and 16 cm wide. What is its area?",
+      "options": [
+        "41 square cm",
+        "82 square cm",
+        "200 square cm",
+        "400 square cm",
+        "410 square cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "400 square cm",
+      "explanation": "Area = 25 × 16 = 400 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A square garden has sides of 12 metres. A path 1 metre wide runs around the outside. What is the perimeter of the outer edge of the path?",
+      "options": [
+        "48 metres",
+        "52 metres",
+        "56 metres",
+        "60 metres",
+        "64 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "56 metres",
+      "explanation": "The path adds 1m on each side, so outer square has sides of 12 + 1 + 1 = 14m. Perimeter = 4 × 14 = 56 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/square-path-q45.svg"
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle is twice as long as it is wide. If the width is 6 cm, what is the perimeter?",
+      "options": [
+        "18 cm",
+        "24 cm",
+        "36 cm",
+        "48 cm",
+        "72 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "36 cm",
+      "explanation": "Width = 6 cm, length = 2 × 6 = 12 cm. Perimeter = 2 × (12 + 6) = 2 × 18 = 36 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q46.svg"
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mason's rectangular yard is 22 metres long and 18 metres wide. What is its perimeter?",
+      "options": [
+        "40 metres",
+        "80 metres",
+        "396 metres",
+        "176 metres",
+        "120 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "80 metres",
+      "explanation": "Perimeter = 2 × (22 + 18) = 2 × 40 = 80 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 84 cm. What is its area?",
+      "options": [
+        "21 square cm",
+        "84 square cm",
+        "168 square cm",
+        "336 square cm",
+        "441 square cm"
+      ],
+      "correct": 4,
+      "correctAnswer": "441 square cm",
+      "explanation": "Side = 84 ÷ 4 = 21 cm. Area = 21 × 21 = 441 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q48.svg"
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangular window is 80 cm wide and 120 cm tall. What is its area in square metres?",
+      "options": [
+        "0.96 square metres",
+        "2 square metres",
+        "4 square metres",
+        "9600 square metres",
+        "200 square metres"
+      ],
+      "correct": 0,
+      "correctAnswer": "0.96 square metres",
+      "explanation": "Convert to metres: 80 cm = 0.8 m, 120 cm = 1.2 m. Area = 0.8 × 1.2 = 0.96 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Harper is tiling a rectangular floor that is 7 metres long and 5 metres wide. Each tile covers 1 square metre. How many tiles are needed?",
+      "options": [
+        "12 tiles",
+        "24 tiles",
+        "30 tiles",
+        "35 tiles",
+        "70 tiles"
+      ],
+      "correct": 3,
+      "correctAnswer": "35 tiles",
+      "explanation": "Area = 7 × 5 = 35 square metres. Each tile is 1 m², so 35 tiles needed. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square courtyard has an area of 144 square metres. What is the length of each side?",
+      "options": [
+        "10 metres",
+        "11 metres",
+        "12 metres",
+        "13 metres",
+        "14 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "12 metres",
+      "explanation": "Area = side × side = 144, so side = 12 metres (because 12 × 12 = 144). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q51.svg"
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 44 cm and a width of 8 cm. What is its area?",
+      "options": [
+        "112 square cm",
+        "128 square cm",
+        "144 square cm",
+        "160 square cm",
+        "176 square cm"
+      ],
+      "correct": 0,
+      "correctAnswer": "112 square cm",
+      "explanation": "Perimeter = 2 × (L + W), so 44 = 2 × (L + 8). Therefore 22 = L + 8, L = 14 cm. Area = 14 × 8 = 112 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q52.svg"
+    },
+    {
+      "id": 53,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ethan's rectangular swimming pool is 16 metres long and 10 metres wide. What is its perimeter?",
+      "options": [
+        "26 metres",
+        "32 metres",
+        "52 metres",
+        "160 metres",
+        "80 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "52 metres",
+      "explanation": "Perimeter = 2 × (16 + 10) = 2 × 26 = 52 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle is three times as long as it is wide. If the width is 5 metres, what is the area?",
+      "options": [
+        "15 square metres",
+        "25 square metres",
+        "40 square metres",
+        "75 square metres",
+        "225 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "75 square metres",
+      "explanation": "Width = 5 m, length = 3 × 5 = 15 m. Area = 15 × 5 = 75 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q54.svg"
+    },
+    {
+      "id": 55,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square playground has sides of 18 metres. What is its area?",
+      "options": [
+        "36 square metres",
+        "72 square metres",
+        "144 square metres",
+        "256 square metres",
+        "324 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "324 square metres",
+      "explanation": "Area = 18 × 18 = 324 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Zoe is putting a border around a rectangular picture that is 35 cm long and 25 cm wide. What length of border does she need?",
+      "options": [
+        "60 cm",
+        "120 cm",
+        "875 cm",
+        "150 cm",
+        "100 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "120 cm",
+      "explanation": "Border goes around perimeter. Perimeter = 2 × (35 + 25) = 2 × 60 = 120 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular hall is 24 metres long and 15 metres wide. What is its area?",
+      "options": [
+        "39 square metres",
+        "78 square metres",
+        "180 square metres",
+        "360 square metres",
+        "720 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "360 square metres",
+      "explanation": "Area = 24 × 15 = 360 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square carpet has a perimeter of 36 metres. What is its area?",
+      "options": [
+        "9 square metres",
+        "18 square metres",
+        "36 square metres",
+        "64 square metres",
+        "81 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "81 square metres",
+      "explanation": "Side = 36 ÷ 4 = 9 metres. Area = 9 × 9 = 81 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q58.svg"
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 72 square cm and a length of 9 cm. What is its width?",
+      "options": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm",
+        "12 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 cm",
+      "explanation": "Area = L × W, so 72 = 9 × W. Width = 72 ÷ 9 = 8 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q59.svg"
+    },
+    {
+      "id": 60,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Leo's rectangular garden is 19 metres long and 11 metres wide. What is its perimeter?",
+      "options": [
+        "30 metres",
+        "60 metres",
+        "209 metres",
+        "120 metres",
+        "90 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "60 metres",
+      "explanation": "Perimeter = 2 × (19 + 11) = 2 × 30 = 60 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped room is made of two rectangles. The first is 8m by 5m. The second is 6m by 4m. What is the total area?",
+      "options": [
+        "40 square metres",
+        "64 square metres",
+        "80 square metres",
+        "24 square metres",
+        "23 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "64 square metres",
+      "explanation": "First rectangle: 8 × 5 = 40 m². Second rectangle: 6 × 4 = 24 m². Total: 40 + 24 = 64 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": "area-perimeter/l-shape-q61.svg"
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has an area of 169 square cm. What is its perimeter?",
+      "options": [
+        "13 cm",
+        "26 cm",
+        "39 cm",
+        "52 cm",
+        "84.5 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "52 cm",
+      "explanation": "Side × side = 169, so side = 13 cm. Perimeter = 4 × 13 = 52 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q62.svg"
+    },
+    {
+      "id": 63,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular car park is 45 metres long and 32 metres wide. What is its area?",
+      "options": [
+        "77 square metres",
+        "154 square metres",
+        "720 square metres",
+        "1,440 square metres",
+        "2,880 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "1,440 square metres",
+      "explanation": "Area = 45 × 32 = 1,440 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a length of 11 cm and a perimeter of 36 cm. What is its area?",
+      "options": [
+        "25 square cm",
+        "55 square cm",
+        "77 square cm",
+        "99 square cm",
+        "121 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "77 square cm",
+      "explanation": "Perimeter = 2 × (11 + W), so 36 = 2 × (11 + W). Therefore 18 = 11 + W, W = 7 cm. Area = 11 × 7 = 77 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q64.svg"
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ruby is painting a square wall where each side is 4 metres. Paint covers 5 square metres per tin. How many tins does she need?",
+      "options": [
+        "1 tin",
+        "2 tins",
+        "3 tins",
+        "4 tins",
+        "5 tins"
+      ],
+      "correct": 3,
+      "correctAnswer": "4 tins",
+      "explanation": "Area = 4 × 4 = 16 m². Each tin covers 5 m², so 16 ÷ 5 = 3.2. She needs 4 tins (must round up). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has dimensions 4x cm by 5x cm. If x = 3, what is the area?",
+      "options": [
+        "60 square cm",
+        "120 square cm",
+        "180 square cm",
+        "240 square cm",
+        "20x square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "180 square cm",
+      "explanation": "If x = 3, dimensions are 4 × 3 = 12 cm and 5 × 3 = 15 cm. Area = 12 × 15 = 180 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q66.svg"
+    },
+    {
+      "id": 67,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular field is 50 metres long and 30 metres wide. A farmer wants to fence all four sides. How much fencing is needed?",
+      "options": [
+        "80 metres",
+        "160 metres",
+        "1,500 metres",
+        "3,000 metres",
+        "240 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "160 metres",
+      "explanation": "Perimeter = 2 × (50 + 30) = 2 × 80 = 160 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A square has a perimeter of P metres. What is its area in terms of P?",
+      "options": [
+        "P² ÷ 4",
+        "P² ÷ 16",
+        "P ÷ 4",
+        "4P",
+        "P²"
+      ],
+      "correct": 1,
+      "correctAnswer": "P² ÷ 16",
+      "explanation": "Side = P ÷ 4. Area = side × side = (P ÷ 4) × (P ÷ 4) = P² ÷ 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Isabella's rectangular room is 13 metres long and 9 metres wide. What is its area?",
+      "options": [
+        "22 square metres",
+        "44 square metres",
+        "88 square metres",
+        "117 square metres",
+        "169 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "117 square metres",
+      "explanation": "Area = 13 × 9 = 117 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square garden has an area of 225 square metres. What is its perimeter?",
+      "options": [
+        "15 metres",
+        "30 metres",
+        "45 metres",
+        "60 metres",
+        "75 metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "60 metres",
+      "explanation": "Side × side = 225, so side = 15 m. Perimeter = 4 × 15 = 60 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q70.svg"
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 70 cm and a width of 12 cm. What is its length?",
+      "options": [
+        "23 cm",
+        "29 cm",
+        "35 cm",
+        "46 cm",
+        "58 cm"
+      ],
+      "correct": 0,
+      "correctAnswer": "23 cm",
+      "explanation": "Perimeter = 2 × (L + 12), so 70 = 2 × (L + 12). Therefore 35 = L + 12, L = 23 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q71.svg"
+    },
+    {
+      "id": 72,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jack's rectangular vegetable patch is 17 metres long and 14 metres wide. What is its perimeter?",
+      "options": [
+        "31 metres",
+        "62 metres",
+        "238 metres",
+        "124 metres",
+        "93 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "62 metres",
+      "explanation": "Perimeter = 2 × (17 + 14) = 2 × 31 = 62 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle is four times as long as it is wide. If the width is 6 metres, what is the perimeter?",
+      "options": [
+        "30 metres",
+        "48 metres",
+        "60 metres",
+        "120 metres",
+        "144 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 metres",
+      "explanation": "Width = 6 m, length = 4 × 6 = 24 m. Perimeter = 2 × (24 + 6) = 2 × 30 = 60 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q73.svg"
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Four of these rectangles have the same area. Which one is different?",
+      "options": [
+        "15 cm by 4 cm",
+        "20 cm by 3 cm",
+        "12 cm by 5 cm",
+        "10 cm by 7 cm",
+        "30 cm by 2 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "10 cm by 7 cm",
+      "explanation": "Calculate each: 15×4=60, 20×3=60, 12×5=60, 10×7=70, 30×2=60. The 10×7 rectangle has different area. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/rectangles-q74.svg"
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A compound shape is made from a rectangle 12cm by 8cm with a square of side 4cm cut from one corner. What is the remaining area?",
+      "options": [
+        "80 square cm",
+        "96 square cm",
+        "64 square cm",
+        "112 square cm",
+        "104 square cm"
+      ],
+      "correct": 0,
+      "correctAnswer": "80 square cm",
+      "explanation": "Rectangle: 12 × 8 = 96 cm². Square cut out: 4 × 4 = 16 cm². Remaining: 96 - 16 = 80 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/cutout-q75.svg"
+    },
+    {
+      "id": 76,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular lawn is 28 metres long and 18 metres wide. What is its area?",
+      "options": [
+        "46 square metres",
+        "92 square metres",
+        "252 square metres",
+        "504 square metres",
+        "1,008 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "504 square metres",
+      "explanation": "Area = 28 × 18 = 504 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has sides of 14 cm. What is its perimeter?",
+      "options": [
+        "28 cm",
+        "42 cm",
+        "56 cm",
+        "70 cm",
+        "196 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "56 cm",
+      "explanation": "Perimeter = 4 × 14 = 56 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 90 square metres and a width of 9 metres. What is its length?",
+      "options": [
+        "9 metres",
+        "10 metres",
+        "11 metres",
+        "12 metres",
+        "81 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "10 metres",
+      "explanation": "Area = L × W, so 90 = L × 9. Length = 90 ÷ 9 = 10 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q78.svg"
+    },
+    {
+      "id": 79,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular office is 26 metres long and 19 metres wide. What is its perimeter?",
+      "options": [
+        "45 metres",
+        "90 metres",
+        "494 metres",
+        "180 metres",
+        "135 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "90 metres",
+      "explanation": "Perimeter = 2 × (26 + 19) = 2 × 45 = 90 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square patio has a perimeter of 52 metres. What is its area?",
+      "options": [
+        "13 square metres",
+        "26 square metres",
+        "52 square metres",
+        "104 square metres",
+        "169 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "169 square metres",
+      "explanation": "Side = 52 ÷ 4 = 13 m. Area = 13 × 13 = 169 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q80.svg"
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Mia is tiling a rectangular bathroom that is 4 metres long and 3 metres wide. Each tile is 0.5 metres by 0.5 metres. How many tiles does she need?",
+      "options": [
+        "12 tiles",
+        "24 tiles",
+        "48 tiles",
+        "96 tiles",
+        "192 tiles"
+      ],
+      "correct": 2,
+      "correctAnswer": "48 tiles",
+      "explanation": "Bathroom area = 4 × 3 = 12 m². Each tile = 0.5 × 0.5 = 0.25 m². Tiles needed = 12 ÷ 0.25 = 48 tiles. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 56 cm and a length of 18 cm. What is its area?",
+      "options": [
+        "180 square cm",
+        "190 square cm",
+        "200 square cm",
+        "210 square cm",
+        "220 square cm"
+      ],
+      "correct": 0,
+      "correctAnswer": "180 square cm",
+      "explanation": "Perimeter = 2 × (18 + W), so 56 = 2 × (18 + W). Therefore 28 = 18 + W, W = 10 cm. Area = 18 × 10 = 180 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q82.svg"
+    },
+    {
+      "id": 83,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square room has sides of 16 metres. What is its area?",
+      "options": [
+        "32 square metres",
+        "64 square metres",
+        "128 square metres",
+        "196 square metres",
+        "256 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "256 square metres",
+      "explanation": "Area = 16 × 16 = 256 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular park is 35 metres long and 28 metres wide. What is its perimeter?",
+      "options": [
+        "63 metres",
+        "126 metres",
+        "980 metres",
+        "252 metres",
+        "189 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "126 metres",
+      "explanation": "Perimeter = 2 × (35 + 28) = 2 × 63 = 126 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has dimensions 3y metres by 7y metres. If y = 2, what is the area?",
+      "options": [
+        "42 square metres",
+        "84 square metres",
+        "126 square metres",
+        "168 square metres",
+        "21y square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "84 square metres",
+      "explanation": "If y = 2, dimensions are 3 × 2 = 6 m and 7 × 2 = 14 m. Area = 6 × 14 = 84 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q85.svg"
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has an area of 196 square cm. What is the length of each side?",
+      "options": [
+        "12 cm",
+        "13 cm",
+        "14 cm",
+        "15 cm",
+        "16 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "14 cm",
+      "explanation": "Side × side = 196, so side = 14 cm (because 14 × 14 = 196). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q86.svg"
+    },
+    {
+      "id": 87,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular shed is 11 metres long and 8 metres wide. What is its area?",
+      "options": [
+        "19 square metres",
+        "38 square metres",
+        "64 square metres",
+        "88 square metres",
+        "176 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "88 square metres",
+      "explanation": "Area = 11 × 8 = 88 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 64 cm. Its length is 20 cm. What is its width?",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "14 cm",
+        "16 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "12 cm",
+      "explanation": "Perimeter = 2 × (20 + W), so 64 = 2 × (20 + W). Therefore 32 = 20 + W, W = 12 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q88.svg"
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie's rectangular garden has an area of 84 square metres and a length of 12 metres. What is its width?",
+      "options": [
+        "6 metres",
+        "7 metres",
+        "8 metres",
+        "9 metres",
+        "10 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "7 metres",
+      "explanation": "Area = L × W, so 84 = 12 × W. Width = 84 ÷ 12 = 7 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q89.svg"
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square fence encloses an area of 289 square metres. What is its perimeter?",
+      "options": [
+        "17 metres",
+        "34 metres",
+        "51 metres",
+        "68 metres",
+        "85 metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "68 metres",
+      "explanation": "Side × side = 289, so side = 17 m. Perimeter = 4 × 17 = 68 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q90.svg"
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular swimming pool has a length of (3z + 2) metres and a width of z metres. If z = 4, what is the area?",
+      "options": [
+        "28 square metres",
+        "42 square metres",
+        "56 square metres",
+        "70 square metres",
+        "84 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "56 square metres",
+      "explanation": "If z = 4, length = (3 × 4) + 2 = 14 m and width = 4 m. Area = 14 × 4 = 56 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/pool-q91.svg"
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 60 cm. Its length is twice its width. What is the area?",
+      "options": [
+        "100 square cm",
+        "150 square cm",
+        "200 square cm",
+        "250 square cm",
+        "300 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "200 square cm",
+      "explanation": "Let the width = w. The length = 2w. Perimeter = 2 × (2w + w) = 6w. So 6w = 60, which means w = 10 cm. Length = 2 × 10 = 20 cm. Area = 20 × 10 = 200 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Emma has two rectangular flower beds. The first is 9m by 6m, and the second is 8m by 7m. Which has the greater area and by how much?",
+      "options": [
+        "First bed by 2 square metres",
+        "Second bed by 2 square metres",
+        "They are equal",
+        "First bed by 1 square metre",
+        "Second bed by 1 square metre"
+      ],
+      "correct": 1,
+      "correctAnswer": "Second bed by 2 square metres",
+      "explanation": "First bed: 9 × 6 = 54 m². Second bed: 8 × 7 = 56 m². Second bed is greater by 56 - 54 = 2 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/flowerbeds-q93.svg"
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular field is 40 metres long and 25 metres wide. A path 3 metres wide runs around the inside edge. What is the area of the path?",
+      "options": [
+        "282 square metres",
+        "318 square metres",
+        "354 square metres",
+        "390 square metres",
+        "1,000 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "354 square metres",
+      "explanation": "Field area: 40 × 25 = 1,000 m². The path is 3m wide on each side, so the inner rectangle is (40 − 6) × (25 − 6) = 34 × 19 = 646 m². Path area = 1,000 − 646 = 354 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/path-q94.svg"
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 100 metres. What is its area?",
+      "options": [
+        "25 square metres",
+        "50 square metres",
+        "100 square metres",
+        "400 square metres",
+        "625 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "625 square metres",
+      "explanation": "Side = 100 ÷ 4 = 25 m. Area = 25 × 25 = 625 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q95.svg"
+    },
+    {
+      "id": 96,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular meeting room is 21 metres long and 16 metres wide. What is its perimeter?",
+      "options": [
+        "37 metres",
+        "74 metres",
+        "336 metres",
+        "148 metres",
+        "111 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "74 metres",
+      "explanation": "Perimeter = 2 × (21 + 16) = 2 × 37 = 74 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a length of 14 cm and a width of 9 cm. What is the sum of its perimeter and area?",
+      "options": [
+        "46",
+        "92",
+        "126",
+        "172",
+        "200"
+      ],
+      "correct": 3,
+      "correctAnswer": "172",
+      "explanation": "Perimeter = 2 × (14 + 9) = 46 cm. Area = 14 × 9 = 126 cm². Sum = 46 + 126 = 172. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Oliver has a rectangular lawn that is 25m by 18m. He wants to create a flower border 2 metres wide all around the inside. What is the area of the flower border?",
+      "options": [
+        "144 square metres",
+        "156 square metres",
+        "168 square metres",
+        "180 square metres",
+        "192 square metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "156 square metres",
+      "explanation": "Total: 25 × 18 = 450 m². Inner lawn: (25-4) × (18-4) = 21 × 14 = 294 m². Border = 450 - 294 = 156 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/border-q98.svg"
+    },
+    {
+      "id": 99,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has sides of 13 metres. What is its area?",
+      "options": [
+        "26 square metres",
+        "52 square metres",
+        "104 square metres",
+        "156 square metres",
+        "169 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "169 square metres",
+      "explanation": "Area = 13 × 13 = 169 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 105 square cm and a length of 15 cm. What is its perimeter?",
+      "options": [
+        "22 cm",
+        "28 cm",
+        "44 cm",
+        "56 cm",
+        "70 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "44 cm",
+      "explanation": "Width = 105 ÷ 15 = 7 cm. Perimeter = 2 × (15 + 7) = 2 × 22 = 44 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q100.svg"
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular dance floor is 23 metres long and 17 metres wide. What is its area?",
+      "options": [
+        "40 square metres",
+        "80 square metres",
+        "230 square metres",
+        "391 square metres",
+        "782 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "391 square metres",
+      "explanation": "Area = 23 × 17 = 391 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 68 cm. What is its area?",
+      "options": [
+        "17 square cm",
+        "136 square cm",
+        "289 square cm",
+        "578 square cm",
+        "1,156 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "289 square cm",
+      "explanation": "Side = 68 ÷ 4 = 17 cm. Area = 17 × 17 = 289 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q102.svg"
+    },
+    {
+      "id": 103,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 72 metres and a width of 14 metres. What is its length?",
+      "options": [
+        "18 metres",
+        "20 metres",
+        "22 metres",
+        "24 metres",
+        "26 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "22 metres",
+      "explanation": "Perimeter = 2 × (L + 14), so 72 = 2 × (L + 14). Therefore 36 = L + 14, L = 22 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q103.svg"
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy's rectangular courtyard is 27 metres long and 19 metres wide. What is its perimeter?",
+      "options": [
+        "46 metres",
+        "92 metres",
+        "513 metres",
+        "184 metres",
+        "138 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "92 metres",
+      "explanation": "Perimeter = 2 × (27 + 19) = 2 × 46 = 92 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle is five times as long as it is wide. If the width is 4 metres, what is the area?",
+      "options": [
+        "20 square metres",
+        "40 square metres",
+        "60 square metres",
+        "80 square metres",
+        "100 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "80 square metres",
+      "explanation": "Width = 4 m, length = 5 × 4 = 20 m. Area = 20 × 4 = 80 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q105.svg"
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square garden has an area of 361 square metres. What is its perimeter?",
+      "options": [
+        "19 metres",
+        "38 metres",
+        "57 metres",
+        "76 metres",
+        "95 metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "76 metres",
+      "explanation": "Side × side = 361, so side = 19 m. Perimeter = 4 × 19 = 76 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q106.svg"
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular poster is 42 cm long and 30 cm wide. What is its area?",
+      "options": [
+        "72 square cm",
+        "144 square cm",
+        "630 square cm",
+        "1,260 square cm",
+        "2,520 square cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "1,260 square cm",
+      "explanation": "Area = 42 × 30 = 1,260 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 90 cm and a length of 28 cm. What is its area?",
+      "options": [
+        "392 square cm",
+        "476 square cm",
+        "560 square cm",
+        "644 square cm",
+        "728 square cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "476 square cm",
+      "explanation": "Perimeter = 2 × (length + width), so 90 = 2 × (28 + width). Divide both sides by 2: 45 = 28 + width. Width = 45 - 28 = 17 cm. Area = 28 × 17 = 476 square cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q108.svg"
+    },
+    {
+      "id": 109,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has sides of 17 metres. What is its perimeter?",
+      "options": [
+        "34 metres",
+        "51 metres",
+        "68 metres",
+        "85 metres",
+        "289 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "68 metres",
+      "explanation": "Perimeter = 4 × 17 = 68 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular stadium is 32 metres long and 24 metres wide. What is its area?",
+      "options": [
+        "56 square metres",
+        "112 square metres",
+        "384 square metres",
+        "768 square metres",
+        "1,536 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "768 square metres",
+      "explanation": "Area = 32 × 24 = 768 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped room is made of two rectangles. The first is 10m by 7m. The second is 8m by 5m. What is the total area?",
+      "options": [
+        "70 square metres",
+        "100 square metres",
+        "110 square metres",
+        "120 square metres",
+        "30 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "110 square metres",
+      "explanation": "First: 10 × 7 = 70 m². Second: 8 × 5 = 40 m². Total: 70 + 40 = 110 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/l-shape-q111.svg"
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A compound shape is made from a rectangle 15cm by 10cm with a square of side 5cm cut from one corner. What is the remaining area?",
+      "options": [
+        "100 square cm",
+        "115 square cm",
+        "125 square cm",
+        "140 square cm",
+        "150 square cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "125 square cm",
+      "explanation": "Rectangle: 15 × 10 = 150 cm². Square: 5 × 5 = 25 cm². Remaining: 150 - 25 = 125 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/cutout-q112.svg"
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 76 metres. What is its area?",
+      "options": [
+        "19 square metres",
+        "152 square metres",
+        "304 square metres",
+        "361 square metres",
+        "5,776 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "361 square metres",
+      "explanation": "Side = 76 ÷ 4 = 19 m. Area = 19 × 19 = 361 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q113.svg"
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 126 square metres and a width of 9 metres. What is its length?",
+      "options": [
+        "12 metres",
+        "13 metres",
+        "14 metres",
+        "15 metres",
+        "16 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "14 metres",
+      "explanation": "Length = 126 ÷ 9 = 14 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q114.svg"
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Charlie's rectangular playground is 29 metres long and 21 metres wide. What is its perimeter?",
+      "options": [
+        "50 metres",
+        "100 metres",
+        "609 metres",
+        "200 metres",
+        "150 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "100 metres",
+      "explanation": "Perimeter = 2 × (29 + 21) = 2 × 50 = 100 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has dimensions 6w metres by 8w metres. If w = 2, what is the perimeter?",
+      "options": [
+        "28 metres",
+        "40 metres",
+        "56 metres",
+        "84 metres",
+        "192 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "56 metres",
+      "explanation": "If w = 2, dimensions are 12m and 16m. Perimeter = 2 × (12 + 16) = 2 × 28 = 56 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q116.svg"
+    },
+    {
+      "id": 117,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has sides of 20 metres. What is its area?",
+      "options": [
+        "40 square metres",
+        "80 square metres",
+        "200 square metres",
+        "300 square metres",
+        "400 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "400 square metres",
+      "explanation": "Area = 20 × 20 = 400 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 96 cm and a length of 30 cm. What is its area?",
+      "options": [
+        "360 square cm",
+        "420 square cm",
+        "480 square cm",
+        "540 square cm",
+        "600 square cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "540 square cm",
+      "explanation": "Width = 96/2 - 30 = 48 - 30 = 18 cm. Area = 30 × 18 = 540 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q118.svg"
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Amelia has a rectangular lawn that is 30m by 22m. She wants to create a flower border 1.5 metres wide all around the inside. What is the area of the flower border?",
+      "options": [
+        "132 square metres",
+        "146 square metres",
+        "147 square metres",
+        "154 square metres",
+        "660 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "147 square metres",
+      "explanation": "Total: 30 × 22 = 660 m². Inner: (30-3) × (22-3) = 27 × 19 = 513 m². Border = 660 - 513 = 147 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/border-q119.svg"
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 100 metres. Its length is four times its width. What is the area?",
+      "options": [
+        "100 square metres",
+        "200 square metres",
+        "300 square metres",
+        "400 square metres",
+        "500 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "400 square metres",
+      "explanation": "Let the width = w. The length = 4w. Perimeter = 2 × (w + 4w) = 10w. So 10w = 100, which means w = 10 m. Length = 4 × 10 = 40 m. Area = 40 × 10 = 400 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square has an area of 324 square cm. What is the length of each side?",
+      "options": [
+        "16 cm",
+        "17 cm",
+        "18 cm",
+        "19 cm",
+        "20 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "18 cm",
+      "explanation": "Side × side = 324, so side = 18 cm (because 18 × 18 = 324). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q121.svg"
+    },
+    {
+      "id": 122,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular warehouse is 38 metres long and 26 metres wide. What is its area?",
+      "options": [
+        "64 square metres",
+        "128 square metres",
+        "494 square metres",
+        "988 square metres",
+        "1,976 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "988 square metres",
+      "explanation": "Area = 38 × 26 = 988 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 84 cm and a width of 16 cm. What is its length?",
+      "options": [
+        "22 cm",
+        "24 cm",
+        "26 cm",
+        "28 cm",
+        "30 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "26 cm",
+      "explanation": "Perimeter = 2 × (L + 16), so 84 = 2 × (L + 16). Therefore 42 = L + 16, L = 26 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q123.svg"
+    },
+    {
+      "id": 124,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A square courtyard has a perimeter of 88 metres. What is its area?",
+      "options": [
+        "22 square metres",
+        "176 square metres",
+        "352 square metres",
+        "484 square metres",
+        "7,744 square metres"
+      ],
+      "correct": 3,
+      "correctAnswer": "484 square metres",
+      "explanation": "Side = 88 ÷ 4 = 22 m. Area = 22 × 22 = 484 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/square-q124.svg"
+    },
+    {
+      "id": 125,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Benjamin's rectangular study is 31 metres long and 23 metres wide. What is its perimeter?",
+      "options": [
+        "54 metres",
+        "108 metres",
+        "713 metres",
+        "216 metres",
+        "162 metres"
+      ],
+      "correct": 1,
+      "correctAnswer": "108 metres",
+      "explanation": "Perimeter = 2 × (31 + 23) = 2 × 54 = 108 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle is six times as long as it is wide. If the width is 5 metres, what is the perimeter?",
+      "options": [
+        "35 metres",
+        "55 metres",
+        "70 metres",
+        "105 metres",
+        "150 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "70 metres",
+      "explanation": "Width = 5 m, length = 6 × 5 = 30 m. Perimeter = 2 × (30 + 5) = 2 × 35 = 70 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q126.svg"
+    },
+    {
+      "id": 127,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which rectangle does NOT have the same area as the others?",
+      "options": [
+        "24 cm by 5 cm",
+        "30 cm by 4 cm",
+        "20 cm by 6 cm",
+        "15 cm by 9 cm",
+        "40 cm by 3 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "15 cm by 9 cm",
+      "explanation": "Calculate: 24×5=120, 30×4=120, 20×6=120, 15×9=135, 40×3=120. The 15×9 has different area. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "area-perimeter/rectangles-q127.svg"
+    },
+    {
+      "id": 128,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular field is 50 metres long and 36 metres wide. A path 2 metres wide runs around the inside edge. What is the area of the path?",
+      "options": [
+        "296 square metres",
+        "312 square metres",
+        "328 square metres",
+        "344 square metres",
+        "1,800 square metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "328 square metres",
+      "explanation": "Field area: 50 × 36 = 1,800 m². The path is 2m wide on each side, so the inner rectangle is (50 − 4) × (36 − 4) = 46 × 32 = 1,472 m². Path area = 1,800 − 1,472 = 328 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": "area-perimeter/path-q128.svg"
+    },
+    {
+      "id": 129,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has sides of 19 metres. What is its area?",
+      "options": [
+        "38 square metres",
+        "76 square metres",
+        "190 square metres",
+        "285 square metres",
+        "361 square metres"
+      ],
+      "correct": 4,
+      "correctAnswer": "361 square metres",
+      "explanation": "Area = 19 × 19 = 361 square metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 144 square metres and a length of 16 metres. What is its perimeter?",
+      "options": [
+        "32 metres",
+        "40 metres",
+        "50 metres",
+        "60 metres",
+        "80 metres"
+      ],
+      "correct": 2,
+      "correctAnswer": "50 metres",
+      "explanation": "Width = 144 ÷ 16 = 9 m. Perimeter = 2 × (16 + 9) = 2 × 25 = 50 metres. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": "area-perimeter/rectangle-q130.svg"
+    },
+    {
+      "id": 131,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shape is made of two rectangles joined together. Rectangle A is 6 cm × 3 cm and Rectangle B is 4 cm × 2 cm. What is the total area?",
+      "options": [
+        "18 cm²",
+        "26 cm²",
+        "20 cm²",
+        "24 cm²",
+        "32 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "26 cm²",
+      "explanation": "Area of Rectangle A = 6 × 3 = 18 cm². Area of Rectangle B = 4 × 2 = 8 cm². Total area = 18 + 8 = 26 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Oliver made an L-shape from two rectangles. One rectangle is 5 cm × 4 cm and the other is 3 cm × 2 cm. What is the total area of the L-shape?",
+      "options": [
+        "14 cm²",
+        "20 cm²",
+        "26 cm²",
+        "30 cm²",
+        "40 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "26 cm²",
+      "explanation": "First rectangle: 5 × 4 = 20 cm². Second rectangle: 3 × 2 = 6 cm². Total = 20 + 6 = 26 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shape is made by joining two rectangles. Rectangle P is 7 cm × 3 cm and Rectangle Q is 5 cm × 3 cm. What is the total area?",
+      "options": [
+        "21 cm²",
+        "36 cm²",
+        "15 cm²",
+        "42 cm²",
+        "30 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "36 cm²",
+      "explanation": "Rectangle P: 7 × 3 = 21 cm². Rectangle Q: 5 × 3 = 15 cm². Total = 21 + 15 = 36 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Emma's garden is an L-shape made from two rectangles. The first is 8 cm × 4 cm and the second is 6 cm × 2 cm. What is the total area?",
+      "options": [
+        "32 cm²",
+        "44 cm²",
+        "12 cm²",
+        "56 cm²",
+        "40 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "44 cm²",
+      "explanation": "First rectangle: 8 × 4 = 32 cm². Second rectangle: 6 × 2 = 12 cm². Total = 32 + 12 = 44 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A compound shape is made of two rectangles joined together. One is 10 cm × 3 cm and the other is 4 cm × 5 cm. What is the total area?",
+      "options": [
+        "30 cm²",
+        "50 cm²",
+        "20 cm²",
+        "45 cm²",
+        "35 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "50 cm²",
+      "explanation": "First rectangle: 10 × 3 = 30 cm². Second rectangle: 4 × 5 = 20 cm². Total = 30 + 20 = 50 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jack's bedroom floor is an L-shape. It is made of two rectangles: one is 9 cm × 5 cm and the other is 3 cm × 4 cm. What is the total area?",
+      "options": [
+        "45 cm²",
+        "12 cm²",
+        "57 cm²",
+        "54 cm²",
+        "48 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "57 cm²",
+      "explanation": "First rectangle: 9 × 5 = 45 cm². Second rectangle: 3 × 4 = 12 cm². Total = 45 + 12 = 57 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A shape is made of two rectangles. Rectangle A is 8 cm × 6 cm and Rectangle B is 5 cm × 4 cm. What is the total area?",
+      "options": [
+        "48 cm²",
+        "68 cm²",
+        "20 cm²",
+        "52 cm²",
+        "62 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "68 cm²",
+      "explanation": "Rectangle A: 8 × 6 = 48 cm². Rectangle B: 5 × 4 = 20 cm². Total = 48 + 20 = 68 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sophie made a compound shape from two rectangles. One is 12 cm × 3 cm and the other is 6 cm × 4 cm. What is the total area of the shape?",
+      "options": [
+        "36 cm²",
+        "24 cm²",
+        "72 cm²",
+        "60 cm²",
+        "48 cm²"
+      ],
+      "correct": 3,
+      "correctAnswer": "60 cm²",
+      "explanation": "First rectangle: 12 × 3 = 36 cm². Second rectangle: 6 × 4 = 24 cm². Total = 36 + 24 = 60 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped room is 10 cm long and 8 cm wide overall. A 4 cm × 3 cm rectangle is missing from the top-right corner. What is the area of the L-shape?",
+      "options": [
+        "80 cm²",
+        "68 cm²",
+        "76 cm²",
+        "56 cm²",
+        "92 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "68 cm²",
+      "explanation": "Full rectangle: 10 × 8 = 80 cm². Missing corner: 4 × 3 = 12 cm². L-shape area = 80 − 12 = 68 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A T-shape is made from two rectangles. The top bar is 10 cm × 2 cm and the vertical part is 3 cm × 6 cm. What is the total area?",
+      "options": [
+        "18 cm²",
+        "20 cm²",
+        "38 cm²",
+        "60 cm²",
+        "30 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "38 cm²",
+      "explanation": "Top bar: 10 × 2 = 20 cm². Vertical part: 3 × 6 = 18 cm². Total = 20 + 18 = 38 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped garden is 12 cm long and 9 cm wide overall. A 5 cm × 4 cm piece is cut from one corner. What is the area of the garden?",
+      "options": [
+        "88 cm²",
+        "108 cm²",
+        "20 cm²",
+        "128 cm²",
+        "68 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "88 cm²",
+      "explanation": "Full rectangle: 12 × 9 = 108 cm². Cut-out: 5 × 4 = 20 cm². Area = 108 − 20 = 88 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A plus-sign shape is made from a 3 cm × 9 cm vertical rectangle and a 9 cm × 3 cm horizontal rectangle overlapping in the middle. The overlap is a 3 cm × 3 cm square. What is the total area of the plus sign?",
+      "options": [
+        "54 cm²",
+        "45 cm²",
+        "36 cm²",
+        "27 cm²",
+        "81 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "45 cm²",
+      "explanation": "Vertical rectangle: 3 × 9 = 27 cm². Horizontal rectangle: 9 × 3 = 27 cm². Overlap: 3 × 3 = 9 cm². Total = 27 + 27 − 9 = 45 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Harry drew a T-shape. The top bar is 12 cm × 3 cm and the stem is 4 cm × 7 cm. What is the total area?",
+      "options": [
+        "28 cm²",
+        "36 cm²",
+        "64 cm²",
+        "84 cm²",
+        "56 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "64 cm²",
+      "explanation": "Top bar: 12 × 3 = 36 cm². Stem: 4 × 7 = 28 cm². Total = 36 + 28 = 64 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "An L-shaped patio is 14 cm long and 10 cm wide overall. A 6 cm × 5 cm rectangle is missing from one corner. What is the area of the patio?",
+      "options": [
+        "110 cm²",
+        "140 cm²",
+        "30 cm²",
+        "170 cm²",
+        "100 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "110 cm²",
+      "explanation": "Full rectangle: 14 × 10 = 140 cm². Missing piece: 6 × 5 = 30 cm². Patio area = 140 − 30 = 110 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangular card is 15 cm × 10 cm. A smaller rectangle of 5 cm × 4 cm is cut out from the middle. What is the remaining area?",
+      "options": [
+        "130 cm²",
+        "120 cm²",
+        "150 cm²",
+        "110 cm²",
+        "100 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "130 cm²",
+      "explanation": "Large rectangle: 15 × 10 = 150 cm². Cut-out: 5 × 4 = 20 cm². Remaining = 150 − 20 = 130 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A compound shape is made of three rectangles: 8 cm × 3 cm, 5 cm × 4 cm, and 6 cm × 2 cm. What is the total area?",
+      "options": [
+        "56 cm²",
+        "48 cm²",
+        "36 cm²",
+        "44 cm²",
+        "68 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "56 cm²",
+      "explanation": "First: 8 × 3 = 24 cm². Second: 5 × 4 = 20 cm². Third: 6 × 2 = 12 cm². Total = 24 + 20 + 12 = 56 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Isla's L-shaped room is 12 m long and 8 m wide overall. A 5 m × 3 m piece is cut from one corner. What is the perimeter of the L-shape?",
+      "options": [
+        "40 m",
+        "44 m",
+        "36 m",
+        "48 m",
+        "56 m"
+      ],
+      "correct": 0,
+      "correctAnswer": "40 m",
+      "explanation": "Trace around the outside: 12 + 8 + (12 − 5) + 3 + 5 + (8 − 3) = 12 + 8 + 7 + 3 + 5 + 5 = 40 m. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Noah's playground is an L-shape. It is 16 m long and 10 m wide overall. A 6 m × 4 m piece is cut from one corner. What is the perimeter of the L-shape?",
+      "options": [
+        "52 m",
+        "72 m",
+        "44 m",
+        "56 m",
+        "60 m"
+      ],
+      "correct": 0,
+      "correctAnswer": "52 m",
+      "explanation": "Trace around the outside: 16 + 10 + (16 − 6) + 4 + 6 + (10 − 4) = 16 + 10 + 10 + 4 + 6 + 6 = 52 m. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "LShapeDiagram",
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has a base of 8 cm and a height of 6 cm. What is its area?",
+      "options": [
+        "48 cm²",
+        "24 cm²",
+        "14 cm²",
+        "36 cm²",
+        "12 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "24 cm²",
+      "explanation": "Area of a triangle = ½ × base × height = ½ × 8 × 6 = 24 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has a base of 6 cm and a height of 4 cm. What is its area?",
+      "options": [
+        "24 cm²",
+        "10 cm²",
+        "12 cm²",
+        "20 cm²",
+        "48 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "12 cm²",
+      "explanation": "Area = ½ × base × height = ½ × 6 × 4 = 12 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A triangle has a base of 10 cm and a height of 8 cm. What is its area?",
+      "options": [
+        "80 cm²",
+        "18 cm²",
+        "40 cm²",
+        "36 cm²",
+        "20 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "40 cm²",
+      "explanation": "Area = ½ × base × height = ½ × 10 × 8 = 40 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A right-angled triangle has a base of 12 cm and a height of 6 cm. What is its area?",
+      "options": [
+        "72 cm²",
+        "36 cm²",
+        "18 cm²",
+        "30 cm²",
+        "24 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "36 cm²",
+      "explanation": "Area = ½ × base × height = ½ × 12 × 6 = 36 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Grace drew a triangle with a base of 14 cm and a height of 4 cm. What is the area of her triangle?",
+      "options": [
+        "56 cm²",
+        "18 cm²",
+        "28 cm²",
+        "32 cm²",
+        "7 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "28 cm²",
+      "explanation": "Area = ½ × base × height = ½ × 14 × 4 = 28 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily's triangular garden has a base of 9 m and a height of 6 m. She wants to cover it with grass seed. What area does she need to cover?",
+      "options": [
+        "54 m²",
+        "27 m²",
+        "15 m²",
+        "45 m²",
+        "18 m²"
+      ],
+      "correct": 1,
+      "correctAnswer": "27 m²",
+      "explanation": "Area = ½ × base × height = ½ × 9 × 6 = 27 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangular sail has a base of 5 m and a height of 8 m. What is the area of the sail?",
+      "options": [
+        "40 m²",
+        "13 m²",
+        "20 m²",
+        "30 m²",
+        "25 m²"
+      ],
+      "correct": 2,
+      "correctAnswer": "20 m²",
+      "explanation": "Area = ½ × base × height = ½ × 5 × 8 = 20 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has an area of 30 cm². Its base is 10 cm. What is the height?",
+      "options": [
+        "3 cm",
+        "6 cm",
+        "15 cm",
+        "20 cm",
+        "60 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "6 cm",
+      "explanation": "Area = ½ × base × height. So 30 = ½ × 10 × height. 30 = 5 × height. Height = 30 ÷ 5 = 6 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has an area of 24 cm². Its height is 8 cm. What is the base?",
+      "options": [
+        "3 cm",
+        "6 cm",
+        "12 cm",
+        "16 cm",
+        "48 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "6 cm",
+      "explanation": "Area = ½ × base × height. So 24 = ½ × base × 8. 24 = 4 × base. Base = 24 ÷ 4 = 6 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver's pennant is a triangle with a base of 16 cm and a height of 10 cm. What is its area?",
+      "options": [
+        "160 cm²",
+        "80 cm²",
+        "26 cm²",
+        "60 cm²",
+        "40 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "80 cm²",
+      "explanation": "Area = ½ × base × height = ½ × 16 × 10 = 80 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangular flower bed has an area of 18 m². The base is 6 m. What is the height?",
+      "options": [
+        "3 m",
+        "6 m",
+        "9 m",
+        "12 m",
+        "36 m"
+      ],
+      "correct": 1,
+      "correctAnswer": "6 m",
+      "explanation": "Area = ½ × base × height. So 18 = ½ × 6 × height. 18 = 3 × height. Height = 18 ÷ 3 = 6 m. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A triangle has an area of 35 cm² and a base of 14 cm. What is the height?",
+      "options": [
+        "2.5 cm",
+        "5 cm",
+        "7 cm",
+        "10 cm",
+        "70 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "5 cm",
+      "explanation": "Area = ½ × base × height. So 35 = ½ × 14 × height. 35 = 7 × height. Height = 35 ÷ 7 = 5 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle is 12 cm × 8 cm. A triangle is cut from one corner with a base of 4 cm and a height of 3 cm. What is the remaining area?",
+      "options": [
+        "90 cm²",
+        "96 cm²",
+        "84 cm²",
+        "102 cm²",
+        "78 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "90 cm²",
+      "explanation": "Rectangle area = 12 × 8 = 96 cm². Triangle area = ½ × 4 × 3 = 6 cm². Remaining = 96 − 6 = 90 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle is 10 cm × 6 cm. A triangle with base 10 cm and height 6 cm is drawn inside it. What is the area of the triangle?",
+      "options": [
+        "60 cm²",
+        "16 cm²",
+        "20 cm²",
+        "30 cm²",
+        "40 cm²"
+      ],
+      "correct": 3,
+      "correctAnswer": "30 cm²",
+      "explanation": "Area of triangle = ½ × base × height = ½ × 10 × 6 = 30 cm². Notice this is exactly half the rectangle's area (60 cm²). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "TriangleAreaDiagram",
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A shape is made of a rectangle (8 cm × 5 cm) with a triangle on top. The triangle has a base of 8 cm and a height of 4 cm. What is the total area?",
+      "options": [
+        "56 cm²",
+        "72 cm²",
+        "40 cm²",
+        "48 cm²",
+        "80 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "56 cm²",
+      "explanation": "Rectangle: 8 × 5 = 40 cm². Triangle: ½ × 8 × 4 = 16 cm². Total = 40 + 16 = 56 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ava's garden is a rectangle 14 m × 10 m. She builds a triangular pond in the corner with base 6 m and height 4 m. What area of the garden is left for grass?",
+      "options": [
+        "128 m²",
+        "140 m²",
+        "116 m²",
+        "152 m²",
+        "100 m²"
+      ],
+      "correct": 0,
+      "correctAnswer": "128 m²",
+      "explanation": "Garden: 14 × 10 = 140 m². Pond: ½ × 6 × 4 = 12 m². Grass area = 140 − 12 = 128 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A parallelogram has a base of 10 cm and a perpendicular height of 6 cm. What is its area?",
+      "options": [
+        "16 cm²",
+        "32 cm²",
+        "60 cm²",
+        "120 cm²",
+        "30 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "60 cm²",
+      "explanation": "Area of a parallelogram = base × perpendicular height = 10 × 6 = 60 cm². Remember, we use the perpendicular height, not the slanted side. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A parallelogram has a base of 8 cm and a perpendicular height of 5 cm. The slanted side is 7 cm. What is its area?",
+      "options": [
+        "56 cm²",
+        "40 cm²",
+        "35 cm²",
+        "15 cm²",
+        "80 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "40 cm²",
+      "explanation": "Area = base × perpendicular height = 8 × 5 = 40 cm². We use the perpendicular height (5 cm), not the slanted side (7 cm). ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Harry drew a parallelogram with a base of 12 cm and a perpendicular height of 4 cm. What is its area?",
+      "options": [
+        "48 cm²",
+        "24 cm²",
+        "16 cm²",
+        "32 cm²",
+        "96 cm²"
+      ],
+      "correct": 0,
+      "correctAnswer": "48 cm²",
+      "explanation": "Area = base × perpendicular height = 12 × 4 = 48 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A parallelogram-shaped field has a base of 15 m and a perpendicular height of 8 m. What is the area of the field?",
+      "options": [
+        "23 m²",
+        "46 m²",
+        "60 m²",
+        "120 m²",
+        "240 m²"
+      ],
+      "correct": 3,
+      "correctAnswer": "120 m²",
+      "explanation": "Area = base × perpendicular height = 15 × 8 = 120 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A parallelogram has an area of 72 cm² and a base of 9 cm. What is its perpendicular height?",
+      "options": [
+        "4 cm",
+        "6 cm",
+        "8 cm",
+        "12 cm",
+        "63 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 cm",
+      "explanation": "Area = base × height. So 72 = 9 × height. Height = 72 ÷ 9 = 8 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie is making a parallelogram-shaped tile with a base of 20 cm and a perpendicular height of 7 cm. What is the area of the tile?",
+      "options": [
+        "27 cm²",
+        "54 cm²",
+        "70 cm²",
+        "140 cm²",
+        "280 cm²"
+      ],
+      "correct": 3,
+      "correctAnswer": "140 cm²",
+      "explanation": "Area = base × perpendicular height = 20 × 7 = 140 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A parallelogram has an area of 54 cm² and a perpendicular height of 6 cm. What is its base?",
+      "options": [
+        "6 cm",
+        "9 cm",
+        "12 cm",
+        "18 cm",
+        "48 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "9 cm",
+      "explanation": "Area = base × height. So 54 = base × 6. Base = 54 ÷ 6 = 9 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A rectangle has a base of 10 cm and a height of 6 cm. A parallelogram has a base of 10 cm and a perpendicular height of 6 cm. Which statement is true?",
+      "options": [
+        "The rectangle has a larger area",
+        "The parallelogram has a larger area",
+        "They have the same area",
+        "You cannot compare them",
+        "The parallelogram's area is double"
+      ],
+      "correct": 2,
+      "correctAnswer": "They have the same area",
+      "explanation": "Rectangle area = 10 × 6 = 60 cm². Parallelogram area = 10 × 6 = 60 cm². They both equal 60 cm², so they have the same area. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A shape is made by placing a parallelogram (base 8 cm, perpendicular height 5 cm) next to a rectangle (8 cm × 3 cm). What is the total area?",
+      "options": [
+        "40 cm²",
+        "24 cm²",
+        "64 cm²",
+        "48 cm²",
+        "80 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "64 cm²",
+      "explanation": "Parallelogram: 8 × 5 = 40 cm². Rectangle: 8 × 3 = 24 cm². Total = 40 + 24 = 64 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Jack drew a parallelogram with a base of 14 cm and a slanted side of 10 cm. The perpendicular height is 8 cm. He says the area is 140 cm². Is he correct, and what is the actual area?",
+      "options": [
+        "Yes, 140 cm²",
+        "No, it is 112 cm²",
+        "No, it is 80 cm²",
+        "No, it is 56 cm²",
+        "No, it is 120 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "No, it is 112 cm²",
+      "explanation": "Jack used the slanted side (14 × 10 = 140) instead of the perpendicular height. The correct area = base × perpendicular height = 14 × 8 = 112 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "ParallelogramDiagram",
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A picture is 20 cm long and 15 cm wide. It has a frame that is 2 cm wide all around. What is the outer width of the framed picture?",
+      "options": [
+        "17 cm",
+        "19 cm",
+        "21 cm",
+        "24 cm",
+        "30 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "19 cm",
+      "explanation": "The frame adds 2 cm to each side of the width. Outer width = 15 + 2 + 2 = 19 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangular garden is 10 m long and 8 m wide. A path 1 m wide goes all the way around the outside. What are the outer dimensions of the path?",
+      "options": [
+        "11 m by 9 m",
+        "12 m by 10 m",
+        "12 m by 9 m",
+        "11 m by 10 m",
+        "14 m by 12 m"
+      ],
+      "correct": 1,
+      "correctAnswer": "12 m by 10 m",
+      "explanation": "The path adds 1 m to each side. Outer length = 10 + 1 + 1 = 12 m. Outer width = 8 + 1 + 1 = 10 m. The outer dimensions are 12 m by 10 m. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A swimming pool is 6 m long and 4 m wide. A safety border 0.5 m wide surrounds it. What is the outer perimeter of the border?",
+      "options": [
+        "20 m",
+        "22 m",
+        "24 m",
+        "26 m",
+        "28 m"
+      ],
+      "correct": 2,
+      "correctAnswer": "24 m",
+      "explanation": "The border adds 0.5 m to each side. Outer length = 6 + 0.5 + 0.5 = 7 m. Outer width = 4 + 0.5 + 0.5 = 5 m. Outer perimeter = 2 × (7 + 5) = 2 × 12 = 24 m. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 178,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A card is 16 cm long and 12 cm wide. Holly glues a 1 cm border all around it onto a larger piece of card. What is the area of the larger piece of card?",
+      "options": [
+        "192 cm²",
+        "204 cm²",
+        "220 cm²",
+        "234 cm²",
+        "252 cm²"
+      ],
+      "correct": 4,
+      "correctAnswer": "252 cm²",
+      "explanation": "The border adds 1 cm to each side. Outer length = 16 + 1 + 1 = 18 cm. Outer width = 12 + 1 + 1 = 14 cm. Outer area = 18 × 14 = 252 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 179,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A painting is 30 cm long and 20 cm wide. It is placed in a frame that is 3 cm wide all around. What is the outer length of the framed painting?",
+      "options": [
+        "33 cm",
+        "34 cm",
+        "35 cm",
+        "36 cm",
+        "40 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "36 cm",
+      "explanation": "The frame adds 3 cm to each side of the length. Outer length = 30 + 3 + 3 = 36 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 180,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A field is 30 m long and 20 m wide. A path 2 m wide runs around the inside edge. What is the area of the path?",
+      "options": [
+        "120 m²",
+        "148 m²",
+        "184 m²",
+        "200 m²",
+        "600 m²"
+      ],
+      "correct": 2,
+      "correctAnswer": "184 m²",
+      "explanation": "Total field area = 30 × 20 = 600 m². The path is 2 m wide on each side, so the inner rectangle is (30 − 4) × (20 − 4) = 26 × 16 = 416 m². Path area = 600 − 416 = 184 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 181,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A frame is 3 cm wide around a photo. The outer dimensions of the frame are 26 cm by 20 cm. What are the dimensions of the photo?",
+      "options": [
+        "23 cm by 17 cm",
+        "22 cm by 16 cm",
+        "21 cm by 15 cm",
+        "20 cm by 14 cm",
+        "18 cm by 12 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "20 cm by 14 cm",
+      "explanation": "The frame is 3 cm wide on each side. Photo length = 26 − 3 − 3 = 20 cm. Photo width = 20 − 3 − 3 = 14 cm. The photo is 20 cm by 14 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 182,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A rectangular pond is 8 m long and 5 m wide. A gravel path 1 m wide is laid around the outside of the pond. What is the area of the gravel path?",
+      "options": [
+        "24 m²",
+        "28 m²",
+        "30 m²",
+        "36 m²",
+        "40 m²"
+      ],
+      "correct": 2,
+      "correctAnswer": "30 m²",
+      "explanation": "Outer dimensions = (8 + 2) × (5 + 2) = 10 × 7 = 70 m². Pond area = 8 × 5 = 40 m². Path area = 70 − 40 = 30 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 183,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A garden is 12 m long and 9 m wide. A flower border 1.5 m wide is planted around the inside edge. What is the area of the flower border?",
+      "options": [
+        "42 m²",
+        "48 m²",
+        "54 m²",
+        "60 m²",
+        "66 m²"
+      ],
+      "correct": 2,
+      "correctAnswer": "54 m²",
+      "explanation": "Garden area = 12 × 9 = 108 m². The border is 1.5 m on each side, so the inner area is (12 − 3) × (9 − 3) = 9 × 6 = 54 m². Border area = 108 − 54 = 54 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "PathBorderDiagram",
+      "image": null
+    },
+    {
+      "id": 184,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle is 8 cm long and 3 cm wide. What is the difference between its area and its perimeter?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 0,
+      "correctAnswer": "2",
+      "explanation": "Area = 8 × 3 = 24. Perimeter = 2 × (8 + 3) = 2 × 11 = 22. Difference = 24 − 22 = 2. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 185,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which has the larger area: a rectangle that is 6 cm by 4 cm, or a square with sides of 5 cm?",
+      "options": [
+        "The rectangle by 1 cm²",
+        "The square by 1 cm²",
+        "They are the same",
+        "The rectangle by 2 cm²",
+        "The square by 2 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "The square by 1 cm²",
+      "explanation": "Rectangle area = 6 × 4 = 24 cm². Square area = 5 × 5 = 25 cm². The square is larger by 25 − 24 = 1 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 186,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 20 cm. What is its area?",
+      "options": [
+        "16 cm²",
+        "20 cm²",
+        "25 cm²",
+        "36 cm²",
+        "40 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "25 cm²",
+      "explanation": "Side = 20 ÷ 4 = 5 cm. Area = 5 × 5 = 25 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 187,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle is 10 cm long and 2 cm wide. Which is greater — its perimeter or its area?",
+      "options": [
+        "Perimeter (by 2)",
+        "Perimeter (by 4)",
+        "Area (by 4)",
+        "Area (by 2)",
+        "They are equal"
+      ],
+      "correct": 1,
+      "correctAnswer": "Perimeter (by 4)",
+      "explanation": "Perimeter = 2 × (10 + 2) = 24. Area = 10 × 2 = 20. Perimeter is greater by 24 − 20 = 4. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 188,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle is 9 cm long and 5 cm wide. What is the difference between its area and its perimeter?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "19",
+        "21"
+      ],
+      "correct": 2,
+      "correctAnswer": "17",
+      "explanation": "Area = 9 × 5 = 45. Perimeter = 2 × (9 + 5) = 28. Difference = 45 − 28 = 17. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 189,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Two rectangles each have a perimeter of 24 cm. One is 8 cm by 4 cm and the other is 7 cm by 5 cm. Which has the larger area?",
+      "options": [
+        "8 cm by 4 cm, by 3 cm²",
+        "7 cm by 5 cm, by 3 cm²",
+        "They have the same area",
+        "8 cm by 4 cm, by 5 cm²",
+        "7 cm by 5 cm, by 5 cm²"
+      ],
+      "correct": 1,
+      "correctAnswer": "7 cm by 5 cm, by 3 cm²",
+      "explanation": "First rectangle: 8 × 4 = 32 cm². Second rectangle: 7 × 5 = 35 cm². The 7 cm by 5 cm rectangle has the larger area by 35 − 32 = 3 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 190,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A desk is 120 cm long. What is this length in metres?",
+      "options": [
+        "0.12 m",
+        "1.2 m",
+        "12 m",
+        "1,200 m",
+        "0.012 m"
+      ],
+      "correct": 1,
+      "correctAnswer": "1.2 m",
+      "explanation": "There are 100 cm in 1 m. 120 ÷ 100 = 1.2 m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 191,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Convert 3 m² to cm².",
+      "options": [
+        "300 cm²",
+        "3,000 cm²",
+        "30,000 cm²",
+        "300,000 cm²",
+        "30 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "30,000 cm²",
+      "explanation": "1 m² = 100 cm × 100 cm = 10,000 cm². So 3 m² = 3 × 10,000 = 30,000 cm². ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 192,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle is 200 cm long and 50 cm wide. What is its area in m²?",
+      "options": [
+        "0.1 m²",
+        "0.5 m²",
+        "1 m²",
+        "10 m²",
+        "100 m²"
+      ],
+      "correct": 2,
+      "correctAnswer": "1 m²",
+      "explanation": "Convert to metres first: 200 cm = 2 m, 50 cm = 0.5 m. Area = 2 × 0.5 = 1 m². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 193,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A room is 4 m long and 3 m wide. What is its area in cm²?",
+      "options": [
+        "12,000 cm²",
+        "70,000 cm²",
+        "120,000 cm²",
+        "1,200,000 cm²",
+        "1,200 cm²"
+      ],
+      "correct": 2,
+      "correctAnswer": "120,000 cm²",
+      "explanation": "Area = 4 × 3 = 12 m². There are 10,000 cm² in 1 m². So 12 m² = 12 × 10,000 = 120,000 cm². ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 194,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A tile is 20 cm by 20 cm. How many tiles are needed to cover a 1 m by 1 m area?",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "25",
+        "100"
+      ],
+      "correct": 3,
+      "correctAnswer": "25",
+      "explanation": "1 m = 100 cm. Along each side: 100 ÷ 20 = 5 tiles. Total tiles = 5 × 5 = 25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 195,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A kitchen floor is 2 m long and 3 m wide. Square tiles measuring 50 cm by 50 cm are used to cover the floor. How many tiles are needed?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24",
+        "48"
+      ],
+      "correct": 3,
+      "correctAnswer": "24",
+      "explanation": "Floor area = 2 × 3 = 6 m² = 60,000 cm². Each tile = 50 × 50 = 2,500 cm². Number of tiles = 60,000 ÷ 2,500 = 24. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 196,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A garden is 15 m long and 8 m wide. Turf costs £4 per square metre. How much does it cost to cover the whole garden?",
+      "options": [
+        "£92",
+        "£120",
+        "£240",
+        "£360",
+        "£480"
+      ],
+      "correct": 4,
+      "correctAnswer": "£480",
+      "explanation": "Area = 15 × 8 = 120 m². Cost = 120 × £4 = £480. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 197,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A room is 5 m long and 4 m wide. Paint costs £3.50 per square metre. How much does it cost to paint the floor?",
+      "options": [
+        "£31.50",
+        "£45",
+        "£63",
+        "£70",
+        "£90"
+      ],
+      "correct": 3,
+      "correctAnswer": "£70",
+      "explanation": "Area = 5 × 4 = 20 m². Cost = 20 × £3.50 = £70. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 198,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 24 cm² and a length of 6 cm. What is the width?",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "4 cm",
+      "explanation": "Area = length × width, so 24 = 6 × width. Width = 24 ÷ 6 = 4 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 199,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has an area of 36 cm². What is the length of each side?",
+      "options": [
+        "4 cm",
+        "6 cm",
+        "8 cm",
+        "9 cm",
+        "12 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "6 cm",
+      "explanation": "Area = side × side. Since 6 × 6 = 36, each side is 6 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 200,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 40 cm² and a width of 5 cm. What is the length?",
+      "options": [
+        "5 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm",
+        "10 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "8 cm",
+      "explanation": "Area = length × width, so 40 = length × 5. Length = 40 ÷ 5 = 8 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 201,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 30 cm² and a length of 10 cm. What is the width?",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "3 cm",
+      "explanation": "Area = length × width, so 30 = 10 × width. Width = 30 ÷ 10 = 3 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 202,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has an area of 49 cm². What is the length of each side?",
+      "options": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "7 cm",
+      "explanation": "Area = side × side. Since 7 × 7 = 49, each side is 7 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 203,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 18 cm² and a width of 2 cm. What is the length?",
+      "options": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm",
+        "10 cm"
+      ],
+      "correct": 3,
+      "correctAnswer": "9 cm",
+      "explanation": "Area = length × width, so 18 = length × 2. Length = 18 ÷ 2 = 9 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 204,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has an area of 35 cm² and a length of 7 cm. What is the width?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "7 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 cm",
+      "explanation": "Area = length × width, so 35 = 7 × width. Width = 35 ÷ 7 = 5 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 205,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 20 cm. How long is each side?",
+      "options": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm",
+        "10 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "5 cm",
+      "explanation": "A square has 4 equal sides. Side = 20 ÷ 4 = 5 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 206,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 18 cm and a length of 6 cm. What is the width?",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "3 cm",
+      "explanation": "Perimeter = 2 × (length + width), so 18 = 2 × (6 + width). Divide by 2: 9 = 6 + width. Width = 9 − 6 = 3 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 207,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A square has a perimeter of 24 cm. How long is each side?",
+      "options": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 cm",
+      "explanation": "A square has 4 equal sides. Side = 24 ÷ 4 = 6 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 208,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 22 cm and a length of 7 cm. What is the width?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "correct": 1,
+      "correctAnswer": "4 cm",
+      "explanation": "Perimeter = 2 × (length + width), so 22 = 2 × (7 + width). Divide by 2: 11 = 7 + width. Width = 11 − 7 = 4 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    },
+    {
+      "id": 209,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A rectangle has a perimeter of 26 cm and a length of 8 cm. What is the width?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "7 cm"
+      ],
+      "correct": 2,
+      "correctAnswer": "5 cm",
+      "explanation": "Perimeter = 2 × (length + width), so 26 = 2 × (8 + width). Divide by 2: 13 = 8 + width. Width = 13 − 8 = 5 cm. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": "RectangleDiagram",
+      "image": null
+    }
+  ]
+}

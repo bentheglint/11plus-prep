@@ -1,0 +1,2376 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterCodes",
+    "displayName": "Letter Codes",
+    "extractedAt": "2026-03-30T13:51:13.886Z",
+    "subConceptCount": 8,
+    "lessonCount": 12,
+    "screenCount": 48,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "forward-shift",
+      "name": "Forward Shift",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "forward-shift-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Learn to shift letters forward through the alphabet like a codebreaker",
+            "Get confident with +1, +2, +3 shifts — you'll be doing these in your sleep!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you crack the code for CAT?",
+              "body": "Daisy is practising forward shifts.\n\nDid you know? Spies and secret agents have used letter shifts for centuries! A **forward shift** means every letter jumps FORWARD in the alphabet. A shift of +2 means each letter moves 2 places forward.\n\nCan you work out what **CAT** becomes?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "C",
+                    "to": "E",
+                    "label": "+2"
+                  },
+                  {
+                    "from": "A",
+                    "to": "C",
+                    "label": ""
+                  },
+                  {
+                    "from": "T",
+                    "to": "V",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Let's count forward!",
+              "body": "Let's work through **CAT** together with a shift of +2. Take each letter and count 2 places forward in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Note the shift, count forward, write the result. ✓",
+                "incorrectFeedback": "Not quite — start by noting the shift amount first!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "C(3) + 2 = E(5)",
+                    "why": "Count forward from each letter"
+                  },
+                  {
+                    "text": "A(1) + 2 = C(3)",
+                    "why": "Same shift applies to every letter"
+                  },
+                  {
+                    "text": "T(20) + 2 = V(22)",
+                    "why": "CAT → ECV ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Each letter shifts **forward 2**. What does **RUG** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "TWI",
+                  "SVH",
+                  "UXJ",
+                  "TWJ",
+                  "SWI"
+                ],
+                "correctAnswer": "TWI",
+                "correctFeedback": "Brilliant! Each letter shifts forward 2: R→T, U→W, G→I. RUG becomes TWI. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"TWI\". Each letter shifts forward 2: R→T, U→W, G→I. RUG becomes TWI. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "R",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You've cracked forward shifts!",
+              "body": "Here's your recipe for any forward shift:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Note the shift amount (+1, +2, +3...)",
+                    "why": "How many places forward?"
+                  },
+                  {
+                    "text": "2. Take each letter and count forward",
+                    "why": "Use EJOTY (a memory trick — every 5th letter: E=5, J=10, O=15, T=20, Y=25) to stay on track"
+                  },
+                  {
+                    "text": "3. Write down the new letter each time",
+                    "why": "CAT +2 = ECV, DOG +1 = EPH ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "forward-shift-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Spot the sneaky mistakes people make with forward shifts",
+            "Learn why off-by-one errors happen — and how to dodge them"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"DEF\" the right code for BED?",
+              "body": "Evie is checking her brother's code homework. The answer given was **\"DEF\"** as the +2 code for **BED**.\n\nBut that's wrong! Can you spot the mistake?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "B",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "F",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "B",
+                    "to": "D",
+                    "label": "+2"
+                  },
+                  {
+                    "from": "E",
+                    "to": "G",
+                    "label": ""
+                  },
+                  {
+                    "from": "D",
+                    "to": "F",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Spot the counting error!",
+              "body": "The mistake: counted the starting letter as step 1 instead of step 0.\n\nCounting B as 1 gives C at 2 — but the shift should START after B. B +2 means go 2 MORE: B→C→D",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: \"DEF\"",
+                    "why": "counted the starting letter as step 1 instead of step 0"
+                  },
+                  {
+                    "text": "B(2) + 2 = D(4)",
+                    "why": "Count forward from the starting letter — don't count the letter itself"
+                  },
+                  {
+                    "text": "E(5) + 2 = G(7)",
+                    "why": "Same shift for every letter"
+                  },
+                  {
+                    "text": "D(4) + 2 = F(6)",
+                    "why": "Same shift for every letter"
+                  },
+                  {
+                    "text": "Correct: \"DGF\" ✓",
+                    "why": "Every letter must shift by the same amount"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the CORRECT code?",
+              "body": "Shift **MOP** forward by 2. What's the right answer?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "OQR",
+                  "NPS",
+                  "OQS",
+                  "OPR",
+                  "PRR"
+                ],
+                "correctAnswer": "OQR",
+                "correctFeedback": "Well done! M +2 = O, O +2 = Q, P +2 = R. MOP becomes OQR. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"OQR\". M +2 = O, O +2 = Q, P +2 = R. MOP becomes OQR. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "P",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Now you'll dodge these mistakes!",
+              "body": "Watch out for these common forward-shift traps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Don't count the starting letter as step 1",
+                    "why": "B +2 means B→C→D, not B→C"
+                  },
+                  {
+                    "text": "Shift EVERY letter — including first and last",
+                    "why": "Don't leave any letter unchanged"
+                  },
+                  {
+                    "text": "Double-check the shift number",
+                    "why": "+3 means three hops, not two! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backward-shift",
+      "name": "Backward Shift",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "backward-shift-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Master backward shifts — the same skill, just in reverse",
+            "Apply -1, -2, -3 shifts without getting muddled"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you decode SUN backwards?",
+              "body": "Daisy is practising backward shifts.\n\nA **backward shift** means every letter moves BACK in the alphabet. A shift of -1 means each letter moves 1 place backward.\n\nIt's the same idea as forward shifts, just in the other direction. Can you work out what **SUN** becomes?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "R",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "S",
+                    "to": "R",
+                    "label": "-1"
+                  },
+                  {
+                    "from": "U",
+                    "to": "T",
+                    "label": ""
+                  },
+                  {
+                    "from": "N",
+                    "to": "M",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Let's count backward!",
+              "body": "Let's work through **SUN** together with a shift of -1. Take each letter and count 1 place back in the alphabet.\n\nTop tip: use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "S(19) - 1 = R(18)",
+                    "why": "Count backward from each letter"
+                  },
+                  {
+                    "text": "U(21) - 1 = T(20)",
+                    "why": "Same shift applies to every letter"
+                  },
+                  {
+                    "text": "N(14) - 1 = M(13)",
+                    "why": "SUN → RTM ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Each letter shifts **backward 1**. What does **FOG** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "ENF",
+                  "GPH",
+                  "DME",
+                  "ENG",
+                  "EOF"
+                ],
+                "correctAnswer": "ENF",
+                "correctFeedback": "Brilliant! Each letter shifts back 1: F→E, O→N, G→F. FOG becomes ENF. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ENF\". Each letter shifts back 1: F→E, O→N, G→F. FOG becomes ENF. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "F",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Backward shifts — sorted!",
+              "body": "Here's your recipe for any backward shift:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Note the shift amount (-1, -2, -3...)",
+                    "why": "How many places backward?"
+                  },
+                  {
+                    "text": "2. Take each letter and count backward",
+                    "why": "Use EJOTY (E=5, J=10, O=15, T=20, Y=25) landmarks in reverse"
+                  },
+                  {
+                    "text": "3. Write the new letter each time",
+                    "why": "SUN -1 = RTM, HELP -2 = FCJN ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "backward-shift-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Build speed with backward shifts at different levels",
+            "Get so confident counting backward that it feels automatic"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you shift PIG backward?",
+              "body": "Evie is building speed with backward codes.\n\nBackward shifts can feel trickier at first — but here's the good news: the method is exactly the same, just in the other direction! You've got this.\n\n**PIG** with a shift of **-1** becomes...?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "P",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "F",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "P",
+                    "to": "O",
+                    "label": "-1"
+                  },
+                  {
+                    "from": "I",
+                    "to": "H",
+                    "label": ""
+                  },
+                  {
+                    "from": "G",
+                    "to": "F",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step through it",
+              "body": "Let's shift **PIG** by -1. Take each letter one at a time and count 1 back.\n\nUse **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as landmarks to keep your place!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "P(16) - 1 = O(15)",
+                    "why": ""
+                  },
+                  {
+                    "text": "I(9) - 1 = H(8)",
+                    "why": ""
+                  },
+                  {
+                    "text": "G(7) - 1 = F(6)",
+                    "why": "Answer: OHF ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Each letter shifts **-1**. What does **HEN** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "GDM",
+                  "IFO",
+                  "GDN",
+                  "GEM",
+                  "FCL"
+                ],
+                "correctAnswer": "GDM",
+                "correctFeedback": "Brilliant! Each letter shifts back 1: H→G, E→D, N→M. HEN becomes GDM. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"GDM\". Each letter shifts back 1: H→G, E→D, N→M. HEN becomes GDM. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Backward shifts — easy peasy!",
+              "body": "Backward shifts work the same as forward — just the other way. Remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Same method, opposite direction",
+                    "why": "Count back instead of forward"
+                  },
+                  {
+                    "text": "Use EJOTY (E=5, J=10, O=15, T=20, Y=25) landmarks in reverse",
+                    "why": "E=5, so D=4, C=3..."
+                  },
+                  {
+                    "text": "Take your time with each letter",
+                    "why": "Rushing causes miscounts ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consistent-shift",
+      "name": "Consistent Shift",
+      "category": "core",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "consistent-shift-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Verify that every letter shifts by the SAME amount — the key to cracking any code",
+            "Learn the detective trick that confirms you've found the right rule"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Zara",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the rule for GAME → HBNF?",
+              "body": "Zara is verifying a code she's been given.\n\nIn the 11+, you're often given a coded pair and asked: **what rule was used?** It's like being a codebreaker!\n\nThe key is to check that EVERY letter shifts by the **same amount**. If they do, you've cracked it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "F",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "G",
+                    "to": "H",
+                    "label": "+1"
+                  },
+                  {
+                    "from": "A",
+                    "to": "B",
+                    "label": ""
+                  },
+                  {
+                    "from": "M",
+                    "to": "N",
+                    "label": ""
+                  },
+                  {
+                    "from": "E",
+                    "to": "F",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check every letter",
+              "body": "Let's check **GAME → HBNF**. Line up each original letter with its coded version and count the hops. They should ALL be the same number.",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Let's check **GAME → HBNF**. Count the hops for each letter — they should ALL be the same!"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "points": [
+                      {
+                        "letter": "G",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "A",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "M",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "E",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "H",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "B",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "N",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "F",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "hops": [
+                      {
+                        "from": "G",
+                        "to": "H",
+                        "label": "+1"
+                      },
+                      {
+                        "from": "A",
+                        "to": "B",
+                        "label": ""
+                      },
+                      {
+                        "from": "M",
+                        "to": "N",
+                        "label": ""
+                      },
+                      {
+                        "from": "E",
+                        "to": "F",
+                        "label": ""
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "G→H: 8 - 7 = +1",
+                        "why": "Count the hops between original and coded letter"
+                      },
+                      {
+                        "text": "A→B: 2 - 1 = +1",
+                        "why": "Check this pair matches too"
+                      },
+                      {
+                        "text": "M→N: 14 - 13 = +1",
+                        "why": "Check this pair matches too"
+                      },
+                      {
+                        "text": "E→F: 6 - 5 = +1",
+                        "why": "Check this pair matches too"
+                      },
+                      {
+                        "text": "All letters shift +1 — consistent!",
+                        "why": "Same number every time — that's the rule! ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the shift rule?",
+              "body": "**GAME** is coded as **HBNF**. What shift has been used?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "+1 (forward)",
+                  "+2 (forward)",
+                  "-1 (backward)",
+                  "+3 (forward)",
+                  "-2 (backward)"
+                ],
+                "correctAnswer": "+1 (forward)",
+                "correctFeedback": "Brilliant! G→H (+1), A→B (+1), M→N (+1), E→F (+1). Every letter shifts +1 — the rule is consistent. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"+1 (forward)\". G→H (+1), A→B (+1), M→N (+1), E→F (+1). Every letter shifts +1 — the rule is consistent. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're a codebreaker now!",
+              "body": "To identify the shift rule, just follow these steps:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Line up original and coded letters",
+                    "why": "Write them side by side"
+                  },
+                  {
+                    "text": "2. Count the hops for EACH pair",
+                    "why": "Forward = positive, backward = negative"
+                  },
+                  {
+                    "text": "3. They should all be the SAME number",
+                    "why": "If they match, that's the rule! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variable-shift",
+      "name": "Variable Shift",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "variable-shift-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Handle trickier codes where each position shifts by a different amount",
+            "Spot patterns like +1, +2, +3 hiding inside position-based shifts"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Something's different about this code!",
+              "body": "Daisy is tackling a tricky variable-shift code.\n\nHere's a twist: sometimes the shift is **different for each position** in the word. The first letter might shift +1, the second +2, the third +3... There's a pattern hiding in the shifts themselves!\n\n**CAT** → **DCW**\n\nCan you spot it?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "D",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "C",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "W",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "C",
+                    "to": "D",
+                    "label": "+1, +2, +3"
+                  },
+                  {
+                    "from": "A",
+                    "to": "C",
+                    "label": ""
+                  },
+                  {
+                    "from": "T",
+                    "to": "W",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check each position separately",
+              "body": "Let's check **CAT → DCW**. When the shift ISN'T consistent (the same for every letter), look for a pattern in the shift amounts themselves:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "C(3) + 1 = D(4)",
+                    "why": "Count the hops for each letter separately"
+                  },
+                  {
+                    "text": "A(1) + 2 = C(3)",
+                    "why": "Different shift amount — the shifts vary!"
+                  },
+                  {
+                    "text": "T(20) + 3 = W(23)",
+                    "why": "Different shift amount — the shifts vary!"
+                  },
+                  {
+                    "text": "Position 1 shifts +1, position 2 shifts +2, position 3 shifts +3",
+                    "why": "The shifts follow their own pattern! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The shifts are **+1, +2, +3**. What does **CAT** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "DCW",
+                  "DBU",
+                  "ECV",
+                  "DCX",
+                  "DDW"
+                ],
+                "correctAnswer": "DCW",
+                "correctFeedback": "Brilliant! Each position shifts differently: C+1=D, A+2=C, T+3=W. The pattern is +1, +2, +3. CAT becomes DCW. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"DCW\". Each position shifts differently: C+1=D, A+2=C, T+3=W. The pattern is +1, +2, +3. CAT becomes DCW. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "C",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Variable shifts — you can handle these!",
+              "body": "When each position shifts differently, just follow this approach:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Count the hops for each letter separately",
+                    "why": "Don't assume they're all the same!"
+                  },
+                  {
+                    "text": "2. Look for a pattern in the shifts",
+                    "why": "+1, +2, +3 or +1, +3, +5 etc."
+                  },
+                  {
+                    "text": "3. Apply the pattern to the new word",
+                    "why": "Each position gets its own shift amount ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ejoty-technique",
+      "name": "EJOTY — Quick Alphabet Positioning",
+      "category": "supporting",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "ejoty-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Master the EJOTY speed trick — your secret weapon for finding letter positions fast",
+            "Never count from A again — jump to the nearest landmark instead!"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "EJOTY — your secret weapon!",
+              "body": "Daisy is learning the EJOTY speed trick.\n\nDid you know? Top scorers in the 11+ almost never count from A! They use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) — 5 anchor points spaced evenly through the alphabet.\n\nJump to the nearest landmark and count from there. It's so much faster!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "R",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "T",
+                    "to": "R",
+                    "label": "2 before T"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Finding R with EJOTY",
+              "body": "The nearest EJOTY landmark to **R** is **T** = 20.\n\n**R** is 2 before T, so R = **18**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "match-pairs"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "What position is R in the alphabet?",
+                    "why": "Instead of counting from A, use the nearest EJOTY landmark!"
+                  },
+                  {
+                    "text": "Nearest landmark: T = 20",
+                    "why": "Jump straight to the closest EJOTY letter"
+                  },
+                  {
+                    "text": "R is 2 before T",
+                    "why": "20 - 2 = 18"
+                  },
+                  {
+                    "text": "So R = position 18",
+                    "why": "Much faster than counting from A! ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What position is this letter?",
+              "body": "Using EJOTY, what is the position of **M** in the alphabet?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "13",
+                  "12",
+                  "14",
+                  "11",
+                  "15"
+                ],
+                "correctAnswer": "13",
+                "correctFeedback": "Brilliant! M is 2 before O(15), so M = 15 - 2 = 13. EJOTY makes it quick! ✓",
+                "incorrectFeedback": "Not quite! The answer is \"13\". M is 2 before O(15), so M = 15 - 2 = 13. EJOTY makes it quick! ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "EJOTY — learn it, love it!",
+              "body": "Once you've memorised these 5 landmarks, letter codes become so much faster:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "E = 5, J = 10, O = 15, T = 20, Y = 25",
+                    "why": "Memorise these — they never change"
+                  },
+                  {
+                    "text": "Find the nearest landmark to your letter",
+                    "why": "Never more than 2 away from a landmark!"
+                  },
+                  {
+                    "text": "Count a small number from there",
+                    "why": "R? That's T(20) - 2 = 18. Done! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-decoding",
+      "name": "Reverse Decoding — Find the Original",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "reverse-decoding-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Work backward from a coded word to reveal the hidden original",
+            "Discover the golden rule: decoding means doing the OPPOSITE shift"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What word is hiding inside \"EPH\"?",
+              "body": "Daisy is working backward to find the original word.\n\nSometimes the 11+ gives you the **coded word** and asks: \"What was the ORIGINAL word?\" It's like uncovering a hidden message!\n\nThis is called **decoding** (turning the code back into a real word). The trick: if the code used **+1**, you decode by doing the **opposite**: **-1**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "P",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "D",
+                    "to": "E"
+                  },
+                  {
+                    "from": "O",
+                    "to": "P",
+                    "label": ""
+                  },
+                  {
+                    "from": "G",
+                    "to": "H",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Reverse the shift!",
+              "body": "The code used a shift of **+1**. To decode, apply the opposite shift: **-1**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Find the shift, reverse it, then check the result. ✓",
+                "incorrectFeedback": "Not quite — start by noting the original shift, then reverse it!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "E(5) - 1 = D(4)",
+                    "why": ""
+                  },
+                  {
+                    "text": "P(16) - 1 = O(15)",
+                    "why": ""
+                  },
+                  {
+                    "text": "H(8) - 1 = G(7)",
+                    "why": "The original word is DOG! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Decode it!",
+              "body": "The code **\"CVT\"** was made with a shift of **+1**. What was the original word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "BUS",
+                  "DWU",
+                  "BUT",
+                  "BUR",
+                  "CUB"
+                ],
+                "correctAnswer": "BUS",
+                "correctFeedback": "Brilliant! The code used +1, so decode with -1: C→B, V→U, T→S. The original word is BUS. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"BUS\". The code used +1, so decode with -1: C→B, V→U, T→S. The original word is BUS. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "B",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decoding — you've got the golden rule!",
+              "body": "To find the original word from a code, just remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Note the shift that was used",
+                    "why": "Was it +1, +2, +3, -1, -2...?"
+                  },
+                  {
+                    "text": "2. Apply the OPPOSITE shift",
+                    "why": "+3 becomes -3, -1 becomes +1"
+                  },
+                  {
+                    "text": "3. The result should spell a real word!",
+                    "why": "If it doesn't make a word, recheck your working ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "reverse-decoding-practice",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Decode coded words back to their originals — like cracking a secret message",
+            "Reverse both forward and backward shifts with confidence"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What word is hiding in \"VQRZ\"?",
+              "body": "Evie is decoding a weather word.\n\nThe coded word is **\"VQRZ\"** and the shift used was **+3**.\n\nRemember: to decode, do the **opposite** — shift each letter by **-3**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "W",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "Q",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "R",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "Z",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "S",
+                    "to": "V"
+                  },
+                  {
+                    "from": "N",
+                    "to": "Q",
+                    "label": ""
+                  },
+                  {
+                    "from": "O",
+                    "to": "R",
+                    "label": ""
+                  },
+                  {
+                    "from": "W",
+                    "to": "Z",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Apply the opposite shift",
+              "body": "The code used **+3**, so to decode we shift each letter by **-3**:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "The code used **+3**, so to decode we shift each letter by **-3**:"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "points": [
+                      {
+                        "letter": "V",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "Q",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "R",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "Z",
+                        "color": "#dc2626"
+                      },
+                      {
+                        "letter": "S",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "N",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "O",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "W",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "hops": [
+                      {
+                        "from": "V",
+                        "to": "S",
+                        "label": "-3"
+                      },
+                      {
+                        "from": "Q",
+                        "to": "N",
+                        "label": ""
+                      },
+                      {
+                        "from": "R",
+                        "to": "O",
+                        "label": ""
+                      },
+                      {
+                        "from": "Z",
+                        "to": "W",
+                        "label": ""
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "V(22) - 3 = S(19)",
+                        "why": ""
+                      },
+                      {
+                        "text": "Q(17) - 3 = N(14)",
+                        "why": ""
+                      },
+                      {
+                        "text": "R(18) - 3 = O(15)",
+                        "why": ""
+                      },
+                      {
+                        "text": "Z(26) - 3 = W(23)",
+                        "why": "The word is SNOW! ✓"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "tap-to-reveal"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Decode it!",
+              "body": "The code is **\"KLOO\"** (shift: +3). What is the original word?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "HILL",
+                  "NPRR",
+                  "HINT",
+                  "HIDE",
+                  "FILL"
+                ],
+                "correctAnswer": "HILL",
+                "correctFeedback": "Brilliant! Decode with -3: K→H, L→I, O→L, O→L. The word is HILL. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"HILL\". Decode with -3: K→H, L→I, O→L, O→L. The word is HILL. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "H",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "I",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decoding — just flip the shift!",
+              "body": "Remember the golden rule — it's beautifully simple:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Code used +N? Decode with -N",
+                    "why": "+3 → decode with -3"
+                  },
+                  {
+                    "text": "Code used -N? Decode with +N",
+                    "why": "-2 → decode with +2"
+                  },
+                  {
+                    "text": "Check: does your answer spell a real word?",
+                    "why": "If not, recheck each letter ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrap-around",
+      "name": "Wrap-Around — Past Z or Before A",
+      "category": "other",
+      "lessonCount": 1,
+      "lessons": [
+        {
+          "id": "wrap-around-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Handle the cool trick when a shift goes past Z or before A — the alphabet loops!",
+            "Count through the wrap-around join like a pro"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What happens AFTER Z?",
+              "body": "Daisy is handling a shift that goes past Z.\n\nHere's a fun one: sometimes a shift takes you **past Z** or **before A**. When this happens, the alphabet **wraps around** — imagine bending the alphabet into a circle!\n\n• After Z comes A (Z → A → B → C...)\n• Before A comes Z (A → Z → Y → X...)\n\nOnce you picture it as a loop, it makes total sense!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "Y",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "Y",
+                    "to": "B",
+                    "label": "+3"
+                  },
+                  {
+                    "from": "E",
+                    "to": "H",
+                    "label": ""
+                  },
+                  {
+                    "from": "S",
+                    "to": "V",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Count through the wrap",
+              "body": "Just keep counting as if the alphabet loops around. Y is position 25. Adding 3 goes past Z(26), so it wraps: Y→Z(1 hop)→A(2 hops)→B(3 hops)",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "When a shift goes past Z, the alphabet ____ back to A and keeps counting",
+                "options": [
+                  "wraps",
+                  "stops",
+                  "reverses",
+                  "resets"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The alphabet wraps around — after Z comes A, and before A comes Z. ✓",
+                "incorrectFeedback": "Not quite — the alphabet wraps around, like a circle!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Y(25) + 3: past Z! Y→Z→A→B = B(2)",
+                    "why": ""
+                  },
+                  {
+                    "text": "E(5) + 3 = H(8)",
+                    "why": ""
+                  },
+                  {
+                    "text": "S(19) + 3 = V(22)",
+                    "why": "YES → BHV ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Shift **YEW** by **+2**. Watch out for wrap-arounds!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is YEW shifted by +2?",
+                "options": [
+                  "AGY",
+                  "ZFX",
+                  "AGZ",
+                  "AHY",
+                  "BGY"
+                ],
+                "correctAnswer": "AGY",
+                "correctFeedback": "Brilliant! Y+2 wraps past Z to A, E+2=G, W+2=Y. YEW becomes AGY. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"AGY\". Y+2 wraps past Z to A, E+2=G, W+2=Y. YEW becomes AGY. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "Y",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "W",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Wrap-around — you've got it!",
+              "body": "When shifts go past Z or before A, just keep counting:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "After Z comes A, then B, then C...",
+                    "why": "The alphabet loops back to the start"
+                  },
+                  {
+                    "text": "Before A comes Z, then Y, then X...",
+                    "why": "The alphabet loops back to the end"
+                  },
+                  {
+                    "text": "Just keep counting — don't stop at Z or A!",
+                    "why": "Y + 3 = B, B - 3 = Y ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spotting-the-pattern",
+      "name": "Spotting the Pattern",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "spotting-pattern-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "Crack the shift rule from a given example pair — like a real codebreaker",
+            "Apply the rule you've discovered to encode a brand new word"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "STAR → TUBS — what's the rule?",
+              "body": "Daisy is finding the rule then applying it.\n\nYou're given **STAR → TUBS** and asked to apply the SAME rule to **MOON**.\n\nStep 1: figure out the rule. Step 2: apply it!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "R",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "T",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "U",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "B",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "S",
+                    "to": "T",
+                    "label": "+1"
+                  },
+                  {
+                    "from": "T",
+                    "to": "U",
+                    "label": "+1"
+                  },
+                  {
+                    "from": "A",
+                    "to": "B",
+                    "label": "+1"
+                  },
+                  {
+                    "from": "R",
+                    "to": "S",
+                    "label": "+1"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the rule, then apply it",
+              "body": "Let's crack **STAR → TUBS**. Check each letter to find the shift, then apply it to **MOON**:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "First, find the rule from **STAR → TUBS**. Then apply it to **MOON**:"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "points": [
+                      {
+                        "letter": "S",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "T",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "A",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "R",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "T",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "U",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "B",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "S",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "hops": [
+                      {
+                        "from": "S",
+                        "to": "T",
+                        "label": "+1"
+                      },
+                      {
+                        "from": "T",
+                        "to": "U",
+                        "label": ""
+                      },
+                      {
+                        "from": "A",
+                        "to": "B",
+                        "label": ""
+                      },
+                      {
+                        "from": "R",
+                        "to": "S",
+                        "label": ""
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rule found: +1 (each letter forward 1)",
+                        "why": "S→T (+1), T→U (+1), A→B (+1), R→S (+1)"
+                      },
+                      {
+                        "text": "M(13) + 1 = N(14)",
+                        "why": ""
+                      },
+                      {
+                        "text": "O(15) + 1 = P(16)",
+                        "why": ""
+                      },
+                      {
+                        "text": "O(15) + 1 = P(16)",
+                        "why": ""
+                      },
+                      {
+                        "text": "N(14) + 1 = O(15)",
+                        "why": "MOON → NPPO ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Guess, verify, then apply. ✓",
+                "incorrectFeedback": "Not quite — always guess the rule first, then verify before applying!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Apply the rule!",
+              "body": "If **STAR** is coded as **TUBS**, what is **MOON** coded as?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "NPPO",
+                  "LNNM",
+                  "NQQO",
+                  "NPPP",
+                  "OPPO"
+                ],
+                "correctAnswer": "NPPO",
+                "correctFeedback": "Brilliant! STAR→TUBS is +1. Apply +1 to MOON: M→N, O→P, O→P, N→O = NPPO. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"NPPO\". STAR→TUBS is +1. Apply +1 to MOON: M→N, O→P, O→P, N→O = NPPO. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "O",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Spot it, check it, apply it!",
+              "body": "You've now got the complete strategy for coded-pair questions:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Check the first letter pair to guess the shift",
+                    "why": "Is it +1, +2, +3, -1, -2...?"
+                  },
+                  {
+                    "text": "2. Verify with ALL other letters",
+                    "why": "Make sure EVERY letter shifts the same"
+                  },
+                  {
+                    "text": "3. Apply that exact shift to the new word",
+                    "why": "Letter by letter, carefully! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "spotting-pattern-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "Crack shift rules from trickier example pairs at speed",
+            "Build your pattern-spotting skills so they become lightning fast"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Evie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you crack DESK → GHVN?",
+              "body": "Evie is racing to spot the pattern.\n\nLook at the example pair and work out the rule as FAST as you can. Then apply it!\n\n**DESK** → **GHVN**\n\nWhat's the rule? And what does **LAMP** become?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": null,
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "D",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "E",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "S",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "K",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "G",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "H",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "V",
+                    "color": "#dc2626"
+                  },
+                  {
+                    "letter": "N",
+                    "color": "#dc2626"
+                  }
+                ],
+                "hops": [
+                  {
+                    "from": "D",
+                    "to": "G",
+                    "label": "+3"
+                  },
+                  {
+                    "from": "E",
+                    "to": "H",
+                    "label": ""
+                  },
+                  {
+                    "from": "S",
+                    "to": "V",
+                    "label": ""
+                  },
+                  {
+                    "from": "K",
+                    "to": "N",
+                    "label": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The rule is +3",
+              "body": "Let's confirm the rule for **DESK → GHVN**, then apply it to **LAMP**:",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Confirm the rule from **DESK → GHVN**, then apply it to **LAMP**:"
+                },
+                {
+                  "type": "visual",
+                  "component": "AlphabetLine",
+                  "props": {
+                    "showEJOTY": true,
+                    "points": [
+                      {
+                        "letter": "D",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "E",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "S",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "K",
+                        "color": "#6C5CE7"
+                      },
+                      {
+                        "letter": "G",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "H",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "V",
+                        "color": "#22c55e"
+                      },
+                      {
+                        "letter": "N",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "hops": [
+                      {
+                        "from": "D",
+                        "to": "G",
+                        "label": "+3"
+                      },
+                      {
+                        "from": "E",
+                        "to": "H",
+                        "label": ""
+                      },
+                      {
+                        "from": "S",
+                        "to": "V",
+                        "label": ""
+                      },
+                      {
+                        "from": "K",
+                        "to": "N",
+                        "label": ""
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "WorkedExample",
+                  "props": {
+                    "steps": [
+                      {
+                        "text": "Rule: +3",
+                        "why": "D→G (+3), E→H (+3), S→V (+3), K→N (+3)"
+                      },
+                      {
+                        "text": "L(12) + 3 = O(15)",
+                        "why": ""
+                      },
+                      {
+                        "text": "A(1) + 3 = D(4)",
+                        "why": ""
+                      },
+                      {
+                        "text": "M(13) + 3 = P(16)",
+                        "why": ""
+                      },
+                      {
+                        "text": "P(16) + 3 = S(19)",
+                        "why": "LAMP → ODPS ✓"
+                      }
+                    ],
+                    "allRevealed": true
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To spot the rule quickly, check the ____ letter pair first, then verify with the last pair",
+                "options": [
+                  "first",
+                  "middle",
+                  "longest",
+                  "shortest"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Start with the first letter pair — one pair is enough to guess the rule. ✓",
+                "incorrectFeedback": "Not quite — always start with the first letter pair to guess the rule!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Apply the rule!",
+              "body": "**DESK** → **GHVN**. Using the same rule, what is **LAMP** coded as?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "AlphabetLine",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "ODPS",
+                  "NCOS",
+                  "ODPT",
+                  "OEQS",
+                  "LCNP"
+                ],
+                "correctAnswer": "ODPS",
+                "correctFeedback": "Brilliant! DESK→GHVN is +3. Apply +3 to LAMP: L→O, A→D, M→P, P→S = ODPS. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"ODPS\". DESK→GHVN is +3. Apply +3 to LAMP: L→O, A→D, M→P, P→S = ODPS. ✓"
+              },
+              "visualProps": {
+                "showEJOTY": true,
+                "points": [
+                  {
+                    "letter": "L",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "A",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "M",
+                    "color": "#6C5CE7"
+                  },
+                  {
+                    "letter": "P",
+                    "color": "#6C5CE7"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "You're getting faster at this!",
+              "body": "To spot the rule quickly in the exam:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Start with the FIRST letter pair",
+                    "why": "One pair is enough to guess the rule"
+                  },
+                  {
+                    "text": "Quick-check the LAST letter pair",
+                    "why": "Confirms your guess in one step"
+                  },
+                  {
+                    "text": "Apply confidently — you've verified!",
+                    "why": "Two checks is usually enough ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

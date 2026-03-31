@@ -1,0 +1,2458 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "ratio",
+    "displayName": "Ratio & Proportion",
+    "extractedAt": "2026-03-30T13:52:00.381Z",
+    "totalQuestions": 180,
+    "mappedQuestions": 180,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 7,
+    "orphanSubConcepts": 3,
+    "confidenceBreakdown": {
+      "high": 180,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "In a class of 30 children, the ratio of boys to girls is 3:2. How many boys are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "Tom and Jerry share 80 marbles in the ratio 3:5. How many marbles does Jerry get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 3,
+      "questionText": "A recipe for 4 people uses 200g of flour. How much flour is needed for 10 people?",
+      "questionDifficulty": 2,
+      "correctAnswer": "500g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "The ratio of cats to dogs at a vet is 5:3. If there are 15 cats, how many dogs are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Red paint and blue paint are mixed in the ratio 2:3 to make purple. If 6 litres of red paint are used, how much blue paint is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9 litres",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "A car travels 60 miles in 1 hour. At the same speed, how far will it travel in 3.5 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "210 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Andrew and Matthew share 96 sweets in the ratio 5:3. How many more sweets does Andrew get than Matthew?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 8,
+      "questionText": "A recipe for 6 biscuits uses 150g of butter. How much butter is needed for 20 biscuits?",
+      "questionDifficulty": 2,
+      "correctAnswer": "500g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "In a fruit bowl, the ratio of apples to oranges is 4:1. If there are 20 apples, how many oranges are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "A milkshake recipe uses 4 spoonfuls of syrup for 300ml of milk. How many spoonfuls are needed for 750ml of milk?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "The ratio of boys to girls in a swimming class is 2:5. If there are 35 children, how many are girls?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 12,
+      "questionText": "A map scale is 1cm : 5km. A distance on the map is 8cm. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "A recipe for 10 shortbread biscuits uses 150g flour. Oliver wants to make 25 biscuits. How much flour does he need?",
+      "questionDifficulty": 2,
+      "correctAnswer": "375g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Lemon squash and water are mixed in the ratio 1:4. If 5 litres of lemon squash is used, how much water is needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20 litres",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "A photocopier makes 12 copies in 3 minutes. How many copies can it make in 15 minutes?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "The ratio of red balls to blue balls in a bag is 7:3. If there are 21 red balls, how many blue balls are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "A box of chocolates weighs 240g and contains 20 chocolates. What is the average weight of one chocolate?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12g",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Sam and Lucy share £120 in the ratio 2:3. How much does Lucy receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£72",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 19,
+      "questionText": "A recipe for 8 pancakes uses 2 eggs. How many eggs are needed for 28 pancakes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "In a parking lot, the ratio of cars to vans is 9:2. If there are 18 cars, how many vans are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "A train travels 180 miles in 2 hours. At the same speed, how far will it travel in 5 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "450 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Orange juice and lemonade are mixed in the ratio 3:7. If 30ml of orange juice is used, how much lemonade is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "The ratio of teachers to students in a school is 1:20. If there are 6 teachers, how many students are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "A recipe for 5 cupcakes uses 125g of sugar. How much sugar is needed for 12 cupcakes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "300g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Amy and Ben split prize money in the ratio 4:1. If Amy receives £60, how much does Ben receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£15",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "A model of a building is made to scale 1:50. If the model is 60cm tall, how tall is the real building in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "In a bag of counters, red and yellow are in the ratio 5:8. If there are 40 red counters, how many yellow counters are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "64",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A recipe uses butter and flour in the ratio 1:3. If 80g of butter is used, how much flour is needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "240g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "The scale on a map is 1cm : 25km. Two towns are 7cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "175 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Sarah and Tom divide 144 stickers in the ratio 7:5. How many stickers does Sarah get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "84",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 31,
+      "questionText": "In a class of 48 children, the ratio of boys to girls is 5:3. How many girls are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 32,
+      "questionText": "Emma and Jack share 135 sweets in the ratio 4:5. How many sweets does Emma get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 33,
+      "questionText": "A recipe for 8 people uses 320g of rice. How much rice is needed for 12 people?",
+      "questionDifficulty": 2,
+      "correctAnswer": "480g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "The ratio of cats to dogs at a shelter is 7:2. If there are 28 cats, how many dogs are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Green paint and yellow paint are mixed in the ratio 3:5 to make lime. If 12 litres of green paint are used, how much yellow paint is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20 litres",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A cyclist travels 90 miles in 1.5 hours. At the same speed, how far will they travel in 4 hours?",
+      "questionDifficulty": 3,
+      "correctAnswer": "240 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Sophie and Ben share 84 stickers in the ratio 4:3. How many more stickers does Sophie get than Ben?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 38,
+      "questionText": "A recipe for 5 muffins uses 200g of flour. How much flour is needed for 18 muffins?",
+      "questionDifficulty": 2,
+      "correctAnswer": "720g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "In a basket, the ratio of apples to pears is 6:1. If there are 30 apples, how many pears are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "A map scale is 1cm : 8km. A distance on the map is 6cm. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "The ratio of boys to girls in a choir is 3:7. If there are 50 children, how many are boys?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 42,
+      "questionText": "Lucy and Tom share £96 in the ratio 5:3. How much does Tom receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£36",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 43,
+      "questionText": "A recipe for 12 cookies uses 180g butter. How much butter is needed for 30 cookies?",
+      "questionDifficulty": 2,
+      "correctAnswer": "450g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Cordial and water are mixed in the ratio 1:6. If 8 litres of cordial is used, how much water is needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "48 litres",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "A printer prints 18 pages in 4 minutes. How many pages can it print in 20 minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "90",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "The ratio of fiction to non-fiction books is 8:3. If there are 32 fiction books, how many non-fiction books are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A box contains 150 pencils and weighs 600g. What is the average weight of one pencil?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4g",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Max and Lily divide 120 cards in the ratio 7:5. How many cards does Max get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 49,
+      "questionText": "A recipe for 6 pizzas uses 3 tins of tomato. How many tins are needed for 14 pizzas?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "In a car park, the ratio of motorcycles to cars is 2:9. If there are 8 motorcycles, how many cars are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A bus travels 210 miles in 3 hours. At the same speed, how far will it travel in 7 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "490 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "To make chai for a school fair, tea and sugar are mixed in the ratio 5:2. If 25g of tea is used, how much sugar is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "The ratio of adults to children at a concert is 3:4. If there are 280 people, how many are adults?",
+      "questionDifficulty": 2,
+      "correctAnswer": "120",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 54,
+      "questionText": "A recipe for 15 tarts uses 225g of jam. How much jam is needed for 40 tarts?",
+      "questionDifficulty": 2,
+      "correctAnswer": "600g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Charlie and Olivia split money in the ratio 2:7. If Charlie receives £24, how much does Olivia receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£84",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A model car is made to scale 1:40. If the model is 12cm long, how long is the real car in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4.8m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "In a box of pens, red and black are in the ratio 4:7. If there are 28 red pens, how many black pens are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "49",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A recipe uses chocolate and cream in the ratio 2:5. If 80g of chocolate is used, how much cream is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "The scale on a map is 1cm : 12km. Two villages are 9cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "108 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Noah and Hannah divide 180 sweets in the ratio 4:5. How many sweets does Hannah get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "100",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 61,
+      "questionText": "A recipe for 10 brownies uses 150g of chocolate. How much chocolate is needed for 35 brownies?",
+      "questionDifficulty": 2,
+      "correctAnswer": "525g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "In a library, fiction books and reference books are in the ratio 9:4. If there are 72 fiction books, how many reference books are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "A machine in a toy factory produces 240 toy cars in 5 hours. How many toy cars can it produce in 12 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "576",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Ella is painting her bedroom wall. She mixes white paint and blue paint in the ratio 7:3. If 35ml of white paint is used, how much blue paint is neede",
+      "questionDifficulty": 2,
+      "correctAnswer": "15ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "The ratio of boys to girls in a club is 5:6. If there are 88 members, how many are girls?",
+      "questionDifficulty": 2,
+      "correctAnswer": "48",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 66,
+      "questionText": "Ava and Ethan share £144 in the ratio 3:5. How much more does Ethan receive than Ava?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£36",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "A recipe for 20 muffins uses 4 eggs. How many eggs are needed for 45 muffins?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "In a wildlife park, the ratio of zebras to giraffes is 8:3. If there are 40 zebras, how many giraffes are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "A runner covers 120 metres in 15 seconds. At the same pace, how far will they run in 40 seconds?",
+      "questionDifficulty": 2,
+      "correctAnswer": "320m",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Juice and fizzy water are mixed in the ratio 2:9. If 14ml of juice is used, how much fizzy water is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "63ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "The ratio of sunny days to rainy days in April was 5:1. If there were 25 sunny days, how many rainy days were there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A recipe for 8 cupcakes uses 120g of flour. How much flour is needed for 22 cupcakes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "330g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Mia and Oscar split prize money in the ratio 6:7. If Mia receives £72, how much does Oscar receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£84",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "A model airplane is made to scale 1:60. If the model's wingspan is 25cm, what is the real wingspan in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "In a bag of sweets, strawberry and lemon are in the ratio 3:8. If there are 24 strawberry sweets, how many lemon sweets are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "64",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "A hot chocolate recipe uses milk and cream in the ratio 4:1. If 160ml of milk is used, how much cream is needed?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "The scale on a map is 1cm : 15km. Two cities are 11cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "165 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Isla and James divide 210 stamps in the ratio 3:4. How many stamps does James get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "120",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 79,
+      "questionText": "A recipe for 18 scones uses 270g of butter. How much butter is needed for 24 scones?",
+      "questionDifficulty": 2,
+      "correctAnswer": "360g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "In a pet shop, hamsters and guinea pigs are in the ratio 5:3. If there are 35 hamsters, how many guinea pigs are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "A plane flies 450 miles in 1.5 hours. At the same speed, how far will it fly in 4 hours?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1200 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Mrs Clarke is making lunch for her family. She mixes pasta and sauce in the ratio 8:3. If 48g of pasta is used, how much sauce is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "The ratio of teachers to pupils in a school is 1:25. If there are 8 teachers, how many pupils are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A recipe for 16 cookies uses 200g of sugar. How much sugar is needed for 36 cookies?",
+      "questionDifficulty": 2,
+      "correctAnswer": "450g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Lucas and Sophie split earnings in the ratio 9:4. If Lucas receives £108, how much does Sophie receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£48",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "A model train is made to scale 1:75. If the model is 16cm long, how long is the real train in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "In a classroom, pencils and pens are in the ratio 7:5. If there are 42 pencils, how many pens are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Gran's flapjack recipe uses flour and sugar in the ratio 5:2. If 150g of flour is used, how much sugar is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "The scale on a map is 1cm : 20km. Two towns are 8cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "160 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Theo and Grace divide 156 coins in the ratio 8:5. How many coins does Theo get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "96",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 91,
+      "questionText": "A recipe for 25 flapjacks uses 375g of oats. How much oats is needed for 40 flapjacks?",
+      "questionDifficulty": 2,
+      "correctAnswer": "600g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "In a garden, roses and tulips are in the ratio 6:7. If there are 48 roses, how many tulips are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "56",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "A robot on a production line assembles 144 circuit boards in 6 minutes. How many circuit boards can it assemble in 25 minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "600",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "For art class, yellow paint and red paint are mixed in the ratio 4:3 to make orange. If 28ml of yellow paint is used, how much red paint is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "The ratio of boys to girls in a dance class is 3:8. If there are 66 students, how many are boys?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "Amelia and William share £168 in the ratio 5:9. How much more does William receive than Amelia?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£48",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 97,
+      "questionText": "A recipe for 30 truffles uses 5 eggs. How many eggs are needed for 54 truffles?",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "In a zoo, lions and tigers are in the ratio 2:3. If there are 10 lions, how many tigers are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "A swimmer completes 150 metres in 2.5 minutes. At the same pace, how far will they swim in 8 minutes?",
+      "questionDifficulty": 3,
+      "correctAnswer": "480m",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Coffee and milk are mixed in the ratio 3:10. If 21ml of coffee is used, how much milk is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "The ratio of rainy days to sunny days in May was 2:3. If there were 12 rainy days, how many sunny days were there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "A recipe for 14 muffins uses 210g of blueberries. How much is needed for 32 muffins?",
+      "questionDifficulty": 2,
+      "correctAnswer": "480g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Poppy and Alex split reward points in the ratio 7:8. If Poppy receives 84 points, how many does Alex receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "96",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A model boat is made to scale 1:80. If the model is 15cm long, how long is the real boat in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "In a shop, notebooks and folders are in the ratio 9:5. If there are 54 notebooks, how many folders are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Dad is cooking a curry for dinner. His recipe uses rice and lentils in the ratio 7:3. If 140g of rice is used, how many grams of lentils are needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "The scale on a map is 1cm : 30km. Two landmarks are 5cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "150 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Ruby and Mason divide 192 beads in the ratio 5:7. How many beads does Mason get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "112",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 109,
+      "questionText": "A recipe for 35 biscuits uses 420g of chocolate chips. How much is needed for 50 biscuits?",
+      "questionDifficulty": 2,
+      "correctAnswer": "600g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "In a museum, paintings and sculptures are in the ratio 8:3. If there are 64 paintings, how many sculptures are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "A biscuit factory produces 360 packets in 4 hours. How many packets can it produce in 15 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1350",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "For a tropical smoothie, orange juice and pineapple juice are mixed in the ratio 5:4. If 35ml of orange juice is used, how much pineapple juice is nee",
+      "questionDifficulty": 2,
+      "correctAnswer": "28ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "The ratio of men to women at an event is 4:7. If there are 220 people, how many are men?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "Harper and Leo share £200 in the ratio 9:11. How much more does Leo receive than Harper?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£20",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 115,
+      "questionText": "A recipe for 8 cupcakes uses 3 eggs. How many eggs are needed for 24 cupcakes?",
+      "questionDifficulty": 3,
+      "correctAnswer": "9",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "In a forest, oak trees and pine trees are in the ratio 3:5. If there are 21 oak trees, how many pine trees are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A cyclist covers 70 miles in 3.5 hours. At the same pace, how far will they cycle in 9 hours?",
+      "questionDifficulty": 3,
+      "correctAnswer": "180 miles",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "To make salad dressing for a school picnic, vinegar and oil are mixed in the ratio 2:7. If 18ml of vinegar is used, how much oil is needed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "63ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "The ratio of weekdays to weekend days in a month is 5:2. If there are 20 weekdays, how many weekend days are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "A recipe for 18 pancakes uses 270g of flour. How much flour is needed for 26 pancakes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "390g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Zoe and Oliver split tickets in the ratio 8:3. If Zoe receives 96 tickets, how many does Oliver receive?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "A model of a ship is made to scale 1:100. If the model is 8cm long, how long is the real ship in metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8m",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "In a box, blue buttons and green buttons are in the ratio 4:9. If there are 32 blue buttons, how many green buttons are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Mum is making a shepherd's pie. The recipe uses potatoes and carrots in the ratio 6:1. If 180g of potatoes are used, how many grams of carrots are nee",
+      "questionDifficulty": 2,
+      "correctAnswer": "30g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "The scale on a map is 1cm : 18km. Two locations are 10cm apart on the map. What is the actual distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "180 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "Emily and Daniel divide 252 pencils in the ratio 3:4. How many pencils does Daniel get?",
+      "questionDifficulty": 2,
+      "correctAnswer": "144",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 127,
+      "questionText": "A recipe for 45 cupcakes uses 540g of icing sugar. How much is needed for 60 cupcakes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "720g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "In an aquarium, goldfish and tropical fish are in the ratio 7:4. If there are 56 goldfish, how many tropical fish are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "The school newsletter is being printed. The printing press produces 420 pages in 7 minutes. How many pages can it produce in 30 minutes?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1800",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "At a birthday party, apple juice and cranberry juice are mixed in the ratio 9:2 to make fruit punch. If 54ml of apple juice is used, how much cranberr",
+      "questionDifficulty": 2,
+      "correctAnswer": "12ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "If 3 pencils cost 45p, how much do 7 pencils cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£1.05",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Share 20 sweets between Ava and Ben in the ratio 1:3. How many sweets does Ben get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 133,
+      "questionText": "A map has a scale of 1 cm : 3 km. What real distance does 9 cm on the map represent?",
+      "questionDifficulty": 1,
+      "correctAnswer": "27 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "If 5 oranges cost £2, how much do 10 oranges cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£4",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "Tom and Ella share 18 stickers in the ratio 1:2. How many stickers does Tom get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 136,
+      "questionText": "If 4 apples weigh 200 g, how much do 6 apples weigh?",
+      "questionDifficulty": 1,
+      "correctAnswer": "300 g",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A map has a scale of 1 cm : 10 km. Two towns are 4 cm apart on the map. What is the real distance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Share £30 between Mia and Noah in the ratio 1:2. How much does Mia get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£10",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 139,
+      "questionText": "If 2 books cost £8, how much do 7 books cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£28",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "Share 24 marbles between Jack and Lily in the ratio 1:5. How many does Lily get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 141,
+      "questionText": "If 6 cakes cost £12, how much do 9 cakes cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£18",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "A map has a scale of 1 cm : 2 km. A path on the map is 7 cm long. What is the real length of the path?",
+      "questionDifficulty": 1,
+      "correctAnswer": "14 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "Share 12 biscuits between Amy and Zara in the ratio 1:3. How many does Amy get?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 144,
+      "questionText": "If 3 bottles of water cost £1.50, how much do 10 bottles cost?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£5.00",
+      "subConceptId": "unitary-method",
+      "subConceptName": "The Unitary Method",
+      "confidence": "high",
+      "lessonTeachSummary": "Divide the total cost by the number of items to find what **one** costs.",
+      "lessonLearningGoal": [
+        "How to find the value of one unit first",
+        "How to multiply up to find any number of units"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "A recipe uses 3 eggs for every 4 people. How many eggs are needed for 20 people?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "Three friends share £180 in the ratio 2:3:4. How much does the person with the largest share receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£80",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 147,
+      "questionText": "Ali and Beth share some money in the ratio 3:7. Beth receives £56. What was the total amount of money shared?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£80",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 148,
+      "questionText": "Red, blue, and green beads are in a bag in the ratio 5:3:2. If there are 60 beads in total, how many more red beads are there than green beads?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 149,
+      "questionText": "Jake and Maya share sweets in the ratio 4:5. Maya receives 12 more sweets than Jake. How many sweets are there altogether?",
+      "questionDifficulty": 3,
+      "correctAnswer": "108",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 150,
+      "questionText": "A sum of money is shared between three people in the ratio 1:2:3. The difference between the largest and smallest share is £40. What is the total amou",
+      "questionDifficulty": 3,
+      "correctAnswer": "£120",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 151,
+      "questionText": "The ratio of adults to children at a funfair is 2:5. If there are 84 people in total, how many more children are there than adults?",
+      "questionDifficulty": 3,
+      "correctAnswer": "36",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 152,
+      "questionText": "Amy, Ben, and Cara share £240 in the ratio 3:5:4. How much more does Ben receive than Cara?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£20",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 153,
+      "questionText": "The ratio of boys to girls in a school is 5:4. There are 72 girls. How many children are there altogether?",
+      "questionDifficulty": 3,
+      "correctAnswer": "162",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 154,
+      "questionText": "Purple paint is made by mixing red and blue paint in the ratio 3:5. How much blue paint, in millilitres, is needed to make 2 litres of purple paint?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1,250 ml",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 155,
+      "questionText": "A netball team scored goals in two halves in the ratio 7:3. They scored 150 goals in total. What is the difference between the goals scored in each ha",
+      "questionDifficulty": 3,
+      "correctAnswer": "60",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 156,
+      "questionText": "Money is split between Dan, Eve, and Fay in the ratio 2:3:5. Fay receives £30 more than Dan. How much does Eve receive?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£30",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 157,
+      "questionText": "The ratio of flour to sugar in a cake recipe is 5:2. Sam uses 350 g of flour. He then decides to make a batch that is 1.5 times bigger. How much sugar",
+      "questionDifficulty": 3,
+      "correctAnswer": "210 g",
+      "subConceptId": "scaling-recipes",
+      "subConceptName": "Scaling Recipes Up and Down",
+      "confidence": "high",
+      "lessonTeachSummary": "First, find the scale factor: **12 ÷ 4 = 3**.\n\nThen multiply **every** ingredient by **3**.",
+      "lessonLearningGoal": [
+        "How to scale a recipe to make more or fewer servings",
+        "Why you multiply (or divide) every ingredient by the same amount"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "In a school, the ratio of Year 5 to Year 6 pupils is 4:5. There are 108 pupils in total. If 15 Year 6 pupils leave, what is the new ratio of Year 5 to",
+      "questionDifficulty": 3,
+      "correctAnswer": "16:15",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 159,
+      "questionText": "Three brothers share an inheritance in the ratio 2:5:8. The youngest brother receives £3,600. How much is the total inheritance?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£27,000",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 160,
+      "questionText": "Orange squash is made by mixing concentrate and water in the ratio 1:4. Sophie makes 750 ml of squash. How much concentrate does she use?",
+      "questionDifficulty": 3,
+      "correctAnswer": "150 ml",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 161,
+      "questionText": "A school trip has adults and children in the ratio 1:8. There are 63 people on the trip. Each adult ticket costs £12 and each child ticket costs £8. W",
+      "questionDifficulty": 3,
+      "correctAnswer": "£532",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 162,
+      "questionText": "Tom, Uma, and Vic share prize money in the ratio 7:5:3. Tom receives £84. How much more does Uma receive than Vic?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£24",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 163,
+      "questionText": "In a bag, the ratio of red to blue to yellow counters is 4:3:1. There are 56 counters in total. 10 red counters are removed. What fraction of the rema",
+      "questionDifficulty": 3,
+      "correctAnswer": "9/23",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 164,
+      "questionText": "The ratio of Priya's savings to Quinn's savings is 8:3. Priya has £60 more than Quinn. They each spend £15. What is the new ratio of Priya's savings t",
+      "questionDifficulty": 3,
+      "correctAnswer": "27:7",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 165,
+      "questionText": "Three charities receive donations in the ratio 2:3:7. The charity receiving the most gets £480 more than the charity receiving the least. How much is ",
+      "questionDifficulty": 3,
+      "correctAnswer": "£1,152",
+      "subConceptId": "master-sharing-ratio",
+      "subConceptName": "master-sharing-ratio",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 166,
+      "questionText": "The ratio of red to blue to green beads on a necklace is 5:3:2. If there are 45 red beads, how many green beads are there?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "In a school, the ratio of left-handed to right-handed pupils is 2:9. There are 56 more right-handed pupils than left-handed. How many left-handed pupi",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "Orange squash and water are mixed in the ratio 1:7. The total amount of drink is 960 ml. How much water is used?",
+      "questionDifficulty": 3,
+      "correctAnswer": "840 ml",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "The ratio of sand to cement to gravel in concrete is 3:1:5. If 27 kg of sand is used, what is the total weight of concrete made?",
+      "questionDifficulty": 3,
+      "correctAnswer": "81 kg",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "A bag contains red and blue marbles in the ratio 5:4. After 10 red marbles are removed, the ratio becomes 5:6. How many blue marbles are in the bag?",
+      "questionDifficulty": 3,
+      "correctAnswer": "24",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "Flour, butter, and sugar are mixed in the ratio 4:3:2 to make biscuits. If 180 g of butter is used, what is the total weight of the mixture?",
+      "questionDifficulty": 3,
+      "correctAnswer": "540 g",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "In a school choir, the ratio of sopranos to altos to tenors is 5:4:3. There are 20 more sopranos than tenors. How many singers are in the choir altoge",
+      "questionDifficulty": 3,
+      "correctAnswer": "120",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "The ratio of pencils to pens in a box is 7:4. There are 36 more pencils than pens. How many pens are in the box?",
+      "questionDifficulty": 3,
+      "correctAnswer": "48",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "In a box of chocolates, milk, dark, and white chocolates are in the ratio 7:5:3. There are 24 more milk chocolates than white chocolates. How many dar",
+      "questionDifficulty": 3,
+      "correctAnswer": "30",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "The ratio of fiction to non-fiction books on a shelf is 8:5. There are 78 books altogether. How many more fiction books are there than non-fiction?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "finding-missing-values",
+      "subConceptName": "Finding Missing Values in Ratios",
+      "confidence": "high",
+      "lessonTeachSummary": "The trick is to find **how many times bigger** the real amount is than the ratio number. That's the **scale factor**.",
+      "lessonLearningGoal": [
+        "How to find the scale factor (the number you multiply by) from a known value",
+        "How to multiply to find the missing value"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "A map has a scale of 1 : 50,000. Two villages are 12 cm apart on the map. What is the actual distance in kilometres?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 km",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "On a map, 1 cm represents 4 km. A lake is 3.5 cm long on the map. A cyclist rides around the actual lake at 16 km/h. How long does one lap take?",
+      "questionDifficulty": 3,
+      "correctAnswer": "52.5 minutes",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "A scale drawing of a garden uses a scale of 1 cm : 2.5 m. The actual garden is 30 m long and 18 m wide. What is the area of the garden on the drawing,",
+      "questionDifficulty": 3,
+      "correctAnswer": "86.4 cm²",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "On a map with scale 1 cm : 6 km, the distance between Town A and Town B is 7.5 cm. A train travels this route at 90 km/h. How many minutes does the jo",
+      "questionDifficulty": 3,
+      "correctAnswer": "30 minutes",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "A model car is built to a scale of 1 : 25. The real car is 4.5 m long and 1.75 m wide. What is the length of the model car in centimetres?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18 cm",
+      "subConceptId": "scale-factors-maps",
+      "subConceptName": "Scale Factors for Maps and Models",
+      "confidence": "high",
+      "lessonTeachSummary": "The scale **1 cm = 5 km** tells us that every **1cm** on the map is really **5 km**.\n\nSo 3cm on the map = **3 × 5 = 15 km** in real life!",
+      "lessonLearningGoal": [
+        "How to use scale factors (the number you multiply by) to link model sizes to real sizes",
+        "How to use a scale to find a real distance"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "ratio-notation",
+      "name": "Understanding Ratio Notation"
+    },
+    {
+      "id": "simplifying-ratios",
+      "name": "Simplifying Ratios"
+    },
+    {
+      "id": "ratio-word-problems",
+      "name": "Ratio Word Problems"
+    }
+  ],
+  "subConceptCoverage": {
+    "master-sharing-ratio": {
+      "name": "master-sharing-ratio",
+      "questionCount": 48,
+      "difficulties": {
+        "D1": 5,
+        "D2": 21,
+        "D3": 22
+      }
+    },
+    "scaling-recipes": {
+      "name": "Scaling Recipes Up and Down",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 1,
+        "D2": 21,
+        "D3": 3
+      }
+    },
+    "finding-missing-values": {
+      "name": "Finding Missing Values in Ratios",
+      "questionCount": 63,
+      "difficulties": {
+        "D1": 12,
+        "D2": 41,
+        "D3": 10
+      }
+    },
+    "unitary-method": {
+      "name": "The Unitary Method",
+      "questionCount": 22,
+      "difficulties": {
+        "D1": 9,
+        "D2": 9,
+        "D3": 4
+      }
+    },
+    "scale-factors-maps": {
+      "name": "Scale Factors for Maps and Models",
+      "questionCount": 22,
+      "difficulties": {
+        "D1": 11,
+        "D2": 6,
+        "D3": 5
+      }
+    }
+  }
+}

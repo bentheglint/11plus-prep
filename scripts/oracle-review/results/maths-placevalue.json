@@ -1,0 +1,209 @@
+{
+  "reviewedAt": "2026-03-30T18:30:00.000Z",
+  "topic": "placevalue",
+  "subject": "maths",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 176,
+    "lessonsReviewed": 16,
+    "issuesFound": 15,
+    "bySeverity": {
+      "critical": 0,
+      "high": 3,
+      "medium": 8,
+      "low": 4
+    },
+    "difficultyAssessment": "Distribution is D1:38 (21.6%), D2:109 (61.9%), D3:29 (16.5%). D2 is severely overweight vs GL target (~40%) and D3 is critically underweight vs GL target (~30%). Many D2 questions are straightforward single-step rounding or digit-value identification that could reasonably be classified as D1. The D3 questions (Q126-Q145, Q156-Q158, Q165-Q166, Q171-Q172, Q176) are generally well-designed multi-constraint problems, but there are far too few of them. The current distribution means a child drilling this topic gets limited challenge beyond the basics.",
+    "coverageAssessment": "Good coverage of: digit value identification, rounding to nearest 10/100/1000, reading/writing numbers in words, comparing/ordering, making largest/smallest numbers, adding/subtracting powers of 10. Notable gaps: (1) No questions on rounding decimals despite having 2 lessons for it — a direct lesson-question mismatch. (2) No questions on estimating calculations using rounding (GL tests this). (3) No questions involving Roman numerals (Year 4 curriculum, occasionally appears in GL). (4) No questions testing negative numbers in context of place value/number lines. (5) Very limited coverage of numbers beyond 99,999 — only a few questions touch six-digit numbers despite lessons covering them.",
+    "teachingEfficacyAssessment": "16 lessons across 8 sub-concepts with generally strong teaching quality. PlaceValueChart and WorkedExample visuals are well-used. However, the biggest gap is that 'master-rounding' — which ~60 rounding questions map to — has NO lesson content at all. The rounding-nearest-1000-plus and rounding-decimals sub-concepts do have excellent lessons, but the core rounding-to-10/100/1000 pathway has no teaching material. This means most rounding questions are served without a preparatory lesson. The 3 orphan sub-concepts (sub-concepts with lessons but no question mappings) suggest a structural mapping issue. The spot-the-mistake lesson template for cascading rounding is excellent GL-style trap awareness.",
+    "topPriorities": [
+      "Create lessons for the master-rounding sub-concept or merge it into the existing rounding sub-concepts — 60+ questions currently have no lesson",
+      "Rebalance difficulty: reclassify ~20 simple D2 rounding questions as D1, and add 15-20 new D3 questions to reach ~30% D3",
+      "Add 8-10 decimal rounding questions to match the existing decimal rounding lessons (complete coverage gap)",
+      "Reduce D2 rounding repetition — ~45 near-identical 'Round X to the nearest [10/100/1000]' questions with no variation in format",
+      "Add estimation questions ('approximately how many', 'estimate the total') — GL frequently tests practical application of rounding"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "MATHS-PV-MAP-001",
+      "itemType": "mapping",
+      "itemId": "master-rounding",
+      "severity": "high",
+      "category": "missing-lesson",
+      "title": "master-rounding sub-concept has no lesson content despite ~60 questions mapped to it",
+      "description": "The 'master-rounding' sub-concept is the mapping target for approximately 60 rounding questions (round to nearest 10, 100, 1000, identify what rounding was used). Every one of these shows '[No lesson found]' in the mapping file with empty learning goals. The rounding-nearest-1000-plus and rounding-decimals sub-concepts do have lessons but cover different specific skills. This means the majority of rounding questions have no preparatory teaching material.",
+      "suggestedFix": "Either (a) create dedicated lessons for master-rounding covering the universal rounding method (find target digit, check decider, apply 0-4/5-9 rule) for nearest 10, 100, and 1000 with worked examples, or (b) remap these questions to the existing rounding-nearest-1000-plus sub-concept which already teaches the general method. Option (b) is faster and the lesson content there is already suitable.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-DIST-001",
+      "itemType": "difficulty-distribution",
+      "itemId": "overall",
+      "severity": "high",
+      "category": "difficulty-balance",
+      "title": "D2 at 62% is severely overweight; D3 at 16.5% is critically underweight",
+      "description": "The current distribution D1:38 (21.6%), D2:109 (61.9%), D3:29 (16.5%) is significantly off the GL target of approximately 30:40:30. The D2 category is inflated by ~40 near-identical rounding questions that offer minimal additional challenge over D1. Many D2 questions like 'Round X to the nearest thousand' (Q4, Q10, Q18, Q22, Q28, Q34, Q41, Q46, etc.) test exactly the same skill with different numbers — these could reasonably be D1. The D3 count of 29 is only half the target.",
+      "suggestedFix": "Reclassify approximately 20 simple D2 rounding questions as D1 (those with straightforward round-up or round-down decisions with no boundary cases). Add 15-20 new D3 questions targeting: multi-constraint rounding puzzles, estimation problems, numbers into the millions, and reverse-rounding ('what numbers could round to X?'). Target: D1 ~50-55, D2 ~70-75, D3 ~50-55.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-COVERAGE-001",
+      "itemType": "topic-coverage",
+      "itemId": "decimal-rounding",
+      "severity": "high",
+      "category": "coverage-gap",
+      "title": "Zero questions on rounding decimals despite having 2 dedicated lessons",
+      "description": "The lessons file contains a complete 'rounding-decimals' sub-concept with 2 lessons (8 screens) covering rounding to nearest whole number, rounding to 1 decimal place, and rounding money to the nearest pound. However, there are zero questions in the question bank testing any of these skills. This is a complete lesson-question mismatch — the teaching exists but has no corresponding assessment.",
+      "suggestedFix": "Add 8-10 questions: 3 D1 (round simple decimals like 3.7 to nearest whole number), 4 D2 (round money amounts, round to 1dp, round measurements), 3 D3 (estimate calculations by rounding each number, round to different precisions and compare). This directly utilises the existing lesson content.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-REPEAT-001",
+      "itemType": "question-set",
+      "itemId": "rounding-d2",
+      "severity": "medium",
+      "category": "repetition",
+      "title": "Excessive repetition in D2 rounding questions — ~45 near-identical questions",
+      "description": "Approximately 45 D2 questions follow the near-identical pattern: 'Round [5-digit number] to the nearest [10/100/1000].' The question structure, distractor pattern, and explanation format are virtually identical across all of them. Examples: Q6, Q7, Q10, Q14, Q15, Q18, Q20, Q22, Q27, Q28, Q30, Q32, Q34, Q37, Q39, Q41, Q44, Q46, Q48, Q51, Q54, Q57, Q60, Q63, Q65, Q67, Q70, Q71, Q74, Q77, Q80, Q83, Q85, Q88, Q91, Q92, Q95, Q97, Q100, Q103, Q105, Q108, Q110, Q113, Q116, Q118, Q120, Q123, Q125. While practice is valuable, this volume of structurally identical questions offers heavily diminishing returns.",
+      "suggestedFix": "Reduce to ~20 pure rounding questions (keeping a balanced mix of round-up and round-down, and all three target values). Replace the freed ~25 slots with more diverse question types: estimation problems, reverse-rounding, rounding in context with follow-up calculation, decimal rounding, and multi-step problems. This maintains practice volume while broadening skill coverage.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-COVERAGE-002",
+      "itemType": "topic-coverage",
+      "itemId": "estimation",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "No estimation questions despite GL frequently testing practical rounding application",
+      "description": "GL commonly asks questions like 'Estimate the answer to 4,872 + 3,215 by rounding each number to the nearest thousand' or 'Approximately how many litres did they use in total?' These require children to apply rounding as a practical tool, not just perform the mechanical operation. The question bank has zero estimation questions.",
+      "suggestedFix": "Add 6-8 estimation questions: 2 D1 (estimate a simple sum by rounding to nearest 10 or 100), 3 D2 (estimate addition/subtraction/multiplication by rounding, real-world context like shopping or distances), 2 D3 (estimate then determine if the real answer is higher or lower than the estimate, or multi-step estimation).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-COVERAGE-003",
+      "itemType": "topic-coverage",
+      "itemId": "six-digit-numbers",
+      "severity": "medium",
+      "category": "coverage-gap",
+      "title": "Very limited coverage of numbers beyond 99,999",
+      "description": "The Year 6 curriculum requires working with numbers up to 10,000,000. The lessons include six-digit numbers (e.g. 163,500 in the reading-writing-hook lesson, 283,415 in rounding-1000-plus-steps). However, the question bank is almost entirely limited to five-digit numbers. Only a handful of questions even approach 100,000, and none use six or seven-digit numbers. GL can test place value with numbers into the hundreds of thousands or millions.",
+      "suggestedFix": "Add 8-10 questions using 6-7 digit numbers: 3 D1 (identify digit value in a 6-digit number, read/write six-digit numbers in words), 4 D2 (round six-digit numbers, compare six-digit numbers), 3 D3 (place value puzzles with larger numbers, partition into millions/hundred-thousands etc.).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-MAP-002",
+      "itemType": "mapping",
+      "itemId": "orphan-subconcepts",
+      "severity": "medium",
+      "category": "mapping-gap",
+      "title": "3 orphan sub-concepts have lessons but no questions mapped to them",
+      "description": "The mapping meta reports 3 orphan sub-concepts — sub-concepts that have lesson content but no questions are mapped to them. This likely includes the rounding-decimals sub-concept (confirmed: zero questions), and possibly partitioning and/or the making-numbers sub-concept. Orphan sub-concepts represent wasted teaching content — children learn skills they are never tested on.",
+      "suggestedFix": "For each orphan sub-concept: (a) if questions exist but are mapped elsewhere, fix the mapping; (b) if no questions exist, create 5-8 questions to match the lesson content. The rounding-decimals orphan is the highest priority (see MATHS-PV-COVERAGE-001).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-Q158-001",
+      "itemType": "question",
+      "itemId": "Q158",
+      "severity": "medium",
+      "category": "explanation-quality",
+      "title": "Q158 explanation is confusing — acknowledges two valid options then dismisses one without justification",
+      "description": "Q158 asks which could be the smallest of three rearranged numbers when the middle is 53,842. The explanation identifies both 25,348 and 53,824 as less than 53,842, then says 'However, 25,348 also works' and picks it without clearly explaining why 53,824 is less suitable. A child reading this would be confused about why 53,824 was rejected. Both are technically valid answers — the question should have only one correct option.",
+      "suggestedFix": "Revise the explanation to clearly state: 'We need a number less than 53,842. Only two options qualify: 25,348 and 53,824. Since 53,824 is so close to 53,842, the third number would need to be extremely close too, making it hard to form three distinct numbers. 25,348 gives plenty of room.' Alternatively, replace 53,824 with a number greater than 53,842 as a distractor so there is only one valid answer.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-Q156-001",
+      "itemType": "question",
+      "itemId": "Q156",
+      "severity": "medium",
+      "category": "ambiguity",
+      "title": "Q156 question wording is ambiguous — 'five numbers' vs 'five arrangements' is unclear",
+      "description": "Q156 states 'Five numbers all have digits 4, 5, 6, 7 and 8 but in different orders.' This could be interpreted as exactly five specific numbers (the five given options) or as a subset of the 120 possible arrangements. The answer 'you cannot tell without listing all numbers' assumes we don't know which five, but if the five options ARE the five numbers, then the child could determine the middle one. This ambiguity could confuse a careful reader.",
+      "suggestedFix": "Clarify the question: 'Marcus arranges the digits 4, 5, 6, 7 and 8 to make five different 5-digit numbers. He puts them in order from smallest to largest. He claims the middle number must have 6 in the ten-thousands place. Is he correct?' This makes it clear these are unspecified arrangements.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-LESSON-001",
+      "itemType": "lesson",
+      "itemId": "reading-writing-mistake",
+      "severity": "medium",
+      "category": "lesson-quality",
+      "title": "Interact screen in reading-writing-mistake has confusing feedback that contradicts the correct answer",
+      "description": "In the reading-writing-mistake lesson (spot-the-mistake template), the interact screen asks 'thirty-six thousand, two hundred would actually be which number?' with correct answer '36200'. But the correctFeedback says 'That's right! thirty-six thousand, two hundred = 36,200, but the actual number is 306,200.' This is confusing — the child selects 36,200 and is told 'that's right' but then the feedback says 'the actual number is 306,200'. The question seems to be about a different number (306,200 vs the 205,300 context on the hook screen) and the interaction logic is muddled.",
+      "suggestedFix": "Rewrite the interaction to be coherent: either ask 'What should the actual number 205,300 be in words?' (matching the hook context) or restructure so the interact asks 'What is 205,300 in words?' with clear correct/incorrect feedback that doesn't introduce a new unrelated number.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-Q25-001",
+      "itemType": "question",
+      "itemId": "Q25",
+      "severity": "low",
+      "category": "topic-fit",
+      "title": "Q25 is a division problem, not a place value question",
+      "description": "Q25 asks 'Amelia's town is exactly halfway between two cities that are 56,000 metres apart. How far is Amelia's town from each city?' The answer is 56,000 / 2 = 28,000. This is a straightforward halving/division problem that doesn't meaningfully test place value understanding. It's mapped to 'adding-subtracting-powers-10' but doesn't actually test that skill either — it tests the concept of 'halfway'.",
+      "suggestedFix": "Either replace with a genuine place value question (e.g. 'What is 56,000 + 10,000?') or accept it as a cross-topic application question. Low priority as it doesn't harm learning.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-Q172-001",
+      "itemType": "question",
+      "itemId": "Q172",
+      "severity": "low",
+      "category": "topic-fit",
+      "title": "Q172 is a multiplication/optimisation problem rather than place value",
+      "description": "Q172 asks Tom to make a 3-digit and a 2-digit number from digits 1,3,5,7,9 and multiply them for the largest product. This is an optimisation problem requiring multiplication strategy, not place value understanding. While digit manipulation is tangentially related, the core skill being tested is multiplication reasoning.",
+      "suggestedFix": "This is fine as an enrichment question but could be reclassified or flagged as cross-topic. Low priority.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-DISTRACTOR-001",
+      "itemType": "question-set",
+      "itemId": "digit-value-d1",
+      "severity": "low",
+      "category": "distractor-quality",
+      "title": "D1 digit-value questions have predictable distractor pattern — always powers of 10",
+      "description": "All D1 digit-value questions (Q1, Q5, Q11, Q26, Q31, Q35, Q42, Q45, Q53, Q58, Q62, Q66, Q69, Q75, Q82, Q90, Q99, Q104, Q109, Q115, Q122, Q124) use the identical distractor set: [digit, digit×10, digit×100, digit×1000, digit×10000] or similar powers of 10. While this is a natural distractor pattern for digit value, the complete uniformity means a test-wise child learns to simply count position from the right rather than understanding place value. GL would occasionally vary the format.",
+      "suggestedFix": "For 3-4 of these questions, vary the distractor format: include 'the digit is worth 500 more than...' style distractors, or use partitioned form (e.g. '5 hundreds' vs '500' vs '50 tens'). This tests understanding rather than position-counting.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-TONE-001",
+      "itemType": "question-set",
+      "itemId": "overall",
+      "severity": "low",
+      "category": "tone-warmth",
+      "title": "Questions use good real-world British context but explanations are formulaic",
+      "description": "The questions consistently use British context (pounds sterling, school fetes, villages, British names like Sophie, Oliver, Emily) which is excellent. However, the explanations follow an extremely rigid formula: 'Look at the [digit position]: [digit]. Since [digit] is [less than 5 / 5 or more], round [down/up]. [Number] rounds to [answer].' While accurate, this mechanical repetition across ~50 rounding explanations misses an opportunity to occasionally explain WHY we round (estimation, simplification) or to connect to real-world reasoning.",
+      "suggestedFix": "Vary 5-10 rounding explanations to include context: 'The organiser rounds to make the number easier to remember — £7,350 is simpler than £7,349 for a poster.' This adds warmth without adding length. Low priority as current explanations are technically sound.",
+      "oracleConfidence": "low",
+      "status": "open"
+    },
+    {
+      "issueId": "MATHS-PV-LESSON-002",
+      "itemType": "lesson",
+      "itemId": "digit-value-steps",
+      "severity": "medium",
+      "category": "mapping-gap",
+      "title": "digit-value lessons exist but show '[No lesson found]' in teach summary for mapped questions",
+      "description": "The digit-value sub-concept has 2 well-designed lessons (digit-value-steps and digit-value-visual) with clear learning goals about finding digit values and understanding position. However, the mapping file shows '[No lesson found]' in the lessonTeachSummary for questions Q1, Q5, Q11, Q17, Q19, Q24, Q26, etc. that map to this sub-concept. The learning goals DO appear in the mapping, suggesting a partial wiring issue — the sub-concept is linked but the specific lesson teach content isn't being pulled through.",
+      "suggestedFix": "Check the lesson-to-question mapping pipeline — the sub-concept link is correct (learning goals appear) but the lesson content isn't being resolved. This may be a bug in the extraction script rather than a content issue.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,3421 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "negativenumbers",
+    "displayName": "Negative Numbers",
+    "extractedAt": "2026-03-30T13:05:32.760Z",
+    "questionCount": 179,
+    "difficultyDistribution": {
+      "D1": 52,
+      "D2": 95,
+      "D3": 32
+    },
+    "questionTypes": {
+      "standard": 179
+    },
+    "visualComponentCount": 9
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Edinburgh is -3°C. In London it is 5°C warmer. What is the temperature in London?",
+      "options": [
+        "-8°C",
+        "-2°C",
+        "2°C",
+        "8°C",
+        "3°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "2°C",
+      "explanation": "Start at -3°C and add 5°C: -3 + 5 = 2°C. Think of a number line: from -3, count 5 places to the right. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/thermometer-q1.svg"
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which number is the smallest? -5, 3, -2, 0, -8",
+      "options": [
+        "-5",
+        "3",
+        "-2",
+        "0",
+        "-8"
+      ],
+      "correct": 4,
+      "correctAnswer": "-8",
+      "explanation": "On a number line, the further left a number is, the smaller it is. -8 is furthest left, so it's the smallest. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/numberline-q2.svg"
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sarah's bank balance is £20. She spends £35. What is her new balance?",
+      "options": [
+        "£15",
+        "£55",
+        "-£15",
+        "-£55",
+        "£5"
+      ],
+      "correct": 2,
+      "correctAnswer": "-£15",
+      "explanation": "She starts with £20 and spends £35: 20 - 35 = -15. Her balance is -£15, meaning she's £15 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature at midnight was -7°C. By midday it had risen by 12°C. What was the temperature at midday?",
+      "options": [
+        "-19°C",
+        "-5°C",
+        "5°C",
+        "19°C",
+        "12°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "5°C",
+      "explanation": "Start at -7°C and add 12°C: -7 + 12 = 5°C. Count from -7: go up 7 to reach 0, then up another 5 to reach 5°C. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/thermometer-q4.svg"
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from smallest to largest: -1, 4, -6, 2, -3",
+      "options": [
+        "-1, -3, -6, 2, 4",
+        "-6, -3, -1, 2, 4",
+        "-6, -3, -1, 4, 2",
+        "4, 2, -1, -3, -6",
+        "-3, -1, -6, 2, 4"
+      ],
+      "correct": 1,
+      "correctAnswer": "-6, -3, -1, 2, 4",
+      "explanation": "Negative numbers get smaller as they go further from zero. Order: -6, -3, -1, 2, 4. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/numberline-q5.svg"
+    },
+    {
+      "id": 6,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at 45 metres below sea level. It rises 20 metres. What is its new depth?",
+      "options": [
+        "25 metres below",
+        "65 metres below",
+        "25 metres above",
+        "20 metres below",
+        "45 metres below"
+      ],
+      "correct": 0,
+      "correctAnswer": "25 metres below",
+      "explanation": "Starting position: -45m (below sea level). Rising 20m means adding: -45 + 20 = -25m, so 25 metres below sea level. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/submarine-q6.svg"
+    },
+    {
+      "id": 7,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Jack scored -5 points in a game. Emma scored 3 points more than Jack. How many points did Emma score?",
+      "options": [
+        "-8",
+        "-2",
+        "2",
+        "8",
+        "-5"
+      ],
+      "correct": 1,
+      "correctAnswer": "-2",
+      "explanation": "Jack has -5 points. Emma has 3 more: -5 + 3 = -2 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -4°C and 3°C?",
+      "options": [
+        "1°C",
+        "7°C",
+        "-1°C",
+        "-7°C",
+        "4°C"
+      ],
+      "correct": 1,
+      "correctAnswer": "7°C",
+      "explanation": "The difference means how far apart they are: from -4 to 3 is 7 degrees. Count: -4 to 0 is 4, then 0 to 3 is 3, so 4 + 3 = 7°C. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/thermometer-q8.svg"
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A car park has 3 floors above ground and 2 floors below ground. Ground floor is numbered 0. Which floor number is 2 floors below ground?",
+      "options": [
+        "-3",
+        "-2",
+        "-1",
+        "2",
+        "0"
+      ],
+      "correct": 1,
+      "correctAnswer": "-2",
+      "explanation": "Ground floor = 0. One floor below = -1. Two floors below = -2. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/building-q9.svg"
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was 2°C. It dropped by 8°C. What is the new temperature?",
+      "options": [
+        "-10°C",
+        "-6°C",
+        "6°C",
+        "10°C",
+        "-4°C"
+      ],
+      "correct": 1,
+      "correctAnswer": "-6°C",
+      "explanation": "Start at 2°C and subtract 8°C: 2 - 8 = -6°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is larger: -20 or -15?",
+      "options": [
+        "-20",
+        "-15",
+        "They are equal",
+        "Cannot tell",
+        "Neither"
+      ],
+      "correct": 1,
+      "correctAnswer": "-15",
+      "explanation": "-15 is larger (closer to zero) than -20. On a number line, -15 is to the right of -20. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oliver is on floor -3 in a building. He goes up 5 floors. Which floor is he on now?",
+      "options": [
+        "Floor -8",
+        "Floor -2",
+        "Floor 2",
+        "Floor 8",
+        "Floor 5"
+      ],
+      "correct": 2,
+      "correctAnswer": "Floor 2",
+      "explanation": "Starting floor: -3. Going up 5 floors means adding: -3 + 5 = 2. He's on floor 2. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/building-q12.svg"
+    },
+    {
+      "id": 13,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Moscow is -12°C. In Dubai it is 38°C warmer. What is the temperature in Dubai?",
+      "options": [
+        "26°C",
+        "50°C",
+        "-50°C",
+        "30°C",
+        "20°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "26°C",
+      "explanation": "Start at -12°C and add 38°C: -12 + 38 = 26°C. Count up: from -12 to 0 is 12, then 0 to 26 is 26, so 12 + 26 = 38°C warmer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -6 and 4?",
+      "options": [
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": 1,
+      "correctAnswer": "-1",
+      "explanation": "The distance from -6 to 4 is 10 (count: -6 to 0 is 6, then 0 to 4 is 4, so 6 + 4 = 10). Half of 10 is 5. From -6, count up 5: -6 + 5 = -1. ✓",
+      "hasVisualComponent": true,
+      "visualComponent": null,
+      "image": "negative-numbers/numberline-q14.svg"
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Lily owes her brother £37. She earns £15 from a car boot sale and gives it all to him. The next day she borrows another £12. How much does she owe now?",
+      "options": [
+        "£10",
+        "£22",
+        "£34",
+        "£40",
+        "£64"
+      ],
+      "correct": 2,
+      "correctAnswer": "£34",
+      "explanation": "Start with -£37. She pays back £15: -37 + 15 = -22. Then she borrows £12 more: -22 - 12 = -34. She now owes £34. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is 18 metres below sea level. She dives down another 7 metres. What is her new depth?",
+      "options": [
+        "11 metres below",
+        "25 metres below",
+        "11 metres above",
+        "18 metres below",
+        "7 metres below"
+      ],
+      "correct": 1,
+      "correctAnswer": "25 metres below",
+      "explanation": "Starting depth: -18m. Diving down 7m more: -18 - 7 = -25m, so 25 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The lowest temperature recorded in Antarctica was -89°C. The lowest in the Arctic was -68°C. What is the difference?",
+      "options": [
+        "21°C",
+        "157°C",
+        "68°C",
+        "89°C",
+        "25°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "21°C",
+      "explanation": "Find the difference between -89°C and -68°C: -68 - (-89) = -68 + 89 = 21°C difference. Or count: from -89 to -68 is 21 degrees. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben has -£12 in his account (overdrawn). His dad puts £20 in. What is his new balance?",
+      "options": [
+        "-£32",
+        "-£8",
+        "£8",
+        "£32",
+        "£12"
+      ],
+      "correct": 2,
+      "correctAnswer": "£8",
+      "explanation": "Start with -£12 and add £20: -12 + 20 = £8. His new balance is £8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to zero? -7, 5, -3, 9, -10",
+      "options": [
+        "-7",
+        "5",
+        "-3",
+        "9",
+        "-10"
+      ],
+      "correct": 2,
+      "correctAnswer": "-3",
+      "explanation": "Distance from zero: -7 is 7 away; 5 is 5 away; -3 is 3 away; 9 is 9 away; -10 is 10 away. Closest is -3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a quiz, correct answers score +5 points and wrong answers score -2 points. Maya gets 4 correct and 3 wrong. What is her total score?",
+      "options": [
+        "14",
+        "20",
+        "6",
+        "26",
+        "18"
+      ],
+      "correct": 0,
+      "correctAnswer": "14",
+      "explanation": "Correct answers: 4 × 5 = 20 points. Wrong answers: 3 × (-2) = -6 points. Total: 20 + (-6) = 20 - 6 = 14 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature is -5°C in the morning. It rises by 8°C during the day. What is the new temperature?",
+      "options": [
+        "-13°C",
+        "-3°C",
+        "3°C",
+        "13°C",
+        "-8°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "3°C",
+      "explanation": "Start at -5 and add 8: -5 + 8 = 3. On a number line, count 8 places right from -5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which number is the smallest? -9, -4, -12, 0, -6",
+      "options": [
+        "-9",
+        "-4",
+        "-12",
+        "0",
+        "-6"
+      ],
+      "correct": 2,
+      "correctAnswer": "-12",
+      "explanation": "On a number line, -12 is furthest left, so it's the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -8°C. It rose by 15°C. What is the new temperature?",
+      "options": [
+        "-23°C",
+        "-7°C",
+        "7°C",
+        "8°C",
+        "15°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "7°C",
+      "explanation": "Start at -8°C and add 15°C: -8 + 15 = 7°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Noah has £12. He spends £20. What is his new balance?",
+      "options": [
+        "£32",
+        "-£8",
+        "£8",
+        "-£32",
+        "£12"
+      ],
+      "correct": 1,
+      "correctAnswer": "-£8",
+      "explanation": "Start with £12 and subtract £20: 12 - 20 = -£8. He's £8 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -7°C and 4°C?",
+      "options": [
+        "3°C",
+        "7°C",
+        "11°C",
+        "-11°C",
+        "4°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "11°C",
+      "explanation": "From -7 to 4 is 11 degrees. Count: -7 to 0 is 7, then 0 to 4 is 4, so 7 + 4 = 11°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A fish is swimming at 15 metres below sea level. It rises 9 metres. What is its new position relative to sea level?",
+      "options": [
+        "-24",
+        "-6",
+        "6",
+        "24",
+        "-9"
+      ],
+      "correct": 1,
+      "correctAnswer": "-6",
+      "explanation": "Start at -15 and add 9: -15 + 9 = -6. The fish is 6 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is larger: -25 or -18?",
+      "options": [
+        "-25",
+        "-18",
+        "They are equal",
+        "Cannot tell",
+        "Neither"
+      ],
+      "correct": 1,
+      "correctAnswer": "-18",
+      "explanation": "-18 is larger (closer to zero) than -25. On a number line, -18 is to the right of -25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Belfast is 3°C. Overnight it drops by 11°C. What is the temperature in the morning?",
+      "options": [
+        "8°C",
+        "14°C",
+        "-8°C",
+        "-14°C",
+        "11°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "-8°C",
+      "explanation": "3 - 11 = -8°C. Subtracting a larger number gives a negative result. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at -20 metres. It rises 35 metres. What is its new position?",
+      "options": [
+        "55m below",
+        "15m below",
+        "15m above",
+        "5m above",
+        "20m above"
+      ],
+      "correct": 2,
+      "correctAnswer": "15m above",
+      "explanation": "-20 + 35 = 15. The submarine is 15 metres above sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -10 and 6?",
+      "options": [
+        "-4",
+        "-2",
+        "0",
+        "2",
+        "4"
+      ],
+      "correct": 1,
+      "correctAnswer": "-2",
+      "explanation": "Distance is 16 (from -10 to 6). Half is 8. From -10, count up 8: -10 + 8 = -2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from largest to smallest: -2, 5, -8, 1, -5",
+      "options": [
+        "5, 1, -2, -5, -8",
+        "-8, -5, -2, 1, 5",
+        "5, -2, 1, -5, -8",
+        "-2, -5, -8, 1, 5",
+        "5, 1, -5, -2, -8"
+      ],
+      "correct": 0,
+      "correctAnswer": "5, 1, -2, -5, -8",
+      "explanation": "Largest to smallest: 5, 1, -2, -5, -8. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ethan is on floor -4 in a car park. He goes up 7 floors. Which floor is he on?",
+      "options": [
+        "Floor -11",
+        "Floor -3",
+        "Floor 3",
+        "Floor 11",
+        "Floor 7"
+      ],
+      "correct": 2,
+      "correctAnswer": "Floor 3",
+      "explanation": "Starting floor: -4. Going up 7 floors: -4 + 7 = 3. He's on floor 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Oslo is -16°C. In Athens it is 28°C warmer. What is the temperature in Athens?",
+      "options": [
+        "12°C",
+        "44°C",
+        "-44°C",
+        "16°C",
+        "28°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "12°C",
+      "explanation": "Start at -16°C and add 28°C: -16 + 28 = 12°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is 9 metres below sea level. She dives another 5 metres deeper. What is her new position relative to sea level?",
+      "options": [
+        "-4",
+        "4",
+        "-14",
+        "14",
+        "-5"
+      ],
+      "correct": 2,
+      "correctAnswer": "-14",
+      "explanation": "-9 - 5 = -14. Subtracting makes the negative number more negative. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lily scored -8 points. Mia scored 6 points more than Lily. How many points did Mia score?",
+      "options": [
+        "-14",
+        "-2",
+        "2",
+        "14",
+        "-8"
+      ],
+      "correct": 1,
+      "correctAnswer": "-2",
+      "explanation": "Lily has -8 points. Mia has 6 more: -8 + 6 = -2 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to zero? -11, 8, -4, 12, -15",
+      "options": [
+        "-11",
+        "8",
+        "-4",
+        "12",
+        "-15"
+      ],
+      "correct": 2,
+      "correctAnswer": "-4",
+      "explanation": "Distance from zero: -11 is 11 away; 8 is 8 away; -4 is 4 away; 12 is 12 away; -15 is 15 away. Closest is -4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is at -30 metres. She dives down another 12 metres. What is her new depth?",
+      "options": [
+        "18m below",
+        "42m below",
+        "18m above",
+        "30m below",
+        "12m below"
+      ],
+      "correct": 1,
+      "correctAnswer": "42m below",
+      "explanation": "Starting depth: -30m. Diving down 12m more: -30 - 12 = -42m, so 42 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Jake has £7 in his account. He spends £18 on a book. What is his balance now?",
+      "options": [
+        "£25",
+        "£11",
+        "-£11",
+        "-£25",
+        "£18"
+      ],
+      "correct": 2,
+      "correctAnswer": "-£11",
+      "explanation": "7 - 18 = -11. Jake is now £11 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -5°C. It dropped by 9°C. What is the new temperature?",
+      "options": [
+        "-14°C",
+        "-4°C",
+        "4°C",
+        "14°C",
+        "-9°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "-14°C",
+      "explanation": "Start at -5°C and subtract 9°C: -5 - 9 = -14°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Glasgow is -12°C. It warms up by 17°C during the day. What is the new temperature?",
+      "options": [
+        "-29°C",
+        "-5°C",
+        "5°C",
+        "29°C",
+        "12°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "5°C",
+      "explanation": "Start at -12°C and add 17°C: -12 + 17 = 5°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ben has -£25 in his account. His mum deposits £40. What is his new balance?",
+      "options": [
+        "-£65",
+        "-£15",
+        "£15",
+        "£65",
+        "£25"
+      ],
+      "correct": 2,
+      "correctAnswer": "£15",
+      "explanation": "Start with -£25 and add £40: -25 + 40 = £15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is smaller: -32 or -27?",
+      "options": [
+        "-32",
+        "-27",
+        "They are equal",
+        "Cannot tell",
+        "Neither"
+      ],
+      "correct": 0,
+      "correctAnswer": "-32",
+      "explanation": "-32 is smaller (further from zero) than -27. On a number line, -32 is to the left of -27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -15 and 8?",
+      "options": [
+        "7",
+        "15",
+        "23",
+        "-23",
+        "8"
+      ],
+      "correct": 2,
+      "correctAnswer": "23",
+      "explanation": "From -15 to 8 is 23 units. Count: -15 to 0 is 15, then 0 to 8 is 8, so 15 + 8 = 23. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in York is 2°C. It drops by 14°C overnight. What is the new temperature?",
+      "options": [
+        "16",
+        "12",
+        "-12",
+        "-16",
+        "14"
+      ],
+      "correct": 2,
+      "correctAnswer": "-12",
+      "explanation": "2 - 14 = -12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Sophie owes her sister £15. She pays back £9. How much does she still owe?",
+      "options": [
+        "£24",
+        "£6",
+        "-£6",
+        "-£24",
+        "£15"
+      ],
+      "correct": 1,
+      "correctAnswer": "£6",
+      "explanation": "Owing £15 means -£15. Paying back £9 means adding: -15 + 9 = -6. She still owes £6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A whale is swimming at 18 metres below sea level. It rises 11 metres. What is its new depth?",
+      "options": [
+        "-29",
+        "-7",
+        "7",
+        "29",
+        "-11"
+      ],
+      "correct": 1,
+      "correctAnswer": "-7",
+      "explanation": "Start at -18 and add 11: -18 + 11 = -7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A building has 5 floors above ground and 3 below ground. Ground = 0. Which floor number is 3 floors below?",
+      "options": [
+        "-4",
+        "-3",
+        "-2",
+        "3",
+        "0"
+      ],
+      "correct": 1,
+      "correctAnswer": "-3",
+      "explanation": "Ground floor = 0. One below = -1, two below = -2, three below = -3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -14 and 2?",
+      "options": [
+        "-8",
+        "-6",
+        "-4",
+        "-2",
+        "0"
+      ],
+      "correct": 1,
+      "correctAnswer": "-6",
+      "explanation": "Distance is 16 (from -14 to 2). Half is 8. From -14, count up 8: -14 + 8 = -6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Aberdeen is -6°C. It falls by another 8°C overnight. What is the new temperature?",
+      "options": [
+        "-14°C",
+        "-2°C",
+        "2°C",
+        "14°C",
+        "-8°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "-14°C",
+      "explanation": "-6 - 8 = -14°C. Subtracting makes it more negative. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Alaska is -22°C. In Florida it is 48°C warmer. What is the temperature in Florida?",
+      "options": [
+        "26°C",
+        "70°C",
+        "-70°C",
+        "30°C",
+        "48°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "26°C",
+      "explanation": "Start at -22°C and add 48°C: -22 + 48 = 26°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Mia has £15 on her bus pass. She buys a £28 weekly ticket. What is her balance now?",
+      "options": [
+        "£43",
+        "£13",
+        "-£13",
+        "-£43",
+        "£28"
+      ],
+      "correct": 2,
+      "correctAnswer": "-£13",
+      "explanation": "15 - 28 = -13. Mia's balance is -£13. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Charlie is on floor -2. He goes down 3 more floors. Which floor is he on?",
+      "options": [
+        "Floor -5",
+        "Floor -1",
+        "Floor 1",
+        "Floor 5",
+        "Floor -3"
+      ],
+      "correct": 0,
+      "correctAnswer": "Floor -5",
+      "explanation": "Starting floor: -2. Going down 3 floors: -2 - 3 = -5. He's on floor -5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A cave is 24 metres below ground level. A climber ascends 19 metres. What is her position relative to ground level?",
+      "options": [
+        "-43",
+        "-5",
+        "5",
+        "43",
+        "-19"
+      ],
+      "correct": 1,
+      "correctAnswer": "-5",
+      "explanation": "Start at -24 and add 19: -24 + 19 = -5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from smallest to largest: 0, -7, 4, -3, -10",
+      "options": [
+        "-10, -7, -3, 0, 4",
+        "-7, -10, -3, 0, 4",
+        "-10, -7, -3, 4, 0",
+        "4, 0, -3, -7, -10",
+        "-3, -7, -10, 0, 4"
+      ],
+      "correct": 0,
+      "correctAnswer": "-10, -7, -3, 0, 4",
+      "explanation": "Smallest to largest: -10, -7, -3, 0, 4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -20 and -8?",
+      "options": [
+        "12",
+        "28",
+        "-12",
+        "-28",
+        "8"
+      ],
+      "correct": 0,
+      "correctAnswer": "12",
+      "explanation": "From -20 to -8 is 12 units. Count: -20 to -8 is 12 places to the right. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Cardiff is 4°C. Overnight it drops by 19°C. What is the new temperature?",
+      "options": [
+        "23°C",
+        "15°C",
+        "-15°C",
+        "-23°C",
+        "19°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "-15°C",
+      "explanation": "4 - 19 = -15°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ava scored -12 points. Tom scored 8 points more than Ava. How many points did Tom score?",
+      "options": [
+        "-20",
+        "-4",
+        "4",
+        "20",
+        "-8"
+      ],
+      "correct": 1,
+      "correctAnswer": "-4",
+      "explanation": "Ava has -12 points. Tom has 8 more: -12 + 8 = -4 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at 30 metres below sea level. It rises 25 metres. What is its new depth?",
+      "options": [
+        "-55",
+        "-5",
+        "5",
+        "55",
+        "-25"
+      ],
+      "correct": 1,
+      "correctAnswer": "-5",
+      "explanation": "Start at -30 and add 25: -30 + 25 = -5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers is furthest from zero? -16, 9, -5, 18, -22",
+      "options": [
+        "-16",
+        "9",
+        "-5",
+        "18",
+        "-22"
+      ],
+      "correct": 4,
+      "correctAnswer": "-22",
+      "explanation": "Distance from zero: -16 is 16 away; 9 is 9 away; -5 is 5 away; 18 is 18 away; -22 is 22 away. Furthest is -22. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -11°C. It rose by 18°C. What is the new temperature?",
+      "options": [
+        "-29°C",
+        "-7°C",
+        "7°C",
+        "29°C",
+        "18°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "7°C",
+      "explanation": "Start at -11°C and add 18°C: -11 + 18 = 7°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is at 14 metres below sea level. She dives another 6 metres deeper. What is her new position?",
+      "options": [
+        "-20",
+        "-8",
+        "8",
+        "20",
+        "-6"
+      ],
+      "correct": 0,
+      "correctAnswer": "-20",
+      "explanation": "-14 - 6 = -20. Subtracting makes it more negative. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Mason has £8. He spends £23. What is his new balance?",
+      "options": [
+        "£31",
+        "£15",
+        "-£15",
+        "-£31",
+        "£8"
+      ],
+      "correct": 2,
+      "correctAnswer": "-£15",
+      "explanation": "Start with £8 and subtract £23: 8 - 23 = -£15. He's £15 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Lucy has -£7 in her savings account. Her gran gives her £20 for her birthday. What is her balance now?",
+      "options": [
+        "-27",
+        "-13",
+        "13",
+        "27",
+        "20"
+      ],
+      "correct": 2,
+      "correctAnswer": "13",
+      "explanation": "Start at -7 and add 20: -7 + 20 = 13. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is larger: -40 or -35?",
+      "options": [
+        "-40",
+        "-35",
+        "They are equal",
+        "Cannot tell",
+        "Neither"
+      ],
+      "correct": 1,
+      "correctAnswer": "-35",
+      "explanation": "-35 is larger (closer to zero) than -40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Tom has £6 in his account. He buys a toy costing £22. What is his balance now?",
+      "options": [
+        "28",
+        "16",
+        "-16",
+        "-28",
+        "22"
+      ],
+      "correct": 2,
+      "correctAnswer": "-16",
+      "explanation": "6 - 22 = -16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at -50 metres. It rises 32 metres. What is its new depth?",
+      "options": [
+        "18m below",
+        "82m below",
+        "18m above",
+        "50m below",
+        "32m below"
+      ],
+      "correct": 0,
+      "correctAnswer": "18m below",
+      "explanation": "-50 + 32 = -18. The submarine is 18 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Inverness is -35°C. It warms up by 28°C. What is the new temperature?",
+      "options": [
+        "-63",
+        "-7",
+        "7",
+        "63",
+        "-28"
+      ],
+      "correct": 1,
+      "correctAnswer": "-7",
+      "explanation": "Start at -35 and add 28: -35 + 28 = -7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -18 and 4?",
+      "options": [
+        "-9",
+        "-7",
+        "-5",
+        "-3",
+        "-1"
+      ],
+      "correct": 1,
+      "correctAnswer": "-7",
+      "explanation": "Distance is 22 (from -18 to 4). Half is 11. From -18, count up 11: -18 + 11 = -7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -25 and 10?",
+      "options": [
+        "15",
+        "25",
+        "35",
+        "-35",
+        "10"
+      ],
+      "correct": 2,
+      "correctAnswer": "35",
+      "explanation": "From -25 to 10 is 35 units. Count: -25 to 0 is 25, then 0 to 10 is 10, so 25 + 10 = 35. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature is 10°C during the day. It drops by 27°C at night. What is the new temperature?",
+      "options": [
+        "37",
+        "17",
+        "-17",
+        "-37",
+        "27"
+      ],
+      "correct": 2,
+      "correctAnswer": "-17",
+      "explanation": "10 - 27 = -17. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a quiz, correct answers score +6 points and wrong answers score -3 points. Leo gets 5 correct and 4 wrong. What is his score?",
+      "options": [
+        "18",
+        "30",
+        "12",
+        "42",
+        "24"
+      ],
+      "correct": 0,
+      "correctAnswer": "18",
+      "explanation": "Correct: 5 × 6 = 30 points. Wrong: 4 × (-3) = -12 points. Total: 30 + (-12) = 18 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at 19 metres below sea level. It dives another 8 metres. What is its new depth?",
+      "options": [
+        "-27",
+        "-11",
+        "11",
+        "27",
+        "-8"
+      ],
+      "correct": 0,
+      "correctAnswer": "-27",
+      "explanation": "-19 - 8 = -27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Ruby is on floor -5. She goes up 9 floors. Which floor is she on?",
+      "options": [
+        "Floor -14",
+        "Floor -4",
+        "Floor 4",
+        "Floor 14",
+        "Floor 9"
+      ],
+      "correct": 2,
+      "correctAnswer": "Floor 4",
+      "explanation": "Starting floor: -5. Going up 9 floors: -5 + 9 = 4. She's on floor 4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A lift is at floor -28 in a deep mine. It goes up 35 floors. Which floor is it on now?",
+      "options": [
+        "-63",
+        "-7",
+        "7",
+        "63",
+        "35"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Start at -28 and add 35: -28 + 35 = 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -17°C. It dropped by 11°C. What is the new temperature?",
+      "options": [
+        "-28°C",
+        "-6°C",
+        "6°C",
+        "28°C",
+        "-11°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "-28°C",
+      "explanation": "Start at -17°C and subtract 11°C: -17 - 11 = -28°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is smallest: -14, -9, -21, -5, -18?",
+      "options": [
+        "-14",
+        "-9",
+        "-21",
+        "-5",
+        "-18"
+      ],
+      "correct": 2,
+      "correctAnswer": "-21",
+      "explanation": "-21 is furthest left on the number line, so it's the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Edinburgh is 1°C. It drops by 16°C overnight. What is the new temperature?",
+      "options": [
+        "17",
+        "15",
+        "-15",
+        "-17",
+        "16"
+      ],
+      "correct": 2,
+      "correctAnswer": "-15",
+      "explanation": "1 - 16 = -15. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Oscar owes his dad £30. He pays back £18. How much does he still owe?",
+      "options": [
+        "£48",
+        "£12",
+        "-£12",
+        "-£48",
+        "£30"
+      ],
+      "correct": 1,
+      "correctAnswer": "£12",
+      "explanation": "Owing £30 means -£30. Paying back £18 means adding: -30 + 18 = -12. He still owes £12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A deep-sea robot is at 42 metres below sea level. It rises 29 metres. What is its new depth?",
+      "options": [
+        "-71",
+        "-13",
+        "13",
+        "71",
+        "-29"
+      ],
+      "correct": 1,
+      "correctAnswer": "-13",
+      "explanation": "Start at -42 and add 29: -42 + 29 = -13. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is at -25 metres. She dives down another 18 metres. What is her new depth?",
+      "options": [
+        "7m below",
+        "43m below",
+        "7m above",
+        "25m below",
+        "18m below"
+      ],
+      "correct": 1,
+      "correctAnswer": "43m below",
+      "explanation": "Starting depth: -25m. Diving down 18m more: -25 - 18 = -43m, so 43 metres below. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Freddie has £9 in his wallet. He owes his friend £31. After paying, what is his balance?",
+      "options": [
+        "40",
+        "22",
+        "-22",
+        "-40",
+        "31"
+      ],
+      "correct": 2,
+      "correctAnswer": "-22",
+      "explanation": "9 - 31 = -22. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature is -16°C in the morning. By noon it has risen by 16°C. What is the temperature at noon?",
+      "options": [
+        "-32",
+        "0",
+        "32",
+        "16",
+        "-16"
+      ],
+      "correct": 1,
+      "correctAnswer": "0",
+      "explanation": "-16 + 16 = 0. They cancel out. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Iceland is -19°C. In Spain it is 37°C warmer. What is the temperature in Spain?",
+      "options": [
+        "18°C",
+        "56°C",
+        "-56°C",
+        "22°C",
+        "37°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "18°C",
+      "explanation": "Start at -19°C and add 37°C: -19 + 37 = 18°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature is -11°C. It drops by another 14°C during a blizzard. What is the new temperature?",
+      "options": [
+        "-25",
+        "-3",
+        "3",
+        "25",
+        "-14"
+      ],
+      "correct": 0,
+      "correctAnswer": "-25",
+      "explanation": "-11 - 14 = -25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from largest to smallest: -4, 6, -11, 2, -7",
+      "options": [
+        "6, 2, -4, -7, -11",
+        "-11, -7, -4, 2, 6",
+        "6, -4, 2, -7, -11",
+        "-4, -7, -11, 2, 6",
+        "6, 2, -7, -4, -11"
+      ],
+      "correct": 0,
+      "correctAnswer": "6, 2, -4, -7, -11",
+      "explanation": "Largest to smallest: 6, 2, -4, -7, -11. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Hannah has £13 on her library card. She buys a £35 book. What is her balance now?",
+      "options": [
+        "48",
+        "22",
+        "-22",
+        "-48",
+        "35"
+      ],
+      "correct": 2,
+      "correctAnswer": "-22",
+      "explanation": "13 - 35 = -22. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Isla has -£18 in her account. Her grandad deposits £50. What is her new balance?",
+      "options": [
+        "-£68",
+        "-£32",
+        "£32",
+        "£68",
+        "£18"
+      ],
+      "correct": 2,
+      "correctAnswer": "£32",
+      "explanation": "Start with -£18 and add £50: -18 + 50 = £32. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A mining lift is at 26 metres below ground. It goes up 14 metres. What is its new position?",
+      "options": [
+        "-40",
+        "-12",
+        "12",
+        "40",
+        "-14"
+      ],
+      "correct": 1,
+      "correctAnswer": "-12",
+      "explanation": "Start at -26 and add 14: -26 + 14 = -12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which of these numbers is closest to zero? -19, 15, -7, 21, -24",
+      "options": [
+        "-19",
+        "15",
+        "-7",
+        "21",
+        "-24"
+      ],
+      "correct": 2,
+      "correctAnswer": "-7",
+      "explanation": "Distance from zero: -19 is 19 away; 15 is 15 away; -7 is 7 away; 21 is 21 away; -24 is 24 away. Closest is -7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -30 and -12?",
+      "options": [
+        "18",
+        "42",
+        "-18",
+        "-42",
+        "12"
+      ],
+      "correct": 0,
+      "correctAnswer": "18",
+      "explanation": "From -30 to -12 is 18 units. Count: -30 to -12 is 18 places to the right. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A dolphin is swimming at 8 metres below the surface. It dives down another 17 metres. What is its new depth?",
+      "options": [
+        "-25",
+        "-9",
+        "9",
+        "25",
+        "-17"
+      ],
+      "correct": 0,
+      "correctAnswer": "-25",
+      "explanation": "-8 - 17 = -25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Dundee is 5°C. It drops by 24°C overnight. What is the new temperature?",
+      "options": [
+        "29",
+        "19",
+        "-19",
+        "-29",
+        "24"
+      ],
+      "correct": 2,
+      "correctAnswer": "-19",
+      "explanation": "5 - 24 = -19. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Harry is on floor -6. He goes down 4 more floors. Which floor is he on?",
+      "options": [
+        "Floor -10",
+        "Floor -2",
+        "Floor 2",
+        "Floor 10",
+        "Floor -4"
+      ],
+      "correct": 0,
+      "correctAnswer": "Floor -10",
+      "explanation": "Starting floor: -6. Going down 4 floors: -6 - 4 = -10. He's on floor -10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A well is 33 metres deep. A bucket is raised 40 metres by a crane. What is the bucket's position above ground?",
+      "options": [
+        "-73",
+        "-7",
+        "7",
+        "73",
+        "40"
+      ],
+      "correct": 2,
+      "correctAnswer": "7",
+      "explanation": "Start at -33 and add 40: -33 + 40 = 7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -13°C. It rose by 22°C. What is the new temperature?",
+      "options": [
+        "-35°C",
+        "-9°C",
+        "9°C",
+        "35°C",
+        "22°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "9°C",
+      "explanation": "Start at -13°C and add 22°C: -13 + 22 = 9°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -20 and 8?",
+      "options": [
+        "-10",
+        "-8",
+        "-6",
+        "-4",
+        "-2"
+      ],
+      "correct": 2,
+      "correctAnswer": "-6",
+      "explanation": "Distance is 28 (from -20 to 8). Half is 14. From -20, count up 14: -20 + 14 = -6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in Reykjavik is -21°C. It falls by another 9°C. What is the new temperature?",
+      "options": [
+        "-30",
+        "-12",
+        "12",
+        "30",
+        "-9"
+      ],
+      "correct": 0,
+      "correctAnswer": "-30",
+      "explanation": "-21 - 9 = -30. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is larger: -50 or -42?",
+      "options": [
+        "-50",
+        "-42",
+        "They are equal",
+        "Cannot tell",
+        "Neither"
+      ],
+      "correct": 1,
+      "correctAnswer": "-42",
+      "explanation": "-42 is larger (closer to zero) than -50. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Sam has £11 in his account. He pays a £38 bill. What is his balance now?",
+      "options": [
+        "49",
+        "27",
+        "-27",
+        "-49",
+        "38"
+      ],
+      "correct": 2,
+      "correctAnswer": "-27",
+      "explanation": "11 - 38 = -27. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Zoe scored -15 points. Jack scored 12 points more than Zoe. How many points did Jack score?",
+      "options": [
+        "-27",
+        "-3",
+        "3",
+        "27",
+        "-12"
+      ],
+      "correct": 1,
+      "correctAnswer": "-3",
+      "explanation": "Zoe has -15 points. Jack has 12 more: -15 + 12 = -3 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at 45 metres below sea level. It rises 38 metres. What is its new depth?",
+      "options": [
+        "-83",
+        "-7",
+        "7",
+        "83",
+        "-38"
+      ],
+      "correct": 1,
+      "correctAnswer": "-7",
+      "explanation": "Start at -45 and add 38: -45 + 38 = -7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at -60 metres. It rises 45 metres. What is its new depth?",
+      "options": [
+        "15m below",
+        "105m below",
+        "15m above",
+        "60m below",
+        "45m below"
+      ],
+      "correct": 0,
+      "correctAnswer": "15m below",
+      "explanation": "-60 + 45 = -15. The submarine is 15 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Bristol is 14°C. It drops by 42°C during a freak cold snap. What is the new temperature?",
+      "options": [
+        "56",
+        "28",
+        "-28",
+        "-56",
+        "42"
+      ],
+      "correct": 2,
+      "correctAnswer": "-28",
+      "explanation": "14 - 42 = -28. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between -35 and 5?",
+      "options": [
+        "30",
+        "35",
+        "40",
+        "-40",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "40",
+      "explanation": "From -35 to 5 is 40 units. Count: -35 to 0 is 35, then 0 to 5 is 5, so 35 + 5 = 40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A scuba diver is 10 metres below the surface. She descends another 13 metres. What is her new depth?",
+      "options": [
+        "-23",
+        "-3",
+        "3",
+        "23",
+        "-13"
+      ],
+      "correct": 0,
+      "correctAnswer": "-23",
+      "explanation": "-10 - 13 = -23. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Lucas has £6. He spends £29. What is his new balance?",
+      "options": [
+        "£35",
+        "£23",
+        "-£23",
+        "-£35",
+        "£6"
+      ],
+      "correct": 2,
+      "correctAnswer": "-£23",
+      "explanation": "Start with £6 and subtract £29: 6 - 29 = -£23. He's £23 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Grace has -£38 in her account. She receives £52 for her birthday. What is her balance now?",
+      "options": [
+        "-90",
+        "-14",
+        "14",
+        "90",
+        "52"
+      ],
+      "correct": 2,
+      "correctAnswer": "14",
+      "explanation": "Start at -38 and add 52: -38 + 52 = 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature was -21°C. It dropped by 14°C. What is the new temperature?",
+      "options": [
+        "-35°C",
+        "-7°C",
+        "7°C",
+        "35°C",
+        "-14°C"
+      ],
+      "correct": 0,
+      "correctAnswer": "-35°C",
+      "explanation": "Start at -21°C and subtract 14°C: -21 - 14 = -35°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which of these numbers is furthest from zero? -28, 18, -12, 25, -35",
+      "options": [
+        "-28",
+        "18",
+        "-12",
+        "25",
+        "-35"
+      ],
+      "correct": 4,
+      "correctAnswer": "-35",
+      "explanation": "Distance from zero: -28 is 28 away; 18 is 18 away; -12 is 12 away; 25 is 25 away; -35 is 35 away. Furthest is -35. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Manchester is 8°C. A cold front causes it to drop by 33°C. What is the new temperature?",
+      "options": [
+        "41",
+        "25",
+        "-25",
+        "-41",
+        "33"
+      ],
+      "correct": 2,
+      "correctAnswer": "-25",
+      "explanation": "8 - 33 = -25. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Amelia is on floor -7. She goes up 12 floors. Which floor is she on?",
+      "options": [
+        "Floor -19",
+        "Floor -5",
+        "Floor 5",
+        "Floor 19",
+        "Floor 12"
+      ],
+      "correct": 2,
+      "correctAnswer": "Floor 5",
+      "explanation": "Starting floor: -7. Going up 12 floors: -7 + 12 = 5. She's on floor 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A potholer is 17 metres underground. She descends another 15 metres. What is her new depth?",
+      "options": [
+        "-32",
+        "-2",
+        "2",
+        "32",
+        "-15"
+      ],
+      "correct": 0,
+      "correctAnswer": "-32",
+      "explanation": "-17 - 15 = -32. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "An explorer is 25 metres below ground in a cave. She climbs up 25 metres. What is her position now?",
+      "options": [
+        "-50",
+        "0",
+        "50",
+        "25",
+        "-25"
+      ],
+      "correct": 1,
+      "correctAnswer": "0",
+      "explanation": "-25 + 25 = 0. They cancel out. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a quiz, correct answers score +8 points and wrong answers score -4 points. Emma gets 6 correct and 5 wrong. What is her score?",
+      "options": [
+        "28",
+        "48",
+        "20",
+        "68",
+        "32"
+      ],
+      "correct": 0,
+      "correctAnswer": "28",
+      "explanation": "Correct: 6 × 8 = 48 points. Wrong: 5 × (-4) = -20 points. Total: 48 + (-20) = 28 points. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Alfie has £17 saved up. He buys a game costing £45. What is his balance now?",
+      "options": [
+        "62",
+        "28",
+        "-28",
+        "-62",
+        "45"
+      ],
+      "correct": 2,
+      "correctAnswer": "-28",
+      "explanation": "17 - 45 = -28. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What number is halfway between -16 and 10?",
+      "options": [
+        "-6",
+        "-4",
+        "-3",
+        "-2",
+        "0"
+      ],
+      "correct": 2,
+      "correctAnswer": "-3",
+      "explanation": "Distance is 26 (from -16 to 10). Half is 13. From -16, count up 13: -16 + 13 = -3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature in northern Canada is -32°C. It drops by another 8°C. What is the new temperature?",
+      "options": [
+        "-40",
+        "-24",
+        "24",
+        "40",
+        "-8"
+      ],
+      "correct": 0,
+      "correctAnswer": "-40",
+      "explanation": "-32 - 8 = -40. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A diver is at -38 metres. She dives down another 22 metres. What is her new depth?",
+      "options": [
+        "16m below",
+        "60m below",
+        "16m above",
+        "38m below",
+        "22m below"
+      ],
+      "correct": 1,
+      "correctAnswer": "60m below",
+      "explanation": "Starting depth: -38m. Diving down 22m more: -38 - 22 = -60m, so 60 metres below. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A research station is 51 metres below sea level. A balloon rises 46 metres from there. What is its position?",
+      "options": [
+        "-97",
+        "-5",
+        "5",
+        "97",
+        "-46"
+      ],
+      "correct": 1,
+      "correctAnswer": "-5",
+      "explanation": "Start at -51 and add 46: -51 + 46 = -5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which is smallest: -23, -17, -29, -11, -26?",
+      "options": [
+        "-23",
+        "-17",
+        "-29",
+        "-11",
+        "-26"
+      ],
+      "correct": 2,
+      "correctAnswer": "-29",
+      "explanation": "-29 is furthest left on the number line, so it's the smallest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a quiz, correct answers score +5 points and wrong answers score −3 points. Amy got 7 right and 4 wrong. Ben got 5 right and 6 wrong. What is the difference between their scores?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "20",
+        "24"
+      ],
+      "correct": 2,
+      "correctAnswer": "16",
+      "explanation": "Amy's score: 7 × 5 = 35, then 4 × (−3) = −12, so 35 − 12 = 23. Ben's score: 5 × 5 = 25, then 6 × (−3) = −18, so 25 − 18 = 7. Difference: 23 − 7 = 16. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The temperature was −8°C at midnight. It dropped by 3°C each hour until 4am, then rose by 2°C each hour. What was the temperature at 7am?",
+      "options": [
+        "-26°C",
+        "-20°C",
+        "-14°C",
+        "-8°C",
+        "-2°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "-14°C",
+      "explanation": "At midnight: −8°C. It drops 3°C each hour for 4 hours (midnight to 4am): 4 × 3 = 12°C drop. At 4am: −8 − 12 = −20°C. Then it rises 2°C each hour for 3 hours (4am to 7am): 3 × 2 = 6°C rise. At 7am: −20 + 6 = −14°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Grace had £45 in her bank account. She paid £60 for a coat, received £25 from her grandma, then paid a £15 phone bill. What is her balance now?",
+      "options": [
+        "-£15",
+        "-£5",
+        "£5",
+        "£15",
+        "-£20"
+      ],
+      "correct": 1,
+      "correctAnswer": "-£5",
+      "explanation": "Start: £45. Pay £60: 45 − 60 = −£15. Receive £25: −15 + 25 = £10. Pay £15: 10 − 15 = −£5. Her balance is −£5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The temperature changed from −15°C to 7°C. How many degrees did it change by?",
+      "options": [
+        "-22°C",
+        "-8°C",
+        "8°C",
+        "22°C",
+        "15°C"
+      ],
+      "correct": 3,
+      "correctAnswer": "22°C",
+      "explanation": "Change = new temperature − old temperature = 7 − (−15) = 7 + 15 = 22°C. The temperature rose by 22 degrees. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Which pair of numbers has the greatest difference? A: −12 and 5, B: −3 and 9, C: −18 and −2, D: 4 and 20, E: −7 and 14",
+      "options": [
+        "−12 and 5",
+        "−3 and 9",
+        "−18 and −2",
+        "4 and 20",
+        "−7 and 14"
+      ],
+      "correct": 4,
+      "correctAnswer": "−7 and 14",
+      "explanation": "A: 5 − (−12) = 17. B: 9 − (−3) = 12. C: −2 − (−18) = 16. D: 20 − 4 = 16. E: 14 − (−7) = 21. The greatest difference is 21, from the pair −7 and 14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence starts: 8, 5, 2, −1, −4, ... What is the 10th term of this sequence?",
+      "options": [
+        "-22",
+        "-19",
+        "-16",
+        "-13",
+        "-10"
+      ],
+      "correct": 1,
+      "correctAnswer": "-19",
+      "explanation": "The rule is subtract 3 each time. Term 1: 8, Term 2: 5, Term 3: 2, Term 4: −1, Term 5: −4, Term 6: −7, Term 7: −10, Term 8: −13, Term 9: −16, Term 10: −19. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A submarine is at −120 metres. It rises one-third of the way to the surface. What is its new depth?",
+      "options": [
+        "40m below",
+        "60m below",
+        "80m below",
+        "90m below",
+        "100m below"
+      ],
+      "correct": 2,
+      "correctAnswer": "80m below",
+      "explanation": "The submarine is 120m below the surface. One-third of 120 = 40 metres. It rises 40m: −120 + 40 = −80m. Its new depth is 80 metres below the surface. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "At 6am the temperature was −9°C. By noon it was 5°C. By midnight it had fallen by 18°C from its noon value. What was the temperature at midnight?",
+      "options": [
+        "-23°C",
+        "-13°C",
+        "-9°C",
+        "-4°C",
+        "13°C"
+      ],
+      "correct": 1,
+      "correctAnswer": "-13°C",
+      "explanation": "At noon: 5°C. By midnight it fell 18°C: 5 − 18 = −13°C. The temperature at midnight was −13°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a card game, Tom starts with 0 points. He wins 12, loses 8, wins 5, loses 15, then wins 3. What is his final score?",
+      "options": [
+        "-7",
+        "-3",
+        "3",
+        "7",
+        "-5"
+      ],
+      "correct": 1,
+      "correctAnswer": "-3",
+      "explanation": "Start: 0. Win 12: 0 + 12 = 12. Lose 8: 12 − 8 = 4. Win 5: 4 + 5 = 9. Lose 15: 9 − 15 = −6. Win 3: −6 + 3 = −3. His final score is −3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A lift is on floor −3. It goes up 8 floors, then down 5 floors, then down 4 floors. Which floor is it on now?",
+      "options": [
+        "Floor −4",
+        "Floor −2",
+        "Floor 0",
+        "Floor 2",
+        "Floor 4"
+      ],
+      "correct": 0,
+      "correctAnswer": "Floor −4",
+      "explanation": "Start: floor −3. Up 8: −3 + 8 = 5. Down 5: 5 − 5 = 0. Down 4: 0 − 4 = −4. The lift is on floor −4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The temperatures in five cities are: Aberdeen −4°C, Belfast −1°C, Cardiff 3°C, Dover 2°C, Edinburgh −6°C. What is the difference between the warmest and coldest cities?",
+      "options": [
+        "5°C",
+        "7°C",
+        "9°C",
+        "10°C",
+        "3°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "9°C",
+      "explanation": "Warmest: Cardiff at 3°C. Coldest: Edinburgh at −6°C. Difference: 3 − (−6) = 3 + 6 = 9°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Oliver has −£8 in his account. He receives £15, spends £22, then receives £10. What is his final balance?",
+      "options": [
+        "-£15",
+        "-£5",
+        "£5",
+        "£15",
+        "-£25"
+      ],
+      "correct": 1,
+      "correctAnswer": "-£5",
+      "explanation": "Start: −£8. Receive £15: −8 + 15 = £7. Spend £22: 7 − 22 = −£15. Receive £10: −15 + 10 = −£5. His final balance is −£5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 133,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence starts: 20, 14, 8, 2, ... What is the first negative term in this sequence?",
+      "options": [
+        "-2",
+        "-4",
+        "-6",
+        "-8",
+        "-10"
+      ],
+      "correct": 1,
+      "correctAnswer": "-4",
+      "explanation": "The rule is subtract 6 each time. Term 1: 20, Term 2: 14, Term 3: 8, Term 4: 2, Term 5: 2 − 6 = −4. The first negative term is −4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 134,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The temperature at the top of a mountain is −14°C. At the bottom it is 10°C. A hiker is halfway up, where the temperature is exactly halfway between the top and bottom values. What is the temperature where the hiker is?",
+      "options": [
+        "-4°C",
+        "-2°C",
+        "0°C",
+        "2°C",
+        "4°C"
+      ],
+      "correct": 1,
+      "correctAnswer": "-2°C",
+      "explanation": "Difference between bottom and top: 10 − (−14) = 24°C. Half of 24 = 12. Temperature halfway: 10 − 12 = −2°C. Or equivalently: −14 + 12 = −2°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 135,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a science experiment, a liquid starts at 6°C. It is cooled by 4°C every minute. After how many minutes will the temperature first be below −15°C?",
+      "options": [
+        "4 minutes",
+        "5 minutes",
+        "6 minutes",
+        "7 minutes",
+        "8 minutes"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 minutes",
+      "explanation": "Start: 6°C. After 1 min: 6 − 4 = 2°C. After 2 min: 2 − 4 = −2°C. After 3 min: −2 − 4 = −6°C. After 4 min: −6 − 4 = −10°C. After 5 min: −10 − 4 = −14°C (not below −15). After 6 min: −14 − 4 = −18°C (below −15). The answer is 6 minutes. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 136,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Aberdeen is −4°C. It rises by 9°C during the day. What is the new temperature?",
+      "options": [
+        "−13°C",
+        "−5°C",
+        "5°C",
+        "13°C",
+        "4°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "5°C",
+      "explanation": "Start at −4°C and add 9°C: −4 + 9 = 5°C. Count up from −4: go 4 to reach 0, then 5 more to reach 5°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 137,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A lift starts on floor −2. It goes up 6 floors. Which floor does it reach?",
+      "options": [
+        "Floor −8",
+        "Floor −4",
+        "Floor 4",
+        "Floor 8",
+        "Floor 6"
+      ],
+      "correct": 2,
+      "correctAnswer": "Floor 4",
+      "explanation": "Starting floor: −2. Going up 6 floors: −2 + 6 = 4. The lift reaches floor 4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 138,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Priya has −£9 in her bank account. She earns £16 from babysitting. What is her new balance?",
+      "options": [
+        "−£25",
+        "−£7",
+        "£7",
+        "£25",
+        "£9"
+      ],
+      "correct": 2,
+      "correctAnswer": "£7",
+      "explanation": "Start with −£9 and add £16: −9 + 16 = £7. She crosses zero and ends up with £7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 139,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature at dawn was −14°C. By afternoon it had risen by 20°C. What was the afternoon temperature?",
+      "options": [
+        "−34°C",
+        "−6°C",
+        "6°C",
+        "34°C",
+        "14°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "6°C",
+      "explanation": "Start at −14°C and add 20°C: −14 + 20 = 6°C. Count up 14 to reach 0, then 6 more to reach 6°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 140,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A submarine is at −18 metres. It rises 25 metres. What is its new position relative to sea level?",
+      "options": [
+        "43m below",
+        "7m below",
+        "7m above",
+        "43m above",
+        "18m above"
+      ],
+      "correct": 2,
+      "correctAnswer": "7m above",
+      "explanation": "Start at −18 and add 25: −18 + 25 = 7. The submarine is 7 metres above sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 141,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "At 5am the temperature was −11°C. It rose by 3°C every hour until noon. What was the temperature at noon?",
+      "options": [
+        "−2°C",
+        "4°C",
+        "7°C",
+        "10°C",
+        "13°C"
+      ],
+      "correct": 3,
+      "correctAnswer": "10°C",
+      "explanation": "From 5am to noon is 7 hours. Temperature rise: 7 × 3 = 21°C. New temperature: −11 + 21 = 10°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 142,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Kai owes his sister £17. He earns £8 one week and £14 the next. After paying back what he owes, how much does he have left?",
+      "options": [
+        "£3",
+        "£5",
+        "£7",
+        "£22",
+        "£39"
+      ],
+      "correct": 1,
+      "correctAnswer": "£5",
+      "explanation": "Kai starts at −£17. He earns £8: −17 + 8 = −9. He earns £14: −9 + 14 = £5. He has £5 left after clearing his debt. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 143,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Which of these numbers is the largest? −3, −9, −1, −7, −5",
+      "options": [
+        "−3",
+        "−9",
+        "−1",
+        "−7",
+        "−5"
+      ],
+      "correct": 2,
+      "correctAnswer": "−1",
+      "explanation": "−1 is closest to zero, so it is the largest. On a number line, −1 is furthest to the right. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 144,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in five Scottish cities one morning was: Dundee −2°C, Perth −5°C, Stirling 1°C, Inverness −8°C, Glasgow 3°C. Which city was coldest?",
+      "options": [
+        "Dundee",
+        "Perth",
+        "Stirling",
+        "Inverness",
+        "Glasgow"
+      ],
+      "correct": 3,
+      "correctAnswer": "Inverness",
+      "explanation": "−8°C is the lowest temperature. Inverness was the coldest city. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 145,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Put these numbers in order from smallest to largest: 3, −4, 0, −1, 5",
+      "options": [
+        "−4, −1, 0, 3, 5",
+        "−1, −4, 0, 3, 5",
+        "0, −1, −4, 3, 5",
+        "5, 3, 0, −1, −4",
+        "−4, 0, −1, 3, 5"
+      ],
+      "correct": 0,
+      "correctAnswer": "−4, −1, 0, 3, 5",
+      "explanation": "From smallest to largest: −4, −1, 0, 3, 5. Negative numbers come first, then zero, then positives. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 146,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Which number is exactly 7 less than −3?",
+      "options": [
+        "−10",
+        "−4",
+        "4",
+        "10",
+        "−7"
+      ],
+      "correct": 0,
+      "correctAnswer": "−10",
+      "explanation": "7 less than −3 means −3 − 7 = −10. Moving 7 places left on the number line from −3 gives −10. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 147,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Here are five temperatures: −6°C, 2°C, −11°C, 8°C, −3°C. How many of these are below −2°C?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 2,
+      "correctAnswer": "3",
+      "explanation": "Numbers below −2: −6°C ✓, −11°C ✓, −3°C ✓. The numbers 2°C and 8°C are above −2. Three temperatures are below −2°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 148,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "On a number line, which number is exactly halfway between −8 and −2?",
+      "options": [
+        "−6",
+        "−5",
+        "−4",
+        "−3",
+        "−1"
+      ],
+      "correct": 1,
+      "correctAnswer": "−5",
+      "explanation": "The distance from −8 to −2 is 6. Half of 6 is 3. From −8, count up 3: −8 + 3 = −5. So −5 is halfway. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 149,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Five children measure the temperature outside their homes at 7am. Results: Ava −3°C, Ben −7°C, Cara 2°C, Dan −1°C, Eve 4°C. What is the range of their temperatures?",
+      "options": [
+        "7°C",
+        "9°C",
+        "11°C",
+        "13°C",
+        "3°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "11°C",
+      "explanation": "Range = highest − lowest = 4 − (−7) = 4 + 7 = 11°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 150,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Ruby has £5 saved. She buys a comic costing £12. What is her balance now?",
+      "options": [
+        "£17",
+        "£7",
+        "−£7",
+        "−£17",
+        "£12"
+      ],
+      "correct": 2,
+      "correctAnswer": "−£7",
+      "explanation": "5 − 12 = −7. Ruby now owes £7. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 151,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in Bournemouth is 6°C. A cold front causes it to drop by 15°C. What is the new temperature?",
+      "options": [
+        "21°C",
+        "9°C",
+        "−9°C",
+        "−21°C",
+        "15°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "−9°C",
+      "explanation": "6 − 15 = −9°C. The temperature drops below zero. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 152,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A swimmer is at the surface of a pool (0 metres). She dives 4 metres, then dives another 3 metres deeper. What is her position?",
+      "options": [
+        "7m above",
+        "1m below",
+        "−1m below",
+        "7m below",
+        "4m below"
+      ],
+      "correct": 3,
+      "correctAnswer": "7m below",
+      "explanation": "Start at 0. Dive 4m: 0 − 4 = −4. Dive 3m more: −4 − 3 = −7. She is 7 metres below the surface. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 153,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A thermometer reads 3°C. The temperature drops by 3°C each hour for 4 hours. What does the thermometer read after 4 hours?",
+      "options": [
+        "−15°C",
+        "−12°C",
+        "−9°C",
+        "−6°C",
+        "−3°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "−9°C",
+      "explanation": "Drop = 4 × 3 = 12°C. New temperature: 3 − 12 = −9°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 154,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Ethan has £25. He buys a book for £9, a game for £14, and a snack for £8. What is his balance?",
+      "options": [
+        "−£6",
+        "−£4",
+        "£4",
+        "£6",
+        "−£2"
+      ],
+      "correct": 0,
+      "correctAnswer": "−£6",
+      "explanation": "Total spent: 9 + 14 + 8 = £31. Balance: 25 − 31 = −£6. Ethan is £6 overdrawn. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 155,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the difference between −3°C and 5°C?",
+      "options": [
+        "2°C",
+        "5°C",
+        "8°C",
+        "−8°C",
+        "3°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "8°C",
+      "explanation": "From −3 to 5: count 3 from −3 to 0, then 5 from 0 to 5. Difference = 3 + 5 = 8°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 156,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature in the morning was −2°C. By the afternoon it was 6°C. How much did the temperature rise?",
+      "options": [
+        "4°C",
+        "6°C",
+        "8°C",
+        "−8°C",
+        "2°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "8°C",
+      "explanation": "Rise = 6 − (−2) = 6 + 2 = 8°C. The temperature rose by 8 degrees. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 157,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A freezer is at −18°C. Room temperature is 20°C. What is the difference between these temperatures?",
+      "options": [
+        "2°C",
+        "18°C",
+        "20°C",
+        "38°C",
+        "−38°C"
+      ],
+      "correct": 3,
+      "correctAnswer": "38°C",
+      "explanation": "Difference = 20 − (−18) = 20 + 18 = 38°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 158,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "On Monday the temperature was −5°C. On Tuesday it was 9°C. How many degrees warmer was Tuesday?",
+      "options": [
+        "4°C",
+        "9°C",
+        "14°C",
+        "−14°C",
+        "5°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "14°C",
+      "explanation": "Change = 9 − (−5) = 9 + 5 = 14°C. Tuesday was 14 degrees warmer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 159,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The deepest point of a lake is 12 metres below the surface. A bird is flying 8 metres above the surface. What is the distance between the bird and the deepest point?",
+      "options": [
+        "4m",
+        "12m",
+        "16m",
+        "20m",
+        "8m"
+      ],
+      "correct": 3,
+      "correctAnswer": "20m",
+      "explanation": "The deepest point is at −12m and the bird is at +8m. Distance = 8 − (−12) = 8 + 12 = 20m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 160,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Edinburgh recorded −7°C and London recorded 4°C on the same day. How much warmer was London?",
+      "options": [
+        "3°C",
+        "7°C",
+        "11°C",
+        "−11°C",
+        "4°C"
+      ],
+      "correct": 2,
+      "correctAnswer": "11°C",
+      "explanation": "Difference = 4 − (−7) = 4 + 7 = 11°C. London was 11 degrees warmer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 161,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What is the difference between −13 and −4?",
+      "options": [
+        "4",
+        "9",
+        "13",
+        "17",
+        "−9"
+      ],
+      "correct": 1,
+      "correctAnswer": "9",
+      "explanation": "From −13 to −4 is 9 places to the right on the number line. Difference = −4 − (−13) = −4 + 13 = 9. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 162,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "The highest temperature ever recorded in the UK was 40°C. The lowest was −27°C. What is the difference between these record temperatures?",
+      "options": [
+        "13°C",
+        "27°C",
+        "40°C",
+        "53°C",
+        "67°C"
+      ],
+      "correct": 4,
+      "correctAnswer": "67°C",
+      "explanation": "Difference = 40 − (−27) = 40 + 27 = 67°C. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 163,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A submarine is at −45 metres. A helicopter is at 120 metres above sea level. What is the distance between them?",
+      "options": [
+        "75m",
+        "120m",
+        "145m",
+        "165m",
+        "210m"
+      ],
+      "correct": 3,
+      "correctAnswer": "165m",
+      "explanation": "Distance = 120 − (−45) = 120 + 45 = 165m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 164,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What is the next number in this sequence? 4, 2, 0, −2, ...?",
+      "options": [
+        "−6",
+        "−4",
+        "−3",
+        "−1",
+        "0"
+      ],
+      "correct": 1,
+      "correctAnswer": "−4",
+      "explanation": "The pattern is subtract 2 each time. After −2, the next number is −2 − 2 = −4. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 165,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A sequence counts down: 5, 3, 1, −1, −3. What comes next?",
+      "options": [
+        "−7",
+        "−6",
+        "−5",
+        "−4",
+        "−3"
+      ],
+      "correct": 2,
+      "correctAnswer": "−5",
+      "explanation": "The pattern is subtract 2 each time. After −3, the next number is −3 − 2 = −5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 166,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What number is halfway between −4 and 4?",
+      "options": [
+        "−2",
+        "−1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": 2,
+      "correctAnswer": "0",
+      "explanation": "The distance from −4 to 4 is 8. Half of 8 is 4. From −4, count up 4: −4 + 4 = 0. So 0 is exactly halfway. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 167,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sequence starts: 7, 4, 1, −2, −5, ... What is the 8th term?",
+      "options": [
+        "−14",
+        "−11",
+        "−8",
+        "−5",
+        "−17"
+      ],
+      "correct": 0,
+      "correctAnswer": "−14",
+      "explanation": "The rule is subtract 3 each time. Term 6: −8, Term 7: −11, Term 8: −14. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 168,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A number line shows points at −9, −6, −3, 0, 3, 6. What is the rule for this sequence?",
+      "options": [
+        "Add 2",
+        "Add 3",
+        "Subtract 3",
+        "Add 6",
+        "Multiply by 2"
+      ],
+      "correct": 1,
+      "correctAnswer": "Add 3",
+      "explanation": "Each number is 3 more than the one before: −9 + 3 = −6, −6 + 3 = −3, −3 + 3 = 0, and so on. The rule is add 3. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 169,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "A sequence starts: 15, 11, 7, 3, ... What is the first negative number in this sequence?",
+      "options": [
+        "−5",
+        "−3",
+        "−1",
+        "0",
+        "−7"
+      ],
+      "correct": 2,
+      "correctAnswer": "−1",
+      "explanation": "Subtract 4 each time. Term 5: 3 − 4 = −1. The first negative number is −1. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 170,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A sequence starts: 12, 7, 2, −3, −8, ... What is the sum of the 6th and 7th terms?",
+      "options": [
+        "−31",
+        "−26",
+        "−21",
+        "−16",
+        "−11"
+      ],
+      "correct": 1,
+      "correctAnswer": "−26",
+      "explanation": "Subtract 5 each time. Term 6: −8 − 5 = −13. Term 7: −13 − 5 = −18. Sum: −13 + (−18) = −31. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 171,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A temperature starts at 10°C and drops by 3°C each hour. After how many hours will it first be below −5°C?",
+      "options": [
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "7 hours",
+        "8 hours"
+      ],
+      "correct": 2,
+      "correctAnswer": "6 hours",
+      "explanation": "After 1h: 7°C. After 2h: 4°C. After 3h: 1°C. After 4h: −2°C. After 5h: −5°C (not below −5). After 6h: −8°C (below −5). Answer: 6 hours. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 172,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A submarine is at −20 metres. It rises 8 metres. What is its new depth?",
+      "options": [
+        "−28m",
+        "−12m",
+        "12m",
+        "28m",
+        "−8m"
+      ],
+      "correct": 1,
+      "correctAnswer": "−12m",
+      "explanation": "Start at −20 and add 8: −20 + 8 = −12. The submarine is still 12 metres below sea level. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 173,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "The temperature is −10°C. It warms up by 4°C. What is the new temperature?",
+      "options": [
+        "−14°C",
+        "−6°C",
+        "6°C",
+        "14°C",
+        "−4°C"
+      ],
+      "correct": 1,
+      "correctAnswer": "−6°C",
+      "explanation": "Start at −10°C and add 4°C: −10 + 4 = −6°C. It warms up but stays below zero. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 174,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "A cave explorer is 40 metres underground. She climbs up 15 metres, rests, then climbs up another 12 metres. What is her position?",
+      "options": [
+        "13m below ground",
+        "13m above ground",
+        "27m below ground",
+        "67m below ground",
+        "53m below ground"
+      ],
+      "correct": 0,
+      "correctAnswer": "13m below ground",
+      "explanation": "Start at −40. Climb 15: −40 + 15 = −25. Climb 12 more: −25 + 12 = −13. She is 13 metres below ground. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 175,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "A car park has floors numbered −2, −1, 0, 1, 2, 3. James parks on floor −2 and takes the lift to floor 3. How many floors does he travel?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 4,
+      "correctAnswer": "5",
+      "explanation": "From floor −2 to floor 3: count −2 → −1 → 0 → 1 → 2 → 3. That is 5 floors. Or 3 − (−2) = 5. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 176,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "In a maths challenge, Team A scores +12, −5, +8, −3. What is their total score?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14",
+        "28"
+      ],
+      "correct": 2,
+      "correctAnswer": "12",
+      "explanation": "Total: 12 + (−5) + 8 + (−3) = 12 − 5 + 8 − 3 = 12. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 177,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "The temperature at the top of Ben Nevis is −8°C. At sea level it is 5°C. The temperature drops by 1°C for every 150 metres you climb. How high is the top from sea level?",
+      "options": [
+        "1,200m",
+        "1,500m",
+        "1,800m",
+        "1,950m",
+        "2,100m"
+      ],
+      "correct": 3,
+      "correctAnswer": "1,950m",
+      "explanation": "Temperature difference: 5 − (−8) = 13°C. At 1°C per 150m: 13 × 150 = 1,950m. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 178,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Maisie starts with £30. She buys lunch for £7, receives £5 pocket money, buys a book for £19, and then spends £15 on a gift. What is her balance?",
+      "options": [
+        "−£6",
+        "−£4",
+        "£4",
+        "£6",
+        "−£12"
+      ],
+      "correct": 0,
+      "correctAnswer": "−£6",
+      "explanation": "Start: £30. Buy lunch: 30 − 7 = 23. Receive £5: 23 + 5 = 28. Buy book: 28 − 19 = 9. Buy gift: 9 − 15 = −6. Balance: −£6. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 179,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "In a TV quiz, each correct answer earns 10 points and each wrong answer loses 4 points. After 12 questions, a contestant has 64 points. How many did she get wrong?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "correctAnswer": "4",
+      "explanation": "Let w = wrong answers. Correct = 12 − w. Score: 10(12 − w) − 4w = 64. So 120 − 10w − 4w = 64. 120 − 14w = 64. 14w = 56. w = 4. She got 4 wrong. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

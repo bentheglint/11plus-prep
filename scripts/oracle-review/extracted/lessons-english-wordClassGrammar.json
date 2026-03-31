@@ -1,0 +1,1956 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "wordClassGrammar",
+    "displayName": "Word Class",
+    "extractedAt": "2026-03-30T13:51:13.788Z",
+    "subConceptCount": 8,
+    "lessonCount": 16,
+    "screenCount": 64,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "nouns",
+      "name": "Nouns — Common, Proper, and Abstract",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "nouns-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise common, proper, and abstract nouns (naming words — abstract nouns are things you can't touch, like happiness or fear). You use these every day without even realising!",
+            "Why proper nouns need a capital letter — get this right and you'll never lose marks for it"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Amira",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What type of word is \"dog\"?",
+              "body": "Look at this sentence:\n\n*\"Amira felt happiness when she saw her dog in the park in London.\"*\n\nDid you know this sentence has **three different types of noun** hiding in it? A **noun** (a naming word) is a word for a person, place, thing, or idea. Can you spot them all?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Amira felt happiness when she saw her dog in the park in London.",
+                "highlightWords": [
+                  {
+                    "word": "dog",
+                    "color": "#3b82f6"
+                  },
+                  {
+                    "word": "London",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "word": "happiness",
+                    "color": "#f59e0b"
+                  }
+                ],
+                "label": "Three types of noun:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three types of noun",
+              "body": "Let's look at each noun in the sentence:\n\n**\"Amira felt happiness when she saw her dog in the park in London.\"**\n\n**dog** — You can see and touch a dog — it's a common noun.\n**London** — London is the name of a specific place — it needs a capital letter.\n**happiness** — You can't touch happiness — it's a feeling, so it's an abstract noun.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false",
+                "correctFeedback": "Fantastic! Common nouns name everyday things, proper nouns name specific places or people, and abstract nouns name feelings or ideas. You're getting the hang of this!",
+                "incorrectFeedback": "Nearly there! Common = everyday things (dog, table). Proper = specific names (London). Abstract = feelings/ideas (happiness, courage). Give it another go!"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"dog\" → Common noun",
+                    "why": "You can see and touch a dog — it's a common noun"
+                  },
+                  {
+                    "text": "\"London\" → Proper noun",
+                    "why": "London is the name of a specific place — it needs a capital letter"
+                  },
+                  {
+                    "text": "\"happiness\" → Abstract noun",
+                    "why": "You can't touch happiness — it's a feeling, so it's an abstract noun"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Amira felt happiness when she saw her dog in the park in London.\"*\n\nWhat type of noun is **\"happiness\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of noun is \"happiness\"?",
+                "options": [
+                  "Common noun",
+                  "Proper noun",
+                  "Abstract noun",
+                  "Verb",
+                  "Adjective"
+                ],
+                "correctAnswer": "Abstract noun",
+                "correctFeedback": "Brilliant! \"happiness\" is an abstract noun because happiness is a feeling — you can't see it or touch it, so it's abstract. ✓",
+                "incorrectFeedback": "Not quite! \"happiness\" is an abstract noun — happiness is a feeling — you can't see it or touch it, so it's abstract."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Amira felt happiness when she saw her dog in the park in London.",
+                "highlightWords": [
+                  {
+                    "word": "happiness",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"happiness\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three types of noun — you've nailed it!",
+              "body": "Every noun fits into one of these three groups. Here's your quick guide to tell them apart:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Common noun = a general thing",
+                    "why": "dog, chair, school — no capital letter needed"
+                  },
+                  {
+                    "text": "Proper noun = the name of a specific person, place, or thing",
+                    "why": "London, Tuesday, Mr Smith — always a capital letter"
+                  },
+                  {
+                    "text": "Abstract noun = a feeling or idea",
+                    "why": "love, fear, bravery — you can't touch it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "nouns-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why proper nouns always need a capital letter — this comes up in the exam all the time!",
+            "How to spot when a noun has been wrongly classified"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Olivia",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Someone wrote this sentence:\n\n*\"olivia went to bristol on tuesday.\"*\n\nSomething's not right here. Can you spot the mistake? Look carefully!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "olivia went to bristol on tuesday.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Proper nouns need capital letters!",
+              "body": "Olivia, Bristol, and Tuesday are all proper nouns — they name a specific person, city, and day. Proper nouns must start with a capital letter.\n\nThe corrected sentence is:\n\n**\"Olivia went to Bristol on Tuesday.\"**\n\nThe proper nouns are: **Olivia, Bristol, Tuesday**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"olivia went to bristol on tuesday.\"",
+                    "why": "Missing capital letters on proper nouns"
+                  },
+                  {
+                    "text": "RIGHT: \"Olivia went to Bristol on Tuesday.\"",
+                    "why": "Olivia, Bristol, Tuesday are all proper nouns"
+                  },
+                  {
+                    "text": "Proper nouns = specific names",
+                    "result": "Always use a capital letter!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Which word in this sentence should have a capital letter: \"my friend went to cardiff\"?",
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which word in this sentence should have a capital letter: \"my friend went to cardiff\"?",
+                "options": [
+                  "Cardiff",
+                  "friend",
+                  "went",
+                  "swimming",
+                  "the"
+                ],
+                "correctAnswer": "Cardiff",
+                "correctFeedback": "Well done! Cardiff is the name of a specific city, so it's a proper noun and needs a capital letter. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Cardiff\" — Cardiff is the name of a specific city, so it's a proper noun and needs a capital letter."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The capital letter rule",
+              "body": "Proper nouns always need a **capital letter**. Here's what counts:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Names of people: Amira, Jack, Mrs Patel",
+                    "why": "Specific people = capital letter"
+                  },
+                  {
+                    "text": "Names of places: London, Bristol, France",
+                    "why": "Specific places = capital letter"
+                  },
+                  {
+                    "text": "Days and months: Monday, January",
+                    "why": "Specific times = capital letter ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs — Action, Being, and Helping",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "verbs-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot action verbs (doing words), being verbs (am, is, are), and helping verbs (words that support the main verb, like have or will) — verbs are the engine of every sentence!",
+            "Why every sentence needs at least one verb — without one, it's like a car without wheels"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How many verbs can you find?",
+              "body": "Look at this sentence:\n\n*\"Aisha was running because she could hear the bell.\"*\n\nDid you know every single sentence you've ever read has a **verb** in it? A verb tells you about an action, a state, or what helps the sentence work. This sentence has **three types** hiding in it — can you find them?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Aisha was running because she could hear the bell.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three types of verb",
+              "body": "Let's find the verbs in:\n\n**\"Aisha was running because she could hear the bell.\"**\n\n**running** — Running is something you do — it's an action verb.\n**was** — 'Was' tells us about a state of being — it's a being verb (is, am, was, are, were).\n**could** — 'Could' helps the main verb 'hear' — it's a helping verb (can, could, should, might, will).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false",
+                "correctFeedback": "Well done! Action verbs show doing, being verbs show existing (is, was, are), and helping verbs support the main verb.",
+                "incorrectFeedback": "Not quite. Action = doing something (ran, jumped). Being = existing (is, was). Helping = supports another verb (have, will)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"running\" → Action verb",
+                    "why": "Running is something you do — it's an action verb"
+                  },
+                  {
+                    "text": "\"was\" → Being verb",
+                    "why": "'Was' tells us about a state of being — it's a being verb (is, am, was, are, were)"
+                  },
+                  {
+                    "text": "\"could\" → Helping verb",
+                    "why": "'Could' helps the main verb 'hear' — it's a helping verb (can, could, should, might, will)"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Aisha was running because she could hear the bell.\"*\n\nWhat type of verb is **\"could\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of verb is \"could\"?",
+                "options": [
+                  "Action verb",
+                  "Being verb",
+                  "Helping verb",
+                  "Noun",
+                  "Adjective"
+                ],
+                "correctAnswer": "Helping verb",
+                "correctFeedback": "Brilliant! 'could' helps the verb 'hear' — it tells us about ability, so it's a helping verb. ✓",
+                "incorrectFeedback": "Not quite! \"could\" is a helping verb — 'could' helps the verb 'hear' — it tells us about ability, so it's a helping verb."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Aisha was running because she could hear the bell.",
+                "highlightWords": [
+                  {
+                    "word": "could",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"could\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Three types of verb — brilliant!",
+              "body": "Every sentence needs a verb — and now you know how to spot all three types:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Action verb = a doing word",
+                    "why": "run, write, eat, jump, sing"
+                  },
+                  {
+                    "text": "Being verb = am, is, are, was, were",
+                    "why": "They tell us about a state, not an action"
+                  },
+                  {
+                    "text": "Helping verb = can, could, should, might, will",
+                    "why": "They help the main verb — never appear alone ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "verbs-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to check a sentence has a verb — the quickest grammar check you'll ever learn!",
+            "Why a group of words without a verb is not a sentence"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Tom",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is this a proper sentence?",
+              "body": "Tom wrote this:\n\n*\"The tall boy with the red backpack.\"*\n\nIt looks like a sentence... but something really important is missing! Can you work out what?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The tall boy with the red backpack.",
+                "highlightWords": [],
+                "label": "Read carefully:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Every sentence needs a verb!",
+              "body": "There's no verb — we don't know what the boy is doing or being.\n\nWithout a verb, it's just a **fragment** (an incomplete sentence). Watch what happens when we add a verb:\n\n**\"The tall boy with the red backpack ran to school.\"**\n\nNow it's a complete sentence because **\"ran\"** tells us what happened.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Fragment: \"The tall boy with the red backpack.\"",
+                    "why": "No verb = not a sentence"
+                  },
+                  {
+                    "text": "Add a verb: \"ran\"",
+                    "why": "Now we know what happened!"
+                  },
+                  {
+                    "text": "Sentence: \"The tall boy with the red backpack ran to school.\"",
+                    "result": "Complete sentence!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Is this a complete sentence?\n\n*\"The old castle on the hill.\"*",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is \"The old castle on the hill.\" a complete sentence?",
+                "options": [
+                  "Yes — it's complete",
+                  "No — it has no verb",
+                  "No — it has no noun",
+                  "No — it has no adjective",
+                  "Yes — it has a full stop"
+                ],
+                "correctAnswer": "No — it has no verb",
+                "correctFeedback": "Well done! That's right — this group of words has no verb, so it's not a complete sentence. It needs a doing or being word. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"No — it has no verb\" because this group of words has no verb, so it's not a complete sentence. It needs a doing or being word."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The tall boy with the red backpack.",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The verb rule for sentences",
+              "body": "A group of words is only a sentence if it has a **verb**. No verb = just a fragment.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Every sentence needs a verb",
+                    "why": "A doing, being, or helping word"
+                  },
+                  {
+                    "text": "No verb = a fragment (not a sentence)",
+                    "why": "'The tall boy.' — what about him?"
+                  },
+                  {
+                    "text": "Add a verb to fix it",
+                    "why": "'The tall boy ran home.' — now it's complete! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjectives-adverbs",
+      "name": "Adjectives and Adverbs",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "adjectives-adverbs-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell adjectives (describing words) and adverbs (words that describe how, when, or where something happens) apart — they're easily confused, but you'll learn the trick!",
+            "Why adjectives describe nouns (naming words) and adverbs describe verbs (doing words)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Sophie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Adjective or adverb?",
+              "body": "Look at this sentence:\n\n*\"The tiny kitten purred loudly on the soft blanket.\"*\n\n**Adjectives** (describing words) describe nouns (things). **Adverbs** describe verbs (actions — how something is done). They both make sentences more interesting — but they do different jobs! Knowing which is which is a real 11+ superpower.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The tiny kitten purred loudly on the soft blanket.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Adjectives describe nouns, adverbs describe verbs",
+              "body": "In the sentence: **\"The tiny kitten purred loudly on the soft blanket.\"**\n\n**\"tiny\"** describes the noun **\"kitten\"** → it's an **adjective**.\n**\"soft\"** describes the noun **\"blanket\"** → it's an **adjective**.\n**\"loudly\"** describes the verb **\"purred\"** → it's an **adverb**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false",
+                "correctFeedback": "Well done! Adjectives describe nouns (what kind?) and adverbs describe verbs (how?).",
+                "incorrectFeedback": "Not quite. Adjectives describe nouns (beautiful, enormous). Adverbs describe verbs — many end in -ly (quickly, slowly, carefully)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"tiny\" → Adjective",
+                    "why": "Describes the kitten (a noun)"
+                  },
+                  {
+                    "text": "\"soft\" → Adjective",
+                    "why": "Describes the blanket (a noun)"
+                  },
+                  {
+                    "text": "\"loudly\" → Adverb",
+                    "why": "Describes how something purred (a verb)"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"The tiny kitten purred loudly on the soft blanket.\"*\n\nIs **\"loudly\"** an adjective or an adverb?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is \"loudly\" an adjective or an adverb?",
+                "options": [
+                  "Adjective",
+                  "Adverb",
+                  "Noun",
+                  "Verb",
+                  "Pronoun"
+                ],
+                "correctAnswer": "Adverb",
+                "correctFeedback": "Brilliant! 'loudly' describes how the kitten purred — it tells us more about the verb, so it's an adverb. ✓",
+                "incorrectFeedback": "Not quite! \"loudly\" is an adverb — 'loudly' describes how the kitten purred — it tells us more about the verb, so it's an adverb."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "The tiny kitten purred loudly on the soft blanket.",
+                "highlightWords": [
+                  {
+                    "word": "loudly",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"loudly\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Adjective vs adverb — the easy test",
+              "body": "Here's a simple trick that works every time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ask: does it describe a THING?",
+                    "why": "If yes → adjective (the tall tree, a red bus)"
+                  },
+                  {
+                    "text": "Ask: does it describe an ACTION?",
+                    "why": "If yes → adverb (ran quickly, sang beautifully)"
+                  },
+                  {
+                    "text": "Many adverbs end in -ly",
+                    "why": "But not all! 'fast' and 'well' are adverbs too ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "adjectives-adverbs-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why you can't use an adjective (describing word) where an adverb (how/when/where word) belongs",
+            "How to fix adjective/adverb mix-ups"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Harry",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Harry wrote this:\n\n*\"Harry ran quick to the shop.\"*\n\nIt sounds almost right... but one sneaky word is wrong. Can you spot it? This mistake catches out grown-ups too!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Harry ran quick to the shop.",
+                "highlightWords": [],
+                "label": "Read carefully:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Adjective used where an adverb belongs!",
+              "body": "Harry used 'quick' (an adjective) instead of 'quickly' (an adverb).\n\n'Quick' describes a thing (adjective), but here we need a word to describe how Harry ran (adverb).\n\nThe corrected sentence is:\n**\"Harry ran quickly to the shop.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"quick\"",
+                    "why": "This is an adjective (describes a thing)"
+                  },
+                  {
+                    "text": "RIGHT: \"quickly\"",
+                    "why": "This is an adverb (describes how something is done)"
+                  },
+                  {
+                    "text": "\"Harry ran quickly to the shop.\"",
+                    "result": "Now the sentence is correct!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "This sentence has the same type of mistake:\n\n*\"She sang beautiful at the concert.\"*\n\nWhat should **\"beautiful\"** be changed to?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What should \"beautiful\" be changed to?",
+                "options": [
+                  "beautifully",
+                  "beautiful",
+                  "more beautiful",
+                  "very beautiful",
+                  "most beautiful"
+                ],
+                "correctAnswer": "beautifully",
+                "correctFeedback": "Well done! 'beautiful' is an adjective, but we need an adverb to describe how she sang — the correct word is 'beautifully'. ✓",
+                "incorrectFeedback": "Not quite! The correct word is \"beautifully\" — 'beautiful' is an adjective, but we need an adverb to describe how she sang — the correct word is 'beautifully'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Harry ran quick to the shop.",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The adjective/adverb swap rule",
+              "body": "If a word describes **how something is done**, it must be an **adverb** — not an adjective.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Adjectives describe things (nouns)",
+                    "why": "a quick runner, a neat page"
+                  },
+                  {
+                    "text": "Adverbs describe actions (verbs)",
+                    "why": "ran quickly, wrote neatly"
+                  },
+                  {
+                    "text": "To fix: add -ly to make it an adverb",
+                    "why": "quick → quickly, neat → neatly ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronouns-prepositions",
+      "name": "Pronouns and Prepositions",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "pronouns-prepositions-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to use pronouns (words like he, she, it, they that replace a noun) to avoid repetition",
+            "How to recognise that prepositions (position words like in, on, under, between) show where or when something is"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Poppy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why does this sound odd?",
+              "body": "Read this sentence:\n\n*\"Poppy put Poppy's bag on the chair. Then Poppy sat beside the chair.\"*\n\nYikes — that sounds clunky because the name **Poppy** is repeated too many times! **Pronouns** (words used instead of a name, like 'he', 'she', 'they') fix this. Imagine how annoying conversations would be if we had to say everyone's name every single time!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Poppy put Poppy's bag on the chair. Then Poppy sat beside the chair.",
+                "highlightWords": [],
+                "label": "This sentence sounds clunky:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pronouns replace nouns, prepositions show position",
+              "body": "Look how pronouns make the sentence better:\n\n**\"Poppy put her bag on the chair. Then she sat beside it.\"**\n\n**\"her\"** replaces **\"Poppy's\"**\n**\"she\"** replaces **\"Poppy\"**\n**\"it\"** replaces **\"the chair\"**\n\nAnd the **prepositions** (words that show position or time): **\"on\"** shows where the bag is (position), **\"beside\"** shows where she sat (position).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A pronoun replaces a ____ to avoid repetition",
+                "options": [
+                  "noun",
+                  "verb",
+                  "adjective",
+                  "preposition"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Pronouns like \"he\", \"she\", \"it\", and \"they\" replace nouns so we don't keep repeating names. ✓",
+                "incorrectFeedback": "Not quite — a pronoun replaces a NOUN. Instead of saying \"Daisy\" over and over, we say \"she\"."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"she\" replaces \"Poppy\"",
+                    "why": "Pronoun — avoids repeating the name"
+                  },
+                  {
+                    "text": "\"her\" replaces \"Poppy's\"",
+                    "why": "Pronoun — avoids repeating the name"
+                  },
+                  {
+                    "text": "\"on\" shows where the bag is (position)",
+                    "why": "Preposition — tells us where or when"
+                  },
+                  {
+                    "text": "\"beside\" shows where she sat (position)",
+                    "why": "Preposition — tells us where or when"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Poppy put her bag on the chair. Then she sat beside it.\"*\n\nWhat type of word is **\"beside\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of word is \"beside\"?",
+                "options": [
+                  "Pronoun",
+                  "Preposition",
+                  "Noun",
+                  "Verb",
+                  "Adjective"
+                ],
+                "correctAnswer": "Preposition",
+                "correctFeedback": "Brilliant! 'beside' shows where Poppy sat in relation to the chair — it tells us position, so it's a preposition. ✓",
+                "incorrectFeedback": "Not quite! \"beside\" is a preposition — 'beside' shows where Poppy sat in relation to the chair — it tells us position, so it's a preposition."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Is \"beside\" a pronoun or a preposition?",
+                "highlightWords": [
+                  {
+                    "word": "beside",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "Which word class?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Pronouns and prepositions — well done!",
+              "body": "Great work! These two word types do very different jobs:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Pronoun = replaces a noun",
+                    "why": "he, she, it, they, we, his, her, them"
+                  },
+                  {
+                    "text": "Preposition = shows position or time",
+                    "why": "in, on, at, under, behind, before, after"
+                  },
+                  {
+                    "text": "Quick test: can it replace a name?",
+                    "why": "Yes → pronoun. No → probably a preposition ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "pronouns-prepositions-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "Why using the wrong pronoun (a word like he, she, it, they) causes confusion",
+            "How to check a pronoun matches the noun it replaces"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lucas",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the pronoun mistake?",
+              "body": "Someone wrote this:\n\n*\"Lucas told Maya that he needed his book back, but she said it was hers. Then he lost them.\"*\n\nThe pronouns don't match properly. Can you spot what's wrong?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Lucas told Maya that he needed his book back, but she said it was hers. Then he lost them.",
+                "highlightWords": [],
+                "label": "Read carefully:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Pronouns must match!",
+              "body": "The mistake: Lucas used 'them' at the end, but it should be 'it' because he's talking about one book.\n\n'them' is a plural pronoun (for more than one thing), but there's only one book — so we need 'it'.\n\nCorrected: **\"Lucas told Maya that he needed his book back, but she said it was hers. Then he lost it.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"them\"",
+                    "why": "Doesn't match the noun it replaces"
+                  },
+                  {
+                    "text": "RIGHT: \"it\"",
+                    "why": "Now it matches!"
+                  },
+                  {
+                    "text": "Pronouns must match in number and gender",
+                    "result": "One person = he/she, many = they"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What's wrong with this sentence?\n\n*\"Ella and her friend went to the park. He had a great time.\"*\n\nWhat should **\"He\"** be?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What should \"He\" be changed to?",
+                "options": [
+                  "They",
+                  "He",
+                  "She",
+                  "It",
+                  "We"
+                ],
+                "correctAnswer": "They",
+                "correctFeedback": "Well done! the sentence is about Ella AND her friend (two people), so we need 'they' not 'he'. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"They\" because the sentence is about Ella AND her friend (two people), so we need 'they' not 'he'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Lucas told Maya that he needed his book back, but she said it was hers. Then he lost them.",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Pronoun matching rules",
+              "body": "A pronoun must match the noun it replaces. Check these three things:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Number: one = he/she/it, many = they/them",
+                    "why": "One dog = it, three dogs = them"
+                  },
+                  {
+                    "text": "Gender: male = he/him, female = she/her",
+                    "why": "Match the person you're talking about"
+                  },
+                  {
+                    "text": "Read it back: does it make sense?",
+                    "why": "If it sounds odd, the pronoun is probably wrong ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conjunctions-determiners",
+      "name": "Conjunctions and Determiners",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "conjunctions-determiners-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise that conjunctions (joining words like and, but, because) join words, phrases, or sentences",
+            "How to spot determiners (words like the, a, this, some that sit before a noun)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Phoebe",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Two small but mighty word types!",
+              "body": "Look at this sentence:\n\n*\"Phoebe wanted the cake and the biscuit, but she could only pick some of them because her mum said every treat costs money.\"*\n\nDid you know some of the smallest words in English do the biggest jobs? **Conjunctions** (joining words like 'and', 'but', 'because') connect parts of a sentence. **Determiners** sit before nouns and tell us *which one* or *how many*.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Phoebe wanted the cake and the biscuit, but she could only pick some of them because her mum said every treat costs money.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Conjunctions join, determiners specify",
+              "body": "In the sentence: **\"Phoebe wanted the cake and the biscuit, but she could only pick some of them because her mum said every treat costs money.\"**\n\n**Conjunctions** (joining words):\n\"and\" — joins two things Phoebe wanted (cake and biscuit)\n\"but\" — introduces a contrast (she wanted both, but could only pick some)\n\"because\" — gives the reason (why she could only pick some)\n\n**Determiners** (words before a noun that tell which one):\n\"the\" before \"cake\" — tells us which cake — a specific one\n\"some\" before \"them\" — tells us how many — not all of them\n\"every\" before \"treat\" — means all of them, each one",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Conjunctions join ideas, determiners sit before nouns, and the type depends on whether the ideas are equal. ✓",
+                "incorrectFeedback": "Not quite — start by finding joining words (conjunctions), then words before nouns (determiners)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"and\" → Conjunction",
+                    "why": "joins two things Phoebe wanted (cake and biscuit)"
+                  },
+                  {
+                    "text": "\"but\" → Conjunction",
+                    "why": "introduces a contrast (she wanted both, but could only pick some)"
+                  },
+                  {
+                    "text": "\"the\" → Determiner",
+                    "why": "Sits before \"cake\" — tells us which cake — a specific one"
+                  },
+                  {
+                    "text": "\"every\" → Determiner",
+                    "why": "Sits before \"treat\" — means all of them, each one"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Phoebe wanted the cake and the biscuit, but she could only pick some of them because her mum said every treat costs money.\"*\n\nWhat type of word is **\"because\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of word is \"because\"?",
+                "options": [
+                  "Conjunction",
+                  "Determiner",
+                  "Pronoun",
+                  "Verb",
+                  "Preposition"
+                ],
+                "correctAnswer": "Conjunction",
+                "correctFeedback": "Brilliant! 'because' joins two parts of the sentence and gives a reason — it's a conjunction. ✓",
+                "incorrectFeedback": "Not quite! \"because\" is a conjunction — 'because' joins two parts of the sentence and gives a reason — it's a conjunction."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Phoebe wanted the cake and the biscuit, but she could only pick some of them because her mum said every treat costs money.",
+                "highlightWords": [
+                  {
+                    "word": "because",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"because\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Conjunctions and determiners — sorted!",
+              "body": "Brilliant work! Here's the simple way to tell them apart:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Conjunction = a joining word",
+                    "why": "and, but, because, so, or, although"
+                  },
+                  {
+                    "text": "Determiner = sits right before a noun",
+                    "why": "a, the, some, many, every, this, those"
+                  },
+                  {
+                    "text": "Quick test: does it join two things?",
+                    "why": "Yes → conjunction. Does it come before a noun? → determiner ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "conjunctions-determiners-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to pick the right conjunction (joining word) for the meaning",
+            "Why 'and', 'but', and 'because' are not interchangeable"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jasmine",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the wrong conjunction?",
+              "body": "Jasmine wrote this:\n\n*\"Jasmine was tired and she kept working.\"*\n\nThe sentence makes sense grammatically, but the **conjunction** gives the wrong meaning. Can you spot which one?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Jasmine was tired and she kept working.",
+                "highlightWords": [],
+                "label": "Read carefully:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Different conjunctions, different meanings!",
+              "body": "Jasmine used 'and' when 'but' would be better, because the two parts contrast (tired vs kept working).\n\n'And' joins things that go together. 'But' joins things that contrast. Being tired and keeping working are opposites, so 'but' fits.\n\nThe corrected sentence:\n**\"Jasmine was tired but she kept working.\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG conjunction: \"and\"",
+                    "why": "Gives the wrong meaning"
+                  },
+                  {
+                    "text": "RIGHT conjunction: \"but\"",
+                    "why": "Now the meaning is clear"
+                  },
+                  {
+                    "text": "\"and\" = adds, \"but\" = contrasts, \"because\" = gives reason",
+                    "result": "Pick the one that matches the meaning!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "This sentence uses the wrong conjunction:\n\n*\"The film was boring and I turned it off.\"*\n\nWhat should **\"and\"** be changed to?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What should \"and\" be changed to?",
+                "options": [
+                  "and",
+                  "but",
+                  "because",
+                  "so",
+                  "or"
+                ],
+                "correctAnswer": "so",
+                "correctFeedback": "Well done! the boring film is the reason for turning it off — 'so' shows a result, which fits better than 'and'. ✓",
+                "incorrectFeedback": "Not quite! The best conjunction here is \"so\" — the boring film is the reason for turning it off — 'so' shows a result, which fits better than 'and'."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Jasmine was tired and she kept working.",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Choosing the right conjunction",
+              "body": "Each conjunction has a specific job. Pick the one that matches the **meaning** you want:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"and\" = adding two things together",
+                    "why": "I like cake and biscuits"
+                  },
+                  {
+                    "text": "\"but\" = showing a contrast or surprise",
+                    "why": "I was tired but I kept going"
+                  },
+                  {
+                    "text": "\"because\" = giving a reason, \"so\" = showing a result",
+                    "why": "I was tired because I ran. I was tired so I sat down. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "words-changing-class",
+      "name": "Words That Change Class in Context",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "words-changing-class-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to understand that the same word can be a different word class (noun, verb, adjective, etc.) in different sentences — this blows people's minds!",
+            "How to use the 'function test' — ask what job the word is doing right now"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "One word, three different jobs!",
+              "body": "The word **\"light\"** can be used in completely different ways — how cool is that?\n\n1. *\"Please switch on the light.\"*\n2. *\"This bag is very light.\"*\n3. *\"Can you light the candle?\"*\n\nSame word, but the **job it does** changes every time. In the 11+ exam, you need to work out what job the word is doing in THAT sentence.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Please switch on the light.",
+                "highlightWords": [
+                  {
+                    "word": "light",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"light\" here?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The Function Test — what job is the word doing?",
+              "body": "Let's test the word **\"light\"** in each sentence:\n\n**\"Please switch on the light.\"** — Here 'light' is a thing you can switch on — it's a noun.\n**\"This bag is very light.\"** — Here 'light' describes the bag (not heavy) — it's an adjective.\n**\"Can you light the candle?\"** — Here 'light' is an action (setting fire to something) — it's a verb.\n\nThe trick: don't think about what the word *usually* is. Think about what job it's doing **right now**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"Please switch on the light.\" → noun",
+                    "why": "Here 'light' is a thing you can switch on — it's a noun"
+                  },
+                  {
+                    "text": "\"This bag is very light.\" → adjective",
+                    "why": "Here 'light' describes the bag (not heavy) — it's an adjective"
+                  },
+                  {
+                    "text": "\"Can you light the candle?\" → verb",
+                    "why": "Here 'light' is an action (setting fire to something) — it's a verb"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In this sentence:\n*\"This bag is very light.\"*\n\nWhat word class is **\"light\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What word class is \"light\" in this sentence?",
+                "options": [
+                  "Noun",
+                  "Verb",
+                  "Adjective",
+                  "Adverb",
+                  "Preposition"
+                ],
+                "correctAnswer": "Adjective",
+                "correctFeedback": "Brilliant! 'light' describes the bag — it tells us the bag is not heavy, so it's doing the job of an adjective. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Adjective\" — 'light' describes the bag — it tells us the bag is not heavy, so it's doing the job of an adjective."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "This bag is very light.",
+                "highlightWords": [
+                  {
+                    "word": "light",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"light\" here?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The Function Test — your go-to strategy!",
+              "body": "Many English words can be different word classes — and now you know how to handle them. The exam loves testing this! Here's your strategy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the whole sentence carefully",
+                    "why": "Context is everything!"
+                  },
+                  {
+                    "text": "Step 2: Ask — what job is this word doing?",
+                    "why": "Is it naming, describing, doing, or showing position?"
+                  },
+                  {
+                    "text": "Step 3: Match the job to the word class",
+                    "why": "Naming = noun, describing a thing = adjective, doing = verb, describing an action = adverb ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "words-changing-class-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to identify the word class (noun, verb, adjective, etc.) of the SAME word in different sentences",
+            "Why context changes everything about a word's class"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is \"play\" always a verb?",
+              "body": "Someone said 'play' is always a verb. But is that really true?",
+              "bodyParts": [
+                {
+                  "type": "text",
+                  "content": "Someone said 'play' is always a verb. Look at these two sentences:"
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "The children play football every Saturday.",
+                    "highlightWords": [
+                      {
+                        "word": "play",
+                        "color": "#6C5CE7"
+                      }
+                    ],
+                    "label": "\"play\" as a verb:"
+                  }
+                },
+                {
+                  "type": "visual",
+                  "component": "SentenceDisplay",
+                  "props": {
+                    "mode": "highlight",
+                    "text": "We went to see a play at the theatre.",
+                    "highlightWords": [
+                      {
+                        "word": "play",
+                        "color": "#22c55e"
+                      }
+                    ],
+                    "label": "\"play\" as a noun:"
+                  }
+                }
+              ],
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Context changes the word class!",
+              "body": "That's wrong! In 'We went to see a play', the word 'play' is a noun — it's a thing you can watch at the theatre.\n\nHere's the proof:\n\n**\"The children play football every Saturday.\"** → **verb**\n**\"We went to see a play at the theatre.\"** → **noun**\n\nAlways check what job the word is doing in **that particular sentence**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Find the word, ask what job it's doing, and check the context for clues. ✓",
+                "incorrectFeedback": "Not quite — start by finding the word, then ask what job it's doing in the sentence."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"The children play football every Saturday.\"",
+                    "why": "\"play\" is a verb here"
+                  },
+                  {
+                    "text": "\"We went to see a play at the theatre.\"",
+                    "why": "\"play\" is a noun here"
+                  },
+                  {
+                    "text": "Same word, different word class!",
+                    "result": "Always check the context"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What word class is **\"play\"** in this sentence?\n\n*\"Ella scored a brilliant play in the netball match.\"*",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What word class is \"play\" in this sentence?",
+                "options": [
+                  "Noun",
+                  "Verb",
+                  "Adjective",
+                  "Adverb",
+                  "Preposition"
+                ],
+                "correctAnswer": "Noun",
+                "correctFeedback": "Well done! 'a play' is a thing (a move or action in a game) — you can put 'a' before it, which shows it's a noun. ✓",
+                "incorrectFeedback": "Not quite! The answer is \"Noun\" — 'a play' is a thing (a move or action in a game) — you can put 'a' before it, which shows it's a noun."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Ella scored a brilliant play in the netball match.",
+                "highlightWords": [
+                  {
+                    "word": "play",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"play\" here?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Never assume — always check!",
+              "body": "The exam often gives you a word and asks what class it is **in that sentence**. Now you know the trick — here's your checklist:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Don't assume! Read the sentence first",
+                    "why": "'play' can be a noun OR a verb"
+                  },
+                  {
+                    "text": "Ask: is it naming, doing, or describing?",
+                    "why": "That tells you the word class"
+                  },
+                  {
+                    "text": "Check: can you put 'a' or 'the' before it?",
+                    "why": "If yes, it's probably a noun in this sentence ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronoun-types",
+      "name": "Types of Pronouns",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "pronoun-types-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to recognise five types of pronoun: personal (I, you, he), possessive (my, your, his), relative (who, which, that), demonstrative (this, that, these, those), and interrogative (who?, what?, which?)",
+            "How to see that each type does a different job in a sentence"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Not all pronouns are the same!",
+              "body": "Look at this sentence:\n\n*\"She told me that the book which was on the shelf was hers.\"*\n\nDid you know this sentence has **three different types of pronoun** hiding in it? Pronouns all replace or refer to nouns, but each type does it in a different way.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She told me that the book which was on the shelf was hers.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Three pronoun types in one sentence",
+              "body": "Let's look at each pronoun in:\n\n**\"She told me that the book which was on the shelf was hers.\"**\n\n**She** — 'She' is a personal pronoun — it replaces a person's name (Aisha).\n**me** — 'me' is also a personal pronoun — it replaces my name.\n**hers** — 'hers' is a possessive pronoun — it shows who owns the book (no apostrophe!).\n**which** — 'which' is a relative pronoun — it starts a clause that tells us more about the book.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false",
+                "correctFeedback": "Well done! Personal pronouns replace names (I, he, she). Possessive show ownership (his, mine). Relative link clauses (who, which, that).",
+                "incorrectFeedback": "Not quite. Personal = replace names (I, he, she, they). Possessive = show ownership (his, mine, theirs). Relative = link clauses (who, which, that)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"She\" → Personal pronoun",
+                    "why": "'She' is a personal pronoun — it replaces a person's name (Aisha)"
+                  },
+                  {
+                    "text": "\"hers\" → Possessive pronoun",
+                    "why": "'hers' is a possessive pronoun — it shows who owns the book (no apostrophe!)"
+                  },
+                  {
+                    "text": "\"which\" → Relative pronoun",
+                    "why": "'which' is a relative pronoun — it starts a clause that tells us more about the book"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"She told me that the book which was on the shelf was hers.\"*\n\nWhat type of pronoun is **\"hers\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of pronoun is \"hers\"?",
+                "options": [
+                  "Personal pronoun",
+                  "Possessive pronoun",
+                  "Relative pronoun",
+                  "Demonstrative pronoun",
+                  "Interrogative pronoun"
+                ],
+                "correctAnswer": "Possessive pronoun",
+                "correctFeedback": "Brilliant! 'hers' shows ownership — the book belongs to her — and it doesn't need an apostrophe. ✓",
+                "incorrectFeedback": "Not quite! \"hers\" is a possessive pronoun — 'hers' shows ownership — the book belongs to her — and it doesn't need an apostrophe."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "She told me that the book which was on the shelf was hers.",
+                "highlightWords": [
+                  {
+                    "word": "hers",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"hers\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Five types of pronoun — you know the key three!",
+              "body": "The 11+ often asks you to name the **type** of pronoun. Here are the three most important ones to remember:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Personal: I, you, he, she, it, we, they, me, him, her, us, them",
+                    "why": "Replace a person or thing's name"
+                  },
+                  {
+                    "text": "Possessive: mine, yours, his, hers, its, ours, theirs",
+                    "why": "Show ownership — NEVER use an apostrophe!"
+                  },
+                  {
+                    "text": "Relative: who, which, that, whose, where, when",
+                    "why": "Start a clause giving more information about a noun ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "pronoun-types-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to identify demonstrative pronouns (this, that, these, those) and interrogative pronouns (who?, what?, which?)",
+            "How to tell pronoun types apart in tricky sentences"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Pointing and asking — two more pronoun types!",
+              "body": "Look at this sentence:\n\n*\"Who left these on the table? That is not where they belong!\"*\n\n**Demonstrative pronouns** point to specific things: **this, that, these, those**.\n**Interrogative pronouns** ask questions: **who, what, which**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Who left these on the table? That is not where they belong!",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The five pronoun types",
+              "body": "There are **five types** of pronoun:\n\n**Personal:** I, you, he, she, it, we, they — replace a person or thing.\n**Possessive:** mine, yours, his, hers, theirs — show ownership.\n**Relative:** who, which, that — add extra information.\n**Demonstrative:** this, that, these, those — point to specific things.\n**Interrogative:** who, what, which — ask questions.\n\nNow spot them in: **\"Who left these on the table? That is not where they belong!\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"Who\" → interrogative pronoun",
+                    "why": "'Who' asks a question — it's an interrogative pronoun"
+                  },
+                  {
+                    "text": "\"these\" → demonstrative pronoun",
+                    "why": "'these' points to specific things nearby — it's a demonstrative pronoun"
+                  },
+                  {
+                    "text": "\"That\" → demonstrative pronoun",
+                    "why": "'That' points to a specific thing — it's a demonstrative pronoun"
+                  },
+                  {
+                    "text": "\"they\" → personal pronoun",
+                    "why": "'they' replaces the noun for the things on the table — it's a personal pronoun"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Who left these on the table? That is not where they belong!\"*\n\nWhat type of pronoun is **\"these\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of pronoun is \"these\"?",
+                "options": [
+                  "Personal pronoun",
+                  "Possessive pronoun",
+                  "Relative pronoun",
+                  "Demonstrative pronoun",
+                  "Interrogative pronoun"
+                ],
+                "correctAnswer": "Demonstrative pronoun",
+                "correctFeedback": "Well done! 'these' points to specific things (the ones on the table) — demonstrative pronouns point to particular things: this, that, these, those. ✓",
+                "incorrectFeedback": "Not quite! \"these\" is a demonstrative pronoun — 'these' points to specific things (the ones on the table) — demonstrative pronouns point to particular things: this, that, these, those."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Who left these on the table? That is not where they belong!",
+                "highlightWords": [
+                  {
+                    "word": "these",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"these\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Quick recap!",
+              "body": "Five pronoun types — ask yourself what the word is doing:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Personal pronouns replace a name",
+                    "why": "I, you, he, she, it, we, they"
+                  },
+                  {
+                    "text": "Possessive pronouns show who owns something",
+                    "why": "mine, yours, his, hers, ours, theirs"
+                  },
+                  {
+                    "text": "Relative pronouns add extra information",
+                    "why": "who, which, that — they link parts of a sentence"
+                  },
+                  {
+                    "text": "Demonstrative pronouns point at something",
+                    "why": "this, that, these, those"
+                  },
+                  {
+                    "text": "Interrogative pronouns ask a question",
+                    "why": "who, what, which — they start a question! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coord-vs-subord",
+      "name": "Coordinating vs Subordinating Conjunctions",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "coord-vs-subord-step",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell coordinating conjunctions (joining words for equal parts: For, And, Nor, But, Or, Yet, So — FANBOYS) from subordinating conjunctions (joining words that start a dependent part: because, although, when)",
+            "Why coordinating conjunctions join equal parts and subordinating conjunctions create dependent clauses (parts that can't stand alone)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "FANBOYS vs the rest!",
+              "body": "Look at this sentence:\n\n*\"Aisha likes maths and science, but she finds spelling tricky because she started learning English late.\"*\n\nSome conjunctions join **equal parts** — these are called **coordinating** conjunctions. Others make one part **depend on** another — these are **subordinating** conjunctions.\n\nHere's a handy trick to remember the coordinating ones: **FANBOYS** (For, And, Nor, But, Or, Yet, So). Once you know FANBOYS, everything else is subordinating!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Aisha likes maths and science, but she finds spelling tricky because she started learning English late.",
+                "highlightWords": [],
+                "label": "Read the sentence:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Coordinating joins equals, subordinating creates dependence",
+              "body": "In the sentence:\n\n**\"Aisha likes maths and science, but she finds spelling tricky because she started learning English late.\"**\n\n**\"and\"** — joins two equal things Aisha likes (maths + science) (coordinating — FANBOYS).\n**\"but\"** — joins two equal clauses that contrast (likes maths and science vs finds spelling tricky) (coordinating — FANBOYS).\n**\"because\"** — introduces a reason that depends on the main clause — 'because she started learning English late' can't stand alone (subordinating).\n\nTest: **\"because she started learning English late\"** cannot be a sentence on its own. It *depends on* **\"she finds spelling tricky\"**.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "FANBOYS (For, And, Nor, But, Or, Yet, So) are all ____ conjunctions",
+                "options": [
+                  "coordinating",
+                  "subordinating",
+                  "correlative",
+                  "relative"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! FANBOYS are all coordinating conjunctions — they join two equal ideas together. ✓",
+                "incorrectFeedback": "Not quite — FANBOYS (For, And, Nor, But, Or, Yet, So) are COORDINATING conjunctions. They join equal ideas."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "\"and\" → Coordinating (FANBOYS)",
+                    "why": "joins two equal things Aisha likes (maths + science)"
+                  },
+                  {
+                    "text": "\"but\" → Coordinating (FANBOYS)",
+                    "why": "joins two equal clauses that contrast (likes maths and science vs finds spelling tricky)"
+                  },
+                  {
+                    "text": "\"because\" → Subordinating",
+                    "why": "introduces a reason that depends on the main clause — 'because she started learning English late' can't stand alone"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sentence:\n*\"Aisha likes maths and science, but she finds spelling tricky because she started learning English late.\"*\n\nWhat type of conjunction is **\"because\"**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What type of conjunction is \"because\"?",
+                "options": [
+                  "Coordinating conjunction",
+                  "Subordinating conjunction",
+                  "Preposition",
+                  "Adverb",
+                  "Relative pronoun"
+                ],
+                "correctAnswer": "Subordinating conjunction",
+                "correctFeedback": "Brilliant! 'because' introduces a dependent clause (one that can't stand alone as a sentence) — it's subordinating. ✓",
+                "incorrectFeedback": "Not quite! \"because\" is a subordinating conjunction — 'because' introduces a dependent clause (one that can't stand alone as a sentence) — it's subordinating."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Aisha likes maths and science, but she finds spelling tricky because she started learning English late.",
+                "highlightWords": [
+                  {
+                    "word": "because",
+                    "color": "#6C5CE7"
+                  }
+                ],
+                "label": "What type of word is \"because\"?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "FANBOYS — your secret weapon!",
+              "body": "The 11+ loves asking about conjunction types, and now you have the ultimate cheat code:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "FANBOYS = coordinating conjunctions",
+                    "why": "For, And, Nor, But, Or, Yet, So — that's ALL of them!"
+                  },
+                  {
+                    "text": "Everything else = subordinating",
+                    "why": "because, although, when, while, if, since, unless, until, before, after"
+                  },
+                  {
+                    "text": "The dependence test: can the clause stand alone?",
+                    "why": "If not, the conjunction is subordinating ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "coord-vs-subord-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to identify clause structure with conjunctions (joining words)",
+            "Why subordinate clauses (dependent parts that need the main sentence) can't stand alone as sentences"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is this a complete sentence?",
+              "body": "Grace's teacher marked this as wrong:\n\n*\"Because it was raining.\"*\n\nIt has a capital letter and a full stop — so why isn't it a proper sentence?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Because it was raining.",
+                "highlightWords": [],
+                "label": "Read carefully:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Subordinate clauses can't stand alone!",
+              "body": "A subordinate clause needs a main clause to be a complete sentence. 'Because it was raining' tells us a reason, but doesn't tell us what happened.\n\nHere's how to fix it — add a main clause:\n\n**\"We stayed inside because it was raining.\"**\n\nNow **\"We stayed inside\"** is the main clause (it makes sense alone), and **\"because it was raining\"** is the subordinate clause (it depends on the main clause).",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "true-false"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "WRONG: \"Because it was raining.\"",
+                    "why": "This is only a subordinate clause — it can't be a sentence"
+                  },
+                  {
+                    "text": "\"because\" is a subordinating conjunction",
+                    "why": "It makes the clause depend on something else"
+                  },
+                  {
+                    "text": "RIGHT: \"We stayed inside because it was raining.\"",
+                    "result": "Now it has a main clause + a subordinate clause"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Is this a complete sentence?\n\n*\"Although the sun was shining.\"*",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Is \"Although the sun was shining.\" a complete sentence?",
+                "options": [
+                  "Yes — it's a complete sentence",
+                  "Not a sentence — it's only a subordinate clause",
+                  "Not a sentence — it has no verb",
+                  "Not a sentence — it has no noun",
+                  "Yes — it has a full stop"
+                ],
+                "correctAnswer": "Not a sentence — it's only a subordinate clause",
+                "correctFeedback": "Well done! 'Although the sun was shining' is a subordinate clause — it needs a main clause like 'we took an umbrella' to be complete. ✓",
+                "incorrectFeedback": "Not quite! 'Although the sun was shining' is a subordinate clause — it needs a main clause like 'we took an umbrella' to be complete."
+              },
+              "visualProps": {
+                "mode": "highlight",
+                "text": "Because it was raining.",
+                "highlightWords": [],
+                "label": "Which is correct?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Main clause + subordinate clause = complete sentence",
+              "body": "A subordinate clause **depends** on a main clause. It can't be a sentence on its own. Here's how to check:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Main clause = makes sense on its own",
+                    "why": "'We stayed inside.' — yes, that's a complete sentence"
+                  },
+                  {
+                    "text": "Subordinate clause = depends on something else",
+                    "why": "'Because it was raining.' — raining caused what? We need more!"
+                  },
+                  {
+                    "text": "Spot the conjunction to find the subordinate clause",
+                    "why": "because, although, when, while, if, unless, until, before, after ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

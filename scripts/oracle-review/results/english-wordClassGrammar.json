@@ -1,0 +1,148 @@
+{
+  "reviewedAt": "2026-03-30T16:30:00.000Z",
+  "topic": "wordClassGrammar",
+  "subject": "english",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 404,
+    "lessonsReviewed": 16,
+    "issuesFound": 15,
+    "bySeverity": {
+      "critical": 1,
+      "high": 3,
+      "medium": 6,
+      "low": 5
+    },
+    "difficultyAssessment": "Distribution is D1:121(30%), D2:169(42%), D3:114(28%) — close to GL targets. D1 covers obvious action verbs, clearly descriptive adjectives, -ly adverbs, and simple noun identification. D2 introduces state verbs, prepositions, abstract nouns, and non-ly adverbs. D3 tackles dual-function words, -ly adjectives, flat adverbs, and participles as adjectives. This progression aligns well with Oracle specifications.",
+    "coverageAssessment": "Very broad coverage but significantly exceeds the GL Word Class scope. The Oracle spec states word class questions sit within comprehension (2-3 per paper, passage-based). This topic includes word class identification (nouns, verbs, adjectives, adverbs, prepositions, conjunctions, determiners, pronouns) but ALSO sentence types, punctuation names, literary devices (simile, metaphor, personification, alliteration, onomatopoeia, hyperbole), compound/complex sentences, speech marks, colons, semi-colons, and ellipses. These additional areas are valid English knowledge but belong in separate topics (Punctuation, Sentence Structure, Literary Devices), not crammed into Word Class. The topic name 'Word Class & Grammar' is overly broad.",
+    "teachingEfficacyAssessment": "Lesson coverage is good with 8 sub-concepts and 16 lessons. Nouns (common/proper/abstract/collective), verbs (action/state), adjectives, adverbs, prepositions, conjunctions, determiners, and pronouns all have dedicated lessons. All 404 questions mapped at high confidence. The teach methods are age-appropriate — sorting activities, sentence highlighting, and the 'ask the question' technique for distinguishing adjectives from adverbs.",
+    "topPriorities": [
+      "Fix Q106 — 'nowhere' classified incorrectly as a determiner/pronoun when it is an adverb",
+      "Scope creep: ~100 questions (Q221-Q330) cover sentence types, punctuation, and literary devices rather than word class identification. These should be in separate topics.",
+      "Fix Q123 ambiguity — both 'bitter' and 'empty' are adjectives but question asks for 'the adjective' (singular)",
+      "Add more GL-format questions: passage-based 'What type of word is X?' in context"
+    ]
+  },
+  "issues": [
+    {
+      "id": "ENG-WC-001",
+      "severity": "critical",
+      "type": "incorrect-answer",
+      "questionIds": [106],
+      "description": "Q106 asks what word class 'no', 'neither', 'none', and 'nowhere' belong to, with answer 'Negative determiners and pronouns'. The question's own explanation contradicts the answer: it correctly notes that 'nowhere' is a negative ADVERB, not a determiner or pronoun. You cannot group these four words into a single word class because they span three different classes (determiner, pronoun, adverb). The question is structurally flawed.",
+      "recommendation": "Either remove 'nowhere' from the list (keeping no, neither, none which can all function as determiners/pronouns) or change the answer to acknowledge the mix. Better: split into two questions — one for negative determiners/pronouns and one for negative adverbs (never, nowhere, not)."
+    },
+    {
+      "id": "ENG-WC-002",
+      "severity": "high",
+      "type": "scope-creep",
+      "questionIds": [221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233],
+      "description": "Q221-Q233 test sentence types (statement, question, command, exclamation, rhetorical question). These are grammar concepts but not word class identification. GL tests word class as 'What type of word is X?' not 'What type of sentence is this?' This content belongs in a separate 'Sentence Types' topic.",
+      "recommendation": "Move to a dedicated Sentence Types sub-topic or separate topic. These are valid GL content but misplaced under Word Class."
+    },
+    {
+      "id": "ENG-WC-003",
+      "severity": "high",
+      "type": "scope-creep",
+      "questionIds": [234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280],
+      "description": "Q234-Q280 test punctuation knowledge (full stops, commas, question marks, exclamation marks, apostrophes, colons, semi-colons, speech marks, hyphens, brackets, dashes, ellipses). This is punctuation, not word class. GL has dedicated punctuation questions in comprehension — these belong in the Punctuation topic.",
+      "recommendation": "Move all punctuation questions to the Punctuation topic. They are misplaced under Word Class & Grammar."
+    },
+    {
+      "id": "ENG-WC-004",
+      "severity": "high",
+      "type": "scope-creep",
+      "questionIds": [281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330],
+      "description": "Q281-Q330 cover a mix of literary devices (simile, metaphor, personification, alliteration, onomatopoeia, hyperbole), sentence structure (compound/complex sentences, clauses), more punctuation, and some word class. The literary devices content is valid English knowledge but belongs in its own topic. Mixing it with word class creates a sprawling, unfocused topic.",
+      "recommendation": "Extract literary devices into a 'Figurative Language' topic. Extract sentence structure into a 'Sentence Structure' topic. Keep only pure word class identification in this topic."
+    },
+    {
+      "id": "ENG-WC-005",
+      "severity": "medium",
+      "type": "ambiguous-question",
+      "questionIds": [123],
+      "description": "Q123 asks 'Which word is the adjective in: The bitter wind howled through the empty streets?' with answer 'bitter'. But the explanation itself notes 'empty' is also an adjective. The question asks for 'the adjective' (singular, with definite article implying there is only one), but there are two. This could confuse a child who correctly identifies 'empty' first.",
+      "recommendation": "Rewrite as 'Which of these words is an adjective?' (acknowledging multiple possible answers) or use a sentence with only one adjective."
+    },
+    {
+      "id": "ENG-WC-006",
+      "severity": "medium",
+      "type": "ambiguous-question",
+      "questionIds": [124],
+      "description": "Q124 has the same issue — asks for 'an adjective' in 'The mysterious parcel arrived on a rainy afternoon' with answer 'mysterious', but 'rainy' is also an adjective and is listed as an option. The question uses 'an adjective' (indefinite), which means either answer should be accepted, but only 'mysterious' is marked correct.",
+      "recommendation": "Remove 'rainy' from the options (replace with a non-adjective word) or accept both as correct."
+    },
+    {
+      "id": "ENG-WC-007",
+      "severity": "medium",
+      "type": "format-mismatch",
+      "questionIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "description": "Q1-Q17 use a 'What type of words are these: X, Y, Z?' format where four words are given and the child identifies the shared word class. The Oracle spec states GL word class questions are passage-based ('words tested in context, never isolation'). These isolated word-list questions are a useful teaching tool but do not match GL format. They should be clearly D1 warmup exercises.",
+      "recommendation": "These are fine as D1 warmups but should be supplemented with more passage-based questions in GL format. Consider adding a note in lessons that the real exam always gives words in a sentence context."
+    },
+    {
+      "id": "ENG-WC-008",
+      "severity": "medium",
+      "type": "missing-gl-trap",
+      "questionIds": [],
+      "description": "The Oracle spec identifies key GL traps: -ly adjectives (friendly, lonely, lovely, lively — words ending in -ly that are NOT adverbs). These traps are not tested in the question bank. No questions ask 'What type of word is friendly/lonely/lovely?' where the trap answer would be 'adjective' not 'adverb'.",
+      "recommendation": "Add 5-10 questions testing -ly adjectives. These are confirmed GL traps that catch many children. Example: 'In the sentence The friendly dog wagged its tail, what type of word is friendly?' (Answer: Adjective, not Adverb)."
+    },
+    {
+      "id": "ENG-WC-009",
+      "severity": "medium",
+      "type": "missing-gl-trap",
+      "questionIds": [],
+      "description": "The Oracle spec highlights flat adverbs (same form as adjective: fast, hard, early, late, straight, wrong) as key GL traps. Q105 touches on this ('fast' and 'hard' as both adjective and adverb) but only in a classification format, not in a sentence-based GL format where the child must identify the word class in context.",
+      "recommendation": "Add questions like: 'In She ran fast, what type of word is fast?' (Adverb) vs 'He is a fast runner — what type of word is fast?' (Adjective). These are high-value GL discriminators."
+    },
+    {
+      "id": "ENG-WC-010",
+      "severity": "medium",
+      "type": "missing-gl-trap",
+      "questionIds": [],
+      "description": "Present participles as adjectives (the running water, an interesting book, the falling leaves) are identified by the Oracle as a D3 GL trap. No questions test this pattern. Children assume -ing words are always verbs.",
+      "recommendation": "Add 3-5 D3 questions. Example: 'In The running water was ice cold, what type of word is running?' (Answer: Adjective — it describes the water, not an action someone is doing)."
+    },
+    {
+      "id": "ENG-WC-011",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [12],
+      "description": "Q12 tests 'kindness, honesty, patience, wisdom' as abstract nouns at D3. Abstract nouns are identified in the Oracle spec as D2 difficulty ('Abstract nouns children don't recognise as nouns'). Words with -ness and -dom suffixes have clear noun markers that make them D2, not D3.",
+      "recommendation": "Move to D2. Reserve D3 for genuinely tricky abstract nouns without obvious suffixes (e.g., 'anger', 'fear', 'love' — words that look/feel like adjectives or verbs)."
+    },
+    {
+      "id": "ENG-WC-012",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [13],
+      "description": "Q13 tests 'anger, jealousy, excitement, sorrow' as abstract nouns at D3. Like Q12, these have recognisable noun suffixes (-er, -y, -ment, -ow). This is D2 material per the Oracle spec.",
+      "recommendation": "Move to D2."
+    },
+    {
+      "id": "ENG-WC-013",
+      "severity": "low",
+      "type": "difficulty-miscalibration",
+      "questionIds": [9],
+      "description": "Q9 tests 'January, Easter, Christmas, Diwali' as proper nouns at D2. These are straightforward proper nouns that most Year 4 children know need capital letters. This is D1 material.",
+      "recommendation": "Move to D1. D2 proper noun questions should involve trickier cases (e.g., brand names, institutions, titles)."
+    },
+    {
+      "id": "ENG-WC-014",
+      "severity": "low",
+      "type": "answer-position-bias",
+      "questionIds": [],
+      "description": "In the word-list classification questions (Q1-Q17), the correct answer position varies well (0,1,3,4,1,3,1,0,4,0,3,4,1,3,4,3,0). No significant position bias detected. In the sentence-based questions, answer positions also show good distribution. GL spec requires no bias — this is met.",
+      "recommendation": "No action needed. Noting for completeness."
+    },
+    {
+      "id": "ENG-WC-015",
+      "severity": "low",
+      "type": "tone",
+      "questionIds": [],
+      "description": "Explanations are consistently clear and age-appropriate. They explain the 'why' behind the answer without being patronising. Good use of relatable examples (playground, classroom, animals). British context maintained throughout (proper nouns use UK cities, UK curriculum terminology). No tone issues found.",
+      "recommendation": "No action needed. Quality is high."
+    }
+  ]
+}

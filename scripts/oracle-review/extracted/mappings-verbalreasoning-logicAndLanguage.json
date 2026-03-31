@@ -1,0 +1,2308 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "logicAndLanguage",
+    "displayName": "Logic & Language",
+    "extractedAt": "2026-03-30T13:52:00.687Z",
+    "totalQuestions": 163,
+    "mappedQuestions": 153,
+    "unmappedQuestions": 10,
+    "totalSubConcepts": 9,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 133,
+      "medium": 20,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Amy is taller than Beth. Beth is taller than Claire. Who is the shortest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Claire",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "All roses have thorns. This plant has thorns. Is this plant definitely a rose?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, not necessarily",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Rearrange these words to make a sentence: 'school walked to they morning every'. What is the last word of the correct sentence?",
+      "questionDifficulty": 2,
+      "correctAnswer": "morning",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Dan has more sweets than Emma. Fay has fewer sweets than Emma but more than George. Who has the most sweets?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Dan",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "I am thinking of two rhyming words that mean 'an overweight feline'. What are they?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Fat cat",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Tom is older than Sam. Sam is older than Jack. Who is the youngest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Jack",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "All dogs have four legs. Rover is a dog. How many legs does Rover have?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Four",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Rearrange these words to make a sentence: 'cake the ate she chocolate'. What is the first word of the correct sentence?",
+      "questionDifficulty": 1,
+      "correctAnswer": "She",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Red is faster than Blue. Green is slower than Blue but faster than Yellow. Put them in order from fastest to slowest.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Red, Blue, Green, Yellow",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "All squares are rectangles. All rectangles have four sides. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "All squares have four sides",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "I am thinking of two rhyming words that mean 'a large swine'. What are they?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Big pig",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Lily has 3 sweets. Rose has twice as many as Lily. How many sweets does Rose have?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "None of the children in Class 3 are left-handed. James is in Class 3. Sarah is left-handed. Which statement must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Both C and D",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Rearrange these words to make a sentence: 'quickly the very fox brown ran'. What is the third word of the correct sentence?",
+      "questionDifficulty": 3,
+      "correctAnswer": "fox",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Ali is shorter than Ben. Charlie is taller than Ben. Dave is shorter than Ali. Who is second tallest?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Ben",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "What month comes two months after March?",
+      "questionDifficulty": 1,
+      "correctAnswer": "May",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Cross boss",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Kate has more stickers than Liam. Mia has more stickers than Kate. Who has the fewest stickers?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Liam",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Some birds can fly. Penguins are birds. Penguins cannot fly. Which statement must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Not all birds can fly",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "What day comes three days after Monday?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Thursday",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Which word has a meaning that connects with both 'light' and 'fair'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Bright",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Which word connects both 'bank' and 'match'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Box",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Which word can mean both 'a container for arrows' and 'to shake with fear'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Quiver",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Freya is faster than Kai. Kai is faster than Toby. Who is the slowest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Toby",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Priya has more books than Zara. Zara has more books than Omar. Who has the most books?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Priya",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Amara's bag is heavier than Toby's bag. Toby's bag is heavier than Kai's bag. Whose bag is the lightest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Kai's",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Ivy scored higher than Hugo. Hugo scored higher than Evie. Who came second?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Hugo",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Zara's pencil is longer than Freya's pencil. Freya's pencil is longer than Priya's pencil. Which pencil is the shortest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Priya's",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "The red team finished before the blue team. The blue team finished before the green team. Which team finished last?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Green",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Omar is older than Kai. Kai is older than Amara. Who is the youngest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Amara",
+      "subConceptId": "three-person-ordering",
+      "subConceptName": "Ordering 3 People",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to ordering is finding the **link name** — the person who appears in BOTH clues. They go in the middle!",
+      "lessonLearningGoal": [
+        "How to put 3 people in order using clues — like solving a mini detective puzzle!",
+        "How to use the Think It Through method: read, draw, answer"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Priya is taller than Zara. Amara is shorter than Zara but taller than Freya. Who is second shortest?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Amara",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Kai ran faster than Toby. Omar ran faster than Kai. Toby ran faster than Hugo. Who came third in the race?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Toby",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "In a spelling test, Evie scored more than Ivy. Ivy scored less than Hugo. Hugo scored less than Evie. Put them in order from highest to lowest score.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Evie, Hugo, Ivy",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Freya's house is closer to school than Zara's house. Priya's house is further from school than Zara's house. Amara's house is the closest to school. W",
+      "questionDifficulty": 2,
+      "correctAnswer": "Zara",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Toby has fewer marbles than Omar. Kai has more marbles than Omar. Hugo has fewer marbles than Toby. Who has the second most marbles?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Omar",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Zara is not the tallest or the shortest of three friends. Amara is shorter than Zara. Who is the tallest?",
+      "questionDifficulty": 2,
+      "correctAnswer": "The third friend",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "In a swimming race, Priya finished after Kai but before Freya. Toby finished after Freya. Who finished second?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Priya",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Amara is older than Priya. Kai is younger than Toby but older than Amara. Freya is younger than Priya. Put them in order from oldest to youngest.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Toby, Kai, Amara, Priya, Freya",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Five children sit in a row. Omar is next to Zara. Kai is at one end. Freya is between Omar and Kai. Toby is at the other end. Who sits in the middle s",
+      "questionDifficulty": 3,
+      "correctAnswer": "Omar",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Ivy's cat is heavier than Hugo's cat. Evie's cat is lighter than Hugo's cat but heavier than Priya's cat. Amara's cat is heavier than Ivy's cat. Whose",
+      "questionDifficulty": 3,
+      "correctAnswer": "Evie's",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "In a queue, Toby is further forward than Kai. Zara is further back than Freya but further forward than Toby. Omar is at the very back. Kai is just in ",
+      "questionDifficulty": 3,
+      "correctAnswer": "Zara",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Five friends each have a different number of pets. Amara has more pets than Priya but fewer than Kai. Toby has the fewest pets. Freya has more pets th",
+      "questionDifficulty": 3,
+      "correctAnswer": "2",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Omar is not the heaviest or the lightest of five friends. Kai is heavier than Omar. Zara is lighter than Omar. Toby is heavier than Kai. Freya is ligh",
+      "questionDifficulty": 3,
+      "correctAnswer": "Omar",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Amara, Priya, Kai, Zara, and Toby each finished a race in a different position. Amara finished ahead of Priya but behind Kai. Toby finished last. Zara",
+      "questionDifficulty": 3,
+      "correctAnswer": "Kai",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "All cats have whiskers. Mittens is a cat. Does Mittens have whiskers?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Yes, definitely",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Every child in Year 5 wears a blue jumper. Priya is in Year 5. What colour jumper does Priya wear?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Blue",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "No fish can walk. A salmon is a fish. Can a salmon walk?",
+      "questionDifficulty": 1,
+      "correctAnswer": "No",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "All bicycles have two wheels. Kai's bicycle is in the shed. How many wheels does Kai's bicycle have?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Two",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "If it is Saturday, Toby goes swimming. Today is Saturday. What does Toby do today?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Goes swimming",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "All fruits have seeds. A tomato has seeds. Is a tomato definitely a fruit?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, not necessarily",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Some children in the class play football. All children who play football wear boots. Zara plays football. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Zara wears boots",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "No reptiles have fur. All mammals have fur. A gecko does not have fur. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "A gecko is not a mammal",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Every pupil who finishes their homework gets a sticker. Freya did not get a sticker. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Freya did not finish her homework",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "All birds have feathers. All robins are birds. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "All robins have feathers",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "If it rains, Amara takes her umbrella. If she takes her umbrella, she does not get wet. It is raining. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Amara does not get wet",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "If a number is even, it can be divided exactly by 2. The number 15 cannot be divided exactly by 2. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 is not even",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "All swans at the park are white. Freya saw a white bird at the park. Is the bird definitely a swan?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, not necessarily",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Every pupil in the maths club enjoys puzzles. Kai enjoys puzzles. Is Kai definitely in the maths club?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No, not necessarily",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "All of Mrs Chen's pupils are in Year 6. Some Year 6 pupils play in the orchestra. Hugo is one of Mrs Chen's pupils. Which statement must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Hugo is in Year 6",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "No child who is late for school gets a merit point. All children who are on time get a merit point. Kai was late. Priya was on time. Which statement m",
+      "questionDifficulty": 3,
+      "correctAnswer": "Kai does not get a merit point but Priya does",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "All of Toby's friends like football. Some people who like football also like tennis. Zara is one of Toby's friends. Which statement CANNOT be determin",
+      "questionDifficulty": 3,
+      "correctAnswer": "Whether Zara likes tennis",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Every child in the school choir can sing. Every child who can sing can read music. Evie is in the school choir. Ivy can read music. Which statement mu",
+      "questionDifficulty": 3,
+      "correctAnswer": "Evie can read music",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "In a village, all shop owners drive. Some people who drive also cycle. No cyclists in the village swim. Mr Patel owns a shop and cycles. Which stateme",
+      "questionDifficulty": 3,
+      "correctAnswer": "Mr Patel does not swim",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "If Omar practises piano, he gets better. If he gets better, he passes his exam. If he passes his exam, he gets a certificate. Omar practised piano. Wh",
+      "questionDifficulty": 3,
+      "correctAnswer": "A certificate",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "All children wearing glasses sit at the front. Some children at the front are monitors. Amara wears glasses. Which statement is definitely true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Amara sits at the front",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Rearrange these words to make a sentence: 'garden the played in children the'. What is the first word?",
+      "questionDifficulty": 1,
+      "correctAnswer": "The",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Rearrange these words to make a sentence: 'happy was very the dog'. What is the last word?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Happy",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Rearrange these words to make a sentence: 'pond the swam duck in the'. What is the second word?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Duck",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Rearrange these words to make a sentence: 'ate breakfast for toast she'. What is the second word?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Ate",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Rearrange these words to make a sentence: 'quickly her finished homework she very'. What is the last word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Quickly",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Rearrange these words to make a sentence: 'beautiful the sang bird a song morning every'. What is the last word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Morning",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Rearrange these words to make a sentence: 'reading enjoys library the books at Amara'. What is the first word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Amara",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Rearrange these words to make a sentence: 'class carefully the listened teacher to the'. What is the second word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Class",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Rearrange these words to make a sentence: 'after stars the dark appeared it got'. What is the first word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "The",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Rearrange these words to make a sentence: 'ball kicked Toby the park in the'. What is the third word?",
+      "questionDifficulty": 2,
+      "correctAnswer": "The",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Rearrange these words to make a sentence: 'they outside played raining although was it'. What is the last word?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Outside",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Rearrange these words to make a sentence: 'before the finished bell everyone the rang work their'. What is the third word?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Their",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Rearrange these words to make a sentence: 'carefully promised he more would write he'. What is the last word?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Carefully",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Rearrange these words to make a sentence: 'the crept fog slowly streets through the morning'. What is the second word?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Morning",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Rearrange these words to make a sentence: 'had packed she brought lunch the that she'. What is the fifth word?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Lunch",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Which word can mean both 'a flying mammal' and 'something you hit a cricket ball with'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Bat",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Which word can mean both 'the sound a dog makes' and 'the outer covering of a tree'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Bark",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Which word can mean both 'not heavy' and 'brightness from the sun or a lamp'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Light",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Which word can mean both 'a piece of jewellery worn on a finger' and 'to telephone someone'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Ring",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Which word can mean both 'a season of the year' and 'a coiled piece of metal'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Spring",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Which word can mean both 'a large bird' and 'a machine used for lifting heavy objects'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Crane",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Which word can mean both 'where you keep your money' and 'the side of a river'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Bank",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Which word can mean both 'the long nose of an elephant' and 'a large travel case'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Trunk",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Which word can mean both 'a movement of the ocean' and 'a hand gesture to say hello or goodbye'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Wave",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Which word can mean both 'a student at school' and 'the dark circle in the centre of your eye'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Pupil",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Which word can mean both 'something written and posted' and 'a symbol of the alphabet'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Letter",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Which word can mean both 'a sweet spread made from fruit' and 'when too many cars block the road'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Jam",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Which word can mean both 'happening now' and 'the flow of water in a river'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Current",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Which word can mean both 'a game between two sports teams' and 'a thin stick used to start a fire'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Match",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Which word can mean both 'a sea creature with flippers' and 'to close something tightly'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Seal",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Which word can mean both 'a small burrowing animal' and 'a spy who works secretly within an organisation'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Mole",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Which word can mean both 'British currency' and 'to hit something heavily and repeatedly'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Pound",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Which word can mean both 'a lock fastener on a door' and 'a flash of lightning'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Bolt",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Which word can mean both 'a sleeveless cloak' and 'a piece of land jutting into the sea'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Cape",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Which word can mean both 'a fun outdoor event with rides' and 'treating everyone equally'?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Fair",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "All cats have whiskers. Felix is a cat. Which statement must be true?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Felix has whiskers",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Mia is taller than Noah. Noah is taller than Olivia. Who is the tallest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Mia",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "If it is Monday, Harry goes to football club. Today is Monday. What does Harry do today?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Goes to football club",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "No birds can breathe underwater. A robin is a bird. Can a robin breathe underwater?",
+      "questionDifficulty": 1,
+      "correctAnswer": "No",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "All pentagons have five sides. This shape is a pentagon. How many sides does it have?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Five",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Ethan has 10 marbles. Grace has half as many as Ethan. How many marbles does Grace have?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Every child in the school wears a uniform. Jake goes to this school. Which statement must be true?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Jake wears a uniform",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Ruby is faster than Sanjay. Sanjay is faster than Tara. Who is the slowest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Tara",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "All flowers need water. All roses are flowers. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "All roses need water",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Oliver is heavier than Poppy. Poppy is heavier than Quinn. Who is the lightest?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Quinn",
+      "subConceptId": "three-person-ordering",
+      "subConceptName": "Ordering 3 People",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to ordering is finding the **link name** — the person who appears in BOTH clues. They go in the middle!",
+      "lessonLearningGoal": [
+        "How to put 3 people in order using clues — like solving a mini detective puzzle!",
+        "How to use the Think It Through method: read, draw, answer"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "All children who finish their reading get a house point. Bella finished her reading. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Bella gets a house point",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Some animals can fly. All eagles are animals. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Some animals are eagles",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Every child who brings a packed lunch sits in the hall. Leo did not sit in the hall. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Leo did not bring a packed lunch",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Cross boss",
+      "subConceptId": "homonyms",
+      "subConceptName": "Words with Multiple Meanings",
+      "confidence": "high",
+      "lessonTeachSummary": "Is **\"bank\"** being used to mean \"a place where you keep money\" or \"the side of a river\"? Here's the thing: when a word has multiple meanings, the **context** (the words around it) always tells you wh",
+      "lessonLearningGoal": [
+        "You'll learn how to spot when a word is playing tricks — having more than one meaning hiding behind the same spelling!",
+        "You'll master using the sentence context to choose the right meaning every time"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "All pupils in the choir can sing. Not all pupils in Year 5 can sing. Asha is in the choir. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Asha can sing",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Red is more expensive than Blue. Yellow is cheaper than Blue but more expensive than Green. Which is the cheapest?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Green",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "All children in the football team wear red shirts. Sam is wearing a blue shirt. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Sam is not in the football team",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "All children who play in the rain get wet. None of the children in Mrs Brown's class got wet. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "No one in Mrs Brown's class played in the rain",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Rearrange these words to make a sentence: 'garden the played in children the happily'. What is the fifth word of the correct sentence?",
+      "questionDifficulty": 3,
+      "correctAnswer": "in",
+      "subConceptId": "sentence-rearrangement",
+      "subConceptName": "Rearranging Jumbled Sentences",
+      "confidence": "high",
+      "lessonTeachSummary": "The jumbled words make the sentence: **\"The children played in the park.\"**\n\nTo unscramble a sentence:\n\n1. **Find the subject** — who or what is the sentence about?\n2. **Find the verb** — what are the",
+      "lessonLearningGoal": [
+        "How to unscramble jumbled words into a sentence that makes sense",
+        "How to spot the starting word and build the sentence piece by piece"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "All of Mr Patel's pupils study French. Some pupils who study French also study Spanish. Daisy is one of Mr Patel's pupils. Which statement CANNOT be d",
+      "questionDifficulty": 3,
+      "correctAnswer": "Whether Daisy studies Spanish",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Aisha is older than Bella. Chloe is younger than Bella but older than Daisy. Ella is older than Aisha. Who is the second youngest?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Chloe",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "No child who forgot their PE kit can do games. All children who do games play on the field. Marcus forgot his PE kit. Which statement must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Marcus does not play on the field",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "All vehicles have wheels. All cars are vehicles. My bicycle is a vehicle. Which statement must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "My bicycle has wheels",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Every member of the swimming team trains on Tuesday. Every child who trains on Tuesday eats pasta the night before. Ava is on the swimming team. Which",
+      "questionDifficulty": 3,
+      "correctAnswer": "Ava trains on Tuesday and eats pasta on Monday night",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "All children who study music play an instrument. All children who play an instrument practise at home. No child who practises at home watches TV after",
+      "questionDifficulty": 3,
+      "correctAnswer": "Zain does not watch TV after school",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "Priya can swim faster than Noah. Noah can swim faster than Leila. Who is the slowest swimmer?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Leila",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "The red pencil is longer than the blue pencil. The blue pencil is longer than the green pencil. Which pencil is the shortest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Green",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Class 3 has more pupils than Class 2. Class 2 has more pupils than Class 1. Which class has the fewest pupils?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Class 1",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "No child in the choir sings out of tune. Maya is in the choir. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Maya does not sing out of tune",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "None of the children who walk to school arrive late. Ben walks to school. What must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Ben does not arrive late",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "All athletes in the squad train on Mondays. No athlete in the squad eats junk food. Aisha is in the squad. Which TWO statements must be true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Aisha trains on Mondays and does not eat junk food",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "No pet in the rescue centre has been mistreated. Some pets in the centre are puppies. Bella is a puppy at the centre. What can we say for certain?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Bella has not been mistreated",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "All members of the book club read at least one book a month. Jamie does not read any books. What must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Jamie is not in the book club",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "No student who failed the test is allowed on the trip. Some students who passed the test chose not to go. Zara is going on the trip. What must be true",
+      "questionDifficulty": 3,
+      "correctAnswer": "Zara passed the test",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "All cats are animals. Whiskers is a cat. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Whiskers is an animal",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "All birds have feathers. A penguin is a bird. Which statement must be true?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Penguins have feathers",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "Every child in Year 6 has a locker. Sam is in Year 6. What can we say for certain?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Sam has a locker",
+      "subConceptId": "true-false-statements",
+      "subConceptName": "True, False or Uncertain?",
+      "confidence": "high",
+      "lessonTeachSummary": "The clues say: All dogs have four legs. Rover is a dog. — watch for the key word!\n\nThese three words change EVERYTHING:\n\n• **All** = every single one → definitely true\n• **Some** = a few → maybe true,",
+      "lessonLearningGoal": [
+        "How to decide if something is DEFINITELY true, DEFINITELY false, or just MAYBE",
+        "Why three little words — 'all', 'some' and 'none' — completely change the answer"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "All squares are rectangles. All rectangles have four sides. What must be true about squares?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Squares have four sides",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "Some children who play football also play cricket. Zara plays football. Does Zara play cricket?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Cannot tell from the information given",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "All dogs are mammals. Fido is a mammal. Is Fido definitely a dog?",
+      "questionDifficulty": 3,
+      "correctAnswer": "No — Fido could be any mammal",
+      "subConceptId": "negation-traps",
+      "subConceptName": "Negation Traps — Not Tallest ≠ Shortest",
+      "confidence": "high",
+      "lessonTeachSummary": "We know: Kai is not the tallest of three friends. Freya is shorter than Kai.\n\n\"Not the tallest\" just means **someone else is taller**. There could be people shorter too!\n\nAlways check: is there someon",
+      "lessonLearningGoal": [
+        "Why 'not the tallest' does NOT mean 'the shortest' — this catches so many people!",
+        "How to read 'not', 'isn't' and 'neither' carefully instead of jumping to conclusions"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "Every pupil in the class has a pencil case. Evie is in the class. What must be true?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Evie has a pencil case",
+      "subConceptId": "syllogisms",
+      "subConceptName": "If All X Are Y...",
+      "confidence": "high",
+      "lessonTeachSummary": "A syllogism (a logical chain where one fact leads to another) works like a chain of arrows. Each link passes the truth along:",
+      "lessonLearningGoal": [
+        "How to follow logical chains where one fact leads to another — like falling dominoes!",
+        "How to draw an arrow chain to make the logic crystal clear"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Who is the tallest? Amy is taller than Beth. Claire is shorter than Beth.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Amy",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "Which is the heaviest? A brick is heavier than a book. A book is heavier than a feather.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Brick",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "Who ran the fastest? Dan beat Ellie. Fran beat Dan. Ellie beat Grace.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Fran",
+      "subConceptId": "comparative-language",
+      "subConceptName": "Understanding Comparison Words",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's decode the clues: Kai is heavier than Toby. Freya is lighter than Toby.\n\nEach comparison word tells you a direction:\n\n• **More / taller / heavier / older / faster / before** → goes ABOVE\n• **Les",
+      "lessonLearningGoal": [
+        "How to read comparison words like a pro — taller, shorter, older, younger, more, fewer",
+        "Why understanding these words is like having a compass that always points the right way"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "Which town is furthest north? York is north of London. Edinburgh is north of York.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Edinburgh",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "Who scored the most goals? Ali scored more than Ben. Chris scored fewer than Ben but more than Dan.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Ali",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Who lives closest to school? Mia lives further from school than Noah. Noah lives further than Olivia.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Olivia",
+      "subConceptId": "three-person-ordering",
+      "subConceptName": "Ordering 3 People",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to ordering is finding the **link name** — the person who appears in BOTH clues. They go in the middle!",
+      "lessonLearningGoal": [
+        "How to put 3 people in order using clues — like solving a mini detective puzzle!",
+        "How to use the Think It Through method: read, draw, answer"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "Who came third in the race? Kai beat Leo. Mia beat Kai. Leo beat Nora. Nora beat Oscar.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Leo",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "Who has the second most books? Priya has more books than Quinn. Ravi has fewer books than Quinn but more than Sam. Quinn has fewer than Uma.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Priya",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "Who finished fourth? Anna finished before Beth. Beth finished before Chris. Dave finished after Chris but before Eve.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Dave",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "What is the cheapest? A coat costs more than a hat. A hat costs more than a scarf.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Scarf",
+      "subConceptId": "three-person-ordering",
+      "subConceptName": "Ordering 3 People",
+      "confidence": "high",
+      "lessonTeachSummary": "The secret to ordering is finding the **link name** — the person who appears in BOTH clues. They go in the middle!",
+      "lessonLearningGoal": [
+        "How to put 3 people in order using clues — like solving a mini detective puzzle!",
+        "How to use the Think It Through method: read, draw, answer"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "Who has the least pocket money? Freya gets more than George. Harry gets less than George but more than Isla.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Isla",
+      "subConceptId": "superlative-questions",
+      "subConceptName": "Who Is Tallest / Shortest / Oldest?",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to find **who is the tallest** from these clues. Superlative (a word meaning the most or least of something) = the extreme end of the order. Build the FULL chain first:",
+      "lessonLearningGoal": [
+        "How to find the tallest, shortest, oldest or youngest — read it straight off your diagram!",
+        "Why building the FULL order first means you'll always pick the right answer"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "Who is second youngest? Adam is older than Bella. Bella is younger than Charlie but older than Dina. Charlie is younger than Eve.",
+      "questionDifficulty": 3,
+      "correctAnswer": "Charlie",
+      "subConceptId": "four-person-ordering",
+      "subConceptName": "Ordering 4 People",
+      "confidence": "high",
+      "lessonTeachSummary": "We need to order **Hugo, Priya, Toby, Kai**. With 4 people, you get 3 clues. Look for the **shared name** that links two clues together:",
+      "lessonLearningGoal": [
+        "How to order 4 people — same method, just one more clue to work with!",
+        "How to spot the 'link name' that connects two clues into one chain"
+      ]
+    }
+  ],
+  "unmappedQuestions": [
+    {
+      "id": 154,
+      "difficulty": 3,
+      "question": "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy does not live in the r",
+      "correctAnswer": "Red"
+    },
+    {
+      "id": 155,
+      "difficulty": 3,
+      "question": "Five friends ran a race. Priya finished before Kai but after Zara. Omar finished last. Freya finished before Zara. In what position did Priya finish?",
+      "correctAnswer": "3rd"
+    },
+    {
+      "id": 156,
+      "difficulty": 3,
+      "question": "Five children each scored a different mark in a spelling test. Hugo scored higher than Isla but lower than Freya. Kai scored the lowest mark. Jess sco",
+      "correctAnswer": "Freya"
+    },
+    {
+      "id": 157,
+      "difficulty": 3,
+      "question": "Five friends sit around a circular table. Omar sits directly opposite Priya. Kai sits to the right of Omar. Zara sits to the left of Priya. Who sits b",
+      "correctAnswer": "Freya"
+    },
+    {
+      "id": 158,
+      "difficulty": 3,
+      "question": "Five parcels weigh different amounts. Parcel B is heavier than Parcel D but lighter than Parcel A. Parcel E is the lightest. Parcel C is heavier than ",
+      "correctAnswer": "Parcel D"
+    },
+    {
+      "id": 159,
+      "difficulty": 3,
+      "question": "Five children — Amy, Ben, Cat, Dan, and Eve — each play a different instrument. Amy does not play guitar or drums. Ben plays piano. Cat plays the inst",
+      "correctAnswer": "Violin"
+    },
+    {
+      "id": 160,
+      "difficulty": 3,
+      "question": "Five houses in a row are numbered 1 to 5. The Singh family lives in a higher-numbered house than the Patel family. The Jones family lives in house 3. ",
+      "correctAnswer": "House 4"
+    },
+    {
+      "id": 161,
+      "difficulty": 3,
+      "question": "Five children — Mia, Noah, Olivia, Pete, and Quinn — each have a different number of books: 2, 4, 6, 8, and 10. Quinn has the most books. Mia has more",
+      "correctAnswer": "2"
+    },
+    {
+      "id": 162,
+      "difficulty": 3,
+      "question": "Five children — Ava, Blake, Cara, Dev, and Ella — sit in a row of five seats numbered 1 to 5. Ava sits in seat 2. Blake sits in seat 5. Cara does not ",
+      "correctAnswer": "Seat 1"
+    },
+    {
+      "id": 163,
+      "difficulty": 3,
+      "question": "Five children each have a different favourite colour: red, blue, green, yellow, and purple. Amara's favourite is not red or yellow. Ben's favourite is",
+      "correctAnswer": "Green"
+    }
+  ],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "superlative-questions": {
+      "name": "Who Is Tallest / Shortest / Oldest?",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 7,
+        "D2": 6,
+        "D3": 2
+      }
+    },
+    "syllogisms": {
+      "name": "If All X Are Y...",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 5,
+        "D2": 17,
+        "D3": 7
+      }
+    },
+    "sentence-rearrangement": {
+      "name": "Rearranging Jumbled Sentences",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 5,
+        "D2": 7,
+        "D3": 7
+      }
+    },
+    "homonyms": {
+      "name": "Words with Multiple Meanings",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 5,
+        "D2": 11,
+        "D3": 9
+      }
+    },
+    "four-person-ordering": {
+      "name": "Ordering 4 People",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 2,
+        "D2": 6,
+        "D3": 8
+      }
+    },
+    "true-false-statements": {
+      "name": "True, False or Uncertain?",
+      "questionCount": 7,
+      "difficulties": {
+        "D1": 5,
+        "D2": 2,
+        "D3": 0
+      }
+    },
+    "comparative-language": {
+      "name": "Understanding Comparison Words",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 10,
+        "D2": 2,
+        "D3": 8
+      }
+    },
+    "negation-traps": {
+      "name": "Negation Traps — Not Tallest ≠ Shortest",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 2,
+        "D2": 6,
+        "D3": 10
+      }
+    },
+    "three-person-ordering": {
+      "name": "Ordering 3 People",
+      "questionCount": 4,
+      "difficulties": {
+        "D1": 2,
+        "D2": 2,
+        "D3": 0
+      }
+    }
+  }
+}

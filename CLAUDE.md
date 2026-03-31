@@ -119,3 +119,31 @@ See `Master Brief Document and Working Instructions/Master_Brief_v6_0.md` lines 
 
 ### Skill Creator (`.claude/skills/skill-creator/`)
 Comprehensive skill/agent engineering system. Use `/skill-creator` or say "create skill", "new skill", "build agent" etc.
+
+### Diagram Design System (`.claude/skills/diagram-design/`)
+Unified design system for all SVG diagrams. Enforces consistent colours, typography, spacing, and structure across all 538+ diagrams. References design tokens (single source of truth) and component templates.
+
+**Trigger phrases:** "diagram", "SVG", "visual", "chart", "style guide", "design tokens"
+
+**Proactive:** When creating or editing any SVG/diagram code, Claude MUST reference the design tokens and component templates automatically.
+
+**Critical rule:** Style changes only — never alter labels, numbers, values, or content. Every diagram must still make sense with its question after editing.
+
+**Reference files:**
+- `.claude/skills/diagram-design/references/design-tokens.md` — colours, fonts, sizes, spacing
+- `.claude/skills/diagram-design/references/component-templates.md` — structure templates per diagram type
+
+## Agents
+
+### 11+ Oracle (`.claude/agents/11plus-oracle.md`)
+GL Assessment subject matter expert backed by the research library at `research/`. The authoritative voice on question design, difficulty calibration, GL patterns, and exam strategy.
+
+**Trigger phrases:** "ask the Oracle", "what does the Oracle say", "Oracle check this", or any question about GL specifications, question design, or difficulty criteria.
+
+**Four modes:**
+1. **Expert consultation** — answer questions about GL patterns, formats, difficulty criteria
+2. **Question generation** — create new questions matching GL specifications and difficulty levels
+3. **Content audit** — check existing questions/lessons against Oracle specifications
+4. **Strategic advisor** — guide app direction based on learning science and exam research
+
+**Key principle:** All answers grounded in the research library, never invented. If the Oracle doesn't cover something, it says so.

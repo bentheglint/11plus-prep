@@ -1,0 +1,3131 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "datahandling",
+    "displayName": "Data Handling",
+    "extractedAt": "2026-03-30T13:52:00.486Z",
+    "totalQuestions": 220,
+    "mappedQuestions": 220,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 10,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 218,
+      "medium": 2,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Emma scores these marks in five tests: 8, 9, 7, 9, 9. What is the mode?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Tom records the temperatures: 12°C, 15°C, 18°C, 14°C, 16°C. What is the mean temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15°C",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 3,
+      "questionText": "Sophie arranges these numbers in order: 3, 5, 7, 9, 11. What is the median?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Jake measures heights: 140cm, 155cm, 148cm, 162cm, 145cm. What is the range?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22cm",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "This bar chart shows Lucy's test scores. What was her score in Science?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Ben records rainfall in mm: 12, 8, 15, 8, 12, 20, 8. What is the mode?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8mm",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Mia's test scores are: 6, 8, 10, 12. What is the mean score?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 8,
+      "questionText": "This pie chart shows Oliver's time spent on activities. What fraction of time is spent on Homework?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/4",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Hannah records: 4, 6, 8, 10, 12, 14. What is the median?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "This line graph shows temperature during a day. At what time was the temperature highest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3pm",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Charlie scores: 15, 18, 12, 20, 15. What is the range?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "This table shows bus arrival times. What time does the 10:30am bus arrive at Park Street?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10:45",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Sarah records ages: 8, 10, 9, 11, 12, 10. What is the mode?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "The mean of four numbers is 12. Three of the numbers are 10, 11, and 15. What is the fourth number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "This bar chart shows ice cream sales. How many more vanilla cones were sold than chocolate?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Lily records temperatures: 18°C, 22°C, 20°C, 24°C, 21°C. What is the median temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21°C",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "This two-way table shows pets owned. How many children own a dog?",
+      "questionDifficulty": 1,
+      "correctAnswer": "18",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Max records goals scored: 2, 5, 3, 5, 1, 5, 4. What is the mode and range?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 5, Range: 4",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "This pie chart shows favorite sports. If 120 children were surveyed, how many chose Football?",
+      "questionDifficulty": 3,
+      "correctAnswer": "40",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Ella has scores: 7, 8, 9, ?, 11. If the mean is 9, what is the missing score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "This line graph shows plant growth over 6 weeks. How much did the plant grow between week 2 and week 5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12cm",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Noah records: 3, 6, 9, 12, 15. What is the mean?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 23,
+      "questionText": "This bar chart shows book sales. What was the total number of books sold across all four weeks?",
+      "questionDifficulty": 2,
+      "correctAnswer": "220",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Ava collects data: 5, 8, 5, 12, 5, 9, 15. What is the mode and median?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 5, Median: 8",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "This two-way table shows transport methods. How many students walk to school?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "What is the mean of these numbers? 10, 14, 16, 12, 18",
+      "questionDifficulty": 1,
+      "correctAnswer": "14",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 27,
+      "questionText": "What is the mode? 5, 7, 5, 9, 5, 8",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "What is the median? 4, 8, 12, 16, 20",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "What is the range? 25, 38, 42, 31, 29",
+      "questionDifficulty": 1,
+      "correctAnswer": "17",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "What is the mean? 15, 20, 25, 30",
+      "questionDifficulty": 1,
+      "correctAnswer": "22.5",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 31,
+      "questionText": "What is the median? 6, 9, 12, 15, 18, 21",
+      "questionDifficulty": 2,
+      "correctAnswer": "13.5",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "What is the range? 18, 32, 45, 28, 19",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "What is the mode? 8, 10, 8, 12, 10, 8",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "The mean of four numbers is 16. Three numbers are 14, 15, and 19. What is the fourth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "What is the median? 11, 14, 17, 20, 23",
+      "questionDifficulty": 1,
+      "correctAnswer": "17",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "This bar chart shows weekly sales. What were the sales in Week 3?",
+      "questionDifficulty": 1,
+      "correctAnswer": "45",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "What is the mean? 22, 26, 30, 34, 38",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 38,
+      "questionText": "What is the mode? 13, 15, 13, 17, 13, 19",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "What is the range? 52, 68, 45, 79, 61",
+      "questionDifficulty": 1,
+      "correctAnswer": "34",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "This line graph shows temperature. What was the temperature at 2pm?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "What is the median? 8, 14, 20, 26, 32, 38",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "What is the mean? 18, 24, 30, 36",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 43,
+      "questionText": "What is the mode? 6, 9, 6, 12, 6, 15",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "This pie chart shows children's favourite fruits. What fraction of the children chose Apples?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1/3",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "What is the range? 35, 48, 62, 41, 54",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "What is the median? 16, 22, 28, 34, 40",
+      "questionDifficulty": 1,
+      "correctAnswer": "28",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "The mean of five numbers is 20. Four are 18, 19, 22, 23. What is the fifth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "This table shows bus times. When does the 8:15am bus arrive at Station B?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8:40am",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "What is the mean? 32, 40, 48, 56",
+      "questionDifficulty": 1,
+      "correctAnswer": "44",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 50,
+      "questionText": "What is the mode? 11, 14, 11, 17, 11, 20",
+      "questionDifficulty": 1,
+      "correctAnswer": "11",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "What is the range? 24, 37, 51, 29, 44",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "This bar chart shows scores. What is the total of all scores?",
+      "questionDifficulty": 2,
+      "correctAnswer": "200",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "What is the median? 10, 18, 26, 34, 42, 50",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "What is the mean? 45, 50, 55, 60, 65",
+      "questionDifficulty": 1,
+      "correctAnswer": "55",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 55,
+      "questionText": "What is the mode and range? 7, 9, 7, 11, 7, 13",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 7, Range: 6",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "This line graph shows growth. How much growth between Day 3 and Day 7?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10cm",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "What is the median? 19, 25, 31, 37, 43",
+      "questionDifficulty": 1,
+      "correctAnswer": "31",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "What is the range? 66, 82, 58, 91, 74",
+      "questionDifficulty": 1,
+      "correctAnswer": "33",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "This pie chart shows time spent. If total is 24 hours, how many hours for Sleep?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "What is the mean? 28, 35, 42, 49, 56",
+      "questionDifficulty": 1,
+      "correctAnswer": "42",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 61,
+      "questionText": "What is the mode? 15, 18, 15, 21, 15, 24",
+      "questionDifficulty": 1,
+      "correctAnswer": "15",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "What is the median? 12, 20, 28, 36, 44, 52",
+      "questionDifficulty": 2,
+      "correctAnswer": "32",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "This two-way table shows sports. How many play Tennis?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "What is the range? 39, 56, 47, 68, 52",
+      "questionDifficulty": 1,
+      "correctAnswer": "29",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "The mean of three numbers is 24. Two are 22 and 25. What is the third?",
+      "questionDifficulty": 3,
+      "correctAnswer": "25",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "What is the mean? 36, 45, 54, 63",
+      "questionDifficulty": 1,
+      "correctAnswer": "49.5",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "This bar chart shows attendance. How many more attended Friday than Monday?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "What is the mode? 19, 22, 19, 25, 19, 28",
+      "questionDifficulty": 1,
+      "correctAnswer": "19",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "What is the median? 21, 28, 35, 42, 49",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "What is the range? 43, 59, 38, 72, 55",
+      "questionDifficulty": 1,
+      "correctAnswer": "34",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "This line graph shows sales. What were sales in Month 5?",
+      "questionDifficulty": 1,
+      "correctAnswer": "75",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "What is the mean? 52, 60, 68, 76, 84",
+      "questionDifficulty": 1,
+      "correctAnswer": "68",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 73,
+      "questionText": "What is the median? 14, 24, 34, 44, 54, 64",
+      "questionDifficulty": 2,
+      "correctAnswer": "39",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "What is the mode? 23, 26, 23, 29, 23, 32",
+      "questionDifficulty": 1,
+      "correctAnswer": "23",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "This pie chart shows votes. If 200 people voted, how many chose Option A?",
+      "questionDifficulty": 3,
+      "correctAnswer": "70",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "What is the range? 57, 74, 49, 86, 63",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "What is the mean? 44, 52, 60, 68, 76",
+      "questionDifficulty": 1,
+      "correctAnswer": "60",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 78,
+      "questionText": "What is the median? 23, 30, 37, 44, 51",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "The mean of six numbers is 30. Five are 28, 29, 31, 32, 33. What is the sixth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "27",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "This two-way table shows preferences. How many chose Pizza?",
+      "questionDifficulty": 1,
+      "correctAnswer": "44",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "What is the mode? 27, 30, 27, 33, 27, 36",
+      "questionDifficulty": 1,
+      "correctAnswer": "27",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "What is the range? 48, 67, 42, 79, 56",
+      "questionDifficulty": 1,
+      "correctAnswer": "37",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "This bar chart shows production. What was the total production?",
+      "questionDifficulty": 2,
+      "correctAnswer": "280",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "What is the mean? 64, 72, 80, 88, 96",
+      "questionDifficulty": 1,
+      "correctAnswer": "80",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 85,
+      "questionText": "What is the median? 16, 26, 36, 46, 56, 66",
+      "questionDifficulty": 2,
+      "correctAnswer": "41",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "What is the mode and median? 8, 11, 8, 14, 8, 17",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 8, Median: 9.5",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "This line graph shows temperature. What is the range of temperatures shown?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "What is the range? 52, 71, 45, 84, 59",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "What is the mean? 55, 65, 75, 85, 95",
+      "questionDifficulty": 1,
+      "correctAnswer": "75",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 90,
+      "questionText": "What is the median? 25, 33, 41, 49, 57",
+      "questionDifficulty": 1,
+      "correctAnswer": "41",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "The mean of four numbers is 35. Three are 32, 34, 38. What is the fourth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "36",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "This pie chart shows colours. What percentage chose Blue?",
+      "questionDifficulty": 3,
+      "correctAnswer": "25%",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What is the mode? 31, 34, 31, 37, 31, 40",
+      "questionDifficulty": 1,
+      "correctAnswer": "31",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "What is the range? 61, 78, 54, 92, 69",
+      "questionDifficulty": 1,
+      "correctAnswer": "38",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "This table shows scores. What is the median score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "66",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "medium",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "What is the mean? 48, 60, 72, 84, 96",
+      "questionDifficulty": 1,
+      "correctAnswer": "72",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 97,
+      "questionText": "What is the median? 18, 28, 38, 48, 58, 68",
+      "questionDifficulty": 2,
+      "correctAnswer": "43",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "What is the mode? 35, 38, 35, 41, 35, 44",
+      "questionDifficulty": 1,
+      "correctAnswer": "35",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "This bar chart shows sales. Which day had the highest sales?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Thursday",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "What is the range? 56, 75, 49, 88, 63",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "What is the mean? 70, 80, 90, 100, 110",
+      "questionDifficulty": 1,
+      "correctAnswer": "90",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 102,
+      "questionText": "What is the median? 27, 36, 45, 54, 63",
+      "questionDifficulty": 1,
+      "correctAnswer": "45",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "The mean of five numbers is 42. Four are 40, 41, 43, 45. What is the fifth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "41",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "This line graph shows progress. How much progress between Week 2 and Week 6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "What is the mode? 39, 42, 39, 45, 39, 48",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "What is the range? 64, 83, 57, 96, 71",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "This two-way table shows responses. How many answered 'Yes'?",
+      "questionDifficulty": 1,
+      "correctAnswer": "56",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "What is the mean? 82, 90, 98, 106, 114",
+      "questionDifficulty": 1,
+      "correctAnswer": "98",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 109,
+      "questionText": "What is the median? 20, 32, 44, 56, 68, 80",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "What is the mode and range? 12, 15, 12, 18, 12, 21",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 12, Range: 9",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "This pie chart shows subjects. If 180 students surveyed, how many chose Maths?",
+      "questionDifficulty": 3,
+      "correctAnswer": "55",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "What is the range? 68, 87, 61, 100, 75",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "What is the mean? 66, 78, 90, 102, 114",
+      "questionDifficulty": 1,
+      "correctAnswer": "90",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "What is the median? 29, 39, 49, 59, 69",
+      "questionDifficulty": 1,
+      "correctAnswer": "49",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "This bar chart shows attendance. What is the mean attendance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "What is the mode? 43, 46, 43, 49, 43, 52",
+      "questionDifficulty": 1,
+      "correctAnswer": "43",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "The mean of three numbers is 50. Two are 48 and 51. What is the third?",
+      "questionDifficulty": 3,
+      "correctAnswer": "51",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "What is the range? 72, 91, 65, 104, 79",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "This line graph shows visitors. On which day were there 85 visitors?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Wednesday",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "What is the mean? 74, 86, 98, 110, 122",
+      "questionDifficulty": 1,
+      "correctAnswer": "98",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 121,
+      "questionText": "What is the median? 22, 34, 46, 58, 70, 82",
+      "questionDifficulty": 2,
+      "correctAnswer": "52",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "What is the mode? 47, 50, 47, 53, 47, 56",
+      "questionDifficulty": 1,
+      "correctAnswer": "47",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "This two-way table shows preferences. What is the total number surveyed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "170",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "What is the range? 76, 95, 69, 108, 83",
+      "questionDifficulty": 1,
+      "correctAnswer": "39",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "What is the mean? 58, 72, 86, 100, 114",
+      "questionDifficulty": 1,
+      "correctAnswer": "86",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 126,
+      "questionText": "Eight pupils scored the following marks in a maths test: 54, 61, 67, 72, 75, 80, 83, 88. What is the median score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "73.5",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "A school tuck shop recorded the number of each snack sold in one week: Apples 35, Bananas 50, Oranges 20, Grapes 45, Pears 30. How many more Bananas w",
+      "questionDifficulty": 2,
+      "correctAnswer": "30",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Find the mode and range of this data set: 3, 8, 5, 3, 9, 3, 7, 12.",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mode: 3, Range: 9",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "A cafe recorded the number of sandwiches sold each day: Monday 24, Tuesday 31, Wednesday 18, Thursday 27, Friday 35. What was the total number of sand",
+      "questionDifficulty": 2,
+      "correctAnswer": "135",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "Seven children recorded how many books they read last month: 14, 9, 22, 17, 5, 30, 11. What is the median number of books?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "A shop records ice cream sales each hour. At 11am they had sold 20 ice creams, at 12pm they had sold 40, and at 1pm they had sold 60. If sales increas",
+      "questionDifficulty": 2,
+      "correctAnswer": "50",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Six children measured their heights: 132 cm, 145 cm, 128 cm, 151 cm, 139 cm, 147 cm. What is the median height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "142 cm",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "Class A scored these marks in a quiz: 15, 18, 22, 25, 20. Class B scored: 21, 14, 23, 17, 30. Which class had the higher mean score, and by how much?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Class B by 1 mark",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 134,
+      "questionText": "In a survey, children chose their favourite colour: Red — 12, Blue — 18, Green — 9, Yellow — 15, Purple — 6. How many more children chose Blue than Gr",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "Sam scored 72, 85, 68, 91 and 79 in five science tests. What is his mean score, and how many tests did he score above the mean?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Mean 79, 2 tests above",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 136,
+      "questionText": "The mean of 6 numbers is 15. Five of the numbers are 12, 14, 16, 18 and 20. What is the sixth number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A pie chart shows favourite sports for 240 children. Football is 90°, Cricket is 60°, Tennis is 120° and Swimming is 90°. How many children chose Tenn",
+      "questionDifficulty": 3,
+      "correctAnswer": "80",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "Five numbers are written in order. The smallest number is 4, the mode is 4, the median is 6, and the range is 9. What is the largest number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A pie chart shows how 300 pupils travel to school. The Bus section has an angle of 108°. The Car section is half the size of the Bus section. How many",
+      "questionDifficulty": 3,
+      "correctAnswer": "45",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "Seven children have heights: 125 cm, 130 cm, 132 cm, 138 cm, 142 cm, 148 cm, 155 cm. If the tallest and shortest children leave the group, what is the",
+      "questionDifficulty": 3,
+      "correctAnswer": "138 cm",
+      "subConceptId": "master-mean-average",
+      "subConceptName": "master-mean-average",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 141,
+      "questionText": "The mean score of 8 pupils in a test is 25. When one pupil's score is removed, the mean of the remaining 7 pupils is 24. What was the removed pupil's ",
+      "questionDifficulty": 3,
+      "correctAnswer": "32",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "Four numbers have a mean of 10. When written in order, the first three numbers are 5, 8 and 12. What is the median of these four numbers?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "medium",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "In a spelling test marked out of 10, the results were: Score 5 — 2 pupils, Score 6 — 4 pupils, Score 7 — 6 pupils, Score 8 — 5 pupils, Score 9 — 3 pup",
+      "questionDifficulty": 3,
+      "correctAnswer": "2/5",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "The mean age of 4 friends is 11 years. A fifth friend joins the group and the new mean age becomes 12 years. How old is the fifth friend?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "In a class of 30 children, the mean score on a test was 64 marks. The 18 girls had a mean score of 68 marks. What was the mean score of the boys?",
+      "questionDifficulty": 3,
+      "correctAnswer": "58",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "The bar chart shows the favourite sports of children in Year 5. How many children chose football?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "The bar chart shows the favourite school dinners of children in Class 6B. Which was the most popular school dinner?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Pizza",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "The bar chart shows the results of a pet survey in Year 5. How many more children have a dog than a rabbit?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "The bar chart shows the favourite ice cream flavours chosen by children at a school fair. Which flavour was the least popular?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Toffee",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "The bar chart shows how children in Year 5 travel to school. How many children travel by car or bus?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "The bar chart shows the number of books borrowed from the school library in one week. What is the total number of books borrowed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "The bar chart shows the favourite sports of 50 children. What fraction of the children chose swimming?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1/5",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "The bar chart shows ice cream sales at a shop each day. On which day were sales double Tuesday's sales?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Thursday",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "The bar chart shows the favourite break-time snacks chosen by children at Oakwood Primary. How many more children chose Crisps and Fruit combined than",
+      "questionDifficulty": 2,
+      "correctAnswer": "20",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "The bar chart shows the favourite colours chosen by Year 5 children. What fraction of the children chose either Red or Yellow?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2/5",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "The bar chart shows the number of sandwiches sold at a café each day. What is the mean number of sandwiches sold per day?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "The bar chart shows the favourite sports of children at a school. If 25% of all the children surveyed chose Football, how many children were surveyed ",
+      "questionDifficulty": 3,
+      "correctAnswer": "80",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "The bar chart shows the mean test scores for five subjects. What is the overall mean score across all five subjects?",
+      "questionDifficulty": 3,
+      "correctAnswer": "72%",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "The bar chart shows cakes sold at a bakery each day. The baker wants the mean daily sales to be 26. By how many cakes did the actual mean fall short o",
+      "questionDifficulty": 3,
+      "correctAnswer": "2",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "The bar chart shows how 120 children travel to school. What percentage of the children travel by Car?",
+      "questionDifficulty": 3,
+      "correctAnswer": "37.5%",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "The bar chart shows fruit sold at a school tuck shop. Each piece of fruit costs 40p. What was the total income from selling Apples and Pears?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£26.00",
+      "subConceptId": "reading-bar-charts",
+      "subConceptName": "Reading Bar Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a bar chart (a chart that uses bars to show data) accurately",
+        "Why checking the scale is important before reading bars"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "The table shows the favourite sports of children in Year 5 and Year 6. How many Year 5 children chose football?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "The table shows the favourite school dinners of boys and girls. What is the total number of children who chose Pasta?",
+      "questionDifficulty": 1,
+      "correctAnswer": "24",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "The table shows how many library books each class borrowed last week. How many books did Class 5B borrow in total?",
+      "questionDifficulty": 1,
+      "correctAnswer": "20",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "The table shows the favourite pets of children in Year 4 and Year 5. Which pet was most popular with Year 4 children?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Dog",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "The table shows the favourite sports of boys and girls. How many more girls than boys chose swimming?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "The table shows lunch choices for Year 5 and Year 6. What fraction of Year 5 children chose Sandwiches?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3/8",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "The table shows favourite book types chosen by boys and girls. How many children chose either Mystery or Fantasy in total?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "The table shows how Year 5 and Year 6 children travel to school. What fraction of all children surveyed travel by bus?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7/31",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "The table shows the favourite ice cream flavours of boys and girls. Which flavour had the biggest difference between boys and girls?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Strawberry",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "The table shows favourite sports of children in Year 5 and Year 6. What percentage of all children surveyed chose Football?",
+      "questionDifficulty": 3,
+      "correctAnswer": "37.5%",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "The table shows lunch choices of boys and girls. What is the mean number of children per lunch choice?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "The table shows library books borrowed by Year 5 and Year 6 last month. What percentage of Year 6's books were Non-fiction?",
+      "questionDifficulty": 3,
+      "correctAnswer": "45%",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "The table shows how many children in each class chose their favourite subject. What percentage of all children chose English? Round to the nearest who",
+      "questionDifficulty": 3,
+      "correctAnswer": "34%",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "The table shows favourite snacks for Year 5 and Year 6. Each snack costs 35p. If every child bought their favourite snack, what would be the total spe",
+      "questionDifficulty": 3,
+      "correctAnswer": "£17.50",
+      "subConceptId": "reading-tables",
+      "subConceptName": "Reading Two-Way Tables",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read values from a two-way table",
+        "How to find totals and missing values"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "The pie chart shows the favourite sports of children in a class. What fraction of the children chose Football?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1/2",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "The pie chart shows how children travel to school. Which way of travelling to school is the most popular?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Walk",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "The pie chart shows the favourite subjects of pupils in Year 5. Which two subjects are equally popular?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Maths and English",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "The pie chart shows favourite ice cream flavours. Which flavour is the least popular?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Mint",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 180,
+      "questionText": "120 children were asked about their favourite sport. The pie chart shows the results. How many children chose Tennis?",
+      "questionDifficulty": 2,
+      "correctAnswer": "24",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 181,
+      "questionText": "60 pupils were asked how they travel to school. The pie chart shows the results. How many more pupils travel by Car than by Bus?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 182,
+      "questionText": "The pie chart shows how children in Year 5 spend their free time. What percentage of children chose Sport?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20%",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 183,
+      "questionText": "A family spends £240 in a month. The pie chart shows how the money is split. How much is spent on Food and Clothes combined?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£140",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 184,
+      "questionText": "200 people were surveyed about their favourite sport. Football is 1/4 and Tennis is 1/5 of the total. How many people chose neither Football nor Tenni",
+      "questionDifficulty": 3,
+      "correctAnswer": "110",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 185,
+      "questionText": "240 pupils were asked how they travel to school. The pie chart shows that 1/3 walk and 1/4 come by Car. How many pupils travel by Bus or Cycle altoget",
+      "questionDifficulty": 3,
+      "correctAnswer": "100",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 186,
+      "questionText": "180 pupils chose their favourite subject. Maths is 1/4, English is 1/5, and Science is 1/6 of the total. The rest chose History or Other. If twice as ",
+      "questionDifficulty": 3,
+      "correctAnswer": "23",
+      "subConceptId": "reading-pie-charts",
+      "subConceptName": "Reading Pie Charts",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate values from a pie chart using fractions and degrees",
+        "How to find the angle for a section when you know the fraction"
+      ]
+    },
+    {
+      "questionId": 187,
+      "questionText": "The line graph shows the temperature during one day. What was the temperature at 2pm?",
+      "questionDifficulty": 1,
+      "correctAnswer": "22°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 188,
+      "questionText": "The line graph shows the temperature recorded every hour. At what time was the temperature highest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2pm",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 189,
+      "questionText": "The line graph shows how tall a sunflower grew over five weeks. How tall was the sunflower at the end of Week 3?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9 cm",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 190,
+      "questionText": "The line graph shows the temperature during a summer day. How much did the temperature rise between 10am and 2pm?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 191,
+      "questionText": "The line graph shows the number of visitors to a library each day. Between which two consecutive days was the biggest increase in visitors?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Thursday to Friday",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 192,
+      "questionText": "The line graph shows the number of ice creams sold by a shop each month. How many more ice creams were sold in June than in March?",
+      "questionDifficulty": 2,
+      "correctAnswer": "55",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 193,
+      "questionText": "The line graph shows a bean plant's height over 6 weeks. Between which two consecutive weeks did the plant grow the most?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Week 5 to 6",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 194,
+      "questionText": "The line graph shows the temperature from 9am to 1pm. What is the mean temperature across all five readings?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16.2°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 195,
+      "questionText": "The temperature rises at a steady rate, as shown in the line graph. If the pattern continues, what would you expect the temperature to be at 4pm?",
+      "questionDifficulty": 3,
+      "correctAnswer": "32°C",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 196,
+      "questionText": "The line graph shows library visitors each day. The librarian says the mean number of visitors per day was at least 115. Is this correct? What is the ",
+      "questionDifficulty": 3,
+      "correctAnswer": "No — the mean is 110",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 197,
+      "questionText": "The line graph shows ice cream sales over 6 months. What fraction of the total ice creams sold were sold in the first three months (January to March)?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4/15",
+      "subConceptId": "reading-line-graphs",
+      "subConceptName": "Reading Line Graphs",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to read line graphs that show change over time",
+        "How to read values and spot trends on a line graph"
+      ]
+    },
+    {
+      "questionId": 198,
+      "questionText": "The range of 5 numbers is 22. Four of the numbers are 10, 15, 22, and 25. What is the fifth number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 199,
+      "questionText": "Set A has numbers: 14, 22, 18, 25, 10. Set B has numbers: 33, 19, 27, 41, 30. What is the difference between the range of Set B and the range of Set A",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 200,
+      "questionText": "Six children scored these marks in a test: 12, 18, 25, 36, ?, 49. The range is 37. After removing the highest score, the range decreases by 7. What is",
+      "questionDifficulty": 3,
+      "correctAnswer": "42",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 201,
+      "questionText": "Oliver records the temperature at noon each day for a week: 8°C, 11°C, 5°C, 14°C, 9°C, 3°C, 12°C. He removes the day with the lowest temperature. By h",
+      "questionDifficulty": 3,
+      "correctAnswer": "2",
+      "subConceptId": "calculating-range",
+      "subConceptName": "Calculating the Range",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to calculate the range as highest minus lowest",
+        "Why the range is a single number, not two numbers"
+      ]
+    },
+    {
+      "questionId": 202,
+      "questionText": "A set of 7 numbers has a mode of 5. Six of the numbers are 3, 5, 7, 5, 4, and 8. What is the seventh number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 203,
+      "questionText": "Which of these data sets has exactly two modes (is bimodal)?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1, 2, 2, 3, 3, 4",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 204,
+      "questionText": "A set of 5 numbers has a mode of 6 and a mean of 5. Three of the numbers are 3, 4, and 6. What are the other two numbers?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 and 6",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 205,
+      "questionText": "Amelia has 9 number cards. The mode is 7 and the median is 7. The smallest number is 2 and the range is 10. She has exactly three 7s. What is the larg",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "finding-mode",
+      "subConceptName": "Finding the Mode",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the most frequent value in a data set",
+        "Why the mode (the most common value) is the value itself, not the frequency (how many times it appears)"
+      ]
+    },
+    {
+      "questionId": 206,
+      "questionText": "Eleven pupils scored the following marks: 45, 52, 38, 61, 73, 55, 49, 67, 42, 58, 70. What is the median score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "55",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 207,
+      "questionText": "Five numbers are in order: 2, 7, ?, 13, 18. The median is the same as the mean. What is the middle number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 208,
+      "questionText": "Seven numbers have a median of 15. The numbers in order are: 6, 9, 12, 15, 19, 23, 28. If a new number is added and the median becomes 17, which numbe",
+      "questionDifficulty": 3,
+      "correctAnswer": "19",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 209,
+      "questionText": "Nine numbers have a median of 12. The numbers in order are: 3, 5, 8, 10, 12, 14, 17, 20, 25. If the smallest number is removed, what is the new median",
+      "questionDifficulty": 3,
+      "correctAnswer": "13",
+      "subConceptId": "finding-median",
+      "subConceptName": "Finding the Median",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to order values from smallest to largest",
+        "How to find the middle value in an ordered list"
+      ]
+    },
+    {
+      "questionId": 210,
+      "questionText": "Find the median of these four numbers: 3, 5, 7, 9.",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 211,
+      "questionText": "Find the median of these six numbers: 2, 4, 6, 8, 10, 12.",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 212,
+      "questionText": "Eight numbers have a median of 15.5. Seven of the numbers are: 8, 11, 13, 15, 18, 21, 24. What is the eighth number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 213,
+      "questionText": "Ten numbers are in order. The median is 20.5. The 5th number is 18 and the 7th number is 25. What is the 6th number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23",
+      "subConceptId": "even-median",
+      "subConceptName": "Median with an Even Number of Values",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find the median (the middle value) when there is an even number of values",
+        "Why you must average the two middle values"
+      ]
+    },
+    {
+      "questionId": 214,
+      "questionText": "Three numbers have a mean of 6. Two of the numbers are 5 and 7. What is the third number?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 215,
+      "questionText": "Three numbers have a mean of 10. Two of the numbers are 8 and 12. What is the third number?",
+      "questionDifficulty": 1,
+      "correctAnswer": "10",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 216,
+      "questionText": "Four numbers have a mean of 10. Three of the numbers are 8, 12, and 9. What is the fourth number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 217,
+      "questionText": "Five numbers have a mean of 15. Four of the numbers are 12, 18, 14, and 20. What is the fifth number?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11",
+      "subConceptId": "missing-from-mean",
+      "subConceptName": "Finding a Missing Number When the Mean is Given",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to work backwards from the mean (total divided by how many) to find a missing value",
+        "Why you multiply the mean by the count to find the total"
+      ]
+    },
+    {
+      "questionId": 218,
+      "questionText": "Find both the mode and the range of this data set: 3, 5, 3, 7, 3, 9.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Mode: 3, Range: 6",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 219,
+      "questionText": "Find both the mean and the mode of this data set: 4, 6, 4, 8, 4, 10.",
+      "questionDifficulty": 1,
+      "correctAnswer": "Mean: 6, Mode: 4",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    },
+    {
+      "questionId": 220,
+      "questionText": "A set of 5 numbers has a mode of 4, a median of 5, and a range of 8. The numbers are all whole numbers. What is the largest number?",
+      "questionDifficulty": 3,
+      "correctAnswer": "12",
+      "subConceptId": "combined-averages",
+      "subConceptName": "Questions Using Mode AND Range Together",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to handle questions that test two different measures at once",
+        "When to use mode (most common value) and when to use range (highest minus lowest)"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "finding-mode": {
+      "name": "Finding the Mode",
+      "questionCount": 21,
+      "difficulties": {
+        "D1": 17,
+        "D2": 2,
+        "D3": 2
+      }
+    },
+    "master-mean-average": {
+      "name": "master-mean-average",
+      "questionCount": 24,
+      "difficulties": {
+        "D1": 21,
+        "D2": 2,
+        "D3": 1
+      }
+    },
+    "finding-median": {
+      "name": "Finding the Median",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 10,
+        "D2": 3,
+        "D3": 3
+      }
+    },
+    "calculating-range": {
+      "name": "Calculating the Range",
+      "questionCount": 23,
+      "difficulties": {
+        "D1": 19,
+        "D2": 2,
+        "D3": 2
+      }
+    },
+    "reading-bar-charts": {
+      "name": "Reading Bar Charts",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 8,
+        "D2": 12,
+        "D3": 5
+      }
+    },
+    "reading-pie-charts": {
+      "name": "Reading Pie Charts",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 4,
+        "D2": 4,
+        "D3": 12
+      }
+    },
+    "even-median": {
+      "name": "Median with an Even Number of Values",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 2,
+        "D2": 12,
+        "D3": 2
+      }
+    },
+    "reading-line-graphs": {
+      "name": "Reading Line Graphs",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 7,
+        "D2": 8,
+        "D3": 4
+      }
+    },
+    "reading-tables": {
+      "name": "Reading Two-Way Tables",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 11,
+        "D2": 11,
+        "D3": 6
+      }
+    },
+    "missing-from-mean": {
+      "name": "Finding a Missing Number When the Mean is Given",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 2,
+        "D2": 2,
+        "D3": 14
+      }
+    },
+    "combined-averages": {
+      "name": "Questions Using Mode AND Range Together",
+      "questionCount": 10,
+      "difficulties": {
+        "D1": 2,
+        "D2": 6,
+        "D3": 2
+      }
+    }
+  }
+}

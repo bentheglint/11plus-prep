@@ -1,0 +1,2527 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "percentages",
+    "displayName": "Percentages",
+    "extractedAt": "2026-03-30T13:52:00.345Z",
+    "totalQuestions": 177,
+    "mappedQuestions": 177,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 13,
+    "orphanSubConcepts": 3,
+    "confidenceBreakdown": {
+      "high": 177,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "What is 25% of £200?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£50",
+      "subConceptId": "common-percentages",
+      "subConceptName": "Key Percentage Equivalences",
+      "confidence": "high",
+      "lessonTeachSummary": "You saw that **50%** of **80** = 80 ÷ 2 = **40**. That works because 50% = 1/2. There are **five** key percentages like this — memorise them and you'll be much faster! Tap to reveal each one.",
+      "lessonLearningGoal": [
+        "How to recall which fractions match the most useful percentages",
+        "How to quickly recall 50%, 25%, 10%, 75%, 20%"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "A shirt costs £40. In a sale, it is reduced by 20%. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£32",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "In a class of 25 children, 15 are girls. What percentage are girls?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "A shop offers 10% off a coat costing £450. How much is the discount?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£45",
+      "subConceptId": "finding-10-percent",
+      "subConceptName": "Finding 10% by Dividing by 10",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding 10% is the single most useful percentage trick — and it is surprisingly simple. Tap each step to learn the method!",
+      "lessonLearningGoal": [
+        "How to find 10% of any number by dividing by 10",
+        "Why 10% is the building block for all other percentages"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "A bicycle was priced at £300. After a 15% discount, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£255",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "There are 86 pupils in Year 5. Half of them walk to school. How many is that? (50% of 86)",
+      "questionDifficulty": 1,
+      "correctAnswer": "43",
+      "subConceptId": "common-percentages",
+      "subConceptName": "Key Percentage Equivalences",
+      "confidence": "high",
+      "lessonTeachSummary": "You saw that **50%** of **80** = 80 ÷ 2 = **40**. That works because 50% = 1/2. There are **five** key percentages like this — memorise them and you'll be much faster! Tap to reveal each one.",
+      "lessonLearningGoal": [
+        "How to recall which fractions match the most useful percentages",
+        "How to quickly recall 50%, 25%, 10%, 75%, 20%"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "A shop has 80 apples. 35% of them are green. How many green apples are there?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 8,
+      "questionText": "Which has the greatest value? 30% of 200, 25% of 240, or 20% of 300?",
+      "questionDifficulty": 2,
+      "correctAnswer": "They are all equal",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "A football team won 18 out of 30 matches. What percentage did they win?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "A swimming pool holds 160 litres. It is 75% full. How many litres of water are in the pool?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120",
+      "subConceptId": "common-percentages",
+      "subConceptName": "Key Percentage Equivalences",
+      "confidence": "high",
+      "lessonTeachSummary": "You saw that **50%** of **80** = 80 ÷ 2 = **40**. That works because 50% = 1/2. There are **five** key percentages like this — memorise them and you'll be much faster! Tap to reveal each one.",
+      "lessonLearningGoal": [
+        "How to recall which fractions match the most useful percentages",
+        "How to quickly recall 50%, 25%, 10%, 75%, 20%"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "A games console costs £240 after a 20% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£300",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "In a bag of 60 marbles, 15 are blue. What percentage are NOT blue?",
+      "questionDifficulty": 2,
+      "correctAnswer": "75%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "What is 5% of £840?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£42",
+      "subConceptId": "finding-10-percent",
+      "subConceptName": "Finding 10% by Dividing by 10",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding 10% is the single most useful percentage trick — and it is surprisingly simple. Tap each step to learn the method!",
+      "lessonLearningGoal": [
+        "How to find 10% of any number by dividing by 10",
+        "Why 10% is the building block for all other percentages"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "A book is reduced from £16 to £12. What is the percentage discount?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Which is larger: 40% of 250 or 45% of 200?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40% of 250",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A farmer has 120 sheep. 65% of them are female. How many male sheep does he have?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "In a spelling test, Emma got 0.35 of the questions right. What is her score as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "A cinema has 400 seats. On Friday night, 85% of the seats were filled. How many seats were empty?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "What is 12% of 350?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 20,
+      "questionText": "A jacket originally cost £75. After two successive discounts of 10% and then 10%, what is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£60.75",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "In a test, Sarah scored 32 out of 40. What percentage did she score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "80%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Which of these is the smallest? 0.15, 18%, 1/5, 0.2, 16%",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.15",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A train ticket costs £45 for adults. Children pay 60% of the adult price. How much does a child ticket cost?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£27",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 24,
+      "questionText": "A shop increases all prices by 15%. A TV that cost £400 now costs how much?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£460",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "What percentage of 1 metre is 35 centimetres?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "In a survey of 200 people, 130 said 'yes'. What percentage said 'no'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "A phone costs £180 after a 25% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£240",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "What is 45% of 220?",
+      "questionDifficulty": 2,
+      "correctAnswer": "99",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 29,
+      "questionText": "A school has 600 students. 48% are boys. How many are girls?",
+      "questionDifficulty": 2,
+      "correctAnswer": "312",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Which has the smallest value? 15% of 300, 18% of 200, or 12% of 400?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18% of 200",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "A recipe needs 250g of flour. Tom only wants to make 60% of the recipe. How much flour does he need?",
+      "questionDifficulty": 2,
+      "correctAnswer": "150g",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 32,
+      "questionText": "A store sells 180 items in a week. 20% were sold on Saturday. How many items were sold on Saturday?",
+      "questionDifficulty": 1,
+      "correctAnswer": "36",
+      "subConceptId": "finding-10-percent",
+      "subConceptName": "Finding 10% by Dividing by 10",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding 10% is the single most useful percentage trick — and it is surprisingly simple. Tap each step to learn the method!",
+      "lessonLearningGoal": [
+        "How to find 10% of any number by dividing by 10",
+        "Why 10% is the building block for all other percentages"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "What percentage is 24 out of 96?",
+      "questionDifficulty": 1,
+      "correctAnswer": "25%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "A library has 540 books. After buying more books, it has 15% more than before. How many books does it have now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "621",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "In a fruit bowl with 80 pieces of fruit, 35% are apples and 25% are oranges. How many are neither apples nor oranges?",
+      "questionDifficulty": 3,
+      "correctAnswer": "32",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "A farm has 180 animals. 30% of them are sheep. How many sheep are there?",
+      "questionDifficulty": 1,
+      "correctAnswer": "54",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 37,
+      "questionText": "A backpack costs £80. During a clearance sale, it is reduced by 35%. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£52",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "In a box of 64 crayons, 16 are red. What percentage are red?",
+      "questionDifficulty": 1,
+      "correctAnswer": "25%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A school trip costs £240. A deposit of 15% is needed to book a place. How much is the deposit?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£36",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 40,
+      "questionText": "A tablet was priced at £68 after a 15% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£80",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "What is 60% of 350?",
+      "questionDifficulty": 1,
+      "correctAnswer": "210",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 42,
+      "questionText": "A garden has 150 plants. 45 are flowers. What percentage are flowers?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "A school has 450 pupils. 72% attended the assembly. How many pupils were absent?",
+      "questionDifficulty": 2,
+      "correctAnswer": "126",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "What is 8% of £650?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£52",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 45,
+      "questionText": "A video game costs £90 after a 40% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£150",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A baker uses 0.42 of a bag of flour for a cake. What percentage of the bag has been used?",
+      "questionDifficulty": 1,
+      "correctAnswer": "42%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A school has 280 students in an assembly. 55% are female. How many are male?",
+      "questionDifficulty": 2,
+      "correctAnswer": "126",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A watch costs £120. If the price increases by 25%, what is the new price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£150",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "In a test, Noah scored 18 out of 45. What percentage did he score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "What is 35% of 420?",
+      "questionDifficulty": 2,
+      "correctAnswer": "147",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 51,
+      "questionText": "A camera costs £144 after a 20% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£180",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "A bottle contains 1.5 litres. If 540ml has been drunk, what percentage was drunk?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "A gym membership costs £85. If it increases by 20%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£102",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Which has the same value? 35% of 160, 40% of 140, or 32% of 175?",
+      "questionDifficulty": 2,
+      "correctAnswer": "They are all equal",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Ella scored 63 marks out of 90. What percentage did she score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "What is 12% of 550?",
+      "questionDifficulty": 2,
+      "correctAnswer": "66",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 57,
+      "questionText": "In a vote, 200 people participated. 65% voted 'yes'. How many voted 'no'?",
+      "questionDifficulty": 2,
+      "correctAnswer": "70",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A bag contains 800g of rice. If 45% is used, how much remains?",
+      "questionDifficulty": 2,
+      "correctAnswer": "440g",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "A pair of headphones costs £156 after a 20% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£195",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "What percentage is 48 out of 320?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "A store offers two successive discounts of 15% and then 10% on an item originally priced at £200. What is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£153",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "What is 18% of 350?",
+      "questionDifficulty": 2,
+      "correctAnswer": "63",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 63,
+      "questionText": "A sweet shop has 450 sweets. 38% are chocolate. How many are NOT chocolate?",
+      "questionDifficulty": 2,
+      "correctAnswer": "279",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "A coat costs £75. If the price increases by 32%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£99",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Max scored 56 marks out of 140. What percentage did he score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "What is 22% of 650?",
+      "questionDifficulty": 2,
+      "correctAnswer": "143",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "Ava has a 1.8 litre bottle of juice. She drinks 45%. How many millilitres remain?",
+      "questionDifficulty": 3,
+      "correctAnswer": "990ml",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "A tablet costs £105 after a 30% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£150",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Which of these has the smallest value? 28% of 200, 35% of 180, or 24% of 250?",
+      "questionDifficulty": 2,
+      "correctAnswer": "28% of 200",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "What percentage is 27 out of 180?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "A college has 750 students. 44% are studying science. How many are NOT studying science?",
+      "questionDifficulty": 2,
+      "correctAnswer": "420",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "What is 16% of 875?",
+      "questionDifficulty": 2,
+      "correctAnswer": "140",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 73,
+      "questionText": "A keyboard costs £216 after a 10% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£240",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "What percentage is 35cm in 2 metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "17.5%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "What is 85% of 360?",
+      "questionDifficulty": 2,
+      "correctAnswer": "306",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 76,
+      "questionText": "What percentage is 72 out of 240?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "A phone bill is £140. If it increases by 18%, what is the new bill?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£165.20",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "In an election, 500 people voted. 58% voted for candidate A. How many voted for other candidates?",
+      "questionDifficulty": 2,
+      "correctAnswer": "210",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "What is 26% of 450?",
+      "questionDifficulty": 2,
+      "correctAnswer": "117",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 80,
+      "questionText": "A games console costs £168 after a 25% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£224",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Lily uses 35% of a 600g bag of flour. How much flour did she use?",
+      "questionDifficulty": 2,
+      "correctAnswer": "210g",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 82,
+      "questionText": "What percentage is 54 out of 180?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Which is largest? 42% of 250, 50% of 210, or 48% of 220?",
+      "questionDifficulty": 2,
+      "correctAnswer": "48% of 220",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "A pair of trainers costs £95 after a 5% discount. What was the original price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£100",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "What is 14% of 725?",
+      "questionDifficulty": 2,
+      "correctAnswer": "101.5",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 86,
+      "questionText": "A school has 900 pupils. If 42% passed a swimming test, how many did not pass?",
+      "questionDifficulty": 3,
+      "correctAnswer": "522",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "What percentage is 96 out of 160?",
+      "questionDifficulty": 1,
+      "correctAnswer": "60%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "What is 38% of 550?",
+      "questionDifficulty": 2,
+      "correctAnswer": "209",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 89,
+      "questionText": "A dining table costs £135. If the price increases by 24%, what is the new price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£167.40",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "In a football match, a goalkeeper saved 0.68 of the shots on target. What is this as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "68%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A sofa costs £252 after a 10% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£280",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "A baker uses 28% of a 1.5kg bag of chocolate. How many grams did he use?",
+      "questionDifficulty": 3,
+      "correctAnswer": "420g",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What percentage is 84 out of 210?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Which has the same value? 55% of 180, 60% of 165, or 45% of 220?",
+      "questionDifficulty": 2,
+      "correctAnswer": "They are all equal",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "What is 19% of 680?",
+      "questionDifficulty": 2,
+      "correctAnswer": "129.2",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "A television costs £192 after a 20% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£240",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "A school has 420 students. 35% are in Year 5. The rest are in Year 6. How many are in Year 6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "273",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "What is 32% of 875?",
+      "questionDifficulty": 2,
+      "correctAnswer": "280",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 99,
+      "questionText": "What percentage is 108 out of 360?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "A haircut costs £88. If the price increases by 15%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£101.20",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A juice carton contains 2.5 litres. If 750ml is poured out, what percentage has been poured out?",
+      "questionDifficulty": 2,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Which of these has the smallest value? 36% of 250, 40% of 250, or 48% of 200?",
+      "questionDifficulty": 2,
+      "correctAnswer": "36% of 250",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "A bicycle costs £117 after a 35% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£180",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "What is 27% of 740?",
+      "questionDifficulty": 2,
+      "correctAnswer": "199.8",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 105,
+      "questionText": "In a survey, 650 people responded. 58% agreed. How many disagreed?",
+      "questionDifficulty": 2,
+      "correctAnswer": "273",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "What percentage is 135 out of 450?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "A restaurant bill is £210. If it increases by 16%, what is the new total?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£243.60",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "What is 46% of 950?",
+      "questionDifficulty": 2,
+      "correctAnswer": "437",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 109,
+      "questionText": "A monitor costs £234 after a 10% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£260",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "A zoo has 800 animals. 62% are mammals. How many are NOT mammals?",
+      "questionDifficulty": 2,
+      "correctAnswer": "304",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "A jacket originally costs £300. After two successive discounts of 20% and then 15%, what is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£204",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "What percentage is 144 out of 480?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "What is 34% of 850?",
+      "questionDifficulty": 2,
+      "correctAnswer": "289",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "A car costs £161 after a 30% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£230",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "A swimming pool is 0.58 full of water. What is this as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "58%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Which is largest? 52% of 250, 65% of 200, or 48% of 275?",
+      "questionDifficulty": 2,
+      "correctAnswer": "48% of 275",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A concert ticket costs £104. If the price increases by 22%, what is the new price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£126.88",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "What is 24% of 625?",
+      "questionDifficulty": 2,
+      "correctAnswer": "150",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 119,
+      "questionText": "A park has 560 trees. 45% are oak. How many trees are NOT oak?",
+      "questionDifficulty": 2,
+      "correctAnswer": "308",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "What percentage is 168 out of 560?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "A printer costs £189 after a 30% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£270",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "What is 42% of 725?",
+      "questionDifficulty": 2,
+      "correctAnswer": "304.5",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 123,
+      "questionText": "What percentage is 250cm in 4 metres?",
+      "questionDifficulty": 2,
+      "correctAnswer": "62.5%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A membership fee is £95. If the price increases by 28%, what is the new fee?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£121.60",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "What percentage is 192 out of 640?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "A painting costs £133 after a 5% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£140",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "What is 36% of 825?",
+      "questionDifficulty": 2,
+      "correctAnswer": "297",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 128,
+      "questionText": "A library has 900 books. 48% are fiction. How many are non-fiction?",
+      "questionDifficulty": 2,
+      "correctAnswer": "468",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "Which of these has the smallest value? 44% of 300, 55% of 260, or 52% of 260?",
+      "questionDifficulty": 2,
+      "correctAnswer": "44% of 300",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "A desk costs £198 after a 12% discount. What was the original price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£225",
+      "subConceptId": "reverse-percentage",
+      "subConceptName": "Reverse Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "If there's **20% off**, the sale price is **80%** of the original.\n\nSo £48 = 80%.\n\nFind 1%: £48 ÷ 80 = £0.6\nFind 100%: £0.6 × 100 = **£60**",
+      "lessonLearningGoal": [
+        "How to find the original price when you know the discounted price",
+        "Why you work out what percentage the given amount represents"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "What is 28% of 675?",
+      "questionDifficulty": 2,
+      "correctAnswer": "189",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 132,
+      "questionText": "What percentage is 216 out of 720?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30%",
+      "subConceptId": "express-as-percentage",
+      "subConceptName": "Expressing One Number as a Percentage of Another",
+      "confidence": "high",
+      "lessonTeachSummary": "There is a simple two-step method for converting (changing) any \"X out of Y\" into a percentage. Tap to learn it!",
+      "lessonLearningGoal": [
+        "How to express one number as a percentage of another",
+        "Why you divide and then multiply by 100"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "A holiday costs £155. If the price increases by 26%, what is the new price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£195.30",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "In a class reading challenge, Olivia completed 0.74 of the books on the list. What is this as a percentage?",
+      "questionDifficulty": 1,
+      "correctAnswer": "74%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "What is 54% of 950?",
+      "questionDifficulty": 2,
+      "correctAnswer": "513",
+      "subConceptId": "master-building-block-percentages",
+      "subConceptName": "master-building-block-percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 136,
+      "questionText": "A coat costs £60. In a sale, it is reduced by 10%. What is the sale price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£54",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 137,
+      "questionText": "A skateboard costs £45. It is reduced by 20% in a sale. What is the sale price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£36",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "A laptop costs £480. In a clearance sale, it is reduced by 25%. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£360",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A pair of jeans costs £55. They are reduced by 30% in a sale. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£38.50",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 140,
+      "questionText": "A scooter costs £125. The price is reduced by 12% in a sale. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£110",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 141,
+      "questionText": "A school bag costs £36. In a sale, it is reduced by 15%. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£30.60",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 142,
+      "questionText": "A board game costs £28. It is reduced by 25% in a sale. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£21",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 143,
+      "questionText": "A dress costs £64. In the January sales, it is reduced by 35%. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£41.60",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "A television costs £750. It is first reduced by 20%, then a further 5% off the reduced price. What is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£570",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "A toy car costs £18. It is reduced by 50% in a half-price sale. What is the sale price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£9",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "A football shirt costs £42. It is reduced by 15% in a sale. How much do you save?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£6.30",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "A shop reduces all prices by 18%. A jacket originally costs £85. What is the sale price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£69.70",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "A book costs £12. It is reduced by 25% in a sale. What is the sale price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£9",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "A pair of boots costs £90. They are reduced by 22% in a sale. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£70.20",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "A tablet costs £320. It is reduced by 35% in a closing-down sale. What is the sale price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£208",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "A coat costs £74. It is reduced by 40% in a sale. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£44.40",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A bicycle costs £260. In a summer sale, it is reduced by 15%. What is the sale price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£221",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "A guitar costs £180. It is on sale with 28% off. What is the sale price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£129.60",
+      "subConceptId": "percentage-decrease",
+      "subConceptName": "Percentage Decrease and Discounts",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage decrease works just like increase — but instead of adding, you **subtract**.\n\n1. **Find the percentage** of the original amount (use the building-block method)\n2. **SUBTRACT** from the orig",
+      "lessonLearningGoal": [
+        "How to calculate a sale price after a percentage discount",
+        "Why you find the percentage first, then subtract"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "A train ticket costs £54. If the price increases by 10%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£59.40",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "A bus fare costs £2.40. If it increases by 25%, what is the new fare?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£3.00",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "A cinema ticket costs £9.50. If the price increases by 20%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£11.40",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "A school dinner costs £2.80. If the price increases by 15%, what is the new price?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£3.22",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "A gym membership costs £45 per month. If it increases by 12%, what is the new monthly cost?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£50.40",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "A magazine costs £4.00. If the price increases by 50%, what is the new price?",
+      "questionDifficulty": 1,
+      "correctAnswer": "£6.00",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "A car insurance premium is £360. If it increases by 8%, what is the new premium?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£388.80",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "A monthly phone contract costs £32. If it increases by 14%, what is the new cost?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£36.48",
+      "subConceptId": "percentage-increase",
+      "subConceptName": "Percentage Increase",
+      "confidence": "high",
+      "lessonTeachSummary": "Percentage increase is a two-step process:\n\n1. **Find the percentage** of the original amount (use the building-block method: 10%, 5%, 1%)\n2. **ADD** the percentage to the original — increase means it",
+      "lessonLearningGoal": [
+        "How to calculate a price after a percentage increase",
+        "Why you find the percentage first, then add"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "Which is larger: 0.45 or 40%?",
+      "questionDifficulty": 2,
+      "correctAnswer": "0.45",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "Put these in order from smallest to largest: 3/8, 35%, 0.4",
+      "questionDifficulty": 2,
+      "correctAnswer": "35%, 3/8, 0.4",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "Which of these is equal to 1/2? 45%, 50%, 55%, 60%, 65%",
+      "questionDifficulty": 1,
+      "correctAnswer": "50%",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "Which is the odd one out? 0.75, 3/4, 70%, 75%",
+      "questionDifficulty": 2,
+      "correctAnswer": "70%",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "Put these in order from largest to smallest: 7/20, 0.38, 36%",
+      "questionDifficulty": 3,
+      "correctAnswer": "0.38, 36%, 7/20",
+      "subConceptId": "comparing-fdp",
+      "subConceptName": "Comparing Fractions, Decimals and Percentages",
+      "confidence": "high",
+      "lessonTeachSummary": "The easiest way to compare is to convert everything to **percentages**:\n\n- **3/5** = **60%**\n- **0.55** = **55%**\n- **65%** = **65%**\n\nNow it's easy to compare!",
+      "lessonLearningGoal": [
+        "How to compare a fraction, a decimal and a percentage by converting (changing) to the same type",
+        "How to decide which form is easiest to change to"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "In a science experiment, a plant grew 0.15 metres. What is this as a percentage of 1 metre?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "A jar is 0.85 full of jam. What percentage of the jar is empty?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "Convert 0.06 to a percentage.",
+      "questionDifficulty": 1,
+      "correctAnswer": "6%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "A battery is at 0.72 charge. What percentage of charge remains?",
+      "questionDifficulty": 2,
+      "correctAnswer": "72%",
+      "subConceptId": "percent-to-decimal",
+      "subConceptName": "Converting Between Percentages and Decimals",
+      "confidence": "high",
+      "lessonTeachSummary": "Converting between percentages and decimals is just about moving the decimal point. But be careful — moving it the **wrong number** of places is the most common trap! Tap to see the rule.",
+      "lessonLearningGoal": [
+        "How to convert (change) a percentage to a decimal by dividing by 100",
+        "Why 5% = 0.05, not 0.5"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "A shop increases the price of a £60 item by 10%, then increases the new price by another 10%. What is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£72.60",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "A coat costs £200. It is first increased by 25%, then the new price is reduced by 20%. What is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£200",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "A price increases by 10% and then decreases by 10%. Is the final price higher, lower, or the same as the original?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Lower",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "A bicycle costs £180. It is reduced by 15%, then the sale price is reduced by a further 10%. What is the final price?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£137.70",
+      "subConceptId": "successive-percentages",
+      "subConceptName": "Successive Percentage Changes",
+      "confidence": "high",
+      "lessonTeachSummary": "**Discount 1:** 10% off £100 = £10 off → £90\n\n**Discount 2:** 10% off £90 (NOT £100!) = £9 off → £81\n\nThe second discount applies to the **already reduced price**, so you save less than you'd think!",
+      "lessonLearningGoal": [
+        "Why two 10% discounts don't equal a 20% discount",
+        "How to apply percentage changes one step at a time"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "A school has 400 pupils. 40% are boys. 50% of the girls play netball. How many girls play netball?",
+      "questionDifficulty": 2,
+      "correctAnswer": "120",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "A baker makes 240 cakes. 30% are chocolate and the rest are vanilla. He sells 75% of the vanilla cakes. How many vanilla cakes does he sell?",
+      "questionDifficulty": 2,
+      "correctAnswer": "126",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "In a school of 500 pupils, 52% are girls. 25% of the girls and 30% of the boys play a musical instrument. How many pupils play a musical instrument?",
+      "questionDifficulty": 3,
+      "correctAnswer": "137",
+      "subConceptId": "percentage-word-problems",
+      "subConceptName": "Percentage Word Problems",
+      "confidence": "high",
+      "lessonTeachSummary": "This is a **percentage decrease** problem.\n\nTotal before sale: £60 + £20 = £80\n30% of £80 = £24\nSale price: £80 - £24 = **£56**",
+      "lessonLearningGoal": [
+        "How to spot whether a problem is asking for increase, decrease, or a simple percentage",
+        "How to check your answer makes sense in context"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "percent-means-per-hundred",
+      "name": "Percent Means Per Hundred"
+    },
+    {
+      "id": "building-percentages",
+      "name": "Building Percentages from 10% and 1%"
+    },
+    {
+      "id": "percent-to-fraction",
+      "name": "Converting Percentages to Fractions"
+    }
+  ],
+  "subConceptCoverage": {
+    "common-percentages": {
+      "name": "Key Percentage Equivalences",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 3,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "percentage-decrease": {
+      "name": "Percentage Decrease and Discounts",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 4,
+        "D2": 13,
+        "D3": 3
+      }
+    },
+    "express-as-percentage": {
+      "name": "Expressing One Number as a Percentage of Another",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 14,
+        "D2": 15,
+        "D3": 0
+      }
+    },
+    "finding-10-percent": {
+      "name": "Finding 10% by Dividing by 10",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 3,
+        "D2": 0,
+        "D3": 0
+      }
+    },
+    "master-building-block-percentages": {
+      "name": "master-building-block-percentages",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 3,
+        "D2": 26,
+        "D3": 0
+      }
+    },
+    "comparing-fdp": {
+      "name": "Comparing Fractions, Decimals and Percentages",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 1,
+        "D2": 14,
+        "D3": 1
+      }
+    },
+    "reverse-percentage": {
+      "name": "Reverse Percentages",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 17
+      }
+    },
+    "percentage-word-problems": {
+      "name": "Percentage Word Problems",
+      "questionCount": 22,
+      "difficulties": {
+        "D1": 0,
+        "D2": 17,
+        "D3": 5
+      }
+    },
+    "percent-to-decimal": {
+      "name": "Converting Between Percentages and Decimals",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 7,
+        "D2": 2,
+        "D3": 0
+      }
+    },
+    "successive-percentages": {
+      "name": "Successive Percentage Changes",
+      "questionCount": 8,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 7
+      }
+    },
+    "percentage-increase": {
+      "name": "Percentage Increase",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 3,
+        "D2": 9,
+        "D3": 8
+      }
+    }
+  }
+}

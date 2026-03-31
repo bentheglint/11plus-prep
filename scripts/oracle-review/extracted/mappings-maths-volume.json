@@ -1,0 +1,1829 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "volume",
+    "displayName": "Volume",
+    "extractedAt": "2026-03-30T13:52:00.459Z",
+    "totalQuestions": 140,
+    "mappedQuestions": 140,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 3,
+    "confidenceBreakdown": {
+      "high": 140,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "A rectangular box is 10 cm long, 5 cm wide, and 4 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "200 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "Emma has a cube-shaped storage box. Each edge is 6 cm long. What is the volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "216 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Tom's fish tank is 50 cm long, 30 cm wide, and 40 cm high. What is its volume in litres? (Remember: 1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "60 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 4,
+      "questionText": "A cuboid has a volume of 120 cm³, a length of 10 cm, and a width of 4 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Sophie is packing books into a box that is 30 cm × 20 cm × 15 cm. What is the volume of the box?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9000 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 6,
+      "questionText": "A cube has a volume of 125 cm³. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Jake's bedroom is 4 metres long, 3 metres wide, and 2.5 metres high. What is the volume of his bedroom in cubic metres?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 8,
+      "questionText": "A box measures 8 cm by 8 cm by 8 cm. Another box measures 16 cm by 4 cm by 8 cm. Which statement is true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "They have equal volumes",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Mia fills a container that is 20 cm long, 10 cm wide, and 5 cm high with water. How many millilitres of water does it hold? (1 cm³ = 1 ml)",
+      "questionDifficulty": 2,
+      "correctAnswer": "1000 ml",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 10,
+      "questionText": "A cuboid has dimensions 12 cm × 5 cm × 3 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "180 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 11,
+      "questionText": "Oliver has two identical cube-shaped dice. Each die has edges of 2 cm. What is the total volume of both dice?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "A rectangular swimming pool is 25 metres long, 10 metres wide, and 2 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "500 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 13,
+      "questionText": "Lucy has a storage box with a volume of 2400 cm³. The base is 20 cm by 15 cm. How tall is the box?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "A cuboid has dimensions x cm by 2x cm by 3 cm. If x = 5, what is the volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "150 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 15,
+      "questionText": "Ben's toy box is 60 cm long, 40 cm wide, and 50 cm tall. He fills it halfway with toys. What volume of space is occupied by the toys?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60,000 cubic cm",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A cube and a cuboid both have the same volume of 64 cm³. The cube has edges of 4 cm. If the cuboid is 8 cm long and 2 cm wide, what is its height?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4 cm",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Hannah is filling a rectangular container that measures 50 cm by 30 cm by 20 cm. How many 1-litre bottles of water will she need to fill it completely",
+      "questionDifficulty": 3,
+      "correctAnswer": "30 bottles",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 18,
+      "questionText": "A cube has edges that are twice as long as another cube with 3 cm edges. What is the volume of the larger cube?",
+      "questionDifficulty": 2,
+      "correctAnswer": "216 cubic cm",
+      "subConceptId": "scaling-volumes",
+      "subConceptName": "Doubling Edge Length Multiplies Volume by 8",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that doubling every edge multiplies the volume by 8",
+        "Why doubling every edge makes the volume 8 times bigger, not 2 times"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "A rectangular box is 12 cm long, 6 cm wide, and 5 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "360 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 20,
+      "questionText": "A cube has edges of 7 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "343 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Noah's storage container is 15 cm long, 8 cm wide, and 4 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "480 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 22,
+      "questionText": "A cube has a volume of 512 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "A cuboid has a volume of 180 cm³, a length of 12 cm, and a width of 5 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Lily's bedroom is 5 metres long, 4 metres wide, and 2.5 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "50 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 25,
+      "questionText": "A fish tank is 40 cm long, 25 cm wide, and 30 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "30 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 26,
+      "questionText": "A cuboid measures 20 cm by 10 cm by 6 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1200 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 27,
+      "questionText": "A cube has edges of 9 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "729 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "A box is 18 cm long, 12 cm wide, and 5 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1080 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 29,
+      "questionText": "Ethan has three identical cubes, each with 4 cm edges. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "192 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "A rectangular container is 25 cm long, 16 cm wide, and 10 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4000 cubic cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 31,
+      "questionText": "A cube has a volume of 1000 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "10 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "A swimming pool is 20 metres long, 8 metres wide, and 1.5 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "240 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 33,
+      "questionText": "A cuboid has dimensions 14 cm × 7 cm × 6 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "588 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 34,
+      "questionText": "Ava fills a container that is 30 cm long, 20 cm wide, and 10 cm high with water. How many litres does it hold? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "6 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 35,
+      "questionText": "A cube and a cuboid both have a volume of 216 cm³. The cube has 6 cm edges. If the cuboid is 12 cm long and 3 cm wide, what is its height?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 cm",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Mason's toy chest is 80 cm long, 50 cm wide, and 40 cm tall. He fills it three-quarters full. What volume is occupied?",
+      "questionDifficulty": 3,
+      "correctAnswer": "120,000 cubic cm",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A cuboid has a volume of 360 cm³. The base is 12 cm by 6 cm. How tall is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "A box measures 11 cm by 11 cm by 11 cm. Another box measures 22 cm by 5.5 cm by 11 cm. Which statement is true?",
+      "questionDifficulty": 3,
+      "correctAnswer": "They have equal volumes",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "A rectangular container measures 35 cm by 24 cm by 15 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12,600 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 40,
+      "questionText": "A cube has edges of 11 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1331 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Harper is filling a rectangular aquarium that measures 60 cm by 40 cm by 35 cm. How many 1-litre bottles will she need? (1 litre = 1000 cm³)",
+      "questionDifficulty": 3,
+      "correctAnswer": "84 bottles",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 42,
+      "questionText": "A cuboid has dimensions 16 cm × 9 cm × 7 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1008 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 43,
+      "questionText": "A cube has a volume of 729 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "A cuboid has dimensions x cm by 3x cm by 4 cm. If x = 6, what is the volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "432 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 45,
+      "questionText": "A box is 22 cm long, 14 cm wide, and 8 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2464 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 46,
+      "questionText": "Leo's storage unit is 3 metres long, 2.5 metres wide, and 2 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "15 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 47,
+      "questionText": "A cube has edges that are three times as long as another cube with 4 cm edges. What is the volume of the larger cube?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1728 cubic cm",
+      "subConceptId": "scaling-volumes",
+      "subConceptName": "Doubling Edge Length Multiplies Volume by 8",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that doubling every edge multiplies the volume by 8",
+        "Why doubling every edge makes the volume 8 times bigger, not 2 times"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "A rectangular container is 28 cm long, 18 cm wide, and 12 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6048 cubic cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 49,
+      "questionText": "A cuboid has a volume of 480 cm³, a length of 16 cm, and a width of 5 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "A cube has edges of 13 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2197 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "A fish tank is 70 cm long, 35 cm wide, and 40 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "98 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 52,
+      "questionText": "A cuboid measures 24 cm by 15 cm by 9 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3240 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 53,
+      "questionText": "Zoe has four identical cubes, each with 5 cm edges. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "500 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "A box is 19 cm long, 11 cm wide, and 8 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1672 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 55,
+      "questionText": "A cube has a volume of 1728 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "A swimming pool is 30 metres long, 12 metres wide, and 1.8 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "648 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 57,
+      "questionText": "A cuboid has a volume of 630 cm³. The base is 15 cm by 7 cm. How tall is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A rectangular container measures 32 cm by 20 cm by 18 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "11,520 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 59,
+      "questionText": "A cube has edges of 14 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2744 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Isabella fills a container that is 45 cm long, 30 cm wide, and 20 cm high with water. How many millilitres does it hold? (1 cm³ = 1 ml)",
+      "questionDifficulty": 2,
+      "correctAnswer": "27,000 ml",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 61,
+      "questionText": "A cuboid has dimensions 21 cm × 13 cm × 10 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2730 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 62,
+      "questionText": "A cuboid has dimensions 2y cm by 5y cm by 6 cm. If y = 4, what is the volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "960 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 63,
+      "questionText": "A box is 26 cm long, 17 cm wide, and 11 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4862 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 64,
+      "questionText": "A cube has a volume of 2197 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "13 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Jack's bedroom is 6 metres long, 4.5 metres wide, and 3 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "81 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 66,
+      "questionText": "A rectangular container is 36 cm long, 22 cm wide, and 16 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12,672 cubic cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 67,
+      "questionText": "A cuboid has a volume of 840 cm³, a length of 21 cm, and a width of 8 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Ruby is filling a rectangular aquarium that measures 80 cm by 50 cm by 45 cm. How many litres does it hold? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "180 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 69,
+      "questionText": "A cuboid measures 28 cm by 19 cm by 12 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6384 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 70,
+      "questionText": "A cube has edges of 15 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3375 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Oliver has five identical cubes, each with 6 cm edges. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1080 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A swimming pool is 40 metres long, 15 metres wide, and 2.2 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1320 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 73,
+      "questionText": "A cuboid has a volume of 1050 cm³. The base is 21 cm by 10 cm. How tall is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "A box is 33 cm long, 20 cm wide, and 14 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9240 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 75,
+      "questionText": "A cube has a volume of 3375 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Mia's toy box is 90 cm long, 60 cm wide, and 50 cm tall. She fills it two-thirds full. What volume is occupied?",
+      "questionDifficulty": 3,
+      "correctAnswer": "180,000 cubic cm",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "A rectangular container measures 42 cm by 28 cm by 15 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "17,640 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 78,
+      "questionText": "A cube has edges of 16 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4096 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A cuboid has dimensions 30 cm × 24 cm × 18 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "12,960 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 80,
+      "questionText": "A fish tank is 90 cm long, 45 cm wide, and 50 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "202.5 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 81,
+      "questionText": "A cuboid has a volume of 1200 cm³, a length of 24 cm, and a width of 10 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "A box measures 38 cm by 26 cm by 17 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "16,796 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 83,
+      "questionText": "A cube and a cuboid both have a volume of 1000 cm³. The cube has 10 cm edges. If the cuboid is 20 cm long and 5 cm wide, what is its height?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10 cm",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Amelia's storage unit is 4 metres long, 3.5 metres wide, and 2.5 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "35 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 85,
+      "questionText": "A cube has a volume of 4096 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "16 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "A rectangular container is 48 cm long, 32 cm wide, and 20 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "30,720 cubic cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 87,
+      "questionText": "Harper has six identical cubes, each with 7 cm edges. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2058 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "A cuboid has dimensions 3z cm by 4z cm by 8 cm. If z = 5, what is the volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2400 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 89,
+      "questionText": "A swimming pool is 50 metres long, 18 metres wide, and 2.4 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2160 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 90,
+      "questionText": "A cuboid has a volume of 1440 cm³. The base is 24 cm by 12 cm. How tall is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A box is 44 cm long, 30 cm wide, and 19 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "25,080 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 92,
+      "questionText": "A cube has edges of 17 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4913 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Charlie fills a container that is 55 cm long, 40 cm wide, and 25 cm high with water. How many litres does it hold? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "55 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 94,
+      "questionText": "A rectangular container measures 52 cm by 35 cm by 22 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "40,040 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 95,
+      "questionText": "A cuboid has a volume of 1800 cm³, a length of 30 cm, and a width of 12 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "A cube has a volume of 5832 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Lucas's bedroom is 7 metres long, 5.5 metres wide, and 3.5 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "134.75 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 98,
+      "questionText": "A fish tank is 100 cm long, 50 cm wide, and 60 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "300 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 99,
+      "questionText": "A cuboid measures 56 cm by 38 cm by 24 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "51,072 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 100,
+      "questionText": "A cube has edges that are four times as long as another cube with 5 cm edges. What is the volume of the larger cube?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8000 cubic cm",
+      "subConceptId": "scaling-volumes",
+      "subConceptName": "Doubling Edge Length Multiplies Volume by 8",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that doubling every edge multiplies the volume by 8",
+        "Why doubling every edge makes the volume 8 times bigger, not 2 times"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A rectangular container is 60 cm long, 42 cm wide, and 28 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "70,560 cubic cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 102,
+      "questionText": "A cube has edges of 19 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "6859 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Sophia's toy chest is 100 cm long, 70 cm wide, and 60 cm tall. She fills it five-sixths full. What volume is occupied?",
+      "questionDifficulty": 3,
+      "correctAnswer": "350,000 cubic cm",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "A swimming pool is 35 metres long, 14 metres wide, and 2.6 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1274 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 105,
+      "questionText": "A cuboid has a volume of 2100 cm³. The base is 28 cm by 15 cm. How tall is it?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "A box is 64 cm long, 46 cm wide, and 30 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "88,320 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 107,
+      "questionText": "A cube has a volume of 6859 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "19 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Benjamin has eight identical cubes, each with 8 cm edges. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4096 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "A rectangular container measures 72 cm by 48 cm by 35 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "120,960 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 110,
+      "questionText": "A cuboid has a volume of 2520 cm³, a length of 36 cm, and a width of 14 cm. What is its height?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5 cm",
+      "subConceptId": "missing-dimension",
+      "subConceptName": "Finding Missing Dimension from Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to find a missing dimension (measurement) when you know the volume",
+        "Why dividing volume by the other two dimensions works"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "A cube has edges of 20 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8000 cubic cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "A fish tank is 110 cm long, 55 cm wide, and 70 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
+      "questionDifficulty": 2,
+      "correctAnswer": "423.5 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 113,
+      "questionText": "Emma's storage unit is 5 metres long, 4.5 metres wide, and 3.5 metres high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "78.75 cubic metres",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 114,
+      "questionText": "A cuboid has dimensions 2w cm by 3w cm by 4w cm. If w = 5, what is the volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3,000 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 115,
+      "questionText": "A box measures 76 cm by 54 cm by 38 cm. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "155,952 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 116,
+      "questionText": "A cube has a volume of 8000 cubic cm. What is the length of each edge?",
+      "questionDifficulty": 2,
+      "correctAnswer": "20 cm",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "A swimming pool is 45 metres long, 20 metres wide, and 3 metres deep. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2700 cubic metres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 118,
+      "questionText": "A rectangular container is 84 cm long, 60 cm wide, and 42 cm high. What is its volume?",
+      "questionDifficulty": 1,
+      "correctAnswer": "211,680 cubic cm",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 119,
+      "questionText": "A fish tank is 60 cm long, 30 cm wide, and 40 cm tall. Water fills it to three-quarters of its height. How many litres of water are in the tank? (1 li",
+      "questionDifficulty": 3,
+      "correctAnswer": "54 litres",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Two cuboids have the same volume. The first cuboid measures 8 cm × 6 cm × 5 cm. The second cuboid is 10 cm long and 4 cm wide. What is the height of t",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 cm",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "A paddling pool is 20 m long, 10 m wide, and 1.5 m deep. It takes 5 hours to fill completely. How many litres of water flow in per minute? (1 m³ = 1,0",
+      "questionDifficulty": 3,
+      "correctAnswer": "1,000 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 122,
+      "questionText": "A cube has edges of length (n + 2) cm. If the volume of the cube is 125 cm³, what is the value of n?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Which container holds more water: a rectangular box measuring 30 cm × 20 cm × 15 cm, or a cube with edges of 25 cm? How much more does the larger one ",
+      "questionDifficulty": 3,
+      "correctAnswer": "The cube holds 6,625 cm³ more",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "A rectangular tank has a base measuring 40 cm by 25 cm and contains some water. When a stone is placed in the tank, the water level rises by 2 cm. Wha",
+      "questionDifficulty": 3,
+      "correctAnswer": "2,000 cm³",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 125,
+      "questionText": "A tap fills a rectangular tank at a rate of 4 litres per minute. The tank is 80 cm long, 50 cm wide, and 30 cm high. How many minutes does it take to ",
+      "questionDifficulty": 3,
+      "correctAnswer": "30 minutes",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 126,
+      "questionText": "An L-shaped solid is made by cutting a 5 cm × 3 cm × 4 cm corner from a 10 cm × 6 cm × 4 cm cuboid. What is the volume of the L-shaped solid?",
+      "questionDifficulty": 3,
+      "correctAnswer": "180 cm³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 127,
+      "questionText": "All the water from a full rectangular tank measuring 15 cm × 10 cm × 8 cm is poured into an empty tank with a base of 20 cm × 12 cm. How deep is the w",
+      "questionDifficulty": 3,
+      "correctAnswer": "5 cm",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "How many small cubes with 6 cm edges can be packed exactly into a box measuring 24 cm × 18 cm × 12 cm?",
+      "questionDifficulty": 3,
+      "correctAnswer": "24",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "An L-shaped room is made of two cuboids joined together. The larger part is 6 m × 4 m × 3 m and the smaller part is 3 m × 2 m × 3 m. What is the total",
+      "questionDifficulty": 2,
+      "correctAnswer": "90 m³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 130,
+      "questionText": "A T-shaped solid is made from two cuboids. The top bar is 12 cm × 3 cm × 4 cm and the vertical part is 3 cm × 8 cm × 4 cm. What is the total volume?",
+      "questionDifficulty": 2,
+      "correctAnswer": "240 cm³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 131,
+      "questionText": "An L-shaped swimming pool is made by cutting a 2 m × 3 m × 1.5 m corner from a 10 m × 5 m × 1.5 m cuboid. What is the volume of the pool?",
+      "questionDifficulty": 3,
+      "correctAnswer": "66 m³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 132,
+      "questionText": "How many 2 cm cubes can be packed exactly into a box measuring 10 cm × 8 cm × 6 cm?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "How many 4 cm cubes can fit exactly into a box measuring 20 cm × 16 cm × 12 cm? What volume of space is left over?",
+      "questionDifficulty": 3,
+      "correctAnswer": "60 cubes, 0 cm³ left",
+      "subConceptId": "comparing-volumes",
+      "subConceptName": "Same Volume, Different Shapes",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": [
+        "How to understand that two different cuboids can have the same volume",
+        "Why rearranging dimensions doesn't change the volume"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "All the water from a full fish tank measuring 40 cm × 20 cm × 25 cm is poured into a larger empty tank with a base of 50 cm × 40 cm. How deep will the",
+      "questionDifficulty": 3,
+      "correctAnswer": "10 cm",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 135,
+      "questionText": "A rectangular paddling pool is 2 m long, 1.5 m wide, and 0.4 m deep. How many litres of water does it hold when full? (1 m³ = 1000 litres)",
+      "questionDifficulty": 2,
+      "correctAnswer": "1200 litres",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 136,
+      "questionText": "A cardboard box is 30 cm long, 20 cm wide, and 15 cm high. Daisy fills it with sand for a school project. What volume of sand does she need?",
+      "questionDifficulty": 1,
+      "correctAnswer": "9,000 cm³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 137,
+      "questionText": "Oliver builds a tower from identical cubes, each with 5 cm edges. He stacks 4 cubes on top of each other. What is the total volume of his tower?",
+      "questionDifficulty": 1,
+      "correctAnswer": "500 cm³",
+      "subConceptId": "volume-cubes",
+      "subConceptName": "Volume of Cubes (edge x edge x edge)",
+      "confidence": "high",
+      "lessonTeachSummary": "The cube has edges of **5cm**. Let's find the volume step by step. Tap to reveal:",
+      "lessonLearningGoal": [
+        "How to find the volume of a cube by multiplying edge x edge x edge",
+        "Why all three dimensions are the same in a cube"
+      ]
+    },
+    {
+      "questionId": 138,
+      "questionText": "A water butt in the garden is 80 cm long, 60 cm wide, and 100 cm tall. It is filled to exactly half its height with rainwater. How many litres of wate",
+      "questionDifficulty": 2,
+      "correctAnswer": "240 litres",
+      "subConceptId": "fraction-of-volume",
+      "subConceptName": "Finding a Fraction of Total Volume",
+      "confidence": "high",
+      "lessonTeachSummary": "Finding **3/4** of **360 cm³** — same method as fractions of any amount!",
+      "lessonLearningGoal": [
+        "How to find a fraction of a volume",
+        "When you might need to find part of a total volume"
+      ]
+    },
+    {
+      "questionId": 139,
+      "questionText": "A step-shaped solid is made of three layers. The bottom layer is 12 cm × 8 cm × 4 cm, the middle layer is 8 cm × 8 cm × 4 cm, and the top layer is 4 c",
+      "questionDifficulty": 3,
+      "correctAnswer": "768 cm³",
+      "subConceptId": "master-volume-cuboids",
+      "subConceptName": "master-volume-cuboids",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 140,
+      "questionText": "A tap fills a rectangular fish tank at 5 litres per minute. The tank is 100 cm long, 40 cm wide, and 30 cm high. How many minutes does it take to fill",
+      "questionDifficulty": 3,
+      "correctAnswer": "24 minutes",
+      "subConceptId": "volume-to-capacity",
+      "subConceptName": "volume-to-capacity",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "cube-root",
+      "name": "Finding Edge Length from Cube Volume"
+    },
+    {
+      "id": "volume-to-capacity (how much a container can hold)",
+      "name": "Converting cm³, ml, and litres"
+    },
+    {
+      "id": "volume-word-problems",
+      "name": "Real-world Volume Problems"
+    }
+  ],
+  "subConceptCoverage": {
+    "master-volume-cuboids": {
+      "name": "master-volume-cuboids",
+      "questionCount": 46,
+      "difficulties": {
+        "D1": 36,
+        "D2": 7,
+        "D3": 3
+      }
+    },
+    "volume-cubes": {
+      "name": "Volume of Cubes (edge x edge x edge)",
+      "questionCount": 30,
+      "difficulties": {
+        "D1": 12,
+        "D2": 17,
+        "D3": 1
+      }
+    },
+    "volume-to-capacity": {
+      "name": "volume-to-capacity",
+      "questionCount": 31,
+      "difficulties": {
+        "D1": 12,
+        "D2": 12,
+        "D3": 7
+      }
+    },
+    "missing-dimension": {
+      "name": "Finding Missing Dimension from Volume",
+      "questionCount": 13,
+      "difficulties": {
+        "D1": 0,
+        "D2": 13,
+        "D3": 0
+      }
+    },
+    "comparing-volumes": {
+      "name": "Same Volume, Different Shapes",
+      "questionCount": 11,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 10
+      }
+    },
+    "fraction-of-volume": {
+      "name": "Finding a Fraction of Total Volume",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 0,
+        "D2": 1,
+        "D3": 5
+      }
+    },
+    "scaling-volumes": {
+      "name": "Doubling Edge Length Multiplies Volume by 8",
+      "questionCount": 3,
+      "difficulties": {
+        "D1": 0,
+        "D2": 3,
+        "D3": 0
+      }
+    }
+  }
+}

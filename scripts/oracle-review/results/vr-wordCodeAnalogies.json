@@ -1,0 +1,186 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "wordCodeAnalogies",
+  "subject": "verbalreasoning",
+  "qualityScore": 6,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 12,
+    "mappingsReviewed": 125,
+    "issuesFound": 13,
+    "bySeverity": {
+      "critical": 2,
+      "high": 3,
+      "medium": 5,
+      "low": 3
+    },
+    "difficultyAssessment": "D1:31 (25%), D2:50 (40%), D3:44 (35%) — D1 is 5% below the GL 30% target and D3 is 5% above. D2 is spot-on at 40%. The D1 shortfall means fewer easy entry-point questions for children building confidence. D1 questions appropriately use simple remove-first-letter, add suffix, and reversal patterns. D2 questions cover prefix addition/removal, vowel changes, and number-code mapping well. D3 questions include compound operations (remove + reverse), multi-letter number codes, and anagram patterns. However, several D3 questions have confused or inconsistent explanations (Q88, Q95, Q97, Q100), suggesting the rule identification may not be robust.",
+    "coverageAssessment": "The topic conflates two distinct GL question types that require very different cognitive skills: (1) word transformation analogies (letter manipulation: remove/add/swap/reverse letters, prefix/suffix operations — Q1-Q20, Q66-Q115) and (2) number-code substitution puzzles (letter-to-number mapping and recombination — Q21-Q65). The Oracle spec for Word Code Analogies covers only type (1). Type (2) is actually closer to Number Word Codes (a separate Oracle section), which uses arbitrary substitution rather than systematic letter manipulation. Mixing them in one topic creates a confused learning pathway. Within type (1), coverage is good: first-letter removal, prefix addition (un-, re-, dis-, over-, im-, de-), suffix addition (-er, -ly, -ful, -ness, -s, -y, -n, -our), reversal, vowel change, consonant doubling, and irregular forms. Type (2) covers 3-letter and 4-5 letter number codes with direct mapping and scrambled verification.",
+    "teachingEfficacyAssessment": "12 lessons across 8 sub-concepts. The letter-swap and letter-removal lessons are well-designed with clear CodeTable visuals and the 3-step method (Compare → Name → Apply). However, the 45 low-confidence mappings (36% of total) are a concern — this is the highest low-confidence rate of any reviewed topic. Many number-code questions (Q21-Q65) map poorly to the letter-manipulation lessons because they test fundamentally different skills (substitution mapping vs pattern transformation). The lesson content itself is good for word transformation skills: step-by-step worked examples, spot-the-mistake formats, and the 'swap vs reverse' distinction is a genuine GL trap worth teaching. Two orphan sub-concepts exist.",
+    "topPriorities": [
+      "Fix Q88 and Q95 which have confused/inaccurate explanations",
+      "Fix Q1 where the question says 'changing the first letter' but the rule is actually more nuanced (b→d is +2, but applying 'the same pattern' to cat should give... what exactly?)",
+      "Consider splitting this topic into two: Word Transformations (letter operations) and Number Codes (substitution mapping)",
+      "Add 5-8 D1 questions to bring D1 closer to the GL 30% target",
+      "Address the 45 low-confidence mappings — many need reassigning to a more appropriate sub-concept"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-WCA-001",
+      "itemType": "question",
+      "itemId": "Q88",
+      "severity": "critical",
+      "category": "explanation-error",
+      "title": "Q88 explanation is confused, self-contradictory, and rambling",
+      "description": "Q88 explanation starts 'The pattern removes the first letter to leave a 3-letter word: S-EAT→EAT? The question says (SEAT, ATE).' Then proceeds to question itself: 'Let me recheck. A-T-E are the 2nd, 4th, 3rd letters of SEAT.' The explanation internally debates multiple interpretations, admits confusion ('Hmm'), and eventually settles on 'remove the first letter' which gives EAT not ATE as stated in the question. This is a stream-of-consciousness debugging log, not a child-facing explanation. The answer RIP is correct (TRIP with T removed = RIP), but the explanation is unacceptable for a 9-year-old.",
+      "suggestedFix": "Replace entire explanation with: 'The pattern removes the first letter: SEAT→EAT, CLAM→LAM, TRIP→RIP. Note: the first pair in the question shows (SEAT, ATE) which appears to be a typo — it should be (SEAT, EAT). The rule is simply: remove the first letter. ✓' Also fix the question stem if possible — change (SEAT, ATE) to (SEAT, EAT) for consistency, or update to use a different example pair.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-002",
+      "itemType": "question",
+      "itemId": "Q95",
+      "severity": "critical",
+      "category": "inconsistent-rule",
+      "title": "Q95 uses an inconsistent rule across the two example pairs — makes pattern uncrackable",
+      "description": "Q95 states: 'GRAPE → DRAPE, GLOW → BLOW. What does GRAIN become?' GRAPE→DRAPE changes G to D. GLOW→BLOW changes G to B. These are different substitutions (G→D vs G→B), so there is no consistent 'rule' a child can discover and apply. The explanation itself acknowledges this inconsistency: 'GRAPE→DRAPE changes G to D, and GLOW→BLOW changes G to B. Hmm, those are different.' It then handwaves to 'the answer BRAIN fits replacing G with B, matching GLOW→BLOW'. A GL paper would never present an inconsistent rule — the child must be able to derive one unambiguous pattern from the examples.",
+      "suggestedFix": "Fix the example pairs to use a consistent rule. Either: (1) 'GRAPE → DRAPE, GLOW → DLOW... no, DLOW isn't a word. Try: (2) 'BLOW → GLOW, BRAIN → GRAIN. What does BLACK become?' → GLACK (not a word). Better: (3) 'GRAPE → DRAPE, GRIN → DRIN... not a word.' The issue is that changing G to a specific letter only works when the result is a real word. Best fix: replace entirely with a consistent pair like 'CLAP → FLAP, COLD → FOLD. What does CASE become?' (FASE — not a word). Actually, use: 'BAKE → CAKE, BOLD → COLD. What does BURN become?' (CURL — hmm). Finding consistent letter-swap pairs where all three results are real words is hard. Consider: 'BARN → YARN, BELL → YELL. What does BEST become?' → YEST (not great). Alternative: 'HEAT → SEAT, HILL → SILL. What does HIT become?' → SIT. This works.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-003",
+      "itemType": "question",
+      "itemId": "Q100",
+      "severity": "high",
+      "category": "explanation-error",
+      "title": "Q100 explanation is a confused debugging log — not suitable for children",
+      "description": "Q100 presents 'SHORE → HORSE, PLUM → LUMP. What does CAFE become?' The explanation is a 400-word internal debate analysing different transformation hypotheses, acknowledging failures ('That's not HORSE', 'AFEC isn't a word'), and never arriving at a clear rule. It concludes with 'The simplest common pattern is that they are anagrams'. The answer FACE is correct (CAFE rearranged), but: (1) SHORE→HORSE and PLUM→LUMP follow different rearrangement patterns (not the same positional mapping), and (2) the explanation is completely inappropriate for a child. This is the same issue as Q88 — stream-of-consciousness reasoning left in the explanation field.",
+      "suggestedFix": "Replace explanation with a clear, concise version: 'The pattern rearranges the letters to make a new word (an anagram): SHORE→HORSE, PLUM→LUMP, CAFE→FACE. Each output uses all the same letters in a different order. ✓' However, the question itself is problematic because the rearrangement rule is not systematic (different positional mappings for each pair). Consider replacing with a question that has a clear, consistent transformation rule.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-004",
+      "itemType": "question",
+      "itemId": "Q97",
+      "severity": "high",
+      "category": "explanation-error",
+      "title": "Q97 explanation is a debugging log with incorrect analysis",
+      "description": "Q97 presents 'PEACH → CHEAP, NIGHT → THING. What does ANGEL become?' The explanation is another stream-of-consciousness analysis: 'the last two letters (C,H) move to the front... That gives CHPEA, not CHEAP. Actually, looking more carefully...' It concludes 'Both are anagrams where the letters cycle: positions shift. PEACH→CHEAP takes position 4,5,2,3,1. NIGHT→THING takes position 5,4,2,1,3. These are different mappings, so these are simply anagrams.' The answer GLEAN is correct, but the explanation is unusable for a child.",
+      "suggestedFix": "Replace with: 'The pattern rearranges all the letters: PEACH→CHEAP, NIGHT→THING, ANGEL→GLEAN. Each word is an anagram of the input. ✓' Also review whether anagram questions belong in this topic — the Oracle spec for Word Code Analogies focuses on systematic letter operations, not arbitrary rearrangements. Anagrams might fit better in a dedicated anagram/word puzzle category.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-005",
+      "itemType": "question",
+      "itemId": "Q1",
+      "severity": "medium",
+      "category": "ambiguous-rule",
+      "title": "Q1 rule description is misleading — 'changing the first letter' is ambiguous",
+      "description": "Q1 says 'big (dig) → cat (__). The word in brackets is made by changing the first letter.' The explanation says 'changing the first letter b to d gives dig. Following the same pattern for cat: we need to change c to b (the letter before it) giving bat.' But the rule 'change first letter' doesn't specify HOW to change it. b→d is +2 in the alphabet, but c→b is -1. If the child applies +2 (like the example), cat→eat. If they apply -1, cat→bat. The explanation claims the answer is bat, but the rule as described is ambiguous. A proper analogy should have one unambiguous interpretation.",
+      "suggestedFix": "Rewrite Q1 to make the transformation rule clear and consistent. Either: (1) state the specific change: 'big(dig): the first letter moved forward by 2. Apply the same to cat → eat' or (2) use a consistent letter-change: 'big(pig): the first letter changed to P. Apply to cat → pat.' The current version teaches sloppy pattern recognition.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-006",
+      "itemType": "question",
+      "itemId": "Q4,Q88",
+      "severity": "medium",
+      "category": "inconsistent-example",
+      "title": "Q4 example pair (SEAT, ATE) doesn't match the stated rule",
+      "description": "Q4 presents '(SEAT, ATE) (CLAM, LAM) (TRIP, ___)'. The explanation says 'remove the first letter, take the last 3 letters'. But SEAT minus S = EAT, not ATE. The pair (SEAT, ATE) is wrong — it should be (SEAT, EAT). (CLAM, LAM) works: C removed = LAM. (TRIP, RIP) works: T removed = RIP. The answer RIP is correct for 'remove first letter', but the first example pair contradicts the rule. Q88 repeats this same incorrect pair.",
+      "suggestedFix": "Change (SEAT, ATE) to (SEAT, EAT) in both Q4 and Q88. Or use a different word pair where removing the first letter works cleanly, e.g., (PLATE, LATE) or (BRAIN, RAIN).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-007",
+      "itemType": "question",
+      "itemId": "Q66",
+      "severity": "medium",
+      "category": "answer-verification",
+      "title": "Q66 answer 'lade' — unusual word for a 9-year-old at D1",
+      "description": "Q66 asks '(plate, late) (train, rain) (blade, ___)'. The rule is remove first two letters: plate→late, train→rain, blade→lade. The answer 'lade' is technically correct but is an archaic/rare word meaning 'to load'. Most 9-year-olds would not know this word. For a D1 question, all answers should be common, recognisable words. This creates confusion — a child might doubt their answer because 'lade' doesn't look right, even though the pattern is clear.",
+      "suggestedFix": "Replace with a word where removing the first two letters gives a common word. Options: (blame, lame), (plane, lane), (block, lock), (glove, love). Example: '(plate, late) (train, rain) (plane, ___)' → 'lane'.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-008",
+      "itemType": "question",
+      "itemId": "Q3,Q9,Q13,Q16,Q20,Q111,Q115",
+      "severity": "medium",
+      "category": "topic-misclassification",
+      "title": "Letter-shift and letter-pair-series questions do not belong in Word Code Analogies",
+      "description": "Several questions test skills that belong in Letter Codes or Letter Pair Series, not Word Code Analogies: Q3 ('If each letter is moved forward by 1, what does FISH become?') is a letter code question. Q9 (A1,B2,C3,D4,___) is a letter-number series. Q13 (ZA,YB,XC,WD,___) is a letter pair series. Q16 (AB,CD,EF,GH,___) is a letter pair series. Q20 (AAB,BBC,CCD,DDE,___) is a letter series. Q111 (AZ,BY,CX,DW,___) is a letter pair series. Q115 (Z1,X2,V3,T4,___) is a letter-number series. These questions test alphabet position shifts or sequential patterns, not word transformations. Placing them here confuses the topic boundary and undermines lesson mapping (these questions map poorly to word-transformation lessons).",
+      "suggestedFix": "Move these 7 questions to their correct topics: Q3 → Letter Codes, Q9/Q13/Q16/Q111/Q115 → Letter Pair Series, Q20 → Letter Pair Series. This would also help explain the high rate of low-confidence mappings (45 out of 125).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-009",
+      "itemType": "question",
+      "itemId": "Q92",
+      "severity": "medium",
+      "category": "ambiguous-rule",
+      "title": "Q92 uses a pattern that is not uniquely determinable from the examples",
+      "description": "Q92 states 'PAN → PLAN, TEN → THEN. What does BAN become?' The rule is described as 'inserts a consonant after the first letter'. But PAN→PLAN inserts L, and TEN→THEN inserts H. There's no systematic way to predict which consonant gets inserted. The answer BRAN inserts R. A child cannot deduce 'insert R' from seeing 'insert L' and 'insert H' — these are arbitrary. In GL papers, the rule must be deterministic and consistently applicable.",
+      "suggestedFix": "Replace with a consistent insertion pattern. Example: 'PAN → PLAN, LAY → PLAY. What does ACE become?' → PLACE (always insert PL before the word). Or use a consistent suffix: 'BAN → BAND, TEN → TEND. What does MEN become?' → MEND (always add D).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-010",
+      "itemType": "mapping",
+      "itemId": "low-confidence-mappings",
+      "severity": "low",
+      "category": "mapping-quality",
+      "title": "45 low-confidence mappings (36%) — highest rate of any reviewed topic",
+      "description": "The mapping file shows 48 high, 32 medium, and 45 low confidence mappings. The 45 low-confidence mappings indicate that over a third of questions don't map well to the existing lesson sub-concepts. This is likely caused by the topic mixing two distinct question types (word transformations and number codes) and including misclassified letter-series/letter-code questions. Poor mapping means children get lessons that don't prepare them for the questions they'll face.",
+      "suggestedFix": "After resolving VR-WCA-008 (moving misclassified questions to correct topics) and potentially splitting this topic, re-run the mapping process. The remaining word-transformation questions should map much more cleanly to the letter-swap, letter-removal, and letter-replacement sub-concepts.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-011",
+      "itemType": "question",
+      "itemId": "D1-count",
+      "severity": "low",
+      "category": "difficulty-distribution",
+      "title": "D1 count (31 questions, 25%) is below GL target of 30%",
+      "description": "Only 25% of questions are rated D1 versus the GL target of approximately 30%. This means fewer easy confidence-building questions. D1 questions should use single obvious operations on short words — the current D1 set covers this well but needs more volume.",
+      "suggestedFix": "Add 6-8 D1 questions covering simple patterns: remove first letter (3-letter words), add -s for plural, add -er for comparative, simple 3-letter reversal. This would bring D1 to ~30%.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-012",
+      "itemType": "question",
+      "itemId": "Q94",
+      "severity": "low",
+      "category": "ambiguous-rule",
+      "title": "Q94 explanation claims a vowel sequence pattern (A→E→I) that isn't reliable",
+      "description": "Q94 presents '(BEAT, BEET) (MAST, MIST) (BAND, ___)'. The explanation claims: 'Following the vowel sequence A→E→I, the next change is A→E. BAND→BEND.' But A→E→I is not a sequence being 'followed' — the first pair changes A to E, the second changes A to I. If there were a third pair, the pattern A→E, A→I would suggest A→O (next vowel). But the answer is BEND (A→E again). The explanation invents a non-existent sequential pattern. The actual rule is simpler: the second letter (a vowel) changes. BEAT→BEET (A→E), MAST→MIST (A→I). Both change 'a' in position 2 to a different vowel. For BAND, changing A to E gives BEND. This works but the 'A→E→I sequence' reasoning in the explanation is misleading.",
+      "suggestedFix": "Rewrite explanation: 'The middle vowel changes: BEAT→BEET (A→E), MAST→MIST (A→I). Each pair changes the A to a different vowel. BAND with A changed to E = BEND. ✓' Remove the false 'vowel sequence' claim.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-WCA-013",
+      "itemType": "lesson",
+      "itemId": "orphan-sub-concepts",
+      "severity": "low",
+      "category": "mapping-gap",
+      "title": "Two orphan sub-concepts have lessons but no mapped questions",
+      "description": "The mapping metadata shows 2 orphan sub-concepts. These have lessons but no questions map to them. Children learn skills in micro-lessons but never practise them in quizzes.",
+      "suggestedFix": "Review the 2 orphan sub-concepts. Either map existing questions to them or create new questions. After resolving the topic-splitting question (VR-WCA-008), this may resolve naturally.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    }
+  ]
+}

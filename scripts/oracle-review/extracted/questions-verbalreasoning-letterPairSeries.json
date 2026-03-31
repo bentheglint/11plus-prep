@@ -1,0 +1,2528 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterPairSeries",
+    "displayName": "Letter Pair Series",
+    "extractedAt": "2026-03-30T13:05:32.810Z",
+    "questionCount": 132,
+    "difficultyDistribution": {
+      "D1": 41,
+      "D2": 52,
+      "D3": 39
+    },
+    "questionTypes": {
+      "standard": 132
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, C, E, G, ___",
+      "options": [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "correct": 1,
+      "correctAnswer": "I",
+      "explanation": "The pattern skips one letter each time: A (skip B) C (skip D) E (skip F) G (skip H) I. These are the odd-positioned letters of the alphabet. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? AZ, BY, CX, DW, ___",
+      "options": [
+        "EV",
+        "EU",
+        "FV",
+        "EX",
+        "DV"
+      ],
+      "correct": 0,
+      "correctAnswer": "EV",
+      "explanation": "The first letter goes forward (A, B, C, D, E) and the second letter goes backward (Z, Y, X, W, V). So the next pair is EV. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, D, F, H, ___",
+      "options": [
+        "I",
+        "J",
+        "K",
+        "L",
+        "M"
+      ],
+      "correct": 1,
+      "correctAnswer": "J",
+      "explanation": "The pattern skips one letter each time: B (skip C) D (skip E) F (skip G) H (skip I) J. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Z, X, V, T, ___",
+      "options": [
+        "S",
+        "R",
+        "Q",
+        "P",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The pattern goes backwards, skipping one letter: Z (skip Y) X (skip W) V (skip U) T (skip S) R. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next? A, B, D, G, ___",
+      "options": [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "correct": 3,
+      "correctAnswer": "K",
+      "explanation": "The gaps increase by 1 each time: A(+1)B(+2)D(+3)G(+4)K. The differences are 1, 2, 3, 4. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? AC, BD, CE, DF, ___",
+      "options": [
+        "EG",
+        "EF",
+        "FG",
+        "DG",
+        "EH"
+      ],
+      "correct": 0,
+      "correctAnswer": "EG",
+      "explanation": "The first letter advances by 1: A,B,C,D,E. The second letter also advances by 1: C,D,E,F,G. Next is EG. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? A, C, E, G, I, ___",
+      "options": [
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ],
+      "correct": 1,
+      "correctAnswer": "K",
+      "explanation": "The pattern gives every other letter: A, C, E, G, I, K. Skipping B, D, F, H, J. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next? ZZ, YY, XX, WW, ___",
+      "options": [
+        "VV",
+        "UU",
+        "VW",
+        "WX",
+        "UV"
+      ],
+      "correct": 0,
+      "correctAnswer": "VV",
+      "explanation": "Each pair uses the same letter, going backwards through the alphabet: ZZ, YY, XX, WW, VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, C, E, G, ___",
+      "options": [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "correct": 1,
+      "correctAnswer": "I",
+      "explanation": "The pattern adds 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is I. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, D, F, H, ___",
+      "options": [
+        "I",
+        "K",
+        "L",
+        "J",
+        "M"
+      ],
+      "correct": 3,
+      "correctAnswer": "J",
+      "explanation": "The pattern adds 2 each time: B(+2)→D(+2)→F(+2)→H(+2)→J. The answer is J. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Z, Y, X, W, ___",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "X",
+        "S"
+      ],
+      "correct": 2,
+      "correctAnswer": "V",
+      "explanation": "The pattern goes back 1 each time: Z(−1)→Y(−1)→X(−1)→W(−1)→V. The answer is V. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, B, C, D, ___",
+      "options": [
+        "F",
+        "G",
+        "E",
+        "H",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "E",
+      "explanation": "The pattern advances by 1 each time in alphabetical order: A→B→C→D→E. The answer is E. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? M, N, O, P, ___",
+      "options": [
+        "R",
+        "S",
+        "T",
+        "Q",
+        "U"
+      ],
+      "correct": 3,
+      "correctAnswer": "Q",
+      "explanation": "The pattern advances by 1 each time: M→N→O→P→Q. The answer is Q. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? C, F, I, L, ___",
+      "options": [
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q"
+      ],
+      "correct": 2,
+      "correctAnswer": "O",
+      "explanation": "The pattern adds 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is O. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? D, F, H, J, ___",
+      "options": [
+        "K",
+        "M",
+        "N",
+        "O",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The pattern adds 2 each time: D(+2)→F(+2)→H(+2)→J(+2)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? T, R, P, N, ___",
+      "options": [
+        "M",
+        "K",
+        "J",
+        "O",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The pattern goes back 2 each time: T(−2)→R(−2)→P(−2)→N(−2)→L. The answer is L. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? E, H, K, N, ___",
+      "options": [
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "correct": 2,
+      "correctAnswer": "Q",
+      "explanation": "The pattern adds 3 each time: E(+3)→H(+3)→K(+3)→N(+3)→Q. The answer is Q. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? W, U, S, Q, ___",
+      "options": [
+        "P",
+        "N",
+        "M",
+        "O",
+        "L"
+      ],
+      "correct": 3,
+      "correctAnswer": "O",
+      "explanation": "The pattern goes back 2 each time: W(−2)→U(−2)→S(−2)→Q(−2)→O. The answer is O. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AB, CD, EF, GH, ___",
+      "options": [
+        "HI",
+        "JK",
+        "KL",
+        "GH",
+        "IJ"
+      ],
+      "correct": 4,
+      "correctAnswer": "IJ",
+      "explanation": "Both letters advance by 2 each step: AB→CD→EF→GH→IJ. The answer is IJ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
+      "options": [
+        "DZ",
+        "EA",
+        "EZ",
+        "FZ",
+        "EY"
+      ],
+      "correct": 2,
+      "correctAnswer": "EZ",
+      "explanation": "The first letter advances by 1, the second stays as Z: AZ→BZ→CZ→DZ→EZ. The answer is EZ. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AA, BB, CC, DD, ___",
+      "options": [
+        "DE",
+        "EE",
+        "EF",
+        "FF",
+        "EG"
+      ],
+      "correct": 1,
+      "correctAnswer": "EE",
+      "explanation": "Each pair is a doubled letter advancing by 1: AA→BB→CC→DD→EE. The answer is EE. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AB, BC, CD, DE, ___",
+      "options": [
+        "EF",
+        "EG",
+        "FG",
+        "DF",
+        "FH"
+      ],
+      "correct": 0,
+      "correctAnswer": "EF",
+      "explanation": "Both letters advance by 1 each step: AB→BC→CD→DE→EF. The answer is EF. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AC, BD, CE, DF, ___",
+      "options": [
+        "EH",
+        "FG",
+        "DG",
+        "EG",
+        "FH"
+      ],
+      "correct": 3,
+      "correctAnswer": "EG",
+      "explanation": "Both letters advance by 1 each step: AC→BD→CE→DF→EG. The answer is EG. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AX, BX, CX, DX, ___",
+      "options": [
+        "DY",
+        "EW",
+        "EX",
+        "FX",
+        "EY"
+      ],
+      "correct": 2,
+      "correctAnswer": "EX",
+      "explanation": "The first letter advances by 1, the second stays as X: AX→BX→CX→DX→EX. The answer is EX. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
+      "options": [
+        "VW",
+        "UU",
+        "VV",
+        "WX",
+        "UV"
+      ],
+      "correct": 2,
+      "correctAnswer": "VV",
+      "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV. The answer is VV. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, B2, C3, D4, ___",
+      "options": [
+        "D5",
+        "E4",
+        "E5",
+        "F5",
+        "E6"
+      ],
+      "correct": 2,
+      "correctAnswer": "E5",
+      "explanation": "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5. The answer is E5. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? A2, B4, C6, D8, ___",
+      "options": [
+        "E9",
+        "F10",
+        "D10",
+        "E12",
+        "E10"
+      ],
+      "correct": 4,
+      "correctAnswer": "E10",
+      "explanation": "The letter advances by 1 and the number advances by 2: A2→B4→C6→D8→E10. The answer is E10. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? Z1, Y2, X3, W4, ___",
+      "options": [
+        "V4",
+        "V5",
+        "U5",
+        "W5",
+        "V6"
+      ],
+      "correct": 1,
+      "correctAnswer": "V5",
+      "explanation": "The letter goes back 1 and the number advances by 1: Z1→Y2→X3→W4→V5. The answer is V5. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, A2, A3, A4, ___",
+      "options": [
+        "A5",
+        "B5",
+        "A6",
+        "B4",
+        "A4"
+      ],
+      "correct": 0,
+      "correctAnswer": "A5",
+      "explanation": "The letter stays as A and the number advances by 1: A1→A2→A3→A4→A5. The answer is A5. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? B1, D2, F3, H4, ___",
+      "options": [
+        "I5",
+        "J4",
+        "I4",
+        "J5",
+        "K5"
+      ],
+      "correct": 3,
+      "correctAnswer": "J5",
+      "explanation": "The letter advances by 2 and the number advances by 1: B1→D2→F3→H4→J5. The answer is J5. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AD, BE, CF, DG, ___",
+      "options": [
+        "EI",
+        "EH",
+        "FH",
+        "DH",
+        "FI"
+      ],
+      "correct": 1,
+      "correctAnswer": "EH",
+      "explanation": "Both letters advance by 1 each step, keeping a gap of 3: AD→BE→CF→DG→EH. The answer is EH. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, E, H, K, ___",
+      "options": [
+        "L",
+        "M",
+        "N",
+        "O",
+        "P"
+      ],
+      "correct": 2,
+      "correctAnswer": "N",
+      "explanation": "The pattern adds 3 each time: B(+3)→E(+3)→H(+3)→K(+3)→N. The answer is N. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BA, CB, DC, ED, ___",
+      "options": [
+        "EF",
+        "GF",
+        "EG",
+        "FD",
+        "FE"
+      ],
+      "correct": 4,
+      "correctAnswer": "FE",
+      "explanation": "Both letters advance by 1 each step: BA→CB→DC→ED→FE. The answer is FE. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? M1, N2, O3, P4, ___",
+      "options": [
+        "Q4",
+        "R5",
+        "Q5",
+        "P5",
+        "Q6"
+      ],
+      "correct": 2,
+      "correctAnswer": "Q5",
+      "explanation": "The letter advances by 1 and the number advances by 1: M1→N2→O3→P4→Q5. The answer is Q5. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? G, I, K, M, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "O",
+      "explanation": "The pattern adds 2 each time: G(+2)→I(+2)→K(+2)→M(+2)→O. The answer is O. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AE, BF, CG, DH, ___",
+      "options": [
+        "DI",
+        "EJ",
+        "EI",
+        "FI",
+        "FJ"
+      ],
+      "correct": 2,
+      "correctAnswer": "EI",
+      "explanation": "Both letters advance by 1 each step, keeping a gap of 4: AE→BF→CG→DH→EI. The answer is EI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, D, G, J, ___",
+      "options": [
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ],
+      "correct": 2,
+      "correctAnswer": "M",
+      "explanation": "The pattern adds 3 each time: A(+3)→D(+3)→G(+3)→J(+3)→M. The answer is M. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Z, W, T, Q, ___",
+      "options": [
+        "O",
+        "M",
+        "P",
+        "N",
+        "L"
+      ],
+      "correct": 3,
+      "correctAnswer": "N",
+      "explanation": "The pattern goes back 3 each time: Z(−3)→W(−3)→T(−3)→Q(−3)→N. The answer is N. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, E, I, M, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "Q",
+      "explanation": "The pattern adds 4 each time: A(+4)→E(+4)→I(+4)→M(+4)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? D, H, L, P, ___",
+      "options": [
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The pattern adds 4 each time: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is T. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? V, S, P, M, ___",
+      "options": [
+        "L",
+        "K",
+        "J",
+        "I",
+        "H"
+      ],
+      "correct": 2,
+      "correctAnswer": "J",
+      "explanation": "The pattern goes back 3 each time: V(−3)→S(−3)→P(−3)→M(−3)→J. The answer is J. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, F, J, N, ___",
+      "options": [
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "correct": 3,
+      "correctAnswer": "R",
+      "explanation": "The pattern adds 4 each time: B(+4)→F(+4)→J(+4)→N(+4)→R. The answer is R. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Y, V, S, P, ___",
+      "options": [
+        "N",
+        "L",
+        "O",
+        "K",
+        "M"
+      ],
+      "correct": 4,
+      "correctAnswer": "M",
+      "explanation": "The pattern goes back 3 each time: Y(−3)→V(−3)→S(−3)→P(−3)→M. The answer is M. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? C, G, K, O, ___",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T"
+      ],
+      "correct": 3,
+      "correctAnswer": "S",
+      "explanation": "The pattern adds 4 each time: C(+4)→G(+4)→K(+4)→O(+4)→S. The answer is S. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? X, U, R, O, ___",
+      "options": [
+        "N",
+        "M",
+        "L",
+        "K",
+        "J"
+      ],
+      "correct": 2,
+      "correctAnswer": "L",
+      "explanation": "The pattern goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? F, J, N, R, ___",
+      "options": [
+        "S",
+        "T",
+        "U",
+        "V",
+        "W"
+      ],
+      "correct": 3,
+      "correctAnswer": "V",
+      "explanation": "The pattern adds 4 each time: F(+4)→J(+4)→N(+4)→R(+4)→V. The answer is V. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
+      "options": [
+        "VF",
+        "VE",
+        "UE",
+        "WE",
+        "UF"
+      ],
+      "correct": 1,
+      "correctAnswer": "VE",
+      "explanation": "The first letter goes back 1, the second advances by 1: ZA→YB→XC→WD→VE. The answer is VE. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AC, CE, EG, GI, ___",
+      "options": [
+        "HJ",
+        "HK",
+        "IJ",
+        "JK",
+        "IK"
+      ],
+      "correct": 4,
+      "correctAnswer": "IK",
+      "explanation": "Both letters advance by 2 each step: AC→CE→EG→GI→IK. The answer is IK. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
+      "options": [
+        "HR",
+        "IS",
+        "IR",
+        "HS",
+        "IT"
+      ],
+      "correct": 2,
+      "correctAnswer": "IR",
+      "explanation": "The first letter advances by 2, the second goes back 2: AZ→CX→EV→GT→IR. The answer is IR. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
+      "options": [
+        "IV",
+        "JW",
+        "IW",
+        "JV",
+        "KV"
+      ],
+      "correct": 3,
+      "correctAnswer": "JV",
+      "explanation": "The first letter advances by 2, the second goes back 1: BZ→DY→FX→HW→JV. The answer is JV. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AB, DE, GH, JK, ___",
+      "options": [
+        "LM",
+        "MN",
+        "LN",
+        "NO",
+        "KL"
+      ],
+      "correct": 1,
+      "correctAnswer": "MN",
+      "explanation": "Both letters advance by 3 each step: AB→DE→GH→JK→MN. The answer is MN. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
+      "options": [
+        "SR",
+        "QR",
+        "RQ",
+        "QP",
+        "RP"
+      ],
+      "correct": 2,
+      "correctAnswer": "RQ",
+      "explanation": "Both letters go back 2 each step: ZY→XW→VU→TS→RQ. The answer is RQ. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
+      "options": [
+        "EU",
+        "FV",
+        "FW",
+        "DV",
+        "EV"
+      ],
+      "correct": 4,
+      "correctAnswer": "EV",
+      "explanation": "The first letter advances by 1, the second goes back 1: AZ→BY→CX→DW→EV. The answer is EV. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+      "options": [
+        "IK",
+        "JL",
+        "IJ",
+        "JK",
+        "KL"
+      ],
+      "correct": 1,
+      "correctAnswer": "JL",
+      "explanation": "Both letters advance by 2 each step: BD→DF→FH→HJ→JL. The answer is JL. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? MA, NB, OC, PD, ___",
+      "options": [
+        "QF",
+        "QE",
+        "RE",
+        "PE",
+        "RF"
+      ],
+      "correct": 1,
+      "correctAnswer": "QE",
+      "explanation": "Both letters advance by 1 each step: MA→NB→OC→PD→QE. The answer is QE. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
+      "options": [
+        "EM",
+        "EN",
+        "FM",
+        "FN",
+        "EO"
+      ],
+      "correct": 1,
+      "correctAnswer": "EN",
+      "explanation": "The first letter advances by 1, the second advances by 2: AF→BH→CJ→DL→EN. The answer is EN. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
+      "options": [
+        "RH",
+        "RI",
+        "SI",
+        "SH",
+        "QI"
+      ],
+      "correct": 1,
+      "correctAnswer": "RI",
+      "explanation": "The first letter goes back 2, the second advances by 2: ZA→XC→VE→TG→RI. The answer is RI. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? A3, C6, E9, G12, ___",
+      "options": [
+        "H15",
+        "I15",
+        "I14",
+        "J15",
+        "I16"
+      ],
+      "correct": 1,
+      "correctAnswer": "I15",
+      "explanation": "The letter advances by 2 and the number advances by 3: A3→C6→E9→G12→I15. The answer is I15. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? Z2, X4, V6, T8, ___",
+      "options": [
+        "S10",
+        "R10",
+        "R8",
+        "S9",
+        "R12"
+      ],
+      "correct": 1,
+      "correctAnswer": "R10",
+      "explanation": "The letter goes back 2 and the number advances by 2: Z2→X4→V6→T8→R10. The answer is R10. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? B5, D10, F15, H20, ___",
+      "options": [
+        "I25",
+        "J25",
+        "J20",
+        "K25",
+        "J30"
+      ],
+      "correct": 1,
+      "correctAnswer": "J25",
+      "explanation": "The letter advances by 2 and the number advances by 5: B5→D10→F15→H20→J25. The answer is J25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? Y3, W6, U9, S12, ___",
+      "options": [
+        "R15",
+        "Q15",
+        "Q14",
+        "R14",
+        "P15"
+      ],
+      "correct": 1,
+      "correctAnswer": "Q15",
+      "explanation": "The letter goes back 2 and the number advances by 3: Y3→W6→U9→S12→Q15. The answer is Q15. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, C3, E5, G7, ___",
+      "options": [
+        "H9",
+        "I8",
+        "I9",
+        "J9",
+        "H8"
+      ],
+      "correct": 2,
+      "correctAnswer": "I9",
+      "explanation": "The letter advances by 2 and the number advances by 2: A1→C3→E5→G7→I9. The answer is I9. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? D2, G4, J6, M8, ___",
+      "options": [
+        "N10",
+        "O10",
+        "P10",
+        "Q10",
+        "P8"
+      ],
+      "correct": 2,
+      "correctAnswer": "P10",
+      "explanation": "The letter advances by 3 and the number advances by 2: D2→G4→J6→M8→P10. The answer is P10. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? CE, DG, EI, FK, ___",
+      "options": [
+        "GL",
+        "GM",
+        "HM",
+        "GN",
+        "HN"
+      ],
+      "correct": 1,
+      "correctAnswer": "GM",
+      "explanation": "The first letter advances by 1, the second advances by 2: CE→DG→EI→FK→GM. The answer is GM. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? R, O, L, I, ___",
+      "options": [
+        "G",
+        "F",
+        "E",
+        "H",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "F",
+      "explanation": "The pattern goes back 3 each time: R(−3)→O(−3)→L(−3)→I(−3)→F. The answer is F. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? YA, WC, UE, SG, ___",
+      "options": [
+        "QH",
+        "QI",
+        "RI",
+        "RH",
+        "PI"
+      ],
+      "correct": 1,
+      "correctAnswer": "QI",
+      "explanation": "The first letter goes back 2, the second advances by 2: YA→WC→UE→SG→QI. The answer is QI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? C1, F3, I5, L7, ___",
+      "options": [
+        "N9",
+        "O9",
+        "O8",
+        "M9",
+        "P9"
+      ],
+      "correct": 1,
+      "correctAnswer": "O9",
+      "explanation": "The letter advances by 3 and the number advances by 2: C1→F3→I5→L7→O9. The answer is O9. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? FA, HC, JE, LG, ___",
+      "options": [
+        "MH",
+        "MI",
+        "NH",
+        "NI",
+        "NJ"
+      ],
+      "correct": 3,
+      "correctAnswer": "NI",
+      "explanation": "Both letters advance by 2 each step: FA→HC→JE→LG→NI. The answer is NI. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
+      "options": [
+        "HR",
+        "HS",
+        "IS",
+        "IR",
+        "IT"
+      ],
+      "correct": 2,
+      "correctAnswer": "IS",
+      "explanation": "Both letters advance by 2 each step: AK→CM→EO→GQ→IS. The answer is IS. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? T5, R10, P15, N20, ___",
+      "options": [
+        "L25",
+        "M25",
+        "L20",
+        "M20",
+        "K25"
+      ],
+      "correct": 0,
+      "correctAnswer": "L25",
+      "explanation": "The letter goes back 2 and the number advances by 5: T5→R10→P15→N20→L25. The answer is L25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BF, CG, DH, EI, ___",
+      "options": [
+        "FJ",
+        "FK",
+        "GJ",
+        "EJ",
+        "GK"
+      ],
+      "correct": 0,
+      "correctAnswer": "FJ",
+      "explanation": "Both letters advance by 1 each step, keeping a gap of 4: BF→CG→DH→EI→FJ. The answer is FJ. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
+      "options": [
+        "VS",
+        "UR",
+        "VR",
+        "US",
+        "VT"
+      ],
+      "correct": 0,
+      "correctAnswer": "VS",
+      "explanation": "Both letters go back 1 each step: ZW→YV→XU→WT→VS. The answer is VS. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, Z, B, Y, C, ___",
+      "options": [
+        "D",
+        "W",
+        "X",
+        "V",
+        "B"
+      ],
+      "correct": 2,
+      "correctAnswer": "X",
+      "explanation": "Two patterns alternate: forward (A, B, C, D...) and backward (Z, Y, X...). The positions alternate, so after C (forward) comes X (backward). The answer is X. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, Z, C, X, E, ___",
+      "options": [
+        "F",
+        "V",
+        "W",
+        "G",
+        "U"
+      ],
+      "correct": 1,
+      "correctAnswer": "V",
+      "explanation": "Two patterns alternate: forward (+2: A, C, E...) and backward (−2: Z, X, V...). After E (forward), the next is V (backward). The answer is V. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, F, B, G, C, ___",
+      "options": [
+        "D",
+        "E",
+        "H",
+        "I",
+        "F"
+      ],
+      "correct": 2,
+      "correctAnswer": "H",
+      "explanation": "Two patterns alternate: A, B, C, D... and F, G, H... After C (first pattern), next is H (second pattern). The answer is H. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, D, C, E, D, ___",
+      "options": [
+        "E",
+        "F",
+        "G",
+        "C",
+        "H"
+      ],
+      "correct": 1,
+      "correctAnswer": "F",
+      "explanation": "Two patterns alternate: B, C, D, E... (+1) and D, E, F... (+1). After D (first pattern), the next is F (second pattern). The answer is F. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, C, F, J, ___",
+      "options": [
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ],
+      "correct": 4,
+      "correctAnswer": "O",
+      "explanation": "The gaps increase: A(+2)→C(+3)→F(+4)→J(+5)→O. The answer is O. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Z, X, U, Q, ___",
+      "options": [
+        "N",
+        "M",
+        "L",
+        "K",
+        "J"
+      ],
+      "correct": 2,
+      "correctAnswer": "L",
+      "explanation": "The gaps increase going backwards: Z(−2)→X(−3)→U(−4)→Q(−5)→L. The answer is L. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, D, H, N, ___",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "W",
+        "S"
+      ],
+      "correct": 2,
+      "correctAnswer": "V",
+      "explanation": "The gaps increase: B(+2)→D(+4)→H(+6)→N(+8)→V. The answer is V. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? C, E, H, L, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "Q",
+      "explanation": "The gaps increase: C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Y, W, T, P, ___",
+      "options": [
+        "N",
+        "M",
+        "L",
+        "K",
+        "J"
+      ],
+      "correct": 3,
+      "correctAnswer": "K",
+      "explanation": "The gaps increase going backwards: Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
+      "options": [
+        "MN",
+        "LN",
+        "MO",
+        "LP",
+        "MP"
+      ],
+      "correct": 0,
+      "correctAnswer": "MN",
+      "explanation": "The first letter advances by 3, the second goes back 3: AZ→DW→GT→JQ→MN. The answer is MN. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BX, EU, HR, KO, ___",
+      "options": [
+        "NL",
+        "ML",
+        "NK",
+        "NM",
+        "MK"
+      ],
+      "correct": 0,
+      "correctAnswer": "NL",
+      "explanation": "The first letter advances by 3, the second goes back 3: BX→EU→HR→KO→NL. The answer is NL. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AC, BF, CI, DL, ___",
+      "options": [
+        "EO",
+        "EN",
+        "FO",
+        "EP",
+        "FN"
+      ],
+      "correct": 0,
+      "correctAnswer": "EO",
+      "explanation": "The first letter advances by 1 each step: A→B→C→D→E. The second letter advances by 3 each step: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is EO. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AY, DV, GS, JP, ___",
+      "options": [
+        "LM",
+        "MN",
+        "MM",
+        "LN",
+        "MO"
+      ],
+      "correct": 2,
+      "correctAnswer": "MM",
+      "explanation": "The first letter advances by 3, the second goes back 3: AY→DV→GS→JP→MM. The answer is MM. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
+      "options": [
+        "NK",
+        "OK",
+        "OL",
+        "OJ",
+        "PK"
+      ],
+      "correct": 1,
+      "correctAnswer": "OK",
+      "explanation": "The first letter advances by 3, the second goes back 3: CW→FT→IQ→LN→OK. The answer is OK. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
+      "options": [
+        "MN",
+        "NN",
+        "ON",
+        "MO",
+        "NO"
+      ],
+      "correct": 2,
+      "correctAnswer": "ON",
+      "explanation": "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second goes back 3: Z→W→T→Q→N. The answer is ON. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
+      "options": [
+        "NN",
+        "NM",
+        "ON",
+        "NL",
+        "OM"
+      ],
+      "correct": 0,
+      "correctAnswer": "NN",
+      "explanation": "The first letter goes back 3, the second advances by 3: ZB→WE→TH→QK→NN. The answer is NN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
+      "options": [
+        "EN",
+        "EO",
+        "EP",
+        "FP",
+        "EQ"
+      ],
+      "correct": 2,
+      "correctAnswer": "EP",
+      "explanation": "The first letter advances by 1, the second advances by 3: AD→BG→CJ→DM→EP. The answer is EP. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? A2, C5, E8, G11, ___",
+      "options": [
+        "H14",
+        "I13",
+        "I14",
+        "J14",
+        "I15"
+      ],
+      "correct": 2,
+      "correctAnswer": "I14",
+      "explanation": "The letter advances by 2 and the number advances by 3: A2→C5→E8→G11→I14. The answer is I14. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? Z3, W7, T11, Q15, ___",
+      "options": [
+        "N19",
+        "O19",
+        "N18",
+        "O18",
+        "M19"
+      ],
+      "correct": 0,
+      "correctAnswer": "N19",
+      "explanation": "The letter goes back 3 and the number advances by 4: Z3→W7→T11→Q15→N19. The answer is N19. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? B1, D3, H7, N13, ___",
+      "options": [
+        "T21",
+        "V21",
+        "U20",
+        "V19",
+        "T19"
+      ],
+      "correct": 1,
+      "correctAnswer": "V21",
+      "explanation": "The letter gaps increase (+2, +4, +6, +8): B→D→H→N→V. The number gaps increase (+2, +4, +6, +8): 1→3→7→13→21. The answer is V21. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, B3, D6, G10, ___",
+      "options": [
+        "J15",
+        "K15",
+        "L15",
+        "K14",
+        "J14"
+      ],
+      "correct": 1,
+      "correctAnswer": "K15",
+      "explanation": "The letter gaps increase (+1, +2, +3, +4): A→B→D→G→K. The number gaps increase (+2, +3, +4, +5): 1→3→6→10→15. The answer is K15. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? Z1, X3, V5, T7, R9, ___",
+      "options": [
+        "Q11",
+        "P11",
+        "O11",
+        "P10",
+        "Q10"
+      ],
+      "correct": 1,
+      "correctAnswer": "P11",
+      "explanation": "The letter goes back 2 and the number advances by 2: Z1→X3→V5→T7→R9→P11. The answer is P11. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? A, B, D, G, K, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "P",
+      "explanation": "The gaps increase by 1 each time: A(+1)→B(+2)→D(+3)→G(+4)→K(+5)→P. The answer is P. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BY, EV, HS, KP, ___",
+      "options": [
+        "NM",
+        "NL",
+        "ML",
+        "MN",
+        "OM"
+      ],
+      "correct": 0,
+      "correctAnswer": "NM",
+      "explanation": "The first letter advances by 3, the second goes back 3: BY→EV→HS→KP→NM. The answer is NM. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? C2, F5, I8, L11, ___",
+      "options": [
+        "N14",
+        "O14",
+        "O13",
+        "P14",
+        "N13"
+      ],
+      "correct": 1,
+      "correctAnswer": "O14",
+      "explanation": "The letter advances by 3 and the number advances by 3: C2→F5→I8→L11→O14. The answer is O14. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
+      "options": [
+        "MR",
+        "NS",
+        "OR",
+        "OS",
+        "NR"
+      ],
+      "correct": 3,
+      "correctAnswer": "OS",
+      "explanation": "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second letter gaps increase (+2, +3, +4, +5): E→G→J→N→S. The answer is OS. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
+      "options": [
+        "NL",
+        "NM",
+        "ML",
+        "OL",
+        "NK"
+      ],
+      "correct": 0,
+      "correctAnswer": "NL",
+      "explanation": "Both letters go back 3 each step: ZX→WU→TR→QO→NL. The answer is NL. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, D4, G9, J16, ___",
+      "options": [
+        "M25",
+        "L25",
+        "M24",
+        "N25",
+        "M26"
+      ],
+      "correct": 0,
+      "correctAnswer": "M25",
+      "explanation": "The letter advances by 3 each time: A→D→G→J→M. The numbers are perfect squares: 1, 4, 9, 16, 25. The answer is M25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? D, G, J, M, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "P",
+      "explanation": "The pattern adds 3 each time: D(+3)→G(+3)→J(+3)→M(+3)→P. The answer is P. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
+      "options": [
+        "JM",
+        "JL",
+        "KL",
+        "IL",
+        "KM"
+      ],
+      "correct": 1,
+      "correctAnswer": "JL",
+      "explanation": "Both letters advance by 1 each step: FH→GI→HJ→IK→JL. The answer is JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? V, T, R, P, ___",
+      "options": [
+        "O",
+        "N",
+        "M",
+        "L",
+        "K"
+      ],
+      "correct": 1,
+      "correctAnswer": "N",
+      "explanation": "The pattern goes back 2 each time: V(−2)→T(−2)→R(−2)→P(−2)→N. The answer is N. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
+      "options": [
+        "BC",
+        "CD",
+        "AC",
+        "AB",
+        "BA"
+      ],
+      "correct": 3,
+      "correctAnswer": "AB",
+      "explanation": "The pair AB repeats every time. The next pair is AB. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? F, H, J, L, ___",
+      "options": [
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q"
+      ],
+      "correct": 1,
+      "correctAnswer": "N",
+      "explanation": "The pattern adds 2 each time: F(+2)→H(+2)→J(+2)→L(+2)→N. The answer is N. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, B2, C3, D4, E5, ___",
+      "options": [
+        "E6",
+        "F5",
+        "F6",
+        "G6",
+        "F7"
+      ],
+      "correct": 2,
+      "correctAnswer": "F6",
+      "explanation": "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5→F6. The answer is F6. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
+      "options": [
+        "VW",
+        "UU",
+        "TT",
+        "UV",
+        "UW"
+      ],
+      "correct": 1,
+      "correctAnswer": "UU",
+      "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV→UU. The answer is UU. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? S, Q, O, M, ___",
+      "options": [
+        "L",
+        "K",
+        "J",
+        "I",
+        "H"
+      ],
+      "correct": 1,
+      "correctAnswer": "K",
+      "explanation": "The pattern goes back 2 each time: S(−2)→Q(−2)→O(−2)→M(−2)→K. The answer is K. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
+      "options": [
+        "IQ",
+        "JQ",
+        "JP",
+        "IR",
+        "KQ"
+      ],
+      "correct": 1,
+      "correctAnswer": "JQ",
+      "explanation": "The first letter advances by 2 (B→D→F→H→J) and the second goes back 2 (Y→W→U→S→Q). The answer is JQ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
+      "options": [
+        "JL",
+        "JM",
+        "IM",
+        "IL",
+        "KM"
+      ],
+      "correct": 1,
+      "correctAnswer": "JM",
+      "explanation": "Both letters advance by 2 each step: BE→DG→FI→HK→JM. The answer is JM. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? Z5, X10, V15, T20, ___",
+      "options": [
+        "S25",
+        "R25",
+        "R20",
+        "S20",
+        "R30"
+      ],
+      "correct": 1,
+      "correctAnswer": "R25",
+      "explanation": "The letter goes back 2 and the number advances by 5: Z5→X10→V15→T20→R25. The answer is R25. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
+      "options": [
+        "EL",
+        "EM",
+        "FM",
+        "EN",
+        "FL"
+      ],
+      "correct": 1,
+      "correctAnswer": "EM",
+      "explanation": "The first letter advances by 1 (A→B→C→D→E) and the second advances by 2 (E→G→I→K→M). The answer is EM. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
+      "options": [
+        "VH",
+        "VI",
+        "UI",
+        "VJ",
+        "UH"
+      ],
+      "correct": 1,
+      "correctAnswer": "VI",
+      "explanation": "The first letter goes back 1 (Z→Y→X→W→V) and the second advances by 2 (A→C→E→G→I). The answer is VI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? C2, F4, I6, L8, ___",
+      "options": [
+        "N10",
+        "M10",
+        "O10",
+        "O8",
+        "N8"
+      ],
+      "correct": 2,
+      "correctAnswer": "O10",
+      "explanation": "The letter advances by 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The number advances by 2 each time: 2, 4, 6, 8, 10. The answer is O10. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
+      "options": [
+        "KF",
+        "LF",
+        "LG",
+        "KG",
+        "LE"
+      ],
+      "correct": 1,
+      "correctAnswer": "LF",
+      "explanation": "The first letter advances by 2 (D→F→H→J→L) and the second advances by 1 (B→C→D→E→F). The answer is LF. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
+      "options": [
+        "OI",
+        "OH",
+        "PI",
+        "OJ",
+        "NI"
+      ],
+      "correct": 0,
+      "correctAnswer": "OI",
+      "explanation": "The first letter goes back 2 (W→U→S→Q→O) and the second advances by 2 (A→C→E→G→I). The answer is OI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this series? B3, D6, F9, H12, ___",
+      "options": [
+        "I15",
+        "J15",
+        "J14",
+        "K15",
+        "J16"
+      ],
+      "correct": 1,
+      "correctAnswer": "J15",
+      "explanation": "The letter advances by 2 (B→D→F→H→J) and the number advances by 3 (3→6→9→12→15). The answer is J15. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
+      "options": [
+        "IN",
+        "JN",
+        "JM",
+        "JO",
+        "KN"
+      ],
+      "correct": 1,
+      "correctAnswer": "JN",
+      "explanation": "Both letters advance by 2 each step: BF→DH→FJ→HL→JN. The answer is JN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? B, C, E, H, L, ___",
+      "options": [
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "Q",
+      "explanation": "The gaps increase by 1 each time: B(+1)→C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BX, DU, GR, KO, ___",
+      "options": [
+        "NL",
+        "OL",
+        "PL",
+        "NM",
+        "OK"
+      ],
+      "correct": 2,
+      "correctAnswer": "PL",
+      "explanation": "The first letter gaps increase (+2, +3, +4, +5): B(+2)→D(+3)→G(+4)→K(+5)→P. The second letter goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is PL. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? Z, Y, W, T, P, ___",
+      "options": [
+        "L",
+        "K",
+        "J",
+        "I",
+        "H"
+      ],
+      "correct": 1,
+      "correctAnswer": "K",
+      "explanation": "The gaps increase going backwards: Z(−1)→Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
+      "options": [
+        "LK",
+        "MK",
+        "LJ",
+        "MJ",
+        "NK"
+      ],
+      "correct": 0,
+      "correctAnswer": "LK",
+      "explanation": "The first letter alternates +3, +2: B(+3)→E(+2)→G(+3)→J(+2)→L. The second letter goes back 3 each time: W(−3)→T(−3)→Q(−3)→N(−3)→K. The answer is LK. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
+      "options": [
+        "RI",
+        "SI",
+        "RH",
+        "SJ",
+        "QI"
+      ],
+      "correct": 0,
+      "correctAnswer": "RI",
+      "explanation": "The first letter gaps are +2, +4, +4, +4: D(+2)→F(+4)→J(+4)→N(+4)→R. The second letter advances by 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is RI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this series? A1, C4, E9, G16, ___",
+      "options": [
+        "I25",
+        "H25",
+        "I24",
+        "J25",
+        "I20"
+      ],
+      "correct": 0,
+      "correctAnswer": "I25",
+      "explanation": "The letter advances by 2 each time: A→C→E→G→I. The numbers are perfect squares: 1=1², 4=2², 9=3², 16=4², 25=5². The answer is I25. Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? AD, BH, CL, DP, ___",
+      "options": [
+        "ET",
+        "ES",
+        "FT",
+        "EU",
+        "FS"
+      ],
+      "correct": 0,
+      "correctAnswer": "ET",
+      "explanation": "The first letter advances by 1: A→B→C→D→E. The second letter advances by 4 each step: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is ET. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 126,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? C, E, G, I, ___",
+      "options": [
+        "J",
+        "K",
+        "L",
+        "H",
+        "M"
+      ],
+      "correct": 1,
+      "correctAnswer": "K",
+      "explanation": "Each letter skips one: C(+2)→E(+2)→G(+2)→I(+2)→K. The pattern is +2 each time. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 127,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+      "options": [
+        "IK",
+        "JL",
+        "JK",
+        "IJ",
+        "KL"
+      ],
+      "correct": 1,
+      "correctAnswer": "JL",
+      "explanation": "Both letters skip one each step: B(+2)→D(+2)→F(+2)→H(+2)→J. D(+2)→F(+2)→H(+2)→J(+2)→L. Answer: JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 128,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? M, K, I, G, ___",
+      "options": [
+        "F",
+        "E",
+        "D",
+        "H",
+        "C"
+      ],
+      "correct": 1,
+      "correctAnswer": "E",
+      "explanation": "Each letter skips one going backwards: M(-2)→K(-2)→I(-2)→G(-2)→E. The pattern is -2 each time. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 129,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "What comes next in this letter series? J, I, H, G, ___",
+      "options": [
+        "E",
+        "F",
+        "D",
+        "H",
+        "I"
+      ],
+      "correct": 1,
+      "correctAnswer": "F",
+      "explanation": "The letters go backwards by 1 each time: J(-1)→I(-1)→H(-1)→G(-1)→F. It's the alphabet in reverse! Tip: Check your answer works with ALL the pairs, not just the last two. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 130,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
+      "options": [
+        "VV",
+        "UU",
+        "VW",
+        "WX",
+        "UV"
+      ],
+      "correct": 0,
+      "correctAnswer": "VV",
+      "explanation": "Both letters decrease by 1 each step: Z(-1)→Y(-1)→X(-1)→W(-1)→V. Both letters match, so the answer is VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 131,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
+      "options": [
+        "HF",
+        "HG",
+        "IF",
+        "GE",
+        "JH"
+      ],
+      "correct": 0,
+      "correctAnswer": "HF",
+      "explanation": "Both letters decrease by 3 each step: T(-3)→Q(-3)→N(-3)→K(-3)→H. R(-3)→O(-3)→L(-3)→I(-3)→F. Answer: HF. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 132,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "What comes next in this letter pair series? YX, WV, UT, SR, ___",
+      "options": [
+        "QP",
+        "RQ",
+        "PO",
+        "QR",
+        "RP"
+      ],
+      "correct": 0,
+      "correctAnswer": "QP",
+      "explanation": "Both letters decrease by 2 each step: Y(-2)→W(-2)→U(-2)→S(-2)→Q. X(-2)→V(-2)→T(-2)→R(-2)→P. The gap within each pair stays at 1. Answer: QP. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

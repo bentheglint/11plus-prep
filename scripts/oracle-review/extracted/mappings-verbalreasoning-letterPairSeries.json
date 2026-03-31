@@ -1,0 +1,1940 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterPairSeries",
+    "displayName": "Letter Pair Series",
+    "extractedAt": "2026-03-30T13:52:00.657Z",
+    "totalQuestions": 132,
+    "mappedQuestions": 132,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 106,
+      "medium": 26,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "What comes next in this letter series? A, C, E, G, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "I",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "What comes next in this series? AZ, BY, CX, DW, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "EV",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "What comes next in this letter series? B, D, F, H, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "J",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "What comes next in this letter series? Z, X, V, T, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "What comes next? A, B, D, G, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "K",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "What comes next in this series? AC, BD, CE, DF, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "EG",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "What comes next in this series? A, C, E, G, I, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "K",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "What comes next? ZZ, YY, XX, WW, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "VV",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "What comes next in this letter series? A, C, E, G, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "I",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "What comes next in this letter series? B, D, F, H, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "J",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "What comes next in this letter series? Z, Y, X, W, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "V",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "What comes next in this letter series? A, B, C, D, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "E",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "What comes next in this letter series? M, N, O, P, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "Q",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "What comes next in this letter series? C, F, I, L, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "O",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "What comes next in this letter series? D, F, H, J, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "L",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "What comes next in this letter series? T, R, P, N, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "L",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "What comes next in this letter series? E, H, K, N, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "Q",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "What comes next in this letter series? W, U, S, Q, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "O",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "What comes next in this letter pair series? AB, CD, EF, GH, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "IJ",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EZ",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "What comes next in this letter pair series? AA, BB, CC, DD, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EE",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "What comes next in this letter pair series? AB, BC, CD, DE, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EF",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "What comes next in this letter pair series? AC, BD, CE, DF, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EG",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "What comes next in this letter pair series? AX, BX, CX, DX, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EX",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "VV",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "What comes next in this series? A1, B2, C3, D4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "E5",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "What comes next in this series? A2, B4, C6, D8, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "E10",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "What comes next in this series? Z1, Y2, X3, W4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "V5",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "What comes next in this series? A1, A2, A3, A4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "A5",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "What comes next in this series? B1, D2, F3, H4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "J5",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "What comes next in this letter pair series? AD, BE, CF, DG, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EH",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "What comes next in this letter series? B, E, H, K, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "What comes next in this letter pair series? BA, CB, DC, ED, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "FE",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "What comes next in this series? M1, N2, O3, P4, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "Q5",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "What comes next in this letter series? G, I, K, M, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "O",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "What comes next in this letter pair series? AE, BF, CG, DH, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "EI",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "What comes next in this letter series? A, D, G, J, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "What comes next in this letter series? Z, W, T, Q, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "What comes next in this letter series? A, E, I, M, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "Q",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "What comes next in this letter series? D, H, L, P, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "What comes next in this letter series? V, S, P, M, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "J",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "What comes next in this letter series? B, F, J, N, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "What comes next in this letter series? Y, V, S, P, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "What comes next in this letter series? C, G, K, O, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "What comes next in this letter series? X, U, R, O, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "What comes next in this letter series? F, J, N, R, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "V",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "VE",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "What comes next in this letter pair series? AC, CE, EG, GI, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "IK",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "IR",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JV",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "What comes next in this letter pair series? AB, DE, GH, JK, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "MN",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "RQ",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "EV",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JL",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "What comes next in this letter pair series? MA, NB, OC, PD, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "QE",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "EN",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "RI",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "What comes next in this series? A3, C6, E9, G12, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "I15",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "What comes next in this series? Z2, X4, V6, T8, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "R10",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "What comes next in this series? B5, D10, F15, H20, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "J25",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "What comes next in this series? Y3, W6, U9, S12, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "Q15",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "What comes next in this series? A1, C3, E5, G7, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "I9",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "What comes next in this series? D2, G4, J6, M8, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "P10",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "What comes next in this letter pair series? CE, DG, EI, FK, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "GM",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "What comes next in this letter series? R, O, L, I, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "What comes next in this letter pair series? YA, WC, UE, SG, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "QI",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "What comes next in this series? C1, F3, I5, L7, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "O9",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "What comes next in this letter pair series? FA, HC, JE, LG, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "NI",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "IS",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "What comes next in this series? T5, R10, P15, N20, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "L25",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "What comes next in this letter pair series? BF, CG, DH, EI, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "FJ",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "VS",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "What comes next in this letter series? A, Z, B, Y, C, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "X",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "What comes next in this letter series? A, Z, C, X, E, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "V",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "What comes next in this letter series? A, F, B, G, C, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "What comes next in this letter series? B, D, C, E, D, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "F",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "What comes next in this letter series? A, C, F, J, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "O",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "What comes next in this letter series? Z, X, U, Q, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "What comes next in this letter series? B, D, H, N, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "V",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "What comes next in this letter series? C, E, H, L, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "Q",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "What comes next in this letter series? Y, W, T, P, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "K",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "MN",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "What comes next in this letter pair series? BX, EU, HR, KO, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "NL",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "What comes next in this letter pair series? AC, BF, CI, DL, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "EO",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "What comes next in this letter pair series? AY, DV, GS, JP, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "MM",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "OK",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "ON",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "NN",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "EP",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "What comes next in this series? A2, C5, E8, G11, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "I14",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "What comes next in this series? Z3, W7, T11, Q15, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "N19",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "What comes next in this series? B1, D3, H7, N13, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "V21",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "What comes next in this series? A1, B3, D6, G10, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "K15",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "What comes next in this series? Z1, X3, V5, T7, R9, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "P11",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "What comes next in this letter series? A, B, D, G, K, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "P",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "What comes next in this letter pair series? BY, EV, HS, KP, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "NM",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "What comes next in this series? C2, F5, I8, L11, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "O14",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "OS",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "NL",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "What comes next in this series? A1, D4, G9, J16, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "M25",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "What comes next in this letter series? D, G, J, M, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "JL",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "What comes next in this letter series? V, T, R, P, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "AB",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "What comes next in this letter series? F, H, J, L, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "N",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "What comes next in this series? A1, B2, C3, D4, E5, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "F6",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "UU",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "What comes next in this letter series? S, Q, O, M, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "K",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JQ",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JM",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "What comes next in this series? Z5, X10, V15, T20, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "R25",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "EM",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "VI",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "What comes next in this series? C2, F4, I6, L8, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "O10",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "LF",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "OI",
+      "subConceptId": "opposite-directions",
+      "subConceptName": "One Forward, One Backward",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BY, CX, DW**. The two letters are heading in **opposite** directions — this is the most common pattern in letter pair series (a list of letter pairs that follow a rule)!",
+      "lessonLearningGoal": [
+        "Spot the twist: one letter goes forward while the other goes backward!",
+        "See why Split and Track is essential when letters head in opposite directions"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "What comes next in this series? B3, D6, F9, H12, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "J15",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JN",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "What comes next in this letter series? B, C, E, H, L, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "Q",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "What comes next in this letter pair series? BX, DU, GR, KO, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "PL",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "What comes next in this letter series? Z, Y, W, T, P, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "K",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "LK",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "RI",
+      "subConceptId": "alternating-pattern",
+      "subConceptName": "Alternating Step Sizes",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AF, BH, CJ, DL**. The key: each row can have its **own step size**. Don't assume they're the same!",
+      "lessonLearningGoal": [
+        "Handle the trickiest type: when each row uses a different step size",
+        "See why Split and Track always works, even when the steps don't match"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "What comes next in this series? A1, C4, E9, G16, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "I25",
+      "subConceptId": "both-forward",
+      "subConceptName": "Both Letters Move Forward",
+      "confidence": "medium",
+      "lessonTeachSummary": "Let's split **AC, BD, CE, DF** into two rows. When both letters go forward, the pattern becomes obvious:",
+      "lessonLearningGoal": [
+        "Spot when both letters in a pair march forward through the alphabet together",
+        "Use the Split and Track method when both rows go the same direction"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "What comes next in this letter pair series? AD, BH, CL, DP, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "ET",
+      "subConceptId": "double-jump",
+      "subConceptName": "Big Jumps (+3 or More)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's work through **AD, DG, GJ, JM**. When the jump is +3 or more, it helps to write each letter as its **alphabet number**:",
+      "lessonLearningGoal": [
+        "Handle bigger jumps of 3 or more positions without breaking a sweat",
+        "Use the numbers trick to make big jumps easy to count"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "What comes next in this letter series? C, E, G, I, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "K",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "JL",
+      "subConceptId": "constant-gap",
+      "subConceptName": "Same Gap in Every Pair",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **AD, BE, CF, DG** — every pair has a gap of **3** between its letters. You can use this to double-check your answer:",
+      "lessonLearningGoal": [
+        "Discover the constant gap — a brilliant shortcut hiding inside many series",
+        "Use the gap as a quick double-check to make sure your answer is right"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "What comes next in this letter series? M, K, I, G, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "E",
+      "subConceptId": "skip-one-pattern",
+      "subConceptName": "Skip-One Jumps (+2 or -2)",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AC, CE, EG, GI**. When letters skip one, each row jumps by **2 positions** instead of 1:",
+      "lessonLearningGoal": [
+        "Spot when letters skip one position — jumping by 2 instead of 1",
+        "Use Split and Track with +2 or -2 step patterns confidently"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "What comes next in this letter series? J, I, H, G, ___",
+      "questionDifficulty": 1,
+      "correctAnswer": "F",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "VV",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
+      "questionDifficulty": 2,
+      "correctAnswer": "HF",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "What comes next in this letter pair series? YX, WV, UT, SR, ___",
+      "questionDifficulty": 3,
+      "correctAnswer": "QP",
+      "subConceptId": "reverse-alphabet",
+      "subConceptName": "Counting Back from Z",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's split **AZ, BX, CV, DT**. When the second letter starts near Z and goes down, count the step size:",
+      "lessonLearningGoal": [
+        "Recognise when the second letter is counting backward from Z",
+        "Use a quick trick to spot these patterns instantly"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "mirror-pairs",
+      "name": "Mirror Pairs (Add to 27)"
+    }
+  ],
+  "subConceptCoverage": {
+    "skip-one-pattern": {
+      "name": "Skip-One Jumps (+2 or -2)",
+      "questionCount": 15,
+      "difficulties": {
+        "D1": 12,
+        "D2": 2,
+        "D3": 1
+      }
+    },
+    "opposite-directions": {
+      "name": "One Forward, One Backward",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 0,
+        "D2": 9,
+        "D3": 7
+      }
+    },
+    "alternating-pattern": {
+      "name": "Alternating Step Sizes",
+      "questionCount": 18,
+      "difficulties": {
+        "D1": 1,
+        "D2": 0,
+        "D3": 17
+      }
+    },
+    "constant-gap": {
+      "name": "Same Gap in Every Pair",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 9,
+        "D2": 10,
+        "D3": 1
+      }
+    },
+    "reverse-alphabet": {
+      "name": "Counting Back from Z",
+      "questionCount": 16,
+      "difficulties": {
+        "D1": 4,
+        "D2": 10,
+        "D3": 2
+      }
+    },
+    "both-forward": {
+      "name": "Both Letters Move Forward",
+      "questionCount": 28,
+      "difficulties": {
+        "D1": 9,
+        "D2": 11,
+        "D3": 8
+      }
+    },
+    "double-jump": {
+      "name": "Big Jumps (+3 or More)",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 6,
+        "D2": 10,
+        "D3": 3
+      }
+    }
+  }
+}

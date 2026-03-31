@@ -1,0 +1,2517 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "negativenumbers",
+    "displayName": "Negative Numbers",
+    "extractedAt": "2026-03-30T13:52:00.429Z",
+    "totalQuestions": 179,
+    "mappedQuestions": 179,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 1,
+    "confidenceBreakdown": {
+      "high": 179,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "The temperature in Edinburgh is -3°C. In London it is 5°C warmer. What is the temperature in London?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 2,
+      "questionText": "Which number is the smallest? -5, 3, -2, 0, -8",
+      "questionDifficulty": 1,
+      "correctAnswer": "-8",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Sarah's bank balance is £20. She spends £35. What is her new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-£15",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "The temperature at midnight was -7°C. By midday it had risen by 12°C. What was the temperature at midday?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 5,
+      "questionText": "Put these numbers in order from smallest to largest: -1, 4, -6, 2, -3",
+      "questionDifficulty": 1,
+      "correctAnswer": "-6, -3, -1, 2, 4",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "A submarine is at 45 metres below sea level. It rises 20 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25 metres below",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Jack scored -5 points in a game. Emma scored 3 points more than Jack. How many points did Emma score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-2",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "What is the difference between -4°C and 3°C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "A car park has 3 floors above ground and 2 floors below ground. Ground floor is numbered 0. Which floor number is 2 floors below ground?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-2",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "The temperature was 2°C. It dropped by 8°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-6°C",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Which is larger: -20 or -15?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-15",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Oliver is on floor -3 in a building. He goes up 5 floors. Which floor is he on now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor 2",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 13,
+      "questionText": "The temperature in Moscow is -12°C. In Dubai it is 38°C warmer. What is the temperature in Dubai?",
+      "questionDifficulty": 2,
+      "correctAnswer": "26°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 14,
+      "questionText": "What number is halfway between -6 and 4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-1",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Lily owes her brother £37. She earns £15 from a car boot sale and gives it all to him. The next day she borrows another £12. How much does she owe now",
+      "questionDifficulty": 3,
+      "correctAnswer": "£34",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "A diver is 18 metres below sea level. She dives down another 7 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "25 metres below",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "The lowest temperature recorded in Antarctica was -89°C. The lowest in the Arctic was -68°C. What is the difference?",
+      "questionDifficulty": 2,
+      "correctAnswer": "21°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Ben has -£12 in his account (overdrawn). His dad puts £20 in. What is his new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£8",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 19,
+      "questionText": "Which of these numbers is closest to zero? -7, 5, -3, 9, -10",
+      "questionDifficulty": 2,
+      "correctAnswer": "-3",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "In a quiz, correct answers score +5 points and wrong answers score -2 points. Maya gets 4 correct and 3 wrong. What is her total score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "14",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "The temperature is -5°C in the morning. It rises by 8°C during the day. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 22,
+      "questionText": "Which number is the smallest? -9, -4, -12, 0, -6",
+      "questionDifficulty": 1,
+      "correctAnswer": "-12",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "The temperature was -8°C. It rose by 15°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 24,
+      "questionText": "Noah has £12. He spends £20. What is his new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-£8",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "What is the difference between -7°C and 4°C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "A fish is swimming at 15 metres below sea level. It rises 9 metres. What is its new position relative to sea level?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-6",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Which is larger: -25 or -18?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-18",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "The temperature in Belfast is 3°C. Overnight it drops by 11°C. What is the temperature in the morning?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-8°C",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "A submarine is at -20 metres. It rises 35 metres. What is its new position?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15m above",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 30,
+      "questionText": "What number is halfway between -10 and 6?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-2",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Put these numbers in order from largest to smallest: -2, 5, -8, 1, -5",
+      "questionDifficulty": 1,
+      "correctAnswer": "5, 1, -2, -5, -8",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Ethan is on floor -4 in a car park. He goes up 7 floors. Which floor is he on?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor 3",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 33,
+      "questionText": "The temperature in Oslo is -16°C. In Athens it is 28°C warmer. What is the temperature in Athens?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 34,
+      "questionText": "A diver is 9 metres below sea level. She dives another 5 metres deeper. What is her new position relative to sea level?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-14",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Lily scored -8 points. Mia scored 6 points more than Lily. How many points did Mia score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-2",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Which of these numbers is closest to zero? -11, 8, -4, 12, -15",
+      "questionDifficulty": 2,
+      "correctAnswer": "-4",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "A diver is at -30 metres. She dives down another 12 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "42m below",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Jake has £7 in his account. He spends £18 on a book. What is his balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-£11",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "The temperature was -5°C. It dropped by 9°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-14°C",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "The temperature in Glasgow is -12°C. It warms up by 17°C during the day. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 41,
+      "questionText": "Ben has -£25 in his account. His mum deposits £40. What is his new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£15",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 42,
+      "questionText": "Which is smaller: -32 or -27?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-32",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "What is the difference between -15 and 8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "23",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "The temperature in York is 2°C. It drops by 14°C overnight. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-12",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Sophie owes her sister £15. She pays back £9. How much does she still owe?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£6",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "A whale is swimming at 18 metres below sea level. It rises 11 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-7",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "A building has 5 floors above ground and 3 below ground. Ground = 0. Which floor number is 3 floors below?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-3",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "What number is halfway between -14 and 2?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-6",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "The temperature in Aberdeen is -6°C. It falls by another 8°C overnight. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-14°C",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "The temperature in Alaska is -22°C. In Florida it is 48°C warmer. What is the temperature in Florida?",
+      "questionDifficulty": 2,
+      "correctAnswer": "26°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 51,
+      "questionText": "Mia has £15 on her bus pass. She buys a £28 weekly ticket. What is her balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-£13",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Charlie is on floor -2. He goes down 3 more floors. Which floor is he on?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor -5",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "A cave is 24 metres below ground level. A climber ascends 19 metres. What is her position relative to ground level?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-5",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Put these numbers in order from smallest to largest: 0, -7, 4, -3, -10",
+      "questionDifficulty": 1,
+      "correctAnswer": "-10, -7, -3, 0, 4",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "What is the difference between -20 and -8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "The temperature in Cardiff is 4°C. Overnight it drops by 19°C. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-15°C",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Ava scored -12 points. Tom scored 8 points more than Ava. How many points did Tom score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-4",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "A submarine is at 30 metres below sea level. It rises 25 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-5",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Which of these numbers is furthest from zero? -16, 9, -5, 18, -22",
+      "questionDifficulty": 3,
+      "correctAnswer": "-22",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "The temperature was -11°C. It rose by 18°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 61,
+      "questionText": "A diver is at 14 metres below sea level. She dives another 6 metres deeper. What is her new position?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-20",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Mason has £8. He spends £23. What is his new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-£15",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Lucy has -£7 in her savings account. Her gran gives her £20 for her birthday. What is her balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "13",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 64,
+      "questionText": "Which is larger: -40 or -35?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-35",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Tom has £6 in his account. He buys a toy costing £22. What is his balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-16",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "A submarine is at -50 metres. It rises 32 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18m below",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "The temperature in Inverness is -35°C. It warms up by 28°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-7",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "What number is halfway between -18 and 4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-7",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "What is the difference between -25 and 10?",
+      "questionDifficulty": 2,
+      "correctAnswer": "35",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "The temperature is 10°C during the day. It drops by 27°C at night. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-17",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "In a quiz, correct answers score +6 points and wrong answers score -3 points. Leo gets 5 correct and 4 wrong. What is his score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "18",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "A submarine is at 19 metres below sea level. It dives another 8 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-27",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Ruby is on floor -5. She goes up 9 floors. Which floor is she on?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor 4",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 74,
+      "questionText": "A lift is at floor -28 in a deep mine. It goes up 35 floors. Which floor is it on now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 75,
+      "questionText": "The temperature was -17°C. It dropped by 11°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-28°C",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Which is smallest: -14, -9, -21, -5, -18?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-21",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "The temperature in Edinburgh is 1°C. It drops by 16°C overnight. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-15",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Oscar owes his dad £30. He pays back £18. How much does he still owe?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£12",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "A deep-sea robot is at 42 metres below sea level. It rises 29 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-13",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "A diver is at -25 metres. She dives down another 18 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "43m below",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Freddie has £9 in his wallet. He owes his friend £31. After paying, what is his balance?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-22",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "The temperature is -16°C in the morning. By noon it has risen by 16°C. What is the temperature at noon?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "The temperature in Iceland is -19°C. In Spain it is 37°C warmer. What is the temperature in Spain?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 84,
+      "questionText": "The temperature is -11°C. It drops by another 14°C during a blizzard. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-25",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Put these numbers in order from largest to smallest: -4, 6, -11, 2, -7",
+      "questionDifficulty": 1,
+      "correctAnswer": "6, 2, -4, -7, -11",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Hannah has £13 on her library card. She buys a £35 book. What is her balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-22",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Isla has -£18 in her account. Her grandad deposits £50. What is her new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£32",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 88,
+      "questionText": "A mining lift is at 26 metres below ground. It goes up 14 metres. What is its new position?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-12",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Which of these numbers is closest to zero? -19, 15, -7, 21, -24",
+      "questionDifficulty": 2,
+      "correctAnswer": "-7",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "What is the difference between -30 and -12?",
+      "questionDifficulty": 2,
+      "correctAnswer": "18",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "A dolphin is swimming at 8 metres below the surface. It dives down another 17 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-25",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "The temperature in Dundee is 5°C. It drops by 24°C overnight. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-19",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Harry is on floor -6. He goes down 4 more floors. Which floor is he on?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor -10",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "A well is 33 metres deep. A bucket is raised 40 metres by a crane. What is the bucket's position above ground?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 95,
+      "questionText": "The temperature was -13°C. It rose by 22°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 96,
+      "questionText": "What number is halfway between -20 and 8?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-6",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "The temperature in Reykjavik is -21°C. It falls by another 9°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-30",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Which is larger: -50 or -42?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-42",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Sam has £11 in his account. He pays a £38 bill. What is his balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-27",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Zoe scored -15 points. Jack scored 12 points more than Zoe. How many points did Jack score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-3",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "A submarine is at 45 metres below sea level. It rises 38 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-7",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "A submarine is at -60 metres. It rises 45 metres. What is its new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "15m below",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "The temperature in Bristol is 14°C. It drops by 42°C during a freak cold snap. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-28",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "What is the difference between -35 and 5?",
+      "questionDifficulty": 2,
+      "correctAnswer": "40",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "A scuba diver is 10 metres below the surface. She descends another 13 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-23",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Lucas has £6. He spends £29. What is his new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-£23",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Grace has -£38 in her account. She receives £52 for her birthday. What is her balance now?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 108,
+      "questionText": "The temperature was -21°C. It dropped by 14°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-35°C",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Which of these numbers is furthest from zero? -28, 18, -12, 25, -35",
+      "questionDifficulty": 3,
+      "correctAnswer": "-35",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "The temperature in Manchester is 8°C. A cold front causes it to drop by 33°C. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-25",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Amelia is on floor -7. She goes up 12 floors. Which floor is she on?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Floor 5",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 112,
+      "questionText": "A potholer is 17 metres underground. She descends another 15 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-32",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "An explorer is 25 metres below ground in a cave. She climbs up 25 metres. What is her position now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "In a quiz, correct answers score +8 points and wrong answers score -4 points. Emma gets 6 correct and 5 wrong. What is her score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "28",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Alfie has £17 saved up. He buys a game costing £45. What is his balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-28",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "What number is halfway between -16 and 10?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-3",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "The temperature in northern Canada is -32°C. It drops by another 8°C. What is the new temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-40",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "A diver is at -38 metres. She dives down another 22 metres. What is her new depth?",
+      "questionDifficulty": 2,
+      "correctAnswer": "60m below",
+      "subConceptId": "negative-subtract-negative",
+      "subConceptName": "Subtracting from a Negative",
+      "confidence": "high",
+      "lessonTeachSummary": "Subtracting moves you **left**. When you're already negative, subtracting makes you **more negative** — further from zero!",
+      "lessonLearningGoal": [
+        "How to subtract a positive number from a negative number",
+        "Why subtracting makes a negative number even more negative"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "A research station is 51 metres below sea level. A balloon rises 46 metres from there. What is its position?",
+      "questionDifficulty": 2,
+      "correctAnswer": "-5",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Which is smallest: -23, -17, -29, -11, -26?",
+      "questionDifficulty": 1,
+      "correctAnswer": "-29",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "In a quiz, correct answers score +5 points and wrong answers score −3 points. Amy got 7 right and 4 wrong. Ben got 5 right and 6 wrong. What is the di",
+      "questionDifficulty": 3,
+      "correctAnswer": "16",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "The temperature was −8°C at midnight. It dropped by 3°C each hour until 4am, then rose by 2°C each hour. What was the temperature at 7am?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-14°C",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Grace had £45 in her bank account. She paid £60 for a coat, received £25 from her grandma, then paid a £15 phone bill. What is her balance now?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-£5",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "The temperature changed from −15°C to 7°C. How many degrees did it change by?",
+      "questionDifficulty": 3,
+      "correctAnswer": "22°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Which pair of numbers has the greatest difference? A: −12 and 5, B: −3 and 9, C: −18 and −2, D: 4 and 20, E: −7 and 14",
+      "questionDifficulty": 3,
+      "correctAnswer": "−7 and 14",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "A sequence starts: 8, 5, 2, −1, −4, ... What is the 10th term of this sequence?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-19",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "A submarine is at −120 metres. It rises one-third of the way to the surface. What is its new depth?",
+      "questionDifficulty": 3,
+      "correctAnswer": "80m below",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "At 6am the temperature was −9°C. By noon it was 5°C. By midnight it had fallen by 18°C from its noon value. What was the temperature at midnight?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-13°C",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 129,
+      "questionText": "In a card game, Tom starts with 0 points. He wins 12, loses 8, wins 5, loses 15, then wins 3. What is his final score?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-3",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 130,
+      "questionText": "A lift is on floor −3. It goes up 8 floors, then down 5 floors, then down 4 floors. Which floor is it on now?",
+      "questionDifficulty": 3,
+      "correctAnswer": "Floor −4",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 131,
+      "questionText": "The temperatures in five cities are: Aberdeen −4°C, Belfast −1°C, Cardiff 3°C, Dover 2°C, Edinburgh −6°C. What is the difference between the warmest a",
+      "questionDifficulty": 3,
+      "correctAnswer": "9°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 132,
+      "questionText": "Oliver has −£8 in his account. He receives £15, spends £22, then receives £10. What is his final balance?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-£5",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 133,
+      "questionText": "A sequence starts: 20, 14, 8, 2, ... What is the first negative term in this sequence?",
+      "questionDifficulty": 3,
+      "correctAnswer": "-4",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 134,
+      "questionText": "The temperature at the top of a mountain is −14°C. At the bottom it is 10°C. A hiker is halfway up, where the temperature is exactly halfway between t",
+      "questionDifficulty": 3,
+      "correctAnswer": "-2°C",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 135,
+      "questionText": "In a science experiment, a liquid starts at 6°C. It is cooled by 4°C every minute. After how many minutes will the temperature first be below −15°C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 minutes",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 136,
+      "questionText": "The temperature in Aberdeen is −4°C. It rises by 9°C during the day. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 137,
+      "questionText": "A lift starts on floor −2. It goes up 6 floors. Which floor does it reach?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Floor 4",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 138,
+      "questionText": "Priya has −£9 in her bank account. She earns £16 from babysitting. What is her new balance?",
+      "questionDifficulty": 2,
+      "correctAnswer": "£7",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 139,
+      "questionText": "The temperature at dawn was −14°C. By afternoon it had risen by 20°C. What was the afternoon temperature?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 140,
+      "questionText": "A submarine is at −18 metres. It rises 25 metres. What is its new position relative to sea level?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7m above",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 141,
+      "questionText": "At 5am the temperature was −11°C. It rose by 3°C every hour until noon. What was the temperature at noon?",
+      "questionDifficulty": 3,
+      "correctAnswer": "10°C",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 142,
+      "questionText": "Kai owes his sister £17. He earns £8 one week and £14 the next. After paying back what he owes, how much does he have left?",
+      "questionDifficulty": 3,
+      "correctAnswer": "£5",
+      "subConceptId": "master-crossing-zero",
+      "subConceptName": "master-crossing-zero",
+      "confidence": "high",
+      "lessonTeachSummary": "[No lesson found]",
+      "lessonLearningGoal": []
+    },
+    {
+      "questionId": 143,
+      "questionText": "Which of these numbers is the largest? −3, −9, −1, −7, −5",
+      "questionDifficulty": 1,
+      "correctAnswer": "−1",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 144,
+      "questionText": "The temperature in five Scottish cities one morning was: Dundee −2°C, Perth −5°C, Stirling 1°C, Inverness −8°C, Glasgow 3°C. Which city was coldest?",
+      "questionDifficulty": 1,
+      "correctAnswer": "Inverness",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 145,
+      "questionText": "Put these numbers in order from smallest to largest: 3, −4, 0, −1, 5",
+      "questionDifficulty": 1,
+      "correctAnswer": "−4, −1, 0, 3, 5",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 146,
+      "questionText": "Which number is exactly 7 less than −3?",
+      "questionDifficulty": 2,
+      "correctAnswer": "−10",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 147,
+      "questionText": "Here are five temperatures: −6°C, 2°C, −11°C, 8°C, −3°C. How many of these are below −2°C?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 148,
+      "questionText": "On a number line, which number is exactly halfway between −8 and −2?",
+      "questionDifficulty": 2,
+      "correctAnswer": "−5",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 149,
+      "questionText": "Five children measure the temperature outside their homes at 7am. Results: Ava −3°C, Ben −7°C, Cara 2°C, Dan −1°C, Eve 4°C. What is the range of their",
+      "questionDifficulty": 3,
+      "correctAnswer": "11°C",
+      "subConceptId": "understanding-negatives",
+      "subConceptName": "What Negative Numbers Mean",
+      "confidence": "high",
+      "lessonTeachSummary": "A **negative number** is a number **less than zero**. Zero means water freezes.\n\nSo **-5** means **5 degrees below freezing**.\n\nOn a number line, negative numbers go to the **left** of zero. The furth",
+      "lessonLearningGoal": [
+        "How to understand what a negative number represents in real life",
+        "How to see that negative numbers sit below zero on a number line"
+      ]
+    },
+    {
+      "questionId": 150,
+      "questionText": "Ruby has £5 saved. She buys a comic costing £12. What is her balance now?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−£7",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 151,
+      "questionText": "The temperature in Bournemouth is 6°C. A cold front causes it to drop by 15°C. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−9°C",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 152,
+      "questionText": "A swimmer is at the surface of a pool (0 metres). She dives 4 metres, then dives another 3 metres deeper. What is her position?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7m below",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 153,
+      "questionText": "A thermometer reads 3°C. The temperature drops by 3°C each hour for 4 hours. What does the thermometer read after 4 hours?",
+      "questionDifficulty": 2,
+      "correctAnswer": "−9°C",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 154,
+      "questionText": "Ethan has £25. He buys a book for £9, a game for £14, and a snack for £8. What is his balance?",
+      "questionDifficulty": 3,
+      "correctAnswer": "−£6",
+      "subConceptId": "subtracting-into-negatives",
+      "subConceptName": "Subtracting Below Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When you subtract more than you have, you go **through zero** into the negatives. Tap to follow the journey step by step!",
+      "lessonLearningGoal": [
+        "How to subtract when the answer goes below zero",
+        "Why subtracting moves you LEFT on the number line"
+      ]
+    },
+    {
+      "questionId": 155,
+      "questionText": "What is the difference between −3°C and 5°C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 156,
+      "questionText": "The temperature in the morning was −2°C. By the afternoon it was 6°C. How much did the temperature rise?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 157,
+      "questionText": "A freezer is at −18°C. Room temperature is 20°C. What is the difference between these temperatures?",
+      "questionDifficulty": 1,
+      "correctAnswer": "38°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 158,
+      "questionText": "On Monday the temperature was −5°C. On Tuesday it was 9°C. How many degrees warmer was Tuesday?",
+      "questionDifficulty": 2,
+      "correctAnswer": "14°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 159,
+      "questionText": "The deepest point of a lake is 12 metres below the surface. A bird is flying 8 metres above the surface. What is the distance between the bird and the",
+      "questionDifficulty": 2,
+      "correctAnswer": "20m",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 160,
+      "questionText": "Edinburgh recorded −7°C and London recorded 4°C on the same day. How much warmer was London?",
+      "questionDifficulty": 2,
+      "correctAnswer": "11°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 161,
+      "questionText": "What is the difference between −13 and −4?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 162,
+      "questionText": "The highest temperature ever recorded in the UK was 40°C. The lowest was −27°C. What is the difference between these record temperatures?",
+      "questionDifficulty": 3,
+      "correctAnswer": "67°C",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 163,
+      "questionText": "A submarine is at −45 metres. A helicopter is at 120 metres above sea level. What is the distance between them?",
+      "questionDifficulty": 3,
+      "correctAnswer": "165m",
+      "subConceptId": "difference-across-zero",
+      "subConceptName": "Finding the Difference Across Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "When two numbers sit on **opposite sides** of zero, finding the gap between them requires a special trick. Tap to discover it!",
+      "lessonLearningGoal": [
+        "How to find the difference between a negative and a positive number",
+        "Why you add the distances from zero"
+      ]
+    },
+    {
+      "questionId": 164,
+      "questionText": "What is the next number in this sequence? 4, 2, 0, −2, ...?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−4",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 165,
+      "questionText": "A sequence counts down: 5, 3, 1, −1, −3. What comes next?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−5",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 166,
+      "questionText": "What number is halfway between −4 and 4?",
+      "questionDifficulty": 1,
+      "correctAnswer": "0",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 167,
+      "questionText": "A sequence starts: 7, 4, 1, −2, −5, ... What is the 8th term?",
+      "questionDifficulty": 2,
+      "correctAnswer": "−14",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 168,
+      "questionText": "A number line shows points at −9, −6, −3, 0, 3, 6. What is the rule for this sequence?",
+      "questionDifficulty": 2,
+      "correctAnswer": "Add 3",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 169,
+      "questionText": "A sequence starts: 15, 11, 7, 3, ... What is the first negative number in this sequence?",
+      "questionDifficulty": 2,
+      "correctAnswer": "−1",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 170,
+      "questionText": "A sequence starts: 12, 7, 2, −3, −8, ... What is the sum of the 6th and 7th terms?",
+      "questionDifficulty": 3,
+      "correctAnswer": "−26",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 171,
+      "questionText": "A temperature starts at 10°C and drops by 3°C each hour. After how many hours will it first be below −5°C?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6 hours",
+      "subConceptId": "counting-through-zero",
+      "subConceptName": "Counting Through Zero",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's count 7 steps forwards from **-3**. Don't skip ahead — just count one number at a time, right through zero. Zero is just another number in the sequence!",
+      "lessonLearningGoal": [
+        "How to count forwards through zero from a negative number",
+        "How to count backwards through zero into negatives"
+      ]
+    },
+    {
+      "questionId": 172,
+      "questionText": "A submarine is at −20 metres. It rises 8 metres. What is its new depth?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−12m",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 173,
+      "questionText": "The temperature is −10°C. It warms up by 4°C. What is the new temperature?",
+      "questionDifficulty": 1,
+      "correctAnswer": "−6°C",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 174,
+      "questionText": "A cave explorer is 40 metres underground. She climbs up 15 metres, rests, then climbs up another 12 metres. What is her position?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13m below ground",
+      "subConceptId": "adding-to-negatives",
+      "subConceptName": "Adding to Negative Numbers",
+      "confidence": "high",
+      "lessonTeachSummary": "Start at **-8** and jump **5** places to the right.",
+      "lessonLearningGoal": [
+        "How to add a positive number to a negative number",
+        "Why adding moves you to the RIGHT on a number line"
+      ]
+    },
+    {
+      "questionId": 175,
+      "questionText": "A car park has floors numbered −2, −1, 0, 1, 2, 3. James parks on floor −2 and takes the lift to floor 3. How many floors does he travel?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 176,
+      "questionText": "In a maths challenge, Team A scores +12, −5, +8, −3. What is their total score?",
+      "questionDifficulty": 2,
+      "correctAnswer": "12",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 177,
+      "questionText": "The temperature at the top of Ben Nevis is −8°C. At sea level it is 5°C. The temperature drops by 1°C for every 150 metres you climb. How high is the ",
+      "questionDifficulty": 2,
+      "correctAnswer": "1,950m",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 178,
+      "questionText": "Maisie starts with £30. She buys lunch for £7, receives £5 pocket money, buys a book for £19, and then spends £15 on a gift. What is her balance?",
+      "questionDifficulty": 3,
+      "correctAnswer": "−£6",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    },
+    {
+      "questionId": 179,
+      "questionText": "In a TV quiz, each correct answer earns 10 points and each wrong answer loses 4 points. After 12 questions, a contestant has 64 points. How many did s",
+      "questionDifficulty": 3,
+      "correctAnswer": "4",
+      "subConceptId": "real-world-contexts",
+      "subConceptName": "Negatives in Real Life",
+      "confidence": "high",
+      "lessonTeachSummary": "No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.",
+      "lessonLearningGoal": [
+        "How to recognise negative numbers in money, depth, and floors",
+        "How to solve real-life problems using negatives"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "temperature-problems",
+      "name": "Temperature Rise and Fall"
+    }
+  ],
+  "subConceptCoverage": {
+    "master-crossing-zero": {
+      "name": "master-crossing-zero",
+      "questionCount": 30,
+      "difficulties": {
+        "D1": 5,
+        "D2": 23,
+        "D3": 2
+      }
+    },
+    "understanding-negatives": {
+      "name": "What Negative Numbers Mean",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 16,
+        "D2": 6,
+        "D3": 3
+      }
+    },
+    "subtracting-into-negatives": {
+      "name": "Subtracting Below Zero",
+      "questionCount": 25,
+      "difficulties": {
+        "D1": 17,
+        "D2": 7,
+        "D3": 1
+      }
+    },
+    "adding-to-negatives": {
+      "name": "Adding to Negative Numbers",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 3,
+        "D2": 15,
+        "D3": 2
+      }
+    },
+    "difference-across-zero": {
+      "name": "Finding the Difference Across Zero",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 3,
+        "D2": 12,
+        "D3": 5
+      }
+    },
+    "real-world-contexts": {
+      "name": "Negatives in Real Life",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 3,
+        "D2": 4,
+        "D3": 13
+      }
+    },
+    "counting-through-zero": {
+      "name": "Counting Through Zero",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 5,
+        "D2": 9,
+        "D3": 6
+      }
+    },
+    "negative-subtract-negative": {
+      "name": "Subtracting from a Negative",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 0,
+        "D2": 19,
+        "D3": 0
+      }
+    }
+  }
+}

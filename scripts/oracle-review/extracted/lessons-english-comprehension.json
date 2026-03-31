@@ -1,0 +1,2056 @@
+{
+  "meta": {
+    "subject": "english",
+    "topic": "comprehension",
+    "displayName": "Reading Comprehension",
+    "extractedAt": "2026-03-30T13:51:13.685Z",
+    "subConceptCount": 10,
+    "lessonCount": 20,
+    "screenCount": 80,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "retrieval",
+      "name": "Finding Facts in the Text",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "retrieval-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to scan a passage for specific facts — like being a detective searching for clues!",
+            "How to find answers that are stated directly in the text (the answer is right there, you just need to find it)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you find the fact?",
+              "body": "Did you know some comprehension questions are basically treasure hunts? The answer is written right there in the text — you just need to track it down! Read the passage below:\n\n**Question: How many steps does Mr Hartley climb every evening?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The old lighthouse stood at the edge of Whitby cliff, its red and white stripes fading after years of Atlantic storms. Mr Hartley had been the keeper for thirty-seven years, climbing the one hundred and forty-two steps every evening to light the great lamp. His daughter, Meg, often brought him a flask of tea and a cheese sandwich at sunset. She loved watching the beam sweep across the dark water. Last Tuesday, the council told Mr Hartley he could finally retire, but he shook his head. 'The ships still need me,' he said quietly. Meg smiled because she knew he would never leave. The lighthouse was not just his job — it was his home, his purpose, and the only life he had ever known.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: finding facts",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Read the question, find the key word, scan the passage, then read around it. ✓",
+                "incorrectFeedback": "Not quite — start by reading the question, then find the key word to scan for in the passage."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "How many years has Mr Hartley been the lighthouse keeper?",
+                "options": [
+                  "One hundred and forty-two",
+                  "Thirty-seven",
+                  "Twenty-five",
+                  "Forty-two",
+                  "Fifty"
+                ],
+                "correctAnswer": "Thirty-seven",
+                "correctFeedback": "Brilliant! The passage says: \"Mr Hartley had been the keeper for thirty-seven years\" — so the answer is **Thirty-seven**. ✓",
+                "incorrectFeedback": "Not quite! Look for the key word \"years\" in the passage. It says: \"Mr Hartley had been the keeper for thirty-seven years\" — so the answer is **Thirty-seven**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The old lighthouse stood at the edge of Whitby cliff, its red and white stripes fading after years of Atlantic storms. Mr Hartley had been the keeper for thirty-seven years, climbing the one hundred and forty-two steps every evening to light the great lamp. His daughter, Meg, often brought him a flask of tea and a cheese sandwich at sunset. She loved watching the beam sweep across the dark water. Last Tuesday, the council told Mr Hartley he could finally retire, but he shook his head. 'The ships still need me,' he said quietly. Meg smiled because she knew he would never leave. The lighthouse was not just his job — it was his home, his purpose, and the only life he had ever known.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The retrieval recipe — you've got it!",
+              "body": "When a question asks for a **fact**, the answer is hiding in the passage. Here is your foolproof method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the question — what does it want?",
+                    "why": "Who? What? When? Where? How many?"
+                  },
+                  {
+                    "text": "Step 2: Find the key word in the question",
+                    "why": "This is the word you will search for in the passage."
+                  },
+                  {
+                    "text": "Step 3: Scan the passage for that key word",
+                    "why": "Run your eyes through the text until you spot it."
+                  },
+                  {
+                    "text": "Step 4: Read the sentence around it carefully",
+                    "why": "The answer will be right there in the text. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "retrieval-tricky",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to find answers spread across more than one sentence — these are the sneaky questions!",
+            "Why you must read carefully — not just grab the first thing you see (the exam loves setting traps here)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you piece the answer together?",
+              "body": "Read this passage carefully — here's the twist: the answer is NOT in one single sentence!\n\nSometimes you need to **combine information** from different parts of the text, like piecing together a jigsaw. Watch out for traps!\n\n**Question: How many children actually went on the trip?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The school trip to Bristol Zoo had been planned for months. Miss Shah booked the coach for Wednesday the fourteenth of March. Twenty-eight children signed up, but on the day itself, three were off sick with colds. The zoo opened at nine o'clock, but the coach did not arrive until quarter past because of traffic on the motorway. After a quick headcount in the car park, Miss Shah led the group straight to the penguin enclosure. They spent the rest of the morning watching feeding time and sketching animals in their notebooks.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Read carefully — do not grab the first number!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What time did the coach actually arrive at the zoo?",
+                "options": [
+                  "Nine o'clock",
+                  "Quarter past nine",
+                  "Half past nine",
+                  "Ten o'clock",
+                  "Quarter to nine"
+                ],
+                "correctAnswer": "Quarter past nine",
+                "correctFeedback": "Well done! The zoo opened at nine o'clock, but the coach did not arrive until quarter past — so it arrived at quarter past nine. The answer is **Quarter past nine**. ✓",
+                "incorrectFeedback": "Not quite! Be careful — that is when the zoo opened, not when the coach arrived. The zoo opened at nine o'clock, but the coach did not arrive until quarter past — so it arrived at quarter past nine. The answer is **Quarter past nine**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The school trip to Bristol Zoo had been planned for months. Miss Shah booked the coach for Wednesday the fourteenth of March. Twenty-eight children signed up, but on the day itself, three were off sick with colds. The zoo opened at nine o'clock, but the coach did not arrive until quarter past because of traffic on the motorway. After a quick headcount in the car park, Miss Shah led the group straight to the penguin enclosure. They spent the rest of the morning watching feeding time and sketching animals in their notebooks.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tricky retrieval tips — you're ready for these!",
+              "body": "Some retrieval questions try to catch you out by spreading the answer across different sentences. Now you know the trick:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the whole passage, not just one sentence",
+                    "why": "The answer may be spread across the text."
+                  },
+                  {
+                    "text": "Step 2: Watch for words like 'but', 'then', 'after', 'however'",
+                    "why": "These signal that something changed."
+                  },
+                  {
+                    "text": "Step 3: Check if the first number you find is the final answer",
+                    "why": "It might be a trap — read on to see if it changes. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inference",
+      "name": "Reading Between the Lines",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "inference-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to work out something the author has not said directly — you'll be reading between the lines like a pro!",
+            "How to use clues in the text to make a sensible guess (it's like being a reading detective)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Harley",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What is the author really telling you?",
+              "body": "Here's the interesting part — the author doesn't say the answer directly! But there are **clues** hidden in the text, like breadcrumbs leading to the answer. Can you spot them?\n\n**Question: How is Mia feeling when she gets home?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Mia pushed open the front door and dropped her school bag on the floor without a word. She stomped up the stairs, her shoes leaving muddy prints on every step. Her bedroom door slammed so hard that the family photo on the landing wall wobbled. Downstairs, her mother put down the magazine she was reading and sighed. She filled the kettle and placed two mugs on the counter — one with a tea bag and one with hot chocolate powder. Then she carried the hot chocolate upstairs and knocked gently on Mia's door.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: reading between the lines",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect! Read the question, find clues, combine them, then choose the best-supported answer. ✓",
+                "incorrectFeedback": "Not quite — start by understanding the question, then hunt for clues in the passage to support your inference."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Why does Mia's mother make hot chocolate and bring it upstairs?",
+                "options": [
+                  "She wants to comfort Mia and show she cares",
+                  "She is thirsty and wants a drink herself",
+                  "She wants to tell Mia off for slamming the door",
+                  "She always makes hot chocolate at that time of day",
+                  "She wants Mia to come back downstairs"
+                ],
+                "correctAnswer": "She wants to comfort Mia and show she cares",
+                "correctFeedback": "Brilliant! Mia's mother wants to comfort her — she makes a warm drink and approaches gently, showing she cares. The clues all point to **She wants to comfort Mia and show she cares**. ✓",
+                "incorrectFeedback": "Not quite! Look at the clues: \"filled the kettle and placed two mugs — one for herself, one for Mia\", \"carried the hot chocolate upstairs and knocked gently\", \"she sighed but did not shout or get angry — she responded with kindness\". Together they tell us the answer is **She wants to comfort Mia and show she cares**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Mia pushed open the front door and dropped her school bag on the floor without a word. She stomped up the stairs, her shoes leaving muddy prints on every step. Her bedroom door slammed so hard that the family photo on the landing wall wobbled. Downstairs, her mother put down the magazine she was reading and sighed. She filled the kettle and placed two mugs on the counter — one with a tea bag and one with hot chocolate powder. Then she carried the hot chocolate upstairs and knocked gently on Mia's door.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The inference recipe — brilliant work!",
+              "body": "When the answer is **not stated directly**, you're being asked to **infer** — and now you know how:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Notice when the answer is NOT written in the text",
+                    "why": "If you cannot point to an exact sentence, you need to infer."
+                  },
+                  {
+                    "text": "Step 2: Hunt for clues — actions, feelings, descriptions",
+                    "why": "How do characters behave? What words does the author use?"
+                  },
+                  {
+                    "text": "Step 3: Put the clues together",
+                    "why": "Do they all point in the same direction?"
+                  },
+                  {
+                    "text": "Step 4: Choose the answer that fits ALL the clues",
+                    "why": "Not just one clue — all of them. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "inference-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid common wrong inferences (guesses based on clues) — don't fall into the one-clue trap!",
+            "Why you must check your inference against ALL the clues, not just one"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Max",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the wrong inference?",
+              "body": "Someone answered: **\"Oliver's mother is going out for a meal\"**\n\nThat sounds possible — but it is wrong! Can you see why?\n\n**Question: What is about to happen at Oliver's house?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Oliver walked into the kitchen and found his mother standing at the counter. She was wearing her best dress and high heels. A large chocolate cake sat on the table with candles on top, and coloured balloons were tied to the backs of the chairs. 'Don't touch anything!' she said, wagging her finger but smiling. Oliver peeked into the fridge and saw bowls of crisps, a trifle, and rows of sausage rolls wrapped in cling film.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Check your inference against ALL the clues!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Who do you think the party is most likely for?",
+                "options": [
+                  "Oliver's mother",
+                  "Oliver",
+                  "A family friend",
+                  "The whole neighbourhood",
+                  "No one in particular"
+                ],
+                "correctAnswer": "Oliver",
+                "correctFeedback": "Well done! The clues (chocolate cake with candles (birthday cake), 'Don't touch anything!' (surprise), Oliver does not seem to know what is happening) all point to **\"Oliver\"**. ✓",
+                "incorrectFeedback": "Not quite! Look at the clues: chocolate cake with candles (birthday cake), 'Don't touch anything!' (surprise), Oliver does not seem to know what is happening. They tell us the answer is **\"Oliver\"**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Oliver walked into the kitchen and found his mother standing at the counter. She was wearing her best dress and high heels. A large chocolate cake sat on the table with candles on top, and coloured balloons were tied to the backs of the chairs. 'Don't touch anything!' she said, wagging her finger but smiling. Oliver peeked into the fridge and saw bowls of crisps, a trifle, and rows of sausage rolls wrapped in cling film.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Avoid wrong inferences — you're on it!",
+              "body": "A wrong inference happens when you only look at **one** clue and ignore the rest. Now you know better:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find ALL the clues, not just one",
+                    "why": "One clue can be misleading on its own."
+                  },
+                  {
+                    "text": "Step 2: Check if your answer fits EVERY clue",
+                    "why": "If it does not fit one of them, rethink."
+                  },
+                  {
+                    "text": "Step 3: Pick the answer that explains everything",
+                    "why": "The best inference covers all the evidence. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-in-context",
+      "name": "Word Meaning from the Passage",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "vocab-in-context-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to work out what an unfamiliar word means using the sentence around it — the clues are always there!",
+            "How to check your guess makes sense in context"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Poppy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What does this word mean HERE?",
+              "body": "The question asks: **What does \"grave\" mean in this passage?**\n\nHere's the thing — some words have more than one meaning! The surrounding sentences are your best clue to working it out.\n\n**Question: What does the word 'grave' mean in this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The river had swollen overnight after hours of heavy rain. Brown water rushed over the banks and flooded the footpath. Mr Allen watched from his cottage window with a grave expression. He knew that if the water kept rising, the bridge would be completely submerged by morning. He telephoned the council to warn them, then began moving sandbags from his shed to the front door. His wife brought blankets and torches downstairs, just in case they needed to leave quickly.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Use the words around it!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To work out the meaning of an unfamiliar word, look at the ____ around it",
+                "options": [
+                  "context",
+                  "spelling",
+                  "length",
+                  "font"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! The context — the words and sentences around the unfamiliar word — gives you clues to its meaning. ✓",
+                "incorrectFeedback": "Not quite — you need to look at the CONTEXT (the surrounding words and sentences) to work out an unfamiliar word's meaning."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:\n\nThe sentence says: **\"the bridge would be completely submerged by morning\"**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"submerged\" mean in this passage?",
+                "options": [
+                  "Covered completely by water",
+                  "Destroyed and broken apart",
+                  "Repaired and rebuilt",
+                  "Frozen solid",
+                  "Washed downstream"
+                ],
+                "correctAnswer": "Covered completely by water",
+                "correctFeedback": "Brilliant! In this passage, \"submerged\" means **\"Covered completely by water\"**. The surrounding clues (river swollen, water rushed over the banks, water kept rising — the bridge would be underwater) all point to this meaning. ✓",
+                "incorrectFeedback": "Not quite! Look at the context: river swollen, water rushed over the banks, water kept rising — the bridge would be underwater. Here, \"submerged\" means **\"Covered completely by water\"**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The river had swollen overnight after hours of heavy rain. Brown water rushed over the banks and flooded the footpath. Mr Allen watched from his cottage window with a grave expression. He knew that if the water kept rising, the bridge would be completely submerged by morning. He telephoned the council to warn them, then began moving sandbags from his shed to the front door. His wife brought blankets and torches downstairs, just in case they needed to leave quickly.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The vocabulary-in-context recipe!",
+              "body": "When a question asks what a word means **in the passage**, you've got a clear method to follow:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the word in the passage",
+                    "why": "Read the exact sentence it appears in."
+                  },
+                  {
+                    "text": "Step 2: Read the sentences before and after",
+                    "why": "These give you context clues."
+                  },
+                  {
+                    "text": "Step 3: Try replacing the word with each option",
+                    "why": "Which one makes the sentence still make sense?"
+                  },
+                  {
+                    "text": "Step 4: Pick the meaning that fits the context",
+                    "why": "Not just any meaning of the word — the RIGHT meaning here. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "vocab-in-context-multiple",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to recognise that words can change meaning depending on context",
+            "Why you must always check the surrounding text"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Amara",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same word, different meaning!",
+              "body": "Did you know the word **\"light\"** has **lots of different meanings**? English is full of words like this! Which meaning is it here?\n\n**Question: What does the word 'light' mean in this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The school concert was only a week away and the hall was buzzing with excitement. Miss Taylor asked the choir to run through the opening number one more time. 'It needs to be light and cheerful,' she said, clapping her hands. 'Think sunshine, think spring flowers!' Amara stood in the front row, trying to keep her voice light even though her stomach was doing somersaults. She had a solo in the second verse and the thought of singing alone in front of two hundred people made her feel dizzy.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Context is everything!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The passage says: **\"run through the opening number one more time\"**\n\nWhat does **\"number\"** mean here?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What does \"number\" mean in this passage?",
+                "options": [
+                  "A piece of music or a song in a performance",
+                  "A digit used for counting",
+                  "A total or quantity",
+                  "A page in a book",
+                  "A telephone number"
+                ],
+                "correctAnswer": "A piece of music or a song in a performance",
+                "correctFeedback": "Well done! Here, \"number\" means **\"A piece of music or a song in a performance\"**. The context (choir, concert, opening number, run through — it is a musical performance, so 'number' means a song or piece) tells us which meaning to choose. ✓",
+                "incorrectFeedback": "Not quite! That is a real meaning of \"number\", but it does not fit here. The context tells us it means **\"A piece of music or a song in a performance\"**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The school concert was only a week away and the hall was buzzing with excitement. Miss Taylor asked the choir to run through the opening number one more time. 'It needs to be light and cheerful,' she said, clapping her hands. 'Think sunshine, think spring flowers!' Amara stood in the front row, trying to keep her voice light even though her stomach was doing somersaults. She had a solo in the second verse and the thought of singing alone in front of two hundred people made her feel dizzy.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Words can change meaning!",
+              "body": "Many English words have **more than one meaning**. The context tells you which one the author intended:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Never assume you know the meaning",
+                    "why": "The same word can mean different things in different sentences."
+                  },
+                  {
+                    "text": "Step 2: Read the whole sentence — not just the word",
+                    "why": "The words around it are your biggest clue."
+                  },
+                  {
+                    "text": "Step 3: Try replacing the word with each option",
+                    "why": "Which one makes the sentence still make sense? That is the right meaning. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "author-purpose",
+      "name": "Why Did the Author Write This?",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "author-purpose-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to work out if a text is meant to inform, persuade, entertain, or describe — every piece of writing has a purpose!",
+            "How to spot clues that reveal the author's purpose (once you know what to look for, it's surprisingly easy)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Imogen",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Why did the author write this?",
+              "body": "Every piece of writing has a **purpose** — a reason the author wrote it. Can you work out what this author wanted to do?\n\n**Question: What is the main purpose of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Are you tired of soggy sandwiches and boring lunches? Introducing the ThermoBox — the incredible lunchbox that keeps hot food hot and cold food cold for up to eight hours! Made from recycled materials, the ThermoBox is kind to the planet AND your tummy. With five amazing colours to choose from, you will be the envy of the whole school. Order now and get a FREE matching water bottle! Do not miss out — stocks are limited!",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: find the author's purpose",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the main purpose of this passage?",
+                "options": [
+                  "To persuade the reader to buy a product",
+                  "To inform the reader about how alarm clocks work",
+                  "To entertain the reader with a funny story",
+                  "To describe what mornings are like",
+                  "To instruct the reader how to set an alarm"
+                ],
+                "correctAnswer": "To persuade the reader to buy a product",
+                "correctFeedback": "Brilliant! The clues (exciting language ('amazing offer'), call to action ('hurry', 'this offer ends Friday'), rhetorical opening and appeals to authority ('doctors recommend it')) all show that the purpose is **to persuade the reader to buy a product**. ✓",
+                "incorrectFeedback": "Not quite! Look at the clues: exciting language ('amazing offer'), call to action ('hurry', 'this offer ends Friday'), rhetorical opening and appeals to authority ('doctors recommend it'). The purpose is **to persuade the reader to buy a product**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Imagine waking up every morning with a smile! The SunRise alarm clock fills your room with gentle light that slowly gets brighter, just like a real sunrise. No more horrible beeping — just a calm, natural way to start your day. Doctors recommend it. Teachers love it. And right now, you can get one for just twelve pounds ninety-nine. But hurry — this amazing offer ends Friday!",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The author's purpose recipe!",
+              "body": "Every text is written for a **reason** — and now you can work it out like a pro:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Ask — is this fiction or non-fiction?",
+                    "why": "Fiction usually entertains; non-fiction usually informs or persuades."
+                  },
+                  {
+                    "text": "Step 2: Look at the language",
+                    "why": "Exciting language = persuade. Factual language = inform. Descriptive language = entertain/describe."
+                  },
+                  {
+                    "text": "Step 3: Check for persuasion clues",
+                    "why": "Rhetorical questions, opinions, calls to action = persuasive text."
+                  },
+                  {
+                    "text": "Step 4: Name the purpose",
+                    "why": "Inform, persuade, entertain, or describe. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "author-purpose-types",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to recognise different text types quickly",
+            "How to link each text type to its purpose"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Leo",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Every text type has a purpose!",
+              "body": "Different types of text are written for different reasons. Can you match this text to its purpose?\n\n**Question: What is the main purpose of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Dear Editor, I am writing to express my strong concern about the plans to close Millbrook Park. This green space is used by hundreds of families every week. Children play football there, dog walkers meet friends, and elderly residents sit on the benches to enjoy fresh air. Closing the park to build a car park would be a terrible mistake. I urge the council to reconsider this decision before it is too late. Yours faithfully, Mrs D. Wilkins",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Text type = purpose!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which feature of this text is the strongest clue that it is persuasive?",
+                "options": [
+                  "The call to action: 'I urge the council to reconsider'",
+                  "The mention of children playing football",
+                  "The 'Dear Editor' greeting",
+                  "The name 'Mrs D. Wilkins'",
+                  "The mention of dog walkers"
+                ],
+                "correctAnswer": "The call to action: 'I urge the council to reconsider'",
+                "correctFeedback": "Well done! A call to action — telling the reader to DO something — is one of the strongest signs of persuasive writing. ✓",
+                "incorrectFeedback": "Not quite! A call to action — telling the reader to DO something — is one of the strongest signs of persuasive writing. The answer is **The call to action: 'I urge the council to reconsider'**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Dear Editor, I am writing to express my strong concern about the plans to close Millbrook Park. This green space is used by hundreds of families every week. Children play football there, dog walkers meet friends, and elderly residents sit on the benches to enjoy fresh air. Closing the park to build a car park would be a terrible mistake. I urge the council to reconsider this decision before it is too late. Yours faithfully, Mrs D. Wilkins",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Quick recap!",
+              "body": "This was a **letter to a newspaper** — its purpose was **to persuade the council not to close the park**. Here's the method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the text — what type is it?",
+                    "why": "Story, report, advert, instructions, or description?"
+                  },
+                  {
+                    "text": "Step 2: Spot the key features",
+                    "why": "Does it have characters? Facts? Commands? Persuasive language?"
+                  },
+                  {
+                    "text": "Step 3: Match the type to its purpose",
+                    "why": "Story = entertain, report = inform, advert = persuade"
+                  },
+                  {
+                    "text": "Step 4: Instructions = instruct, description = describe",
+                    "why": "The purpose follows from the text type! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literary-devices",
+      "name": "Spotting Language Techniques",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "literary-devices-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot similes (comparisons using 'like' or 'as'), metaphors (saying something IS something else), and personification (giving human qualities to non-human things) in a passage — authors use these all the time!",
+            "How to explain the effect of a language technique (a writer's tool for creating impact) — this is where you can really impress"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Rosie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the technique?",
+              "body": "Authors have a whole toolkit of **language techniques** to make their writing come alive. Can you spot the technique hiding in this passage?\n\n**Question: Which language technique is used in 'Rain hammered the rooftops like a thousand tiny drummers'?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The storm arrived without warning. Rain hammered the rooftops like a thousand tiny drummers, and the wind howled through the streets, rattling letterboxes and snatching hats from heads. The old oak tree in the park bent and groaned as if it were in pain. Gutters overflowed, sending rivers of muddy water down the hill. By morning, the storm had moved on, leaving behind a carpet of golden leaves and a sky washed clean and blue.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: identify the technique",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "From the same passage, find this phrase:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which language technique is used in 'The old oak tree bent and groaned as if it were in pain'?",
+                "options": [
+                  "Personification",
+                  "Simile",
+                  "Metaphor",
+                  "Alliteration",
+                  "Onomatopoeia"
+                ],
+                "correctAnswer": "Personification",
+                "correctFeedback": "Brilliant! Personification gives human qualities to non-human things. A tree cannot really 'groan' or feel 'pain' — those are human experiences given to the tree. ✓",
+                "incorrectFeedback": "Not quite! Personification gives human qualities to non-human things. A tree cannot really 'groan' or feel 'pain' — those are human experiences given to the tree. The answer is **Personification**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The storm arrived without warning. Rain hammered the rooftops like a thousand tiny drummers, and the wind howled through the streets, rattling letterboxes and snatching hats from heads. The old oak tree in the park bent and groaned as if it were in pain. Gutters overflowed, sending rivers of muddy water down the hill. By morning, the storm had moved on, leaving behind a carpet of golden leaves and a sky washed clean and blue.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The language techniques recipe!",
+              "body": "Once you know these, you'll start spotting them everywhere — even in books you read for fun:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Simile: compares using 'like' or 'as'",
+                    "why": "e.g. 'fast as a cheetah', 'eyes like stars'"
+                  },
+                  {
+                    "text": "Metaphor: says something IS something else",
+                    "why": "e.g. 'the classroom was a zoo', 'her heart was ice'"
+                  },
+                  {
+                    "text": "Personification: gives human qualities to non-human things",
+                    "why": "e.g. 'the wind whispered', 'the sun smiled'"
+                  },
+                  {
+                    "text": "Alliteration: same sound at the start of nearby words",
+                    "why": "e.g. 'slippery, slimy snakes', 'big blue balloon' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "literary-devices-discover",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to find multiple language techniques (writer's tools like similes and metaphors) in a single passage",
+            "How to explain why the author chose each technique"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Will",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How many techniques can you find?",
+              "body": "This passage is packed with language techniques!\n\nGood authors use **several techniques** in a single passage to make their writing vivid and exciting. Let's find them!\n\n**Question: Which of these is an example of personification?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The sea was a restless beast that evening. Waves crashed against the harbour wall, throwing spray high into the air like giant hands reaching for the sky. The boats bobbed and dipped nervously, their ropes groaning under the strain. Peter pulled his hood up and leaned into the wind. The salty air stung his cheeks. Above him, seagulls screamed and circled, their white wings flashing against the bruised purple clouds.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Let's discover the techniques!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which of these is an example of a simile?",
+                "options": [
+                  "'spinning them like tiny ballet dancers'",
+                  "'the wind chased leaves'",
+                  "'groaning under the weight of years'",
+                  "'flickered to life as if it had just woken up'",
+                  "'casting a pool of orange light'"
+                ],
+                "correctAnswer": "'spinning them like tiny ballet dancers'",
+                "correctFeedback": "Well done! It compares the spinning leaves to ballet dancers using the word 'like' — that is a simile. ✓",
+                "incorrectFeedback": "Not quite! It compares the spinning leaves to ballet dancers using the word 'like' — that is a simile. The correct answer is **'spinning them like tiny ballet dancers'**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The autumn wind chased leaves along the pavement, spinning them like tiny ballet dancers. An old bench sat at the corner, its wooden slats groaning under the weight of years. The streetlamp flickered to life as if it had just woken up, casting a pool of orange light on the wet ground.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Techniques and their effects!",
+              "body": "When you spot a technique, always explain **why** the author used it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Name the technique",
+                    "why": "Simile, metaphor, personification, alliteration (when words start with the same sound, like 'silly sausages'), onomatopoeia (words that sound like what they mean, like 'buzz' or 'crash'), etc."
+                  },
+                  {
+                    "text": "Step 2: Quote the example from the text",
+                    "why": "Use the exact words — put them in quotation marks."
+                  },
+                  {
+                    "text": "Step 3: Explain the effect on the reader",
+                    "why": "How does it make you feel? What does it help you picture?"
+                  },
+                  {
+                    "text": "Step 4: Link it to the mood or atmosphere",
+                    "why": "Does it create tension, excitement, sadness, beauty? ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summarising",
+      "name": "Summarising the Main Idea",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "summarising-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to identify the main idea of a passage — think 'big picture', not tiny details!",
+            "How to summarise a passage in one sentence (harder than it sounds, but you'll learn the trick)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you sum it up in one sentence?",
+              "body": "Imagine a friend asks \"what was that about?\" — you wouldn't list every single detail! A **summary** captures the main idea in just **one sentence**. What would you say?\n\n**Question: Which is the best one-sentence summary of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Every autumn, thousands of swallows leave Britain and fly south to Africa. The journey is over six thousand miles long and takes several weeks. The birds travel during the day, feeding on insects as they go. They cross the English Channel, fly over France and Spain, then cross the Sahara Desert — one of the most dangerous parts of the trip. Many young swallows do not survive their first migration. Those that do will return to Britain the following spring, often nesting in the very same barn or shed they were born in. Scientists have tracked swallows using tiny electronic tags and discovered that some birds return to the exact same rafter year after year.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: finding the main idea",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "A good summary captures the ____ idea, not just one small detail",
+                "options": [
+                  "main",
+                  "first",
+                  "longest",
+                  "easiest"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! A summary should capture the MAIN idea — what the whole passage is about, not just one detail. ✓",
+                "incorrectFeedback": "Not quite — a good summary captures the MAIN idea of the whole passage, not just one small detail."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the best one-sentence summary of this passage?",
+                "options": [
+                  "The Arctic tern makes the longest bird migration in the world, flying from pole to pole each year",
+                  "Some terns fly the equivalent of three trips to the Moon",
+                  "The Arctic tern barely rests during its journey",
+                  "The Arctic tern sees more daylight than any other animal",
+                  "Arctic terns cross oceans and battle storms"
+                ],
+                "correctAnswer": "The Arctic tern makes the longest bird migration in the world, flying from pole to pole each year",
+                "correctFeedback": "Brilliant! The main idea is: The Arctic tern has the longest migration of any bird. The other options are just supporting details — they do not cover the whole passage. ✓",
+                "incorrectFeedback": "Not quite! That is a supporting detail, not the main idea. The other options are fascinating facts, but they only cover one part of the passage — the main idea is the incredible migration itself. The best summary is: **The Arctic tern makes the longest bird migration in the world, flying from pole to pole each year**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The Arctic tern holds the record for the longest migration of any bird. Each year, it flies from the Arctic to the Antarctic and back again — a round trip of over seventy thousand kilometres. Along the way, it crosses oceans, battles storms, and barely rests. Because it follows the sun, the Arctic tern sees more daylight than any other animal on Earth. Scientists believe some terns fly the equivalent of three trips to the Moon during their lifetime.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The summarising recipe — great skill to have!",
+              "body": "A **summary** captures the main idea in a few words. Here's your method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the whole passage — not just the beginning",
+                    "why": "The main idea might not appear until the middle or end."
+                  },
+                  {
+                    "text": "Step 2: Ask — what is this MAINLY about?",
+                    "why": "Imagine explaining the passage to a friend in one sentence."
+                  },
+                  {
+                    "text": "Step 3: Check — does my summary cover the whole passage?",
+                    "why": "If it only covers one paragraph or one fact, it is too narrow."
+                  },
+                  {
+                    "text": "Step 4: Pick the answer that captures the big picture",
+                    "why": "Details support the main idea — they are not the main idea itself. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "summarising-choose",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to choose the best summary from a list of options",
+            "How to tell the difference between the main idea and a supporting detail"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Which summary is best?",
+              "body": "When you read a passage, you will often see answer choices that are all **true** — but only one captures the **main idea**. The others are just small details.\n\nCan you spot the difference? Read this passage and think about what it is **mainly** about.\n\n**Question: Which is the best summary of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "For centuries, people in Britain have celebrated harvest festivals to give thanks for a successful growing season. Farmers would bring their best crops to the local church — wheat, apples, vegetables, and freshly baked bread. The church would be decorated with flowers and bundles of corn. After a special service, the food was often shared with the poor. Today, many schools hold their own harvest festivals in the autumn term. Children bring tins and packets of food, which are donated to local food banks. Although farming has changed, the idea of sharing and being grateful has not.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Main idea vs supporting detail",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which is the best summary of this passage?",
+                "options": [
+                  "Bonfire Night is a British tradition that began in 1605 and is now a community celebration each November",
+                  "Guy Fawkes tried to blow up Parliament in 1605",
+                  "People eat toffee apples and jacket potatoes",
+                  "Some towns build bonfires weeks in advance",
+                  "A straw figure called a guy is placed on the bonfire"
+                ],
+                "correctAnswer": "Bonfire Night is a British tradition that began in 1605 and is now a community celebration each November",
+                "correctFeedback": "Well done! \"Bonfire Night is a British tradition that began in 1605 and is now a community celebration each November\" covers the whole passage. The other options are just supporting details. ✓",
+                "incorrectFeedback": "Not quite! That is a true fact from the passage, but it only covers one small part. The best summary is: **\"Bonfire Night is a British tradition that began in 1605 and is now a community celebration each November\"** — it captures the whole passage."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Bonfire Night is celebrated across Britain every year on the fifth of November. It marks the night in 1605 when Guy Fawkes was caught trying to blow up the Houses of Parliament. Families gather around bonfires, watch firework displays, and eat toffee apples and jacket potatoes. Some towns build huge bonfires weeks in advance, with a 'guy' — a straw figure — placed on top. Although the event began as a celebration of the plot being foiled, today it is mainly an excuse for communities to come together on a cold autumn evening.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Summary vs detail — the test!",
+              "body": "Here is the quickest way to tell a summary from a detail:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ask: does this cover the WHOLE passage?",
+                    "why": "A summary should work as a one-sentence explanation of the entire text."
+                  },
+                  {
+                    "text": "Ask: could someone understand the passage from this alone?",
+                    "why": "If yes, it is a good summary. If they would miss most of the story, it is just a detail."
+                  },
+                  {
+                    "text": "Beware of true but narrow answers!",
+                    "why": "Every option may be true — but only the summary captures the big picture. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prediction",
+      "name": "Making Predictions",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "prediction-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to make predictions based on evidence in the text — like a weather forecaster for stories!",
+            "How to tell the difference between a good prediction and a wild guess"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What will happen next?",
+              "body": "Good readers use **clues in the text** to predict what might happen next — like detectives piecing together evidence. This is not random guessing — it's smart reading!\n\n**Question: What is most likely to happen next?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Ellie had been practising her audition piece for three weeks. Every evening after school, she stood in front of the bathroom mirror, reciting the lines until she knew them by heart. Her drama teacher, Miss Hartley, said she had real talent and should definitely try out for the lead role. On the morning of the audition, Ellie ate her breakfast quickly, checked her hair twice, and arrived at school twenty minutes early. She sat in the corridor outside the hall, mouthing her lines one last time, her hands steady and a calm smile on her face.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: making predictions",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is most likely to happen next?",
+                "options": [
+                  "Jack will run a strong race and do well",
+                  "Jack will trip at the starting line and give up",
+                  "Jack will decide not to race after all",
+                  "Jack will forget the route and get lost",
+                  "The race will be cancelled due to rain"
+                ],
+                "correctAnswer": "Jack will run a strong race and do well",
+                "correctFeedback": "Brilliant! He has trained hard, improved significantly, and appears calm and focused. The clues all point to: **Jack will run a strong race and do well**. ✓",
+                "incorrectFeedback": "Not quite! Look at the clues: trained every morning for six weeks, even in the rain; his coach said his times had improved more than anyone else's; stood quietly, breathing slowly, determined look. He has trained hard, improved significantly, and appears calm and focused. The best prediction is: **Jack will run a strong race and do well**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Jack had been training for the school cross-country race every morning for six weeks. He ran laps around the park before breakfast, even in the rain. His coach, Mr Davies, said Jack's times had improved more than any other runner in the squad. On the day of the race, Jack stretched carefully, checked his laces twice, and jogged to the starting line with a determined look on his face. The other runners were chatting nervously, but Jack stood quietly, breathing slowly and staring straight ahead.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The prediction recipe!",
+              "body": "A prediction is an **educated guess** based on evidence — and you're getting really good at this. Here's your method:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the passage and look for clues",
+                    "why": "Actions, descriptions, and dialogue all hint at what is coming."
+                  },
+                  {
+                    "text": "Step 2: Ask — what is building up?",
+                    "why": "Is there tension, excitement, preparation, or a problem developing?"
+                  },
+                  {
+                    "text": "Step 3: Check your prediction against the evidence",
+                    "why": "A good prediction is supported by multiple clues — not just one."
+                  },
+                  {
+                    "text": "Step 4: Choose the most LIKELY outcome",
+                    "why": "Not the most exciting or dramatic — the one the evidence actually supports. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "prediction-clues",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to identify which clues support a prediction",
+            "Why wild guesses are not good predictions"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jude",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Good prediction or wild guess?",
+              "body": "Someone predicted: **\"Whiskers will suddenly get better and start jumping again\"**\n\nIs that a good prediction — or a wild guess? Let's find out!\n\n**Question: What do you think will happen to Whiskers?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The old cat, Whiskers, had been sleeping more than usual. He no longer jumped onto the kitchen counter to steal food, and his bowl of biscuits often went untouched. Mrs Chen took him to the vet, who listened to his heart and checked his teeth. The vet spoke gently and explained that Whiskers was seventeen years old — very old for a cat. She gave Mrs Chen some special soft food and a small bottle of medicine. On the drive home, Mrs Chen stroked Whiskers gently on her lap and whispered, 'We will take good care of you, old friend.'",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Good predictions need evidence!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What do you think will happen next?",
+                "options": [
+                  "Sophia has caught a fish and will try to reel it in",
+                  "The boat will sink",
+                  "Dad will fall asleep and miss everything",
+                  "A shark will appear in the lake",
+                  "Sophia will throw the fishing rod into the water"
+                ],
+                "correctAnswer": "Sophia has caught a fish and will try to reel it in",
+                "correctFeedback": "Well done! The clues (the float dipped sharply beneath the surface, the rod bent towards the water, the reel began to spin) all support the prediction: **\"Sophia has caught a fish and will try to reel it in\"**. ✓",
+                "incorrectFeedback": "Not quite! Sharks do not live in lakes — there is no evidence for anything dramatic. The clues all point to a fish taking the bait. The clues (the float dipped sharply beneath the surface, the rod bent towards the water, the reel began to spin) tell us the best prediction is: **\"Sophia has caught a fish and will try to reel it in\"**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The little boat rocked gently as Dad rowed out to the middle of the lake. Sophia dangled her hand in the cool water and watched the ripples spread outwards. Dad had packed sandwiches, flasks of tea, and two fishing rods. He baited the hooks carefully and showed Sophia how to cast her line into the water. 'Now we wait,' he said, leaning back with his eyes half-closed. The float bobbed once, then dipped sharply beneath the surface. Sophia's rod bent towards the water and the reel began to spin.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Prediction dos and don'ts!",
+              "body": "A good prediction is backed by **evidence**. A wild guess is not. Now you know how to tell the difference:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "DO look for multiple clues that point the same way",
+                    "why": "One clue might be misleading — but three clues together are strong evidence."
+                  },
+                  {
+                    "text": "DO NOT pick the most dramatic or exciting answer",
+                    "why": "The test wants the MOST LIKELY outcome, not the most surprising."
+                  },
+                  {
+                    "text": "DO check: is there evidence in the text for my prediction?",
+                    "why": "If you cannot point to a clue, it is a guess, not a prediction. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fact-vs-opinion",
+      "name": "Fact vs Opinion",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "fact-vs-opinion-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to tell the difference between a fact and an opinion — this is one of the most useful skills in all of English!",
+            "How to use the 'can it be proven?' test (it's simpler than you think)"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Fact or opinion?",
+              "body": "Did you know that some statements are **facts** (can be proven true or false) and some are **opinions** (what someone thinks or believes)? Telling them apart is a real superpower — can you do it?\n\n**Question: Which of these statements from the passage is an OPINION?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "Edinburgh is the capital city of Scotland. It is home to Edinburgh Castle, which sits on top of an ancient volcanic rock and attracts over two million visitors each year. The Royal Mile stretches from the castle down to the Palace of Holyroodhouse, the official Scottish residence of the King. In my opinion, Edinburgh is the most beautiful city in the whole of Britain. The views from Arthur's Seat are absolutely breathtaking, and the cobbled streets of the Old Town have more charm than anywhere else I have ever visited.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: the 'can it be proven?' test",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false",
+                "correctFeedback": "Well done! Facts can be proven; opinions are personal views.",
+                "incorrectFeedback": "Not quite. Ask: can this be proven? If yes, it's a fact. If people could disagree, it's an opinion."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which of these statements from the passage is an OPINION?",
+                "options": [
+                  "It is the most spectacular natural wonder in the British Isles",
+                  "The Giant's Causeway is made up of around forty thousand columns",
+                  "It was named a World Heritage Site in 1986",
+                  "The columns are mostly hexagonal",
+                  "The surrounding cliffs are home to rare seabirds"
+                ],
+                "correctAnswer": "It is the most spectacular natural wonder in the British Isles",
+                "correctFeedback": "Brilliant! \"It is the most spectacular natural wonder in the British Isles\" is an opinion because 'most spectacular' is a personal judgement — someone else might think the scottish highlands or the jurassic coast is more spectacular. The other options are facts that can be checked. ✓",
+                "incorrectFeedback": "Not quite! That statement can be proven, so it is a fact. The opinion is: **\"It is the most spectacular natural wonder in the British Isles\"** — 'most spectacular' is a personal judgement — someone else might think the scottish highlands or the jurassic coast is more spectacular."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The Giant's Causeway is a natural rock formation on the coast of Northern Ireland. It is made up of around forty thousand interlocking basalt columns, formed by an ancient volcanic eruption. The columns are mostly hexagonal and some are over twelve metres tall. It was named a World Heritage Site in 1986. Many visitors say it is the most spectacular natural wonder in the British Isles. The surrounding cliffs are home to rare seabirds, including fulmars and razorbills. I believe everyone should visit at least once in their lifetime.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The fact vs opinion recipe — you've cracked it!",
+              "body": "Here's how to tell facts from opinions every time — this works in the exam and in real life:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the statement carefully",
+                    "why": "Is it something that can be checked or measured?"
+                  },
+                  {
+                    "text": "Step 2: Ask — can this be PROVEN true or false?",
+                    "why": "If yes, it is a fact. If not, it is an opinion."
+                  },
+                  {
+                    "text": "Step 3: Look for opinion clue words",
+                    "why": "I think, I believe, best, worst, most, probably, perhaps, in my view."
+                  },
+                  {
+                    "text": "Step 4: Be careful with tricky ones!",
+                    "why": "'Many people believe X' is a FACT about what people believe, even if X itself is an opinion. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "fact-vs-opinion-tricky",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to spot opinions disguised as facts",
+            "How to handle tricky statements like 'many people believe...'"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the tricky ones?",
+              "body": "Some facts LOOK like opinions, and some opinions LOOK like facts. These tricky ones catch out even adults — but not you, once you know the trick!\n\n**Question: Which of these is a FACT, even though it might look like an opinion?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The new swimming pool opened on Saturday and over three hundred people visited on the first day. The pool is twenty-five metres long and has six lanes. It also has a separate children's splash area with water slides. The local newspaper reported that most residents are delighted with the new facility. Councillor Barnes told reporters, 'This is the finest pool in the south of England.' The pool is open from six in the morning until ten at night, seven days a week.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Facts about opinions are still facts!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read this new passage and answer the question below.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "Which of these is a FACT, even though it might look like an opinion?",
+                "options": [
+                  "Ninety per cent of families who have visited are happy with the new facilities",
+                  "This is undoubtedly the finest playground in the entire region",
+                  "The council spent one hundred and fifty thousand pounds",
+                  "The playground has climbing frames, swings, and a zip wire",
+                  "Over eight hundred parents signed a petition"
+                ],
+                "correctAnswer": "Ninety per cent of families who have visited are happy with the new facilities",
+                "correctFeedback": "Well done! The survey result is a provable fact — 90% of families DID say they were happy. You can check the survey to verify this. ✓",
+                "incorrectFeedback": "Not quite! Be careful with tricky ones. The survey result is a provable fact — 90% of families DID say they were happy. You can check the survey to verify this. The answer is: **\"Ninety per cent of families who have visited are happy with the new facilities\"**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "A new playground was opened at Riverside Park last month. It has climbing frames, swings, and a zip wire. The council spent one hundred and fifty thousand pounds on the project. A petition signed by over eight hundred parents had asked for better play equipment. According to a survey, ninety per cent of families who have visited are happy with the new facilities. Councillor Thomas said, 'This is undoubtedly the finest playground in the entire region.'",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Tricky fact vs opinion rules — you're ready!",
+              "body": "Now you know the secret, watch out for these tricky cases:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "'72% of people think X' = FACT",
+                    "why": "The survey result can be checked — it is a fact about what people think."
+                  },
+                  {
+                    "text": "'X is the best/worst/most beautiful' = OPINION",
+                    "why": "Words like best, worst, and most signal a personal judgement."
+                  },
+                  {
+                    "text": "'Scientists have discovered X' = FACT",
+                    "why": "The discovery can be verified in journals and reports."
+                  },
+                  {
+                    "text": "'The most remarkable discovery in decades' = OPINION",
+                    "why": "'Most remarkable' is a judgement, not a measurement. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tone-mood",
+      "name": "Tone, Mood and Atmosphere",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "tone-mood-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to identify the tone (the writer's attitude) and mood (the feeling created for the reader) of a passage — this is where reading gets really interesting!",
+            "How to use word choice as evidence for tone and mood"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Harley",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "How does this passage make you feel?",
+              "body": "Did you know that writers choose their words carefully to create a **mood** — a feeling the reader experiences? The **tone** is the writer's attitude. Can you feel what mood this passage creates?\n\n**Question: What is the mood of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The corridor was dark and silent. Maya pressed her back against the cold wall and held her breath. Somewhere ahead, a door creaked open, then slowly shut again. The only light came from a thin crack under the door at the far end, casting a pale sliver across the stone floor. Her heart drummed in her ears. She wanted to turn and run, but her legs felt heavy, as though they were filled with sand. A shadow moved beneath the door. Something — or someone — was on the other side.",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Step by step: identifying mood and tone",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "Writers create mood through their choice of ____, setting details, and sentence patterns",
+                "options": [
+                  "words",
+                  "fonts",
+                  "colours",
+                  "pictures"
+                ],
+                "correctIndex": "0",
+                "correctFeedback": "Yes! Word choice is the main tool writers use to create mood — dark words create a dark mood, bright words create a cheerful mood. ✓",
+                "incorrectFeedback": "Not quite — writers create mood primarily through their choice of WORDS. The vocabulary sets the feeling."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the mood of this passage?",
+                "options": [
+                  "Tense and mysterious",
+                  "Cheerful and playful",
+                  "Sad and lonely",
+                  "Angry and frustrated",
+                  "Calm and peaceful"
+                ],
+                "correctAnswer": "Tense and mysterious",
+                "correctFeedback": "Brilliant! The mood is **tense and mysterious**. The author uses darkness, silence, and unknown shadows to make the reader feel uneasy and curious. ✓",
+                "incorrectFeedback": "Not quite! Look at the evidence: 'dark and silent' — the setting feels secretive and dangerous; 'held her breath' and 'heart drummed' — Maya is frightened; 'a shadow moved beneath the door' — something unknown creates suspense. The mood is **tense and mysterious**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The corridor was dark and silent. Maya pressed her back against the cold wall and held her breath. Somewhere ahead, a door creaked open, then slowly shut again. The only light came from a thin crack under the door at the far end, casting a pale sliver across the stone floor. Her heart drummed in her ears. She wanted to turn and run, but her legs felt heavy, as though they were filled with sand. A shadow moved beneath the door. Something — or someone — was on the other side.",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The tone and mood recipe — fantastic work!",
+              "body": "Here's how to identify tone and mood in any passage — you'll start noticing it everywhere:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Read the passage and notice your FEELINGS",
+                    "why": "Does it make you feel happy, scared, sad, excited, calm?"
+                  },
+                  {
+                    "text": "Step 2: Look at WORD CHOICES",
+                    "why": "'Crept', 'shadow', 'silent' = tense. 'Sunshine', 'laughed', 'warm' = cheerful."
+                  },
+                  {
+                    "text": "Step 3: Look at the SETTING and DETAILS",
+                    "why": "Dark, cold, empty = gloomy. Bright, warm, busy = lively."
+                  },
+                  {
+                    "text": "Step 4: Name the mood using precise words",
+                    "why": "Not just 'happy' — try 'joyful', 'content', 'triumphant', or 'playful'. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "tone-mood-contrast",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to see that different word choices create completely different moods",
+            "How to match passages to their tone and mood with evidence"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Max",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Words create feelings!",
+              "body": "Here's something amazing — the words an author chooses create a **mood** and show their **tone**. Even swapping a few words can completely transform how a passage feels!\n\n**Question: What is the tone of this passage?**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The fairground blazed with colour and noise. Rides spun and swooped, trails of light streaking against the night sky. Music thumped from every direction, mixing with the screams and laughter of the crowd. The sweet, buttery smell of popcorn floated through the air, and a candy floss machine whirred beside a stall selling giant teddy bears. Ollie grabbed his sister's hand and pulled her towards the dodgems, his eyes wide with excitement. 'Come ON!' he shouted over the noise. 'We only have an hour!'",
+                "evidenceSentence": "",
+                "label": "Read the passage:"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Discover how words create mood!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Read the passage below:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the tone of this passage?",
+                "options": [
+                  "Exciting and energetic",
+                  "Mysterious and eerie",
+                  "Sad and reflective",
+                  "Calm and soothing",
+                  "Angry and aggressive"
+                ],
+                "correctAnswer": "Exciting and energetic",
+                "correctFeedback": "Well done! The mood is **Exciting and energetic**. Fast-paced verbs and sensory overload (sound, sight, smell) create energy and excitement. ✓",
+                "incorrectFeedback": "Not quite! Look at the key words: blazed, spun, swooped, thumped, screams, laughter, wide with excitement. Fast-paced verbs and sensory overload (sound, sight, smell) create energy and excitement. The mood is **Exciting and energetic**."
+              },
+              "visualProps": {
+                "mode": "evidence",
+                "passage": "The fairground blazed with colour and noise. Rides spun and swooped, trails of light streaking against the night sky. Music thumped from every direction, mixing with the screams and laughter of the crowd. The sweet, buttery smell of popcorn floated through the air, and a candy floss machine whirred beside a stall selling giant teddy bears. Ollie grabbed his sister's hand and pulled her towards the dodgems, his eyes wide with excitement. 'Come ON!' he shouted over the noise. 'We only have an hour!'",
+                "evidenceSentence": "",
+                "label": "Find the evidence:"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Mood and tone cheat sheet — keep this in your head!",
+              "body": "Here are common moods and the word choices that create them — once you know these, you'll spot them everywhere:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Tense/mysterious: dark, shadow, crept, silence, unknown",
+                    "why": "Makes the reader feel uneasy and curious."
+                  },
+                  {
+                    "text": "Cheerful/warm: sunshine, laughter, golden, smiled, gentle",
+                    "why": "Makes the reader feel happy and comfortable."
+                  },
+                  {
+                    "text": "Sad/melancholy: cold, empty, alone, silence, grey, faded",
+                    "why": "Makes the reader feel sorrow or loss."
+                  },
+                  {
+                    "text": "Exciting/energetic: rushed, roared, blazed, pounded, screamed",
+                    "why": "Makes the reader's heart beat faster. ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "word-class",
+      "name": "Spotting Word Types in Passages",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "word-class-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot nouns, verbs, adjectives, adverbs, and prepositions in a real passage",
+            "Why the same word can be different types depending on how it's used"
+          ],
+          "variableSetCount": 4,
+          "sampleVariableSetName": "Daisy",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Daisy's word type question",
+              "body": "Daisy is doing a comprehension question that asks about word types.\n\nLook at this sentence:\n\n**\"The brave knight rode swiftly through the dark forest.\"**\n\nWhat type of word is **'swiftly'**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "The brave knight rode swiftly through the dark forest.",
+                "highlightWords": [
+                  "swiftly"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "How to work out word types",
+              "body": "Here's a quick trick:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "The word is: 'swiftly'",
+                    "why": "Let's figure out what type it is..."
+                  },
+                  {
+                    "text": "It's an **adverb**!",
+                    "why": "Ask yourself: does this word tell me HOW something happened? 'Swiftly' tells us HOW the knight rode. That makes it an adverb! Most adverbs end in '-ly' — that's your biggest clue."
+                  },
+                  {
+                    "text": "Common mistake: thinking it's a adjective",
+                    "why": "'Swiftly' isn't describing a thing (like 'brave' describes the knight). It's describing an ACTION — how he rode."
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In **\"The cat crept silently across the moonlit garden.\"**, what type of word is **'silently'**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "A noun",
+                  "A verb",
+                  "An adjective",
+                  "An adverb",
+                  "A preposition"
+                ],
+                "correctAnswer": "An adverb",
+                "correctFeedback": "Brilliant! 'Silently' tells us HOW the cat crept — that '-ly' ending is your clue! Adverbs describe verbs. ✓",
+                "incorrectFeedback": "Not quite! 'Silently' tells us HOW the cat crept — that '-ly' ending is your clue! Adverbs describe verbs."
+              },
+              "visualProps": {
+                "sentence": "The cat crept silently across the moonlit garden.",
+                "highlightWords": [
+                  "silently"
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Word type cheat sheet!",
+              "body": "Ask yourself these questions:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "NOUN: Is it a thing, person, or place?",
+                    "why": "'dog', 'London', 'happiness'"
+                  },
+                  {
+                    "text": "VERB: Is it an action or state of being?",
+                    "why": "'ran', 'thinks', 'is'"
+                  },
+                  {
+                    "text": "ADJECTIVE: Does it describe a noun?",
+                    "why": "'enormous', 'red', 'broken'"
+                  },
+                  {
+                    "text": "ADVERB: Does it describe HOW/WHEN/WHERE?",
+                    "why": "'quickly', 'yesterday' — look for '-ly'!"
+                  },
+                  {
+                    "text": "PREPOSITION: Does it show position/direction?",
+                    "why": "'in', 'on', 'under', 'between', 'through'"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "word-class-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid the most common mix-ups between word types"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ella",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Can you spot the mistake?",
+              "body": "Ella thinks 'carefully' is an adjective.\n\n**\"She carefully placed the vase on the shelf.\"**\n\nElla says 'carefully' is a adjective. Is that right?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SentenceDisplay",
+              "interaction": null,
+              "visualProps": {
+                "sentence": "She carefully placed the vase on the shelf.",
+                "highlightWords": [
+                  "carefully"
+                ]
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Here's the mistake!",
+              "body": "Ella got it wrong!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Ella said: adjective",
+                    "why": "Nope!"
+                  },
+                  {
+                    "text": "Actually it's an adverb",
+                    "why": "'Carefully' tells us HOW she placed the vase — it describes the verb 'placed', not a noun. That '-ly' ending is your best friend!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What type of word is 'gently' in: 'He gently stroked the kitten'?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "options": [
+                  "Noun",
+                  "Verb",
+                  "Adjective",
+                  "Adverb",
+                  "Preposition"
+                ],
+                "correctAnswer": "Adverb",
+                "correctFeedback": "Superstar! 'Gently' tells us HOW he stroked — it's an adverb describing the verb. ✓",
+                "incorrectFeedback": "Nearly there! 'Gently' tells us HOW he stroked — it's an adverb describing the verb."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1. Noun",
+                    "why": ""
+                  },
+                  {
+                    "text": "2. Verb",
+                    "why": ""
+                  },
+                  {
+                    "text": "3. Adjective",
+                    "why": ""
+                  },
+                  {
+                    "text": "4. Adverb",
+                    "why": ""
+                  },
+                  {
+                    "text": "5. Preposition",
+                    "why": ""
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Word type traps — busted!",
+              "body": "The three biggest mix-ups to watch for:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Adjective vs Adverb",
+                    "why": "Adjectives describe THINGS. Adverbs describe ACTIONS. Look for '-ly'!"
+                  },
+                  {
+                    "text": "'-ing' words can be adjectives!",
+                    "why": "'The running water' — 'running' describes the water"
+                  },
+                  {
+                    "text": "Preposition vs Adverb",
+                    "why": "If a position word is followed by a noun, it's a preposition"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

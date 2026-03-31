@@ -1,0 +1,1868 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "letterMove",
+    "displayName": "Letter Move",
+    "extractedAt": "2026-03-30T13:52:00.629Z",
+    "totalQuestions": 128,
+    "mappedQuestions": 128,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 9,
+    "orphanSubConcepts": 6,
+    "confidenceBreakdown": {
+      "high": 128,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "Move one letter from one word to the other to make two new words: WHEAT  EAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "W",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "Move one letter from one word to the other to make two new words: SPINE  OAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "Move one letter from one word to the other to make two new words: BRAID  OWL",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "Move one letter from one word to the other to make two new words: PLATE  AN",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "Move one letter from one word to the other to make two new words: SPARK  OAK",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "Move one letter from one word to the other to make two new words: BLOOM  OAT",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "Move one letter from one word to the other to make two new words: WHEAT  EAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "W",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "Move one letter from one word to the other to make two new words: BLAND  OAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "Move one letter from one word to the other to make two new words: PLATE  AN",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "Move one letter from one word to the other to make two new words: SPARK  OAK",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "Move one letter from one word to the other to make two new words: BLOOM  OAT",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "Move one letter from one word to the other to make two new words: BRAID  OWL",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "Move one letter from one word to the other to make two new words: SPINE  OAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "Move one letter from one word to the other to make two new words: CLAMP  OWL",
+      "questionDifficulty": 1,
+      "correctAnswer": "C",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "Move one letter from one word to the other to make two new words: SHORE  INK",
+      "questionDifficulty": 1,
+      "correctAnswer": "R",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "Move one letter from one word to the other to make two new words: PLACE  OUR",
+      "questionDifficulty": 1,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "Move one letter from one word to the other to make two new words: SWEAR  OWN",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "Move one letter from one word to the other to make two new words: FLAME  OUR",
+      "questionDifficulty": 1,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "Move one letter from one word to the other to make two new words: STARE  OWN",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "Move one letter from one word to the other to make two new words: BRAND  OAT",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "Move one letter from one word to the other to make two new words: SHAVE  EAR",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "Move one letter from one word to the other to make two new words: PLIGHT  OUR",
+      "questionDifficulty": 3,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "Move one letter from one word to the other to make two new words: BRAIN  OW",
+      "questionDifficulty": 1,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "Move one letter from one word to the other to make two new words: STONE  OIL",
+      "questionDifficulty": 1,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "Move one letter from one word to the other to make two new words: TRAIN  OAD",
+      "questionDifficulty": 1,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "Move one letter from one word to the other to make two new words: SHORE  AND",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "Move one letter from one word to the other to make two new words: GRAIN  LOW",
+      "questionDifficulty": 3,
+      "correctAnswer": "G",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "Move one letter from one word to the other to make two new words: WHOLE  HEN",
+      "questionDifficulty": 3,
+      "correctAnswer": "W",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "Move one letter from one word to the other to make two new words: STRIPE  OAP",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "Move one letter from one word to the other to make two new words: THREAD  ARM",
+      "questionDifficulty": 3,
+      "correctAnswer": "H",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "Move one letter from one word to the other to make two new words: OAK SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "Move one letter from one word to the other to make two new words: LAY PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "Move one letter from one word to the other to make two new words: ACE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STALE",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STALE",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "Move one letter from one word to the other to make two new words: OAK STALE",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "Move one letter from one word to the other to make two new words: OWL FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "Move one letter from one word to the other to make two new words: ATE FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "Move one letter from one word to the other to make two new words: ACE FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STERN",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STERN",
+      "questionDifficulty": 3,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "Move one letter from one word to the other to make two new words: OAK SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "Move one letter from one word to the other to make two new words: ALE SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "Move one letter from one word to the other to make two new words: AID SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "Move one letter from one word to the other to make two new words: LAY SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "C",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "Move one letter from one word to the other to make two new words: OAT SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "C",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "Move one letter from one word to the other to make two new words: LAY PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "Move one letter from one word to the other to make two new words: ACE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "Move one letter from one word to the other to make two new words: ALE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "Move one letter from one word to the other to make two new words: AIR PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "Move one letter from one word to the other to make two new words: AID PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "Move one letter from one word to the other to make two new words: OAK STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "Move one letter from one word to the other to make two new words: ALE STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "Move one letter from one word to the other to make two new words: AID STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "Move one letter from one word to the other to make two new words: OWN STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "Move one letter from one word to the other to make two new words: OWL FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "Move one letter from one word to the other to make two new words: ATE FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "Move one letter from one word to the other to make two new words: ACE FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "Move one letter from one word to the other to make two new words: ARM FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "Move one letter from one word to the other to make two new words: AIR FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "Move one letter from one word to the other to make two new words: AID FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STERN",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STERN",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "Move one letter from one word to the other to make two new words: ATE BLEACH",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STABLE",
+      "questionDifficulty": 3,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STREAM",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR TRANCE",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE SCOLD",
+      "questionDifficulty": 2,
+      "correctAnswer": "C",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE PRICE",
+      "questionDifficulty": 2,
+      "correctAnswer": "P",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR STALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "Move one letter from one word to the other to make two new words: OWL FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "F",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "Move one letter from one word to the other to make two new words: ATE FLAME",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STERN",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STORE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR STORE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SPINE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR STEAM",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SWEAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR TRACE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR STAGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SHARE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SCARE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE SCALE",
+      "questionDifficulty": 2,
+      "correctAnswer": "C",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR SNORE",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR SCORE",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "Move one letter from one word to the other to make two new words: ATE BLEACH",
+      "questionDifficulty": 3,
+      "correctAnswer": "L",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE BREACH",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "Move one letter from one word to the other to make two new words: OAR STABLE",
+      "questionDifficulty": 3,
+      "correctAnswer": "B",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "Move one letter from one word to the other to make two new words: AGE STREAM",
+      "questionDifficulty": 3,
+      "correctAnswer": "R",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "Move one letter from one word to the other to make two new words: EAR TRANCE",
+      "questionDifficulty": 3,
+      "correctAnswer": "N",
+      "subConceptId": "remove-first-letter",
+      "subConceptName": "Moving the First Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **BLAND** and **OAR**. Try this: cover up the first letter of BLAND with your finger. Can you read a real word underneath? If YES, you might have found the answer already!",
+      "lessonLearningGoal": [
+        "A brilliant shortcut: the FIRST letter of word 1 is often the one that moves!",
+        "How to quickly test this by covering the front letter — it takes just seconds"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "Move one letter from one word to the other to make two new words: BAND CAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "Move one letter from one word to the other to make two new words: CARD CAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "Move one letter from one word to the other to make two new words: CART HAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "Move one letter from one word to the other to make two new words: EARN BAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "Move one letter from one word to the other to make two new words: FARM ATE",
+      "questionDifficulty": 2,
+      "correctAnswer": "M",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "Move one letter from one word to the other to make two new words: FORD CAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "Move one letter from one word to the other to make two new words: MARE BAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "E",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "Move one letter from one word to the other to make two new words: PALE BAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "E",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "Move one letter from one word to the other to make two new words: PANT HAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "Move one letter from one word to the other to make two new words: PINE BAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "E",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "Move one letter from one word to the other to make two new words: BAND BAR",
+      "questionDifficulty": 2,
+      "correctAnswer": "N",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "Move one letter from one word to the other to make two new words: BURN CAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "Move one letter from one word to the other to make two new words: CART CAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "Move one letter from one word to the other to make two new words: CAST CAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "Move one letter from one word to the other to make two new words: COLD HAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "Move one letter from one word to the other to make two new words: CORD CAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "Move one letter from one word to the other to make two new words: GOAT PIN",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "Move one letter from one word to the other to make two new words: GOLD HAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "Move one letter from one word to the other to make two new words: HALT HAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "L",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "Move one letter from one word to the other to make two new words: HARM CAT",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "Move one letter from one word to the other to make two new words: BAND AGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "Move one letter from one word to the other to make two new words: BURN PEA",
+      "questionDifficulty": 2,
+      "correctAnswer": "R",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    },
+    {
+      "questionId": 126,
+      "questionText": "Move one letter from one word to the other to make two new words: CARD AGE",
+      "questionDifficulty": 2,
+      "correctAnswer": "D",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 127,
+      "questionText": "Move one letter from one word to the other to make two new words: CART PAN",
+      "questionDifficulty": 2,
+      "correctAnswer": "T",
+      "subConceptId": "remove-last-letter",
+      "subConceptName": "Moving the Last Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **PLANT** and **OUR**. Put your finger over the last letter of PLANT. Can you read a real word? If YES, test inserting that letter into word 2.",
+      "lessonLearningGoal": [
+        "Another quick test: sometimes it's the LAST letter that needs to move!",
+        "Why checking the end is just as fast as checking the front"
+      ]
+    },
+    {
+      "questionId": 128,
+      "questionText": "Move one letter from one word to the other to make two new words: CAST OAK",
+      "questionDifficulty": 2,
+      "correctAnswer": "S",
+      "subConceptId": "remove-middle-letter",
+      "subConceptName": "Moving a Middle Letter",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **GRAVE** and **OAR**. When you remove a middle letter from GRAVE, the letters on EITHER SIDE close up. They stay in order!",
+      "lessonLearningGoal": [
+        "The trickier cases: sometimes the letter hiding in the MIDDLE is the one that moves!",
+        "Why trying first and last before the middle keeps you fast and organised"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [
+    {
+      "id": "insert-at-start",
+      "name": "Adding the Letter to the Front"
+    },
+    {
+      "id": "insert-at-end",
+      "name": "Adding the Letter to the End"
+    },
+    {
+      "id": "vowel-moves",
+      "name": "Moving a Vowel"
+    },
+    {
+      "id": "consonant-moves",
+      "name": "Moving a Consonant"
+    },
+    {
+      "id": "systematic-testing",
+      "name": "Testing Letters Systematically"
+    },
+    {
+      "id": "checking-both-words",
+      "name": "Checking BOTH Words Are Real"
+    }
+  ],
+  "subConceptCoverage": {
+    "remove-first-letter": {
+      "name": "Moving the First Letter",
+      "questionCount": 103,
+      "difficulties": {
+        "D1": 24,
+        "D2": 59,
+        "D3": 20
+      }
+    },
+    "remove-last-letter": {
+      "name": "Moving the Last Letter",
+      "questionCount": 13,
+      "difficulties": {
+        "D1": 0,
+        "D2": 13,
+        "D3": 0
+      }
+    },
+    "remove-middle-letter": {
+      "name": "Moving a Middle Letter",
+      "questionCount": 12,
+      "difficulties": {
+        "D1": 0,
+        "D2": 12,
+        "D3": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "sharedLetter",
+    "displayName": "Shared Letter",
+    "extractedAt": "2026-03-30T13:05:32.807Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 50,
+      "D3": 37
+    },
+    "questionTypes": {
+      "standard": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCA ( ? ) EN\nBU ( ? ) ANK",
+      "options": [
+        "R",
+        "S",
+        "N",
+        "L",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: CAT + TEN, and BUT + TANK. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBU ( ? ) UN\nHA ( ? ) AND",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "D",
+        "S"
+      ],
+      "correct": 4,
+      "correctAnswer": "S",
+      "explanation": "The letter S completes both pairs: BUS + SUN, and HAS + SAND. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHO ( ? ) EN\nSTO ( ? ) ARK",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "P",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: HOP + PEN, and STOP + PARK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 4,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBA ( ? ) OG\nBE ( ? ) ARK",
+      "options": [
+        "T",
+        "D",
+        "N",
+        "S",
+        "L"
+      ],
+      "correct": 1,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: BAD + DOG, and BED + DARK. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 5,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nWI ( ? ) OT\nPI ( ? ) EST",
+      "options": [
+        "N",
+        "S",
+        "R",
+        "T",
+        "L"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: WIN + NOT, and PIN + NEST. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCA ( ? ) UN\nFA ( ? ) OAD",
+      "options": [
+        "T",
+        "R",
+        "N",
+        "S",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: CAR + RUN, and FAR + ROAD. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCU ( ? ) AP\nFA ( ? ) ALL",
+      "options": [
+        "P",
+        "N",
+        "R",
+        "T",
+        "B"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: CUT + TAP, and FAT + TALL. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGA ( ? ) IT\nHI ( ? ) ING",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "S",
+      "explanation": "The letter S completes both pairs: GAS + SIT, and HIS + SING. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 9,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCU ( ? ) IG\nDI ( ? ) LAN",
+      "options": [
+        "T",
+        "R",
+        "S",
+        "N",
+        "P"
+      ],
+      "correct": 4,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: CUP + PIG, and DIP + PLAN. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 10,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBI ( ? ) UT\nTI ( ? ) AME",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: BIN + NUT, and TIN + NAME. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 11,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCA ( ? ) IG\nRI ( ? ) ONE",
+      "options": [
+        "D",
+        "N",
+        "T",
+        "B",
+        "S"
+      ],
+      "correct": 3,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: CAB + BIG, and RIB + BONE. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 12,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nOW ( ? ) AP\nAL ( ? ) ONG",
+      "options": [
+        "L",
+        "N",
+        "S",
+        "T",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: OWL + LAP, and ALL + LONG. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 13,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nME ( ? ) OP\nSE ( ? ) AIL",
+      "options": [
+        "P",
+        "N",
+        "S",
+        "T",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: MET + TOP, and SET + TAIL. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 14,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTA ( ? ) AN\nCA ( ? ) INE",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "P",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: TAP + PAN, and CAP + PINE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 15,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nRA ( ? ) EW\nFA ( ? ) AIL",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: RAN + NEW, and FAN + NAIL. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nAD ( ? ) IG\nOD ( ? ) OOR",
+      "options": [
+        "D",
+        "B",
+        "T",
+        "N",
+        "S"
+      ],
+      "correct": 0,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: ADD + DIG, and ODD + DOOR. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 17,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTU ( ? ) AT\nJO ( ? ) ALL",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "B",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: TUB + BAT, and JOB + BALL. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 18,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHE ( ? ) UG\nFO ( ? ) AIN",
+      "options": [
+        "N",
+        "R",
+        "T",
+        "S",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: HER + RUG, and FOR + RAIN. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHA ( ? ) IP\nRE ( ? ) USK",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "D",
+        "P"
+      ],
+      "correct": 3,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: HAD + DIP, and RED + DUSK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 20,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGO ( ? ) EN\nNO ( ? ) RIP",
+      "options": [
+        "S",
+        "N",
+        "R",
+        "T",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: GOT + TEN, and NOT + TRIP. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBA ( ? ) IN\nHA ( ? ) URN",
+      "options": [
+        "D",
+        "S",
+        "N",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: BAT + TIN, and HAT + TURN. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBI ( ? ) IP\nSI ( ? ) ALK",
+      "options": [
+        "N",
+        "T",
+        "R",
+        "D",
+        "S"
+      ],
+      "correct": 1,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: BIT + TIP, and SIT + TALK. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPE ( ? ) AN\nNE ( ? ) EAR",
+      "options": [
+        "S",
+        "R",
+        "T",
+        "N",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: PET + TAN, and NET + TEAR. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMA ( ? ) AR\nSA ( ? ) OAD",
+      "options": [
+        "N",
+        "D",
+        "S",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: MAT + TAR, and SAT + TOAD. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTE ( ? ) ET\nPE ( ? ) INE",
+      "options": [
+        "N",
+        "S",
+        "T",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: TEN + NET, and PEN + NINE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nOI ( ? ) ET\nTAL ( ? ) AKE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "L",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: OIL + LET, and TALL + LAKE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTI ( ? ) OT\nHI ( ? ) OKE",
+      "options": [
+        "P",
+        "T",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: TIP + POT, and HIP + POKE. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nLO ( ? ) UB\nDO ( ? ) AKE",
+      "options": [
+        "S",
+        "D",
+        "N",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: LOT + TUB, and DOT + TAKE. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDA ( ? ) OP\nHI ( ? ) ILL",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "R",
+        "M"
+      ],
+      "correct": 4,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: DAM + MOP, and HIM + MILL. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPI ( ? ) AP\nDI ( ? ) ATE",
+      "options": [
+        "T",
+        "S",
+        "G",
+        "N",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "G",
+      "explanation": "The letter G completes both pairs: PIG + GAP, and DIG + GATE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBO ( ? ) ET\nCO ( ? ) ILL",
+      "options": [
+        "T",
+        "S",
+        "W",
+        "N",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "W",
+      "explanation": "The letter W completes both pairs: BOW + WET, and COW + WILL. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHU ( ? ) AP\nBI ( ? ) OLD",
+      "options": [
+        "T",
+        "N",
+        "G",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "G",
+      "explanation": "The letter G completes both pairs: HUG + GAP, and BIG + GOLD. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHE ( ? ) AP\nPE ( ? ) ICE",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: HEN + NAP, and PEN + NICE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nJA ( ? ) AN\nGU ( ? ) OON",
+      "options": [
+        "N",
+        "M",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: JAM + MAN, and GUM + MOON. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSO ( ? ) ET\nRI ( ? ) ANK",
+      "options": [
+        "T",
+        "N",
+        "B",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: SOB + BET, and RIB + BANK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPE ( ? ) UN\nJO ( ? ) IRL",
+      "options": [
+        "G",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "G",
+      "explanation": "The letter G completes both pairs: PEG + GUN, and JOG + GIRL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nRA ( ? ) AME\nBU ( ? ) IVE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "G",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "G",
+      "explanation": "The letter G completes both pairs. First pair: RA(G) + (G)AME → RAG and GAME. Second pair: BU(G) + (G)IVE → BUG and GIVE. The same letter ends the first word and starts the second. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nNO ( ? ) AS\nSE ( ? ) ING",
+      "options": [
+        "T",
+        "W",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "W",
+      "explanation": "The letter W completes both pairs: NOW + WAS, and SEW + WING. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 39,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMEA ( ? ) ABLE\nCOS ( ? ) ENNIS",
+      "options": [
+        "R",
+        "S",
+        "L",
+        "N",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: MEAT + TABLE, and COST + TENNIS. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 40,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) END\nSWI ( ? ) ASK",
+      "options": [
+        "N",
+        "T",
+        "M",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: PLUM + MEND, and SWIM + MASK. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 41,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCLU ( ? ) ELL\nGRA ( ? ) IRD",
+      "options": [
+        "T",
+        "B",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: CLUB + BELL, and GRAB + BIRD. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 42,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTA ( ? ) ING\nFEA ( ? ) OOF",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: STAR + RING, and FEAR + ROOF. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 43,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nLOS ( ? ) ENT\nDUS ( ? ) RAM",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: LOST + TENT, and DUST + TRAM. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 44,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPLA ( ? ) AME\nTHI ( ? ) ECK",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: PLAN + NAME, and THIN + NECK. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nHEL ( ? ) INK\nDRI ( ? ) OLE",
+      "options": [
+        "P",
+        "N",
+        "S",
+        "T",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: HELP + PINK, and DRIP + POLE. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGRI ( ? ) EAR\nCOR ( ? ) OSE",
+      "options": [
+        "N",
+        "S",
+        "T",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: GRIN + NEAR, and CORN + NOSE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDRU ( ? ) ILK\nPRA ( ? ) INE",
+      "options": [
+        "N",
+        "T",
+        "R",
+        "S",
+        "M"
+      ],
+      "correct": 4,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: DRUM + MILK, and PRAM + MINE. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nNAI ( ? ) AMP\nGIR ( ? ) ONG",
+      "options": [
+        "T",
+        "R",
+        "S",
+        "N",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: NAIL + LAMP, and GIRL + LONG. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDEA ( ? ) ICE\nPOU ( ? ) AIN",
+      "options": [
+        "R",
+        "N",
+        "S",
+        "T",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: DEAR + RICE, and POUR + RAIN. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSHI ( ? ) OLE\nCHO ( ? ) LUG",
+      "options": [
+        "T",
+        "N",
+        "P",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: SHIP + POLE, and CHOP + PLUG. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPAR ( ? ) ALK\nSAL ( ? ) OLD",
+      "options": [
+        "S",
+        "N",
+        "T",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: PART + TALK, and SALT + TOLD. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBEL ( ? ) UCK\nTAL ( ? ) ION",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "L",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: BELL + LUCK, and TALL + LION. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nFAS ( ? ) ENT\nBES ( ? ) OAD",
+      "options": [
+        "S",
+        "N",
+        "R",
+        "T",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: FAST + TENT, and BEST + TOAD. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCLA ( ? ) EAR\nSNA ( ? ) EST",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "P",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: CLAP + PEAR, and SNAP + PEST. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nFIS ( ? ) AND\nPUS ( ? ) ELP",
+      "options": [
+        "T",
+        "N",
+        "H",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: FISH + HAND, and PUSH + HELP. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGRA ( ? ) AND\nLIM ( ? ) IKE",
+      "options": [
+        "B",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: GRAB + BAND, and LIMB + BIKE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSCA ( ? ) ING\nSTI ( ? ) OPE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: SCAR + RING, and STIR + ROPE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nWHE ( ? ) AME\nBOR ( ? ) ICE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: WHEN + NAME, and BORN + NICE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSKI ( ? ) OND\nBUM ( ? ) AGE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "P",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: SKIP + POND, and BUMP + PAGE. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nWIS ( ? ) OLE\nCRAS ( ? ) ILL",
+      "options": [
+        "T",
+        "H",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: WISH + HOLE, and CRASH + HILL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGLA ( ? ) ONE\nMIL ( ? ) AMP",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 4,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: GLAD + DONE, and MILD + DAMP. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTOO ( ? ) END\nPOO ( ? ) AND",
+      "options": [
+        "T",
+        "R",
+        "S",
+        "N",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: TOOL + LEND, and POOL + LAND. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSHU ( ? ) ALL\nWHEA ( ? ) ICK",
+      "options": [
+        "S",
+        "N",
+        "D",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: SHUT + TALL, and WHEAT + TICK. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSKI ( ? ) AIL\nCOI ( ? ) INE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: SKIN + NAIL, and COIN + NINE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTA ( ? ) ITE\nHER ( ? ) ATH",
+      "options": [
+        "T",
+        "N",
+        "B",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: STAB + BITE, and HERB + BATH. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDES ( ? ) ING\nRIS ( ? ) ITE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "K",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "K",
+      "explanation": "The letter K completes both pairs: DESK + KING, and RISK + KITE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTOR ( ? ) ICE\nWAR ( ? ) IST",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "M"
+      ],
+      "correct": 4,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: STORM + MICE, and WARM + MIST. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPATC ( ? ) ILL\nTEAC ( ? ) ALF",
+      "options": [
+        "T",
+        "H",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: PATCH + HILL, and TEACH + HALF. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTO ( ? ) INT\nTRA ( ? ) AIR",
+      "options": [
+        "T",
+        "P",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: STOP + PINT, and TRAP + PAIR. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSAN ( ? ) ARE\nFIN ( ? ) EAR",
+      "options": [
+        "T",
+        "D",
+        "S",
+        "R",
+        "N"
+      ],
+      "correct": 1,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: SAND + DARE, and FIND + DEAR. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMAR ( ? ) EEP\nDAR ( ? ) NEE",
+      "options": [
+        "T",
+        "K",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "K",
+      "explanation": "The letter K completes both pairs: MARK + KEEP, and DARK + KNEE. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSEE ( ? ) UCH\nCAL ( ? ) ILL",
+      "options": [
+        "T",
+        "N",
+        "M",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: SEEM + MUCH, and CALM + MILL. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCLA ( ? ) ELT\nTRI ( ? ) OON",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "M"
+      ],
+      "correct": 4,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: CLAM + MELT, and TRIM + MOON. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSLA ( ? ) OLD\nCRI ( ? ) ACK",
+      "options": [
+        "T",
+        "B",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: SLAB + BOLD, and CRIB + BACK. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSHO ( ? ) INK\nGRE ( ? ) ARM",
+      "options": [
+        "T",
+        "W",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "W",
+      "explanation": "The letter W completes both pairs: SHOW + WINK, and GREW + WARM. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBUS ( ? ) ANG\nPAT ( ? ) OST",
+      "options": [
+        "T",
+        "N",
+        "H",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs. First pair: BUS(H) + (H)ANG → BUSH and HANG. Second pair: PAT(H) + (H)OST → PATH and HOST. The same letter ends the first word and starts the second. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 77,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) OLE\nWOR ( ? ) AST",
+      "options": [
+        "M",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: STEM + MOLE, and WORM + MAST. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTRI ( ? ) INE\nSLA ( ? ) ICK",
+      "options": [
+        "P",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: TRIP + PINE, and SLAP + PICK. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 79,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPEE ( ? ) IME\nFOO ( ? ) IFT",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: PEEL + LIME, and FOOL + LIFT. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 80,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPAI ( ? ) INE\nBAR ( ? ) EST",
+      "options": [
+        "T",
+        "D",
+        "S",
+        "R",
+        "N"
+      ],
+      "correct": 4,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: PAIN + NINE, and BARN + NEST. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGOA ( ? ) AMP\nCUR ( ? ) IST",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "L"
+      ],
+      "correct": 4,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: GOAL + LAMP, and CURL + LIST. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 82,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) ACK\nGRI ( ? ) OND",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "P",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: STEP + PACK, and GRIP + POND. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 83,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBREA ( ? ) ISH\nMAI ( ? ) ULL",
+      "options": [
+        "T",
+        "N",
+        "D",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: BREAD + DISH, and MAID + DULL. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 84,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTI ( ? ) ULE\nFLOO ( ? ) EST",
+      "options": [
+        "T",
+        "R",
+        "N",
+        "S",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: STIR + RULE, and FLOOR + REST. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 85,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) ING\nMIS ( ? ) AFE",
+      "options": [
+        "T",
+        "N",
+        "P",
+        "R",
+        "S"
+      ],
+      "correct": 4,
+      "correctAnswer": "S",
+      "explanation": "The letter S completes both pairs: PLUS + SING, and MISS + SAFE. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 86,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDRA ( ? ) EST\nFLO ( ? ) ORD",
+      "options": [
+        "T",
+        "W",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "W",
+      "explanation": "The letter W completes both pairs: DRAW + WEST, and FLOW + WORD. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 87,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSPA ( ? ) OTE\nIRO ( ? ) OON",
+      "options": [
+        "T",
+        "R",
+        "S",
+        "N",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: SPAN + NOTE, and IRON + NOON. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nFLAS ( ? ) AND\nBUNC ( ? ) IRE",
+      "options": [
+        "H",
+        "N",
+        "S",
+        "T",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: FLASH + HAND, and BUNCH + HIRE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nORBI ( ? ) RADE\nCHAR ( ? ) IGER",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: ORBIT + TRADE, and CHART + TIGER. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSTUM ( ? ) EARL\nEQUI ( ? ) ATCH",
+      "options": [
+        "T",
+        "N",
+        "P",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: STUMP + PEARL, and EQUIP + PATCH. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCLIM ( ? ) READ\nDISTUR ( ? ) LANK",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "B"
+      ],
+      "correct": 4,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: CLIMB + BREAD, and DISTURB + BLANK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPLASTE ( ? ) OBIN\nSHIVE ( ? ) EBEL",
+      "options": [
+        "R",
+        "N",
+        "T",
+        "S",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: PLASTER + ROBIN, and SHIVER + REBEL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nINSEC ( ? ) OTAL\nADOP ( ? ) RICK",
+      "options": [
+        "S",
+        "T",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: INSECT + TOTAL, and ADOPT + TRICK. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nALAR ( ? ) USIC\nCHAR ( ? ) EDAL",
+      "options": [
+        "M",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: ALARM + MUSIC, and CHARM + MEDAL. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nABSOR ( ? ) ENCH\nSUPER ( ? ) RAIN",
+      "options": [
+        "T",
+        "B",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: ABSORB + BENCH, and SUPERB + BRAIN. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nFINIS ( ? ) EART\nPUNIS ( ? ) ORSE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "H",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: FINISH + HEART, and PUNISH + HORSE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nENRIC ( ? ) ABIT\nSKETC ( ? ) APPY",
+      "options": [
+        "T",
+        "N",
+        "H",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: ENRICH + HABIT, and SKETCH + HAPPY. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPERSO ( ? ) OVEL\nDRAGO ( ? ) ERVE",
+      "options": [
+        "T",
+        "R",
+        "S",
+        "N",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: PERSON + NOVEL, and DRAGON + NERVE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTABLE ( ? ) WIST\nPERMI ( ? ) OWER",
+      "options": [
+        "S",
+        "N",
+        "D",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: TABLET + TWIST, and PERMIT + TOWER. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCOUNCI ( ? ) OTUS\nPENCI ( ? ) UNCH",
+      "options": [
+        "T",
+        "L",
+        "N",
+        "S",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: COUNCIL + LOTUS, and PENCIL + LUNCH. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 101,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nPARCE ( ? ) EMON\nCANCE ( ? ) IGHT",
+      "options": [
+        "T",
+        "N",
+        "L",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: PARCEL + LEMON, and CANCEL + LIGHT. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 102,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nWONDE ( ? ) OUND\nFINGE ( ? ) IVER",
+      "options": [
+        "T",
+        "N",
+        "D",
+        "S",
+        "R"
+      ],
+      "correct": 4,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: WONDER + ROUND, and FINGER + RIVER. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 103,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nRAPI ( ? ) RESS\nSTUPI ( ? ) RAIN",
+      "options": [
+        "T",
+        "D",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: RAPID + DRESS, and STUPID + DRAIN. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 104,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nGALLO ( ? ) APER\nBISHO ( ? ) LACE",
+      "options": [
+        "T",
+        "N",
+        "R",
+        "S",
+        "P"
+      ],
+      "correct": 4,
+      "correctAnswer": "P",
+      "explanation": "The letter P completes both pairs: GALLOP + PAPER, and BISHOP + PLACE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 105,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBUTTO ( ? ) URSE\nKITTE ( ? ) ORTH",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: BUTTON + NURSE, and KITTEN + NORTH. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 106,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSCRIP ( ? ) ASTE\nACCEP ( ? ) RAIL",
+      "options": [
+        "S",
+        "N",
+        "D",
+        "R",
+        "T"
+      ],
+      "correct": 4,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: SCRIPT + TASTE, and ACCEPT + TRAIL. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 107,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMUSEU ( ? ) EDAL\nBOTTO ( ? ) ARCH",
+      "options": [
+        "M",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: MUSEUM + MEDAL, and BOTTOM + MARCH. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 108,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCHERU ( ? ) RING\nPREFA ( ? ) OAST",
+      "options": [
+        "T",
+        "N",
+        "B",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "B",
+      "explanation": "The letter B completes both pairs: CHERUB + BRING, and PREFAB + BOAST. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 109,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nANCHO ( ? ) ULER\nWHISPE ( ? ) OAST",
+      "options": [
+        "T",
+        "R",
+        "N",
+        "S",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: ANCHOR + RULER, and WHISPER + ROAST. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 110,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nBLANKE ( ? ) WICE\nBASKE ( ? ) RUTH",
+      "options": [
+        "S",
+        "N",
+        "R",
+        "T",
+        "D"
+      ],
+      "correct": 3,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: BLANKET + TWICE, and BASKET + TRUTH. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 111,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCHANNE ( ? ) IVER\nPANE ( ? ) UNCH",
+      "options": [
+        "L",
+        "N",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: CHANNEL + LIVER, and PANEL + LUNCH. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 112,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nLESSO ( ? ) OBLE\nRIBBO ( ? ) IGHT",
+      "options": [
+        "N",
+        "T",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: LESSON + NOBLE, and RIBBON + NIGHT. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 113,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDIREC ( ? ) RUST\nEXPEC ( ? ) ABLE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: DIRECT + TRUST, and EXPECT + TABLE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 114,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nSYMBO ( ? ) ATER\nTRAVE ( ? ) EARN",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "L",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: SYMBOL + LATER, and TRAVEL + LEARN. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 115,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nRANDO ( ? ) OTOR\nPHANTO ( ? ) INT",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "M",
+        "R"
+      ],
+      "correct": 3,
+      "correctAnswer": "M",
+      "explanation": "The letter M completes both pairs: RANDOM + MOTOR, and PHANTOM + MINT. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 116,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMETHO ( ? ) ANCE\nLIZAR ( ? ) UST",
+      "options": [
+        "T",
+        "D",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 1,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: METHOD + DANCE, and LIZARD + DUST. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 117,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nELASTI ( ? ) LOUD\nFABRI ( ? ) RANE",
+      "options": [
+        "C",
+        "T",
+        "S",
+        "N",
+        "R"
+      ],
+      "correct": 0,
+      "correctAnswer": "C",
+      "explanation": "The letter C completes both pairs: ELASTIC + CLOUD, and FABRIC + CRANE. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 118,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCHISE ( ? ) OGIC\nREBE ( ? ) OWER",
+      "options": [
+        "T",
+        "N",
+        "L",
+        "S",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "L",
+      "explanation": "The letter L completes both pairs: CHISEL + LOGIC, and REBEL + LOWER. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCOLLEC ( ? ) OOTH\nSUSPEC ( ? ) RIBE",
+      "options": [
+        "S",
+        "N",
+        "T",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: COLLECT + TOOTH, and SUSPECT + TRIBE. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nKITCHE ( ? ) EVER\nBROKE ( ? ) INTH",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 2,
+      "correctAnswer": "N",
+      "explanation": "The letter N completes both pairs: KITCHEN + NEVER, and BROKEN + NINTH. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nCHAPTE ( ? ) IFLE\nMONSTE ( ? ) IDGE",
+      "options": [
+        "T",
+        "R",
+        "N",
+        "S",
+        "D"
+      ],
+      "correct": 1,
+      "correctAnswer": "R",
+      "explanation": "The letter R completes both pairs: CHAPTER + RIFLE, and MONSTER + RIDGE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nNEGLEC ( ? ) EETH\nIMPAC ( ? ) ORCH",
+      "options": [
+        "T",
+        "S",
+        "N",
+        "R",
+        "D"
+      ],
+      "correct": 0,
+      "correctAnswer": "T",
+      "explanation": "The letter T completes both pairs: NEGLECT + TEETH, and IMPACT + TORCH. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nMAJESTI ( ? ) AMEL\nCLASSI ( ? ) ATCH",
+      "options": [
+        "T",
+        "S",
+        "C",
+        "N",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "C",
+      "explanation": "The letter C completes both pairs: MAJESTIC + CAMEL, and CLASSIC + CATCH. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nTRIUMP ( ? ) OUSE\nMAMMOT ( ? ) EDGE",
+      "options": [
+        "T",
+        "N",
+        "S",
+        "R",
+        "H"
+      ],
+      "correct": 4,
+      "correctAnswer": "H",
+      "explanation": "The letter H completes both pairs: TRIUMPH + HOUSE, and MAMMOTH + HEDGE. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "standard",
+      "question": "Find the letter that completes both pairs of words:\n\nDIAMON ( ? ) RUM\nCUSTAR ( ? ) RIFT",
+      "options": [
+        "T",
+        "S",
+        "D",
+        "N",
+        "R"
+      ],
+      "correct": 2,
+      "correctAnswer": "D",
+      "explanation": "The letter D completes both pairs: DIAMOND + DRUM, and CUSTARD + DRIFT. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null
+    }
+  ]
+}

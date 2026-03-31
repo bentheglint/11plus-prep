@@ -1,0 +1,1846 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "numberWordCodes",
+    "displayName": "Number Word Codes",
+    "extractedAt": "2026-03-30T13:52:00.668Z",
+    "totalQuestions": 125,
+    "mappedQuestions": 125,
+    "unmappedQuestions": 0,
+    "totalSubConcepts": 8,
+    "orphanSubConcepts": 0,
+    "confidenceBreakdown": {
+      "high": 125,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "efficacyPairs": [
+    {
+      "questionId": 1,
+      "questionText": "If SPOT = 1234 and TOPS = 4321, what number is the letter O?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 2,
+      "questionText": "If LAMP is coded as 5436 and PALM is coded as 6453, what is the code for MAP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "346",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 3,
+      "questionText": "If in a code, DOG = 475 and GOD = 574, what is the code for ODD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "744",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 4,
+      "questionText": "If BANK = 2134 and KNAB = 4312, what is the code for NAB?",
+      "questionDifficulty": 3,
+      "correctAnswer": "312",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 5,
+      "questionText": "If CAR = 312 and ARC = 123, what letter does the number 3 represent?",
+      "questionDifficulty": 1,
+      "correctAnswer": "C",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 6,
+      "questionText": "If SUN = 123, what is the code for NUS?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 7,
+      "questionText": "If CUP = 123, what number represents the letter U?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 8,
+      "questionText": "If BIRD = 1234, what is the code for RIB?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 9,
+      "questionText": "If STAR = 1234, what is the code for RATS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4321",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 10,
+      "questionText": "If FISH = 1234, what is the code for HIS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "423",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 11,
+      "questionText": "If CLAP = 1234, what is the code for CALL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1322",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 12,
+      "questionText": "If TIGER = 12345, what is the code for GRIT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3521",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 13,
+      "questionText": "If MANGO = 12345, what number represents the letter G?",
+      "questionDifficulty": 1,
+      "correctAnswer": "4",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 14,
+      "questionText": "If LEMON = 12345, what is the code for MELON?",
+      "questionDifficulty": 3,
+      "correctAnswer": "32145",
+      "subConceptId": "anagram-codes",
+      "subConceptName": "Anagram Codes — Same Letters, Different Order",
+      "confidence": "high",
+      "lessonTeachSummary": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the ",
+      "lessonLearningGoal": [
+        "How anagram words (same letters, different order) always use the same digits reshuffled",
+        "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+      ]
+    },
+    {
+      "questionId": 15,
+      "questionText": "If PLATE = 12345, what is the code for TAPE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4315",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 16,
+      "questionText": "If BIG = 123, what is the code for GIB?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 17,
+      "questionText": "If TRAIN = 12345, what is the code for RAIN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2345",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 18,
+      "questionText": "If DESK = 1234, what number represents the letter S?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 19,
+      "questionText": "If PLANE = 12345, what is the code for PANEL?",
+      "questionDifficulty": 3,
+      "correctAnswer": "13452",
+      "subConceptId": "anagram-codes",
+      "subConceptName": "Anagram Codes — Same Letters, Different Order",
+      "confidence": "high",
+      "lessonTeachSummary": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the ",
+      "lessonLearningGoal": [
+        "How anagram words (same letters, different order) always use the same digits reshuffled",
+        "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+      ]
+    },
+    {
+      "questionId": 20,
+      "questionText": "If FLAME = 12345, what is the code for MALE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4325",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 21,
+      "questionText": "In a code, CAT = 123. What is the code for ACT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "213",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 22,
+      "questionText": "In a code, DOG = 214. What is the code for GOD?",
+      "questionDifficulty": 1,
+      "correctAnswer": "412",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 23,
+      "questionText": "In a code, PEN = 531. What is the code for NEP?",
+      "questionDifficulty": 1,
+      "correctAnswer": "135",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 24,
+      "questionText": "In a code, BUS = 743. What is the code for SUB?",
+      "questionDifficulty": 1,
+      "correctAnswer": "347",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 25,
+      "questionText": "In a code, TAP = 926. What is the code for PAT?",
+      "questionDifficulty": 1,
+      "correctAnswer": "629",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 26,
+      "questionText": "In a code, MOP = 815. What is the code for POM?",
+      "questionDifficulty": 1,
+      "correctAnswer": "518",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 27,
+      "questionText": "In a code, RUN = 341. What is the code for NUR?",
+      "questionDifficulty": 1,
+      "correctAnswer": "143",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 28,
+      "questionText": "In a code, LEG = 538. What is the code for GEL?",
+      "questionDifficulty": 1,
+      "correctAnswer": "835",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 29,
+      "questionText": "In a code, BAD = 123. What word does 321 stand for?",
+      "questionDifficulty": 1,
+      "correctAnswer": "DAB",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 30,
+      "questionText": "In a code, TOP = 415. What word does 541 stand for?",
+      "questionDifficulty": 1,
+      "correctAnswer": "POT",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 31,
+      "questionText": "In a code, WAR = 192. What word does 291 stand for?",
+      "questionDifficulty": 1,
+      "correctAnswer": "RAW",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 32,
+      "questionText": "In a code, SIT = 893. What word does 398 stand for?",
+      "questionDifficulty": 1,
+      "correctAnswer": "TIS",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 33,
+      "questionText": "In a code, SUN = 524. What number represents the letter U?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 34,
+      "questionText": "In a code, JAM = 316. What number represents the letter A?",
+      "questionDifficulty": 1,
+      "correctAnswer": "1",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 35,
+      "questionText": "In a code, BIG = 978. What number represents the letter G?",
+      "questionDifficulty": 1,
+      "correctAnswer": "8",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 36,
+      "questionText": "In a code, FAN = 263. What number represents the letter F?",
+      "questionDifficulty": 1,
+      "correctAnswer": "2",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 37,
+      "questionText": "In a code, NET = 152 and TEN = 251. What letter does 5 represent?",
+      "questionDifficulty": 1,
+      "correctAnswer": "E",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 38,
+      "questionText": "In a code, POT = 617 and TOP = 716. Which number represents T?",
+      "questionDifficulty": 1,
+      "correctAnswer": "7",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 39,
+      "questionText": "In a code, RED = 835. What is the code for DER?",
+      "questionDifficulty": 1,
+      "correctAnswer": "538",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 40,
+      "questionText": "In a code, HAM = 694. What is the code for MAH?",
+      "questionDifficulty": 1,
+      "correctAnswer": "496",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 41,
+      "questionText": "In a code, OWL = 647. What is the code for LOW?",
+      "questionDifficulty": 1,
+      "correctAnswer": "764",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 42,
+      "questionText": "In a code, DIP = 285. What is the code for PID?",
+      "questionDifficulty": 1,
+      "correctAnswer": "582",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 43,
+      "questionText": "In a code, GAP = 319. What is the code for PAG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "913",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 44,
+      "questionText": "In a code, CUB = 847. What is the code for BUC?",
+      "questionDifficulty": 1,
+      "correctAnswer": "748",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 45,
+      "questionText": "In a code, LAMP = 5268. What is the code for PALM?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8256",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 46,
+      "questionText": "In a code, ROAD = 3125. What is the code for DORA?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5132",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 47,
+      "questionText": "In a code, PEAR = 6123. What is the code for REAP?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3126",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 48,
+      "questionText": "In a code, SLIM = 1578. What is the code for MILS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8751",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 49,
+      "questionText": "In a code, FROG = 2945. What is the code for GORF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5492",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 50,
+      "questionText": "In a code, TRAM = 8524. What is the code for MART?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4258",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 51,
+      "questionText": "In a code, WINE = 3297. What is the code for WEIN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3729",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 52,
+      "questionText": "In a code, GALE = 8279. What is the code for LAGE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "7289",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 53,
+      "questionText": "In a code, BOLT = 1352. What is the code for BLOT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "1532",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 54,
+      "questionText": "In a code, DESK = 4791. What is the code for SKED?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9174",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 55,
+      "questionText": "In a code, SNAP = 4819. What is the code for PANS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9184",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 56,
+      "questionText": "In a code, ITEM = 2896. What word does 6289 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "MITE",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 57,
+      "questionText": "In a code, LAME = 5268. What word does 6258 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "MALE",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 58,
+      "questionText": "In a code, EAST = 7218. What word does 8721 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TEAS",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 59,
+      "questionText": "In a code, POTS = 6421. What word does 1246 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "STOP",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 60,
+      "questionText": "In a code, PART = 6238. What word does 8326 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TRAP",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 61,
+      "questionText": "In a code, CAST = 1238. What word does 3128 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SCAT",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 62,
+      "questionText": "In a code, PINS = 6281. What word does 1826 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "SNIP",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 63,
+      "questionText": "In a code, STAR = 4825. What number represents the letter A?",
+      "questionDifficulty": 2,
+      "correctAnswer": "2",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 64,
+      "questionText": "In a code, DRUM = 5168. What number represents the letter U?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 65,
+      "questionText": "In a code, HELP = 6258. What number represents the letter L?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 66,
+      "questionText": "In a code, CLAP = 9528. What number represents the letter P?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 67,
+      "questionText": "In a code, FIST = 2948. What number represents the letter I?",
+      "questionDifficulty": 2,
+      "correctAnswer": "9",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 68,
+      "questionText": "In a code, PEAR = 6123 and REAP = 3126. What letter does 2 represent?",
+      "questionDifficulty": 2,
+      "correctAnswer": "A",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 69,
+      "questionText": "In a code, LATE = 5289 and TALE = 8259. What letter does 9 represent?",
+      "questionDifficulty": 2,
+      "correctAnswer": "E",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 70,
+      "questionText": "In a code, MEAT = 6728 and TEAM = 8726. What is the code for TAME?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8267",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 71,
+      "questionText": "In a code, ROPE = 3169 and PORE = 6139. What is the code for REPO?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3961",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 72,
+      "questionText": "In a code, NAIL = 1235 and LAIN = 5231. What letter does 3 represent?",
+      "questionDifficulty": 2,
+      "correctAnswer": "I",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 73,
+      "questionText": "In a code, GUST = 8694. What is the code for GUTS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8649",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 74,
+      "questionText": "In a code, WAND = 3215. What is the code for DAWN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "5231",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 75,
+      "questionText": "In a code, CARE = 1234. What word does 3214 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "RACE",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 76,
+      "questionText": "In a code, DIET = 5928. What word does 8925 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "TIED",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 77,
+      "questionText": "In a code, CART = 1234 and CARD = 1235. What is the code for DART?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5234",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 78,
+      "questionText": "In a code, LAND = 5162 and SAND = 3162. What is the code for ANDS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1623",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 79,
+      "questionText": "In a code, BONE = 1329 and TONE = 4329. What is the code for NOTE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2349",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 80,
+      "questionText": "In a code, MADE = 6127 and DAME = 2167. What is the code for MEAD?",
+      "questionDifficulty": 3,
+      "correctAnswer": "6712",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 81,
+      "questionText": "In a code, PLAN = 6521 and PANE = 6217. What is the code for LEAN?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5721",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 82,
+      "questionText": "In a code, SHIP = 3628 and WHIP = 9628. What is the code for WISH?",
+      "questionDifficulty": 3,
+      "correctAnswer": "9236",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 83,
+      "questionText": "In a code, MIST = 6248 and FIST = 5248. What is the code for FITS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "5284",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 84,
+      "questionText": "In a code, MEAL = 6925 and LAME = 5269. What word does 6259 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "MALE",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 85,
+      "questionText": "In a code, LION = 5241 and LOIN = 5421. What word does 5214 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "LINO",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 86,
+      "questionText": "In a code, LATE = 5289 and TALE = 8259. What word does 8925 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "TEAL",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 87,
+      "questionText": "In a code, STOP = 4826 and TOPS = 8264. What word does 6284 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "POTS",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 88,
+      "questionText": "In a code, CARE = 1234 and RACE = 3214. What word does 2134 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "ACRE",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 89,
+      "questionText": "In a code, GOAT = 8124 and BOAT = 7124. What number represents the letter O?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 90,
+      "questionText": "In a code, FAST = 2148 and LAST = 5148. What number represents the letter S?",
+      "questionDifficulty": 3,
+      "correctAnswer": "4",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 91,
+      "questionText": "In a code, MINT = 6217 and HINT = 3217. What number represents the letter N?",
+      "questionDifficulty": 3,
+      "correctAnswer": "1",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 92,
+      "questionText": "In a code, BEAR = 1923 and DEAR = 5923. What number represents the letter R?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 93,
+      "questionText": "In a code, BAND = 1245 and BEND = 1945. Which letter does 2 represent?",
+      "questionDifficulty": 3,
+      "correctAnswer": "A",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 94,
+      "questionText": "In a code, COLD = 9152 and BOLD = 7152. Which letter does 9 represent?",
+      "questionDifficulty": 3,
+      "correctAnswer": "C",
+      "subConceptId": "elimination-method",
+      "subConceptName": "Elimination — Narrow It Down",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PART = 6238**, we need to find **TRAP**.\n\nOptions: **8326**  |  **8362**  |  **8236**  |  **8632**  |  **3826**\n\nLook at each position. If an option has the **wrong digit** in ANY position, cro",
+      "lessonLearningGoal": [
+        "How to use elimination to find the right answer when all the options look similar",
+        "How to knock out wrong answers one by one like a detective"
+      ]
+    },
+    {
+      "questionId": 95,
+      "questionText": "In a code, ROPE = 3164 and ROBE = 3184. What is the code for BORE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8134",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 96,
+      "questionText": "In a code, PLATE = 65289 and PETAL = 69825. What is the code for LEAPT?",
+      "questionDifficulty": 3,
+      "correctAnswer": "59268",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 97,
+      "questionText": "In a code, STARE = 18234 and RATES = 32841. What is the code for TEARS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "84231",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 98,
+      "questionText": "In a code, CRATE = 13289 and TRACE = 83219. What word does 12893 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "CATER",
+      "subConceptId": "anagram-codes",
+      "subConceptName": "Anagram Codes — Same Letters, Different Order",
+      "confidence": "high",
+      "lessonTeachSummary": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the ",
+      "lessonLearningGoal": [
+        "How anagram words (same letters, different order) always use the same digits reshuffled",
+        "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+      ]
+    },
+    {
+      "questionId": 99,
+      "questionText": "In a code, STEAM = 18926 and MEATS = 69281. What is the code for MATES?",
+      "questionDifficulty": 3,
+      "correctAnswer": "62891",
+      "subConceptId": "anagram-codes",
+      "subConceptName": "Anagram Codes — Same Letters, Different Order",
+      "confidence": "high",
+      "lessonTeachSummary": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the ",
+      "lessonLearningGoal": [
+        "How anagram words (same letters, different order) always use the same digits reshuffled",
+        "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+      ]
+    },
+    {
+      "questionId": 100,
+      "questionText": "In a code, PARSE = 62349 and SPARE = 46239. What word does 69234 stand for?",
+      "questionDifficulty": 3,
+      "correctAnswer": "PEARS",
+      "subConceptId": "anagram-codes",
+      "subConceptName": "Anagram Codes — Same Letters, Different Order",
+      "confidence": "high",
+      "lessonTeachSummary": "**STOP** and **TOPS** are anagrams (words made from the same letters in a different order) — and their codes use the **same digits rearranged**. This means you only need ONE mapping table for ALL the ",
+      "lessonLearningGoal": [
+        "How anagram words (same letters, different order) always use the same digits reshuffled",
+        "Why spotting anagrams is one of the fastest shortcuts in code-cracking"
+      ]
+    },
+    {
+      "questionId": 101,
+      "questionText": "In a code, HOP = 123. What is the code for POH?",
+      "questionDifficulty": 1,
+      "correctAnswer": "321",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 102,
+      "questionText": "In a code, WEB = 456. What number represents the letter E?",
+      "questionDifficulty": 1,
+      "correctAnswer": "5",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 103,
+      "questionText": "In a code, FOX = 738. What is the code for OXF?",
+      "questionDifficulty": 1,
+      "correctAnswer": "387",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 104,
+      "questionText": "In a code, VAN = 591. What word does 195 stand for?",
+      "questionDifficulty": 1,
+      "correctAnswer": "NAV",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 105,
+      "questionText": "In a code, SAW = 624. What is the code for WAS?",
+      "questionDifficulty": 1,
+      "correctAnswer": "426",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 106,
+      "questionText": "In a code, CUB = 371. What number represents the letter C?",
+      "questionDifficulty": 1,
+      "correctAnswer": "3",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 107,
+      "questionText": "In a code, TIN = 825 and NIT = 528. What is the code for IN?",
+      "questionDifficulty": 1,
+      "correctAnswer": "25",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    },
+    {
+      "questionId": 108,
+      "questionText": "In a code, GUM = 943. What is the code for MUG?",
+      "questionDifficulty": 1,
+      "correctAnswer": "349",
+      "subConceptId": "build-the-table",
+      "subConceptName": "Build the Mapping Table",
+      "confidence": "high",
+      "lessonTeachSummary": "Let's crack **SPOT = 1234** and **TOPS = 4321**.\n\nHere's the golden rule: write out **every** letter-number pair in a table. Trying to hold it in your head is where mistakes creep in!",
+      "lessonLearningGoal": [
+        "How to crack any code by mapping each letter to its number",
+        "Why writing out the full table is your secret weapon against mistakes"
+      ]
+    },
+    {
+      "questionId": 109,
+      "questionText": "In a code, FORK = 1234. What is the code for ROOF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "3221",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 110,
+      "questionText": "In a code, BELT = 3958. What is the code for TELL?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8955",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 111,
+      "questionText": "In a code, DRUM = 2746. What is the code for MUDD?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6422",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 112,
+      "questionText": "In a code, TWIG = 8614. What is the code for WIT?",
+      "questionDifficulty": 2,
+      "correctAnswer": "618",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 113,
+      "questionText": "In a code, SNAP = 1234. What is the code for PANS?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4321",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 114,
+      "questionText": "In a code, PLOD = 4927. What word does 7294 stand for?",
+      "questionDifficulty": 2,
+      "correctAnswer": "DOLP",
+      "subConceptId": "reverse-decode",
+      "subConceptName": "Reverse Decode — Number to Word",
+      "confidence": "high",
+      "lessonTeachSummary": "We know **BAD = 123** — now we need to work out what word **321** stands for.\n\nThe method is the same — build your mapping table first. Then for each **number** in the code, find the matching **letter",
+      "lessonLearningGoal": [
+        "How to work backwards from a mystery number code to uncover the hidden word",
+        "How to flip your mapping table around so numbers point back to letters"
+      ]
+    },
+    {
+      "questionId": 115,
+      "questionText": "In a code, CUBE = 1534. What is the code for BUC?",
+      "questionDifficulty": 2,
+      "correctAnswer": "351",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 116,
+      "questionText": "In a code, LAKE = 5263. What is the code for KALE?",
+      "questionDifficulty": 2,
+      "correctAnswer": "6253",
+      "subConceptId": "four-letter-codes",
+      "subConceptName": "Four-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **TRAM = 8524**, line up each letter with its number — there are exactly 4 pairs to write down.",
+      "lessonLearningGoal": [
+        "How to handle 4-letter word codes like a pro",
+        "How to use the table method to crack any 4-letter word code quickly"
+      ]
+    },
+    {
+      "questionId": 117,
+      "questionText": "In a code, FROG = 2738 and GORF = 8372. What is the code for GOOF?",
+      "questionDifficulty": 2,
+      "correctAnswer": "8332",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 118,
+      "questionText": "In a code, WIND = 4152. What is the code for WINN?",
+      "questionDifficulty": 2,
+      "correctAnswer": "4155",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 119,
+      "questionText": "In a code, GRAPE = 12345. What is the code for REAP?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2534",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 120,
+      "questionText": "In a code, BLAZE = 12345. What is the code for ABLE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3125",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 121,
+      "questionText": "In a code, FROST = 12345. What is the code for ROOTS?",
+      "questionDifficulty": 3,
+      "correctAnswer": "23354",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 122,
+      "questionText": "In a code, SHAVE = 15384. What is the code for VASE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "8314",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 123,
+      "questionText": "In a code, TIGER = 12345. What is the code for GREET?",
+      "questionDifficulty": 3,
+      "correctAnswer": "35441",
+      "subConceptId": "repeated-letters",
+      "subConceptName": "Repeated Letter Anchors",
+      "confidence": "high",
+      "lessonTeachSummary": "Look at **MOON** — the letter **O** appears **twice**, and so does the number **2** in its code.\n\nWhen a letter appears twice in a word, its number **must also appear twice** in the same positions. Th",
+      "lessonLearningGoal": [
+        "How repeated letters give you a brilliant shortcut to crack codes faster",
+        "How to spot 'anchor' letters that unlock the whole puzzle in seconds"
+      ]
+    },
+    {
+      "questionId": 124,
+      "questionText": "In a code, CANOE = 13526. What is the code for ACNE?",
+      "questionDifficulty": 3,
+      "correctAnswer": "3156",
+      "subConceptId": "five-letter-codes",
+      "subConceptName": "Five-Letter Word Codes",
+      "confidence": "high",
+      "lessonTeachSummary": "From **PLATE = 65289**, we need 5 pairs to decode **LEAPT**. With 5 letters, it's even more important to write out your full table. Don't skip any pairs!",
+      "lessonLearningGoal": [
+        "How to handle the longest word codes without breaking a sweat",
+        "Why staying organised is your biggest advantage with longer words"
+      ]
+    },
+    {
+      "questionId": 125,
+      "questionText": "In a code, BROAD = 42635 and BOARD = 46325. What is the code for ROAD?",
+      "questionDifficulty": 3,
+      "correctAnswer": "2635",
+      "subConceptId": "shared-letters",
+      "subConceptName": "Shared Letters — Cross-Reference",
+      "confidence": "high",
+      "lessonTeachSummary": "**CART** and **CARD** both contain the letters **C, A, R** — and those letters have the **same numbers** in both codes.\n\nThis lets you:\n1. Confirm your mapping is right\n2. Spot the **new** letter (**D",
+      "lessonLearningGoal": [
+        "How two words that share letters give you a powerful way to double-check your work",
+        "How shared letters between word pairs help you discover new mappings with confidence"
+      ]
+    }
+  ],
+  "unmappedQuestions": [],
+  "orphanSubConcepts": [],
+  "subConceptCoverage": {
+    "shared-letters": {
+      "name": "Shared Letters — Cross-Reference",
+      "questionCount": 19,
+      "difficulties": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 9
+      }
+    },
+    "build-the-table": {
+      "name": "Build the Mapping Table",
+      "questionCount": 29,
+      "difficulties": {
+        "D1": 27,
+        "D2": 1,
+        "D3": 1
+      }
+    },
+    "repeated-letters": {
+      "name": "Repeated Letter Anchors",
+      "questionCount": 9,
+      "difficulties": {
+        "D1": 0,
+        "D2": 7,
+        "D3": 2
+      }
+    },
+    "four-letter-codes": {
+      "name": "Four-Letter Word Codes",
+      "questionCount": 26,
+      "difficulties": {
+        "D1": 2,
+        "D2": 24,
+        "D3": 0
+      }
+    },
+    "five-letter-codes": {
+      "name": "Five-Letter Word Codes",
+      "questionCount": 11,
+      "difficulties": {
+        "D1": 1,
+        "D2": 2,
+        "D3": 8
+      }
+    },
+    "anagram-codes": {
+      "name": "Anagram Codes — Same Letters, Different Order",
+      "questionCount": 5,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 5
+      }
+    },
+    "reverse-decode": {
+      "name": "Reverse Decode — Number to Word",
+      "questionCount": 20,
+      "difficulties": {
+        "D1": 5,
+        "D2": 10,
+        "D3": 5
+      }
+    },
+    "elimination-method": {
+      "name": "Elimination — Narrow It Down",
+      "questionCount": 6,
+      "difficulties": {
+        "D1": 0,
+        "D2": 0,
+        "D3": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,3270 @@
+{
+  "meta": {
+    "subject": "verbalreasoning",
+    "topic": "synonyms",
+    "displayName": "Synonyms",
+    "extractedAt": "2026-03-30T13:05:32.794Z",
+    "questionCount": 125,
+    "difficultyDistribution": {
+      "D1": 38,
+      "D2": 50,
+      "D3": 37
+    },
+    "questionTypes": {
+      "pick-from-sets": 125
+    },
+    "visualComponentCount": 0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "begin + start",
+      "explanation": "'Begin' and 'start' both mean to set something in motion — they are direct synonyms. 'Arrive' means to reach a place, 'carry' means to hold while moving, 'choose' means to pick, 'deliver' means to bring. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "begin",
+        "arrive",
+        "carry"
+      ],
+      "setB": [
+        "choose",
+        "start",
+        "deliver"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "peculiar + strange",
+      "explanation": "'Peculiar' and 'strange' both mean unusual or different from what is expected. 'Normal' is nearly the opposite — ordinary. 'Polite' means well-mannered, 'familiar' means well known, 'gentle' means soft and kind. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "normal",
+        "peculiar",
+        "polite"
+      ],
+      "setB": [
+        "familiar",
+        "gentle",
+        "strange"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "conceal + hide",
+      "explanation": "'Conceal' and 'hide' both mean to keep something out of sight. Watch out — 'reveal' means the opposite (to show something hidden), a common trap! 'Discover' means to find, 'approach' means to come near, 'announce' means to declare. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reveal",
+        "discover",
+        "conceal"
+      ],
+      "setB": [
+        "hide",
+        "approach",
+        "announce"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "diligent + hardworking",
+      "explanation": "'Diligent' and 'hardworking' both mean putting great care and effort into everything. 'Lazy' is the opposite — unwilling to work. 'Clumsy' means awkward, 'graceful' means elegant, 'careless' means not paying attention. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "lazy",
+        "clumsy",
+        "diligent"
+      ],
+      "setB": [
+        "graceful",
+        "hardworking",
+        "careless"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "tranquil + peaceful",
+      "explanation": "'Tranquil' and 'peaceful' both mean calm and free from disturbance. 'Noisy' is the opposite — full of loud sounds. 'Rapid' means fast, 'violent' means forceful, 'hectic' means very busy. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "noisy",
+        "tranquil",
+        "rapid"
+      ],
+      "setB": [
+        "peaceful",
+        "violent",
+        "hectic"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "wealthy + rich",
+      "explanation": "'Wealthy' and 'rich' both mean having a lot of money or possessions. 'Famous' means well known (you can be famous without being rich!). 'Polite' means well-mannered, 'honest' means truthful, 'strict' means firm with rules. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wealthy",
+        "famous",
+        "polite"
+      ],
+      "setB": [
+        "honest",
+        "rich",
+        "strict"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "timid + shy",
+      "explanation": "'Timid' and 'shy' both mean lacking confidence and being nervous around others. 'Bold' means the opposite — brave and confident. 'Rude' means bad-mannered, 'curious' means wanting to know things, 'proud' means self-satisfied. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bold",
+        "timid",
+        "rude"
+      ],
+      "setB": [
+        "curious",
+        "shy",
+        "proud"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "joyful + happy",
+      "explanation": "'Joyful' and 'happy' both mean feeling great pleasure or delight. 'Brave' means courageous, 'polite' means well-mannered, 'honest' means truthful, 'strict' means firm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "joyful",
+        "brave",
+        "polite"
+      ],
+      "setB": [
+        "honest",
+        "happy",
+        "strict"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "thrifty + economical",
+      "explanation": "'Thrifty' and 'economical' both mean careful with money, avoiding waste. 'Wasteful' is the opposite — spending too freely. 'Wealthy' means having lots of money (different from being careful with it!). 'Lavish' means very generous, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wasteful",
+        "thrifty",
+        "wealthy"
+      ],
+      "setB": [
+        "lavish",
+        "economical",
+        "famous"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "obstinate + stubborn",
+      "explanation": "'Obstinate' and 'stubborn' both mean refusing to change your mind. 'Flexible' is the opposite — willing to adapt. 'Cheerful' means happy, 'adaptable' means able to adjust, 'jolly' means in good spirits. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "flexible",
+        "obstinate",
+        "cheerful"
+      ],
+      "setB": [
+        "stubborn",
+        "adaptable",
+        "jolly"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "vacant + empty",
+      "explanation": "'Vacant' and 'empty' both mean containing nothing. 'Occupied' is the opposite — being used. 'Narrow' describes width, 'steep' describes angle, 'noisy' describes sound. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "occupied",
+        "narrow",
+        "vacant"
+      ],
+      "setB": [
+        "empty",
+        "steep",
+        "noisy"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "flourish + thrive",
+      "explanation": "'Flourish' and 'thrive' both mean to grow well and be successful. 'Wither' is the opposite — to shrivel and decline. Watch for this antonym trap! 'Stumble' means to trip, 'pause' means to stop briefly, 'wander' means to walk aimlessly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "wither",
+        "flourish",
+        "stumble"
+      ],
+      "setB": [
+        "thrive",
+        "pause",
+        "wander"
+      ],
+      "correctPair": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "laborious + arduous",
+      "explanation": "'Laborious' and 'arduous' both mean requiring a lot of hard work — exhausting tasks. 'Enjoyable' means pleasant. 'Popular' means well-liked, 'straightforward' means easy, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "laborious",
+        "enjoyable",
+        "frequent"
+      ],
+      "setB": [
+        "sudden",
+        "arduous",
+        "straightforward"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "elated + overjoyed",
+      "explanation": "'Elated' and 'overjoyed' both mean extremely happy. 'Despondent' is the opposite — deeply sad and hopeless. 'Indifferent' means not caring, 'astonished' means very surprised, 'sceptical' means doubting. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "elated",
+        "despondent",
+        "indifferent"
+      ],
+      "setB": [
+        "astonished",
+        "overjoyed",
+        "sceptical"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "meticulous + thorough",
+      "explanation": "'Meticulous' and 'thorough' both mean paying careful attention to every detail. 'Spontaneous' is nearly the opposite — acting on impulse. 'Ambitious' means driven, 'versatile' means adaptable, 'prominent' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "meticulous",
+        "spontaneous",
+        "ambitious"
+      ],
+      "setB": [
+        "versatile",
+        "thorough",
+        "prominent"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "angry + cross",
+      "explanation": "'Angry' and 'cross' both mean feeling annoyed or upset with someone. 'Hungry' means wanting food, 'bored' means uninterested, 'gentle' means soft-natured, 'thirsty' means wanting a drink. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "angry",
+        "hungry",
+        "bored"
+      ],
+      "setB": [
+        "gentle",
+        "cross",
+        "thirsty"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 17,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "annual + yearly",
+      "explanation": "'Annual' and 'yearly' both mean happening once every year. 'Daily' means every day, 'weekly' means every week, 'fortnightly' means every two weeks, 'monthly' means every month — different time intervals. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "daily",
+        "annual",
+        "weekly"
+      ],
+      "setB": [
+        "fortnightly",
+        "monthly",
+        "yearly"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 18,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "novice + beginner",
+      "explanation": "'Novice' and 'beginner' both mean someone new to an activity, still learning. 'Veteran' is the opposite — someone with lots of experience. 'Spectator' means a watcher, 'audience' means the people watching, 'competitor' means someone taking part. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "veteran",
+        "novice",
+        "spectator"
+      ],
+      "setB": [
+        "audience",
+        "beginner",
+        "competitor"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "terrified + scared",
+      "explanation": "'Terrified' and 'scared' both mean feeling great fear. 'Terrified' is stronger but they share the same core meaning. 'Jealous' means envious, 'bored' means uninterested, 'lonely' means feeling alone, 'proud' means self-satisfied. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "terrified",
+        "jealous",
+        "bored"
+      ],
+      "setB": [
+        "lonely",
+        "scared",
+        "proud"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "demonstrate + show",
+      "explanation": "'Demonstrate' and 'show' both mean to display something or make it visible. 'Whisper' means to speak softly, 'collect' means to gather, 'announce' means to declare, 'borrow' means to take temporarily. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "demonstrate",
+        "whisper",
+        "collect"
+      ],
+      "setB": [
+        "show",
+        "announce",
+        "borrow"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "loud + noisy",
+      "explanation": "'Loud' and 'noisy' both mean making a lot of sound. 'Bright' describes light, 'rough' describes texture, 'smooth' means even, 'dark' means lacking light — all physical descriptions but about different things. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "loud",
+        "bright",
+        "rough"
+      ],
+      "setB": [
+        "smooth",
+        "noisy",
+        "dark"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "fast + quick",
+      "explanation": "'Fast' and 'quick' both mean moving with speed. 'Heavy' describes weight, 'wide' describes breadth, 'narrow' means not wide, 'light' can mean not heavy — but none mean speedy. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "fast",
+        "heavy",
+        "wide"
+      ],
+      "setB": [
+        "narrow",
+        "quick",
+        "light"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "big + large",
+      "explanation": "'Big' and 'large' both mean great in size. 'Short' describes height, 'flat' means level, 'deep' describes depth, 'round' describes shape — all dimensions but different ones. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "big",
+        "short",
+        "flat"
+      ],
+      "setB": [
+        "deep",
+        "large",
+        "round"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 24,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "small + little",
+      "explanation": "'Small' and 'little' both mean not big in size. 'Slow' describes speed, 'steep' describes angle, 'straight' means not curved, 'warm' describes temperature. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "small",
+        "slow",
+        "steep"
+      ],
+      "setB": [
+        "straight",
+        "little",
+        "warm"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "sad + unhappy",
+      "explanation": "'Sad' and 'unhappy' both mean feeling sorrow. The prefix 'un-' in 'unhappy' reverses 'happy', giving us the same meaning as 'sad'. 'Hungry' means wanting food, 'nervous' means anxious, 'excited' means eager, 'curious' means inquisitive. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sad",
+        "hungry",
+        "nervous"
+      ],
+      "setB": [
+        "excited",
+        "unhappy",
+        "curious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "pretty + beautiful",
+      "explanation": "'Pretty' and 'beautiful' both mean pleasing to look at. 'Tall' describes height, 'clean' means free from dirt, 'fresh' means newly made, 'young' means not old. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "pretty",
+        "tall",
+        "clean"
+      ],
+      "setB": [
+        "fresh",
+        "beautiful",
+        "young"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 27,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "clever + smart",
+      "explanation": "'Clever' and 'smart' both mean having quick intelligence. 'Generous' means willing to give, 'patient' means able to wait calmly, 'curious' means wanting to learn, 'honest' means truthful. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "clever",
+        "generous",
+        "patient"
+      ],
+      "setB": [
+        "curious",
+        "smart",
+        "honest"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 28,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "rude + impolite",
+      "explanation": "'Rude' and 'impolite' both mean lacking good manners. The prefix 'im-' means 'not', so 'impolite' literally means 'not polite'. 'Noisy' means loud, 'selfish' means thinking only of yourself, 'greedy' means wanting too much, 'clumsy' means awkward. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "rude",
+        "noisy",
+        "selfish"
+      ],
+      "setB": [
+        "greedy",
+        "impolite",
+        "clumsy"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "silent + quiet",
+      "explanation": "'Silent' and 'quiet' both mean making little or no sound. 'Sharp' means having a fine edge, 'smooth' means even, 'flat' means level, 'pointed' means tapering to a tip. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "silent",
+        "sharp",
+        "smooth"
+      ],
+      "setB": [
+        "flat",
+        "quiet",
+        "pointed"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 30,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "shut + close",
+      "explanation": "'Shut' and 'close' both mean to block an opening. 'Open' is the opposite. 'Push' means to press away, 'pull' means to draw towards, 'lift' means to raise up. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shut",
+        "open",
+        "push"
+      ],
+      "setB": [
+        "pull",
+        "close",
+        "lift"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "reply + answer",
+      "explanation": "'Reply' and 'answer' both mean to respond when asked a question. 'Ask' is the opposite action. 'Forget' means to fail to remember, 'remember' means to recall, 'ignore' means to pay no attention. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ask",
+        "reply",
+        "forget"
+      ],
+      "setB": [
+        "remember",
+        "answer",
+        "ignore"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "lucky + fortunate",
+      "explanation": "'Lucky' and 'fortunate' both mean having good luck. 'Strict' means firm, 'early' means before time, 'late' means after time, 'popular' means well-liked. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "lucky",
+        "strict",
+        "early"
+      ],
+      "setB": [
+        "fortunate",
+        "late",
+        "popular"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "choose + select",
+      "explanation": "'Choose' and 'select' both mean to pick one thing from several options. 'Explain' means to make clear, 'whisper' means to speak softly, 'promise' means to commit, 'deliver' means to bring. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "choose",
+        "explain",
+        "whisper"
+      ],
+      "setB": [
+        "promise",
+        "select",
+        "deliver"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 34,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "grab + seize",
+      "explanation": "'Grab' and 'seize' both mean to take hold of something suddenly and firmly. 'Throw' means to send through the air, 'pour' means to make liquid flow, 'stack' means to pile up, 'sweep' means to clean. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "grab",
+        "throw",
+        "pour"
+      ],
+      "setB": [
+        "stack",
+        "seize",
+        "sweep"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 35,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "laugh + giggle",
+      "explanation": "'Laugh' and 'giggle' both mean making sounds of amusement. A giggle is a lighter, quieter laugh. 'Sneeze', 'yawn', 'cough', and 'hiccup' are involuntary body sounds, not about amusement. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "laugh",
+        "sneeze",
+        "yawn"
+      ],
+      "setB": [
+        "cough",
+        "giggle",
+        "hiccup"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 36,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "destroy + demolish",
+      "explanation": "'Destroy' and 'demolish' both mean to completely wreck something. 'Polish' means to make shiny, 'decorate' means to make attractive, 'arrange' means to put in order, 'measure' means to find the size. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "destroy",
+        "polish",
+        "decorate"
+      ],
+      "setB": [
+        "arrange",
+        "demolish",
+        "measure"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 37,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "mend + repair",
+      "explanation": "'Mend' and 'repair' both mean to fix something broken. 'Bend' means to curve, 'wrap' means to cover, 'fold' means to crease, 'pour' means to make liquid flow. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "mend",
+        "bend",
+        "wrap"
+      ],
+      "setB": [
+        "fold",
+        "repair",
+        "pour"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 38,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "shout + yell",
+      "explanation": "'Shout' and 'yell' both mean to call out in a loud voice. 'Clap' and 'wave' are hand gestures, 'point' and 'nod' are body movements — none are vocal sounds. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shout",
+        "clap",
+        "wave"
+      ],
+      "setB": [
+        "point",
+        "yell",
+        "nod"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 39,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "scatter + spread",
+      "explanation": "'Scatter' and 'spread' both mean to distribute things over a wide area. 'Squeeze' means to press, 'twist' means to turn, 'stretch' means to extend, 'spin' means to rotate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scatter",
+        "squeeze",
+        "twist"
+      ],
+      "setB": [
+        "stretch",
+        "spread",
+        "spin"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 40,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "ancient + old",
+      "explanation": "'Ancient' and 'old' both mean having existed for a very long time. 'Heavy' describes weight, 'rough' describes texture, 'narrow' describes width, 'hollow' means empty inside. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ancient",
+        "heavy",
+        "rough"
+      ],
+      "setB": [
+        "narrow",
+        "old",
+        "hollow"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 41,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "ill + sick",
+      "explanation": "'Ill' and 'sick' both mean not in good health. 'Cheerful' means happy, 'strict' means firm, 'popular' means well-liked, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ill",
+        "cheerful",
+        "strict"
+      ],
+      "setB": [
+        "popular",
+        "sick",
+        "famous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 42,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "gift + present",
+      "explanation": "'Gift' and 'present' both mean something given to someone on a special occasion. 'Stone', 'path', 'bridge', and 'cloud' are everyday nouns from completely different categories. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "gift",
+        "stone",
+        "path"
+      ],
+      "setB": [
+        "bridge",
+        "present",
+        "cloud"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 43,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "error + mistake",
+      "explanation": "'Error' and 'mistake' both mean something done incorrectly. 'Carpet', 'window', 'garden', and 'blanket' are household nouns — none relate to getting things wrong. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "error",
+        "carpet",
+        "window"
+      ],
+      "setB": [
+        "garden",
+        "mistake",
+        "blanket"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 44,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "centre + middle",
+      "explanation": "'Centre' and 'middle' both mean the point equally distant from all edges. 'Edge' means the outer limit, 'corner' is where edges meet, 'border' means boundary, 'side' means left or right part. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "centre",
+        "edge",
+        "corner"
+      ],
+      "setB": [
+        "border",
+        "middle",
+        "side"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 45,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "cautious + careful",
+      "explanation": "'Cautious' and 'careful' both mean taking care to avoid danger or mistakes. 'Reckless' is the opposite — acting without thinking. Watch for this antonym trap! 'Curious' means inquisitive, 'stubborn' means refusing to budge, 'cheerful' means happy. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cautious",
+        "reckless",
+        "curious"
+      ],
+      "setB": [
+        "careful",
+        "stubborn",
+        "cheerful"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "generous + charitable",
+      "explanation": "'Generous' and 'charitable' both mean willing to give freely. 'Selfish' is the opposite — thinking only of yourself. 'Strict' means firm, 'ambitious' means driven, 'popular' means well-liked. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "generous",
+        "selfish",
+        "narrow"
+      ],
+      "setB": [
+        "charitable",
+        "ambitious",
+        "popular"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "headstrong + resolute",
+      "explanation": "'Headstrong' and 'resolute' both mean firmly determined and unwilling to be swayed. 'Modest' means humble, 'cheerful' means happy, 'hollow' means empty inside, 'gentle' means soft. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "headstrong",
+        "modest",
+        "cheerful"
+      ],
+      "setB": [
+        "hollow",
+        "resolute",
+        "gentle"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 48,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "deserted + abandoned",
+      "explanation": "'Deserted' and 'abandoned' both mean left empty with no people. 'Crowded' is the opposite — packed with people. 'Strict' means firm, 'famous' means well known, 'popular' means well-liked. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "deserted",
+        "crowded",
+        "frozen"
+      ],
+      "setB": [
+        "frequent",
+        "abandoned",
+        "pleasant"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "bashful + reserved",
+      "explanation": "'Bashful' and 'reserved' both mean reluctant to draw attention to yourself. 'Confident' is the opposite — sure of yourself. 'Cheerful' means happy, 'bossy' means domineering, 'lively' means energetic. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bashful",
+        "confident",
+        "cheerful"
+      ],
+      "setB": [
+        "bossy",
+        "reserved",
+        "lively"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 50,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "purchase + buy",
+      "explanation": "'Purchase' and 'buy' both mean to get something by paying money. 'Sell' is the opposite — giving something for money. 'Borrow' means to take temporarily, 'lend' means to give temporarily, 'steal' means to take without permission. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "purchase",
+        "sell",
+        "borrow"
+      ],
+      "setB": [
+        "lend",
+        "buy",
+        "steal"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 51,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "genuine + authentic",
+      "explanation": "'Genuine' and 'authentic' both mean real and not fake. 'Fake' is the opposite — not real. 'Popular' means well-liked, 'valuable' means worth a lot, 'rare' means hard to find. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "genuine",
+        "fake",
+        "valuable"
+      ],
+      "setB": [
+        "valuable",
+        "authentic",
+        "rare"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 52,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "abundant + plentiful",
+      "explanation": "'Abundant' and 'plentiful' both mean existing in very large quantities. 'Scarce' is the opposite — in short supply. 'Heavy' describes weight, 'expensive' describes cost, 'enormous' describes size. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "abundant",
+        "scarce",
+        "heavy"
+      ],
+      "setB": [
+        "expensive",
+        "plentiful",
+        "enormous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 53,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "hostile + unfriendly",
+      "explanation": "'Hostile' and 'unfriendly' both mean showing strong dislike. 'Welcoming' is the opposite — warm and open. 'Nervous' means anxious, 'formal' means proper, 'jealous' means envious. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "hostile",
+        "welcoming",
+        "nervous"
+      ],
+      "setB": [
+        "unfriendly",
+        "formal",
+        "jealous"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "reluctant + unwilling",
+      "explanation": "'Reluctant' and 'unwilling' both mean not wanting to do something. 'Eager' is the opposite — keen and enthusiastic. 'Grateful' means thankful, 'curious' means inquisitive, 'hopeful' means optimistic. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reluctant",
+        "eager",
+        "grateful"
+      ],
+      "setB": [
+        "curious",
+        "unwilling",
+        "hopeful"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 55,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "praise + commend",
+      "explanation": "'Praise' and 'commend' both mean to express approval. 'Criticise' is the opposite — to find fault. 'Question' means to ask, 'challenge' means to test, 'demand' means to insist. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "praise",
+        "criticise",
+        "question"
+      ],
+      "setB": [
+        "challenge",
+        "commend",
+        "demand"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 56,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "decrease + reduce",
+      "explanation": "'Decrease' and 'reduce' both mean to make smaller. 'Increase' is the opposite — to make bigger. 'Deliver' means to bring, 'collect' means to gather, 'borrow' means to take temporarily. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "decrease",
+        "increase",
+        "deliver"
+      ],
+      "setB": [
+        "reduce",
+        "collect",
+        "borrow"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "arrive + reach",
+      "explanation": "'Arrive' and 'reach' both mean to get to your destination. 'Depart' is the opposite — to leave. 'Wander' means to walk aimlessly, 'explore' means to investigate, 'escape' means to break free. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "arrive",
+        "depart",
+        "wander"
+      ],
+      "setB": [
+        "explore",
+        "reach",
+        "escape"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 58,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "defend + protect",
+      "explanation": "'Defend' and 'protect' both mean to keep safe from harm. 'Attack' is the opposite — to act aggressively. 'Inspect' means to examine, 'threaten' means to warn of danger, 'warn' means to alert. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "defend",
+        "attack",
+        "inspect"
+      ],
+      "setB": [
+        "threaten",
+        "protect",
+        "warn"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 59,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "accept + agree",
+      "explanation": "'Accept' and 'agree' both mean to say yes. 'Refuse' is the opposite — to say no. 'Suggest' means to propose, 'request' means to ask, 'inform' means to tell. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "accept",
+        "refuse",
+        "suggest"
+      ],
+      "setB": [
+        "request",
+        "agree",
+        "inform"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 60,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "unite + combine",
+      "explanation": "'Unite' and 'combine' both mean to join things together. 'Separate' is the opposite — to divide apart. 'Deliver' means to bring, 'collect' means to gather, 'compete' means to try to win. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "unite",
+        "separate",
+        "deliver"
+      ],
+      "setB": [
+        "collect",
+        "combine",
+        "compete"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 61,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "solemn + serious",
+      "explanation": "'Solemn' and 'serious' both mean grave and not smiling or joking. 'Cheerful' is the opposite — bright and happy. 'Clumsy' means awkward, 'jealous' means envious, 'generous' means giving. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "solemn",
+        "cheerful",
+        "clumsy"
+      ],
+      "setB": [
+        "jealous",
+        "serious",
+        "generous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "vast + immense",
+      "explanation": "'Vast' and 'immense' both mean extremely large in size. 'Steep' describes an angle, 'shallow' means not deep, 'narrow' means not wide, 'level' means flat. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vast",
+        "steep",
+        "shallow"
+      ],
+      "setB": [
+        "immense",
+        "narrow",
+        "level"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "vivid + bright",
+      "explanation": "'Vivid' and 'bright' both mean strong and intense in colour. 'Faded' is the opposite — pale and washed out. 'Rough' and 'smooth' describe texture, 'gentle' means soft. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vivid",
+        "faded",
+        "rough"
+      ],
+      "setB": [
+        "smooth",
+        "bright",
+        "gentle"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 64,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "polite + courteous",
+      "explanation": "'Polite' and 'courteous' both mean showing good manners. 'Rude' is the opposite — lacking manners. 'Wealthy' means rich, 'famous' means well known, 'strict' means firm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "polite",
+        "rude",
+        "wealthy"
+      ],
+      "setB": [
+        "gradual",
+        "courteous",
+        "sharp"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 65,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "sturdy + robust",
+      "explanation": "'Sturdy' and 'robust' both mean strong and well-built. 'Flexible' is nearly the opposite — bendable. 'Narrow' describes width, 'steep' describes angle, 'smooth' describes texture. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "sturdy",
+        "flexible",
+        "narrow"
+      ],
+      "setB": [
+        "steep",
+        "robust",
+        "smooth"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 66,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "arrogant + conceited",
+      "explanation": "'Arrogant' and 'conceited' both mean having too high an opinion of yourself. 'Humble' is the opposite — modest and not boastful. 'Anxious' means worried, 'curious' means inquisitive, 'generous' means giving. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "arrogant",
+        "humble",
+        "anxious"
+      ],
+      "setB": [
+        "curious",
+        "conceited",
+        "generous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "vanish + disappear",
+      "explanation": "'Vanish' and 'disappear' both mean to pass out of sight. 'Emerge' is the opposite — to come into view. 'Linger' means to stay, 'remain' means to stay behind, 'surface' means to come up from below. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vanish",
+        "emerge",
+        "linger"
+      ],
+      "setB": [
+        "remain",
+        "disappear",
+        "surface"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 68,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "eager + keen",
+      "explanation": "'Eager' and 'keen' both mean enthusiastic and wanting to do something. 'Reluctant' is the opposite — not wanting to. 'Patient' means able to wait, 'grateful' means thankful, 'strict' means firm. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "eager",
+        "reluctant",
+        "patient"
+      ],
+      "setB": [
+        "grateful",
+        "keen",
+        "rough"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 69,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "honest + truthful",
+      "explanation": "'Honest' and 'truthful' both mean always telling the truth. 'Deceitful' is the opposite — deliberately misleading. 'Confident' means self-assured, 'popular' means well-liked, 'ambitious' means driven. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "honest",
+        "deceitful",
+        "confident"
+      ],
+      "setB": [
+        "wealthy",
+        "truthful",
+        "ambitious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 70,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "dull + boring",
+      "explanation": "'Dull' and 'boring' both mean not interesting. 'Exciting' is the opposite — thrilling. 'Nervous' means anxious, 'curious' means inquisitive, 'proud' means self-satisfied. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "dull",
+        "exciting",
+        "nervous"
+      ],
+      "setB": [
+        "curious",
+        "boring",
+        "proud"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 71,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "vague + unclear",
+      "explanation": "'Vague' and 'unclear' both mean not clearly expressed. 'Precise' is the opposite — exact and clear. 'Frequent' means often, 'sudden' means quick, 'permanent' means lasting forever. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "vague",
+        "precise",
+        "frequent"
+      ],
+      "setB": [
+        "sudden",
+        "unclear",
+        "permanent"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 72,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "glimpse + glance",
+      "explanation": "'Glimpse' and 'glance' both mean a very brief, quick look. 'Shout' is about sound not sight, 'listen' is hearing, 'touch' is feeling, 'smell' is scent — all different senses. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "glimpse",
+        "shout",
+        "listen"
+      ],
+      "setB": [
+        "touch",
+        "glance",
+        "smell"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 73,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "temporary + brief",
+      "explanation": "'Temporary' and 'brief' both mean lasting only a short time. 'Permanent' is the opposite — lasting forever. 'Frequent' means often, 'sudden' means quick, 'gradual' means slow. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "temporary",
+        "permanent",
+        "frequent"
+      ],
+      "setB": [
+        "sudden",
+        "brief",
+        "gradual"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 74,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "grasp + grip",
+      "explanation": "'Grasp' and 'grip' both mean to hold something firmly. 'Release' is the opposite — to let go. 'Bend' means to curve, 'fold' means to crease, 'stretch' means to extend. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "grasp",
+        "release",
+        "bend"
+      ],
+      "setB": [
+        "fold",
+        "grip",
+        "stretch"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 75,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "triumph + victory",
+      "explanation": "'Triumph' and 'victory' both mean a great success or win. 'Effort', 'attempt', 'struggle', and 'challenge' are about the process of trying — not the result. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "triumph",
+        "effort",
+        "attempt"
+      ],
+      "setB": [
+        "struggle",
+        "victory",
+        "challenge"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 76,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "soggy + damp",
+      "explanation": "'Soggy' and 'damp' both mean slightly wet. 'Frozen' means turned to ice, 'boiling' means extremely hot, 'stale' means no longer fresh, 'melted' means changed from solid to liquid. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "soggy",
+        "frozen",
+        "boiling"
+      ],
+      "setB": [
+        "stale",
+        "damp",
+        "melted"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 77,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "serene + calm",
+      "explanation": "'Serene' and 'calm' both mean peacefully quiet and free from worry. 'Turbulent' is the opposite — wild and chaotic. 'Hostile' means unfriendly, 'suspicious' means distrustful, 'ambitious' means driven. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "serene",
+        "turbulent",
+        "hostile"
+      ],
+      "setB": [
+        "suspicious",
+        "calm",
+        "ambitious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 78,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "persistent + determined",
+      "explanation": "'Persistent' and 'determined' both mean continuing firmly despite difficulties. 'Hesitant' is the opposite — uncertain and holding back. 'Indifferent' means not caring, 'rebellious' means resisting authority, 'impulsive' means acting rashly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "persistent",
+        "hesitant",
+        "indifferent"
+      ],
+      "setB": [
+        "rebellious",
+        "determined",
+        "impulsive"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 79,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "irritate + annoy",
+      "explanation": "'Irritate' and 'annoy' both mean to make someone slightly angry. 'Soothe' is the opposite — to calm and comfort. 'Impress' means to cause admiration, 'astonish' means to shock, 'persuade' means to convince. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "irritate",
+        "soothe",
+        "impress"
+      ],
+      "setB": [
+        "astonish",
+        "annoy",
+        "persuade"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 80,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "bewildered + confused",
+      "explanation": "'Bewildered' and 'confused' both mean completely unable to understand what is happening. 'Confident' is nearly the opposite. 'Suspicious' means distrustful, 'reluctant' means unwilling, 'hostile' means aggressive. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "bewildered",
+        "confident",
+        "suspicious"
+      ],
+      "setB": [
+        "reluctant",
+        "confused",
+        "hostile"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 81,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "nimble + agile",
+      "explanation": "'Nimble' and 'agile' both mean able to move quickly and lightly. 'Rigid' is nearly opposite — stiff and unbending. 'Fragile' means easily broken, 'sturdy' means strong, 'clumsy' is the opposite of nimble. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "nimble",
+        "rigid",
+        "fragile"
+      ],
+      "setB": [
+        "sturdy",
+        "agile",
+        "clumsy"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 82,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "prosperous + affluent",
+      "explanation": "'Prosperous' and 'affluent' both mean wealthy and financially successful. 'Impoverished' is the opposite — extremely poor. 'Prominent' means well known, 'notorious' means famous for bad things, 'ambitious' means driven. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "prosperous",
+        "impoverished",
+        "prominent"
+      ],
+      "setB": [
+        "notorious",
+        "affluent",
+        "ambitious"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 83,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "malevolent + wicked",
+      "explanation": "'Malevolent' means wishing evil on others, and 'wicked' means morally bad — closest in meaning. The Latin root 'mal-' means bad (like in 'malfunction'). 'Innocent' is the opposite. 'Cautious' means careful, 'suspicious' means distrustful, 'humble' means modest. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "malevolent",
+        "innocent",
+        "cautious"
+      ],
+      "setB": [
+        "suspicious",
+        "wicked",
+        "humble"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 84,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "gregarious + sociable",
+      "explanation": "'Gregarious' and 'sociable' both mean enjoying the company of others. 'Solitary' is the opposite — preferring to be alone. 'Anxious' means worried, 'nervous' means uneasy, 'stubborn' means refusing to change. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "gregarious",
+        "solitary",
+        "anxious"
+      ],
+      "setB": [
+        "sociable",
+        "nervous",
+        "stubborn"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "shrewd + astute",
+      "explanation": "'Shrewd' and 'astute' both mean having sharp judgement. 'Naive' is the opposite — lacking experience. 'Reserved' means quiet, 'impulsive' means acting without thinking, 'modest' means humble. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "shrewd",
+        "naive",
+        "reserved"
+      ],
+      "setB": [
+        "impulsive",
+        "astute",
+        "modest"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 86,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "inevitable + unavoidable",
+      "explanation": "'Inevitable' and 'unavoidable' both mean certain to happen. 'Optional' is the opposite — you can choose. 'Gradual' means slow, 'sudden' means quick, 'unlikely' means probably won't happen. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "inevitable",
+        "optional",
+        "gradual"
+      ],
+      "setB": [
+        "sudden",
+        "unavoidable",
+        "unlikely"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 87,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "scrupulous + painstaking",
+      "explanation": "'Scrupulous' and 'painstaking' both mean taking extreme care over every detail. 'Hasty' is the opposite — done too quickly. 'Ambitious' means driven, 'rushed' means done too fast, 'modest' means humble. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scrupulous",
+        "hasty",
+        "ambitious"
+      ],
+      "setB": [
+        "painstaking",
+        "rushed",
+        "modest"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "negligent + careless",
+      "explanation": "'Negligent' and 'careless' both mean failing to take proper care. 'Attentive' is the opposite — paying close attention. 'Strict' means firm, 'popular' means well-liked, 'ambitious' means driven. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "attentive",
+        "round",
+        "negligent"
+      ],
+      "setB": [
+        "gradual",
+        "careless",
+        "ambitious"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 89,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "obscure + vague",
+      "explanation": "'Obscure' and 'vague' both mean not clear or hard to understand. 'Prominent' is the opposite — standing out clearly. 'Trivial' means unimportant, 'significant' means important, 'remarkable' means worth noticing. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "obscure",
+        "prominent",
+        "trivial"
+      ],
+      "setB": [
+        "significant",
+        "vague",
+        "remarkable"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 90,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "resilient + tough",
+      "explanation": "'Resilient' and 'tough' both mean able to recover from difficulties. 'Fragile' is the opposite — easily broken. 'Strict' means firm, 'popular' means well-liked, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "resilient",
+        "fragile",
+        "heavy"
+      ],
+      "setB": [
+        "unusual",
+        "tough",
+        "regular"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 91,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "scrutinise + examine",
+      "explanation": "'Scrutinise' and 'examine' both mean to look at something very carefully. 'Overlook' is the opposite — to miss or fail to notice. 'Dismiss' means to reject, 'reject' means to refuse, 'discard' means to throw away. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scrutinise",
+        "overlook",
+        "dismiss"
+      ],
+      "setB": [
+        "examine",
+        "reject",
+        "discard"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "tenacious + dogged",
+      "explanation": "'Tenacious' and 'dogged' both mean holding on firmly and refusing to give up. 'Yielding' is the opposite — giving way easily. 'Indifferent' means not caring, 'apathetic' means lacking enthusiasm, 'submissive' means giving in. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "yielding",
+        "tenacious",
+        "indifferent"
+      ],
+      "setB": [
+        "apathetic",
+        "submissive",
+        "dogged"
+      ],
+      "correctPair": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 93,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "clandestine + secret",
+      "explanation": "'Clandestine' and 'secret' both mean done in a hidden way. 'Public' is the opposite — open for all to see. 'Official' means formally approved, 'formal' means following rules, 'open' means accessible. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "public",
+        "official",
+        "clandestine"
+      ],
+      "setB": [
+        "formal",
+        "open",
+        "secret"
+      ],
+      "correctPair": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 94,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "sublime + magnificent",
+      "explanation": "'Sublime' and 'magnificent' both mean awe-inspiringly beautiful or impressive. 'Dreadful' is the opposite — terrible. 'Ordinary' means unremarkable, 'average' means middle, 'terrible' means very bad. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "dreadful",
+        "ordinary",
+        "sublime"
+      ],
+      "setB": [
+        "average",
+        "magnificent",
+        "terrible"
+      ],
+      "correctPair": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 95,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "valiant + heroic",
+      "explanation": "'Valiant' and 'heroic' both mean showing great bravery in danger. 'Cautious' means careful, 'modest' means humble, 'reckless' means careless, 'timid' means lacking courage (nearly opposite!). ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "valiant",
+        "cautious",
+        "reckless"
+      ],
+      "setB": [
+        "modest",
+        "heroic",
+        "timid"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 96,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "sparse + meagre",
+      "explanation": "'Sparse' and 'meagre' both mean present in very small amounts. 'Abundant' is the opposite — present in large quantities. 'Frequent' means often, 'occasional' means sometimes, 'regular' means at fixed intervals. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "abundant",
+        "sparse",
+        "frequent"
+      ],
+      "setB": [
+        "occasional",
+        "meagre",
+        "regular"
+      ],
+      "correctPair": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 97,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "absolve + forgive",
+      "explanation": "'Absolve' and 'forgive' both mean to declare someone free from blame. 'Condemn' is the opposite — to declare guilty. 'Challenge' means to test, 'dispute' means to argue, 'forbid' means to ban. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "absolve",
+        "condemn",
+        "challenge"
+      ],
+      "setB": [
+        "dispute",
+        "forgive",
+        "challenge"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 98,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "compel + force",
+      "explanation": "'Compel' and 'force' both mean to make someone do something against their will. 'Reluctant' means unwilling, 'voluntary' means done by choice (not forced), 'optional' means not required, 'ambitious' means driven. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "reluctant",
+        "voluntary",
+        "compel"
+      ],
+      "setB": [
+        "force",
+        "optional",
+        "ambitious"
+      ],
+      "correctPair": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "deteriorate + decline",
+      "explanation": "'Deteriorate' and 'decline' both mean to get progressively worse over time. 'Improve' is the opposite — to get better. 'Flourish' also means the opposite — to thrive. Watch for these antonym traps! ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "deteriorate",
+        "improve",
+        "light"
+      ],
+      "setB": [
+        "serious",
+        "decline",
+        "flourish"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 100,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "provoke + aggravate",
+      "explanation": "'Provoke' and 'aggravate' both mean to deliberately annoy or make things worse. 'Soothe' is the opposite — to calm. 'Impress' means to cause admiration, 'persuade' means to convince, 'inspire' means to motivate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "provoke",
+        "soothe",
+        "impress"
+      ],
+      "setB": [
+        "persuade",
+        "aggravate",
+        "inspire"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 101,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "afraid + frightened",
+      "explanation": "'Afraid' and 'frightened' both mean feeling fear. 'Cheerful' means happy, 'strict' means firm, 'popular' means well-liked, 'famous' means well known — none describe fear. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "afraid",
+        "cheerful",
+        "steep"
+      ],
+      "setB": [
+        "popular",
+        "frightened",
+        "famous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 102,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "tidy + neat",
+      "explanation": "'Tidy' and 'neat' both mean arranged in an orderly way. 'Loud' describes volume, 'frozen' means turned to ice, 'melted' means turned liquid, 'boiling' means extremely hot. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "tidy",
+        "loud",
+        "frozen"
+      ],
+      "setB": [
+        "melted",
+        "neat",
+        "boiling"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 103,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "glad + pleased",
+      "explanation": "'Glad' and 'pleased' both mean feeling happy about something. 'Grumpy' means bad-tempered (nearly opposite!). 'Early' means before time, 'late' means after time, 'firm' means solid or strict. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "glad",
+        "grumpy",
+        "early"
+      ],
+      "setB": [
+        "late",
+        "pleased",
+        "firm"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 104,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "keep + hold",
+      "explanation": "'Keep' and 'hold' both mean to have something in your possession. 'Drop' means to let fall (nearly opposite!). 'Fetch' means to go and get, 'carry' means to transport, 'leave' means to go away. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "keep",
+        "drop",
+        "fetch"
+      ],
+      "setB": [
+        "carry",
+        "hold",
+        "leave"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 105,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "below + under",
+      "explanation": "'Below' and 'under' both mean in a lower position. 'Beside' means next to, 'above' means higher (the opposite!). 'Over' means above, 'near' means close to. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "below",
+        "beside",
+        "above"
+      ],
+      "setB": [
+        "over",
+        "near",
+        "under"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 106,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "leap + jump",
+      "explanation": "'Leap' and 'jump' both mean to spring up from the ground. 'Crawl' means to move on hands and knees, 'throw' means to send through the air, 'catch' means to grab, 'creep' means to move slowly. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "leap",
+        "crawl",
+        "throw"
+      ],
+      "setB": [
+        "catch",
+        "creep",
+        "jump"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 107,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "thin + slim",
+      "explanation": "'Thin' and 'slim' both mean having little width. 'Deep' describes depth, 'tall' describes height, 'high' means at a great height, 'wide' means broad. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "thin",
+        "deep",
+        "tall"
+      ],
+      "setB": [
+        "high",
+        "wide",
+        "slim"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 108,
+      "difficulty": 1,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "damp + wet",
+      "explanation": "'Damp' and 'wet' both mean slightly covered in water. 'Cold' describes temperature, 'bright' describes light, 'shiny' means reflecting light, 'dark' means lacking light. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "damp",
+        "cold",
+        "bright"
+      ],
+      "setB": [
+        "shiny",
+        "wet",
+        "dark"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 109,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "odour + smell",
+      "explanation": "'Odour' and 'smell' both mean a scent detected through your nose. 'Flavour' is taste, 'texture' is touch, 'pattern' is sight, 'colour' is visual — all different senses. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "odour",
+        "flavour",
+        "texture"
+      ],
+      "setB": [
+        "pattern",
+        "smell",
+        "colour"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 110,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "voyage + journey",
+      "explanation": "'Voyage' and 'journey' both mean a long trip from one place to another. 'Detour' means going a different way, 'shortcut' means a quicker route, 'delay' means being held up, 'route' means the path taken. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "voyage",
+        "detour",
+        "shortcut"
+      ],
+      "setB": [
+        "delay",
+        "journey",
+        "route"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "assist + help",
+      "explanation": "'Assist' and 'help' both mean to give support. 'Prevent' is nearly the opposite — to stop something. 'Demand' means to insist, 'request' means to ask, 'block' means to obstruct. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "assist",
+        "prevent",
+        "demand"
+      ],
+      "setB": [
+        "request",
+        "block",
+        "help"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 112,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "weary + exhausted",
+      "explanation": "'Weary' and 'exhausted' both mean extremely tired. 'Strict' means firm, 'cautious' means careful, 'bold' means brave, 'popular' means well-liked — none relate to tiredness. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "weary",
+        "flat",
+        "cautious"
+      ],
+      "setB": [
+        "bold",
+        "exhausted",
+        "ancient"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 113,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "stumble + trip",
+      "explanation": "'Stumble' and 'trip' both mean to catch your foot and nearly fall. 'Crumble' means to break into pieces, 'stretch' means to extend, 'bend' means to curve, 'break' means to separate. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "stumble",
+        "crumble",
+        "stretch"
+      ],
+      "setB": [
+        "trip",
+        "bend",
+        "break"
+      ],
+      "correctPair": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "scarce + rare",
+      "explanation": "'Scarce' and 'rare' both mean not found in large numbers. 'Frequent' is the opposite — happening often. 'Expensive' means costly, 'cheap' means low-priced, 'popular' means well-liked. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "scarce",
+        "frequent",
+        "expensive"
+      ],
+      "setB": [
+        "cheap",
+        "modern",
+        "rare"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 115,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "permit + allow",
+      "explanation": "'Permit' and 'allow' both mean to give permission. 'Refuse' and 'forbid' are both opposites — refusing or banning something. 'Borrow' means to take temporarily, 'lend' means to give temporarily. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "permit",
+        "refuse",
+        "borrow"
+      ],
+      "setB": [
+        "lend",
+        "forbid",
+        "allow"
+      ],
+      "correctPair": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 116,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "restore + renovate",
+      "explanation": "'Restore' and 'renovate' both mean to bring something back to good condition. 'Demolish' is the opposite — to completely destroy. 'Borrow' means to take temporarily, 'lend' means to give, 'neglect' means to ignore. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "restore",
+        "demolish",
+        "borrow"
+      ],
+      "setB": [
+        "lend",
+        "renovate",
+        "neglect"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 117,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "cunning + sly",
+      "explanation": "'Cunning' and 'sly' both mean clever in a sneaky, deceptive way. 'Honest' is the opposite — truthful and open. 'Clumsy' means awkward, 'awkward' is similar but cunning/sly is by far the closest pair. 'Generous' means giving. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "cunning",
+        "honest",
+        "clumsy"
+      ],
+      "setB": [
+        "formal",
+        "sly",
+        "generous"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 118,
+      "difficulty": 2,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "ancient + prehistoric",
+      "explanation": "'Ancient' and 'prehistoric' both mean belonging to the very distant past. 'Modern' is the opposite — present day. 'Steep' describes angle, 'narrow' describes width, 'popular' means well-liked. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "ancient",
+        "modern",
+        "steep"
+      ],
+      "setB": [
+        "narrow",
+        "prehistoric",
+        "distant"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 119,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "prudent + wary",
+      "explanation": "'Prudent' and 'wary' both mean acting with careful thought about possible dangers. 'Reckless' is the opposite — acting without thinking. 'Ambitious' means driven, 'popular' means well-liked, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "prudent",
+        "reckless",
+        "ambitious"
+      ],
+      "setB": [
+        "grateful",
+        "wary",
+        "occasional"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 120,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "conquest + achievement",
+      "explanation": "'Conquest' and 'achievement' both mean a great success or accomplishment. 'Surrender' is the opposite — giving up. 'Endeavour' means a determined effort, 'attempt' means a try, 'obstacle' means a barrier. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "conquest",
+        "surrender",
+        "endeavour"
+      ],
+      "setB": [
+        "attempt",
+        "achievement",
+        "obstacle"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 121,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "diminish + dwindle",
+      "explanation": "'Diminish' and 'dwindle' both mean to become gradually smaller over time. 'Expand' is the opposite — to grow larger. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "diminish",
+        "expand",
+        "steep"
+      ],
+      "setB": [
+        "honest",
+        "dwindle",
+        "annual"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 122,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "absurd + ridiculous",
+      "explanation": "'Absurd' and 'ridiculous' both mean completely unreasonable or wildly silly. 'Sensible' is the opposite — practical. 'Peculiar' means strange (related but weaker). 'Mysterious' means puzzling, 'conventional' means traditional. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "absurd",
+        "sensible",
+        "peculiar"
+      ],
+      "setB": [
+        "mysterious",
+        "ridiculous",
+        "conventional"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 123,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "absorb + assimilate",
+      "explanation": "'Absorb' and 'assimilate' both mean to take in and make part of a whole. 'Repel' is the opposite — to push away. 'Distribute' means to share out, 'inspect' means to examine, 'radiate' means to send out. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "absorb",
+        "repel",
+        "distribute"
+      ],
+      "setB": [
+        "inspect",
+        "assimilate",
+        "radiate"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 124,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "lithe + supple",
+      "explanation": "'Lithe' and 'supple' both mean flexible and moving gracefully. 'Rigid' is the opposite — stiff and unbending. 'Muscular' means having strong muscles (strong but not necessarily flexible), 'clumsy' means awkward, 'sluggish' means slow. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "lithe",
+        "rigid",
+        "muscular"
+      ],
+      "setB": [
+        "clumsy",
+        "supple",
+        "sluggish"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 125,
+      "difficulty": 3,
+      "questionType": "pick-from-sets",
+      "question": "Choose one word from each group that are closest in meaning.",
+      "options": null,
+      "correctAnswer": "obsolete + outdated",
+      "explanation": "'Obsolete' and 'outdated' both mean no longer in use because something better has replaced it. 'Modern' is the opposite — present day. 'Popular' means well-liked, 'famous' means well known. ✓",
+      "hasVisualComponent": false,
+      "visualComponent": null,
+      "image": null,
+      "setA": [
+        "obsolete",
+        "modern",
+        "nervous"
+      ],
+      "setB": [
+        "coastal",
+        "outdated",
+        "pleasant"
+      ],
+      "correctPair": [
+        0,
+        1
+      ]
+    }
+  ]
+}

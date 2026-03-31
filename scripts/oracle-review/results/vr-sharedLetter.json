@@ -1,0 +1,99 @@
+{
+  "reviewedAt": "2026-03-30T15:30:00.000Z",
+  "topic": "sharedLetter",
+  "subject": "verbalreasoning",
+  "qualityScore": 8,
+  "summary": {
+    "questionsReviewed": 125,
+    "lessonsReviewed": 10,
+    "issuesFound": 8,
+    "bySeverity": {
+      "critical": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 3
+    },
+    "difficultyAssessment": "Distribution is good: D1:38 (30%), D2:50 (40%), D3:37 (30%), which matches the GL target of ~30/40/30 almost exactly. Difficulty progression is well-calibrated: D1 uses short common fragments (2-3 letters each side, common letters like T, S, N, R), D2 uses longer fragments (3-4 letters, less common letters like K, W, B, M), D3 uses multi-syllable words with 4-6 letter fragments (ORBIT+TRADE, PLASTER+ROBIN, ABSORB+BENCH). This is the strongest difficulty calibration of the three topics reviewed.",
+    "coverageAssessment": "Excellent coverage of the format. All questions follow the correct GL Type 5 format: two word pairs, single shared letter creates 4 valid words. Answer letters span the full alphabet including less common letters (K, W, B, G, M, H, P) not just the obvious T, S, N, R. D3 questions appropriately test longer words and vocabulary knowledge (DISTURB, SUPERB, COUNCIL, DRAGON, GALLOP, BISHOP). No vowel-answer questions were found in the bank despite the Oracle noting this as a D3 pattern — this is the main coverage gap.",
+    "teachingEfficacyAssessment": "Lessons are well-designed with 8 sub-concepts covering vowel shared letters, consonant shared letters, two-word-pair format, restrictive-word strategy, and checking all four words. The 'most restrictive word first' strategy directly matches the Oracle recommendation. Visual components use shared-pair LetterTiles mode appropriately. All 125 questions mapped with high confidence and 0 unmapped, though 5 sub-concepts are orphaned. The teach screens use clear worked examples with the correct reasoning process.",
+    "topPriorities": [
+      "Add 5-10 questions where the answer is a vowel (A, E, I, O, U) to cover this Oracle-specified D3 pattern",
+      "Reduce orphaned sub-concepts from 5 to 0 by mapping relevant questions",
+      "Add more variety in D2 tip content — currently cycling the same 10 tips"
+    ]
+  },
+  "issues": [
+    {
+      "id": "VR-SL-001",
+      "severity": "high",
+      "type": "coverage-gap",
+      "title": "No questions with vowel answers despite Oracle flagging this as a key D3 pattern",
+      "description": "The Oracle specification explicitly states: 'D3 (Hard ~30%): vowel answers, strong distractors that work for one pair but fail on the other'. The lesson content teaches vowel answers (sub-concept 'vowel-shared' with worked examples like TE(?)RM = A → TEA+ARM). However, reviewing all 125 questions, none appear to have a vowel as the correct answer. Every answer is a consonant (T, S, N, R, P, B, D, G, W, M, H, K, L). This is a significant gap because vowel-answer questions are genuinely harder and appear on GL papers.",
+      "affectedItems": ["D3 questions", "vowel-shared sub-concept"],
+      "recommendation": "Add 5-10 vowel-answer questions at D2-D3 difficulty. Examples from Oracle: SNO(?)ILE / GRA(?)ELL → B (already consonant, wrong example). Better: TE(?)RM / PE(?)ND → A (TEA+ARM, PEA+AND). Also: SE(?)CH / P(?)RT → A (SEA+ACH... no). Need careful construction: FE(?)TH / SP(?)CE → A (FEAT+ATH? no). The lesson already has TE(?)RM example which works."
+    },
+    {
+      "id": "VR-SL-002",
+      "severity": "medium",
+      "type": "mapping-gap",
+      "title": "5 of 8 sub-concepts are orphaned — lessons without mapped questions",
+      "description": "The mapping file shows 5 orphanSubConcepts out of 8 total. This means the majority of lesson content isn't connected to practice questions. Children learn strategies in lessons that they can't directly apply in the subsequent quiz. Only 3 sub-concepts have questions mapped to them.",
+      "affectedItems": ["5 orphaned sub-concepts"],
+      "recommendation": "Review each orphaned sub-concept and either: (a) map existing questions to it based on the skill required, or (b) create new questions that specifically target that sub-concept's learning goal."
+    },
+    {
+      "id": "VR-SL-003",
+      "severity": "medium",
+      "type": "explanation-quality",
+      "title": "Tips are repetitive — same 10 tips cycle across all 125 questions",
+      "description": "Every question uses one of these tips on rotation: 'Start with the most restrictive fragment', 'Always check ALL FOUR words', 'Common answer letters are T, S, N, R', 'If no consonant works, try vowels', 'You only have 5 options', 'Both pairs must work with the SAME letter', 'Look for common word endings (-ANK, -OOL, -EST)', 'Short fragments like SK_ or QU_ are very restrictive', 'Short fragments are very restrictive', 'systematically try each one'. While these are all good tips, the mechanical rotation means children see the same advice repeatedly without progression.",
+      "affectedItems": ["All questions"],
+      "recommendation": "Vary tips by difficulty. D1: basic strategy tips. D2: refinement tips specific to the question's challenge. D3: advanced tips like 'Try less common consonants — B, G, K, W, H' or 'Longer fragments mean more letters to check — be systematic'. Also add tips that teach vocabulary ('HELM means the wheel or tiller of a ship')."
+    },
+    {
+      "id": "VR-SL-004",
+      "severity": "medium",
+      "type": "answer-distribution",
+      "title": "T is over-represented as the correct answer, especially in D1",
+      "description": "In the D1 block (Q1-Q38), the letter T appears as the correct answer disproportionately often: Q1(T), Q7(T), Q13(T), Q20(T), Q21(T), Q22(T), Q23(T), Q24(T), Q28(T). That's 9 out of 38 D1 questions (24%) with answer T. While T is indeed the most common shared letter in English, this over-representation means children who always guess T will score well on D1 without learning the actual skill. GL papers use a wider distribution.",
+      "affectedItems": ["D1 questions"],
+      "recommendation": "Reduce T answers to ~15% of D1 (5-6 out of 38) and increase representation of less common letters like W, G, M, B at D1 level."
+    },
+    {
+      "id": "VR-SL-005",
+      "severity": "medium",
+      "type": "distractor-quality",
+      "title": "Some D1 questions have obviously wrong distractors",
+      "description": "In several D1 questions, the 5 options include letters that clearly cannot start common words. For example, Q16 AD(?)IG / OD(?)OOR: options are D, B, T, N, S — all are plausible. This is good. But in some questions, the options are so obviously limited that the question becomes trivial. The distractor quality is generally acceptable but could be improved by including letters that work for ONE pair but not the other, testing the crucial 'check all four words' skill.",
+      "affectedItems": ["Some D1 questions"],
+      "recommendation": "Ensure at least one distractor in each question is a letter that completes ONE word pair successfully but fails on the other. This directly tests the most important exam skill: checking all four words."
+    },
+    {
+      "id": "VR-SL-006",
+      "severity": "low",
+      "type": "progression",
+      "title": "D3 questions could include more uncommon vocabulary to match Oracle specification",
+      "description": "The Oracle states D3 should include 'Uncommon vocabulary (HELM, SNOB, BILE, SLEW)'. While D3 questions do use longer words (ORBIT, DISTURB, PLASTER, COUNCIL, GALLOP, BISHOP), the resulting words are mostly common English. Adding questions that create less familiar words (like HELM, DIRK, BILE) would better match GL difficulty and build vocabulary.",
+      "affectedItems": ["D3 questions"],
+      "recommendation": "Add 3-5 D3 questions that produce less common but valid words. Oracle examples: CAS(?)NEW / DIR(?)IDS → K (CASK+KNEW, DIRK+KIDS). SNO(?)ILE / GRA(?)ELL → B (SNOB+BILE, GRAB+BELL)."
+    },
+    {
+      "id": "VR-SL-007",
+      "severity": "low",
+      "type": "lesson-quality",
+      "title": "Lesson interact screen uses visual props that may not match the quiz format",
+      "description": "The lesson screens use 'shared-pair' mode LetterTiles with format like 'TE(?)RM' and 'P(?)GE'. However, the actual quiz questions present as 'CA ( ? ) EN' with spaces and parentheses. While the concept is the same, children may need a moment to connect the lesson format to the quiz format. Minor consistency issue.",
+      "affectedItems": ["Lesson screens"],
+      "recommendation": "Consider aligning lesson visual format with quiz question format so children recognise the pattern immediately when they move from lesson to quiz."
+    },
+    {
+      "id": "VR-SL-008",
+      "severity": "low",
+      "type": "verification-note",
+      "title": "All 125 answers verified as correct — no wrong answers found",
+      "description": "Systematic verification of all questions confirmed every answer creates 4 valid English words. Examples verified: Q1 CA(T)EN/BU(T)ANK → CAT+TEN+BUT+TANK ✓, Q89 ORBI(T)RADE/CHAR(T)IGER → ORBIT+TRADE+CHART+TIGER ✓, Q95 ABSOR(B)ENCH/SUPER(B)RAIN → ABSORB+BENCH+SUPERB+BRAIN ✓, Q100 COUNCI(L)OTUS/PENCI(L)UNCH → COUNCIL+LOTUS+PENCIL+LUNCH ✓. This is the strongest answer accuracy of the three topics reviewed.",
+      "affectedItems": [],
+      "recommendation": "No action needed. This is a positive finding confirming answer quality."
+    }
+  ]
+}

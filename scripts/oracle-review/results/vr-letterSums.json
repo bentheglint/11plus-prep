@@ -1,0 +1,155 @@
+{
+  "reviewedAt": "2026-03-30T20:00:00.000Z",
+  "topic": "letterSums",
+  "subject": "verbalreasoning",
+  "qualityScore": 7,
+  "summary": {
+    "questionsReviewed": 128,
+    "lessonsReviewed": 10,
+    "mappingsReviewed": 128,
+    "issuesFound": 11,
+    "bySeverity": { "critical": 1, "high": 2, "medium": 5, "low": 3 },
+    "difficultyAssessment": "D1:28 (22%), D2:56 (44%), D3:44 (34%) — D1 is significantly under-represented (8% below target of 30%) while D2 is 4% over and D3 is 4% over. This imbalance means children starting the topic get fewer easy questions to build confidence. The D1 questions themselves are appropriately easy (3-letter word values like CAT, BED, AGE) but there are not enough of them. Difficulty calibration within tiers is mostly correct: D1 = simple 3-letter word addition, D2 = 4-letter words and comparison questions, D3 = 5-letter words, mixed operations, and BODMAS challenges. However, some D1 questions (Q15: SUN=54, Q36: RUN=53) require adding values up to 21, which is higher arithmetic than typical D1.",
+    "coverageAssessment": "Good coverage of sub-types: word value calculation (dominant, ~50%), comparison/highest-lowest (~20%), custom mappings (A=2,B=4 etc. ~10%), mixed operations with BODMAS (~10%), letter arithmetic (A+B-C ~10%). The sub-type coverage matches the Oracle spec well. Missing sub-types: 'same-value pairs' (which two words have the same value?), 'letter equations' (B + ? = J), and 'word difference' (difference between CAT and DOG) — all listed in the Oracle spec. These are genuine GL sub-types that would add variety. The custom mapping questions (Q6: A=2,B=4,C=6,D=8; Q7: A=3,B=5,C=7) are good GL-authentic variants.",
+    "teachingEfficacyAssessment": "8 sub-concepts with 10 lessons cover the core skills well. The EJOTY anchor system (E=5, J=10, O=15, T=20, Y=25) is taught prominently and reinforced across multiple lessons — this is the single most important strategy for this topic. The 'Left to Right — NOT BODMAS!' lesson addresses a critical misconception. However, there's a contradiction: Q12 (A=4, B=7, C=2, A×B−C) uses BODMAS (multiply first, then subtract, getting 26) and the explanation says 'Remember BODMAS — multiplication before subtraction', while the lesson explicitly says 'BODMAS does NOT apply to letter sums'. This is a significant pedagogical conflict. 128/128 mapped with 100% high confidence. 1 orphan sub-concept noted in meta.",
+    "topPriorities": [
+      "CRITICAL: Resolve the BODMAS contradiction — lessons say 'NOT BODMAS' but several questions require BODMAS and explanations say 'Remember BODMAS'",
+      "Increase D1 count from 28 to ~38 (add 10 easy 3-letter word value questions)",
+      "Add missing Oracle sub-types: same-value pairs, letter equations, word difference"
+    ]
+  },
+  "issues": [
+    {
+      "issueId": "VR-LS-BODMAS-001",
+      "itemType": "question",
+      "itemId": "Q12,Q14",
+      "severity": "critical",
+      "category": "pedagogical-contradiction",
+      "title": "BODMAS contradiction between lessons and questions",
+      "description": "The lesson 'Left to Right — NOT BODMAS!' explicitly teaches that BODMAS does not apply to letter sums. But Q12 (If A=4, B=7, C=2, what is A × B − C?) has the explanation 'Remember BODMAS — multiplication before subtraction' and the answer 26 (4×7=28, 28-2=26). Q14 (If A=3, B=6, C=9, what is (B × C) ÷ A?) also uses BODMAS. If a child follows the lesson's advice (left to right, no BODMAS), they would calculate Q12 as: A×B=28, then 28-C=26 — which happens to give the same answer because multiplication comes first anyway. But for Q14 with brackets, left-to-right would give B×C=54, ÷A=18 — same answer because brackets enforce order. The fundamental issue is that the lesson says 'BODMAS doesn't apply' but then questions require BODMAS and tips say 'Remember BODMAS'. A child will be confused about which rule to follow.",
+      "suggestedFix": "Decide on one consistent rule: either (a) BODMAS always applies (mathematically correct), and update the lesson to remove the 'NOT BODMAS' claim, or (b) all letter sum questions are left-to-right only (no mixed × and + in the same expression), and remove Q12/Q14-style mixed-operation questions. Option (a) is recommended since GL does test BODMAS in this context.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-DIFF-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "high",
+      "category": "difficulty-distribution",
+      "title": "D1 under-represented at 22% (target 30%)",
+      "description": "Only 28 of 128 questions (22%) are D1. The GL target is ~30% (38 questions). This means children encounter harder questions sooner than intended, which can be discouraging for a topic that already requires strong alphabet-position knowledge. The 10 missing D1 questions would provide more practice at the foundational 'calculate word value' skill before progressing to comparisons and mixed operations.",
+      "suggestedFix": "Add 10 D1 questions: 5 simple 3-letter word values (using early-alphabet letters A-M for smaller numbers), 3 'what number does letter X represent' questions, and 2 simple A+B+C addition problems. This brings D1 to 38/138 (28%), close to target.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-DIFF-002",
+      "itemType": "question",
+      "itemId": "Q5",
+      "severity": "high",
+      "category": "difficulty-mismatch",
+      "title": "Q5 rated D2 but is a simple D1 word value question",
+      "description": "Q5: 'If A=1, B=2, C=3... what is the total value of the word ICE?' Answer: I=9, C=3, E=5 = 17. This is a straightforward 3-letter word value addition using early-alphabet letters — identical in structure to Q1 (CAT=24), Q2 (BED=11), Q3 (AGE=13), all of which are D1. There is no reason for ICE to be D2. The letters I, C, E are all in the first half of the alphabet.",
+      "suggestedFix": "Downgrade to D1. This would also help address the D1 under-representation issue.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-DIFF-003",
+      "itemType": "question",
+      "itemId": "Q9",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q9 rated D2 but PIG=32 is simple enough for D1",
+      "description": "Q9: 'What is the total value of PIG?' P=16, I=9, G=7 = 32. While P is in the second half of the alphabet, the calculation is straightforward addition of three numbers. This is comparable to Q15 (SUN: S=19, U=21, N=14 = 54) which is rated D1. If SUN is D1 with values up to 21, then PIG with values up to 16 should also be D1.",
+      "suggestedFix": "Downgrade to D1 for consistency with Q15 (SUN) and other D1 word-value questions.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-DIFF-004",
+      "itemType": "question",
+      "itemId": "Q13",
+      "severity": "medium",
+      "category": "difficulty-mismatch",
+      "title": "Q13 rated D3 but FACE=15 is simple 4-letter addition",
+      "description": "Q13: 'What is the total value of FACE?' F=6, A=1, C=3, E=5 = 15. This is rated D3 but uses only early-alphabet letters (all ≤6) and requires straightforward addition. 4-letter word values are D2 in the Oracle spec. The sum (15) is actually smaller than many D1 questions. This should be D2 at most.",
+      "suggestedFix": "Downgrade to D2. True D3 word value questions should use 5+ letter words with late-alphabet letters (e.g., YOUTH = 25+15+21+20+8 = 89).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-TIP-001",
+      "itemType": "question",
+      "itemId": "Q8,Q17,Q25,Q33,Q41",
+      "severity": "medium",
+      "category": "misleading-tip",
+      "title": "Tips reference BODMAS on pure addition questions",
+      "description": "Multiple pure word-value addition questions include the tip 'Remember BODMAS! Multiplication before addition when there are mixed operations.' However, these questions contain no multiplication — they are pure addition (e.g., Q8 DOG: D+O+G, Q17 CUP: C+U+P). This tip is irrelevant and potentially confusing, especially given the BODMAS lesson contradiction already identified.",
+      "suggestedFix": "Remove BODMAS tips from pure addition questions. Only show BODMAS-related tips on questions that actually involve mixed operations.",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-TIP-002",
+      "itemType": "question",
+      "itemId": "Q4,Q10,Q28,Q29,Q35,Q41",
+      "severity": "medium",
+      "category": "misleading-tip",
+      "title": "Tips reference double letters on questions without double letters",
+      "description": "The tip 'Watch out for double letters — count them twice (BELL = B+E+L+L)!' appears on comparison questions where none of the option words contain double letters. For example, Q4 (FIG, HEN, APE, COW, DOG — none have doubles), Q20 (FIG — no doubles). While the general advice is sound, it's not relevant to the specific question.",
+      "suggestedFix": "Only show the double-letter tip on questions where at least one option word contains a repeated letter (e.g., QUEEN with two E's in Q40).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-MAP-001",
+      "itemType": "mapping",
+      "itemId": "Q5→mixed-operations,Q8→mixed-operations",
+      "severity": "medium",
+      "category": "mapping-mismatch",
+      "title": "Pure addition questions mapped to 'Mixed Operations' sub-concept",
+      "description": "Q5 (ICE: I+C+E=17) and Q8 (DOG: D+O+G=26) are pure addition questions but mapped to the 'Mixed Addition and Subtraction' sub-concept. These questions contain no subtraction or mixed operations. They should be mapped to 'Adding Letter Values' (simple-addition) instead.",
+      "suggestedFix": "Remap Q5 and Q8 to the 'simple-addition' sub-concept (Adding Letter Values).",
+      "oracleConfidence": "high",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-GAP-001",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "Missing Oracle sub-type: same-value word pairs",
+      "description": "The Oracle spec lists 'Same-value pairs — Which two words have the same value? (calculate all)' as a sub-type. This is not represented in the question bank. This sub-type tests efficient estimation and comparison — a different skill from simple calculation.",
+      "suggestedFix": "Add 5-8 questions at D2/D3 asking 'Which two of these words have the same total value?' with 5 word options. Children must calculate all five and find the matching pair.",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-GAP-002",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "Missing Oracle sub-type: letter equations (find missing letter)",
+      "description": "The Oracle spec lists 'Letter equations — B + ? = J (find missing letter)' and 'Complete equation — What letter makes C + ? = H?' These are not represented. These reverse-engineering questions test a different cognitive skill (working backwards from a target) compared to forward calculation.",
+      "suggestedFix": "Add 5-8 questions at D2/D3 in the format 'If A=1, B=2... what letter completes the equation C + ? = H?' (answer: E, because 3 + 5 = 8).",
+      "oracleConfidence": "medium",
+      "status": "open"
+    },
+    {
+      "issueId": "VR-LS-GAP-003",
+      "itemType": "question",
+      "itemId": "general",
+      "severity": "low",
+      "category": "missing-coverage",
+      "title": "Missing Oracle sub-type: word difference",
+      "description": "The Oracle spec lists 'Word difference — Difference between CAT and DOG?' as a sub-type. This requires calculating two word values and finding the difference — a two-step problem that is not currently tested.",
+      "suggestedFix": "Add 3-5 questions at D2/D3 asking for the difference between two words' total values.",
+      "oracleConfidence": "low",
+      "status": "open"
+    }
+  ]
+}

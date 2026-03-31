@@ -1,0 +1,1751 @@
+{
+  "meta": {
+    "subject": "maths",
+    "topic": "sequences",
+    "displayName": "Sequences",
+    "extractedAt": "2026-03-30T13:51:13.612Z",
+    "subConceptCount": 8,
+    "lessonCount": 16,
+    "screenCount": 64,
+    "evalFailures": 0
+  },
+  "subConcepts": [
+    {
+      "id": "constant-difference",
+      "name": "Finding the Constant Difference",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "constant-diff-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to find the difference between neighbouring terms (each number in the pattern)",
+            "How to check the difference is constant"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Ben",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the pattern: 7, 13, 19, 25, 31?",
+              "body": "Ben counts the number of tiles in each row of a growing pattern: **7, 13, 19, 25, 31**. There's a pattern hiding here! The secret is to look at the **gaps** between the numbers.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  7,
+                  13,
+                  19,
+                  25,
+                  31
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Subtract each pair!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Subtract, check, then confirm the constant difference. ✓",
+                "incorrectFeedback": "Not quite — subtract a pair first, then check another pair, then state the rule."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is the constant difference in the sequence **5, 14, 23, 32, 41**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the constant difference?",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "That's right! Each number is **9** more than the last ✓",
+                "incorrectFeedback": "Not quite! Subtract any two neighbours: 14 − 5 = **9**."
+              },
+              "visualProps": {
+                "terms": [
+                  5,
+                  14,
+                  23,
+                  32,
+                  41
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding the difference — the recipe!",
+              "body": "To find the constant difference in any sequence:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Subtract each number from the next",
+                    "why": "e.g. 13 − 7 = 6, 19 − 13 = 6, 25 − 19 = 6"
+                  },
+                  {
+                    "text": "Step 2: Check ALL the differences are the same",
+                    "why": "If they're all equal, it's a constant difference"
+                  },
+                  {
+                    "text": "Step 3: Write the rule",
+                    "why": "e.g. 'The difference is +6' ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "constant-diff-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid miscounting the difference",
+            "Why you must check ALL gaps, not just the first one"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Holly's mistake!",
+              "body": "Holly finds the difference in a sequence: **5, 12, 19, 26, 33**.\n\nHolly says: \"The difference is **5**.\" That's not right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Sequence: 5, 12, 19, 26, 33",
+                    "why": "Holly says difference = 5"
+                  },
+                  {
+                    "text": "But let's check: 12 − 5 = 7",
+                    "why": "Not 5!"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Always subtract to check!",
+              "body": "Holly counted the gap on her fingers but started counting from 5 instead of 6. The correct difference is 12 − 5 = 7, not 5.\n\nThe only way to be sure is to **subtract**: second number minus first number.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "12 − 5",
+                    "result": "= 7"
+                  },
+                  {
+                    "text": "19 − 12",
+                    "result": "= 7"
+                  },
+                  {
+                    "text": "26 − 19",
+                    "result": "= 7"
+                  },
+                  {
+                    "text": "33 − 26",
+                    "result": "= 7"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the real difference?",
+              "body": "What is the **correct** constant difference for **4, 13, 22, 31, 40**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The constant difference is:",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Spot on! 13 − 4 = **9** ✓",
+                "incorrectFeedback": "Not quite! Subtract: 13 − 4 = **9**. Always subtract to find the difference!"
+              },
+              "visualProps": {
+                "terms": [
+                  4,
+                  13,
+                  22,
+                  31,
+                  40
+                ],
+                "differences": [
+                  "+9",
+                  "+9",
+                  "+9",
+                  "+9"
+                ],
+                "showDifferences": false,
+                "showNext": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Subtract — don't guess!",
+              "body": "The most common mistakes with differences:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Don't confuse the first NUMBER with the difference",
+                    "why": "The first number is where it starts, not how big the jumps are"
+                  },
+                  {
+                    "text": "Don't count on fingers from the first number",
+                    "why": "Subtract instead: next number − current number"
+                  },
+                  {
+                    "text": "Check at least TWO gaps to be sure",
+                    "why": "If they're both the same, you've got it ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "continue-sequence",
+      "name": "Continuing a Sequence Using the Rule",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "continue-seq-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to continue a sequence forwards",
+            "How to work backwards to find missing earlier terms"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What comes next: 4, 11, 18, 25, ...?",
+              "body": "Grace needs to find the next three terms of a sticker pattern. The sequence so far is **4, 11, 18, 25**. Once you know the rule, finding the next terms is easy!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  4,
+                  11,
+                  18,
+                  25
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Find the rule, then keep going!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The sequence is **3, 9, 15, 21, ...**\nThe difference is **+6**. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the next number after 21?",
+                "options": [
+                  "27",
+                  "26",
+                  "29",
+                  "24",
+                  "31"
+                ],
+                "correctAnswer": "27",
+                "correctFeedback": "Brilliant! 21 + 6 = **27** ✓",
+                "incorrectFeedback": "Not quite! Add the difference: 21 + 6 = **27**."
+              },
+              "visualProps": {
+                "terms": [
+                  3,
+                  9,
+                  15,
+                  21
+                ],
+                "differences": [
+                  "+6",
+                  "+6",
+                  "+6"
+                ],
+                "showDifferences": true,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Continuing sequences — simple!",
+              "body": "Once you know the constant difference, continuing is easy:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Step 1: Find the constant difference",
+                    "why": "Subtract each term from the next one"
+                  },
+                  {
+                    "text": "Step 2: Add the difference to the last number",
+                    "why": "This gives you the next number"
+                  },
+                  {
+                    "text": "Step 3: Keep going for as many numbers as you need",
+                    "why": "Each new number = previous number + difference ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "continue-seq-backwards",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to work backwards to find earlier terms in a sequence",
+            "Why subtracting the difference goes backwards"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Finn",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What came BEFORE 19?",
+              "body": "Finn knows three terms of a sequence but the first term is hidden: **?, ?, 19, 26, 33**.\n\nWe know the sequence goes up by **7** each time. But what if we need to go **backwards**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  "?",
+                  "?",
+                  19,
+                  26,
+                  33
+                ],
+                "showDifferences": false,
+                "showNext": false
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Subtract to go backwards!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "To go backwards in a sequence, ____ the difference from the first known term",
+                "options": [
+                  "add",
+                  "subtract",
+                  "multiply",
+                  "divide"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! Going forward = add, going backward = subtract. 19 − 7 = 12. ✓",
+                "incorrectFeedback": "Not quite — going forward means adding, so going backward means subtracting the difference."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The sequence is: **?, 24, 33, 42**. The difference is +9. What is the missing number?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What number comes before 24?",
+                "options": [
+                  "15",
+                  "14",
+                  "17",
+                  "12",
+                  "19"
+                ],
+                "correctAnswer": "15",
+                "correctFeedback": "Brilliant! 24 − 9 = **15** ✓",
+                "incorrectFeedback": "Not quite! To go backwards, subtract: 24 − 9 = **15**."
+              },
+              "visualProps": {
+                "terms": [
+                  "?",
+                  24,
+                  33,
+                  42
+                ],
+                "showDifferences": false,
+                "showNext": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Forwards and backwards!",
+              "body": "You can use the constant difference to go in **either direction**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Forward: ADD the difference to the last number",
+                    "why": "e.g. 33 + 7 = 40"
+                  },
+                  {
+                    "text": "Backward: SUBTRACT the difference from the first number",
+                    "why": "e.g. 19 − 7 = 12"
+                  },
+                  {
+                    "text": "The rule works both ways!",
+                    "why": "Just flip the operation ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "find-nth-term",
+      "name": "Finding the nth Term",
+      "category": "core",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "nth-term-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to write the nth term rule (a formula that finds any term from its position) for an arithmetic sequence (one that goes up or down by the same amount each time)",
+            "How to use the rule to find any term (number in the pattern)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the 100th term of 5, 8, 11, ...?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "The nth term rule!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Difference first, then adjustment, then write the rule. ✓",
+                "incorrectFeedback": "Not quite — find the difference first, then the adjustment (first term minus difference), then write the rule."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "A new sequence: **5, 9, 13, 17, 21**. The difference is **+4** and the rule is **4n + 1**. What is the **8th** term?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The 8th term of the sequence = ?",
+                "options": [
+                  "33",
+                  "32",
+                  "35",
+                  "30",
+                  "37"
+                ],
+                "correctAnswer": "33",
+                "correctFeedback": "Brilliant! 4 × 8 + 1 = **33** ✓",
+                "incorrectFeedback": "Not quite! 4n + 1 when n = 8: 4 × 8 + 1 = **33**."
+              },
+              "visualProps": {
+                "terms": [
+                  5,
+                  9,
+                  13,
+                  17
+                ],
+                "differences": [
+                  "+4",
+                  "+4",
+                  "+4"
+                ],
+                "showDifferences": true,
+                "showNext": true,
+                "nextValue": "..."
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The nth term recipe!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "nth-term-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid confusing the difference with the first term",
+            "Why testing the rule is so important"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Holly",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Holly's mistake!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Always test with n = 1!",
+              "body": "Holly wrote 5n + 5 because the first term is 5. But when n = 1: 5(1) + 5 = 10, not 5! The first term is already 5 × 1 = 5, so no adjustment is needed.\n\nThe correct rule is **5n**.\nTest: when n = 1 → **5** ✓",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Difference = 5",
+                    "why": "Start with 5n"
+                  },
+                  {
+                    "text": "Adjustment: 5 − 5 = 0",
+                    "why": "First term minus difference"
+                  },
+                  {
+                    "text": "Rule: 5n",
+                    "result": "✓"
+                  },
+                  {
+                    "text": "Test n = 1: 5",
+                    "result": "Matches first term ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Which rule is correct?",
+              "body": "For the sequence **6, 12, 18, 24**, which is the correct nth term?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The nth term is:",
+                "options": [
+                  "6n",
+                  "6n + 6",
+                  "6n",
+                  "6n + 3",
+                  "n + 6"
+                ],
+                "correctAnswer": "6n",
+                "correctFeedback": "Well done! **6n** — always test with n = 1! ✓",
+                "incorrectFeedback": "Not quite! The adjustment is 6 − 6 = 0. The rule is **6n**."
+              },
+              "visualProps": {
+                "terms": [
+                  6,
+                  12,
+                  18,
+                  24
+                ],
+                "differences": [
+                  "+6",
+                  "+6",
+                  "+6"
+                ],
+                "showDifferences": true,
+                "showNext": false
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The test that catches mistakes!",
+              "body": "The most common mistake is getting the adjustment wrong. Here's how to avoid it:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Find the difference → put it in front of n",
+                    "why": "e.g. difference = 4 → 4n"
+                  },
+                  {
+                    "text": "Adjustment = first term MINUS the difference",
+                    "why": "e.g. first term 3, difference 4 → 3 − 4 = −1"
+                  },
+                  {
+                    "text": "Rule: 4n − 1",
+                    "why": "NOT 4n + 3!"
+                  },
+                  {
+                    "text": "ALWAYS test: does n = 1 give the first term?",
+                    "why": "4(1) − 1 = 3 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decreasing-sequences",
+      "name": "Sequences That Decrease",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "decreasing-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to recognise decreasing sequences where the difference is negative",
+            "Why the same method works for both increasing and decreasing"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This sequence goes DOWN: 40, 34, 28, 22, ...",
+              "body": "Grace watches a candle getting shorter every hour. The numbers are getting **smaller** — this is a **decreasing** sequence. But the method for finding the rule is exactly the same!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  40,
+                  34,
+                  28,
+                  22
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The difference is negative!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "fill-blank",
+                "sentence": "In a decreasing sequence, the constant difference is ____",
+                "options": [
+                  "positive",
+                  "negative",
+                  "zero",
+                  "doubled"
+                ],
+                "correctIndex": "1",
+                "correctFeedback": "Yes! A decreasing sequence has a negative difference — you subtract each time. ✓",
+                "incorrectFeedback": "Not quite — when numbers get smaller, the difference is negative (e.g. -6)."
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The sequence is **45, 37, 29, 21, ...**. The difference is **-8**. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "What is the next number after 21?",
+                "options": [
+                  "13",
+                  "12",
+                  "15",
+                  "10",
+                  "17"
+                ],
+                "correctAnswer": "13",
+                "correctFeedback": "That's right! 21 − 8 = **13** ✓",
+                "incorrectFeedback": "Not quite! Subtract 8: 21 − 8 = **13**."
+              },
+              "visualProps": {
+                "terms": [
+                  45,
+                  37,
+                  29,
+                  21
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Decreasing = negative difference!",
+              "body": "Decreasing sequences work exactly the same as increasing ones — the difference is just **negative**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Increasing: difference is positive (+6)",
+                    "why": "Add to get the next number"
+                  },
+                  {
+                    "text": "Decreasing: difference is negative (−6)",
+                    "why": "Subtract to get the next number"
+                  },
+                  {
+                    "text": "The method is identical — find difference, then apply it",
+                    "why": "Works for both directions! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "decreasing-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid adding when you should subtract",
+            "Why the sign of the difference matters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Charlie's mistake!",
+              "body": "Charlie continues a decreasing sequence: **30, 25, 20, 15, ...**\n\nCharlie says the next number is **20**. That's not right!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": null,
+              "visualProps": {
+                "terms": [
+                  30,
+                  25,
+                  20,
+                  15
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "20 ✗"
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Subtract, don't add!",
+              "body": "Charlie added 5 instead of subtracting! The sequence is DECREASING, so the difference is −5, not +5.\n\nThe correct next number: **15 − 5 = 10**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Difference: -5",
+                    "why": "Negative means DECREASING"
+                  },
+                  {
+                    "text": "15 − 5",
+                    "result": "= 10 ✓"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct next number?",
+              "body": "The sequence is **36, 30, 24, 18, ...**. The difference is **-6**. What really comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number is:",
+                "options": [
+                  "12",
+                  "11",
+                  "14",
+                  "9",
+                  "16"
+                ],
+                "correctAnswer": "12",
+                "correctFeedback": "That's right! 18 − 6 = **12** ✓",
+                "incorrectFeedback": "Not quite! Subtract 6: 18 − 6 = **12**."
+              },
+              "visualProps": {
+                "terms": [
+                  36,
+                  30,
+                  24,
+                  18
+                ],
+                "showDifferences": false,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Check the direction!",
+              "body": "Before continuing any sequence, check: is it going UP or DOWN?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Numbers getting BIGGER → ADD the difference",
+                    "why": "e.g. 5, 12, 19, 26 → next is 26 + 7 = 33"
+                  },
+                  {
+                    "text": "Numbers getting SMALLER → SUBTRACT the difference",
+                    "why": "e.g. 30, 25, 20, 15 → next is 15 − 5 = 10"
+                  },
+                  {
+                    "text": "Watch out when crossing zero!",
+                    "why": "2, −1 → subtract 3 → −1 − 3 = −4 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geometric-sequences",
+      "name": "Sequences That Multiply or Divide",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "geometric-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to spot a sequence that multiplies instead of adds",
+            "How to find the multiplier (common ratio)"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Jake",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This sequence grows FAST: 3, 6, 12, 24, 48",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "It's multiplying, not adding!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The sequence **5, 10, 20, 40, 80** multiplies by **2** each time. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "SequenceChain",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number after 80 is:",
+                "options": [
+                  "160",
+                  "159",
+                  "162",
+                  "157",
+                  "164"
+                ],
+                "correctAnswer": "160",
+                "correctFeedback": "Brilliant! 80 × 2 = **160** ✓",
+                "incorrectFeedback": "Not quite! Multiply: 80 × 2 = **160**."
+              },
+              "visualProps": {
+                "terms": [
+                  5,
+                  10,
+                  20,
+                  40,
+                  80
+                ],
+                "differences": [
+                  "×2",
+                  "×2",
+                  "×2",
+                  "×2"
+                ],
+                "showDifferences": true,
+                "showNext": true,
+                "nextValue": "?"
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Multiplying sequences!",
+              "body": "Not all sequences add or subtract. Some **multiply**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If the differences keep GROWING, try dividing",
+                    "why": "Divide each number by the previous one"
+                  },
+                  {
+                    "text": "If the answer is the same each time → geometric!",
+                    "why": "That's your multiplier"
+                  },
+                  {
+                    "text": "Next number = last number × multiplier",
+                    "why": "These sequences grow VERY fast! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "geometric-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to tell the difference between arithmetic (adding the same amount) and geometric (multiplying by the same amount) sequences",
+            "When to add and when to multiply"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Lily",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Same start, very different patterns!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Adding vs multiplying!",
+              "body": "**Arithmetic** sequences have a constant **difference** (you add the same amount).\n\n**Geometric** sequences have a constant **multiplier** (you multiply by the same amount).\n\nThe quick test: check the differences. If they're all the same → arithmetic. If they keep growing → probably geometric!",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Arithmetic: add 5 each time",
+                    "why": "Differences are constant: 5, 5, 5"
+                  },
+                  {
+                    "text": "Geometric: × 2 each time",
+                    "why": "Differences grow: 5, 10, 20"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What comes next?",
+              "body": "The sequence **4, 12, 36, 108** is geometric (×3). What is the next number?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number is:",
+                "options": [
+                  "324",
+                  "323",
+                  "326",
+                  "321",
+                  "328"
+                ],
+                "correctAnswer": "324",
+                "correctFeedback": "Spot on! 108 × 3 = **324** ✓",
+                "incorrectFeedback": "Not quite! Multiply: 108 × 3 = **324**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "4, 12, 36, 108, ...",
+                    "why": "Each number × 3"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Arithmetic vs geometric — know the difference!",
+              "body": "Two types of sequence you'll see in the 11+:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "ARITHMETIC: constant difference (add/subtract)",
+                    "why": "3, 8, 13, 18, 23 → add 5 each time"
+                  },
+                  {
+                    "text": "GEOMETRIC: constant multiplier (×/÷)",
+                    "why": "3, 6, 12, 24, 48 → ×2 each time"
+                  },
+                  {
+                    "text": "Quick test: check if differences are constant",
+                    "why": "If not, try dividing each number by the previous one ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-sequences",
+      "name": "Square, Triangular & Cube Numbers",
+      "category": "supporting",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "special-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to recognise square, triangular and cube numbers",
+            "Why they are called 'special' sequences"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Grace",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "A special sequence: 1, 4, 9, 16, 25, ...",
+              "body": "Grace arranges dots in square patterns and gets the numbers: **1, 4, 9, 16, 25, 36**. These aren't random — they're **square numbers**! They pop up everywhere in maths.",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "1×1",
+                    "result": "= 1"
+                  },
+                  {
+                    "text": "2×2",
+                    "result": "= 4"
+                  },
+                  {
+                    "text": "3×3",
+                    "result": "= 9"
+                  },
+                  {
+                    "text": "4×4",
+                    "result": "= 16"
+                  },
+                  {
+                    "text": "5×5",
+                    "result": "= 25"
+                  },
+                  {
+                    "text": "6×6",
+                    "result": "= 36"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "The three special sequences",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "true-false"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "What is the **10th square number**?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The 10th square number is:",
+                "options": [
+                  "100",
+                  "99",
+                  "102",
+                  "97",
+                  "104"
+                ],
+                "correctAnswer": "100",
+                "correctFeedback": "Brilliant! **100** ✓",
+                "incorrectFeedback": "Not quite! The answer is **100**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "10 × 10",
+                    "why": "Work it out!"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The three special sequences to remember!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            }
+          ]
+        },
+        {
+          "id": "special-keyfact",
+          "templateType": "key-fact",
+          "learningGoal": [
+            "How to quickly identify whether a number is square, triangular or cube",
+            "Why learning these by heart speeds up the 11+ exam"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Oscar",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Is 36 a special number?",
+              "body": "Oscar needs to recognise special numbers in a test. The number is **36**. Let's check each type:\n\n- **Square?** Can you find a number that times itself gives 36?\n- **Cube?** Can you find a number that times itself three times gives 36?\n- **Triangular?** Is it in the sequence 1, 3, 6, 10, 15, 21, 28, 36...?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Square? 6 × 6 = 36",
+                    "result": "YES ✓"
+                  },
+                  {
+                    "text": "Cube? No whole number × itself × itself = 36",
+                    "result": "NO ✗"
+                  },
+                  {
+                    "text": "Triangular? 36 appears in 1, 3, 6, 10, 15, 21, 28, 36...",
+                    "result": "YES ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            },
+            {
+              "type": "teach",
+              "title": "Learn them by heart!",
+              "body": "36 is BOTH a square number (6×6) AND a triangular number (1+2+3+4+5+6+7+8)\n\nThe fastest way to spot these in the exam is to **memorise** them. Here are the ones you need:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Square: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144",
+                    "why": "Know these up to 12×12"
+                  },
+                  {
+                    "text": "Cube: 1, 8, 27, 64, 125",
+                    "why": "Know these up to 5×5×5"
+                  },
+                  {
+                    "text": "Triangular: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55",
+                    "why": "Know the first 10"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Quick — what type is it?",
+              "body": "Is **64** a square number, a cube number, or both?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "64 is:",
+                "options": [
+                  "square and cube",
+                  "square only",
+                  "cube only",
+                  "triangular only",
+                  "not special"
+                ],
+                "correctAnswer": "square and cube",
+                "correctFeedback": "Spot on! 64 = 8×8 (square) and 4×4×4 (cube) ✓",
+                "incorrectFeedback": "Not quite! 64 = 8×8 (square) and 4×4×4 (cube)."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "64 = ?",
+                    "why": "Think: can you make it by multiplying a number by itself?"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Spot special numbers instantly!",
+              "body": "In the 11+ exam, recognising special numbers quickly saves precious time:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Memorise square numbers up to 144 (12×12)",
+                    "why": "These appear in MANY question types"
+                  },
+                  {
+                    "text": "Know the first 5 cube numbers: 1, 8, 27, 64, 125",
+                    "why": "Especially 8 and 27 — they're common"
+                  },
+                  {
+                    "text": "Know triangular numbers up to 55",
+                    "why": "1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibonacci-style",
+      "name": "Fibonacci-Style Sequences",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "fibonacci-hook",
+          "templateType": "curiosity-hook",
+          "learningGoal": [
+            "How to spot a sequence where each number is the sum of the two before it",
+            "How this pattern appears in nature"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Aisha",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "What's the pattern: 1, 1, 2, 3, 5, 8, 13, ...?",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Add the two previous numbers!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "match-pairs"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "In the sequence **2, 5, 7, 12, 19, ...**, each number is the sum of the two before it. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number is:",
+                "options": [
+                  "31",
+                  "30",
+                  "33",
+                  "28",
+                  "35"
+                ],
+                "correctAnswer": "31",
+                "correctFeedback": "That's right! 12 + 19 = **31** ✓",
+                "incorrectFeedback": "Not quite! Add the last two: 12 + 19 = **31**."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule: each number = sum of the previous two",
+                    "why": "12 + 19 = ?"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "The Fibonacci rule!",
+              "body": "In a Fibonacci-style sequence, each number is the **sum of the two before it**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Check: does each number = the two before it added together?",
+                    "why": "e.g. 1, 1, 2, 3, 5, 8 → 1+1=2, 1+2=3, 2+3=5..."
+                  },
+                  {
+                    "text": "To find the next number: add the last two numbers",
+                    "why": "5 + 8 = 13, 8 + 13 = 21, 13 + 21 = 34..."
+                  },
+                  {
+                    "text": "This pattern appears in sunflowers, pinecones and shells!",
+                    "why": "Nature loves Fibonacci! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "fibonacci-visual",
+          "templateType": "visual-discovery",
+          "learningGoal": [
+            "How to find missing terms in a Fibonacci-style sequence (where each number is the sum of the two before it)",
+            "How to work backwards in a Fibonacci sequence"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Isaac",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Find the missing number!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Use what you know!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "Find the missing number: **1, 4, 5, ?, 14**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The missing number is:",
+                "options": [
+                  "9",
+                  "8",
+                  "11",
+                  "6",
+                  "13"
+                ],
+                "correctAnswer": "9",
+                "correctFeedback": "Spot on! The missing number is **9**. Check: 5 + 9 = 14 ✓",
+                "incorrectFeedback": "Not quite! The missing number is **9**. Check: 5 + 9 = 14."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule: each number = sum of the two before",
+                    "why": "Use the numbers around the gap"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Finding gaps in Fibonacci!",
+              "body": "When a Fibonacci-style sequence has a missing number:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "If you know a number and the sum → subtract to find the other",
+                    "why": "e.g. ? + 8 = 21 → ? = 21 − 8 = 13"
+                  },
+                  {
+                    "text": "If you know the two before → add them",
+                    "why": "e.g. 8 + 13 = 21"
+                  },
+                  {
+                    "text": "Always check: does the answer work with its neighbours?",
+                    "why": "Both sides of the gap should check out ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-step-rules",
+      "name": "Sequences with Two-Step Rules",
+      "category": "other",
+      "lessonCount": 2,
+      "lessons": [
+        {
+          "id": "two-step-steps",
+          "templateType": "step-by-step",
+          "learningGoal": [
+            "How to spot a sequence that uses multiply then add (or subtract)",
+            "How to work out a two-step rule"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Nadia",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "This one's tricky: 2, 5, 11, 23, 47, ...",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Two operations in one step!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": {
+                "type": "order-steps",
+                "correctFeedback": "Perfect order! Take the last number, multiply, then add. ✓",
+                "incorrectFeedback": "Not quite — take the last number, multiply first, then add. The order matters!"
+              }
+            },
+            {
+              "type": "interact",
+              "title": "Your turn!",
+              "body": "The rule is **×2 then +1**. The sequence is **1, 3, 7, 15, 31, ...**. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number is:",
+                "options": [
+                  "63",
+                  "62",
+                  "65",
+                  "60",
+                  "67"
+                ],
+                "correctAnswer": "63",
+                "correctFeedback": "Brilliant! 31×2+1=63 ✓",
+                "incorrectFeedback": "Not quite! Apply the rule: 31×2+1=63."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule: ×2 then +1",
+                    "why": "Apply to the last number: 31"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Two-step rules — how to crack them!",
+              "body": "When a sequence doesn't have a constant difference or constant multiplier, try a **two-step rule**:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Try: multiply by 2 then add something",
+                    "why": "Check: does 2×first + ? = second number?"
+                  },
+                  {
+                    "text": "Try: multiply by 3 then add something",
+                    "why": "Check: does 3×first + ? = second number?"
+                  },
+                  {
+                    "text": "Test your rule on ALL the numbers",
+                    "why": "If it works for every pair → you've cracked it! ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-step-mistake",
+          "templateType": "spot-the-mistake",
+          "learningGoal": [
+            "How to avoid applying operations in the wrong order",
+            "Why the order of multiply and add matters"
+          ],
+          "variableSetCount": 3,
+          "sampleVariableSetName": "Charlie",
+          "screens": [
+            {
+              "type": "hook",
+              "title": "Spot Charlie's mistake!",
+              "body": null,
+              "bodyParts": null,
+              "hasVisual": false,
+              "visualComponent": null,
+              "interaction": null
+            },
+            {
+              "type": "teach",
+              "title": "Order matters!",
+              "body": "Charlie did +1 THEN ×2 instead of ×2 THEN +1. The order matters!.\n\nThe correct answer: **31 × 2 + 1 = 63**",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "tap-to-reveal"
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Wrong: +1 then ×2",
+                    "why": "Gives 64"
+                  },
+                  {
+                    "text": "Right: ×2 then +1",
+                    "why": "Gives 63"
+                  },
+                  {
+                    "text": "The order of operations matters!",
+                    "result": "Always multiply FIRST, then add/subtract"
+                  }
+                ],
+                "allRevealed": false
+              }
+            },
+            {
+              "type": "interact",
+              "title": "What's the correct next number?",
+              "body": "The sequence is **1, 5, 13, 29, ...**. The rule is **×2 then +3**. What comes next?",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": {
+                "type": "multiple-choice",
+                "question": "The next number is:",
+                "options": [
+                  "61",
+                  "60",
+                  "63",
+                  "58",
+                  "65"
+                ],
+                "correctAnswer": "61",
+                "correctFeedback": "Well done! 29 × 2 + 3 = 61 ✓",
+                "incorrectFeedback": "Not quite! Apply the rule in order: 29 × 2 + 3 = 61."
+              },
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "Rule: ×2 then +3",
+                    "why": "Apply to 29"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "consolidate",
+              "title": "Multiply FIRST, then add!",
+              "body": "In two-step rules, the **order** of operations matters:",
+              "bodyParts": null,
+              "hasVisual": true,
+              "visualComponent": "WorkedExample",
+              "interaction": null,
+              "visualProps": {
+                "steps": [
+                  {
+                    "text": "×2 then +1 means: multiply by 2 FIRST, then add 1",
+                    "why": "e.g. 7 → 7×2 = 14 → 14+1 = 15"
+                  },
+                  {
+                    "text": "+1 then ×2 gives a DIFFERENT answer!",
+                    "why": "e.g. 7 → 7+1 = 8 → 8×2 = 16 (wrong!)"
+                  },
+                  {
+                    "text": "Always do the multiply/divide BEFORE the add/subtract",
+                    "why": "Unless the question specifically says otherwise ✓"
+                  }
+                ],
+                "allRevealed": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
