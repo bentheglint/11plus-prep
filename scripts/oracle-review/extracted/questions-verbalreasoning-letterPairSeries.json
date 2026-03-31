@@ -3,15 +3,15 @@
     "subject": "verbalreasoning",
     "topic": "letterPairSeries",
     "displayName": "Letter Pair Series",
-    "extractedAt": "2026-03-30T13:05:32.810Z",
-    "questionCount": 132,
+    "extractedAt": "2026-03-31T08:55:13.749Z",
+    "questionCount": 128,
     "difficultyDistribution": {
-      "D1": 41,
-      "D2": 52,
+      "D1": 38,
+      "D2": 51,
       "D3": 39
     },
     "questionTypes": {
-      "standard": 132
+      "standard": 128
     },
     "visualComponentCount": 0
   },
@@ -172,44 +172,6 @@
       "id": 9,
       "difficulty": 1,
       "questionType": "standard",
-      "question": "What comes next in this letter series? A, C, E, G, ___",
-      "options": [
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "correct": 1,
-      "correctAnswer": "I",
-      "explanation": "The pattern adds 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is I. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 10,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "What comes next in this letter series? B, D, F, H, ___",
-      "options": [
-        "I",
-        "K",
-        "L",
-        "J",
-        "M"
-      ],
-      "correct": 3,
-      "correctAnswer": "J",
-      "explanation": "The pattern adds 2 each time: B(+2)→D(+2)→F(+2)→H(+2)→J. The answer is J. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 11,
-      "difficulty": 1,
-      "questionType": "standard",
       "question": "What comes next in this letter series? Z, Y, X, W, ___",
       "options": [
         "T",
@@ -226,7 +188,7 @@
       "image": null
     },
     {
-      "id": 12,
+      "id": 10,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, B, C, D, ___",
@@ -245,7 +207,7 @@
       "image": null
     },
     {
-      "id": 13,
+      "id": 11,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? M, N, O, P, ___",
@@ -264,7 +226,7 @@
       "image": null
     },
     {
-      "id": 14,
+      "id": 12,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? C, F, I, L, ___",
@@ -283,7 +245,7 @@
       "image": null
     },
     {
-      "id": 15,
+      "id": 13,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? D, F, H, J, ___",
@@ -302,7 +264,7 @@
       "image": null
     },
     {
-      "id": 16,
+      "id": 14,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? T, R, P, N, ___",
@@ -321,7 +283,7 @@
       "image": null
     },
     {
-      "id": 17,
+      "id": 15,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? E, H, K, N, ___",
@@ -340,7 +302,7 @@
       "image": null
     },
     {
-      "id": 18,
+      "id": 16,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? W, U, S, Q, ___",
@@ -359,7 +321,7 @@
       "image": null
     },
     {
-      "id": 19,
+      "id": 17,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AB, CD, EF, GH, ___",
@@ -378,7 +340,7 @@
       "image": null
     },
     {
-      "id": 20,
+      "id": 18,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
@@ -397,7 +359,7 @@
       "image": null
     },
     {
-      "id": 21,
+      "id": 19,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AA, BB, CC, DD, ___",
@@ -416,7 +378,7 @@
       "image": null
     },
     {
-      "id": 22,
+      "id": 20,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AB, BC, CD, DE, ___",
@@ -435,7 +397,7 @@
       "image": null
     },
     {
-      "id": 23,
+      "id": 21,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AC, BD, CE, DF, ___",
@@ -454,7 +416,7 @@
       "image": null
     },
     {
-      "id": 24,
+      "id": 22,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AX, BX, CX, DX, ___",
@@ -473,7 +435,7 @@
       "image": null
     },
     {
-      "id": 25,
+      "id": 23,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
@@ -492,7 +454,7 @@
       "image": null
     },
     {
-      "id": 26,
+      "id": 24,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? A1, B2, C3, D4, ___",
@@ -511,7 +473,7 @@
       "image": null
     },
     {
-      "id": 27,
+      "id": 25,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? A2, B4, C6, D8, ___",
@@ -530,7 +492,7 @@
       "image": null
     },
     {
-      "id": 28,
+      "id": 26,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? Z1, Y2, X3, W4, ___",
@@ -549,7 +511,7 @@
       "image": null
     },
     {
-      "id": 29,
+      "id": 27,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? A1, A2, A3, A4, ___",
@@ -568,7 +530,7 @@
       "image": null
     },
     {
-      "id": 30,
+      "id": 28,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? B1, D2, F3, H4, ___",
@@ -587,7 +549,7 @@
       "image": null
     },
     {
-      "id": 31,
+      "id": 29,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AD, BE, CF, DG, ___",
@@ -606,7 +568,7 @@
       "image": null
     },
     {
-      "id": 32,
+      "id": 30,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? B, E, H, K, ___",
@@ -625,7 +587,7 @@
       "image": null
     },
     {
-      "id": 33,
+      "id": 31,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BA, CB, DC, ED, ___",
@@ -644,7 +606,7 @@
       "image": null
     },
     {
-      "id": 34,
+      "id": 32,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this series? M1, N2, O3, P4, ___",
@@ -663,7 +625,7 @@
       "image": null
     },
     {
-      "id": 35,
+      "id": 33,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? G, I, K, M, ___",
@@ -682,7 +644,7 @@
       "image": null
     },
     {
-      "id": 36,
+      "id": 34,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AE, BF, CG, DH, ___",
@@ -701,7 +663,7 @@
       "image": null
     },
     {
-      "id": 37,
+      "id": 35,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, D, G, J, ___",
@@ -720,7 +682,7 @@
       "image": null
     },
     {
-      "id": 38,
+      "id": 36,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? Z, W, T, Q, ___",
@@ -739,7 +701,7 @@
       "image": null
     },
     {
-      "id": 39,
+      "id": 37,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, E, I, M, ___",
@@ -758,7 +720,7 @@
       "image": null
     },
     {
-      "id": 40,
+      "id": 38,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? D, H, L, P, ___",
@@ -777,7 +739,7 @@
       "image": null
     },
     {
-      "id": 41,
+      "id": 39,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? V, S, P, M, ___",
@@ -796,7 +758,7 @@
       "image": null
     },
     {
-      "id": 42,
+      "id": 40,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? B, F, J, N, ___",
@@ -815,7 +777,7 @@
       "image": null
     },
     {
-      "id": 43,
+      "id": 41,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? Y, V, S, P, ___",
@@ -834,7 +796,7 @@
       "image": null
     },
     {
-      "id": 44,
+      "id": 42,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? C, G, K, O, ___",
@@ -853,7 +815,7 @@
       "image": null
     },
     {
-      "id": 45,
+      "id": 43,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? X, U, R, O, ___",
@@ -872,7 +834,7 @@
       "image": null
     },
     {
-      "id": 46,
+      "id": 44,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? F, J, N, R, ___",
@@ -891,7 +853,7 @@
       "image": null
     },
     {
-      "id": 47,
+      "id": 45,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
@@ -910,7 +872,7 @@
       "image": null
     },
     {
-      "id": 48,
+      "id": 46,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AC, CE, EG, GI, ___",
@@ -929,7 +891,7 @@
       "image": null
     },
     {
-      "id": 49,
+      "id": 47,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
@@ -948,7 +910,7 @@
       "image": null
     },
     {
-      "id": 50,
+      "id": 48,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
@@ -967,7 +929,7 @@
       "image": null
     },
     {
-      "id": 51,
+      "id": 49,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AB, DE, GH, JK, ___",
@@ -986,7 +948,7 @@
       "image": null
     },
     {
-      "id": 52,
+      "id": 50,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
@@ -1005,7 +967,7 @@
       "image": null
     },
     {
-      "id": 53,
+      "id": 51,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
@@ -1024,7 +986,7 @@
       "image": null
     },
     {
-      "id": 54,
+      "id": 52,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
@@ -1043,7 +1005,7 @@
       "image": null
     },
     {
-      "id": 55,
+      "id": 53,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? MA, NB, OC, PD, ___",
@@ -1062,7 +1024,7 @@
       "image": null
     },
     {
-      "id": 56,
+      "id": 54,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
@@ -1081,7 +1043,7 @@
       "image": null
     },
     {
-      "id": 57,
+      "id": 55,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
@@ -1100,7 +1062,7 @@
       "image": null
     },
     {
-      "id": 58,
+      "id": 56,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? A3, C6, E9, G12, ___",
@@ -1119,7 +1081,7 @@
       "image": null
     },
     {
-      "id": 59,
+      "id": 57,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? Z2, X4, V6, T8, ___",
@@ -1138,7 +1100,7 @@
       "image": null
     },
     {
-      "id": 60,
+      "id": 58,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? B5, D10, F15, H20, ___",
@@ -1157,7 +1119,7 @@
       "image": null
     },
     {
-      "id": 61,
+      "id": 59,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? Y3, W6, U9, S12, ___",
@@ -1176,7 +1138,7 @@
       "image": null
     },
     {
-      "id": 62,
+      "id": 60,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? A1, C3, E5, G7, ___",
@@ -1195,7 +1157,7 @@
       "image": null
     },
     {
-      "id": 63,
+      "id": 61,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? D2, G4, J6, M8, ___",
@@ -1214,7 +1176,7 @@
       "image": null
     },
     {
-      "id": 64,
+      "id": 62,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? CE, DG, EI, FK, ___",
@@ -1233,7 +1195,7 @@
       "image": null
     },
     {
-      "id": 65,
+      "id": 63,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter series? R, O, L, I, ___",
@@ -1252,7 +1214,7 @@
       "image": null
     },
     {
-      "id": 66,
+      "id": 64,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? YA, WC, UE, SG, ___",
@@ -1271,7 +1233,7 @@
       "image": null
     },
     {
-      "id": 67,
+      "id": 65,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? C1, F3, I5, L7, ___",
@@ -1290,7 +1252,7 @@
       "image": null
     },
     {
-      "id": 68,
+      "id": 66,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? FA, HC, JE, LG, ___",
@@ -1309,7 +1271,7 @@
       "image": null
     },
     {
-      "id": 69,
+      "id": 67,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
@@ -1328,7 +1290,7 @@
       "image": null
     },
     {
-      "id": 70,
+      "id": 68,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? T5, R10, P15, N20, ___",
@@ -1347,7 +1309,7 @@
       "image": null
     },
     {
-      "id": 71,
+      "id": 69,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BF, CG, DH, EI, ___",
@@ -1366,7 +1328,7 @@
       "image": null
     },
     {
-      "id": 72,
+      "id": 70,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
@@ -1385,7 +1347,7 @@
       "image": null
     },
     {
-      "id": 73,
+      "id": 71,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, Z, B, Y, C, ___",
@@ -1404,7 +1366,7 @@
       "image": null
     },
     {
-      "id": 74,
+      "id": 72,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, Z, C, X, E, ___",
@@ -1423,7 +1385,7 @@
       "image": null
     },
     {
-      "id": 75,
+      "id": 73,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, F, B, G, C, ___",
@@ -1442,7 +1404,7 @@
       "image": null
     },
     {
-      "id": 76,
+      "id": 74,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? B, D, C, E, D, ___",
@@ -1461,7 +1423,7 @@
       "image": null
     },
     {
-      "id": 77,
+      "id": 75,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, C, F, J, ___",
@@ -1480,7 +1442,7 @@
       "image": null
     },
     {
-      "id": 78,
+      "id": 76,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? Z, X, U, Q, ___",
@@ -1499,7 +1461,7 @@
       "image": null
     },
     {
-      "id": 79,
+      "id": 77,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? B, D, H, N, ___",
@@ -1518,7 +1480,7 @@
       "image": null
     },
     {
-      "id": 80,
+      "id": 78,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? C, E, H, L, ___",
@@ -1537,7 +1499,7 @@
       "image": null
     },
     {
-      "id": 81,
+      "id": 79,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? Y, W, T, P, ___",
@@ -1556,7 +1518,7 @@
       "image": null
     },
     {
-      "id": 82,
+      "id": 80,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
@@ -1575,7 +1537,7 @@
       "image": null
     },
     {
-      "id": 83,
+      "id": 81,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BX, EU, HR, KO, ___",
@@ -1594,7 +1556,7 @@
       "image": null
     },
     {
-      "id": 84,
+      "id": 82,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AC, BF, CI, DL, ___",
@@ -1613,7 +1575,7 @@
       "image": null
     },
     {
-      "id": 85,
+      "id": 83,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AY, DV, GS, JP, ___",
@@ -1632,7 +1594,7 @@
       "image": null
     },
     {
-      "id": 86,
+      "id": 84,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
@@ -1651,7 +1613,7 @@
       "image": null
     },
     {
-      "id": 87,
+      "id": 85,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
@@ -1670,7 +1632,7 @@
       "image": null
     },
     {
-      "id": 88,
+      "id": 86,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
@@ -1689,7 +1651,7 @@
       "image": null
     },
     {
-      "id": 89,
+      "id": 87,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
@@ -1708,7 +1670,7 @@
       "image": null
     },
     {
-      "id": 90,
+      "id": 88,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? A2, C5, E8, G11, ___",
@@ -1727,7 +1689,7 @@
       "image": null
     },
     {
-      "id": 91,
+      "id": 89,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? Z3, W7, T11, Q15, ___",
@@ -1746,7 +1708,7 @@
       "image": null
     },
     {
-      "id": 92,
+      "id": 90,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? B1, D3, H7, N13, ___",
@@ -1765,7 +1727,7 @@
       "image": null
     },
     {
-      "id": 93,
+      "id": 91,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? A1, B3, D6, G10, ___",
@@ -1784,7 +1746,7 @@
       "image": null
     },
     {
-      "id": 94,
+      "id": 92,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? Z1, X3, V5, T7, R9, ___",
@@ -1803,7 +1765,7 @@
       "image": null
     },
     {
-      "id": 95,
+      "id": 93,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? A, B, D, G, K, ___",
@@ -1822,7 +1784,7 @@
       "image": null
     },
     {
-      "id": 96,
+      "id": 94,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BY, EV, HS, KP, ___",
@@ -1841,7 +1803,7 @@
       "image": null
     },
     {
-      "id": 97,
+      "id": 95,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? C2, F5, I8, L11, ___",
@@ -1860,7 +1822,7 @@
       "image": null
     },
     {
-      "id": 98,
+      "id": 96,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
@@ -1879,7 +1841,7 @@
       "image": null
     },
     {
-      "id": 99,
+      "id": 97,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
@@ -1898,7 +1860,7 @@
       "image": null
     },
     {
-      "id": 100,
+      "id": 98,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? A1, D4, G9, J16, ___",
@@ -1917,7 +1879,7 @@
       "image": null
     },
     {
-      "id": 101,
+      "id": 99,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? D, G, J, M, ___",
@@ -1936,7 +1898,7 @@
       "image": null
     },
     {
-      "id": 102,
+      "id": 100,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
@@ -1955,7 +1917,7 @@
       "image": null
     },
     {
-      "id": 103,
+      "id": 101,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? V, T, R, P, ___",
@@ -1974,7 +1936,7 @@
       "image": null
     },
     {
-      "id": 104,
+      "id": 102,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
@@ -1993,7 +1955,7 @@
       "image": null
     },
     {
-      "id": 105,
+      "id": 103,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? F, H, J, L, ___",
@@ -2012,26 +1974,7 @@
       "image": null
     },
     {
-      "id": 106,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "What comes next in this series? A1, B2, C3, D4, E5, ___",
-      "options": [
-        "E6",
-        "F5",
-        "F6",
-        "G6",
-        "F7"
-      ],
-      "correct": 2,
-      "correctAnswer": "F6",
-      "explanation": "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5→F6. The answer is F6. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 107,
+      "id": 104,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
@@ -2050,7 +1993,7 @@
       "image": null
     },
     {
-      "id": 108,
+      "id": 105,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? S, Q, O, M, ___",
@@ -2069,7 +2012,7 @@
       "image": null
     },
     {
-      "id": 109,
+      "id": 106,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
@@ -2088,7 +2031,7 @@
       "image": null
     },
     {
-      "id": 110,
+      "id": 107,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
@@ -2107,7 +2050,7 @@
       "image": null
     },
     {
-      "id": 111,
+      "id": 108,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? Z5, X10, V15, T20, ___",
@@ -2126,7 +2069,7 @@
       "image": null
     },
     {
-      "id": 112,
+      "id": 109,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
@@ -2145,7 +2088,7 @@
       "image": null
     },
     {
-      "id": 113,
+      "id": 110,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
@@ -2164,7 +2107,7 @@
       "image": null
     },
     {
-      "id": 114,
+      "id": 111,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? C2, F4, I6, L8, ___",
@@ -2183,7 +2126,7 @@
       "image": null
     },
     {
-      "id": 115,
+      "id": 112,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
@@ -2202,7 +2145,7 @@
       "image": null
     },
     {
-      "id": 116,
+      "id": 113,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
@@ -2221,7 +2164,7 @@
       "image": null
     },
     {
-      "id": 117,
+      "id": 114,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this series? B3, D6, F9, H12, ___",
@@ -2240,7 +2183,7 @@
       "image": null
     },
     {
-      "id": 118,
+      "id": 115,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
@@ -2259,7 +2202,7 @@
       "image": null
     },
     {
-      "id": 119,
+      "id": 116,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? B, C, E, H, L, ___",
@@ -2278,7 +2221,7 @@
       "image": null
     },
     {
-      "id": 120,
+      "id": 117,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BX, DU, GR, KO, ___",
@@ -2297,7 +2240,7 @@
       "image": null
     },
     {
-      "id": 121,
+      "id": 118,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? Z, Y, W, T, P, ___",
@@ -2316,7 +2259,7 @@
       "image": null
     },
     {
-      "id": 122,
+      "id": 119,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
@@ -2335,7 +2278,7 @@
       "image": null
     },
     {
-      "id": 123,
+      "id": 120,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
@@ -2354,7 +2297,7 @@
       "image": null
     },
     {
-      "id": 124,
+      "id": 121,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this series? A1, C4, E9, G16, ___",
@@ -2373,7 +2316,7 @@
       "image": null
     },
     {
-      "id": 125,
+      "id": 122,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? AD, BH, CL, DP, ___",
@@ -2392,7 +2335,7 @@
       "image": null
     },
     {
-      "id": 126,
+      "id": 123,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? C, E, G, I, ___",
@@ -2411,7 +2354,7 @@
       "image": null
     },
     {
-      "id": 127,
+      "id": 124,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
@@ -2430,7 +2373,7 @@
       "image": null
     },
     {
-      "id": 128,
+      "id": 125,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter series? M, K, I, G, ___",
@@ -2449,7 +2392,7 @@
       "image": null
     },
     {
-      "id": 129,
+      "id": 126,
       "difficulty": 1,
       "questionType": "standard",
       "question": "What comes next in this letter series? J, I, H, G, ___",
@@ -2468,26 +2411,7 @@
       "image": null
     },
     {
-      "id": 130,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
-      "options": [
-        "VV",
-        "UU",
-        "VW",
-        "WX",
-        "UV"
-      ],
-      "correct": 0,
-      "correctAnswer": "VV",
-      "explanation": "Both letters decrease by 1 each step: Z(-1)→Y(-1)→X(-1)→W(-1)→V. Both letters match, so the answer is VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 131,
+      "id": 127,
       "difficulty": 2,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
@@ -2506,7 +2430,7 @@
       "image": null
     },
     {
-      "id": 132,
+      "id": 128,
       "difficulty": 3,
       "questionType": "standard",
       "question": "What comes next in this letter pair series? YX, WV, UT, SR, ___",

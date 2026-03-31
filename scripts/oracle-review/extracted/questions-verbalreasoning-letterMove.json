@@ -3,40 +3,21 @@
     "subject": "verbalreasoning",
     "topic": "letterMove",
     "displayName": "Letter Move",
-    "extractedAt": "2026-03-30T13:05:32.805Z",
-    "questionCount": 128,
+    "extractedAt": "2026-03-31T08:55:13.742Z",
+    "questionCount": 102,
     "difficultyDistribution": {
-      "D1": 24,
-      "D2": 84,
+      "D1": 18,
+      "D2": 64,
       "D3": 20
     },
     "questionTypes": {
-      "standard": 128
+      "standard": 102
     },
     "visualComponentCount": 0
   },
   "questions": [
     {
       "id": 1,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: WHEAT  EAR",
-      "options": [
-        "H",
-        "W",
-        "E",
-        "A",
-        "T"
-      ],
-      "correct": 1,
-      "correctAnswer": "W",
-      "explanation": "Move the 'W' from WHEAT to make HEAT, and insert it into EAR to make WEAR. 'W' from WHEAT to EAR: WHEAT becomes HEAT, and EAR becomes WEAR. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 2,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SPINE  OAR",
@@ -55,7 +36,7 @@
       "image": null
     },
     {
-      "id": 3,
+      "id": 2,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BRAID  OWL",
@@ -74,7 +55,7 @@
       "image": null
     },
     {
-      "id": 4,
+      "id": 3,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PLATE  AN",
@@ -93,7 +74,7 @@
       "image": null
     },
     {
-      "id": 5,
+      "id": 4,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SPARK  OAK",
@@ -112,7 +93,7 @@
       "image": null
     },
     {
-      "id": 6,
+      "id": 5,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BLOOM  OAT",
@@ -131,7 +112,7 @@
       "image": null
     },
     {
-      "id": 7,
+      "id": 6,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: WHEAT  EAR",
@@ -150,7 +131,7 @@
       "image": null
     },
     {
-      "id": 8,
+      "id": 7,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BLAND  OAR",
@@ -169,102 +150,7 @@
       "image": null
     },
     {
-      "id": 9,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: PLATE  AN",
-      "options": [
-        "L",
-        "A",
-        "P",
-        "T",
-        "E"
-      ],
-      "correct": 2,
-      "correctAnswer": "P",
-      "explanation": "Move the 'P' from PLATE to make LATE, and insert it into AN to make PAN. 'P' from PLATE to AN: PLATE becomes LATE, and AN becomes PAN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 10,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: SPARK  OAK",
-      "options": [
-        "P",
-        "A",
-        "R",
-        "S",
-        "K"
-      ],
-      "correct": 3,
-      "correctAnswer": "S",
-      "explanation": "Move the 'S' from SPARK to make PARK, and insert it into OAK to make SOAK. 'S' from SPARK to OAK: SPARK becomes PARK, and OAK becomes SOAK. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 11,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: BLOOM  OAT",
-      "options": [
-        "L",
-        "O",
-        "M",
-        "A",
-        "B"
-      ],
-      "correct": 4,
-      "correctAnswer": "B",
-      "explanation": "Move the 'B' from BLOOM to make LOOM, and insert it into OAT to make BOAT. 'B' from BLOOM to OAT: BLOOM becomes LOOM, and OAT becomes BOAT. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 12,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: BRAID  OWL",
-      "options": [
-        "B",
-        "R",
-        "A",
-        "I",
-        "D"
-      ],
-      "correct": 0,
-      "correctAnswer": "B",
-      "explanation": "Move the 'B' from BRAID to make RAID, and insert it into OWL to make BOWL. 'B' from BRAID to OWL: BRAID becomes RAID, and OWL becomes BOWL. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 13,
-      "difficulty": 1,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: SPINE  OAR",
-      "options": [
-        "P",
-        "S",
-        "I",
-        "N",
-        "E"
-      ],
-      "correct": 1,
-      "correctAnswer": "S",
-      "explanation": "Move the 'S' from SPINE to make PINE, and insert it into OAR to make SOAR. 'S' from SPINE to OAR: SPINE becomes PINE, and OAR becomes SOAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 14,
+      "id": 8,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CLAMP  OWL",
@@ -283,7 +169,7 @@
       "image": null
     },
     {
-      "id": 15,
+      "id": 9,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SHORE  INK",
@@ -302,7 +188,7 @@
       "image": null
     },
     {
-      "id": 16,
+      "id": 10,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PLACE  OUR",
@@ -321,7 +207,7 @@
       "image": null
     },
     {
-      "id": 17,
+      "id": 11,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SWEAR  OWN",
@@ -340,7 +226,7 @@
       "image": null
     },
     {
-      "id": 18,
+      "id": 12,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: FLAME  OUR",
@@ -359,7 +245,7 @@
       "image": null
     },
     {
-      "id": 19,
+      "id": 13,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: STARE  OWN",
@@ -378,7 +264,7 @@
       "image": null
     },
     {
-      "id": 20,
+      "id": 14,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BRAND  OAT",
@@ -397,7 +283,7 @@
       "image": null
     },
     {
-      "id": 21,
+      "id": 15,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SHAVE  EAR",
@@ -416,7 +302,7 @@
       "image": null
     },
     {
-      "id": 22,
+      "id": 16,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PLIGHT  OUR",
@@ -435,7 +321,7 @@
       "image": null
     },
     {
-      "id": 23,
+      "id": 17,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BRAIN  OW",
@@ -454,7 +340,7 @@
       "image": null
     },
     {
-      "id": 24,
+      "id": 18,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: STONE  OIL",
@@ -473,7 +359,7 @@
       "image": null
     },
     {
-      "id": 25,
+      "id": 19,
       "difficulty": 1,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: TRAIN  OAD",
@@ -492,7 +378,7 @@
       "image": null
     },
     {
-      "id": 26,
+      "id": 20,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: SHORE  AND",
@@ -511,7 +397,7 @@
       "image": null
     },
     {
-      "id": 27,
+      "id": 21,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: GRAIN  LOW",
@@ -530,7 +416,7 @@
       "image": null
     },
     {
-      "id": 28,
+      "id": 22,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: WHOLE  HEN",
@@ -549,7 +435,7 @@
       "image": null
     },
     {
-      "id": 29,
+      "id": 23,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: STRIPE  OAP",
@@ -568,7 +454,7 @@
       "image": null
     },
     {
-      "id": 30,
+      "id": 24,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: THREAD  ARM",
@@ -587,7 +473,7 @@
       "image": null
     },
     {
-      "id": 31,
+      "id": 25,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
@@ -606,7 +492,7 @@
       "image": null
     },
     {
-      "id": 32,
+      "id": 26,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
@@ -625,7 +511,7 @@
       "image": null
     },
     {
-      "id": 33,
+      "id": 27,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
@@ -644,7 +530,7 @@
       "image": null
     },
     {
-      "id": 34,
+      "id": 28,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
@@ -663,7 +549,7 @@
       "image": null
     },
     {
-      "id": 35,
+      "id": 29,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
@@ -682,7 +568,7 @@
       "image": null
     },
     {
-      "id": 36,
+      "id": 30,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ACE PRICE",
@@ -701,7 +587,7 @@
       "image": null
     },
     {
-      "id": 37,
+      "id": 31,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR STALE",
@@ -720,7 +606,7 @@
       "image": null
     },
     {
-      "id": 38,
+      "id": 32,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE STALE",
@@ -739,7 +625,7 @@
       "image": null
     },
     {
-      "id": 39,
+      "id": 33,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAK STALE",
@@ -758,7 +644,7 @@
       "image": null
     },
     {
-      "id": 40,
+      "id": 34,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
@@ -777,7 +663,7 @@
       "image": null
     },
     {
-      "id": 41,
+      "id": 35,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
@@ -796,7 +682,7 @@
       "image": null
     },
     {
-      "id": 42,
+      "id": 36,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
@@ -815,7 +701,7 @@
       "image": null
     },
     {
-      "id": 43,
+      "id": 37,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR STERN",
@@ -834,7 +720,7 @@
       "image": null
     },
     {
-      "id": 44,
+      "id": 38,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE STERN",
@@ -853,64 +739,7 @@
       "image": null
     },
     {
-      "id": 45,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-      "options": [
-        "O",
-        "S",
-        "A",
-        "R",
-        "C"
-      ],
-      "correct": 1,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 46,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
-      "options": [
-        "A",
-        "G",
-        "S",
-        "E",
-        "C"
-      ],
-      "correct": 2,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 47,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
-      "options": [
-        "O",
-        "A",
-        "K",
-        "S",
-        "C"
-      ],
-      "correct": 3,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 48,
+      "id": 39,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ALE SCOLD",
@@ -929,7 +758,7 @@
       "image": null
     },
     {
-      "id": 49,
+      "id": 40,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AID SCOLD",
@@ -948,7 +777,7 @@
       "image": null
     },
     {
-      "id": 50,
+      "id": 41,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: LAY SCOLD",
@@ -967,7 +796,7 @@
       "image": null
     },
     {
-      "id": 51,
+      "id": 42,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAT SCOLD",
@@ -986,64 +815,7 @@
       "image": null
     },
     {
-      "id": 52,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-      "options": [
-        "A",
-        "G",
-        "E",
-        "P",
-        "R"
-      ],
-      "correct": 3,
-      "correctAnswer": "P",
-      "explanation": "Move 'P' from PRICE to make RICE, and insert it into AGE to make PAGE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 53,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
-      "options": [
-        "L",
-        "A",
-        "Y",
-        "R",
-        "P"
-      ],
-      "correct": 4,
-      "correctAnswer": "P",
-      "explanation": "Move 'P' from PRICE to make RICE, and insert it into LAY to make PLAY. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 54,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: ACE PRICE",
-      "options": [
-        "P",
-        "A",
-        "C",
-        "E",
-        "R"
-      ],
-      "correct": 0,
-      "correctAnswer": "P",
-      "explanation": "Move 'P' from PRICE to make RICE, and insert it into ACE to make PACE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 55,
+      "id": 43,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR PRICE",
@@ -1062,7 +834,7 @@
       "image": null
     },
     {
-      "id": 56,
+      "id": 44,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ALE PRICE",
@@ -1081,7 +853,7 @@
       "image": null
     },
     {
-      "id": 57,
+      "id": 45,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AIR PRICE",
@@ -1100,7 +872,7 @@
       "image": null
     },
     {
-      "id": 58,
+      "id": 46,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AID PRICE",
@@ -1119,64 +891,7 @@
       "image": null
     },
     {
-      "id": 59,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR STALE",
-      "options": [
-        "S",
-        "O",
-        "A",
-        "R",
-        "T"
-      ],
-      "correct": 0,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from STALE to make TALE, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 60,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: AGE STALE",
-      "options": [
-        "A",
-        "S",
-        "G",
-        "E",
-        "T"
-      ],
-      "correct": 1,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from STALE to make TALE, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 61,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAK STALE",
-      "options": [
-        "O",
-        "A",
-        "S",
-        "K",
-        "T"
-      ],
-      "correct": 2,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 62,
+      "id": 47,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ALE STALE",
@@ -1195,7 +910,7 @@
       "image": null
     },
     {
-      "id": 63,
+      "id": 48,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AID STALE",
@@ -1214,7 +929,7 @@
       "image": null
     },
     {
-      "id": 64,
+      "id": 49,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR STALE",
@@ -1233,7 +948,7 @@
       "image": null
     },
     {
-      "id": 65,
+      "id": 50,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OWN STALE",
@@ -1252,64 +967,7 @@
       "image": null
     },
     {
-      "id": 66,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-      "options": [
-        "O",
-        "W",
-        "F",
-        "L",
-        "A"
-      ],
-      "correct": 2,
-      "correctAnswer": "F",
-      "explanation": "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 67,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-      "options": [
-        "A",
-        "T",
-        "E",
-        "F",
-        "L"
-      ],
-      "correct": 3,
-      "correctAnswer": "F",
-      "explanation": "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 68,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
-      "options": [
-        "A",
-        "C",
-        "E",
-        "L",
-        "F"
-      ],
-      "correct": 4,
-      "correctAnswer": "F",
-      "explanation": "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 69,
+      "id": 51,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR FLAME",
@@ -1328,7 +986,7 @@
       "image": null
     },
     {
-      "id": 70,
+      "id": 52,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ARM FLAME",
@@ -1347,7 +1005,7 @@
       "image": null
     },
     {
-      "id": 71,
+      "id": 53,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AIR FLAME",
@@ -1366,7 +1024,7 @@
       "image": null
     },
     {
-      "id": 72,
+      "id": 54,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AID FLAME",
@@ -1385,45 +1043,7 @@
       "image": null
     },
     {
-      "id": 73,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-      "options": [
-        "O",
-        "A",
-        "R",
-        "T",
-        "S"
-      ],
-      "correct": 4,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 74,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: AGE STERN",
-      "options": [
-        "S",
-        "A",
-        "G",
-        "E",
-        "T"
-      ],
-      "correct": 0,
-      "correctAnswer": "S",
-      "explanation": "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 75,
+      "id": 55,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
@@ -1442,7 +1062,7 @@
       "image": null
     },
     {
-      "id": 76,
+      "id": 56,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
@@ -1461,7 +1081,7 @@
       "image": null
     },
     {
-      "id": 77,
+      "id": 57,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
@@ -1480,7 +1100,7 @@
       "image": null
     },
     {
-      "id": 78,
+      "id": 58,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
@@ -1499,26 +1119,7 @@
       "image": null
     },
     {
-      "id": 79,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-      "options": [
-        "O",
-        "S",
-        "A",
-        "R",
-        "C"
-      ],
-      "correct": 1,
-      "correctAnswer": "S",
-      "explanation": "Move S from SCOLD: becomes COLD, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 80,
+      "id": 59,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
@@ -1537,45 +1138,7 @@
       "image": null
     },
     {
-      "id": 81,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-      "options": [
-        "A",
-        "G",
-        "E",
-        "P",
-        "R"
-      ],
-      "correct": 3,
-      "correctAnswer": "P",
-      "explanation": "Move P from PRICE: becomes RICE, and AGE becomes PAGE. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 82,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR STALE",
-      "options": [
-        "O",
-        "A",
-        "R",
-        "T",
-        "S"
-      ],
-      "correct": 4,
-      "correctAnswer": "S",
-      "explanation": "Move S from STALE: becomes TALE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 83,
+      "id": 60,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR STALE",
@@ -1594,64 +1157,7 @@
       "image": null
     },
     {
-      "id": 84,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-      "options": [
-        "O",
-        "F",
-        "W",
-        "L",
-        "A"
-      ],
-      "correct": 1,
-      "correctAnswer": "F",
-      "explanation": "Move F from FLAME: becomes LAME, and OWL becomes FOWL. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 85,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-      "options": [
-        "A",
-        "T",
-        "L",
-        "E",
-        "F"
-      ],
-      "correct": 2,
-      "correctAnswer": "L",
-      "explanation": "Move L from FLAME: becomes FAME, and ATE becomes LATE. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 86,
-      "difficulty": 2,
-      "questionType": "standard",
-      "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-      "options": [
-        "O",
-        "A",
-        "R",
-        "S",
-        "T"
-      ],
-      "correct": 3,
-      "correctAnswer": "S",
-      "explanation": "Move S from STERN: becomes TERN, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null
-    },
-    {
-      "id": 87,
+      "id": 61,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR STORE",
@@ -1670,7 +1176,7 @@
       "image": null
     },
     {
-      "id": 88,
+      "id": 62,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR STORE",
@@ -1689,7 +1195,7 @@
       "image": null
     },
     {
-      "id": 89,
+      "id": 63,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SPINE",
@@ -1708,7 +1214,7 @@
       "image": null
     },
     {
-      "id": 90,
+      "id": 64,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR STEAM",
@@ -1727,7 +1233,7 @@
       "image": null
     },
     {
-      "id": 91,
+      "id": 65,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SWEAR",
@@ -1746,7 +1252,7 @@
       "image": null
     },
     {
-      "id": 92,
+      "id": 66,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR TRACE",
@@ -1765,7 +1271,7 @@
       "image": null
     },
     {
-      "id": 93,
+      "id": 67,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR STAGE",
@@ -1784,7 +1290,7 @@
       "image": null
     },
     {
-      "id": 94,
+      "id": 68,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SHARE",
@@ -1803,7 +1309,7 @@
       "image": null
     },
     {
-      "id": 95,
+      "id": 69,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SCARE",
@@ -1822,7 +1328,7 @@
       "image": null
     },
     {
-      "id": 96,
+      "id": 70,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE SCALE",
@@ -1841,7 +1347,7 @@
       "image": null
     },
     {
-      "id": 97,
+      "id": 71,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR SNORE",
@@ -1860,7 +1366,7 @@
       "image": null
     },
     {
-      "id": 98,
+      "id": 72,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR SCORE",
@@ -1879,7 +1385,7 @@
       "image": null
     },
     {
-      "id": 99,
+      "id": 73,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
@@ -1898,7 +1404,7 @@
       "image": null
     },
     {
-      "id": 100,
+      "id": 74,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE BREACH",
@@ -1917,7 +1423,7 @@
       "image": null
     },
     {
-      "id": 101,
+      "id": 75,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
@@ -1936,7 +1442,7 @@
       "image": null
     },
     {
-      "id": 102,
+      "id": 76,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
@@ -1955,7 +1461,7 @@
       "image": null
     },
     {
-      "id": 103,
+      "id": 77,
       "difficulty": 3,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
@@ -1974,7 +1480,7 @@
       "image": null
     },
     {
-      "id": 104,
+      "id": 78,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BAND CAR",
@@ -1993,7 +1499,7 @@
       "image": null
     },
     {
-      "id": 105,
+      "id": 79,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CARD CAR",
@@ -2012,7 +1518,7 @@
       "image": null
     },
     {
-      "id": 106,
+      "id": 80,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CART HAT",
@@ -2031,7 +1537,7 @@
       "image": null
     },
     {
-      "id": 107,
+      "id": 81,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: EARN BAR",
@@ -2050,7 +1556,7 @@
       "image": null
     },
     {
-      "id": 108,
+      "id": 82,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: FARM ATE",
@@ -2069,7 +1575,7 @@
       "image": null
     },
     {
-      "id": 109,
+      "id": 83,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: FORD CAR",
@@ -2088,7 +1594,7 @@
       "image": null
     },
     {
-      "id": 110,
+      "id": 84,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: MARE BAT",
@@ -2107,7 +1613,7 @@
       "image": null
     },
     {
-      "id": 111,
+      "id": 85,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PALE BAT",
@@ -2126,7 +1632,7 @@
       "image": null
     },
     {
-      "id": 112,
+      "id": 86,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PANT HAT",
@@ -2145,7 +1651,7 @@
       "image": null
     },
     {
-      "id": 113,
+      "id": 87,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: PINE BAT",
@@ -2164,7 +1670,7 @@
       "image": null
     },
     {
-      "id": 114,
+      "id": 88,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BAND BAR",
@@ -2183,7 +1689,7 @@
       "image": null
     },
     {
-      "id": 115,
+      "id": 89,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BURN CAT",
@@ -2202,7 +1708,7 @@
       "image": null
     },
     {
-      "id": 116,
+      "id": 90,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CART CAT",
@@ -2221,7 +1727,7 @@
       "image": null
     },
     {
-      "id": 117,
+      "id": 91,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CAST CAT",
@@ -2240,7 +1746,7 @@
       "image": null
     },
     {
-      "id": 118,
+      "id": 92,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: COLD HAT",
@@ -2259,7 +1765,7 @@
       "image": null
     },
     {
-      "id": 119,
+      "id": 93,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CORD CAT",
@@ -2278,7 +1784,7 @@
       "image": null
     },
     {
-      "id": 120,
+      "id": 94,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: GOAT PIN",
@@ -2297,7 +1803,7 @@
       "image": null
     },
     {
-      "id": 121,
+      "id": 95,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: GOLD HAT",
@@ -2316,7 +1822,7 @@
       "image": null
     },
     {
-      "id": 122,
+      "id": 96,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: HALT HAT",
@@ -2335,7 +1841,7 @@
       "image": null
     },
     {
-      "id": 123,
+      "id": 97,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: HARM CAT",
@@ -2354,7 +1860,7 @@
       "image": null
     },
     {
-      "id": 124,
+      "id": 98,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BAND AGE",
@@ -2373,7 +1879,7 @@
       "image": null
     },
     {
-      "id": 125,
+      "id": 99,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: BURN PEA",
@@ -2392,7 +1898,7 @@
       "image": null
     },
     {
-      "id": 126,
+      "id": 100,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CARD AGE",
@@ -2411,7 +1917,7 @@
       "image": null
     },
     {
-      "id": 127,
+      "id": 101,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CART PAN",
@@ -2430,7 +1936,7 @@
       "image": null
     },
     {
-      "id": 128,
+      "id": 102,
       "difficulty": 2,
       "questionType": "standard",
       "question": "Move one letter from one word to the other to make two new words: CAST OAK",

@@ -3,7 +3,7 @@
     "subject": "maths",
     "topic": "primenumbers",
     "displayName": "Prime Numbers & Factors",
-    "extractedAt": "2026-03-30T13:05:56.054Z",
+    "extractedAt": "2026-03-31T08:55:13.680Z",
     "questionCount": 195,
     "difficultyDistribution": {
       "D1": 71,
@@ -2422,8 +2422,8 @@
         "15",
         "16"
       ],
-      "correct": 4,
-      "correctAnswer": "16",
+      "correct": 3,
+      "correctAnswer": "15",
       "explanation": "Numbers with exactly two factors are prime numbers. Primes from 1 to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. That's 15 primes. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,

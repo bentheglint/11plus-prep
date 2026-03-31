@@ -3,15 +3,15 @@
     "subject": "verbalreasoning",
     "topic": "verbalAnalogies",
     "displayName": "Verbal Analogies",
-    "extractedAt": "2026-03-30T13:05:32.799Z",
-    "questionCount": 125,
+    "extractedAt": "2026-03-31T08:55:13.737Z",
+    "questionCount": 122,
     "difficultyDistribution": {
-      "D1": 39,
-      "D2": 49,
-      "D3": 37
+      "D1": 38,
+      "D2": 48,
+      "D3": 36
     },
     "questionTypes": {
-      "pick-from-sets": 125
+      "pick-from-sets": 122
     },
     "visualComponentCount": 0
   },
@@ -2672,32 +2672,6 @@
       "id": 103,
       "difficulty": 1,
       "questionType": "pick-from-sets",
-      "question": "___ is to cow as lamb is to ___",
-      "options": null,
-      "correctAnswer": "calf + sheep",
-      "explanation": "A calf is a young cow, just as a lamb is a young sheep. The relationship is baby animal to adult animal. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "setA": [
-        "milk",
-        "calf",
-        "barn"
-      ],
-      "setB": [
-        "sheep",
-        "wool",
-        "field"
-      ],
-      "correctPair": [
-        1,
-        0
-      ]
-    },
-    {
-      "id": 104,
-      "difficulty": 1,
-      "questionType": "pick-from-sets",
       "question": "___ is to breakfast as dinner is to ___",
       "options": null,
       "correctAnswer": "morning + evening",
@@ -2721,7 +2695,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 104,
       "difficulty": 1,
       "questionType": "pick-from-sets",
       "question": "___ is to book as actor is to ___",
@@ -2747,7 +2721,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "difficulty": 1,
       "questionType": "pick-from-sets",
       "question": "___ is to hot as ice is to ___",
@@ -2773,7 +2747,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "difficulty": 1,
       "questionType": "pick-from-sets",
       "question": "___ is to drive as aeroplane is to ___",
@@ -2799,7 +2773,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 107,
       "difficulty": 1,
       "questionType": "pick-from-sets",
       "question": "___ is to page as song is to ___",
@@ -2825,7 +2799,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 108,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to flock as wolf is to ___",
@@ -2851,7 +2825,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 109,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to France as Tokyo is to ___",
@@ -2877,7 +2851,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 110,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to piano as bow is to ___",
@@ -2903,33 +2877,7 @@
       ]
     },
     {
-      "id": 112,
-      "difficulty": 2,
-      "questionType": "pick-from-sets",
-      "question": "___ is to tree as petal is to ___",
-      "options": null,
-      "correctAnswer": "leaf + flower",
-      "explanation": "A leaf is a part of a tree, just as a petal is a part of a flower. Both are parts of a plant. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "setA": [
-        "leaf",
-        "bark",
-        "root"
-      ],
-      "setB": [
-        "stem",
-        "flower",
-        "garden"
-      ],
-      "correctPair": [
-        0,
-        1
-      ]
-    },
-    {
-      "id": 113,
+      "id": 111,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to cold as drought is to ___",
@@ -2955,7 +2903,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 112,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to chapter as atlas is to ___",
@@ -2981,7 +2929,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 113,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to fish as lungs are to ___",
@@ -3007,7 +2955,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 114,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to teeth as shampoo is to ___",
@@ -3033,7 +2981,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 115,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to spider as hive is to ___",
@@ -3059,7 +3007,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 116,
       "difficulty": 2,
       "questionType": "pick-from-sets",
       "question": "___ is to king as duchess is to ___",
@@ -3085,7 +3033,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 117,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to word as brick is to ___",
@@ -3111,7 +3059,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 118,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to telescope as small is to ___",
@@ -3137,7 +3085,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 119,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to mammal as salmon is to ___",
@@ -3163,33 +3111,7 @@
       ]
     },
     {
-      "id": 122,
-      "difficulty": 3,
-      "questionType": "pick-from-sets",
-      "question": "___ is to orchestra as captain is to ___",
-      "options": null,
-      "correctAnswer": "conductor + team",
-      "explanation": "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "setA": [
-        "conductor",
-        "violin",
-        "concert"
-      ],
-      "setB": [
-        "ship",
-        "team",
-        "badge"
-      ],
-      "correctPair": [
-        0,
-        1
-      ]
-    },
-    {
-      "id": 123,
+      "id": 120,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to caterpillar as frog is to ___",
@@ -3215,7 +3137,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 121,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to guilty as acquit is to ___",
@@ -3241,7 +3163,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 122,
       "difficulty": 3,
       "questionType": "pick-from-sets",
       "question": "___ is to painting as playwright is to ___",

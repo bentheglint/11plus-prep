@@ -3,7 +3,7 @@
     "subject": "verbalreasoning",
     "topic": "letterSums",
     "displayName": "Letter Sums",
-    "extractedAt": "2026-03-30T13:05:32.815Z",
+    "extractedAt": "2026-03-31T08:55:13.756Z",
     "questionCount": 128,
     "difficultyDistribution": {
       "D1": 28,
@@ -106,7 +106,7 @@
       ],
       "correct": 0,
       "correctAnswer": "17",
-      "explanation": "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -163,7 +163,7 @@
       ],
       "correct": 0,
       "correctAnswer": "26",
-      "explanation": "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -334,7 +334,7 @@
       ],
       "correct": 3,
       "correctAnswer": "40",
-      "explanation": "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -486,7 +486,7 @@
       ],
       "correct": 1,
       "correctAnswer": "41",
-      "explanation": "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -638,7 +638,7 @@
       ],
       "correct": 3,
       "correctAnswer": "55",
-      "explanation": "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -790,7 +790,7 @@
       ],
       "correct": 3,
       "correctAnswer": "NOTE",
-      "explanation": "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -1341,7 +1341,7 @@
       ],
       "correct": 1,
       "correctAnswer": "14",
-      "explanation": "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
@@ -1493,7 +1493,7 @@
       ],
       "correct": 2,
       "correctAnswer": "15",
-      "explanation": "A + A + B = 4 + 4 + 7 = 15. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓",
+      "explanation": "A + A + B = 4 + 4 + 7 = 15. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null

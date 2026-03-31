@@ -3,15 +3,15 @@
     "subject": "verbalreasoning",
     "topic": "oddTwoOut",
     "displayName": "Odd Two Out",
-    "extractedAt": "2026-03-30T13:05:32.797Z",
-    "questionCount": 125,
+    "extractedAt": "2026-03-31T08:55:13.735Z",
+    "questionCount": 124,
     "difficultyDistribution": {
-      "D1": 38,
+      "D1": 37,
       "D2": 51,
       "D3": 36
     },
     "questionTypes": {
-      "select-two": 125
+      "select-two": 124
     },
     "visualComponentCount": 0
   },
@@ -2222,28 +2222,6 @@
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
       "options": [
-        "football",
-        "cricket",
-        "painting",
-        "rugby",
-        "sculpture"
-      ],
-      "correctAnswer": "painting + sculpture",
-      "explanation": "Football, cricket, and rugby are all sports. Painting and sculpture are forms of art, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        2,
-        4
-      ]
-    },
-    {
-      "id": 102,
-      "difficulty": 1,
-      "questionType": "select-two",
-      "question": "Find the two words that are the odd ones out.",
-      "options": [
         "hammer",
         "cake",
         "biscuit",
@@ -2261,7 +2239,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 102,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2283,7 +2261,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 103,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2305,7 +2283,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 104,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2327,7 +2305,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2349,7 +2327,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2371,7 +2349,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 107,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2393,7 +2371,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 108,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2415,7 +2393,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 109,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2437,7 +2415,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 110,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2459,7 +2437,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": 111,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2481,7 +2459,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": 112,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2503,7 +2481,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 113,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2525,7 +2503,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 114,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2547,7 +2525,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 115,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2569,7 +2547,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 116,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2591,7 +2569,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 117,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2613,7 +2591,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 118,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2635,7 +2613,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 119,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2657,7 +2635,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 120,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2679,7 +2657,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 121,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2701,7 +2679,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 122,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2723,7 +2701,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 123,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",
@@ -2745,7 +2723,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 124,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "Find the two words that are the odd ones out.",

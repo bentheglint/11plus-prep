@@ -3,15 +3,15 @@
     "subject": "verbalreasoning",
     "topic": "hiddenWords",
     "displayName": "Hidden Words",
-    "extractedAt": "2026-03-30T13:05:32.803Z",
-    "questionCount": 155,
+    "extractedAt": "2026-03-31T08:55:13.741Z",
+    "questionCount": 149,
     "difficultyDistribution": {
-      "D1": 52,
-      "D2": 52,
-      "D3": 51
+      "D1": 50,
+      "D2": 51,
+      "D3": 48
     },
     "questionTypes": {
-      "select-two": 155
+      "select-two": 149
     },
     "visualComponentCount": 0
   },
@@ -73,7 +73,7 @@
         "and"
       ],
       "correctAnswer": "beach + and",
-      "explanation": "The word HAND is hidden across 'beaCH' and 'ANDd'. Take the last two letters of 'beach' (CH) and the first two of 'and' (AN) — wait, that gives CHAN. Actually, take the last one letter of 'beach' (H) and the first three of 'and' (AND) = HAND. ✓",
+      "explanation": "The word HAND is hidden across 'beach' and 'and'. Take the last letter of 'beach' (H) and all three letters of 'and' (AND) = HAND. A hand is a part of the body. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null,
@@ -347,7 +347,7 @@
       ]
     },
     {
-      "id": 166,
+      "id": 16,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a small hollow or damage' is hidden across two of these words. Find the two words.",
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 17,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a military position' is hidden across two of these words. Find the two words.",
@@ -391,7 +391,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 18,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 19,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
@@ -435,7 +435,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 20,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a bundle of hay or straw' is hidden across two of these words. Find the two words.",
@@ -457,7 +457,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 21,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
@@ -479,7 +479,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 22,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a small body of still water' is hidden across two of these words. Find the two words.",
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 23,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'an entrance in a fence or wall' is hidden across two of these words. Find the two words.",
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 24,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a device that gives light' is hidden across two of these words. Find the two words.",
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 25,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'where a bird lays its eggs' is hidden across two of these words. Find the two words.",
@@ -567,7 +567,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 26,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a bright object in the night sky' is hidden across two of these words. Find the two words.",
@@ -589,7 +589,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 27,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a hollow metal object that rings' is hidden across two of these words. Find the two words.",
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 28,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a sweet baked treat' is hidden across two of these words. Find the two words.",
@@ -633,7 +633,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 29,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'tiny dry particles found on surfaces' is hidden across two of these words. Find the two words.",
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 30,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'thick strong cord used for tying' is hidden across two of these words. Find the two words.",
@@ -677,7 +677,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 31,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a male ruler of a country' is hidden across two of these words. Find the two words.",
@@ -699,7 +699,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 32,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
@@ -721,7 +721,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 33,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'having a low temperature' is hidden across two of these words. Find the two words.",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 34,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a circular band worn on a finger' is hidden across two of these words. Find the two words.",
@@ -765,7 +765,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 35,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a vertical structure around a garden' is hidden across two of these words. Find the two words.",
@@ -787,7 +787,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 36,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a shelter made of canvas for camping' is hidden across two of these words. Find the two words.",
@@ -809,7 +809,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 37,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'tiny grains found on a beach' is hidden across two of these words. Find the two words.",
@@ -831,7 +831,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 38,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a white drink from cows' is hidden across two of these words. Find the two words.",
@@ -853,7 +853,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": 39,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to eat an evening meal' is hidden across two of these words. Find the two words.",
@@ -875,7 +875,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 40,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a strong building used for defence' is hidden across two of these words. Find the two words.",
@@ -897,7 +897,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 41,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
@@ -909,7 +909,7 @@
         "many"
       ],
       "correctAnswer": "club + one",
-      "explanation": "The word BONE is hidden across 'cluB' and 'ONE'. Take the last letter of 'club' (B) and all three letters of 'one' (ONE) = BONE. the first three of 'onset' (ONE) — wait, 'onset' starts O-N-S, not O-N-E. ✓",
+      "explanation": "The word BONE is hidden across 'club' and 'one'. Take the last letter of 'club' (B) and all three letters of 'one' (ONE) = BONE. A bone is a hard part of the skeleton. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null,
@@ -919,7 +919,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": 42,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a large area of fresh water' is hidden across two of these words. Find the two words.",
@@ -941,7 +941,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": 43,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to want or hope for something' is hidden across two of these words. Find the two words.",
@@ -963,7 +963,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": 44,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to search for something' is hidden across two of these words. Find the two words.",
@@ -985,7 +985,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": 45,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a pale red colour' is hidden across two of these words. Find the two words.",
@@ -1007,7 +1007,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": 46,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a tall pole on a sailing ship' is hidden across two of these words. Find the two words.",
@@ -1029,7 +1029,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": 47,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to repair something broken' is hidden across two of these words. Find the two words.",
@@ -1051,7 +1051,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": 48,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'the time just before nightfall' is hidden across two of these words. Find the two words.",
@@ -1073,7 +1073,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": 49,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'the wheel or tiller used to steer a ship' is hidden across two of these words. Find the two words.",
@@ -1095,7 +1095,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": 50,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a room or space under the roof' is hidden across two of these words. Find the two words.",
@@ -1117,7 +1117,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": 51,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a very small brown bird' is hidden across two of these words. Find the two words.",
@@ -1139,7 +1139,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": 52,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a metal fastener or to run quickly' is hidden across two of these words. Find the two words.",
@@ -1161,7 +1161,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": 53,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a young deer' is hidden across two of these words. Find the two words.",
@@ -1183,7 +1183,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": 54,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a ridge of rock or coral near the sea surface' is hidden across two of these words. Find the two words.",
@@ -1205,7 +1205,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": 55,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'the smallest piece in chess' is hidden across two of these words. Find the two words.",
@@ -1227,7 +1227,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": 56,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a thick flat piece of stone or concrete' is hidden across two of these words. Find the two words.",
@@ -1249,7 +1249,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": 57,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a fastening made by tying string' is hidden across two of these words. Find the two words.",
@@ -1271,7 +1271,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": 58,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a shellfish with two hinged shells' is hidden across two of these words. Find the two words.",
@@ -1293,7 +1293,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": 59,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a thin branch of a tree' is hidden across two of these words. Find the two words.",
@@ -1315,7 +1315,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": 60,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
@@ -1337,7 +1337,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": 61,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a sudden strong rush of wind' is hidden across two of these words. Find the two words.",
@@ -1359,7 +1359,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": 62,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a stopper for a bottle, or a city in Ireland' is hidden across two of these words. Find the two words.",
@@ -1381,7 +1381,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": 63,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to beat or sell something' is hidden across two of these words. Find the two words.",
@@ -1403,7 +1403,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 64,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'an aromatic herb or a place where coins are made' is hidden across two of these words. Find the two words.",
@@ -1425,7 +1425,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 65,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a sharp curved nail on an animal's foot' is hidden across two of these words. Find the two words.",
@@ -1447,7 +1447,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": 66,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a soft round purple fruit' is hidden across two of these words. Find the two words.",
@@ -1469,7 +1469,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": 67,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a broad smile' is hidden across two of these words. Find the two words.",
@@ -1491,7 +1491,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": 68,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a narrow opening or gap' is hidden across two of these words. Find the two words.",
@@ -1513,7 +1513,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 69,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to move wings up and down' is hidden across two of these words. Find the two words.",
@@ -1535,7 +1535,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": 70,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a dish of meat and vegetables cooked slowly' is hidden across two of these words. Find the two words.",
@@ -1557,7 +1557,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": 71,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a fastener or to cut with scissors' is hidden across two of these words. Find the two words.",
@@ -1579,7 +1579,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": 72,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a narrow valley' is hidden across two of these words. Find the two words.",
@@ -1601,7 +1601,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": 73,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to kick a ball before it hits the ground' is hidden across two of these words. Find the two words.",
@@ -1623,7 +1623,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": 74,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a short funny performance' is hidden across two of these words. Find the two words.",
@@ -1645,7 +1645,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": 75,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to walk with difficulty' is hidden across two of these words. Find the two words.",
@@ -1667,7 +1667,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": 76,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'serious and gloomy' is hidden across two of these words. Find the two words.",
@@ -1689,7 +1689,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": 77,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a piece of cloth worn to cover the face' is hidden across two of these words. Find the two words.",
@@ -1711,7 +1711,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 78,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a clever trick or deception' is hidden across two of these words. Find the two words.",
@@ -1733,7 +1733,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": 79,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a cause of great distress' is hidden across two of these words. Find the two words.",
@@ -1755,7 +1755,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": 80,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a large fire for burning a dead body' is hidden across two of these words. Find the two words.",
@@ -1777,7 +1777,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 81,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to gradually decrease or decline' is hidden across two of these words. Find the two words.",
@@ -1799,7 +1799,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": 82,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a very strong wind' is hidden across two of these words. Find the two words.",
@@ -1821,7 +1821,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 83,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'an urgent request or appeal' is hidden across two of these words. Find the two words.",
@@ -1843,7 +1843,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 84,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'the upper edge of a cup or hat' is hidden across two of these words. Find the two words.",
@@ -1865,7 +1865,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": 85,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a wise person, or an aromatic herb' is hidden across two of these words. Find the two words.",
@@ -1887,7 +1887,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 86,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a precious stone that shimmers with colours' is hidden across two of these words. Find the two words.",
@@ -1909,7 +1909,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": 87,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'skilful and quick in movement' is hidden across two of these words. Find the two words.",
@@ -1931,7 +1931,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": 88,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'great enthusiasm or passion' is hidden across two of these words. Find the two words.",
@@ -1953,7 +1953,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 89,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a major musical composition' is hidden across two of these words. Find the two words.",
@@ -1975,7 +1975,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 90,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a mound of sand shaped by wind' is hidden across two of these words. Find the two words.",
@@ -1997,7 +1997,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": 91,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'an ancient stringed musical instrument' is hidden across two of these words. Find the two words.",
@@ -2019,7 +2019,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 92,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'traditional knowledge passed down through stories' is hidden across two of these words. Find the two words.",
@@ -2041,7 +2041,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 93,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a soothing ointment or something that comforts' is hidden across two of these words. Find the two words.",
@@ -2063,7 +2063,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 94,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'extremely serious or urgent' is hidden across two of these words. Find the two words.",
@@ -2085,7 +2085,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 95,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a green plant with feathery leaves' is hidden across two of these words. Find the two words.",
@@ -2107,7 +2107,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 96,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a device that shows wind direction' is hidden across two of these words. Find the two words.",
@@ -2129,7 +2129,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 97,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'the back of the neck' is hidden across two of these words. Find the two words.",
@@ -2151,7 +2151,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 98,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a formal written legal document' is hidden across two of these words. Find the two words.",
@@ -2173,7 +2173,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 99,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a cunning plan or scheme' is hidden across two of these words. Find the two words.",
@@ -2195,7 +2195,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 100,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a large heavy book' is hidden across two of these words. Find the two words.",
@@ -2217,7 +2217,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 101,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to stare at in a rude or admiring way' is hidden across two of these words. Find the two words.",
@@ -2236,28 +2236,6 @@
       "correctPair": [
         0,
         1
-      ]
-    },
-    {
-      "id": 101,
-      "difficulty": 1,
-      "questionType": "select-two",
-      "question": "A 4-letter word meaning 'a light you can carry' is hidden across two of these words. Find the two words.",
-      "options": [
-        "Her",
-        "school",
-        "ample",
-        "space",
-        "helped"
-      ],
-      "correctAnswer": "school + ample",
-      "explanation": "The word LAMP is hidden across 'schooL' and 'AMPle'. Take the last letter of 'school' (L) and the first three of 'ample' (AMP) = LAMP. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        1,
-        2
       ]
     },
     {
@@ -2286,28 +2264,6 @@
       "id": 103,
       "difficulty": 1,
       "questionType": "select-two",
-      "question": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
-      "options": [
-        "They",
-        "saw",
-        "the",
-        "boat",
-        "allowed"
-      ],
-      "correctAnswer": "boat + allowed",
-      "explanation": "The word TALL is hidden across 'boaT' and 'ALLowed'. Take the last letter of 'boat' (T) and the first three of 'allowed' (ALL) = TALL. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        3,
-        4
-      ]
-    },
-    {
-      "id": 104,
-      "difficulty": 1,
-      "questionType": "select-two",
       "question": "A 4-letter word meaning 'a green fruit' is hidden across two of these words. Find the two words.",
       "options": [
         "That",
@@ -2327,7 +2283,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 104,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to hurt or damage' is hidden across two of these words. Find the two words.",
@@ -2349,7 +2305,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'part of a bird or aeroplane' is hidden across two of these words. Find the two words.",
@@ -2371,7 +2327,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to get money by working' is hidden across two of these words. Find the two words.",
@@ -2393,7 +2349,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 107,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'as well' or 'too' is hidden across two of these words. Find the two words.",
@@ -2415,7 +2371,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 108,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a decorative fabric' is hidden across two of these words. Find the two words.",
@@ -2437,7 +2393,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 109,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'something you cook food in' is hidden across two of these words. Find the two words.",
@@ -2459,29 +2415,7 @@
       ]
     },
     {
-      "id": 111,
-      "difficulty": 2,
-      "questionType": "select-two",
-      "question": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
-      "options": [
-        "He",
-        "joined",
-        "club",
-        "Andrew",
-        "managed"
-      ],
-      "correctAnswer": "club + Andrew",
-      "explanation": "The word BAND is hidden across 'cluB' and 'ANDrew'. Take the last letter of 'club' (B) and the first three of 'Andrew' (AND) = BAND. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        2,
-        3
-      ]
-    },
-    {
-      "id": 112,
+      "id": 110,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a soft, steady light' is hidden across two of these words. Find the two words.",
@@ -2503,7 +2437,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": 111,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'every one' is hidden across two of these words. Find the two words.",
@@ -2525,7 +2459,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 112,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a small singing bird' is hidden across two of these words. Find the two words.",
@@ -2547,7 +2481,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 113,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to eat a meal' is hidden across two of these words. Find the two words.",
@@ -2569,7 +2503,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 114,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to wander freely' is hidden across two of these words. Find the two words.",
@@ -2591,7 +2525,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 115,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'an annoying insect or creature' is hidden across two of these words. Find the two words.",
@@ -2613,7 +2547,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 116,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a covering for the face' is hidden across two of these words. Find the two words.",
@@ -2635,29 +2569,7 @@
       ]
     },
     {
-      "id": 119,
-      "difficulty": 3,
-      "questionType": "select-two",
-      "question": "A 4-letter word meaning 'an urgent request' is hidden across two of these words. Find the two words.",
-      "options": [
-        "Could",
-        "you",
-        "stop",
-        "leaving",
-        "now"
-      ],
-      "correctAnswer": "stop + leaving",
-      "explanation": "The word PLEA is hidden across 'stoP' and 'LEAving'. Take the last letter of 'stop' (P) and the first three of 'leaving' (LEA) = PLEA. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        2,
-        3
-      ]
-    },
-    {
-      "id": 120,
+      "id": 117,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a long flowing garment' is hidden across two of these words. Find the two words.",
@@ -2679,29 +2591,7 @@
       ]
     },
     {
-      "id": 121,
-      "difficulty": 3,
-      "questionType": "select-two",
-      "question": "A 4-letter word meaning 'a very wise person' is hidden across two of these words. Find the two words.",
-      "options": [
-        "A",
-        "big",
-        "bus",
-        "agent",
-        "waited"
-      ],
-      "correctAnswer": "bus + agent",
-      "explanation": "The word SAGE is hidden across 'buS' and 'AGEnt'. Take the last letter of 'bus' (S) and the first three of 'agent' (AGE) = SAGE. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        2,
-        3
-      ]
-    },
-    {
-      "id": 122,
+      "id": 118,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a wide valley' is hidden across two of these words. Find the two words.",
@@ -2723,7 +2613,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 119,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a sudden sharp feeling' is hidden across two of these words. Find the two words.",
@@ -2745,29 +2635,7 @@
       ]
     },
     {
-      "id": 124,
-      "difficulty": 3,
-      "questionType": "select-two",
-      "question": "A 4-letter word meaning 'a thin covering for the face' is hidden across two of these words. Find the two words.",
-      "options": [
-        "The",
-        "dove",
-        "illustrated",
-        "peace",
-        "beautifully"
-      ],
-      "correctAnswer": "dove + illustrated",
-      "explanation": "The word VEIL is hidden across 'doVE' and 'ILlustrated'. Take the last two letters of 'dove' (VE) and the first two of 'illustrated' (IL) = VEIL. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "correctPair": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": 125,
+      "id": 120,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to manage or deal with something' is hidden across two of these words. Find the two words.",
@@ -2789,7 +2657,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 121,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'to gain a victory' is hidden across two of these words. Find the two words.",
@@ -2811,7 +2679,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": 122,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'an animal that barks' is hidden across two of these words. Find the two words.",
@@ -2833,7 +2701,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 123,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a rodent' is hidden across two of these words. Find the two words.",
@@ -2855,7 +2723,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 124,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a head covering' is hidden across two of these words. Find the two words.",
@@ -2877,7 +2745,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 125,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
@@ -2899,7 +2767,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 126,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a floor covering' is hidden across two of these words. Find the two words.",
@@ -2921,7 +2789,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": 127,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a large vehicle' is hidden across two of these words. Find the two words.",
@@ -2943,7 +2811,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": 128,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'a body part used for seeing' is hidden across two of these words. Find the two words.",
@@ -2965,7 +2833,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 129,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'something you sleep on' is hidden across two of these words. Find the two words.",
@@ -2987,7 +2855,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 130,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'to attempt' is hidden across two of these words. Find the two words.",
@@ -3009,7 +2877,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": 131,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
@@ -3031,7 +2899,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 132,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'an insect that makes honey' is hidden across two of these words. Find the two words.",
@@ -3053,19 +2921,19 @@
       ]
     },
     {
-      "id": 138,
+      "id": 133,
       "difficulty": 1,
       "questionType": "select-two",
-      "question": "A 3-letter word meaning 'a baby cow' is hidden across two of these words. Find the two words.",
+      "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
       "options": [
-        "A",
-        "basic",
-        "alphabet",
-        "is",
-        "easy"
+        "The",
+        "crisp",
+        "envelope",
+        "was",
+        "sealed"
       ],
-      "correctAnswer": "basic + alphabet",
-      "explanation": "The word CAL is hidden across 'basiC' and 'ALphabet'. Take the last 1 letter of 'basic' (C) and the first 2 of 'alphabet' (AL) = CAL. ✓",
+      "correctAnswer": "crisp + envelope",
+      "explanation": "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last letter of 'crisp' (P) and the first two letters of 'envelope' (EN) = PEN. A pen is a writing tool. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null,
@@ -3075,7 +2943,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 134,
       "difficulty": 1,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'to pull something' is hidden across two of these words. Find the two words.",
@@ -3097,7 +2965,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 135,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a large feather' is hidden across two of these words. Find the two words.",
@@ -3119,7 +2987,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 136,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'the speed of music' is hidden across two of these words. Find the two words.",
@@ -3141,7 +3009,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 137,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a secret worker' is hidden across two of these words. Find the two words.",
@@ -3163,7 +3031,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 138,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'to change' is hidden across two of these words. Find the two words.",
@@ -3185,7 +3053,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 139,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a yellow fruit' is hidden across two of these words. Find the two words.",
@@ -3207,7 +3075,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 140,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'soft and smooth' is hidden across two of these words. Find the two words.",
@@ -3229,7 +3097,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": 141,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a wooden seat' is hidden across two of these words. Find the two words.",
@@ -3251,7 +3119,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": 142,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a tool for sweeping' is hidden across two of these words. Find the two words.",
@@ -3273,7 +3141,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": 143,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'a citrus fruit' is hidden across two of these words. Find the two words.",
@@ -3295,7 +3163,7 @@
       ]
     },
     {
-      "id": 154,
+      "id": 144,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
@@ -3317,7 +3185,7 @@
       ]
     },
     {
-      "id": 155,
+      "id": 145,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 5-letter word meaning 'to begin' is hidden across two of these words. Find the two words.",
@@ -3339,7 +3207,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 146,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a loud noise' is hidden across two of these words. Find the two words.",
@@ -3361,7 +3229,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 147,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'to break suddenly' is hidden across two of these words. Find the two words.",
@@ -3383,7 +3251,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 148,
       "difficulty": 3,
       "questionType": "select-two",
       "question": "A 3-letter word meaning 'frozen water' is hidden across two of these words. Find the two words.",
@@ -3405,7 +3273,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 149,
       "difficulty": 2,
       "questionType": "select-two",
       "question": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",

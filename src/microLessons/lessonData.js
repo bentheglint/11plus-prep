@@ -3600,6 +3600,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...fractionsSubConcepts
     ]
   },
 
@@ -3979,6 +3981,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...decimalsSubConcepts
     ]
   },
 
@@ -4336,6 +4340,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...percentagesSubConcepts
     ]
   },
 
@@ -4657,6 +4663,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...ratioSubConcepts
     ]
   },
 
@@ -5012,6 +5020,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...negativeNumbersSubConcepts
     ]
   },
 
@@ -5319,6 +5329,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...algebraSubConcepts
     ]
   },
 
@@ -5687,6 +5699,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...placevalueSubConcepts
     ]
   },
 
@@ -6009,6 +6023,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...sequencesSubConcepts
     ]
   },
 
@@ -6324,6 +6340,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...primenumbersfactorsSubConcepts
     ]
   },
 
@@ -6706,6 +6724,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...longdivisionSubConcepts
     ]
   },
 
@@ -6981,6 +7001,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...areaperimeterSubConcepts
     ]
   },
 
@@ -7226,6 +7248,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...volumeSubConcepts
     ]
   },
 
@@ -7479,6 +7503,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...anglesshapesSubConcepts
     ]
   },
 
@@ -7855,6 +7881,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...datahandlingSubConcepts
     ]
   },
 
@@ -8264,6 +8292,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...speeddistancetimeSubConcepts
     ]
   },
 
@@ -8534,6 +8564,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...spellingSubConcepts
     ]
   },
 
@@ -8780,6 +8812,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...punctuationSubConcepts
     ]
   },
 
@@ -9005,6 +9039,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...grammarSubConcepts
     ]
   },
 
@@ -9227,6 +9263,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...vocabularySubConcepts
     ]
   },
 
@@ -9462,6 +9500,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...wordClassSubConcepts
     ]
   },
 
@@ -9702,6 +9742,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...comprehensionSubConcepts
     ]
   },
 
@@ -9974,6 +10016,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...synonymsSubConcepts
     ]
   },
 
@@ -10241,6 +10285,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...antonymsSubConcepts
     ]
   },
 
@@ -10515,6 +10561,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...oddTwoOutSubConcepts
     ]
   },
 
@@ -10816,6 +10864,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...verbalAnalogiesSubConcepts
     ]
   },
 
@@ -11115,6 +11165,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...compoundWordsSubConcepts
     ]
   },
 
@@ -11433,6 +11485,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...hiddenWordsSubConcepts
     ]
   },
 
@@ -11734,6 +11788,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...letterMoveSubConcepts
     ]
   },
 
@@ -12014,6 +12070,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...missingLettersWordsSubConcepts
     ]
   },
 
@@ -12300,6 +12358,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...sharedLetterSubConcepts
     ]
   },
 
@@ -12619,6 +12679,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...letterCodesSubConcepts
     ]
   },
 
@@ -12950,6 +13012,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...letterPairSeriesSubConcepts
     ]
   },
 
@@ -13247,6 +13311,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...wordCodeAnalogiesSubConcepts
     ]
   },
 
@@ -13565,6 +13631,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...numberWordCodesSubConcepts
     ]
   },
 
@@ -13864,6 +13932,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...numberSeriesSubConcepts
     ]
   },
 
@@ -14156,6 +14226,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...letterSumsSubConcepts
     ]
   },
 
@@ -14417,6 +14489,8 @@ export const lessonBank = {
           }
         ]
       }
+    ,
+      ...logicAndLanguageSubConcepts
     ]
   },
 };

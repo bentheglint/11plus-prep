@@ -3,7 +3,7 @@
     "subject": "maths",
     "topic": "speeddistancetime",
     "displayName": "Speed, Distance, Time",
-    "extractedAt": "2026-03-30T13:05:32.771Z",
+    "extractedAt": "2026-03-31T08:55:13.698Z",
     "questionCount": 125,
     "difficultyDistribution": {
       "D1": 44,
@@ -484,8 +484,8 @@
         "135 km",
         "137.5 km"
       ],
-      "correct": 3,
-      "correctAnswer": "135 km",
+      "correct": 4,
+      "correctAnswer": "137.5 km",
       "explanation": "2 hours 30 min = 2.5 hours. Distance = 55 × 2.5 = 137.5 km. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
@@ -1035,8 +1035,8 @@
         "10.5 km/h",
         "11 km/h"
       ],
-      "correct": 2,
-      "correctAnswer": "10 km/h",
+      "correct": 3,
+      "correctAnswer": "10.5 km/h",
       "explanation": "3500 m = 3.5 km. 20 min = 1/3 hour. Speed = 3.5 ÷ (1/3) = 10.5 km/h. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
@@ -2175,8 +2175,8 @@
         "16 km/h",
         "17 km/h"
       ],
-      "correct": 3,
-      "correctAnswer": "16 km/h",
+      "correct": 2,
+      "correctAnswer": "15 km/h",
       "explanation": "6500 m = 6.5 km. 26 min = 13/30 hours. Speed = 6.5 ÷ (13/30) = 15 km/h. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,

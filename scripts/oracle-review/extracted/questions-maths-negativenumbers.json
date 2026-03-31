@@ -3,7 +3,7 @@
     "subject": "maths",
     "topic": "negativenumbers",
     "displayName": "Negative Numbers",
-    "extractedAt": "2026-03-30T13:05:32.760Z",
+    "extractedAt": "2026-03-31T08:55:13.677Z",
     "questionCount": 179,
     "difficultyDistribution": {
       "D1": 52,
@@ -3239,8 +3239,8 @@
         "−16",
         "−11"
       ],
-      "correct": 1,
-      "correctAnswer": "−26",
+      "correct": 0,
+      "correctAnswer": "−31",
       "explanation": "Subtract 5 each time. Term 6: −8 − 5 = −13. Term 7: −13 − 5 = −18. Sum: −13 + (−18) = −31. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,

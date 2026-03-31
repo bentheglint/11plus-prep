@@ -3,15 +3,15 @@
     "subject": "english",
     "topic": "punctuation",
     "displayName": "Punctuation",
-    "extractedAt": "2026-03-30T13:05:32.781Z",
-    "questionCount": 433,
+    "extractedAt": "2026-03-31T08:55:13.711Z",
+    "questionCount": 430,
     "difficultyDistribution": {
-      "D1": 128,
-      "D2": 159,
+      "D1": 127,
+      "D2": 157,
       "D3": 146
     },
     "questionTypes": {
-      "error-spotting": 433
+      "error-spotting": 430
     },
     "visualComponentCount": 0
   },
@@ -164,31 +164,6 @@
         "Year 6, announced",
         "that the schools",
         "summer fete is on Saturday."
-      ]
-    },
-    {
-      "id": 7,
-      "difficulty": 2,
-      "questionType": "error-spotting",
-      "question": "Which section contains a punctuation error?",
-      "options": [
-        "Section A",
-        "Section B",
-        "Section C",
-        "Section D",
-        "No mistake"
-      ],
-      "correct": 4,
-      "correctAnswer": "No mistake",
-      "explanation": "This sentence is perfectly punctuated — well done if you spotted that! The commas are all where they should be. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "segments": [
-        "My sister who is",
-        "seven years old",
-        "loves reading books",
-        "about animals."
       ]
     },
     {
@@ -439,31 +414,6 @@
         "bread, milk, eggs",
         "cheese and",
         "fresh vegetables."
-      ]
-    },
-    {
-      "id": 18,
-      "difficulty": 2,
-      "questionType": "error-spotting",
-      "question": "Which section contains a punctuation error?",
-      "options": [
-        "Section A",
-        "Section B",
-        "Section C",
-        "Section D",
-        "No mistake"
-      ],
-      "correct": 4,
-      "correctAnswer": "No mistake",
-      "explanation": "Tricky one! There's no error — all the punctuation is correct. The commas are all where they should be. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "segments": [
-        "My grandparents who",
-        "live in Scotland",
-        "are coming to",
-        "visit us next week."
       ]
     },
     {
@@ -2889,31 +2839,6 @@
         "aunt Patel's house",
         "for Diwali",
         "celebrations."
-      ]
-    },
-    {
-      "id": 116,
-      "difficulty": 1,
-      "questionType": "error-spotting",
-      "question": "Which section contains a punctuation error?",
-      "options": [
-        "Section A",
-        "Section B",
-        "Section C",
-        "Section D",
-        "No mistake"
-      ],
-      "correct": 4,
-      "correctAnswer": "No mistake",
-      "explanation": "No mistakes here! Every bit of punctuation is in the right place. The apostrophe is in exactly the right place. ✓",
-      "hasVisualComponent": false,
-      "visualComponent": null,
-      "image": null,
-      "segments": [
-        "The teacher asked",
-        "the class a question",
-        "but nobody",
-        "new the answer."
       ]
     },
     {

@@ -3,7 +3,7 @@
     "subject": "verbalreasoning",
     "topic": "letterCodes",
     "displayName": "Letter Codes",
-    "extractedAt": "2026-03-30T13:05:32.809Z",
+    "extractedAt": "2026-03-31T08:55:13.747Z",
     "questionCount": 166,
     "difficultyDistribution": {
       "D1": 49,
@@ -154,17 +154,17 @@
       "id": 8,
       "difficulty": 1,
       "questionType": "standard",
-      "question": "If CAT is coded as DBU, what is the code for CAT?",
+      "question": "If CAT is coded as DBU, what is the code for DOG?",
       "options": [
-        "CBU",
-        "DAU",
-        "DBT",
-        "DBU",
-        "DCU"
+        "CPH",
+        "ENH",
+        "EPH",
+        "EPG",
+        "FOH"
       ],
-      "correct": 3,
-      "correctAnswer": "DBU",
-      "explanation": "Move each letter forward 1: C→D, A→B, T→U. CAT becomes DBU. Tip: Always check every letter — don't assume the shift from just the first one. ✓",
+      "correct": 2,
+      "correctAnswer": "EPH",
+      "explanation": "The code moves each letter forward by 1 in the alphabet. C→D, A→B, T→U. Apply the same rule to DOG: D→E, O→P, G→H. The code is EPH. ✓",
       "hasVisualComponent": false,
       "visualComponent": null,
       "image": null
